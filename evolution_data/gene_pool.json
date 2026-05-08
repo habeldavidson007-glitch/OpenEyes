@@ -1,0 +1,22 @@
+{
+  "web_7acdd0e5": {
+    "id": "web_7acdd0e5",
+    "content": "[Web Retrieved Content]",
+    "weight": 0.97
+  },
+  "frag_pharma_nitrofurantoin_uti_001": {
+    "id": "frag_pharma_nitrofurantoin_uti_001",
+    "content": "Nitrofurantoin 100mg modified-release twice daily for 5 days is a first-line treatment for uncomplicated lower UTI in non-pregnant adults.",
+    "weight": 1.54
+  },
+  "frag_pharma_allergy_cross_reactivity": {
+    "id": "frag_pharma_allergy_cross_reactivity",
+    "content": "Patients with penicillin allergy have <1% cross-reactivity with nitrofurantoin. Nitrofurantoin is considered safe for penicillin-allergic patients.",
+    "weight": 1.54
+  },
+  "frag_pharma_trimethoprim_uti_002": {
+    "id": "frag_pharma_trimethoprim_uti_002",
+    "content": "Trimethoprim 200mg twice daily for 5 days is an alternative first-line treatment for uncomplicated lower UTI, but resistance rates vary by region.",
+    "weight": 1.49
+  }
+}
