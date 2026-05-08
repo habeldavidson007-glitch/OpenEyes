@@ -1,9 +1,14 @@
 ```
-# Compiled and binary files
+# Compiled and build artifacts
+*.pyc
+__pycache__/
 *.o
 *.obj
-*.out
-openeyes/*.oelib
+
+# Environment
+.env
+.env.local
+*.env.*
 
 # Logs and temp files
 *.log
@@ -14,8 +19,8 @@ openeyes/*.oelib
 .vscode/
 .idea/
 
-# Environment
-.env
-.env.local
-*.env.*
+# Dependencies
+.venv/
+venv/
+node_modules/
 ```
