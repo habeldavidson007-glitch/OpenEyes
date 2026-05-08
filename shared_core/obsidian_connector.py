@@ -118,18 +118,114 @@ class ObsidianReporter:
 
 {self._format_survival_criteria(mc_result)}
 
+
 ---
-*Generated automatically by E-AR Obsidian Reporter*
+*Report generated automatically by E-AR Evolution Engine*
 """
         
-        with open(filepath, 'w') as f:
+        # Write to file
+        with open(filepath, 'w', encoding='utf-8') as f:
             f.write(md_content)
         
-        # Track failures separately
-        if not mc_result.get('survived', False):
-            self._report_failure(winner, timestamp, run_metadata)
+        return filepath
+    
+    def log_query(self, query_result: Dict[str, Any]):
+        """
+        Log an OpenEyes query execution to Obsidian.
+        
+        Args:
+            query_result: Complete query result including decomposition, fragments, scores, etc.
+        """
+        timestamp = self._generate_timestamp()
+        filename = f"query_{timestamp}_{query_result.get('trace_id', 'unknown')}.md"
+        filepath = self.reports_dir / filename
+        
+        # Build markdown report for query
+        result = query_result.get('result', query_result)
+        decomposition = query_result.get('decomposition', {})
+        
+        md_content = f"""# OpenEyes Query Trace
+
+**Timestamp:** {query_result.get('timestamp', datetime.now().isoformat())}
+**Trace ID:** {query_result.get('trace_id', 'unknown')}
+**Domain:** {query_result.get('domain', 'general')}
+**Query:** {query_result.get('query', 'N/A')}
+
+## Query Decomposition
+
+{self._format_decomposition(decomposition)}
+
+## Result Summary
+
+- **Answer Provided:** {'Yes' if result.get('answer') else 'No'}
+- **Confidence:** {result.get('confidence', 0):.1f}%
+- **HALT:** {'✅ YES' if result.get('halt') else '❌ NO'}
+- **Fragments Used:** {len(result.get('fragments_used', []))}
+
+## Answer
+
+{result.get('answer', '*No answer provided*') if not result.get('halt') else '*Query halted - no answer returned*'}
+
+{f"**Halt Reason:** {result.get('halt_reason', 'Unknown')}" if result.get('halt') else ''}
+{f"**Recommendation:** {result.get('recommendation', 'N/A')}" if result.get('halt') and result.get('recommendation') else ''}
+
+## Fragments Used
+
+{self._format_fragments_used(result.get('fragments_used', []))}
+
+## Philosophy Checks
+
+**Passed:** {result.get('philosophy_checks_passed', [])}
+
+---
+*Trace generated automatically by OpenEyes Engine*
+"""
+        
+        # Write to file
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(md_content)
         
         return filepath
+    
+    def _format_decomposition(self, decomposition: Dict[str, Any]) -> str:
+        """Format query decomposition as markdown."""
+        if not decomposition:
+            return "_No decomposition available_"
+        
+        lines = ["| Sub-question | Keywords | Domain |", "|---|---|---|"]
+        sub_questions = decomposition.get('sub_questions', [])
+        for sq in sub_questions:
+            # Handle both dict and string formats for sub_questions
+            if isinstance(sq, dict):
+                question = sq.get('question', 'N/A')[:50]
+                keywords = ', '.join(sq.get('keywords', [])[:3])
+                domain = sq.get('domain', 'N/A')
+            else:
+                # If it's just a string, use it as the question
+                question = str(sq)[:50]
+                keywords = 'N/A'
+                domain = 'N/A'
+            lines.append(f"| {question}... | {keywords} | {domain} |")
+        
+        if not sub_questions:
+            return "_No sub-questions generated_"
+        
+        return "\n".join(lines)
+    
+    def _format_fragments_used(self, fragments: List[Dict[str, Any]]) -> str:
+        """Format fragments list as markdown table."""
+        if not fragments:
+            return "_No fragments used_"
+        
+        lines = ["| ID | Content | Score | Source |", "|---|---|---|---|"]
+        for frag in fragments:
+            fid = frag.get('fragment_id', 'unknown')
+            content = frag.get('content', '')[:60]
+            score = frag.get('score', frag.get('mean_score', 'N/A'))
+            source = frag.get('source', 'N/A')[:30]
+            lines.append(f"| {fid} | {content}... | {score} | {source}... |")
+        
+        return "\n".join(lines)
     
     def _format_simulator_scores(self, pressure_result: Dict) -> str:
         """Format simulator scores as markdown list."""
@@ -210,9 +306,9 @@ class ObsidianReporter:
 {self._format_primitive_list(result.get('composition', []))}
 
 ### Metrics
-- Mean Score: {result.get('mean_score', 0)} (required: ≥60)
-- Variance: {result.get('variance', 0)} (required: <50)
-- Survival Probability: {result.get('survival_probability', 0)} (required: ≥0.7)
+- Mean Score: {result.get('mean_score', 0)} (required: >=60)
+- Variance: {result.get('variance', 0)} (required: <500)
+- Survival Probability: {result.get('survival_probability', 0)} (required: >=0.7)
 
 ## Learning Points
 
@@ -277,7 +373,7 @@ _Analyze this failure to identify:_
 
 **Discovered:** {datetime.now().isoformat()}
 **Frequency:** {frequency} occurrences
-**Average Score:** {avg_score:.2f}
+**Average Score:** {avg_score}
 
 ## Pattern Definition
 
@@ -287,7 +383,7 @@ Primitives involved:
 ## Characteristics
 
 - Appears in {frequency} compositions
-- Maintains average score of {avg_score:.2f}
+- Maintains average score of {avg_score}
 - Shows stability across multiple runs
 
 ## Example Compositions
