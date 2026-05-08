@@ -33,6 +33,9 @@ class FragmentCandidate:
     domain_tags: List[str]
     agent_type: str  # "library", "api", "web"
     sub_question: str  # Which sub-question this addresses
+    reasoning_role: str = "definition"  # "definition", "counter_argument", "latest_data"
+    source_type: str = "primary"  # "primary", "secondary", "tertiary"
+    year: int = 2026  # Publication/recency year
     
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -43,7 +46,10 @@ class FragmentCandidate:
             "credibility_estimate": self.credibility_estimate,
             "domain_tags": self.domain_tags,
             "agent_type": self.agent_type,
-            "sub_question": self.sub_question
+            "sub_question": self.sub_question,
+            "reasoning_role": self.reasoning_role,
+            "source_type": self.source_type,
+            "year": self.year
         }
 
 

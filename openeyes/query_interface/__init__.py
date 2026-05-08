@@ -271,12 +271,13 @@ class OpenEyes:
     def _assemble_answer(self, fragments: List[Dict[str, Any]], query_text: str) -> Dict[str, Any]:
         """Assemble final answer using Dice Table."""
         assembly = self.assembler.assemble(
-            fragments=fragments,
+            survivors=fragments,
             domain=self.domain,
-            query=query_text
+            philosophy="do_no_harm" if self.domain == "medical" else "evidence_based",
+            trace_id=None  # Will be auto-generated
         )
         
-        return assembly
+        return assembly.to_dict()
     
     def _final_philosophy_check(self, assembled_output: Dict[str, Any]) -> Dict[str, Any]:
         """Final composition-level Philosophy Guard check."""

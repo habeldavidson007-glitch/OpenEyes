@@ -1,74 +1,41 @@
 ```
-# Project-specific ignores
-openeyes/fragment_library/fragments.json
-"workspace_obsidian_vault/
-
-# Obsidian vault files
-.vault/
-.obsidian/
-*.canvas
-
-# Temporary and cache files
-*.tmp
-*.temp
-*.cache
-*.swp
-
-# Logs
-*.log
-
-# Environment files
-.env
-.env.local
-*.env.*
-
-# Editor/IDE files
-.vscode/
-.idea/
-*.swo
-*.swp
-
-# OS files
-.DS_Store
-Thumbs.db
-
 # Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-*.so
 
-# Build outputs
-build/
+# Environment
+.env
+.env.local
+*.env.*
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Build artifacts
 dist/
-*.egg-info/
+build/
+target/
+
+# Coverage
 .coverage
 coverage/
 htmlcov/
 
-# Compression archives
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+# Cache directories
+.mypy_cache/
+.pytest_cache/
 ```
