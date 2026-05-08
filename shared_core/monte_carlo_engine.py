@@ -125,12 +125,12 @@ def _default_evaluator(composition: List[Dict[str, Any]],
         frag_id = frag.get("fragment_id", frag.get("id", str(hash(str(frag)))))
         seed_val = int(hashlib.md5(str(frag_id).encode()).hexdigest()[:8], 16)
         rng = random.Random(seed_val)
-        noise = rng.gauss(0, 15)  # Standard deviation of 15
+        noise = rng.gauss(0, 5)  # Reduced standard deviation from 15 to 5 for stability
         stoch_score = det_score + noise
         stoch_score = max(0, min(100, stoch_score))
         
-        # --- HYBRID COMBINATION (70/30 split) ---
-        final_frag_score = (0.7 * det_score) + (0.3 * stoch_score)
+        # --- HYBRID COMBINATION (90/10 split for reduced variance) ---
+        final_frag_score = (0.9 * det_score) + (0.1 * stoch_score)
         
         fragment_scores.append(final_frag_score)
         
@@ -206,8 +206,8 @@ def _default_evaluator(composition: List[Dict[str, Any]],
             "domain_tier": domain_tier,
             "recency_decay_applied": decay_rate,
             "hybrid_evaluator": True,
-            "deterministic_weight": 0.7,
-            "stochastic_weight": 0.3
+            "deterministic_weight": 0.9,
+            "stochastic_weight": 0.1
         }
     )
 

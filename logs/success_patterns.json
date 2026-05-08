@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-08T11:46:58.965501",
-  "pattern_count": 4,
+  "last_updated": "2026-05-08T11:50:48.022969",
+  "pattern_count": 8,
   "patterns": [
     {
       "query_hash": "df94ad6f",
@@ -71,6 +71,81 @@
       "num_sources": 2,
       "confidence": 72.0,
       "timestamp": "2026-05-08T11:46:58.965430",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "general",
+      "tier": "tier3",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 5,
+      "num_sources": 5,
+      "confidence": 65.5,
+      "timestamp": "2026-05-08T11:50:47.983306",
+      "success": true
+    },
+    {
+      "query_hash": "cc4216e9",
+      "domain": "general",
+      "tier": "tier3",
+      "has_definition": true,
+      "has_counter": false,
+      "has_latest": false,
+      "fragment_roles": [
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 64.0,
+      "timestamp": "2026-05-08T11:50:47.988998",
+      "success": true
+    },
+    {
+      "query_hash": "2754beec",
+      "domain": "general",
+      "tier": "tier3",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 64.8,
+      "timestamp": "2026-05-08T11:50:48.005558",
+      "success": true
+    },
+    {
+      "query_hash": "7c31f348",
+      "domain": "general",
+      "tier": "tier3",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 62.4,
+      "timestamp": "2026-05-08T11:50:48.022899",
       "success": true
     }
   ]

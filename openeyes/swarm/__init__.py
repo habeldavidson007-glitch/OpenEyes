@@ -136,7 +136,7 @@ class LibraryAgent:
                 continue
             
             # Apply domain filter if specified
-            if domain and frag.domain != domain:
+            if domain and domain != "general" and frag.domain != domain:
                 continue
             
             # Map credibility class to estimate
