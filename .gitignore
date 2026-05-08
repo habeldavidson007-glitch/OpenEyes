@@ -13,35 +13,17 @@ env/
 .env.local
 .env.*
 
-# Build artifacts
-build/
-dist/
-*.egg-info/
-
-# Logs
+# Logs and temp files
 *.log
-
-# Temporary files
 *.tmp
 *.swp
-*.swo
 
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
-.coverage
-coverage/
-htmlcov/
-
-# IDE specific
+# Editors
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 
-# Testing
-.pytest_cache/
-.mypy_cache/
+# Build artifacts
+dist/
+build/
+target/
 ```
