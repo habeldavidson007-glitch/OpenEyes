@@ -1,14 +1,33 @@
 ```
-# Compiled Python files
+# Python
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
-# Dependencies and build artifacts
-openeyes/tools/__pycache__/
-
-# Environment files
+# Environment
+.venv/
+venv/
 .env
 .env.local
 *.env.*
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
 ```

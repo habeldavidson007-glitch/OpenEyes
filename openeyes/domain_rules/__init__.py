@@ -1,10 +1,17 @@
 """
-Domain Rules Loader — Tier-based Philosophy Guard Configuration
+Domain Rules Loader — Five-Tier Brain-Inspired Architecture
 
-Three tiers of scrutiny:
+Inspired by human cognitive processing:
+- Sensory Memory → Working Memory → Long-Term Memory → Retrieval
+- Attention filtering at each stage (latent inhibition for genius-mode)
+- Neural efficiency optimization (parallel processing, pattern recognition)
+
+Five tiers of scrutiny:
+- Tier 0 (Critical): Life-or-death decisions — Maximum HALT, Multiple verification required
 - Tier 1 (High Stakes): Medical, Law, Nuclear, Aviation — Strict HALT, Primary sources only
 - Tier 2 (Medium Stakes): Engineering, Finance, History — Moderate HALT, Mix of sources
 - Tier 3 (Low Stakes): Cooking, Travel, Trivia — Low HALT, allows tertiary sources
+- Tier 4 (Exploratory): Creative, Hypothetical, Brainstorming — No HALT, Divergent thinking
 
 Each domain maps to a tier and has specific rule configurations.
 """
@@ -14,14 +21,22 @@ from typing import Dict, List, Any, Optional
 from pathlib import Path
 
 
-# Domain to Tier mapping
+# Domain to Tier mapping (5-tier system)
 DOMAIN_TIERS = {
+    # Tier 0: Critical Stakes - Immediate life-or-death, requires multiple independent verifications
+    "emergency_medical": "tier0",
+    "crisis_response": "tier0",
+    "nuclear_safety": "tier0",
+    "aviation_safety": "tier0",
+    
     # Tier 1: High Stakes - Strict HALT, Primary sources only
     "medical": "tier1",
     "law": "tier1", 
     "legal": "tier1",
     "nuclear": "tier1",
     "aviation": "tier1",
+    "pharmaceutical": "tier1",
+    "clinical_psychology": "tier1",
     
     # Tier 2: Medium Stakes - Moderate HALT, Mix of Primary/Secondary
     "engineering": "tier2",
@@ -29,13 +44,29 @@ DOMAIN_TIERS = {
     "history": "tier2",
     "technology": "tier2",
     "science": "tier2",
+    "economics": "tier2",
+    "business": "tier2",
+    "education": "tier2",
+    "environmental": "tier2",
     
     # Tier 3: Low Stakes - Low HALT, allows Wikipedia/Blogs (labeled "Unverified")
     "cooking": "tier3",
     "travel": "tier3",
     "trivia": "tier3",
     "entertainment": "tier3",
-    "lifestyle": "tier3"
+    "lifestyle": "tier3",
+    "hobbies": "tier3",
+    "sports": "tier3",
+    "fashion": "tier3",
+    
+    # Tier 4: Exploratory - No HALT, Encourages divergent thinking
+    "creative": "tier4",
+    "philosophy": "tier4",
+    "art": "tier4",
+    "literature": "tier4",
+    "hypothetical": "tier4",
+    "brainstorming": "tier4",
+    "speculative": "tier4"
 }
 
 
@@ -180,6 +211,94 @@ EMBEDDED_RULES = {
                 "description": "Tertiary sources must be labeled as unverified",
                 "check_type": "label_tertiary",
                 "config": {"label": "Unverified"},
+                "halt_on_failure": False
+            }
+        ]
+    },
+    
+    "emergency_medical": {
+        "domain": "emergency_medical",
+        "tier": "tier0",
+        "version": "0.3",
+        "rules": [
+            {
+                "id": "EMERG-001",
+                "name": "Triple Verification Required",
+                "description": "All emergency medical advice must be verified by 3+ independent primary sources",
+                "check_type": "minimum_fragment_count",
+                "config": {"min_count": 3, "source_type": "primary"},
+                "halt_on_failure": True
+            },
+            {
+                "id": "EMERG-002",
+                "name": "Cross-Domain Consensus",
+                "description": "Must have agreement across multiple medical subdomains",
+                "check_type": "requires_consensus",
+                "config": {"min_domains": 2},
+                "halt_on_failure": True
+            },
+            {
+                "id": "EMERG-003",
+                "name": "Real-Time Data Required",
+                "description": "Emergency protocols must reference current year guidelines",
+                "check_type": "minimum_year",
+                "config": {"min_year": 2025},
+                "halt_on_failure": True
+            },
+            {
+                "id": "EMERG-004",
+                "name": "Counter-Argument Mandatory",
+                "description": "Must include contraindications and risk factors",
+                "check_type": "requires_reasoning_role",
+                "config": {"role": "counter_argument"},
+                "halt_on_failure": True
+            }
+        ]
+    },
+    
+    "technology": {
+        "domain": "technology",
+        "tier": "tier2",
+        "version": "0.2",
+        "rules": [
+            {
+                "id": "TECH-001",
+                "name": "Version Specificity",
+                "description": "Technical information must specify software/hardware versions",
+                "check_type": "requires_field",
+                "config": {"field": "version"},
+                "halt_on_failure": False
+            },
+            {
+                "id": "TECH-002",
+                "name": "Recent Data Preferred",
+                "description": "Technology information should be from last 3 years",
+                "check_type": "minimum_year",
+                "config": {"min_year": 2022},
+                "halt_on_failure": False
+            }
+        ]
+    },
+    
+    "creative": {
+        "domain": "creative",
+        "tier": "tier4",
+        "version": "0.2",
+        "rules": [
+            {
+                "id": "CREATE-001",
+                "name": "Divergent Thinking Encouraged",
+                "description": "Multiple perspectives and creative interpretations welcomed",
+                "check_type": "prefer_reasoning_diversity",
+                "config": {"min_roles": 1},
+                "halt_on_failure": False
+            },
+            {
+                "id": "CREATE-002",
+                "name": "Source Attribution Optional",
+                "description": "Creative works may or may not have formal sources",
+                "check_type": "optional_field",
+                "config": {"field": "source"},
                 "halt_on_failure": False
             }
         ]
