@@ -1,34 +1,8 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Obsidian vault files
+".gitignore"
+"workspace_obsidian_vault/
 
-# Dependencies
-.venv/
-venv/
-env/
-.env
-.env.local
-.env.*
-
-# Build artifacts
-dist/
-build/
-target/
-
-# Logs
-*.log
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
+# Compiled JSON data
+openeyes/data/compiled_logic.json
 ```
