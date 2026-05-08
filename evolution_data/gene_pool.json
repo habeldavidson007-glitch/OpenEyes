@@ -34,5 +34,7 @@
       "dosage"
     ],
     "weight": 0.95
-  }
+  },
+  "frag_med_allergy_cross_reactivity": 1.04,
+  "frag_med_dosage_renal": 1.02
 }

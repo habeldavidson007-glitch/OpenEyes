@@ -195,9 +195,16 @@ class ObsidianReporter:
         lines = ["| Sub-question | Keywords | Domain |", "|---|---|---|"]
         sub_questions = decomposition.get('sub_questions', [])
         for sq in sub_questions:
-            question = sq.get('question', 'N/A')[:50]
-            keywords = ', '.join(sq.get('keywords', [])[:3])
-            domain = sq.get('domain', 'N/A')
+            # Handle both dict and string formats for sub_questions
+            if isinstance(sq, dict):
+                question = sq.get('question', 'N/A')[:50]
+                keywords = ', '.join(sq.get('keywords', [])[:3])
+                domain = sq.get('domain', 'N/A')
+            else:
+                # If it's just a string, use it as the question
+                question = str(sq)[:50]
+                keywords = 'N/A'
+                domain = 'N/A'
             lines.append(f"| {question}... | {keywords} | {domain} |")
         
         if not sub_questions:
