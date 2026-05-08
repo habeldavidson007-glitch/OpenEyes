@@ -211,24 +211,45 @@ class OpenEyes:
         """Run Monte Carlo evaluation on candidates."""
         survivors = []
         
+        # Determine domain tier for appropriate thresholds
+        from openeyes.domain_rules import get_domain_tier
+        domain_tier = get_domain_tier(self.domain)
+        
         for candidate in candidates:
             # Create single-fragment composition for evaluation
             composition = [candidate]
             
-            # Evaluate composition
+            # Evaluate composition with domain tier
             eval_result = evaluate_composition(
                 composition=composition,
                 scenario=None,
-                
+                domain_tier=domain_tier
             )
             
-            # Check survival criteria using survives_mc
+            # Set tier-appropriate thresholds
+            if domain_tier == "tier1":
+                score_threshold = 50  # Lower threshold for individual fragments
+                variance_threshold = 600
+                survival_prob_threshold = 0.3
+            elif domain_tier == "tier2":
+                score_threshold = 45
+                variance_threshold = 700
+                survival_prob_threshold = 0.25
+            else:  # tier3
+                score_threshold = 40
+                variance_threshold = 800
+                survival_prob_threshold = 0.2
+            
+            # Check survival criteria using survives_mc with tier-adjusted thresholds
             survival_result = survives_mc(
                 score=eval_result.mean_score,
-                selected=[candidate],  # Pass as list
+                selected=[candidate],
                 variance=eval_result.variance,
                 survival_probability=eval_result.survival_probability,
-                aggregate_stats={}
+                aggregate_stats={},
+                score_threshold=score_threshold,
+                variance_threshold=variance_threshold,
+                survival_prob_threshold=survival_prob_threshold
             )
             
             if survival_result["passed"]:
