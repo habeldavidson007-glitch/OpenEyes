@@ -412,16 +412,19 @@ class WurfelspielAssembler:
                 f"Consider seeking additional verification."
             )
         
-        # Prepare fragments_used metadata
+        # Prepare fragments_used metadata - preserve ALL original fields including reasoning_role
         fragments_metadata = []
         for frag in sequenced_fragments:
-            fragments_metadata.append({
+            meta = {
                 "fragment_id": frag.get("fragment_id", "unknown"),
                 "content": frag.get("content", ""),
                 "score": frag.get("score", 0),
                 "source": frag.get("source", "Unknown"),
-                "source_url": frag.get("source_url", "")
-            })
+                "source_url": frag.get("source_url", ""),
+                # CRITICAL: Preserve reasoning_role for final philosophy check
+                "reasoning_role": frag.get("reasoning_role", "unknown")
+            }
+            fragments_metadata.append(meta)
         
         return AssembledOutput(
             answer=answer_text,

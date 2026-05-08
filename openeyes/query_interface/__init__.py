@@ -254,7 +254,8 @@ class OpenEyes:
             
             if survival_result["passed"]:
                 # Add evaluation metrics to candidate
-                candidate["mc_score"] = eval_result.mean_score
+                # CRITICAL: Use 'score' key (not 'mc_score') for assembler compatibility
+                candidate["score"] = eval_result.mean_score
                 candidate["mc_variance"] = eval_result.variance
                 candidate["mc_survival_prob"] = eval_result.survival_probability
                 candidate["reasoning_role"] = candidate.get("reasoning_role", "unknown")
@@ -262,9 +263,9 @@ class OpenEyes:
                 candidate["year"] = candidate.get("year", 0)
                 survivors.append(candidate)
                 
-                print(f"  ✓ Fragment {candidate.get('id', 'unknown')[:20]}... survived (score={eval_result.mean_score:.1f})")
+                print(f"  ✓ Fragment {candidate.get('fragment_id', 'unknown')[:20]}... survived (score={eval_result.mean_score:.1f})")
             else:
-                print(f"  ✗ Fragment {candidate.get('id', 'unknown')[:20]}... failed MC (score={eval_result.mean_score:.1f}, var={eval_result.variance:.1f})")
+                print(f"  ✗ Fragment {candidate.get('fragment_id', 'unknown')[:20]}... failed MC (score={eval_result.mean_score:.1f}, var={eval_result.variance:.1f})")
         
         return survivors
     
