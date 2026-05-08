@@ -1,6 +1,7 @@
 {
-  "id": "frag_pharma_allergy_cross_reactivity",
-  "domain": "pharmacology",
+  "id": "frag_med_allergy_cross_reactivity",
+  "domain": "medical",
+  "subdomain": "pharmacology",
   "tags": [
     "allergy",
     "cross_reactivity",

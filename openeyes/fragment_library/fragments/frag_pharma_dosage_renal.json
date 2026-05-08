@@ -1,6 +1,7 @@
 {
-  "id": "frag_pharma_dosage_renal",
-  "domain": "pharmacology",
+  "id": "frag_med_dosage_renal",
+  "domain": "medical",
+  "subdomain": "pharmacology",
   "tags": [
     "dosage",
     "renal_adjustment",

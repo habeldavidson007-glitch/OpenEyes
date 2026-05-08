@@ -132,11 +132,13 @@ class OpenEyes:
         self.assembler = WurfelspielAssembler(dice_table=self.dice_table)
         
         # Initialize Philosophy Guard with domain rules
-        from openeyes.domain_rules import get_domain_rules
-        domain_rules = get_domain_rules(domain)
-        self.guard = PhilosophyGuard()
-        # Load domain-specific rules into guard
-        self.guard.rules = domain_rules
+        guard_config_path = Path(f"openeyes/domain_rules/{domain}.json")
+        if guard_config_path.exists():
+            self.guard = PhilosophyGuard(rules_config=str(guard_config_path))
+        else:
+            # Fall back to default E-AR rules if domain file doesn't exist
+            print(f"[OpenEyes] Warning: Domain rules not found for '{domain}', using defaults")
+            self.guard = PhilosophyGuard()
         
         # Initialize Obsidian connector
         self.obsidian = ObsidianConnector(vault_path=obsidian_vault_path)
@@ -304,12 +306,12 @@ class OpenEyes:
             # Evaluate composition
             eval_result = evaluate_composition(composition)
             
-            # Check survival criteria
+            # Check survival criteria (use attribute access, not dict syntax)
             survival_result = survives_mc(
-                score=eval_result["mean_score"],
-                selected=True,
-                variance=eval_result["variance"],
-                survival_probability=eval_result["survival_probability"],
+                score=eval_result.mean_score,
+                selected=[candidate.to_dict()],  # Pass list of dicts, not bool
+                variance=eval_result.variance,
+                survival_probability=eval_result.survival_probability,
                 aggregate_stats={},
                 score_threshold=self.MC_SCORE_THRESHOLD,
                 variance_threshold=self.MC_VARIANCE_THRESHOLD,
@@ -319,9 +321,9 @@ class OpenEyes:
             if survival_result["passed"]:
                 # This fragment survived
                 survivor_data = candidate.to_dict()
-                survivor_data["score"] = eval_result["mean_score"]
-                survivor_data["variance"] = eval_result["variance"]
-                survivor_data["survival_probability"] = eval_result["survival_probability"]
+                survivor_data["score"] = eval_result.mean_score
+                survivor_data["variance"] = eval_result.variance
+                survivor_data["survival_probability"] = eval_result.survival_probability
                 survivor_data["tags"] = candidate.domain_tags
                 
                 survivors.append(survivor_data)

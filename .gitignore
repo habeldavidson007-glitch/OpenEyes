@@ -4,31 +4,61 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.py~
 
 # Logs and temp files
 *.log
 *.tmp
-*.swp
 
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
 
-# Editors
-.vscode/
-.idea/
-
-# Test and coverage
+# Coverage
 .coverage
 coverage/
 htmlcov/
-.pytest_cache/
-.mypy_cache/
 
-# Build and distribution
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
 dist/
 build/
-*.egg-info/
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# Compression
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```

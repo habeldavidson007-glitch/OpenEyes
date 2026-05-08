@@ -1,6 +1,7 @@
 {
-  "id": "frag_pharma_nitrofurantoin_uti_001",
-  "domain": "pharmacology",
+  "id": "frag_med_nitrofurantoin_uti_001",
+  "domain": "medical",
+  "subdomain": "pharmacology",
   "tags": [
     "antibiotic",
     "uti",
