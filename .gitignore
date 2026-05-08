@@ -1,21 +1,64 @@
 ```
-# Python cache files
+# Logs
+logs/
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Dependencies
+node_modules/
+.venv/
+venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Compiled files
-*.o
-*.obj
-*.so
-*.a
-*.lib
-*.dll
-*.dylib
-*.exe
-
-# Build directories
-build/
+# Build artifacts
 dist/
+build/
+target/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System
+.DS_Store
+Thumbs.db
+
+# Testing and coverage
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Compression and archives
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
