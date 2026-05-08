@@ -1,16 +1,16 @@
 """
-Philosophy Guard - Rule-based filter that enforces E+ core design principles.
+Philosophy Guard - Rule-based filter that enforces domain-specific philosophy rules.
 
 The Philosophy Guard is a hard constraint system that rejects any proposal
-violating E+ fundamental rules, regardless of its performance score. This
+violating configured domain rules, regardless of its performance score. This
 replaces LLM-based criticism with deterministic, reproducible rule checking.
 
-Core E+ Philosophy Rules:
-1. Cognitive Simplicity - No construct should increase cognitive load unnecessarily
-2. Determinism - All constructs must map deterministically to target languages
-3. No Syntax Bloat - Avoid adding keywords or operators without strong justification
-4. Consistency - New constructs must be consistent with existing E+ patterns
-5. Beginner-First - Readability for learners takes priority over expert convenience
+Architecture:
+- Fixed enforcement engine (this module)
+- Configurable rule sets (live in openeyes/domain_rules/)
+
+For E-AR: Uses built-in E+ design principles (PHIL-001–005)
+For OpenEyes: Loads domain-specific rules from JSON config (medical, legal, etc.)
 """
 
 import json
@@ -19,57 +19,95 @@ from pathlib import Path
 
 
 class PhilosophyGuard:
-    """Rule-based filter for E+ philosophy compliance."""
+    """Rule-based filter for domain-specific philosophy compliance."""
     
-    # Core philosophy rules with IDs for tracking
-    RULES = {
+    # Core E-AR philosophy rules (used when no external config provided)
+    DEFAULT_RULES = {
         "cognitive_simplicity": {
             "id": "PHIL-001",
             "name": "Cognitive Simplicity",
             "description": "No construct should increase cognitive load unnecessarily",
+            "check_type": "built_in",
             "check_fn": "_check_cognitive_simplicity"
         },
         "determinism": {
             "id": "PHIL-002", 
             "name": "Deterministic Mapping",
             "description": "All constructs must map deterministically to target languages",
+            "check_type": "built_in",
             "check_fn": "_check_determinism"
         },
         "no_syntax_bloat": {
             "id": "PHIL-003",
             "name": "No Syntax Bloat", 
             "description": "Avoid adding keywords or operators without strong justification",
+            "check_type": "built_in",
             "check_fn": "_check_syntax_bloat"
         },
         "consistency": {
             "id": "PHIL-004",
             "name": "Consistency",
-            "description": "New constructs must be consistent with existing E+ patterns",
+            "description": "New constructs must be consistent with existing patterns",
+            "check_type": "built_in",
             "check_fn": "_check_consistency"
         },
         "beginner_first": {
             "id": "PHIL-005",
             "name": "Beginner-First",
             "description": "Readability for learners takes priority over expert convenience",
+            "check_type": "built_in",
             "check_fn": "_check_beginner_first"
         }
     }
     
-    def __init__(self, primitives_path: str = "evolution/primitives"):
+    def __init__(self, rules_config: Optional[str] = None,
+                 primitives_path: Optional[str] = None):
         """
         Initialize Philosophy Guard.
         
         Args:
+            rules_config: Path to JSON file containing domain-specific rules.
+                         If None, uses default E-AR rules.
             primitives_path: Path to directory containing primitive definitions
+                            (for E-AR consistency checks). Optional.
         """
-        self.primitives_path = Path(primitives_path)
+        self.rules_config_path = Path(rules_config) if rules_config else None
+        self.primitives_path = Path(primitives_path) if primitives_path else None
+        self.rules: Dict[str, Any] = {}
         self.existing_primitives: List[Dict] = []
-        self.load_existing_primitives()
+        
+        self._load_rules()
+        self._load_existing_primitives()
     
-    def load_existing_primitives(self) -> None:
-        """Load all existing primitives for consistency checks."""
-        if not self.primitives_path.exists():
-            print(f"⚠ Primitives directory not found: {self.primitives_path}")
+    def _load_rules(self) -> None:
+        """Load rules from config file or use defaults."""
+        if self.rules_config_path and self.rules_config_path.exists():
+            try:
+                with open(self.rules_config_path, "r") as f:
+                    config = json.load(f)
+                    self.rules = config.get("rules", [])
+                    self.domain = config.get("domain", "unknown")
+                    self.version = config.get("version", "0.1")
+                print(f"✓ Loaded {len(self.rules)} domain rules from {self.rules_config_path}")
+                print(f"  Domain: {self.domain}, Version: {self.version}")
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"⚠ Failed to load rules config {self.rules_config_path}: {e}")
+                print("  Falling back to default E-AR rules")
+                self.rules = list(self.DEFAULT_RULES.values())
+                self.domain = "e_ar"
+        else:
+            # Use default E-AR rules
+            self.rules = list(self.DEFAULT_RULES.values())
+            self.domain = "e_ar"
+            if self.rules_config_path:
+                print(f"⚠ Rules config not found: {self.rules_config_path}")
+                print("  Using default E-AR rules")
+            else:
+                print(f"✓ Using default E-AR rules ({len(self.rules)} rules)")
+    
+    def _load_existing_primitives(self) -> None:
+        """Load all existing primitives for consistency checks (E-AR only)."""
+        if not self.primitives_path or not self.primitives_path.exists():
             return
         
         for file in self.primitives_path.glob("*.json"):
@@ -77,10 +115,8 @@ class PhilosophyGuard:
                 with open(file, "r") as f:
                     data = json.load(f)
                     self.existing_primitives.extend(data)
-            except (json.JSONDecodeError, IOError) as e:
-                print(f"⚠ Failed to load primitive file {file}: {e}")
-        
-        print(f"✓ Loaded {len(self.existing_primitives)} existing primitives for consistency checks")
+            except (json.JSONDecodeError, IOError):
+                pass
     
     def validate_proposal(self, proposal: Dict) -> Dict[str, Any]:
         """
@@ -88,13 +124,15 @@ class PhilosophyGuard:
         
         Args:
             proposal: Proposal dict with keys like 'type', 'content', 'change_description'
+                     For OpenEyes: fragment dict with 'id', 'content', 'tags', 'source_url', etc.
         
         Returns:
             Validation result with pass/fail status and detailed feedback
         """
         results = {
             "proposal_id": proposal.get("id", "unknown"),
-            "proposal_type": proposal.get("type", "unknown"),
+            "proposal_type": proposal.get("type", proposal.get("domain", "unknown")),
+            "domain": self.domain,
             "passed": True,
             "rule_results": [],
             "rejected_by": [],
@@ -102,13 +140,12 @@ class PhilosophyGuard:
         }
         
         # Run each rule check
-        for rule_key, rule_def in self.RULES.items():
-            check_fn = getattr(self, rule_def["check_fn"])
-            rule_result = check_fn(proposal)
+        for rule in self.rules:
+            rule_result = self._apply_rule(rule, proposal)
             
             results["rule_results"].append({
-                "rule_id": rule_def["id"],
-                "rule_name": rule_def["name"],
+                "rule_id": rule.get("id", rule.get("check_type", "unknown")),
+                "rule_name": rule.get("name", rule.get("check_type", "unknown")),
                 "passed": rule_result["passed"],
                 "message": rule_result["message"],
                 "severity": rule_result.get("severity", "error")
@@ -116,12 +153,183 @@ class PhilosophyGuard:
             
             if not rule_result["passed"]:
                 results["passed"] = False
-                results["rejected_by"].append(rule_def["id"])
+                results["rejected_by"].append(rule.get("id", rule.get("check_type", "unknown")))
                 
                 if rule_result.get("severity") == "warning":
                     results["warnings"].append(rule_result["message"])
         
         return results
+    
+    def _apply_rule(self, rule: Dict, proposal: Dict) -> Dict[str, Any]:
+        """Apply a single rule to a proposal."""
+        check_type = rule.get("check_type", "")
+        config = rule.get("config", {})
+        
+        # Built-in E-AR rules
+        if check_type == "built_in":
+            check_fn = getattr(self, rule.get("check_fn", ""), None)
+            if check_fn:
+                return check_fn(proposal)
+        
+        # OpenEyes domain-specific rule types
+        elif check_type == "blacklist_tag_conflict":
+            return self._check_blacklist_tag(proposal, config)
+        elif check_type == "minimum_credibility_class":
+            return self._check_minimum_credibility(proposal, config)
+        elif check_type == "requires_field":
+            return self._check_requires_field(proposal, config)
+        elif check_type == "whitelist_domain":
+            return self._check_whitelist_domain(proposal, config)
+        elif check_type == "max_age_days":
+            return self._check_max_age(proposal, config)
+        elif check_type == "compatibility_check":
+            return self._check_compatibility(proposal, config)
+        
+        # Unknown rule type
+        return {
+            "passed": True,
+            "message": f"Unknown rule type: {check_type}",
+            "severity": "warning"
+        }
+    
+    def _check_blacklist_tag(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """Check if proposal contains any blacklisted tags."""
+        flag = config.get("flag", "")
+        tags = proposal.get("tags", [])
+        
+        if flag in tags:
+            return {
+                "passed": False,
+                "message": f"Proposal contains forbidden tag: {flag}",
+                "severity": "error"
+            }
+        
+        return {
+            "passed": True,
+            "message": f"No forbidden tag '{flag}' detected"
+        }
+    
+    def _check_minimum_credibility(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """Check if proposal meets minimum credibility class."""
+        allowed = config.get("allowed", [])
+        credibility = proposal.get("credibility_class", "")
+        
+        if not allowed:
+            return {
+                "passed": True,
+                "message": "No credibility requirements defined"
+            }
+        
+        if credibility not in allowed:
+            return {
+                "passed": False,
+                "message": f"Credibility class '{credibility}' not in allowed list: {allowed}",
+                "severity": "error"
+            }
+        
+        return {
+            "passed": True,
+            "message": f"Credibility class '{credibility}' meets requirements"
+        }
+    
+    def _check_requires_field(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """Check if proposal has required field."""
+        field = config.get("field", "")
+        
+        if not field:
+            return {
+                "passed": True,
+                "message": "No field requirement defined"
+            }
+        
+        value = proposal.get(field)
+        if value is None or value == "":
+            return {
+                "passed": False,
+                "message": f"Required field '{field}' is missing or empty",
+                "severity": "error"
+            }
+        
+        return {
+            "passed": True,
+            "message": f"Required field '{field}' present"
+        }
+    
+    def _check_whitelist_domain(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """Check if proposal domain is in whitelist."""
+        allowed_domains = config.get("domains", [])
+        domain = proposal.get("domain", "")
+        
+        if not allowed_domains:
+            return {
+                "passed": True,
+                "message": "No domain whitelist defined"
+            }
+        
+        if domain not in allowed_domains:
+            return {
+                "passed": False,
+                "message": f"Domain '{domain}' not in allowed list: {allowed_domains}",
+                "severity": "error"
+            }
+        
+        return {
+            "passed": True,
+            "message": f"Domain '{domain}' is allowed"
+        }
+    
+    def _check_max_age(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """Check if proposal content is not too old."""
+        from datetime import datetime, timedelta
+        
+        max_days = config.get("max_days", 365)
+        last_verified = proposal.get("last_verified", "")
+        
+        if not last_verified:
+            return {
+                "passed": False,
+                "message": "No last_verified date available",
+                "severity": "error"
+            }
+        
+        try:
+            verified_date = datetime.fromisoformat(last_verified.replace("Z", "+00:00"))
+            age = datetime.now(verified_date.tzinfo) - verified_date
+            if age.days > max_days:
+                return {
+                    "passed": False,
+                    "message": f"Content is {age.days} days old (max {max_days} days)",
+                    "severity": "error"
+                }
+        except (ValueError, TypeError):
+            return {
+                "passed": False,
+                "message": f"Invalid last_verified date format: {last_verified}",
+                "severity": "error"
+            }
+        
+        return {
+            "passed": True,
+            "message": f"Content verified within {max_days} days"
+        }
+    
+    def _check_compatibility(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """Check compatibility with other fragments (OpenEyes)."""
+        incompatible_with = proposal.get("incompatible_with", [])
+        context_fragments = config.get("context_fragments", [])
+        
+        conflicts = [f for f in incompatible_with if f in context_fragments]
+        if conflicts:
+            return {
+                "passed": False,
+                "message": f"Incompatible with context fragments: {conflicts}",
+                "severity": "error"
+            }
+        
+        return {
+            "passed": True,
+            "message": "No compatibility conflicts detected"
+        }
     
     def _check_cognitive_simplicity(self, proposal: Dict) -> Dict[str, Any]:
         """
