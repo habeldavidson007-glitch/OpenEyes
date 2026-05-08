@@ -1,6 +1,7 @@
 {
   "id": "frag_endo_diabetes_fasting_002",
   "domain": "medical",
+  "subdomain": "endocrinology",
   "tags": [
     "diabetes",
     "intermittent_fasting",
@@ -14,11 +15,10 @@
   "credibility_class": "clinical_guideline",
   "last_verified": "2026-05-08",
   "weight": 1.0,
-  "compatible_with": [],
+  "reasoning_role": "counter_argument",
+  "compatible_with": ["frag_endo_diabetes_fasting_001"],
   "incompatible_with": [],
-  "subdomain": null,
-  "reasoning_role": null,
-  "source_type": null,
-  "year": null,
-  "sub_question": null
+  "source_type": "secondary",
+  "year": 2026,
+  "sub_question": "What are the risks and contraindications of intermittent fasting for diabetics?"
 }

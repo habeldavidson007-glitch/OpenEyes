@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-08T17:02:36.883999",
-  "pattern_count": 26,
+  "last_updated": "2026-05-08T17:07:54.590805",
+  "pattern_count": 54,
   "patterns": [
     {
       "query_hash": "df94ad6f",
@@ -487,6 +487,529 @@
       "num_sources": 4,
       "confidence": 70.6,
       "timestamp": "2026-05-08T17:02:36.883908",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 71.2,
+      "timestamp": "2026-05-08T17:05:37.926880",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 72.6,
+      "timestamp": "2026-05-08T17:06:11.545636",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 71.8,
+      "timestamp": "2026-05-08T17:06:35.881123",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 73.6,
+      "timestamp": "2026-05-08T17:06:36.328691",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 71.9,
+      "timestamp": "2026-05-08T17:06:36.768216",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 73.2,
+      "timestamp": "2026-05-08T17:06:37.248000",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 71.1,
+      "timestamp": "2026-05-08T17:06:37.743293",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 73.3,
+      "timestamp": "2026-05-08T17:06:43.625971",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 72.8,
+      "timestamp": "2026-05-08T17:06:46.465691",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 75.1,
+      "timestamp": "2026-05-08T17:06:49.606197",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 73.3,
+      "timestamp": "2026-05-08T17:06:52.242355",
+      "success": true
+    },
+    {
+      "query_hash": "cc4216e9",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 71.3,
+      "timestamp": "2026-05-08T17:07:35.870162",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 71.9,
+      "timestamp": "2026-05-08T17:07:38.230818",
+      "success": true
+    },
+    {
+      "query_hash": "cc4216e9",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "definition",
+        "definition",
+        "counter_argument"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 70.4,
+      "timestamp": "2026-05-08T17:07:38.248191",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 73.0,
+      "timestamp": "2026-05-08T17:07:40.423378",
+      "success": true
+    },
+    {
+      "query_hash": "cc4216e9",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "definition",
+        "definition",
+        "counter_argument"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 71.6,
+      "timestamp": "2026-05-08T17:07:40.442239",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 70.7,
+      "timestamp": "2026-05-08T17:07:42.585763",
+      "success": true
+    },
+    {
+      "query_hash": "cc4216e9",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "definition",
+        "counter_argument",
+        "definition"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 71.3,
+      "timestamp": "2026-05-08T17:07:42.602483",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 72.2,
+      "timestamp": "2026-05-08T17:07:48.786693",
+      "success": true
+    },
+    {
+      "query_hash": "cc4216e9",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "definition",
+        "counter_argument",
+        "definition"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 67.2,
+      "timestamp": "2026-05-08T17:07:48.804966",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 73.6,
+      "timestamp": "2026-05-08T17:07:49.282354",
+      "success": true
+    },
+    {
+      "query_hash": "cc4216e9",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "definition",
+        "counter_argument",
+        "definition"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 68.9,
+      "timestamp": "2026-05-08T17:07:49.289015",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 73.6,
+      "timestamp": "2026-05-08T17:07:49.767083",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 72.3,
+      "timestamp": "2026-05-08T17:07:50.244296",
+      "success": true
+    },
+    {
+      "query_hash": "cc4216e9",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "definition",
+        "definition",
+        "counter_argument"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 70.7,
+      "timestamp": "2026-05-08T17:07:50.264481",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 73.5,
+      "timestamp": "2026-05-08T17:07:50.746266",
+      "success": true
+    },
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 74.0,
+      "timestamp": "2026-05-08T17:07:54.584139",
+      "success": true
+    },
+    {
+      "query_hash": "cc4216e9",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "definition",
+        "definition",
+        "counter_argument"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 70.1,
+      "timestamp": "2026-05-08T17:07:54.590735",
       "success": true
     }
   ]
