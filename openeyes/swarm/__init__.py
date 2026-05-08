@@ -68,6 +68,7 @@ class LibraryAgent:
         Retrieve fragments matching a sub-question.
         
         Uses semantic inverted index for precise retrieval.
+        Falls back to broad keyword scan if initial search yields too few results.
         
         Args:
             sub_question: The atomic sub-question to answer
@@ -92,6 +93,41 @@ class LibraryAgent:
                 for frag in fragments:
                     if frag.id not in fragment_ids:
                         fragment_ids.append(frag.id)
+        
+        # SEMANTIC INDEX FALLBACK: If still fewer than 3 candidates, do a broad scan
+        if len(fragment_ids) < 3:
+            print(f"[LibraryAgent] Low candidate count ({len(fragment_ids)}), triggering semantic fallback...")
+            # Scan all fragments for partial matches on tags and content
+            for frag_id, frag in self.library._fragments.items():
+                if frag_id in fragment_ids:
+                    continue
+                
+                # Check domain filter first
+                if domain and frag.domain != domain:
+                    continue
+                
+                # Check for keyword matches in tags, content, or sub_question
+                question_lower = sub_question.lower()
+                matched = False
+                
+                # Check tags
+                for tag in frag.tags:
+                    if tag.replace('_', ' ') in question_lower or tag in question_lower:
+                        matched = True
+                        break
+                
+                # Check content snippet
+                if not matched and question_lower in frag.content.lower():
+                    matched = True
+                
+                # Check sub_question field
+                if not matched and frag.sub_question:
+                    if any(word in frag.sub_question.lower() for word in question_lower.split()):
+                        matched = True
+                
+                if matched:
+                    fragment_ids.append(frag.id)
+                    print(f"[LibraryAgent] Fallback match: {frag.id}")
         
         # Build candidates from fragment IDs
         for frag_id in fragment_ids:
@@ -129,6 +165,7 @@ class LibraryAgent:
             )
             candidates.append(candidate)
         
+        print(f"[LibraryAgent] Retrieved {len(candidates)} candidates for: {sub_question[:50]}...")
         return candidates
     
     @staticmethod
@@ -142,11 +179,56 @@ class LibraryAgent:
             "should", "would", "may", "might", "must", "shall"
         }
         
-        # Simple tokenization
-        words = re.findall(r'\b[a-zA-Z]+\b', question.lower())
-        keywords = [w for w in words if w not in stop_words and len(w) > 2]
+        # Enhanced extraction: preserve underscores for compound terms
+        # and extract multi-word phrases
+        question_lower = question.lower()
         
-        return keywords[:5]  # Limit to top 5 keywords
+        # First, extract compound terms with underscores (e.g., pancreatic_cancer)
+        compound_terms = re.findall(r'\b[a-z]+_[a-z]+\b', question_lower)
+        
+        # Extract multi-word phrases (2-3 words) that might be important
+        # e.g., "cold weather", "steel beam", "intermittent fasting"
+        phrases = re.findall(r'\b([a-z]{3,}(?:\s+[a-z]{3,}){1,2})\b', question_lower)
+        
+        # Simple tokenization for single words
+        words = re.findall(r'\b[a-zA-Z]+(?:_[a-zA-Z]+)*\b', question_lower)
+        
+        # Combine all keyword types
+        all_keywords = []
+        all_keywords.extend(compound_terms)  # Keep underscores for compounds
+        all_keywords.extend([p.replace(' ', '_') for p in phrases if len(p.split()) > 1])  # Convert phrases to underscore format
+        all_keywords.extend([w for w in words if w not in stop_words and len(w) > 2])
+        
+        # Add reasoning roles to ensure we find definition/counter/latest fragments
+        all_keywords.extend(["definition", "counter_argument", "latest_data"])
+        
+        # Add synonyms for critical terms
+        synonym_map = {
+            "uti": ["urinary_tract_infection", "bladder_infection"],
+            "cancer": ["carcinoma", "tumor", "oncology"],
+            "diabetes": ["diabetic", "hyperglycemia", "insulin"],
+            "fasting": ["diet", "nutrition", "meal_timing"],
+            "methanol": ["poisoning", "toxicology", "antidote"],
+            "steel": ["metal", "beam", "structural"],
+            "cold": ["freezing", "low_temperature", "winter"],
+            "concrete": ["cement", "construction", "curing"],
+            "sourdough": ["levain", "starter", "fermentation", "bread"],
+            "rising": ["proofing", "leavening", "expansion"]
+        }
+        
+        for keyword in list(all_keywords):
+            if keyword in synonym_map:
+                all_keywords.extend(synonym_map[keyword])
+        
+        # Remove duplicates while preserving order
+        seen = set()
+        unique_keywords = []
+        for k in all_keywords:
+            if k not in seen:
+                seen.add(k)
+                unique_keywords.append(k)
+        
+        return unique_keywords[:15]  # Limit to top 15 keywords for broader search
 
 
 class APIAgent:

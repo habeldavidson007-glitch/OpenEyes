@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-08T11:41:11.927918",
-  "pattern_count": 3,
+  "last_updated": "2026-05-08T11:46:58.965501",
+  "pattern_count": 4,
   "patterns": [
     {
       "query_hash": "df94ad6f",
@@ -54,6 +54,23 @@
       "num_sources": 4,
       "confidence": 63.5,
       "timestamp": "2026-05-08T11:41:11.927855",
+      "success": true
+    },
+    {
+      "query_hash": "1ddff6f0",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition"
+      ],
+      "num_fragments": 2,
+      "num_sources": 2,
+      "confidence": 72.0,
+      "timestamp": "2026-05-08T11:46:58.965430",
       "success": true
     }
   ]
