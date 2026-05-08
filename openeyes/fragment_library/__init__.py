@@ -1,342 +1,379 @@
 """
-Fragment Library — Domain Knowledge Fragment Store
+OpenEyes Fragment Library
 
-Stores, indexes, and serves knowledge fragments. Manages fragment metadata:
-- Source and credibility class
-- Last-verified timestamp
-- Domain tags
-- Weight (from gene pool)
-- Compatibility rules
+Stores, indexes, and serves knowledge fragments with metadata:
+- source, credibility, last-verified timestamp
+- domain tags, weight (from gene pool)
+- compatibility rules
 
-Fragments are pre-existing, source-tagged pieces of knowledge. The system
-selects from these fragments rather than generating new text.
+Fragment Schema:
+{
+    "id": "frag_pharma_nitrofurantoin_uti_001",
+    "domain": "pharmacology",
+    "tags": ["antibiotic", "uti", "first_line", "safe_penicillin_allergy"],
+    "content": "Nitrofurantoin 100mg modified-release twice daily for 5 days...",
+    "source": "NICE Clinical Guideline NG109",
+    "source_url": "https://www.nice.org.uk/guidance/ng109",
+    "credibility_class": "clinical_guideline",
+    "last_verified": "2026-01-15",
+    "weight": 1.0,
+    "compatible_with": ["frag_pharma_allergy_cross_reactivity"],
+    "incompatible_with": ["frag_pharma_penicillin_class"]
+}
 """
 
 import json
 import hashlib
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import Dict, List, Optional, Any
+from dataclasses import dataclass, field, asdict
 from datetime import datetime
+
+
+@dataclass
+class Fragment:
+    """A knowledge fragment with metadata."""
+    id: str
+    domain: str
+    tags: List[str]
+    content: str
+    source: str
+    source_url: str
+    credibility_class: str
+    last_verified: str
+    weight: float = 1.0
+    compatible_with: List[str] = field(default_factory=list)
+    incompatible_with: List[str] = field(default_factory=list)
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+    
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> 'Fragment':
+        return cls(**data)
+    
+    def is_compatible(self, other_fragment_id: str) -> bool:
+        """Check if this fragment is compatible with another."""
+        return other_fragment_id not in self.incompatible_with
 
 
 class FragmentLibrary:
     """
-    Knowledge fragment storage and retrieval.
+    Store, index, and serve knowledge fragments.
     
-    Each fragment is a verified piece of domain knowledge with:
-    - Stable content-addressable ID (hash of source + content)
-    - Credibility class and source URL
-    - Domain tags for filtering
-    - Compatibility/incompatibility rules
+    Manages fragment metadata and provides retrieval methods
+    for the Swarm layer.
     """
     
-    def __init__(self, library_path: str = None, domain: str = "general"):
+    CREDIBILITY_CLASSES = [
+        "clinical_guideline",      # Highest - official guidelines
+        "peer_reviewed_study",     # High - published research
+        "textbook",                # High - established knowledge
+        "expert_consensus",        # Medium - expert agreement
+        "case_report",             # Lower - single case
+        "anecdotal"                # Lowest - not recommended
+    ]
+    
+    def __init__(self, storage_path: Optional[Path] = None):
         """
-        Initialize Fragment Library.
+        Initialize the fragment library.
         
         Args:
-            library_path: Path to fragment library JSON file or directory
-            domain: Default domain filter
+            storage_path: Path to store fragment JSON files. 
+                         If None, uses in-memory only.
         """
-        self.domain = domain
-        self.library_path = Path(library_path) if library_path else None
-        self.fragments: Dict[str, Dict] = {}
-        self.index: Dict[str, List[str]] = {}  # tag -> fragment_ids
+        self.storage_path = storage_path or Path(__file__).parent / "fragments"
+        self.storage_path.mkdir(parents=True, exist_ok=True)
         
-        if self.library_path:
-            self.load_library()
+        # In-memory index: fragment_id -> Fragment
+        self._fragments: Dict[str, Fragment] = {}
+        
+        # Domain index: domain -> [fragment_ids]
+        self._domain_index: Dict[str, List[str]] = {}
+        
+        # Tag index: tag -> [fragment_ids]
+        self._tag_index: Dict[str, List[str]] = {}
+        
+        # Load existing fragments
+        self._load_all_fragments()
     
-    def load_library(self) -> None:
-        """Load fragments from library path."""
-        if not self.library_path.exists():
-            print(f"⚠ Fragment library not found: {self.library_path}")
+    def _load_all_fragments(self):
+        """Load all fragments from storage."""
+        if not self.storage_path.exists():
             return
         
-        if self.library_path.is_file():
-            self._load_from_file(self.library_path)
-        elif self.library_path.is_dir():
-            for file in self.library_path.glob("*.json"):
-                self._load_from_file(file)
+        for fragment_file in self.storage_path.glob("*.json"):
+            try:
+                with open(fragment_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    fragment = Fragment.from_dict(data)
+                    self._register_fragment(fragment)
+            except (json.JSONDecodeError, KeyError, ValueError) as e:
+                print(f"Warning: Failed to load {fragment_file}: {e}")
     
-    def _load_from_file(self, filepath: Path) -> None:
-        """Load fragments from a single JSON file."""
-        try:
-            with open(filepath, 'r') as f:
-                data = json.load(f)
-                
-                if isinstance(data, list):
-                    fragments = data
-                elif isinstance(data, dict) and "fragments" in data:
-                    fragments = data["fragments"]
-                else:
-                    fragments = [data]
-                
-                for frag in fragments:
-                    self.add_fragment(frag, rebuild_index=False)
-            
-            self._rebuild_index()
-            print(f"✓ Loaded {len(self.fragments)} fragments from {filepath.name}")
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"⚠ Failed to load fragment file {filepath}: {e}")
+    def _register_fragment(self, fragment: Fragment):
+        """Register a fragment in all indices."""
+        self._fragments[fragment.id] = fragment
+        
+        # Update domain index
+        if fragment.domain not in self._domain_index:
+            self._domain_index[fragment.domain] = []
+        if fragment.id not in self._domain_index[fragment.domain]:
+            self._domain_index[fragment.domain].append(fragment.id)
+        
+        # Update tag index
+        for tag in fragment.tags:
+            if tag not in self._tag_index:
+                self._tag_index[tag] = []
+            if fragment.id not in self._tag_index[tag]:
+                self._tag_index[tag].append(fragment.id)
     
-    def add_fragment(self, fragment: Dict, rebuild_index: bool = True) -> str:
+    def _save_fragment(self, fragment: Fragment):
+        """Save a fragment to storage."""
+        if self.storage_path:
+            fragment_file = self.storage_path / f"{fragment.id}.json"
+            with open(fragment_file, 'w', encoding='utf-8') as f:
+                json.dump(fragment.to_dict(), f, indent=2)
+    
+    @staticmethod
+    def generate_fragment_id(content: str, source: str) -> str:
         """
-        Add a fragment to the library.
+        Generate a stable, content-addressable fragment ID.
+        
+        Uses hash of source + content for stability.
+        """
+        combined = f"{source}|{content}"
+        hash_value = hashlib.sha256(combined.encode('utf-8')).hexdigest()[:12]
+        return f"frag_{hash_value}"
+    
+    def add_fragment(
+        self,
+        domain: str,
+        tags: List[str],
+        content: str,
+        source: str,
+        source_url: str,
+        credibility_class: str,
+        last_verified: Optional[str] = None,
+        weight: float = 1.0,
+        compatible_with: Optional[List[str]] = None,
+        incompatible_with: Optional[List[str]] = None,
+        fragment_id: Optional[str] = None
+    ) -> Fragment:
+        """
+        Add a new fragment to the library.
         
         Args:
-            fragment: Fragment dict with required fields
-            rebuild_index: Whether to rebuild the search index
+            domain: Domain category (e.g., "pharmacology")
+            tags: List of descriptive tags
+            content: The actual knowledge content
+            source: Source name (e.g., "NICE Clinical Guideline NG109")
+            source_url: URL to the source
+            credibility_class: One of CREDIBILITY_CLASSES
+            last_verified: ISO date string, defaults to today
+            weight: Initial weight (default 1.0)
+            compatible_with: List of compatible fragment IDs
+            incompatible_with: List of incompatible fragment IDs
+            fragment_id: Optional custom ID, auto-generated if None
             
         Returns:
-            Fragment ID
+            The created Fragment
         """
-        # Generate stable ID if not provided
-        if "id" not in fragment:
-            content = fragment.get("content", "")
-            source = fragment.get("source", "")
-            id_input = f"{source}:{content}"
-            fragment["id"] = f"frag_{hashlib.md5(id_input.encode()).hexdigest()[:16]}"
+        if credibility_class not in self.CREDIBILITY_CLASSES:
+            raise ValueError(
+                f"Invalid credibility_class: {credibility_class}. "
+                f"Must be one of: {self.CREDIBILITY_CLASSES}"
+            )
         
-        # Set defaults
-        fragment.setdefault("domain", self.domain)
-        fragment.setdefault("weight", 1.0)
-        fragment.setdefault("last_verified", datetime.now().isoformat()[:10])
-        fragment.setdefault("compatible_with", [])
-        fragment.setdefault("incompatible_with", [])
+        if fragment_id is None:
+            fragment_id = self.generate_fragment_id(content, source)
         
-        self.fragments[fragment["id"]] = fragment
+        if last_verified is None:
+            last_verified = datetime.now().strftime("%Y-%m-%d")
         
-        if rebuild_index:
-            self._rebuild_index()
+        fragment = Fragment(
+            id=fragment_id,
+            domain=domain,
+            tags=tags,
+            content=content,
+            source=source,
+            source_url=source_url,
+            credibility_class=credibility_class,
+            last_verified=last_verified,
+            weight=weight,
+            compatible_with=compatible_with or [],
+            incompatible_with=incompatible_with or []
+        )
         
-        return fragment["id"]
+        self._register_fragment(fragment)
+        self._save_fragment(fragment)
+        
+        return fragment
     
-    def _rebuild_index(self) -> None:
-        """Rebuild the tag-based search index."""
-        self.index = {}
-        
-        for frag_id, frag in self.fragments.items():
-            tags = frag.get("tags", [])
-            domain = frag.get("domain", "general")
-            
-            # Index by domain
-            if domain not in self.index:
-                self.index[domain] = []
-            if frag_id not in self.index[domain]:
-                self.index[domain].append(frag_id)
-            
-            # Index by tags
-            for tag in tags:
-                if tag not in self.index:
-                    self.index[tag] = []
-                if frag_id not in self.index[tag]:
-                    self.index[tag].append(frag_id)
+    def get_fragment(self, fragment_id: str) -> Optional[Fragment]:
+        """Get a fragment by ID."""
+        return self._fragments.get(fragment_id)
     
-    def search(self, query: str, domain_filter: Optional[str] = None) -> List[Dict]:
-        """
-        Search for fragments matching a query.
-        
-        Args:
-            query: Search query string
-            domain_filter: Optional domain to filter by
-            
-        Returns:
-            List of matching fragment dicts
-        """
-        # Simple keyword-based search
-        # In production: use vector embeddings or BM25
-        
-        query_terms = set(query.lower().split())
-        results = []
-        
-        # Filter by domain if specified
-        candidates = self.fragments.values()
-        if domain_filter:
-            candidates = [f for f in candidates if f.get("domain") == domain_filter]
-        elif self.domain != "general":
-            # Use library's default domain if no explicit filter
-            candidates = [f for f in candidates if f.get("domain") == self.domain or 
-                         f.get("domain") in ["pharmacology", "medical"]]
-        
-        for frag in candidates:
-            score = self._score_fragment(frag, query_terms)
-            if score > 0:
-                results.append((score, frag))
-        
-        # Sort by score descending
-        results.sort(key=lambda x: x[0], reverse=True)
-        
-        return [frag for score, frag in results]
+    def get_fragments_by_domain(self, domain: str) -> List[Fragment]:
+        """Get all fragments in a domain."""
+        fragment_ids = self._domain_index.get(domain, [])
+        return [self._fragments[fid] for fid in fragment_ids if fid in self._fragments]
     
-    def _score_fragment(self, fragment: Dict, query_terms: set) -> float:
-        """
-        Score a fragment's relevance to query terms.
-        
-        Args:
-            fragment: Fragment dict
-            query_terms: Set of lowercase query terms
-            
-        Returns:
-            Relevance score (0.0 to 1.0)
-        """
-        score = 0.0
-        
-        # Check content match
-        content = fragment.get("content", "").lower()
-        for term in query_terms:
-            if term in content:
-                score += 0.3
-        
-        # Check tags match
-        tags = [t.lower() for t in fragment.get("tags", [])]
-        for term in query_terms:
-            if term in tags:
-                score += 0.5
-        
-        # Check domain match
-        if fragment.get("domain", "").lower() in query_terms:
-            score += 0.2
-        
-        return min(1.0, score)
-    
-    def get_fragment(self, fragment_id: str) -> Optional[Dict]:
-        """Get a specific fragment by ID."""
-        return self.fragments.get(fragment_id)
-    
-    def get_fragments_by_tag(self, tag: str) -> List[Dict]:
+    def get_fragments_by_tag(self, tag: str) -> List[Fragment]:
         """Get all fragments with a specific tag."""
-        fragment_ids = self.index.get(tag, [])
-        return [self.fragments[fid] for fid in fragment_ids if fid in self.fragments]
+        fragment_ids = self._tag_index.get(tag, [])
+        return [self._fragments[fid] for fid in fragment_ids if fid in self._fragments]
     
-    def get_compatible_fragments(self, fragment_id: str) -> List[Dict]:
-        """Get fragments compatible with a given fragment."""
-        fragment = self.get_fragment(fragment_id)
-        if not fragment:
+    def get_fragments_by_tags(self, tags: List[str], require_all: bool = False) -> List[Fragment]:
+        """
+        Get fragments matching tags.
+        
+        Args:
+            tags: List of tags to match
+            require_all: If True, fragment must have ALL tags. 
+                        If False, fragment must have ANY tag.
+        """
+        if not tags:
             return []
         
-        compatible_ids = fragment.get("compatible_with", [])
-        return [self.fragments[fid] for fid in compatible_ids if fid in self.fragments]
+        if require_all:
+            # Find fragments that have all specified tags
+            candidate_ids = set(self._tag_index.get(tags[0], []))
+            for tag in tags[1:]:
+                candidate_ids &= set(self._tag_index.get(tag, []))
+        else:
+            # Find fragments that have any of the specified tags
+            candidate_ids = set()
+            for tag in tags:
+                candidate_ids |= set(self._tag_index.get(tag, []))
+        
+        return [self._fragments[fid] for fid in candidate_ids if fid in self._fragments]
     
-    def check_compatibility(self, fragment_ids: List[str]) -> bool:
+    def search_fragments(
+        self,
+        query: str,
+        domain: Optional[str] = None,
+        min_credibility_class: Optional[str] = None
+    ) -> List[Fragment]:
         """
-        Check if a set of fragments are mutually compatible.
+        Search fragments by content/text match.
         
         Args:
-            fragment_ids: List of fragment IDs to check
+            query: Search string (case-insensitive)
+            domain: Optional domain filter
+            min_credibility_class: Minimum credibility threshold
             
         Returns:
-            True if all fragments are compatible, False otherwise
+            List of matching fragments, sorted by weight (descending)
         """
-        for fid in fragment_ids:
-            fragment = self.get_fragment(fid)
-            if not fragment:
+        results = []
+        query_lower = query.lower()
+        
+        # Determine minimum credibility index
+        min_cred_idx = 0
+        if min_credibility_class:
+            if min_credibility_class not in self.CREDIBILITY_CLASSES:
+                raise ValueError(f"Invalid credibility_class: {min_credibility_class}")
+            min_cred_idx = self.CREDIBILITY_CLASSES.index(min_credibility_class)
+        
+        for fragment in self._fragments.values():
+            # Domain filter
+            if domain and fragment.domain != domain:
                 continue
             
-            incompatible = fragment.get("incompatible_with", [])
-            for other_fid in fragment_ids:
-                if other_fid != fid and other_fid in incompatible:
-                    return False
+            # Credibility filter
+            if min_credibility_class:
+                frag_cred_idx = self.CREDIBILITY_CLASSES.index(fragment.credibility_class)
+                if frag_cred_idx < min_cred_idx:
+                    continue
+            
+            # Text search
+            if (query_lower in fragment.content.lower() or
+                query_lower in fragment.source.lower() or
+                any(query_lower in tag.lower() for tag in fragment.tags)):
+                results.append(fragment)
         
-        return True
+        # Sort by weight descending
+        results.sort(key=lambda f: f.weight, reverse=True)
+        return results
     
-    def update_weight(self, fragment_id: str, weight: float) -> None:
-        """Update a fragment's weight from the gene pool."""
-        if fragment_id in self.fragments:
-            # Clamp weight to valid range per spec
-            weight = max(0.1, min(2.0, weight))
-            self.fragments[fragment_id]["weight"] = round(weight, 2)
+    def update_fragment_weight(self, fragment_id: str, new_weight: float):
+        """Update a fragment's weight (called by survival_and_weights)."""
+        if fragment_id not in self._fragments:
+            raise KeyError(f"Fragment not found: {fragment_id}")
+        
+        # Clamp weight
+        new_weight = max(0.1, min(2.0, new_weight))
+        
+        self._fragments[fragment_id].weight = new_weight
+        self._save_fragment(self._fragments[fragment_id])
+    
+    def get_all_fragments(self) -> List[Fragment]:
+        """Get all fragments in the library."""
+        return list(self._fragments.values())
     
     def get_statistics(self) -> Dict[str, Any]:
         """Get library statistics."""
-        domains = {}
-        credibility_classes = {}
+        domain_counts = {d: len(ids) for d, ids in self._domain_index.items()}
         
-        for frag in self.fragments.values():
-            domain = frag.get("domain", "unknown")
-            cred_class = frag.get("credibility_class", "unknown")
-            
-            domains[domain] = domains.get(domain, 0) + 1
-            credibility_classes[cred_class] = credibility_classes.get(cred_class, 0) + 1
+        credibility_counts = {}
+        for frag in self._fragments.values():
+            cc = frag.credibility_class
+            credibility_counts[cc] = credibility_counts.get(cc, 0) + 1
         
         return {
-            "total_fragments": len(self.fragments),
-            "domains": domains,
-            "credibility_classes": credibility_classes,
-            "index_size": len(self.index)
+            "total_fragments": len(self._fragments),
+            "domains": domain_counts,
+            "credibility_distribution": credibility_counts,
+            "total_tags": len(self._tag_index),
+            "average_weight": sum(f.weight for f in self._fragments.values()) / len(self._fragments) if self._fragments else 0
         }
     
-    def save_library(self, filepath: Optional[str] = None) -> None:
-        """Save the library to a JSON file."""
-        output_path = Path(filepath) if filepath else self.library_path
+    def remove_fragment(self, fragment_id: str) -> bool:
+        """
+        Remove a fragment from the library.
         
-        if not output_path:
-            raise ValueError("No output path specified")
+        Returns True if removed, False if not found.
+        """
+        if fragment_id not in self._fragments:
+            return False
         
-        output_path.parent.mkdir(parents=True, exist_ok=True)
+        fragment = self._fragments[fragment_id]
         
-        data = {
-            "version": "0.1",
-            "last_updated": datetime.now().isoformat(),
-            "fragments": list(self.fragments.values())
-        }
+        # Remove from indices
+        del self._fragments[fragment_id]
         
-        with open(output_path, 'w') as f:
-            json.dump(data, f, indent=2)
+        if fragment.domain in self._domain_index:
+            if fragment_id in self._domain_index[fragment.domain]:
+                self._domain_index[fragment.domain].remove(fragment_id)
         
-        print(f"✓ Saved {len(self.fragments)} fragments to {output_path}")
+        for tag in fragment.tags:
+            if tag in self._tag_index:
+                if fragment_id in self._tag_index[tag]:
+                    self._tag_index[tag].remove(fragment_id)
+        
+        # Remove from storage
+        if self.storage_path:
+            fragment_file = self.storage_path / f"{fragment_id}.json"
+            if fragment_file.exists():
+                fragment_file.unlink()
+        
+        return True
 
 
-def create_sample_medical_library() -> FragmentLibrary:
-    """Create a sample medical fragment library for testing."""
-    library = FragmentLibrary(domain="medical")
-    
-    # Sample fragments per the spec
-    sample_fragments = [
-        {
-            "id": "frag_pharma_nitrofurantoin_uti_001",
-            "domain": "pharmacology",
-            "tags": ["antibiotic", "uti", "first_line", "safe_penicillin_allergy"],
-            "content": "Nitrofurantoin 100mg modified-release twice daily for 5 days is a first-line treatment for uncomplicated lower UTI in non-pregnant adults.",
-            "source": "NICE Clinical Guideline NG109",
-            "source_url": "https://www.nice.org.uk/guidance/ng109",
-            "credibility_class": "clinical_guideline",
-            "last_verified": "2026-01-15",
-            "weight": 1.0,
-            "compatible_with": ["frag_pharma_allergy_cross_reactivity", "frag_pharma_dosage_adjustment_renal"],
-            "incompatible_with": ["frag_pharma_penicillin_class"]
-        },
-        {
-            "id": "frag_pharma_allergy_cross_reactivity",
-            "domain": "pharmacology",
-            "tags": ["allergy", "penicillin", "cross_reactivity", "contraindication"],
-            "content": "Patients with penicillin allergy have <1% cross-reactivity with nitrofurantoin. Nitrofurantoin is considered safe for penicillin-allergic patients.",
-            "source": "British National Formulary (BNF)",
-            "source_url": "https://bnf.nice.org.uk/",
-            "credibility_class": "clinical_guideline",
-            "last_verified": "2026-01-10",
-            "weight": 1.0,
-            "compatible_with": ["frag_pharma_nitrofurantoin_uti_001"],
-            "incompatible_with": []
-        },
-        {
-            "id": "frag_pharma_trimethoprim_uti_002",
-            "domain": "pharmacology",
-            "tags": ["antibiotic", "uti", "second_line", "safe_penicillin_allergy"],
-            "content": "Trimethoprim 200mg twice daily for 5 days is an alternative first-line treatment for uncomplicated lower UTI, but resistance rates vary by region.",
-            "source": "NICE Clinical Guideline NG109",
-            "source_url": "https://www.nice.org.uk/guidance/ng109",
-            "credibility_class": "clinical_guideline",
-            "last_verified": "2026-01-15",
-            "weight": 0.95,
-            "compatible_with": ["frag_pharma_allergy_cross_reactivity"],
-            "incompatible_with": ["frag_pharma_penicillin_class"]
-        }
-    ]
-    
-    for frag in sample_fragments:
-        library.add_fragment(frag)
-    
-    return library
+# Convenience functions for direct usage
+_default_library: Optional[FragmentLibrary] = None
 
 
-__all__ = ["FragmentLibrary", "create_sample_medical_library"]
+def get_library(storage_path: Optional[Path] = None) -> FragmentLibrary:
+    """Get or create the default fragment library."""
+    global _default_library
+    if _default_library is None:
+        _default_library = FragmentLibrary(storage_path)
+    return _default_library
+
+
+def reset_library():
+    """Reset the default library (for testing)."""
+    global _default_library
+    _default_library = None

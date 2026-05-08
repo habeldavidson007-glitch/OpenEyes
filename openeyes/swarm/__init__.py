@@ -1,196 +1,217 @@
 """
-Swarm — Layer 1: Query Decomposition and Fragment Retrieval
+OpenEyes Swarm — Query Decomposition and Fragment Retrieval
 
-The Swarm breaks user queries into atomic sub-questions and dispatches 
-lightweight agents to retrieve candidate knowledge fragments from:
-- Local fragment library (fastest, pre-verified)
-- External domain APIs (PubMed, legal databases, etc.)
-- Live internet sources (slowest, requires credibility scoring)
+Layer 1 of the OpenEyes engine. Decomposes user queries into atomic
+sub-questions and dispatches agents to retrieve candidate fragments.
 
-Each agent is independent, runs in parallel, and does not share state.
-The Swarm collects candidates but does not evaluate correctness.
+Agent Types:
+- LibraryAgent: Retrieves from local fragment library (fastest)
+- APIAgent: Retrieves from external domain APIs (requires API keys)
+- WebAgent: Retrieves from live internet (slowest, credibility scoring required)
 """
 
-from typing import List, Dict, Any, Optional
+import re
+from typing import Dict, List, Optional, Any, Tuple
 from dataclasses import dataclass, field
-import hashlib
+from pathlib import Path
+import sys
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from openeyes.fragment_library import FragmentLibrary, Fragment
 
 
 @dataclass
 class FragmentCandidate:
-    """A candidate knowledge fragment retrieved by a Swarm agent."""
+    """A candidate fragment returned by a swarm agent."""
     fragment_id: str
     content: str
     source: str
-    source_url: Optional[str] = None
-    credibility_estimate: float = 0.5
-    domain_tags: List[str] = field(default_factory=list)
-    agent_type: str = "unknown"  # library, api, web
-    metadata: Dict[str, Any] = field(default_factory=dict)
+    source_url: str
+    credibility_estimate: float  # 0.0 to 1.0
+    domain_tags: List[str]
+    agent_type: str  # "library", "api", "web"
+    sub_question: str  # Which sub-question this addresses
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "fragment_id": self.fragment_id,
+            "content": self.content,
+            "source": self.source,
+            "source_url": self.source_url,
+            "credibility_estimate": self.credibility_estimate,
+            "domain_tags": self.domain_tags,
+            "agent_type": self.agent_type,
+            "sub_question": self.sub_question
+        }
 
 
 class LibraryAgent:
-    """Retrieves fragments from the local fragment library."""
+    """
+    Retrieves fragments from the local fragment library.
     
-    def __init__(self, fragment_library):
-        """
-        Args:
-            fragment_library: FragmentLibrary instance
-        """
-        self.library = fragment_library
+    Fastest agent type. Returns pre-verified fragments.
+    """
     
-    def retrieve(self, sub_question: str) -> List[FragmentCandidate]:
+    def __init__(self, library: FragmentLibrary):
+        self.library = library
+    
+    def retrieve(self, sub_question: str, domain: Optional[str] = None) -> List[FragmentCandidate]:
         """
         Retrieve fragments matching a sub-question.
         
         Args:
-            sub_question: Atomic sub-question string
+            sub_question: The atomic sub-question to answer
+            domain: Optional domain filter
             
         Returns:
-            List of FragmentCandidate objects
+            List of FragmentCandidates from the library
         """
-        fragments = self.library.search(sub_question)
         candidates = []
         
-        for frag in fragments:
-            candidate = FragmentCandidate(
-                fragment_id=frag["id"],
-                content=frag["content"],
-                source=frag.get("source", "Unknown"),
-                source_url=frag.get("source_url"),
-                credibility_estimate=self._estimate_credibility(frag),
-                domain_tags=frag.get("tags", []),
-                agent_type="library",
-                metadata={"last_verified": frag.get("last_verified"), "weight": frag.get("weight", 1.0)}
+        # Extract keywords from sub-question
+        keywords = self._extract_keywords(sub_question)
+        
+        # Search library by keywords
+        for keyword in keywords:
+            fragments = self.library.search_fragments(
+                query=keyword,
+                domain=domain
             )
-            candidates.append(candidate)
+            
+            for frag in fragments:
+                # Map credibility class to estimate
+                credibility_map = {
+                    "clinical_guideline": 0.95,
+                    "peer_reviewed_study": 0.85,
+                    "textbook": 0.80,
+                    "expert_consensus": 0.70,
+                    "case_report": 0.50,
+                    "anecdotal": 0.30
+                }
+                cred_estimate = credibility_map.get(frag.credibility_class, 0.50)
+                
+                candidate = FragmentCandidate(
+                    fragment_id=frag.id,
+                    content=frag.content,
+                    source=frag.source,
+                    source_url=frag.source_url,
+                    credibility_estimate=cred_estimate,
+                    domain_tags=[frag.domain] + frag.tags,
+                    agent_type="library",
+                    sub_question=sub_question
+                )
+                candidates.append(candidate)
         
-        return candidates
+        # Remove duplicates by fragment_id
+        seen = set()
+        unique_candidates = []
+        for c in candidates:
+            if c.fragment_id not in seen:
+                seen.add(c.fragment_id)
+                unique_candidates.append(c)
+        
+        return unique_candidates
     
-    def _estimate_credibility(self, fragment: Dict) -> float:
-        """Estimate credibility based on fragment metadata."""
-        credibility_class = fragment.get("credibility_class", "")
-        
-        # Credibility mapping per spec
-        credibility_map = {
-            "clinical_guideline": 0.95,
-            "peer_reviewed_study": 0.90,
-            "official_documentation": 0.85,
-            "textbook": 0.80,
-            "expert_consensus": 0.75,
-            "web_source": 0.50,
+    @staticmethod
+    def _extract_keywords(question: str) -> List[str]:
+        """Extract meaningful keywords from a question."""
+        # Remove common stop words
+        stop_words = {
+            "what", "is", "are", "the", "a", "an", "for", "with", 
+            "in", "on", "at", "to", "of", "and", "or", "but",
+            "how", "which", "when", "where", "why", "can", "could",
+            "should", "would", "may", "might", "must", "shall"
         }
         
-        base_score = credibility_map.get(credibility_class, 0.5)
+        # Simple tokenization
+        words = re.findall(r'\b[a-zA-Z]+\b', question.lower())
+        keywords = [w for w in words if w not in stop_words and len(w) > 2]
         
-        # Adjust for recency
-        last_verified = fragment.get("last_verified")
-        if last_verified:
-            # Simple decay model - reduce credibility if not verified in >1 year
-            from datetime import datetime
-            try:
-                verified_date = datetime.fromisoformat(last_verified)
-                days_old = (datetime.now() - verified_date).days
-                if days_old > 365:
-                    base_score *= 0.9  # 10% reduction
-                if days_old > 730:
-                    base_score *= 0.9  # Another 10% reduction
-            except (ValueError, TypeError):
-                pass
-        
-        return min(1.0, max(0.0, base_score))
+        return keywords[:5]  # Limit to top 5 keywords
 
 
 class APIAgent:
-    """Retrieves fragments from external domain APIs."""
+    """
+    Retrieves fragments from external domain APIs.
     
-    def __init__(self, domain: str = "general", api_configs: Optional[Dict] = None):
+    Examples: PubMed for medical, legal databases for law.
+    Requires API keys configuration.
+    """
+    
+    def __init__(self, api_configs: Optional[Dict[str, Any]] = None):
         """
+        Initialize with API configurations.
+        
         Args:
-            domain: Domain type (medical, legal, engineering, etc.)
-            api_configs: Optional dict with API keys and endpoints
+            api_configs: Dict with API endpoint configs per domain
         """
-        self.domain = domain
         self.api_configs = api_configs or {}
-        self._available = self._check_availability()
     
-    def _check_availability(self) -> bool:
-        """Check if required API keys are configured."""
-        # Placeholder - would check for actual API keys
-        return bool(self.api_configs.get("api_key"))
-    
-    def retrieve(self, sub_question: str) -> List[FragmentCandidate]:
+    def retrieve(self, sub_question: str, domain: str) -> List[FragmentCandidate]:
         """
         Retrieve fragments from external APIs.
         
+        Note: This is a placeholder implementation. Real implementation
+        would call actual APIs (PubMed, legal databases, etc.).
+        
         Args:
-            sub_question: Atomic sub-question string
+            sub_question: The atomic sub-question to answer
+            domain: Domain to determine which API to use
             
         Returns:
-            List of FragmentCandidate objects
+            List of FragmentCandidates from APIs
         """
-        if not self._available:
-            return []
-        
-        # Placeholder implementation
-        # In production: call PubMed API for medical, legal databases for legal, etc.
-        candidates = []
-        
-        # Simulated API response
-        if self.domain == "medical":
-            candidates.append(FragmentCandidate(
-                fragment_id=f"api_med_{hashlib.md5(sub_question.encode()).hexdigest()[:8]}",
-                content="[API Retrieved Content]",
-                source="PubMed API",
-                source_url="https://pubmed.ncbi.nlm.nih.gov/",
-                credibility_estimate=0.85,
-                domain_tags=["medical", "peer_reviewed"],
-                agent_type="api"
-            ))
-        
-        return candidates
+        # Placeholder - in production, this would call real APIs
+        # For now, return empty list with a note
+        print(f"[APIAgent] Would query external APIs for domain '{domain}': {sub_question}")
+        return []
+    
+    def configure_api(self, domain: str, config: Dict[str, Any]):
+        """Configure API settings for a domain."""
+        self.api_configs[domain] = config
 
 
 class WebAgent:
-    """Retrieves fragments from live internet sources."""
+    """
+    Retrieves fragments from live internet sources.
     
-    def __init__(self, credibility_threshold: float = 0.6):
+    Slowest agent type. Used only when library gaps are detected.
+    Requires credibility scoring via cross-referencing.
+    """
+    
+    def __init__(self, min_sources: int = 3):
         """
+        Initialize web agent.
+        
         Args:
-            credibility_threshold: Minimum credibility for web sources
+            min_sources: Minimum number of independent sources to verify a claim
         """
-        self.credibility_threshold = credibility_threshold
-        self._available = True  # Always available but low credibility
+        self.min_sources = min_sources
     
-    def retrieve(self, sub_question: str) -> List[FragmentCandidate]:
+    def retrieve(self, sub_question: str, domain: str) -> List[FragmentCandidate]:
         """
         Retrieve fragments from web sources.
         
+        Note: This is a placeholder implementation. Real implementation
+        would perform web searches and cross-reference claims.
+        
         Args:
-            sub_question: Atomic sub-question string
+            sub_question: The atomic sub-question to answer
+            domain: Domain for context
             
         Returns:
-            List of FragmentCandidate objects
+            List of FragmentCandidates from web (with reduced credibility)
         """
-        # Placeholder implementation
-        # In production: use search APIs, scrape authoritative sources
-        # Apply cross-verification: require ≥3 independent sources
+        # Placeholder - in production, this would:
+        # 1. Search web for the sub_question
+        # 2. Extract claims from search results
+        # 3. Cross-reference claims across multiple sources
+        # 4. Assign credibility based on source authority and consensus
         
-        candidates = []
-        
-        # Simulated web retrieval with reduced credibility
-        candidates.append(FragmentCandidate(
-            fragment_id=f"web_{hashlib.md5(sub_question.encode()).hexdigest()[:8]}",
-            content="[Web Retrieved Content]",
-            source="Web Search",
-            source_url=None,
-            credibility_estimate=0.50,  # Base web credibility
-            domain_tags=["web"],
-            agent_type="web",
-            metadata={"requires_verification": True}
-        ))
-        
-        return candidates
+        print(f"[WebAgent] Would search web for: {sub_question}")
+        return []
 
 
 class Swarm:
@@ -201,123 +222,187 @@ class Swarm:
     agents to retrieve candidate fragments in parallel.
     """
     
-    def __init__(self, fragment_library=None, internet_access: bool = True, 
-                 domain: str = "general", api_configs: Optional[Dict] = None):
+    def __init__(
+        self,
+        fragment_library: FragmentLibrary,
+        internet_access: bool = False,
+        api_configs: Optional[Dict[str, Any]] = None
+    ):
         """
-        Initialize Swarm.
+        Initialize the Swarm.
         
         Args:
-            fragment_library: FragmentLibrary instance
-            internet_access: Whether to allow web-based retrieval
-            domain: Domain type for API agent configuration
-            api_configs: Optional API configurations
+            fragment_library: The fragment library to search
+            internet_access: Whether to allow web searches (default False)
+            api_configs: Optional API configurations for external APIs
         """
-        self.fragment_library = fragment_library
+        self.library = fragment_library
         self.internet_access = internet_access
-        self.domain = domain
-        self.api_configs = api_configs or {}
         
         # Initialize agents
-        self.library_agent = LibraryAgent(fragment_library) if fragment_library else None
-        self.api_agent = APIAgent(domain=domain, api_configs=api_configs)
+        self.library_agent = LibraryAgent(fragment_library)
+        self.api_agent = APIAgent(api_configs)
         self.web_agent = WebAgent() if internet_access else None
     
-    def decompose_and_retrieve(self, query: str) -> List[FragmentCandidate]:
+    def decompose_query(self, query: str) -> List[str]:
         """
-        Decompose query and retrieve candidate fragments.
+        Decompose a user query into atomic sub-questions.
+        
+        Uses simple heuristic decomposition. In production, this could
+        use an LLM for more sophisticated decomposition.
         
         Args:
-            query: User's natural language query
+            query: The user's original query
             
         Returns:
-            List of FragmentCandidate objects from all agents
+            List of atomic sub-questions
         """
-        # Step 1: Decompose query into sub-questions
-        sub_questions = self._decompose_query(query)
+        sub_questions = []
         
-        # Step 2: Dispatch agents in parallel (simulated sequential for now)
+        # Heuristic: Look for compound questions with "and", "or", commas
+        # This is a simple implementation; production would use NLP
+        
+        # Check for "and" conjunctions
+        if " and " in query.lower():
+            parts = re.split(r'\s+and\s+', query, flags=re.IGNORECASE)
+            sub_questions.extend(parts)
+        # Check for comma-separated clauses
+        elif "," in query:
+            parts = query.split(",")
+            sub_questions.extend([p.strip() for p in parts if p.strip()])
+        else:
+            # Single question - try to identify implicit sub-questions
+            sub_questions = self._decompose_single_query(query)
+        
+        # Ensure we have at least one sub-question
+        if not sub_questions:
+            sub_questions = [query]
+        
+        return sub_questions
+    
+    def _decompose_single_query(self, query: str) -> List[str]:
+        """
+        Attempt to decompose a single query into implicit sub-questions.
+        
+        Uses pattern matching for common query structures.
+        """
+        sub_questions = []
+        query_lower = query.lower()
+        
+        # Pattern: "safest X for Y with Z" → "What X treats Y?" + "What contraindications with Z?"
+        safest_match = re.search(r'safest\s+(\w+)\s+for\s+(.+?)\s+with\s+(.+)', query_lower)
+        if safest_match:
+            target = safest_match.group(1)
+            condition = safest_match.group(2)
+            contraindication = safest_match.group(3)
+            
+            sub_questions = [
+                f"What {target}s treat {condition}?",
+                f"What is contraindicated with {contraindication}?",
+                f"What safety thresholds apply?"
+            ]
+            return sub_questions
+        
+        # Pattern: "best X for Y" → "What are options for X?" + "Which X is best for Y?"
+        best_match = re.search(r'best\s+(\w+)\s+for\s+(.+)', query_lower)
+        if best_match:
+            target = best_match.group(1)
+            condition = best_match.group(2)
+            
+            sub_questions = [
+                f"What {target}s exist?",
+                f"Which {target} is most effective for {condition}?",
+                f"What are the risks of {target}s?"
+            ]
+            return sub_questions
+        
+        # Default: return original as single sub-question
+        return [query]
+    
+    def decompose_and_retrieve(
+        self,
+        query: str,
+        domain: Optional[str] = None
+    ) -> List[FragmentCandidate]:
+        """
+        Decompose a query and retrieve candidate fragments.
+        
+        Args:
+            query: The user's original query
+            domain: Optional domain filter
+            
+        Returns:
+            List of all candidate fragments from all agents
+        """
+        # Step 1: Decompose query
+        sub_questions = self.decompose_query(query)
+        
+        # Step 2: Dispatch agents for each sub-question
         all_candidates = []
         
         for sub_q in sub_questions:
-            # Library agent
-            if self.library_agent:
-                candidates = self.library_agent.retrieve(sub_q)
-                all_candidates.extend(candidates)
+            # Library agent (always runs)
+            library_candidates = self.library_agent.retrieve(sub_q, domain)
+            all_candidates.extend(library_candidates)
             
-            # API agent
-            api_candidates = self.api_agent.retrieve(sub_q)
-            all_candidates.extend(api_candidates)
+            # API agent (runs if domain has configured APIs)
+            if domain and domain in self.api_agent.api_configs:
+                api_candidates = self.api_agent.retrieve(sub_q, domain)
+                all_candidates.extend(api_candidates)
             
-            # Web agent (only if library gaps detected)
-            if self.web_agent and len(all_candidates) < 2:
-                web_candidates = self.web_agent.retrieve(sub_q)
+            # Web agent (only if internet_access enabled AND library found nothing)
+            if self.internet_access and not library_candidates:
+                print(f"[Swarm] Library gap detected for: {sub_q}")
+                web_candidates = self.web_agent.retrieve(sub_q, domain)
                 all_candidates.extend(web_candidates)
         
-        # Step 3: Cross-verification - check for conflicting claims
+        # Step 3: Cross-verification check
+        # If multiple agents retrieved claims about same sub-question,
+        # reduce credibility for conflicting claims
         verified_candidates = self._cross_verify(all_candidates)
         
         return verified_candidates
     
-    def _decompose_query(self, query: str) -> List[str]:
-        """
-        Decompose a query into atomic sub-questions.
-        
-        Args:
-            query: User's natural language query
-            
-        Returns:
-            List of atomic sub-question strings
-        """
-        # Placeholder implementation
-        # In production: use NLP parsing or LLM for decomposition
-        
-        # Simple heuristic: split on conjunctions and question words
-        sub_questions = []
-        
-        # For demo: treat the whole query as one sub-question
-        # Real implementation would parse and decompose
-        if query.strip():
-            sub_questions.append(query.strip())
-        
-        # Example decomposition logic (commented out for now):
-        # if " and " in query.lower():
-        #     parts = query.lower().split(" and ")
-        #     sub_questions.extend([p.strip() + "?" for p in parts])
-        # else:
-        #     sub_questions.append(query)
-        
-        return sub_questions
-    
     def _cross_verify(self, candidates: List[FragmentCandidate]) -> List[FragmentCandidate]:
         """
-        Run consistency checks on candidates about the same sub-question.
+        Cross-verify candidates and adjust credibility for conflicts.
         
-        Conflicting claims both get forwarded with reduced credibility.
-        
-        Args:
-            candidates: List of FragmentCandidate objects
-            
-        Returns:
-            List of verified (or credibility-adjusted) candidates
+        When multiple sources make conflicting claims, reduce credibility.
         """
-        # Group candidates by content similarity
-        # Placeholder: simple deduplication
+        # Group by sub-question
+        by_subquestion: Dict[str, List[FragmentCandidate]] = {}
+        for c in candidates:
+            if c.sub_question not in by_subquestion:
+                by_subquestion[c.sub_question] = []
+            by_subquestion[c.sub_question].append(c)
         
-        seen_content = set()
         verified = []
-        
-        for candidate in candidates:
-            content_hash = hashlib.md5(candidate.content.encode()).hexdigest()
-            
-            if content_hash not in seen_content:
-                seen_content.add(content_hash)
-                verified.append(candidate)
+        for sub_q, cands in by_subquestion.items():
+            if len(cands) <= 1:
+                # No conflict possible
+                verified.extend(cands)
             else:
-                # Duplicate found - could increase credibility of existing
-                # For now, just skip
-                pass
+                # Check for conflicts (simplified: different content = potential conflict)
+                contents = set(c.content.lower().strip() for c in cands)
+                
+                if len(contents) > 1:
+                    # Potential conflict - reduce credibility
+                    for c in cands:
+                        c.credibility_estimate *= 0.7  # Reduce by 30%
+                
+                verified.extend(cands)
         
         return verified
-
-
-__all__ = ["Swarm", "FragmentCandidate", "LibraryAgent", "APIAgent", "WebAgent"]
+    
+    def get_decomposition(self, query: str) -> Dict[str, Any]:
+        """
+        Get the decomposition of a query without retrieving fragments.
+        
+        Useful for debugging and logging.
+        """
+        sub_questions = self.decompose_query(query)
+        return {
+            "original_query": query,
+            "sub_questions": sub_questions,
+            "num_sub_questions": len(sub_questions)
+        }

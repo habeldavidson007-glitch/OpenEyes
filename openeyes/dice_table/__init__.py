@@ -1,293 +1,512 @@
 """
-Dice Table — Layer 3: Würfel Spiel Fragment Assembler
+OpenEyes Dice Table — Würfelspiel Fragment Assembler
 
-Named after Mozart's 18th-century compositional game where dice rolls select 
-pre-written bars to build a minuet, the Dice Table layer selects Survivor 
-fragments and assembles them into a coherent output.
+Layer 3 of the OpenEyes engine. Given Survivor fragments (post-Monte Carlo),
+selects which fragments to include in the final answer and sequences them
+into a coherent chain using Musikalisches Würfelspiel (Musical Dice Game) theory.
 
-The Dice Table is a lookup matrix, not a model. It maps score ranges, domains, 
-and philosophical alignment values to selection rules. It is deterministic 
-given the same inputs.
+The Dice Table is a lookup matrix, not a model. It maps:
+(score range × domain × philosophy) → fragment selection rules
 """
 
 import json
+from typing import Dict, List, Optional, Any, Tuple
+from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Dict, Any, Optional, Tuple
-from dataclasses import dataclass
 
 
 @dataclass
 class DiceTableRow:
     """A single row in the Dice Table."""
-    score_range: Tuple[int, int]  # (min, max) inclusive
-    fragment_class: str
+    score_range: Tuple[int, int]  # [min, max] inclusive
+    fragment_class: str  # e.g., "first_line_treatment", "HALT"
     include_confidence_note: bool = False
     require_source_citation: bool = True
     halt_message: Optional[str] = None
+    priority: int = 0  # For ordering within same score range
+    
+    def matches_score(self, score: float) -> bool:
+        """Check if a score falls within this row's range."""
+        return self.score_range[0] <= score <= self.score_range[1]
+
+
+@dataclass
+class AssembledOutput:
+    """The final assembled output from the Dice Table."""
+    answer: str
+    confidence: float
+    fragments_used: List[Dict[str, Any]]
+    philosophy_checks_passed: List[str]
+    trace_id: str
+    halt: bool = False
+    halt_reason: Optional[str] = None
+    recommendation: Optional[str] = None
+    confidence_note: Optional[str] = None
+    
+    def to_dict(self) -> Dict[str, Any]:
+        result = {
+            "answer": self.answer,
+            "confidence": self.confidence,
+            "fragments_used": self.fragments_used,
+            "philosophy_checks_passed": self.philosophy_checks_passed,
+            "trace_id": self.trace_id,
+            "halt": self.halt
+        }
+        if self.halt_reason:
+            result["halt_reason"] = self.halt_reason
+        if self.recommendation:
+            result["recommendation"] = self.recommendation
+        if self.confidence_note:
+            result["confidence_note"] = self.confidence_note
+        return result
 
 
 class DiceTable:
     """
-    Fragment selection and assembly engine.
+    The Dice Table lookup matrix for fragment selection.
     
-    Given Survivor fragments (post-Monte Carlo), selects which fragments to 
-    include in the final answer and sequences them into a coherent chain.
+    Maps (Monte Carlo score range × domain × philosophy) to fragment
+    selection rules. Deterministic given the same inputs.
     """
     
-    def __init__(self, domain: str = "general", table_path: Optional[str] = None):
+    DEFAULT_SCORE_RANGES = [
+        (90, 100),   # High confidence
+        (70, 89),    # Medium confidence  
+        (60, 69),    # Low confidence (borderline)
+        (0, 59),     # Insufficient confidence → HALT
+    ]
+    
+    def __init__(self, config_path: Optional[Path] = None):
         """
-        Initialize Dice Table.
+        Initialize the Dice Table.
         
         Args:
-            domain: Domain type (medical, legal, engineering, etc.)
-            table_path: Optional path to custom Dice Table JSON file
+            config_path: Path to Dice Table JSON configuration.
+                        If None, uses default medical table.
         """
-        self.domain = domain
-        self.table_path = Path(table_path) if table_path else None
-        self.rows: List[DiceTableRow] = []
+        self.config_path = config_path
+        self.tables: Dict[str, Dict[str, Any]] = {}  # domain → philosophy → config
         
-        if self.table_path and self.table_path.exists():
-            self.load_table()
-        else:
-            self._load_default_table()
+        # Load default tables
+        self._load_default_tables()
+        
+        # Load custom config if provided
+        if config_path and config_path.exists():
+            self._load_config(config_path)
     
-    def load_table(self) -> None:
-        """Load Dice Table from JSON file."""
+    def _load_default_tables(self):
+        """Load built-in default Dice Tables."""
+        
+        # Default medical domain table
+        self.tables["medical"] = {
+            "do_no_harm": {
+                "domain": "medical",
+                "philosophy": "do_no_harm",
+                "rows": [
+                    {
+                        "score_range": [90, 100],
+                        "fragment_class": "first_line_treatment",
+                        "include_confidence_note": False,
+                        "require_source_citation": True,
+                        "priority": 1
+                    },
+                    {
+                        "score_range": [70, 89],
+                        "fragment_class": "second_line_with_caution",
+                        "include_confidence_note": True,
+                        "require_source_citation": True,
+                        "priority": 2
+                    },
+                    {
+                        "score_range": [60, 69],
+                        "fragment_class": "third_line_specialist_referral",
+                        "include_confidence_note": True,
+                        "require_source_citation": True,
+                        "priority": 3
+                    },
+                    {
+                        "score_range": [0, 59],
+                        "fragment_class": "HALT",
+                        "halt_message": "Insufficient confidence. Consult a specialist.",
+                        "require_source_citation": False,
+                        "priority": 4
+                    }
+                ]
+            }
+        }
+        
+        # Default legal domain table
+        self.tables["legal"] = {
+            "jurisdiction_consistency": {
+                "domain": "legal",
+                "philosophy": "jurisdiction_consistency",
+                "rows": [
+                    {
+                        "score_range": [90, 100],
+                        "fragment_class": "binding_precedent",
+                        "include_confidence_note": False,
+                        "require_source_citation": True,
+                        "priority": 1
+                    },
+                    {
+                        "score_range": [70, 89],
+                        "fragment_class": "persuasive_authority",
+                        "include_confidence_note": True,
+                        "require_source_citation": True,
+                        "priority": 2
+                    },
+                    {
+                        "score_range": [0, 69],
+                        "fragment_class": "HALT",
+                        "halt_message": "Insufficient legal authority. Consult an attorney.",
+                        "require_source_citation": False,
+                        "priority": 3
+                    }
+                ]
+            }
+        }
+        
+        # Default general domain table
+        self.tables["general"] = {
+            "evidence_based": {
+                "domain": "general",
+                "philosophy": "evidence_based",
+                "rows": [
+                    {
+                        "score_range": [90, 100],
+                        "fragment_class": "verified_fact",
+                        "include_confidence_note": False,
+                        "require_source_citation": True,
+                        "priority": 1
+                    },
+                    {
+                        "score_range": [70, 89],
+                        "fragment_class": "well_supported_claim",
+                        "include_confidence_note": False,
+                        "require_source_citation": True,
+                        "priority": 2
+                    },
+                    {
+                        "score_range": [60, 69],
+                        "fragment_class": "tentative_claim",
+                        "include_confidence_note": True,
+                        "require_source_citation": True,
+                        "priority": 3
+                    },
+                    {
+                        "score_range": [0, 59],
+                        "fragment_class": "HALT",
+                        "halt_message": "Insufficient evidence to provide an answer.",
+                        "require_source_citation": False,
+                        "priority": 4
+                    }
+                ]
+            }
+        }
+    
+    def _load_config(self, config_path: Path):
+        """Load custom Dice Table configuration from JSON."""
         try:
-            with open(self.table_path, 'r') as f:
-                data = json.load(f)
-                
-            self.rows = []
-            for row_data in data.get("rows", []):
-                score_range = tuple(row_data.get("score_range", [0, 100]))
-                row = DiceTableRow(
-                    score_range=score_range,
-                    fragment_class=row_data.get("fragment_class", ""),
-                    include_confidence_note=row_data.get("include_confidence_note", False),
-                    require_source_citation=row_data.get("require_source_citation", True),
-                    halt_message=row_data.get("halt_message")
-                )
-                self.rows.append(row)
+            with open(config_path, 'r', encoding='utf-8') as f:
+                config = json.load(f)
             
-            print(f"✓ Loaded {len(self.rows)} Dice Table rows from {self.table_path.name}")
+            # Config can contain multiple domain tables
+            if isinstance(config, list):
+                for table_config in config:
+                    self._register_table(table_config)
+            elif isinstance(config, dict):
+                self._register_table(config)
         except (json.JSONDecodeError, IOError) as e:
-            print(f"⚠ Failed to load Dice Table: {e}")
-            self._load_default_table()
+            print(f"Warning: Failed to load Dice Table config: {e}")
     
-    def _load_default_table(self) -> None:
-        """Load default Dice Table based on domain."""
-        # Default medical domain table per spec
-        if self.domain == "medical":
-            self.rows = [
-                DiceTableRow(
-                    score_range=(90, 100),
-                    fragment_class="first_line_treatment",
-                    include_confidence_note=False,
-                    require_source_citation=True
-                ),
-                DiceTableRow(
-                    score_range=(70, 89),
-                    fragment_class="second_line_with_caution",
-                    include_confidence_note=True,
-                    require_source_citation=True
-                ),
-                DiceTableRow(
-                    score_range=(0, 69),
-                    fragment_class="HALT",
-                    include_confidence_note=False,
-                    require_source_citation=False,
-                    halt_message="Insufficient confidence. Consult a specialist."
-                ),
-            ]
-        else:
-            # Generic table for other domains
-            self.rows = [
-                DiceTableRow(
-                    score_range=(80, 100),
-                    fragment_class="high_confidence",
-                    include_confidence_note=False,
-                    require_source_citation=True
-                ),
-                DiceTableRow(
-                    score_range=(60, 79),
-                    fragment_class="medium_confidence",
-                    include_confidence_note=True,
-                    require_source_citation=True
-                ),
-                DiceTableRow(
-                    score_range=(0, 59),
-                    fragment_class="HALT",
-                    include_confidence_note=False,
-                    require_source_citation=False,
-                    halt_message="Insufficient confidence for this domain."
-                ),
-            ]
+    def _register_table(self, table_config: Dict[str, Any]):
+        """Register a single Dice Table configuration."""
+        domain = table_config.get("domain", "general")
+        philosophy = table_config.get("philosophy", "evidence_based")
+        
+        if domain not in self.tables:
+            self.tables[domain] = {}
+        
+        self.tables[domain][philosophy] = table_config
     
-    def select_fragments(self, survivors: List[Dict]) -> Tuple[List[Dict], bool, Optional[str]]:
+    def lookup(
+        self,
+        score: float,
+        domain: str = "general",
+        philosophy: str = "evidence_based"
+    ) -> Optional[DiceTableRow]:
         """
-        Select fragments from survivors based on Dice Table rules.
+        Look up the Dice Table for a given score, domain, and philosophy.
         
         Args:
-            survivors: List of survivor fragment dicts with 'mean_score' field
+            score: Monte Carlo survival score (0-100)
+            domain: Domain name (e.g., "medical", "legal")
+            philosophy: Philosophy alignment (e.g., "do_no_harm")
             
         Returns:
-            Tuple of (selected_fragments, should_halt, halt_message)
+            Matching DiceTableRow, or None if no match found
         """
+        # Get table for domain/philosophy
+        domain_table = self.tables.get(domain, {})
+        table_config = domain_table.get(philosophy)
+        
+        if not table_config:
+            # Fall back to general domain
+            domain_table = self.tables.get("general", {})
+            table_config = domain_table.get(philosophy)
+        
+        if not table_config:
+            # Fall back to default general/evidence_based
+            table_config = self.tables.get("general", {}).get("evidence_based")
+        
+        if not table_config:
+            return None
+        
+        # Parse rows and find matching score range
+        rows = table_config.get("rows", [])
+        matching_rows = []
+        
+        for row_data in rows:
+            score_range = tuple(row_data.get("score_range", [0, 100]))
+            row = DiceTableRow(
+                score_range=score_range,
+                fragment_class=row_data.get("fragment_class", "unknown"),
+                include_confidence_note=row_data.get("include_confidence_note", False),
+                require_source_citation=row_data.get("require_source_citation", True),
+                halt_message=row_data.get("halt_message"),
+                priority=row_data.get("priority", 0)
+            )
+            
+            if row.matches_score(score):
+                matching_rows.append(row)
+        
+        if not matching_rows:
+            return None
+        
+        # Return highest priority match (lowest priority number)
+        matching_rows.sort(key=lambda r: r.priority)
+        return matching_rows[0]
+    
+    def get_all_tables(self) -> Dict[str, Dict[str, Any]]:
+        """Get all registered Dice Tables."""
+        return self.tables.copy()
+
+
+class WurfelspielAssembler:
+    """
+    Assembles Survivor fragments into coherent output using the Dice Table.
+    
+    Implements fragment sequencing rules:
+    1. Safety/contraindication fragments always appear before treatment fragments
+    2. Evidence-base fragments always appear before dosage fragments
+    3. Uncertainty notes always appear at the end
+    4. Every output includes a traceability footer
+    """
+    
+    # Fragment class ordering priorities (lower = earlier in output)
+    SEQUENCE_PRIORITY = {
+        "safety_warning": 1,
+        "contraindication": 2,
+        "allergy_cross_reactivity": 3,
+        "evidence_base": 4,
+        "first_line_treatment": 5,
+        "second_line_with_caution": 6,
+        "third_line_specialist_referral": 7,
+        "dosage_guidance": 8,
+        "monitoring_requirements": 9,
+        "uncertainty_note": 10,
+        "confidence_note": 11,
+        # Default for unknown classes
+        "unknown": 5
+    }
+    
+    def __init__(self, dice_table: Optional[DiceTable] = None):
+        """
+        Initialize the assembler.
+        
+        Args:
+            dice_table: DiceTable instance. Creates default if None.
+        """
+        self.dice_table = dice_table or DiceTable()
+    
+    def assemble(
+        self,
+        survivors: List[Dict[str, Any]],
+        domain: str = "general",
+        philosophy: str = "evidence_based",
+        trace_id: Optional[str] = None
+    ) -> AssembledOutput:
+        """
+        Assemble survivor fragments into final output.
+        
+        Args:
+            survivors: List of survivor fragments with scores
+            domain: Domain for Dice Table lookup
+            philosophy: Philosophy alignment for Dice Table lookup
+            trace_id: Unique identifier for this query trace
+            
+        Returns:
+            AssembledOutput with answer or HALT
+        """
+        import uuid
+        from datetime import datetime
+        
+        if trace_id is None:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            trace_id = f"oe_{timestamp}_{uuid.uuid4().hex[:4]}"
+        
         if not survivors:
-            return [], True, "No fragments survived Monte Carlo evaluation."
+            return AssembledOutput(
+                answer=None,
+                confidence=0.0,
+                fragments_used=[],
+                philosophy_checks_passed=[],
+                trace_id=trace_id,
+                halt=True,
+                halt_reason="No fragments survived Monte Carlo evaluation.",
+                recommendation="Consider reformulating your query or consulting a specialist."
+            )
         
-        selected = []
-        should_halt = False
-        halt_message = None
+        # Calculate average confidence
+        avg_score = sum(s.get("score", 0) for s in survivors) / len(survivors)
         
-        # Sort survivors by score descending
-        sorted_survivors = sorted(survivors, key=lambda x: x.get("mean_score", 0), reverse=True)
+        # Look up Dice Table
+        dice_row = self.dice_table.lookup(avg_score, domain, philosophy)
         
-        for survivor in sorted_survivors:
-            score = survivor.get("mean_score", 0)
-            
-            # Find matching row in Dice Table
-            matching_row = self._find_matching_row(score)
-            
-            if not matching_row:
-                continue
-            
-            if matching_row.fragment_class == "HALT":
-                should_halt = True
-                halt_message = matching_row.halt_message or "Insufficient confidence."
-                break
-            
-            # Add fragment to selection
-            selected.append({
-                **survivor,
-                "fragment_class": matching_row.fragment_class,
-                "include_confidence_note": matching_row.include_confidence_note,
-                "require_source_citation": matching_row.require_source_citation
+        if dice_row is None:
+            return AssembledOutput(
+                answer=None,
+                confidence=avg_score,
+                fragments_used=[],
+                philosophy_checks_passed=[],
+                trace_id=trace_id,
+                halt=True,
+                halt_reason=f"No Dice Table rule found for score {avg_score} in domain '{domain}'.",
+                recommendation="System configuration error. Please report this issue."
+            )
+        
+        # Check for HALT
+        if dice_row.fragment_class == "HALT":
+            return AssembledOutput(
+                answer=None,
+                confidence=avg_score,
+                fragments_used=[],
+                philosophy_checks_passed=[],
+                trace_id=trace_id,
+                halt=True,
+                halt_reason=dice_row.halt_message or "Insufficient confidence.",
+                recommendation="Consult a certified professional in this domain."
+            )
+        
+        # Sequence fragments according to rules
+        sequenced_fragments = self._sequence_fragments(survivors)
+        
+        # Build answer text
+        answer_text = self._build_answer_text(sequenced_fragments, dice_row)
+        
+        # Add confidence note if required
+        confidence_note = None
+        if dice_row.include_confidence_note:
+            confidence_note = (
+                f"Note: This answer has moderate confidence ({avg_score:.1f}%). "
+                f"Consider seeking additional verification."
+            )
+        
+        # Prepare fragments_used metadata
+        fragments_metadata = []
+        for frag in sequenced_fragments:
+            fragments_metadata.append({
+                "fragment_id": frag.get("fragment_id", "unknown"),
+                "content": frag.get("content", ""),
+                "score": frag.get("score", 0),
+                "source": frag.get("source", "Unknown"),
+                "source_url": frag.get("source_url", "")
             })
         
-        # Apply sequencing rules
-        if selected:
-            selected = self._sequence_fragments(selected)
-        
-        return selected, should_halt, halt_message
+        return AssembledOutput(
+            answer=answer_text,
+            confidence=round(avg_score, 1),
+            fragments_used=fragments_metadata,
+            philosophy_checks_passed=[f"{domain}_{philosophy}"],
+            trace_id=trace_id,
+            halt=False,
+            confidence_note=confidence_note
+        )
     
-    def _find_matching_row(self, score: float) -> Optional[DiceTableRow]:
-        """Find the Dice Table row matching a score."""
-        for row in self.rows:
-            min_score, max_score = row.score_range
-            if min_score <= score <= max_score:
-                return row
-        return None
-    
-    def _sequence_fragments(self, fragments: List[Dict]) -> List[Dict]:
+    def _sequence_fragments(self, survivors: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """
-        Sequence fragments according to domain-specific ordering rules.
+        Sequence fragments according to domain rules.
         
-        Rules (per spec):
-        1. Safety/contraindication fragments always appear before treatment fragments
-        2. Evidence-base fragments always appear before dosage fragments
-        3. Uncertainty notes always appear at the end
+        Rules:
+        1. Safety/contraindication fragments first
+        2. Evidence/treatment fragments middle
+        3. Dosage/monitoring fragments later
+        4. Uncertainty notes last
         """
-        # Priority order for fragment classes
-        priority_order = {
-            "contraindication": 0,
-            "safety": 1,
-            "allergy_cross_reactivity": 2,
-            "evidence_base": 3,
-            "first_line_treatment": 4,
-            "second_line_with_caution": 5,
-            "dosage_guidance": 6,
-            "high_confidence": 4,
-            "medium_confidence": 5,
-            "uncertainty_note": 99,
-        }
-        
-        def get_priority(fragment: Dict) -> int:
-            tags = fragment.get("tags", [])
-            fragment_class = fragment.get("fragment_class", "")
+        def get_priority(frag: Dict[str, Any]) -> int:
+            # Determine fragment class from tags or content
+            tags = frag.get("tags", [])
+            fragment_class = frag.get("fragment_class", "unknown")
             
-            # Check tags first
-            for tag in tags:
-                if tag in priority_order:
-                    return priority_order[tag]
+            # Infer class from tags if not explicit
+            if not fragment_class or fragment_class == "unknown":
+                if any(t in tags for t in ["safety", "warning", "contraindication", "fatal_interaction"]):
+                    fragment_class = "safety_warning"
+                elif any(t in tags for t in ["allergy", "cross_reactivity"]):
+                    fragment_class = "allergy_cross_reactivity"
+                elif any(t in tags for t in ["evidence", "guideline", "study"]):
+                    fragment_class = "evidence_base"
+                elif any(t in tags for t in ["first_line", "primary"]):
+                    fragment_class = "first_line_treatment"
+                elif any(t in tags for t in ["second_line", "alternative"]):
+                    fragment_class = "second_line_with_caution"
+                elif any(t in tags for t in ["dosage", "dose", "mg"]):
+                    fragment_class = "dosage_guidance"
+                elif any(t in tags for t in ["monitoring", "follow_up"]):
+                    fragment_class = "monitoring_requirements"
             
-            # Fall back to fragment class
-            return priority_order.get(fragment_class, 50)
+            return self.SEQUENCE_PRIORITY.get(fragment_class, 5)
         
         # Sort by priority
-        sequenced = sorted(fragments, key=get_priority)
-        
-        return sequenced
+        sorted_fragments = sorted(survivors, key=get_priority)
+        return sorted_fragments
     
-    def assemble_output(self, selected_fragments: List[Dict]) -> Dict[str, Any]:
-        """
-        Assemble selected fragments into final output structure.
+    def _build_answer_text(
+        self,
+        fragments: List[Dict[str, Any]],
+        dice_row: DiceTableRow
+    ) -> str:
+        """Build the final answer text from sequenced fragments."""
+        parts = []
         
-        Args:
-            selected_fragments: List of selected and sequenced fragments
-            
-        Returns:
-            Assembled output dict with answer, confidence, traceability info
-        """
-        if not selected_fragments:
-            return {
-                "answer": None,
-                "confidence": 0.0,
-                "fragments_used": [],
-                "traceability": None
-            }
-        
-        # Build answer text from fragments
-        answer_parts = []
-        total_confidence = 0.0
-        fragments_trace = []
-        
-        for frag in selected_fragments:
+        for i, frag in enumerate(fragments):
             content = frag.get("content", "")
-            score = frag.get("mean_score", 0)
             source = frag.get("source", "Unknown")
-            source_url = frag.get("source_url")
-            fragment_id = frag.get("fragment_id", "unknown")
             
-            answer_parts.append(content)
-            total_confidence += score
+            # Add fragment content
+            parts.append(content)
             
-            # Build trace entry
-            trace_entry = {
-                "fragment_id": fragment_id,
-                "score": score,
-                "source": source,
-                "fragment_class": frag.get("fragment_class", "unknown")
-            }
-            if source_url:
-                trace_entry["source_url"] = source_url
-            
-            fragments_trace.append(trace_entry)
-            
-            # Add confidence note if required
-            if frag.get("include_confidence_note"):
-                answer_parts.append(f"[Confidence: {score:.1f}%]")
+            # Add citation if required
+            if dice_row.require_source_citation:
+                source_url = frag.get("source_url", "")
+                if source_url:
+                    parts[-1] += f" [Source: {source}]({source_url})"
+                else:
+                    parts[-1] += f" [Source: {source}]"
         
-        # Calculate overall confidence
-        avg_confidence = total_confidence / len(selected_fragments) if selected_fragments else 0.0
+        # Join with newlines
+        answer = "\n\n".join(parts)
         
-        # Build traceability footer
-        traceability = {
-            "fragment_ids": [f["fragment_id"] for f in fragments_trace],
-            "average_confidence": round(avg_confidence, 2),
-            "sources": list(set(f["source"] for f in fragments_trace)),
-            "assembly_timestamp": None  # Will be set by caller
-        }
+        # Add traceability footer
+        fragment_ids = [f.get("fragment_id", "?") for f in fragments]
+        scores = [f.get("score", 0) for f in fragments]
         
-        # Join answer parts
-        answer = "\n\n".join(answer_parts)
+        footer_parts = [
+            "---",
+            f"**Trace ID:** {{trace_id_placeholder}}",
+            f"**Fragments:** {', '.join(fragment_ids)}",
+            f"**Scores:** {', '.join(f'{s:.1f}' for s in scores)}"
+        ]
+        answer += "\n\n" + "\n".join(footer_parts)
         
-        return {
-            "answer": answer,
-            "confidence": round(avg_confidence, 2),
-            "fragments_used": fragments_trace,
-            "traceability": traceability
-        }
-
-
-__all__ = ["DiceTable", "DiceTableRow"]
+        return answer

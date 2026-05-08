@@ -1,15 +1,15 @@
 """
-Domain Rules — Domain-Specific Philosophy Guard Rule Configs
+OpenEyes Domain Rules — Philosophy Guard Rule Configurations
 
-Provides domain-specific rule sets for the Philosophy Guard. Each domain has 
-a JSON config that defines what the guard checks.
+Provides domain-specific rule sets for the Philosophy Guard.
+Each domain has a JSON config that defines what the guard checks.
 
-Structure:
-- medical.json: Medical domain rules (do_no_harm, evidence_based, cite_source)
-- legal.json: Legal domain rules
-- engineering.json: Engineering domain rules
-- ethics.json: Ethics domain rules
-- general.json: General purpose rules
+Target structure:
+- medical.json
+- legal.json
+- engineering.json
+- ethics.json
+- general.json
 """
 
 import json
@@ -17,203 +17,306 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional
 
 
-class DomainRulesConfig:
-    """
-    Domain-specific rule configuration loader.
+# Default rule configurations embedded in code
+DEFAULT_RULES = {
+    "medical": {
+        "domain": "medical",
+        "version": "0.1",
+        "rules": [
+            {
+                "id": "MED-001",
+                "name": "Do No Harm",
+                "description": "No fragment may recommend a treatment with a known fatal interaction in the current patient context",
+                "check_type": "blacklist_tag_conflict",
+                "config": {"flag": "fatal_interaction"}
+            },
+            {
+                "id": "MED-002",
+                "name": "Evidence-Based Only",
+                "description": "All treatment fragments must have credibility_class of clinical_guideline or peer_reviewed_study",
+                "check_type": "minimum_credibility_class",
+                "config": {
+                    "allowed": ["clinical_guideline", "peer_reviewed_study"]
+                }
+            },
+            {
+                "id": "MED-003",
+                "name": "Cite Source",
+                "description": "Every fragment included in a medical answer must carry a source URL",
+                "check_type": "requires_field",
+                "config": {"field": "source_url"}
+            },
+            {
+                "id": "MED-004",
+                "name": "Recent Verification",
+                "description": "Medical fragments must be verified within the last 5 years",
+                "check_type": "max_verification_age",
+                "config": {"max_years": 5}
+            },
+            {
+                "id": "MED-005",
+                "name": "Contraindication Check",
+                "description": "Fragments with contraindication tags must be flagged",
+                "check_type": "require_warning_if_tagged",
+                "config": {"tags": ["contraindication", "black_box_warning"]}
+            }
+        ]
+    },
     
-    Loads and validates domain rule configurations for the Philosophy Guard.
+    "legal": {
+        "domain": "legal",
+        "version": "0.1",
+        "rules": [
+            {
+                "id": "LEG-001",
+                "name": "Jurisdiction Consistency",
+                "description": "All fragments must reference the same jurisdiction",
+                "check_type": "consistent_metadata",
+                "config": {"field": "jurisdiction"}
+            },
+            {
+                "id": "LEG-002",
+                "name": "Binding Authority Required",
+                "description": "Legal claims must come from binding precedent or statute",
+                "check_type": "minimum_credibility_class",
+                "config": {
+                    "allowed": ["binding_precedent", "statute", "regulation"]
+                }
+            },
+            {
+                "id": "LEG-003",
+                "name": "Cite Source",
+                "description": "Every legal fragment must include a citation",
+                "check_type": "requires_field",
+                "config": {"field": "citation"}
+            },
+            {
+                "id": "LEG-004",
+                "name": "No Expired Law",
+                "description": "Fragments must not reference repealed or expired laws",
+                "check_type": "blacklist_tag_conflict",
+                "config": {"flag": "repealed"}
+            }
+        ]
+    },
+    
+    "engineering": {
+        "domain": "engineering",
+        "version": "0.1",
+        "rules": [
+            {
+                "id": "ENG-001",
+                "name": "Safety Factor Compliance",
+                "description": "Engineering recommendations must meet minimum safety factors",
+                "check_type": "minimum_threshold",
+                "config": {"field": "safety_factor", "min_value": 1.5}
+            },
+            {
+                "id": "ENG-002",
+                "name": "Code Compliance",
+                "description": "Must reference applicable building/engineering codes",
+                "check_type": "requires_field",
+                "config": {"field": "code_reference"}
+            },
+            {
+                "id": "ENG-003",
+                "name": "Peer Review",
+                "description": "Engineering calculations must be peer-reviewed",
+                "check_type": "minimum_credibility_class",
+                "config": {
+                    "allowed": ["peer_reviewed", "code_specification", "standard"]
+                }
+            }
+        ]
+    },
+    
+    "ethics": {
+        "domain": "ethics",
+        "version": "0.1",
+        "rules": [
+            {
+                "id": "ETH-001",
+                "name": "Stakeholder Consideration",
+                "description": "Ethical analysis must consider all affected stakeholders",
+                "check_type": "requires_tags",
+                "config": {"min_tags": ["stakeholder_analysis"]}
+            },
+            {
+                "id": "ETH-002",
+                "name": "Principle Alignment",
+                "description": "Recommendations must align with established ethical principles",
+                "check_type": "whitelist_tag_only",
+                "config": {"allowed": ["beneficence", "non_maleficence", "autonomy", "justice"]}
+            }
+        ]
+    },
+    
+    "general": {
+        "domain": "general",
+        "version": "0.1",
+        "rules": [
+            {
+                "id": "GEN-001",
+                "name": "Source Required",
+                "description": "All claims must have a source",
+                "check_type": "requires_field",
+                "config": {"field": "source"}
+            },
+            {
+                "id": "GEN-002",
+                "name": "No Contradictions",
+                "description": "Fragments must not contradict each other",
+                "check_type": "consistency_check",
+                "config": {}
+            }
+        ]
+    }
+}
+
+
+class DomainRulesLoader:
+    """
+    Loads and manages domain-specific Philosophy Guard rules.
+    
+    Rules can be loaded from:
+    1. Embedded defaults (in this module)
+    2. JSON files in openeyes/domain_rules/
+    3. Custom paths provided at runtime
     """
     
-    def __init__(self, domain: str = "general", rules_dir: Optional[str] = None):
+    def __init__(self, rules_dir: Optional[Path] = None):
         """
-        Initialize Domain Rules Config.
+        Initialize the rules loader.
         
         Args:
-            domain: Domain type (medical, legal, engineering, ethics, general)
-            rules_dir: Optional path to rules directory
+            rules_dir: Directory containing domain rule JSON files.
+                      If None, uses default location.
         """
-        self.domain = domain
-        self.rules_dir = Path(rules_dir) if rules_dir else Path(__file__).parent
-        self.config: Dict[str, Any] = {}
-        self.rules: List[Dict] = []
-        
-        self.load_config()
+        self.rules_dir = rules_dir or Path(__file__).parent
+        self._cache: Dict[str, Dict[str, Any]] = {}
     
-    def load_config(self) -> None:
-        """Load domain rules from JSON file."""
-        config_file = self.rules_dir / f"{self.domain}.json"
-        
-        if config_file.exists():
-            try:
-                with open(config_file, 'r') as f:
-                    self.config = json.load(f)
-                self.rules = self.config.get("rules", [])
-                print(f"✓ Loaded {len(self.rules)} rules for domain '{self.domain}'")
-            except (json.JSONDecodeError, IOError) as e:
-                print(f"⚠ Failed to load domain rules: {e}")
-                self._load_default_rules()
-        else:
-            print(f"⚠ No rules file found for domain '{self.domain}', using defaults")
-            self._load_default_rules()
-    
-    def _load_default_rules(self) -> None:
-        """Load default rules based on domain."""
-        if self.domain == "medical":
-            self.config = {
-                "domain": "medical",
-                "version": "0.1",
-                "rules": [
-                    {
-                        "id": "MED-001",
-                        "name": "Do No Harm",
-                        "description": "No fragment may recommend a treatment with a known fatal interaction in the current patient context",
-                        "check_type": "blacklist_tag_conflict",
-                        "config": {"flag": "fatal_interaction"}
-                    },
-                    {
-                        "id": "MED-002",
-                        "name": "Evidence-Based Only",
-                        "description": "All treatment fragments must have credibility_class of clinical_guideline or peer_reviewed_study",
-                        "check_type": "minimum_credibility_class",
-                        "config": {"allowed": ["clinical_guideline", "peer_reviewed_study"]}
-                    },
-                    {
-                        "id": "MED-003",
-                        "name": "Cite Source",
-                        "description": "Every fragment included in a medical answer must carry a source URL",
-                        "check_type": "requires_field",
-                        "config": {"field": "source_url"}
-                    }
-                ]
-            }
-        else:
-            # Generic rules for other domains
-            self.config = {
-                "domain": self.domain,
-                "version": "0.1",
-                "rules": [
-                    {
-                        "id": f"{self.domain.upper()}-001",
-                        "name": "Source Required",
-                        "description": "All fragments must have a source attribution",
-                        "check_type": "requires_field",
-                        "config": {"field": "source"}
-                    },
-                    {
-                        "id": f"{self.domain.upper()}-002",
-                        "name": "Minimum Credibility",
-                        "description": "Fragments must meet minimum credibility threshold",
-                        "check_type": "minimum_credibility_score",
-                        "config": {"min_score": 0.6}
-                    }
-                ]
-            }
-        
-        self.rules = self.config.get("rules", [])
-    
-    def get_rules(self) -> List[Dict]:
-        """Get the list of rules for this domain."""
-        return self.rules
-    
-    def get_rule_by_id(self, rule_id: str) -> Optional[Dict]:
-        """Get a specific rule by ID."""
-        for rule in self.rules:
-            if rule.get("id") == rule_id:
-                return rule
-        return None
-    
-    def validate_fragment(self, fragment: Dict) -> Dict[str, Any]:
+    def get_rules(self, domain: str) -> Dict[str, Any]:
         """
-        Validate a fragment against all domain rules.
+        Get rules for a specific domain.
         
         Args:
-            fragment: Fragment dict to validate
+            domain: Domain name (e.g., "medical", "legal")
             
         Returns:
-            Validation result with pass/fail status and details
+            Rule configuration dict
         """
-        results = {
-            "fragment_id": fragment.get("id", "unknown"),
-            "passed": True,
-            "rule_results": [],
-            "rejected_by": [],
-            "warnings": []
-        }
+        # Check cache first
+        if domain in self._cache:
+            return self._cache[domain]
         
-        for rule in self.rules:
-            check_type = rule.get("check_type")
-            config = rule.get("config", {})
-            
-            rule_result = self._apply_rule(fragment, check_type, config)
-            
-            results["rule_results"].append({
-                "rule_id": rule.get("id"),
-                "rule_name": rule.get("name"),
-                "passed": rule_result["passed"],
-                "message": rule_result["message"]
-            })
-            
-            if not rule_result["passed"]:
-                results["passed"] = False
-                results["rejected_by"].append(rule.get("id"))
-                
-                if rule_result.get("severity") == "warning":
-                    results["warnings"].append(rule_result["message"])
+        # Try to load from file
+        rules_config = self._load_from_file(domain)
         
-        return results
+        # Fall back to defaults
+        if rules_config is None:
+            rules_config = DEFAULT_RULES.get(domain, DEFAULT_RULES["general"])
+        
+        # Cache and return
+        self._cache[domain] = rules_config
+        return rules_config
     
-    def _apply_rule(self, fragment: Dict, check_type: str, config: Dict) -> Dict[str, Any]:
-        """Apply a single rule check to a fragment."""
+    def _load_from_file(self, domain: str) -> Optional[Dict[str, Any]]:
+        """Load rules from a JSON file."""
+        config_file = self.rules_dir / f"{domain}.json"
         
-        if check_type == "requires_field":
-            field = config.get("field")
-            if field and field not in fragment:
-                return {
-                    "passed": False,
-                    "message": f"Missing required field: {field}",
-                    "severity": "error"
-                }
-            return {"passed": True, "message": f"Has required field: {field}"}
+        if not config_file.exists():
+            return None
         
-        elif check_type == "minimum_credibility_class":
-            allowed = config.get("allowed", [])
-            cred_class = fragment.get("credibility_class", "")
-            if cred_class not in allowed:
-                return {
-                    "passed": False,
-                    "message": f"Credibility class '{cred_class}' not in allowed list: {allowed}",
-                    "severity": "error"
-                }
-            return {"passed": True, "message": f"Credibility class '{cred_class}' is allowed"}
+        try:
+            with open(config_file, 'r', encoding='utf-8') as f:
+                config = json.load(f)
+            return config
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Warning: Failed to load rules from {config_file}: {e}")
+            return None
+    
+    def register_rules(self, domain: str, rules_config: Dict[str, Any]):
+        """
+        Register custom rules for a domain.
         
-        elif check_type == "blacklist_tag_conflict":
-            flag = config.get("flag")
-            tags = fragment.get("tags", [])
-            if flag and flag in tags:
-                return {
-                    "passed": False,
-                    "message": f"Fragment has blacklisted tag: {flag}",
-                    "severity": "error"
-                }
-            return {"passed": True, "message": f"No blacklisted tag '{flag}' found"}
+        Args:
+            domain: Domain name
+            rules_config: Rule configuration dict
+        """
+        self._cache[domain] = rules_config
+    
+    def save_rules_to_file(self, domain: str, rules_config: Dict[str, Any]):
+        """
+        Save rules to a JSON file.
         
-        elif check_type == "minimum_credibility_score":
-            min_score = config.get("min_score", 0.5)
-            score = fragment.get("credibility_estimate", 0.0)
-            if score < min_score:
-                return {
-                    "passed": False,
-                    "message": f"Credibility score {score:.2f} below minimum {min_score}",
-                    "severity": "error"
-                }
-            return {"passed": True, "message": f"Credibility score {score:.2f} meets minimum {min_score}"}
+        Args:
+            domain: Domain name
+            rules_config: Rule configuration dict
+        """
+        config_file = self.rules_dir / f"{domain}.json"
         
-        return {"passed": True, "message": "Rule check passed (unknown check type)"}
+        with open(config_file, 'w', encoding='utf-8') as f:
+            json.dump(rules_config, f, indent=2)
+        
+        # Update cache
+        self._cache[domain] = rules_config
+    
+    def list_available_domains(self) -> List[str]:
+        """List all domains with available rules."""
+        domains = set(DEFAULT_RULES.keys())
+        
+        # Add domains from files
+        if self.rules_dir.exists():
+            for config_file in self.rules_dir.glob("*.json"):
+                domain = config_file.stem
+                if domain != "__init__":
+                    domains.add(domain)
+        
+        return sorted(list(domains))
+    
+    def validate_rule_config(self, rules_config: Dict[str, Any]) -> bool:
+        """
+        Validate a rule configuration structure.
+        
+        Returns True if valid, raises ValueError if invalid.
+        """
+        if "domain" not in rules_config:
+            raise ValueError("Rule config must have 'domain' field")
+        
+        if "rules" not in rules_config:
+            raise ValueError("Rule config must have 'rules' list")
+        
+        if not isinstance(rules_config["rules"], list):
+            raise ValueError("'rules' must be a list")
+        
+        for i, rule in enumerate(rules_config["rules"]):
+            if "id" not in rule:
+                raise ValueError(f"Rule {i} missing 'id' field")
+            if "check_type" not in rule:
+                raise ValueError(f"Rule {rule.get('id', i)} missing 'check_type' field")
+        
+        return True
 
 
-def get_domain_rules(domain: str = "general") -> DomainRulesConfig:
-    """Convenience function to get domain rules config."""
-    return DomainRulesConfig(domain=domain)
+# Convenience functions
+_default_loader: Optional[DomainRulesLoader] = None
 
 
-__all__ = ["DomainRulesConfig", "get_domain_rules"]
+def get_loader(rules_dir: Optional[Path] = None) -> DomainRulesLoader:
+    """Get or create the default rules loader."""
+    global _default_loader
+    if _default_loader is None:
+        _default_loader = DomainRulesLoader(rules_dir)
+    return _default_loader
+
+
+def get_domain_rules(domain: str) -> Dict[str, Any]:
+    """Get rules for a specific domain."""
+    loader = get_loader()
+    return loader.get_rules(domain)
+
+
+def reset_loader():
+    """Reset the default loader (for testing)."""
+    global _default_loader
+    _default_loader = None

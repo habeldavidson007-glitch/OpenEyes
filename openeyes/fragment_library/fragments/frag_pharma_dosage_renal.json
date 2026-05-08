@@ -1,0 +1,17 @@
+{
+  "id": "frag_pharma_dosage_renal",
+  "domain": "pharmacology",
+  "tags": [
+    "dosage",
+    "renal_adjustment",
+    "safety"
+  ],
+  "content": "Nitrofurantoin requires dose adjustment in renal impairment (eGFR <45 mL/min). Avoid if eGFR <30 mL/min.",
+  "source": "NICE Clinical Guideline NG109",
+  "source_url": "https://www.nice.org.uk/guidance/ng109",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": []
+}
