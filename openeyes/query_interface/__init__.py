@@ -296,7 +296,8 @@ class OpenEyes:
             survivors=fragments,
             domain=self.domain,
             philosophy="do_no_harm" if self.domain == "medical" else "evidence_based",
-            trace_id=None  # Will be auto-generated
+            trace_id=None,  # Will be auto-generated
+            original_query=query_text  # CRITICAL FIX: Pass original query for relevance filtering
         )
         
         return assembly.to_dict()

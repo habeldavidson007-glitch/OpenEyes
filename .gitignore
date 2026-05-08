@@ -6,28 +6,32 @@ __pycache__/
 *.pyd
 
 # Environment
-.venv/
-venv/
 .env
 .env.local
-*.env.*
+.env.*
 
-# Logs
+# Logs and temporary files
 *.log
+*.tmp
+*.swp
+
+# Editors
+.vscode/
+.idea/
 
 # Coverage
 .coverage
 coverage/
 htmlcov/
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
+# MyPy
+.mypy_cache/
 
-# OS
-.DS_Store
-Thumbs.db
+# Pytest
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
 ```

@@ -334,7 +334,8 @@ class WurfelspielAssembler:
         survivors: List[Dict[str, Any]],
         domain: str = "general",
         philosophy: str = "evidence_based",
-        trace_id: Optional[str] = None
+        trace_id: Optional[str] = None,
+        original_query: Optional[str] = None  # NEW: Added original query parameter
     ) -> AssembledOutput:
         """
         Assemble survivor fragments into final output.
@@ -344,6 +345,7 @@ class WurfelspielAssembler:
             domain: Domain for Dice Table lookup
             philosophy: Philosophy alignment for Dice Table lookup
             trace_id: Unique identifier for this query trace
+            original_query: The original user query for relevance filtering
             
         Returns:
             AssembledOutput with answer or HALT
@@ -365,6 +367,22 @@ class WurfelspielAssembler:
                 halt=True,
                 halt_reason="No fragments survived Monte Carlo evaluation.",
                 recommendation="Consider reformulating your query or consulting a specialist."
+            )
+        
+        # CRITICAL FIX: Filter fragments by relevance to original query
+        if original_query:
+            survivors = self._filter_by_query_relevance(survivors, original_query)
+        
+        if not survivors:
+            return AssembledOutput(
+                answer=None,
+                confidence=0.0,
+                fragments_used=[],
+                philosophy_checks_passed=[],
+                trace_id=trace_id,
+                halt=True,
+                halt_reason="No fragments relevant to the query survived filtering.",
+                recommendation="The system lacks verified knowledge on this specific topic."
             )
         
         # Calculate average confidence
@@ -401,8 +419,8 @@ class WurfelspielAssembler:
         # Sequence fragments according to rules
         sequenced_fragments = self._sequence_fragments(survivors)
         
-        # Build answer text
-        answer_text = self._build_answer_text(sequenced_fragments, dice_row)
+        # Build answer text with original query context
+        answer_text = self._build_answer_text(sequenced_fragments, dice_row, original_query)
         
         # Add confidence note if required
         confidence_note = None
@@ -435,6 +453,78 @@ class WurfelspielAssembler:
             halt=False,
             confidence_note=confidence_note
         )
+    
+    def _filter_by_query_relevance(self, fragments: List[Dict[str, Any]], original_query: str) -> List[Dict[str, Any]]:
+        """
+        Filter fragments to only include those relevant to the original query.
+        
+        Uses keyword matching between query and fragment's sub_question field.
+        This prevents wrong-domain fragments from being used in answers.
+        """
+        if not fragments:
+            return []
+        
+        # Extract keywords from original query
+        query_keywords = self._extract_keywords(original_query)
+        
+        filtered = []
+        for frag in fragments:
+            # Get sub_question from fragment (set by LibraryAgent during retrieval)
+            sub_question = frag.get("sub_question", "")
+            
+            if not sub_question:
+                # If no sub_question, check content and tags as fallback
+                content = frag.get("content", "").lower()
+                tags = " ".join(frag.get("domain_tags", [])).lower()
+                text_to_check = f"{content} {tags}"
+            else:
+                text_to_check = sub_question.lower()
+            
+            # Check if any query keyword appears in sub_question or content/tags
+            keyword_match = any(kw in text_to_check for kw in query_keywords)
+            
+            if keyword_match:
+                filtered.append(frag)
+        
+        # If filtering removed everything, return original list (fallback)
+        if not filtered:
+            print(f"[DiceTable] Warning: Query relevance filter removed all fragments. Using original list.")
+            return fragments
+        
+        print(f"[DiceTable] Filtered {len(fragments)} → {len(filtered)} fragments based on query relevance")
+        return filtered
+    
+    def _extract_keywords(self, text: str) -> List[str]:
+        """Extract meaningful keywords from text."""
+        import re
+        
+        # Remove common stop words
+        stop_words = {
+            'what', 'are', 'the', 'is', 'it', 'for', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'of',
+            'a', 'an', 'how', 'do', 'does', 'did', 'will', 'would', 'could', 'should', 'can', 'may',
+            'if', 'then', 'else', 'when', 'where', 'why', 'which', 'who', 'whom', 'whose', 'this',
+            'that', 'these', 'those', 'i', 'you', 'he', 'she', 'we', 'they', 'them', 'his', 'her',
+            'my', 'your', 'our', 'their', 'its', 'about', 'into', 'through', 'during', 'before',
+            'after', 'above', 'below', 'between', 'under', 'again', 'further', 'once', 'here', 'there',
+            'all', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only',
+            'own', 'same', 'so', 'than', 'too', 'very', 'just', 'also', 'now', 'from', 'with', 'as'
+        }
+        
+        # Extract words (alphanumeric, min 3 chars)
+        words = re.findall(r'\b[a-zA-Z]{3,}\b', text.lower())
+        
+        # Filter out stop words and return unique keywords
+        keywords = [w for w in words if w not in stop_words]
+        
+        # Return unique keywords preserving order
+        seen = set()
+        unique_keywords = []
+        for kw in keywords:
+            if kw not in seen:
+                seen.add(kw)
+                unique_keywords.append(kw)
+        
+        return unique_keywords
     
     def _sequence_fragments(self, survivors: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """
@@ -477,7 +567,8 @@ class WurfelspielAssembler:
     def _build_answer_text(
         self,
         fragments: List[Dict[str, Any]],
-        dice_row: DiceTableRow
+        dice_row: DiceTableRow,
+        original_query: Optional[str] = None  # NEW parameter
     ) -> str:
         """Build the final answer text from sequenced fragments."""
         parts = []
