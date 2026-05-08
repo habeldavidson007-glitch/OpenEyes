@@ -18,5 +18,21 @@
     "id": "frag_pharma_trimethoprim_uti_002",
     "content": "Trimethoprim 200mg twice daily for 5 days is an alternative first-line treatment for uncomplicated lower UTI, but resistance rates vary by region.",
     "weight": 1.49
+  },
+  "frag_001": {
+    "id": "frag_001",
+    "tags": [
+      "medical",
+      "antibiotic"
+    ],
+    "weight": 0.95
+  },
+  "frag_003": {
+    "id": "frag_003",
+    "tags": [
+      "medical",
+      "dosage"
+    ],
+    "weight": 0.95
   }
 }
