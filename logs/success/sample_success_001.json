@@ -1,0 +1,41 @@
+[
+  {
+    "query": "Is intermittent fasting safe for diabetics?",
+    "domain": "medical",
+    "timestamp": "2025-01-14T10:30:00Z",
+    "confidence": 76.2,
+    "halt": false,
+    "answer_fragments": [
+      {"fragment_id": "frag_endo_diabetes_fasting_001", "score": 82.5, "reasoning_role": "definition"},
+      {"fragment_id": "frag_endo_diabetes_fasting_002", "score": 78.3, "reasoning_role": "counter_argument"},
+      {"fragment_id": "frag_endo_diabetes_fasting_003", "score": 80.1, "reasoning_role": "latest_data"}
+    ],
+    "trace_id": "trace_20250114_001"
+  },
+  {
+    "query": "What happens if you drink methanol?",
+    "domain": "medical",
+    "timestamp": "2025-01-14T11:15:00Z",
+    "confidence": 74.8,
+    "halt": false,
+    "answer_fragments": [
+      {"fragment_id": "frag_tox_methanol_poisoning_001", "score": 79.2, "reasoning_role": "definition"},
+      {"fragment_id": "frag_tox_methanol_poisoning_002", "score": 76.5, "reasoning_role": "counter_argument"},
+      {"fragment_id": "frag_tox_methanol_poisoning_003", "score": 77.8, "reasoning_role": "latest_data"}
+    ],
+    "trace_id": "trace_20250114_002"
+  },
+  {
+    "query": "What are early symptoms of pancreatic cancer?",
+    "domain": "medical",
+    "timestamp": "2025-01-14T14:20:00Z",
+    "confidence": 75.5,
+    "halt": false,
+    "answer_fragments": [
+      {"fragment_id": "frag_onc_pancreatic_cancer_001", "score": 81.0, "reasoning_role": "definition"},
+      {"fragment_id": "frag_onc_pancreatic_cancer_002", "score": 77.2, "reasoning_role": "counter_argument"},
+      {"fragment_id": "frag_onc_pancreatic_cancer_003", "score": 79.5, "reasoning_role": "latest_data"}
+    ],
+    "trace_id": "trace_20250114_003"
+  }
+]

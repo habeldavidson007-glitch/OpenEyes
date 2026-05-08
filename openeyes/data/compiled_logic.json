@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-05-08T08:26:48.726028",
+  "synapses": [
+    {
+      "synapse_id": "synapse_c8f7aa5a",
+      "fragment_chain": [
+        "frag_tox_methanol_poisoning_001",
+        "frag_tox_methanol_poisoning_002",
+        "frag_tox_methanol_poisoning_003"
+      ],
+      "trigger_keywords": [
+        "happens",
+        "you",
+        "drink",
+        "methanol?"
+      ],
+      "avg_confidence": 75.4,
+      "usage_count": 1,
+      "created_at": "2026-05-08T08:26:48.725463",
+      "last_used": "2026-05-08T08:26:48.725998",
+      "metadata": {
+        "source": "monte_carlo_compilation",
+        "original_query_length": 35,
+        "fragment_count": 3
+      }
+    }
+  ]
+}

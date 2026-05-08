@@ -31,6 +31,9 @@ from shared_core.survival_and_weights import survives_mc, load_gene_pool, save_g
 from shared_core.philosophy_guard import PhilosophyGuard
 from shared_core.obsidian_connector import ObsidianReporter as ObsidianConnector
 
+# Import Compiled Logic Index (Instinct Layer)
+from openeyes.compiled_logic import CompiledLogicIndex
+
 
 class OpenEyes:
     """
@@ -72,6 +75,9 @@ class OpenEyes:
         # Initialize Dice Table and Assembler
         self.dice_table = DiceTable()
         self.assembler = WurfelspielAssembler(self.dice_table)
+        
+        # Initialize Compiled Logic Index (Instinct Layer)
+        self.compiled_logic = CompiledLogicIndex()
         
         # Initialize Obsidian connector (optional)
         self.obsidian = None
@@ -118,10 +124,48 @@ class OpenEyes:
             "halt_reason": None,
             "fragments_used": [],
             "philosophy_checks_passed": [],
-            "processing_time_ms": 0
+            "processing_time_ms": 0,
+            "mode": "DELIBERATION"  # Default mode
         }
         
         try:
+            # STEP 0: Check Compiled Logic Index (Instinct Mode)
+            from openeyes.night_mode import ConsolidationEngine
+            engine = ConsolidationEngine()
+            query_keywords = engine._extract_keywords(query_text)
+            
+            synapse = self.compiled_logic.query(query_keywords)
+            
+            if synapse:
+                # INSTINCT MODE: Use pre-compiled logic chain
+                print(f"\n[INSTINCT MODE] Using compiled synapse: {synapse.synapse_id}")
+                
+                fragments = self.compiled_logic.get_fragments_for_synapse(synapse, self.library)
+                
+                if fragments:
+                    # Skip Monte Carlo, go straight to assembly
+                    cleared_fragments = self._run_philosophy_guard(fragments)
+                    
+                    if cleared_fragments:
+                        assembled_output = self._assemble_answer(cleared_fragments, query_text)
+                        
+                        if not assembled_output.get("halt"):
+                            result["answer"] = assembled_output.get("answer", "")
+                            result["confidence"] = synapse.avg_confidence  # Use synapse confidence
+                            result["fragments_used"] = assembled_output.get("fragments_used", [])
+                            result["philosophy_checks_passed"] = assembled_output.get("philosophy_checks", [])
+                            result["mode"] = "INSTINCT"
+                            
+                            print(f"\n[INSTINCT MODE] Answer retrieved in {time.time() - start_time:.3f}s (vs ~2s for deliberation)")
+                            print(f"{'='*60}\n")
+                            
+                            return self._finalize_result(result, start_time, trace_id)
+                
+                print("[INSTINCT MODE] Synapse fragments not available, falling back to deliberation")
+            
+            # DELIBERATION MODE: Full Monte Carlo pipeline
+            print("[DELIBERATION MODE] No compiled logic found, running full verification\n")
+            
             # Step 1: Swarm decomposition and retrieval
             candidates = self._run_swarm(query_text)
             
@@ -181,11 +225,25 @@ class OpenEyes:
             
             print(f"\n[Final Check Passed]")
             
+            # LOGIC HARDENING: Create synapse from high-confidence result
+            if result["confidence"] >= 70.0 and len(result["fragments_used"]) >= 2 and not result["halt"]:
+                try:
+                    self.compiled_logic.create_synapse_from_result(
+                        query=query_text,
+                        fragments=result["fragments_used"],
+                        confidence=result["confidence"],
+                        min_confidence_threshold=0.70  # Lowered threshold
+                    )
+                    print(f"[Logic Hardening] Created new synapse from this successful query")
+                except Exception as e:
+                    print(f"[Logic Hardening] Could not create synapse: {e}")
+            
             # Success!
             print(f"\n{'='*60}")
             print(f"ANSWER: {result['answer'][:200]}..." if len(str(result['answer'])) > 200 else f"ANSWER: {result['answer']}")
             print(f"Confidence: {result['confidence']:.1f}%")
             print(f"Fragments used: {len(result['fragments_used'])}")
+            print(f"Mode: {result['mode']}")
             print(f"{'='*60}\n")
             
         except Exception as e:
