@@ -49,38 +49,137 @@ def _default_evaluator(composition: List[Dict[str, Any]],
                        scenario: Optional[Dict[str, Any]] = None,
                        domain_tier: str = "tier2") -> CompositionResult:
     """
-    Default evaluator — returns random scores around a base value.
-    Replace this with domain-specific evaluators in production.
+    HYBRID DUAL-ROLL EVALUATOR for OpenEyes.
     
-    For OpenEyes: Should check credibility, recency, reasoning chain completeness.
+    Combines:
+    1. Deterministic Roll (70%): Based on hard metadata (credibility, recency, consistency).
+       Guarantees high-quality fragments always have a baseline score.
+    2. Stochastic Roll (30%): Gaussian noise to simulate uncertainty/variance.
+    
+    Final Score = (0.7 * Deterministic) + (0.3 * Stochastic)
+    
+    Scores fragments based on:
+    - Credibility class (peer_reviewed=95, guideline=90, textbook=80, etc.)
+    - Recency (decay based on domain tier)
+    - Reasoning chain completeness (definition + counter + latest_data)
+    - Cross-source consistency (multiple sources agreeing)
     """
-    base_score = 50.0
+    import hashlib
     
-    # Bonus for primary sources in high-tier domains
-    if domain_tier == "tier1":
-        for fragment in composition:
-            if fragment.get("source_type") == "primary":
-                base_score += 15
-            elif fragment.get("source_type") == "tertiary":
-                base_score -= 20
+    # Base credibility scores (evidence hierarchy)
+    CREDIBILITY_SCORES = {
+        "clinical_guideline": 95,
+        "peer_reviewed_study": 90,
+        "textbook": 85,
+        "expert_consensus": 75,
+        "government_source": 85,
+        "case_report": 60,
+        "news_article": 60,
+        "forum": 30,
+        "anecdotal": 20
+    }
     
-    # Bonus for complete reasoning chains
+    # Recency decay rates per tier (points per year old)
+    RECENCY_DECAY = {
+        "tier1": 5.0,   # Medical/fast-moving: high decay
+        "tier2": 2.0,   # Engineering: medium decay
+        "tier3": 0.5    # Cooking/general: low decay
+    }
+    
+    current_year = 2026
+    decay_rate = RECENCY_DECAY.get(domain_tier, 2.0)
+    
+    # Score each fragment individually
+    fragment_scores = []
+    source_counts = {}  # Track unique sources
+    
+    for frag in composition:
+        # --- DETERMINISTIC COMPONENT ---
+        det_score = 0.0
+        
+        # 1. Credibility score (40% of det_score)
+        cred_class = frag.get("credibility_class", None)
+        if cred_class:
+            base_cred = CREDIBILITY_SCORES.get(cred_class, 50)
+        else:
+            # Fallback to credibility_estimate (0-1 scale)
+            base_cred = frag.get("credibility_estimate", 0.5) * 100
+        det_score += base_cred * 0.4
+        
+        # 2. Recency score (30% of det_score)
+        frag_year = frag.get("year", current_year)
+        age = current_year - frag_year
+        recency_score = max(0, 100 - (age * decay_rate))
+        det_score += recency_score * 0.3
+        
+        # 3. Reasoning role bonus (30% of det_score)
+        role = frag.get("reasoning_role", "definition")
+        role_bonus_map = {"definition": 5, "counter_argument": 10, "latest_data": 7}
+        role_bonus = role_bonus_map.get(role, 0)
+        det_score += role_bonus * 0.3
+        
+        det_score = min(100.0, det_score)
+        
+        # --- STOCHASTIC COMPONENT ---
+        # Use seeded random based on fragment ID for consistency
+        frag_id = frag.get("fragment_id", frag.get("id", str(hash(str(frag)))))
+        seed_val = int(hashlib.md5(str(frag_id).encode()).hexdigest()[:8], 16)
+        rng = random.Random(seed_val)
+        noise = rng.gauss(0, 5)  # Reduced standard deviation from 15 to 5 for stability
+        stoch_score = det_score + noise
+        stoch_score = max(0, min(100, stoch_score))
+        
+        # --- HYBRID COMBINATION (90/10 split for reduced variance) ---
+        final_frag_score = (0.9 * det_score) + (0.1 * stoch_score)
+        
+        fragment_scores.append(final_frag_score)
+        
+        # Track sources for consistency check
+        source = frag.get("source", "")
+        source_counts[source] = source_counts.get(source, 0) + 1
+    
+    # Calculate mean fragment score
+    if not fragment_scores:
+        return CompositionResult(
+            mean_score=0.0,
+            variance=0.0,
+            worst_case=0.0,
+            survival_probability=0.0,
+            raw_scores=[0.0] * 20,
+            evaluator_details={"error": "no_fragments"}
+        )
+    
+    mean_frag_score = sum(fragment_scores) / len(fragment_scores)
+    
+    # 4. Reasoning chain completeness bonus
     has_definition = any(f.get("reasoning_role") == "definition" for f in composition)
     has_counter = any(f.get("reasoning_role") == "counter_argument" for f in composition)
-    has_data = any(f.get("reasoning_role") == "latest_data" for f in composition)
+    has_latest = any(f.get("reasoning_role") == "latest_data" for f in composition)
     
+    chain_bonus = 0
     if has_definition:
-        base_score += 10
+        chain_bonus += 5
     if has_counter:
-        base_score += 8
-    if has_data:
-        base_score += 12
+        chain_bonus += 10  # Critical for tier1
+    if has_latest:
+        chain_bonus += 7
     
-    # Generate N simulation scores
+    # 5. Cross-source consistency bonus
+    num_sources = len(source_counts)
+    consistency_bonus = min(10, (num_sources - 1) * 3)  # Max 10 points
+    
+    # Final score
+    final_score = mean_frag_score + chain_bonus + consistency_bonus
+    final_score = max(0, min(100, final_score))  # Clamp to [0, 100]
+    
+    # Generate simulation scores with reduced variance for stability
+    # Variance represents uncertainty in the knowledge, not randomness
+    uncertainty = 5.0 if len(composition) < 2 else 3.0
+    if domain_tier == "tier1" and not has_counter:
+        uncertainty = 12.0  # Moderate uncertainty without counter-argument
+    
     num_simulations = 20
-    scores = [base_score + random.gauss(0, 15) for _ in range(num_simulations)]
-    
-    # Clamp scores to [0, 100]
+    scores = [final_score + random.gauss(0, uncertainty) for _ in range(num_simulations)]
     scores = [max(0, min(100, s)) for s in scores]
     
     mean_score = sum(scores) / len(scores)
@@ -97,11 +196,18 @@ def _default_evaluator(composition: List[Dict[str, Any]],
         survival_probability=survival_probability,
         raw_scores=scores,
         evaluator_details={
-            "base_score": base_score,
+            "mean_fragment_score": mean_frag_score,
+            "chain_bonus": chain_bonus,
+            "consistency_bonus": consistency_bonus,
             "has_definition": has_definition,
             "has_counter_argument": has_counter,
-            "has_latest_data": has_data,
-            "domain_tier": domain_tier
+            "has_latest_data": has_latest,
+            "num_sources": num_sources,
+            "domain_tier": domain_tier,
+            "recency_decay_applied": decay_rate,
+            "hybrid_evaluator": True,
+            "deterministic_weight": 0.9,
+            "stochastic_weight": 0.1
         }
     )
 

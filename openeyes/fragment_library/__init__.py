@@ -25,9 +25,10 @@ Fragment Schema:
 import json
 import hashlib
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Dict, List, Optional, Any, Set, Tuple
 from dataclasses import dataclass, field, asdict
 from datetime import datetime
+from collections import defaultdict
 
 
 @dataclass
@@ -45,6 +46,10 @@ class Fragment:
     compatible_with: List[str] = field(default_factory=list)
     incompatible_with: List[str] = field(default_factory=list)
     subdomain: Optional[str] = None
+    reasoning_role: Optional[str] = None  # "definition", "counter_argument", "latest_data"
+    source_type: Optional[str] = None     # "primary", "secondary", "tertiary"
+    year: Optional[int] = None            # Publication year for temporal scoring
+    sub_question: Optional[str] = None    # The specific sub-question this fragment answers
     
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -95,8 +100,14 @@ class FragmentLibrary:
         # Tag index: tag -> [fragment_ids]
         self._tag_index: Dict[str, List[str]] = {}
         
+        # Semantic inverted index: word -> set of fragment_ids
+        self._semantic_index: Dict[str, Set[str]] = defaultdict(set)
+        
         # Load existing fragments
         self._load_all_fragments()
+        
+        # Build semantic index after loading
+        self._build_semantic_index()
     
     def _load_all_fragments(self):
         """Load all fragments from storage."""
@@ -128,6 +139,88 @@ class FragmentLibrary:
                 self._tag_index[tag] = []
             if fragment.id not in self._tag_index[tag]:
                 self._tag_index[tag].append(fragment.id)
+    
+    def _build_semantic_index(self):
+        """Build inverted index from fragment content, tags, and sub_question."""
+        self._semantic_index.clear()
+        
+        # Stop words to ignore
+        stop_words = {
+            'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+            'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+            'should', 'may', 'might', 'must', 'shall', 'can', 'need', 'dare',
+            'ought', 'used', 'to', 'of', 'in', 'for', 'on', 'with', 'at', 'by',
+            'from', 'as', 'into', 'through', 'during', 'before', 'after', 'above',
+            'below', 'between', 'under', 'again', 'further', 'then', 'once', 'here',
+            'there', 'when', 'where', 'why', 'how', 'all', 'each', 'few', 'more',
+            'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own',
+            'same', 'so', 'than', 'too', 'very', 'just', 'and', 'but', 'if', 'or',
+            'because', 'until', 'while', 'although', 'though', 'what', 'which',
+            'who', 'whom', 'this', 'that', 'these', 'those', 'it', 'its'
+        }
+        
+        for fragment in self._fragments.values():
+            # Extract words from content
+            words = self._extract_words(fragment.content)
+            
+            # Extract words from sub_question if present
+            if fragment.sub_question:
+                words.update(self._extract_words(fragment.sub_question))
+            
+            # Extract words from tags
+            for tag in fragment.tags:
+                words.update(self._extract_words(tag))
+            
+            # Add to inverted index
+            for word in words:
+                if word not in stop_words and len(word) > 2:
+                    self._semantic_index[word].add(fragment.id)
+    
+    def _extract_words(self, text: str) -> Set[str]:
+        """Extract unique words from text, lowercased and cleaned."""
+        import re
+        words = re.findall(r'\b[a-zA-Z]+\b', text.lower())
+        return set(words)
+    
+    def search_by_semantic_index(self, query: str) -> List[str]:
+        """
+        Search fragments using semantic inverted index.
+        
+        Returns list of fragment IDs that match query keywords,
+        ranked by number of matching keywords.
+        """
+        query_words = self._extract_words(query)
+        stop_words = {
+            'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+            'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+            'should', 'may', 'might', 'must', 'shall', 'can', 'need', 'dare',
+            'ought', 'used', 'to', 'of', 'in', 'for', 'on', 'with', 'at', 'by',
+            'from', 'as', 'into', 'through', 'during', 'before', 'after', 'above',
+            'below', 'between', 'under', 'again', 'further', 'then', 'once', 'here',
+            'there', 'when', 'where', 'why', 'how', 'all', 'each', 'few', 'more',
+            'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own',
+            'same', 'so', 'than', 'too', 'very', 'just', 'and', 'but', 'if', 'or',
+            'because', 'until', 'while', 'although', 'though', 'what', 'which',
+            'who', 'whom', 'this', 'that', 'these', 'those', 'it', 'its'
+        }
+        
+        # Count how many query words match each fragment
+        fragment_scores: Dict[str, int] = defaultdict(int)
+        
+        for word in query_words:
+            if word not in stop_words and len(word) > 2:
+                matching_fragments = self._semantic_index.get(word, set())
+                for frag_id in matching_fragments:
+                    fragment_scores[frag_id] += 1
+        
+        # Sort by score descending
+        sorted_fragments = sorted(
+            fragment_scores.items(),
+            key=lambda x: x[1],
+            reverse=True
+        )
+        
+        return [frag_id for frag_id, score in sorted_fragments if score > 0]
     
     def _save_fragment(self, fragment: Fragment):
         """Save a fragment to storage."""

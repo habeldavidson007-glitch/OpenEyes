@@ -1,0 +1,20 @@
+{
+  "id": "test_001",
+  "domain": "medical",
+  "tags": [
+    "test"
+  ],
+  "content": "Test content",
+  "source": "Test Source",
+  "source_url": "",
+  "credibility_class": "expert_consensus",
+  "last_verified": "2026-01-01",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": null,
+  "reasoning_role": null,
+  "source_type": null,
+  "year": null,
+  "sub_question": null
+}

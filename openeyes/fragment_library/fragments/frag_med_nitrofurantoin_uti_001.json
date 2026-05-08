@@ -1,7 +1,6 @@
 {
   "id": "frag_med_nitrofurantoin_uti_001",
   "domain": "medical",
-  "subdomain": "pharmacology",
   "tags": [
     "antibiotic",
     "uti",
@@ -15,5 +14,10 @@
   "last_verified": "2026-05-08",
   "weight": 1.0,
   "compatible_with": [],
-  "incompatible_with": []
+  "incompatible_with": [],
+  "subdomain": null,
+  "reasoning_role": null,
+  "source_type": null,
+  "year": null,
+  "sub_question": null
 }

@@ -33,6 +33,9 @@ class FragmentCandidate:
     domain_tags: List[str]
     agent_type: str  # "library", "api", "web"
     sub_question: str  # Which sub-question this addresses
+    reasoning_role: str = "definition"  # "definition", "counter_argument", "latest_data"
+    source_type: str = "primary"  # "primary", "secondary", "tertiary"
+    year: int = 2026  # Publication/recency year
     
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -43,7 +46,10 @@ class FragmentCandidate:
             "credibility_estimate": self.credibility_estimate,
             "domain_tags": self.domain_tags,
             "agent_type": self.agent_type,
-            "sub_question": self.sub_question
+            "sub_question": self.sub_question,
+            "reasoning_role": self.reasoning_role,
+            "source_type": self.source_type,
+            "year": self.year
         }
 
 
@@ -61,6 +67,9 @@ class LibraryAgent:
         """
         Retrieve fragments matching a sub-question.
         
+        Uses semantic inverted index for precise retrieval.
+        Falls back to broad keyword scan if initial search yields too few results.
+        
         Args:
             sub_question: The atomic sub-question to answer
             domain: Optional domain filter
@@ -70,49 +79,94 @@ class LibraryAgent:
         """
         candidates = []
         
-        # Extract keywords from sub-question
-        keywords = self._extract_keywords(sub_question)
+        # Use semantic index to find relevant fragments
+        fragment_ids = self.library.search_by_semantic_index(sub_question)
         
-        # Search library by keywords
-        for keyword in keywords:
-            fragments = self.library.search_fragments(
-                query=keyword,
-                domain=domain
-            )
-            
-            for frag in fragments:
-                # Map credibility class to estimate
-                credibility_map = {
-                    "clinical_guideline": 0.95,
-                    "peer_reviewed_study": 0.85,
-                    "textbook": 0.80,
-                    "expert_consensus": 0.70,
-                    "case_report": 0.50,
-                    "anecdotal": 0.30
-                }
-                cred_estimate = credibility_map.get(frag.credibility_class, 0.50)
-                
-                candidate = FragmentCandidate(
-                    fragment_id=frag.id,
-                    content=frag.content,
-                    source=frag.source,
-                    source_url=frag.source_url,
-                    credibility_estimate=cred_estimate,
-                    domain_tags=[frag.domain] + frag.tags,
-                    agent_type="library",
-                    sub_question=sub_question
+        # If no results from semantic search, fall back to keyword extraction
+        if not fragment_ids:
+            keywords = self._extract_keywords(sub_question)
+            for keyword in keywords:
+                fragments = self.library.search_fragments(
+                    query=keyword,
+                    domain=domain
                 )
-                candidates.append(candidate)
+                for frag in fragments:
+                    if frag.id not in fragment_ids:
+                        fragment_ids.append(frag.id)
         
-        # Remove duplicates by fragment_id
-        seen = set()
-        unique_candidates = []
-        for c in candidates:
-            if c.fragment_id not in seen:
-                seen.add(c.fragment_id)
-                unique_candidates.append(c)
+        # SEMANTIC INDEX FALLBACK: If still fewer than 3 candidates, do a broad scan
+        if len(fragment_ids) < 3:
+            print(f"[LibraryAgent] Low candidate count ({len(fragment_ids)}), triggering semantic fallback...")
+            # Scan all fragments for partial matches on tags and content
+            for frag_id, frag in self.library._fragments.items():
+                if frag_id in fragment_ids:
+                    continue
+                
+                # Check domain filter first
+                if domain and frag.domain != domain:
+                    continue
+                
+                # Check for keyword matches in tags, content, or sub_question
+                question_lower = sub_question.lower()
+                matched = False
+                
+                # Check tags
+                for tag in frag.tags:
+                    if tag.replace('_', ' ') in question_lower or tag in question_lower:
+                        matched = True
+                        break
+                
+                # Check content snippet
+                if not matched and question_lower in frag.content.lower():
+                    matched = True
+                
+                # Check sub_question field
+                if not matched and frag.sub_question:
+                    if any(word in frag.sub_question.lower() for word in question_lower.split()):
+                        matched = True
+                
+                if matched:
+                    fragment_ids.append(frag.id)
+                    print(f"[LibraryAgent] Fallback match: {frag.id}")
         
-        return unique_candidates
+        # Build candidates from fragment IDs
+        for frag_id in fragment_ids:
+            frag = self.library.get_fragment(frag_id)
+            if not frag:
+                continue
+            
+            # Apply domain filter if specified
+            if domain and domain != "general" and frag.domain != domain:
+                continue
+            
+            # Map credibility class to estimate
+            credibility_map = {
+                "clinical_guideline": 0.95,
+                "peer_reviewed_study": 0.85,
+                "textbook": 0.80,
+                "expert_consensus": 0.70,
+                "case_report": 0.50,
+                "anecdotal": 0.30
+            }
+            cred_estimate = credibility_map.get(frag.credibility_class, 0.50)
+            
+            candidate = FragmentCandidate(
+                fragment_id=frag.id,
+                content=frag.content,
+                source=frag.source,
+                source_url=frag.source_url,
+                credibility_estimate=cred_estimate,
+                domain_tags=[frag.domain] + frag.tags,
+                agent_type="library",
+                sub_question=sub_question,
+                reasoning_role=frag.reasoning_role or "definition",
+                source_type=frag.source_type or "primary",
+                year=frag.year or 2026
+            )
+            candidates.append(candidate)
+        
+        print(f"[LibraryAgent] Retrieved {len(candidates)} candidates for: {sub_question[:50]}...")
+        return candidates
     
     @staticmethod
     def _extract_keywords(question: str) -> List[str]:
@@ -125,11 +179,56 @@ class LibraryAgent:
             "should", "would", "may", "might", "must", "shall"
         }
         
-        # Simple tokenization
-        words = re.findall(r'\b[a-zA-Z]+\b', question.lower())
-        keywords = [w for w in words if w not in stop_words and len(w) > 2]
+        # Enhanced extraction: preserve underscores for compound terms
+        # and extract multi-word phrases
+        question_lower = question.lower()
         
-        return keywords[:5]  # Limit to top 5 keywords
+        # First, extract compound terms with underscores (e.g., pancreatic_cancer)
+        compound_terms = re.findall(r'\b[a-z]+_[a-z]+\b', question_lower)
+        
+        # Extract multi-word phrases (2-3 words) that might be important
+        # e.g., "cold weather", "steel beam", "intermittent fasting"
+        phrases = re.findall(r'\b([a-z]{3,}(?:\s+[a-z]{3,}){1,2})\b', question_lower)
+        
+        # Simple tokenization for single words
+        words = re.findall(r'\b[a-zA-Z]+(?:_[a-zA-Z]+)*\b', question_lower)
+        
+        # Combine all keyword types
+        all_keywords = []
+        all_keywords.extend(compound_terms)  # Keep underscores for compounds
+        all_keywords.extend([p.replace(' ', '_') for p in phrases if len(p.split()) > 1])  # Convert phrases to underscore format
+        all_keywords.extend([w for w in words if w not in stop_words and len(w) > 2])
+        
+        # Add reasoning roles to ensure we find definition/counter/latest fragments
+        all_keywords.extend(["definition", "counter_argument", "latest_data"])
+        
+        # Add synonyms for critical terms
+        synonym_map = {
+            "uti": ["urinary_tract_infection", "bladder_infection"],
+            "cancer": ["carcinoma", "tumor", "oncology"],
+            "diabetes": ["diabetic", "hyperglycemia", "insulin"],
+            "fasting": ["diet", "nutrition", "meal_timing"],
+            "methanol": ["poisoning", "toxicology", "antidote"],
+            "steel": ["metal", "beam", "structural"],
+            "cold": ["freezing", "low_temperature", "winter"],
+            "concrete": ["cement", "construction", "curing"],
+            "sourdough": ["levain", "starter", "fermentation", "bread"],
+            "rising": ["proofing", "leavening", "expansion"]
+        }
+        
+        for keyword in list(all_keywords):
+            if keyword in synonym_map:
+                all_keywords.extend(synonym_map[keyword])
+        
+        # Remove duplicates while preserving order
+        seen = set()
+        unique_keywords = []
+        for k in all_keywords:
+            if k not in seen:
+                seen.add(k)
+                unique_keywords.append(k)
+        
+        return unique_keywords[:15]  # Limit to top 15 keywords for broader search
 
 
 class APIAgent:

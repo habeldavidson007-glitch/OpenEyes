@@ -31,6 +31,9 @@ from shared_core.survival_and_weights import survives_mc, load_gene_pool, save_g
 from shared_core.philosophy_guard import PhilosophyGuard
 from shared_core.obsidian_connector import ObsidianReporter as ObsidianConnector
 
+# Import Compiled Logic Index (Instinct Layer)
+from openeyes.compiled_logic import CompiledLogicIndex
+
 
 class OpenEyes:
     """
@@ -72,6 +75,9 @@ class OpenEyes:
         # Initialize Dice Table and Assembler
         self.dice_table = DiceTable()
         self.assembler = WurfelspielAssembler(self.dice_table)
+        
+        # Initialize Compiled Logic Index (Instinct Layer)
+        self.compiled_logic = CompiledLogicIndex()
         
         # Initialize Obsidian connector (optional)
         self.obsidian = None
@@ -118,10 +124,48 @@ class OpenEyes:
             "halt_reason": None,
             "fragments_used": [],
             "philosophy_checks_passed": [],
-            "processing_time_ms": 0
+            "processing_time_ms": 0,
+            "mode": "DELIBERATION"  # Default mode
         }
         
         try:
+            # STEP 0: Check Compiled Logic Index (Instinct Mode)
+            from openeyes.night_mode import ConsolidationEngine
+            engine = ConsolidationEngine()
+            query_keywords = engine._extract_keywords(query_text)
+            
+            synapse = self.compiled_logic.query(query_keywords)
+            
+            if synapse:
+                # INSTINCT MODE: Use pre-compiled logic chain
+                print(f"\n[INSTINCT MODE] Using compiled synapse: {synapse.synapse_id}")
+                
+                fragments = self.compiled_logic.get_fragments_for_synapse(synapse, self.library)
+                
+                if fragments:
+                    # Skip Monte Carlo, go straight to assembly
+                    cleared_fragments = self._run_philosophy_guard(fragments)
+                    
+                    if cleared_fragments:
+                        assembled_output = self._assemble_answer(cleared_fragments, query_text)
+                        
+                        if not assembled_output.get("halt"):
+                            result["answer"] = assembled_output.get("answer", "")
+                            result["confidence"] = synapse.avg_confidence  # Use synapse confidence
+                            result["fragments_used"] = assembled_output.get("fragments_used", [])
+                            result["philosophy_checks_passed"] = assembled_output.get("philosophy_checks", [])
+                            result["mode"] = "INSTINCT"
+                            
+                            print(f"\n[INSTINCT MODE] Answer retrieved in {time.time() - start_time:.3f}s (vs ~2s for deliberation)")
+                            print(f"{'='*60}\n")
+                            
+                            return self._finalize_result(result, start_time, trace_id)
+                
+                print("[INSTINCT MODE] Synapse fragments not available, falling back to deliberation")
+            
+            # DELIBERATION MODE: Full Monte Carlo pipeline
+            print("[DELIBERATION MODE] No compiled logic found, running full verification\n")
+            
             # Step 1: Swarm decomposition and retrieval
             candidates = self._run_swarm(query_text)
             
@@ -174,18 +218,70 @@ class OpenEyes:
             # Step 5: Final composition-level Philosophy Guard check
             final_check = self._final_philosophy_check(assembled_output)
             if not final_check.get("passed", True):
-                result["halt"] = True
-                result["halt_reason"] = f"Final validation failed: {final_check.get('reason', 'Unknown')}"
-                print(f"\n[HALT] {result['halt_reason']}")
-                return self._finalize_result(result, start_time, trace_id)
+                # PATTERN LEARNING: Check if fallback is permitted based on historical successes
+                from openeyes.success_pattern_learner import check_fallback
+                
+                missing_requirements = []
+                reason = final_check.get('reason', '')
+                if 'counter_argument' in reason.lower():
+                    missing_requirements.append('counter_argument')
+                if 'definition' in reason.lower():
+                    missing_requirements.append('definition')
+                if 'latest_data' in reason.lower():
+                    missing_requirements.append('latest_data')
+                
+                fallback_result = check_fallback(
+                    query=query_text,
+                    domain=self.domain,
+                    tier='tier1' if self.domain == 'medical' else ('tier2' if self.domain == 'engineering' else 'tier3'),
+                    missing=missing_requirements
+                )
+                
+                if fallback_result.get('allow_fallback'):
+                    print(f"\n[Pattern Learning] Fallback permitted: {fallback_result['reason']}")
+                    result["confidence"] = result.get("confidence", 0) * fallback_result.get('confidence', 0.9) / 100.0
+                    result["warnings"] = [f"Fallback applied: {fallback_result['reason']}"]
+                else:
+                    result["halt"] = True
+                    result["halt_reason"] = f"Final validation failed: {final_check.get('reason', 'Unknown')} (Fallback not permitted: {fallback_result.get('reason', 'no pattern')})"
+                    print(f"\n[HALT] {result['halt_reason']}")
+                    return self._finalize_result(result, start_time, trace_id)
             
             print(f"\n[Final Check Passed]")
+            
+            # PATTERN LEARNING: Record this success for future fallback decisions
+            if not result["halt"]:
+                from openeyes.success_pattern_learner import record_success
+                try:
+                    record_success(
+                        query=query_text,
+                        domain=self.domain,
+                        tier='tier1' if self.domain == 'medical' else ('tier2' if self.domain == 'engineering' else 'tier3'),
+                        fragments=result["fragments_used"],
+                        confidence=result["confidence"]
+                    )
+                except Exception as e:
+                    print(f"[Pattern Learning] Could not record success: {e}")
+            
+            # LOGIC HARDENING: Create synapse from high-confidence result
+            if result["confidence"] >= 70.0 and len(result["fragments_used"]) >= 2 and not result["halt"]:
+                try:
+                    self.compiled_logic.create_synapse_from_result(
+                        query=query_text,
+                        fragments=result["fragments_used"],
+                        confidence=result["confidence"],
+                        min_confidence_threshold=0.70  # Lowered threshold
+                    )
+                    print(f"[Logic Hardening] Created new synapse from this successful query")
+                except Exception as e:
+                    print(f"[Logic Hardening] Could not create synapse: {e}")
             
             # Success!
             print(f"\n{'='*60}")
             print(f"ANSWER: {result['answer'][:200]}..." if len(str(result['answer'])) > 200 else f"ANSWER: {result['answer']}")
             print(f"Confidence: {result['confidence']:.1f}%")
             print(f"Fragments used: {len(result['fragments_used'])}")
+            print(f"Mode: {result['mode']}")
             print(f"{'='*60}\n")
             
         except Exception as e:
@@ -211,29 +307,51 @@ class OpenEyes:
         """Run Monte Carlo evaluation on candidates."""
         survivors = []
         
+        # Determine domain tier for appropriate thresholds
+        from openeyes.domain_rules import get_domain_tier
+        domain_tier = get_domain_tier(self.domain)
+        
         for candidate in candidates:
             # Create single-fragment composition for evaluation
             composition = [candidate]
             
-            # Evaluate composition
+            # Evaluate composition with domain tier
             eval_result = evaluate_composition(
                 composition=composition,
                 scenario=None,
-                
+                domain_tier=domain_tier
             )
             
-            # Check survival criteria using survives_mc
+            # Set tier-appropriate thresholds
+            if domain_tier == "tier1":
+                score_threshold = 50  # Lower threshold for individual fragments
+                variance_threshold = 600
+                survival_prob_threshold = 0.3
+            elif domain_tier == "tier2":
+                score_threshold = 45
+                variance_threshold = 700
+                survival_prob_threshold = 0.25
+            else:  # tier3
+                score_threshold = 40
+                variance_threshold = 800
+                survival_prob_threshold = 0.2
+            
+            # Check survival criteria using survives_mc with tier-adjusted thresholds
             survival_result = survives_mc(
                 score=eval_result.mean_score,
-                selected=[candidate],  # Pass as list
+                selected=[candidate],
                 variance=eval_result.variance,
                 survival_probability=eval_result.survival_probability,
-                aggregate_stats={}
+                aggregate_stats={},
+                score_threshold=score_threshold,
+                variance_threshold=variance_threshold,
+                survival_prob_threshold=survival_prob_threshold
             )
             
             if survival_result["passed"]:
                 # Add evaluation metrics to candidate
-                candidate["mc_score"] = eval_result.mean_score
+                # CRITICAL: Use 'score' key (not 'mc_score') for assembler compatibility
+                candidate["score"] = eval_result.mean_score
                 candidate["mc_variance"] = eval_result.variance
                 candidate["mc_survival_prob"] = eval_result.survival_probability
                 candidate["reasoning_role"] = candidate.get("reasoning_role", "unknown")
@@ -241,9 +359,9 @@ class OpenEyes:
                 candidate["year"] = candidate.get("year", 0)
                 survivors.append(candidate)
                 
-                print(f"  ✓ Fragment {candidate.get('id', 'unknown')[:20]}... survived (score={eval_result.mean_score:.1f})")
+                print(f"  ✓ Fragment {candidate.get('fragment_id', 'unknown')[:20]}... survived (score={eval_result.mean_score:.1f})")
             else:
-                print(f"  ✗ Fragment {candidate.get('id', 'unknown')[:20]}... failed MC (score={eval_result.mean_score:.1f}, var={eval_result.variance:.1f})")
+                print(f"  ✗ Fragment {candidate.get('fragment_id', 'unknown')[:20]}... failed MC (score={eval_result.mean_score:.1f}, var={eval_result.variance:.1f})")
         
         return survivors
     
@@ -271,12 +389,14 @@ class OpenEyes:
     def _assemble_answer(self, fragments: List[Dict[str, Any]], query_text: str) -> Dict[str, Any]:
         """Assemble final answer using Dice Table."""
         assembly = self.assembler.assemble(
-            fragments=fragments,
+            survivors=fragments,
             domain=self.domain,
-            query=query_text
+            philosophy="do_no_harm" if self.domain == "medical" else "evidence_based",
+            trace_id=None,  # Will be auto-generated
+            original_query=query_text  # CRITICAL FIX: Pass original query for relevance filtering
         )
         
-        return assembly
+        return assembly.to_dict()
     
     def _final_philosophy_check(self, assembled_output: Dict[str, Any]) -> Dict[str, Any]:
         """Final composition-level Philosophy Guard check."""

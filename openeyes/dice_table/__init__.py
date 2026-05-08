@@ -334,7 +334,8 @@ class WurfelspielAssembler:
         survivors: List[Dict[str, Any]],
         domain: str = "general",
         philosophy: str = "evidence_based",
-        trace_id: Optional[str] = None
+        trace_id: Optional[str] = None,
+        original_query: Optional[str] = None  # NEW: Added original query parameter
     ) -> AssembledOutput:
         """
         Assemble survivor fragments into final output.
@@ -344,6 +345,7 @@ class WurfelspielAssembler:
             domain: Domain for Dice Table lookup
             philosophy: Philosophy alignment for Dice Table lookup
             trace_id: Unique identifier for this query trace
+            original_query: The original user query for relevance filtering
             
         Returns:
             AssembledOutput with answer or HALT
@@ -365,6 +367,22 @@ class WurfelspielAssembler:
                 halt=True,
                 halt_reason="No fragments survived Monte Carlo evaluation.",
                 recommendation="Consider reformulating your query or consulting a specialist."
+            )
+        
+        # CRITICAL FIX: Filter fragments by relevance to original query
+        if original_query:
+            survivors = self._filter_by_query_relevance(survivors, original_query)
+        
+        if not survivors:
+            return AssembledOutput(
+                answer=None,
+                confidence=0.0,
+                fragments_used=[],
+                philosophy_checks_passed=[],
+                trace_id=trace_id,
+                halt=True,
+                halt_reason="No fragments relevant to the query survived filtering.",
+                recommendation="The system lacks verified knowledge on this specific topic."
             )
         
         # Calculate average confidence
@@ -401,8 +419,8 @@ class WurfelspielAssembler:
         # Sequence fragments according to rules
         sequenced_fragments = self._sequence_fragments(survivors)
         
-        # Build answer text
-        answer_text = self._build_answer_text(sequenced_fragments, dice_row)
+        # Build answer text with original query context
+        answer_text = self._build_answer_text(sequenced_fragments, dice_row, original_query)
         
         # Add confidence note if required
         confidence_note = None
@@ -412,16 +430,19 @@ class WurfelspielAssembler:
                 f"Consider seeking additional verification."
             )
         
-        # Prepare fragments_used metadata
+        # Prepare fragments_used metadata - preserve ALL original fields including reasoning_role
         fragments_metadata = []
         for frag in sequenced_fragments:
-            fragments_metadata.append({
+            meta = {
                 "fragment_id": frag.get("fragment_id", "unknown"),
                 "content": frag.get("content", ""),
                 "score": frag.get("score", 0),
                 "source": frag.get("source", "Unknown"),
-                "source_url": frag.get("source_url", "")
-            })
+                "source_url": frag.get("source_url", ""),
+                # CRITICAL: Preserve reasoning_role for final philosophy check
+                "reasoning_role": frag.get("reasoning_role", "unknown")
+            }
+            fragments_metadata.append(meta)
         
         return AssembledOutput(
             answer=answer_text,
@@ -433,16 +454,103 @@ class WurfelspielAssembler:
             confidence_note=confidence_note
         )
     
-    def _sequence_fragments(self, survivors: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def _filter_by_query_relevance(self, fragments: List[Dict[str, Any]], original_query: str) -> List[Dict[str, Any]]:
         """
-        Sequence fragments according to domain rules.
+        Filter fragments to only include those relevant to the original query.
+        
+        Uses keyword matching between query and fragment's sub_question field.
+        This prevents wrong-domain fragments from being used in answers.
+        """
+        if not fragments:
+            return []
+        
+        # Extract keywords from original query
+        query_keywords = self._extract_keywords(original_query)
+        
+        filtered = []
+        for frag in fragments:
+            # Get sub_question from fragment (set by LibraryAgent during retrieval)
+            sub_question = frag.get("sub_question", "")
+            
+            if not sub_question:
+                # If no sub_question, check content and tags as fallback
+                content = frag.get("content", "").lower()
+                tags = " ".join(frag.get("domain_tags", [])).lower()
+                text_to_check = f"{content} {tags}"
+            else:
+                text_to_check = sub_question.lower()
+            
+            # Check if any query keyword appears in sub_question or content/tags
+            keyword_match = any(kw in text_to_check for kw in query_keywords)
+            
+            if keyword_match:
+                filtered.append(frag)
+        
+        # If filtering removed everything, return original list (fallback)
+        if not filtered:
+            print(f"[DiceTable] Warning: Query relevance filter removed all fragments. Using original list.")
+            return fragments
+        
+        print(f"[DiceTable] Filtered {len(fragments)} → {len(filtered)} fragments based on query relevance")
+        return filtered
+    
+    def _extract_keywords(self, text: str) -> List[str]:
+        """Extract meaningful keywords from text."""
+        import re
+        
+        # Remove common stop words
+        stop_words = {
+            'what', 'are', 'the', 'is', 'it', 'for', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'of',
+            'a', 'an', 'how', 'do', 'does', 'did', 'will', 'would', 'could', 'should', 'can', 'may',
+            'if', 'then', 'else', 'when', 'where', 'why', 'which', 'who', 'whom', 'whose', 'this',
+            'that', 'these', 'those', 'i', 'you', 'he', 'she', 'we', 'they', 'them', 'his', 'her',
+            'my', 'your', 'our', 'their', 'its', 'about', 'into', 'through', 'during', 'before',
+            'after', 'above', 'below', 'between', 'under', 'again', 'further', 'once', 'here', 'there',
+            'all', 'each', 'few', 'more', 'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only',
+            'own', 'same', 'so', 'than', 'too', 'very', 'just', 'also', 'now', 'from', 'with', 'as'
+        }
+        
+        # Extract words (alphanumeric, min 3 chars)
+        words = re.findall(r'\b[a-zA-Z]{3,}\b', text.lower())
+        
+        # Filter out stop words and return unique keywords
+        keywords = [w for w in words if w not in stop_words]
+        
+        # Return unique keywords preserving order
+        seen = set()
+        unique_keywords = []
+        for kw in keywords:
+            if kw not in seen:
+                seen.add(kw)
+                unique_keywords.append(kw)
+        
+        return unique_keywords
+    
+    def _sequence_fragments(self, survivors: List[Dict[str, Any]], original_query: Optional[str] = None) -> List[Dict[str, Any]]:
+        """
+        Sequence fragments according to domain rules and cellular automata.
         
         Rules:
         1. Safety/contraindication fragments first
         2. Evidence/treatment fragments middle
         3. Dosage/monitoring fragments later
         4. Uncertainty notes last
+        
+        Cellular Automata: Run 3 generations of fragment interaction before sequencing.
         """
+        # Priority 3: Apply Cellular Automata for dynamic fragment interaction
+        from openeyes.cellular_automata import run_cellular_automata
+        
+        ca_fragments, ca_changes = run_cellular_automata(survivors, generations=3)
+        
+        # Log CA changes if any
+        if ca_changes:
+            print(f"[Cellular Automata] Applied {len(ca_changes)} changes:")
+            for change in ca_changes[:5]:  # Show first 5 changes
+                print(f"  - {change}")
+            if len(ca_changes) > 5:
+                print(f"  ... and {len(ca_changes) - 5} more")
+        
         def get_priority(frag: Dict[str, Any]) -> int:
             # Determine fragment class from tags or content
             tags = frag.get("tags", [])
@@ -467,14 +575,18 @@ class WurfelspielAssembler:
             
             return self.SEQUENCE_PRIORITY.get(fragment_class, 5)
         
-        # Sort by priority
-        sorted_fragments = sorted(survivors, key=get_priority)
+        # Sort by priority (use ca_score if available from CA)
+        sorted_fragments = sorted(
+            ca_fragments, 
+            key=lambda f: (get_priority(f), -f.get('ca_score', f.get('score', 50)))
+        )
         return sorted_fragments
     
     def _build_answer_text(
         self,
         fragments: List[Dict[str, Any]],
-        dice_row: DiceTableRow
+        dice_row: DiceTableRow,
+        original_query: Optional[str] = None  # NEW parameter
     ) -> str:
         """Build the final answer text from sequenced fragments."""
         parts = []
