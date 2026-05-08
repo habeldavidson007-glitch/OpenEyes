@@ -67,6 +67,8 @@ class LibraryAgent:
         """
         Retrieve fragments matching a sub-question.
         
+        Uses semantic inverted index for precise retrieval.
+        
         Args:
             sub_question: The atomic sub-question to answer
             domain: Optional domain filter
@@ -76,52 +78,58 @@ class LibraryAgent:
         """
         candidates = []
         
-        # Extract keywords from sub-question
-        keywords = self._extract_keywords(sub_question)
+        # Use semantic index to find relevant fragments
+        fragment_ids = self.library.search_by_semantic_index(sub_question)
         
-        # Search library by keywords
-        for keyword in keywords:
-            fragments = self.library.search_fragments(
-                query=keyword,
-                domain=domain
-            )
-            
-            for frag in fragments:
-                # Map credibility class to estimate
-                credibility_map = {
-                    "clinical_guideline": 0.95,
-                    "peer_reviewed_study": 0.85,
-                    "textbook": 0.80,
-                    "expert_consensus": 0.70,
-                    "case_report": 0.50,
-                    "anecdotal": 0.30
-                }
-                cred_estimate = credibility_map.get(frag.credibility_class, 0.50)
-                
-                candidate = FragmentCandidate(
-                    fragment_id=frag.id,
-                    content=frag.content,
-                    source=frag.source,
-                    source_url=frag.source_url,
-                    credibility_estimate=cred_estimate,
-                    domain_tags=[frag.domain] + frag.tags,
-                    agent_type="library",
-                    sub_question=sub_question,
-                    reasoning_role=frag.reasoning_role or "definition",
-                    source_type=frag.source_type or "primary",
-                    year=frag.year or 2026
+        # If no results from semantic search, fall back to keyword extraction
+        if not fragment_ids:
+            keywords = self._extract_keywords(sub_question)
+            for keyword in keywords:
+                fragments = self.library.search_fragments(
+                    query=keyword,
+                    domain=domain
                 )
-                candidates.append(candidate)
+                for frag in fragments:
+                    if frag.id not in fragment_ids:
+                        fragment_ids.append(frag.id)
         
-        # Remove duplicates by fragment_id
-        seen = set()
-        unique_candidates = []
-        for c in candidates:
-            if c.fragment_id not in seen:
-                seen.add(c.fragment_id)
-                unique_candidates.append(c)
+        # Build candidates from fragment IDs
+        for frag_id in fragment_ids:
+            frag = self.library.get_fragment(frag_id)
+            if not frag:
+                continue
+            
+            # Apply domain filter if specified
+            if domain and frag.domain != domain:
+                continue
+            
+            # Map credibility class to estimate
+            credibility_map = {
+                "clinical_guideline": 0.95,
+                "peer_reviewed_study": 0.85,
+                "textbook": 0.80,
+                "expert_consensus": 0.70,
+                "case_report": 0.50,
+                "anecdotal": 0.30
+            }
+            cred_estimate = credibility_map.get(frag.credibility_class, 0.50)
+            
+            candidate = FragmentCandidate(
+                fragment_id=frag.id,
+                content=frag.content,
+                source=frag.source,
+                source_url=frag.source_url,
+                credibility_estimate=cred_estimate,
+                domain_tags=[frag.domain] + frag.tags,
+                agent_type="library",
+                sub_question=sub_question,
+                reasoning_role=frag.reasoning_role or "definition",
+                source_type=frag.source_type or "primary",
+                year=frag.year or 2026
+            )
+            candidates.append(candidate)
         
-        return unique_candidates
+        return candidates
     
     @staticmethod
     def _extract_keywords(question: str) -> List[str]:
