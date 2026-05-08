@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-05-08T08:26:48.726028",
+  "last_updated": "2026-05-08T09:32:11.787701",
   "synapses": [
     {
       "synapse_id": "synapse_c8f7aa5a",
@@ -22,6 +22,75 @@
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 35,
+        "fragment_count": 3
+      }
+    },
+    {
+      "synapse_id": "synapse_02740c83",
+      "fragment_chain": [
+        "frag_onc_pancreatic_cancer_002",
+        "frag_onc_pancreatic_cancer_003",
+        "frag_tox_methanol_poisoning_001"
+      ],
+      "trigger_keywords": [
+        "early",
+        "symptoms",
+        "pancreatic",
+        "cancer?"
+      ],
+      "avg_confidence": 72.8,
+      "usage_count": 1,
+      "created_at": "2026-05-08T09:32:04.879516",
+      "last_used": "2026-05-08T09:32:11.769918",
+      "metadata": {
+        "source": "monte_carlo_compilation",
+        "original_query_length": 49,
+        "fragment_count": 3
+      }
+    },
+    {
+      "synapse_id": "synapse_1b745e77",
+      "fragment_chain": [
+        "frag_endo_diabetes_fasting_002",
+        "frag_endo_diabetes_fasting_001",
+        "frag_endo_diabetes_fasting_003"
+      ],
+      "trigger_keywords": [
+        "intermittent",
+        "fasting",
+        "safe",
+        "diabetics?"
+      ],
+      "avg_confidence": 71.8,
+      "usage_count": 1,
+      "created_at": "2026-05-08T09:32:04.883685",
+      "last_used": "2026-05-08T09:32:11.787679",
+      "metadata": {
+        "source": "monte_carlo_compilation",
+        "original_query_length": 43,
+        "fragment_count": 3
+      }
+    },
+    {
+      "synapse_id": "synapse_e3cf3c79",
+      "fragment_chain": [
+        "frag_onc_pancreatic_cancer_002",
+        "frag_onc_pancreatic_cancer_003",
+        "frag_onc_pancreatic_cancer_001"
+      ],
+      "trigger_keywords": [
+        "early",
+        "symptoms",
+        "pancreatic",
+        "cancer?"
+      ],
+      "avg_confidence": 71.7,
+      "usage_count": 0,
+      "created_at": "2026-05-08T09:32:11.784921",
+      "last_used": null,
+      "metadata": {
+        "source": "monte_carlo_compilation",
+        "original_query_length": 49,
         "fragment_count": 3
       }
     }

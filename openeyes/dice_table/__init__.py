@@ -526,16 +526,31 @@ class WurfelspielAssembler:
         
         return unique_keywords
     
-    def _sequence_fragments(self, survivors: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def _sequence_fragments(self, survivors: List[Dict[str, Any]], original_query: Optional[str] = None) -> List[Dict[str, Any]]:
         """
-        Sequence fragments according to domain rules.
+        Sequence fragments according to domain rules and cellular automata.
         
         Rules:
         1. Safety/contraindication fragments first
         2. Evidence/treatment fragments middle
         3. Dosage/monitoring fragments later
         4. Uncertainty notes last
+        
+        Cellular Automata: Run 3 generations of fragment interaction before sequencing.
         """
+        # Priority 3: Apply Cellular Automata for dynamic fragment interaction
+        from openeyes.cellular_automata import run_cellular_automata
+        
+        ca_fragments, ca_changes = run_cellular_automata(survivors, generations=3)
+        
+        # Log CA changes if any
+        if ca_changes:
+            print(f"[Cellular Automata] Applied {len(ca_changes)} changes:")
+            for change in ca_changes[:5]:  # Show first 5 changes
+                print(f"  - {change}")
+            if len(ca_changes) > 5:
+                print(f"  ... and {len(ca_changes) - 5} more")
+        
         def get_priority(frag: Dict[str, Any]) -> int:
             # Determine fragment class from tags or content
             tags = frag.get("tags", [])
@@ -560,8 +575,11 @@ class WurfelspielAssembler:
             
             return self.SEQUENCE_PRIORITY.get(fragment_class, 5)
         
-        # Sort by priority
-        sorted_fragments = sorted(survivors, key=get_priority)
+        # Sort by priority (use ca_score if available from CA)
+        sorted_fragments = sorted(
+            ca_fragments, 
+            key=lambda f: (get_priority(f), -f.get('ca_score', f.get('score', 50)))
+        )
         return sorted_fragments
     
     def _build_answer_text(
