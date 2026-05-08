@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-05-08T09:43:42.725060",
+  "last_updated": "2026-05-08T10:16:09.304355",
   "synapses": [
     {
       "synapse_id": "synapse_c8f7aa5a",
@@ -16,9 +16,9 @@
         "methanol?"
       ],
       "avg_confidence": 75.4,
-      "usage_count": 1,
+      "usage_count": 2,
       "created_at": "2026-05-08T08:26:48.725463",
-      "last_used": "2026-05-08T08:26:48.725998",
+      "last_used": "2026-05-08T10:16:09.304326",
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 35,
@@ -39,9 +39,9 @@
         "cancer?"
       ],
       "avg_confidence": 72.8,
-      "usage_count": 3,
+      "usage_count": 5,
       "created_at": "2026-05-08T09:32:04.879516",
-      "last_used": "2026-05-08T09:43:42.725012",
+      "last_used": "2026-05-08T10:16:09.282862",
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 49,
@@ -61,10 +61,10 @@
         "safe",
         "diabetics?"
       ],
-      "avg_confidence": 71.8,
-      "usage_count": 2,
-      "created_at": "2026-05-08T09:32:04.883685",
-      "last_used": "2026-05-08T09:43:31.100177",
+      "avg_confidence": 73.4,
+      "usage_count": 1,
+      "created_at": "2026-05-08T10:16:02.522249",
+      "last_used": "2026-05-08T10:16:09.302263",
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 43,
@@ -84,9 +84,9 @@
         "pancreatic",
         "cancer?"
       ],
-      "avg_confidence": 71.7,
+      "avg_confidence": 72.7,
       "usage_count": 0,
-      "created_at": "2026-05-08T09:32:11.784921",
+      "created_at": "2026-05-08T10:16:09.301557",
       "last_used": null,
       "metadata": {
         "source": "monte_carlo_compilation",
