@@ -1,0 +1,17 @@
+{
+  "id": "frag_eng_steel_beam_load_002",
+  "domain": "engineering",
+  "subdomain": "structural_engineering",
+  "tags": ["steel_beam", "load_capacity", "limitations", "failure_modes"],
+  "content": "Steel beam load calculations have important limitations. Lateral-torsional buckling can reduce capacity for unbraced beams - the AISC provides Cb factors and unbraced length limits. Local buckling of flanges or webs may occur in slender sections. Connection design is critical - simple shear connections vs moment connections dramatically affect capacity. Dynamic loads, impact, and fatigue require additional considerations beyond static analysis. Fire resistance is a major concern - steel loses 50% strength at 1100°F. Corrosion protection is essential for long-term capacity. Real-world conditions like residual stresses, initial imperfections, and erection tolerances introduce uncertainties not captured in ideal calculations.",
+  "source": "AISC Steel Construction Manual & Structural Stability Research Council Guidelines",
+  "source_url": "https://www.aisc.org/publications/",
+  "credibility_class": "textbook",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "reasoning_role": "counter_argument",
+  "source_type": "primary",
+  "year": 2024,
+  "compatible_with": ["frag_eng_steel_beam_load_001"],
+  "incompatible_with": []
+}

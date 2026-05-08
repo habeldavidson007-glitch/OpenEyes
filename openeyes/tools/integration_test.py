@@ -141,27 +141,123 @@ def run_batch_test(queries: list, domain: str = "medical"):
 def main():
     """
     Main integration test workflow:
-    1. Harvest trending complex queries
+    1. Harvest trending complex queries from multiple domains
     2. Run top queries through OpenEyes
     3. Generate Obsidian audit trails
     4. Report knowledge gaps
     """
     print("=" * 80)
     print("OpenEyes Integration Test Suite")
-    print("Testing engine against SEO-trending complex queries")
+    print("Testing engine against SEO-trending complex queries (Multi-Domain)")
     print("=" * 80)
     
-    # Step 1: Harvest trending queries
+    # Step 1: Harvest trending queries from multiple domains
     harvester = SEOTrendHarvester()
-    trending_queries = harvester.get_trending_queries(category="medical", min_complexity=8, limit=3)
     
-    print(f"\n📈 Selected {len(trending_queries)} high-complexity medical queries for testing:")
-    for i, q in enumerate(trending_queries, 1):
-        print(f"   {i}. {q.query} (Complexity: {q.complexity_score}/10)")
+    # Medical queries
+    medical_queries = harvester.get_trending_queries(category="medical", min_complexity=8, limit=3)
+    
+    # Engineering queries
+    engineering_queries = harvester.get_trending_queries(category="engineering", min_complexity=8, limit=3)
+    
+    # Cooking queries
+    cooking_queries = harvester.get_trending_queries(category="cooking", min_complexity=7, limit=3)
+    
+    all_queries = []
+    print(f"\n📈 Selected queries for testing:")
+    
+    if medical_queries:
+        print(f"\n   🏥 MEDICAL ({len(medical_queries)} queries):")
+        for i, q in enumerate(medical_queries, 1):
+            print(f"      {i}. {q.query} (Complexity: {q.complexity_score}/10)")
+        all_queries.extend([(q.query, "medical") for q in medical_queries])
+    
+    if engineering_queries:
+        print(f"\n   ⚙️ ENGINEERING ({len(engineering_queries)} queries):")
+        for i, q in enumerate(engineering_queries, 1):
+            print(f"      {i}. {q.query} (Complexity: {q.complexity_score}/10)")
+        all_queries.extend([(q.query, "engineering") for q in engineering_queries])
+    
+    if cooking_queries:
+        print(f"\n   🍳 COOKING ({len(cooking_queries)} queries):")
+        for i, q in enumerate(cooking_queries, 1):
+            print(f"      {i}. {q.query} (Complexity: {q.complexity_score}/10)")
+        all_queries.extend([(q.query, "cooking") for q in cooking_queries])
+    
+    if not all_queries:
+        # Fallback to hardcoded queries if harvester returns empty
+        print("\n   ⚠️ No trending queries found, using fallback queries...")
+        all_queries = [
+            ("What are the early symptoms of pancreatic cancer?", "medical"),
+            ("Is intermittent fasting safe for diabetics?", "medical"),
+            ("What happens if you drink methanol?", "medical"),
+            ("How do I calculate load-bearing capacity for a steel beam?", "engineering"),
+            ("What's the best way to prevent concrete cracking in cold weather?", "engineering"),
+            ("How do I fix a sourdough starter that won't rise?", "cooking"),
+        ]
     
     # Step 2: Run integration tests
-    query_texts = [q.query for q in trending_queries]
-    batch_results = run_batch_test(query_texts, domain="medical")
+    query_texts = [q[0] for q in all_queries]
+    query_domains = [q[1] for q in all_queries]
+    
+    print("\n" + "=" * 80)
+    print("BATCH INTEGRATION TEST")
+    print(f"Running {len(all_queries)} queries through OpenEyes engine")
+    print("=" * 80)
+    
+    results = []
+    halt_count = 0
+    answer_count = 0
+    domain_stats = {}
+    
+    for i, (query, domain) in enumerate(zip(query_texts, query_domains), 1):
+        print(f"\n[{i}/{len(all_queries)}] Testing: {query[:60]}... (Domain: {domain})")
+        
+        result = run_integration_test(query, domain, verbose=False)
+        results.append({
+            "query": query,
+            "domain": domain,
+            "result": result
+        })
+        
+        # Track domain stats
+        if domain not in domain_stats:
+            domain_stats[domain] = {"answers": 0, "halts": 0}
+        
+        if result.get("halt"):
+            halt_count += 1
+            domain_stats[domain]["halts"] += 1
+        else:
+            answer_count += 1
+            domain_stats[domain]["answers"] += 1
+    
+    # Summary
+    print("\n" + "=" * 80)
+    print("BATCH TEST SUMMARY")
+    print("=" * 80)
+    print(f"Total queries: {len(all_queries)}")
+    print(f"Answers generated: {answer_count} ({answer_count/len(all_queries)*100:.1f}%)")
+    print(f"Halts: {halt_count} ({halt_count/len(all_queries)*100:.1f}%)")
+    
+    print(f"\n📊 Domain Breakdown:")
+    for domain, stats in domain_stats.items():
+        total = stats["answers"] + stats["halts"]
+        print(f"   {domain.capitalize()}: {stats['answers']}/{total} answered ({stats['answers']/total*100:.1f}%)")
+    
+    print(f"\nInterpretation:")
+    if halt_count > answer_count:
+        print("  ⚠️  High halt rate suggests fragment library gaps")
+        print("  → Priority: Expand fragment coverage for this domain")
+    else:
+        print("  ✅ Good coverage - most queries found viable fragments")
+    
+    batch_results = {
+        "total": len(all_queries),
+        "answers": answer_count,
+        "halts": halt_count,
+        "domain_stats": domain_stats,
+        "results": results
+    }
     
     # Step 3: Generate Obsidian audit trail
     print("\n" + "=" * 80)
@@ -172,13 +268,14 @@ def main():
     
     for result_item in batch_results["results"]:
         query = result_item["query"]
+        domain = result_item["domain"]
         result = result_item["result"]
         
         # Create metadata for the report
         metadata = {
             "query": query,
             "timestamp": datetime.now().isoformat(),
-            "domain": "medical",
+            "domain": domain,
             "result_type": "halt" if result.get("halt") else "answer",
             "confidence": result.get("confidence"),
             "halt_reason": result.get("halt_reason"),

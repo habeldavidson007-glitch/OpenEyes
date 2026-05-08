@@ -1,0 +1,17 @@
+{
+  "id": "frag_eng_concrete_cold_weather_001",
+  "domain": "engineering",
+  "subdomain": "civil_engineering",
+  "tags": ["concrete", "cold_weather", "cracking", "curing"],
+  "content": "To prevent concrete cracking in cold weather, follow ACI 306 guidelines: (1) Maintain concrete temperature above 50°F for first 7 days using insulated blankets or heated enclosures. (2) Use low water-cement ratio (0.40-0.45) to reduce freezing risk. (3) Add air-entraining admixtures (4-7% air content) to provide freeze-thaw resistance. (4) Use calcium chloride or non-chloride accelerators to speed initial set, but limit CaCl2 to 2% by cement weight. (5) Avoid placing on frozen subgrade - thaw and maintain above freezing. (6) Extend curing time - concrete gains strength slower below 50°F. (7) Prevent thermal shock by gradual temperature reduction after protection period.",
+  "source": "ACI 306R-16 Guide to Cold Weather Concreting & Portland Cement Association",
+  "source_url": "https://www.concrete.org/publications/internationalconcreteabstractsportal.aspx?m=details&id=51734897",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "reasoning_role": "definition",
+  "source_type": "primary",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": []
+}
