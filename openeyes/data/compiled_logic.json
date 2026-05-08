@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-05-08T11:50:48.003571",
+  "last_updated": "2026-05-08T17:02:36.884716",
   "synapses": [
     {
       "synapse_id": "synapse_c8f7aa5a",
@@ -39,9 +39,9 @@
         "cancer?"
       ],
       "avg_confidence": 74.4,
-      "usage_count": 11,
+      "usage_count": 34,
       "created_at": "2026-05-08T10:20:58.746023",
-      "last_used": "2026-05-08T11:50:47.965162",
+      "last_used": "2026-05-08T17:02:36.867648",
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 49,
@@ -75,8 +75,8 @@
       "synapse_id": "synapse_e3cf3c79",
       "fragment_chain": [
         "frag_onc_pancreatic_cancer_002",
-        "frag_onc_pancreatic_cancer_003",
-        "frag_onc_pancreatic_cancer_001"
+        "frag_onc_pancreatic_cancer_001",
+        "frag_onc_pancreatic_cancer_003"
       ],
       "trigger_keywords": [
         "early",
@@ -84,9 +84,9 @@
         "pancreatic",
         "cancer?"
       ],
-      "avg_confidence": 70.9,
+      "avg_confidence": 73.6,
       "usage_count": 0,
-      "created_at": "2026-05-08T11:41:11.887604",
+      "created_at": "2026-05-08T17:02:26.509914",
       "last_used": null,
       "metadata": {
         "source": "monte_carlo_compilation",
@@ -136,6 +136,30 @@
         "source": "monte_carlo_compilation",
         "original_query_length": 45,
         "fragment_count": 2
+      }
+    },
+    {
+      "synapse_id": "synapse_fe95a22a",
+      "fragment_chain": [
+        "frag_onc_pancreatic_cancer_002",
+        "frag_onc_pancreatic_cancer_001",
+        "frag_onc_pancreatic_cancer_003",
+        "frag_tox_methanol_poisoning_001"
+      ],
+      "trigger_keywords": [
+        "early",
+        "symptoms",
+        "pancreatic",
+        "cancer?"
+      ],
+      "avg_confidence": 70.6,
+      "usage_count": 0,
+      "created_at": "2026-05-08T17:02:36.884663",
+      "last_used": null,
+      "metadata": {
+        "source": "monte_carlo_compilation",
+        "original_query_length": 49,
+        "fragment_count": 4
       }
     }
   ]

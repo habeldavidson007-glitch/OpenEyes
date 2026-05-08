@@ -11,5 +11,19 @@ __pycache__/
 # Environment
 .env
 .env.local
-*.env.*
+.env.*
+
+# Dependencies
+.venv/
+venv/
+.env/
+
+# Editors
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+target/
 ```
