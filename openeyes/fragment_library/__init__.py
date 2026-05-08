@@ -44,6 +44,7 @@ class Fragment:
     weight: float = 1.0
     compatible_with: List[str] = field(default_factory=list)
     incompatible_with: List[str] = field(default_factory=list)
+    subdomain: Optional[str] = None
     
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)

@@ -396,8 +396,12 @@ class OpenEyes:
             if not fragment_id:
                 continue
             
-            # Get current weight
-            current_weight = self.gene_pool.get(fragment_id, 1.0)
+            # Get current weight - handle both dict and float values
+            current_entry = self.gene_pool.get(fragment_id, 1.0)
+            if isinstance(current_entry, dict):
+                current_weight = current_entry.get("weight", 1.0)
+            else:
+                current_weight = current_entry
             
             # Adjust based on outcome
             if halted:
