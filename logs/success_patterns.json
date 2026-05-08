@@ -1,0 +1,60 @@
+{
+  "last_updated": "2026-05-08T11:41:11.927918",
+  "pattern_count": 3,
+  "patterns": [
+    {
+      "query_hash": "df94ad6f",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 3,
+      "num_sources": 3,
+      "confidence": 70.9,
+      "timestamp": "2026-05-08T11:41:11.887406",
+      "success": true
+    },
+    {
+      "query_hash": "2754beec",
+      "domain": "medical",
+      "tier": "tier1",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition"
+      ],
+      "num_fragments": 2,
+      "num_sources": 2,
+      "confidence": 72.8,
+      "timestamp": "2026-05-08T11:41:11.922364",
+      "success": true
+    },
+    {
+      "query_hash": "7c31f348",
+      "domain": "engineering",
+      "tier": "tier2",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": false,
+      "fragment_roles": [
+        "counter_argument",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 63.5,
+      "timestamp": "2026-05-08T11:41:11.927855",
+      "success": true
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-05-08T11:41:11.922626",
+  "last_updated": "2026-05-08T11:43:44.322910",
   "synapses": [
     {
       "synapse_id": "synapse_c8f7aa5a",
@@ -16,9 +16,9 @@
         "methanol?"
       ],
       "avg_confidence": 75.4,
-      "usage_count": 7,
+      "usage_count": 8,
       "created_at": "2026-05-08T08:26:48.725463",
-      "last_used": "2026-05-08T11:41:11.920248",
+      "last_used": "2026-05-08T11:43:44.322883",
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 35,
@@ -39,9 +39,9 @@
         "cancer?"
       ],
       "avg_confidence": 74.4,
-      "usage_count": 7,
+      "usage_count": 8,
       "created_at": "2026-05-08T10:20:58.746023",
-      "last_used": "2026-05-08T11:41:11.881284",
+      "last_used": "2026-05-08T11:43:44.299673",
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 49,
@@ -62,9 +62,9 @@
         "diabetics?"
       ],
       "avg_confidence": 72.7,
-      "usage_count": 6,
+      "usage_count": 7,
       "created_at": "2026-05-08T10:20:42.808042",
-      "last_used": "2026-05-08T11:41:11.902510",
+      "last_used": "2026-05-08T11:43:44.307008",
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 43,
