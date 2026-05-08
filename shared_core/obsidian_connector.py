@@ -219,19 +219,6 @@ class ObsidianReporter:
             lines.append(f"| {fid} | {content}... | {score} | {source}... |")
         
         return "\n".join(lines)
-
----
-*Generated automatically by E-AR Obsidian Reporter*
-"""
-        
-        with open(filepath, 'w') as f:
-            f.write(md_content)
-        
-        # Track failures separately
-        if not mc_result.get('survived', False):
-            self._report_failure(winner, timestamp, run_metadata)
-        
-        return filepath
     
     def _format_simulator_scores(self, pressure_result: Dict) -> str:
         """Format simulator scores as markdown list."""
@@ -447,4 +434,3 @@ def track_gene_pool(gene_pool: Dict, vault_path: str = None):
     """
     reporter = ObsidianReporter(vault_path)
     return reporter.track_primitive_lineage(gene_pool)
-"""
