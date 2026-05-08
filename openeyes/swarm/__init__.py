@@ -106,7 +106,10 @@ class LibraryAgent:
                     credibility_estimate=cred_estimate,
                     domain_tags=[frag.domain] + frag.tags,
                     agent_type="library",
-                    sub_question=sub_question
+                    sub_question=sub_question,
+                    reasoning_role=frag.reasoning_role or "definition",
+                    source_type=frag.source_type or "primary",
+                    year=frag.year or 2026
                 )
                 candidates.append(candidate)
         

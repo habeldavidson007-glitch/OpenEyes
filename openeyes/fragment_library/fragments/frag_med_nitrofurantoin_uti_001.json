@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_nitrofurantoin_uti_001",
+  "domain": "medical",
+  "tags": [
+    "antibiotic",
+    "uti",
+    "first_line",
+    "safe_penicillin_allergy"
+  ],
+  "content": "Nitrofurantoin 100mg modified-release twice daily for 5 days is a first-line treatment for uncomplicated lower UTI in non-pregnant adults.",
+  "source": "NICE Clinical Guideline NG109",
+  "source_url": "https://www.nice.org.uk/guidance/ng109",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "pharmacology",
+  "reasoning_role": "definition",
+  "source_type": "primary",
+  "year": 2024
+}

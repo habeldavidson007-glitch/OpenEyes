@@ -1,0 +1,23 @@
+{
+  "id": "frag_endo_diabetes_fasting_001",
+  "domain": "medical",
+  "tags": [
+    "diabetes",
+    "intermittent_fasting",
+    "diet",
+    "type2_diabetes",
+    "hypoglycemia"
+  ],
+  "content": "Intermittent fasting may be safe for some people with type 2 diabetes under medical supervision, but requires careful monitoring of blood glucose levels and medication adjustments. Risks include hypoglycemia, especially for those on insulin or sulfonylureas. Not recommended for type 1 diabetes, pregnant women, or individuals with history of eating disorders. Medical consultation essential before starting.",
+  "source": "American Diabetes Association Standards of Care",
+  "source_url": "https://diabetes.org/health-wellness/fitness-intermittent-fasting",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "endocrinology",
+  "reasoning_role": "definition",
+  "source_type": "primary",
+  "year": 2025
+}
