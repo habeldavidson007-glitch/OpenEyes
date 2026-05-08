@@ -15,8 +15,9 @@
   "weight": 1.0,
   "compatible_with": [],
   "incompatible_with": [],
-  "subdomain": "pharmacology",
-  "reasoning_role": "definition",
-  "source_type": "primary",
-  "year": 2024
+  "subdomain": null,
+  "reasoning_role": null,
+  "source_type": null,
+  "year": null,
+  "sub_question": null
 }
