@@ -1,173 +1,210 @@
 """
-OpenEyes Domain Rules — Philosophy Guard Rule Configurations
+Domain Rules Loader — Tier-based Philosophy Guard Configuration
 
-Provides domain-specific rule sets for the Philosophy Guard.
-Each domain has a JSON config that defines what the guard checks.
+Three tiers of scrutiny:
+- Tier 1 (High Stakes): Medical, Law, Nuclear, Aviation — Strict HALT, Primary sources only
+- Tier 2 (Medium Stakes): Engineering, Finance, History — Moderate HALT, Mix of sources
+- Tier 3 (Low Stakes): Cooking, Travel, Trivia — Low HALT, allows tertiary sources
 
-Target structure:
-- medical.json
-- legal.json
-- engineering.json
-- ethics.json
-- general.json
+Each domain maps to a tier and has specific rule configurations.
 """
 
 import json
-from pathlib import Path
 from typing import Dict, List, Any, Optional
+from pathlib import Path
 
 
-# Default rule configurations embedded in code
-DEFAULT_RULES = {
+# Domain to Tier mapping
+DOMAIN_TIERS = {
+    # Tier 1: High Stakes - Strict HALT, Primary sources only
+    "medical": "tier1",
+    "law": "tier1", 
+    "legal": "tier1",
+    "nuclear": "tier1",
+    "aviation": "tier1",
+    
+    # Tier 2: Medium Stakes - Moderate HALT, Mix of Primary/Secondary
+    "engineering": "tier2",
+    "finance": "tier2",
+    "history": "tier2",
+    "technology": "tier2",
+    "science": "tier2",
+    
+    # Tier 3: Low Stakes - Low HALT, allows Wikipedia/Blogs (labeled "Unverified")
+    "cooking": "tier3",
+    "travel": "tier3",
+    "trivia": "tier3",
+    "entertainment": "tier3",
+    "lifestyle": "tier3"
+}
+
+
+# Embedded domain rules (fallback if JSON files not found)
+EMBEDDED_RULES = {
     "medical": {
         "domain": "medical",
-        "version": "0.1",
+        "tier": "tier1",
+        "version": "0.2",
         "rules": [
             {
                 "id": "MED-001",
                 "name": "Do No Harm",
-                "description": "No fragment may recommend a treatment with a known fatal interaction in the current patient context",
+                "description": "No fragment may recommend a treatment with a known fatal interaction",
                 "check_type": "blacklist_tag_conflict",
-                "config": {"flag": "fatal_interaction"}
+                "config": {"flag": "fatal_interaction"},
+                "halt_on_failure": True
             },
             {
                 "id": "MED-002",
                 "name": "Evidence-Based Only",
-                "description": "All treatment fragments must have credibility_class of clinical_guideline or peer_reviewed_study",
-                "check_type": "minimum_credibility_class",
-                "config": {
-                    "allowed": ["clinical_guideline", "peer_reviewed_study"]
-                }
+                "description": "All treatment fragments must have primary source credibility",
+                "check_type": "minimum_source_type",
+                "config": {"allowed": ["primary"]},
+                "halt_on_failure": True
             },
             {
                 "id": "MED-003",
                 "name": "Cite Source",
-                "description": "Every fragment included in a medical answer must carry a source URL",
+                "description": "Every fragment must carry a source URL",
                 "check_type": "requires_field",
-                "config": {"field": "source_url"}
+                "config": {"field": "source_url"},
+                "halt_on_failure": True
             },
             {
                 "id": "MED-004",
-                "name": "Recent Verification",
-                "description": "Medical fragments must be verified within the last 5 years",
-                "check_type": "max_verification_age",
-                "config": {"max_years": 5}
+                "name": "Recent Data Required",
+                "description": "At least one fragment must have data from 2024 or later",
+                "check_type": "requires_recent_data",
+                "config": {"min_year": 2024},
+                "halt_on_failure": False
             },
             {
                 "id": "MED-005",
-                "name": "Contraindication Check",
-                "description": "Fragments with contraindication tags must be flagged",
-                "check_type": "require_warning_if_tagged",
-                "config": {"tags": ["contraindication", "black_box_warning"]}
+                "name": "Counter-Arguments Checked",
+                "description": "Must include risk/contraindication information",
+                "check_type": "requires_reasoning_role",
+                "config": {"role": "counter_argument"},
+                "halt_on_failure": False
             }
         ]
     },
     
     "legal": {
         "domain": "legal",
-        "version": "0.1",
+        "tier": "tier1",
+        "version": "0.2",
         "rules": [
             {
                 "id": "LEG-001",
                 "name": "Jurisdiction Consistency",
                 "description": "All fragments must reference the same jurisdiction",
                 "check_type": "consistent_metadata",
-                "config": {"field": "jurisdiction"}
+                "config": {"field": "jurisdiction"},
+                "halt_on_failure": True
             },
             {
                 "id": "LEG-002",
-                "name": "Binding Authority Required",
-                "description": "Legal claims must come from binding precedent or statute",
-                "check_type": "minimum_credibility_class",
-                "config": {
-                    "allowed": ["binding_precedent", "statute", "regulation"]
-                }
+                "name": "Primary Authority Required",
+                "description": "Legal claims must cite statutes, regulations, or case law",
+                "check_type": "minimum_source_type",
+                "config": {"allowed": ["primary"]},
+                "halt_on_failure": True
             },
             {
                 "id": "LEG-003",
-                "name": "Cite Source",
-                "description": "Every legal fragment must include a citation",
-                "check_type": "requires_field",
-                "config": {"field": "citation"}
-            },
-            {
-                "id": "LEG-004",
-                "name": "No Expired Law",
-                "description": "Fragments must not reference repealed or expired laws",
-                "check_type": "blacklist_tag_conflict",
-                "config": {"flag": "repealed"}
+                "name": "No Outdated Precedent",
+                "description": "Case law must not be overturned or superseded",
+                "check_type": "not_overturned",
+                "config": {},
+                "halt_on_failure": True
             }
         ]
     },
     
     "engineering": {
         "domain": "engineering",
-        "version": "0.1",
+        "tier": "tier2",
+        "version": "0.2",
         "rules": [
             {
                 "id": "ENG-001",
-                "name": "Safety Factor Compliance",
-                "description": "Engineering recommendations must meet minimum safety factors",
-                "check_type": "minimum_threshold",
-                "config": {"field": "safety_factor", "min_value": 1.5}
+                "name": "Safety Standards Compliance",
+                "description": "Must reference applicable safety standards (ISO, ASTM, etc.)",
+                "check_type": "requires_standard_reference",
+                "config": {"standards": ["ISO", "ASTM", "IEEE", "ASME"]},
+                "halt_on_failure": True
             },
             {
                 "id": "ENG-002",
-                "name": "Code Compliance",
-                "description": "Must reference applicable building/engineering codes",
-                "check_type": "requires_field",
-                "config": {"field": "code_reference"}
+                "name": "Recent Technical Data",
+                "description": "Technical specifications should be from recent sources",
+                "check_type": "minimum_year",
+                "config": {"min_year": 2020},
+                "halt_on_failure": False
             },
             {
                 "id": "ENG-003",
-                "name": "Peer Review",
-                "description": "Engineering calculations must be peer-reviewed",
-                "check_type": "minimum_credibility_class",
-                "config": {
-                    "allowed": ["peer_reviewed", "code_specification", "standard"]
-                }
+                "name": "Peer-Reviewed Sources Preferred",
+                "description": "Prefer peer-reviewed journals over manufacturer claims",
+                "check_type": "prefer_source_type",
+                "config": {"preferred": ["primary", "secondary"], "discouraged": ["tertiary"]},
+                "halt_on_failure": False
             }
         ]
     },
     
-    "ethics": {
-        "domain": "ethics",
-        "version": "0.1",
+    "cooking": {
+        "domain": "cooking",
+        "tier": "tier3",
+        "version": "0.2",
         "rules": [
             {
-                "id": "ETH-001",
-                "name": "Stakeholder Consideration",
-                "description": "Ethical analysis must consider all affected stakeholders",
-                "check_type": "requires_tags",
-                "config": {"min_tags": ["stakeholder_analysis"]}
+                "id": "COOK-001",
+                "name": "Allergy Warning",
+                "description": "Must flag common allergens if present",
+                "check_type": "flag_allergens",
+                "config": {"allergens": ["nuts", "dairy", "eggs", "soy", "gluten", "shellfish"]},
+                "halt_on_failure": False
             },
             {
-                "id": "ETH-002",
-                "name": "Principle Alignment",
-                "description": "Recommendations must align with established ethical principles",
-                "check_type": "whitelist_tag_only",
-                "config": {"allowed": ["beneficence", "non_maleficence", "autonomy", "justice"]}
+                "id": "COOK-002",
+                "name": "Source Attribution",
+                "description": "Recipe should have a source (can be blog, book, etc.)",
+                "check_type": "requires_field",
+                "config": {"field": "source"},
+                "halt_on_failure": False
+            },
+            {
+                "id": "COOK-003",
+                "name": "Label Unverified Sources",
+                "description": "Tertiary sources must be labeled as unverified",
+                "check_type": "label_tertiary",
+                "config": {"label": "Unverified"},
+                "halt_on_failure": False
             }
         ]
     },
     
     "general": {
         "domain": "general",
-        "version": "0.1",
+        "tier": "tier2",
+        "version": "0.2",
         "rules": [
             {
                 "id": "GEN-001",
                 "name": "Source Required",
-                "description": "All claims must have a source",
+                "description": "All claims must have some source attribution",
                 "check_type": "requires_field",
-                "config": {"field": "source"}
+                "config": {"field": "source"},
+                "halt_on_failure": False
             },
             {
                 "id": "GEN-002",
-                "name": "No Contradictions",
-                "description": "Fragments must not contradict each other",
-                "check_type": "consistency_check",
-                "config": {}
+                "name": "Reasoning Chain Completeness",
+                "description": "Should have definition and at least one other reasoning role",
+                "check_type": "requires_reasoning_diversity",
+                "config": {"min_roles": 2},
+                "halt_on_failure": False
             }
         ]
     }
@@ -176,147 +213,169 @@ DEFAULT_RULES = {
 
 class DomainRulesLoader:
     """
-    Loads and manages domain-specific Philosophy Guard rules.
+    Loads and caches domain-specific rules for the Philosophy Guard.
     
-    Rules can be loaded from:
-    1. Embedded defaults (in this module)
-    2. JSON files in openeyes/domain_rules/
-    3. Custom paths provided at runtime
+    Supports both file-based rules (openeyes/domain_rules/{domain}.json)
+    and embedded fallback rules.
     """
     
-    def __init__(self, rules_dir: Optional[Path] = None):
-        """
-        Initialize the rules loader.
-        
-        Args:
-            rules_dir: Directory containing domain rule JSON files.
-                      If None, uses default location.
-        """
-        self.rules_dir = rules_dir or Path(__file__).parent
-        self._cache: Dict[str, Dict[str, Any]] = {}
+    def __init__(self, rules_dir: str = "openeyes/domain_rules"):
+        self.rules_dir = Path(rules_dir)
+        self._cache: Dict[str, Dict] = {}
     
-    def get_rules(self, domain: str) -> Dict[str, Any]:
+    def get_domain_tier(self, domain: str) -> str:
+        """Get the tier for a domain."""
+        return DOMAIN_TIERS.get(domain.lower(), "tier2")
+    
+    def load_rules(self, domain: str) -> Dict[str, Any]:
         """
-        Get rules for a specific domain.
+        Load rules for a domain.
         
-        Args:
-            domain: Domain name (e.g., "medical", "legal")
-            
-        Returns:
-            Rule configuration dict
+        Returns dict with:
+        - domain: domain name
+        - tier: tier1/tier2/tier3
+        - version: rules version
+        - rules: list of rule dicts
         """
+        domain_lower = domain.lower()
+        
         # Check cache first
-        if domain in self._cache:
-            return self._cache[domain]
+        if domain_lower in self._cache:
+            return self._cache[domain_lower]
         
         # Try to load from file
-        rules_config = self._load_from_file(domain)
+        rules_file = self.rules_dir / f"{domain_lower}.json"
         
-        # Fall back to defaults
-        if rules_config is None:
-            rules_config = DEFAULT_RULES.get(domain, DEFAULT_RULES["general"])
+        if rules_file.exists():
+            try:
+                with open(rules_file, 'r') as f:
+                    rules_config = json.load(f)
+                
+                # Validate structure
+                if "rules" not in rules_config:
+                    rules_config["rules"] = []
+                if "tier" not in rules_config:
+                    rules_config["tier"] = self.get_domain_tier(domain_lower)
+                
+                self._cache[domain_lower] = rules_config
+                return rules_config
+                
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"[DomainRulesLoader] Error loading {rules_file}: {e}")
+                # Fall through to embedded rules
         
-        # Cache and return
-        self._cache[domain] = rules_config
-        return rules_config
+        # Use embedded rules if available
+        if domain_lower in EMBEDDED_RULES:
+            self._cache[domain_lower] = EMBEDDED_RULES[domain_lower].copy()
+            return self._cache[domain_lower]
+        
+        # Default fallback
+        default_rules = {
+            "domain": domain_lower,
+            "tier": self.get_domain_tier(domain_lower),
+            "version": "0.1",
+            "rules": EMBEDDED_RULES["general"]["rules"]
+        }
+        self._cache[domain_lower] = default_rules
+        return default_rules
     
-    def _load_from_file(self, domain: str) -> Optional[Dict[str, Any]]:
-        """Load rules from a JSON file."""
-        config_file = self.rules_dir / f"{domain}.json"
-        
-        if not config_file.exists():
-            return None
-        
-        try:
-            with open(config_file, 'r', encoding='utf-8') as f:
-                config = json.load(f)
-            return config
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"Warning: Failed to load rules from {config_file}: {e}")
-            return None
+    def get_rule_by_id(self, domain: str, rule_id: str) -> Optional[Dict]:
+        """Get a specific rule by ID."""
+        rules_config = self.load_rules(domain)
+        for rule in rules_config.get("rules", []):
+            if rule.get("id") == rule_id:
+                return rule
+        return None
     
-    def register_rules(self, domain: str, rules_config: Dict[str, Any]):
-        """
-        Register custom rules for a domain.
-        
-        Args:
-            domain: Domain name
-            rules_config: Rule configuration dict
-        """
-        self._cache[domain] = rules_config
+    def get_halt_rules(self, domain: str) -> List[Dict]:
+        """Get only rules that cause HALT on failure."""
+        rules_config = self.load_rules(domain)
+        return [r for r in rules_config.get("rules", []) if r.get("halt_on_failure", False)]
     
-    def save_rules_to_file(self, domain: str, rules_config: Dict[str, Any]):
-        """
-        Save rules to a JSON file.
-        
-        Args:
-            domain: Domain name
-            rules_config: Rule configuration dict
-        """
-        config_file = self.rules_dir / f"{domain}.json"
-        
-        with open(config_file, 'w', encoding='utf-8') as f:
-            json.dump(rules_config, f, indent=2)
-        
-        # Update cache
-        self._cache[domain] = rules_config
+    def get_warning_rules(self, domain: str) -> List[Dict]:
+        """Get rules that only generate warnings (no HALT)."""
+        rules_config = self.load_rules(domain)
+        return [r for r in rules_config.get("rules", []) if not r.get("halt_on_failure", False)]
     
-    def list_available_domains(self) -> List[str]:
-        """List all domains with available rules."""
-        domains = set(DEFAULT_RULES.keys())
+    def validate_fragment_against_rules(self, domain: str, fragment: Dict) -> List[Dict]:
+        """
+        Validate a single fragment against all domain rules.
         
-        # Add domains from files
-        if self.rules_dir.exists():
-            for config_file in self.rules_dir.glob("*.json"):
-                domain = config_file.stem
-                if domain != "__init__":
-                    domains.add(domain)
+        Returns list of violations (empty if fragment passes all rules).
+        """
+        violations = []
+        rules_config = self.load_rules(domain)
         
-        return sorted(list(domains))
+        for rule in rules_config.get("rules", []):
+            check_type = rule.get("check_type")
+            config = rule.get("config", {})
+            
+            violation = self._check_rule(check_type, fragment, config, rule)
+            if violation:
+                violations.append(violation)
+        
+        return violations
     
-    def validate_rule_config(self, rules_config: Dict[str, Any]) -> bool:
-        """
-        Validate a rule configuration structure.
+    def _check_rule(self, check_type: str, fragment: Dict, config: Dict, rule: Dict) -> Optional[Dict]:
+        """Execute a single rule check."""
         
-        Returns True if valid, raises ValueError if invalid.
-        """
-        if "domain" not in rules_config:
-            raise ValueError("Rule config must have 'domain' field")
+        if check_type == "requires_field":
+            field = config.get("field")
+            if field and not fragment.get(field):
+                return {
+                    "rule_id": rule.get("id"),
+                    "rule_name": rule.get("name"),
+                    "violation": f"Missing required field: {field}",
+                    "severity": "halt" if rule.get("halt_on_failure") else "warning"
+                }
         
-        if "rules" not in rules_config:
-            raise ValueError("Rule config must have 'rules' list")
+        elif check_type == "minimum_source_type":
+            allowed = config.get("allowed", [])
+            source_type = fragment.get("source_type", "tertiary")
+            if source_type not in allowed:
+                return {
+                    "rule_id": rule.get("id"),
+                    "rule_name": rule.get("name"),
+                    "violation": f"Source type '{source_type}' not allowed. Must be one of: {allowed}",
+                    "severity": "halt" if rule.get("halt_on_failure") else "warning"
+                }
         
-        if not isinstance(rules_config["rules"], list):
-            raise ValueError("'rules' must be a list")
+        elif check_type == "requires_reasoning_role":
+            required_role = config.get("role")
+            fragment_role = fragment.get("reasoning_role", "unknown")
+            if fragment_role != required_role:
+                # This is a composition-level check, skip for single fragment
+                pass
         
-        for i, rule in enumerate(rules_config["rules"]):
-            if "id" not in rule:
-                raise ValueError(f"Rule {i} missing 'id' field")
-            if "check_type" not in rule:
-                raise ValueError(f"Rule {rule.get('id', i)} missing 'check_type' field")
+        elif check_type == "minimum_year":
+            min_year = config.get("min_year", 0)
+            fragment_year = fragment.get("year", 0)
+            if fragment_year < min_year:
+                return {
+                    "rule_id": rule.get("id"),
+                    "rule_name": rule.get("name"),
+                    "violation": f"Fragment year ({fragment_year}) is before minimum ({min_year})",
+                    "severity": "halt" if rule.get("halt_on_failure") else "warning"
+                }
         
-        return True
+        elif check_type == "label_tertiary":
+            label = config.get("label", "Unverified")
+            if fragment.get("source_type") == "tertiary":
+                # Add label to fragment metadata
+                if "labels" not in fragment:
+                    fragment["labels"] = []
+                if label not in fragment["labels"]:
+                    fragment["labels"].append(label)
+        
+        return None
 
 
-# Convenience functions
-_default_loader: Optional[DomainRulesLoader] = None
+def get_domain_rules(domain: str, rules_dir: str = "openeyes/domain_rules") -> Dict[str, Any]:
+    """Convenience function to get domain rules."""
+    loader = DomainRulesLoader(rules_dir)
+    return loader.load_rules(domain)
 
 
-def get_loader(rules_dir: Optional[Path] = None) -> DomainRulesLoader:
-    """Get or create the default rules loader."""
-    global _default_loader
-    if _default_loader is None:
-        _default_loader = DomainRulesLoader(rules_dir)
-    return _default_loader
-
-
-def get_domain_rules(domain: str) -> Dict[str, Any]:
-    """Get rules for a specific domain."""
-    loader = get_loader()
-    return loader.get_rules(domain)
-
-
-def reset_loader():
-    """Reset the default loader (for testing)."""
-    global _default_loader
-    _default_loader = None
+def get_domain_tier(domain: str) -> str:
+    """Convenience function to get domain tier."""
+    return DOMAIN_TIERS.get(domain.lower(), "tier2")

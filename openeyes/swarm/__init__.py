@@ -406,3 +406,76 @@ class Swarm:
             "sub_questions": sub_questions,
             "num_sub_questions": len(sub_questions)
         }
+
+
+# Placeholder API connectors (to be implemented with real API keys)
+class ArXivConnector:
+    """Connector for arXiv preprint database."""
+    
+    def __init__(self, api_key: Optional[str] = None):
+        self.api_key = api_key
+    
+    def search_definitions(self, query: str, domain: str) -> List[Dict]:
+        """Search arXiv for definition papers."""
+        # TODO: Implement real arXiv API call
+        print("[ArXivConnector] Would query arXiv API")
+        return []
+
+
+class PubMedConnector:
+    """Connector for PubMed biomedical literature."""
+    
+    def __init__(self, api_key: Optional[str] = None):
+        self.api_key = api_key
+    
+    def search_risks(self, query: str) -> List[Dict]:
+        """Search PubMed for risk/side-effect studies."""
+        # TODO: Implement real PubMed E-utilities API call
+        print("[PubMedConnector] Would query PubMed API")
+        return []
+
+
+class IEEEConnector:
+    """Connector for IEEE Xplore digital library."""
+    
+    def __init__(self, api_key: Optional[str] = None):
+        self.api_key = api_key
+    
+    def search_recent(self, query: str, min_year: int = 2024) -> List[Dict]:
+        """Search IEEE for recent technical papers."""
+        # TODO: Implement real IEEE API call
+        print("[IEEEConnector] Would query IEEE Xplore API")
+        return []
+
+
+class GovConnector:
+    """Connector for US government databases (CDC, FDA, NIH, etc.)."""
+    
+    def __init__(self, api_key: Optional[str] = None):
+        self.api_key = api_key
+    
+    def search_statistics(self, query: str) -> List[Dict]:
+        """Search government databases for official statistics."""
+        # TODO: Implement real government API calls
+        print("[GovConnector] Would query government APIs")
+        return []
+
+
+def create_api_connectors(config: Dict[str, str]) -> Dict[str, Any]:
+    """
+    Create API connectors from configuration.
+    
+    config: {"arxiv": "api_key", "pubmed": "api_key", ...}
+    """
+    connectors = {}
+    
+    if "arxiv" in config:
+        connectors["arxiv"] = ArXivConnector(config["arxiv"])
+    if "pubmed" in config:
+        connectors["pubmed"] = PubMedConnector(config["pubmed"])
+    if "ieee" in config:
+        connectors["ieee"] = IEEEConnector(config["ieee"])
+    if "gov" in config:
+        connectors["gov"] = GovConnector(config["gov"])
+    
+    return connectors

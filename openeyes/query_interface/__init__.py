@@ -1,442 +1,356 @@
 """
 OpenEyes Query Interface — Day Mode Entry Point
 
-The user-facing API for OpenEyes. Receives queries, routes them through
-the full engine (Swarm → Monte Carlo → Philosophy Guard → Dice Table),
-and returns final output or HALT.
+Receives user queries, routes through the full engine:
+1. Swarm decomposition and retrieval
+2. Monte Carlo evaluation with domain-tier thresholds
+3. Philosophy Guard validation
+4. Dice Table assembly
+5. Output with traceability
 
-Target interface:
-    from openeyes.query_interface import OpenEyes
-    
-    oe = OpenEyes(domain="medical")
-    result = oe.query("What is the safest antibiotic for a penicillin-allergic patient with a UTI?")
+Returns verified answer or HALT with reason.
 """
 
-import sys
-from pathlib import Path
-from typing import Dict, List, Optional, Any
-from dataclasses import dataclass
-import uuid
+import time
+import hashlib
 from datetime import datetime
+from typing import Dict, List, Any, Optional
+from pathlib import Path
 
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+from openeyes.fragment_library import FragmentLibrary
+from openeyes.swarm import Swarm, FragmentCandidate, create_api_connectors
+from openeyes.dice_table import WurfelspielAssembler, DiceTable
+from openeyes.domain_rules import get_domain_rules, get_domain_tier, DomainRulesLoader
 
-from openeyes.fragment_library import FragmentLibrary, get_library
-from openeyes.swarm import Swarm, FragmentCandidate
-from openeyes.dice_table import DiceTable, WurfelspielAssembler, AssembledOutput
-from openeyes.domain_rules import get_domain_rules, DomainRulesLoader
-
-# Import shared_core modules
-from shared_core.monte_carlo_engine import monte_carlo_evolve, evaluate_composition
-from shared_core.philosophy_guard import PhilosophyGuard
+from shared_core.monte_carlo_engine import (
+    monte_carlo_evolve, 
+    evaluate_composition, 
+    DEFAULT_THRESHOLDS
+)
 from shared_core.survival_and_weights import survives_mc, load_gene_pool, save_gene_pool
-from shared_core.obsidian_connector import ObsidianReporter
-
-
-# Alias for compatibility
-ObsidianConnector = ObsidianReporter
-
-
-@dataclass
-class QueryResult:
-    """Result of a query execution."""
-    answer: Optional[str]
-    confidence: float
-    fragments_used: List[Dict[str, Any]]
-    philosophy_checks_passed: List[str]
-    trace_id: str
-    halt: bool
-    halt_reason: Optional[str] = None
-    recommendation: Optional[str] = None
-    confidence_note: Optional[str] = None
-    decomposition: Optional[Dict[str, Any]] = None
-    processing_time_ms: float = 0
-    
-    def to_dict(self) -> Dict[str, Any]:
-        result = {
-            "answer": self.answer,
-            "confidence": self.confidence,
-            "fragments_used": self.fragments_used,
-            "philosophy_checks_passed": self.philosophy_checks_passed,
-            "trace_id": self.trace_id,
-            "halt": self.halt,
-            "processing_time_ms": self.processing_time_ms
-        }
-        if self.halt_reason:
-            result["halt_reason"] = self.halt_reason
-        if self.recommendation:
-            result["recommendation"] = self.recommendation
-        if self.confidence_note:
-            result["confidence_note"] = self.confidence_note
-        if self.decomposition:
-            result["decomposition"] = self.decomposition
-        return result
+from shared_core.philosophy_guard import PhilosophyGuard
+from shared_core.obsidian_connector import ObsidianReporter as ObsidianConnector
 
 
 class OpenEyes:
     """
-    OpenEyes query engine — Day Mode entry point.
+    Main OpenEyes query interface.
     
-    Routes user queries through the complete engine:
-    1. Swarm: Decompose and retrieve candidates
-    2. Monte Carlo: Evaluate and filter survivors
-    3. Philosophy Guard: Hard veto on domain rules
-    4. Dice Table: Select and assemble output
-    
-    Returns traceable answers or HALT with reason.
+    Usage:
+        oe = OpenEyes(domain="medical")
+        result = oe.query("What is the safest antibiotic for a penicillin-allergic patient with a UTI?")
     """
     
-    VALID_DOMAINS = ["medical", "legal", "engineering", "ethics", "general"]
-    
-    # Monte Carlo thresholds (from spec Section 5.1)
-    MC_SCORE_THRESHOLD = 60
-    MC_VARIANCE_THRESHOLD = 500
-    MC_SURVIVAL_PROB_THRESHOLD = 0.4
-    
-    def __init__(
-        self,
-        domain: str = "general",
-        fragment_library: Optional[FragmentLibrary] = None,
-        internet_access: bool = False,
-        obsidian_vault_path: Optional[Path] = None
-    ):
-        """
-        Initialize OpenEyes engine.
+    def __init__(self, domain: str = "general", 
+                 fragment_library_path: str = "openeyes/fragment_library/fragments.json",
+                 api_config: Optional[Dict[str, str]] = None,
+                 obsidian_vault_path: Optional[str] = None):
         
-        Args:
-            domain: Domain for this session (e.g., "medical", "legal")
-            fragment_library: Optional custom fragment library
-            internet_access: Allow web searches (default False)
-            obsidian_vault_path: Path to Obsidian vault for audit trail
-        """
-        if domain not in self.VALID_DOMAINS:
-            raise ValueError(
-                f"Invalid domain: {domain}. Must be one of: {self.VALID_DOMAINS}"
-            )
+        self.domain = domain.lower()
+        self.domain_tier = get_domain_tier(self.domain)
         
-        self.domain = domain
-        self.internet_access = internet_access
+        # Load domain rules
+        self.rules_config = get_domain_rules(self.domain)
         
         # Initialize fragment library
-        self.library = fragment_library or get_library()
+        self.library = FragmentLibrary(storage_path=fragment_library_path)
+        
+        # Initialize API connectors if config provided
+        self.api_connectors = create_api_connectors(api_config or {})
         
         # Initialize Swarm
         self.swarm = Swarm(
             fragment_library=self.library,
-            internet_access=internet_access
+            internet_access=bool(api_config),
+            api_configs=api_config or {}
         )
+        
+        # Initialize Philosophy Guard with domain rules
+        self.guard = PhilosophyGuard()
+        self.guard.rules = self.rules_config.get("rules", [])
         
         # Initialize Dice Table and Assembler
         self.dice_table = DiceTable()
-        self.assembler = WurfelspielAssembler(dice_table=self.dice_table)
+        self.assembler = WurfelspielAssembler(self.dice_table)
         
-        # Initialize Philosophy Guard with domain rules
-        guard_config_path = Path(f"openeyes/domain_rules/{domain}.json")
-        if guard_config_path.exists():
-            self.guard = PhilosophyGuard(rules_config=str(guard_config_path))
-        else:
-            # Fall back to default E-AR rules if domain file doesn't exist
-            print(f"[OpenEyes] Warning: Domain rules not found for '{domain}', using defaults")
-            self.guard = PhilosophyGuard()
-        
-        # Initialize Obsidian connector
-        self.obsidian = ObsidianConnector(vault_path=obsidian_vault_path)
+        # Initialize Obsidian connector (optional)
+        self.obsidian = None
+        if obsidian_vault_path:
+            self.obsidian = ObsidianConnector(vault_path=obsidian_vault_path)
         
         # Load gene pool
         self.gene_pool = load_gene_pool()
+        
+        print(f"[OpenEyes] Initialized for domain '{self.domain}' (Tier {self.domain_tier[-1]})")
+        print(f"✓ Loaded {len(self.rules_config.get('rules', []))} domain rules")
+        print(f"✓ Fragment library: {len(self.library._fragments)} fragments")
     
-    def query(self, query_text: str) -> QueryResult:
+    def query(self, query_text: str) -> Dict[str, Any]:
         """
-        Execute a user query through the full engine.
+        Process a user query through the full OpenEyes pipeline.
         
-        Args:
-            query_text: The user's question
-            
-        Returns:
-            QueryResult with answer or HALT
+        Returns dict with:
+        - answer: str or None (if halted)
+        - confidence: float (0-100)
+        - halt: bool
+        - halt_reason: str (if halted)
+        - fragments_used: list
+        - philosophy_checks_passed: list
+        - trace_id: str
         """
-        import time
         start_time = time.time()
+        trace_id = self._generate_trace_id()
         
-        # Generate trace ID
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        trace_id = f"oe_{timestamp}_{uuid.uuid4().hex[:4]}"
+        print(f"\n{'='*60}")
+        print(f"QUERY: {query_text}")
+        print(f"Domain: {self.domain} | Tier: {self.domain_tier}")
+        print(f"Trace ID: {trace_id}")
+        print(f"{'='*60}\n")
+        
+        result = {
+            "trace_id": trace_id,
+            "domain": self.domain,
+            "tier": self.domain_tier,
+            "query": query_text,
+            "answer": None,
+            "confidence": 0.0,
+            "halt": False,
+            "halt_reason": None,
+            "fragments_used": [],
+            "philosophy_checks_passed": [],
+            "processing_time_ms": 0
+        }
         
         try:
-            # Step 1: Decompose query via Swarm
-            decomposition = self.swarm.get_decomposition(query_text)
-            
-            # Step 2: Retrieve candidate fragments
-            candidates = self.swarm.decompose_and_retrieve(query_text, self.domain)
+            # Step 1: Swarm decomposition and retrieval
+            candidates = self._run_swarm(query_text)
             
             if not candidates:
-                return QueryResult(
-                    answer=None,
-                    confidence=0.0,
-                    fragments_used=[],
-                    philosophy_checks_passed=[],
-                    trace_id=trace_id,
-                    halt=True,
-                    halt_reason="No candidate fragments found for this query.",
-                    recommendation="Try reformulating your query or check if the domain has sufficient coverage.",
-                    decomposition=decomposition,
-                    processing_time_ms=(time.time() - start_time) * 1000
-                )
+                result["halt"] = True
+                result["halt_reason"] = "No candidate fragments found for this query."
+                print(f"\n[HALT] {result['halt_reason']}")
+                return self._finalize_result(result, start_time, trace_id)
             
-            # Step 3: Run Monte Carlo evaluation on candidates
+            print(f"\n[Step 1 Complete] Retrieved {len(candidates)} candidate fragments")
+            
+            # Step 2: Monte Carlo evaluation
             survivors = self._run_monte_carlo(candidates)
             
             if not survivors:
-                return QueryResult(
-                    answer=None,
-                    confidence=0.0,
-                    fragments_used=[],
-                    philosophy_checks_passed=[],
-                    trace_id=trace_id,
-                    halt=True,
-                    halt_reason="No fragments survived Monte Carlo evaluation.",
-                    recommendation="Insufficient confidence in available information. Consult a specialist.",
-                    decomposition=decomposition,
-                    processing_time_ms=(time.time() - start_time) * 1000
-                )
+                result["halt"] = True
+                result["halt_reason"] = "No fragments survived Monte Carlo evaluation."
+                print(f"\n[HALT] {result['halt_reason']}")
+                return self._finalize_result(result, start_time, trace_id)
             
-            # Step 4: Apply Philosophy Guard to survivors
-            cleared_fragments = self._apply_philosophy_guard(survivors)
+            print(f"\n[Step 2 Complete] {len(survivors)} fragments survived Monte Carlo")
+            
+            # Step 3: Philosophy Guard validation
+            cleared_fragments = self._run_philosophy_guard(survivors)
             
             if not cleared_fragments:
-                rejected_rules = self.guard.last_rejected_rules if hasattr(self.guard, 'last_rejected_rules') else []
-                return QueryResult(
-                    answer=None,
-                    confidence=0.0,
-                    fragments_used=[],
-                    philosophy_checks_passed=[],
-                    trace_id=trace_id,
-                    halt=True,
-                    halt_reason=f"Philosophy Guard veto: {rejected_rules}",
-                    recommendation="No fragments passed domain-specific safety checks.",
-                    decomposition=decomposition,
-                    processing_time_ms=(time.time() - start_time) * 1000
-                )
+                result["halt"] = True
+                result["halt_reason"] = "No fragments passed Philosophy Guard validation."
+                print(f"\n[HALT] {result['halt_reason']}")
+                return self._finalize_result(result, start_time, trace_id)
             
-            # Step 5: Assemble output via Dice Table
-            assembled = self.assembler.assemble(
-                survivors=cleared_fragments,
-                domain=self.domain,
-                philosophy=self._get_domain_philosophy(),
-                trace_id=trace_id
-            )
+            print(f"\n[Step 3 Complete] {len(cleared_fragments)} fragments cleared Philosophy Guard")
             
-            # Replace placeholder in answer
-            if assembled.answer:
-                assembled.answer = assembled.answer.replace(
-                    "{trace_id_placeholder}", trace_id
-                )
+            # Step 4: Dice Table assembly
+            assembled_output = self._assemble_answer(cleared_fragments, query_text)
             
-            # Step 6: Final Philosophy Guard check on assembled output
-            if not assembled.halt:
-                assembly_check = self.guard.validate_proposal({
-                    "content": assembled.answer,
-                    "fragments": assembled.fragments_used
-                })
-                
-                if not assembly_check.get("passed", True):
-                    return QueryResult(
-                        answer=None,
-                        confidence=assembled.confidence,
-                        fragments_used=assembled.fragments_used,
-                        philosophy_checks_passed=[],
-                        trace_id=trace_id,
-                        halt=True,
-                        halt_reason=f"Assembly failed philosophy check: {assembly_check.get('rejected_by', [])}",
-                        recommendation="Assembled answer violates domain rules.",
-                        decomposition=decomposition,
-                        processing_time_ms=(time.time() - start_time) * 1000
-                    )
+            if assembled_output.get("halt"):
+                result["halt"] = True
+                result["halt_reason"] = assembled_output.get("halt_reason", "Assembly failed.")
+                print(f"\n[HALT] {result['halt_reason']}")
+                return self._finalize_result(result, start_time, trace_id)
             
-            # Step 7: Log to Obsidian
-            self._log_to_obsidian(trace_id, query_text, assembled, decomposition)
+            result["answer"] = assembled_output.get("answer", "")
+            result["confidence"] = assembled_output.get("confidence", 0.0)
+            result["fragments_used"] = assembled_output.get("fragments_used", [])
+            result["philosophy_checks_passed"] = assembled_output.get("philosophy_checks", [])
             
-            # Step 8: Update gene pool weights
-            self._update_gene_pool(cleared_fragments, assembled.halt)
+            print(f"\n[Step 4 Complete] Answer assembled with confidence {result['confidence']:.1f}")
             
-            return QueryResult(
-                answer=assembled.answer,
-                confidence=assembled.confidence,
-                fragments_used=assembled.fragments_used,
-                philosophy_checks_passed=assembled.philosophy_checks_passed,
-                trace_id=trace_id,
-                halt=assembled.halt,
-                halt_reason=assembled.halt_reason,
-                recommendation=assembled.recommendation,
-                confidence_note=assembled.confidence_note,
-                decomposition=decomposition,
-                processing_time_ms=(time.time() - start_time) * 1000
-            )
+            # Step 5: Final composition-level Philosophy Guard check
+            final_check = self._final_philosophy_check(assembled_output)
+            if not final_check.get("passed", True):
+                result["halt"] = True
+                result["halt_reason"] = f"Final validation failed: {final_check.get('reason', 'Unknown')}"
+                print(f"\n[HALT] {result['halt_reason']}")
+                return self._finalize_result(result, start_time, trace_id)
+            
+            print(f"\n[Final Check Passed]")
+            
+            # Success!
+            print(f"\n{'='*60}")
+            print(f"ANSWER: {result['answer'][:200]}..." if len(str(result['answer'])) > 200 else f"ANSWER: {result['answer']}")
+            print(f"Confidence: {result['confidence']:.1f}%")
+            print(f"Fragments used: {len(result['fragments_used'])}")
+            print(f"{'='*60}\n")
             
         except Exception as e:
-            # Unexpected error
-            return QueryResult(
-                answer=None,
-                confidence=0.0,
-                fragments_used=[],
-                philosophy_checks_passed=[],
-                trace_id=trace_id,
-                halt=True,
-                halt_reason=f"System error: {str(e)}",
-                recommendation="Please report this error to system administrators.",
-                processing_time_ms=(time.time() - start_time) * 1000
-            )
-    
-    def _run_monte_carlo(self, candidates: List[FragmentCandidate]) -> List[Dict[str, Any]]:
-        """
-        Run Monte Carlo evaluation on candidates.
+            result["halt"] = True
+            result["halt_reason"] = f"System error: {str(e)}"
+            print(f"\n[ERROR] {result['halt_reason']}")
+            import traceback
+            traceback.print_exc()
         
-        Returns list of survivor fragments with scores.
-        """
+        return self._finalize_result(result, start_time, trace_id)
+    
+    def _run_swarm(self, query_text: str) -> List[Dict[str, Any]]:
+        """Run Swarm decomposition and retrieval."""
+        candidates = self.swarm.decompose_and_retrieve(domain=self.domain,
+            query=query_text,
+            domain=self.domain,
+            
+        )
+        
+        # Convert FragmentCandidate objects to dicts
+        return [c.to_dict() for c in candidates]
+    
+    def _run_monte_carlo(self, candidates: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Run Monte Carlo evaluation on candidates."""
         survivors = []
         
         for candidate in candidates:
-            # Create a "composition" from the candidate (single fragment)
-            composition = {
-                "fragments": [candidate.to_dict()],
-                "content": candidate.content
-            }
+            # Create single-fragment composition for evaluation
+            composition = [candidate]
             
             # Evaluate composition
-            eval_result = evaluate_composition(composition)
+            eval_result = evaluate_composition(
+                composition=composition,
+                scenario=None,
+                
+            )
             
-            # Check survival criteria (use attribute access, not dict syntax)
+            # Check survival criteria using survives_mc
             survival_result = survives_mc(
                 score=eval_result.mean_score,
-                selected=[candidate.to_dict()],  # Pass list of dicts, not bool
+                selected=[candidate],  # Pass as list
                 variance=eval_result.variance,
                 survival_probability=eval_result.survival_probability,
-                aggregate_stats={},
-                score_threshold=self.MC_SCORE_THRESHOLD,
-                variance_threshold=self.MC_VARIANCE_THRESHOLD,
-                survival_prob_threshold=self.MC_SURVIVAL_PROB_THRESHOLD
+                aggregate_stats={}
             )
             
             if survival_result["passed"]:
-                # This fragment survived
-                survivor_data = candidate.to_dict()
-                survivor_data["score"] = eval_result.mean_score
-                survivor_data["variance"] = eval_result.variance
-                survivor_data["survival_probability"] = eval_result.survival_probability
-                survivor_data["tags"] = candidate.domain_tags
+                # Add evaluation metrics to candidate
+                candidate["mc_score"] = eval_result.mean_score
+                candidate["mc_variance"] = eval_result.variance
+                candidate["mc_survival_prob"] = eval_result.survival_probability
+                candidate["reasoning_role"] = candidate.get("reasoning_role", "unknown")
+                candidate["source_type"] = candidate.get("source_type", "tertiary")
+                candidate["year"] = candidate.get("year", 0)
+                survivors.append(candidate)
                 
-                survivors.append(survivor_data)
+                print(f"  ✓ Fragment {candidate.get('id', 'unknown')[:20]}... survived (score={eval_result.mean_score:.1f})")
+            else:
+                print(f"  ✗ Fragment {candidate.get('id', 'unknown')[:20]}... failed MC (score={eval_result.mean_score:.1f}, var={eval_result.variance:.1f})")
         
         return survivors
     
-    def _apply_philosophy_guard(self, survivors: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """
-        Apply Philosophy Guard to survivor fragments.
-        
-        Returns list of fragments that pass domain rules.
-        """
+    def _run_philosophy_guard(self, fragments: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Run Philosophy Guard validation on fragments."""
         cleared = []
         
-        for frag in survivors:
+        for fragment in fragments:
             # Validate fragment against domain rules
-            result = self.guard.validate_proposal(frag)
+            violations = []
             
-            if result.get("passed", False):
-                cleared.append(frag)
+            for rule in self.guard.rules:
+                check_result = self.guard._apply_rule(rule, fragment)
+                if not check_result.get("passed", True):
+                    violations.append(check_result)
+            
+            if not violations:
+                cleared.append(fragment)
+                print(f"  ✓ Fragment {fragment.get('id', 'unknown')[:20]}... passed Philosophy Guard")
+            else:
+                print(f"  ✗ Fragment {fragment.get('id', 'unknown')[:20]}... failed: {[v.get('rule_id') for v in violations]}")
         
         return cleared
     
-    def _get_domain_philosophy(self) -> str:
-        """Get the philosophy alignment for the current domain."""
-        philosophy_map = {
-            "medical": "do_no_harm",
-            "legal": "jurisdiction_consistency",
-            "engineering": "safety_first",
-            "ethics": "principle_alignment",
-            "general": "evidence_based"
-        }
-        return philosophy_map.get(self.domain, "evidence_based")
-    
-    def _log_to_obsidian(
-        self,
-        trace_id: str,
-        query: str,
-        assembled: AssembledOutput,
-        decomposition: Dict[str, Any]
-    ):
-        """Log query result to Obsidian vault."""
-        if not self.obsidian.vault_path:
-            return
+    def _assemble_answer(self, fragments: List[Dict[str, Any]], query_text: str) -> Dict[str, Any]:
+        """Assemble final answer using Dice Table."""
+        assembly = self.assembler.assemble(
+            fragments=fragments,
+            domain=self.domain,
+            query=query_text
+        )
         
-        log_entry = {
-            "trace_id": trace_id,
-            "timestamp": datetime.now().isoformat(),
-            "domain": self.domain,
-            "query": query,
-            "decomposition": decomposition,
-            "result": {
-                "answer": assembled.answer,
-                "confidence": assembled.confidence,
-                "halt": assembled.halt,
-                "halt_reason": assembled.halt_reason,
-                "fragments_used": assembled.fragments_used
-            }
-        }
-        
-        self.obsidian.log_query(log_entry)
+        return assembly
     
-    def _update_gene_pool(self, fragments: List[Dict[str, Any]], halted: bool):
+    def _final_philosophy_check(self, assembled_output: Dict[str, Any]) -> Dict[str, Any]:
+        """Final composition-level Philosophy Guard check."""
+        # Check reasoning chain completeness for tier1/tier2
+        if self.domain_tier in ["tier1", "tier2"]:
+            fragments = assembled_output.get("fragments_used", [])
+            
+            roles_present = set(f.get("reasoning_role", "unknown") for f in fragments)
+            
+            # Must have at least definition
+            if "definition" not in roles_present:
+                return {
+                    "passed": False,
+                    "reason": "Missing definition fragment in reasoning chain"
+                }
+            
+            # Tier1 must also have counter_argument
+            if self.domain_tier == "tier1" and "counter_argument" not in roles_present:
+                return {
+                    "passed": False,
+                    "reason": "Tier 1 requires counter-argument fragment"
+                }
+        
+        return {"passed": True}
+    
+    def _finalize_result(self, result: Dict[str, Any], start_time: float, trace_id: str) -> Dict[str, Any]:
+        """Finalize result with timing and logging."""
+        result["processing_time_ms"] = (time.time() - start_time) * 1000
+        
+        # Log to Obsidian if configured
+        if self.obsidian:
+            try:
+                self.obsidian.report_run(
+                    run_id=trace_id,
+                    proposal={"query": result["query"], "answer": result["answer"]},
+                    score=result["confidence"],
+                    metadata={
+                        "domain": self.domain,
+                        "tier": self.domain_tier,
+                        "halt": result["halt"],
+                        "halt_reason": result["halt_reason"],
+                        "fragments_used": result["fragments_used"],
+                        "processing_time_ms": result["processing_time_ms"]
+                    }
+                )
+            except Exception as e:
+                print(f"[Warning] Failed to log to Obsidian: {e}")
+        
+        # Update gene pool weights based on outcome
+        self._update_gene_pool(result)
+        
+        return result
+    
+    def _update_gene_pool(self, result: Dict[str, Any]):
         """Update gene pool weights based on query outcome."""
-        # Simplified weight update
-        # In production, this would use full survival_and_weights logic
+        for fragment in result.get("fragments_used", []):
+            fid = fragment.get("id")
+            if fid and fid in self.gene_pool:
+                # Boost weight for successful fragments
+                current_weight = self.gene_pool[fid]
+                self.gene_pool[fid] = min(2.0, current_weight + 0.02)
         
-        for frag in fragments:
-            fragment_id = frag.get("fragment_id")
-            if not fragment_id:
-                continue
-            
-            # Get current weight - handle both dict and float values
-            current_entry = self.gene_pool.get(fragment_id, 1.0)
-            if isinstance(current_entry, dict):
-                current_weight = current_entry.get("weight", 1.0)
-            else:
-                current_weight = current_entry
-            
-            # Adjust based on outcome
-            if halted:
-                # Fragments were cleared but assembly halted - small penalty
-                new_weight = max(0.1, current_weight - 0.01)
-            else:
-                # Successful answer - small bonus
-                new_weight = min(2.0, current_weight + 0.02)
-            
-            self.gene_pool[fragment_id] = new_weight
-        
-        # Save updated gene pool
         save_gene_pool(self.gene_pool)
     
-    def get_statistics(self) -> Dict[str, Any]:
-        """Get engine statistics."""
-        return {
-            "domain": self.domain,
-            "fragment_library_stats": self.library.get_statistics(),
-            "gene_pool_size": len(self.gene_pool),
-            "available_domains": self.VALID_DOMAINS
-        }
+    def _generate_trace_id(self) -> str:
+        """Generate unique trace ID for this query."""
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        random_suffix = hashlib.md5(str(time.time()).encode()).hexdigest()[:4]
+        return f"oe_{timestamp}_{random_suffix}"
 
 
-# Convenience function for quick usage
-def quick_query(query_text: str, domain: str = "general") -> QueryResult:
-    """
-    Quick one-off query without manual engine setup.
-    
-    Args:
-        query_text: The user's question
-        domain: Domain category
-        
-    Returns:
-        QueryResult
-    """
-    engine = OpenEyes(domain=domain)
-    return engine.query(query_text)
+# Convenience function
+def ask(query: str, domain: str = "general") -> Dict[str, Any]:
+    """Quick query function with default settings."""
+    oe = OpenEyes(domain=domain)
+    return oe.query(query)

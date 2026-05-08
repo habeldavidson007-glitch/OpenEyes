@@ -83,7 +83,7 @@ class FragmentLibrary:
             storage_path: Path to store fragment JSON files. 
                          If None, uses in-memory only.
         """
-        self.storage_path = storage_path or Path(__file__).parent / "fragments"
+        self.storage_path = Path(storage_path) if storage_path else Path(__file__).parent / "fragments"
         self.storage_path.mkdir(parents=True, exist_ok=True)
         
         # In-memory index: fragment_id -> Fragment

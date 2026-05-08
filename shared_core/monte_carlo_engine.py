@@ -1,301 +1,249 @@
 """
-Monte Carlo Engine for OpenEyes
+Monte Carlo Evolution Engine — Generalized for OpenEyes and E-AR
 
-Generalized from E-AR's evolution/monte_carlo.py.
-This module knows nothing about OpenEyes or E-AR specifically.
-It operates on abstract candidates, weights, and scores.
-Domain meaning is injected by the calling layer.
+Evaluates candidate compositions (fragment sets) under pressure scenarios.
+Returns statistical metrics: mean_score, variance, survival_probability.
 
-For OpenEyes: The `primitives` parameter will be knowledge fragments,
-not E+ syntax primitives. The `evaluate_composition` function will need
-OpenEyes-specific evaluators injected — credibility validators, factual
-consistency checkers, philosophical alignment scorers.
+No domain knowledge here — purely statistical evaluation.
+Domain-specific evaluators are injected at runtime.
 """
 
 import random
 import hashlib
-from typing import Any, Callable, Dict, List, Optional, Tuple
 from dataclasses import dataclass, field
+from typing import List, Dict, Any, Optional, Callable, Tuple
+from pathlib import Path
 
-
-# =============================================================================
-# Key Constants (inherited from E-AR, review before changing)
-# =============================================================================
-
-score_threshold = 60        # Minimum mean score to be considered viable
-variance_threshold = 500    # Maximum variance — set for 5-evaluator diversity
-survival_prob_threshold = 0.4  # Fraction of simulations that must exceed score_threshold
-
-
-# =============================================================================
-# Data Structures
-# =============================================================================
 
 @dataclass
 class CompositionResult:
-    """Result of evaluating a single composition."""
+    """Result of evaluating one composition."""
     mean_score: float
     variance: float
     worst_case: float
     survival_probability: float
     raw_scores: List[float] = field(default_factory=list)
-    
-    def is_viable(self) -> bool:
-        """Check if this composition meets all viability criteria."""
-        return (
-            self.mean_score >= score_threshold and
-            self.variance < variance_threshold and
-            self.survival_probability >= survival_prob_threshold
-        )
+    evaluator_details: Dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass
 class MonteCarloWinner:
-    """The winning composition from a Monte Carlo evolution run."""
-    composition: List[Any]
-    score: float
+    """The winning composition after Monte Carlo evolution."""
+    composition: List[Dict[str, Any]]
+    mean_score: float
     variance: float
     survival_probability: float
     num_simulations: int
+    reasoning_chain: Optional[Dict[str, Any]] = None
 
 
-# =============================================================================
-# Core Functions
-# =============================================================================
+# Default thresholds (can be overridden per domain tier)
+DEFAULT_THRESHOLDS = {
+    "tier1": {"score": 75, "variance": 300, "survival_prob": 0.6},
+    "tier2": {"score": 60, "variance": 500, "survival_prob": 0.4},
+    "tier3": {"score": 45, "variance": 800, "survival_prob": 0.25},
+}
 
-def generate_composition(
-    primitives: List[Dict[str, Any]],
-    min_size: int = 1,
-    max_size: int = 5,
-    scenario: Optional[Dict[str, Any]] = None,
-    weights: Optional[Dict[str, float]] = None
-) -> List[Any]:
+
+def _default_evaluator(composition: List[Dict[str, Any]], 
+                       scenario: Optional[Dict[str, Any]] = None,
+                       domain_tier: str = "tier2") -> CompositionResult:
     """
-    Generates one candidate set from weighted primitives/fragments.
+    Default evaluator — returns random scores around a base value.
+    Replace this with domain-specific evaluators in production.
     
-    Args:
-        primitives: List of candidate primitives/fragments. Each should have an 'id' field.
-        min_size: Minimum number of items in the composition.
-        max_size: Maximum number of items in the composition.
-        scenario: Optional scenario dict. If it has 'expected_constructs' or 
-                  'expected_fragments', boosts matching item weights by 1.5×.
-        weights: Optional dict mapping primitive/fragment IDs to weights.
-                 If not provided, uses uniform weights.
-    
-    Returns:
-        A list of selected primitives/fragments forming one candidate composition.
+    For OpenEyes: Should check credibility, recency, reasoning chain completeness.
     """
-    if not primitives:
-        return []
+    base_score = 50.0
     
-    # Determine composition size
-    size = random.randint(min_size, max_size)
-    size = min(size, len(primitives))  # Can't select more than available
+    # Bonus for primary sources in high-tier domains
+    if domain_tier == "tier1":
+        for fragment in composition:
+            if fragment.get("source_type") == "primary":
+                base_score += 15
+            elif fragment.get("source_type") == "tertiary":
+                base_score -= 20
     
-    # Build weight distribution
-    if weights is None:
-        weights = {p.get('id', i): 1.0 for i, p in enumerate(primitives)}
+    # Bonus for complete reasoning chains
+    has_definition = any(f.get("reasoning_role") == "definition" for f in composition)
+    has_counter = any(f.get("reasoning_role") == "counter_argument" for f in composition)
+    has_data = any(f.get("reasoning_role") == "latest_data" for f in composition)
     
-    # Apply scenario-based boosts if applicable
-    boosted_weights = weights.copy()
-    if scenario:
-        expected_items = scenario.get('expected_constructs') or scenario.get('expected_fragments', [])
-        for prim in primitives:
-            prim_id = prim.get('id', '')
-            tags = prim.get('tags', [])
-            
-            # Check if this primitive matches any expected item
-            if prim_id in expected_items or any(tag in expected_items for tag in tags):
-                boosted_weights[prim_id] = boosted_weights.get(prim_id, 1.0) * 1.5
+    if has_definition:
+        base_score += 10
+    if has_counter:
+        base_score += 8
+    if has_data:
+        base_score += 12
     
-    # Normalize weights for selection
-    total_weight = sum(boosted_weights.get(p.get('id', i), 1.0) for i, p in enumerate(primitives))
-    if total_weight == 0:
-        total_weight = 1.0
+    # Generate N simulation scores
+    num_simulations = 20
+    scores = [base_score + random.gauss(0, 15) for _ in range(num_simulations)]
     
-    # Weighted random selection without replacement
-    selected = []
-    available = primitives.copy()
+    # Clamp scores to [0, 100]
+    scores = [max(0, min(100, s)) for s in scores]
     
-    for _ in range(size):
-        if not available:
-            break
-        
-        # Calculate weights for available items
-        avail_weights = [
-            boosted_weights.get(p.get('id', i), 1.0) 
-            for i, p in enumerate(available)
-        ]
-        total_avail = sum(avail_weights)
-        
-        if total_avail == 0:
-            # Fall back to uniform selection
-            idx = random.randint(0, len(available) - 1)
-        else:
-            # Weighted selection
-            r = random.random() * total_avail
-            cumulative = 0.0
-            idx = 0
-            for i, w in enumerate(avail_weights):
-                cumulative += w
-                if r <= cumulative:
-                    idx = i
-                    break
-        
-        selected.append(available.pop(idx))
+    mean_score = sum(scores) / len(scores)
+    variance = sum((s - mean_score) ** 2 for s in scores) / len(scores)
+    worst_case = min(scores)
     
-    return selected
-
-
-def evaluate_composition(
-    composition: List[Any],
-    evaluators: Optional[List[Callable[[List[Any]], float]]] = None,
-    num_simulations: int = 10
-) -> CompositionResult:
-    """
-    Runs pressure evaluators on a composition across multiple simulations.
-    
-    Args:
-        composition: The candidate composition to evaluate.
-        evaluators: List of evaluator functions. Each takes a composition and 
-                    returns a score (0-100). If None, uses a default evaluator.
-        num_simulations: Number of simulation runs to perform.
-    
-    Returns:
-        CompositionResult with mean_score, variance, worst_case, survival_probability.
-    """
-    if not composition:
-        return CompositionResult(
-            mean_score=0.0,
-            variance=0.0,
-            worst_case=0.0,
-            survival_probability=0.0
-        )
-    
-    # Default evaluator if none provided
-    if evaluators is None:
-        evaluators = [_default_evaluator]
-    
-    # Run simulations
-    all_scores = []
-    
-    for _ in range(num_simulations):
-        sim_scores = []
-        for evaluator in evaluators:
-            try:
-                score = evaluator(composition)
-                sim_scores.append(score)
-            except Exception:
-                # Evaluator failed, treat as low score
-                sim_scores.append(0.0)
-        
-        # Aggregate scores from all evaluators for this simulation
-        if sim_scores:
-            sim_avg = sum(sim_scores) / len(sim_scores)
-            all_scores.append(sim_avg)
-    
-    if not all_scores:
-        return CompositionResult(
-            mean_score=0.0,
-            variance=0.0,
-            worst_case=0.0,
-            survival_probability=0.0
-        )
-    
-    # Calculate statistics
-    mean_score = sum(all_scores) / len(all_scores)
-    
-    # Variance calculation
-    variance = sum((s - mean_score) ** 2 for s in all_scores) / len(all_scores)
-    
-    # Worst case
-    worst_case = min(all_scores)
-    
-    # Survival probability: fraction of simulations above threshold
-    surviving_count = sum(1 for s in all_scores if s >= score_threshold)
-    survival_probability = surviving_count / len(all_scores)
+    threshold = DEFAULT_THRESHOLDS[domain_tier]["score"]
+    survival_probability = sum(1 for s in scores if s >= threshold) / len(scores)
     
     return CompositionResult(
         mean_score=mean_score,
         variance=variance,
         worst_case=worst_case,
         survival_probability=survival_probability,
-        raw_scores=all_scores
+        raw_scores=scores,
+        evaluator_details={
+            "base_score": base_score,
+            "has_definition": has_definition,
+            "has_counter_argument": has_counter,
+            "has_latest_data": has_data,
+            "domain_tier": domain_tier
+        }
     )
 
 
-def _default_evaluator(composition: List[Any]) -> float:
+def generate_composition(primitives: List[Dict[str, Any]], 
+                        min_size: int = 1,
+                        max_size: int = 5,
+                        scenario: Optional[Dict[str, Any]] = None,
+                        weights: Optional[Dict[str, float]] = None) -> List[Dict[str, Any]]:
     """
-    Default evaluator for testing purposes.
-    In production, inject domain-specific evaluators.
+    Generate one candidate composition from weighted primitives/fragments.
     
-    For OpenEyes, this would be replaced with credibility validators,
-    factual consistency checkers, etc.
+    Args:
+        primitives: Pool of available fragments/primitives
+        min_size: Minimum number of items in composition
+        max_size: Maximum number of items in composition
+        scenario: Optional scenario with expected_constructs/fragments
+        weights: Optional weight dict for biased selection
+    
+    Returns:
+        List of selected primitives (the composition)
     """
-    # Placeholder: returns a random score for demonstration
-    # In real usage, this should be replaced with actual evaluation logic
-    base_score = 50.0
+    if not primitives:
+        return []
     
-    # Add some variation based on composition characteristics
-    if composition:
-        # Bonus for having multiple items (diversity)
-        base_score += min(len(composition) * 5, 20)
+    # Determine composition size
+    size = random.randint(min_size, min(max_size, len(primitives)))
+    
+    # Build weighted pool
+    if weights:
+        weighted_pool = []
+        for prim in primitives:
+            prim_id = prim.get("id", str(hash(str(prim))))
+            weight = weights.get(prim_id, 1.0)
+            # Boost weight if scenario expects this construct/fragment
+            if scenario and "expected_fragments" in scenario:
+                tags = prim.get("tags", [])
+                if any(tag in scenario["expected_fragments"] for tag in tags):
+                    weight *= 1.5
+            weighted_pool.extend([prim] * max(1, int(weight * 10)))
+    else:
+        weighted_pool = primitives
+    
+    # Select without replacement
+    composition = []
+    used_ids = set()
+    
+    attempts = 0
+    while len(composition) < size and attempts < size * 10:
+        candidate = random.choice(weighted_pool)
+        cand_id = candidate.get("id", str(hash(str(candidate))))
         
-        # Random noise to simulate evaluator uncertainty
-        noise = random.gauss(0, 15)
-        base_score += noise
+        if cand_id not in used_ids:
+            composition.append(candidate)
+            used_ids.add(cand_id)
+        
+        attempts += 1
     
-    return max(0.0, min(100.0, base_score))
+    return composition
 
 
-def monte_carlo_evolve(
-    primitives: List[Dict[str, Any]],
-    min_size: int = 1,
-    max_size: int = 5,
-    num_samples: int = 50,
-    stability_threshold: float = 0.3,
-    survival_threshold: float = 0.7,
-    scenario: Optional[Dict[str, Any]] = None,
-    weights: Optional[Dict[str, float]] = None,
-    evaluators: Optional[List[Callable[[List[Any]], float]]] = None
-) -> Optional[MonteCarloWinner]:
+def evaluate_composition(composition: List[Dict[str, Any]],
+                        evaluator: Optional[Callable] = None,
+                        scenario: Optional[Dict[str, Any]] = None,
+                        domain_tier: str = "tier2") -> CompositionResult:
+    """
+    Evaluate one composition using the provided evaluator.
+    
+    Args:
+        composition: List of fragments/primitives to evaluate
+        evaluator: Function(composition, scenario) -> CompositionResult
+                  If None, uses default evaluator
+        scenario: Optional scenario context
+        domain_tier: "tier1", "tier2", or "tier3"
+    
+    Returns:
+        CompositionResult with statistical metrics
+    """
+    if evaluator is None:
+        evaluator = lambda c, s, t: _default_evaluator(c, s, t)
+    
+    try:
+        result = evaluator(composition, scenario, domain_tier)
+        if isinstance(result, CompositionResult):
+            return result
+        else:
+            # Fallback if evaluator returns dict
+            return CompositionResult(**result)
+    except Exception as e:
+        # Return low-score result on evaluator error
+        return CompositionResult(
+            mean_score=10.0,
+            variance=1000.0,
+            worst_case=5.0,
+            survival_probability=0.0,
+            raw_scores=[10.0],
+            evaluator_details={"error": str(e)}
+        )
+
+
+def monte_carlo_evolve(primitives: List[Dict[str, Any]],
+                      num_samples: int = 50,
+                      stability_threshold: float = 0.3,
+                      survival_threshold: float = 0.7,
+                      scenario: Optional[Dict[str, Any]] = None,
+                      evaluator: Optional[Callable] = None,
+                      domain_tier: str = "tier2",
+                      weights: Optional[Dict[str, float]] = None) -> Optional[MonteCarloWinner]:
     """
     Full Monte Carlo evolution loop.
     
     Generates N candidate compositions, evaluates each, filters by survival
-    criteria, and returns the best viable candidate.
+    criteria, and returns the best surviving candidate.
     
     Args:
-        primitives: Pool of candidate primitives/fragments to sample from.
-        min_size: Minimum composition size.
-        max_size: Maximum composition size.
-        num_samples: Number of candidate compositions to generate and evaluate.
-        stability_threshold: Alias for variance_threshold (normalized 0-1 scale).
-                            Converted to absolute variance using score range.
-        survival_threshold: Minimum survival probability required.
-        scenario: Optional scenario for weight boosting.
-        weights: Optional initial weights for primitives.
-        evaluators: List of evaluator functions.
+        primitives: Pool of available fragments/primitives
+        num_samples: Number of compositions to generate and evaluate
+        stability_threshold: Maximum acceptable variance (normalized 0-1)
+        survival_threshold: Minimum survival probability
+        scenario: Optional scenario context
+        evaluator: Domain-specific evaluator function
+        domain_tier: "tier1", "tier2", or "tier3"
+        weights: Optional fragment weights for biased selection
     
     Returns:
-        MonteCarloWinner if a viable candidate is found, None otherwise.
+        MonteCarloWinner if any composition survives, else None
     """
     if not primitives:
         return None
     
-    # Convert normalized stability threshold to absolute variance
-    # Assuming score range is 0-100, variance threshold = stability_threshold * 1000
-    # But we use the global variance_threshold constant for consistency
-    effective_variance_threshold = variance_threshold
+    thresholds = DEFAULT_THRESHOLDS.get(domain_tier, DEFAULT_THRESHOLDS["tier2"])
+    variance_max = thresholds["variance"]
+    survival_min = thresholds["survival_prob"]
     
     viable_candidates = []
     
-    for _ in range(num_samples):
+    for i in range(num_samples):
         # Generate candidate composition
         composition = generate_composition(
             primitives=primitives,
-            min_size=min_size,
-            max_size=max_size,
+            min_size=1,
+            max_size=min(5, len(primitives)),
             scenario=scenario,
             weights=weights
         )
@@ -306,124 +254,141 @@ def monte_carlo_evolve(
         # Evaluate composition
         result = evaluate_composition(
             composition=composition,
-            evaluators=evaluators,
-            num_simulations=10  # Fixed for now, could be parameterized
+            evaluator=evaluator,
+            scenario=scenario,
+            domain_tier=domain_tier
         )
         
-        # Check viability: must pass ALL three criteria
-        # Using the spec thresholds directly
-        is_viable = (
-            result.mean_score >= score_threshold and
-            result.variance < effective_variance_threshold and
-            result.survival_probability >= survival_prob_threshold
-        )
-        
-        if is_viable:
-            viable_candidates.append((composition, result))
+        # Check survival criteria
+        if result.variance < variance_max and result.survival_probability >= survival_min:
+            viable_candidates.append({
+                "composition": composition,
+                "result": result
+            })
     
     if not viable_candidates:
         return None
     
-    # Select winner: max mean_score among viable candidates
-    winner_comp, winner_result = max(viable_candidates, key=lambda x: x[1].mean_score)
+    # Select winner: highest mean score among viable candidates
+    winner = max(viable_candidates, key=lambda x: x["result"].mean_score)
     
     return MonteCarloWinner(
-        composition=winner_comp,
-        score=winner_result.mean_score,
-        variance=winner_result.variance,
-        survival_probability=winner_result.survival_probability,
-        num_simulations=num_samples
+        composition=winner["composition"],
+        mean_score=winner["result"].mean_score,
+        variance=winner["result"].variance,
+        survival_probability=winner["result"].survival_probability,
+        num_simulations=num_samples,
+        reasoning_chain=_extract_reasoning_chain(winner["composition"])
     )
 
 
-def batch_evaluate_candidates(
-    candidates: List[Dict[str, Any]],
-    evaluators: Optional[List[Callable[[List[Any]], float]]] = None,
-    num_simulations: int = 10
-) -> Dict[str, CompositionResult]:
+def _extract_reasoning_chain(composition: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    """Extract and structure the reasoning chain from a composition."""
+    definition = None
+    counter_arguments = []
+    latest_data = None
+    
+    for fragment in composition:
+        role = fragment.get("reasoning_role")
+        if role == "definition":
+            definition = fragment
+        elif role == "counter_argument":
+            counter_arguments.append(fragment)
+        elif role == "latest_data":
+            if latest_data is None or fragment.get("year", 0) > latest_data.get("year", 0):
+                latest_data = fragment
+    
+    if not definition and not counter_arguments and not latest_data:
+        return None
+    
+    return {
+        "definition": definition,
+        "counter_arguments": counter_arguments,
+        "latest_data": latest_data,
+        "completeness_score": sum([
+            1 if definition else 0,
+            min(len(counter_arguments), 3) * 0.33,
+            1 if latest_data else 0
+        ]) / 3.0
+    }
+
+
+def batch_evaluate(primitives: List[Dict[str, Any]],
+                  scenarios: List[Dict[str, Any]],
+                  evaluator: Optional[Callable] = None,
+                  domain_tier: str = "tier2") -> Dict[str, List[MonteCarloWinner]]:
     """
-    Evaluate multiple individual candidates (not compositions).
+    Run Monte Carlo evolution across multiple scenarios.
     
-    This is useful for OpenEyes where we evaluate each fragment independently
-    before assembly.
-    
-    Args:
-        candidates: List of candidate fragments to evaluate.
-        evaluators: List of evaluator functions.
-        num_simulations: Number of simulations per candidate.
-    
-    Returns:
-        Dict mapping candidate ID to CompositionResult.
+    Returns dict mapping scenario_id to list of winners (may have multiple per scenario).
     """
     results = {}
     
-    for candidate in candidates:
-        cand_id = candidate.get('id', hashlib.md5(str(candidate).encode()).hexdigest()[:8])
-        
-        # Treat single candidate as a composition of one
-        result = evaluate_composition(
-            composition=[candidate],
-            evaluators=evaluators,
-            num_simulations=num_simulations
+    for scenario in scenarios:
+        scenario_id = scenario.get("id", "unknown")
+        winner = monte_carlo_evolve(
+            primitives=primitives,
+            scenario=scenario,
+            evaluator=evaluator,
+            domain_tier=domain_tier
         )
         
-        results[cand_id] = result
+        if winner:
+            results[scenario_id] = [winner]
+        else:
+            results[scenario_id] = []
     
     return results
 
 
-# =============================================================================
-# Utility Functions
-# =============================================================================
-
-def calculate_aggregate_stats(results: List[CompositionResult]) -> Dict[str, float]:
-    """
-    Calculate aggregate statistics across multiple evaluation results.
-    
-    Useful for the survival_and_weights module to determine weight adjustments.
-    """
-    if not results:
-        return {
-            'mean_mean_score': 0.0,
-            'mean_variance': 0.0,
-            'mean_survival_prob': 0.0,
-            'total_viable': 0,
-            'viability_rate': 0.0
-        }
-    
-    mean_scores = [r.mean_score for r in results]
-    variances = [r.variance for r in results]
-    survival_probs = [r.survival_probability for r in results]
-    viable_count = sum(1 for r in results if r.is_viable())
+def get_aggregate_stats(winners: List[MonteCarloWinner]) -> Dict[str, float]:
+    """Calculate aggregate statistics across multiple winners."""
+    if not winners:
+        return {"mean_score": 0, "mean_variance": 0, "mean_survival": 0, "count": 0}
     
     return {
-        'mean_mean_score': sum(mean_scores) / len(mean_scores),
-        'mean_variance': sum(variances) / len(variances),
-        'mean_survival_prob': sum(survival_probs) / len(survival_probs),
-        'total_viable': viable_count,
-        'viability_rate': viable_count / len(results)
+        "mean_score": sum(w.mean_score for w in winners) / len(winners),
+        "mean_variance": sum(w.variance for w in winners) / len(winners),
+        "mean_survival": sum(w.survival_probability for w in winners) / len(winners),
+        "count": len(winners),
+        "best_score": max(w.mean_score for w in winners),
+        "worst_score": min(w.mean_score for w in winners)
     }
 
 
-def get_fragment_stats(fragment_results: Dict[str, CompositionResult]) -> Dict[str, Any]:
+def analyze_fragment_performance(fragments: List[Dict[str, Any]], 
+                                winners: List[MonteCarloWinner]) -> List[Dict[str, Any]]:
     """
-    Get statistics for a specific fragment across multiple evaluations.
+    Analyze how often each fragment appears in winning compositions.
     
-    Args:
-        fragment_results: Dict mapping fragment IDs to their CompositionResults.
-    
-    Returns:
-        Dict with per-fragment statistics.
+    Returns list of fragments with added 'win_rate' and 'avg_score_when_won' fields.
     """
-    stats = {}
+    fragment_stats = {}
     
-    for frag_id, result in fragment_results.items():
-        stats[frag_id] = {
-            'mean_score': result.mean_score,
-            'variance': result.variance,
-            'survival_probability': result.survival_probability,
-            'is_viable': result.is_viable(),
-            'worst_case': result.worst_case
+    for fragment in fragments:
+        fid = fragment.get("id", str(hash(str(fragment))))
+        fragment_stats[fid] = {
+            "fragment": fragment,
+            "appearances": 0,
+            "total_score": 0.0
         }
     
-    return stats
+    for winner in winners:
+        for fragment in winner.composition:
+            fid = fragment.get("id", str(hash(str(fragment))))
+            if fid in fragment_stats:
+                fragment_stats[fid]["appearances"] += 1
+                fragment_stats[fid]["total_score"] += winner.mean_score
+    
+    results = []
+    for fid, stats in fragment_stats.items():
+        fragment = stats["fragment"].copy()
+        if stats["appearances"] > 0:
+            fragment["win_rate"] = stats["appearances"] / len(winners)
+            fragment["avg_score_when_won"] = stats["total_score"] / stats["appearances"]
+        else:
+            fragment["win_rate"] = 0.0
+            fragment["avg_score_when_won"] = 0.0
+        results.append(fragment)
+    
+    return sorted(results, key=lambda x: x["win_rate"], reverse=True)
