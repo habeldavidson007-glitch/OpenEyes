@@ -199,10 +199,9 @@ class OpenEyes:
     
     def _run_swarm(self, query_text: str) -> List[Dict[str, Any]]:
         """Run Swarm decomposition and retrieval."""
-        candidates = self.swarm.decompose_and_retrieve(domain=self.domain,
-            query=query_text,
+        candidates = self.swarm.decompose_and_retrieve(
             domain=self.domain,
-            
+            query=query_text
         )
         
         # Convert FragmentCandidate objects to dicts

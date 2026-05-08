@@ -12,29 +12,36 @@ env/
 .env
 .env.local
 .env.*
-requirements.txt.bak
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
 
 # Logs
 *.log
 
-# Coverage
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
 .coverage
 coverage/
 htmlcov/
 
-# IDE
+# IDE specific
 .vscode/
 .idea/
-*.swp
-*.swo
-*.tmp
+*.sublime-project
+*.sublime-workspace
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Build
-dist/
-build/
-*.egg-info/
+# Testing
+.pytest_cache/
+.mypy_cache/
 ```
