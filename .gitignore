@@ -1,8 +1,58 @@
-```
-# Obsidian vault files
-".gitignore"
-"workspace_obsidian_vault/
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Compiled JSON data
-openeyes/data/compiled_logic.json
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Dependencies
+.venv/
+venv/
+.env/
+
+# Editors
+.vscode/
+.idea/
+
+# Compiled and build artifacts
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.a
+*.lib
+*.dylib
+*.jar
+*.war
+*.class
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# OS generated files
+.DS_Store
+Thumbs.db
 ```

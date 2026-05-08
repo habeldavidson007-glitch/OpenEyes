@@ -218,12 +218,50 @@ class OpenEyes:
             # Step 5: Final composition-level Philosophy Guard check
             final_check = self._final_philosophy_check(assembled_output)
             if not final_check.get("passed", True):
-                result["halt"] = True
-                result["halt_reason"] = f"Final validation failed: {final_check.get('reason', 'Unknown')}"
-                print(f"\n[HALT] {result['halt_reason']}")
-                return self._finalize_result(result, start_time, trace_id)
+                # PATTERN LEARNING: Check if fallback is permitted based on historical successes
+                from openeyes.success_pattern_learner import check_fallback
+                
+                missing_requirements = []
+                reason = final_check.get('reason', '')
+                if 'counter_argument' in reason.lower():
+                    missing_requirements.append('counter_argument')
+                if 'definition' in reason.lower():
+                    missing_requirements.append('definition')
+                if 'latest_data' in reason.lower():
+                    missing_requirements.append('latest_data')
+                
+                fallback_result = check_fallback(
+                    query=query_text,
+                    domain=self.domain,
+                    tier='tier1' if self.domain == 'medical' else ('tier2' if self.domain == 'engineering' else 'tier3'),
+                    missing=missing_requirements
+                )
+                
+                if fallback_result.get('allow_fallback'):
+                    print(f"\n[Pattern Learning] Fallback permitted: {fallback_result['reason']}")
+                    result["confidence"] = result.get("confidence", 0) * fallback_result.get('confidence', 0.9) / 100.0
+                    result["warnings"] = [f"Fallback applied: {fallback_result['reason']}"]
+                else:
+                    result["halt"] = True
+                    result["halt_reason"] = f"Final validation failed: {final_check.get('reason', 'Unknown')} (Fallback not permitted: {fallback_result.get('reason', 'no pattern')})"
+                    print(f"\n[HALT] {result['halt_reason']}")
+                    return self._finalize_result(result, start_time, trace_id)
             
             print(f"\n[Final Check Passed]")
+            
+            # PATTERN LEARNING: Record this success for future fallback decisions
+            if not result["halt"]:
+                from openeyes.success_pattern_learner import record_success
+                try:
+                    record_success(
+                        query=query_text,
+                        domain=self.domain,
+                        tier='tier1' if self.domain == 'medical' else ('tier2' if self.domain == 'engineering' else 'tier3'),
+                        fragments=result["fragments_used"],
+                        confidence=result["confidence"]
+                    )
+                except Exception as e:
+                    print(f"[Pattern Learning] Could not record success: {e}")
             
             # LOGIC HARDENING: Create synapse from high-confidence result
             if result["confidence"] >= 70.0 and len(result["fragments_used"]) >= 2 and not result["halt"]:

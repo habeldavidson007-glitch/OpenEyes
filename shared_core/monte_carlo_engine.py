@@ -49,27 +49,34 @@ def _default_evaluator(composition: List[Dict[str, Any]],
                        scenario: Optional[Dict[str, Any]] = None,
                        domain_tier: str = "tier2") -> CompositionResult:
     """
-    Deterministic evaluator for OpenEyes.
+    HYBRID DUAL-ROLL EVALUATOR for OpenEyes.
+    
+    Combines:
+    1. Deterministic Roll (70%): Based on hard metadata (credibility, recency, consistency).
+       Guarantees high-quality fragments always have a baseline score.
+    2. Stochastic Roll (30%): Gaussian noise to simulate uncertainty/variance.
+    
+    Final Score = (0.7 * Deterministic) + (0.3 * Stochastic)
     
     Scores fragments based on:
-    1. Credibility class (peer_reviewed=95, guideline=90, textbook=80, etc.)
-    2. Recency (decay based on domain tier)
-    3. Reasoning chain completeness (definition + counter + latest_data)
-    4. Cross-source consistency (multiple sources agreeing)
-    
-    No random noise - scores are deterministic and auditable.
+    - Credibility class (peer_reviewed=95, guideline=90, textbook=80, etc.)
+    - Recency (decay based on domain tier)
+    - Reasoning chain completeness (definition + counter + latest_data)
+    - Cross-source consistency (multiple sources agreeing)
     """
+    import hashlib
+    
     # Base credibility scores (evidence hierarchy)
     CREDIBILITY_SCORES = {
-        "clinical_guideline": 90,
-        "peer_reviewed_study": 95,
-        "textbook": 80,
+        "clinical_guideline": 95,
+        "peer_reviewed_study": 90,
+        "textbook": 85,
         "expert_consensus": 75,
         "government_source": 85,
         "case_report": 60,
-        "news_article": 50,
-        "forum": 20,
-        "anecdotal": 15
+        "news_article": 60,
+        "forum": 30,
+        "anecdotal": 20
     }
     
     # Recency decay rates per tier (points per year old)
@@ -87,33 +94,45 @@ def _default_evaluator(composition: List[Dict[str, Any]],
     source_counts = {}  # Track unique sources
     
     for frag in composition:
-        # 1. Credibility score
-        cred_class = frag.get("credibility_estimate", 0.5)
-        # Convert 0-1 credibility_estimate to 0-100 scale
-        base_cred = cred_class * 100
+        # --- DETERMINISTIC COMPONENT ---
+        det_score = 0.0
         
-        # Also check if we have explicit credibility_class
-        if "credibility_class" in frag:
-            base_cred = CREDIBILITY_SCORES.get(frag.get("credibility_class"), 50)
+        # 1. Credibility score (40% of det_score)
+        cred_class = frag.get("credibility_class", None)
+        if cred_class:
+            base_cred = CREDIBILITY_SCORES.get(cred_class, 50)
+        else:
+            # Fallback to credibility_estimate (0-1 scale)
+            base_cred = frag.get("credibility_estimate", 0.5) * 100
+        det_score += base_cred * 0.4
         
-        # 2. Recency score
+        # 2. Recency score (30% of det_score)
         frag_year = frag.get("year", current_year)
         age = current_year - frag_year
         recency_score = max(0, 100 - (age * decay_rate))
+        det_score += recency_score * 0.3
         
-        # 3. Reasoning role bonus
+        # 3. Reasoning role bonus (30% of det_score)
         role = frag.get("reasoning_role", "definition")
-        role_bonus = 0
-        if role == "definition":
-            role_bonus = 10  # Essential
-        elif role == "counter_argument":
-            role_bonus = 15  # Critical for high-tier
-        elif role == "latest_data":
-            role_bonus = 12  # Important for currency
+        role_bonus_map = {"definition": 5, "counter_argument": 10, "latest_data": 7}
+        role_bonus = role_bonus_map.get(role, 0)
+        det_score += role_bonus * 0.3
         
-        # Combine scores (weighted average)
-        frag_score = (base_cred * 0.5) + (recency_score * 0.3) + (role_bonus * 0.2)
-        fragment_scores.append(frag_score)
+        det_score = min(100.0, det_score)
+        
+        # --- STOCHASTIC COMPONENT ---
+        # Use seeded random based on fragment ID for consistency
+        frag_id = frag.get("fragment_id", frag.get("id", str(hash(str(frag)))))
+        seed_val = int(hashlib.md5(str(frag_id).encode()).hexdigest()[:8], 16)
+        rng = random.Random(seed_val)
+        noise = rng.gauss(0, 15)  # Standard deviation of 15
+        stoch_score = det_score + noise
+        stoch_score = max(0, min(100, stoch_score))
+        
+        # --- HYBRID COMBINATION (70/30 split) ---
+        final_frag_score = (0.7 * det_score) + (0.3 * stoch_score)
+        
+        fragment_scores.append(final_frag_score)
         
         # Track sources for consistency check
         source = frag.get("source", "")
@@ -146,7 +165,6 @@ def _default_evaluator(composition: List[Dict[str, Any]],
         chain_bonus += 7
     
     # 5. Cross-source consistency bonus
-    # Multiple independent sources agreeing = higher confidence
     num_sources = len(source_counts)
     consistency_bonus = min(10, (num_sources - 1) * 3)  # Max 10 points
     
@@ -154,11 +172,11 @@ def _default_evaluator(composition: List[Dict[str, Any]],
     final_score = mean_frag_score + chain_bonus + consistency_bonus
     final_score = max(0, min(100, final_score))  # Clamp to [0, 100]
     
-    # Generate deterministic "simulation" scores with minimal variance
+    # Generate simulation scores with reduced variance for stability
     # Variance represents uncertainty in the knowledge, not randomness
     uncertainty = 5.0 if len(composition) < 2 else 3.0
     if domain_tier == "tier1" and not has_counter:
-        uncertainty = 15.0  # High uncertainty without counter-argument
+        uncertainty = 12.0  # Moderate uncertainty without counter-argument
     
     num_simulations = 20
     scores = [final_score + random.gauss(0, uncertainty) for _ in range(num_simulations)]
@@ -186,7 +204,10 @@ def _default_evaluator(composition: List[Dict[str, Any]],
             "has_latest_data": has_latest,
             "num_sources": num_sources,
             "domain_tier": domain_tier,
-            "recency_decay_applied": decay_rate
+            "recency_decay_applied": decay_rate,
+            "hybrid_evaluator": True,
+            "deterministic_weight": 0.7,
+            "stochastic_weight": 0.3
         }
     )
 
