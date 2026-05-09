@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_order_flow_latest_data_08",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "order_flow",
+    "latest_data",
+    "technical_analysis",
+    "market_depth"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Order flow analysis tools became more accessible to retail traders in 2024 with new platform offerings. Institutional order flow data showed significant accumulation in AI stocks during Q1 2024 pullbacks. Footprint chart analysis revealed hidden absorption at key levels in Treasury markets. The integration of order flow with traditional TA gained traction among professional traders.",
+  "source": "Educational Resource",
+  "source_url": "https://www.tradingview.com/ideas/reading-the-tape-modern",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

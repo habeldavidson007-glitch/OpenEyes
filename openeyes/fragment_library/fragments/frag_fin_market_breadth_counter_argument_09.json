@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_market_breadth_counter_argument_09",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "counter_argument",
+    "technical_analysis",
+    "market_breadth"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Breadth indicators suffer from composition changes as indices add/remove constituents. Equal-weighted vs cap-weighted breadth tells different stories. New listings and delistings distort historical breadth analysis. Breadth divergences can persist for extended periods before resolving. Globalization means domestic breadth misses international influences. Sector concentration in indices (mega-cap tech) distorts breadth signals. Breadth indicators provide direction but no timing. Many breadth metrics are proprietary with limited transparency.",
+  "source": "Educational Resource",
+  "source_url": "https://www.nyse.com/breadth-indicators-predictive-power",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

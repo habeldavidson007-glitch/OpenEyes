@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_chart_patterns_counter_argument_06",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "technical_analysis",
+    "cup_and_handle",
+    "counter_argument",
+    "double_top",
+    "head_and_shoulders"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Chart patterns suffer from massive subjectivity in identification. What looks like a head-and-shoulders in real-time often doesn't complete. Studies show pattern success rates barely exceed 50% before costs. Pattern targets are imprecise and often missed. Self-fulfilling prophecy arguments weaken as pattern recognition becomes automated and arbitraged. Many 'successful' patterns are simply reflecting underlying momentum that would have continued anyway. False breakouts from patterns are extremely common.",
+  "source": "Educational Resource",
+  "source_url": "https://www.efmaefm.org/pattern-recognition-randomness",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

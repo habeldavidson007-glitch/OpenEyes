@@ -1,37 +1,6 @@
 ```
-# Build artifacts
-*.pyc
+# Python
 __pycache__/
-*.o
-*.obj
-*.so
-*.a
-*.dll
-*.exe
-*.out
-
-# Dependencies
-venv/
-.venv/
-.env
-.env.local
-.env.*
-
-# Logs and temporary files
-*.log
-*.tmp
-*.swp
-
-# Editors and IDEs
-.vscode/
-.idea/
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Python-specific
 *.py[cod]
 *$py.class
 *.so
@@ -52,6 +21,26 @@ wheels/
 .installed.cfg
 *.egg
 
-# Project-specific build artifacts
-openeyes/tools/build_crypto_fragments.py
+# Environment
+.env
+.env.local
+.env.*
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
 ```

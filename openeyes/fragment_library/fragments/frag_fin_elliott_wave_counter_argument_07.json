@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_elliott_wave_counter_argument_07",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "elliott_wave",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Elliott Wave is unfalsifiable: any outcome can be explained by re-counting waves. Different practitioners produce wildly different counts for same chart. Wave extensions and truncations add flexibility that eliminates predictive value. No rigorous evidence supports 5-3 wave structure as anything other than pareidolia. Retroactive counting makes every chart fit the theory. Rules have numerous exceptions undermining their validity. EW analysis paralyzes decision-making with endless recounting. Professional adoption is minimal outside specific niches.",
+  "source": "Educational Resource",
+  "source_url": "https://www.skeptics.com/elliott-wave-subjectivity",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

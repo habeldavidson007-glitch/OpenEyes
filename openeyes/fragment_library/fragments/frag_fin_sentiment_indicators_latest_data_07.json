@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_sentiment_indicators_latest_data_07",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "sentiment_indicators",
+    "latest_data",
+    "fear_greed",
+    "put_call_ratio"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "AAII bullish sentiment reached extremes in early 2024, triggering contrarian warnings. The put/call ratio declined to multi-month lows in Q1 2024, suggesting complacency. CNN's Fear & Greed Index moved into 'Greed' territory in March 2024. Sentiment indicators' predictive power varied significantly by market regime in recent analysis.",
+  "source": "Educational Resource",
+  "source_url": "https://www.cnn.com/markets/fear-greed-index-explained",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_chart_patterns_latest_data_07",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "technical_analysis",
+    "cup_and_handle",
+    "latest_data",
+    "double_top",
+    "head_and_shoulders"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "The head and shoulders pattern in the dollar index completed in early 2024, leading to a significant decline. Cup and handle formations in semiconductor stocks throughout 2023 led to breakouts in 2024. Double bottom patterns in housing-related stocks signaled sector recovery in Q1 2024. Quantitative studies of chart patterns using modern datasets continue to show mixed but occasionally exploitable edges.",
+  "source": "Educational Resource",
+  "source_url": "https://www.stockcharts.com/articles/head-shoulders-cup-handle-2024",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

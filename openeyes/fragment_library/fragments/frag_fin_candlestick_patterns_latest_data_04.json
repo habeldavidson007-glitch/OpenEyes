@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_candlestick_patterns_latest_data_04",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "engulfing",
+    "technical_analysis",
+    "latest_data",
+    "candlestick_patterns",
+    "doji",
+    "hammer"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "A series of hammer candlesticks at the February 2024 lows in the S&P 500 marked a significant reversal point. Doji formations preceded major Fed announcement moves in 2024, signaling market indecision. Bullish engulfing patterns in regional bank stocks in Q1 2024 preceded recovery rallies. Recent machine learning approaches to candlestick pattern recognition show modest improvement over manual identification.",
+  "source": "Educational Resource",
+  "source_url": "https://www.tradingview.com/ideas/doji-hammer-engulfing-signals",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}
