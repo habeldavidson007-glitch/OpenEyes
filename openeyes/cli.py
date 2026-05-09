@@ -35,6 +35,13 @@ def query(query: str, domain: str | None, json_output: bool, debug: bool) -> Non
         print(json.dumps(result, indent=2))
         return
     print(Panel(result.get("answer", ""), title="Answer", border_style="green"))
+    summary = Table(show_header=False, box=None)
+    summary.add_column("Field", style="cyan")
+    summary.add_column("Value", style="white")
+    summary.add_row("Query", query)
+    summary.add_row("Data recency", f"Within {result.get('data_recency_years', 'N/A')} years")
+    summary.add_row("Confidence", f"{result.get('confidence', 0)}%")
+    print(summary)
     if debug:
         table = Table(title="OpenEyes Inference (Debug)")
         table.add_column("Field", style="cyan")

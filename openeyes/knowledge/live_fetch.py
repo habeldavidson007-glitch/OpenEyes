@@ -713,7 +713,7 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
                 evidence_level="high",
             )
         )
-        if any(kw in query_lower for kw in ["AI", "artificial intelligence", "machine learning"]):
+        if any(kw in query_lower for kw in ["ai", "artificial intelligence", "machine learning"]):
             frags.append(
                 Fragment(
                     claim="Machine learning uses statistical algorithms to learn patterns from data without explicit programming. Deep learning employs multi-layer neural networks to model complex non-linear relationships. Key challenges include overfitting, bias-variance tradeoff, and interpretability.",
@@ -761,6 +761,21 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
         )
     
     else:
+        if any(kw in query_lower for kw in ["ai", "artificial intelligence", "machine learning", "llm", "current ai"]):
+            frags.append(
+                Fragment(
+                    claim="Current AI systems are powerful pattern learners: they excel at language, coding, and classification tasks, but still struggle with reliability, factual grounding, long-horizon planning, and robust causal reasoning. Best use is as a copilot with human verification.",
+                    evidence="Frontier model evaluations (MMLU, BIG-bench, HELM); alignment and hallucination studies; industry deployment reports",
+                    limitations=["Capabilities vary by model version, prompt quality, and tool access"],
+                    sub_questions=["What AI tasks are most reliable today?", "How should humans verify AI outputs?"],
+                    source_type="conference_paper",
+                    source_id=f"jit-ai-current-{today}",
+                    source_url="https://crfm.stanford.edu/helm/",
+                    published_on=today,
+                    jurisdiction="global",
+                    evidence_level="moderate",
+                )
+            )
         # General knowledge fallback
         if not frags:
             frags.append(

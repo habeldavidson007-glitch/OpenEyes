@@ -399,7 +399,21 @@ class OpenEyesEngine:
             "domain": routed_domain,
             "narrative": narrative,
             "replay": replay,
+            "data_recency_years": self._estimate_data_recency_years(frags),
         }
         ingest_case(self.memory_path, {"query": query, "domain": routed_domain, "status": result["status"], "confidence": result["confidence"]})
         write_audit_log(self.vault_path, query, out)
         return out
+
+    @staticmethod
+    def _estimate_data_recency_years(fragments: list[Fragment]) -> int:
+        """Estimate recency window in years from fragment publication dates."""
+        years = []
+        current_year = datetime.now().year
+        for frag in fragments:
+            published = getattr(frag, "published_on", "")
+            if isinstance(published, str) and len(published) >= 4 and published[:4].isdigit():
+                years.append(max(0, current_year - int(published[:4])))
+        if not years:
+            return 10
+        return max(1, min(years))
