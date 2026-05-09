@@ -1,51 +1,5 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Test results and logs
-test_results/
-logs/
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Dependencies
-.venv/
-venv/
-node_modules/
-
-# Build artifacts
-dist/
-build/
-target/
-
-# Editors
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Coverage
-.coverage
-coverage/
-htmlcov/
-
 # Logs
 *.log
-
-# Temp files
-*.tmp
-*.swp
-*.swo
-
-# Cache
-.mypy_cache/
-.pytest_cache/
+logs/
 ```
