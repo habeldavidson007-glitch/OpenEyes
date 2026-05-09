@@ -1,17 +1,46 @@
 ```
-# Logs and temp files
-*.log
-*.tmp
-*.bin
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Test files
-test_results_*.json
+# Logs
+*.log
 
 # Environment
 .env
 .env.local
 *.env.*
 
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+
 # Editors
-.openeyes/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Audit and vault (based on detected patterns)
+.openeyes/vault/
 ```

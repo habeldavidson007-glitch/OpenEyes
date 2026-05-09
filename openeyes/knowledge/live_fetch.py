@@ -13,7 +13,7 @@ except Exception:  # pragma: no cover
 
 from openeyes.knowledge.fragments import Fragment
 
-# Source endpoints
+# Source endpoints (primary APIs)
 WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/title"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
 PUBMED_SEARCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
@@ -23,6 +23,175 @@ ARXIV_SEARCH = "https://export.arxiv.org/api/query"
 HEADERS = {
     "User-Agent": "OpenEyes/1.0 (https://github.com/OpenEyes; contact@example.org)",
     "Accept": "application/json",
+}
+
+# Alternative source endpoints for fallback scraping
+ALTERNATIVE_SOURCES = {
+    "medical": [
+        ("https://www.ncbi.nlm.nih.gov/books/NBK", "NCBI Bookshelf"),
+        ("https://www.cdc.gov/", "CDC"),
+        ("https://www.who.int/news-room/fact-sheets/detail/", "WHO Fact Sheets"),
+    ],
+    "science": [
+        ("https://www.nature.com/subjects/", "Nature"),
+        ("https://www.science.org/topic/", "Science Magazine"),
+        ("https://royalsociety.org/topics-policy/projects/", "Royal Society"),
+    ],
+    "technology": [
+        ("https://arxiv.org/list/cs/recent", "arXiv CS"),
+        ("https://ieeexplore.ieee.org/browse/standards/content/", "IEEE Standards"),
+        ("https://www.acm.org/publications", "ACM Publications"),
+    ],
+    "legal": [
+        ("https://www.law.cornell.edu/supct/html/", "Cornell LII Supreme Court"),
+        ("https://www.justia.com/cases/", "Justia Cases"),
+        ("https://www.congress.gov/bill/", "Congress.gov"),
+    ],
+    "investment": [
+        ("https://www.sec.gov/edgar/searchedgar/companysearch.html", "SEC EDGAR"),
+        ("https://www.bls.gov/data/", "Bureau of Labor Statistics"),
+        ("https://data.worldbank.org/", "World Bank Data"),
+    ],
+    "engineering": [
+        ("https://www.iso.org/standard/", "ISO Standards"),
+        ("https://www.astm.org/standards/", "ASTM Standards"),
+        ("https://www.nist.gov/standards", "NIST Standards"),
+    ],
+}
+
+# Domain analogy map for probabilistic borrowing
+DOMAIN_ANALOGIES = {
+    "medical": ["biology", "chemistry", "scientific"],
+    "investment": ["economics", "mathematics", "statistics"],
+    "legal": ["philosophy", "ethics", "history"],
+    "engineering": ["physics", "mathematics", "technology"],
+    "technology": ["mathematics", "engineering", "science"],
+    "science": ["philosophy", "mathematics", "engineering"],
+    "history": ["geography", "political_science", "anthropology"],
+    "philosophy": ["logic", "mathematics", "cognitive_science"],
+    "education": ["psychology", "cognitive_science", "sociology"],
+    "environmental": ["biology", "chemistry", "earth_science"],
+    "psychology": ["biology", "neuroscience", "sociology"],
+    "sociology": ["anthropology", "psychology", "political_science"],
+    "art": ["history", "philosophy", "cultural_studies"],
+    "literature": ["history", "philosophy", "linguistics"],
+    "music": ["mathematics", "physics", "art"],
+    "sports": ["physiology", "psychology", "statistics"],
+    "cooking": ["chemistry", "biology", "nutrition"],
+    "travel": ["geography", "history", "economics"],
+    "general": ["philosophy", "logic", "science"],  # Universal fallback
+}
+
+# First-principles knowledge templates by domain
+FIRST_PRINCIPLES_TEMPLATES = {
+    "physics": [
+        {
+            "claim": "Physical systems obey conservation laws (energy, momentum, charge) and symmetry principles. Quantum mechanics describes behavior at atomic scales, while relativity governs high-speed and gravitational phenomena.",
+            "evidence": "Noether's Theorem; Standard Model of particle physics; Einstein's field equations",
+            "source_type": "textbook",
+        },
+        {
+            "claim": "Thermodynamics governs energy transfer: entropy of isolated systems increases, heat flows from hot to cold, and absolute zero is unattainable. These principles constrain all physical processes.",
+            "evidence": "Laws of Thermodynamics; statistical mechanics; Boltzmann equation",
+            "source_type": "textbook",
+        },
+    ],
+    "chemistry": [
+        {
+            "claim": "Chemical reactions involve breaking and forming bonds between atoms. Reaction rates depend on concentration, temperature, catalysts, and activation energy. Equilibrium favors lower-energy states.",
+            "evidence": "Quantum chemistry; collision theory; Le Chatelier's principle",
+            "source_type": "textbook",
+        },
+        {
+            "claim": "Periodic table organizes elements by atomic number and electron configuration. Chemical properties repeat periodically due to valence electron patterns.",
+            "evidence": "Mendeleev's periodic law; quantum mechanical atomic models",
+            "source_type": "textbook",
+        },
+    ],
+    "biology": [
+        {
+            "claim": "Life is characterized by metabolism, reproduction, homeostasis, growth, response to stimuli, and evolution. DNA encodes genetic information through the central dogma: DNA → RNA → protein.",
+            "evidence": "Cell theory; Watson-Crick DNA structure; evolutionary synthesis",
+            "source_type": "textbook",
+        },
+        {
+            "claim": "Natural selection drives evolution: heritable traits that enhance survival and reproduction become more common in populations over generations.",
+            "evidence": "Darwin's Origin of Species; modern population genetics; fossil record",
+            "source_type": "peer_reviewed_study",
+        },
+    ],
+    "mathematics": [
+        {
+            "claim": "Mathematics provides formal languages for describing patterns, structures, and relationships. Key branches include arithmetic, algebra, geometry, calculus, and logic.",
+            "evidence": "Peano axioms; Euclidean and non-Euclidean geometries; Gödel's incompleteness theorems",
+            "source_type": "textbook",
+        },
+        {
+            "claim": "Probability theory quantifies uncertainty through axioms: probabilities range 0-1, sum to 1 for mutually exclusive exhaustive events, and follow conditional probability rules (Bayes' theorem).",
+            "evidence": "Kolmogorov axioms; Bayes' theorem; law of large numbers",
+            "source_type": "textbook",
+        },
+    ],
+    "history": [
+        {
+            "claim": "Historical analysis relies on primary sources (contemporary documents, artifacts) and secondary sources (scholarly interpretations). Historians evaluate evidence credibility, context, and bias.",
+            "evidence": "Historiography methods; archaeological evidence; archival research standards",
+            "source_type": "textbook",
+        },
+        {
+            "claim": "Civilizations rise and fall through complex interactions of geography, technology, economics, politics, culture, and environmental factors. No single cause explains historical change.",
+            "evidence": "Comparative historical analysis; archaeological records; interdisciplinary studies",
+            "source_type": "systematic_review",
+        },
+    ],
+    "philosophy": [
+        {
+            "claim": "Philosophy examines fundamental questions about existence, knowledge, ethics, reason, and mind. Major branches: metaphysics (reality), epistemology (knowledge), ethics (morality), logic (reasoning).",
+            "evidence": "Classical philosophical texts; Stanford Encyclopedia of Philosophy; peer-reviewed philosophy journals",
+            "source_type": "textbook",
+        },
+        {
+            "claim": "Logical reasoning follows valid argument forms (modus ponens, modus tollens, syllogisms) and avoids fallacies (ad hominem, straw man, false dichotomy). Sound arguments have true premises and valid structure.",
+            "evidence": "Aristotelian logic; propositional and predicate logic; informal logic research",
+            "source_type": "textbook",
+        },
+    ],
+    "economics": [
+        {
+            "claim": "Economics studies production, distribution, and consumption of goods and services. Microeconomics analyzes individual agents; macroeconomics examines aggregate phenomena (GDP, inflation, unemployment).",
+            "evidence": "Supply-demand theory; Keynesian and neoclassical frameworks; econometric analysis",
+            "source_type": "textbook",
+        },
+        {
+            "claim": "Markets coordinate economic activity through price signals. Market failures (externalities, public goods, monopolies, information asymmetry) can justify government intervention.",
+            "evidence": "Welfare economics; Pigouvian taxes; Coase theorem; behavioral economics",
+            "source_type": "peer_reviewed_study",
+        },
+    ],
+    "psychology": [
+        {
+            "claim": "Psychology studies behavior and mental processes through scientific methods. Major perspectives: biological, behavioral, cognitive, psychodynamic, humanistic, social-cultural.",
+            "evidence": "Experimental psychology; neuroscience; longitudinal studies; meta-analyses",
+            "source_type": "systematic_review",
+        },
+        {
+            "claim": "Human development spans lifespan stages with characteristic physical, cognitive, and socioemotional changes. Nature (genetics) and nurture (environment) interact throughout development.",
+            "evidence": "Developmental psychology research; twin studies; attachment theory; Piaget's stages",
+            "source_type": "textbook",
+        },
+    ],
+    "computer_science": [
+        {
+            "claim": "Computer science studies computation, algorithms, data structures, and information processing. Fundamental concepts: computability (what can be computed), complexity (resources needed), correctness (verification).",
+            "evidence": "Turing machine model; P vs NP problem; algorithm analysis; formal verification",
+            "source_type": "textbook",
+        },
+        {
+            "claim": "Software engineering applies systematic approaches to software development: requirements, design, implementation, testing, maintenance. Quality attributes include correctness, efficiency, maintainability, security.",
+            "evidence": "Software engineering body of knowledge (SWEBOK); design patterns; agile methodologies",
+            "source_type": "technical_manual",
+        },
+    ],
 }
 
 # Fragment types - comprehensive taxonomy
