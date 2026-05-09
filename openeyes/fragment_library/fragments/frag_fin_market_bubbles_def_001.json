@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_market_bubbles_def_001",
+  "domain": "finance",
+  "subdomain": "market_psychology",
+  "tags": [
+    "bull_market",
+    "definition",
+    "bear_market",
+    "market_correction",
+    "volatility"
+  ],
+  "reasoning_role": "definition",
+  "content": "Market bubbles occur when asset prices rise far above intrinsic value driven by speculation rather than fundamentals. Characteristics: rapid price appreciation, widespread public interest, new paradigm thinking ('this time is different'), easy credit, abandonment of traditional valuation metrics. Historical examples: Tulip Mania (1637), South Sea Bubble (1720), 1929 stock bubble, Dot-com bubble (1999-2000), Housing bubble (2004-2006). Identification difficult in real-time: prices can remain elevated longer than fundamentals justify. Bubbles eventually burst when sentiment shifts, triggering sharp declines.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/bubbles-20210625.html",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.95
+}

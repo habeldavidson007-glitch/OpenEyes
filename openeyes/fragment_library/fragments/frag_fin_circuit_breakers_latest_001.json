@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_circuit_breakers_latest_001",
+  "domain": "finance",
+  "subdomain": "market_structure",
+  "tags": [
+    "volatility",
+    "stock_market",
+    "risk_management",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Circuit breakers triggered multiple times in March 2020 pandemic crash. Limit Up-Limit Down pauses occur regularly in volatile stocks. Review of thresholds ongoing as market structure evolves.",
+  "source": "NYSE",
+  "source_url": "https://www.nyse.com/markets/nyse/trading-status",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.85
+}

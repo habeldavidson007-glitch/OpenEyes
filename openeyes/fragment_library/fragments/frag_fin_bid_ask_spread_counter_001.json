@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_bid_ask_spread_counter_001",
+  "domain": "finance",
+  "subdomain": "market_structure",
+  "tags": [
+    "market_cap",
+    "volatility",
+    "risk_management",
+    "latest_data"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Spread alone doesn't capture full transaction costs. Price impact from larger orders often exceeds spread costs. Hidden liquidity and dark pools complicate spread interpretation. High-frequency traders may narrow displayed spreads while reducing actual liquidity available at quoted prices. Effective spread (actual execution vs midpoint) often differs from quoted spread.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/marketstructure/research/hft_lit_review.pdf",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.92
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_after_hours_trading_latest_001",
+  "domain": "finance",
+  "subdomain": "market_structure",
+  "tags": [
+    "latest_data",
+    "volatility",
+    "stock_market",
+    "risk_management"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Extended hours volume grew significantly, especially around earnings. Retail participation increased with zero-commission brokers offering 24-hour trading on select stocks. Gap moves at open remain common.",
+  "source": "BLS",
+  "source_url": "https://www.bls.gov/data/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.9
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_forex_market_counter_001",
+  "domain": "finance",
+  "subdomain": "forex",
+  "tags": [
+    "currency",
+    "forex",
+    "exchange_rate",
+    "latest_data"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Retail forex trading has extremely high failure rates. Broker conflicts exist (many act as counterparties to clients). Currency prediction notoriously difficult; academic evidence suggests random walk behavior. Carry trades (borrowing low-rate currencies to buy high-rate ones) work until they don't, causing sharp reversals. Geopolitical events can cause gap moves that bypass stops.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/fx-market-20210825.html",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.95
+}
