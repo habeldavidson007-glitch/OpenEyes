@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openeyes"
+version = "0.1.0"
+description = "Deterministic chaos Monte Carlo reasoning engine"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+  "click",
+  "rich",
+  "requests",
+]
+
+[project.scripts]
+openeyes = "openeyes.cli:cli"
