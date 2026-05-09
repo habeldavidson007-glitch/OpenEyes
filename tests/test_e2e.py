@@ -26,3 +26,11 @@ def test_stable_seed_deterministic() -> None:
     s1 = MonteCarloEngine.stable_seed("Pancreatic Cancer Symptoms", "medical")
     s2 = MonteCarloEngine.stable_seed("Pancreatic Cancer Symptoms", "medical")
     assert s1 == s2
+
+
+def test_memory_ingest_and_narrative(tmp_path: Path) -> None:
+    engine = OpenEyesEngine(vault_path=tmp_path / "vault")
+    r1 = engine.answer("Fastest way to get rich using investment?", "investment")
+    r2 = engine.answer("Fastest way to get rich using investment?", "investment")
+    assert "narrative" in r1 and "scenarios" in r1["narrative"]
+    assert r2["confidence"] >= r1["confidence"]

@@ -38,8 +38,12 @@ def query(query: str, domain: str | None, json_output: bool) -> None:
     table.add_column("Value", style="white")
     for k in ["domain", "status", "answer_class", "confidence"]:
         table.add_row(k, str(result.get(k)))
+    table.add_row("ingested", "YES")
     print(table)
     print(Panel(result.get("answer", ""), title="Answer", border_style="green"))
+    n = result.get("narrative", {})
+    if n:
+        print(Panel(json.dumps(n, indent=2), title="Narrative", border_style="blue"))
 
 
 @cli.command()
