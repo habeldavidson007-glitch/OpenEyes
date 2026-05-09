@@ -27,23 +27,25 @@ def cli() -> None:
 @click.argument("query")
 @click.option("--domain", default=None, help="Optional explicit domain override")
 @click.option("--json-output", is_flag=True, help="Print raw JSON output")
-def query(query: str, domain: str | None, json_output: bool) -> None:
+@click.option("--debug", is_flag=True, help="Show internal inference metadata")
+def query(query: str, domain: str | None, json_output: bool, debug: bool) -> None:
     engine = OpenEyesEngine()
     result = engine.answer(query=query, domain=domain)
     if json_output:
         print(json.dumps(result, indent=2))
         return
-    table = Table(title="OpenEyes Inference")
-    table.add_column("Field", style="cyan")
-    table.add_column("Value", style="white")
-    for k in ["domain", "status", "answer_class", "confidence"]:
-        table.add_row(k, str(result.get(k)))
-    table.add_row("ingested", "YES")
-    print(table)
     print(Panel(result.get("answer", ""), title="Answer", border_style="green"))
-    n = result.get("narrative", {})
-    if n:
-        print(Panel(json.dumps(n, indent=2), title="Narrative", border_style="blue"))
+    if debug:
+        table = Table(title="OpenEyes Inference (Debug)")
+        table.add_column("Field", style="cyan")
+        table.add_column("Value", style="white")
+        for k in ["domain", "status", "answer_class", "confidence"]:
+            table.add_row(k, str(result.get(k)))
+        table.add_row("ingested", "YES")
+        print(table)
+        n = result.get("narrative", {})
+        if n:
+            print(Panel(json.dumps(n, indent=2), title="Narrative", border_style="blue"))
 
 
 @cli.command()

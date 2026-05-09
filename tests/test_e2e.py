@@ -34,3 +34,9 @@ def test_memory_ingest_and_narrative(tmp_path: Path) -> None:
     r2 = engine.answer("Fastest way to get rich using investment?", "investment")
     assert "narrative" in r1 and "scenarios" in r1["narrative"]
     assert r2["confidence"] >= r1["confidence"]
+
+
+def test_complex_query_gets_longer_answer(tmp_path: Path) -> None:
+    engine = OpenEyesEngine(vault_path=tmp_path / "vault")
+    r = engine.answer("How to get rich fast using investments with a practical plan?", "investment")
+    assert "1)" in r["answer"] and len(r["answer"]) > 250

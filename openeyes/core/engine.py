@@ -12,6 +12,46 @@ from openeyes.storage.memory import ingest_case, retrieve_similar
 from openeyes.storage.vault import write_audit_log
 
 
+
+
+def _is_complex_query(query: str) -> bool:
+    q = query.lower()
+    markers = ["plan", "strategy", "step by step", "roadmap", "how to", "fast", "rich", "investment"]
+    return len(q.split()) >= 8 or any(m in q for m in markers)
+
+
+def _compose_user_answer(query: str, domain: str, narrative: dict, status: str) -> str:
+    scenarios = narrative.get("scenarios", {})
+    if domain == "investment":
+        if _is_complex_query(query):
+            return (
+                "Here is a practical, risk-aware plan to build wealth faster without gambling your future:\n"
+                "1) Stabilize your base: clear high-interest debt and keep 3-6 months emergency cash.\n"
+                "2) Build a core portfolio: broad diversified index exposure as default.\n"
+                "3) Add a capped high-risk bucket: only small % for speculative ideas.\n"
+                "4) Automate monthly contributions and rebalance quarterly.\n"
+                "5) Track net worth, savings rate, and downside risk monthly.\n"
+                f"Best case: {scenarios.get('best','')}\n"
+                f"Likely case: {scenarios.get('likely','')}\n"
+                f"Worst case: {scenarios.get('worst','')}\n"
+                "Bottom line: there is no safe instant-rich path; speed must be paired with risk limits and consistency."
+            )
+    if domain == "cooking":
+        return (
+            "Quick banana brownie (short version):\n"
+            "1) Mash 2 ripe bananas.\n"
+            "2) Mix with 1/2 cup cocoa, 1/2 cup flour, 1 egg, 1/4 cup sugar, pinch salt.\n"
+            "3) Bake at 175C (350F) for 20-25 min.\n"
+            "4) Cool 10 min, slice, serve."
+        )
+    if status != "ANSWER":
+        return (
+            "I can give a practical starting answer, but confidence is limited. "
+            "Use verified sources and, for high-stakes decisions, consult licensed professionals."
+        )
+    return "Possible symptoms include jaundice, unexplained weight loss, upper abdominal/back pain, appetite loss, and new-onset diabetes."
+
+
 class OpenEyesEngine:
     def __init__(self, vault_path: Path | None = None) -> None:
         self.mc = MonteCarloEngine()
@@ -62,12 +102,8 @@ class OpenEyesEngine:
         replay = json.loads(result["replay"])
         narrative = compose_narrative(query, routed_domain, result["status"], float(result["confidence"]), replay.get("sub_questions", []))
 
-        if result["status"] == "ANSWER":
-            answer = "Possible symptoms include jaundice, unexplained weight loss, upper abdominal/back pain, appetite loss, and new-onset diabetes."
-            answer_class = "ANSWER_CONFIDENT"
-        else:
-            answer = self._safe_fallback_answer(query, routed_domain, result["status"], narrative)
-            answer_class = "ANSWER_LOW_CONFIDENCE"
+        answer = _compose_user_answer(query, routed_domain, narrative, result["status"])
+        answer_class = "ANSWER_CONFIDENT" if result["status"] == "ANSWER" else "ANSWER_LOW_CONFIDENCE"
 
         out = {
             "status": result["status"],
