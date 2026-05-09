@@ -1,5 +1,13 @@
 ```
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Test results
+test_results/
+
 # Logs
-*.log
 logs/
 ```

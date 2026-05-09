@@ -184,6 +184,10 @@ class PhilosophyGuard:
             return self._check_max_age(proposal, config)
         elif check_type == "compatibility_check":
             return self._check_compatibility(proposal, config)
+        elif check_type == "recency_cap":
+            return self._check_recency_cap(proposal, config)
+        elif check_type == "requires_uncertainty_note":
+            return self._check_requires_uncertainty_note(proposal, config)
         
         # Unknown rule type
         return {
@@ -329,6 +333,68 @@ class PhilosophyGuard:
         return {
             "passed": True,
             "message": "No compatibility conflicts detected"
+        }
+    
+    def _check_recency_cap(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """
+        FIN-003: Fragments older than max_age_years cannot exceed score_cap.
+        This is a soft rule - returns warning but doesn't block.
+        Actual score capping happens in Monte Carlo engine.
+        """
+        from datetime import datetime
+        
+        max_age_years = config.get("max_age_years", 2)
+        score_cap = config.get("score_cap", 60)
+        
+        fragment_year = proposal.get("year", datetime.now().year)
+        current_year = datetime.now().year
+        age = current_year - fragment_year
+        
+        if age > max_age_years:
+            # Just warn - actual capping is done by Monte Carlo
+            return {
+                "passed": True,
+                "message": f"Fragment is {age} years old (max {max_age_years}). Score will be capped at {score_cap} during evaluation.",
+                "severity": "warning"
+            }
+        
+        return {
+            "passed": True,
+            "message": f"Fragment is {age} years old, within {max_age_years} year limit"
+        }
+    
+    def _check_requires_uncertainty_note(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """
+        FIN-004: Fragments with price prediction tags must include uncertainty note.
+        Checks if content contains hedging language when trigger tags are present.
+        """
+        trigger_tags = config.get("trigger_tags", ["price_target", "prediction", "forecast"])
+        fragment_tags = proposal.get("tags", [])
+        content = proposal.get("content", "").lower()
+        
+        # Check if any trigger tag is present
+        has_trigger = any(tag in fragment_tags for tag in trigger_tags)
+        
+        if has_trigger:
+            # Look for uncertainty/hedging language
+            uncertainty_phrases = [
+                "may", "might", "could", "uncertain", "risk", "volatile",
+                "not guaranteed", "past performance", "no assurance",
+                "speculative", "hypothetical", "illustration only"
+            ]
+            
+            has_uncertainty = any(phrase in content for phrase in uncertainty_phrases)
+            
+            if not has_uncertainty:
+                return {
+                    "passed": False,
+                    "message": "Fragment contains price prediction/forecast content but lacks required uncertainty disclaimer",
+                    "severity": "error"
+                }
+        
+        return {
+            "passed": True,
+            "message": "Prediction content includes appropriate uncertainty language"
         }
     
     def _check_cognitive_simplicity(self, proposal: Dict) -> Dict[str, Any]:

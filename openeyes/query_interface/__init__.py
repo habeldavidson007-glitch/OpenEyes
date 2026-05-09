@@ -440,7 +440,35 @@ class OpenEyes:
                     "reason": "Tier 1 requires counter-argument fragment"
                 }
         
+        # FIN-004: Check for price prediction language in finance domain
+        if self.domain == "finance":
+            answer_text = assembled_output.get("answer", "")
+            if self._check_prediction_language(answer_text):
+                return {
+                    "passed": False,
+                    "reason": "FIN-004: Answer contains price prediction language. OpenEyes does not make price predictions."
+                }
+        
         return {"passed": True}
+    
+    @staticmethod
+    def _check_prediction_language(assembled_answer: str) -> bool:
+        """
+        Returns True if prediction language detected in finance domain.
+        If True, assembly should HALT with FIN-004 violation.
+        """
+        PREDICTION_TRIGGER_PHRASES = [
+            "will reach", "will hit", "price target", "expected to reach",
+            "projected to", "forecast to", "will rise to", "will fall to",
+            "will go to", "could reach", "should reach", "might hit",
+            "by end of year", "by Q", "12-month target", "price objective"
+        ]
+        
+        answer_lower = assembled_answer.lower()
+        for phrase in PREDICTION_TRIGGER_PHRASES:
+            if phrase.lower() in answer_lower:
+                return True
+        return False
     
     def _build_halt_response(self, reason: str, failed_candidates: List[Dict[str, Any]] = None, domain: str = None) -> Dict[str, Any]:
         """Build detailed diagnostic HALT response."""
