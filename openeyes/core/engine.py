@@ -257,11 +257,26 @@ class OpenEyesEngine:
         prior_cases = retrieve_similar(self.memory_path, query, domain, top_k=1)
         if prior_cases:
             prior = prior_cases[0]
-            if str(prior.get("query", "")).strip().lower() == query.strip().lower() and prior.get("top_claim"):
+            top_claim = str(prior.get("top_claim", ""))
+            confidence = float(prior.get("confidence", 0))
+            generic_markers = [
+                "when direct retrieval is sparse",
+                "structured systems view",
+                "limited retrieval coverage",
+            ]
+            is_generic_recall = any(marker in top_claim.lower() for marker in generic_markers)
+            is_entity_query = query.strip().lower().startswith(("who is ", "what is ", "when did ", "where is "))
+            if (
+                str(prior.get("query", "")).strip().lower() == query.strip().lower()
+                and top_claim
+                and confidence >= 75.0
+                and not is_generic_recall
+                and not is_entity_query
+            ):
                 return [
                     Fragment(
-                        claim=prior["top_claim"],
-                        evidence=f"Retrieval memory recall from prior successful run (confidence={prior.get('confidence', 0)}%)",
+                        claim=top_claim,
+                        evidence=f"Retrieval memory recall from prior successful run (confidence={confidence}%)",
                         limitations=["Recalled memory fragment; refresh via live fetch for latest developments"],
                         sub_questions=["Has anything changed since the last run?"],
                         source_type="expert_consensus",
