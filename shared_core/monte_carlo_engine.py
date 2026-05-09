@@ -44,6 +44,57 @@ DEFAULT_THRESHOLDS = {
     "tier3": {"score": 45, "variance": 800, "survival_prob": 0.25},
 }
 
+# Domain-specific recency decay rates (points per year)
+DOMAIN_DECAY_RATES = {
+    'finance': {
+        'monetary_policy': 5,      # Decays 5 points per year
+        'earnings': 40,             # Decays 40 points per year (quarterly data)
+        'crypto': 30,               # Decays 30 points per year
+        'technical_analysis': 20,   # Decays 20 points per year
+        'regulation': 3,            # Decays 3 points per year
+        'fundamental_analysis': 8,  # Decays 8 points per year
+        'default': 8               # Default finance decay
+    },
+    'medical': {
+        'clinical_guideline': 5,
+        'drug_interaction': 3,
+        'default': 5
+    },
+    'engineering': {
+        'standard': 2,
+        'default': 3
+    }
+}
+
+
+def apply_recency_decay(base_score: float, fragment: dict, domain: str = 'finance') -> float:
+    """
+    Apply domain-specific recency decay to a fragment's score.
+    
+    Args:
+        base_score: The original Monte Carlo score
+        fragment: Fragment dictionary with 'year' and 'tags'
+        domain: Domain name (e.g., 'finance', 'medical', 'engineering')
+    
+    Returns:
+        Decayed score (minimum 0)
+    """
+    year = fragment.get('year', 2020)
+    current_year = 2026
+    age = current_year - year
+    
+    # Get decay rate for this fragment's primary tag
+    domain_rates = DOMAIN_DECAY_RATES.get(domain, {})
+    decay_rate = domain_rates.get('default', 5)
+    
+    for tag in fragment.get('tags', []):
+        if tag in domain_rates:
+            decay_rate = domain_rates[tag]
+            break
+    
+    decayed_score = base_score - (age * decay_rate)
+    return max(0, decayed_score)
+
 
 def _default_evaluator(composition: List[Dict[str, Any]], 
                        scenario: Optional[Dict[str, Any]] = None,
