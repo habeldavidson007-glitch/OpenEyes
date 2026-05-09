@@ -13,6 +13,20 @@ except Exception:  # pragma: no cover
 
 from openeyes.knowledge.fragments import Fragment
 
+QUERY_NORMALIZATION_MAP = {
+    "rennaisance": "renaissance",
+    "rennaissance": "renaissance",
+    "teh ": "the ",
+}
+
+
+def normalize_query(query: str) -> str:
+    """Normalize common misspellings/noise before retrieval."""
+    normalized = query.lower().strip()
+    for wrong, correct in QUERY_NORMALIZATION_MAP.items():
+        normalized = normalized.replace(wrong, correct)
+    return normalized
+
 # Source endpoints (primary APIs)
 WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/title"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
@@ -526,23 +540,24 @@ def fetch_live_fragments(query: str, domain: str, limit: int = 5) -> list[Fragme
     - Evidence level assignment (high/moderate/low based on source type)
     """
     all_frags: list[Fragment] = []
+    normalized_query = normalize_query(query)
     
     # Medical/scientific queries get PubMed priority
     if domain in ["medical", "scientific"]:
-        pubmed_frags = _fetch_pubmed_fragments(query, limit=2)
+        pubmed_frags = _fetch_pubmed_fragments(normalized_query, limit=2)
         all_frags.extend(pubmed_frags)
     
     # Technical/scientific queries get arXiv
     if domain in ["scientific", "engineering", "technology"]:
-        arxiv_frags = _fetch_arxiv_fragments(query, limit=2)
+        arxiv_frags = _fetch_arxiv_fragments(normalized_query, limit=2)
         all_frags.extend(arxiv_frags)
     
     # General knowledge from Wikipedia
-    wiki_frags = _fetch_wikipedia_fragments(query, limit=3)
+    wiki_frags = _fetch_wikipedia_fragments(normalized_query, limit=3)
     all_frags.extend(wiki_frags)
     
     # Add synthetic foundational knowledge
-    synthetic_frags = _generate_synthetic_fragments(query, domain, limit=2)
+    synthetic_frags = _generate_synthetic_fragments(normalized_query, domain, limit=2)
     all_frags.extend(synthetic_frags)
     
     # Deduplicate by source_id
@@ -581,7 +596,7 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
     """
     today = datetime.now().strftime("%Y-%m-%d")
     frags = []
-    query_lower = query.lower()
+    query_lower = normalize_query(query)
     
     # Domain-specific JIT synthesis
     if domain == "medical":
@@ -746,25 +761,8 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
         )
     
     else:
-        # High-value general historical queries (including common misspellings)
-        if any(kw in query_lower for kw in ["renaissance", "rennaisance", "rennaissance"]):
-            frags.append(
-                Fragment(
-                    claim="The Renaissance was a cultural and intellectual movement (roughly 14th–17th centuries) that began in Italy and spread across Europe, marked by renewed interest in classical Greek and Roman learning, humanism, advances in art and science, and major figures such as Leonardo da Vinci, Michelangelo, and Erasmus.",
-                    evidence="Encyclopaedia Britannica; standard European history texts; primary works from Renaissance humanists and artists",
-                    limitations=["Timeline and regional boundaries vary by historian and country"],
-                    sub_questions=["What changed between the Middle Ages and Renaissance?", "Who were key Renaissance figures?"],
-                    source_type="textbook",
-                    source_id=f"jit-renaissance-{today}",
-                    source_url="https://www.britannica.com/event/Renaissance",
-                    published_on=today,
-                    jurisdiction="global",
-                    evidence_level="moderate",
-                )
-            )
-
-        if not frags:
         # General knowledge fallback
+        if not frags:
             frags.append(
                 Fragment(
                         claim=f"Analysis of '{query}' based on first principles and logical reasoning. When direct evidence is limited, probabilistic inference from analogous domains and symmetry principles can provide hypothesis-level insights.",

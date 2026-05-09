@@ -9,7 +9,7 @@ from openeyes.config import audit_dir
 from openeyes.core.router import route_domain
 from openeyes.core.narrative import compose_narrative
 from openeyes.knowledge.fragments import Fragment
-from openeyes.knowledge.live_fetch import fetch_live_fragments, jit_synthesize_fragments
+from openeyes.knowledge.live_fetch import fetch_live_fragments, jit_synthesize_fragments, normalize_query
 from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.memory import ingest_case, retrieve_similar
 from openeyes.storage.vault import write_audit_log
@@ -273,8 +273,9 @@ class OpenEyesEngine:
             ]
         
         synthesized_mode = False
+        normalized_query = normalize_query(query)
         # Fetch live fragments with Akinator-refined mask
-        fetched = fetch_live_fragments(query, domain, limit=search_mask.max_results)
+        fetched = fetch_live_fragments(normalized_query, domain, limit=search_mask.max_results)
         
         # If no fragments found, trigger JIT synthesis (Research Loop)
         if not fetched:
@@ -283,10 +284,10 @@ class OpenEyesEngine:
             if domain == "philosophy" and "game_theory" not in analog_domains:
                 analog_domains.insert(0, "game_theory")
             consensus_context = {"force_cross_domain_domains": analog_domains}
-            consensus = run_consensus_analysis(query, domain, context=consensus_context)
+            consensus = run_consensus_analysis(normalized_query, domain, context=consensus_context)
             _pipeline_log(f"[CONSENSUS] Multi-path validation complete (score={consensus.consensus_score:.2f}, evidence={consensus.evidence_level})")
 
-            synthesized = jit_synthesize_fragments(query, domain, limit=5)
+            synthesized = jit_synthesize_fragments(normalized_query, domain, limit=5)
             if synthesized:
                 _pipeline_log(f"[JIT Synthesizer] Generated {len(synthesized)} synthetic fragments")
                 synthesized_mode = True
@@ -329,11 +330,11 @@ class OpenEyesEngine:
             _pipeline_log(f"[AUTONOMOUS] Low evidence detected ({high_evidence_count} high-evidence fragments), triggering web research...")
             
             # Phase 1: Scrape authoritative sources
-            scraped = scrape_authoritative_sources(query, domain, max_results=5)
+            scraped = scrape_authoritative_sources(normalized_query, domain, max_results=5)
             
             if scraped:
                 # Phase 2: Convert to fragments
-                new_fragments = convert_to_fragments(scraped, query, domain, max_fragments=10)
+                new_fragments = convert_to_fragments(scraped, normalized_query, domain, max_fragments=10)
                 
                 # Verify consistency with existing knowledge
                 if new_fragments:
