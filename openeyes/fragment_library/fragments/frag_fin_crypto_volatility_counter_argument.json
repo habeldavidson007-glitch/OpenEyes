@@ -1,0 +1,17 @@
+{
+  "id": "frag_fin_crypto_volatility_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Volatility is decreasing as market cap grows and institutional participation increases (volatility decay curve similar to early equities).",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

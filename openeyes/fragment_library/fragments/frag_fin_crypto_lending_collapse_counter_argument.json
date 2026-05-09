@@ -1,0 +1,17 @@
+{
+  "id": "frag_fin_crypto_lending_collapse_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "The collapse cleared unsustainable yield promises, forcing the industry toward transparent, on-chain, over-collateralized models.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

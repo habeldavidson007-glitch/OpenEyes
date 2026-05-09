@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_hash_rate_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "latest_data",
+    "crypto"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "BTC Hash rate hit all-time highs >600 EH/s in 2024. Mining difficulty adjusts every 2 weeks to maintain 10m block time.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

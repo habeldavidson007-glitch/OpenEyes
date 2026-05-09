@@ -1,0 +1,17 @@
+{
+  "id": "frag_fin_onchain_analysis_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "SOPR (Spent Output Profit Ratio) indicates profit-taking. MVRV (Market Value to Realized Value) signals over/undervaluation.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

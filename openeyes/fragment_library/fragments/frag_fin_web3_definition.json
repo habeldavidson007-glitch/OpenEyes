@@ -1,0 +1,17 @@
+{
+  "id": "frag_fin_web3_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "Vision of a decentralized internet owned by users via tokens, replacing ad-revenue models of Web2 platforms.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

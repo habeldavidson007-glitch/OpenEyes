@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_crypto_inflation_hedge_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "latest_data",
+    "crypto"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Long-term correlation with M2 money supply remains strong. Short-term noise dominated by liquidity cycles. Narrative evolving.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,35 +1,37 @@
 ```
-# Python
-__pycache__/
+# Build artifacts
 *.pyc
-*.pyo
-*.pyd
-.Python
-env/
+__pycache__/
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.out
+
+# Dependencies
 venv/
 .venv/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
+.env
+.env.local
+.env.*
+
+# Logs and temporary files
 *.log
-*.pot
-*.pyc
-*.pyo
-*.pyd
-.MF
-tags
-TAGS
-*.tmproj
-*.lproj
-*~
-# Byte-compiled / optimized / DLL files
-__pycache__/
+*.tmp
+*.swp
+
+# Editors and IDEs
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Python-specific
 *.py[cod]
 *$py.class
 *.so
@@ -49,16 +51,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-# IDE specific
-.vscode/
-.idea/
-*.swp
-*.swo
-# Environment variables
-.env
-.env.local
-*.env.*
 
-# Build artifacts from tools
-openeyes/tools/build_regulatory_risk_fragments.py
+# Project-specific build artifacts
+openeyes/tools/build_crypto_fragments.py
 ```
