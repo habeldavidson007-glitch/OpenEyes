@@ -33,9 +33,9 @@ def sleep() -> None:
 
 @cli.command()
 def status() -> None:
-    vault = vault_root()
-    files = list(vault.glob("*.md")) if vault.exists() else []
-    print({"vault": str(vault), "audit_files": len(files)})
+    vault = audit_dir()
+    files = list(vault.glob("audit_log*.md")) if vault.exists() else []
+    print({"vault": str(vault_root()), "audit_files": len(files)})
 
 
 @cli.command()
