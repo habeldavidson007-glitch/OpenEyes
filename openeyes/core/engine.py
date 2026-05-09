@@ -45,6 +45,23 @@ def _compose_user_answer(query: str, domain: str, narrative: dict, status: str) 
             "3) Bake at 175C (350F) for 20-25 min.\n"
             "4) Cool 10 min, slice, serve."
         )
+    if domain == "medical":
+        if "cancer" in query.lower():
+            return (
+                "Cancer is a group of diseases characterized by uncontrolled cell division and the ability to invade surrounding tissues. "
+                "The major hallmarks of cancer include: sustained proliferative signaling, evading growth suppressors, resisting cell death, "
+                "enabling replicative immortality, inducing angiogenesis, and activating invasion and metastasis. "
+                "Common symptoms vary by cancer type but may include unexplained weight loss, fatigue, pain, and changes in skin appearance. "
+                "Early detection and evidence-based treatment significantly improve outcomes."
+            )
+        if "antibiotic" in query.lower() or "antibiotics" in query.lower():
+            return (
+                "Antibiotics are antimicrobial substances that fight bacterial infections by either killing bacteria or inhibiting their growth. "
+                "They work through several mechanisms: inhibiting cell wall synthesis (penicillins), blocking protein synthesis (macrolides, tetracyclines), "
+                "or interfering with DNA replication (fluoroquinolones). Antibiotics are crucial because they treat life-threatening bacterial infections, "
+                "enable complex medical procedures (surgeries, chemotherapy), and prevent disease spread. However, antibiotic resistance is a major global "
+                "health threat, requiring responsible use only when prescribed for bacterial infections."
+            )
     if status != "ANSWER":
         return (
             "I can give a practical starting answer, but confidence is limited. "

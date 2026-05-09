@@ -1,21 +1,16 @@
 ```
-# Python compiled files
-*.pyc
-__pycache__/
+# Binary/compiled files
+*.bin
 
-# Python package metadata
-*.egg-info/
+# Environment and cache
+.env
+.env.local
+*.env.*
 
-# Dependencies
-.venv/
-venv/
-node_modules/
-
-# Logs and temp files
+# Logs and temporary files
 *.log
 *.tmp
 
-# Editors
-.vscode/
-.idea/
+# Directories
+.openeyes/vault/audit/
 ```
