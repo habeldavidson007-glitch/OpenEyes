@@ -39,11 +39,16 @@ class OpenEyesEngine:
         return []
 
     @staticmethod
-    def _safe_fallback_answer(query: str, domain: str, status: str) -> str:
+    def _safe_fallback_answer(query: str, domain: str, status: str, narrative: dict) -> str:
+        scenarios = narrative.get("scenarios", {})
         return (
-            f"Low-confidence response ({status}) for '{query}'. "
-            f"For {domain}, prioritize regulated guidance, verified sources, and risk-aware steps. "
-            "If this decision impacts health, legal rights, or money, consult a licensed professional."
+            f"OpenEyes safety mode: {status} for query '{query}'.\n\n"
+            f"Context: {narrative.get('context', '')}\n"
+            f"Best-case: {scenarios.get('best', '')}\n"
+            f"Likely-case: {scenarios.get('likely', '')}\n"
+            f"Worst-case: {scenarios.get('worst', '')}\n"
+            f"Recommendation: {narrative.get('recommendation', '')}\n"
+            "Disclaimer: For real financial, legal, or medical decisions, consult licensed professionals."
         )
 
     def answer(self, query: str, domain: str | None = None) -> dict:
@@ -54,15 +59,16 @@ class OpenEyesEngine:
         if priors and result.get("confidence", 0.0) < 60:
             result["confidence"] = round(min(99.0, result["confidence"] + 5.0 * len(priors)), 2)
 
+        replay = json.loads(result["replay"])
+        narrative = compose_narrative(query, routed_domain, result["status"], float(result["confidence"]), replay.get("sub_questions", []))
+
         if result["status"] == "ANSWER":
             answer = "Possible symptoms include jaundice, unexplained weight loss, upper abdominal/back pain, appetite loss, and new-onset diabetes."
             answer_class = "ANSWER_CONFIDENT"
         else:
-            answer = self._safe_fallback_answer(query, routed_domain, result["status"])
+            answer = self._safe_fallback_answer(query, routed_domain, result["status"], narrative)
             answer_class = "ANSWER_LOW_CONFIDENCE"
 
-        replay = json.loads(result["replay"])
-        narrative = compose_narrative(query, routed_domain, result["status"], float(result["confidence"]), replay.get("sub_questions", []))
         out = {
             "status": result["status"],
             "answer_class": answer_class,
