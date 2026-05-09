@@ -107,6 +107,12 @@ def _expand_narrative_structure(query: str, domain: str, narrative: dict, fragme
             "4) Implement with feedback loops for continuous improvement\n"
             "5) Document assumptions and revise based on new evidence"
         )
+
+    if fragments_count < 3 and domain not in {"medical", "investment"}:
+        expanded["synthesis_solution"] = (
+            "Limited retrieval coverage detected. This answer is based on best available fragments "
+            "plus internal synthesis; verify with fresh primary sources for time-sensitive decisions."
+        )
     
     return expanded
 

@@ -73,7 +73,7 @@ SEARCH_ENDPOINTS = {
     "legal": "https://www.law.cornell.edu/search?query={query}",
     "science": "https://arxiv.org/search/?query={query}&searchtype=all",
     "technology": "https://ieeexplore.ieee.org/search/searchresult.jsp?queryText={query}",
-    "general": "https://en.wikipedia.org/w/index.php?search={query}",
+    "general": "https://duckduckgo.com/html/?q={query}",
 }
 
 
@@ -81,12 +81,18 @@ def _expand_query(query: str, domain: str) -> List[str]:
     """Expand broad queries into focused retrieval intents."""
     q = query.lower()
     expanded = [query]
-    if domain == "general" and any(k in q for k in ["world", "global", "current", "condition"]):
+    if domain == "general" and any(k in q for k in ["think", "opinion", "current", "world", "condition", "billionaire", "system"]):
         expanded.extend([
             "global economy outlook 2026",
             "geopolitical conflict summary 2026",
             "climate change status report 2026",
             "ai and labor market impact 2026",
+        ])
+    if any(k in q for k in ["what do you think", "opinion", "your view"]):
+        expanded.extend([
+            query.replace("what do you think about", "").strip(),
+            f"facts and statistics about {query.replace('what do you think about', '').strip()}",
+            f"latest reports on {query.replace('what do you think about', '').strip()}",
         ])
     return expanded
 
