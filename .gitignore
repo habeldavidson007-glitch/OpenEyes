@@ -1,34 +1,17 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-
-# Dependencies
-.venv/
-venv/
-env/
-.env
-.env.local
-.env.*
-
 # Logs and temp files
 *.log
 *.tmp
-*.swp
+*.bin
+
+# Test files
+test_results_*.json
+
+# Environment
+.env
+.env.local
+*.env.*
 
 # Editors
-.vscode/
-.idea/
-
-# Build artifacts
-build/
-dist/
-*.egg-info/
-
-# OS
-.DS_Store
-Thumbs.db
+.openeyes/
 ```
