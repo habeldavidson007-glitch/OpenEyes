@@ -111,7 +111,14 @@ def _expand_narrative_structure(query: str, domain: str, narrative: dict, fragme
     return expanded
 
 
-def _compose_user_answer(query: str, domain: str, narrative: dict, status: str, fragments_count: int = 0) -> str:
+def _compose_user_answer(
+    query: str,
+    domain: str,
+    narrative: dict,
+    status: str,
+    fragments_count: int = 0,
+    fragments: list[Fragment] | None = None
+) -> str:
     # First expand narrative structure
     expanded_narrative = _expand_narrative_structure(query, domain, narrative, fragments_count)
     
@@ -198,6 +205,20 @@ def _compose_user_answer(query: str, domain: str, narrative: dict, status: str, 
                 f"{expanded_narrative['synthesis_solution']}"
             )
     
+    # Generic factual response: use top fragment claim/evidence when available
+    if fragments:
+        top = fragments[0]
+        claim = getattr(top, "claim", "") or ""
+        evidence = getattr(top, "evidence", "") or ""
+        if claim:
+            return (
+                f"{expanded_narrative['context']}\n\n"
+                f"{expanded_narrative['simulation_analysis']}\n\n"
+                f"{claim}\n\n"
+                f"Evidence basis: {evidence if evidence else 'Best available synthesized/domain evidence.'}\n\n"
+                f"{expanded_narrative['synthesis_solution']}"
+            )
+
     # Default structured response with 3-bar narrative
     if status != "ANSWER":
         return (
@@ -359,7 +380,14 @@ class OpenEyesEngine:
         narrative = compose_narrative(query, routed_domain, result["status"], float(result["confidence"]), replay.get("sub_questions", []))
 
         # Pass fragment count for narrative expansion
-        answer = _compose_user_answer(query, routed_domain, narrative, result["status"], fragments_count=len(frags))
+        answer = _compose_user_answer(
+            query,
+            routed_domain,
+            narrative,
+            result["status"],
+            fragments_count=len(frags),
+            fragments=frags
+        )
         answer_class = "ANSWER_CONFIDENT" if result["status"] == "ANSWER" else "ANSWER_LOW_CONFIDENCE"
 
         out = {
