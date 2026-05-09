@@ -13,12 +13,16 @@ from openeyes.knowledge.fragments import Fragment
 WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/title"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
 
+HEADERS = {
+    "User-Agent": "OpenEyes/1.0 (https://github.com/OpenEyes; contact@example.org)"
+}
+
 
 def _wiki_results(query: str, limit: int = 3) -> list[dict[str, Any]]:
     if requests is None:
         return []
     try:
-        r = requests.get(WIKI_SEARCH, params={"q": query, "limit": limit}, timeout=8)
+        r = requests.get(WIKI_SEARCH, params={"q": query, "limit": limit}, timeout=8, headers=HEADERS)
         r.raise_for_status()
         return r.json().get("pages", [])
     except Exception:
@@ -35,7 +39,7 @@ def fetch_live_fragments(query: str, domain: str, limit: int = 3) -> list[Fragme
         if requests is None:
             break
         try:
-            s = requests.get(WIKI_SUMMARY.format(title=title.replace(" ", "_")), timeout=8)
+            s = requests.get(WIKI_SUMMARY.format(title=title.replace(" ", "_")), timeout=8, headers=HEADERS)
             s.raise_for_status()
             data = s.json()
             extract = data.get("extract", "")

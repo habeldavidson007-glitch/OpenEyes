@@ -1,8 +1,21 @@
-# Runtime vault artifacts
-obsidian_vault/
-workspace_obsidian_vault/
-.openeyes/
-
-# Python cache
-__pycache__/
+```
+# Python compiled files
 *.pyc
+__pycache__/
+
+# Python package metadata
+*.egg-info/
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Editors
+.vscode/
+.idea/
+```
