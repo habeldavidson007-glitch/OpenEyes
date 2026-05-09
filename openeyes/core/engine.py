@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 from datetime import datetime
 
@@ -21,6 +22,13 @@ from openeyes.core.cross_domain_mapper import get_analogous_domains
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
+VERBOSE_PIPELINE = os.getenv("OPENEYES_VERBOSE_PIPELINE", "0") == "1"
+
+
+def _pipeline_log(message: str) -> None:
+    """Emit internal pipeline logs only when explicitly enabled."""
+    if VERBOSE_PIPELINE:
+        print(message)
 
 
 def _is_complex_query(query: str) -> bool:
@@ -249,17 +257,17 @@ class OpenEyesEngine:
         
         # If no fragments found, trigger JIT synthesis (Research Loop)
         if not fetched:
-            print(f"[JIT Synthesizer] No fragments found, triggering auto-research...")
+            _pipeline_log(f"[JIT Synthesizer] No fragments found, triggering auto-research...")
             analog_domains = [d for d, _ in get_analogous_domains(domain, threshold=0.0)[:2]]
             if domain == "philosophy" and "game_theory" not in analog_domains:
                 analog_domains.insert(0, "game_theory")
             consensus_context = {"force_cross_domain_domains": analog_domains}
             consensus = run_consensus_analysis(query, domain, context=consensus_context)
-            print(f"[CONSENSUS] Multi-path validation complete (score={consensus.consensus_score:.2f}, evidence={consensus.evidence_level})")
+            _pipeline_log(f"[CONSENSUS] Multi-path validation complete (score={consensus.consensus_score:.2f}, evidence={consensus.evidence_level})")
 
             synthesized = jit_synthesize_fragments(query, domain, limit=5)
             if synthesized:
-                print(f"[JIT Synthesizer] Generated {len(synthesized)} synthetic fragments")
+                _pipeline_log(f"[JIT Synthesizer] Generated {len(synthesized)} synthetic fragments")
                 synthesized_mode = True
                 for frag in synthesized:
                     if getattr(frag, "evidence_level", "low") == "low":
@@ -287,17 +295,17 @@ class OpenEyesEngine:
             filtered = akinator.filter_fragments_by_mask(fetched, search_mask)
             active_ces_threshold = search_mask.min_ces_score
         
-        print(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {active_ces_threshold})")
+        _pipeline_log(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {active_ces_threshold})")
         if fetched and not filtered:
             fallback_count = min(len(fetched), max(1, search_mask.max_results))
             filtered = sorted(fetched, key=lambda f: getattr(f, "effective_weight", 0.0))[:fallback_count]
-            print(f"[Akinator][WARN] Filtered count = 0; accepting {len(filtered)} lowest-scoring fragments as fallback")
+            _pipeline_log(f"[Akinator][WARN] Filtered count = 0; accepting {len(filtered)} lowest-scoring fragments as fallback")
         
         # PHASE 1-2: Autonomous Research Loop (if confidence would be low)
         # Check if we have enough high-quality fragments
         high_evidence_count = sum(1 for f in filtered if getattr(f, 'evidence_level', '') == 'high')
         if high_evidence_count < 2:
-            print(f"[AUTONOMOUS] Low evidence detected ({high_evidence_count} high-evidence fragments), triggering web research...")
+            _pipeline_log(f"[AUTONOMOUS] Low evidence detected ({high_evidence_count} high-evidence fragments), triggering web research...")
             
             # Phase 1: Scrape authoritative sources
             scraped = scrape_authoritative_sources(query, domain, max_results=5)
@@ -310,7 +318,7 @@ class OpenEyesEngine:
                 if new_fragments:
                     consistent_frags = verify_consistency(new_fragments, filtered)
                     filtered.extend(consistent_frags)
-                    print(f"[AUTONOMOUS] Added {len(consistent_frags)} verified fragments from web research")
+                    _pipeline_log(f"[AUTONOMOUS] Added {len(consistent_frags)} verified fragments from web research")
         
         # Apply identity-based weighting
         if identity:
@@ -320,7 +328,7 @@ class OpenEyesEngine:
                 if weight >= identity.config.evidence_threshold * 0.5:
                     weighted_filtered.append(frag)
             filtered = weighted_filtered
-            print(f"[IDENTITY] {identity.config.name} filtered to {len(filtered)} fragments")
+            _pipeline_log(f"[IDENTITY] {identity.config.name} filtered to {len(filtered)} fragments")
         
         return filtered
 
@@ -342,6 +350,8 @@ class OpenEyesEngine:
         frags = self._fragments_for(query, routed_domain)
         priors = retrieve_similar(self.memory_path, query, routed_domain)
         result = self.mc.run(query=query, domain=routed_domain, fragments=frags)
+        if result["status"].startswith("HALT") and frags:
+            result["status"] = "ANSWER_LOW_CONFIDENCE"
         if priors and result.get("confidence", 0.0) < 60:
             result["confidence"] = round(min(99.0, result["confidence"] + 5.0 * len(priors)), 2)
 
