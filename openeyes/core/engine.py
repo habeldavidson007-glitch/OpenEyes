@@ -4,16 +4,16 @@ import json
 from pathlib import Path
 
 from openeyes.config import audit_dir
+from openeyes.core.router import route_domain
 from openeyes.knowledge.fragments import Fragment
 from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.vault import write_audit_log
 
 
 class OpenEyesEngine:
-    def __init__(self, vault_path: Path | None = None, mode: str = "assistive") -> None:
+    def __init__(self, vault_path: Path | None = None) -> None:
         self.mc = MonteCarloEngine()
         self.vault_path = vault_path or audit_dir()
-        self.mode = mode
 
     def _fragments_for(self, query: str, domain: str) -> list[Fragment]:
         if "pancreatic" in query.lower():
@@ -43,26 +43,24 @@ class OpenEyesEngine:
             "If this decision impacts health, legal rights, or money, consult a licensed professional."
         )
 
-    def answer(self, query: str, domain: str) -> dict:
-        frags = self._fragments_for(query, domain)
-        result = self.mc.run(query=query, domain=domain, fragments=frags)
+    def answer(self, query: str, domain: str | None = None) -> dict:
+        routed_domain = route_domain(query, domain)
+        frags = self._fragments_for(query, routed_domain)
+        result = self.mc.run(query=query, domain=routed_domain, fragments=frags)
 
         if result["status"] == "ANSWER":
             answer = "Possible symptoms include jaundice, unexplained weight loss, upper abdominal/back pain, appetite loss, and new-onset diabetes."
             answer_class = "ANSWER_CONFIDENT"
-        elif self.mode == "assistive":
-            answer = self._safe_fallback_answer(query, domain, result["status"])
-            answer_class = "ANSWER_LOW_CONFIDENCE"
         else:
-            answer = "HALT"
-            answer_class = "HALT"
+            answer = self._safe_fallback_answer(query, routed_domain, result["status"])
+            answer_class = "ANSWER_LOW_CONFIDENCE"
 
         out = {
             "status": result["status"],
             "answer_class": answer_class,
             "answer": answer,
             "confidence": result["confidence"],
-            "domain": domain,
+            "domain": routed_domain,
             "replay": json.loads(result["replay"]),
         }
         write_audit_log(self.vault_path, query, out)

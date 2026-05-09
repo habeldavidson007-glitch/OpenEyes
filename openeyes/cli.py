@@ -9,6 +9,8 @@ if __package__ in {None, ""}:
 
 import click
 from rich import print
+from rich.panel import Panel
+from rich.table import Table
 
 
 from openeyes.config import audit_dir, vault_root
@@ -23,12 +25,21 @@ def cli() -> None:
 
 @cli.command()
 @click.argument("query")
-@click.option("--domain", default="medical", show_default=True)
-@click.option("--mode", default="assistive", type=click.Choice(["assistive", "strict"]), show_default=True)
-def query(query: str, domain: str, mode: str) -> None:
-    engine = OpenEyesEngine(mode=mode)
+@click.option("--domain", default=None, help="Optional explicit domain override")
+@click.option("--json-output", is_flag=True, help="Print raw JSON output")
+def query(query: str, domain: str | None, json_output: bool) -> None:
+    engine = OpenEyesEngine()
     result = engine.answer(query=query, domain=domain)
-    print(json.dumps(result, indent=2))
+    if json_output:
+        print(json.dumps(result, indent=2))
+        return
+    table = Table(title="OpenEyes Inference")
+    table.add_column("Field", style="cyan")
+    table.add_column("Value", style="white")
+    for k in ["domain", "status", "answer_class", "confidence"]:
+        table.add_row(k, str(result.get(k)))
+    print(table)
+    print(Panel(result.get("answer", ""), title="Answer", border_style="green"))
 
 
 @cli.command()
