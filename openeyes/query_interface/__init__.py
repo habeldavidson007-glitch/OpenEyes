@@ -138,11 +138,7 @@ class OpenEyes:
         
         try:
             # STEP 1: Check Compiled Logic Index (Instinct Mode) using canonical form
-            from openeyes.night_mode import ConsolidationEngine
-            engine = ConsolidationEngine()
-            query_keywords = engine._extract_keywords(normalized_query)
-            
-            synapse = self.compiled_logic.query(query_keywords)
+            synapse = self.compiled_logic.query(normalized_query.split())
             
             if synapse:
                 # INSTINCT MODE: Use pre-compiled logic chain
