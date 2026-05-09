@@ -746,21 +746,39 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
         )
     
     else:
-        # General knowledge fallback
-        frags.append(
-            Fragment(
-                    claim=f"Analysis of '{query}' based on first principles and logical reasoning. When direct evidence is limited, probabilistic inference from analogous domains and symmetry principles can provide hypothesis-level insights.",
-                    evidence="Logical reasoning; analogy from related domains; Bayesian inference principles",
-                    limitations=["Hypothesis-level confidence; requires empirical verification"],
-                    sub_questions=[f"What primary sources address {query}?", f"What are the key variables?"],
-                    source_type="expert_consensus",
-                    source_id=f"jit-general-{today}",
-                    source_url="",
+        # High-value general historical queries (including common misspellings)
+        if any(kw in query_lower for kw in ["renaissance", "rennaisance", "rennaissance"]):
+            frags.append(
+                Fragment(
+                    claim="The Renaissance was a cultural and intellectual movement (roughly 14th–17th centuries) that began in Italy and spread across Europe, marked by renewed interest in classical Greek and Roman learning, humanism, advances in art and science, and major figures such as Leonardo da Vinci, Michelangelo, and Erasmus.",
+                    evidence="Encyclopaedia Britannica; standard European history texts; primary works from Renaissance humanists and artists",
+                    limitations=["Timeline and regional boundaries vary by historian and country"],
+                    sub_questions=["What changed between the Middle Ages and Renaissance?", "Who were key Renaissance figures?"],
+                    source_type="textbook",
+                    source_id=f"jit-renaissance-{today}",
+                    source_url="https://www.britannica.com/event/Renaissance",
                     published_on=today,
                     jurisdiction="global",
                     evidence_level="moderate",
                 )
             )
+
+        if not frags:
+        # General knowledge fallback
+            frags.append(
+                Fragment(
+                        claim=f"Analysis of '{query}' based on first principles and logical reasoning. When direct evidence is limited, probabilistic inference from analogous domains and symmetry principles can provide hypothesis-level insights.",
+                        evidence="Logical reasoning; analogy from related domains; Bayesian inference principles",
+                        limitations=["Hypothesis-level confidence; requires empirical verification"],
+                        sub_questions=[f"What primary sources address {query}?", f"What are the key variables?"],
+                        source_type="expert_consensus",
+                        source_id=f"jit-general-{today}",
+                        source_url="",
+                        published_on=today,
+                        jurisdiction="global",
+                        evidence_level="moderate",
+                    )
+                )
     
     # Apply anti-hoax filtering to synthesized fragments
     filtered = [f for f in frags if _is_factual_content(f.claim)]
