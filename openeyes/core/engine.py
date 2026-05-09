@@ -17,8 +17,6 @@ from openeyes.akinator_engine import refine_query_with_binary_search, AkinatorEn
 from openeyes.identity import IdentityEngine, IdentityType
 from openeyes.ingestion.web_scraper import scrape_authoritative_sources
 from openeyes.ingestion.auto_fragment import convert_to_fragments, verify_consistency
-from openeyes.core.internal_consensus_engine import run_consensus_analysis
-from openeyes.core.cross_domain_mapper import get_analogous_domains
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
@@ -253,41 +251,6 @@ class OpenEyesEngine:
         self.memory_path = self.vault_path / "memory.bin"
 
     def _fragments_for(self, query: str, domain: str) -> list[Fragment]:
-        # Retrieval-memory fast path: reuse prior successful answer context for exact query/domain
-        prior_cases = retrieve_similar(self.memory_path, query, domain, top_k=1)
-        if prior_cases:
-            prior = prior_cases[0]
-            top_claim = str(prior.get("top_claim", ""))
-            confidence = float(prior.get("confidence", 0))
-            generic_markers = [
-                "when direct retrieval is sparse",
-                "structured systems view",
-                "limited retrieval coverage",
-            ]
-            is_generic_recall = any(marker in top_claim.lower() for marker in generic_markers)
-            is_entity_query = query.strip().lower().startswith(("who is ", "what is ", "when did ", "where is "))
-            if (
-                str(prior.get("query", "")).strip().lower() == query.strip().lower()
-                and top_claim
-                and confidence >= 75.0
-                and not is_generic_recall
-                and not is_entity_query
-            ):
-                return [
-                    Fragment(
-                        claim=top_claim,
-                        evidence=f"Retrieval memory recall from prior successful run (confidence={confidence}%)",
-                        limitations=["Recalled memory fragment; refresh via live fetch for latest developments"],
-                        sub_questions=["Has anything changed since the last run?"],
-                        source_type="expert_consensus",
-                        source_id=f"memory:{hash(query)}",
-                        source_url="",
-                        published_on=datetime.now().strftime("%Y-%m-%d"),
-                        jurisdiction="global",
-                        evidence_level="moderate",
-                    )
-                ]
-
         # Use Akinator binary search to refine query before fetching
         search_mask, traversal_path = refine_query_with_binary_search(query, domain)
         
@@ -295,25 +258,6 @@ class OpenEyesEngine:
         if traversal_path:
             _pipeline_log(f"[Akinator] Navigated {len(traversal_path)} decision points")
         
-        if "pancreatic" in query.lower():
-            return [
-                Fragment(
-                    claim="Pancreatic cancer commonly presents late with nonspecific symptoms.",
-                    evidence="NCCN-like and review synthesis.",
-                    limitations=["Symptoms overlap with benign disease."],
-                    sub_questions=["What are common symptoms?", "What are red flags?"],
-                    feedback={"thumbs_up": 20, "thumbs_down": 2},
-                    success_rate_ema=0.88,
-                    source_type="clinical_guideline" if domain == "medical" else "peer_reviewed_study",
-                    source_id="GUIDE-PANC-2025",
-                    source_url="https://example.org/guideline/pancreas",
-                    published_on="2025-06-01",
-                    jurisdiction="US",
-                    evidence_level="high",
-                )
-            ]
-        
-        synthesized_mode = False
         normalized_query = normalize_query(query)
         # Fetch live fragments with Akinator-refined mask
         fetched = fetch_live_fragments(normalized_query, domain, limit=search_mask.max_results)
@@ -321,42 +265,14 @@ class OpenEyesEngine:
         # If no fragments found, trigger JIT synthesis (Research Loop)
         if not fetched:
             _pipeline_log(f"[JIT Synthesizer] No fragments found, triggering auto-research...")
-            analog_domains = [d for d, _ in get_analogous_domains(domain, threshold=0.0)[:2]]
-            if domain == "philosophy" and "game_theory" not in analog_domains:
-                analog_domains.insert(0, "game_theory")
-            consensus_context = {"force_cross_domain_domains": analog_domains}
-            consensus = run_consensus_analysis(normalized_query, domain, context=consensus_context)
-            _pipeline_log(f"[CONSENSUS] Multi-path validation complete (score={consensus.consensus_score:.2f}, evidence={consensus.evidence_level})")
-
             synthesized = jit_synthesize_fragments(normalized_query, domain, limit=5)
             if synthesized:
                 _pipeline_log(f"[JIT Synthesizer] Generated {len(synthesized)} synthetic fragments")
-                synthesized_mode = True
-                for frag in synthesized:
-                    if getattr(frag, "evidence_level", "low") == "low":
-                        frag.evidence_level = "moderate"
-                if consensus.evidence_level in {"moderate", "high"}:
-                    for frag in synthesized:
-                        if getattr(frag, "evidence_level", "low") == "low":
-                            frag.evidence_level = "moderate"
                 fetched = synthesized
         
         # Filter fragments using CES-based mask
-        if synthesized_mode:
-            synthetic_mask = type(search_mask)(
-                domain_filters=search_mask.domain_filters,
-                evidence_levels=search_mask.evidence_levels,
-                source_types=search_mask.source_types,
-                recency_years=search_mask.recency_years,
-                max_results=search_mask.max_results,
-                exclude_patterns=search_mask.exclude_patterns,
-                min_ces_score=min(search_mask.min_ces_score, 0.15),
-            )
-            filtered = akinator.filter_fragments_by_mask(fetched, synthetic_mask)
-            active_ces_threshold = synthetic_mask.min_ces_score
-        else:
-            filtered = akinator.filter_fragments_by_mask(fetched, search_mask)
-            active_ces_threshold = search_mask.min_ces_score
+        filtered = akinator.filter_fragments_by_mask(fetched, search_mask)
+        active_ces_threshold = search_mask.min_ces_score
         
         _pipeline_log(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {active_ces_threshold})")
         if fetched and not filtered:
