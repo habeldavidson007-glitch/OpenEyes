@@ -247,6 +247,26 @@ class OpenEyesEngine:
         self.memory_path = self.vault_path / "memory.bin"
 
     def _fragments_for(self, query: str, domain: str) -> list[Fragment]:
+        # Retrieval-memory fast path: reuse prior successful answer context for exact query/domain
+        prior_cases = retrieve_similar(self.memory_path, query, domain, top_k=1)
+        if prior_cases:
+            prior = prior_cases[0]
+            if str(prior.get("query", "")).strip().lower() == query.strip().lower() and prior.get("top_claim"):
+                return [
+                    Fragment(
+                        claim=prior["top_claim"],
+                        evidence=f"Retrieval memory recall from prior successful run (confidence={prior.get('confidence', 0)}%)",
+                        limitations=["Recalled memory fragment; refresh via live fetch for latest developments"],
+                        sub_questions=["Has anything changed since the last run?"],
+                        source_type="expert_consensus",
+                        source_id=f"memory:{hash(query)}",
+                        source_url="",
+                        published_on=datetime.now().strftime("%Y-%m-%d"),
+                        jurisdiction="global",
+                        evidence_level="moderate",
+                    )
+                ]
+
         # Use Akinator binary search to refine query before fetching
         search_mask, traversal_path = refine_query_with_binary_search(query, domain)
         
@@ -410,6 +430,7 @@ class OpenEyesEngine:
                 "confidence": result["confidence"],
                 "data_recency_years": out["data_recency_years"],
                 "winning_fragment_set": self._winning_fragment_set(frags),
+                "top_claim": getattr(frags[0], "claim", "") if frags else "",
             }
         )
         write_audit_log(self.vault_path, query, out)
