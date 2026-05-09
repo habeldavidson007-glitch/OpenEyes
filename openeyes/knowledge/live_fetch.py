@@ -514,6 +514,68 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
             )
         )
     
+    elif domain == "technology":
+        frags.append(
+            Fragment(
+                claim="Quantum computing leverages quantum mechanical phenomena (superposition, entanglement, interference) to process information. Unlike classical bits (0 or 1), qubits can exist in superposition states, enabling exponential speedup for specific problems like factoring (Shor's algorithm) and database search (Grover's algorithm).",
+                evidence="Nielsen & Chuang 'Quantum Computation and Quantum Information'; IBM Quantum Experience; Google Sycamore processor results",
+                limitations=["Current quantum computers are noisy intermediate-scale (NISQ); error correction remains challenging"],
+                sub_questions=["What is quantum superposition?", "How does quantum entanglement enable computation?"],
+                source_type="textbook",
+                source_id=f"jit-quantum-{today}",
+                source_url="https://quantum-computing.ibm.com/",
+                published_on=today,
+                jurisdiction="global",
+                evidence_level="high",
+            )
+        )
+        if any(kw in query_lower for kw in ["AI", "artificial intelligence", "machine learning"]):
+            frags.append(
+                Fragment(
+                    claim="Machine learning uses statistical algorithms to learn patterns from data without explicit programming. Deep learning employs multi-layer neural networks to model complex non-linear relationships. Key challenges include overfitting, bias-variance tradeoff, and interpretability.",
+                    evidence="Goodfellow et al. 'Deep Learning' (MIT Press 2016); NeurIPS/ICML conference proceedings; industry benchmarks",
+                    limitations=["Model performance depends on data quality; generalization to new domains requires careful validation"],
+                    sub_questions=["What is supervised vs unsupervised learning?", "How do neural networks learn?"],
+                    source_type="conference_paper",
+                    source_id=f"jit-ml-{today}",
+                    source_url="https://www.deeplearningbook.org/",
+                    published_on=today,
+                    jurisdiction="global",
+                    evidence_level="high",
+                )
+            )
+        if "blockchain" in query_lower or "crypto" in query_lower:
+            frags.append(
+                Fragment(
+                    claim="Blockchain is a distributed ledger technology where transactions are recorded in cryptographically linked blocks across a decentralized network. Key properties include immutability (cannot alter past records), transparency (public verification), and consensus mechanisms (Proof of Work, Proof of Stake) that eliminate need for trusted intermediaries.",
+                    evidence="Nakamoto Bitcoin whitepaper 2008; Ethereum yellow paper; academic research on distributed systems",
+                    limitations=["Scalability challenges exist; energy consumption varies by consensus mechanism; regulatory uncertainty in some jurisdictions"],
+                    sub_questions=["How does blockchain achieve consensus?", "What are smart contracts?"],
+                    source_type="technical_manual",
+                    source_id=f"jit-blockchain-{today}",
+                    source_url="https://bitcoin.org/bitcoin.pdf",
+                    published_on=today,
+                    jurisdiction="global",
+                    evidence_level="high",
+                )
+            )
+    
+    elif domain == "science":
+        frags.append(
+            Fragment(
+                claim="Scientific method requires hypothesis formation, experimental testing, peer review, and reproducibility. Scientific knowledge advances through falsification of incorrect theories and accumulation of evidence supporting validated models.",
+                evidence="Popper 'Logic of Scientific Discovery'; Kuhn 'Structure of Scientific Revolutions'; modern research methodology standards",
+                limitations=["Scientific consensus evolves with new evidence; single studies should be interpreted cautiously"],
+                sub_questions=["What is the scientific method?", "How is scientific consensus formed?"],
+                source_type="textbook",
+                source_id=f"jit-science-{today}",
+                source_url="https://www.nationalacademies.org/",
+                published_on=today,
+                jurisdiction="global",
+                evidence_level="high",
+            )
+        )
+    
     else:
         # General knowledge fallback
         frags.append(

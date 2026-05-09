@@ -150,6 +150,41 @@ def _compose_user_answer(query: str, domain: str, narrative: dict, status: str, 
                 f"{expanded_narrative['synthesis_solution']}"
             )
     
+    if domain == "technology":
+        if "quantum" in query.lower():
+            return (
+                f"{expanded_narrative['context']}\n\n"
+                f"{expanded_narrative['simulation_analysis']}\n\n"
+                "Quantum computing leverages quantum mechanical phenomena—superposition, entanglement, and interference—to process information. "
+                "Unlike classical bits (0 or 1), qubits can exist in superposition states, enabling exponential speedup for specific problems. "
+                "Key applications include: Shor's algorithm for integer factorization (threatening current cryptography), Grover's algorithm for database search, "
+                "and quantum simulation for materials science and drug discovery. Current systems are 'noisy intermediate-scale quantum' (NISQ) devices "
+                "with limited qubit counts and error rates requiring significant error correction overhead.\n\n"
+                f"{expanded_narrative['synthesis_solution']}"
+            )
+        if any(kw in query.lower() for kw in ["AI", "artificial intelligence", "machine learning"]):
+            return (
+                f"{expanded_narrative['context']}\n\n"
+                f"{expanded_narrative['simulation_analysis']}\n\n"
+                "Machine learning uses statistical algorithms to learn patterns from data without explicit programming. "
+                "Deep learning employs multi-layer neural networks to model complex non-linear relationships, achieving breakthrough results in "
+                "image recognition, natural language processing, and game playing. Key concepts include: supervised learning (labeled data), "
+                "unsupervised learning (pattern discovery), reinforcement learning (reward-based training), and transfer learning (knowledge reuse). "
+                "Major challenges include overfitting, bias-variance tradeoff, interpretability, and computational requirements.\n\n"
+                f"{expanded_narrative['synthesis_solution']}"
+            )
+        if "blockchain" in query.lower() or "crypto" in query.lower():
+            return (
+                f"{expanded_narrative['context']}\n\n"
+                f"{expanded_narrative['simulation_analysis']}\n\n"
+                "Blockchain is a distributed ledger technology where transactions are recorded in cryptographically linked blocks across a decentralized network. "
+                "Key properties include: immutability (past records cannot be altered), transparency (public verification), and consensus mechanisms "
+                "(Proof of Work, Proof of Stake) that eliminate the need for trusted intermediaries. Applications extend beyond cryptocurrency to supply chain "
+                "tracking, smart contracts, decentralized finance (DeFi), and digital identity. Challenges include scalability limitations, energy consumption "
+                "(for Proof of Work), and regulatory uncertainty in various jurisdictions.\n\n"
+                f"{expanded_narrative['synthesis_solution']}"
+            )
+    
     # Default structured response with 3-bar narrative
     if status != "ANSWER":
         return (

@@ -11,7 +11,7 @@ __pycache__/
 # Environment
 .env
 .env.local
-*.env.*
+.env.*
 
 # Dependencies
 .venv/
@@ -19,15 +19,15 @@ venv/
 node_modules/
 
 # Build artifacts
-build/
 dist/
+build/
 target/
 
 # Editors
 .vscode/
 .idea/
 
-# OS
+# System files
 .DS_Store
 Thumbs.db
 
