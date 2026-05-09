@@ -16,6 +16,8 @@ from openeyes.akinator_engine import refine_query_with_binary_search, AkinatorEn
 from openeyes.identity import IdentityEngine, IdentityType
 from openeyes.ingestion.web_scraper import scrape_authoritative_sources
 from openeyes.ingestion.auto_fragment import convert_to_fragments, verify_consistency
+from openeyes.core.internal_consensus_engine import run_consensus_analysis
+from openeyes.core.cross_domain_mapper import get_analogous_domains
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
@@ -241,21 +243,55 @@ class OpenEyesEngine:
                 )
             ]
         
+        synthesized_mode = False
         # Fetch live fragments with Akinator-refined mask
         fetched = fetch_live_fragments(query, domain, limit=search_mask.max_results)
         
         # If no fragments found, trigger JIT synthesis (Research Loop)
         if not fetched:
             print(f"[JIT Synthesizer] No fragments found, triggering auto-research...")
+            analog_domains = [d for d, _ in get_analogous_domains(domain, threshold=0.0)[:2]]
+            if domain == "philosophy" and "game_theory" not in analog_domains:
+                analog_domains.insert(0, "game_theory")
+            consensus_context = {"force_cross_domain_domains": analog_domains}
+            consensus = run_consensus_analysis(query, domain, context=consensus_context)
+            print(f"[CONSENSUS] Multi-path validation complete (score={consensus.consensus_score:.2f}, evidence={consensus.evidence_level})")
+
             synthesized = jit_synthesize_fragments(query, domain, limit=5)
             if synthesized:
                 print(f"[JIT Synthesizer] Generated {len(synthesized)} synthetic fragments")
-                return synthesized
+                synthesized_mode = True
+                for frag in synthesized:
+                    if getattr(frag, "evidence_level", "low") == "low":
+                        frag.evidence_level = "moderate"
+                if consensus.evidence_level in {"moderate", "high"}:
+                    for frag in synthesized:
+                        if getattr(frag, "evidence_level", "low") == "low":
+                            frag.evidence_level = "moderate"
+                fetched = synthesized
         
         # Filter fragments using CES-based mask
-        filtered = akinator.filter_fragments_by_mask(fetched, search_mask)
+        if synthesized_mode:
+            synthetic_mask = type(search_mask)(
+                domain_filters=search_mask.domain_filters,
+                evidence_levels=search_mask.evidence_levels,
+                source_types=search_mask.source_types,
+                recency_years=search_mask.recency_years,
+                max_results=search_mask.max_results,
+                exclude_patterns=search_mask.exclude_patterns,
+                min_ces_score=min(search_mask.min_ces_score, 0.15),
+            )
+            filtered = akinator.filter_fragments_by_mask(fetched, synthetic_mask)
+            active_ces_threshold = synthetic_mask.min_ces_score
+        else:
+            filtered = akinator.filter_fragments_by_mask(fetched, search_mask)
+            active_ces_threshold = search_mask.min_ces_score
         
-        print(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {search_mask.min_ces_score})")
+        print(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {active_ces_threshold})")
+        if fetched and not filtered:
+            fallback_count = min(len(fetched), max(1, search_mask.max_results))
+            filtered = sorted(fetched, key=lambda f: getattr(f, "effective_weight", 0.0))[:fallback_count]
+            print(f"[Akinator][WARN] Filtered count = 0; accepting {len(filtered)} lowest-scoring fragments as fallback")
         
         # PHASE 1-2: Autonomous Research Loop (if confidence would be low)
         # Check if we have enough high-quality fragments
