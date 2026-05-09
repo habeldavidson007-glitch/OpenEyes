@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_inflation_expectations_def_019",
+  "domain": "finance",
+  "subdomain": "macro",
+  "tags": [
+    "inflation",
+    "expectations",
+    "monetary_policy",
+    "macro",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Inflation expectations measure what households, businesses, and investors anticipate inflation will be in the future. They matter because expectations can become self-fulfilling—workers demanding higher wages and firms raising prices in anticipation of inflation actually create inflation. Well-anchored expectations (stable near the Fed's 2% target) make inflation easier to control. De-anchored expectations (rising or highly uncertain) complicate policy. Measures include: (1) market-based—TIPS breakevens, inflation swaps; (2) survey-based—Survey of Professional Forecasters, University of Michigan Surveys of Consumers, FOMC participants' projections; (3) model-based estimates. Long-term expectations (5-10 years ahead) are most closely watched as indicators of anchoring.",
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/inflation-expectations-20190725.htm",
+  "credibility_class": "government_source",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

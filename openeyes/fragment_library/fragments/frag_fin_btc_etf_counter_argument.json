@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_btc_etf_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "ETFs introduce counterparty risk (custodian failure) and management fees, violating the 'not your keys, not your coins' principle.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://www.sec.gov/crypto",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

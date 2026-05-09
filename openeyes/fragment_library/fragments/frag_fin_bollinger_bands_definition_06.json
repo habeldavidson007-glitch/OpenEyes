@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_bollinger_bands_definition_06",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "breakout",
+    "bollinger_bands",
+    "squeeze",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Bollinger Bands consist of a middle band (20-day SMA) and two outer bands set at \u00b12 standard deviations. Developed by John Bollinger, they measure volatility: bands expand during high volatility, contract during low. Price touching upper band suggests overbought; lower band suggests oversold. The 'squeeze' (narrowing bands) often precedes significant breakouts. Bands also act as dynamic support/resistance.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/b/bollingerbands.asp",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

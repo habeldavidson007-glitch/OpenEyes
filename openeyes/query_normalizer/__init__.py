@@ -6,7 +6,7 @@ Computes canonical forms for queries to ensure consistent answers across rephras
 import re
 from typing import Set
 
-# Synonym registry for medical, engineering, and cooking domains
+# Synonym registry for medical, engineering, cooking, and finance domains
 SYNONYM_REGISTRY = [
     # Medical synonyms
     {"uti", "urinary tract infection", "bladder infection"},
@@ -27,6 +27,25 @@ SYNONYM_REGISTRY = [
     {"sourdough starter", "starter", "levain"},
     {"rising", "proofing", "fermenting"},
     {"hydration", "water content"},
+    
+    # Finance synonyms
+    {"federal reserve", "fed", "fomc", "us central bank"},
+    {"interest rate", "fed funds rate", "policy rate"},
+    {"quantitative easing", "qe", "asset purchases"},
+    {"quantitative tightening", "qt", "balance sheet reduction"},
+    {"nonfarm payroll", "nfp", "jobs report", "employment report"},
+    {"consumer price index", "cpi", "inflation report"},
+    {"gross domestic product", "gdp", "economic output"},
+    {"earnings per share", "eps", "earnings"},
+    {"price to earnings", "pe ratio", "pe multiple"},
+    {"free cash flow", "fcf"},
+    {"bitcoin", "btc"},
+    {"ethereum", "eth"},
+    {"stock market", "equity market", "equities"},
+    {"bear market", "market downturn", "market decline"},
+    {"bull market", "market rally", "market uptrend"},
+    {"yield curve inversion", "inverted yield curve"},
+    {"recession", "economic contraction", "negative gdp growth"},
 ]
 
 # Stop words to remove during normalization

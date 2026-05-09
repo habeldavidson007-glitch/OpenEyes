@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_margin_regulations_definition",
+  "domain": "finance",
+  "subdomain": "regulation",
+  "tags": [
+    "regulation",
+    "margin",
+    "leverage",
+    "reg_t",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Margin regulations govern borrowing to purchase securities. Regulation T (Fed) sets initial margin requirements (currently 50% for equities). FINRA and exchange rules set maintenance margins (typically 25% minimum, often higher by brokers). Failure to meet maintenance margins triggers margin calls, forcing liquidation if funds aren't deposited.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

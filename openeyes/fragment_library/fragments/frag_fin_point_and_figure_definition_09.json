@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_point_and_figure_definition_09",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "point_and_figure",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Point and Figure (P&F) charts plot Xs (rising) and Os (falling), ignoring time. Focus purely on price movements exceeding box size. Reversal criteria: switch columns after price moves opposite by specified boxes. P&F filters noise, highlights support/resistance clearly. Patterns similar to bar charts but cleaner. Time-independent nature suits long-term analysis. Less popular today but valued by purists for clarity.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/p/pointandfigure.asp",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

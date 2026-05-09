@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ichimoku_cloud_latest_data_05",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "latest_data",
+    "technical_analysis",
+    "ichimoku_cloud"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Ichimoku cloud support held in multiple Asian equity markets in Q1 2024. The cloud's forward projection provided useful resistance levels in forex markets. Ichimoku signals in cryptocurrency markets gained attention in 2024. New Ichimoku variants optimized for crypto volatility emerged in early 2024.",
+  "source": "Educational Resource",
+  "source_url": "https://www.tradingview.com/ideas/ichimoku-signals-2024",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_on_chain_metrics_latest_001",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "ethereum",
+    "blockchain",
+    "on_chain_metrics",
+    "bitcoin",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Bitcoin hash rate at all-time highs despite price volatility. Long-term holder supply increased. Exchange balances continued declining (coins moving to cold storage). Network activity correlates with price cycles.",
+  "source": "Coin Metrics",
+  "source_url": "https://coinmetrics.io/",
+  "credibility_class": "news_article",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.78
+}

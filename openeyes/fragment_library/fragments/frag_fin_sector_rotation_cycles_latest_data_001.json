@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_sector_rotation_cycles_latest_data_001",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "dividends",
+    "insider_trading",
+    "share_buybacks",
+    "valuation",
+    "sector_rotation",
+    "earnings",
+    "fundamental_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "As of 2024, sector leadership has shifted towards technology and communication services due to AI adoption, while traditional defensives lag in high-rate environments. Valuation dispersion between sectors is at historic extremes.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

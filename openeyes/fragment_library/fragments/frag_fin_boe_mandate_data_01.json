@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_boe_mandate_data_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "bank_of_england",
+    "uk",
+    "monetary_policy",
+    "brexit",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "BoE raised rates to 5.25% in 2023, highest since 2008. UK inflation peaked at 11.1% in late 2022. GDP growth remains stagnant (~0%), raising stagflation fears. Gilts market volatility in 2022 (LDI crisis) forced emergency BoE intervention.",
+  "source": "government_source",
+  "source_url": "https://www.bankofengland.co.uk/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_boe_mandate_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.9016000000000001
+}

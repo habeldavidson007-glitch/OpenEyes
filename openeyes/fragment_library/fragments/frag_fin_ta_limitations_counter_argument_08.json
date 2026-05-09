@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_limitations_counter_argument_08",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "ta_limitations",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "The Efficient Market Hypothesis fundamentally challenges TA's premise. If prices reflect all information, patterns are random artifacts. Extensive academic research shows most TA strategies don't beat benchmarks after costs. Publication bias means successful TA studies get attention while failures don't. TA's survival is attributed to behavioral biases, not effectiveness. Professional money managers overwhelmingly use fundamental analysis; TA remains retail-focused. Regime changes render historical patterns obsolete.",
+  "source": "Educational Resource",
+  "source_url": "https://www.nobelprize.org/fama-efficient-markets",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

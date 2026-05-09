@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_mnpi_boundaries_counter_argument",
+  "domain": "finance",
+  "subdomain": "risk_management",
+  "tags": [
+    "regulation",
+    "mnpi",
+    "compliance",
+    "information",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "The boundary of what constitutes 'public' is blurring with social media (Reg FD updates). Information tweeted by a CEO might be considered public, creating ambiguity for traders. Furthermore, 'mosaic theory' allows analysts to combine non-material non-public pieces into a material conclusion, a defense that is increasingly scrutinized by regulators.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

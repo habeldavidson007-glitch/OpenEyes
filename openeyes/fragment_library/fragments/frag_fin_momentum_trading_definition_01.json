@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_momentum_trading_definition_01",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "definition",
+    "momentum_trading",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Momentum trading exploits the tendency of trending assets to continue trending. Based on Jegadeesh-Titman research showing 3-12 month momentum persistence. Entry on breakouts; exit on trend exhaustion signals. Works best in liquid markets with clear trends. Risks include sudden reversals and gap risk. Momentum factor is one of Fama-French's recognized factors. Requires strict discipline and quick exits when momentum fades.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/m/momentum.asp",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

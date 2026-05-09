@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_commodity_supercycle_counter_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "commodities",
+    "macro",
+    "inflation",
+    "counter_argument",
+    "warning"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Past supercycles required massive industrialization of a large population (China 1.4B). Green transition demand is real but incremental. Recycling, substitution, and tech efficiency may cap prices. Financialization of commodities also creates artificial bubbles.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_commodity_supercycle_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.8835
+}

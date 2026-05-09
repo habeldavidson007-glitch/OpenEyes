@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_concentration_risk_counter_argument",
+  "domain": "finance",
+  "subdomain": "risk_management",
+  "tags": [
+    "risk_management",
+    "concentration",
+    "position_sizing",
+    "diversification",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Diversification guarantees mediocrity. Many successful investors (Buffett, Simons) argue that high conviction ideas should be concentrated. The risk is not concentration itself but lack of understanding of the underlying asset. 'Diworsification' (over-diversifying) can dilute alpha without meaningfully reducing tail risk.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

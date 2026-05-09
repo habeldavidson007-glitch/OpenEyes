@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_balance_sheet_structure_latest_data_005",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "book_value",
+    "working_capital",
+    "fundamental_analysis",
+    "debt_to_equity",
+    "valuation",
+    "earnings"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent data through 2024 shows Balance Sheet Structure metrics are diverging across sectors. Investors are increasingly prioritizing cash yield and balance sheet strength over pure growth narratives in the current higher-for-longer rate regime.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

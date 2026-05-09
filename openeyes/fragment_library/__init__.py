@@ -41,7 +41,7 @@ class Fragment:
     source: str
     source_url: str
     credibility_class: str
-    last_verified: str
+    last_verified: str = None  # Will be auto-set to current date if not provided
     weight: float = 1.0
     compatible_with: List[str] = field(default_factory=list)
     incompatible_with: List[str] = field(default_factory=list)
@@ -50,6 +50,11 @@ class Fragment:
     source_type: Optional[str] = None     # "primary", "secondary", "tertiary"
     year: Optional[int] = None            # Publication year for temporal scoring
     sub_question: Optional[str] = None    # The specific sub-question this fragment answers
+    
+    def __post_init__(self):
+        """Auto-set last_verified if not provided."""
+        if self.last_verified is None:
+            self.last_verified = datetime.now().strftime("%Y-%m-%d")
     
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -301,6 +306,15 @@ class FragmentLibrary:
         
         self._register_fragment(fragment)
         self._save_fragment(fragment)
+        
+        # Rebuild concept lattice after adding fragment
+        try:
+            from openeyes.concept_lattice import rebuild_concept_lattice
+            stats = rebuild_concept_lattice(self)
+            if stats.get('status') == 'success':
+                print(f"[FCA] Lattice rebuilt: {stats['updated']} compatibilities updated, {stats['gaps_identified']} gaps found")
+        except ImportError:
+            pass  # Concept lattice module not available, skip rebuild
         
         return fragment
     

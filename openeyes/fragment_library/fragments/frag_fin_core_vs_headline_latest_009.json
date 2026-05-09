@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_core_vs_headline_latest_009",
+  "domain": "finance",
+  "subdomain": "macro",
+  "tags": [
+    "inflation",
+    "core_inflation",
+    "headline_inflation",
+    "macro",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "The gap between headline and core inflation fluctuates with commodity price cycles. During 2022, energy price surges pushed headline inflation well above core. As energy prices stabilized or declined in 2023-2024, headline inflation converged toward or occasionally below core. Fed officials monitor multiple core inflation measures including core PCE, trimmed mean PCE (Dallas Fed), median CPI (Cleveland Fed), and supercore (services excluding housing). Disaggregated inflation analysis examines which components are driving persistence. Inflation expectations surveys help distinguish transitory from persistent price pressures.",
+  "source": "Federal Reserve Economic Data",
+  "source_url": "https://fred.stlouisfed.org/categories/30",
+  "credibility_class": "government_source",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

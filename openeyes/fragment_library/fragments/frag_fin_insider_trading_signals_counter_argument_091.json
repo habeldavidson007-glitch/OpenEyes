@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_insider_trading_signals_counter_argument_091",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "dividends",
+    "insider_trading",
+    "share_buybacks",
+    "valuation",
+    "sector_rotation",
+    "earnings",
+    "fundamental_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "While Insider Trading Signals is widely used, skeptics note it can be distorted by accounting tricks, cyclical factors, or extreme macro conditions. It should never be used in isolation but rather as part of a holistic framework including cash flow verification and qualitative assessment.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

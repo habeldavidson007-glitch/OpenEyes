@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_intermarket_analysis_definition_02",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "definition",
+    "intermarket_analysis",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Intermarket analysis examines relationships between asset classes: stocks, bonds, currencies, commodities. Rising yields typically pressure growth stocks; falling yields support them. Strong dollar hurts commodities and emerging markets; weak dollar helps. Oil prices affect energy stocks and inflation expectations. Correlations shift during crises; diversification benefits may disappear when most needed. Understanding these links improves macro positioning.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/i/intermarket.asp",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

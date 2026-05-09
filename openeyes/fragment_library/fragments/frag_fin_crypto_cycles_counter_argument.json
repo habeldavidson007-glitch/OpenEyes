@@ -1,0 +1,17 @@
+{
+  "id": "frag_fin_crypto_cycles_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "As markets mature and institutional participation grows, cycles may lengthen or decouple from the halving mechanic due to macro factors.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

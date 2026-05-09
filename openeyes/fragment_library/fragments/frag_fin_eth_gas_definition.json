@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_eth_gas_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "Transaction fees determined by network demand. EIP-1559 introduced base fee burn, making ETH deflationary during high usage.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

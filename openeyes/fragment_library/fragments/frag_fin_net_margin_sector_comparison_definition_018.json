@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_net_margin_sector_comparison_definition_018",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "return_on_invested_capital",
+    "return_on_equity",
+    "operating_margin",
+    "inventory_turnover",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Net Margin Sector Comparison is a core concept in fundamental analysis. It involves evaluating specific financial metrics or structural elements to determine a company's intrinsic value, operational efficiency, and long-term viability.",
+  "source": "analyst_consensus",
+  "source_url": "https://www.morningstar.com/articles/valuation-metrics",
+  "credibility_class": "analyst_consensus",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

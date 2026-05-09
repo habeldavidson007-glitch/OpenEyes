@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_market_makers_counter_001",
+  "domain": "finance",
+  "subdomain": "market_structure",
+  "tags": [
+    "market_cap",
+    "volatility",
+    "equities",
+    "latest_data"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Traditional market making has evolved significantly. High-frequency firms now dominate, using algorithms and speed advantages. Critics argue HFT market makers provide 'ghost liquidity' that disappears during stress. Payment for order flow creates potential conflicts between broker-dealers and customers. Reduced human oversight may amplify flash crashes and technical failures.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/market-making-20210415.html",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.95
+}

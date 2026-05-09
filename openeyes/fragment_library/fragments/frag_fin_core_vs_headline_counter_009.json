@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_core_vs_headline_counter_009",
+  "domain": "finance",
+  "subdomain": "macro",
+  "tags": [
+    "inflation",
+    "core_inflation",
+    "headline_inflation",
+    "macro",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Critics argue that excluding food and energy from core inflation ignores essential household expenses, making core inflation less relevant for workers and retirees. Food and energy together represent roughly 20-25% of typical household budgets. During periods of sustained food or energy price increases (rather than temporary spikes), core inflation may underestimate true inflation pressures. Alternative core measures like trimmed mean or median CPI (which exclude different portions of the distribution each month) may better capture underlying inflation. Some economists advocate for 'sticky price' core measures that focus on prices that adjust infrequently. Households cannot easily substitute away from food and energy, making their exclusion problematic for welfare analysis.",
+  "source": "Federal Reserve Bank of Cleveland Research",
+  "source_url": "https://www.clevelandfed.org/en/our-research/data-and-inflation-tools.aspx",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

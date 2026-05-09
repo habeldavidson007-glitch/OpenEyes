@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_stock_market_basics_counter_001",
+  "domain": "finance",
+  "subdomain": "equities",
+  "tags": [
+    "market_cap",
+    "equities",
+    "stock_market",
+    "latest_data"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "While traditional exchange theory assumes perfect price discovery, research shows market structure significantly impacts efficiency. Dark pools and high-frequency trading can fragment liquidity. Payment for order flow creates potential conflicts. Some studies suggest retail investors face systematic disadvantages in execution quality versus institutional traders.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/market-structure-20210312.html",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.95
+}

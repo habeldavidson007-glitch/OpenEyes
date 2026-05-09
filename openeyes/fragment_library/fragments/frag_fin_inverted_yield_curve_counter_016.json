@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_inverted_yield_curve_counter_016",
+  "domain": "finance",
+  "subdomain": "macro",
+  "tags": [
+    "yield_curve",
+    "inverted_yield_curve",
+    "recession",
+    "macro",
+    "prediction",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "While historically reliable, the yield curve's predictive power has limitations. The lag between inversion and recession varies widely (6-24 months), making timing predictions imprecise. Structural changes in bond markets (QE, regulatory changes, global safe asset demand) may have altered the signal. The 2019 inversion was followed by the 2020 pandemic recession—an exogenous shock rather than a curve-predicted downturn. Some research suggests other indicators (credit spreads, leading economic indices) add incremental predictive power. The curve may predict recessions partly because market participants believe it does, creating self-fulfilling prophecies through behavior changes. Depth and duration of inversion likely matter more than binary inversion signals. The 2022-2023 inversion raised questions as recession didn't materialize in typical timeframe.",
+  "source": "National Bureau of Economic Research Working Papers",
+  "source_url": "https://www.nber.org/papers/w29063",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

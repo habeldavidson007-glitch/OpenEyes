@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_oil_markets_def_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "oil",
+    "commodities",
+    "inflation",
+    "definition",
+    "first_line"
+  ],
+  "reasoning_role": "definition",
+  "content": "Oil prices driven by OPEC+ supply management, global demand (China/US), and inventory levels. $80-90/barrel is 'Goldilocks' zone: profitable for producers, not inflationary for consumers. Shale revolution made US swing producer, capping upside.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.93
+}

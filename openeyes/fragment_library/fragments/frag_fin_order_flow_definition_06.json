@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_order_flow_definition_06",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "definition",
+    "order_flow",
+    "technical_analysis",
+    "market_depth"
+  ],
+  "reasoning_role": "definition",
+  "content": "Order flow analysis examines real-time buy/sell orders to gauge market sentiment. Reading the tape involves tracking trade size, direction, and aggressor side. Market depth (Level 2) shows pending orders. Large aggressive buys signal institutional interest; absorption at key levels indicates hidden supply/demand. Modern order flow tools include footprint charts and delta analysis. Requires fast data and interpretation skills.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/o/orderflow.asp",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

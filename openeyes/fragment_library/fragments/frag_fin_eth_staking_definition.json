@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_eth_staking_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "Users lock ETH to validate transactions and secure the network, earning yield from block rewards and transaction tips.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

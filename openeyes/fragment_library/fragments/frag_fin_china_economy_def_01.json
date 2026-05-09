@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_china_economy_def_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "china",
+    "recession",
+    "macro",
+    "definition",
+    "first_line"
+  ],
+  "reasoning_role": "definition",
+  "content": "China faces 'balance sheet recession': property sector collapse (30% of household wealth), local government debt ($9T+), demographic decline (population peaked 2022), and deflationary pressure. Shift from investment-led to consumption-led growth is painful.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.93
+}

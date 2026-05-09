@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_fed_funds_rate_latest_003",
+  "domain": "finance",
+  "subdomain": "macro",
+  "tags": [
+    "fed_funds_rate",
+    "interest_rate",
+    "monetary_policy",
+    "fed",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "The federal funds rate target range has varied significantly in recent years. Following the pandemic, rates were near zero until 2022, then rose rapidly to combat inflation. By 2024-2026, the FOMC adjusts the target range based on incoming economic data, particularly inflation and labor market indicators. The effective federal funds rate typically trades within the target range set by the FOMC. Interest on Reserve Balances (IORB) and the Overnight Reverse Repurchase Agreement (ON RRP) facility help keep the effective rate within the target range. Market participants closely watch the dot plot and Fed communications for signals about the future path of rates.",
+  "source": "Federal Reserve Statistical Release H.15",
+  "source_url": "https://www.federalreserve.gov/releases/h15/",
+  "credibility_class": "government_source",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

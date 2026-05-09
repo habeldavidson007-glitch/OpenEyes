@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_sovereign_crisis_data_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "sovereign_debt",
+    "emerging_markets",
+    "warning",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent defaults/restructurings: Sri Lanka (2022), Ghana (2022), Zambia (2020), Lebanon (2020). Argentina in perpetual restructuring cycle. Europe 2010-2012 crisis resolved via ECB 'whatever it takes' backstop, not fiscal union.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_sovereign_crisis_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.9114
+}

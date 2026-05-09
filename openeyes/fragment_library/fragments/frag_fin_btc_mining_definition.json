@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_btc_mining_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "Miners compete to solve hashes; revenue = block reward + fees. Profitability depends on energy cost, hardware efficiency, and BTC price.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

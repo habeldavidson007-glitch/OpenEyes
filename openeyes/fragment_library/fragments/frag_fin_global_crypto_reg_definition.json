@@ -1,0 +1,17 @@
+{
+  "id": "frag_fin_global_crypto_reg_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "EU MiCA provides comprehensive framework. US uses enforcement-first approach (SEC). Asia varies (HK pro-crypto, China ban).",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

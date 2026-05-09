@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_web3_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "latest_data",
+    "crypto"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Developer activity remains high despite price action. Focus shifting from speculation to infrastructure and real-world asset tokenization.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_options_basics_latest_001",
+  "domain": "finance",
+  "subdomain": "derivatives",
+  "tags": [
+    "latest_data",
+    "options",
+    "derivatives",
+    "risk_management"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Daily options volume regularly exceeds 50 million contracts. Zero-day options now represent significant portion of SPX volume. Retail participation in options reached record levels.",
+  "source": "OCC",
+  "source_url": "https://www.optionsclearing.com/market-data/volume/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.85
+}

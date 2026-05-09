@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_boj_ycc_data_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "boj",
+    "yield_curve",
+    "monetary_policy",
+    "japan",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "In Dec 2023/Jan 2024, BoJ adjusted YCC band to +/- 0.5% then effectively abandoned strict caps, allowing 10y yields to rise above 1%. Net sales of JGBs turned negative for first time in years, signaling potential policy normalization.",
+  "source": "government_source",
+  "source_url": "https://www.boj.or.jp/en/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_boj_ycc_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.882
+}

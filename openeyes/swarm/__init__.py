@@ -11,6 +11,9 @@ Agent Types:
 """
 
 import re
+import urllib.request
+import urllib.error
+from html import unescape
 from typing import Dict, List, Optional, Any, Tuple
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -20,6 +23,25 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from openeyes.fragment_library import FragmentLibrary, Fragment
+
+
+# Trusted Finance Sources Whitelist
+TRUSTED_FINANCE_SOURCES = [
+    "https://www.federalreserve.gov",
+    "https://www.sec.gov/cgi-bin/browse-edgar",
+    "https://www.bls.gov",
+    "https://www.bea.gov",
+    "https://fred.stlouisfed.org"
+]
+
+# Credibility scores by source domain
+SOURCE_CREDIBILITY = {
+    "federalreserve.gov": 0.95,
+    "sec.gov": 0.92,
+    "bls.gov": 0.90,
+    "bea.gov": 0.90,
+    "fred.stlouisfed.org": 0.88
+}
 
 
 @dataclass
@@ -291,26 +313,121 @@ class WebAgent:
     
     def retrieve(self, sub_question: str, domain: str) -> List[FragmentCandidate]:
         """
-        Retrieve fragments from web sources.
+        Retrieve fragments from trusted web sources.
         
-        Note: This is a placeholder implementation. Real implementation
-        would perform web searches and cross-reference claims.
+        Fetches content from hardcoded trusted finance sources and extracts
+        relevant text based on the sub-question keywords.
         
         Args:
             sub_question: The atomic sub-question to answer
             domain: Domain for context
             
         Returns:
-            List of FragmentCandidates from web (with reduced credibility)
+            List of FragmentCandidates from trusted sources with credibility scores
         """
-        # Placeholder - in production, this would:
-        # 1. Search web for the sub_question
-        # 2. Extract claims from search results
-        # 3. Cross-reference claims across multiple sources
-        # 4. Assign credibility based on source authority and consensus
+        candidates = []
         
-        print(f"[WebAgent] Would search web for: {sub_question}")
-        return []
+        # Extract keywords from sub-question
+        keywords = self._extract_keywords(sub_question)
+        search_query = " ".join(keywords[:5])  # Use top 5 keywords
+        
+        print(f"[WebAgent] Searching trusted sources for: {search_query}")
+        
+        # Try each trusted source
+        for source_url in TRUSTED_FINANCE_SOURCES:
+            try:
+                # Build search URL (simple approach - in production would use proper search API)
+                content = self._fetch_source_content(source_url, search_query)
+                
+                if content:
+                    # Extract relevant text
+                    relevant_text = self._extract_relevant_text(content, keywords)
+                    
+                    if relevant_text:
+                        # Determine credibility based on source
+                        source_domain = source_url.replace("https://www.", "").replace("https://", "").split("/")[0]
+                        credibility = SOURCE_CREDIBILITY.get(source_domain, 0.85)
+                        
+                        # Create fragment candidate
+                        candidate = FragmentCandidate(
+                            fragment_id=f"web_{source_domain}_{len(candidates)}",
+                            content=relevant_text[:500],  # Limit content length
+                            source=source_domain,
+                            source_url=source_url,
+                            credibility_estimate=credibility,
+                            domain_tags=[domain] + keywords[:5],
+                            agent_type="web",
+                            sub_question=sub_question,
+                            reasoning_role="latest_data",
+                            source_type="primary",
+                            year=2026  # Current year for recency
+                        )
+                        candidates.append(candidate)
+                        print(f"[WebAgent] Found content from {source_domain} (credibility: {credibility})")
+                        
+            except Exception as e:
+                print(f"[WebAgent] Error fetching {source_url}: {e}")
+                continue
+        
+        if not candidates:
+            print(f"[WebAgent] No content found in trusted sources for: {sub_question}")
+        
+        return candidates
+    
+    def _fetch_source_content(self, base_url: str, query: str) -> Optional[str]:
+        """Fetch content from a trusted source."""
+        try:
+            # Simple fetch - in production would use proper search/query endpoints
+            req = urllib.request.Request(
+                base_url,
+                headers={'User-Agent': 'Mozilla/5.0 (OpenEyes VCIS)'}
+            )
+            with urllib.request.urlopen(req, timeout=10) as response:
+                html = response.read().decode('utf-8', errors='ignore')
+                return html
+        except Exception as e:
+            print(f"[WebAgent] Fetch error: {e}")
+            return None
+    
+    def _extract_relevant_text(self, html: str, keywords: List[str]) -> Optional[str]:
+        """Extract relevant text from HTML content based on keywords."""
+        # Remove HTML tags
+        text = re.sub(r'<[^>]+>', ' ', html)
+        text = unescape(text)
+        text = re.sub(r'\s+', ' ', text).strip()
+        
+        # Find sentences containing keywords
+        sentences = re.split(r'[.!?]+', text)
+        relevant_sentences = []
+        
+        for sentence in sentences:
+            sentence_lower = sentence.lower()
+            # Check if sentence contains any keywords
+            for keyword in keywords:
+                if keyword.lower() in sentence_lower:
+                    relevant_sentences.append(sentence.strip())
+                    break
+        
+        if relevant_sentences:
+            # Return up to 3 most relevant sentences
+            return " ".join(relevant_sentences[:3])
+        
+        return None
+    
+    @staticmethod
+    def _extract_keywords(question: str) -> List[str]:
+        """Extract meaningful keywords from a question."""
+        stop_words = {
+            "what", "is", "are", "the", "a", "an", "for", "with", 
+            "in", "on", "at", "to", "of", "and", "or", "but",
+            "how", "which", "when", "where", "why", "can", "could",
+            "should", "would", "may", "might", "must", "shall"
+        }
+        
+        words = re.findall(r'\b[a-zA-Z]+\b', question.lower())
+        keywords = [w for w in words if w not in stop_words and len(w) > 2]
+        
+        return keywords[:10]
 
 
 class Swarm:

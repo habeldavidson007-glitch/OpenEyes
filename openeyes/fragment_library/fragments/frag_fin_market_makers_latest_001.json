@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_market_makers_latest_001",
+  "domain": "finance",
+  "subdomain": "market_structure",
+  "tags": [
+    "market_cap",
+    "volatility",
+    "equities",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Market making increasingly concentrated among specialized HFT firms. Citadel Securities, Virtu Financial handle significant portion of retail order flow. Regulatory scrutiny of payment for order flow arrangements increasing.",
+  "source": "BLS",
+  "source_url": "https://www.bls.gov/data/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.9
+}

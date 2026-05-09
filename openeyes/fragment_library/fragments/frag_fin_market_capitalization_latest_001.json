@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_market_capitalization_latest_001",
+  "domain": "finance",
+  "subdomain": "equities",
+  "tags": [
+    "market_cap",
+    "equities",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Mega-cap technology stocks now represent record share of total US equity market capitalization. Small-cap valuations relative to large-cap near historical extremes in both directions depending on sector.",
+  "source": "FRED",
+  "source_url": "https://fred.stlouisfed.org/series/SP500",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.88
+}

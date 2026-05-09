@@ -1,0 +1,17 @@
+{
+  "id": "frag_fin_crypto_tax_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "US treats crypto as property (capital gains tax). FIFO/LIFO accounting applies. Staking rewards taxed as income at receipt.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

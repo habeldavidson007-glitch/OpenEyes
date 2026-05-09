@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_labor_force_participation_def_014",
+  "domain": "finance",
+  "subdomain": "macro",
+  "tags": [
+    "labor_market",
+    "employment",
+    "demographics",
+    "macro",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "The labor force participation rate (LFPR) measures the percentage of the civilian noninstitutional population age 16 and older that is in the labor force (working or actively seeking work). Unlike the unemployment rate, LFPR is not affected by whether people can find jobs—it reflects decisions about whether to seek employment. LFPR is influenced by demographics (age, education), social norms, disability rates, retirement patterns, school enrollment, and economic incentives. The prime-age (25-54) LFPR is closely watched as it excludes students and early retirees. Women's LFPR rose dramatically in the 20th century but plateaued. Men's LFPR has trended down for decades. The overall LFPR declined from its 2000 peak due to Baby Boomer retirements.",
+  "source": "Bureau of Labor Statistics",
+  "source_url": "https://www.bls.gov/opub/mlr/2022/article/labor-force-participation-rates.htm",
+  "credibility_class": "government_source",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

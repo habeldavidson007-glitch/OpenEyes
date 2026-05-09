@@ -34,6 +34,9 @@ from shared_core.obsidian_connector import ObsidianReporter as ObsidianConnector
 # Import Compiled Logic Index (Instinct Layer)
 from openeyes.compiled_logic import CompiledLogicIndex
 
+# Import Query Normalizer
+from openeyes.query_normalizer import canonical_form
+
 
 class OpenEyes:
     """
@@ -107,6 +110,11 @@ class OpenEyes:
         start_time = time.time()
         trace_id = self._generate_trace_id()
         
+        # Step 0: Normalize query to canonical form
+        normalized_query = canonical_form(query_text)
+        print(f"\n[Query Normalizer] Original: {query_text}")
+        print(f"[Query Normalizer] Canonical: {normalized_query}")
+        
         print(f"\n{'='*60}")
         print(f"QUERY: {query_text}")
         print(f"Domain: {self.domain} | Tier: {self.domain_tier}")
@@ -129,12 +137,8 @@ class OpenEyes:
         }
         
         try:
-            # STEP 0: Check Compiled Logic Index (Instinct Mode)
-            from openeyes.night_mode import ConsolidationEngine
-            engine = ConsolidationEngine()
-            query_keywords = engine._extract_keywords(query_text)
-            
-            synapse = self.compiled_logic.query(query_keywords)
+            # STEP 1: Check Compiled Logic Index (Instinct Mode) using canonical form
+            synapse = self.compiled_logic.query(normalized_query.split())
             
             if synapse:
                 # INSTINCT MODE: Use pre-compiled logic chain
@@ -166,12 +170,16 @@ class OpenEyes:
             # DELIBERATION MODE: Full Monte Carlo pipeline
             print("[DELIBERATION MODE] No compiled logic found, running full verification\n")
             
-            # Step 1: Swarm decomposition and retrieval
-            candidates = self._run_swarm(query_text)
+            # Step 1: Swarm decomposition and retrieval (using normalized query)
+            candidates = self._run_swarm(normalized_query)
             
             if not candidates:
-                result["halt"] = True
-                result["halt_reason"] = "No candidate fragments found for this query."
+                halt_response = self._build_halt_response(
+                    reason="No candidate fragments found for this query.",
+                    failed_candidates=[],
+                    domain=self.domain
+                )
+                result.update(halt_response)
                 print(f"\n[HALT] {result['halt_reason']}")
                 return self._finalize_result(result, start_time, trace_id)
             
@@ -181,8 +189,12 @@ class OpenEyes:
             survivors = self._run_monte_carlo(candidates)
             
             if not survivors:
-                result["halt"] = True
-                result["halt_reason"] = "No fragments survived Monte Carlo evaluation."
+                halt_response = self._build_halt_response(
+                    reason="No fragments survived Monte Carlo evaluation.",
+                    failed_candidates=candidates,
+                    domain=self.domain
+                )
+                result.update(halt_response)
                 print(f"\n[HALT] {result['halt_reason']}")
                 return self._finalize_result(result, start_time, trace_id)
             
@@ -192,8 +204,12 @@ class OpenEyes:
             cleared_fragments = self._run_philosophy_guard(survivors)
             
             if not cleared_fragments:
-                result["halt"] = True
-                result["halt_reason"] = "No fragments passed Philosophy Guard validation."
+                halt_response = self._build_halt_response(
+                    reason="No fragments passed Philosophy Guard validation.",
+                    failed_candidates=survivors,
+                    domain=self.domain
+                )
+                result.update(halt_response)
                 print(f"\n[HALT] {result['halt_reason']}")
                 return self._finalize_result(result, start_time, trace_id)
             
@@ -203,8 +219,12 @@ class OpenEyes:
             assembled_output = self._assemble_answer(cleared_fragments, query_text)
             
             if assembled_output.get("halt"):
-                result["halt"] = True
-                result["halt_reason"] = assembled_output.get("halt_reason", "Assembly failed.")
+                halt_response = self._build_halt_response(
+                    reason=assembled_output.get("halt_reason", "Assembly failed."),
+                    failed_candidates=cleared_fragments,
+                    domain=self.domain
+                )
+                result.update(halt_response)
                 print(f"\n[HALT] {result['halt_reason']}")
                 return self._finalize_result(result, start_time, trace_id)
             
@@ -420,7 +440,85 @@ class OpenEyes:
                     "reason": "Tier 1 requires counter-argument fragment"
                 }
         
+        # FIN-004: Check for price prediction language in finance domain
+        if self.domain == "finance":
+            answer_text = assembled_output.get("answer", "")
+            if self._check_prediction_language(answer_text):
+                return {
+                    "passed": False,
+                    "reason": "FIN-004: Answer contains price prediction language. OpenEyes does not make price predictions."
+                }
+        
         return {"passed": True}
+    
+    @staticmethod
+    def _check_prediction_language(assembled_answer: str) -> bool:
+        """
+        Returns True if prediction language detected in finance domain.
+        If True, assembly should HALT with FIN-004 violation.
+        """
+        PREDICTION_TRIGGER_PHRASES = [
+            "will reach", "will hit", "price target", "expected to reach",
+            "projected to", "forecast to", "will rise to", "will fall to",
+            "will go to", "could reach", "should reach", "might hit",
+            "by end of year", "by Q", "12-month target", "price objective"
+        ]
+        
+        answer_lower = assembled_answer.lower()
+        for phrase in PREDICTION_TRIGGER_PHRASES:
+            if phrase.lower() in answer_lower:
+                return True
+        return False
+    
+    def _build_halt_response(self, reason: str, failed_candidates: List[Dict[str, Any]] = None, domain: str = None) -> Dict[str, Any]:
+        """Build detailed diagnostic HALT response."""
+        halt_detail = {
+            'halt': True,
+            'answer': None,
+            'halt_reason': reason,
+            'diagnostic': {
+                'candidates_found': len(failed_candidates) if failed_candidates else 0,
+                'failure_breakdown': [],
+                'knowledge_gaps': [],
+                'recommendation': ''
+            }
+        }
+        
+        if failed_candidates:
+            for candidate in failed_candidates:
+                # Handle both FragmentCandidate objects and dicts
+                if hasattr(candidate, 'fragment_id'):
+                    frag_id = candidate.fragment_id
+                    mc_score = getattr(candidate, 'mc_score', None)
+                    fail_reason = getattr(candidate, 'failure_reason', 'Failed Monte Carlo threshold')
+                    source = getattr(candidate, 'source', 'Unknown')
+                elif isinstance(candidate, dict):
+                    frag_id = candidate.get('fragment_id', candidate.get('id', 'Unknown'))
+                    mc_score = candidate.get('mc_score', candidate.get('score', None))
+                    fail_reason = candidate.get('failure_reason', 'Failed Monte Carlo threshold')
+                    source = candidate.get('source', 'Unknown')
+                else:
+                    frag_id = str(candidate)
+                    mc_score = None
+                    fail_reason = 'Failed Monte Carlo threshold'
+                    source = 'Unknown'
+                
+                halt_detail['diagnostic']['failure_breakdown'].append({
+                    'fragment_id': frag_id,
+                    'score': round(mc_score, 1) if mc_score is not None else 'N/A',
+                    'failure_reason': fail_reason,
+                    'source': source
+                })
+        
+        # Generate what the library needs to answer this
+        halt_detail['diagnostic']['recommendation'] = (
+            f"To answer this query, the library needs: "
+            f"a verified fragment tagged with the query keywords, "
+            f"credibility class of government_source or higher, "
+            f"published within the last 2 years."
+        )
+        
+        return halt_detail
     
     def _finalize_result(self, result: Dict[str, Any], start_time: float, trace_id: str) -> Dict[str, Any]:
         """Finalize result with timing and logging."""

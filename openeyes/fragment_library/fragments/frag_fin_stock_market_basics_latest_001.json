@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_stock_market_basics_latest_001",
+  "domain": "finance",
+  "subdomain": "equities",
+  "tags": [
+    "market_cap",
+    "equities",
+    "stock_market",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Current market structure data shows equity trading volumes averaging 12+ billion shares daily across US exchanges. Market maker participation remains above 40% of volume. Recent SEC proposals address payment for order flow transparency and best execution requirements.",
+  "source": "BLS",
+  "source_url": "https://www.bls.gov/data/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.9
+}

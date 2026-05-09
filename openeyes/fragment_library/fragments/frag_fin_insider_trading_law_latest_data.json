@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_insider_trading_law_latest_data",
+  "domain": "finance",
+  "subdomain": "regulation",
+  "tags": [
+    "regulation",
+    "insider_trading",
+    "sec",
+    "illegal",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent SEC cases (e.g., 2023-2024) have expanded the definition of 'personal benefit' in tipper-tippee liability and increased use of data analytics to detect suspicious trading patterns prior to M&A announcements. The 'shadow trading' theory (trading in competitor stocks based on MNPI) was successfully tested in the Panuwat case.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_tax_loss_harvesting_latest_data",
+  "domain": "finance",
+  "subdomain": "regulation",
+  "tags": [
+    "tax",
+    "harvesting",
+    "strategy",
+    "efficiency",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "With the rise of direct indexing, investors can harvest losses at the individual stock level within an index strategy, generating alpha through tax savings even when the overall index is flat. This has become a key differentiator for wealth management platforms.",
+  "source": "government_source",
+  "source_url": "https://www.irs.gov",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

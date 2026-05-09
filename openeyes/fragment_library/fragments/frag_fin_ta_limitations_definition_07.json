@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_limitations_definition_07",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "definition",
+    "ta_limitations",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Technical analysis faces criticism from Efficient Market Hypothesis (EMH) proponents who argue prices already reflect all information, making patterns random. Studies show mixed results: some patterns have statistical edge; many don't survive transaction costs. TA works partly due to self-fulfilling prophecies from widespread use. It excels at risk management (stop placement) even if prediction accuracy is debated. Best combined with fundamental analysis.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/e/emh.asp",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

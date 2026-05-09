@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_commodity_supercycle_def_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "commodities",
+    "macro",
+    "inflation",
+    "definition",
+    "first_line"
+  ],
+  "reasoning_role": "definition",
+  "content": "Commodity supercycles are decade-long periods of above-trend prices driven by structural demand shifts (e.g., China urbanization 2000s). Current thesis: Energy transition (copper, lithium) + deglobalization + underinvestment = new supercycle.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.93
+}
