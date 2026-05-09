@@ -401,7 +401,17 @@ class OpenEyesEngine:
             "replay": replay,
             "data_recency_years": self._estimate_data_recency_years(frags),
         }
-        ingest_case(self.memory_path, {"query": query, "domain": routed_domain, "status": result["status"], "confidence": result["confidence"]})
+        ingest_case(
+            self.memory_path,
+            {
+                "query": query,
+                "domain": routed_domain,
+                "status": result["status"],
+                "confidence": result["confidence"],
+                "data_recency_years": out["data_recency_years"],
+                "winning_fragment_set": self._winning_fragment_set(frags),
+            }
+        )
         write_audit_log(self.vault_path, query, out)
         return out
 
@@ -417,3 +427,8 @@ class OpenEyesEngine:
         if not years:
             return 10
         return max(1, min(years))
+
+    @staticmethod
+    def _winning_fragment_set(fragments: list[Fragment]) -> list[str]:
+        """Store correlated fragment source IDs for retrieval-memory recall."""
+        return [getattr(f, "source_id", "") for f in fragments if getattr(f, "source_id", "")]
