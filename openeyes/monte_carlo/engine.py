@@ -29,8 +29,8 @@ class MonteCarloEngine:
         scores = dual_roll_score(domain, fragments, noise)
 
         converged = False
-        for _ in range(8):
-            if variation(scores) < 0.02:
+        for _ in range(16):
+            if variation(scores) < 0.05:
                 converged = True
                 break
             z = box_muller(pcg.random(agents), pcg.random(agents))

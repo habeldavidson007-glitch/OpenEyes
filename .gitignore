@@ -1,8 +1,42 @@
-# Runtime vault artifacts
-obsidian_vault/
-workspace_obsidian_vault/
-.openeyes/
+```python
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Editors
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.local
+*.env.*
+
+# Coverage reports
+.coverage
+coverage/
+htmlcov/
+
+# Build directories
+build/
+dist/
+target/
 
 # Python cache
-__pycache__/
-*.pyc
+.mypy_cache/
+.pytest_cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+```
