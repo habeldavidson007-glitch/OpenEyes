@@ -393,5 +393,131 @@ def compute_nightly_grundy(fragment_library):
     return grundy_values
 
 
+def parse_halt_logs(halt_log_path: str) -> List[Dict[str, Any]]:
+    """
+    Parse HALT logs to identify recurring gap patterns.
+    
+    Returns list of patterns sorted by frequency:
+    - query: The query pattern that caused halts
+    - count: How many times this pattern appeared
+    - missing_slots: What reasoning roles were missing
+    """
+    gap_patterns = defaultdict(lambda: {'count': 0, 'missing_slots': set(), 'queries': []})
+    
+    if not os.path.exists(halt_log_path):
+        print(f"[Night Mode] No halt log found at {halt_log_path}")
+        return []
+    
+    with open(halt_log_path, 'r') as f:
+        for line in f:
+            if not line.strip():
+                continue
+            log = json.loads(line)
+            query = log.get('query', '')
+            missing_slots = log.get('missing_slots', [])
+            
+            # Extract keywords from query
+            keywords = [w for w in query.lower().split() if len(w) > 3 and w not in {'what', 'how', 'when', 'where', 'why', 'which', 'does', 'have', 'been', 'with', 'from', 'that', 'this', 'these', 'those'}]
+            topic_key = tuple(sorted(keywords[:3]))
+            
+            gap_patterns[topic_key]['count'] += 1
+            gap_patterns[topic_key]['missing_slots'].update(missing_slots)
+            gap_patterns[topic_key]['queries'].append(query)
+    
+    # Convert to list format
+    results = []
+    for topic, data in sorted(gap_patterns.items(), key=lambda x: x[1]['count'], reverse=True):
+        results.append({
+            'query': ' '.join(topic),
+            'count': data['count'],
+            'missing_slots': list(data['missing_slots']),
+            'sample_queries': data['queries'][:2]
+        })
+    
+    return results
+
+
+def save_proposals(proposals: List[Dict[str, Any]], output_dir: str = None):
+    """Save fragment proposals to JSON file for human review."""
+    if output_dir is None:
+        output_dir = os.path.join(os.path.dirname(__file__), 'proposals')
+    
+    os.makedirs(output_dir, exist_ok=True)
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_file = os.path.join(output_dir, f"fragment_proposals_{timestamp}.json")
+    
+    with open(output_file, 'w') as f:
+        json.dump(proposals, f, indent=2, default=str)
+    
+    print(f"[Night Mode] Saved {len(proposals)} proposals to {output_file}")
+    return output_file
+
+
+def fill_gaps_from_halts(fragment_library, halt_log_path: str, max_proposals: int = 10) -> List[Dict[str, Any]]:
+    """
+    Read recent HALT logs and propose fragments to fill gaps.
+    
+    This function:
+    1. Parses halt logs to find common failure patterns
+    2. Uses WebAgent to retrieve content from trusted sources
+    3. Filters candidates by credibility threshold (>= 0.85)
+    4. Generates proposals requiring human review
+    
+    Args:
+        fragment_library: The FragmentLibrary instance
+        halt_log_path: Path to the halt log file (JSONL format)
+        max_proposals: Maximum number of proposals to generate
+    
+    Returns:
+        List of fragment proposals with metadata
+    """
+    from openeyes.swarm import WebAgent
+    
+    proposals = []
+    
+    # Parse halt logs for common failure patterns
+    gap_patterns = parse_halt_logs(halt_log_path)
+    
+    if not gap_patterns:
+        print("[Night Mode] No gap patterns found in halt logs")
+        return []
+    
+    web_agent = WebAgent()
+    
+    print(f"[Night Mode] Processing {len(gap_patterns)} gap patterns...")
+    
+    for pattern in gap_patterns[:max_proposals]:
+        query_topic = pattern['query']
+        print(f"[Night Mode] Retrieving for gap: {query_topic} (appeared {pattern['count']} times)")
+        
+        # Attempt retrieval for gap topic
+        try:
+            candidates = web_agent.retrieve(query_topic, domain='finance')
+            
+            for candidate in candidates:
+                cred_estimate = getattr(candidate, 'credibility_estimate', 0)
+                if cred_estimate >= 0.85:
+                    proposals.append({
+                        'suggested_fragment': candidate.to_dict() if hasattr(candidate, 'to_dict') else vars(candidate),
+                        'gap_query': query_topic,
+                        'halt_count': pattern['count'],
+                        'auto_approve': False,  # Always require human review
+                        'source_url': getattr(candidate, 'source_url', ''),
+                        'credibility_estimate': cred_estimate
+                    })
+                    print(f"  -> Found candidate from {getattr(candidate, 'source', 'unknown')} (credibility: {cred_estimate})")
+        except Exception as e:
+            print(f"[Night Mode] Error retrieving for '{query_topic}': {e}")
+            continue
+    
+    # Save proposals for review
+    if proposals:
+        save_proposals(proposals)
+    
+    print(f"[Night Mode] {len(proposals)} fragment proposals generated from {len(gap_patterns)} gap patterns")
+    return proposals
+
+
 if __name__ == "__main__":
     run_night_mode()
