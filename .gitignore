@@ -1,13 +1,4 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Test results
-test_results/
-
-# Logs
-logs/
+# Fragment library cache/build artifacts
+openeyes/fragment_library/fragments/*.json
 ```
