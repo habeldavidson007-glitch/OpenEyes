@@ -13,6 +13,51 @@ except Exception:  # pragma: no cover
 
 from openeyes.knowledge.fragments import Fragment
 
+QUERY_NORMALIZATION_MAP = {
+    "rennaisance": "renaissance",
+    "rennaissance": "renaissance",
+    "teh ": "the ",
+}
+
+GENERAL_INTENT_TEMPLATES = {
+    "world_state": {
+        "claim": (
+            "Current world conditions are best described as a high-volatility transition phase: "
+            "geopolitical fragmentation, uneven economic recovery, persistent inflation/debt pressures, "
+            "accelerating AI/automation, and climate-risk shocks are interacting at the same time. "
+            "Most regions face a mix of opportunity (productivity gains, new industries) and stress "
+            "(policy uncertainty, inequality, supply-chain/security risk)."
+        ),
+        "evidence": (
+            "IMF/WB macro outlooks; UN/OECD development indicators; climate risk assessments; "
+            "technology diffusion and labor-market reports"
+        ),
+        "sub_questions": [
+            "Which region/sector are you evaluating?",
+            "What horizon matters most: 6 months, 2 years, or 10 years?"
+        ],
+    },
+    "general_analysis": {
+        "claim": "When direct retrieval is sparse, use a structured systems view: identify actors, incentives, constraints, and feedback loops before drawing conclusions.",
+        "evidence": "Systems thinking; scenario planning; decision science methods",
+        "sub_questions": ["Who are the main actors?", "What leading indicators can be monitored monthly?"],
+    },
+}
+
+
+def normalize_query(query: str) -> str:
+    """Normalize common misspellings/noise before retrieval."""
+    normalized = query.lower().strip()
+    for wrong, correct in QUERY_NORMALIZATION_MAP.items():
+        normalized = normalized.replace(wrong, correct)
+    return normalized
+
+
+def _infer_general_intent(query_lower: str) -> str:
+    if any(k in query_lower for k in ["world", "global", "geopolit", "economy", "inflation", "war", "climate"]):
+        return "world_state"
+    return "general_analysis"
+
 # Source endpoints (primary APIs)
 WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/title"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
@@ -526,23 +571,24 @@ def fetch_live_fragments(query: str, domain: str, limit: int = 5) -> list[Fragme
     - Evidence level assignment (high/moderate/low based on source type)
     """
     all_frags: list[Fragment] = []
+    normalized_query = normalize_query(query)
     
     # Medical/scientific queries get PubMed priority
     if domain in ["medical", "scientific"]:
-        pubmed_frags = _fetch_pubmed_fragments(query, limit=2)
+        pubmed_frags = _fetch_pubmed_fragments(normalized_query, limit=2)
         all_frags.extend(pubmed_frags)
     
     # Technical/scientific queries get arXiv
     if domain in ["scientific", "engineering", "technology"]:
-        arxiv_frags = _fetch_arxiv_fragments(query, limit=2)
+        arxiv_frags = _fetch_arxiv_fragments(normalized_query, limit=2)
         all_frags.extend(arxiv_frags)
     
     # General knowledge from Wikipedia
-    wiki_frags = _fetch_wikipedia_fragments(query, limit=3)
+    wiki_frags = _fetch_wikipedia_fragments(normalized_query, limit=3)
     all_frags.extend(wiki_frags)
     
     # Add synthetic foundational knowledge
-    synthetic_frags = _generate_synthetic_fragments(query, domain, limit=2)
+    synthetic_frags = _generate_synthetic_fragments(normalized_query, domain, limit=2)
     all_frags.extend(synthetic_frags)
     
     # Deduplicate by source_id
@@ -581,7 +627,7 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
     """
     today = datetime.now().strftime("%Y-%m-%d")
     frags = []
-    query_lower = query.lower()
+    query_lower = normalize_query(query)
     
     # Domain-specific JIT synthesis
     if domain == "medical":
@@ -698,7 +744,7 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
                 evidence_level="high",
             )
         )
-        if any(kw in query_lower for kw in ["AI", "artificial intelligence", "machine learning"]):
+        if any(kw in query_lower for kw in ["ai", "artificial intelligence", "machine learning"]):
             frags.append(
                 Fragment(
                     claim="Machine learning uses statistical algorithms to learn patterns from data without explicit programming. Deep learning employs multi-layer neural networks to model complex non-linear relationships. Key challenges include overfitting, bias-variance tradeoff, and interpretability.",
@@ -746,13 +792,46 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
         )
     
     else:
-        # General knowledge fallback
+        intent = _infer_general_intent(query_lower)
+        template = GENERAL_INTENT_TEMPLATES[intent]
         frags.append(
             Fragment(
-                    claim=f"Analysis of '{query}' based on first principles and logical reasoning. When direct evidence is limited, probabilistic inference from analogous domains and symmetry principles can provide hypothesis-level insights.",
-                    evidence="Logical reasoning; analogy from related domains; Bayesian inference principles",
+                claim=template["claim"],
+                evidence=template["evidence"],
+                limitations=["High-level synthesis; pair with region-specific and date-specific sources for decisions"],
+                sub_questions=template["sub_questions"],
+                source_type="expert_consensus",
+                source_id=f"jit-{intent}-{today}",
+                source_url="",
+                published_on=today,
+                jurisdiction="global",
+                evidence_level="moderate",
+            )
+        )
+        if any(kw in query_lower for kw in ["ai", "artificial intelligence", "machine learning", "llm", "current ai"]):
+            frags.append(
+                Fragment(
+                    claim="Current AI systems are powerful pattern learners: they excel at language, coding, and classification tasks, but still struggle with reliability, factual grounding, long-horizon planning, and robust causal reasoning. Best use is as a copilot with human verification.",
+                    evidence="Frontier model evaluations (MMLU, BIG-bench, HELM); alignment and hallucination studies; industry deployment reports",
+                    limitations=["Capabilities vary by model version, prompt quality, and tool access"],
+                    sub_questions=["What AI tasks are most reliable today?", "How should humans verify AI outputs?"],
+                    source_type="conference_paper",
+                    source_id=f"jit-ai-current-{today}",
+                    source_url="https://crfm.stanford.edu/helm/",
+                    published_on=today,
+                    jurisdiction="global",
+                    evidence_level="moderate",
+                )
+            )
+        # Generic fallback for uncategorized cases
+        if not frags:
+            template = GENERAL_INTENT_TEMPLATES["general_analysis"]
+            frags.append(
+                Fragment(
+                    claim=template["claim"],
+                    evidence=template["evidence"],
                     limitations=["Hypothesis-level confidence; requires empirical verification"],
-                    sub_questions=[f"What primary sources address {query}?", f"What are the key variables?"],
+                    sub_questions=template["sub_questions"],
                     source_type="expert_consensus",
                     source_id=f"jit-general-{today}",
                     source_url="",

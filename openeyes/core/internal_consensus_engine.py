@@ -162,6 +162,10 @@ class InternalConsensusEngine:
             # Strong domains that OpenEyes knows well
             strong_domains = ["game_theory", "optimization", "network_theory", 
                             "information_theory", "causal_analysis", "mathematics"]
+            forced_domains = context.get("force_cross_domain_domains", [])
+            for forced_domain in forced_domains:
+                if forced_domain not in strong_domains:
+                    strong_domains.insert(0, forced_domain)
             
             result = apply_cross_domain_reasoning(query, domain, strong_domains)
             

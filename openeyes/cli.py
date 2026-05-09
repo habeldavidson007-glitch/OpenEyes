@@ -27,19 +27,30 @@ def cli() -> None:
 @click.argument("query")
 @click.option("--domain", default=None, help="Optional explicit domain override")
 @click.option("--json-output", is_flag=True, help="Print raw JSON output")
-@click.option("--debug", is_flag=True, help="Show internal inference metadata")
-def query(query: str, domain: str | None, json_output: bool, debug: bool) -> None:
+@click.option("--explain", is_flag=True, help="Show inference metadata and narrative trace")
+@click.option("--debug", is_flag=True, help="Alias for --explain")
+def query(query: str, domain: str | None, json_output: bool, explain: bool, debug: bool) -> None:
     engine = OpenEyesEngine()
     result = engine.answer(query=query, domain=domain)
     if json_output:
         print(json.dumps(result, indent=2))
         return
     print(Panel(result.get("answer", ""), title="Answer", border_style="green"))
-    if debug:
+    if not explain and not debug:
+        summary = Table(show_header=False, box=None)
+        summary.add_column("Field", style="cyan")
+        summary.add_column("Value", style="white")
+        summary.add_row("Query", query)
+        summary.add_row("Data recency", f"Within {result.get('data_recency_years', 'N/A')} years")
+        summary.add_row("Confidence", f"{result.get('confidence', 0)}%")
+        print(summary)
+        return
+
+    if debug or explain:
         table = Table(title="OpenEyes Inference (Debug)")
         table.add_column("Field", style="cyan")
         table.add_column("Value", style="white")
-        for k in ["domain", "status", "answer_class", "confidence"]:
+        for k in ["domain", "status", "answer_class", "confidence", "data_recency_years"]:
             table.add_row(k, str(result.get(k)))
         table.add_row("ingested", "YES")
         print(table)

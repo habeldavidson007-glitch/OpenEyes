@@ -73,7 +73,28 @@ SEARCH_ENDPOINTS = {
     "legal": "https://www.law.cornell.edu/search?query={query}",
     "science": "https://arxiv.org/search/?query={query}&searchtype=all",
     "technology": "https://ieeexplore.ieee.org/search/searchresult.jsp?queryText={query}",
+    "general": "https://duckduckgo.com/html/?q={query}",
 }
+
+
+def _expand_query(query: str, domain: str) -> List[str]:
+    """Expand broad queries into focused retrieval intents."""
+    q = query.lower()
+    expanded = [query]
+    if domain == "general" and any(k in q for k in ["think", "opinion", "current", "world", "condition", "billionaire", "system"]):
+        expanded.extend([
+            "global economy outlook 2026",
+            "geopolitical conflict summary 2026",
+            "climate change status report 2026",
+            "ai and labor market impact 2026",
+        ])
+    if any(k in q for k in ["what do you think", "opinion", "your view"]):
+        expanded.extend([
+            query.replace("what do you think about", "").strip(),
+            f"facts and statistics about {query.replace('what do you think about', '').strip()}",
+            f"latest reports on {query.replace('what do you think about', '').strip()}",
+        ])
+    return expanded
 
 
 def _extract_text_from_html(html_content: str) -> str:
@@ -169,31 +190,35 @@ def scrape_authoritative_sources(
         - timestamp: When it was scraped
     """
     results = []
-    query_encoded = query.replace(" ", "+")
+    expanded_queries = _expand_query(query, domain)
     
     # Get relevant sources for domain
     sources = AUTHORITATIVE_SOURCES.get(domain, AUTHORITATIVE_SOURCES.get("general", []))
-    search_url = SEARCH_ENDPOINTS.get(domain, "").format(query=query_encoded)
+    search_template = SEARCH_ENDPOINTS.get(domain, "")
     
     print(f"[SCRAPER] Searching {domain} sources for: {query}")
     
     # If we have a search endpoint, use it first
-    if search_url and len(results) < max_results:
-        print(f"[SCRAPER] Using search endpoint: {search_url}")
-        if use_playwright:
-            content = asyncio.run(_scrape_with_playwright(search_url))
-        else:
-            html = _fetch_url(search_url)
-            content = _extract_text_from_html(html) if html else None
-        
-        if content:
-            results.append({
-                "title": f"Search results for: {query}",
-                "content": content,
-                "source_url": search_url,
-                "source_type": "search_results",
-                "timestamp": datetime.now().isoformat(),
-            })
+    if search_template and len(results) < max_results:
+        for q in expanded_queries[:4]:
+            if len(results) >= max_results:
+                break
+            search_url = search_template.format(query=q.replace(" ", "+"))
+            print(f"[SCRAPER] Using search endpoint: {search_url}")
+            if use_playwright:
+                content = asyncio.run(_scrape_with_playwright(search_url))
+            else:
+                html = _fetch_url(search_url)
+                content = _extract_text_from_html(html) if html else None
+
+            if content:
+                results.append({
+                    "title": f"Search results for: {q}",
+                    "content": content,
+                    "source_url": search_url,
+                    "source_type": "search_results",
+                    "timestamp": datetime.now().isoformat(),
+                })
     
     # Try direct source pages
     for source_url in sources[:3]:  # Limit to top 3 sources
