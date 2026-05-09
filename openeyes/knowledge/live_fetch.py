@@ -19,6 +19,31 @@ QUERY_NORMALIZATION_MAP = {
     "teh ": "the ",
 }
 
+GENERAL_INTENT_TEMPLATES = {
+    "world_state": {
+        "claim": (
+            "Current world conditions are best described as a high-volatility transition phase: "
+            "geopolitical fragmentation, uneven economic recovery, persistent inflation/debt pressures, "
+            "accelerating AI/automation, and climate-risk shocks are interacting at the same time. "
+            "Most regions face a mix of opportunity (productivity gains, new industries) and stress "
+            "(policy uncertainty, inequality, supply-chain/security risk)."
+        ),
+        "evidence": (
+            "IMF/WB macro outlooks; UN/OECD development indicators; climate risk assessments; "
+            "technology diffusion and labor-market reports"
+        ),
+        "sub_questions": [
+            "Which region/sector are you evaluating?",
+            "What horizon matters most: 6 months, 2 years, or 10 years?"
+        ],
+    },
+    "general_analysis": {
+        "claim": "When direct retrieval is sparse, use a structured systems view: identify actors, incentives, constraints, and feedback loops before drawing conclusions.",
+        "evidence": "Systems thinking; scenario planning; decision science methods",
+        "sub_questions": ["Who are the main actors?", "What leading indicators can be monitored monthly?"],
+    },
+}
+
 
 def normalize_query(query: str) -> str:
     """Normalize common misspellings/noise before retrieval."""
@@ -26,6 +51,12 @@ def normalize_query(query: str) -> str:
     for wrong, correct in QUERY_NORMALIZATION_MAP.items():
         normalized = normalized.replace(wrong, correct)
     return normalized
+
+
+def _infer_general_intent(query_lower: str) -> str:
+    if any(k in query_lower for k in ["world", "global", "geopolit", "economy", "inflation", "war", "climate"]):
+        return "world_state"
+    return "general_analysis"
 
 # Source endpoints (primary APIs)
 WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/title"
@@ -761,6 +792,22 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
         )
     
     else:
+        intent = _infer_general_intent(query_lower)
+        template = GENERAL_INTENT_TEMPLATES[intent]
+        frags.append(
+            Fragment(
+                claim=template["claim"],
+                evidence=template["evidence"],
+                limitations=["High-level synthesis; pair with region-specific and date-specific sources for decisions"],
+                sub_questions=template["sub_questions"],
+                source_type="expert_consensus",
+                source_id=f"jit-{intent}-{today}",
+                source_url="",
+                published_on=today,
+                jurisdiction="global",
+                evidence_level="moderate",
+            )
+        )
         if any(kw in query_lower for kw in ["ai", "artificial intelligence", "machine learning", "llm", "current ai"]):
             frags.append(
                 Fragment(
@@ -776,22 +823,23 @@ def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fr
                     evidence_level="moderate",
                 )
             )
-        # General knowledge fallback
+        # Generic fallback for uncategorized cases
         if not frags:
+            template = GENERAL_INTENT_TEMPLATES["general_analysis"]
             frags.append(
                 Fragment(
-                        claim=f"Analysis of '{query}' based on first principles and logical reasoning. When direct evidence is limited, probabilistic inference from analogous domains and symmetry principles can provide hypothesis-level insights.",
-                        evidence="Logical reasoning; analogy from related domains; Bayesian inference principles",
-                        limitations=["Hypothesis-level confidence; requires empirical verification"],
-                        sub_questions=[f"What primary sources address {query}?", f"What are the key variables?"],
-                        source_type="expert_consensus",
-                        source_id=f"jit-general-{today}",
-                        source_url="",
-                        published_on=today,
-                        jurisdiction="global",
-                        evidence_level="moderate",
-                    )
+                    claim=template["claim"],
+                    evidence=template["evidence"],
+                    limitations=["Hypothesis-level confidence; requires empirical verification"],
+                    sub_questions=template["sub_questions"],
+                    source_type="expert_consensus",
+                    source_id=f"jit-general-{today}",
+                    source_url="",
+                    published_on=today,
+                    jurisdiction="global",
+                    evidence_level="moderate",
                 )
+            )
     
     # Apply anti-hoax filtering to synthesized fragments
     filtered = [f for f in frags if _is_factual_content(f.claim)]

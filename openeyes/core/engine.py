@@ -252,7 +252,7 @@ class OpenEyesEngine:
         
         # Log the decision path for audit
         if traversal_path:
-            print(f"[Akinator] Navigated {len(traversal_path)} decision points")
+            _pipeline_log(f"[Akinator] Navigated {len(traversal_path)} decision points")
         
         if "pancreatic" in query.lower():
             return [
