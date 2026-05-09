@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 from openeyes.knowledge.fragments import Fragment
@@ -13,30 +14,38 @@ class OpenEyesEngine:
         self.vault_path = vault_path or Path("obsidian_vault")
 
     def _fragments_for(self, query: str, domain: str) -> list[Fragment]:
-        base = [
+        return [
             Fragment(
                 claim="Pancreatic cancer commonly presents late with nonspecific symptoms.",
-                evidence="Guideline-style evidence summary.",
+                evidence="NCCN-like and review synthesis.",
                 limitations=["Symptoms overlap with benign disease."],
                 sub_questions=["What are common symptoms?", "What are red flags?"],
                 feedback={"thumbs_up": 20, "thumbs_down": 2},
                 success_rate_ema=0.88,
                 source_type="clinical_guideline" if domain == "medical" else "peer_reviewed_study",
+                source_id="GUIDE-PANC-2025",
+                source_url="https://example.org/guideline/pancreas",
+                published_on="2025-06-01",
+                jurisdiction="US",
+                evidence_level="high",
             )
-        ]
-        if "pancreatic" in query.lower():
-            return base
-        return [base[0]]
+        ] if "pancreatic" in query.lower() else []
 
     def answer(self, query: str, domain: str) -> dict:
         frags = self._fragments_for(query, domain)
         result = self.mc.run(query=query, domain=domain, fragments=frags)
-        if result["ok"]:
-            answer = "Possible symptoms include jaundice, unexplained weight loss, upper abdominal/back pain, loss of appetite, and new-onset diabetes."
-            status = "ANSWER"
+
+        if result["status"] == "ANSWER":
+            answer = "Possible symptoms include jaundice, unexplained weight loss, upper abdominal/back pain, appetite loss, and new-onset diabetes."
         else:
             answer = "HALT"
-            status = "HALT"
-        out = {"status": status, "answer": answer, "confidence": result["confidence"], "domain": domain}
+
+        out = {
+            "status": result["status"],
+            "answer": answer,
+            "confidence": result["confidence"],
+            "domain": domain,
+            "replay": json.loads(result["replay"]),
+        }
         write_audit_log(self.vault_path, query, out)
         return out
