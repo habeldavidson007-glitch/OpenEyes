@@ -40,3 +40,9 @@ def test_complex_query_gets_longer_answer(tmp_path: Path) -> None:
     engine = OpenEyesEngine(vault_path=tmp_path / "vault")
     r = engine.answer("How to get rich fast using investments with a practical plan?", "investment")
     assert "1)" in r["answer"] and len(r["answer"]) > 250
+
+
+def test_live_fetch_fills_fragments(tmp_path: Path) -> None:
+    engine = OpenEyesEngine(vault_path=tmp_path / "vault")
+    r = engine.answer("what is cancer?", None)
+    assert "answer" in r and len(r["answer"]) > 20

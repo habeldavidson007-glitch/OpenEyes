@@ -7,6 +7,7 @@ from openeyes.config import audit_dir
 from openeyes.core.router import route_domain
 from openeyes.core.narrative import compose_narrative
 from openeyes.knowledge.fragments import Fragment
+from openeyes.knowledge.live_fetch import fetch_live_fragments
 from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.memory import ingest_case, retrieve_similar
 from openeyes.storage.vault import write_audit_log
@@ -76,7 +77,8 @@ class OpenEyesEngine:
                     evidence_level="high",
                 )
             ]
-        return []
+        fetched = fetch_live_fragments(query, domain, limit=3)
+        return fetched
 
     @staticmethod
     def _safe_fallback_answer(query: str, domain: str, status: str, narrative: dict) -> str:
