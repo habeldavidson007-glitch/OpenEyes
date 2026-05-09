@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_pboc_ops_def_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "pboc",
+    "china",
+    "currency",
+    "monetary_policy",
+    "definition",
+    "first_line"
+  ],
+  "reasoning_role": "definition",
+  "content": "The People's Bank of China (PBOC) uses a mix of reserve requirement ratios (RRR), MLF (Medium-term Lending Facility), and daily yuan fixing (USDCNY) to manage liquidity and exchange rates. Unlike Western QE, PBOC often injects liquidity via targeted lending to specific sectors.",
+  "source": "government_source",
+  "source_url": "http://www.pbc.gov.cn/english/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.88
+}

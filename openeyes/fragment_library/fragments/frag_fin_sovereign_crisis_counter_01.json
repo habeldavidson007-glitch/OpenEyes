@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_sovereign_crisis_counter_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "sovereign_debt",
+    "emerging_markets",
+    "warning",
+    "counter_argument",
+    "warning"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Not all high-debt nations crisis. Domestic debt in local currency allows inflation/debasement escape valve (UK, Japan). Crises concentrate in EMs with foreign-currency debt. 'Original Sin' hypothesis: inability to borrow abroad in own currency is root cause.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_sovereign_crisis_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.8835
+}

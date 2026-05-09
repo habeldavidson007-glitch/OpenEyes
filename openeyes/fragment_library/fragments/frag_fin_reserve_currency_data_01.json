@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_reserve_currency_data_01",
+  "domain": "finance",
+  "subdomain": "global_macro",
+  "tags": [
+    "dollar",
+    "macro",
+    "global_trade",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "USD share of reserves: 58% (2024). EUR: 20%. CNY: 2.3% (growing slowly). Gold holdings by central banks hit record highs in 2022-2023 (China, Poland, Singapore buying) as diversification hedge.",
+  "source": "government_source",
+  "source_url": "https://www.imf.org/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_reserve_currency_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.9114
+}
