@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-05-08T11:50:48.003571",
+  "last_updated": "2026-05-08T17:07:54.591881",
   "synapses": [
     {
       "synapse_id": "synapse_c8f7aa5a",
@@ -29,8 +29,8 @@
       "synapse_id": "synapse_02740c83",
       "fragment_chain": [
         "frag_onc_pancreatic_cancer_002",
-        "frag_onc_pancreatic_cancer_003",
-        "frag_tox_methanol_poisoning_001"
+        "frag_tox_methanol_poisoning_001",
+        "frag_onc_pancreatic_cancer_003"
       ],
       "trigger_keywords": [
         "early",
@@ -38,10 +38,10 @@
         "pancreatic",
         "cancer?"
       ],
-      "avg_confidence": 74.4,
-      "usage_count": 11,
-      "created_at": "2026-05-08T10:20:58.746023",
-      "last_used": "2026-05-08T11:50:47.965162",
+      "avg_confidence": 71.9,
+      "usage_count": 0,
+      "created_at": "2026-05-08T17:07:38.242388",
+      "last_used": null,
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 49,
@@ -51,9 +51,9 @@
     {
       "synapse_id": "synapse_1b745e77",
       "fragment_chain": [
-        "frag_endo_diabetes_fasting_002",
         "frag_endo_diabetes_fasting_003",
-        "frag_endo_diabetes_fasting_001"
+        "frag_endo_diabetes_fasting_001",
+        "frag_endo_diabetes_fasting_002"
       ],
       "trigger_keywords": [
         "intermittent",
@@ -61,10 +61,10 @@
         "safe",
         "diabetics?"
       ],
-      "avg_confidence": 72.7,
-      "usage_count": 10,
-      "created_at": "2026-05-08T10:20:42.808042",
-      "last_used": "2026-05-08T11:50:47.986982",
+      "avg_confidence": 70.1,
+      "usage_count": 0,
+      "created_at": "2026-05-08T17:07:54.591839",
+      "last_used": null,
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 43,
@@ -75,8 +75,8 @@
       "synapse_id": "synapse_e3cf3c79",
       "fragment_chain": [
         "frag_onc_pancreatic_cancer_002",
-        "frag_onc_pancreatic_cancer_003",
-        "frag_onc_pancreatic_cancer_001"
+        "frag_onc_pancreatic_cancer_001",
+        "frag_onc_pancreatic_cancer_003"
       ],
       "trigger_keywords": [
         "early",
@@ -84,10 +84,10 @@
         "pancreatic",
         "cancer?"
       ],
-      "avg_confidence": 70.9,
-      "usage_count": 0,
-      "created_at": "2026-05-08T11:41:11.887604",
-      "last_used": null,
+      "avg_confidence": 73.6,
+      "usage_count": 8,
+      "created_at": "2026-05-08T17:02:26.509914",
+      "last_used": "2026-05-08T17:07:54.566037",
       "metadata": {
         "source": "monte_carlo_compilation",
         "original_query_length": 49,
@@ -136,6 +136,30 @@
         "source": "monte_carlo_compilation",
         "original_query_length": 45,
         "fragment_count": 2
+      }
+    },
+    {
+      "synapse_id": "synapse_fe95a22a",
+      "fragment_chain": [
+        "frag_onc_pancreatic_cancer_002",
+        "frag_tox_methanol_poisoning_001",
+        "frag_onc_pancreatic_cancer_003",
+        "frag_onc_pancreatic_cancer_001"
+      ],
+      "trigger_keywords": [
+        "early",
+        "symptoms",
+        "pancreatic",
+        "cancer?"
+      ],
+      "avg_confidence": 74.0,
+      "usage_count": 0,
+      "created_at": "2026-05-08T17:07:54.585282",
+      "last_used": null,
+      "metadata": {
+        "source": "monte_carlo_compilation",
+        "original_query_length": 49,
+        "fragment_count": 4
       }
     }
   ]

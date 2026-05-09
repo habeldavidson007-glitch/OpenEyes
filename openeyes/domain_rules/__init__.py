@@ -70,6 +70,148 @@ DOMAIN_TIERS = {
 }
 
 
+# Domain-Specific Credibility Hierarchies
+# Maps source_type to base_score per domain, aligned with real-world epistemology
+# Higher scores = more credible sources for that domain
+CREDIBILITY_HIERARCHIES = {
+    # Tier 1: Medical - Strict hierarchy, peer-reviewed evidence paramount
+    "medical": {
+        "clinical_guideline": 98,      # Highest: Official clinical guidelines (CDC, WHO, NIH)
+        "peer_reviewed_study": 95,     # Peer-reviewed research studies
+        "systematic_review": 93,       # Systematic reviews/meta-analyses
+        "textbook": 85,                # Medical textbooks
+        "government_source": 85,       # Government health agencies
+        "expert_consensus": 80,        # Expert panel consensus
+        "case_report": 60,             # Individual case reports (lower evidence)
+        "news_article": 50,            # Medical news (secondary reporting)
+        "forum": 25,                   # Patient forums (anecdotal)
+        "anecdotal": 20                # Personal anecdotes
+    },
+    
+    # Tier 1: Legal - Primary authority is everything
+    "legal": {
+        "statute": 98,                 # Primary: Statutes and regulations
+        "case_law": 95,                # Court decisions (precedent)
+        "legal_code": 95,              # Codified law (USC, CFR, etc.)
+        "government_source": 90,       # Official government legal resources
+        "law_review": 75,              # Academic law review articles
+        "legal_textbook": 70,          # Legal treatises and textbooks
+        "legal_blog": 45,              # Legal commentary blogs
+        "news_article": 40,            # Legal news reporting
+        "forum": 20                    # Legal forums (low reliability)
+    },
+    
+    # Tier 2: Engineering - Standards and codes are king
+    "engineering": {
+        "iso_standard": 98,            # ISO standards
+        "astm_standard": 98,           # ASTM standards
+        "ieee_standard": 98,           # IEEE standards
+        "asme_standard": 98,           # ASME standards
+        "code": 95,                    # Building/engineering codes
+        "manufacturer_data": 85,       # Manufacturer specifications
+        "handbook": 80,                # Engineering handbooks (CRC, Marks')
+        "peer_reviewed_study": 75,     # Academic research
+        "technical_paper": 70,         # Conference papers
+        "textbook": 70,                # Engineering textbooks
+        "expert_blog": 50,             # Expert practitioner blogs
+        "forum": 30                    # Engineering forums (StackExchange, etc.)
+    },
+    
+    # Tier 2: Finance - Regulatory and primary market data
+    "finance": {
+        "sec_filing": 98,              # SEC filings (10-K, 10-Q, etc.)
+        "regulatory_guidance": 95,     # SEC, FINRA, Fed guidance
+        "primary_market_data": 90,     # Direct market data (Bloomberg, Reuters)
+        "central_bank_report": 90,     # Federal Reserve, ECB reports
+        "audited_statement": 88,       # Audited financial statements
+        "analyst_report": 70,          # Professional analyst reports
+        "financial_news": 55,          # Financial news (WSJ, FT)
+        "investment_blog": 40,         # Investment blogs
+        "forum": 25                    # Investment forums (Reddit, etc.)
+    },
+    
+    # Tier 3: Cooking - Established institutions > experts > community
+    "cooking": {
+        "culinary_institution": 95,    # CIA, Le Cordon Bleu, King Arthur Flour
+        "established_cookbook": 90,    # Published cookbooks from known authors
+        "government_guideline": 85,    # FDA food safety guidelines
+        "expert_chef_blog": 75,        # Known chef blogs (Serious Eats, etc.)
+        "food_magazine": 70,           # Bon Appétit, Food & Wine, etc.
+        "recipe_website": 60,          # AllRecipes, Epicurious, etc.
+        "food_blog": 50,               # Personal food blogs
+        "forum": 35,                   # Recipe forums, Reddit r/cooking
+        "social_media": 25             # Instagram, TikTok recipes
+    },
+    
+    # Tier 3: Travel - Official sources + established guides
+    "travel": {
+        "government_travel_advisory": 95,  # State Department, CDC travel notices
+        "official_tourism_board": 90,      # Official country/city tourism sites
+        "established_guidebook": 85,       # Lonely Planet, Fodor's, Rick Steves
+        "travel_magazine": 70,             # Condé Nast Traveler, Travel + Leisure
+        "expert_travel_blog": 65,          # Well-established travel bloggers
+        "review_site": 55,                 # TripAdvisor, Yelp reviews
+        "personal_blog": 40,               # Personal travel blogs
+        "forum": 35,                       # Travel forums
+        "social_media": 25                 # Instagram travel posts
+    },
+    
+    # Tier 2: Technology - Standards + vendor docs + community
+    "technology": {
+        "rfc_standard": 98,            # RFCs, W3C standards
+        "vendor_documentation": 90,    # Official vendor docs (Microsoft, AWS, etc.)
+        "iso_standard": 95,            # ISO/IEC standards
+        "peer_reviewed_study": 80,     # Academic CS research
+        "technical_book": 75,          # O'Reilly, No Starch Press books
+        "official_blog": 70,           # Official company engineering blogs
+        "community_wiki": 65,          # Stack Overflow, official wikis
+        "tech_news": 55,               # Ars Technica, Wired, etc.
+        "personal_blog": 45,           # Developer blogs
+        "forum": 35                    # Reddit, Discord, etc.
+    },
+    
+    # Tier 2: Science - Peer review is essential
+    "science": {
+        "peer_reviewed_study": 95,     # Primary research in reputable journals
+        "meta_analysis": 93,           # Meta-analyses and systematic reviews
+        "government_report": 90,       # NASA, NOAA, NSF reports
+        "academic_textbook": 85,       # University-level textbooks
+        "preprint": 70,                # arXiv, bioRxiv (not yet peer-reviewed)
+        "science_magazine": 65,        # Scientific American, New Scientist
+        "science_news": 55,            # Popular science reporting
+        "blog": 35,                    # Science blogs
+        "forum": 25                    # Science forums
+    },
+    
+    # Tier 4: Creative/Philosophy - More open, diversity valued
+    "creative": {
+        "published_work": 90,          # Published books, albums, films
+        "established_artist": 80,      # Work by recognized artists
+        "academic_analysis": 75,       # Scholarly criticism
+        "expert_commentary": 65,       # Expert reviews and analysis
+        "established_publication": 60, # Major publications
+        "independent_creator": 50,     # Independent artists/creators
+        "blog": 40,                    # Creative blogs
+        "forum": 30,                   # Creative communities
+        "social_media": 25             # Social media content
+    },
+    
+    # Default hierarchy for unmapped domains (uses tier2 as baseline)
+    "default": {
+        "primary": 85,
+        "secondary": 65,
+        "tertiary": 45,
+        "peer_reviewed_study": 90,
+        "government_source": 85,
+        "textbook": 75,
+        "news_article": 55,
+        "blog": 40,
+        "forum": 30,
+        "anecdotal": 20
+    }
+}
+
+
 # Embedded domain rules (fallback if JSON files not found)
 EMBEDDED_RULES = {
     "medical": {
@@ -498,3 +640,48 @@ def get_domain_rules(domain: str, rules_dir: str = "openeyes/domain_rules") -> D
 def get_domain_tier(domain: str) -> str:
     """Convenience function to get domain tier."""
     return DOMAIN_TIERS.get(domain.lower(), "tier2")
+
+
+def get_credibility_score(domain: str, source_type: str) -> int:
+    """
+    Get the credibility score for a source type in a specific domain.
+    
+    Uses domain-specific credibility hierarchies aligned with real-world epistemology.
+    Falls back to default hierarchy if domain or source_type not found.
+    
+    Args:
+        domain: The domain name (e.g., 'medical', 'engineering', 'cooking')
+        source_type: The type of source (e.g., 'peer_reviewed_study', 'textbook', 'forum')
+    
+    Returns:
+        Integer credibility score (0-100), higher = more credible
+    """
+    domain_lower = domain.lower()
+    
+    # Get domain-specific hierarchy, or fall back to default
+    hierarchy = CREDIBILITY_HIERARCHIES.get(domain_lower, CREDIBILITY_HIERARCHIES["default"])
+    
+    # Get score for source_type, or fall back to generic mapping
+    score = hierarchy.get(source_type, None)
+    
+    if score is not None:
+        return score
+    
+    # Fallback: try common mappings
+    fallback_mapping = {
+        "primary": 85,
+        "secondary": 65,
+        "tertiary": 45,
+        "peer_reviewed": 90,
+        "peer_reviewed_study": 90,
+        "government": 85,
+        "government_source": 85,
+        "textbook": 75,
+        "news": 55,
+        "news_article": 55,
+        "blog": 40,
+        "forum": 30,
+        "anecdotal": 20
+    }
+    
+    return fallback_mapping.get(source_type, 50)  # Default to 50 if unknown

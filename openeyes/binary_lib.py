@@ -283,11 +283,17 @@ class SleepModeConsolidator:
         return new_synapses
         
     def _cleanup_obsidian_vault(self):
-        """Delete all but the latest audit log in Obsidian vault."""
+        """Delete all but the latest audit log in Obsidian vault (recursive)."""
         if not OBSIDIAN_VAULT_PATH.exists():
             return
             
-        md_files = list(OBSIDIAN_VAULT_PATH.glob("*.md"))
+        # Recursively find all .md files in vault
+        md_files = []
+        for root, dirs, files in os.walk(OBSIDIAN_VAULT_PATH):
+            for f in files:
+                if f.endswith('.md'):
+                    md_files.append(Path(root) / f)
+                    
         if len(md_files) <= 1:
             return
             

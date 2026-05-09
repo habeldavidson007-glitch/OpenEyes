@@ -47,7 +47,8 @@ DEFAULT_THRESHOLDS = {
 
 def _default_evaluator(composition: List[Dict[str, Any]], 
                        scenario: Optional[Dict[str, Any]] = None,
-                       domain_tier: str = "tier2") -> CompositionResult:
+                       domain_tier: str = "tier2",
+                       domain: str = "general") -> CompositionResult:
     """
     HYBRID DUAL-ROLL EVALUATOR for OpenEyes.
     
@@ -59,31 +60,30 @@ def _default_evaluator(composition: List[Dict[str, Any]],
     Final Score = (0.7 * Deterministic) + (0.3 * Stochastic)
     
     Scores fragments based on:
-    - Credibility class (peer_reviewed=95, guideline=90, textbook=80, etc.)
+    - Credibility class (using domain-specific hierarchies)
     - Recency (decay based on domain tier)
     - Reasoning chain completeness (definition + counter + latest_data)
     - Cross-source consistency (multiple sources agreeing)
     """
     import hashlib
-    
-    # Base credibility scores (evidence hierarchy)
-    CREDIBILITY_SCORES = {
-        "clinical_guideline": 95,
-        "peer_reviewed_study": 90,
-        "textbook": 85,
-        "expert_consensus": 75,
-        "government_source": 85,
-        "case_report": 60,
-        "news_article": 60,
-        "forum": 30,
-        "anecdotal": 20
-    }
+    from openeyes.domain_rules import get_credibility_score
     
     # Recency decay rates per tier (points per year old)
     RECENCY_DECAY = {
+        "tier0": 8.0,   # Critical: extremely high decay
         "tier1": 5.0,   # Medical/fast-moving: high decay
         "tier2": 2.0,   # Engineering: medium decay
-        "tier3": 0.5    # Cooking/general: low decay
+        "tier3": 0.5,   # Cooking/general: low decay
+        "tier4": 0.2    # Creative: minimal decay (timeless content)
+    }
+    
+    # Pass thresholds per tier (adjusted for domain-specific scoring)
+    TIER_THRESHOLDS = {
+        "tier0": {"score": 85, "variance": 200, "survival_prob": 0.8},
+        "tier1": {"score": 70, "variance": 300, "survival_prob": 0.6},
+        "tier2": {"score": 55, "variance": 500, "survival_prob": 0.4},
+        "tier3": {"score": 40, "variance": 800, "survival_prob": 0.25},
+        "tier4": {"score": 30, "variance": 1000, "survival_prob": 0.15}
     }
     
     current_year = 2026
@@ -97,13 +97,19 @@ def _default_evaluator(composition: List[Dict[str, Any]],
         # --- DETERMINISTIC COMPONENT ---
         det_score = 0.0
         
-        # 1. Credibility score (40% of det_score)
+        # 1. Credibility score (40% of det_score) - DOMAIN-SPECIFIC
         cred_class = frag.get("credibility_class", None)
+        source_type = frag.get("source_type", None)
+        
+        # Use domain-specific credibility hierarchy
         if cred_class:
-            base_cred = CREDIBILITY_SCORES.get(cred_class, 50)
+            base_cred = get_credibility_score(domain, cred_class)
+        elif source_type:
+            base_cred = get_credibility_score(domain, source_type)
         else:
             # Fallback to credibility_estimate (0-1 scale)
             base_cred = frag.get("credibility_estimate", 0.5) * 100
+        
         det_score += base_cred * 0.4
         
         # 2. Recency score (30% of det_score)
@@ -186,7 +192,7 @@ def _default_evaluator(composition: List[Dict[str, Any]],
     variance = sum((s - mean_score) ** 2 for s in scores) / len(scores)
     worst_case = min(scores)
     
-    threshold = DEFAULT_THRESHOLDS[domain_tier]["score"]
+    threshold = TIER_THRESHOLDS.get(domain_tier, TIER_THRESHOLDS["tier2"])["score"]
     survival_probability = sum(1 for s in scores if s >= threshold) / len(scores)
     
     return CompositionResult(
@@ -204,10 +210,12 @@ def _default_evaluator(composition: List[Dict[str, Any]],
             "has_latest_data": has_latest,
             "num_sources": num_sources,
             "domain_tier": domain_tier,
+            "domain": domain,
             "recency_decay_applied": decay_rate,
             "hybrid_evaluator": True,
             "deterministic_weight": 0.9,
-            "stochastic_weight": 0.1
+            "stochastic_weight": 0.1,
+            "domain_specific_credibility": True
         }
     )
 
@@ -272,25 +280,27 @@ def generate_composition(primitives: List[Dict[str, Any]],
 def evaluate_composition(composition: List[Dict[str, Any]],
                         evaluator: Optional[Callable] = None,
                         scenario: Optional[Dict[str, Any]] = None,
-                        domain_tier: str = "tier2") -> CompositionResult:
+                        domain_tier: str = "tier2",
+                        domain: str = "general") -> CompositionResult:
     """
     Evaluate one composition using the provided evaluator.
     
     Args:
         composition: List of fragments/primitives to evaluate
-        evaluator: Function(composition, scenario) -> CompositionResult
+        evaluator: Function(composition, scenario, domain_tier, domain) -> CompositionResult
                   If None, uses default evaluator
         scenario: Optional scenario context
-        domain_tier: "tier1", "tier2", or "tier3"
+        domain_tier: "tier0", "tier1", "tier2", "tier3", or "tier4"
+        domain: Domain name for domain-specific credibility scoring
     
     Returns:
         CompositionResult with statistical metrics
     """
     if evaluator is None:
-        evaluator = lambda c, s, t: _default_evaluator(c, s, t)
+        evaluator = lambda c, s, t, d: _default_evaluator(c, s, t, d)
     
     try:
-        result = evaluator(composition, scenario, domain_tier)
+        result = evaluator(composition, scenario, domain_tier, domain)
         if isinstance(result, CompositionResult):
             return result
         else:
@@ -315,6 +325,7 @@ def monte_carlo_evolve(primitives: List[Dict[str, Any]],
                       scenario: Optional[Dict[str, Any]] = None,
                       evaluator: Optional[Callable] = None,
                       domain_tier: str = "tier2",
+                      domain: str = "general",
                       weights: Optional[Dict[str, float]] = None) -> Optional[MonteCarloWinner]:
     """
     Full Monte Carlo evolution loop.
@@ -329,7 +340,8 @@ def monte_carlo_evolve(primitives: List[Dict[str, Any]],
         survival_threshold: Minimum survival probability
         scenario: Optional scenario context
         evaluator: Domain-specific evaluator function
-        domain_tier: "tier1", "tier2", or "tier3"
+        domain_tier: "tier0", "tier1", "tier2", "tier3", or "tier4"
+        domain: Domain name for domain-specific credibility scoring
         weights: Optional fragment weights for biased selection
     
     Returns:
@@ -338,7 +350,16 @@ def monte_carlo_evolve(primitives: List[Dict[str, Any]],
     if not primitives:
         return None
     
-    thresholds = DEFAULT_THRESHOLDS.get(domain_tier, DEFAULT_THRESHOLDS["tier2"])
+    # Use TIER_THRESHOLDS from _default_evaluator logic
+    TIER_THRESHOLDS = {
+        "tier0": {"score": 85, "variance": 200, "survival_prob": 0.8},
+        "tier1": {"score": 70, "variance": 300, "survival_prob": 0.6},
+        "tier2": {"score": 55, "variance": 500, "survival_prob": 0.4},
+        "tier3": {"score": 40, "variance": 800, "survival_prob": 0.25},
+        "tier4": {"score": 30, "variance": 1000, "survival_prob": 0.15}
+    }
+    
+    thresholds = TIER_THRESHOLDS.get(domain_tier, TIER_THRESHOLDS["tier2"])
     variance_max = thresholds["variance"]
     survival_min = thresholds["survival_prob"]
     
@@ -362,7 +383,8 @@ def monte_carlo_evolve(primitives: List[Dict[str, Any]],
             composition=composition,
             evaluator=evaluator,
             scenario=scenario,
-            domain_tier=domain_tier
+            domain_tier=domain_tier,
+            domain=domain
         )
         
         # Check survival criteria
@@ -422,7 +444,8 @@ def _extract_reasoning_chain(composition: List[Dict[str, Any]]) -> Optional[Dict
 def batch_evaluate(primitives: List[Dict[str, Any]],
                   scenarios: List[Dict[str, Any]],
                   evaluator: Optional[Callable] = None,
-                  domain_tier: str = "tier2") -> Dict[str, List[MonteCarloWinner]]:
+                  domain_tier: str = "tier2",
+                  domain: str = "general") -> Dict[str, List[MonteCarloWinner]]:
     """
     Run Monte Carlo evolution across multiple scenarios.
     
@@ -436,7 +459,8 @@ def batch_evaluate(primitives: List[Dict[str, Any]],
             primitives=primitives,
             scenario=scenario,
             evaluator=evaluator,
-            domain_tier=domain_tier
+            domain_tier=domain_tier,
+            domain=domain
         )
         
         if winner:
