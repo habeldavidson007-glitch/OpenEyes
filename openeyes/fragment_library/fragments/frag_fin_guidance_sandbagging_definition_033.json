@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_guidance_sandbagging_definition_033",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "guidance",
+    "revenue_growth",
+    "analyst_estimates",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Guidance Sandbagging is a core concept in fundamental analysis. It involves evaluating specific financial metrics or structural elements to determine a company's intrinsic value, operational efficiency, and long-term viability.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

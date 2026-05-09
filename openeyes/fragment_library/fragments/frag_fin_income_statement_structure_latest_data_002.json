@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_income_statement_structure_latest_data_002",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "net_margin",
+    "valuation",
+    "operating_margin",
+    "gross_margin",
+    "fundamental_analysis",
+    "earnings",
+    "revenue"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent data through 2024 shows Income Statement Structure metrics are diverging across sectors. Investors are increasingly prioritizing cash yield and balance sheet strength over pure growth narratives in the current higher-for-longer rate regime.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov/files/form10-k.pdf",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

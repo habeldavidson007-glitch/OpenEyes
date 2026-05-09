@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_earnings_beat_miss_complexity_latest_data_041",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "guidance",
+    "revenue_growth",
+    "analyst_estimates",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "In Q1 2024, S&P 500 aggregate earnings growth slowed to ~2%, missing initial estimates of 5%. Margins remain resilient but face pressure from sticky wage inflation and higher interest expenses rolling over.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

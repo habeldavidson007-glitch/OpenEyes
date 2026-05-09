@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_competitive_moat_types_definition_087",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "peg_ratio",
+    "price_to_sales",
+    "price_to_book",
+    "ev_ebitda",
+    "pe_ratio",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "definition",
+  "content": "A competitive moat refers to structural advantages protecting a company from competitors, such as network effects, switching costs, brand loyalty, cost advantages, or regulatory barriers. Moats sustain high ROIC over long periods.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

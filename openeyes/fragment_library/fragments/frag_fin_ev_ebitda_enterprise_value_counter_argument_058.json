@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_ev_ebitda_enterprise_value_counter_argument_058",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "peg_ratio",
+    "price_to_sales",
+    "price_to_book",
+    "ev_ebitda",
+    "pe_ratio",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "EV/EBITDA ignores capital expenditure requirements. A company with high maintenance CapEx (e.g., airlines, oil pipelines) may have great EBITDA but poor FCF. Using EV/EBITDA alone for such industries leads to overvaluation.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

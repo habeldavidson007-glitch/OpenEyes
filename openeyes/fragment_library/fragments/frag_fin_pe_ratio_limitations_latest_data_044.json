@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_pe_ratio_limitations_latest_data_044",
+  "domain": "finance",
+  "subdomain": "fundamental_analysis",
+  "tags": [
+    "peg_ratio",
+    "price_to_sales",
+    "price_to_book",
+    "ev_ebitda",
+    "pe_ratio",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent data through 2024 shows Pe Ratio Limitations metrics are diverging across sectors. Investors are increasingly prioritizing cash yield and balance sheet strength over pure growth narratives in the current higher-for-longer rate regime.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}
