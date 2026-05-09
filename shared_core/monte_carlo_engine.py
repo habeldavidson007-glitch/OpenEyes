@@ -277,6 +277,16 @@ def generate_composition(primitives: List[Dict[str, Any]],
     return composition
 
 
+def _apply_grundy_bonus(self, score: float, fragment: dict) -> float:
+    """Apply Sprague-Grundy game theory bonus to fragment score."""
+    grundy = fragment.get('grundy_value', -1)
+    if grundy == 0:
+        return score * 1.2  # PROVEN_ROBUST bonus
+    elif grundy > 0:
+        return score * 0.9  # CHALLENGED penalty
+    return score  # No data, neutral
+
+
 def evaluate_composition(composition: List[Dict[str, Any]],
                         evaluator: Optional[Callable] = None,
                         scenario: Optional[Dict[str, Any]] = None,
@@ -302,6 +312,15 @@ def evaluate_composition(composition: List[Dict[str, Any]],
     try:
         result = evaluator(composition, scenario, domain_tier, domain)
         if isinstance(result, CompositionResult):
+            # Apply Grundy bonus to final mean_score
+            if composition:
+                # Average the Grundy-adjusted scores across all fragments
+                adjusted_scores = []
+                for frag in composition:
+                    adj_score = _apply_grundy_bonus(None, result.mean_score, frag)
+                    adjusted_scores.append(adj_score)
+                if adjusted_scores:
+                    result.mean_score = sum(adjusted_scores) / len(adjusted_scores)
             return result
         else:
             # Fallback if evaluator returns dict

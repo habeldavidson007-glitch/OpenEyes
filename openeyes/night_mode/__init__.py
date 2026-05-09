@@ -361,5 +361,37 @@ def run_night_mode(date_str: str = None, logs_dir: str = "/workspace/logs"):
     return report
 
 
+def compute_nightly_grundy(fragment_library):
+    """
+    Compute Sprague-Grundy values for all fragments during Night Mode.
+    
+    This function:
+    1. Fetches all fragments from the library
+    2. Runs GameTheoryEngine to compute Grundy values
+    3. Updates each fragment JSON with grundy_value and robustness_status
+    4. Logs completion status
+    
+    Args:
+        fragment_library: FragmentLibrary instance or compatible object
+        
+    Returns:
+        Dict of fragment_id -> grundy_value
+    """
+    from openeyes.game_theory import GameTheoryEngine
+    
+    fragments = fragment_library.get_all_fragments()
+    engine = GameTheoryEngine(fragments)
+    grundy_values = engine.compute_all_grundy_values()
+    
+    # Write grundy_value back to each fragment JSON
+    for frag_id, grundy_val in grundy_values.items():
+        fragment_library.update_fragment_field(frag_id, 'grundy_value', grundy_val)
+        robustness = engine.get_robustness_status(frag_id)
+        fragment_library.update_fragment_field(frag_id, 'robustness_status', robustness)
+    
+    print(f"[Night Mode] Grundy computation complete: {len(grundy_values)} fragments updated")
+    return grundy_values
+
+
 if __name__ == "__main__":
     run_night_mode()
