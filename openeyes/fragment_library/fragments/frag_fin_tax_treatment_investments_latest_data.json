@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_tax_treatment_investments_latest_data",
+  "domain": "finance",
+  "subdomain": "regulation",
+  "tags": [
+    "tax",
+    "capital_gains",
+    "wash_sale",
+    "regulation",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Proposed legislation frequently targets increasing capital gains rates for high earners and closing the carried interest loophole. Crypto tax reporting (Form 1099-DA) is being standardized to close gaps in digital asset cost-basis tracking.",
+  "source": "government_source",
+  "source_url": "https://www.irs.gov",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

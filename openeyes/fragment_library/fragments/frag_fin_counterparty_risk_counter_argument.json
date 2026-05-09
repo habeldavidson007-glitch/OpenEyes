@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_counterparty_risk_counter_argument",
+  "domain": "finance",
+  "subdomain": "risk_management",
+  "tags": [
+    "risk_management",
+    "counterparty",
+    "credit_risk",
+    "otc",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Central Clearing Counterparties (CCPs) were mandated post-2008 to mutualize and reduce counterparty risk. However, critics argue CCPs concentrate risk into a single point of failure ('too big to fail'). If a CCP fails due to member defaults exceeding its guarantee fund, the systemic impact could be worse than bilateral failures.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

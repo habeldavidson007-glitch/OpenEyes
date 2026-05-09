@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_liquidity_risk_definition",
+  "domain": "finance",
+  "subdomain": "risk_management",
+  "tags": [
+    "risk_management",
+    "liquidity",
+    "market_depth",
+    "bid_ask",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Liquidity risk is the danger that an entity cannot meet short-term financial demands (funding liquidity) or cannot exit a position without significant price concession (market liquidity). Market liquidity can evaporate rapidly during stress, widening bid-ask spreads and causing 'gap downs' where no buyers exist at near-market prices.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

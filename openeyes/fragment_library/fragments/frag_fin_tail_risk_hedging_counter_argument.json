@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_tail_risk_hedging_counter_argument",
+  "domain": "finance",
+  "subdomain": "risk_management",
+  "tags": [
+    "risk_management",
+    "hedging",
+    "options",
+    "protection",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Most tail hedges bleed money continuously (negative carry). Over decades, the cost of constant hedging can exceed the payout, destroying compound returns. Timing hedges is notoriously difficult; being early looks like stupidity, being late is fatal. Some argue dynamic asset allocation is a cheaper hedge than options.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

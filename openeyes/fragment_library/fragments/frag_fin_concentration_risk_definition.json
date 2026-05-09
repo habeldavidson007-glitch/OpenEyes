@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_concentration_risk_definition",
+  "domain": "finance",
+  "subdomain": "risk_management",
+  "tags": [
+    "risk_management",
+    "concentration",
+    "position_sizing",
+    "diversification",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Concentration risk arises from having a large exposure to a single asset, sector, or counterparty. While concentration can drive outperformance (convexity), it exposes the portfolio to idiosyncratic shocks that diversification would eliminate. Kelly Criterion mathematics suggests optimal sizing to avoid ruin, yet many funds exceed these limits.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}
