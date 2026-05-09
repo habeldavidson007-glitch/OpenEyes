@@ -1,0 +1,31 @@
+{
+  "domain": "finance",
+  "canonical_tags": [
+    "macro", "monetary_policy", "fiscal_policy", "inflation", "deflation",
+    "interest_rate", "fed_funds_rate", "yield_curve", "inverted_yield_curve",
+    "gdp", "recession", "economic_growth", "employment", "unemployment",
+    "nonfarm_payroll", "labor_market", "consumer_spending", "retail_sales",
+    "equities", "stock_market", "bull_market", "bear_market", "market_correction",
+    "sp500", "nasdaq", "dow_jones", "index_fund", "etf",
+    "fixed_income", "bonds", "treasury", "corporate_bonds", "yield",
+    "duration", "credit_risk", "default_risk", "investment_grade", "junk_bonds",
+    "crypto", "bitcoin", "ethereum", "defi", "stablecoin", "on_chain_metrics",
+    "proof_of_work", "proof_of_stake", "blockchain", "smart_contracts",
+    "earnings", "revenue", "gross_margin", "operating_margin", "net_margin",
+    "free_cash_flow", "eps", "guidance", "analyst_estimates", "beat_miss",
+    "valuation", "pe_ratio", "price_to_fcf", "price_to_sales", "ev_ebitda",
+    "fundamental_analysis", "technical_analysis", "momentum", "support_resistance",
+    "moving_average", "rsi", "macd", "volume", "market_cap",
+    "risk_management", "volatility", "var", "hedging", "diversification",
+    "correlation", "beta", "alpha", "sharpe_ratio", "drawdown",
+    "regulation", "sec", "dodd_frank", "basel_iii", "insider_trading",
+    "short_selling", "margin", "margin_call", "leverage", "derivatives",
+    "options", "futures", "forex", "currency", "exchange_rate",
+    "sector", "technology", "healthcare", "energy", "financials",
+    "consumer_discretionary", "industrials", "utilities", "real_estate",
+    "central_bank", "fed", "ecb", "boj", "pboc", "bank_of_england",
+    "quantitative_easing", "quantitative_tightening", "balance_sheet",
+    "first_line", "warning", "contraindication", "definition",
+    "counter_argument", "latest_data"
+  ]
+}

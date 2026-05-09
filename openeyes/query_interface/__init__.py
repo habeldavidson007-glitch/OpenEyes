@@ -34,6 +34,9 @@ from shared_core.obsidian_connector import ObsidianReporter as ObsidianConnector
 # Import Compiled Logic Index (Instinct Layer)
 from openeyes.compiled_logic import CompiledLogicIndex
 
+# Import Query Normalizer
+from openeyes.query_normalizer import canonical_form
+
 
 class OpenEyes:
     """
@@ -107,6 +110,11 @@ class OpenEyes:
         start_time = time.time()
         trace_id = self._generate_trace_id()
         
+        # Step 0: Normalize query to canonical form
+        normalized_query = canonical_form(query_text)
+        print(f"\n[Query Normalizer] Original: {query_text}")
+        print(f"[Query Normalizer] Canonical: {normalized_query}")
+        
         print(f"\n{'='*60}")
         print(f"QUERY: {query_text}")
         print(f"Domain: {self.domain} | Tier: {self.domain_tier}")
@@ -129,10 +137,10 @@ class OpenEyes:
         }
         
         try:
-            # STEP 0: Check Compiled Logic Index (Instinct Mode)
+            # STEP 1: Check Compiled Logic Index (Instinct Mode) using canonical form
             from openeyes.night_mode import ConsolidationEngine
             engine = ConsolidationEngine()
-            query_keywords = engine._extract_keywords(query_text)
+            query_keywords = engine._extract_keywords(normalized_query)
             
             synapse = self.compiled_logic.query(query_keywords)
             
@@ -166,8 +174,8 @@ class OpenEyes:
             # DELIBERATION MODE: Full Monte Carlo pipeline
             print("[DELIBERATION MODE] No compiled logic found, running full verification\n")
             
-            # Step 1: Swarm decomposition and retrieval
-            candidates = self._run_swarm(query_text)
+            # Step 1: Swarm decomposition and retrieval (using normalized query)
+            candidates = self._run_swarm(normalized_query)
             
             if not candidates:
                 result["halt"] = True
