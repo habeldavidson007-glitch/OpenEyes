@@ -11,8 +11,10 @@ from openeyes.knowledge.live_fetch import fetch_live_fragments
 from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.memory import ingest_case, retrieve_similar
 from openeyes.storage.vault import write_audit_log
+from openeyes.akinator_engine import refine_query_with_binary_search, AkinatorEngine
 
 
+akinator = AkinatorEngine()
 
 
 def _is_complex_query(query: str) -> bool:
@@ -77,6 +79,13 @@ class OpenEyesEngine:
         self.memory_path = self.vault_path / "memory.bin"
 
     def _fragments_for(self, query: str, domain: str) -> list[Fragment]:
+        # Use Akinator binary search to refine query before fetching
+        search_mask, traversal_path = refine_query_with_binary_search(query, domain)
+        
+        # Log the decision path for audit
+        if traversal_path:
+            print(f"[Akinator] Navigated {len(traversal_path)} decision points")
+        
         if "pancreatic" in query.lower():
             return [
                 Fragment(
@@ -94,8 +103,16 @@ class OpenEyesEngine:
                     evidence_level="high",
                 )
             ]
-        fetched = fetch_live_fragments(query, domain, limit=3)
-        return fetched
+        
+        # Fetch live fragments with Akinator-refined mask
+        fetched = fetch_live_fragments(query, domain, limit=search_mask.max_results)
+        
+        # Filter fragments using CES-based mask
+        filtered = akinator.filter_fragments_by_mask(fetched, search_mask)
+        
+        print(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {search_mask.min_ces_score})")
+        
+        return filtered
 
     @staticmethod
     def _safe_fallback_answer(query: str, domain: str, status: str, narrative: dict) -> str:

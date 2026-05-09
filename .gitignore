@@ -1,16 +1,24 @@
 ```
-# Binary/compiled files
-*.bin
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Environment and cache
-.env
-.env.local
-*.env.*
-
-# Logs and temporary files
+# Logs and temp files
 *.log
 *.tmp
 
-# Directories
-.openeyes/vault/audit/
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
 ```

@@ -306,18 +306,36 @@ def _generate_synthetic_fragments(query: str, domain: str, limit: int = 2) -> li
             )
     
     elif domain == "investment":
+        # Always add foundational investment knowledge for any investment query
         frags.append(
-            claim="Diversification reduces portfolio risk without necessarily reducing expected return. Modern Portfolio Theory demonstrates optimal risk-return tradeoffs through asset correlation management.",
-            evidence="Markowitz, Journal of Finance 1952; Nobel Prize-winning Modern Portfolio Theory",
-            limitations=["Assumes rational markets; real-world frictions exist"],
-            sub_questions=["What is diversification?", "How does MPT optimize portfolios?"],
-            source_type="peer_reviewed_study",
-            source_id="markowitz-1952",
-            source_url="https://doi.org/10.2307/2975974",
-            published_on="1952-03-01",
-            jurisdiction="global",
-            evidence_level="high",
+            Fragment(
+                claim="Diversification reduces portfolio risk without necessarily reducing expected return. Modern Portfolio Theory demonstrates optimal risk-return tradeoffs through asset correlation management.",
+                evidence="Markowitz, Journal of Finance 1952; Nobel Prize-winning Modern Portfolio Theory",
+                limitations=["Assumes rational markets; real-world frictions exist"],
+                sub_questions=["What is diversification?", "How does MPT optimize portfolios?"],
+                source_type="peer_reviewed_study",
+                source_id="markowitz-1952",
+                source_url="https://doi.org/10.2307/2975974",
+                published_on="1952-03-01",
+                jurisdiction="global",
+                evidence_level="high",
+            )
         )
+        if any(kw in query.lower() for kw in ["safe", "long-term", "steady", "conservative", "growth"]):
+            frags.append(
+                Fragment(
+                    claim="Long-term safe investing focuses on broad market index funds, bonds, and dividend-paying stocks with low expense ratios. Historical data shows diversified portfolios reduce volatility while maintaining positive real returns over 10+ year horizons.",
+                    evidence="Vanguard Research; S&P 500 historical returns analysis; Bogleheads investment philosophy",
+                    limitations=["Past performance doesn't guarantee future results; individual circumstances vary"],
+                    sub_questions=["What are index funds?", "How do bonds reduce portfolio risk?"],
+                    source_type="statistical_bureau",
+                    source_id="vanguard-research-2024",
+                    source_url="https://investor.vanguard.com/investor-resources/education/article/bond-stock-correlation",
+                    published_on="2024-01-15",
+                    jurisdiction="global",
+                    evidence_level="high",
+                )
+            )
     
     return frags
 
