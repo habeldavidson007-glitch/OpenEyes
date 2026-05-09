@@ -5,6 +5,7 @@ Neuro-inspired lifecycle management for knowledge consolidation.
 Mimics biological sleep cycles:
 - WAKE: Active query processing, temporary buffer storage (Neural Replay)
 - SLEEP: Consolidation, pruning, integration (Memory Consolidation & REM)
+- TEMPLATE GENERATION: Learn from failed queries to create new axiom templates
 """
 
 import time
@@ -31,6 +32,7 @@ class SleepWakeManager:
     - Sleep SWS: Memory consolidation to Neocortex (permanent library)
     - Sleep REM: Creative integration across domains
     - Pruning: Synaptic homeostasis (removing unused connections)
+    - Template Generation: Induce new axiom templates from failed queries
     """
     
     def __init__(self, 
@@ -55,6 +57,7 @@ class SleepWakeManager:
         self.state = SystemState.WAKE
         self.last_activity = datetime.now()
         self.neural_replay_buffer: List[Dict[str, Any]] = []  # Temporary success patterns
+        self.failed_queries_buffer: List[Dict[str, Any]] = []  # Failed queries for template generation
         self.binary_engine = BinaryLibraryEngine()
         
         self._lock = threading.Lock()
@@ -116,6 +119,30 @@ class SleepWakeManager:
             # Reset auto-sleep timer
             self._reset_sleep_timer()
     
+    def record_failure(self, query: str, domain: str, reason: str, context: Optional[Dict[str, Any]] = None) -> None:
+        """
+        Record failed query for template generation during sleep.
+        
+        Args:
+            query: The failed query
+            domain: The domain of the query
+            reason: Why it failed (e.g., "HALT_LOW_EVIDENCE", "no_fragments")
+            context: Additional context about the failure
+        """
+        with self._lock:
+            failure_entry = {
+                'timestamp': datetime.now().isoformat(),
+                'query': query,
+                'domain': domain,
+                'failure_reason': reason,
+                'context': context or {}
+            }
+            self.failed_queries_buffer.append(failure_entry)
+            
+            # Keep buffer manageable (last 50 failures)
+            if len(self.failed_queries_buffer) > 50:
+                self.failed_queries_buffer = self.failed_queries_buffer[-50:]
+    
     def _reset_sleep_timer(self) -> None:
         """Reset or start the auto-sleep timer."""
         if self._sleep_timer:
@@ -130,7 +157,7 @@ class SleepWakeManager:
     
     def trigger_sleep(self) -> Dict[str, Any]:
         """
-        Enter SLEEP state: consolidate, prune, integrate, and save binary.
+        Enter SLEEP state: consolidate, prune, integrate, generate templates, and save binary.
         Can be called manually or triggered automatically by inactivity.
         
         Returns:
@@ -147,6 +174,7 @@ class SleepWakeManager:
             report = {
                 "started_at": datetime.now().isoformat(),
                 "replay_count": len(self.neural_replay_buffer),
+                "failed_query_count": len(self.failed_queries_buffer),
                 "actions": []
             }
             
@@ -163,7 +191,11 @@ class SleepWakeManager:
                 rem_report = self._rem_integration()
                 report["actions"].append({"phase": "rem_integration", **rem_report})
                 
-                # Step 4: Save Binary Library
+                # Step 4: Template Generation (Learn from failures)
+                template_report = self._generate_axiom_templates()
+                report["actions"].append({"phase": "template_generation", **template_report})
+                
+                # Step 5: Save Binary Library
                 self._save_binary_library()
                 report["actions"].append({
                     "phase": "binary_save",
@@ -261,6 +293,136 @@ class SleepWakeManager:
             "cross_domain_integrations_attempted": integration_attempts
         }
     
+    def _generate_axiom_templates(self) -> Dict[str, Any]:
+        """
+        Analyze failed queries and generate new axiom templates.
+        This is the key learning mechanism: turn failures into future successes.
+        
+        Process:
+        1. Group failures by domain
+        2. Find common patterns in failed queries
+        3. Generate template structures that would handle similar queries
+        4. Save templates to axioms.py or separate template file
+        """
+        if not self.failed_queries_buffer:
+            return {"status": "no_failures_to_learn_from"}
+        
+        # Group failures by domain
+        domain_failures: Dict[str, List[Dict[str, Any]]] = {}
+        for failure in self.failed_queries_buffer:
+            domain = failure.get('domain', 'unknown')
+            if domain not in domain_failures:
+                domain_failures[domain] = []
+            domain_failures[domain].append(failure)
+        
+        generated_templates = []
+        
+        for domain, failures in domain_failures.items():
+            # Analyze patterns in failed queries
+            query_keywords = []
+            for f in failures:
+                query = f.get('query', '').lower()
+                # Extract key nouns/verbs (simplified)
+                words = [w for w in query.split() if len(w) > 3 and w not in {'what', 'that', 'this', 'which', 'where', 'when', 'why', 'how'}]
+                query_keywords.extend(words)
+            
+            # Find most common keywords
+            keyword_freq: Dict[str, int] = {}
+            for kw in query_keywords:
+                keyword_freq[kw] = keyword_freq.get(kw, 0) + 1
+            
+            # Generate template for top keywords
+            top_keywords = sorted(keyword_freq.items(), key=lambda x: x[1], reverse=True)[:5]
+            
+            for keyword, count in top_keywords:
+                if count >= 2:  # Pattern seen multiple times
+                    template = self._create_axiom_template(domain, keyword, failures)
+                    if template:
+                        generated_templates.append(template)
+        
+        # Save generated templates
+        if generated_templates:
+            self._save_axiom_templates(generated_templates)
+        
+        # Clear failure buffer after processing
+        self.failed_queries_buffer.clear()
+        
+        return {
+            "status": "success",
+            "domains_analyzed": len(domain_failures),
+            "templates_generated": len(generated_templates),
+            "templates": [t.get('name', 'unknown') for t in generated_templates]
+        }
+    
+    def _create_axiom_template(self, domain: str, keyword: str, failures: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+        """
+        Create an axiom template based on a keyword pattern in failed queries.
+        
+        This uses first-principles reasoning to generate a template that can
+        handle similar queries in the future.
+        """
+        # Map domains to axiom categories
+        domain_to_category = {
+            'history': 'CAUSALITY',
+            'philosophy': 'GAME_THEORY',
+            'economics': 'EQUILIBRIUM',
+            'sociology': 'STRUCTURE',
+            'psychology': 'OPTIMIZATION',
+            'biology': 'EVOLUTION',
+            'physics': 'CONSERVATION',
+            'chemistry': 'CONSERVATION',
+            'political_science': 'GAME_THEORY',
+            'linguistics': 'INFORMATION'
+        }
+        
+        category = domain_to_category.get(domain.lower(), 'STRUCTURE')
+        
+        # Generate template structure
+        template_id = f"AUTO_{category}_{keyword.upper()[:8]}"
+        
+        template = {
+            'id': template_id,
+            'name': f"Auto-generated {keyword.title()} Template",
+            'category': category,
+            'domain': domain,
+            'trigger_keyword': keyword,
+            'description': f"Template for handling {domain} queries about {keyword}",
+            'formal_statement': f"Query({keyword}) → ApplyFirstPrinciples({category})",
+            'applicable_domains': [domain],
+            'derivation_rules': [f"{keyword}_analysis", "first_principles_deduction"],
+            'auto_generated': True,
+            'generation_timestamp': datetime.now().isoformat(),
+            'based_on_failures': len(failures)
+        }
+        
+        return template
+    
+    def _save_axiom_templates(self, templates: List[Dict[str, Any]]) -> None:
+        """
+        Save generated axiom templates to a file for loading on next startup.
+        """
+        template_file = self.library_path.parent / "auto_axiom_templates.json"
+        
+        # Load existing templates if any
+        existing_templates = []
+        if template_file.exists():
+            try:
+                with open(template_file, 'r') as f:
+                    existing_templates = json.load(f)
+            except Exception:
+                existing_templates = []
+        
+        # Merge with new templates (avoid duplicates)
+        existing_ids = {t.get('id') for t in existing_templates}
+        new_templates = [t for t in templates if t.get('id') not in existing_ids]
+        all_templates = existing_templates + new_templates
+        
+        # Save
+        with open(template_file, 'w') as f:
+            json.dump(all_templates, f, indent=2)
+        
+        print(f"[SLEEP] Saved {len(new_templates)} new axiom templates to {template_file}")
+    
     def _save_binary_library(self) -> None:
         """Serialize and save current library to binary format."""
         self.binary_engine.save_to_file(self.library_data, str(self.binary_path))
@@ -286,6 +448,7 @@ class SleepWakeManager:
             "state": self.state.value,
             "last_activity": self.last_activity.isoformat(),
             "replay_buffer_size": len(self.neural_replay_buffer),
+            "failed_queries_buffer_size": len(self.failed_queries_buffer),
             "fragment_count": len(self.library_data.get('fragments', {})),
             "binary_exists": self.binary_path.exists(),
             "auto_sleep_in_minutes": self.auto_sleep_minutes
