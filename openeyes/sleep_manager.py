@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional, Callable
 from enum import Enum
 
-from .binary_lib import BinaryLibrary, BinaryLibError, optimize_for_speed
+from .binary_lib import BinaryLibraryEngine, NeuralReplayBuffer, SleepModeConsolidator
 
 class SystemState(Enum):
     WAKE = "wake"
@@ -55,7 +55,7 @@ class SleepWakeManager:
         self.state = SystemState.WAKE
         self.last_activity = datetime.now()
         self.neural_replay_buffer: List[Dict[str, Any]] = []  # Temporary success patterns
-        self.binary_engine = BinaryLibrary()
+        self.binary_engine = BinaryLibraryEngine()
         
         self._lock = threading.Lock()
         self._sleep_timer: Optional[threading.Timer] = None
@@ -69,15 +69,15 @@ class SleepWakeManager:
             try:
                 data = self.binary_engine.load_from_file(str(self.binary_path))
                 print(f"[WAKE] Loaded binary library ({self.binary_path.stem}.oelib) instantly")
-                return optimize_for_speed(data)
-            except BinaryLibError as e:
+                return data
+            except Exception as e:
                 print(f"[WARN] Binary load failed: {e}, falling back to JSON")
         
         if self.library_path.exists():
             with open(self.library_path, 'r') as f:
                 data = json.load(f)
             print(f"[WAKE] Loaded JSON library ({len(data.get('fragments', {}))} fragments)")
-            return optimize_for_speed(data)
+            return data
         
         return {"fragments": {}, "metadata": {}}
     

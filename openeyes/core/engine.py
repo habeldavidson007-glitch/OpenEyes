@@ -13,9 +13,12 @@ from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.memory import ingest_case, retrieve_similar
 from openeyes.storage.vault import write_audit_log
 from openeyes.akinator_engine import refine_query_with_binary_search, AkinatorEngine
-
+from openeyes.identity import IdentityEngine, IdentityType
+from openeyes.ingestion.web_scraper import scrape_authoritative_sources
+from openeyes.ingestion.auto_fragment import convert_to_fragments, verify_consistency
 
 akinator = AkinatorEngine()
+identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
 
 
 def _is_complex_query(query: str) -> bool:
@@ -253,6 +256,35 @@ class OpenEyesEngine:
         filtered = akinator.filter_fragments_by_mask(fetched, search_mask)
         
         print(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {search_mask.min_ces_score})")
+        
+        # PHASE 1-2: Autonomous Research Loop (if confidence would be low)
+        # Check if we have enough high-quality fragments
+        high_evidence_count = sum(1 for f in filtered if getattr(f, 'evidence_level', '') == 'high')
+        if high_evidence_count < 2:
+            print(f"[AUTONOMOUS] Low evidence detected ({high_evidence_count} high-evidence fragments), triggering web research...")
+            
+            # Phase 1: Scrape authoritative sources
+            scraped = scrape_authoritative_sources(query, domain, max_results=5)
+            
+            if scraped:
+                # Phase 2: Convert to fragments
+                new_fragments = convert_to_fragments(scraped, query, domain, max_fragments=10)
+                
+                # Verify consistency with existing knowledge
+                if new_fragments:
+                    consistent_frags = verify_consistency(new_fragments, filtered)
+                    filtered.extend(consistent_frags)
+                    print(f"[AUTONOMOUS] Added {len(consistent_frags)} verified fragments from web research")
+        
+        # Apply identity-based weighting
+        if identity:
+            weighted_filtered = []
+            for frag in filtered:
+                weight = identity.apply_weight_to_fragment(frag)
+                if weight >= identity.config.evidence_threshold * 0.5:
+                    weighted_filtered.append(frag)
+            filtered = weighted_filtered
+            print(f"[IDENTITY] {identity.config.name} filtered to {len(filtered)} fragments")
         
         return filtered
 
