@@ -10,6 +10,7 @@ from openeyes.core.router import route_domain
 from openeyes.core.narrative import compose_narrative
 from openeyes.knowledge.fragments import Fragment
 from openeyes.knowledge.live_fetch import fetch_live_fragments, jit_synthesize_fragments, normalize_query
+from openeyes.knowledge.retrieval import retrieve_records
 from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.memory import ingest_case, retrieve_similar
 from openeyes.storage.vault import write_audit_log
@@ -17,6 +18,7 @@ from openeyes.akinator_engine import refine_query_with_binary_search, AkinatorEn
 from openeyes.identity import IdentityEngine, IdentityType
 from openeyes.ingestion.web_scraper import scrape_authoritative_sources
 from openeyes.ingestion.auto_fragment import convert_to_fragments, verify_consistency
+from openeyes.core.intent_router import route_intent
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
@@ -259,8 +261,10 @@ class OpenEyesEngine:
             _pipeline_log(f"[Akinator] Navigated {len(traversal_path)} decision points")
         
         normalized_query = normalize_query(query)
-        # Fetch live fragments with Akinator-refined mask
-        fetched = fetch_live_fragments(normalized_query, domain, limit=search_mask.max_results)
+        intent = route_intent(normalized_query, domain)
+        # Fetch live fragments through retriever contract
+        records = retrieve_records(normalized_query, domain, limit=search_mask.max_results)
+        fetched = [r.fragment for r in records]
         
         # If no fragments found, trigger JIT synthesis (Research Loop)
         if not fetched:
@@ -283,7 +287,7 @@ class OpenEyesEngine:
         # PHASE 1-2: Autonomous Research Loop (if confidence would be low)
         # Check if we have enough high-quality fragments
         high_evidence_count = sum(1 for f in filtered if getattr(f, 'evidence_level', '') == 'high')
-        if high_evidence_count < 2:
+        if high_evidence_count < 2 and intent in {"current_events", "factual_entity"}:
             _pipeline_log(f"[AUTONOMOUS] Low evidence detected ({high_evidence_count} high-evidence fragments), triggering web research...")
             
             # Phase 1: Scrape authoritative sources
