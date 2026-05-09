@@ -56,10 +56,21 @@ openeyes/
 
 ## Installation
 
+### Recommended (Ubuntu/Debian with PEP 668)
+
 ```bash
-pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
 pip install -e .
 ```
+
+### Alternative: run without installing globally
+```bash
+python -m openeyes.cli --help
+```
+
+> If you see `externally-managed-environment`, do **not** use system `pip` for this project. Use a virtual environment as above.
 
 ---
 
