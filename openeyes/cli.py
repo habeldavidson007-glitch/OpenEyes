@@ -27,16 +27,16 @@ def cli() -> None:
 @click.argument("query")
 @click.option("--domain", default=None, help="Optional explicit domain override")
 @click.option("--json-output", is_flag=True, help="Print raw JSON output")
-@click.option("--simple/--explain", default=True, help="Simple output (default) or explain mode")
-@click.option("--debug", is_flag=True, help="Show internal inference metadata (implies explain mode)")
-def query(query: str, domain: str | None, json_output: bool, simple: bool, debug: bool) -> None:
+@click.option("--explain", is_flag=True, help="Show inference metadata and narrative trace")
+@click.option("--debug", is_flag=True, help="Alias for --explain")
+def query(query: str, domain: str | None, json_output: bool, explain: bool, debug: bool) -> None:
     engine = OpenEyesEngine()
     result = engine.answer(query=query, domain=domain)
     if json_output:
         print(json.dumps(result, indent=2))
         return
     print(Panel(result.get("answer", ""), title="Answer", border_style="green"))
-    if simple and not debug:
+    if not explain and not debug:
         summary = Table(show_header=False, box=None)
         summary.add_column("Field", style="cyan")
         summary.add_column("Value", style="white")
@@ -46,7 +46,7 @@ def query(query: str, domain: str | None, json_output: bool, simple: bool, debug
         print(summary)
         return
 
-    if debug or not simple:
+    if debug or explain:
         table = Table(title="OpenEyes Inference (Debug)")
         table.add_column("Field", style="cyan")
         table.add_column("Value", style="white")
