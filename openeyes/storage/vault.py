@@ -11,7 +11,7 @@ from openeyes.storage.binary_lib import cleanup_obsidian_vault
 def write_audit_log(vault_path: Path, query: str, result: dict) -> Path:
     vault_path.mkdir(parents=True, exist_ok=True)
     ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S_%f")
-    payload = {"timestamp": ts, "query": query, "result": result}
+    payload = {"timestamp": ts, "query": query, "result": result, "version": 1}
     canonical = json.dumps(payload, sort_keys=True)
     signature = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 

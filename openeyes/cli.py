@@ -6,6 +6,7 @@ from pathlib import Path
 import click
 from rich import print
 
+from openeyes.config import audit_dir, vault_root
 from openeyes.core.engine import OpenEyesEngine
 from openeyes.storage.binary_lib import cleanup_obsidian_vault
 
@@ -26,13 +27,13 @@ def query(query: str, domain: str) -> None:
 
 @cli.command()
 def sleep() -> None:
-    cleanup_obsidian_vault(Path("obsidian_vault"))
+    cleanup_obsidian_vault(audit_dir())
     print("[green]Consolidation complete.[/green]")
 
 
 @cli.command()
 def status() -> None:
-    vault = Path("obsidian_vault")
+    vault = vault_root()
     files = list(vault.glob("*.md")) if vault.exists() else []
     print({"vault": str(vault), "audit_files": len(files)})
 

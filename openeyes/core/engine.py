@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from openeyes.config import audit_dir
 from openeyes.knowledge.fragments import Fragment
 from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.vault import write_audit_log
@@ -11,7 +12,7 @@ from openeyes.storage.vault import write_audit_log
 class OpenEyesEngine:
     def __init__(self, vault_path: Path | None = None) -> None:
         self.mc = MonteCarloEngine()
-        self.vault_path = vault_path or Path("obsidian_vault")
+        self.vault_path = vault_path or audit_dir()
 
     def _fragments_for(self, query: str, domain: str) -> list[Fragment]:
         return [
