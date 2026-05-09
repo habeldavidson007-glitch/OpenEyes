@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_gdp_measurement_def_010",
+  "domain": "finance",
+  "subdomain": "macro",
+  "tags": [
+    "gdp",
+    "economic_growth",
+    "macro",
+    "economic_output",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Gross Domestic Product (GDP) measures the total value of all final goods and services produced within a country's borders in a given period. GDP can be measured three ways that should yield identical results: (1) Production approach—sum of value added across all industries; (2) Income approach—sum of all incomes earned in production (wages, profits, rents); (3) Expenditure approach—C+I+G+(X-M), the sum of consumption, investment, government spending, and net exports. Real GDP adjusts for inflation using price indices, allowing comparison of actual production volumes over time. GDP growth rate is the primary gauge of economic performance. The Bureau of Economic Analysis releases GDP estimates quarterly, with three vintages: advance, second, and third estimates, plus annual revisions.",
+  "source": "Bureau of Economic Analysis",
+  "source_url": "https://www.bea.gov/data/gross-domestic-product-gdp",
+  "credibility_class": "government_source",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

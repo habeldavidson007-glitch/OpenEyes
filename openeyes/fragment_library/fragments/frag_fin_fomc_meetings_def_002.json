@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_fomc_meetings_def_002",
+  "domain": "finance",
+  "subdomain": "macro",
+  "tags": [
+    "fomc",
+    "fed",
+    "interest_rate",
+    "monetary_policy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "The Federal Open Market Committee (FOMC) is the Fed's monetary policymaking body. It consists of 12 members: the seven members of the Board of Governors, the president of the Federal Reserve Bank of New York, and four of the remaining 11 Reserve Bank presidents who serve one-year terms on a rotating basis. The FOMC holds eight regularly scheduled meetings per year, approximately every six weeks. At these meetings, the Committee reviews economic and financial conditions, determines the appropriate stance of monetary policy, and assesses risks to its long-run goals of price stability and sustainable economic growth. The primary policy tool is the target range for the federal funds rate. Decisions are made by consensus, with votes taken on policy statements. The FOMC issues a statement after each meeting explaining its decision, and the Chair holds a press conference for meetings with updated economic projections.",
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/fomc.htm",
+  "credibility_class": "government_source",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}
