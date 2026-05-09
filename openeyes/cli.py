@@ -1,10 +1,15 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import click
 from rich import print
+
 
 from openeyes.config import audit_dir, vault_root
 from openeyes.core.engine import OpenEyesEngine
