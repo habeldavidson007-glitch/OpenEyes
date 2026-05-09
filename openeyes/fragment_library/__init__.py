@@ -302,6 +302,15 @@ class FragmentLibrary:
         self._register_fragment(fragment)
         self._save_fragment(fragment)
         
+        # Rebuild concept lattice after adding fragment
+        try:
+            from openeyes.concept_lattice import rebuild_concept_lattice
+            stats = rebuild_concept_lattice(self)
+            if stats.get('status') == 'success':
+                print(f"[FCA] Lattice rebuilt: {stats['updated']} compatibilities updated, {stats['gaps_identified']} gaps found")
+        except ImportError:
+            pass  # Concept lattice module not available, skip rebuild
+        
         return fragment
     
     def get_fragment(self, fragment_id: str) -> Optional[Fragment]:
