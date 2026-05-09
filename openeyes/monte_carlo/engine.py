@@ -21,7 +21,7 @@ class MonteCarloEngine:
 
     def run(self, query: str, domain: str, fragments: list[Fragment]) -> dict:
         sub_questions = decompose_query(query)
-        agents = 1000
+        agents = 1024  # power-of-two for Sobol balance
         seed = self.stable_seed(query, domain)
         pcg = PCG64(seed=seed)
         sobol = sobol_vectors(agents, dim=2)

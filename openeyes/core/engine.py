@@ -10,27 +10,38 @@ from openeyes.storage.vault import write_audit_log
 
 
 class OpenEyesEngine:
-    def __init__(self, vault_path: Path | None = None) -> None:
+    def __init__(self, vault_path: Path | None = None, mode: str = "assistive") -> None:
         self.mc = MonteCarloEngine()
         self.vault_path = vault_path or audit_dir()
+        self.mode = mode
 
     def _fragments_for(self, query: str, domain: str) -> list[Fragment]:
-        return [
-            Fragment(
-                claim="Pancreatic cancer commonly presents late with nonspecific symptoms.",
-                evidence="NCCN-like and review synthesis.",
-                limitations=["Symptoms overlap with benign disease."],
-                sub_questions=["What are common symptoms?", "What are red flags?"],
-                feedback={"thumbs_up": 20, "thumbs_down": 2},
-                success_rate_ema=0.88,
-                source_type="clinical_guideline" if domain == "medical" else "peer_reviewed_study",
-                source_id="GUIDE-PANC-2025",
-                source_url="https://example.org/guideline/pancreas",
-                published_on="2025-06-01",
-                jurisdiction="US",
-                evidence_level="high",
-            )
-        ] if "pancreatic" in query.lower() else []
+        if "pancreatic" in query.lower():
+            return [
+                Fragment(
+                    claim="Pancreatic cancer commonly presents late with nonspecific symptoms.",
+                    evidence="NCCN-like and review synthesis.",
+                    limitations=["Symptoms overlap with benign disease."],
+                    sub_questions=["What are common symptoms?", "What are red flags?"],
+                    feedback={"thumbs_up": 20, "thumbs_down": 2},
+                    success_rate_ema=0.88,
+                    source_type="clinical_guideline" if domain == "medical" else "peer_reviewed_study",
+                    source_id="GUIDE-PANC-2025",
+                    source_url="https://example.org/guideline/pancreas",
+                    published_on="2025-06-01",
+                    jurisdiction="US",
+                    evidence_level="high",
+                )
+            ]
+        return []
+
+    @staticmethod
+    def _safe_fallback_answer(query: str, domain: str, status: str) -> str:
+        return (
+            f"Low-confidence response ({status}) for '{query}'. "
+            f"For {domain}, prioritize regulated guidance, verified sources, and risk-aware steps. "
+            "If this decision impacts health, legal rights, or money, consult a licensed professional."
+        )
 
     def answer(self, query: str, domain: str) -> dict:
         frags = self._fragments_for(query, domain)
@@ -38,11 +49,17 @@ class OpenEyesEngine:
 
         if result["status"] == "ANSWER":
             answer = "Possible symptoms include jaundice, unexplained weight loss, upper abdominal/back pain, appetite loss, and new-onset diabetes."
+            answer_class = "ANSWER_CONFIDENT"
+        elif self.mode == "assistive":
+            answer = self._safe_fallback_answer(query, domain, result["status"])
+            answer_class = "ANSWER_LOW_CONFIDENCE"
         else:
             answer = "HALT"
+            answer_class = "HALT"
 
         out = {
             "status": result["status"],
+            "answer_class": answer_class,
             "answer": answer,
             "confidence": result["confidence"],
             "domain": domain,

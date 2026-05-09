@@ -24,8 +24,9 @@ def cli() -> None:
 @cli.command()
 @click.argument("query")
 @click.option("--domain", default="medical", show_default=True)
-def query(query: str, domain: str) -> None:
-    engine = OpenEyesEngine()
+@click.option("--mode", default="assistive", type=click.Choice(["assistive", "strict"]), show_default=True)
+def query(query: str, domain: str, mode: str) -> None:
+    engine = OpenEyesEngine(mode=mode)
     result = engine.answer(query=query, domain=domain)
     print(json.dumps(result, indent=2))
 
