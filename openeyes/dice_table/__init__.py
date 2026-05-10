@@ -588,37 +588,63 @@ class WurfelspielAssembler:
         dice_row: DiceTableRow,
         original_query: Optional[str] = None  # NEW parameter
     ) -> str:
-        """Build the final answer text from sequenced fragments."""
+        """Build the final answer text from sequenced fragments with numerical citations."""
         parts = []
+        citation_map = {}  # Maps fragment_id to citation number
+        citation_details = []  # List of (fragment_id, source, source_url) for footer
         
         for i, frag in enumerate(fragments):
             content = frag.get("content", "")
             source = frag.get("source", "Unknown")
+            source_url = frag.get("source_url", "")
+            fragment_id = frag.get("fragment_id", "unknown")
             
-            # Add fragment content
-            parts.append(content)
+            # Assign citation number
+            citation_num = len(citation_map) + 1
+            citation_map[fragment_id] = citation_num
+            citation_details.append((fragment_id, source, source_url))
             
-            # Add citation if required
-            if dice_row.require_source_citation:
-                source_url = frag.get("source_url", "")
-                if source_url:
-                    parts[-1] += f" [Source: {source}]({source_url})"
-                else:
-                    parts[-1] += f" [Source: {source}]"
+            # Add fragment content with numerical citation
+            parts.append(f"{content} [{citation_num}]")
         
         # Join with newlines
         answer = "\n\n".join(parts)
         
-        # Add traceability footer
-        fragment_ids = [f.get("fragment_id", "?") for f in fragments]
-        scores = [f.get("score", 0) for f in fragments]
+        # Build references section with APA-style citations
+        references = ["\n\n### References:"]
+        for frag_id, source, source_url in citation_details:
+            if source_url:
+                references.append(f"{source}. (n.d.). *{source_url}*")
+            else:
+                references.append(f"{source}. (n.d.).")
         
-        footer_parts = [
-            "---",
-            f"**Trace ID:** {{trace_id_placeholder}}",
-            f"**Fragments:** {', '.join(fragment_ids)}",
-            f"**Scores:** {', '.join(f'{s:.1f}' for s in scores)}"
-        ]
-        answer += "\n\n" + "\n".join(footer_parts)
+        answer += "".join(references)
+        
+        # Store citation map in a temporary file for binary library lookup
+        import json
+        import os
+        from datetime import datetime
+        
+        # Create citation map directory if it doesn't exist
+        citation_dir = os.path.join(os.path.dirname(__file__), "..", "citation_maps")
+        os.makedirs(citation_dir, exist_ok=True)
+        
+        # Generate unique filename based on timestamp
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        citation_file = os.path.join(citation_dir, f"citation_{timestamp}.json")
+        
+        # Write citation map to JSON file
+        citation_data = {
+            "citations": {
+                str(num): {"fragment_id": fid, "source": src, "url": url}
+                for fid, num, src, url in [(fid, citation_map[fid], src, url) for fid, src, url in citation_details]
+            }
+        }
+        
+        try:
+            with open(citation_file, 'w') as f:
+                json.dump(citation_data, f, indent=2)
+        except Exception as e:
+            pass  # Silently fail if can't write file
         
         return answer
