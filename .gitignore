@@ -6,22 +6,23 @@ __pycache__/
 *.pyd
 
 # Logs
-logs/
 *.log
+logs/
 
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
 
 # Dependencies
 .venv/
 venv/
-lib/
-tmp/
+node_modules/
+
+# Build artifacts
 dist/
 build/
-*.egg-info/
+target/
 
 # Editors
 .vscode/
@@ -29,7 +30,12 @@ build/
 *.swp
 *.swo
 
-# OS
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# System
 .DS_Store
 Thumbs.db
 ```
