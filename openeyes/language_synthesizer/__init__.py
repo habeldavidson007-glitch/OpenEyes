@@ -226,7 +226,9 @@ class LanguageSynthesizer:
             topic_str = " and ".join(topics[:2]) if topics else "your question"
             return f"Regarding {topic_str}, here's my assessment:"
         
-        return ""
+        # Default: create a simple acknowledgment
+        topic_str = " and ".join(topics[:2]) if topics else "your query"
+        return f"Based on my analysis of {topic_str}, here are the key insights:"
     
     def _synthesize_group(
         self,
@@ -235,31 +237,64 @@ class LanguageSynthesizer:
         start_citation: int,
         citation_map: Dict[str, int]
     ) -> str:
-        """Synthesize a group of fragments into a coherent paragraph."""
+        """Synthesize a group of fragments into a coherent paragraph with proper narrative flow."""
         if not fragments:
             return ""
         
-        sentences = []
+        # Build a narrative by connecting related concepts
+        paragraph_parts = []
         citation_counter = start_citation
         
-        for frag in fragments[:5]:  # Limit to top 5 per group
-            content = frag.get("content", "")
-            fragment_id = frag.get("fragment_id", "unknown")
+        # For primary group, create a more detailed narrative
+        if group_name == "primary":
+            # Take the top 3-5 most relevant fragments and weave them together
+            selected_frags = fragments[:min(5, len(fragments))]
             
-            # Clean and normalize content
-            cleaned = self._normalize_sentence(content)
+            # Create topic sentence from the highest-scoring fragment
+            if selected_frags:
+                best_frag = selected_frags[0]
+                content = self._normalize_sentence(best_frag.get("content", ""))
+                if content:
+                    citation_counter += 1
+                    citation_map[best_frag.get("fragment_id", "unknown")] = citation_counter
+                    paragraph_parts.append(content + f" [{citation_counter}]")
             
-            if cleaned:
-                citation_counter += 1
-                citation_num = citation_counter
-                citation_map[fragment_id] = citation_num
-                sentences.append(f"{cleaned} [{citation_num}]")
+            # Add supporting details with transitional phrases
+            transition_phrases = [
+                "Furthermore,", "Additionally,", "Moreover,", "In related developments,",
+                "This is particularly evident when considering that", "Research also indicates that",
+                "Another important aspect is that", "Building on this,"
+            ]
+            
+            for i, frag in enumerate(selected_frags[1:], 1):
+                content = self._normalize_sentence(frag.get("content", ""))
+                if content:
+                    citation_counter += 1
+                    citation_map[frag.get("fragment_id", "unknown")] = citation_counter
+                    
+                    # Add transitional phrase for flow
+                    if i < len(transition_phrases):
+                        # Ensure content starts with lowercase after transition if it's a continuation
+                        if content[0].isupper() and len(content) > 1:
+                            content = content[0].lower() + content[1:]
+                        paragraph_parts.append(f"{transition_phrases[i-1]} {content} [{citation_counter}]")
+                    else:
+                        paragraph_parts.append(f"{content} [{citation_counter}]")
         
-        if not sentences:
+        # For supporting and context groups, create briefer connected statements
+        else:
+            for frag in fragments[:3]:  # Limit to top 3 for non-primary groups
+                content = self._normalize_sentence(frag.get("content", ""))
+                if content:
+                    citation_counter += 1
+                    citation_map[frag.get("fragment_id", "unknown")] = citation_counter
+                    paragraph_parts.append(f"{content} [{citation_counter}]")
+        
+        if not paragraph_parts:
             return ""
         
-        # Join sentences into paragraph
-        paragraph = " ".join(sentences)
+        # Join all parts into a single flowing paragraph
+        paragraph = " ".join(paragraph_parts)
         
         return paragraph
     
@@ -300,4 +335,11 @@ class LanguageSynthesizer:
         elif intent == "recommendation":
             return "Consider these factors carefully when making your decision."
         
-        return ""
+        elif intent == "fact":
+            return "These points provide a comprehensive overview based on verified sources."
+        
+        elif intent == "comparison":
+            return "Each option has distinct characteristics that should be weighed against your specific needs."
+        
+        # Default conclusion for general queries
+        return "This summary captures the key aspects based on available information."

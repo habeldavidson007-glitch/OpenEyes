@@ -1,70 +1,30 @@
 ```
+# Logs
+*.log
+logs/
+
 # Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-
-# Logs
-*.log
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Dependencies
-.venv/
+.Python
+env/
 venv/
-.env/
-
-# Build artifacts
-dist/
-build/
-*.egg-info/
-
-# Coverage
+.venv/
+.ENV
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
 .coverage
-coverage/
-htmlcov/
-
-# Pytest
-.pytest_cache/
-
-# MyPy
-.mypy_cache/
-
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/modules/
 .DS_Store
 Thumbs.db
-
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```
