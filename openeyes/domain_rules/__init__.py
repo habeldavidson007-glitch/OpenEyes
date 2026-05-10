@@ -30,7 +30,8 @@ DOMAIN_TIERS = {
     "aviation_safety": "tier0",
     
     # Tier 1: High Stakes - Strict HALT, Primary sources only
-    "medical": "tier1",
+    "healthcare": "tier1",
+    "medical": "tier1",  # Legacy alias for healthcare
     "law": "tier1", 
     "legal": "tier1",
     "nuclear": "tier1",
@@ -75,8 +76,8 @@ DOMAIN_TIERS = {
 # Maps source_type to base_score per domain, aligned with real-world epistemology
 # Higher scores = more credible sources for that domain
 CREDIBILITY_HIERARCHIES = {
-    # Tier 1: Medical - Strict hierarchy, peer-reviewed evidence paramount
-    "medical": {
+    # Tier 1: Healthcare - Strict hierarchy, peer-reviewed evidence paramount
+    "healthcare": {
         "clinical_guideline": 98,      # Highest: Official clinical guidelines (CDC, WHO, NIH)
         "peer_reviewed_study": 95,     # Peer-reviewed research studies
         "systematic_review": 93,       # Systematic reviews/meta-analyses
@@ -87,6 +88,20 @@ CREDIBILITY_HIERARCHIES = {
         "news_article": 50,            # Medical news (secondary reporting)
         "forum": 25,                   # Patient forums (anecdotal)
         "anecdotal": 20                # Personal anecdotes
+    },
+    
+    # Legacy alias for healthcare
+    "medical": {
+        "clinical_guideline": 98,
+        "peer_reviewed_study": 95,
+        "systematic_review": 93,
+        "textbook": 85,
+        "government_source": 85,
+        "expert_consensus": 80,
+        "case_report": 60,
+        "news_article": 50,
+        "forum": 25,
+        "anecdotal": 20
     },
     
     # Tier 1: Legal - Primary authority is everything
@@ -230,6 +245,55 @@ CREDIBILITY_HIERARCHIES = {
 
 # Embedded domain rules (fallback if JSON files not found)
 EMBEDDED_RULES = {
+    "healthcare": {
+        "domain": "healthcare",
+        "tier": "tier1",
+        "version": "1.0",
+        "rules": [
+            {
+                "id": "HC-001",
+                "name": "Do No Harm",
+                "description": "No fragment may recommend a treatment with a known fatal interaction",
+                "check_type": "blacklist_tag_conflict",
+                "config": {"flag": "fatal_interaction"},
+                "halt_on_failure": True
+            },
+            {
+                "id": "HC-002",
+                "name": "Evidence-Based Only",
+                "description": "All treatment fragments must have primary source credibility",
+                "check_type": "minimum_source_type",
+                "config": {"allowed": ["primary"]},
+                "halt_on_failure": True
+            },
+            {
+                "id": "HC-003",
+                "name": "Cite Source",
+                "description": "Every fragment must carry a source URL",
+                "check_type": "requires_field",
+                "config": {"field": "source_url"},
+                "halt_on_failure": True
+            },
+            {
+                "id": "HC-004",
+                "name": "Recent Data Required",
+                "description": "At least one fragment must have data from 2024 or later",
+                "check_type": "requires_recent_data",
+                "config": {"min_year": 2024},
+                "halt_on_failure": False
+            },
+            {
+                "id": "HC-005",
+                "name": "Counter-Arguments Checked",
+                "description": "Must include risk/contraindication information",
+                "check_type": "requires_reasoning_role",
+                "config": {"role": "counter_argument"},
+                "halt_on_failure": False
+            }
+        ]
+    },
+    
+    # Legacy alias for healthcare
     "medical": {
         "domain": "medical",
         "tier": "tier1",
@@ -520,8 +584,11 @@ class DomainRulesLoader:
         if domain_lower in self._cache:
             return self._cache[domain_lower]
         
-        # Try to load from file
+        # Try to load from file (check both root and subdirectories)
         rules_file = self.rules_dir / f"{domain_lower}.json"
+        
+        # Also check for subdirectory structure (e.g., healthcare/healthcare.json)
+        subdir_rules_file = self.rules_dir / domain_lower / f"{domain_lower}.json"
         
         if rules_file.exists():
             try:
@@ -539,6 +606,25 @@ class DomainRulesLoader:
                 
             except (json.JSONDecodeError, IOError) as e:
                 print(f"[DomainRulesLoader] Error loading {rules_file}: {e}")
+                # Fall through to check subdirectory or embedded rules
+        
+        # Check subdirectory structure
+        if subdir_rules_file.exists():
+            try:
+                with open(subdir_rules_file, 'r') as f:
+                    rules_config = json.load(f)
+                
+                # Validate structure
+                if "rules" not in rules_config:
+                    rules_config["rules"] = []
+                if "tier" not in rules_config:
+                    rules_config["tier"] = self.get_domain_tier(domain_lower)
+                
+                self._cache[domain_lower] = rules_config
+                return rules_config
+                
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"[DomainRulesLoader] Error loading {subdir_rules_file}: {e}")
                 # Fall through to embedded rules
         
         # Use embedded rules if available

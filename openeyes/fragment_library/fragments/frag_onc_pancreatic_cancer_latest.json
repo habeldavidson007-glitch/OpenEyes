@@ -1,7 +1,7 @@
 {
   "id": "frag_onc_pancreatic_cancer_latest_001",
-  "domain": "medical",
-  "subdomain": "oncology",
+  "domain": "healthcare",
+  "subdomain": "MED",
   "tags": [
     "pancreatic_cancer",
     "early_detection",

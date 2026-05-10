@@ -1,40 +1,39 @@
-# Logs and temp files
-*.log
-*.tmp
-*.swp
+```
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.ENV
+.python-version
+.pytest_cache/
+.mypy_cache/
 
-# Environment
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
 .env
 .env.local
 *.env.*
 
-# Editors
+# Coverage reports
+.coverage
+htmlcov/
+coverage/
+
+# IDE
 .vscode/
 .idea/
-
-# Dependencies
-.venv/
-venv/
-__pycache__/
-node_modules/
-
-# Build artifacts
-dist/
-build/
-*.pyc
-*.pyo
-*.pyd
-
-# Coverage
-.coverage
-coverage/
-htmlcov/
-
-# Python cache
-*.pyc
-**/__pycache__/
-**/*.py[cod]
-*$py.class
-
-# Original rules preserved
-*.log
+*.swp
+*.swo
+*.tmp
+```
