@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import sys
+import time
 from pathlib import Path
 
 if __package__ in {None, ""}:
@@ -11,11 +12,45 @@ import click
 from rich import print
 from rich.panel import Panel
 from rich.table import Table
+from rich.live import Live
+from rich.spinner import Spinner
 
 
 from openeyes.config import audit_dir, vault_root
 from openeyes.core.engine import OpenEyesEngine
 from openeyes.storage.binary_lib import cleanup_obsidian_vault
+
+
+LOADING_STAGES = [
+    ("Decomposing query...", 0.3),
+    ("Retrieving fragments...", 0.4),
+    ("Running Monte Carlo verification...", 0.5),
+    ("Applying domain rules...", 0.3),
+    ("Assembling answer...", 0.3),
+]
+
+
+def stream_loading(stages=LOADING_STAGES):
+    """Display loading stages with spinner animation."""
+    for message, duration in stages:
+        with Live(f"[cyan]⟳ {message}[/cyan]", refresh_per_second=10, transient=True) as live:
+            time.sleep(duration)
+
+
+def typewriter_output(text: str, speed: float = 0.015):
+    """Print text character by character at human reading pace."""
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        if char in '.!?':
+            time.sleep(speed * 8)
+        elif char in ',;:':
+            time.sleep(speed * 4)
+        elif char == '\n':
+            time.sleep(speed * 2)
+        else:
+            time.sleep(speed)
+    print()
 
 
 @click.group()
@@ -30,20 +65,24 @@ def cli() -> None:
 @click.option("--explain", is_flag=True, help="Show inference metadata and narrative trace")
 @click.option("--debug", is_flag=True, help="Alias for --explain")
 def query(query: str, domain: str | None, json_output: bool, explain: bool, debug: bool) -> None:
+    # Show loading animation
+    stream_loading()
+    
     engine = OpenEyesEngine()
     result = engine.answer(query=query, domain=domain)
     if json_output:
         print(json.dumps(result, indent=2))
         return
-    print(Panel(result.get("answer", ""), title="Answer", border_style="green"))
+    
+    answer_text = result.get("answer", "")
+    
+    # Use typewriter effect for answer
     if not explain and not debug:
-        summary = Table(show_header=False, box=None)
-        summary.add_column("Field", style="cyan")
-        summary.add_column("Value", style="white")
-        summary.add_row("Query", query)
-        summary.add_row("Data recency", f"Within {result.get('data_recency_years', 'N/A')} years")
-        summary.add_row("Confidence", f"{result.get('confidence', 0)}%")
-        print(summary)
+        # Print answer with typewriter effect
+        typewriter_output(answer_text)
+        
+        # Print confidence
+        print(f"\n[cyan]Confidence: {result.get('confidence', 0)}%[/cyan]")
         return
 
     if debug or explain:
