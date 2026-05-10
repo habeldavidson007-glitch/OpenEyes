@@ -1,0 +1,15 @@
+{
+  "id": "FIN-187",
+  "domain": "finance",
+  "subdomain": "algorithmic_trading",
+  "tags": [
+    "algorithmic_trading",
+    "volatility trading"
+  ],
+  "content": "Volatility trading treats volatility as an asset class. VIX futures allow speculation on expected S&P 500 volatility. Variance swaps provide pure volatility exposure without delta risk. Volatility risk premium provides carry for short vol strategies. However, short vol suffers catastrophic losses during spikes like volmageddon 2018.",
+  "year": 2024,
+  "source": "Volatility Trading",
+  "source_url": "https://example.com/FIN-187",
+  "verified": true,
+  "reasoning_role": "definition"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "FIN-185",
+  "domain": "finance",
+  "subdomain": "algorithmic_trading",
+  "tags": [
+    "algorithmic_trading",
+    "dark pools"
+  ],
+  "content": "Dark pools are private exchanges allowing anonymous trading without pre-trade transparency. They offer reduced market impact for large orders but suffer from information leakage risks and potential conflicts of interest. ATS (Alternative Trading Systems) include dark pools and electronic communication networks. Liquidity fragmentation across venues creates complexity.",
+  "year": 2023,
+  "source": "SEC Dark Pool Regulations",
+  "source_url": "https://example.com/FIN-185",
+  "verified": true,
+  "reasoning_role": "definition"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "FIN-172",
+  "domain": "finance",
+  "subdomain": "algorithmic_trading",
+  "tags": [
+    "algorithmic_trading",
+    "ml in trading"
+  ],
+  "content": "Machine learning in algorithmic trading uses supervised learning for price prediction, unsupervised learning for regime detection, and reinforcement learning for optimal execution. Feature engineering is critical: lagged returns, volatility measures, order book features, and macroeconomic indicators. Overfitting remains the primary challenge, requiring rigorous cross-validation and out-of-sample testing.",
+  "year": 2024,
+  "source": "Advances in Financial Machine Learning",
+  "source_url": "https://example.com/FIN-172",
+  "verified": true,
+  "reasoning_role": "definition"
+}

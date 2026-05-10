@@ -1,0 +1,16 @@
+{
+  "id": "FIN-165",
+  "domain": "finance",
+  "subdomain": "algorithmic_trading",
+  "tags": [
+    "algorithmic_trading",
+    "backtesting",
+    "walk_forward_analysis"
+  ],
+  "content": "Walk-forward analysis divides historical data into in-sample optimization periods and out-of-sample validation periods, rolling forward through time. This technique tests whether strategy parameters remain stable across different market conditions. A robust strategy shows consistent performance across multiple walk-forward windows without requiring parameter re-optimization.",
+  "year": 2024,
+  "source": "Evidence-Based Technical Analysis",
+  "source_url": "https://example.com/FIN-165",
+  "verified": true,
+  "reasoning_role": "definition"
+}

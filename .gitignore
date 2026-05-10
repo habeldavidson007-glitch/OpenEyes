@@ -1,28 +1,6 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Dependencies
-.venv/
-venv/
-env/
-.env
-.env.local
-.env.*
-
-# Build artifacts
-build/
-dist/
-*.egg-info/
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.swp
-*~
+# Fragment library backup/dump files
+openeyes/fragment_library/fragments/*.json.bak
+openeyes/fragment_library/fragments/*_backup.json
+openeyes/fragment_library/fragments/*_dump.json
 ```

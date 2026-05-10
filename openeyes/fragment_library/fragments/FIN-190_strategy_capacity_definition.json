@@ -1,0 +1,15 @@
+{
+  "id": "FIN-190",
+  "domain": "finance",
+  "subdomain": "algorithmic_trading",
+  "tags": [
+    "algorithmic_trading",
+    "strategy capacity"
+  ],
+  "content": "Strategy capacity is the maximum capital a strategy can deploy before returns degrade. Capacity constraints arise from market impact, limited liquidity, and signal dilution. Small-cap strategies have lower capacity than large-cap. High-frequency strategies have strict capacity limits due to adverse selection when scaling.",
+  "year": 2024,
+  "source": "Quantitative Hedge Fund Strategy",
+  "source_url": "https://example.com/FIN-190",
+  "verified": true,
+  "reasoning_role": "definition"
+}
