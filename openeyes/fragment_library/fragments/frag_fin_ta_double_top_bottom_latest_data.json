@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_double_top_bottom_latest_data",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Reliability increases with pattern duration\u2014weeks/months better than hours. Crypto forms these patterns frequently due to round-number psychology ($20k, $50k BTC levels).",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

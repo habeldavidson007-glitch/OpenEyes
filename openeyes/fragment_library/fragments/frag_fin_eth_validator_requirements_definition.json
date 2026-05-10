@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_validator_requirements_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "Becoming a validator requires 32 ETH deposit, running execution + consensus clients, and maintaining uptime. Hardware needs: modern CPU, 16GB RAM, fast SSD. Rewards for proposing/attesting; penalties for downtime or misbehavior.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

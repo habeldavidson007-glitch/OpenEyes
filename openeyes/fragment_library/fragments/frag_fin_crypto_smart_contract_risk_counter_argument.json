@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_smart_contract_risk_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "risk_management"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Audit shopping (choosing lenient auditors) and time pressure compromise security. Formal verification is expensive and rare. Bug bounties help but reactive vs proactive. Insurance protocols (Nexus Mutual) emerging but limited coverage.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

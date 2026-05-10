@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_put_call_ratio_latest_data",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "CME Bitcoin put/call ratio spiked >2.0 at 2022 bottom, <0.5 at 2021 top. Deribit dominates crypto options (>85% share). Skew (25-delta put-call IV difference) complements put/call analysis.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

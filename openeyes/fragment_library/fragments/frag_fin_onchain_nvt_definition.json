@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_nvt_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "definition",
+  "content": "Network Value to Transactions ratio = market cap / daily transaction volume (USD). High NVT suggests overvaluation relative to utility (like P/E ratio). NVT Signal uses 90-day SMA for smoother readings.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

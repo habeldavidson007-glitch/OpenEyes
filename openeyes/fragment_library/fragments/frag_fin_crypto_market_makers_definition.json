@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_market_makers_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Crypto MMs differ from traditional: operate 24/7, manage inventory across fragmented exchanges, hedge on perps. Wintermute, Jump Trading, Alameda dominated pre-FTX. MMs earn spread + rebates, not directional bets.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

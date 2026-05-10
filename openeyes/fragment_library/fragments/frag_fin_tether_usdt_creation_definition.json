@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_tether_usdt_creation_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "New USDT is minted when Tether Treasury receives fiat deposits (typically via banking partners). Authorized users (exchanges, institutions) request minting/redemption. Reserves should match circulation 1:1. Creation often precedes bull runs as buying power enters.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

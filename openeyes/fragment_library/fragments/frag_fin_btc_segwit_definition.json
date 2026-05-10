@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_segwit_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "SegWit (BIP141, 2017) separated signature data from transaction data, effectively increasing block capacity to ~4MB weight units. It fixed transaction malleability, enabling Lightning Network. Native SegWit (bech32) addresses start with 'bc1q'.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

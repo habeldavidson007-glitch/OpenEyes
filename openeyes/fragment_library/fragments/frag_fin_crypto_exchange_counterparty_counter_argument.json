@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_exchange_counterparty_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Self-custody isn't feasible for active traders or those lacking technical skills. Regulated exchanges (Coinbase) offer some protection but not FDIC insurance for crypto. Insurance funds cover only specific scenarios.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

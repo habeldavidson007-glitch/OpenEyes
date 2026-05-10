@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_elliott_wave_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Markets move in 5-wave impulses (1-2-3-4-5) followed by 3-wave corrections (A-B-C). Wave 3 typically strongest; wave 4 shouldn't overlap wave 1. Fibonacci ratios guide wave targets. Fractal nature applies across timeframes.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

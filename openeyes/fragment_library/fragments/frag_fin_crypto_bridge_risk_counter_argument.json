@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_bridge_risk_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "risk_management"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Trustless bridges are complex and nascent; trusted bridges require faith in operators. No insurance covers bridge hacks fully. Users should minimize bridge time, use established bridges only.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_impermanent_loss_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "defi"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "IL calculations ignore fee earnings, which can offset losses in high-volume pairs. Stablecoin pairs have minimal IL but also lower yields. IL is only 'impermanent' if prices revert.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

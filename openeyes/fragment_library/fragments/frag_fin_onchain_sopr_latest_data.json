@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_sopr_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "latest_data",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "SOPR consistently dipped below 0.95 at cycle bottoms (2018, 2020, 2022). Peaks above 1.2 often marked local tops. Glassnode provides standardized SOPR data.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

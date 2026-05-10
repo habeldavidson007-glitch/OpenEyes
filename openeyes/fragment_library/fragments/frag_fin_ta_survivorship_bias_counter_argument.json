@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_survivorship_bias_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Even rigorous backtests can't account for regime changes. What worked in backtest may fail forward due to structural shifts. Transaction costs, slippage, and market impact often erase theoretical profits.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

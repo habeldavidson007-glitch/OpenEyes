@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_merge_details_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "The Merge (Sept 15, 2022) combined Ethereum Mainnet with the Beacon Chain PoS system. Energy consumption dropped ~99.95%. No user action required; history and state preserved. Issuance dropped ~90% as PoW rewards ended.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

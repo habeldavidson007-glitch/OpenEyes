@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_stochastic_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Stochastic can remain overbought/oversold during strong trends, giving premature reversal signals. Better for ranging markets. Fast stochastic whipsaws; slow stochastic smoother but more lag.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_oracle_problem_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "defi",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Blockchains can't access external data natively. Oracles feed real-world prices (e.g., ETH/USD) to smart contracts. Chainlink uses decentralized node networks with reputation systems. TWAP oracles use time-weighted averages to resist manipulation.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

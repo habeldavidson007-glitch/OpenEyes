@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_open_interest_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Open interest (OI) is total outstanding derivative contracts. Rising OI with rising price suggests strong trend conviction. Falling OI indicates position closing. OI spikes often precede volatility events or liquidation cascades.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

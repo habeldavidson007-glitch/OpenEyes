@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_elliott_wave_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Wave counting is highly subjective\u2014ten Elliott analysts give eleven counts. Rules have exceptions, exceptions have exceptions. Often works better in hindsight than real-time prediction.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_composability_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "defi",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Composability allows protocols to integrate seamlessly: Aave deposits as collateral on Maker, which farms Curve rewards. Enables innovation but creates interdependencies. Failure in one protocol can cascade through the ecosystem.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

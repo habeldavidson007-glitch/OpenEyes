@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_node_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "A full node validates all Bitcoin transactions and blocks against consensus rules. Running one ensures you don't trust others for verification, supports network decentralization, and enables private transaction broadcasting without leaking your address to third parties.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

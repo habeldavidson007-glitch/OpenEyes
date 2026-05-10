@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_mempool_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "The mempool is a waiting area for unconfirmed transactions held by nodes. When block space is scarce, transactions compete via fee rates (sat/vbyte). Miners prioritize highest fee-rate transactions, creating a dynamic auction market for block inclusion.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_flash_loans_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "defi",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Flash loans allow borrowing any amount without collateral, provided loan is repaid within same transaction. Used for arbitrage, collateral swapping, self-liquidation. If repayment fails, entire transaction reverts. Enabled by atomic transaction execution.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

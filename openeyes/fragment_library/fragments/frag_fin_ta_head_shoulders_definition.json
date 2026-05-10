@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_head_shoulders_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Reversal pattern with three peaks: left shoulder, head (highest), right shoulder. Neckline connects lows. Break below neckline signals trend reversal from bullish to bearish. Target = head height projected downward from breakout. Inverse H&S signals bullish reversal.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

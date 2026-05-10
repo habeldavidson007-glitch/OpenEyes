@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_realized_price_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "definition",
+  "content": "Realized price = realized cap / circulating supply. Average price at which all coins last moved. Represents aggregate cost basis. Price above realized = market in profit; below = market at loss. Strong support/resistance level.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

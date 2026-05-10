@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_obv_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "OBV adds volume on up-days, subtracts on down-days, creating cumulative line. OBV trend should confirm price trend. Divergence (price up, OBV flat/down) signals weak rally. OBV breakout before price breakout signals smart money accumulation.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

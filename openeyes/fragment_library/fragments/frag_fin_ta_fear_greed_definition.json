@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_fear_greed_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Composite indices combining: volatility, market momentum, social media sentiment, surveys, dominance, trends. Scale 0-100: extreme fear (<25) often marks bottoms; extreme greed (>75) marks tops. Contrarian indicator\u2014be fearful when others greedy.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

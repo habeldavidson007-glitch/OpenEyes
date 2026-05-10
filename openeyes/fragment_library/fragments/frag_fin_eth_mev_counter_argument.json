@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_mev_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "ethereum"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "MEV extraction harms regular users through front-running and worse execution prices. Centralization risk emerges as sophisticated MEV operations dominate block production.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

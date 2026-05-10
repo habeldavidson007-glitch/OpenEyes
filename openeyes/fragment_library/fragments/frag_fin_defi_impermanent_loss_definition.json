@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_impermanent_loss_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "defi",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "IL occurs when LP token values diverge from holding assets directly. Worst when one asset appreciates/depreciates significantly. Formula: IL = 2*sqrt(price_ratio)/(1+price_ratio) - 1. At 2x price change, IL \u2248 5.7%. Permanent if you withdraw at loss.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

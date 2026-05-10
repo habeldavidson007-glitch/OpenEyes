@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_realized_price_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "latest_data",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "BTC realized price: $12k (2020), $20k (2021), $22k (2024). Price touching realized price often marks cycle bottoms. Short-term holder realized price is more sensitive indicator.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

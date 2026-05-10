@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_eip1559_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "ethereum"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Fee burning benefits ETH holders but doesn't reduce user costs. During congestion, total fees remain high; the burn just redistributes value from users to remaining holders.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_vwap_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "VWAP = cumulative (price \u00d7 volume) / cumulative volume. Resets daily/weekly. Institutions use VWAP as benchmark\u2014buy below, sell above. Acts as dynamic support/resistance. Deviation bands (\u00b11, \u00b12 std dev) show extremes.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

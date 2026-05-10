@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_yield_farming_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "defi"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Most yield farming returns come from token emissions, not sustainable revenue. Farmers dump rewards, creating sell pressure. 'Real yield' from fees is rarer but more sustainable.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

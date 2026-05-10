@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_market_makers_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Crypto MM practices less regulated; some engage in wash trading, spoofing, or proprietary trading disguised as market making. FTX/Alameda collapse revealed commingling risks.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

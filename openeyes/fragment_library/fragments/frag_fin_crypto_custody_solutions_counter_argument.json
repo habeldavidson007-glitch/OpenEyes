@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_custody_solutions_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Self-custody demands technical competence; seed phrase loss means permanent fund loss. Institutional custody reintroduces counterparty risk\u2014the very problem crypto aimed to solve.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

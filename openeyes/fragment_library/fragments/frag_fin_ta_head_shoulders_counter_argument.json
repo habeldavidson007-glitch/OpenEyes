@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_head_shoulders_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Pattern recognition is subjective; not all H&S formations complete. False breakouts common. Volume confirmation essential but often ignored. Works better on higher timeframes with clear structure.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

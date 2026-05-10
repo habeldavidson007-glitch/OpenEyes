@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_stochastic_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Stochastic = (current close - lowest low) / (highest high - lowest low) \u00d7 100, typically 14-period. Range-bound 0-100. >80 overbought; <20 oversold. %K (fast) and %D (slow signal line). Divergences signal reversals.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

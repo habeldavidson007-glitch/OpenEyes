@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_eip1559_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "EIP-1559 (Aug 2021) replaced first-price auctions with base fee + tip model. Base fee burns automatically, making ETH deflationary during high usage. Tips incentivize miners/validators. Users specify max fee and priority fee.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

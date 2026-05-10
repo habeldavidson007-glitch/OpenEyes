@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_bridge_risk_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "risk_management"
+  ],
+  "reasoning_role": "definition",
+  "content": "Bridges lock assets on source chain, mint wrapped versions on destination. Central points of failure: bridge contracts hold billions, making them prime targets. Design varies: trusted (multisig) vs trustless (light clients). Most hacks target bridges.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

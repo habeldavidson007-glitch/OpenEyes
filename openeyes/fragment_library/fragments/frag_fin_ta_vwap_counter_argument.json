@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_vwap_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "VWAP resets create artificial levels that may not reflect true value. Crypto's 24/7 trading complicates session definition. Anchored VWAP (from specific event) often more relevant than standard VWAP.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

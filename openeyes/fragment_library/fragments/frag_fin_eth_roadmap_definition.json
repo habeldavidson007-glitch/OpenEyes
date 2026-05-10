@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_roadmap_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "Post-Merge roadmap includes: Surge (danksharding for scalability), Scourge (MEV/censorship resistance), Verge (Verkle trees for stateless clients), Purge (history expiry), Splurge (misc improvements). Goal: 100k+ TPS via L2s + sharding.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

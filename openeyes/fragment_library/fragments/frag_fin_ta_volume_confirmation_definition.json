@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_volume_confirmation_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Volume confirms price: rising price + rising volume = healthy uptrend. Rising price + falling volume = divergence (weakness). Breakouts on low volume often fail. Climax volume signals exhaustion. Volume precedes price\u2014surge often precedes big move.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

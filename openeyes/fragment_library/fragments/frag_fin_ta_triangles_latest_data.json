@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_triangles_latest_data",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Symmetrical triangles resolve in direction of prior trend 75% of time. Crypto triangles on 4H/daily charts have 60%+ success rate when volume confirms. Wedges are variant with sloping parallel lines.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

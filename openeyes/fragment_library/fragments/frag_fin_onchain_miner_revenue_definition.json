@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_miner_revenue_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "definition",
+  "content": "Miner revenue = block rewards + fees. When revenue < production cost (electricity + hardware), miners capitulate: sell reserves, shut down rigs, or go bankrupt. Miner position index (MPI) tracks selling pressure. Capitulation often marks bottoms.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_regulatory_jurisdiction_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "latest_data",
+    "risk_management"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "MiCA implementation began 2024. SEC sued Binance, Coinbase (2023). HK launched licensing regime. FATF Travel Rule enforcement increasing. Clarity expected from US legislation pending.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

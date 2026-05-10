@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_mvrv_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "definition",
+  "content": "Market Value to Realized Value ratio compares market cap to realized cap (sum of last-transacted prices). MVRV >3.5 signals overvaluation; <1 signals undervaluation. Historically marked major cycle turning points.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

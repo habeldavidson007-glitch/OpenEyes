@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_tvl_metrics_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "defi"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "TVL can be gamed via mercenary capital chasing rewards. It doesn't measure actual usage or revenue. A protocol with $1B TVL earning no fees is less valuable than $100M TVL generating strong cash flow.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

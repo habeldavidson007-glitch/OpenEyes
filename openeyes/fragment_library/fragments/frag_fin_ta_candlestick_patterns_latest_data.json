@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_candlestick_patterns_latest_data",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Engulfing patterns at key levels have 65%+ success rate on daily charts. Doji clusters often precede major moves. Candlestick patterns work best combined with other TA tools, not standalone.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

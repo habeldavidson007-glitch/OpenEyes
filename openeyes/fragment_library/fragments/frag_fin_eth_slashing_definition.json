@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_slashing_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "Slashing penalizes validators for double-proposing blocks, surround attesting, or conflicting votes. Penalty: minimum 1 ETH plus proportional stake loss based on correlated offenders. Forced exit after slashing.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

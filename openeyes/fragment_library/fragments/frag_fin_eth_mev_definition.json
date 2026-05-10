@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_mev_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "MEV is profit validators/searchers extract by reordering, including, or censoring transactions. Common strategies: arbitrage, liquidations, sandwich attacks. MEV-Boost separates block building from validation, allowing specialized builders.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

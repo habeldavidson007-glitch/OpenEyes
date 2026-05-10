@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_funding_rates_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "latest_data",
+    "market_structure"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "During bull peaks, annualized funding exceeded 50-100%. Negative funding during crashes signals excessive shorting. Basis traders arb spot-perp spread, earning funding as yield.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

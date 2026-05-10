@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_gaps_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Crypto trades 24/7, so gaps mainly occur on weekly/monthly opens or exchange-specific. CME Bitcoin futures gaps famously filled over time, but spot crypto rarely gaps. Gap theory less applicable to continuous markets.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

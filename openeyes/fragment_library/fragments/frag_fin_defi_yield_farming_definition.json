@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_yield_farming_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "defi",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Yield farming involves providing liquidity to earn token rewards beyond trading fees. Protocols emit governance tokens to bootstrap liquidity. APYs often unsustainable, declining as emissions dilute or farmers exit.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

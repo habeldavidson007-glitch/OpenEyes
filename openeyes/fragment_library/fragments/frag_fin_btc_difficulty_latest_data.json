@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_difficulty_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Difficulty has increased exponentially since genesis, with periodic drops during miner capitulation events (2018, 2022). Post-2024 halving, difficulty adjustments became more volatile.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

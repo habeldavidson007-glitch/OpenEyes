@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_staking_yield_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "Staking yield comes from block rewards, transaction tips, and MEV. Current APR ranges 3-5%, varying with total stake amount and network activity. Yield decreases as more ETH is staked (diminishing returns curve).",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

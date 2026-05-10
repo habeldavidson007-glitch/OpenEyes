@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_obv_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "OBV treats all volume equally regardless of price position. Doesn't account for intraday dynamics. Crypto's 24/7 trading creates ambiguous 'day' definitions for calculation.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

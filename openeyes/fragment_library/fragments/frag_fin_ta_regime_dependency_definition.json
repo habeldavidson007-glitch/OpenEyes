@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_regime_dependency_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "TA strategies are regime-dependent: trend-following works in trending markets, mean-reversion in ranging. Identifying regime is half the battle. Regime changes often coincide with macro shifts (Fed policy, liquidity cycles). No strategy works always.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

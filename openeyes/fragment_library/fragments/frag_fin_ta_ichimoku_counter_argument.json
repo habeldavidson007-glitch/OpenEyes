@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_ichimoku_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Ichimoku appears complex; beginners struggle with multiple components. Signals can conflict (e.g., price above cloud but Tenkan/Kijun cross bearish). Works better on daily+ timeframes than intraday.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

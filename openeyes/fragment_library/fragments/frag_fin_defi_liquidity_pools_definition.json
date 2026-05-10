@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_liquidity_pools_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "defi",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "LPs deposit equal value of two tokens into a pool, receiving LP tokens representing their share. Fees accumulate pro-rata. Withdrawals reclaim underlying assets at current ratio. Smart contracts manage pricing automatically.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "educational_resource",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}
