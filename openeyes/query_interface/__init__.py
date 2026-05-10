@@ -62,13 +62,11 @@ STOP_WORDS = {'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being
               'there', 'when', 'where', 'why', 'how', 'all', 'each', 'few', 'more', 
               'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 
               'same', 'so', 'than', 'too', 'very', 'just', 'and', 'but', 'if', 'or', 
-              'because', 'until', 'while', 'although', 'though', 'after', 'before', 
-              'what', 'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'i', 
+              'because', 'until', 'while', 'although', 'though', 'what', 'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'i', 
               'you', 'he', 'she', 'it', 'we', 'they', 'me', 'him', 'her', 'us', 'them',
               'my', 'your', 'his', 'its', 'our', 'their', 'mine', 'yours', 'hers', 
               'ours', 'theirs', 'myself', 'yourself', 'himself', 'herself', 'itself', 
-              'ourselves', 'themselves', 'think', 'current', 'world', 'look', 'like',
-              'best', 'advice', 'doing', 'stock', 'exchange', 'explain'}
+              'ourselves', 'themselves', 'think', 'current', 'world', 'look', 'like'}
 
 def score_relevance(fragment: dict, query: str, sub_questions: list = None) -> float:
     """
@@ -76,33 +74,70 @@ def score_relevance(fragment: dict, query: str, sub_questions: list = None) -> f
     Returns 0.0 to 1.0. Below 0.4 = exclude from assembly.
     
     Uses fragment tags and content to determine relevance to query keywords.
+    Includes semantic matching for common finance terms (e.g., "stock" matches "stock_market", "equity").
     """
     if sub_questions is None:
         sub_questions = []
     
-    query_words = set(query.lower().split()) - STOP_WORDS
+    # Clean query words: remove punctuation and stop words
+    import re
+    query_clean = re.sub(r'[^\w\s]', ' ', query.lower())
+    query_words = set(query_clean.split()) - STOP_WORDS
+    
     frag_tags = set(fragment.get('tags', []))
     frag_content = fragment.get('content', '').lower()
     
-    # Tag overlap score (40% weight)
-    tag_overlap = len(query_words & frag_tags) / max(len(query_words), 1)
+    # Semantic expansion for finance domain
+    SEMANTIC_MAP = {
+        'stock': {'stock', 'stock_market', 'equity', 'equities', 'share', 'shares', 'equity_factors'},
+        'exchange': {'exchange', 'market', 'trading', 'trade', 'market_structure', 'market_liquidity'},
+        'advice': {'advice', 'strategy', 'strategies', 'best_practices', 'guidance'},
+        'invest': {'invest', 'investing', 'investment', 'portfolio', 'allocation'},
+        'price': {'price', 'pricing', 'valuation', 'value'},
+        'risk': {'risk', 'volatility', 'uncertainty', 'beta'},
+    }
     
-    # Content keyword score (40% weight) - check if query words appear in content
-    content_hits = sum(1 for word in query_words if word in frag_content)
+    # Expand query words with semantic equivalents
+    expanded_query_words = set(query_words)
+    for word in query_words:
+        if word in SEMANTIC_MAP:
+            expanded_query_words.update(SEMANTIC_MAP[word])
+    
+    # Tag overlap score (40% weight) - use expanded query words
+    tag_overlap = len(expanded_query_words & frag_tags) / max(len(expanded_query_words), 1)
+    
+    # Content keyword score (40% weight) - check if query words or their stems appear in content
+    content_hits = 0
+    for word in query_words:
+        if word in frag_content:
+            content_hits += 1
+        else:
+            # Check for stemmed versions (simple approach: check first 4 chars for longer words)
+            if len(word) > 4:
+                stem = word[:4]
+                if any(stem in w for w in frag_content.split()):
+                    content_hits += 0.5
+    
     content_score = content_hits / max(len(query_words), 1)
     
     # Sub-question match score (20% weight)
     sub_score = 0.0
     for sub_q in sub_questions:
-        sub_words = set(sub_q.lower().split()) - STOP_WORDS
-        overlap = len(sub_words & frag_tags) / max(len(sub_words), 1)
+        sub_clean = re.sub(r'[^\w\s]', ' ', sub_q.lower())
+        sub_words = set(sub_clean.split()) - STOP_WORDS
+        # Also expand sub-question words
+        expanded_sub_words = set(sub_words)
+        for sw in sub_words:
+            if sw in SEMANTIC_MAP:
+                expanded_sub_words.update(SEMANTIC_MAP[sw])
+        overlap = len(expanded_sub_words & frag_tags) / max(len(expanded_sub_words), 1)
         sub_score = max(sub_score, overlap)
     
     # Combined relevance score
     relevance = (tag_overlap * 0.4) + (content_score * 0.4) + (sub_score * 0.2)
     return relevance
 
-RELEVANCE_THRESHOLD = 0.35  # Lowered threshold to allow more relevant fragments through
+RELEVANCE_THRESHOLD = 0.15  # Lowered to allow relevant fragments through with semantic matching
 
 
 class OpenEyes:
