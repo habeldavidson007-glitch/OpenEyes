@@ -540,9 +540,36 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
                 candidate["reasoning_role"] = candidate.get("reasoning_role", "unknown")
                 candidate["source_type"] = candidate.get("source_type", "tertiary")
                 candidate["year"] = candidate.get("year", 0)
+                
+                # FIX: Normalize fragment keys for Philosophy Guard compatibility
+                # Swarm fragments use 'fragment_id' but Philosophy Guard expects 'id'
+                if "fragment_id" in candidate and "id" not in candidate:
+                    candidate["id"] = candidate["fragment_id"]
+                # Swarm fragments use 'credibility_estimate' but Philosophy Guard expects 'credibility_class'
+                if "credibility_estimate" in candidate and "credibility_class" not in candidate:
+                    # Map numeric estimate to class name for rule compatibility
+                    cred_est = candidate["credibility_estimate"]
+                    if cred_est >= 0.9:
+                        candidate["credibility_class"] = "international_institution"
+                    elif cred_est >= 0.8:
+                        candidate["credibility_class"] = "academic_research"
+                    elif cred_est >= 0.7:
+                        candidate["credibility_class"] = "financial_publication"
+                    elif cred_est >= 0.5:
+                        candidate["credibility_class"] = "financial_news"
+                    else:
+                        candidate["credibility_class"] = "anecdotal"
+                # Ensure tags field exists (some sources use 'domain_tags')
+                if "domain_tags" in candidate and "tags" not in candidate:
+                    candidate["tags"] = candidate["domain_tags"]
+                # Ensure last_verified exists for age checks
+                if "last_verified" not in candidate:
+                    from datetime import datetime
+                    candidate["last_verified"] = datetime.now().strftime("%Y-%m-%d")
+                
                 survivors.append(candidate)
                 
-                print(f"  ✓ Fragment {candidate.get('fragment_id', 'unknown')[:20]}... survived (score={eval_result.mean_score:.1f})")
+                print(f"  ✓ Fragment {candidate.get('fragment_id', candidate.get('id', 'unknown'))[:20]}... survived (score={eval_result.mean_score:.1f})")
             else:
                 print(f"  ✗ Fragment {candidate.get('fragment_id', 'unknown')[:20]}... failed MC (score={eval_result.mean_score:.1f}, var={eval_result.variance:.1f})")
         
