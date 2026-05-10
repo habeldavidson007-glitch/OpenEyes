@@ -1,5 +1,5 @@
 {
-  "domain": "finance",
+  "domain": "global_macro_real_assets",
   "canonical_tags": [
     "macro", "monetary_policy", "fiscal_policy", "inflation", "deflation",
     "interest_rate", "fed_funds_rate", "yield_curve", "inverted_yield_curve",
@@ -25,6 +25,15 @@
     "consumer_discretionary", "industrials", "utilities", "real_estate",
     "central_bank", "fed", "ecb", "boj", "pboc", "bank_of_england",
     "quantitative_easing", "quantitative_tightening", "balance_sheet",
+    "energy_markets", "oil", "natural_gas", "crude_oil", "brent", "wti",
+    "opec", "energy_production", "renewable_energy", "solar", "wind",
+    "nuclear", "lng", "pipeline", "refining", "upstream", "downstream",
+    "commodities", "gold", "silver", "copper", "aluminum", "zinc", "nickel",
+    "precious_metals", "industrial_metals", "agriculture", "wheat", "corn",
+    "soybeans", "coffee", "sugar", "cotton", "livestock", "cattle",
+    "commodity_futures", "contango", "backwardation", "storage_costs",
+    "geopolitical_risk", "trade_policy", "tariffs", "sanctions", "supply_chain",
+    "emerging_markets", "developed_markets", "frontier_markets",
     "first_line", "warning", "contraindication", "definition",
     "counter_argument", "latest_data"
   ]
