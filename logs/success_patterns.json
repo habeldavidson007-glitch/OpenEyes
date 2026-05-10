@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-10T18:02:07.658404",
-  "pattern_count": 292,
+  "last_updated": "2026-05-10T18:41:08.336739",
+  "pattern_count": 294,
   "patterns": [
     {
       "query_hash": "df94ad6f",
@@ -19987,6 +19987,52 @@
       "num_sources": 1,
       "confidence": 46.6,
       "timestamp": "2026-05-10T18:02:07.658234",
+      "success": true
+    },
+    {
+      "query_hash": "bbbc2bdf",
+      "domain": "economy",
+      "tier": "tier3",
+      "has_definition": true,
+      "has_counter": false,
+      "has_latest": true,
+      "fragment_roles": [
+        "latest_data",
+        "latest_data",
+        "definition",
+        "definition",
+        "definition",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 8,
+      "num_sources": 6,
+      "confidence": 46.8,
+      "timestamp": "2026-05-10T18:40:09.779347",
+      "success": true
+    },
+    {
+      "query_hash": "bbbc2bdf",
+      "domain": "economy",
+      "tier": "tier3",
+      "has_definition": true,
+      "has_counter": false,
+      "has_latest": true,
+      "fragment_roles": [
+        "latest_data",
+        "latest_data",
+        "definition",
+        "definition",
+        "definition",
+        "definition",
+        "definition",
+        "definition"
+      ],
+      "num_fragments": 8,
+      "num_sources": 6,
+      "confidence": 46.6,
+      "timestamp": "2026-05-10T18:41:08.336525",
       "success": true
     }
   ]

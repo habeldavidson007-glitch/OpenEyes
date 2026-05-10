@@ -45,7 +45,7 @@ OUT_OF_DOMAIN_SIGNALS = [
 ]
 
 def is_out_of_domain(query: str, domain: str) -> bool:
-    """Check if query is outside finance domain."""
+    """Check if query is outside the economy domain."""
     q = query.lower()
     for signal in OUT_OF_DOMAIN_SIGNALS:
         if signal in q:
@@ -87,7 +87,7 @@ def score_relevance(fragment: dict, query: str, sub_questions: list = None) -> f
     frag_tags = set(fragment.get('tags', []))
     frag_content = fragment.get('content', '').lower()
     
-    # Semantic expansion for finance domain
+    # Semantic expansion for economy domain
     SEMANTIC_MAP = {
         'stock': {'stock', 'stock_market', 'equity', 'equities', 'share', 'shares', 'equity_factors'},
         'exchange': {'exchange', 'market', 'trading', 'trade', 'market_structure', 'market_liquidity'},
@@ -239,7 +239,7 @@ class OpenEyes:
                 "answer": None,
                 "confidence": 0.0,
                 "halt": True,
-                "halt_reason": "This query is outside the finance domain.",
+                "halt_reason": "This query is outside the economy domain.",
                 "fragments_used": [],
                 "philosophy_checks_passed": [],
                 "processing_time_ms": 0,
@@ -247,9 +247,9 @@ class OpenEyes:
             }
             halt_msg = f"""I don't have verified information to answer this query.
 
-Reason: This query is outside the finance domain. OpenEyes currently covers: 
-financial markets, economic indicators, monetary policy, crypto, 
-technical analysis, earnings analysis, and financial regulation.
+Reason: This query is outside the economy domain. OpenEyes currently covers: 
+financial markets, energy markets, commodities, agriculture, macroeconomic indicators, 
+geopolitical risk, and economic regulation.
 
 To answer this, the library would need: general knowledge or encyclopedia fragments."""
             
@@ -687,7 +687,7 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
     @staticmethod
     def _check_prediction_language(assembled_answer: str) -> bool:
         """
-        Returns True if prediction language detected in finance domain.
+        Returns True if prediction language detected in economy domain.
         If True, assembly should HALT with FIN-004 violation.
         """
         PREDICTION_TRIGGER_PHRASES = [
