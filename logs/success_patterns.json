@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-10T13:18:49.152000",
-  "pattern_count": 236,
+  "last_updated": "2026-05-10T14:23:36.479355",
+  "pattern_count": 237,
   "patterns": [
     {
       "query_hash": "df94ad6f",
@@ -17930,6 +17930,25 @@
       "num_sources": 4,
       "confidence": 73.5,
       "timestamp": "2026-05-10T13:18:49.151772",
+      "success": true
+    },
+    {
+      "query_hash": "62f564ec",
+      "domain": "general",
+      "tier": "tier3",
+      "has_definition": true,
+      "has_counter": true,
+      "has_latest": true,
+      "fragment_roles": [
+        "counter_argument",
+        "counter_argument",
+        "latest_data",
+        "definition"
+      ],
+      "num_fragments": 4,
+      "num_sources": 4,
+      "confidence": 74.1,
+      "timestamp": "2026-05-10T14:23:36.479173",
       "success": true
     }
   ]
