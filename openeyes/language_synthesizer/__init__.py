@@ -10,6 +10,14 @@ KEY IMPROVEMENT: Actually ANSWERS the question instead of just listing data.
 import re
 from typing import List, Dict, Any, Optional, Tuple
 
+# Out-of-domain response for queries outside OpenEyes' knowledge scope
+OUT_OF_DOMAIN_RESPONSE = """This query is outside OpenEyes' current knowledge scope.
+
+OpenEyes covers: financial markets, monetary policy, economic indicators, 
+crypto assets, technical analysis, earnings and fundamentals, and financial regulation.
+
+For general knowledge questions, a search engine will serve you better here."""
+
 
 class LanguageSynthesizer:
     """
@@ -226,7 +234,7 @@ class LanguageSynthesizer:
         
         # If average relevance is too low, admit we don't have the answer
         if avg_relevance < 15:
-            return f"I don't have specific data to directly answer your question about '{original_query}'. My knowledge base focuses on financial concepts, market structures, and economic indicators, but may not contain current rankings or specific factual data like country poverty levels or currency values."
+            return OUT_OF_DOMAIN_RESPONSE
         
         citation_counter = 0
         topic_str = " and ".join(key_topics[:3]) if key_topics else "this topic"
@@ -669,16 +677,16 @@ class LanguageSynthesizer:
         topic_str = " and ".join(key_topics[:2]) if key_topics else "these dynamics"
         
         if intent == "opinion":
-            return f"This analysis of {topic_str} reflects the current consensus and available evidence from verified sources."
+            return ""
         
         elif intent == "recommendation":
-            return f"When evaluating {topic_str}, consider these factors carefully and consult with qualified professionals for personalized advice."
+            return ""
         
         elif intent == "fact":
-            return f"These points provide a comprehensive overview of {topic_str} based on verified sources."
+            return ""
         
         elif intent == "comparison":
-            return f"Each aspect of {topic_str} has distinct characteristics that should be weighed against your specific needs."
+            return ""
         
         # Default conclusion for general queries
-        return f"This summary captures the key aspects of {topic_str} based on available information."
+        return ""
