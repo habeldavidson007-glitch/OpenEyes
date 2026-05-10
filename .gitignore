@@ -1,11 +1,7 @@
 ```
 # Logs
 *.log
-
-# Coverage reports
-.coverage
-coverage/
-htmlcov/
+logs/
 
 # Python
 __pycache__/
@@ -16,29 +12,30 @@ __pycache__/
 env/
 venv/
 .venv/
+.ENV
 .env
 .env.local
 .env.*
-requirements.txt.bak
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Build directories
+build/
+dist/
+*.egg-info/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
 
 # OS
 .DS_Store
 Thumbs.db
-
-# Build artifacts
-build/
-dist/
-*.egg-info/
-target/
-.gradle/
-node_modules/
 
 # Compressed files
 *.zip
@@ -59,8 +56,4 @@ node_modules/
 *.Z
 *.lz
 *.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```
