@@ -586,65 +586,45 @@ class WurfelspielAssembler:
         self,
         fragments: List[Dict[str, Any]],
         dice_row: DiceTableRow,
-        original_query: Optional[str] = None  # NEW parameter
+        original_query: Optional[str] = None
     ) -> str:
-        """Build the final answer text from sequenced fragments with numerical citations."""
-        parts = []
-        citation_map = {}  # Maps fragment_id to citation number
-        citation_details = []  # List of (fragment_id, source, source_url) for footer
+        """Build the final answer text using LanguageSynthesizer for natural language generation."""
+        from openeyes.language_synthesizer import LanguageSynthesizer
         
-        for i, frag in enumerate(fragments):
-            content = frag.get("content", "")
-            source = frag.get("source", "Unknown")
-            source_url = frag.get("source_url", "")
-            fragment_id = frag.get("fragment_id", "unknown")
-            
-            # Assign citation number
-            citation_num = len(citation_map) + 1
-            citation_map[fragment_id] = citation_num
-            citation_details.append((fragment_id, source, source_url))
-            
-            # Add fragment content with numerical citation
-            parts.append(f"{content} [{citation_num}]")
+        if not original_query:
+            original_query = "What is the information about this topic?"
         
-        # Join with newlines
-        answer = "\n\n".join(parts)
+        # Use LanguageSynthesizer to create coherent response
+        synthesizer = LanguageSynthesizer()
+        synthesized_answer, citation_map = synthesizer.synthesize_fragments(
+            fragments=fragments,
+            original_query=original_query,
+            domain="general"
+        )
         
         # Build references section with APA-style citations
         references = ["\n\n### References:"]
-        for frag_id, source, source_url in citation_details:
-            if source_url:
-                references.append(f"{source}. (n.d.). *{source_url}*")
-            else:
-                references.append(f"{source}. (n.d.).")
+        citation_details = []
         
-        answer += "".join(references)
+        for frag in fragments:
+            fragment_id = frag.get("fragment_id", "unknown")
+            if fragment_id in citation_map:
+                source = frag.get("source", "Unknown")
+                source_url = frag.get("source_url", "")
+                citation_num = citation_map[fragment_id]
+                citation_details.append((citation_num, fragment_id, source, source_url))
         
-        # Store citation map in a temporary file for binary library lookup
-        import json
-        import os
-        from datetime import datetime
+        # Sort by citation number and add to references
+        citation_details.sort(key=lambda x: x[0])
+        seen_ids = set()
+        for citation_num, frag_id, source, source_url in citation_details:
+            if frag_id not in seen_ids:
+                seen_ids.add(frag_id)
+                if source_url:
+                    references.append(f"{source}. (n.d.). *{source_url}*")
+                else:
+                    references.append(f"{source}. (n.d.).")
         
-        # Create citation map directory if it doesn't exist
-        citation_dir = os.path.join(os.path.dirname(__file__), "..", "citation_maps")
-        os.makedirs(citation_dir, exist_ok=True)
-        
-        # Generate unique filename based on timestamp
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        citation_file = os.path.join(citation_dir, f"citation_{timestamp}.json")
-        
-        # Write citation map to JSON file
-        citation_data = {
-            "citations": {
-                str(num): {"fragment_id": fid, "source": src, "url": url}
-                for fid, num, src, url in [(fid, citation_map[fid], src, url) for fid, src, url in citation_details]
-            }
-        }
-        
-        try:
-            with open(citation_file, 'w') as f:
-                json.dump(citation_data, f, indent=2)
-        except Exception as e:
-            pass  # Silently fail if can't write file
+        answer = synthesized_answer + "".join(references)
         
         return answer
