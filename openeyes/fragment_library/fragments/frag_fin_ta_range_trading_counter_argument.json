@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_range_trading_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "trading_strategies"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Range trading suffers from whipsaw losses during breakout attempts that fail. Markets spend estimated 60-70% of time ranging, but identifying range boundaries in real-time proves difficult. Algorithmic trading increased false breakout frequency. Range strategies require patience and discipline\u2014many traders abandon mid-range after multiple small losses waiting for edge.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

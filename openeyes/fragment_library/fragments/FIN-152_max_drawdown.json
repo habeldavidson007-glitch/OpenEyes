@@ -1,0 +1,18 @@
+{
+  "id": "FIN-152",
+  "domain": "finance",
+  "subdomain": "risk_management",
+  "tags": [
+    "max_drawdown",
+    "risk_metrics",
+    "portfolio_management",
+    "performance_measurement"
+  ],
+  "content": "Maximum drawdown measures the largest peak-to-trough decline in portfolio value, expressed as a percentage. Unlike volatility which treats upside and downside equally, max drawdown captures actual worst-case loss an investor would have experienced. A 30% max drawdown means at some point the portfolio lost 30% from its previous high before recovering. Drawdown duration matters too\u2014some strategies recover quickly, others take years. Calmar ratio (annual return / max drawdown) compares returns to worst-case pain. Hedge funds often target max drawdowns under 15%; equity indices can experience 50%+ drawdowns in severe bear markets (S&P 500 fell 57% in 2008-09). Investors should consider whether they can emotionally withstand a strategy's historical max drawdown.",
+  "year": "2024",
+  "source": "CFA Institute Research Foundation",
+  "source_url": "https://www.cfainstitute.org/research",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
+}

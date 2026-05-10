@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_market_profile_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Market Profile organizes price by time spent at levels (Time Price Opportunity). Balanced markets form bell curves; trending markets form skewed profiles. Initial Balance (first hour) often sets day's range. Extensions signal trend days.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

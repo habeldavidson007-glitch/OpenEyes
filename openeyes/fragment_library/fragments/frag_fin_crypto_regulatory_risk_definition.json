@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_regulatory_risk_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "risk_management",
+    "regulation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Regulatory treatment varies dramatically: US pursues enforcement-first approach (SEC lawsuits against Binance, Coinbase, Kraken); EU implemented comprehensive MiCA framework; Asia ranges from Singapore's supportive stance to China's outright ban. Jurisdictional arbitrage drives business location decisions but creates compliance complexity.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

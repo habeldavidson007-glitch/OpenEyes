@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_difficulty_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "counter_argument",
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "The 2-week adjustment lag can create feedback loops during rapid hash rate changes. Miner capitulation can accelerate during bear markets before difficulty catches up.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

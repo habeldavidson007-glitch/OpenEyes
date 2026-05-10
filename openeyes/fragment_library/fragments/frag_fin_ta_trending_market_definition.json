@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_trending_market_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "market_structure",
+    "indicators"
+  ],
+  "reasoning_role": "definition",
+  "content": "Trending markets display consistent higher highs/higher lows (uptrend) or lower highs/lower lows (downtrend). ADX indicator quantifies trend strength\u2014readings above 25 suggest trending conditions, below 20 indicate ranging. Moving average slope and separation also indicate trend. Trending markets favor breakout and momentum strategies over mean reversion.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

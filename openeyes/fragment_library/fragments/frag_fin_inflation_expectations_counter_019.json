@@ -10,10 +10,10 @@
     "counter_argument"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Measuring inflation expectations involves challenges. Market-based measures embed risk premiums, not pure expectations. Survey measures may reflect respondents' beliefs about what inflation 'should' be rather than genuine expectations. Household surveys show systematic biases and poor understanding of inflation concepts. Different measures can diverge significantly, creating interpretation challenges. The relationship between measured expectations and actual inflation behavior is imperfect—firms and workers may not act mechanically on survey responses. Some economists question whether expectations drive inflation or merely reflect it. Rational inattention theory suggests most people rationally ignore inflation news until it becomes salient. Cross-country evidence shows varying degrees of expectation anchoring despite similar central bank frameworks.",
+  "content": "Measuring inflation expectations involves challenges. Market-based measures embed risk premiums, not pure expectations. Survey measures may reflect respondents' beliefs about what inflation 'should' be rather than genuine expectations. Household surveys show systematic biases and poor understanding of inflation concepts. Different measures can diverge significantly, creating interpretation challenges. The relationship between measured expectations and actual inflation behavior is imperfect\u2014firms and workers may not act mechanically on survey responses. Some economists question whether expectations drive inflation or merely reflect it. Rational inattention theory suggests most people rationally ignore inflation news until it becomes salient. Cross-country evidence shows varying degrees of expectation anchoring despite similar central bank frameworks.",
   "source": "Federal Reserve Economic Research",
   "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/measuring-inflation-expectations-20230420.htm",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

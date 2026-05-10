@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_correlation_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "market_structure",
+    "correlation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Crypto historically showed low correlation to traditional assets, offering diversification. However, 2022-2024 saw increased correlation with tech stocks, particularly NASDAQ. Correlation breaks down during crypto-specific events (regulatory news, exchange failures) when idiosyncratic factors dominate macro drivers.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

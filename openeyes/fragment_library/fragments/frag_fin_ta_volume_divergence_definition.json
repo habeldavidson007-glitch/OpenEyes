@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_volume_divergence_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "volume",
+    "momentum"
+  ],
+  "reasoning_role": "definition",
+  "content": "Volume divergence occurs when price makes new highs/lows but volume fails to confirm with corresponding increase. Bullish divergence: price makes lower low on diminishing volume\u2014selling pressure wanes. Bearish divergence: price makes higher high on declining volume\u2014buying interest fades. Divergences warn of potential reversals but don't time them precisely.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

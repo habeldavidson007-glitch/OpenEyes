@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_correlation_breakdown_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "BTC-Nasdaq correlation averaged 0.6+ since 2020, driven by shared liquidity sensitivity. Correlation breaks during: crypto-specific events (ETF approval, halving), extreme risk-off (banking crises), or when crypto matures as distinct asset class.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

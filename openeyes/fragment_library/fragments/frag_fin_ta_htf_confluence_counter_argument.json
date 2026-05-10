@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_htf_confluence_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "multi_timeframe"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "HTF confluence reduces trade frequency significantly, potentially missing shorter-term opportunities. In ranging markets, HTF direction provides little edge. Some strategies (mean reversion, scalping) intentionally trade against HTF structure. The approach favors swing traders over day traders. Optimal HTF ratio depends on holding period and instrument characteristics.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

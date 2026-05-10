@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_climax_volume_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "volume"
+  ],
+  "reasoning_role": "definition",
+  "content": "Climax volume represents extreme activity spikes marking exhaustion points. Buying climaxes occur after sustained rallies on massive volume as last buyers enter. Selling climaxes happen after declines as panic sellers capitulate. Both often mark short-term reversals as one side exhausts. Confirmation comes from subsequent price action failing to continue in climax direction.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

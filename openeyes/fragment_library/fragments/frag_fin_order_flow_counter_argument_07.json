@@ -12,7 +12,7 @@
   "content": "Order flow data is expensive and often delayed for retail traders, creating information asymmetry. Institutional orders are hidden through iceberg orders and dark pools, making true flow opaque. Interpreting order flow requires significant experience; misinterpretation is common. HFT firms see order flow microseconds ahead, making retail analysis backward-looking. Large prints don't always indicate directional intent; could be hedging or rebalancing. Order flow analysis has steep learning curve with limited accessibility.",
   "source": "Educational Resource",
   "source_url": "https://www.market-microstructure.org/order-flow-predictability",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

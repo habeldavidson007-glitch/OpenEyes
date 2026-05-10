@@ -43,6 +43,16 @@ SOURCE_CREDIBILITY = {
     "fred.stlouisfed.org": 0.88
 }
 
+# Stop words for topic extraction
+STOP_WORDS = {
+    "what", "is", "are", "the", "a", "an", "for", "with", 
+    "in", "on", "at", "to", "of", "and", "or", "but",
+    "how", "which", "when", "where", "why", "can", "could",
+    "should", "would", "may", "might", "must", "shall",
+    "i", "me", "my", "we", "us", "our", "you", "your",
+    "he", "she", "it", "they", "them", "their"
+}
+
 
 @dataclass
 class FragmentCandidate:
@@ -578,6 +588,80 @@ class Swarm:
         verified_candidates = self._cross_verify(all_candidates)
         
         return verified_candidates
+
+    def dfs_retrieve(self, query: str, domain: str, depth_limit: int = 5, 
+                     width_limit: int = 3) -> List[FragmentCandidate]:
+        """
+        Depth-First Search retrieval.
+        
+        Instead of retrieving all candidates at once, picks the most
+        promising sub-question, retrieves fragments for it, uses those
+        fragments to inform the next sub-question, and so on.
+        
+        Each step narrows and deepens the search based on what was
+        found in the previous step.
+        """
+        all_candidates = []
+        visited_topics = set()
+        
+        # Start with decomposed sub-questions
+        sub_questions = self.decompose_query(query)
+        
+        # DFS stack — start with the most specific sub-question
+        stack = sub_questions[:depth_limit]
+        
+        depth = 0
+        while stack and depth < depth_limit:
+            current_question = stack.pop(0)
+            
+            # Skip if already covered this topic
+            topic_key = self._extract_topic_key(current_question)
+            if topic_key in visited_topics:
+                continue
+            visited_topics.add(topic_key)
+            
+            # Retrieve candidates for this specific sub-question only
+            step_candidates = self.library_agent.retrieve(
+                current_question, 
+                domain=domain, 
+                max_results=width_limit
+            )
+            
+            if step_candidates:
+                all_candidates.extend(step_candidates)
+                
+                # Inform next step based on what we found
+                # Look at tags of surviving fragments and expand into related topics
+                next_topics = self._extract_related_topics(step_candidates, visited_topics)
+                stack = next_topics + stack  # Depth-first: new topics go to front
+            
+            depth += 1
+        
+        return all_candidates
+
+    def _extract_topic_key(self, sub_question: str) -> str:
+        """Extract a normalized topic key for deduplication."""
+        words = set(sub_question.lower().split()) - STOP_WORDS
+        return ' '.join(sorted(words)[:3])
+
+    def _extract_related_topics(self, candidates: List[FragmentCandidate], 
+                                visited: set) -> List[str]:
+        """
+        Given fragments found in this step, generate the next
+        most relevant sub-questions to pursue.
+        """
+        related = []
+        for candidate in candidates:
+            # Get compatible fragment tags as next search directions
+            compatible_tags = candidate.domain_tags
+            for tag in compatible_tags:
+                if tag not in visited and tag not in STOP_WORDS:
+                    related.append(tag)
+        
+        # Return top 3 most common related topics not yet visited
+        from collections import Counter
+        tag_counts = Counter(related)
+        return [topic for topic, _ in tag_counts.most_common(3)]
     
     def _cross_verify(self, candidates: List[FragmentCandidate]) -> List[FragmentCandidate]:
         """

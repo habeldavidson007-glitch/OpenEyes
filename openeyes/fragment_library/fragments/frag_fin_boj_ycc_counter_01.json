@@ -14,7 +14,7 @@
   "content": "YCC distorts market price discovery and reduces liquidity in the JGB market. It traps the BoJ in a corner: exiting YCC risks spiking debt servicing costs for Japan's 260% debt-to-GDP ratio, while continuing it fuels yen depreciation and imported inflation.",
   "source": "government_source",
   "source_url": "https://www.boj.or.jp/en/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_boj_ycc_def_01"

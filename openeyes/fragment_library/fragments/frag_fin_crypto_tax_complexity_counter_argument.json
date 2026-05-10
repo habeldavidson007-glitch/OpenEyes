@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_tax_complexity_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "risk_management"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Tracking thousands of transactions across chains/exchanges is impractical manually. Tax software (Koinly, CoinTracker) helps but costs money and may miss edge cases. IRS enforcement ramping up but still limited.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

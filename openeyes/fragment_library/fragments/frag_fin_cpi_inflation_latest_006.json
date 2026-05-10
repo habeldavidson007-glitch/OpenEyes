@@ -13,7 +13,7 @@
   "content": "CPI data continues to be released monthly around the 13th of each month for the preceding month. Year-over-year CPI inflation peaked in mid-2022 before declining through 2023-2024. Core CPI (excluding food and energy) typically shows different dynamics than headline CPI. Shelter costs represent the largest component of CPI and tend to be sticky. The BLS continuously updates methodology and basket weights based on Consumer Expenditure Survey data. Market participants closely watch CPI releases as they influence Federal Reserve policy decisions. TIPS breakeven rates and inflation swaps provide market-based inflation expectations that can be compared to CPI trends.",
   "source": "Bureau of Labor Statistics News Releases",
   "source_url": "https://www.bls.gov/cpi/#tables",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

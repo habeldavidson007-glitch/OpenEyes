@@ -10,10 +10,10 @@
     "counter_argument"
   ],
   "reasoning_role": "counter_argument",
-  "content": "The transmission mechanism from the federal funds rate to the broader economy is complex and operates with long and variable lags, making precise calibration difficult. Some economists argue the zero lower bound constraint limits the effectiveness of conventional rate policy during severe downturns, necessitating unconventional tools. The relationship between the fed funds rate and long-term rates has weakened in recent decades due to global capital flows and central bank balance sheet policies. Critics also note that rate changes affect different sectors and demographics unequally—higher rates disproportionately impact housing markets and younger borrowers while benefiting savers. Additionally, the neutral rate (r*) is unobservable and subject to significant estimation uncertainty, complicating policy decisions.",
+  "content": "The transmission mechanism from the federal funds rate to the broader economy is complex and operates with long and variable lags, making precise calibration difficult. Some economists argue the zero lower bound constraint limits the effectiveness of conventional rate policy during severe downturns, necessitating unconventional tools. The relationship between the fed funds rate and long-term rates has weakened in recent decades due to global capital flows and central bank balance sheet policies. Critics also note that rate changes affect different sectors and demographics unequally\u2014higher rates disproportionately impact housing markets and younger borrowers while benefiting savers. Additionally, the neutral rate (r*) is unobservable and subject to significant estimation uncertainty, complicating policy decisions.",
   "source": "Federal Reserve Economic Research",
   "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/estimates-of-the-neutral-rate-of-interest-20230117.htm",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

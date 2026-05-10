@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_stochastic_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "indicators"
+  ],
+  "reasoning_role": "definition",
+  "content": "Stochastic oscillator compares closing price to price range over specified period, producing %K and %D lines. Readings above 80 indicate overbought; below 20 oversold. Unlike RSI which measures velocity, stochastic measures position within range. Works well in ranging markets where price oscillates between extremes. Less reliable in strong trends where overbought/oversold can persist.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

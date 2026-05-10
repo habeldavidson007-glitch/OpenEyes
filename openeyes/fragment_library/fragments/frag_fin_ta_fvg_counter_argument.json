@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_fvg_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "ict_concepts"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "FVGs lack empirical validation in academic literature. The concept assumes algorithmic behavior that may not exist as described. Many FVGs never get filled, especially in strong trends. Retrospective chart analysis makes FVGs appear more reliable than forward testing demonstrates. The framework risks curve-fitting explanations to past price action.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_eip1559_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Since EIP-1559 implementation through 2024, over 4 million ETH has been burned, representing approximately 3.5% of total supply. During NFT booms and DeFi activity spikes, daily burn exceeded daily issuance, creating net deflation. The mechanism successfully aligned fee market with token economics.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

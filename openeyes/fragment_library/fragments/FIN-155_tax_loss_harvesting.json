@@ -1,0 +1,18 @@
+{
+  "id": "FIN-155",
+  "domain": "finance",
+  "subdomain": "portfolio_management",
+  "tags": [
+    "tax_loss_harvesting",
+    "tax_efficiency",
+    "investment_strategy",
+    "wealth_management"
+  ],
+  "content": "Tax-loss harvesting sells losing positions to realize capital losses, offsetting capital gains or up to $3,000 of ordinary income annually. Unused losses carry forward indefinitely. The wash-sale rule prohibits repurchasing substantially identical securities within 30 days\u2014violating disallows the loss. Workaround: sell S&P 500 ETF, buy total market ETF (similar exposure, not 'substantially identical'). Robo-advisors automate tax-loss harvesting, adding 0.5-1% annual value for high-turnover portfolios. Benefits scale with account size and tax bracket. Considerations: transaction costs, bid-ask spreads, and potential long-term tax consequences if harvested assets later appreciate significantly. Best suited for taxable accounts; irrelevant in tax-advantaged retirement accounts.",
+  "year": "2024",
+  "source": "Journal of Wealth Management",
+  "source_url": "https://jwm.pm-research.com/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "academic_research"
+}

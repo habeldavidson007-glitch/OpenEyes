@@ -13,7 +13,7 @@
   "content": "EM heterogeneity is key. Latin America (high rates, commodities) resilient. Asia (China-dependent) vulnerable. Frontiers (debt distress) at risk. Diversified EMs with FX reserves (Indonesia, Mexico) weather storms better than 1997/2008 episodes.",
   "source": "government_source",
   "source_url": "https://www.imf.org/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_em_contagion_def_01"

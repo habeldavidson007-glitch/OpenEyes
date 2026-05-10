@@ -13,7 +13,7 @@
   "content": "Decentralized Finance (DeFi) uses blockchain smart contracts to recreate financial services without intermediaries. Key protocols include: lending/borrowing (Aave, Compound), decentralized exchanges (Uniswap, Curve), yield farming, liquidity pools, derivatives platforms. Users interact via crypto wallets, earning yields on deposits or paying to borrow. Automated market makers (AMMs) enable trading without order books. Governance tokens give voting rights on protocol changes. DeFi offers permissionless access, transparency, and composability ('money legos'). Total Value Locked (TVL) measures ecosystem size.",
   "source": "SEC",
   "source_url": "https://www.sec.gov/investor/alerts/decentralized-finance-defi",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

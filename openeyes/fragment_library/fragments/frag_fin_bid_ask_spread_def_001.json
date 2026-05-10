@@ -12,7 +12,7 @@
   "content": "Bid-ask spread is the difference between highest price a buyer will pay (bid) and lowest price a seller will accept (ask). Spread represents transaction cost and liquidity measure: narrow spreads indicate high liquidity and efficient markets; wide spreads signal low liquidity or uncertainty. Spreads widen during volatility, after hours, or for less-traded securities. Market makers profit from spreads while providing liquidity. Limit orders inside the spread can reduce effective transaction costs.",
   "source": "FINRA",
   "source_url": "https://www.finra.org/investors/insights/bid-ask-spread",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

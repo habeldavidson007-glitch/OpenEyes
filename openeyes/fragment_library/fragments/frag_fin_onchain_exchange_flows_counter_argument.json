@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_exchange_flows_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Flows can be internal rebalancing, OTC settlements, or exchange wallet migrations\u2014not always selling intent. Context matters: outflows during rally differ from outflows during crash.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

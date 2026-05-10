@@ -13,7 +13,7 @@
   "content": "In Dec 2023/Jan 2024, BoJ adjusted YCC band to +/- 0.5% then effectively abandoned strict caps, allowing 10y yields to rise above 1%. Net sales of JGBs turned negative for first time in years, signaling potential policy normalization.",
   "source": "government_source",
   "source_url": "https://www.boj.or.jp/en/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_boj_ycc_def_01"

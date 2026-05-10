@@ -12,7 +12,7 @@
   "content": "2023-2024 rate hikes increased debt servicing costs sharply. US interest payments exceeded $1T annually. Emerging markets debt distress rose: 60% of low-income countries in/near debt distress (Zambia, Ghana, Pakistan restructurings).",
   "source": "government_source",
   "source_url": "https://www.imf.org/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_global_debt_def_01"

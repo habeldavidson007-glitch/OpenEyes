@@ -14,7 +14,7 @@
   "content": "Yield Curve Control (YCC) is a monetary policy where the central bank targets specific yields on government bonds (e.g., 10-year JGB at 0%) rather than just quantity. The BoJ buys/sells unlimited bonds to maintain the target, keeping borrowing costs ultra-low to stimulate inflation and growth.",
   "source": "government_source",
   "source_url": "https://www.boj.or.jp/en/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

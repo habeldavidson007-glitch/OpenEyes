@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_miner_revenue_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "on_chain_metrics",
+    "mining"
+  ],
+  "reasoning_role": "definition",
+  "content": "Miner revenue comprises block rewards plus transaction fees. When revenue falls below production costs (electricity, hardware), miners capitulate\u2014selling reserves or shutting down rigs. Miner position index tracks reserves held. Capitulation events often mark cycle bottoms as weakest miners exit.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

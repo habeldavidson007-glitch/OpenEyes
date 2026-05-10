@@ -13,7 +13,7 @@
   "content": "Proponents of unrestricted short selling argue it provides essential price discovery and exposes fraud (e.g., Enron, Wirecard). Restrictions like the Uptick Rule can impede efficient price correction during crashes and reduce liquidity when it is needed most. Some argue the 2021 meme-stock volatility showed that halting shorts does not stop volatility, as call options drive gamma squeezes instead.",
   "source": "government_source",
   "source_url": "https://www.sec.gov",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

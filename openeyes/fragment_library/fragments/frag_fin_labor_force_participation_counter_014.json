@@ -10,10 +10,10 @@
     "counter_argument"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Interpreting LFPR trends is complex. Declines could reflect positive developments (more college attendance, earlier retirement due to wealth accumulation) or negative ones (discouragement, disability epidemics, opioid crisis). The pandemic caused unprecedented LFPR drops, particularly among women due to caregiving responsibilities. Recovery patterns have been uneven across demographics. Some argue expanded safety nets reduced work incentives, while others point to structural barriers like childcare costs and skills mismatches. Immigration affects LFPR calculations as immigrants have different participation patterns than native-born. Cross-country comparisons show wide variation due to cultural and policy differences. The relationship between LFPR and economic growth is bidirectional—strong economies can draw people into the labor force.",
+  "content": "Interpreting LFPR trends is complex. Declines could reflect positive developments (more college attendance, earlier retirement due to wealth accumulation) or negative ones (discouragement, disability epidemics, opioid crisis). The pandemic caused unprecedented LFPR drops, particularly among women due to caregiving responsibilities. Recovery patterns have been uneven across demographics. Some argue expanded safety nets reduced work incentives, while others point to structural barriers like childcare costs and skills mismatches. Immigration affects LFPR calculations as immigrants have different participation patterns than native-born. Cross-country comparisons show wide variation due to cultural and policy differences. The relationship between LFPR and economic growth is bidirectional\u2014strong economies can draw people into the labor force.",
   "source": "Congressional Budget Office Analysis",
   "source_url": "https://www.cbo.gov/publication/59244",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

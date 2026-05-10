@@ -13,7 +13,7 @@
   "content": "Debates continue about bubble conditions in various assets (tech stocks, housing, crypto, memes). Valuation metrics stretched by historical standards but context matters. Low interest rate environment justified higher multiples for some analysts.",
   "source": "FRED",
   "source_url": "https://fred.stlouisfed.org/series/SP500",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

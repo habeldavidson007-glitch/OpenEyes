@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_ichimoku_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "indicators"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Ichimoku's complexity creates analysis paralysis\u2014five components generating sometimes conflicting signals. The system's Japanese parameters (9, 26, 52) based on historical trading weeks lack universal justification. Cloud interpretation varies among practitioners. Backtesting proves challenging due to multiple signal types. Many traders use simplified subsets rather than full system.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

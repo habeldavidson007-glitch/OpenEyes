@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_regulatory_jurisdiction_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "risk_management"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Regulatory arbitrage drives innovation offshore but limits US user access. Conflicting classifications (commodity vs security) create legal uncertainty. Global coordination lacking, forcing multi-jurisdiction compliance.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

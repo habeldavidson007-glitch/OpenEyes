@@ -13,7 +13,7 @@
   "content": "Tax-loss harvesting involves selling securities at a loss to offset capital gains or ordinary income (up to $3k/year), then reinvesting proceeds in a similar (but not 'substantially identical') asset to maintain market exposure. It effectively defers taxes, improving compound growth. Robo-advisors automate this daily.",
   "source": "government_source",
   "source_url": "https://www.irs.gov",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

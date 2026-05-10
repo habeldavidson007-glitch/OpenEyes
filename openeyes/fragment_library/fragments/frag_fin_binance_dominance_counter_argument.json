@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_binance_dominance_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Centralization risk: Binance outage halts trading for much of crypto world. Regulatory scrutiny (SEC lawsuit, CZ guilty plea) threatens dominance. Competitors (Coinbase, OKX) gaining share.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

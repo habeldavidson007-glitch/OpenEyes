@@ -1,0 +1,17 @@
+{
+  "id": "FIN-101",
+  "domain": "finance",
+  "subdomain": "monetary_policy",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "fed_funds_rate"
+  ],
+  "content": "The fed funds target has limited meaning when excess reserves are abundant. Banks don't need to borrow reserves when they have ample deposits, so the Fed must use IORB and ON RRP to enforce the floor.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "counter_argument",
+  "credibility_class": "government_agency"
+}

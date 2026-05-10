@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_composability_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "defi",
+    "crypto",
+    "risk_management"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Composability created systemic risk exemplified by Terra/LUNA collapse affecting dozens of protocols. Leveraged positions across multiple protocols amplified losses. Integration depth means users inherit risks from every protocol in the chain. Most users don't understand full exposure, creating hidden correlations.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

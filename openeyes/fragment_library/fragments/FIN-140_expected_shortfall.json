@@ -1,0 +1,18 @@
+{
+  "id": "FIN-140",
+  "domain": "finance",
+  "subdomain": "risk_management",
+  "tags": [
+    "expected_shortfall",
+    "risk_metrics",
+    "tail_risk",
+    "risk_management"
+  ],
+  "content": "Expected Shortfall (ES), also called Conditional VaR, measures the average loss in scenarios worse than the VaR threshold. While 95% VaR tells you the loss at the 95th percentile, 95% ES tells you the average loss in the worst 5% of cases. ES addresses VaR's key limitation: ignoring tail severity. Two portfolios can have identical VaR but vastly different tail risks\u2014ES captures this difference. ES is a coherent risk measure (satisfies subadditivity), unlike VaR. Basel III replaced VaR with Expected Shortfall for market risk capital requirements in 2019, using 97.5% ES over 10-day horizon. Calculation requires more data than VaR and is more sensitive to extreme observations.",
+  "year": "2024",
+  "source": "Basel Committee on Banking Supervision",
+  "source_url": "https://www.bis.org/bcbs/basel3.htm",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
+}

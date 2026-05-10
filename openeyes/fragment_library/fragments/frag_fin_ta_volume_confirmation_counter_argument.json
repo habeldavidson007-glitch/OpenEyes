@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_volume_confirmation_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Crypto volume easily manipulated via wash trading. Exchange-reported volume unreliable; use aggregated or on-chain volume. Volume analysis works better on futures/CME than spot exchanges.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

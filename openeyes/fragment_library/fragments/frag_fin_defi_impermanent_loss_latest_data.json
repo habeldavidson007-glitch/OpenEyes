@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_impermanent_loss_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "defi",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Studies show 75%+ of LP positions underperform HODL over long periods excluding fees. High-fee tiers on volatile pairs can generate 20-50% APY, compensating for IL risk.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

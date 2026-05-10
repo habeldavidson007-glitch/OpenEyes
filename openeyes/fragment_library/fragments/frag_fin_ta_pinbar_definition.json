@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_pinbar_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "price_action"
+  ],
+  "reasoning_role": "definition",
+  "content": "A pin bar (pinocchio bar) is a candlestick with a long wick protruding from one end and small body at the other. The long wick shows price rejection\u2014sellers rejected higher prices (bearish pin) or buyers rejected lower prices (bullish pin). The longer the wick relative to body, the stronger the signal. Best traded at key support/resistance levels.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

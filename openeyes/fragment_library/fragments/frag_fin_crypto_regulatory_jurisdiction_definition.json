@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_regulatory_jurisdiction_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "definition",
+    "risk_management"
+  ],
+  "reasoning_role": "definition",
+  "content": "US: SEC enforcement-first approach, Howey Test applies to many tokens. EU: MiCA framework (2024) provides clarity but strict compliance. Asia: HK pro-crypto licensing; China banned trading/mining. Jurisdiction determines available products and protections.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

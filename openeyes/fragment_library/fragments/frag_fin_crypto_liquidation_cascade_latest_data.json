@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_liquidation_cascade_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "derivatives",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "May 2024 saw $1B in liquidations within 24 hours as Bitcoin dropped 15%. Long liquidations dominated, forcing deleveraging. Exchange insurance funds absorbed most losses, preventing socialized losses. Post-event analysis showed liquidation clustering around round numbers, confirming predictable cascade zones.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

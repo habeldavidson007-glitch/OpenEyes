@@ -12,7 +12,7 @@
   "content": "Options are contracts giving right (not obligation) to buy (call) or sell (put) underlying asset at specified price (strike) by expiration date. Call buyers profit if underlying rises above strike plus premium paid. Put buyers profit if underlying falls below strike minus premium. Option sellers (writers) receive premium but face potentially unlimited losses on calls or large losses on puts. American options can be exercised anytime before expiration; European only at expiration. Options enable hedging, income generation, and leveraged speculation.",
   "source": "SEC",
   "source_url": "https://www.sec.gov/investor/pubs/options.htm",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

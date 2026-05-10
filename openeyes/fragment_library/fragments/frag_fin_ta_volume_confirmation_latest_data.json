@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_volume_confirmation_latest_data",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Up-days on above-average volume outnumber down-days in bull markets (and vice versa). Volume dry-ups during consolidation precede expansion. On-chain volume (settled) more reliable than exchange volume.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

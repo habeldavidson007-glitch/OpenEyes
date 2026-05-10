@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_market_profile_latest_data",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Normal variation days (balanced profile) occur ~70% of time; trend days ~30%. Failed auctions (price rejected from value area extremes) offer high-probability mean reversion setups.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_pivot_points_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "indicators"
+  ],
+  "reasoning_role": "definition",
+  "content": "Pivot points calculate support/resistance levels from prior period's high, low, and close. Standard formula: Pivot = (H+L+C)/3, R1 = 2*Pivot-L, S1 = 2*Pivot-H, with additional levels R2/R3/S2/S3. Floor traders historically used these for intraday reference. Price reacting at pivot levels creates self-fulfilling prophecy as many participants watch same levels.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

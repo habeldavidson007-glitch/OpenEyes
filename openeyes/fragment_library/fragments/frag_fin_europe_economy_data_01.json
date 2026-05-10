@@ -12,7 +12,7 @@
   "content": "2023 Eurozone GDP +0.1%. Germany -0.3%. Inflation fell from 10.6% to 2.4% (May 2024). Natural gas prices normalized to pre-war levels. ECB cut rates June 2024 (first since launch), ahead of Fed.",
   "source": "government_source",
   "source_url": "https://www.ecb.europa.eu/home/html/index.en.html",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_europe_economy_def_01"

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_eth_validator_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "staking"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "The 32 ETH requirement (~$100,000+) excludes most individual participants, concentrating validation among institutions and pooling services. This undermines decentralization claims. Alternative chains with lower barriers attract retail validators, though security models differ significantly.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

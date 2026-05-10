@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_regime_dependency_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Regime identification is retrospective\u2014unclear in real-time which regime we're in. Strategies often adapted too late, buying tops/selling bottoms. Multi-strategy approaches dilute returns but reduce drawdowns.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

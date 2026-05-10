@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_cup_handle_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "patterns",
+    "continuation_patterns"
+  ],
+  "reasoning_role": "definition",
+  "content": "Cup and Handle consists of U-shaped cup (gradual decline then recovery to prior highs) followed by handle (small downward drift on light volume). Valid handles retrace no more than 1/3 of cup advance, last 1-4 weeks. Breakout above handle resistance signals continuation. Target equals cup depth added to breakout point. Pattern popularized by William O'Neil.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

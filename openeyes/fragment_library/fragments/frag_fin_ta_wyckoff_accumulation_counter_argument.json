@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_wyckoff_accumulation_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "wyckoff"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Wyckoff schematics are often identified retrospectively with perfect clarity but ambiguous in real-time. Different analysts label phases differently on identical price action. The framework assumes intentional manipulation that may simply reflect natural supply/demand dynamics. Academic studies show limited predictive power beyond random walk expectations.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

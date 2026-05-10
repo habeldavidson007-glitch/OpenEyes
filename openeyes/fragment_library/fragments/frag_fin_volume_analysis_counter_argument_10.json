@@ -12,7 +12,7 @@
   "content": "Volume data quality varies across markets and time periods, complicating analysis. Modern fragmented markets make aggregate volume less meaningful. Dark pools and off-exchange trading hide significant volume. Algorithmic order splitting obscures true institutional activity. Volume spikes can signal both climax and continuation, making interpretation ambiguous. Studies show volume adds little predictive power beyond price alone. On-Balance Volume and similar indicators suffer from cumulative error over time.",
   "source": "Educational Resource",
   "source_url": "https://www.johnmurphy.intermarket-analysis-volume-critique",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

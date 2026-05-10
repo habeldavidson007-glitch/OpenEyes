@@ -1,0 +1,17 @@
+{
+  "id": "FIN-161",
+  "domain": "finance",
+  "subdomain": "algorithmic_trading",
+  "tags": [
+    "algorithmic_trading",
+    "backtesting",
+    "backtesting_basics"
+  ],
+  "content": "Backtesting is the process of evaluating a trading strategy using historical data to simulate how it would have performed. Proper backtesting requires accounting for transaction costs, slippage, survivorship bias, and look-ahead bias. A robust backtest uses out-of-sample data for validation and includes walk-forward analysis to verify strategy stability across different market regimes.",
+  "year": 2024,
+  "source": "Quantitative Trading: How to Build Your Own Algorithmic Trading Business",
+  "source_url": "https://example.com/FIN-161",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
+}

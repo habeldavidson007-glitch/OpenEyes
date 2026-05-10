@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_insidebar_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "price_action"
+  ],
+  "reasoning_role": "definition",
+  "content": "An inside bar forms when a candle's high and low are completely contained within the previous candle's range. It represents consolidation and indecision. Breakout traders watch for price moving outside the mother bar's range. Inside bars at trend continuation points offer favorable risk/reward as they represent brief pauses before trend resumption.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

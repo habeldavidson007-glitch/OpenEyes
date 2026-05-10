@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_liquidity_pools_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "defi",
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Liquidity pools are smart contract reserves where users deposit token pairs to enable trading. LPs earn proportional share of trading fees (typically 0.05-1% per swap). Pools require balanced deposits; imbalances indicate one-sided trading pressure. TVL measures total value locked across all pools in a protocol.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

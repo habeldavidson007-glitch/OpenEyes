@@ -117,7 +117,8 @@ class OpenEyes:
     def __init__(self, domain: str = "general", 
                  fragment_library_path: Optional[str] = None,
                  api_config: Optional[Dict[str, str]] = None,
-                 obsidian_vault_path: Optional[str] = None):
+                 obsidian_vault_path: Optional[str] = None,
+                 night_mode: bool = False):
         
         self.domain = domain.lower()
         self.domain_tier = get_domain_tier(self.domain)
@@ -160,9 +161,22 @@ class OpenEyes:
         # Load gene pool
         self.gene_pool = load_gene_pool()
         
+        # Start Night Mode if requested
+        self.night_mode_thread = None
+        if night_mode:
+            from openeyes.night_mode import start_night_mode
+            halt_log_path = Path(__file__).parent.parent / "logs" / "halts.log"
+            self.night_mode_thread = start_night_mode(
+                fragment_library=self.library,
+                halt_log_path=str(halt_log_path),
+                obsidian_vault_path=obsidian_vault_path
+            )
+        
         print(f"[OpenEyes] Initialized for domain '{self.domain}' (Tier {self.domain_tier[-1]})")
         print(f"✓ Loaded {len(self.rules_config.get('rules', []))} domain rules")
         print(f"✓ Fragment library: {len(self.library._fragments)} fragments")
+        if night_mode:
+            print(f"✓ Night Mode: Started as background thread")
     
     def query(self, query_text: str) -> Dict[str, Any]:
         """

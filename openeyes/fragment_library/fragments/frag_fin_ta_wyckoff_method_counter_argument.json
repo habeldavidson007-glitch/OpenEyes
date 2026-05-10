@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_wyckoff_method_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Wyckoff schematics are subjective\u2014different analysts label phases differently. Hindsight bias makes patterns look clearer than they are in real-time. Requires significant practice to apply consistently.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

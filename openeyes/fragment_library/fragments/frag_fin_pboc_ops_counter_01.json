@@ -14,7 +14,7 @@
   "content": "PBOC policy is often subordinated to state industrial policy rather than pure macro stability. Heavy intervention in the forex market to prevent rapid depreciation creates tension with US Treasury and limits capital account liberalization efforts.",
   "source": "government_source",
   "source_url": "http://www.pbc.gov.cn/english/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_pboc_ops_def_01"

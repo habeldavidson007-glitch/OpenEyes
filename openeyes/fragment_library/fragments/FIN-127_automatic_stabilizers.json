@@ -1,0 +1,18 @@
+{
+  "id": "FIN-127",
+  "domain": "finance",
+  "subdomain": "monetary_policy",
+  "tags": [
+    "fiscal_policy",
+    "automatic_stabilizers",
+    "unemployment_insurance",
+    "taxation"
+  ],
+  "content": "Automatic stabilizers are fiscal mechanisms that automatically counteract economic fluctuations without requiring new legislation. During recessions, unemployment insurance payments increase as more people lose jobs, while tax revenues fall as incomes decline\u2014both providing automatic stimulus. During expansions, the opposite occurs: fewer unemployment claims and higher tax collections cool the economy. The U.S. federal income tax system is progressive, meaning it acts as an automatic stabilizer by taking a larger share of income during booms. Studies suggest automatic stabilizers in advanced economies offset 30-40% of economic shocks without any policy action.",
+  "year": "2024",
+  "source": "Congressional Budget Office",
+  "source_url": "https://www.cbo.gov/topics/economy",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
+}

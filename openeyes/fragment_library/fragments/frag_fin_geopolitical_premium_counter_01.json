@@ -13,7 +13,7 @@
   "content": "Markets often 'look through' geopolitical noise if supply chains remain intact. Premium decays quickly unless physical disruption occurs (e.g., Strait of Hormuz closure). Overestimating geopolitical risk leads to missed opportunities in beaten-down assets.",
   "source": "government_source",
   "source_url": "https://www.imf.org/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_geopolitical_premium_def_01"

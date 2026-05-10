@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_flags_pennants_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "In strong trends, flags may not form\u2014price grinds higher/lower without clean patterns. What looks like flag mid-formation may become reversal. Timeframe matters: 4H+ more reliable than 15min.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

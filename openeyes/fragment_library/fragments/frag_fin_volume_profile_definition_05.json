@@ -12,7 +12,7 @@
   "content": "Volume Profile displays volume at specific price levels over time, creating horizontal histograms. Value Area contains ~70% of volume; Point of Control (POC) is highest-volume price. Prices tend to gravitate toward value areas; breakouts from value suggest new trends. Helps identify fair value, acceptance/rejection levels. Different from time-based volume; shows WHERE volume occurred, not just WHEN.",
   "source": "Educational Resource",
   "source_url": "https://www.tradingview.com/ideas/volume-profile-basics",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

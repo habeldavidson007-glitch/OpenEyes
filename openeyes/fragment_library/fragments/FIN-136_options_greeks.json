@@ -1,0 +1,18 @@
+{
+  "id": "FIN-136",
+  "domain": "finance",
+  "subdomain": "derivatives",
+  "tags": [
+    "options",
+    "greeks",
+    "risk_management",
+    "derivatives"
+  ],
+  "content": "The Greeks measure option price sensitivity to various factors. Delta measures change in option price per $1 move in underlying (calls: 0 to 1, puts: -1 to 0). Gamma measures delta's rate of change\u2014high gamma means delta shifts rapidly. Theta measures time decay\u2014options lose value as expiration approaches, accelerating in final weeks. Vega measures sensitivity to implied volatility changes\u2014higher vega means more responsive to volatility shifts. Rho measures interest rate sensitivity, typically smallest for short-dated options. Professional traders use Greeks to construct hedged positions: delta-neutral portfolios eliminate directional risk, while gamma and vega exposures are managed based on market views.",
+  "year": "2024",
+  "source": "CBOE Options Institute",
+  "source_url": "https://www.cboe.com/education",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
+}

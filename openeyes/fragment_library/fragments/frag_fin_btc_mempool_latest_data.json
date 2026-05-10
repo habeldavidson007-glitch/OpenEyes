@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_mempool_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "During the 2024 Ordinals inscription boom, mempool congestion reached record levels with over 500,000 unconfirmed transactions. Fee rates spiked to 400+ sat/vByte during peak periods, making small transactions economically unviable. This demonstrated Bitcoin's capacity constraints under sustained demand.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

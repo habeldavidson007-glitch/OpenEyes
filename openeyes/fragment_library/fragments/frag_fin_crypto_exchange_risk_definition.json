@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_crypto_exchange_risk_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "risk_management"
+  ],
+  "reasoning_role": "definition",
+  "content": "Exchange counterparty risk arises from commingling customer funds, opaque reserves, and operational failures. FTX collapse revealed customer assets were lent to affiliated entities without consent. Proof-of-reserves provide partial assurance but don't verify liabilities. Self-custody eliminates counterparty risk but introduces key management responsibility.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

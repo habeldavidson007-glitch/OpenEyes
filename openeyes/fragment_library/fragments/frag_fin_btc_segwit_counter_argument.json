@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_segwit_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "counter_argument",
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "SegWit adoption was slow initially due to exchange/wallet upgrade requirements. Some argue the soft fork created unnecessary complexity versus a clean block size increase.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

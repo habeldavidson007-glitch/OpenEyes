@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_double_top_bottom_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Many 'double tops' become continuation patterns after consolidation. W-shaped bottoms can have third leg down. Volume divergence on second test is key confirmation often missed.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

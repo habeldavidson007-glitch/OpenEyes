@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_survivorship_bias_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "TA backtests often suffer survivorship bias: testing on assets that survived, ignoring those that failed. Patterns appear profitable because losers excluded. Look-ahead bias (using future data) also inflates results. Proper backtesting requires point-in-time data.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

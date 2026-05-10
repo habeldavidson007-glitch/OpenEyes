@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_erc20_standard_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "ethereum"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "ERC-20 lacks hooks for transfer notifications, causing compatibility issues with some contracts. Approve/transferFrom pattern creates phishing risks. Newer standards (ERC-777) offer improvements but limited adoption.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

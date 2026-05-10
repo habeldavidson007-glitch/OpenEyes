@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_wyckoff_accumulation_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "wyckoff",
+    "market_phases"
+  ],
+  "reasoning_role": "definition",
+  "content": "Wyckoff accumulation consists of four phases: Preliminary Support (selling slows), Selling Climax (panic selling absorbed), Automatic Rally (short covering), Secondary Test (retests lows on reduced volume), then Spring (final shakeout before markup). Smart money accumulates during this basing process before public recognizes value.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

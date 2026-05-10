@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_rug_pull_mechanics_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "latest_data",
+    "risk_management"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Chainalysis estimated $7.8B lost to rug pulls/scams in 2021. Squid Game token ($3M), AnubisDAO ($60M) notable examples. Token sniffer tools help detection but scammers adapt.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

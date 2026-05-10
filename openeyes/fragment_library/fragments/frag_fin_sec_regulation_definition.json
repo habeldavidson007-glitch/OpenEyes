@@ -12,7 +12,7 @@
   "content": "The Securities and Exchange Commission (SEC) is an independent federal agency established under the Securities Exchange Act of 1934. Its primary mission is to protect investors, maintain fair, orderly, and efficient markets, and facilitate capital formation. The SEC has broad enforcement powers including the ability to bring civil actions in federal court or administrative proceedings, impose penalties, disgorgement of ill-gotten gains, and bars from serving as officers or directors of public companies.",
   "source": "government_source",
   "source_url": "https://www.sec.gov",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

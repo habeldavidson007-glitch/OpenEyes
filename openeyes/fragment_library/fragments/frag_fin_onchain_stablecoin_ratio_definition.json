@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_stablecoin_ratio_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "on_chain_metrics",
+    "stablecoin"
+  ],
+  "reasoning_role": "definition",
+  "content": "Stablecoin Supply Ratio (SSR) = stablecoin market cap / Bitcoin market cap. It measures potential buying power sitting on sidelines. High SSR indicates substantial dry powder; low SSR suggests most capital already deployed. SSR extremes correlate with market reversals.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

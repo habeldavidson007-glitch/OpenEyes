@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_self_fulfilling_latest_data",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Bitcoin respecting 200-week moving average (within 5%) held for years, creating psychological support. Mass liquidations at obvious technical levels demonstrate self-fulfilling dynamics. Institutional algos exploit retail TA levels.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

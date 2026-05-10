@@ -1,0 +1,17 @@
+{
+  "id": "FIN-118",
+  "domain": "finance",
+  "subdomain": "monetary_policy",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "supply_shocks"
+  ],
+  "content": "Monetary policy poorly addresses supply-side inflation. When inflation stems from supply constraints (energy, supply chains, labor), raising rates can't fix supply\u2014only destroys demand to match. 1970s oil shocks and 2021-22 pandemic inflation demonstrated this painful tradeoff.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "counter_argument",
+  "credibility_class": "government_agency"
+}

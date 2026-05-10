@@ -14,7 +14,7 @@
   "content": "Treasury yield curve data is available daily from the Treasury Department and Federal Reserve. The curve steepened in 2023-2024 after inverting in 2022-2023 as the Fed raised rates. Market participants monitor front-end sensitivity to Fed policy versus back-end sensitivity to growth and inflation expectations. Real yields (TIPS) provide inflation-adjusted perspectives. Breakeven inflation rates derived from nominal-TIPS spreads indicate market inflation expectations. International yield curve comparisons inform capital flow analysis.",
   "source": "Federal Reserve H.15 Release",
   "source_url": "https://www.federalreserve.gov/releases/h15/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

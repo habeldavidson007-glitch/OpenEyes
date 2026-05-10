@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_script_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "smart_contracts"
+  ],
+  "reasoning_role": "definition",
+  "content": "Bitcoin Script is a stack-based, Forth-like language that defines conditions for spending UTXOs. It is intentionally not Turing-complete, lacking loops to prevent infinite execution. Script enables multisig wallets, time-locked transactions, and basic conditional payments while maintaining predictable validation costs.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

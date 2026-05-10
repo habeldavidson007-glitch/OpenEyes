@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_volume_dryup_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "volume"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Volume dry up interpretations depend entirely on context\u2014same pattern can signal continuation or reversal. During holidays or low-liquidity sessions, dry up is normal, not meaningful. Some instruments naturally trade lower volume without implications. Comparing volume across different market regimes (high vs low volatility) produces misleading conclusions.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

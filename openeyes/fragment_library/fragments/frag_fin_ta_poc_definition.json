@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_poc_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "volume"
+  ],
+  "reasoning_role": "definition",
+  "content": "Point of Control (POC) is the price level with highest traded volume within a specified period. It represents fair value consensus where most business occurred. Price tends to gravitate toward POC as market seeks balance. Breaks away from POC with volume suggest directional conviction; returns to POC suggest mean reversion.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

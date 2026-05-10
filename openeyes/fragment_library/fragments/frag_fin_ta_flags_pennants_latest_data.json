@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_flags_pennants_latest_data",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "chart_patterns",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Bull flags more reliable in uptrends than bear flags in downtrends (due to short-covering squeezes). Crypto trends often extend beyond measured targets due to momentum trading.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

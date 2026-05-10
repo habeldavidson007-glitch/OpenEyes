@@ -50,6 +50,7 @@ class Fragment:
     source_type: Optional[str] = None     # "primary", "secondary", "tertiary"
     year: Optional[int] = None            # Publication year for temporal scoring
     sub_question: Optional[str] = None    # The specific sub-question this fragment answers
+    verified: Optional[bool] = None       # Whether fragment has been verified (legacy field)
     
     def __post_init__(self):
         """Auto-set last_verified if not provided."""

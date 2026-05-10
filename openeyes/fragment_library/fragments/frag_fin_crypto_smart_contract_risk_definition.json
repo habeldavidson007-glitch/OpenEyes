@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_smart_contract_risk_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "risk_management",
+    "defi"
+  ],
+  "reasoning_role": "definition",
+  "content": "Smart contract risk stems from code vulnerabilities, logic errors, or unforeseen interactions. Audits reduce but don't eliminate risk\u2014auditors miss bugs too. Formal verification provides stronger guarantees but is costly. Bug bounties incentivize white-hat discovery. Diversification across audited protocols mitigates single-point failure risk.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

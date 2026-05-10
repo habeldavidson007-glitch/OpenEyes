@@ -13,7 +13,7 @@
   "content": "Bollinger Bands assume normal distribution of returns, which financial markets violate (fat tails). Price touching bands doesn't reliably signal reversal; in strong trends, price can 'walk the bands' indefinitely. The 2-standard-deviation setting captures ~95% of data only if returns are normal, which they aren't. Band squeezes don't consistently predict breakouts; false squeezes are common. Bands provide descriptive volatility measurement but limited predictive value.",
   "source": "Educational Resource",
   "source_url": "https://www.bollingerbands.com/limitations-study",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

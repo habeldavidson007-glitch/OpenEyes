@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_node_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "decentralization"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Node count has declined as blockchain size grows, raising centralization concerns. Approximately 15,000 reachable nodes exist globally, but many users rely on SPV wallets that trust miners. Hardware requirements continue increasing, potentially limiting who can participate in validation over time.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

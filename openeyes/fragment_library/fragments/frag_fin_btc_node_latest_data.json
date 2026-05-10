@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_node_latest_data",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Estimated 15,000-20,000 reachable nodes globally (2024). Actual node count likely 3-5x higher including unreachable nodes. Raspberry Pi 4 with SSD makes home nodes accessible.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

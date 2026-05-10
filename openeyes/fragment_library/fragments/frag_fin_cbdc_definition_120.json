@@ -1,0 +1,17 @@
+{
+  "id": "FIN-120",
+  "domain": "finance",
+  "subdomain": "monetary_policy",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "cbdc"
+  ],
+  "content": "CBDC would be digital Fed liability available to public, distinct from cash and deposits. Fed researching but no decision. Benefits: payment efficiency, financial inclusion, reduced settlement risk. Concerns: bank disintermediation, privacy, operational resilience.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "government_agency"
+}
