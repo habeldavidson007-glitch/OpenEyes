@@ -37,6 +37,73 @@ from openeyes.compiled_logic import CompiledLogicIndex
 # Import Query Normalizer
 from openeyes.query_normalizer import canonical_form
 
+# FIX 1 & IMPROVEMENT 1: Out-of-domain detection
+OUT_OF_DOMAIN_SIGNALS = [
+    'poorest country', 'richest country', 'population', 'geography',
+    'history', 'politics', 'war', 'weather', 'sports', 'music',
+    'movies', 'food', 'recipe', 'health', 'medicine', 'law'
+]
+
+def is_out_of_domain(query: str, domain: str) -> bool:
+    """Check if query is outside finance domain."""
+    q = query.lower()
+    for signal in OUT_OF_DOMAIN_SIGNALS:
+        if signal in q:
+            return True
+    return False
+
+# FIX 2: Relevance scoring function
+STOP_WORDS = {'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+              'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 
+              'should', 'may', 'might', 'must', 'shall', 'can', 'need', 'dare', 
+              'ought', 'used', 'to', 'of', 'in', 'for', 'on', 'with', 'at', 'by', 
+              'from', 'as', 'into', 'through', 'during', 'before', 'after', 'above', 
+              'below', 'between', 'under', 'again', 'further', 'then', 'once', 'here', 
+              'there', 'when', 'where', 'why', 'how', 'all', 'each', 'few', 'more', 
+              'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own', 
+              'same', 'so', 'than', 'too', 'very', 'just', 'and', 'but', 'if', 'or', 
+              'because', 'until', 'while', 'although', 'though', 'after', 'before', 
+              'what', 'which', 'who', 'whom', 'this', 'that', 'these', 'those', 'i', 
+              'you', 'he', 'she', 'it', 'we', 'they', 'me', 'him', 'her', 'us', 'them',
+              'my', 'your', 'his', 'its', 'our', 'their', 'mine', 'yours', 'hers', 
+              'ours', 'theirs', 'myself', 'yourself', 'himself', 'herself', 'itself', 
+              'ourselves', 'themselves', 'think', 'current', 'world', 'look', 'like',
+              'best', 'advice', 'doing', 'stock', 'exchange', 'explain'}
+
+def score_relevance(fragment: dict, query: str, sub_questions: list = None) -> float:
+    """
+    Score how relevant a fragment is to the actual query.
+    Returns 0.0 to 1.0. Below 0.4 = exclude from assembly.
+    
+    Uses fragment tags and content to determine relevance to query keywords.
+    """
+    if sub_questions is None:
+        sub_questions = []
+    
+    query_words = set(query.lower().split()) - STOP_WORDS
+    frag_tags = set(fragment.get('tags', []))
+    frag_content = fragment.get('content', '').lower()
+    
+    # Tag overlap score (40% weight)
+    tag_overlap = len(query_words & frag_tags) / max(len(query_words), 1)
+    
+    # Content keyword score (40% weight) - check if query words appear in content
+    content_hits = sum(1 for word in query_words if word in frag_content)
+    content_score = content_hits / max(len(query_words), 1)
+    
+    # Sub-question match score (20% weight)
+    sub_score = 0.0
+    for sub_q in sub_questions:
+        sub_words = set(sub_q.lower().split()) - STOP_WORDS
+        overlap = len(sub_words & frag_tags) / max(len(sub_words), 1)
+        sub_score = max(sub_score, overlap)
+    
+    # Combined relevance score
+    relevance = (tag_overlap * 0.4) + (content_score * 0.4) + (sub_score * 0.2)
+    return relevance
+
+RELEVANCE_THRESHOLD = 0.35  # Lowered threshold to allow more relevant fragments through
+
 
 class OpenEyes:
     """
@@ -113,6 +180,34 @@ class OpenEyes:
         start_time = time.time()
         trace_id = self._generate_trace_id()
         
+        # FIX 1 & IMPROVEMENT 1: Check domain boundary FIRST before any processing
+        if is_out_of_domain(query_text, self.domain):
+            result = {
+                "trace_id": trace_id,
+                "domain": self.domain,
+                "tier": self.domain_tier,
+                "query": query_text,
+                "answer": None,
+                "confidence": 0.0,
+                "halt": True,
+                "halt_reason": "This query is outside the finance domain.",
+                "fragments_used": [],
+                "philosophy_checks_passed": [],
+                "processing_time_ms": 0,
+                "mode": "HALT"
+            }
+            halt_msg = f"""I don't have verified information to answer this query.
+
+Reason: This query is outside the finance domain. OpenEyes currently covers: 
+financial markets, economic indicators, monetary policy, crypto, 
+technical analysis, earnings analysis, and financial regulation.
+
+To answer this, the library would need: general knowledge or encyclopedia fragments."""
+            
+            result["answer"] = halt_msg
+            print(f"\n[HALT] {result['halt_reason']}")
+            return self._finalize_result(result, start_time, trace_id)
+        
         # Step 0: Normalize query to canonical form
         normalized_query = canonical_form(query_text)
         print(f"\n[Query Normalizer] Original: {query_text}")
@@ -177,6 +272,7 @@ class OpenEyes:
             candidates = self._run_swarm(normalized_query)
             
             if not candidates:
+                # FIX 1: Hard HALT - no content after this
                 halt_response = self._build_halt_response(
                     reason="No candidate fragments found for this query.",
                     failed_candidates=[],
@@ -192,6 +288,7 @@ class OpenEyes:
             survivors = self._run_monte_carlo(candidates)
             
             if not survivors:
+                # FIX 1: Hard HALT - no content after this
                 halt_response = self._build_halt_response(
                     reason="No fragments survived Monte Carlo evaluation.",
                     failed_candidates=candidates,
@@ -207,6 +304,7 @@ class OpenEyes:
             cleared_fragments = self._run_philosophy_guard(survivors)
             
             if not cleared_fragments:
+                # FIX 1: Hard HALT - no content after this
                 halt_response = self._build_halt_response(
                     reason="No fragments passed Philosophy Guard validation.",
                     failed_candidates=survivors,
@@ -218,12 +316,19 @@ class OpenEyes:
             
             print(f"\n[Step 3 Complete] {len(cleared_fragments)} fragments cleared Philosophy Guard")
             
-            # Step 4: Dice Table assembly
-            assembled_output = self._assemble_answer(cleared_fragments, query_text)
+            # FIX 2: Apply relevance scoring gate before assembly
+            relevant_fragments = []
+            relevance_scores = {}
+            for frag in cleared_fragments:
+                rel_score = score_relevance(frag, normalized_query, [])
+                relevance_scores[frag.get('fragment_id', 'unknown')] = rel_score
+                if rel_score >= RELEVANCE_THRESHOLD:
+                    relevant_fragments.append(frag)
             
-            if assembled_output.get("halt"):
+            if not relevant_fragments:
+                # FIX 1: Hard HALT - no sufficiently relevant fragments
                 halt_response = self._build_halt_response(
-                    reason=assembled_output.get("halt_reason", "Assembly failed."),
+                    reason=f"No sufficiently relevant fragments found (all below {RELEVANCE_THRESHOLD} relevance threshold).",
                     failed_candidates=cleared_fragments,
                     domain=self.domain
                 )
@@ -231,8 +336,32 @@ class OpenEyes:
                 print(f"\n[HALT] {result['halt_reason']}")
                 return self._finalize_result(result, start_time, trace_id)
             
+            print(f"\n[Relevance Filter] {len(relevant_fragments)}/{len(cleared_fragments)} fragments passed relevance threshold ({RELEVANCE_THRESHOLD})")
+            
+            # Step 4: Dice Table assembly (using only relevant fragments)
+            assembled_output = self._assemble_answer(relevant_fragments, query_text)
+            
+            if assembled_output.get("halt"):
+                # FIX 1: Hard HALT - no content after this
+                halt_response = self._build_halt_response(
+                    reason=assembled_output.get("halt_reason", "Assembly failed."),
+                    failed_candidates=relevant_fragments,
+                    domain=self.domain
+                )
+                result.update(halt_response)
+                print(f"\n[HALT] {result['halt_reason']}")
+                return self._finalize_result(result, start_time, trace_id)
+            
             result["answer"] = assembled_output.get("answer", "")
-            result["confidence"] = assembled_output.get("confidence", 0.0)
+            # FIX 4: Compute confidence based on relevance, not just fragment quality
+            avg_relevance = sum(relevance_scores.get(f.get('fragment_id', ''), 0) for f in result["fragments_used"]) / max(len(result["fragments_used"]), 1)
+            mc_scores = [f.get('monte_carlo_score', 0) for f in result["fragments_used"]]
+            avg_mc = sum(mc_scores) / max(len(mc_scores), 1) if mc_scores else 0
+            philosophy_factor = 1.0 if assembled_output.get("philosophy_checks", []) else 0.5
+            
+            confidence = (avg_relevance * 0.5) + (avg_mc / 100 * 0.4) + (philosophy_factor * 0.1)
+            result["confidence"] = round(confidence * 100, 1)
+            
             result["fragments_used"] = assembled_output.get("fragments_used", [])
             result["philosophy_checks_passed"] = assembled_output.get("philosophy_checks", [])
             
@@ -474,54 +603,37 @@ class OpenEyes:
         return False
     
     def _build_halt_response(self, reason: str, failed_candidates: List[Dict[str, Any]] = None, domain: str = None) -> Dict[str, Any]:
-        """Build detailed diagnostic HALT response."""
-        halt_detail = {
+        """
+        FIX 1: Build HALT response - HARD STOP, no content after this.
+        Returns ONLY the halt message with reason and what's needed.
+        NO fragments, NO references, NO additional content.
+        """
+        # Determine what fragment types are missing based on reason
+        missing_types = "verified fragments directly addressing the query"
+        if "Monte Carlo" in reason:
+            missing_types = "fragments with sufficient credibility scores"
+        elif "Philosophy Guard" in reason:
+            missing_types = "fragments that pass domain rules validation"
+        elif "relevant" in reason.lower():
+            missing_types = "fragments with relevance score above threshold"
+        elif "domain" in reason.lower():
+            missing_types = "general knowledge or encyclopedia fragments"
+        
+        # FIX 1: Return ONLY this message - nothing else appended
+        halt_msg = f"""I don't have verified information to answer this query.
+
+Reason: {reason}
+
+To answer this, the library would need: {missing_types}."""
+        
+        return {
             'halt': True,
-            'answer': None,
+            'answer': halt_msg,
             'halt_reason': reason,
-            'diagnostic': {
-                'candidates_found': len(failed_candidates) if failed_candidates else 0,
-                'failure_breakdown': [],
-                'knowledge_gaps': [],
-                'recommendation': ''
-            }
+            'confidence': 0.0,
+            'fragments_used': [],
+            'philosophy_checks_passed': []
         }
-        
-        if failed_candidates:
-            for candidate in failed_candidates:
-                # Handle both FragmentCandidate objects and dicts
-                if hasattr(candidate, 'fragment_id'):
-                    frag_id = candidate.fragment_id
-                    mc_score = getattr(candidate, 'mc_score', None)
-                    fail_reason = getattr(candidate, 'failure_reason', 'Failed Monte Carlo threshold')
-                    source = getattr(candidate, 'source', 'Unknown')
-                elif isinstance(candidate, dict):
-                    frag_id = candidate.get('fragment_id', candidate.get('id', 'Unknown'))
-                    mc_score = candidate.get('mc_score', candidate.get('score', None))
-                    fail_reason = candidate.get('failure_reason', 'Failed Monte Carlo threshold')
-                    source = candidate.get('source', 'Unknown')
-                else:
-                    frag_id = str(candidate)
-                    mc_score = None
-                    fail_reason = 'Failed Monte Carlo threshold'
-                    source = 'Unknown'
-                
-                halt_detail['diagnostic']['failure_breakdown'].append({
-                    'fragment_id': frag_id,
-                    'score': round(mc_score, 1) if mc_score is not None else 'N/A',
-                    'failure_reason': fail_reason,
-                    'source': source
-                })
-        
-        # Generate what the library needs to answer this
-        halt_detail['diagnostic']['recommendation'] = (
-            f"To answer this query, the library needs: "
-            f"a verified fragment tagged with the query keywords, "
-            f"credibility class of government_source or higher, "
-            f"published within the last 2 years."
-        )
-        
-        return halt_detail
     
     def _finalize_result(self, result: Dict[str, Any], start_time: float, trace_id: str) -> Dict[str, Any]:
         """Finalize result with timing and logging."""
