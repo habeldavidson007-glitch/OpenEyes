@@ -586,39 +586,45 @@ class WurfelspielAssembler:
         self,
         fragments: List[Dict[str, Any]],
         dice_row: DiceTableRow,
-        original_query: Optional[str] = None  # NEW parameter
+        original_query: Optional[str] = None
     ) -> str:
-        """Build the final answer text from sequenced fragments."""
-        parts = []
+        """Build the final answer text using LanguageSynthesizer for natural language generation."""
+        from openeyes.language_synthesizer import LanguageSynthesizer
         
-        for i, frag in enumerate(fragments):
-            content = frag.get("content", "")
-            source = frag.get("source", "Unknown")
-            
-            # Add fragment content
-            parts.append(content)
-            
-            # Add citation if required
-            if dice_row.require_source_citation:
+        if not original_query:
+            original_query = "What is the information about this topic?"
+        
+        # Use LanguageSynthesizer to create coherent response
+        synthesizer = LanguageSynthesizer()
+        synthesized_answer, citation_map = synthesizer.synthesize_fragments(
+            fragments=fragments,
+            original_query=original_query,
+            domain="general"
+        )
+        
+        # Build references section with APA-style citations
+        references = ["\n\n### References:"]
+        citation_details = []
+        
+        for frag in fragments:
+            fragment_id = frag.get("fragment_id", "unknown")
+            if fragment_id in citation_map:
+                source = frag.get("source", "Unknown")
                 source_url = frag.get("source_url", "")
+                citation_num = citation_map[fragment_id]
+                citation_details.append((citation_num, fragment_id, source, source_url))
+        
+        # Sort by citation number and add to references
+        citation_details.sort(key=lambda x: x[0])
+        seen_ids = set()
+        for citation_num, frag_id, source, source_url in citation_details:
+            if frag_id not in seen_ids:
+                seen_ids.add(frag_id)
                 if source_url:
-                    parts[-1] += f" [Source: {source}]({source_url})"
+                    references.append(f"{source}. (n.d.). *{source_url}*")
                 else:
-                    parts[-1] += f" [Source: {source}]"
+                    references.append(f"{source}. (n.d.).")
         
-        # Join with newlines
-        answer = "\n\n".join(parts)
-        
-        # Add traceability footer
-        fragment_ids = [f.get("fragment_id", "?") for f in fragments]
-        scores = [f.get("score", 0) for f in fragments]
-        
-        footer_parts = [
-            "---",
-            f"**Trace ID:** {{trace_id_placeholder}}",
-            f"**Fragments:** {', '.join(fragment_ids)}",
-            f"**Scores:** {', '.join(f'{s:.1f}' for s in scores)}"
-        ]
-        answer += "\n\n" + "\n".join(footer_parts)
+        answer = synthesized_answer + "".join(references)
         
         return answer

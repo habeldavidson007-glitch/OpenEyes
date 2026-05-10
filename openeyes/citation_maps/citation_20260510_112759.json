@@ -1,0 +1,394 @@
+{
+  "citations": {
+    "1": {
+      "fragment_id": "frag_fin_dollar_index_counter_024",
+      "source": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/releases/h10/"
+    },
+    "2": {
+      "fragment_id": "frag_fin_real_vs_nominal_rates_counter_020",
+      "source": "Federal Reserve Economic Research",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/estimates-of-the-neutral-rate-of-interest-20230117.htm"
+    },
+    "3": {
+      "fragment_id": "frag_fin_backtesting_counter_argument_01",
+      "source": "Educational Resource",
+      "url": "https://www.quantstart.com/survivorship-bias-overfitting"
+    },
+    "4": {
+      "fragment_id": "frag_fin_defi_lending_counter_argument",
+      "source": "OpenEyes Crypto Knowledge Base",
+      "url": "https://ethereum.org"
+    },
+    "5": {
+      "fragment_id": "frag_fin_neutral_interest_rate_counter_021",
+      "source": "International Monetary Fund Working Papers",
+      "url": "https://www.imf.org/en/Publications/WP/Issues/2023/01/20/The-Natural-Rate-of-Interest-A-Critical-Review-528943"
+    },
+    "6": {
+      "fragment_id": "frag_fin_volume_profile_counter_argument_06",
+      "source": "Educational Resource",
+      "url": "https://www.marketprofile.org/volume-profile-limitations"
+    },
+    "7": {
+      "fragment_id": "frag_fin_insider_trading_law_counter_argument",
+      "source": "government_source",
+      "url": "https://www.sec.gov"
+    },
+    "8": {
+      "fragment_id": "frag_fin_web3_counter_argument",
+      "source": "OpenEyes Crypto Knowledge Base",
+      "url": "https://ethereum.org"
+    },
+    "9": {
+      "fragment_id": "frag_fin_eth_staking_latest_data",
+      "source": "OpenEyes Crypto Knowledge Base",
+      "url": "https://ethereum.org"
+    },
+    "10": {
+      "fragment_id": "frag_fin_global_trade_flows_counter_01",
+      "source": "government_source",
+      "url": "https://www.worldbank.org/"
+    },
+    "11": {
+      "fragment_id": "frag_fin_high_frequency_trading_counter_001",
+      "source": "Federal Reserve",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/hft-impact-20210518.html"
+    },
+    "12": {
+      "fragment_id": "frag_fin_seasonality_counter_argument_09",
+      "source": "Educational Resource",
+      "url": "https://www.schwarzald.com/january-effect-disappeared"
+    },
+    "13": {
+      "fragment_id": "frag_fin_book_value_price_to_book_latest_data_062",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "14": {
+      "fragment_id": "frag_fin_working_capital_cash_conversion_latest_data_077",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "15": {
+      "fragment_id": "frag_fin_gross_margin_quality_latest_data_014",
+      "source": "analyst_consensus",
+      "url": "https://www.morningstar.com/articles/valuation-metrics"
+    },
+    "16": {
+      "fragment_id": "frag_fin_free_cash_flow_yield_latest_data_026",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "17": {
+      "fragment_id": "frag_fin_gdp_measurement_latest_010",
+      "source": "Bureau of Economic Analysis News Releases",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    "18": {
+      "fragment_id": "frag_fin_return_on_invested_capital_roic_latest_data_068",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "19": {
+      "fragment_id": "frag_fin_consumer_discretionary_cyclicality_latest_data_016",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "20": {
+      "fragment_id": "frag_fin_operating_margin_efficiency_latest_data_017",
+      "source": "analyst_consensus",
+      "url": "https://www.morningstar.com/articles/valuation-metrics"
+    },
+    "21": {
+      "fragment_id": "frag_fin_treasury_market_def_025",
+      "source": "U.S. Department of the Treasury",
+      "url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics"
+    },
+    "22": {
+      "fragment_id": "frag_fin_free_cash_flow_definition_latest_data_023",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "23": {
+      "fragment_id": "frag_fin_competitive_moat_types_latest_data_089",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "24": {
+      "fragment_id": "frag_fin_forward_vs_trailing_pe_latest_data_047",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "25": {
+      "fragment_id": "frag_fin_dividends_yield_payout_latest_data_098",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "26": {
+      "fragment_id": "frag_fin_quantitative_easing_def_004",
+      "source": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/monetarypolicy/qe.htm"
+    },
+    "27": {
+      "fragment_id": "frag_fin_fed_mandate_latest_001",
+      "source": "Federal Reserve Policy Statements",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary.htm"
+    },
+    "28": {
+      "fragment_id": "frag_fin_stock_market_basics_latest_001",
+      "source": "BLS",
+      "url": "https://www.bls.gov/data/"
+    },
+    "29": {
+      "fragment_id": "frag_fin_mifid_ii_eu_latest_data",
+      "source": "government_source",
+      "url": "https://ec.europa.eu"
+    },
+    "30": {
+      "fragment_id": "frag_fin_short_selling_regs_latest_data",
+      "source": "government_source",
+      "url": "https://www.sec.gov"
+    },
+    "31": {
+      "fragment_id": "frag_fin_eps_basic_vs_diluted_latest_data_029",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "32": {
+      "fragment_id": "frag_fin_pce_inflation_latest_007",
+      "source": "Bureau of Economic Analysis News Releases",
+      "url": "https://www.bea.gov/news/schedule"
+    },
+    "33": {
+      "fragment_id": "frag_fin_utilities_bond_proxy_latest_data_022",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "34": {
+      "fragment_id": "frag_fin_peg_ratio_growth_adjusted_latest_data_050",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "35": {
+      "fragment_id": "frag_fin_balance_sheet_structure_latest_data_005",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "36": {
+      "fragment_id": "frag_fin_revenue_growth_quality_latest_data_032",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "37": {
+      "fragment_id": "frag_fin_share_buybacks_value_vs_engineering_latest_data_095",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "38": {
+      "fragment_id": "frag_fin_price_to_sales_usage_latest_data_053",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "39": {
+      "fragment_id": "frag_fin_interest_coverage_ratio_latest_data_074",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "40": {
+      "fragment_id": "frag_fin_price_to_fcf_honesty_latest_data_056",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "41": {
+      "fragment_id": "frag_fin_gdp_growth_rate_latest_011",
+      "source": "Congressional Budget Office Economic Projections",
+      "url": "https://www.cbo.gov/economic-projections"
+    },
+    "42": {
+      "fragment_id": "frag_fin_seasonality_definition_08",
+      "source": "Educational Resource",
+      "url": "https://www.investopedia.com/terms/s/seasonality.asp"
+    },
+    "43": {
+      "fragment_id": "frag_fin_tam_assessment_critical_latest_data_086",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "44": {
+      "fragment_id": "frag_fin_btc_origin_latest_data",
+      "source": "OpenEyes Crypto Knowledge Base",
+      "url": "https://bitcoin.org/bitcoin.pdf"
+    },
+    "45": {
+      "fragment_id": "frag_fin_real_estate_cap_rates_latest_data_025",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "46": {
+      "fragment_id": "frag_fin_return_on_equity_roe_latest_data_065",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "47": {
+      "fragment_id": "frag_fin_ev_ebitda_enterprise_value_latest_data_059",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "48": {
+      "fragment_id": "frag_fin_guidance_sandbagging_latest_data_035",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "49": {
+      "fragment_id": "frag_fin_pe_ratio_limitations_latest_data_044",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "50": {
+      "fragment_id": "frag_fin_insider_trading_signals_latest_data_092",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "51": {
+      "fragment_id": "frag_fin_gdp_measurement_def_010",
+      "source": "Bureau of Economic Analysis",
+      "url": "https://www.bea.gov/data/gross-domestic-product-gdp"
+    },
+    "52": {
+      "fragment_id": "frag_fin_dollar_milkshake_def_01",
+      "source": "government_source",
+      "url": "https://www.federalreserve.gov/"
+    },
+    "53": {
+      "fragment_id": "frag_fin_income_statement_structure_latest_data_002",
+      "source": "government_source",
+      "url": "https://www.sec.gov/files/form10-k.pdf"
+    },
+    "54": {
+      "fragment_id": "frag_fin_web3_latest_data",
+      "source": "OpenEyes Crypto Knowledge Base",
+      "url": "https://ethereum.org"
+    },
+    "55": {
+      "fragment_id": "frag_fin_industrials_pmi_correlation_latest_data_019",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "56": {
+      "fragment_id": "frag_fin_analyst_estimates_consensus_latest_data_038",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "57": {
+      "fragment_id": "frag_fin_nonfarm_payroll_def_012",
+      "source": "Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/bls/news-release/empsit.htm"
+    },
+    "58": {
+      "fragment_id": "frag_fin_revenue_recognition_risks_latest_data_011",
+      "source": "government_source",
+      "url": "https://www.sec.gov/files/form10-k.pdf"
+    },
+    "59": {
+      "fragment_id": "frag_fin_cac_ltv_unit_economics_latest_data_083",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "60": {
+      "fragment_id": "frag_fin_cash_flow_statement_importance_latest_data_008",
+      "source": "government_source",
+      "url": "https://www.sec.gov/files/form10-k.pdf"
+    },
+    "61": {
+      "fragment_id": "frag_fin_commodity_supercycle_def_01",
+      "source": "government_source",
+      "url": "https://www.worldbank.org/"
+    },
+    "62": {
+      "fragment_id": "frag_fin_real_vs_nominal_rates_def_020",
+      "source": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/real-rates-20190615.htm"
+    },
+    "63": {
+      "fragment_id": "frag_fin_short_selling_regs_definition",
+      "source": "government_source",
+      "url": "https://www.sec.gov"
+    },
+    "64": {
+      "fragment_id": "frag_fin_inventory_turnover_efficiency_latest_data_080",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "65": {
+      "fragment_id": "frag_fin_forex_market_def_001",
+      "source": "SEC",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/foreign-exchange"
+    },
+    "66": {
+      "fragment_id": "frag_fin_defi_protocols_latest_001",
+      "source": "DeFi Llama",
+      "url": "https://defillama.com/"
+    },
+    "67": {
+      "fragment_id": "frag_eng_steel_beam_load_002",
+      "source": "AISC Steel Construction Manual & Structural Stability Research Council Guidelines",
+      "url": "https://www.aisc.org/publications/"
+    },
+    "68": {
+      "fragment_id": "frag_fin_tax_treatment_investments_definition",
+      "source": "government_source",
+      "url": "https://www.irs.gov"
+    },
+    "69": {
+      "fragment_id": "frag_fin_btc_etf_definition",
+      "source": "OpenEyes Crypto Knowledge Base",
+      "url": "https://www.sec.gov/crypto"
+    },
+    "70": {
+      "fragment_id": "frag_fin_etf_structure_def_001",
+      "source": "SEC",
+      "url": "https://www.sec.gov/investor/pubs/exchangetradedfunds.htm"
+    },
+    "71": {
+      "fragment_id": "frag_fin_unemployment_rate_def_013",
+      "source": "Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/cps/"
+    },
+    "72": {
+      "fragment_id": "frag_fin_sector_rotation_cycles_definition_099",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "73": {
+      "fragment_id": "frag_fin_backtesting_definition_10",
+      "source": "Educational Resource",
+      "url": "https://www.investopedia.com/terms/b/backtesting.asp"
+    },
+    "74": {
+      "fragment_id": "frag_fin_stock_market_basics_def_001",
+      "source": "SEC",
+      "url": "https://www.sec.gov/fast-answers/answerssecuritieshtm.html"
+    },
+    "75": {
+      "fragment_id": "frag_fin_bitcoin_market_def_001",
+      "source": "SEC",
+      "url": "https://www.sec.gov/investor/alerts/bitcoin-and-other-virtual-currencies"
+    },
+    "76": {
+      "fragment_id": "frag_fin_balance_sheet_structure_definition_003",
+      "source": "financial_education",
+      "url": "https://www.investopedia.com/terms/f/freecashflow.asp"
+    },
+    "77": {
+      "fragment_id": "frag_fin_em_contagion_def_01",
+      "source": "government_source",
+      "url": "https://www.imf.org/"
+    },
+    "78": {
+      "fragment_id": "frag_fin_china_economy_def_01",
+      "source": "government_source",
+      "url": "https://www.worldbank.org/"
+    }
+  }
+}

@@ -94,7 +94,14 @@ class FragmentLibrary:
                          If None, uses in-memory only.
         """
         self.storage_path = Path(storage_path) if storage_path else Path(__file__).parent / "fragments"
-        self.storage_path.mkdir(parents=True, exist_ok=True)
+        
+        # Handle symlinks: if storage_path is a symlink, resolve it
+        if self.storage_path.is_symlink():
+            self.storage_path = self.storage_path.resolve()
+        
+        # Create directory if it doesn't exist (check existence after resolving symlinks)
+        if not self.storage_path.exists():
+            self.storage_path.mkdir(parents=True, exist_ok=True)
         
         # In-memory index: fragment_id -> Fragment
         self._fragments: Dict[str, Fragment] = {}
