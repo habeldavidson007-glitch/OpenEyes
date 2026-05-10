@@ -3,6 +3,8 @@ OpenEyes Language Synthesizer — Natural Language Response Generator
 
 Converts fragmented facts into coherent, grammatically correct responses
 with proper Subject-Verb-Object structure and query-aware framing.
+
+KEY IMPROVEMENT: Actually ANSWERS the question instead of just listing data.
 """
 
 import re
@@ -11,13 +13,14 @@ from typing import List, Dict, Any, Optional, Tuple
 
 class LanguageSynthesizer:
     """
-    Synthesizes fragments into natural language responses.
+    Synthesizes fragments into natural language responses that DIRECTLY ANSWER the query.
     
     Features:
     - Query intent recognition (opinion, fact, comparison, etc.)
-    - Sentence structure optimization (SVO order)
-    - Coherent paragraph formation
-    - Appropriate response framing ("I think", "Based on evidence", etc.)
+    - Thesis-first answer structure
+    - Evidence weaving into supporting arguments
+    - Proper paragraph flow with topic sentences
+    - No bullet points - essay-style narrative
     """
     
     # Query intent patterns
@@ -55,6 +58,7 @@ class LanguageSynthesizer:
         r"recommend",
         r"suggest",
         r"best\s+way",
+        r"best\s+stock",
     ]
     
     def __init__(self):
@@ -83,30 +87,17 @@ class LanguageSynthesizer:
         
         return "general"
     
-    def get_response_frame(self, intent: str) -> str:
-        """Get appropriate response framing based on query intent."""
-        frames = {
-            "opinion": "Based on my analysis, ",
-            "fact": "",
-            "comparison": "In comparing these aspects, ",
-            "recommendation": "Based on the available evidence, ",
-            "general": ""
-        }
-        return frames.get(intent, "")
-    
     def extract_key_topics(self, query: str) -> List[str]:
         """Extract key topics from the query for better synthesis."""
-        # Remove question words and common phrases
         cleaned = query.lower()
         cleaned = re.sub(r'^(what|how|why|when|where|who|which)\s+(do|does|did|is|are|was|were)?\s*(you|i|we)?\s*', '', cleaned)
         cleaned = re.sub(r'^(think|opinion|view|thoughts|tell|describe|explain|define)\s*(about)?\s*', '', cleaned)
         
-        # Split and filter
         words = cleaned.split()
         stop_words = {'the', 'a', 'an', 'of', 'in', 'on', 'at', 'to', 'for', 'with', 'by', 'and', 'or', 'but', 'is', 'are', 'was', 'were', 'be', 'been', 'being'}
         
         topics = [w for w in words if w not in stop_words and len(w) > 2]
-        return topics[:5]  # Return top 5 topics
+        return topics[:5]
     
     def synthesize_fragments(
         self, 
@@ -115,67 +106,277 @@ class LanguageSynthesizer:
         domain: str = "general"
     ) -> Tuple[str, Dict[str, Any]]:
         """
-        Synthesize fragments into a coherent natural language response.
+        Synthesize fragments into a coherent natural language response that DIRECTLY ANSWERS the query.
         
-        Args:
-            fragments: List of fragment dictionaries with content, source, etc.
-            original_query: The user's original query
-            domain: Domain context
-            
-        Returns:
-            Tuple of (synthesized_answer, citation_info)
+        Structure:
+        1. Direct thesis/answer in first paragraph
+        2. Supporting evidence woven into flowing paragraphs
+        3. Conclusion that ties back to the original question
         """
         if not fragments:
             return "I don't have enough information to answer this question.", {}
         
         # Detect query intent
         intent = self.detect_intent(original_query)
-        response_frame = self.get_response_frame(intent)
         
-        # Extract key topics for coherence
+        # Extract key topics
         key_topics = self.extract_key_topics(original_query)
         
-        # Group fragments by relevance and content type
-        grouped = self._group_fragments(fragments, key_topics)
+        # Sort fragments by score (highest first)
+        sorted_fragments = sorted(fragments, key=lambda x: x.get("score", 0), reverse=True)
         
-        # Build coherent paragraphs
+        # Build the response with proper structure
         paragraphs = []
         citation_map = {}
-        citation_counter = 0
         
-        # Opening statement based on intent
-        opening = self._create_opening(intent, original_query, key_topics)
+        # PARAGRAPH 1: Direct answer/thesis based on intent
+        opening = self._create_direct_answer(intent, original_query, sorted_fragments, key_topics, citation_map)
         if opening:
             paragraphs.append(opening)
         
-        # Process each group
-        for group_name, group_frags in grouped.items():
-            paragraph = self._synthesize_group(
-                group_name, 
-                group_frags, 
-                citation_counter,
-                citation_map
-            )
-            if paragraph:
-                paragraphs.append(paragraph)
-                citation_counter = max(citation_map.values()) if citation_map else citation_counter
+        # PARAGRAPH 2+: Supporting evidence and context (flowing narrative)
+        body_paragraphs = self._create_supporting_narrative(sorted_fragments, key_topics, citation_map, intent)
+        paragraphs.extend(body_paragraphs)
         
-        # Create conclusion if needed
-        conclusion = self._create_conclusion(intent, grouped)
+        # FINAL PARAGRAPH: Conclusion
+        conclusion = self._create_conclusion(intent, sorted_fragments, key_topics, citation_map)
         if conclusion:
             paragraphs.append(conclusion)
         
-        # Join paragraphs
+        # Join paragraphs with double newlines
         answer = "\n\n".join(paragraphs)
         
         return answer, citation_map
+    
+    def _create_direct_answer(
+        self,
+        intent: str,
+        original_query: str,
+        fragments: List[Dict[str, Any]],
+        key_topics: List[str],
+        citation_map: Dict[str, int]
+    ) -> str:
+        """
+        Create a DIRECT ANSWER paragraph that addresses the query immediately.
+        This is the thesis statement of the response.
+        """
+        if not fragments:
+            return ""
+        
+        citation_counter = 0
+        topic_str = " and ".join(key_topics[:3]) if key_topics else "this topic"
+        
+        # For opinion questions like "what do you think", start with analytical framing
+        if intent == "opinion":
+            # Synthesize top 2-3 fragments into a thesis statement
+            top_frags = fragments[:min(3, len(fragments))]
+            
+            # Build a thesis from the highest-scoring fragment
+            best_frag = top_frags[0]
+            content = self._normalize_sentence(best_frag.get("content", ""))
+            
+            if content:
+                citation_counter += 1
+                citation_map[best_frag.get("fragment_id", "unknown")] = citation_counter
+                
+                # Frame as direct analysis
+                opening_sentence = f"My analysis of {topic_str} reveals several critical dynamics. "
+                
+                # Add the main insight - ensure it starts with capital letter
+                main_insight = self._normalize_sentence(best_frag.get("content", ""))
+                if main_insight:
+                    # Make first letter uppercase if it's not already
+                    if main_insight[0].islower():
+                        main_insight = main_insight[0].upper() + main_insight[1:]
+                    
+                    paragraph = opening_sentence + main_insight + f" [{citation_counter}]"
+                    
+                    # Add 1-2 more supporting points with transitions
+                    if len(top_frags) > 1:
+                        second_frag = top_frags[1]
+                        second_content = self._normalize_sentence(second_frag.get("content", ""))
+                        if second_content:
+                            citation_counter += 1
+                            citation_map[second_frag.get("fragment_id", "unknown")] = citation_counter
+                            
+                            # Ensure proper capitalization for transition
+                            if second_content[0].islower():
+                                second_content = second_content[0].upper() + second_content[1:]
+                            
+                            paragraph += f" Furthermore, {second_content} [{citation_counter}]"
+                    
+                    return paragraph
+        
+        # For fact questions, provide direct explanation
+        elif intent == "fact":
+            best_frag = fragments[0]
+            content = self._normalize_sentence(best_frag.get("content", ""))
+            
+            if content:
+                citation_counter += 1
+                citation_map[best_frag.get("fragment_id", "unknown")] = citation_counter
+                return f"Regarding {topic_str}, here are the key facts: {content} [{citation_counter}]"
+        
+        # For recommendation questions (like "best stock"), be direct about limitations
+        elif intent == "recommendation":
+            # OpenEyes doesn't give financial advice, so frame appropriately
+            return f"I cannot provide specific investment recommendations, but I can share relevant analysis about {topic_str} based on verified data."
+        
+        # For comparison questions
+        elif intent == "comparison":
+            best_frag = fragments[0]
+            content = self._normalize_sentence(best_frag.get("content", ""))
+            
+            if content:
+                citation_counter += 1
+                citation_map[best_frag.get("fragment_id", "unknown")] = citation_counter
+                return f"In comparing these aspects, the evidence shows: {content} [{citation_counter}]"
+        
+        # Default: general analytical opening
+        else:
+            best_frag = fragments[0]
+            content = self._normalize_sentence(best_frag.get("content", ""))
+            
+            if content:
+                citation_counter += 1
+                citation_map[best_frag.get("fragment_id", "unknown")] = citation_counter
+                return f"Analysis of {topic_str} indicates: {content} [{citation_counter}]"
+        
+        return ""
+    
+    def _create_supporting_narrative(
+        self,
+        fragments: List[Dict[str, Any]],
+        key_topics: List[str],
+        citation_map: Dict[str, int],
+        intent: str
+    ) -> List[str]:
+        """
+        Create flowing body paragraphs that weave evidence into a coherent narrative.
+        Each paragraph should have a topic sentence and flow naturally to the next.
+        """
+        paragraphs = []
+        
+        if len(fragments) < 2:
+            return paragraphs
+        
+        # Skip the first fragment(s) already used in direct answer
+        remaining_frags = fragments[2:] if intent == "opinion" else fragments[1:]
+        
+        if not remaining_frags:
+            return paragraphs
+        
+        # Group remaining fragments thematically
+        thematic_groups = self._group_by_theme(remaining_frags, key_topics)
+        
+        citation_counter = max(citation_map.values()) if citation_map else 0
+        
+        # Transition phrases for connecting ideas
+        paragraph_transitions = [
+            "A critical aspect to consider is that",
+            "Beyond this,",
+            "In addition,",
+            "Another important dimension involves",
+            "The broader context shows that",
+            "Market dynamics further reveal that",
+            "Research indicates that",
+            "Historical patterns suggest that"
+        ]
+        
+        for i, (theme, group_frags) in enumerate(thematic_groups.items()):
+            if not group_frags:
+                continue
+            
+            paragraph_parts = []
+            
+            # Start with a transition (except first body paragraph)
+            if i > 0 and i - 1 < len(paragraph_transitions):
+                paragraph_parts.append(paragraph_transitions[i - 1])
+            
+            # Process top 2-3 fragments in this theme
+            for j, frag in enumerate(group_frags[:3]):
+                content = self._normalize_sentence(frag.get("content", ""))
+                if not content:
+                    continue
+                
+                citation_counter += 1
+                citation_map[frag.get("fragment_id", "unknown")] = citation_counter
+                
+                # For first fragment in paragraph, ensure proper capitalization after transition
+                if j == 0 and paragraph_parts and paragraph_parts[-1].endswith('that'):
+                    if content[0].isupper():
+                        content = content[0].lower() + content[1:]
+                    paragraph_parts.append(content + f" [{citation_counter}]")
+                else:
+                    # Add with appropriate connector
+                    if j > 0:
+                        connectors = ["Additionally,", "Moreover,", "This is evident in that"]
+                        connector = connectors[min(j - 1, len(connectors) - 1)]
+                        if content[0].isupper():
+                            content = content[0].lower() + content[1:]
+                        paragraph_parts.append(f"{connector} {content} [{citation_counter}]")
+                    else:
+                        paragraph_parts.append(f"{content} [{citation_counter}]")
+            
+            if paragraph_parts:
+                # Join into coherent paragraph
+                paragraph_text = " ".join(paragraph_parts)
+                
+                # Ensure proper punctuation between sentences
+                paragraph_text = re.sub(r'\]\s+([A-Z])', r'] \1', paragraph_text)
+                
+                paragraphs.append(paragraph_text)
+        
+        return paragraphs
+    
+    def _group_by_theme(
+        self,
+        fragments: List[Dict[str, Any]],
+        key_topics: List[str]
+    ) -> Dict[str, List[Dict[str, Any]]]:
+        """Group fragments by thematic similarity for better narrative flow."""
+        themes = {
+            "market_structure": [],
+            "economic_indicators": [],
+            "investment_strategy": [],
+            "risk_factors": [],
+            "regulatory_context": [],
+            "historical_context": [],
+            "other": []
+        }
+        
+        # Keywords for each theme
+        theme_keywords = {
+            "market_structure": ["market", "trading", "liquidity", "hft", "exchange", "volume"],
+            "economic_indicators": ["gdp", "inflation", "rate", "fed", "interest", "employment", "cpi", "pce"],
+            "investment_strategy": ["sector", "rotation", "allocation", "portfolio", "diversification", "yield"],
+            "risk_factors": ["volatility", "risk", "crash", "decline", "uncertainty", "bubble"],
+            "regulatory_context": ["sec", "regulation", "rule", "compliance", "policy", "mandate"],
+            "historical_context": ["historical", "trend", "cycle", "pattern", "super cycle", "past"]
+        }
+        
+        for frag in fragments:
+            content = frag.get("content", "").lower()
+            assigned = False
+            
+            for theme, keywords in theme_keywords.items():
+                if any(kw in content for kw in keywords):
+                    themes[theme].append(frag)
+                    assigned = True
+                    break
+            
+            if not assigned:
+                themes["other"].append(frag)
+        
+        # Remove empty themes
+        return {k: v for k, v in themes.items() if v}
     
     def _group_fragments(
         self, 
         fragments: List[Dict[str, Any]], 
         key_topics: List[str]
     ) -> Dict[str, List[Dict[str, Any]]]:
-        """Group fragments by topic relevance."""
+        """Group fragments by topic relevance (legacy method, kept for compatibility)."""
         groups = {
             "primary": [],
             "supporting": [],
@@ -184,8 +385,6 @@ class LanguageSynthesizer:
         
         for frag in fragments:
             content = frag.get("content", "").lower()
-            
-            # Check if fragment mentions key topics
             relevance_score = sum(1 for topic in key_topics if topic in content)
             
             if relevance_score >= 2:
@@ -195,12 +394,8 @@ class LanguageSynthesizer:
             else:
                 groups["context"].append(frag)
         
-        # Sort each group by score
         for group_name in groups:
-            groups[group_name].sort(
-                key=lambda x: x.get("score", 0), 
-                reverse=True
-            )
+            groups[group_name].sort(key=lambda x: x.get("score", 0), reverse=True)
         
         return groups
     
@@ -210,7 +405,7 @@ class LanguageSynthesizer:
         query: str, 
         topics: List[str]
     ) -> str:
-        """Create an opening statement based on query intent."""
+        """Create an opening statement based on query intent (legacy method)."""
         if intent == "opinion":
             topic_str = " and ".join(topics[:2]) if topics else "this topic"
             return f"I've analyzed the current landscape regarding {topic_str}. Here's what the evidence suggests:"
@@ -226,7 +421,6 @@ class LanguageSynthesizer:
             topic_str = " and ".join(topics[:2]) if topics else "your question"
             return f"Regarding {topic_str}, here's my assessment:"
         
-        # Default: create a simple acknowledgment
         topic_str = " and ".join(topics[:2]) if topics else "your query"
         return f"Based on my analysis of {topic_str}, here are the key insights:"
     
@@ -320,26 +514,28 @@ class LanguageSynthesizer:
     
     def _create_conclusion(
         self, 
-        intent: str, 
-        grouped_fragments: Dict[str, List[Dict[str, Any]]]
+        intent: str,
+        fragments: List[Dict[str, Any]],
+        key_topics: List[str],
+        citation_map: Dict[str, int]
     ) -> str:
-        """Create a concluding statement if appropriate."""
-        total_frags = sum(len(frags) for frags in grouped_fragments.values())
-        
-        if total_frags < 3:
+        """Create a concluding statement that ties back to the original question."""
+        if len(fragments) < 3:
             return ""
         
+        topic_str = " and ".join(key_topics[:2]) if key_topics else "these dynamics"
+        
         if intent == "opinion":
-            return "This analysis reflects the current consensus and available evidence on the matter."
+            return f"This analysis of {topic_str} reflects the current consensus and available evidence from verified sources."
         
         elif intent == "recommendation":
-            return "Consider these factors carefully when making your decision."
+            return f"When evaluating {topic_str}, consider these factors carefully and consult with qualified professionals for personalized advice."
         
         elif intent == "fact":
-            return "These points provide a comprehensive overview based on verified sources."
+            return f"These points provide a comprehensive overview of {topic_str} based on verified sources."
         
         elif intent == "comparison":
-            return "Each option has distinct characteristics that should be weighed against your specific needs."
+            return f"Each aspect of {topic_str} has distinct characteristics that should be weighed against your specific needs."
         
         # Default conclusion for general queries
-        return "This summary captures the key aspects based on available information."
+        return f"This summary captures the key aspects of {topic_str} based on available information."
