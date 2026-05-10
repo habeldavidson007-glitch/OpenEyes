@@ -11,5 +11,6 @@
   "source": "Crypto Trading: Market Structure and Strategies",
   "source_url": "https://example.com/FIN-175",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

@@ -12,5 +12,6 @@
   "source": "Algorithmic Trading and DMA",
   "source_url": "https://example.com/FIN-170",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

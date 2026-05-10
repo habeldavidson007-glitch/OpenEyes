@@ -11,7 +11,7 @@
   "content": "Standard deviation assumes normal distribution of returns, but financial returns exhibit fat tails\u2014extreme moves occur more frequently than model predicts. Price can ride channel edges for extended periods during strong trends, punishing counter-trend trades. Channel width depends heavily on lookback period selection. Less adaptive than Bollinger Bands during volatility regime changes.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://www.investopedia.com/technical-analysis-4689657",
-  "credibility_class": "industry_standard",
+  "credibility_class": "financial_publication",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -11,7 +11,7 @@
   "content": "The 2015-2017 block size debate centered on whether to increase block capacity. One faction advocated larger blocks for lower fees; another prioritized decentralization through small blocks, pushing scaling to Layer 2. Segwit compromise maintained 1MB base limit while adding witness data, effectively increasing capacity without hard fork.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

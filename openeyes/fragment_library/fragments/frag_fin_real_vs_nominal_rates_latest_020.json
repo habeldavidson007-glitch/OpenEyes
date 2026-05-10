@@ -13,7 +13,7 @@
   "content": "Real interest rates turned sharply negative during the 2021-2022 inflation surge as nominal rates lagged inflation. As the Fed raised rates and inflation moderated in 2023-2024, real rates moved positive. TIPS breakevens and inflation swaps provide real-time market-implied real rates. Estimates of the neutral real rate (r*) remain debated, with implications for policy stance assessment. Cross-country real rate comparisons inform capital flow and exchange rate analysis. Real rate trends affect asset valuations, particularly growth stocks sensitive to discount rates.",
   "source": "Federal Reserve Economic Data",
   "source_url": "https://fred.stlouisfed.org/series/TREACT",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

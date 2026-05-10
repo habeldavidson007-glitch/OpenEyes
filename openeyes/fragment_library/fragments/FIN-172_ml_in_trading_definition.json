@@ -11,5 +11,6 @@
   "source": "Advances in Financial Machine Learning",
   "source_url": "https://example.com/FIN-172",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

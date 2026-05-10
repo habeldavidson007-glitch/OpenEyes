@@ -10,10 +10,10 @@
     "counter_argument"
   ],
   "reasoning_role": "counter_argument",
-  "content": "GDP has well-known limitations as a welfare measure. It counts 'bads' like pollution cleanup costs as positive contributions. It ignores non-market activities like household work and volunteer services. It doesn't account for income distribution—a rising GDP can coexist with stagnant median incomes. It fails to capture environmental degradation or resource depletion. Quality improvements and new products are difficult to measure accurately. The underground economy and illegal activities are largely excluded. GDP says nothing about sustainability of growth. Alternative measures like the Genuine Progress Indicator (GPI), Human Development Index (HDI), and OECD Better Life Index attempt to address these gaps. Despite limitations, GDP remains the best single measure of economic activity for policy purposes.",
+  "content": "GDP has well-known limitations as a welfare measure. It counts 'bads' like pollution cleanup costs as positive contributions. It ignores non-market activities like household work and volunteer services. It doesn't account for income distribution\u2014a rising GDP can coexist with stagnant median incomes. It fails to capture environmental degradation or resource depletion. Quality improvements and new products are difficult to measure accurately. The underground economy and illegal activities are largely excluded. GDP says nothing about sustainability of growth. Alternative measures like the Genuine Progress Indicator (GPI), Human Development Index (HDI), and OECD Better Life Index attempt to address these gaps. Despite limitations, GDP remains the best single measure of economic activity for policy purposes.",
   "source": "Bureau of Economic Analysis Methodology Papers",
   "source_url": "https://www.bea.gov/system/files/2023-07/conceptual-framework-bea-accounts.pdf",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

@@ -10,10 +10,10 @@
     "counter_argument"
   ],
   "reasoning_role": "counter_argument",
-  "content": "The official unemployment rate has significant limitations. It excludes discouraged workers who want jobs but have stopped looking. It doesn't capture underemployment—those working part-time who want full-time work. The labor force participation rate has declined structurally due to aging demographics, complicating interpretation. During the pandemic, measurement issues arose as many classified as 'unemployed' were temporarily laid off with uncertain recall prospects. The unemployment rate can remain low even with substantial labor market slack if participation is depressed. International comparisons are complicated by different measurement methodologies. The natural rate of unemployment (NAIRU) is unobservable and subject to revision. Some economists prefer employment-to-population ratios or vacancy-unemployment ratios (Beveridge curve analysis).",
+  "content": "The official unemployment rate has significant limitations. It excludes discouraged workers who want jobs but have stopped looking. It doesn't capture underemployment\u2014those working part-time who want full-time work. The labor force participation rate has declined structurally due to aging demographics, complicating interpretation. During the pandemic, measurement issues arose as many classified as 'unemployed' were temporarily laid off with uncertain recall prospects. The unemployment rate can remain low even with substantial labor market slack if participation is depressed. International comparisons are complicated by different measurement methodologies. The natural rate of unemployment (NAIRU) is unobservable and subject to revision. Some economists prefer employment-to-population ratios or vacancy-unemployment ratios (Beveridge curve analysis).",
   "source": "Federal Reserve Economic Research",
   "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/whats-happened-to-the-relationship-between-the-unemployment-rate-and-wage-growth-20230815.htm",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

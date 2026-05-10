@@ -11,7 +11,7 @@
   "content": "Methanol poisoning causes metabolic acidosis, visual disturbances (blurred vision, blindness), CNS depression, and potentially death. Methanol is metabolized to formaldehyde and formic acid, which cause tissue damage. Symptoms appear 12-24 hours after ingestion. Treatment includes fomepizole or ethanol to block metabolism, bicarbonate for acidosis, folate supplementation, and hemodialysis in severe cases. Immediate emergency care is critical.",
   "source": "CDC Toxicological Profile & WHO Guidelines",
   "source_url": "https://www.cdc.gov/niosh/topics/methanol/",
-  "credibility_class": "clinical_guideline",
+  "credibility_class": "government_agency",
   "last_verified": "2026-05-08",
   "weight": 1.0,
   "compatible_with": [],

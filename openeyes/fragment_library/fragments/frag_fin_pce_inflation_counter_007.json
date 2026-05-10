@@ -11,10 +11,10 @@
     "counter_argument"
   ],
   "reasoning_role": "counter_argument",
-  "content": "While PCE addresses some CPI limitations, it has its own drawbacks. PCE data is revised more substantially than CPI, with initial releases subject to larger revisions as more complete source data becomes available. The timeliness is inferior—PCE is released about a month after CPI. The chain-weighting methodology, while theoretically superior, makes PCE less intuitive for tracking the cost of a fixed basket of goods. Because PCE includes expenditures made on behalf of households (like Medicare), it may be less relevant for measuring out-of-pocket cost pressures facing consumers. Some critics argue the Fed's preference for PCE allows it to focus on a measure that typically runs below CPI, potentially understating inflation experienced by households.",
+  "content": "While PCE addresses some CPI limitations, it has its own drawbacks. PCE data is revised more substantially than CPI, with initial releases subject to larger revisions as more complete source data becomes available. The timeliness is inferior\u2014PCE is released about a month after CPI. The chain-weighting methodology, while theoretically superior, makes PCE less intuitive for tracking the cost of a fixed basket of goods. Because PCE includes expenditures made on behalf of households (like Medicare), it may be less relevant for measuring out-of-pocket cost pressures facing consumers. Some critics argue the Fed's preference for PCE allows it to focus on a measure that typically runs below CPI, potentially understating inflation experienced by households.",
   "source": "Federal Reserve Economic Research",
   "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/differences-between-cpi-and-pce-20190830.htm",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

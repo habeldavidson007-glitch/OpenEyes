@@ -11,7 +11,7 @@
   "content": "Slashing primarily targets malicious behavior, but bugs or misconfiguration can cause accidental violations. Correlated slashing events could cascade if many validators run same faulty client.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

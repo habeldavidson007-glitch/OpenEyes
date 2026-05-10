@@ -11,5 +11,6 @@
   "source": "Fortune's Formula",
   "source_url": "https://example.com/FIN-176",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

@@ -11,7 +11,7 @@
   "content": "As of 2024, Segwit adoption stands at approximately 85% of all Bitcoin transactions. Native Segwit (bech32 addresses starting with 'bc1') now represents over 60% of new addresses. The upgrade successfully reduced average transaction fees by 30-40% through increased effective capacity.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://bitcoin.org/en/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

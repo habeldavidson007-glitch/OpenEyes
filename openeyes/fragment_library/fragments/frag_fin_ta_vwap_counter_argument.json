@@ -11,7 +11,7 @@
   "content": "VWAP's effectiveness diminished as algorithmic trading adapted to its widespread use. Large players now manipulate price around VWAP to trigger flows. The indicator assumes uniform volume distribution which rarely occurs\u2014most volume concentrates at open/close. Extended hours trading complicates VWAP calculation. Anchored VWAP variants address some limitations but require subjective anchor point selection.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://www.investopedia.com/technical-analysis-4689657",
-  "credibility_class": "industry_standard",
+  "credibility_class": "financial_publication",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

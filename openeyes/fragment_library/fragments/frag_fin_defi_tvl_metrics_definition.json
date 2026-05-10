@@ -11,7 +11,7 @@
   "content": "TVL measures total assets deposited in a protocol. Calculated as sum of all locked collateral. Higher TVL suggests trust and liquidity depth. However, double-counting occurs when assets are rehypothecated across protocols.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://uniswap.org",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

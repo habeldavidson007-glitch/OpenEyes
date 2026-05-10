@@ -11,7 +11,7 @@
   "content": "ADX measures trend strength, not direction. ADX >25 = trending; <20 = ranging. +DI and -DI lines show direction. Divergence between ADX and price signals weakening trend. Useful for filtering strategies (trend-following vs mean-reversion).",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

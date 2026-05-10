@@ -11,7 +11,7 @@
   "content": "Estimated 15,000-20,000 reachable nodes globally (2024). Actual node count likely 3-5x higher including unreachable nodes. Raspberry Pi 4 with SSD makes home nodes accessible.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://bitcoin.org/bitcoin.pdf",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

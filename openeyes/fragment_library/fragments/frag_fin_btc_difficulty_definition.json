@@ -11,7 +11,7 @@
   "content": "Mining difficulty adjusts every 2016 blocks (~14 days) to maintain 10-minute average block time. If blocks are found faster, difficulty increases; slower, it decreases. This mechanism stabilizes issuance regardless of hash rate fluctuations.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://bitcoin.org/bitcoin.pdf",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -12,7 +12,7 @@
   "content": "Slashing penalizes validators for malicious behavior or severe downtime. Offenses include double-signing blocks, surround voting, or prolonged inactivity. Penalties range from minor (0.5 ETH for downtime) to severe (full 32 ETH stake loss for attacks). Slashed validators are forcibly exited from the validator set.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

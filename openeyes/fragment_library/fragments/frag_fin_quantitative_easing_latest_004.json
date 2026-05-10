@@ -14,7 +14,7 @@
   "content": "Following the aggressive QE programs during the pandemic, the Federal Reserve's balance sheet expanded to nearly $9 trillion by 2022. The Fed began reducing its holdings in 2023 through quantitative tightening (QT). As of 2024-2026, the size and composition of the Fed's balance sheet reflects both the prior QE purchases and ongoing runoff. The Fed continues to reinvest principal payments from agency debt and MBS to maintain ample reserves while allowing Treasury holdings to decline. Research on QE effectiveness continues, with most studies finding modest positive effects on output and inflation, though estimates vary widely depending on methodology and economic context.",
   "source": "Federal Reserve Balance Sheet Data",
   "source_url": "https://www.federalreserve.gov/monetarypolicy/bst_recenttrends.htm",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

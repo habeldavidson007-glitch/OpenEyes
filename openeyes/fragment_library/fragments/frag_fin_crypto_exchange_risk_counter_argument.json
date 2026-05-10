@@ -10,7 +10,7 @@
   "content": "FTX taught that even seemingly reputable exchanges can fail catastrophically. Customer funds lacked segregation, enabling misuse. Post-FTX, regulators demand proof-of-reserves and attestation, but these remain snapshots, not real-time monitoring. Only verified on-chain reserves with merkle tree proofs provide meaningful transparency.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://bitcoin.org/en/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

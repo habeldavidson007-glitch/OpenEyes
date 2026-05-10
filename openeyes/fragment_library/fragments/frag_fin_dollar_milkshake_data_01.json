@@ -13,7 +13,7 @@
   "content": "DXY hit 114 in 2022, retreated to 102 in 2023, rebounded to 106 in 2024. US share of global reserves declined slowly (58% -> 54% over decade) but no viable alternative (Euro fragmentation, Gold limited, Crypto nascent).",
   "source": "government_source",
   "source_url": "https://www.federalreserve.gov/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_dollar_milkshake_def_01"

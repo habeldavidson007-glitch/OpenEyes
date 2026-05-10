@@ -11,7 +11,7 @@
   "content": "TA backtests often suffer survivorship bias: testing on assets that survived, ignoring those that failed. Patterns appear profitable because losers excluded. Look-ahead bias (using future data) also inflates results. Proper backtesting requires point-in-time data.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

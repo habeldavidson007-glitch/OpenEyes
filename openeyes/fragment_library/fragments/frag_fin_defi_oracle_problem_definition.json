@@ -11,7 +11,7 @@
   "content": "Blockchains cannot natively access off-chain data, requiring oracles for price feeds. Chainlink decentralized oracle networks aggregate data from multiple sources, resisting manipulation. Oracles secure tens of billions in DeFi but remain attack vectors. Flash loan attacks often target oracle-dependent protocols.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

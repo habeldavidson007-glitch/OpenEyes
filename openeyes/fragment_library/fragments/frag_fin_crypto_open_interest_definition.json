@@ -11,7 +11,7 @@
   "content": "Open interest measures outstanding derivative contracts not yet settled. Rising OI with rising prices indicates new long positions entering\u2014bullish but potentially overleveraged. Declining OI suggests position closing. OI spikes often precede volatility as liquidations cascade when price moves against crowded positions.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

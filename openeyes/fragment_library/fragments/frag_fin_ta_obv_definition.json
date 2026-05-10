@@ -11,7 +11,7 @@
   "content": "On-Balance Volume (OBV) cumulatively adds volume on up days and subtracts on down days. Rising OBV confirms uptrend with accumulation; falling OBV confirms downtrend with distribution. OBV divergences often precede price reversals. The indicator smooths volume noise into interpretable trend. Developed by Joe Granville in 1960s, remains widely used.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://www.investopedia.com/technical-analysis-4689657",
-  "credibility_class": "industry_standard",
+  "credibility_class": "financial_publication",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

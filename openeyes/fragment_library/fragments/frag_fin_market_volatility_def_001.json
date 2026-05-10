@@ -13,7 +13,7 @@
   "content": "Volatility measures price variation magnitude over time. Statistical volatility (standard deviation of returns) quantifies historical price swings. Implied volatility derived from option prices reflects expected future volatility. VIX ('fear index') measures S&P 500 implied volatility. High volatility indicates uncertainty, risk, or changing fundamentals; low volatility suggests stability or complacency. Volatility clustering occurs (high vol periods group together). Mean reversion tendency: extreme volatility eventually subsides. Volatility used for risk management, option pricing, and position sizing.",
   "source": "SEC",
   "source_url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/volatility",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

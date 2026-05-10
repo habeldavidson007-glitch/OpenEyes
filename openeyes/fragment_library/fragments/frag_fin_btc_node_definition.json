@@ -11,7 +11,7 @@
   "content": "A Bitcoin node validates transactions and blocks against consensus rules without mining. Running a node allows users to verify their own transactions independently, contributing to network decentralization. Full nodes require approximately 600GB storage (2024) and moderate bandwidth, accessible to individuals with consumer hardware.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

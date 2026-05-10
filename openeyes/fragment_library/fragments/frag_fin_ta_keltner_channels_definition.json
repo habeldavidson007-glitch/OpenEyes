@@ -11,7 +11,7 @@
   "content": "Keltner Channels = EMA centerline with ATR-based bands (typically 2\u00d7 ATR). Similar to Bollinger Bands but use ATR instead of standard deviation. Squeeze = bands tighten, signaling potential breakout. Trend follows band touch in strong moves.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -13,7 +13,7 @@
   "content": "VIX averages around 20, spiked during banking stress and debt ceiling concerns. Volatility regime shifted from ultra-low pandemic era. Correlation spikes during stress reduce diversification benefits.",
   "source": "FRED",
   "source_url": "https://fred.stlouisfed.org/series/VIXCLS",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

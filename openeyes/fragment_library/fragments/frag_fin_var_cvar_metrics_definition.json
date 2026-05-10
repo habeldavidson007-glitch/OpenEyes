@@ -13,7 +13,7 @@
   "content": "Value at Risk (VaR) estimates the maximum potential loss over a specified time horizon at a given confidence level (e.g., 95% or 99%). Conditional VaR (CVaR) or Expected Shortfall measures the average loss *beyond* the VaR threshold, addressing VaR's failure to capture tail severity. Both are standard regulatory capital metrics under Basel.",
   "source": "educational",
   "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

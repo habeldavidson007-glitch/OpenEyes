@@ -10,10 +10,10 @@
     "counter_argument"
   ],
   "reasoning_role": "counter_argument",
-  "content": "The 'two-quarter rule' for recessions is imprecise and sometimes contradicts NBER determinations. Growth rate volatility makes single-quarter readings noisy. Potential growth rate estimates are uncertain and change over time—the U.S. trend growth rate has declined from ~3.5% in the 1980s-90s to ~2% today due to demographics and slower productivity growth. Comparing growth rates across countries requires accounting for catch-up effects—developing economies can grow faster by adopting existing technologies. Short-term growth fluctuations may reflect temporary factors (weather, strikes, inventory cycles) rather than fundamental economic health. Focus on quarterly growth rates can encourage short-termism in policy. Some economists advocate for level-targeting or growth path targeting rather than growth rate targeting.",
+  "content": "The 'two-quarter rule' for recessions is imprecise and sometimes contradicts NBER determinations. Growth rate volatility makes single-quarter readings noisy. Potential growth rate estimates are uncertain and change over time\u2014the U.S. trend growth rate has declined from ~3.5% in the 1980s-90s to ~2% today due to demographics and slower productivity growth. Comparing growth rates across countries requires accounting for catch-up effects\u2014developing economies can grow faster by adopting existing technologies. Short-term growth fluctuations may reflect temporary factors (weather, strikes, inventory cycles) rather than fundamental economic health. Focus on quarterly growth rates can encourage short-termism in policy. Some economists advocate for level-targeting or growth path targeting rather than growth rate targeting.",
   "source": "National Bureau of Economic Research",
   "source_url": "https://www.nber.org/research/business-cycle-dating",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

@@ -12,7 +12,7 @@
   "content": "Dencun upgrade (March 2024) introduced proto-danksharding (EIP-4844), reducing L2 transaction costs by 90%. Blob-carrying transactions process efficiently, with consistent fill rates. Full danksharding implementation remains years away, requiring additional protocol upgrades and validator client updates.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

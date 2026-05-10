@@ -12,5 +12,6 @@
   "source": "Flash Boys: A Wall Street Revolt",
   "source_url": "https://example.com/FIN-166",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

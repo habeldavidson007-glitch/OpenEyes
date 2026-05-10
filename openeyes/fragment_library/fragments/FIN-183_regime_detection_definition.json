@@ -11,5 +11,6 @@
   "source": "Quantitative Equity Portfolio Management",
   "source_url": "https://example.com/FIN-183",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

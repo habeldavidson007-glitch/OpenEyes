@@ -11,7 +11,7 @@
   "content": "Impermanent loss occurs when LP token values diverge from holding assets separately. It happens because AMMs automatically rebalance positions as prices change, selling appreciating assets and buying depreciating ones. Loss is 'impermanent' only if prices revert; otherwise it becomes permanent upon withdrawal.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

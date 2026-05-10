@@ -11,5 +11,6 @@
   "source": "CFA Institute",
   "source_url": "https://example.com/FIN-184",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

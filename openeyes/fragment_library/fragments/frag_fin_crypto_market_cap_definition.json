@@ -9,7 +9,7 @@
   "content": "Sum of circulating supply * price for all assets. Often criticized for double-counting via wrapped tokens and staked derivatives.",
   "source": "OpenEyes Crypto Knowledge Base",
   "source_url": "https://ethereum.org",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

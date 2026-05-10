@@ -13,7 +13,7 @@
   "content": "Debt sustainability depends on r-g differential (interest rate minus growth). If nominal growth > interest rates, debt burdens shrink organically. Japan sustains 260% debt because JGB yields < nominal GDP growth. Context matters more than absolute level.",
   "source": "government_source",
   "source_url": "https://www.imf.org/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_global_debt_def_01"

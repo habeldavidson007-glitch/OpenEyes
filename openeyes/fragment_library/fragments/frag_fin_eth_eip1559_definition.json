@@ -11,7 +11,7 @@
   "content": "EIP-1559, implemented August 2021, restructured Ethereum fees into base fee (burned) and priority tip (to miners/validators). Base fee adjusts algorithmically based on network congestion, improving fee predictability. The burn mechanism makes ETH deflationary during high usage periods.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

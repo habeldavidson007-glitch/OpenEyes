@@ -11,5 +11,6 @@
   "source": "DeFi and the Future of Finance",
   "source_url": "https://example.com/FIN-188",
   "verified": true,
-  "reasoning_role": "latest_data"
+  "reasoning_role": "latest_data",
+  "credibility_class": "financial_publication"
 }

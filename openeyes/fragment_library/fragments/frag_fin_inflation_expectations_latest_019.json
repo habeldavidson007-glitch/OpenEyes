@@ -13,7 +13,7 @@
   "content": "Inflation expectations measures continue to be closely monitored. Long-term expectations remained relatively well-anchored through the 2021-2023 inflation surge, though short-term expectations rose with actual inflation. TIPS breakevens, SPF forecasts, and consumer surveys provide complementary perspectives. Fed officials cite expectations data in speeches and testimony as evidence of policy credibility. Research examines whether anchoring has weakened and what factors maintain credibility. Inflation compensation decomposition separates expectations from risk premiums.",
   "source": "Federal Reserve Economic Data (FRED)",
   "source_url": "https://fred.stlouisfed.org/categories/30",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

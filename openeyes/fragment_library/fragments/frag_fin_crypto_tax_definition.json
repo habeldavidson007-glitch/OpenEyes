@@ -11,7 +11,7 @@
   "content": "Crypto taxation varies by jurisdiction but generally treats disposals as taxable events. US lacks wash sale rules for crypto (as of 2024), allowing tax-loss harvesting without waiting periods. DeFi activities create reporting complexity\u2014each swap, liquidity provision, and yield claim may be taxable. FIFO, LIFO, or specific identification methods affect outcomes.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

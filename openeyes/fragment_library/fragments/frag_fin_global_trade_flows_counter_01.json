@@ -13,7 +13,7 @@
   "content": "Trade balances matter less in floating fiat regime with deep capital markets. Capital flows (investment) dominate FX moves, not trade balances. US runs deficit but attracts equity/VC inflows, offsetting trade drag. Services surplus (US) also undercounted.",
   "source": "government_source",
   "source_url": "https://www.worldbank.org/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_global_trade_flows_def_01"

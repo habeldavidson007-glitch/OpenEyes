@@ -13,7 +13,7 @@
   "content": "The complexity of tax lot accounting (FIFO, LIFO, Specific ID) creates operational burdens. Critics argue the 'step-up in basis' rule at death encourages hoarding assets to avoid taxes, distorting capital allocation. The carried interest loophole allows fund managers to tax performance fees at capital gains rates, a subject of ongoing political debate.",
   "source": "government_source",
   "source_url": "https://www.irs.gov",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

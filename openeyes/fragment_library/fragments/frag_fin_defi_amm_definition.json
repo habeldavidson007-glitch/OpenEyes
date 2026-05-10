@@ -11,7 +11,7 @@
   "content": "Automated Market Makers (AMMs) use mathematical formulas instead of order books for price discovery. The constant product formula x*y=k ensures liquidity at all prices. As one token is bought, its price increases along the curve. Uniswap popularized this model, enabling permissionless token swaps without counterparties.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -11,7 +11,7 @@
   "content": "NVT reliability degraded as Lightning Network and Layer 2 solutions grew. On-chain transaction volume no longer captures total economic activity. Settlement layers naturally show lower velocity. Newer metrics like NVT adjusted for L2 volume attempt correction but lack historical data for validation.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://bitcoin.org/en/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

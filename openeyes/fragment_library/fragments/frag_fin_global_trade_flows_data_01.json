@@ -12,7 +12,7 @@
   "content": "2023-2024: China exports shifted to EVs/batteries/solar ('New Three'). EU imposed tariffs. Mexico surpassed China as top US trading partner. Red Sea disruptions added freight costs, delaying goods. Global trade volume growth slowed to 1.5% (below GDP).",
   "source": "government_source",
   "source_url": "https://www.worldbank.org/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_global_trade_flows_def_01"

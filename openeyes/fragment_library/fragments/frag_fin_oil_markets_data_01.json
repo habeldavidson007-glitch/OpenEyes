@@ -12,7 +12,7 @@
   "content": "2024 Brent avg $82. OPEC+ extended voluntary cuts (2.2M bpd). US production record 13.3M bpd. Strategic Petroleum Reserve (SPR) refilling at $70-75 range. China demand growth slowed to 1% vs historical 5%.",
   "source": "government_source",
   "source_url": "https://www.worldbank.org/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_oil_markets_def_01"

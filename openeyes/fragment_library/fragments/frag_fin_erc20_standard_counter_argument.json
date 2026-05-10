@@ -11,7 +11,7 @@
   "content": "ERC-20 lacks hooks for transfer notifications, causing compatibility issues with some contracts. Approve/transferFrom pattern creates phishing risks. Newer standards (ERC-777) offer improvements but limited adoption.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://glassnode.com",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

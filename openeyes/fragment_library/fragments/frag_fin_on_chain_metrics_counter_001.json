@@ -13,7 +13,7 @@
   "content": "On-chain metrics have limitations. Address counts don't equal users (one entity controls many addresses). Exchange flows ambiguous without context. Metrics can give conflicting signals. Historical patterns don't guarantee future results. Data interpretation requires expertise. Some metrics easily manipulated (wash trading). Privacy coins and mixing services obscure true flows. Correlation with price breaks down during extremes.",
   "source": "Federal Reserve",
   "source_url": "https://www.federalreserve.gov/publications/2022-may-financial-stability-report.htm",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -11,7 +11,7 @@
   "content": "Major bridge exploits (Ronin $625M, Poly Network $611M, Wormhole $320M) demonstrate catastrophic failure modes. Centralized bridges create honeypots attractive to attackers. Trust-minimized alternatives using light clients exist but are complex and capital inefficient. Many experts recommend avoiding bridges entirely.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://bitcoin.org/en/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

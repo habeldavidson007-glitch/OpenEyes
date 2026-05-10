@@ -11,5 +11,6 @@
   "source": "Order Book Dynamics in Electronic Markets",
   "source_url": "https://example.com/FIN-174",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

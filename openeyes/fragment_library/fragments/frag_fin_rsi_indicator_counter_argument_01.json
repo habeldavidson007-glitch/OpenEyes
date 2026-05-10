@@ -15,7 +15,7 @@
   "content": "RSI's overbought/oversold thresholds are arbitrary and vary by asset. Strong trends can keep RSI overbought/oversold for extended periods, generating premature reversal signals. Backtests show RSI alone has minimal predictive value. Divergence signals are subjective and often only clear in hindsight. Wilder's original parameters (14-period) lack theoretical justification. RSI performs no better than random in efficient markets. Multiple testing across parameters leads to data mining bias.",
   "source": "Educational Resource",
   "source_url": "https://www.nytimes.com/markets/rsi-limitations-study",
-  "credibility_class": "educational_resource",
+  "credibility_class": "financial_education",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

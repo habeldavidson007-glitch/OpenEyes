@@ -11,5 +11,6 @@
   "source": "Quantitative Hedge Fund Strategy",
   "source_url": "https://example.com/FIN-190",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

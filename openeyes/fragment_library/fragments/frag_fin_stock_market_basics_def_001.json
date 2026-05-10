@@ -12,7 +12,7 @@
   "content": "Stock markets are organized exchanges where buyers and sellers trade securities including stocks, bonds, and derivatives. Major US exchanges include NYSE and NASDAQ. Market makers provide liquidity by standing ready to buy and sell. Order types include market orders (execute immediately at current price), limit orders (execute only at specified price or better), and stop orders (trigger market/limit order when price reaches threshold). The SEC regulates securities markets to protect investors.",
   "source": "SEC",
   "source_url": "https://www.sec.gov/fast-answers/answerssecuritieshtm.html",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

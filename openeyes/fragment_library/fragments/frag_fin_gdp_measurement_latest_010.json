@@ -10,10 +10,10 @@
     "latest_data"
   ],
   "reasoning_role": "latest_data",
-  "content": "U.S. GDP data continues to be released quarterly by the BEA with the standard revision schedule. Real GDP growth has shown variability in the 2020s due to pandemic effects, supply chain disruptions, and policy responses. Components analysis reveals drivers of growth—whether consumption, business investment, government spending, or trade. Gross Domestic Income (GDI), measured from the income side, provides a cross-check though statistical discrepancies exist. Nowcasting models use high-frequency data to estimate GDP before official releases. Potential GDP estimates inform debates about economic capacity and inflation risks.",
+  "content": "U.S. GDP data continues to be released quarterly by the BEA with the standard revision schedule. Real GDP growth has shown variability in the 2020s due to pandemic effects, supply chain disruptions, and policy responses. Components analysis reveals drivers of growth\u2014whether consumption, business investment, government spending, or trade. Gross Domestic Income (GDI), measured from the income side, provides a cross-check though statistical discrepancies exist. Nowcasting models use high-frequency data to estimate GDP before official releases. Potential GDP estimates inform debates about economic capacity and inflation risks.",
   "source": "Bureau of Economic Analysis News Releases",
   "source_url": "https://www.bea.gov/news/schedule",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

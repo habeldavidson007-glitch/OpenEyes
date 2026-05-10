@@ -11,5 +11,6 @@
   "source": "Natural Language Processing in Finance",
   "source_url": "https://example.com/FIN-181",
   "verified": true,
-  "reasoning_role": "latest_data"
+  "reasoning_role": "latest_data",
+  "credibility_class": "financial_publication"
 }

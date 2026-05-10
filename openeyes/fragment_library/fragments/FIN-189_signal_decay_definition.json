@@ -11,5 +11,6 @@
   "source": "Finding Alphas",
   "source_url": "https://example.com/FIN-189",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

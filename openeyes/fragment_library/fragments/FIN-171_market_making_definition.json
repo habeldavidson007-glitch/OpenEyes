@@ -11,5 +11,6 @@
   "source": "Market Making and High-Frequency Trading",
   "source_url": "https://example.com/FIN-171",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

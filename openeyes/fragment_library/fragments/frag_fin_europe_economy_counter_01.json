@@ -13,7 +13,7 @@
   "content": "Europe adapted faster than expected: LNG infrastructure built in 12 months, inflation fell quicker than US. Services PMI remains expansionary. Periphery (Spain, Greece) outperforming core. 'Sick man of Europe' narrative may be cyclical, not structural.",
   "source": "government_source",
   "source_url": "https://www.ecb.europa.eu/home/html/index.en.html",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_europe_economy_def_01"

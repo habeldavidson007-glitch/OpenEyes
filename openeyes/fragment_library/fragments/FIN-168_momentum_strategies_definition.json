@@ -12,5 +12,6 @@
   "source": "Journal of Finance - Time Series Momentum",
   "source_url": "https://example.com/FIN-168",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

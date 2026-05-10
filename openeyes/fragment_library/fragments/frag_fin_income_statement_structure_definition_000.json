@@ -15,7 +15,7 @@
   "content": "The income statement reports a company's financial performance over a specific period. Key components include Revenue (top line), Cost of Goods Sold (COGS), Gross Profit, Operating Expenses, Operating Income, Interest/Taxes, and Net Income (bottom line). It follows GAAP/IFRS standards to show profitability.",
   "source": "government_source",
   "source_url": "https://www.sec.gov/files/form10-k.pdf",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

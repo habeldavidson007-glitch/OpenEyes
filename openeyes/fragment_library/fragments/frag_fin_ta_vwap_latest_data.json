@@ -11,7 +11,7 @@
   "content": "Mean reversion strategies around VWAP work in ranging markets; trend-following (stay long above VWAP) works in trending markets. Crypto perpetual funding often correlates with VWAP deviation.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://www.investopedia.com",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

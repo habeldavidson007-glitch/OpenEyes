@@ -11,10 +11,10 @@
     "counter_argument"
   ],
   "reasoning_role": "counter_argument",
-  "content": "The DXY has limitations as a dollar measure. The currency basket is outdated—heavy euro weight reflects 1999 EMU composition, not current trade patterns. Emerging market currencies like Chinese yuan and Mexican peso are excluded despite trade importance. Trade-weighted dollar indices (Fed's Broad and Major Currencies indexes) better reflect competitive position. The DXY can move due to eurozone-specific factors rather than U.S. developments. Dollar strength interpretations vary—sometimes signaling U.S. economic outperformance, other times reflecting safe-haven demand during global stress. Exchange rate pass-through to inflation has declined, reducing dollar's domestic impact. Currency interventions by trading partners can distort relationships.",
+  "content": "The DXY has limitations as a dollar measure. The currency basket is outdated\u2014heavy euro weight reflects 1999 EMU composition, not current trade patterns. Emerging market currencies like Chinese yuan and Mexican peso are excluded despite trade importance. Trade-weighted dollar indices (Fed's Broad and Major Currencies indexes) better reflect competitive position. The DXY can move due to eurozone-specific factors rather than U.S. developments. Dollar strength interpretations vary\u2014sometimes signaling U.S. economic outperformance, other times reflecting safe-haven demand during global stress. Exchange rate pass-through to inflation has declined, reducing dollar's domestic impact. Currency interventions by trading partners can distort relationships.",
   "source": "Federal Reserve Board",
   "source_url": "https://www.federalreserve.gov/releases/h10/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

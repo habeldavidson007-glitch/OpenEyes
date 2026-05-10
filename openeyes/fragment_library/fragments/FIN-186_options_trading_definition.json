@@ -11,5 +11,6 @@
   "source": "Option Volatility and Pricing",
   "source_url": "https://example.com/FIN-186",
   "verified": true,
-  "reasoning_role": "definition"
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication"
 }

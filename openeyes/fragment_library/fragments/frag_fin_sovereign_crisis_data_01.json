@@ -12,7 +12,7 @@
   "content": "Recent defaults/restructurings: Sri Lanka (2022), Ghana (2022), Zambia (2020), Lebanon (2020). Argentina in perpetual restructuring cycle. Europe 2010-2012 crisis resolved via ECB 'whatever it takes' backstop, not fiscal union.",
   "source": "government_source",
   "source_url": "https://www.worldbank.org/",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2024,
   "compatible_with": [
     "frag_fin_sovereign_crisis_def_01"

@@ -11,7 +11,7 @@
   "content": "Impermanent loss is often misunderstood as rare edge case when it's the norm for volatile pairs. Providing liquidity for assets with different fundamentals guarantees IL over time. Many LPs lose money despite earning fees because IL exceeds trading revenue. Stablecoin pairs minimize but don't eliminate this risk.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

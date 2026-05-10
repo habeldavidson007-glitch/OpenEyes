@@ -14,7 +14,7 @@
   "content": "The U.S. Treasury market is where U.S. government debt securities are issued and traded. It is the world's largest and most liquid bond market, with outstanding debt exceeding $27 trillion. Treasury securities include bills (up to 1 year), notes (2-10 years), bonds (20-30 years), and TIPS (inflation-protected). The market serves multiple functions: financing government deficits, providing risk-free benchmark rates for all other credit, enabling monetary policy implementation, and offering safe assets for global investors. Primary dealers participate in Treasury auctions and make secondary markets. Foreign governments, the Federal Reserve, institutional investors, and households all hold Treasuries. The market's depth and liquidity make it a cornerstone of global finance.",
   "source": "U.S. Department of the Treasury",
   "source_url": "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics",
-  "credibility_class": "government_source",
+  "credibility_class": "government_agency",
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],

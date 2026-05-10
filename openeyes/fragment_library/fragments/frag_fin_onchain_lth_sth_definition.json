@@ -11,7 +11,7 @@
   "content": "Coins are classified as long-term holder (LTH) supply if unmoved >155 days, short-term holder (STH) if younger. LTH supply increases during bear markets (accumulation), decreases during bull markets (distribution). STH supply behaves oppositely. The ratio indicates market phase and conviction levels.",
   "source": "OpenEyes Knowledge Base",
   "source_url": "https://ethereum.org/en/developers/docs/",
-  "credibility_class": "peer_reviewed_study",
+  "credibility_class": "academic_research",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
