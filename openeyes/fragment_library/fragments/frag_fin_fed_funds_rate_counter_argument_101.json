@@ -12,5 +12,6 @@
   "source": "Federal Reserve Board",
   "source_url": "https://www.federalreserve.gov/",
   "verified": true,
-  "reasoning_role": "counter_argument"
+  "reasoning_role": "counter_argument",
+  "credibility_class": "government_agency"
 }

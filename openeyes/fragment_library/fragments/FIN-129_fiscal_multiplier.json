@@ -1,0 +1,18 @@
+{
+  "id": "FIN-129",
+  "domain": "finance",
+  "subdomain": "monetary_policy",
+  "tags": [
+    "fiscal_policy",
+    "fiscal_multiplier",
+    "government_spending",
+    "macroeconomics"
+  ],
+  "content": "The fiscal multiplier measures how much economic output is generated per dollar of government spending or tax cuts. Multipliers vary significantly based on economic conditions and policy type. During recessions with monetary policy at the zero lower bound, spending multipliers can exceed 1.5, meaning $1 of spending generates $1.50 of GDP. Tax cut multipliers are typically smaller (0.5-1.0) because some portion is saved rather than spent. Multipliers are larger when spending targets lower-income households who have higher marginal propensity to consume. IMF research suggests multipliers were underestimated pre-2010, contributing to austerity's deeper-than-expected contractionary effects.",
+  "year": "2024",
+  "source": "IMF Working Paper",
+  "source_url": "https://www.imf.org/en/Publications/WP",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "international_institution"
+}

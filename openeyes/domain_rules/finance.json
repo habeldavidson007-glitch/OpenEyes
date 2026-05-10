@@ -1,6 +1,6 @@
 {
   "domain": "finance",
-  "version": "0.1",
+  "version": "0.2",
   "decay_rate_per_year": 8,
   "max_fragment_age_years": 2,
   "rules": [
@@ -35,9 +35,21 @@
     {
       "id": "FIN-005",
       "name": "Minimum Credibility",
-      "description": "Finance answers require minimum clinical_guideline equivalent or higher",
+      "description": "Finance fragments must have recognized credibility class",
       "check_type": "minimum_credibility_class",
-      "config": { "allowed": ["peer_reviewed_study", "government_source", "clinical_guideline"] }
+      "config": { 
+        "allowed": [
+          "international_institution",
+          "academic_research", 
+          "government_agency",
+          "financial_news",
+          "financial_publication",
+          "financial_education",
+          "regulatory_filing",
+          "central_bank",
+          "exchange_data"
+        ] 
+      }
     }
   ]
 }

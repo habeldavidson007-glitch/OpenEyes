@@ -1,0 +1,18 @@
+{
+  "id": "FIN-144",
+  "domain": "finance",
+  "subdomain": "asset_pricing",
+  "tags": [
+    "capm",
+    "asset_pricing",
+    "beta",
+    "cost_of_capital"
+  ],
+  "content": "The Capital Asset Pricing Model (CAPM) calculates expected return based on systematic risk. Formula: E(R) = Rf + \u03b2(Rm - Rf), where Rf is risk-free rate, \u03b2 measures sensitivity to market returns, and (Rm - Rf) is market risk premium. Beta above 1 means higher volatility than market; below 1 means lower. CAPM assumes investors hold diversified portfolios, so only systematic (non-diversifiable) risk matters. Despite criticisms\u2014empirical anomalies, unstable betas, unrealistic assumptions\u2014CAPM remains widely used for cost of equity calculations, capital budgeting, and performance evaluation. Fama-French three-factor model extends CAPM by adding size and value factors, improving explanatory power.",
+  "year": "2023",
+  "source": "Journal of Financial Economics",
+  "source_url": "https://www.journals.elsevier.com/journal-of-financial-economics",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "academic_research"
+}
