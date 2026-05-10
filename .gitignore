@@ -1,5 +1,74 @@
 ```
-# Fragment library definitions - assuming these are source files
-# No build artifacts, dependencies, or temp files detected in changes
-# Leaving .gitignore empty as only JSON definition files were added
+# Project-specific fragment files (if needed)
+openeyes/fragment_library/fragments/*.json
+
+# General JSON files (if you want to ignore all JSON in this context)
+*.json
+
+# Build artifacts and generated files
+build/
+dist/
+target/
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```
