@@ -216,7 +216,27 @@ class PhilosophyGuard:
     def _check_minimum_credibility(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
         """Check if proposal meets minimum credibility class."""
         allowed = config.get("allowed", [])
+        
+        # Support both Fragment objects (credibility_class) and FragmentCandidate objects (credibility_estimate as float)
         credibility = proposal.get("credibility_class", "")
+        
+        # If no credibility_class, check for credibility_estimate (FragmentCandidate uses float score)
+        if not credibility:
+            cred_estimate = proposal.get("credibility_estimate")
+            if cred_estimate is not None:
+                # For FragmentCandidate, convert float score to pass/fail based on threshold
+                # A score >= 0.35 is considered acceptable (matches Monte Carlo threshold)
+                if cred_estimate >= 0.35:
+                    return {
+                        "passed": True,
+                        "message": f"Credibility estimate {cred_estimate} meets minimum threshold (0.35)"
+                    }
+                else:
+                    return {
+                        "passed": False,
+                        "message": f"Credibility estimate {cred_estimate} below minimum threshold (0.35)",
+                        "severity": "error"
+                    }
         
         if not allowed:
             return {

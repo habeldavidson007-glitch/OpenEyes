@@ -143,14 +143,20 @@ def survives_mc(
     pool = load_gene_pool()
     
     for primitive in selected:
-        pid = str(primitive.get("id", ""))
+        # Convert FragmentCandidate or Fragment object to dict if needed
+        if hasattr(primitive, 'to_dict'):
+            prim_dict = primitive.to_dict()
+        else:
+            prim_dict = primitive
+        
+        pid = str(prim_dict.get("id", ""))
         
         if not pid:
             continue
         
         if pid not in pool:
             # Initialize new entry with primitive data
-            pool[pid] = primitive.copy()
+            pool[pid] = prim_dict.copy()
             pool[pid]["weight"] = pool[pid].get("weight", 1.0)
         
         current = pool[pid]["weight"]

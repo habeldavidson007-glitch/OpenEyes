@@ -615,19 +615,27 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
         cleared = []
         
         for fragment in fragments:
+            # Convert Fragment object to dict if needed
+            if hasattr(fragment, 'to_dict'):
+                frag_dict = fragment.to_dict()
+            else:
+                frag_dict = fragment
+            
             # Validate fragment against domain rules
             violations = []
             
             for rule in self.guard.rules:
-                check_result = self.guard._apply_rule(rule, fragment)
+                check_result = self.guard._apply_rule(rule, frag_dict)
                 if not check_result.get("passed", True):
                     violations.append(check_result)
             
             if not violations:
-                cleared.append(fragment)
-                print(f"  ✓ Fragment {fragment.get('id', 'unknown')[:20]}... passed Philosophy Guard")
+                cleared.append(fragment)  # Keep original object (Fragment or dict)
+                frag_id = frag_dict.get('id', 'unknown')
+                print(f"  ✓ Fragment {frag_id[:20]}... passed Philosophy Guard")
             else:
-                print(f"  ✗ Fragment {fragment.get('id', 'unknown')[:20]}... failed: {[v.get('rule_id') for v in violations]}")
+                frag_id = frag_dict.get('id', 'unknown')
+                print(f"  ✗ Fragment {frag_id[:20]}... failed: {[v.get('rule_id') for v in violations]}")
         
         return cleared
     
