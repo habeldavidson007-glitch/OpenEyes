@@ -15,9 +15,9 @@
   "weight": 1.0,
   "compatible_with": [],
   "incompatible_with": [],
-  "subdomain": null,
-  "reasoning_role": null,
-  "source_type": null,
-  "year": null,
-  "sub_question": null
+  "subdomain": "oncology",
+  "reasoning_role": "definition",
+  "source_type": "clinical_guideline",
+  "year": 2026,
+  "sub_question": "What are the early symptoms?"
 }

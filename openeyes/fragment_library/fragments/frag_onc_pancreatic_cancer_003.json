@@ -16,9 +16,9 @@
   "weight": 1.0,
   "compatible_with": [],
   "incompatible_with": [],
-  "subdomain": null,
-  "reasoning_role": null,
-  "source_type": null,
-  "year": null,
-  "sub_question": null
+  "subdomain": "oncology",
+  "reasoning_role": "latest_data",
+  "source_type": "peer_reviewed_research",
+  "year": 2025,
+  "sub_question": "What are the latest advances in early detection?"
 }
