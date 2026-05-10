@@ -1,0 +1,16 @@
+{
+  "id": "FIN-117",
+  "domain": "finance",
+  "subdomain": "monetary_policy",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "policy_lags"
+  ],
+  "content": "Monetary policy operates with long variable lags: markets react instantly, investment responds in 6-12 months, employment in 12-18 months, inflation peaks at 18-24 months. Requires forward-looking policy based on forecasts, not current conditions.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "definition"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "FIN-105",
+  "domain": "finance",
+  "subdomain": "monetary_policy",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "forward_guidance"
+  ],
+  "content": "Forward guidance communicates likely future policy path to shape expectations. Odyssean guidance commits to specific actions; Delphic guidance forecasts based on outlook. Post-2020, average inflation targeting implicitly guides tolerance for overshoots.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "definition"
+}

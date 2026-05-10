@@ -1,0 +1,16 @@
+{
+  "id": "FIN-108",
+  "domain": "finance",
+  "subdomain": "monetary_policy",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "iorb"
+  ],
+  "content": "Interest on Reserve Balances is what Fed pays banks on reserves held at central bank. Sets effective floor because banks won't lend reserves below this risk-free rate. Replaced IOER in July 2021 after reserve requirements eliminated.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "definition"
+}

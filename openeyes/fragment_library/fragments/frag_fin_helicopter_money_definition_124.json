@@ -1,0 +1,16 @@
+{
+  "id": "FIN-124",
+  "domain": "finance",
+  "subdomain": "monetary_policy",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "helicopter_money"
+  ],
+  "content": "Helicopter money is direct monetary financing of fiscal transfers\u2014Fed funding government checks. Unlike QE (swapping bonds for reserves), helicopter money is permanent expansion without offsetting debt. 2020 pandemic response approached this, blurring monetary-fiscal line.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "definition"
+}

@@ -1,37 +1,5 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-venv/
-.venv/
-.env
-.env.local
-*.env.*
-
-# Build and distribution artifacts
-build/
-dist/
-*.egg-info/
-
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
-.coverage
-htmlcov/
-coverage/
-
-# IDE specific
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
+# Fragment library definitions - assuming these are source files
+# No build artifacts, dependencies, or temp files detected in changes
+# Leaving .gitignore empty as only JSON definition files were added
 ```
