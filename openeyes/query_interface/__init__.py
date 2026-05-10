@@ -571,3 +571,23 @@ def ask(query: str, domain: str = "general") -> Dict[str, Any]:
     """Quick query function with default settings."""
     oe = OpenEyes(domain=domain)
     return oe.query(query)
+
+
+# Module-level query function for direct access
+def query(query_text: str, domain: str = "general") -> Dict[str, Any]:
+    """
+    Direct query function for module-level access.
+    
+    Usage:
+        from openeyes import query_interface
+        result = query_interface.query("your question here")
+    
+    Args:
+        query_text: The user's query string
+        domain: Domain context (default: "general")
+    
+    Returns:
+        Dict with answer, confidence, halt status, and traceability info
+    """
+    oe = OpenEyes(domain=domain)
+    return oe.query(query_text)

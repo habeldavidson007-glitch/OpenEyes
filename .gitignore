@@ -1,4 +1,15 @@
 ```
-# Fragment library cache/build artifacts
-openeyes/fragment_library/fragments/*.json
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*
 ```
