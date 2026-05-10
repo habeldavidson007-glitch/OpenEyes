@@ -577,20 +577,39 @@ def ask(query: str, domain: str = "general") -> Dict[str, Any]:
 
 
 # Module-level query function for direct access
-def query(query_text: str, domain: str = "general") -> Dict[str, Any]:
+def query(query_text: str, domain: str = "general", verbose: bool = False) -> Dict[str, Any]:
     """
     Direct query function for module-level access.
     
     Usage:
         from openeyes import query_interface
         result = query_interface.query("your question here")
+        # Or for clean output:
+        response = query_interface.query("your question here", verbose=False)
+        print(response['answer'])
     
     Args:
         query_text: The user's query string
         domain: Domain context (default: "general")
+        verbose: If False, suppresses all debug output (default: False)
     
     Returns:
         Dict with answer, confidence, halt status, and traceability info
     """
-    oe = OpenEyes(domain=domain)
-    return oe.query(query_text)
+    import sys
+    from io import StringIO
+    
+    if not verbose:
+        # Suppress stdout temporarily
+        old_stdout = sys.stdout
+        sys.stdout = StringIO()
+    
+    try:
+        oe = OpenEyes(domain=domain)
+        result = oe.query(query_text)
+    finally:
+        if not verbose:
+            # Restore stdout
+            sys.stdout = old_stdout
+    
+    return result
