@@ -359,7 +359,7 @@ UNIVERSAL_AXIOMS: List[Axiom] = [
         category=AxiomCategory.EQUILIBRIUM,
         description="Free markets tend toward supply-demand equilibrium",
         formal_statement="FreeMarket(M) → TendTowards(M, Supply=Demand)",
-        applicable_domains=["economics", "finance", "business"],
+        applicable_domains=["economics", "economy", "finance", "business"],
         derivation_rules=["market_analysis", "price_modeling"]
     ),
     Axiom(

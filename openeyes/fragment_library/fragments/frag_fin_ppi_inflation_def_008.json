@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_ppi_inflation_def_008",
-  "domain": "finance",
-  "subdomain": "macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "ppi",
     "inflation",
@@ -17,5 +17,6 @@
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "MAC"
 }

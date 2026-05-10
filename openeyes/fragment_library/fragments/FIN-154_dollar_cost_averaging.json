@@ -1,7 +1,7 @@
 {
   "id": "FIN-154",
-  "domain": "finance",
-  "subdomain": "portfolio_management",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "dollar_cost_averaging",
     "investment_strategy",
@@ -14,5 +14,6 @@
   "source_url": "https://www.onefpa.org/journal/",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "FIN"
 }

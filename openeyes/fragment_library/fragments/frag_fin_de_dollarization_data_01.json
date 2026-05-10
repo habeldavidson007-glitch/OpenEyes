@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_de_dollarization_data_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "GEO",
   "tags": [
     "dollar",
     "geopolitical_risk",
@@ -18,5 +18,6 @@
     "frag_fin_de_dollarization_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.9211999999999999
+  "weight": 0.9211999999999999,
+  "sector": "GEO"
 }

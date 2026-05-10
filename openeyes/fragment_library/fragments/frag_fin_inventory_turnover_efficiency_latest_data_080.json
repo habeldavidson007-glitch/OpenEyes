@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_inventory_turnover_efficiency_latest_data_080",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "return_on_invested_capital",
     "return_on_equity",
@@ -19,5 +19,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

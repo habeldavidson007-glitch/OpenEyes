@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_crypto_liquidation_cascade_latest_data",
-  "domain": "finance",
-  "subdomain": "crypto",
+  "domain": "economy",
+  "subdomain": "REG",
   "tags": [
     "crypto",
     "derivatives",
@@ -15,5 +15,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "REG"
 }

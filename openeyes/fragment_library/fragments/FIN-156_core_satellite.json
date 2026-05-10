@@ -1,7 +1,7 @@
 {
   "id": "FIN-156",
-  "domain": "finance",
-  "subdomain": "portfolio_management",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "core_satellite",
     "portfolio_structure",
@@ -14,5 +14,6 @@
   "source_url": "https://jpm.pm-research.com/",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "FIN"
 }

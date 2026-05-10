@@ -1,7 +1,7 @@
 {
   "id": "FIN-131",
-  "domain": "finance",
-  "subdomain": "international_finance",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "exchange_rates",
     "interest_rate_parity",
@@ -14,5 +14,6 @@
   "source_url": "https://www.journals.elsevier.com/journal-of-international-money-and-finance",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "FIN"
 }

@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_short_selling_counter_001",
-  "domain": "finance",
-  "subdomain": "trading_strategies",
+  "domain": "economy",
+  "subdomain": "REG",
   "tags": [
     "margin",
     "short_selling",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.95
+  "weight": 0.95,
+  "sector": "REG"
 }

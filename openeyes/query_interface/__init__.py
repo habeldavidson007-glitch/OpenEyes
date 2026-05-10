@@ -673,13 +673,13 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
                     "reason": "Tier 1 requires counter-argument fragment"
                 }
         
-        # FIN-004: Check for price prediction language in finance domain
-        if self.domain == "finance":
+        # ECO-004: Check for price prediction language in economy domain (includes finance)
+        if self.domain in ["economy", "finance"]:
             answer_text = assembled_output.get("answer", "")
             if self._check_prediction_language(answer_text):
                 return {
                     "passed": False,
-                    "reason": "FIN-004: Answer contains price prediction language. OpenEyes does not make price predictions."
+                    "reason": "ECO-004: Answer contains price prediction language. OpenEyes does not make price predictions."
                 }
         
         return {"passed": True}

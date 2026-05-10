@@ -1,7 +1,7 @@
 {
   "id": "FIN-181",
-  "domain": "finance",
-  "subdomain": "algorithmic_trading",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "algorithmic_trading",
     "sentiment analysis"
@@ -12,5 +12,6 @@
   "source_url": "https://example.com/FIN-181",
   "verified": true,
   "reasoning_role": "latest_data",
-  "credibility_class": "financial_publication"
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
 }

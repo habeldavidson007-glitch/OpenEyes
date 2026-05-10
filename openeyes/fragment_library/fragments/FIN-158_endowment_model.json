@@ -1,7 +1,7 @@
 {
   "id": "FIN-158",
-  "domain": "finance",
-  "subdomain": "portfolio_management",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "endowment_model",
     "institutional_investing",
@@ -14,5 +14,6 @@
   "source_url": "https://www.nacubo.org/research/",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "FIN"
 }

@@ -1,222 +1,200 @@
-```json
-{
-  "rules": [
-    {
-      "pattern": "*.pyc",
-      "type": "compiled"
-    },
-    {
-      "pattern": "__pycache__/",
-      "type": "directory"
-    },
-    {
-      "pattern": "*.class",
-      "type": "compiled"
-    },
-    {
-      "pattern": "*.o",
-      "type": "compiled"
-    },
-    {
-      "pattern": "*.exe",
-      "type": "compiled"
-    },
-    {
-      "pattern": "*.dll",
-      "type": "compiled"
-    },
-    {
-      "pattern": "*.so",
-      "type": "compiled"
-    },
-    {
-      "pattern": "*.a",
-      "type": "compiled"
-    },
-    {
-      "pattern": "*.obj",
-      "type": "compiled"
-    },
-    {
-      "pattern": "*.out",
-      "type": "compiled"
-    },
-    {
-      "pattern": "node_modules/",
-      "type": "dependencies"
-    },
-    {
-      "pattern": "venv/",
-      "type": "dependencies"
-    },
-    {
-      "pattern": ".venv/",
-      "type": "dependencies"
-    },
-    {
-      "pattern": "dist/",
-      "type": "dependencies"
-    },
-    {
-      "pattern": "build/",
-      "type": "dependencies"
-    },
-    {
-      "pattern": ".mypy_cache/",
-      "type": "dependencies"
-    },
-    {
-      "pattern": ".pytest_cache/",
-      "type": "dependencies"
-    },
-    {
-      "pattern": "target/",
-      "type": "dependencies"
-    },
-    {
-      "pattern": ".gradle/",
-      "type": "dependencies"
-    },
-    {
-      "pattern": ".vscode/",
-      "type": "editor"
-    },
-    {
-      "pattern": ".idea/",
-      "type": "editor"
-    },
-    {
-      "pattern": "*.swp",
-      "type": "editor"
-    },
-    {
-      "pattern": "*.swo",
-      "type": "editor"
-    },
-    {
-      "pattern": "*.tmp",
-      "type": "editor"
-    },
-    {
-      "pattern": ".DS_Store",
-      "type": "system"
-    },
-    {
-      "pattern": "Thumbs.db",
-      "type": "system"
-    },
-    {
-      "pattern": ".env",
-      "type": "system"
-    },
-    {
-      "pattern": ".env.local",
-      "type": "system"
-    },
-    {
-      "pattern": "*.env.*",
-      "type": "system"
-    },
-    {
-      "pattern": "coverage/",
-      "type": "other"
-    },
-    {
-      "pattern": "htmlcov/",
-      "type": "other"
-    },
-    {
-      "pattern": ".coverage",
-      "type": "other"
-    },
-    {
-      "pattern": "*.zip",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.gz",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.tar",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.tgz",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.bz2",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.xz",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.7z",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.rar",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.zst",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.lz4",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.lzh",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.cab",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.arj",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.rpm",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.deb",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.Z",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.lz",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.lzo",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.tar.gz",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.tar.bz2",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.tar.xz",
-      "type": "compressed"
-    },
-    {
-      "pattern": "*.tar.zst",
-      "type": "compressed"
-    }
-  ]
-}
+```
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage reports
+.coverage
+htmlcov/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env*
+!.env.example
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*$pyc.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.lcov
+.coverage.*
+.cache
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+htmlcov/
+
+# Temp
+*.tmp
+*.temp
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Configuration and data files that might be generated
+*.ini
+*.cfg
+*.conf
+
 ```

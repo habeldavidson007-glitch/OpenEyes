@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_energy_sector_capex_cycles_latest_data_010",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "ENR",
   "tags": [
     "technology",
     "peg_ratio",
@@ -29,5 +29,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "ENR"
 }

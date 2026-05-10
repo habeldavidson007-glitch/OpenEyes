@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_fibonacci_retracement_counter_argument_09",
-  "domain": "finance",
-  "subdomain": "technical_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "fibonacci",
     "fibonacci_retracement",
@@ -16,5 +16,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

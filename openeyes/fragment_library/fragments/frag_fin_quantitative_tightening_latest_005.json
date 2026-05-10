@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_quantitative_tightening_latest_005",
-  "domain": "finance",
-  "subdomain": "macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "quantitative_tightening",
     "qt",
@@ -18,5 +18,6 @@
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "MAC"
 }

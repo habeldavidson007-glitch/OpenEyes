@@ -1,39 +1,67 @@
 {
-  "domain": "global_macro_real_assets",
-  "version": "0.3",
+  "domain": "economy",
+  "version": "1.0",
+  "hierarchy_version": "1.0",
+  "sectors": {
+    "FIN": {
+      "name": "Finance & Markets",
+      "description": "Financial markets, instruments, trading, and market mechanics"
+    },
+    "ENR": {
+      "name": "Energy & Power",
+      "description": "Energy production, oil, gas, renewables, and power markets"
+    },
+    "COM": {
+      "name": "Commodities & Agriculture",
+      "description": "Commodity markets, precious metals, industrial metals, and agricultural products"
+    },
+    "MAC": {
+      "name": "Macroeconomics & Indicators",
+      "description": "GDP, inflation, employment, monetary and fiscal policy"
+    },
+    "GEO": {
+      "name": "Geopolitics & Trade Policy",
+      "description": "Trade policy, sanctions, tariffs, and geopolitical risk factors"
+    },
+    "REG": {
+      "name": "Regulation & Compliance",
+      "description": "Financial regulation, compliance requirements, and regulatory frameworks"
+    }
+  },
+  "default_sector": "FIN",
   "decay_rate_per_year": 8,
   "max_fragment_age_years": 2,
   "rules": [
     {
-      "id": "FIN-001",
+      "id": "ECO-001",
       "name": "Require Source URL",
       "description": "Every fragment must have a source_url",
       "check_type": "requires_field",
       "config": { "field": "source_url" }
     },
     {
-      "id": "FIN-002",
+      "id": "ECO-002",
       "name": "Require Year",
       "description": "Every fragment must have a year",
       "check_type": "requires_field",
       "config": { "field": "year" }
     },
     {
-      "id": "FIN-003",
+      "id": "ECO-003",
       "name": "No Stale Fragments",
       "description": "Fragments older than 2 years cannot exceed credibility score of 60",
       "check_type": "recency_cap",
       "config": { "max_age_years": 2, "score_cap": 60 }
     },
     {
-      "id": "FIN-004",
+      "id": "ECO-004",
       "name": "No Price Predictions",
       "description": "Any fragment containing price targets must include uncertainty note",
       "check_type": "requires_uncertainty_note",
       "config": { "trigger_tags": ["price_target", "prediction", "forecast"] }
     },
     {
-      "id": "FIN-005",
+      "id": "ECO-005",
       "name": "Minimum Credibility",
       "description": "Fragments must have recognized credibility class",
       "check_type": "minimum_credibility_class",

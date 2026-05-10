@@ -1,7 +1,7 @@
 {
   "id": "FIN-147",
-  "domain": "finance",
-  "subdomain": "asset_pricing",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "behavioral_finance",
     "investor_psychology",
@@ -14,5 +14,6 @@
   "source_url": "https://www.tandfonline.com/journals/hbhf20",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "FIN"
 }

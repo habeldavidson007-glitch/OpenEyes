@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_ecb_mandate_data_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "ecb",
     "monetary_policy",
@@ -18,5 +18,6 @@
     "frag_fin_ecb_mandate_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.9016000000000001
+  "weight": 0.9016000000000001,
+  "sector": "MAC"
 }

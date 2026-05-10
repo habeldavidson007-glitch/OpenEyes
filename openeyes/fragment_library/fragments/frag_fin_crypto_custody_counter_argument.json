@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_crypto_custody_counter_argument",
-  "domain": "finance",
-  "subdomain": "crypto",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "crypto",
     "risk_management"
@@ -14,5 +14,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

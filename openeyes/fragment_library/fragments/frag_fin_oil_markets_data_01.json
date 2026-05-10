@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_oil_markets_data_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "ENR",
   "tags": [
     "oil",
     "commodities",
@@ -18,5 +18,6 @@
     "frag_fin_oil_markets_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.9114
+  "weight": 0.9114,
+  "sector": "ENR"
 }

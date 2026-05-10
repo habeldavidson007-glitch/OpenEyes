@@ -1,7 +1,7 @@
 {
   "id": "FIN-162",
-  "domain": "finance",
-  "subdomain": "algorithmic_trading",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "algorithmic_trading",
     "backtesting",
@@ -13,5 +13,6 @@
   "source_url": "https://example.com/FIN-162",
   "verified": true,
   "reasoning_role": "counter_argument",
-  "credibility_class": "financial_publication"
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
 }

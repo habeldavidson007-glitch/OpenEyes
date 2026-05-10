@@ -1,7 +1,7 @@
 {
   "id": "FIN-151",
-  "domain": "finance",
-  "subdomain": "risk_management",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "sharpe_ratio",
     "performance_metrics",
@@ -14,5 +14,6 @@
   "source_url": "https://onlinelibrary.wiley.com/journal/15406261",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "FIN"
 }

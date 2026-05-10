@@ -1,7 +1,7 @@
 {
   "id": "FIN-134",
-  "domain": "finance",
-  "subdomain": "international_finance",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "triffin_dilemma",
     "reserve_currency",
@@ -14,5 +14,6 @@
   "source_url": "https://www.piie.com/research/piie-briefings",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "financial_publication"
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
 }

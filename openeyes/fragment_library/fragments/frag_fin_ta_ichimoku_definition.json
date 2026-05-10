@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_ta_ichimoku_definition",
-  "domain": "finance",
-  "subdomain": "technical_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "technical_analysis",
     "indicators"
@@ -14,5 +14,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

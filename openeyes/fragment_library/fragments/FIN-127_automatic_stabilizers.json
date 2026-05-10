@@ -1,7 +1,7 @@
 {
   "id": "FIN-127",
-  "domain": "finance",
-  "subdomain": "monetary_policy",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "fiscal_policy",
     "automatic_stabilizers",
@@ -14,5 +14,6 @@
   "source_url": "https://www.cbo.gov/topics/economy",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "financial_publication"
+  "credibility_class": "financial_publication",
+  "sector": "MAC"
 }

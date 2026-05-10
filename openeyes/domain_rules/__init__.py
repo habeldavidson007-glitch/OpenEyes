@@ -40,11 +40,12 @@ DOMAIN_TIERS = {
     
     # Tier 2: Medium Stakes - Moderate HALT, Mix of Primary/Secondary
     "engineering": "tier2",
-    "finance": "tier2",
+    "economy": "tier2",
+    "finance": "tier2",  # Legacy alias for economy
+    "economics": "tier2",  # Legacy alias for economy
     "history": "tier2",
     "technology": "tier2",
     "science": "tier2",
-    "economics": "tier2",
     "business": "tier2",
     "education": "tier2",
     "environmental": "tier2",
@@ -117,17 +118,32 @@ CREDIBILITY_HIERARCHIES = {
         "forum": 30                    # Engineering forums (StackExchange, etc.)
     },
     
-    # Tier 2: Finance - Regulatory and primary market data
-    "finance": {
+    # Tier 2: Finance/Economy - Regulatory and primary market data
+    "economy": {
         "sec_filing": 98,              # SEC filings (10-K, 10-Q, etc.)
         "regulatory_guidance": 95,     # SEC, FINRA, Fed guidance
         "primary_market_data": 90,     # Direct market data (Bloomberg, Reuters)
         "central_bank_report": 90,     # Federal Reserve, ECB reports
         "audited_statement": 88,       # Audited financial statements
+        "energy_agency_report": 88,    # EIA, IEA energy reports
+        "commodity_exchange_data": 88, # CME, LME commodity data
         "analyst_report": 70,          # Professional analyst reports
         "financial_news": 55,          # Financial news (WSJ, FT)
         "investment_blog": 40,         # Investment blogs
         "forum": 25                    # Investment forums (Reddit, etc.)
+    },
+    
+    # Tier 2: Finance (Legacy alias for Economy)
+    "finance": {
+        "sec_filing": 98,
+        "regulatory_guidance": 95,
+        "primary_market_data": 90,
+        "central_bank_report": 90,
+        "audited_statement": 88,
+        "analyst_report": 70,
+        "financial_news": 55,
+        "investment_blog": 40,
+        "forum": 25
     },
     
     # Tier 3: Cooking - Established institutions > experts > community

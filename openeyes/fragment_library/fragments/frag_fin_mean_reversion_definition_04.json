@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_mean_reversion_definition_04",
-  "domain": "finance",
-  "subdomain": "technical_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "technical_analysis",
     "mean_reversion",
@@ -19,5 +19,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

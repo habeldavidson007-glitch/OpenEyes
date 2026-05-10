@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_market_crashes_def_001",
-  "domain": "finance",
-  "subdomain": "market_psychology",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "risk_management",
     "definition",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.75
+  "weight": 0.75,
+  "sector": "FIN"
 }

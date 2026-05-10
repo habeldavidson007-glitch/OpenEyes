@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_after_hours_trading_def_001",
-  "domain": "finance",
-  "subdomain": "market_structure",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "definition",
     "volatility",
@@ -16,5 +16,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.88
+  "weight": 0.88,
+  "sector": "FIN"
 }

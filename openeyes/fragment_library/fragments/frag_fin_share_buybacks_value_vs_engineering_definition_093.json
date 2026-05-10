@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_share_buybacks_value_vs_engineering_definition_093",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "REG",
   "tags": [
     "dividends",
     "insider_trading",
@@ -19,5 +19,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "REG"
 }

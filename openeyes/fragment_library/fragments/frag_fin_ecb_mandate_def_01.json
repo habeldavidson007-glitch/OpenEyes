@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_ecb_mandate_def_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "ecb",
     "monetary_policy",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.92
+  "weight": 0.92,
+  "sector": "MAC"
 }

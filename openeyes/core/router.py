@@ -4,7 +4,7 @@ DOMAIN_KEYWORDS: dict[str, tuple[str, ...]] = {
     "medical": ("symptom", "cancer", "diagnosis", "treatment", "drug", "disease", "patient", "hospital", "antibiotic", "medicine", "health"),
     "legal": ("law", "contract", "lawsuit", "legal", "rights", "court", "attorney", "judge"),
     "engineering": ("load", "beam", "concrete", "stress", "design", "safety factor", "structural"),
-    "investment": ("investment", "stocks", "portfolio", "rich", "return", "risk", "finance", "money"),
+    "economy": ("economy", "economic", "finance", "financial", "market", "trading", "investment", "stocks", "portfolio", "rich", "return", "risk", "money", "banking", "currency", "inflation", "gdp", "interest rate", "fed", "treasury", "bond", "commodity", "energy market", "oil price"),
     "cooking": ("recipe", "cook", "bake", "ingredients", "kitchen", "food"),
     "technology": ("quantum", "computer", "software", "algorithm", "AI", "machine learning", "tech", "blockchain", "crypto"),
     "science": ("physics", "chemistry", "biology", "experiment", "research", "scientific"),

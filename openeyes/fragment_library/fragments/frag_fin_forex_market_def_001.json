@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_forex_market_def_001",
-  "domain": "finance",
-  "subdomain": "forex",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "currency",
     "definition",
@@ -16,5 +16,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.88
+  "weight": 0.88,
+  "sector": "FIN"
 }

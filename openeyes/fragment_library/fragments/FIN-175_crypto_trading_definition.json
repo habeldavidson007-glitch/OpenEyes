@@ -1,7 +1,7 @@
 {
   "id": "FIN-175",
-  "domain": "finance",
-  "subdomain": "algorithmic_trading",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "algorithmic_trading",
     "crypto trading"
@@ -12,5 +12,6 @@
   "source_url": "https://example.com/FIN-175",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "financial_publication"
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
 }

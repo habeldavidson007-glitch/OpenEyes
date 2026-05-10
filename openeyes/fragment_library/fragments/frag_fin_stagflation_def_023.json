@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_stagflation_def_023",
-  "domain": "finance",
-  "subdomain": "macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "stagflation",
     "inflation",
@@ -18,5 +18,6 @@
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "MAC"
 }

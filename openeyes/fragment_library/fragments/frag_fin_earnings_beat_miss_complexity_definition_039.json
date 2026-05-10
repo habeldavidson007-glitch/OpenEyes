@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_earnings_beat_miss_complexity_definition_039",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "guidance",
     "revenue_growth",
@@ -18,5 +18,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

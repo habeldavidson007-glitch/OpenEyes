@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_options_greeks_def_001",
-  "domain": "finance",
-  "subdomain": "derivatives",
+  "domain": "economy",
+  "subdomain": "REG",
   "tags": [
     "options",
     "risk_management",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.75
+  "weight": 0.75,
+  "sector": "REG"
 }
