@@ -7,7 +7,6 @@ from datetime import datetime
 
 from openeyes.config import audit_dir
 from openeyes.core.router import route_domain
-from openeyes.core.narrative import compose_narrative
 from openeyes.knowledge.fragments import Fragment
 from openeyes.knowledge.live_fetch import fetch_live_fragments, jit_synthesize_fragments, normalize_query
 from openeyes.knowledge.retrieval import retrieve_records
@@ -339,8 +338,6 @@ class OpenEyesEngine:
             result["confidence"] = round(min(99.0, result["confidence"] + 5.0 * len(priors)), 2)
 
         replay = json.loads(result["replay"])
-        narrative = compose_narrative(query, routed_domain, result["status"], float(result["confidence"]), replay.get("sub_questions", []))
-
         # Pass fragment count for narrative expansion
         answer = _compose_user_answer(
             query,

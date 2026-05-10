@@ -352,25 +352,37 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
                 print(f"\n[HALT] {result['halt_reason']}")
                 return self._finalize_result(result, start_time, trace_id)
             
+            # FIX 1: Ensure HALT responses have NO additional content appended
+            if assembled_output.get("halt"):
+                result["answer"] = assembled_output.get("answer", "")
+                result["confidence"] = 0.0
+                result["fragments_used"] = []
+                result["philosophy_checks_passed"] = []
+                print(f"\n[HALT] {assembled_output.get('halt_reason', 'Unknown')}")
+                return self._finalize_result(result, start_time, trace_id)
+            
             result["answer"] = assembled_output.get("answer", "")
             # FIX 4: Compute confidence based on relevance, not just fragment quality
-            avg_relevance = sum(relevance_scores.get(f.get('fragment_id', ''), 0) for f in result["fragments_used"]) / max(len(result["fragments_used"]), 1)
-            mc_scores = [f.get('monte_carlo_score', 0) for f in result["fragments_used"]]
+            used_frag_ids = [f.get('fragment_id', '') for f in assembled_output.get("fragments_used", [])]
+            relevant_scores = [relevance_scores.get(fid, 0) for fid in used_frag_ids]
+            avg_relevance = sum(relevant_scores) / max(len(relevant_scores), 1) if relevant_scores else 0
+            mc_scores = [f.get('score', 0) for f in assembled_output.get("fragments_used", [])]
             avg_mc = sum(mc_scores) / max(len(mc_scores), 1) if mc_scores else 0
-            philosophy_factor = 1.0 if assembled_output.get("philosophy_checks", []) else 0.5
+            philosophy_factor = 1.0 if assembled_output.get("philosophy_checks_passed", []) else 0.5
             
+            # FIX 4: Confidence is meaningless if relevance is low
             confidence = (avg_relevance * 0.5) + (avg_mc / 100 * 0.4) + (philosophy_factor * 0.1)
             result["confidence"] = round(confidence * 100, 1)
             
             result["fragments_used"] = assembled_output.get("fragments_used", [])
-            result["philosophy_checks_passed"] = assembled_output.get("philosophy_checks", [])
+            result["philosophy_checks_passed"] = assembled_output.get("philosophy_checks_passed", [])
             
-            print(f"\n[Step 4 Complete] Answer assembled with confidence {result['confidence']:.1f}")
+            print(f"\n[Step 4 Complete] Answer assembled with confidence {result['confidence']:.1f}%")
             
             # Step 5: Final composition-level Philosophy Guard check
             final_check = self._final_philosophy_check(assembled_output)
             if not final_check.get("passed", True):
-                # PATTERN LEARNING: Check if fallback is permitted based on historical successes
+                # FIX 1: Hard HALT on final check failure - no fallback unless explicitly permitted
                 from openeyes.success_pattern_learner import check_fallback
                 
                 missing_requirements = []
@@ -394,8 +406,13 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
                     result["confidence"] = result.get("confidence", 0) * fallback_result.get('confidence', 0.9) / 100.0
                     result["warnings"] = [f"Fallback applied: {fallback_result['reason']}"]
                 else:
-                    result["halt"] = True
-                    result["halt_reason"] = f"Final validation failed: {final_check.get('reason', 'Unknown')} (Fallback not permitted: {fallback_result.get('reason', 'no pattern')})"
+                    # FIX 1: HARD HALT - no content after this
+                    halt_response = self._build_halt_response(
+                        reason=f"Final validation failed: {final_check.get('reason', 'Unknown')} (Fallback not permitted)",
+                        failed_candidates=relevant_fragments,
+                        domain=self.domain
+                    )
+                    result.update(halt_response)
                     print(f"\n[HALT] {result['halt_reason']}")
                     return self._finalize_result(result, start_time, trace_id)
             
