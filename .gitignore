@@ -12,30 +12,32 @@ __pycache__/
 env/
 venv/
 .venv/
-.ENV
 .env
 .env.local
 .env.*
 .pytest_cache/
 .mypy_cache/
 .coverage
-coverage/
 htmlcov/
 
-# Build directories
-build/
+# Build artifacts
 dist/
+build/
 *.egg-info/
 
-# IDE
+# Editors
 .vscode/
 .idea/
 *.swp
 *.swo
+*.tmp
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Coverage
+coverage/
 
 # Compressed files
 *.zip
@@ -56,4 +58,8 @@ Thumbs.db
 *.Z
 *.lz
 *.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 ```

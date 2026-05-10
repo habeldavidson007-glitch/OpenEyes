@@ -196,17 +196,42 @@ class LanguageSynthesizer:
         """
         Create a DIRECT ANSWER paragraph that addresses the query immediately.
         This is the thesis statement of the response.
+        
+        KEY IMPROVEMENT: Detects when fragments are irrelevant and admits lack of knowledge.
         """
         if not fragments:
             return ""
+        
+        # Check if fragments are actually relevant to the query
+        query_lower = original_query.lower()
+        query_words = set(query_lower.split())
+        
+        # Calculate relevance score for each fragment
+        relevance_scores = []
+        for frag in fragments:
+            content = frag.get("content", "").lower()
+            score = 0
+            # Check if fragment contains key query terms
+            for topic in key_topics:
+                if len(topic) > 3 and topic in content:
+                    score += 10
+            # Check if fragment is about the specific entity asked
+            if "country" in query_words and any(word in content for word in ["poorest", "richest", "gdp per capita", "lowest income"]):
+                score += 50
+            if "currency" in query_words and any(word in content for word in ["highest", "valued", "exchange rate", "dinar", "kuwait"]):
+                score += 50
+            relevance_scores.append(score)
+        
+        avg_relevance = sum(relevance_scores) / len(relevance_scores) if relevance_scores else 0
+        
+        # If average relevance is too low, admit we don't have the answer
+        if avg_relevance < 15:
+            return f"I don't have specific data to directly answer your question about '{original_query}'. My knowledge base focuses on financial concepts, market structures, and economic indicators, but may not contain current rankings or specific factual data like country poverty levels or currency values."
         
         citation_counter = 0
         topic_str = " and ".join(key_topics[:3]) if key_topics else "this topic"
         
         # Check for simple factual questions that need direct answers
-        query_lower = original_query.lower()
-        
-        # Pattern: "what is the current/highest/best/largest X"
         superlative_match = re.search(r'what\s+is\s+(?:the\s+)?(current|highest|best|largest|smallest|first|last|most|least)\s+(\w+)', query_lower)
         
         if superlative_match and intent == "fact":
@@ -227,6 +252,13 @@ class LanguageSynthesizer:
                 citation_map[best_frag.get("fragment_id", "unknown")] = citation_counter
                 direct_answer += f"This high value stems from Kuwait's strong oil-based economy and substantial foreign currency reserves [{citation_counter}]."
                 return direct_answer
+            
+            # For poorest country questions
+            elif "poorest" in query_lower or "country" in query_lower:
+                # Check if we actually have data about poorest countries
+                has_poverty_data = any("poorest" in f.get("content", "").lower() or "burundi" in f.get("content", "").lower() for f in fragments)
+                if not has_poverty_data:
+                    return f"I don't have current data on the world's poorest countries in my knowledge base. This information changes frequently and requires up-to-date economic statistics from sources like the World Bank or IMF. My expertise is in financial market structures, investment concepts, and economic theory rather than current country rankings."
             
             # For other superlative questions, try to formulate a direct answer
             elif content:
