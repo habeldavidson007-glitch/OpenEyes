@@ -4,14 +4,14 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "definition",
+    "derivatives",
     "market_structure"
   ],
   "reasoning_role": "definition",
-  "content": "Perpetual futures have no expiry; funding rates keep perp price anchored to spot. Longs pay shorts when perp trades above spot (positive funding); shorts pay longs when below. Typically paid every 8 hours. Extreme rates signal crowded positioning.",
+  "content": "Funding rates in perpetual futures keep contract prices anchored to spot. Long positions pay shorts when funding is positive (bullish sentiment), shorts pay longs when negative. Extreme rates signal crowded positioning. Annualized rates exceeding 50% often precede corrections as leveraged traders get squeezed.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

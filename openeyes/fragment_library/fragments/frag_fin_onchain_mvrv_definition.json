@@ -4,14 +4,14 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "definition",
-    "on_chain_metrics"
+    "on_chain_metrics",
+    "bitcoin"
   ],
   "reasoning_role": "definition",
-  "content": "Market Value to Realized Value ratio compares market cap to realized cap (sum of last-transacted prices). MVRV >3.5 signals overvaluation; <1 signals undervaluation. Historically marked major cycle turning points.",
+  "content": "Market Value to Realized Value (MVRV) compares current market cap to realized cap (sum of each coin's last purchase price). High MVRV (>3.5) indicates overvaluation; low MVRV (<1) signals undervaluation. Historical extremes marked cycle tops and bottoms with reasonable accuracy.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

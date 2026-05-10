@@ -3,15 +3,15 @@
   "domain": "finance",
   "subdomain": "technical_analysis",
   "tags": [
-    "chart_patterns",
-    "definition",
-    "technical_analysis"
+    "technical_analysis",
+    "behavioral",
+    "psychology"
   ],
   "reasoning_role": "definition",
-  "content": "Composite indices combining: volatility, market momentum, social media sentiment, surveys, dominance, trends. Scale 0-100: extreme fear (<25) often marks bottoms; extreme greed (>75) marks tops. Contrarian indicator\u2014be fearful when others greedy.",
+  "content": "Technical patterns work partly through self-fulfilling prophecy\u2014widely recognized patterns trigger collective action. Fear drives capitulation patterns (selling climaxes, springs); greed drives euphoria patterns (buying climaxes, upthrusts). Pattern recognition exploits predictable human emotional responses. However, as algorithms dominate, pattern dynamics shift\u2014machines front-run predictable human reactions.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -5,12 +5,12 @@
   "tags": [
     "bitcoin",
     "crypto",
-    "definition"
+    "protocol_upgrade"
   ],
   "reasoning_role": "definition",
-  "content": "SegWit (BIP141, 2017) separated signature data from transaction data, effectively increasing block capacity to ~4MB weight units. It fixed transaction malleability, enabling Lightning Network. Native SegWit (bech32) addresses start with 'bc1q'.",
+  "content": "Segregated Witness (Segwit), activated in 2017, separated signature data from transaction data. This increased effective block capacity from 1MB to approximately 4MB weight units, fixed transaction malleability, and enabled Layer 2 solutions like Lightning Network. Adoption exceeded 80% of transactions within two years.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "source_url": "https://ethereum.org/en/developers/docs/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

@@ -3,14 +3,14 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "crypto",
     "defi",
+    "crypto",
     "latest_data"
   ],
   "reasoning_role": "latest_data",
-  "content": "Chainlink secures $50B+ in DeFi value. Oracle manipulation caused major exploits: Synthetix ($1M), PancakeBunny, Cream Finance. Multi-oracle designs improve resilience.",
+  "content": "Chainlink dominates DeFi oracles securing over $70B in TVL across chains. New competitors like Pyth and API3 offer alternative models. Oracle failures caused major exploits including Euler Finance ($200M) and Hundred Finance. Multi-oracle designs and circuit breakers became standard risk mitigation.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://uniswap.org",
+  "source_url": "https://ethereum.org/en/developers/docs/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

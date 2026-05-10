@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_orderblocks_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "ict_concepts",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Order blocks represent institutional buying or selling zones where large players accumulated positions. Identified as the last opposite-colored candle before a strong impulsive move. Price returning to order blocks often reacts as institutions defend or add to positions. Bullish order blocks form before rallies; bearish before declines.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

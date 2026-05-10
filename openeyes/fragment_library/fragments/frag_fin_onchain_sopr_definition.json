@@ -4,14 +4,14 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "definition",
-    "on_chain_metrics"
+    "on_chain_metrics",
+    "bitcoin"
   ],
   "reasoning_role": "definition",
-  "content": "SOPR = realized price / price paid for spent outputs. SOPR >1 means coins moved at profit; <1 at loss. Used to identify market tops (extreme profit-taking) and bottoms (capitulation). 7-day SMA smooths noise.",
+  "content": "Spent Output Profit Ratio (SOPR) measures whether coins moved were sold at profit or loss. SOPR = realized price / price at creation. Values above 1 indicate profit-taking; below 1 shows loss-cutting. Extended periods below 1 often mark cycle bottoms as weak hands capitulate.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

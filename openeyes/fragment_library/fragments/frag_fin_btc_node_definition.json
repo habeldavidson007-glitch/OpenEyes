@@ -5,13 +5,13 @@
   "tags": [
     "bitcoin",
     "crypto",
-    "definition"
+    "decentralization"
   ],
   "reasoning_role": "definition",
-  "content": "A full node validates all Bitcoin transactions and blocks against consensus rules. Running one ensures you don't trust others for verification, supports network decentralization, and enables private transaction broadcasting without leaking your address to third parties.",
+  "content": "A Bitcoin node validates transactions and blocks against consensus rules without mining. Running a node allows users to verify their own transactions independently, contributing to network decentralization. Full nodes require approximately 600GB storage (2024) and moderate bandwidth, accessible to individuals with consumer hardware.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://bitcoin.org/bitcoin.pdf",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

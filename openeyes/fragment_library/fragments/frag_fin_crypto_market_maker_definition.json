@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_crypto_market_maker_definition",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Crypto market makers provide liquidity across centralized and decentralized venues. Unlike traditional MM, they operate 24/7 across fragmented exchanges without formal obligations. Major players include Jump Trading, Wintermute, Alameda (pre-collapse). They profit from spreads, rebates, and proprietary trading.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

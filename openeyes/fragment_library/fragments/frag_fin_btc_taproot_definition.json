@@ -5,13 +5,13 @@
   "tags": [
     "bitcoin",
     "crypto",
-    "definition"
+    "privacy"
   ],
   "reasoning_role": "definition",
-  "content": "Taproot (BIP341-342, Nov 2021) introduced Schnorr signatures and Merkleized Abstract Syntax Trees (MAST). It improves privacy by making complex scripts indistinguishable from simple payments and reduces data for multi-sig transactions.",
+  "content": "Taproot, activated November 2021, introduced Schnorr signatures and Merkleized Abstract Syntax Trees (MAST). It enables complex spending conditions to appear identical to simple transactions on-chain, improving privacy. All participants in a multisig or script path look like single-signature transactions unless dispute occurs.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://bitcoin.org/bitcoin.pdf",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -3,12 +3,13 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "crypto"
+    "crypto",
+    "risk_management"
   ],
   "reasoning_role": "definition",
-  "content": "Self-custody (hardware wallets) offers full control but single-point-of-failure risk. Institutional custody (Fireblocks) offers insurance.",
-  "source": "OpenEyes Crypto Knowledge Base",
-  "source_url": "https://ethereum.org",
+  "content": "Crypto custody ranges from self-custody (hardware wallets, multisig) to institutional solutions (Coinbase Custody, BitGo). Cold storage keeps keys offline, immune to remote hacks. Multisig requires multiple signatures for transactions, distributing control. Institutions demand insured custody with regulatory compliance.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

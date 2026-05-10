@@ -3,15 +3,15 @@
   "domain": "finance",
   "subdomain": "technical_analysis",
   "tags": [
-    "chart_patterns",
-    "definition",
-    "technical_analysis"
+    "technical_analysis",
+    "indicators",
+    "volume"
   ],
   "reasoning_role": "definition",
-  "content": "VWAP = cumulative (price \u00d7 volume) / cumulative volume. Resets daily/weekly. Institutions use VWAP as benchmark\u2014buy below, sell above. Acts as dynamic support/resistance. Deviation bands (\u00b11, \u00b12 std dev) show extremes.",
+  "content": "Volume Weighted Average Price (VWAP) calculates average price weighted by volume throughout session. Institutions use VWAP as benchmark for execution quality\u2014buying below VWAP, selling above indicates good execution. Price above VWAP suggests bullish intraday bias; below suggests bearish. VWAP often acts as dynamic support/resistance. Reset daily on most platforms.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

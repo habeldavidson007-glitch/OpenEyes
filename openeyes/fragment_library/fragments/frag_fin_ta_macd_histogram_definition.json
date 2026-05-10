@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_macd_histogram_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "indicators",
+    "macd"
+  ],
+  "reasoning_role": "definition",
+  "content": "MACD histogram plots difference between MACD line and signal line, providing earlier momentum signals than line crossovers. Expanding histogram indicates strengthening momentum; contracting shows weakening. Zero line cross marks MACD/signal crossover. Histogram divergences often precede price reversals. Visual representation makes momentum shifts easier to spot than raw MACD lines.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

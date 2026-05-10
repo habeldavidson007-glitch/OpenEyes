@@ -3,15 +3,14 @@
   "domain": "finance",
   "subdomain": "technical_analysis",
   "tags": [
-    "chart_patterns",
-    "counter_argument",
-    "technical_analysis"
+    "technical_analysis",
+    "indicators"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Stochastic can remain overbought/oversold during strong trends, giving premature reversal signals. Better for ranging markets. Fast stochastic whipsaws; slow stochastic smoother but more lag.",
+  "content": "Stochastic's overbought/oversold readings lead to premature counter-trend entries in trending markets. Price can remain overbought throughout strong uptrends, punishing shorts who fade extremes. The indicator's sensitivity creates frequent whipsaws\u2014many signals prove false. Adjusting thresholds or using stochastic within trend-filtered frameworks improves results but reduces signal frequency.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

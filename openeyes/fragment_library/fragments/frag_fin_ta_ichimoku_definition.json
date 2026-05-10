@@ -3,15 +3,14 @@
   "domain": "finance",
   "subdomain": "technical_analysis",
   "tags": [
-    "chart_patterns",
-    "definition",
-    "technical_analysis"
+    "technical_analysis",
+    "indicators"
   ],
   "reasoning_role": "definition",
-  "content": "Ichimoku Kinko Hyo ('one glance equilibrium'): Tenkan-sen (conversion line), Kijun-sen (base line), Senkou Span A/B (cloud), Chikou Span (lagging line). Cloud = support/resistance zone. Price above cloud = bullish; below = bearish. Future cloud projects support/resistance.",
+  "content": "Ichimoku Cloud comprises five components: Tenkan-sen (conversion line, 9-period midpoint), Kijun-sen (base line, 26-period midpoint), Senkou Span A (leading span A, average of Tenkan/Kijun projected forward), Senkou Span B (leading span B, 52-period midpoint projected forward), Chikou Span (lagging span, current close plotted 26 periods back). Cloud (Kumo) formed between Spans A and B indicates support/resistance zones.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

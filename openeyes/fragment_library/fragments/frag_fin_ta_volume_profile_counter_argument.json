@@ -3,15 +3,14 @@
   "domain": "finance",
   "subdomain": "technical_analysis",
   "tags": [
-    "chart_patterns",
-    "counter_argument",
-    "technical_analysis"
+    "technical_analysis",
+    "volume"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Volume Profile is backward-looking; doesn't predict future. Different session settings (day/week/month) give different profiles. Crypto's fragmented liquidity across exchanges complicates accurate profile construction.",
+  "content": "Volume Profile's effectiveness depends heavily on lookback period selection\u2014different periods show different POC and value areas. In trending markets, old profile levels become irrelevant quickly. The tool works best in ranged markets where mean reversion dominates. Over-reliance on historical volume nodes ignores changing market conditions.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

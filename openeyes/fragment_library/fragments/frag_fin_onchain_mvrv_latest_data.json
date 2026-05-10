@@ -4,13 +4,13 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "latest_data",
-    "on_chain_metrics"
+    "on_chain_metrics",
+    "latest_data"
   ],
   "reasoning_role": "latest_data",
-  "content": "MVRV bottomed at 0.8 (2018), 0.9 (2020), 0.7 (2022). Peaks reached 3.5-4.0 at cycle tops. Realized price (~$22k for BTC in 2024) acts as fair value anchor.",
+  "content": "Bitcoin MVRV reached 4.5 during 2021 peak, dropped to 0.8 in 2022 bottom, recovered to 2.0 by 2024. The metric's predictive power diminished as institutional adoption increased holding periods. Adjusted MVRV accounting for lost coins may provide better signals for mature markets.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
+  "source_url": "https://bitcoin.org/en/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

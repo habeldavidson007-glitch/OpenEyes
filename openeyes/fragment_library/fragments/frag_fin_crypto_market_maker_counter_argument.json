@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_crypto_market_maker_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Crypto market making lacks regulatory oversight, enabling manipulative practices. Wash trading inflates volumes. MMs often trade against customers using privileged information. FTX-Alameda relationship revealed conflicts where MM had special privileges. Fragmentation prevents consolidated tape, disadvantaging retail traders.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

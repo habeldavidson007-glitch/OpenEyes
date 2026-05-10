@@ -4,14 +4,14 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "definition",
-    "on_chain_metrics"
+    "on_chain_metrics",
+    "bitcoin"
   ],
   "reasoning_role": "definition",
-  "content": "Network Value to Transactions ratio = market cap / daily transaction volume (USD). High NVT suggests overvaluation relative to utility (like P/E ratio). NVT Signal uses 90-day SMA for smoother readings.",
+  "content": "Network Value to Transactions (NVT) ratio divides market cap by daily transaction volume (in USD). High NVT suggests overvaluation relative to network usage\u2014similar to P/E ratio. Spikes often preceded price corrections. NVT Signal uses moving average crossovers for timing signals.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

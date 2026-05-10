@@ -4,13 +4,14 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "latest_data",
-    "on_chain_metrics"
+    "on_chain_metrics",
+    "mining",
+    "latest_data"
   ],
   "reasoning_role": "latest_data",
-  "content": "Miner capitulation observed mid-2018, mid-2022. Post-2024 halving, marginal miners with >$50k/BTC costs struggled. Public miners hedged with forwards, reducing forced selling.",
+  "content": "Post-2024 halving, miner revenue dropped 50% overnight, triggering capitulation among inefficient operators. Hash rate temporarily declined 15% before recovering. Miner reserves reached multi-year lows as selling continued. Surviving miners upgraded equipment, accelerating industry consolidation toward large-scale operations.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
+  "source_url": "https://bitcoin.org/en/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

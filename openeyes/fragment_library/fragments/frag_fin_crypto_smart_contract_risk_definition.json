@@ -4,14 +4,14 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "definition",
-    "risk_management"
+    "risk_management",
+    "defi"
   ],
   "reasoning_role": "definition",
-  "content": "Smart contracts carry bugs, exploits, and design flaws. Audits reduce but don't eliminate risk\u2014auditors miss vulnerabilities. Common exploits: reentrancy, oracle manipulation, access control failures, integer overflow. Immutable code means no patches after deployment.",
+  "content": "Smart contract risk stems from code vulnerabilities, logic errors, or unforeseen interactions. Audits reduce but don't eliminate risk\u2014auditors miss bugs too. Formal verification provides stronger guarantees but is costly. Bug bounties incentivize white-hat discovery. Diversification across audited protocols mitigates single-point failure risk.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
-  "credibility_class": "government_source",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -3,13 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "crypto"
+    "crypto",
+    "risk_management",
+    "regulation"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Complex reporting requirements for DeFi interactions (swaps, liquidity provision) create compliance burdens and accidental non-compliance.",
-  "source": "OpenEyes Crypto Knowledge Base",
-  "source_url": "https://ethereum.org",
-  "credibility_class": "government_source",
+  "content": "Tax tracking remains prohibitively complex for active DeFi users. Cross-chain activity, airdrops, and staking rewards create hundreds of taxable events annually. IRS guidance lags innovation. Many users underreport unintentionally. Proposed legislation would mandate broker reporting, but DeFi protocol classification remains unresolved.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

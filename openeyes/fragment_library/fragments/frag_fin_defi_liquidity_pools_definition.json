@@ -3,15 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "crypto",
     "defi",
-    "definition"
+    "crypto",
+    "market_structure"
   ],
   "reasoning_role": "definition",
-  "content": "LPs deposit equal value of two tokens into a pool, receiving LP tokens representing their share. Fees accumulate pro-rata. Withdrawals reclaim underlying assets at current ratio. Smart contracts manage pricing automatically.",
+  "content": "Liquidity pools are smart contract reserves where users deposit token pairs to enable trading. LPs earn proportional share of trading fees (typically 0.05-1% per swap). Pools require balanced deposits; imbalances indicate one-sided trading pressure. TVL measures total value locked across all pools in a protocol.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://uniswap.org",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

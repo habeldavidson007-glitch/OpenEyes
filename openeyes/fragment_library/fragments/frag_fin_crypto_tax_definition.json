@@ -3,13 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "crypto"
+    "crypto",
+    "risk_management",
+    "regulation"
   ],
   "reasoning_role": "definition",
-  "content": "US treats crypto as property (capital gains tax). FIFO/LIFO accounting applies. Staking rewards taxed as income at receipt.",
-  "source": "OpenEyes Crypto Knowledge Base",
-  "source_url": "https://ethereum.org",
-  "credibility_class": "government_source",
+  "content": "Crypto taxation varies by jurisdiction but generally treats disposals as taxable events. US lacks wash sale rules for crypto (as of 2024), allowing tax-loss harvesting without waiting periods. DeFi activities create reporting complexity\u2014each swap, liquidity provision, and yield claim may be taxable. FIFO, LIFO, or specific identification methods affect outcomes.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -4,13 +4,13 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "latest_data",
-    "market_structure"
+    "market_structure",
+    "latest_data"
   ],
   "reasoning_role": "latest_data",
-  "content": "BNB market cap exceeded $80B at peak. Binance settled with DOJ/FinCEN for $4.3B (2023). Post-settlement, compliance increased but market share remained dominant.",
+  "content": "Following 2023 DOJ settlement and CEO change, Binance market share declined from 60% to 45%. Competitors Coinbase, OKX, Bybit gained share. Decentralized exchanges captured 15% of spot volume, up from 5% in 2022. Market structure diversified but remains concentrated among top 5 venues.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
+  "source_url": "https://bitcoin.org/en/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

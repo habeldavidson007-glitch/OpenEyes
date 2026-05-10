@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_orderblocks_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "ict_concepts"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Order block identification is highly subjective\u2014different analysts mark different zones on the same chart. No verified data confirms institutional order clustering at these specific levels. The concept confuses correlation with causation: price reacts at many levels, and successful reactions are remembered while failures are forgotten.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

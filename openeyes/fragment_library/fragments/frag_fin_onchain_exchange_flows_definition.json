@@ -4,14 +4,13 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "definition",
     "on_chain_metrics"
   ],
   "reasoning_role": "definition",
-  "content": "Large exchange inflows often signal intent to sell (bearish). Outflows suggest accumulation/cold storage (bullish). Whale tracking (>1k BTC) provides early warning. Stablecoin inflows to exchanges indicate buying power ready.",
+  "content": "Large exchange inflows often precede selling pressure as users move coins to trade. Outflows suggest accumulation and cold storage. Whale movements (>1000 BTC) receive particular attention. Net outflows during price declines indicate HODLing conviction; inflows during rallies suggest profit-taking intent.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

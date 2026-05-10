@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_wyckoff_distribution_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "wyckoff",
+    "market_phases"
+  ],
+  "reasoning_role": "definition",
+  "content": "Wyckoff distribution mirrors accumulation but inverted: Buying Climax (euphoric buying absorbed), Automatic Reaction (profit-taking), Secondary Test (retests highs on declining volume), then Upthrust (bull trap before markdown). Smart money distributes holdings to late buyers before downtrend begins.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

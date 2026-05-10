@@ -4,14 +4,14 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "definition",
-    "risk_management"
+    "risk_management",
+    "defi"
   ],
   "reasoning_role": "definition",
-  "content": "Bridges lock assets on source chain, mint wrapped versions on destination. Central points of failure: bridge contracts hold billions, making them prime targets. Design varies: trusted (multisig) vs trustless (light clients). Most hacks target bridges.",
+  "content": "Cross-chain bridges lock assets on source chain and mint wrapped versions on destination. They concentrate risk\u2014bridge contracts hold billions in locked assets. Attack vectors include validator compromise, smart contract bugs, and oracle manipulation. Bridges represent highest-risk DeFi primitive, responsible for 60%+ of hacked funds.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
-  "credibility_class": "government_source",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

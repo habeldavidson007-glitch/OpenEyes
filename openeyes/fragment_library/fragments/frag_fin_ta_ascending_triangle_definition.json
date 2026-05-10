@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_ascending_triangle_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "patterns",
+    "continuation_patterns"
+  ],
+  "reasoning_role": "definition",
+  "content": "Ascending triangle features flat resistance and rising lows (higher lows converging on resistance). Bullish continuation pattern showing buyers becoming increasingly aggressive. Breakout above resistance signals continuation with target equal to triangle height. Volume typically contracts during formation, expands on breakout. Failure to break out often leads to sharp decline as frustrated longs exit.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

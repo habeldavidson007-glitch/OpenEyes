@@ -3,13 +3,14 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
+    "ethereum",
     "crypto",
-    "ethereum"
+    "proof_of_stake"
   ],
   "reasoning_role": "definition",
-  "content": "Ethereum transitioned from Proof-of-Work to Proof-of-Stake in Sept 2022, reducing energy consumption by ~99.95%.",
-  "source": "OpenEyes Crypto Knowledge Base",
-  "source_url": "https://ethereum.org",
+  "content": "The Merge (September 2022) transitioned Ethereum from Proof-of-Work to Proof-of-Stake, reducing energy consumption by 99.95%. Mining was replaced by validator staking. Importantly, the Merge did not reduce gas fees or increase throughput\u2014those require separate upgrades like sharding.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

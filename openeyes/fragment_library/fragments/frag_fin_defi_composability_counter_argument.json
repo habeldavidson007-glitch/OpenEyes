@@ -3,15 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "counter_argument",
+    "defi",
     "crypto",
-    "defi"
+    "risk_management"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Composability amplifies systemic risk. Terra/LUNA collapse demonstrated how interconnected positions create contagion. Users may not realize their exposure to single points of failure.",
+  "content": "Composability created systemic risk exemplified by Terra/LUNA collapse affecting dozens of protocols. Leveraged positions across multiple protocols amplified losses. Integration depth means users inherit risks from every protocol in the chain. Most users don't understand full exposure, creating hidden correlations.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://uniswap.org",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

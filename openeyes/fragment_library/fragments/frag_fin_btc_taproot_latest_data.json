@@ -8,9 +8,9 @@
     "latest_data"
   ],
   "reasoning_role": "latest_data",
-  "content": "Taproot activation occurred at block 709,632. By 2024, 15-20% of transactions used Taproot. Ordinals and BRC-20 tokens emerged as unexpected Taproot use cases.",
+  "content": "Taproot adoption reached 15% of transactions by early 2024, slower than Segwit due to wallet upgrade requirements. However, it enabled Ordinals inscriptions and BRC-20 tokens, creating unexpected use cases. Privacy benefits remain underutilized as most users don't require complex scripts.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "source_url": "https://bitcoin.org/en/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

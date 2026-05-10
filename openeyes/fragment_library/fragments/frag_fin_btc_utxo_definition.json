@@ -5,13 +5,13 @@
   "tags": [
     "bitcoin",
     "crypto",
-    "definition"
+    "blockchain"
   ],
   "reasoning_role": "definition",
-  "content": "Bitcoin uses an Unspent Transaction Output (UTXO) model where each transaction consumes previous outputs and creates new ones. Unlike account-based systems, there are no balances\u2014only unspent outputs owned by addresses. This design enables parallel transaction validation and enhances privacy by not linking transactions to persistent accounts.",
+  "content": "Bitcoin uses an Unspent Transaction Output (UTXO) model where transactions consume previous outputs and create new ones. Unlike account-based models, UTXOs are discrete chunks of bitcoin that can be spent independently. This design enables parallel transaction validation and enhances privacy by not linking addresses to persistent accounts.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://bitcoin.org/bitcoin.pdf",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

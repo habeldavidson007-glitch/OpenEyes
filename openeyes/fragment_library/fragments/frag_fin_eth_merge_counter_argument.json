@@ -3,13 +3,14 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
+    "ethereum",
     "crypto",
-    "ethereum"
+    "proof_of_stake"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Critics argue PoS leads to centralization of validation among large stakers and creates a security model reliant on economic slashing rather than physical work.",
-  "source": "OpenEyes Crypto Knowledge Base",
-  "source_url": "https://ethereum.org",
+  "content": "Post-Merge centralization concerns emerged as liquid staking providers accumulated significant voting power. Lido controls over 30% of staked ETH, approaching theoretical attack thresholds. Critics argue this creates systemic risk if staking providers collude or suffer technical failures.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_double_triple_top_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "patterns",
+    "reversal_patterns"
+  ],
+  "reasoning_role": "definition",
+  "content": "Double top forms when price tests resistance twice, failing both times, then breaks support between peaks. Triple top extends this to three tests. Triple tops indicate stronger resistance but take longer to develop. Breakdown confirmation requires close below intervening low. Measured move projects height of pattern downward from breakout point.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

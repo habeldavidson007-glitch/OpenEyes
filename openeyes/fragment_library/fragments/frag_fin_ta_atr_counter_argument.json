@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_atr_counter_argument",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "indicators",
+    "risk_management"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "ATR-based stops can become excessively wide during high volatility periods, forcing reduced position sizes that may not justify trade economics. Lagging nature means ATR adjusts slowly to volatility regime changes\u2014stops may be inappropriate during transitions. Fixed ATR multiples don't account for instrument-specific characteristics or asymmetric risk profiles.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

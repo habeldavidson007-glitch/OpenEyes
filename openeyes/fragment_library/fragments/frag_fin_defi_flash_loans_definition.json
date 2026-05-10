@@ -3,15 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "crypto",
     "defi",
-    "definition"
+    "crypto",
+    "market_structure"
   ],
   "reasoning_role": "definition",
-  "content": "Flash loans allow borrowing any amount without collateral, provided loan is repaid within same transaction. Used for arbitrage, collateral swapping, self-liquidation. If repayment fails, entire transaction reverts. Enabled by atomic transaction execution.",
+  "content": "Flash loans enable borrowing without collateral if repaid within single transaction. They exploit atomicity\u2014if repayment fails, entire transaction reverts. Legitimate uses include refinancing, collateral swapping, and arbitrage. Attack vectors involve manipulating oracle prices within same transaction to drain protocols.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://uniswap.org",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

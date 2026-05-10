@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_confirmation_bias_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "behavioral",
+    "psychology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Confirmation bias causes traders to see evidence supporting existing views while ignoring contradictory signals. Bullishly-biased traders interpret ambiguous patterns as bullish; bearish traders see bearish signals. This leads to holding losing positions too long and exiting winners too early. Research shows even experienced analysts succumb to confirmation bias when emotionally invested in outcomes.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

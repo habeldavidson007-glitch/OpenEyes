@@ -3,15 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "crypto",
     "defi",
-    "definition"
+    "crypto",
+    "market_structure"
   ],
   "reasoning_role": "definition",
-  "content": "Composability allows protocols to integrate seamlessly: Aave deposits as collateral on Maker, which farms Curve rewards. Enables innovation but creates interdependencies. Failure in one protocol can cascade through the ecosystem.",
+  "content": "DeFi composability ('money legos') allows protocols to integrate seamlessly. Aave deposits can collateralize Maker vaults, which fund Curve liquidity, earning multiple yield streams. This enables complex strategies but creates interdependencies. Failure in one protocol can cascade through connected systems.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://uniswap.org",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

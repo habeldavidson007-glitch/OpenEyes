@@ -3,15 +3,14 @@
   "domain": "finance",
   "subdomain": "technical_analysis",
   "tags": [
-    "chart_patterns",
-    "counter_argument",
-    "technical_analysis"
+    "technical_analysis",
+    "elliott_wave"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Wave counting is highly subjective\u2014ten Elliott analysts give eleven counts. Rules have exceptions, exceptions have exceptions. Often works better in hindsight than real-time prediction.",
+  "content": "Elliott Wave analysis suffers from extreme subjectivity\u2014ten practitioners produce eleven different counts. Rules contain enough flexibility to accommodate almost any price action retrospectively. Academic studies find no predictive power beyond random chance. The theory's complexity creates illusion of understanding without actionable edge. Many successful traders abandoned Elliott Wave after years of unprofitable application.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -3,15 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "crypto",
     "defi",
-    "definition"
+    "crypto",
+    "yield"
   ],
   "reasoning_role": "definition",
-  "content": "Yield farming involves providing liquidity to earn token rewards beyond trading fees. Protocols emit governance tokens to bootstrap liquidity. APYs often unsustainable, declining as emissions dilute or farmers exit.",
+  "content": "Yield farming involves moving capital between protocols to maximize returns from trading fees and token emissions. Early adopters capture highest yields from bootstrapping incentives. APYs often exceed 100% initially but decay rapidly as more capital enters. Sustainable yields typically settle at 5-20% after incentive phases end.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://uniswap.org",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

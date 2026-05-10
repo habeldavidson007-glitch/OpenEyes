@@ -3,15 +3,16 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
+    "ethereum",
     "crypto",
-    "definition",
-    "ethereum"
+    "staking",
+    "risk_management"
   ],
   "reasoning_role": "definition",
-  "content": "Slashing penalizes validators for double-proposing blocks, surround attesting, or conflicting votes. Penalty: minimum 1 ETH plus proportional stake loss based on correlated offenders. Forced exit after slashing.",
+  "content": "Slashing penalizes validators for malicious behavior or severe downtime. Offenses include double-signing blocks, surround voting, or prolonged inactivity. Penalties range from minor (0.5 ETH for downtime) to severe (full 32 ETH stake loss for attacks). Slashed validators are forcibly exited from the validator set.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://ethereum.org",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

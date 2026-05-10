@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_ta_structure_break_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Structure break confirmation requires more than wick penetration\u2014needs decisive close beyond level with follow-through. False breaks (stop hunts) commonly pierce levels then reverse. Confirmation criteria: (1) close beyond level, (2) volume expansion, (3) subsequent price action respecting broken level as new support/resistance. Waiting for confirmation sacrifices entry price for reliability.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

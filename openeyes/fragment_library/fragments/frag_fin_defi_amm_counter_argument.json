@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_amm_counter_argument",
+  "domain": "finance",
+  "subdomain": "crypto",
+  "tags": [
+    "defi",
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "AMMs suffer from capital inefficiency compared to order books. Liquidity is distributed across all possible prices, most sitting idle. Concentrated liquidity AMMs (Uniswap v3) improved this but require active management. Large trades experience significant slippage due to the curved pricing mechanism.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -3,15 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "counter_argument",
+    "defi",
     "crypto",
-    "defi"
+    "risk_management"
   ],
   "reasoning_role": "counter_argument",
-  "content": "IL calculations ignore fee earnings, which can offset losses in high-volume pairs. Stablecoin pairs have minimal IL but also lower yields. IL is only 'impermanent' if prices revert.",
+  "content": "Impermanent loss is often misunderstood as rare edge case when it's the norm for volatile pairs. Providing liquidity for assets with different fundamentals guarantees IL over time. Many LPs lose money despite earning fees because IL exceeds trading revenue. Stablecoin pairs minimize but don't eliminate this risk.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://uniswap.org",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

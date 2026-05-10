@@ -3,14 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "crypto",
     "ethereum",
+    "crypto",
+    "staking",
     "latest_data"
   ],
   "reasoning_role": "latest_data",
-  "content": "Minor slashing incidents occurred from client bugs (e.g., Lighthouse bug 2023). Total slashed ETH remains <1000 since launch. Client diversity (Prysm, Lighthouse, Teku, Nimbus) mitigates systemic risk.",
+  "content": "Through 2024, fewer than 100 validators have been slashed, representing less than 0.1% of total staked ETH. Most slashing resulted from client bugs rather than intentional attacks. The low rate indicates robust validator software and careful operation, though risks remain concentrated in popular client implementations.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://ethereum.org",
+  "source_url": "https://ethereum.org/en/developers/docs/",
   "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],

@@ -3,15 +3,14 @@
   "domain": "finance",
   "subdomain": "technical_analysis",
   "tags": [
-    "chart_patterns",
-    "counter_argument",
-    "technical_analysis"
+    "technical_analysis",
+    "indicators"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Ichimoku appears complex; beginners struggle with multiple components. Signals can conflict (e.g., price above cloud but Tenkan/Kijun cross bearish). Works better on daily+ timeframes than intraday.",
+  "content": "Ichimoku's complexity creates analysis paralysis\u2014five components generating sometimes conflicting signals. The system's Japanese parameters (9, 26, 52) based on historical trading weeks lack universal justification. Cloud interpretation varies among practitioners. Backtesting proves challenging due to multiple signal types. Many traders use simplified subsets rather than full system.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://www.investopedia.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_stddev_channels_definition",
+  "domain": "finance",
+  "subdomain": "technical_analysis",
+  "tags": [
+    "technical_analysis",
+    "indicators",
+    "volatility"
+  ],
+  "reasoning_role": "definition",
+  "content": "Standard deviation channels plot parallel lines above and below moving average at specified standard deviation distances (commonly 2 SD). Unlike Bollinger Bands which adjust width dynamically, STD channels maintain fixed width based on lookback period. Price reaching channel extremes suggests statistically stretched conditions. Channels help identify trend trajectory and potential reversal zones.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "industry_standard",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

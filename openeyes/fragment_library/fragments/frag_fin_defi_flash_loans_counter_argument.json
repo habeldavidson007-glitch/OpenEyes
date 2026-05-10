@@ -3,15 +3,15 @@
   "domain": "finance",
   "subdomain": "crypto",
   "tags": [
-    "counter_argument",
+    "defi",
     "crypto",
-    "defi"
+    "risk_management"
   ],
   "reasoning_role": "counter_argument",
-  "content": "Flash loans have been weaponized for attacks: manipulating oracle prices, exploiting governance voting, draining protocols. They amplify vulnerabilities in poorly designed systems.",
+  "content": "Flash loans enabled billions in DeFi exploits, exposing oracle manipulation vulnerabilities. Attacks on bZx, Cream Finance, and others demonstrated how flash loans amplify existing weaknesses. While not inherently malicious, they reduce attack costs to just gas fees, enabling sophisticated exploits previously impossible.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://uniswap.org",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],

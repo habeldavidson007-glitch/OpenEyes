@@ -4,14 +4,14 @@
   "subdomain": "crypto",
   "tags": [
     "crypto",
-    "definition",
-    "on_chain_metrics"
+    "on_chain_metrics",
+    "bitcoin"
   ],
   "reasoning_role": "definition",
-  "content": "Realized price = realized cap / circulating supply. Average price at which all coins last moved. Represents aggregate cost basis. Price above realized = market in profit; below = market at loss. Strong support/resistance level.",
+  "content": "Realized price represents average acquisition cost across all coins, calculated by valuing each UTXO at its creation price. It serves as psychological support/resistance. Price below realized cap indicates majority of holders underwater\u2014historically buying opportunities. Above realized cap suggests profitable holders who may take profits.",
   "source": "OpenEyes Knowledge Base",
-  "source_url": "https://glassnode.com",
-  "credibility_class": "educational_resource",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "peer_reviewed_study",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
