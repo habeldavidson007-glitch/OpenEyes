@@ -48,7 +48,7 @@ class OpenEyes:
     """
     
     def __init__(self, domain: str = "general", 
-                 fragment_library_path: str = "openeyes/fragment_library/fragments.json",
+                 fragment_library_path: Optional[str] = None,
                  api_config: Optional[Dict[str, str]] = None,
                  obsidian_vault_path: Optional[str] = None):
         
@@ -58,7 +58,10 @@ class OpenEyes:
         # Load domain rules
         self.rules_config = get_domain_rules(self.domain)
         
-        # Initialize fragment library
+        # Initialize fragment library with proper path handling
+        if fragment_library_path is None:
+            # Use the fragments directory relative to this module
+            fragment_library_path = Path(__file__).parent.parent / "fragment_library" / "fragments"
         self.library = FragmentLibrary(storage_path=fragment_library_path)
         
         # Initialize API connectors if config provided

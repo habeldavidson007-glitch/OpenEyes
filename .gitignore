@@ -1,74 +1,10 @@
 ```
-# Logs
-*.log
-
-# Environment files
-.env
-.env.local
-*.env.*
-
 # Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-*.so
-*.egg-info/
-.eggs/
 
-# Build and distribution artifacts
-dist/
-build/
-*.egg
-*.whl
-.coverage
-coverage/
-htmlcov/
-.pytest_cache/
-.mypy_cache/
-.tox/
-.cover/
-
-# Virtual environments
-venv/
-.venv/
-env/
-ENV/
-.ENV/
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Compression and archives
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+# Logs
+logs/
 ```
