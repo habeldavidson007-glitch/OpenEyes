@@ -1,0 +1,40 @@
+{
+  "fragments": [
+    {
+      "id": "neuro-alzheimer-def",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["alzheimers-disease", "dementia", "amyloid", "tau", "neurodegeneration"],
+      "reasoning_role": "definition",
+      "content": "Alzheimer's disease (AD) is the most common neurodegenerative dementia (60-80% of cases), characterized by progressive cognitive decline, memory impairment, and functional loss. Pathological hallmarks: extracellular amyloid-beta plaques (from APP cleavage) and intracellular hyperphosphorylated tau neurofibrillary tangles. Amyloid cascade hypothesis posits Aβ accumulation initiates pathology, leading to tau spread, synaptic dysfunction, neuroinflammation, and neuronal death. Braak staging describes tau progression from entorhinal cortex to hippocampus to neocortex. Clinical stages: preclinical (biomarker positive, asymptomatic), mild cognitive impairment (MCI) due to AD (objective impairment, preserved function), and AD dementia (functional impairment). Early-onset familial AD (<5%): APP, PSEN1, PSEN2 mutations. Late-onset sporadic AD: APOE ε4 allele is strongest genetic risk factor (dose-dependent). Atrophy patterns: medial temporal lobe, hippocampus, posterior cingulate, precuneus.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/33479069/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "neuro-alzheimer-tx",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["alzheimers-disease", "cholinesterase-inhibitor", "memantine", "anti-amyloid", "treatment-protocol"],
+      "reasoning_role": "treatment_protocol",
+      "content": "AD treatment includes symptomatic cognitive enhancers and new disease-modifying anti-amyloid therapies. Symptomatic: (1) Cholinesterase inhibitors (donepezil, rivastigmine, galantamine) for mild-moderate AD; modest cognitive/functional benefit; side effects include nausea, diarrhea, bradycardia, syncope. Donepezil also approved for severe AD. (2) Memantine (NMDA receptor antagonist) for moderate-severe AD; can combine with cholinesterase inhibitor; side effects include dizziness, headache, confusion. Disease-modifying anti-amyloid monoclonal antibodies: lecanemab (Leqembi) and donanemab approved for early AD (MCI/mild dementia) with confirmed amyloid pathology. Lecanemab reduces amyloid and shows modest clinical benefit (0.45-point slowing on CDR-SB over 18 months); requires IV infusion every 2 weeks, MRI monitoring for ARIA (amyloid-related imaging abnormalities—edema/microhemorrhage, more common in APOE ε4 carriers). Donanemab targets deposited amyloid, treatment duration guided by amyloid PET clearance. ARIA risk requires baseline and serial MRIs, APOE genotyping recommended. Non-pharmacologic: cognitive stimulation, caregiver support, safety modifications, advance care planning. BPSD management: non-drug approaches first; antipsychotics only for severe agitation/psychosis (black box warning for mortality in dementia).",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/37462286/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "neuro-alzheimer-dx",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["alzheimers-disease", "diagnosis", "biomarker", "PET", "CSF", "NIA-AA"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "AD diagnosis uses 2018 NIA-AA Research Framework defining AD biologically via biomarkers (ATN system), independent of clinical symptoms. A (amyloid): positive amyloid PET or low CSF Aβ42 or Aβ42/40 ratio. T (tau): positive tau PET or elevated CSF phosphorylated tau (p-tau). N (neurodegeneration): structural MRI (medial temporal atrophy), FDG-PET (temporoparietal hypometabolism), or elevated CSF total tau. Clinical diagnosis: history of progressive episodic memory impairment plus deficits in other cognitive domains (language, visuospatial, executive function), functional impairment. MMSE/MoCA screen cognition; MoCA more sensitive for MCI. Neuropsychological testing characterizes pattern (hippocampal-predominant in AD). MRI excludes vascular, tumor, NPH; shows hippocampal/medial temporal atrophy. FDG-PET shows temporoparietal hypometabolism. Amyloid PET detects fibrillar Aβ. CSF biomarkers: low Aβ42, elevated p-tau and t-tau. Blood biomarkers emerging: plasma p-tau217, p-tau181, GFAP show high accuracy for AD pathology. Differential diagnosis: vascular dementia, Lewy body dementia (visual hallucinations, parkinsonism, fluctuations), frontotemporal dementia (behavioral/language predominant), reversible causes (B12 deficiency, hypothyroidism, depression).",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}
