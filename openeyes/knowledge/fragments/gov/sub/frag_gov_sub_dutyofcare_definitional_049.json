@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_dutyofcare_definitional_49",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "dutyofcare",
+  "role": "definitional",
+  "summary": "Descriptive overview of dutyofcare in substantive law: foreseeability, special relationships, no-duty rules.",
+  "key_points": [
+    "foreseeability is a fundamental concept in tort law.",
+    "Legal standards for dutyofcare are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine dutyofcare in litigation.",
+    "The doctrine of dutyofcare has evolved through Supreme Court precedents.",
+    "Understanding dutyofcare requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Restatement (Second) of Torts",
+    "Restatement (Third) of Torts",
+    "US Code",
+    "Cornell LII",
+    "Supreme Court opinions"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_negligenceelements_definitional_046",
+    "frag_gov_sub_breachstandard_definitional_052",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

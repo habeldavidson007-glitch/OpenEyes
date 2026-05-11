@@ -1,16 +1,16 @@
 {
-  "id": "gov_sub_contractformation_definitional_1",
+  "id": "gov_sub_uccarticle2_definitional_40",
   "domain": "governance",
   "sector": "SUB",
-  "topic": "contractformation",
+  "topic": "uccarticle2",
   "role": "definitional",
-  "summary": "Descriptive overview of contractformation in substantive law: offer, acceptance, consideration, mutual assent.",
+  "summary": "Descriptive overview of uccarticle2 in substantive law: sale of goods, merchant rules, gap fillers.",
   "key_points": [
-    "offer is a fundamental concept in contract law.",
-    "Legal standards for contractformation are established through case law and statutory interpretation.",
-    "Courts apply specific tests to determine contractformation in litigation.",
-    "The doctrine of contractformation has evolved through Supreme Court precedents.",
-    "Understanding contractformation requires analysis of both historical context and modern applications."
+    "sale of goods is a fundamental concept in contract law.",
+    "Legal standards for uccarticle2 are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine uccarticle2 in litigation.",
+    "The doctrine of uccarticle2 has evolved through Supreme Court precedents.",
+    "Understanding uccarticle2 requires analysis of both historical context and modern applications."
   ],
   "sources": [
     "Restatement (Second) of Contracts",
@@ -22,7 +22,8 @@
   "credibility_score": 0.96,
   "last_updated": "2024-01-15",
   "related_fragments": [
-    "frag_gov_sub_statuteoffrauds_definitional_004",
+    "frag_gov_sub_quasicontract_definitional_037",
+    "frag_gov_sub_cisg_definitional_043",
     "frag_gov_jud_civilprocedure_definitional_001",
     "frag_gov_leg_legislativeprocess_definitional_001"
   ],

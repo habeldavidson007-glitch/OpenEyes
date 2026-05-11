@@ -1,52 +1,59 @@
 ```
-# Compiled and build artifacts
-*.pyc
+# Python
 __pycache__/
-*.o
-*.obj
+*.py[cod]
+*$py.class
 *.so
-*.a
-*.dll
-*.exe
-*.out
-*.class
-
-# Dependencies
-.venv/
-venv/
-node_modules/
-target/
-.gradle/
-.mypy_cache/
-.pytest_cache/
-dist/
+.Python
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-*.swo
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
 
-# Environment variables
-.env
-.env.local
-*.env.*
-
-# Editors and IDEs
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# System files
+# OS
 .DS_Store
 Thumbs.db
 
-# Coverage reports
+# Logs
+*.log
+
+# Coverage
+.coverage
 coverage/
 htmlcov/
-.coverage
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Temporary files
+*.tmp
+*.temp
 
 # Compressed files
 *.zip
@@ -71,4 +78,22 @@ htmlcov/
 *.tar.bz2
 *.tar.xz
 *.tar.zst
+
+# Build artifacts
+target/
+.gradle/
+*.class
+*.o
+*.a
+*.out
+*.dll
+*.so
+
+# Cache directories
+.mypy_cache/
+.pytest_cache/
+.julia/
+zig*/
+julia-*/
+
 ```

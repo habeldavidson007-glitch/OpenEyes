@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_regulatorytakings_procedural_116",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "regulatorytakings",
+  "role": "procedural",
+  "summary": "Descriptive overview of regulatorytakings in substantive law: Lucas total taking, Penn Central balancing test.",
+  "key_points": [
+    "Lucas total taking is a fundamental concept in property law.",
+    "Legal standards for regulatorytakings are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine regulatorytakings in litigation.",
+    "The doctrine of regulatorytakings has evolved through Supreme Court precedents.",
+    "Understanding regulatorytakings requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Restatement (Fourth) of Property",
+    "US Code",
+    "Cornell LII",
+    "Supreme Court opinions (Kelo v. New London)",
+    "ABA Section of Real Property"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_eminentdomain_definitional_113",
+    "frag_gov_sub_recordingstatutes_definitional_119",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

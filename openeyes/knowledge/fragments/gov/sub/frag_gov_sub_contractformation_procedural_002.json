@@ -1,9 +1,9 @@
 {
-  "id": "gov_sub_contractformation_definitional_1",
+  "id": "gov_sub_contractformation_procedural_2",
   "domain": "governance",
   "sector": "SUB",
   "topic": "contractformation",
-  "role": "definitional",
+  "role": "procedural",
   "summary": "Descriptive overview of contractformation in substantive law: offer, acceptance, consideration, mutual assent.",
   "key_points": [
     "offer is a fundamental concept in contract law.",
@@ -22,7 +22,7 @@
   "credibility_score": 0.96,
   "last_updated": "2024-01-15",
   "related_fragments": [
-    "frag_gov_sub_statuteoffrauds_definitional_004",
+    "frag_gov_sub_statuteoffrauds_definitional_005",
     "frag_gov_jud_civilprocedure_definitional_001",
     "frag_gov_leg_legislativeprocess_definitional_001"
   ],

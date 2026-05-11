@@ -1,16 +1,16 @@
 {
-  "id": "gov_sub_contractformation_definitional_1",
+  "id": "gov_sub_parolevidencerule_definitional_7",
   "domain": "governance",
   "sector": "SUB",
-  "topic": "contractformation",
+  "topic": "parolevidencerule",
   "role": "definitional",
-  "summary": "Descriptive overview of contractformation in substantive law: offer, acceptance, consideration, mutual assent.",
+  "summary": "Descriptive overview of parolevidencerule in substantive law: integration, ambiguity exceptions, course of dealing.",
   "key_points": [
-    "offer is a fundamental concept in contract law.",
-    "Legal standards for contractformation are established through case law and statutory interpretation.",
-    "Courts apply specific tests to determine contractformation in litigation.",
-    "The doctrine of contractformation has evolved through Supreme Court precedents.",
-    "Understanding contractformation requires analysis of both historical context and modern applications."
+    "integration is a fundamental concept in contract law.",
+    "Legal standards for parolevidencerule are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine parolevidencerule in litigation.",
+    "The doctrine of parolevidencerule has evolved through Supreme Court precedents.",
+    "Understanding parolevidencerule requires analysis of both historical context and modern applications."
   ],
   "sources": [
     "Restatement (Second) of Contracts",
@@ -23,6 +23,7 @@
   "last_updated": "2024-01-15",
   "related_fragments": [
     "frag_gov_sub_statuteoffrauds_definitional_004",
+    "frag_gov_sub_conditions_definitional_010",
     "frag_gov_jud_civilprocedure_definitional_001",
     "frag_gov_leg_legislativeprocess_definitional_001"
   ],

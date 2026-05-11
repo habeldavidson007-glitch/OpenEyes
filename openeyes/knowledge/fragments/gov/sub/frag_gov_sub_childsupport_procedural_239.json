@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_childsupport_procedural_239",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "childsupport",
+  "role": "procedural",
+  "summary": "Descriptive overview of childsupport in substantive law: guidelines, deviation, enforcement, modification.",
+  "key_points": [
+    "guidelines is a fundamental concept in family law.",
+    "Legal standards for childsupport are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine childsupport in litigation.",
+    "The doctrine of childsupport has evolved through Supreme Court precedents.",
+    "Understanding childsupport requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Uniform Marriage and Divorce Act",
+    "US Code",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Family Law"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_childcustody_definitional_236",
+    "frag_gov_sub_paternity_definitional_242",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

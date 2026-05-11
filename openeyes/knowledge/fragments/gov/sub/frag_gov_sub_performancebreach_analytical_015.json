@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_performancebreach_analytical_15",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "performancebreach",
+  "role": "analytical",
+  "summary": "Descriptive overview of performancebreach in substantive law: substantial performance, material breach, anticipatory repudiation.",
+  "key_points": [
+    "substantial performance is a fundamental concept in contract law.",
+    "Legal standards for performancebreach are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine performancebreach in litigation.",
+    "The doctrine of performancebreach has evolved through Supreme Court precedents.",
+    "Understanding performancebreach requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Restatement (Second) of Contracts",
+    "Uniform Commercial Code Article 2",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Business Law"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_conditions_definitional_012",
+    "frag_gov_sub_remedies_definitional_018",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

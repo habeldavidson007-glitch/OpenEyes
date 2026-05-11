@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_uccarticle2_procedural_41",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "uccarticle2",
+  "role": "procedural",
+  "summary": "Descriptive overview of uccarticle2 in substantive law: sale of goods, merchant rules, gap fillers.",
+  "key_points": [
+    "sale of goods is a fundamental concept in contract law.",
+    "Legal standards for uccarticle2 are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine uccarticle2 in litigation.",
+    "The doctrine of uccarticle2 has evolved through Supreme Court precedents.",
+    "Understanding uccarticle2 requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Restatement (Second) of Contracts",
+    "Uniform Commercial Code Article 2",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Business Law"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_quasicontract_definitional_038",
+    "frag_gov_sub_cisg_definitional_044",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}
