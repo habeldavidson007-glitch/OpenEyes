@@ -1,0 +1,27 @@
+{
+  "id": "frag_gov_ipl_pat_subject_matter_eligibility_procedural_004",
+  "domain": "gov",
+  "sector": "IPL",
+  "category": "Patent Law",
+  "topic": "Alice/Mayo framework, abstract ideas, laws of nature",
+  "role": "procedural",
+  "summary": "Procedural overview of Alice/Mayo framework, abstract ideas, laws of nature in Patent Law.",
+  "key_points": [
+    "Key legal point 1",
+    "Key legal point 2",
+    "Key legal point 3",
+    "Key legal point 4",
+    "Key legal point 5"
+  ],
+  "sources": [
+    "USPTO MPEP",
+    "35 U.S.C.",
+    "Federal Circuit opinions",
+    "WIPO PCT",
+    "Supreme Court patent decisions"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_passed": true,
+  "related_fragments": [],
+  "philosophy_guard_statement": "Describes existing law without normative advocacy."
+}
