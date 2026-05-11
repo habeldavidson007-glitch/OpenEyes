@@ -1,0 +1,16 @@
+{
+  "id": "ENR-2313_tidal_wave_energy_counter_argument",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "tidal wave energy",
+    "energy",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Tidal Wave Energy - economic challenges, scalability concerns, competing approaches",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

@@ -1,0 +1,16 @@
+{
+  "id": "MED-2086_dermatology_psoriasis_latest_data",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "dermatology psoriasis",
+    "clinical_medicine",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Dermatology Psoriasis - recent clinical trials, updated guidelines, emerging therapies",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

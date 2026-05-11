@@ -1,0 +1,16 @@
+{
+  "id": "ENR-2361_rare_earth_elements_counter_argument",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "rare earth elements",
+    "energy",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Rare Earth Elements - economic challenges, scalability concerns, competing approaches",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

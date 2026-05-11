@@ -1,0 +1,16 @@
+{
+  "id": "MAC-1860_income_inequality_counter_argument",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "income inequality",
+    "macroeconomics",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Income Inequality - competing theories, empirical challenges, policy debates",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

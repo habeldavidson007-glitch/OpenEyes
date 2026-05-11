@@ -1,0 +1,16 @@
+{
+  "id": "MH-2201_sleep_wake_disorders_definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "sleep wake disorders",
+    "mental_health",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sleep Wake Disorders - DSM-5-TR criteria, clinical features, differential diagnosis",
+  "source_url": "https://www.nimh.nih.gov/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

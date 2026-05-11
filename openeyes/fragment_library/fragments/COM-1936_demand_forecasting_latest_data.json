@@ -1,0 +1,17 @@
+{
+  "id": "COM-1936_demand_forecasting_latest_data",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "demand forecasting",
+    "commerce",
+    "business",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Demand Forecasting - recent industry trends, empirical findings, current best practices",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

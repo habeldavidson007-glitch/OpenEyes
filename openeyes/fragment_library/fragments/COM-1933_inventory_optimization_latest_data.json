@@ -1,0 +1,17 @@
+{
+  "id": "COM-1933_inventory_optimization_latest_data",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "inventory optimization",
+    "commerce",
+    "business",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Inventory Optimization - recent industry trends, empirical findings, current best practices",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

@@ -13,5 +13,6 @@
   "content": "Pharmaceutical pricing reforms include: (1) Direct government negotiation - US Medicare gained limited negotiation authority under Inflation Reduction Act (2022), targeting 10 high-spend drugs initially; (2) International reference pricing proposals - indexing US prices to OECD averages; (3) PBM reform - banning spread pricing, requiring pass-through of rebates; (4) Value-based pricing - linking payment to outcomes (e.g., refund if drug doesn't work); (5) Compulsory licensing - allowing generic production when prices excessive (rarely used in high-income countries). The US Inflation Reduction Act also caps insulin at $35/month for Medicare beneficiaries and limits out-of-pocket costs to $2,000 annually starting 2025.",
   "source": "fda.gov",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

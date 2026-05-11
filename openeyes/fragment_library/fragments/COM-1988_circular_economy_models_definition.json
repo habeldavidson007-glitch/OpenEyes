@@ -1,0 +1,17 @@
+{
+  "id": "COM-1988_circular_economy_models_definition",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "circular economy models",
+    "commerce",
+    "business",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Circular Economy Models - core business concept, theoretical framework, measurement approach",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

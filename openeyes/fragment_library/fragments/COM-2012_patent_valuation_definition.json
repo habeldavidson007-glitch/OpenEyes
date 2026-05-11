@@ -1,0 +1,17 @@
+{
+  "id": "COM-2012_patent_valuation_definition",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "patent valuation",
+    "commerce",
+    "business",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Patent Valuation - core business concept, theoretical framework, measurement approach",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

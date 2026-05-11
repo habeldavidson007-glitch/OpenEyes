@@ -13,5 +13,6 @@
   "content": "Payment system comparisons show: DRG systems reduced average length of stay by 20-30% after adoption without increasing mortality. Bundled payments for joint replacement reduced episode costs by 8-12% through decreased post-acute care utilization (more home health, less skilled nursing). Capitation systems show lower specialist referral rates and imaging use but require robust quality monitoring to detect under-treatment. Global budget hospitals in Maryland achieved $548 million savings over 5 years with reduced readmissions and ED visits. Risk adjustment is critical - inadequate adjustment leads to cream-skimming (avoiding sicker patients) or upcoding (assigning higher-severity DRGs). CMS-HCC risk adjustment models explain ~15-20% of cost variation.",
   "source": "cms.gov",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

@@ -1,0 +1,17 @@
+{
+  "id": "COM-2392_market_entry_strategies_latest_data",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "market entry strategies",
+    "commerce",
+    "business",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Market Entry Strategies - recent industry trends, empirical findings, emerging best practices",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

@@ -1,0 +1,16 @@
+{
+  "id": "MED-2404_hematology_anemia_latest_data",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hematology anemia",
+    "clinical_medicine",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Hematology Anemia - recent clinical trials, updated guidelines, emerging therapies",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

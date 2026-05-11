@@ -13,5 +13,6 @@
   "content": "Electronic Health Records (EHRs) are digital versions of patient charts containing: demographics, problem lists, medications, allergies, immunizations, lab results, imaging reports, clinical notes, and order entry. Key functions: (1) Clinical documentation - structured and free-text notes; (2) Computerized provider order entry (CPOE) - reducing handwriting errors; (3) Clinical decision support - drug interaction alerts, preventive care reminders; (4) e-Prescribing - direct transmission to pharmacies; (5) Patient portals - access to records, messaging, appointment scheduling. US EHR adoption reached 96% of hospitals and 88% of office-based physicians by 2021 following HITECH Act incentives ($30+ billion). However, interoperability remains limited despite standards like HL7 FHIR.",
   "source": "healthit.gov",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

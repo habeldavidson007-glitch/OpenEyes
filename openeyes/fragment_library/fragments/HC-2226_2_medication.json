@@ -7,5 +7,6 @@
   "domain": "healthcare",
   "subdomain": "PHR",
   "sector": "PHR",
-  "id": "HC-2226"
+  "id": "HC-2226",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

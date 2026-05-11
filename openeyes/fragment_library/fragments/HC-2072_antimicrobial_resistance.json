@@ -12,5 +12,6 @@
   "content": "AMR containment strategies: (1) Antibiotic stewardship\u2014prescribe only when needed, select narrowest spectrum, optimize dose/duration; (2) Infection prevention\u2014hand hygiene, isolation precautions, environmental cleaning; (3) Vaccination\u2014reduce infections requiring antibiotics; (4) Surveillance\u2014track resistance patterns, detect emerging threats; (5) One Health approach\u2014reduce agricultural antibiotic use, improve animal husbandry; (6) Sanitation infrastructure\u2014clean water, wastewater treatment; (7) Research incentives\u2014push/pull mechanisms for new antibiotics, alternatives like phage therapy. National action plans coordinate multisectoral responses with measurable targets and accountability.",
   "source": "WHO Global Action Plan on AMR, CDC Core Elements of Hospital Antibiotic Stewardship",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

@@ -1,0 +1,16 @@
+{
+  "id": "MH-2234_major_neurocognitive_definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "major neurocognitive",
+    "mental_health",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Major Neurocognitive - DSM-5-TR criteria, clinical features, differential diagnosis",
+  "source_url": "https://www.nimh.nih.gov/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

@@ -1,0 +1,17 @@
+{
+  "id": "COM-1932_inventory_optimization_counter_argument",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "inventory optimization",
+    "commerce",
+    "business",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Inventory Optimization - competing perspectives, implementation challenges, critical analysis",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

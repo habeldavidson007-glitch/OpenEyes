@@ -1,0 +1,16 @@
+{
+  "id": "REG-2422_resolution_planning_counter_argument",
+  "domain": "economy",
+  "subdomain": "REG",
+  "sector": "REG",
+  "tags": [
+    "resolution planning",
+    "regulation",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Resolution planning limitations - living will credibility questions, cross-border coordination challenges, moral hazard persistence",
+  "source_url": "https://www.federalreserve.gov/supervisionreg",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

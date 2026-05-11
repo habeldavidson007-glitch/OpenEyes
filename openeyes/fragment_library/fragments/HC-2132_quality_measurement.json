@@ -13,5 +13,6 @@
   "content": "Quality improvement strategies include: (1) Public reporting - Hospital Compare, Leapfrog ratings creating reputational incentives; (2) Pay-for-performance - Medicare's Hospital Value-Based Purchasing adjusts 2% of payments based on quality scores; (3) Quality improvement collaboratives - hospitals sharing best practices through AHRQ networks; (4) Clinical pathways/standardization - reducing unwarranted variation (e.g., sepsis bundles, ERAS protocols for surgery); (5) Patient engagement - involving patients in safety (ask about hand hygiene, medication lists). Hospitals in top quality quartile have 15-20% lower mortality, 10-15% fewer complications, but quality-payment correlations remain modest (r=0.2-0.3).",
   "source": "ahrq.gov",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

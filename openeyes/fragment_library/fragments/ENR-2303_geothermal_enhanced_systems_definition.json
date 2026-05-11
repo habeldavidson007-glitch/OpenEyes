@@ -1,0 +1,16 @@
+{
+  "id": "ENR-2303_geothermal_enhanced_systems_definition",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "geothermal enhanced systems",
+    "energy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Geothermal Enhanced Systems - technical principles, current deployment status, key metrics",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

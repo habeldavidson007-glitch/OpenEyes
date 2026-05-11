@@ -1,0 +1,16 @@
+{
+  "id": "MH-2248_schizoid_personality_latest_data",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "schizoid personality",
+    "mental_health",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Schizoid Personality - recent research findings, emerging treatments, updated guidelines",
+  "source_url": "https://www.nimh.nih.gov/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

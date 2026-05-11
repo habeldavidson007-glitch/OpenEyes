@@ -13,5 +13,6 @@
   "content": "Antibiotic overprescription is a major public health threat: 30-50% of antibiotic use in humans is unnecessary or inappropriate. Common scenarios: viral respiratory infections (colds, flu, bronchitis) where antibiotics have no benefit; unnecessarily broad-spectrum agents when narrow would suffice; excessive duration (7 days when 3-5 adequate); agricultural use (70% of US antibiotics sold for livestock). Consequences include: Clostridioides difficile infection (500,000 cases/year US, 29,000 deaths), adverse drug reactions, microbiome disruption linked to obesity/allergies, and antimicrobial resistance (AMR). AMR causes 2.8 million infections and 35,000 deaths annually in the US, projected to cause 10 million deaths globally by 2050 without intervention.",
   "source": "cdc.gov",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

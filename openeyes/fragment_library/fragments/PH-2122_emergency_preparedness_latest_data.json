@@ -1,0 +1,16 @@
+{
+  "id": "PH-2122_emergency_preparedness_latest_data",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "emergency preparedness",
+    "public_health",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Emergency Preparedness - recent research findings, updated guidelines, emerging practices",
+  "source_url": "https://www.cdc.gov/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

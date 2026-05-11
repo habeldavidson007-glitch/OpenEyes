@@ -1,0 +1,16 @@
+{
+  "id": "PHR-2128_drug_manufacturing_cmc_latest_data",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "drug manufacturing cmc",
+    "pharmaceuticals",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Drug Manufacturing Cmc - recent technological advances, emerging platforms, industry trends",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

@@ -13,5 +13,6 @@
   "domain": "healthcare",
   "subdomain": "MH",
   "sector": "MH",
-  "id": "HC-2004"
+  "id": "HC-2004",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

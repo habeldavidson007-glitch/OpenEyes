@@ -1,0 +1,16 @@
+{
+  "id": "MAC-1879_potential_gdp_latest_data",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "potential gdp",
+    "macroeconomics",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Potential Gdp - recent empirical findings, current trends, updated estimates",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

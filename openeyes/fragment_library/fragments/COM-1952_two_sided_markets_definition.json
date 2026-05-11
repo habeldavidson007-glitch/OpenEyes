@@ -1,0 +1,17 @@
+{
+  "id": "COM-1952_two_sided_markets_definition",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "two sided markets",
+    "commerce",
+    "business",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Two Sided Markets - core business concept, theoretical framework, measurement approach",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

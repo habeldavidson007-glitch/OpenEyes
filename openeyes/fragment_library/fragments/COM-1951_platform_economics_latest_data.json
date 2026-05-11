@@ -1,0 +1,17 @@
+{
+  "id": "COM-1951_platform_economics_latest_data",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "platform economics",
+    "commerce",
+    "business",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Platform Economics - recent industry trends, empirical findings, current best practices",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

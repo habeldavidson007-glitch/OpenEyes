@@ -15,5 +15,6 @@
   "credibility_class": "A",
   "year": 2025,
   "reasoning_role": "diagnostic_criteria",
-  "id": "HC-2262"
+  "id": "HC-2262",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

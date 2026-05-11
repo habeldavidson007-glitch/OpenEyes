@@ -1,0 +1,16 @@
+{
+  "id": "PHR-2160_controlled_release_systems_counter_argument",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "controlled release systems",
+    "pharmaceuticals",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Controlled Release Systems - manufacturing challenges, cost considerations, scalability issues",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

@@ -1,0 +1,17 @@
+{
+  "id": "COM-1922_competitive_strategy_definition",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "competitive strategy",
+    "commerce",
+    "business",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Competitive Strategy - core business concept, theoretical framework, measurement approach",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

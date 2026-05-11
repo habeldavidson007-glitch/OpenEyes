@@ -1,0 +1,16 @@
+{
+  "id": "MAC-1861_income_inequality_latest_data",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "income inequality",
+    "macroeconomics",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Income Inequality - recent empirical findings, current trends, updated estimates",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

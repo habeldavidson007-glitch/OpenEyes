@@ -14,5 +14,6 @@
   "content": "Epilepsy diagnosis requires: (1) Detailed history from patient and witnesses describing event semiology (onset, progression, duration, postictal state). Differentiate from syncope, psychogenic nonepileptic seizures (PNES), movement disorders. (2) EEG: interictal epileptiform discharges (spikes, sharp waves) support diagnosis but normal EEG doesn't exclude epilepsy. Sleep-deprived or prolonged EEG increases yield. Ictal recording confirms diagnosis and localizes onset. Video-EEG monitoring is gold standard for refractory cases. (3) Brain MRI with epilepsy protocol (thin-cut coronal images through hippocampi) to identify structural causes: mesial temporal sclerosis, cortical dysplasia, tumors, vascular malformations, hippocampal sclerosis. (4) Laboratory: electrolytes, glucose, toxicology, AED levels if applicable. (5) Consider genetic testing for specific syndromes (e.g., SCN1A in Dravet syndrome). ILAE classification guides treatment: focal vs generalized onset determines AED choice. PNES diagnosis requires video-EEG demonstrating typical events without electrographic correlate.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/29105296/",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

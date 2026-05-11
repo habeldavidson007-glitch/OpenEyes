@@ -12,5 +12,6 @@
   "content": "Contact tracing effectiveness metrics include: proportion of cases interviewed within 24 hours, proportion of contacts notified within 24 hours of case interview, quarantine adherence rates, and secondary attack rate among traced versus untraced contacts. Challenges limiting effectiveness: asymptomatic transmission, large numbers of casual contacts, community resistance, resource constraints, and delays in testing/results. Forward tracing (identifying who the case infected) is more impactful than backward tracing (finding who infected the case) for reducing Rt, though backward tracing identifies superspreading events.",
   "source": "Lancet Public Health, CDC MMWR evaluation guidelines",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

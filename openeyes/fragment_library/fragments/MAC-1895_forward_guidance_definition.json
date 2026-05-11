@@ -1,0 +1,16 @@
+{
+  "id": "MAC-1895_forward_guidance_definition",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "forward guidance",
+    "macroeconomics",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Forward Guidance - core economic concept, measurement approach, theoretical foundation",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

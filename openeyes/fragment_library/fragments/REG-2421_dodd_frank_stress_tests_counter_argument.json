@@ -1,0 +1,16 @@
+{
+  "id": "REG-2421_dodd_frank_stress_tests_counter_argument",
+  "domain": "economy",
+  "subdomain": "REG",
+  "sector": "REG",
+  "tags": [
+    "dodd frank stress tests",
+    "regulation",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Dodd-Frank stress test criticisms - model transparency concerns, procyclicality risks, burden on smaller institutions",
+  "source_url": "https://www.federalreserve.gov/supervisionreg",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

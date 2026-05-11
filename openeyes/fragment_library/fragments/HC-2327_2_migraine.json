@@ -14,5 +14,6 @@
   "content": "Migraine diagnosis uses ICHD-3 criteria (International Classification of Headache Disorders). Migraine without aura: \u22655 attacks lasting 4-72 hours with \u22652 of: unilateral location, pulsating quality, moderate-severe intensity, aggravation by routine activity; plus \u22651 of: nausea/vomiting, photophobia AND phonophobia. Migraine with aura: \u22652 attacks with fully reversible aura symptoms (visual, sensory, speech/language, motor, brainstem, retinal); at least 3 of: gradual spread \u22655 minutes, individual symptom duration 5-60 minutes, \u22651 unilateral symptom, positive symptoms, headache follows within 60 minutes. Diagnosis is clinical; neuroimaging not routinely needed if typical presentation and normal neurological exam. Red flags requiring imaging (SNOOP4): Systemic symptoms (fever, weight loss), Neurologic deficit (focal signs, altered consciousness), Onset sudden (thunderclap), Onset after age 50, Pattern change, Positional headache, Precipitated by Valsalva, Papilledema, Pregnancy/postpartum, Painful eye with autonomic features, Post-traumatic onset. Differential diagnosis: tension-type headache (bilateral, pressing, no nausea), cluster headache (severe unilateral orbital, autonomic features, shorter duration), secondary headaches (tumor, SAH, GCA, IIH, CSF leak, medication overuse).",
   "source": "https://pubmed.ncbi.nlm.nih.gov/30335648/",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

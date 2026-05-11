@@ -1,0 +1,16 @@
+{
+  "id": "MAC-1863_wealth_distribution_counter_argument",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "wealth distribution",
+    "macroeconomics",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Wealth Distribution - competing theories, empirical challenges, policy debates",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

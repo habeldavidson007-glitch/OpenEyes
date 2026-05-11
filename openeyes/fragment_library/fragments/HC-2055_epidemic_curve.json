@@ -12,5 +12,6 @@
   "content": "Epi curve interpretation requires considering: right-censoring (recent cases not yet reported), changes in testing or surveillance, and importation versus local transmission. Secondary attack rate measures person-to-person spread: cases among contacts divided by total contacts. Outbreak duration relative to incubation period distinguishes point source (<2 incubation periods) from propagated (>3 generations). Mixed patterns occur when point source triggers secondary propagation. Comparing epi curves across subpopulations reveals risk factors and transmission settings.",
   "source": "Field Epidemiology Manual (WHO), CDC training materials",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

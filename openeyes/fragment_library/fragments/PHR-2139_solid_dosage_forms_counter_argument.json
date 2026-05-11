@@ -1,0 +1,16 @@
+{
+  "id": "PHR-2139_solid_dosage_forms_counter_argument",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "solid dosage forms",
+    "pharmaceuticals",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Solid Dosage Forms - manufacturing challenges, cost considerations, scalability issues",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

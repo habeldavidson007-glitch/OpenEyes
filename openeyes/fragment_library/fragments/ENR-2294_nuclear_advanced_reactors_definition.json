@@ -1,0 +1,16 @@
+{
+  "id": "ENR-2294_nuclear_advanced_reactors_definition",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "nuclear advanced reactors",
+    "energy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Nuclear Advanced Reactors - technical principles, current deployment status, key metrics",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

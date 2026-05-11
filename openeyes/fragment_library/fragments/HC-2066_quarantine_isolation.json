@@ -12,5 +12,6 @@
   "content": "Quarantine implementation: determine exposure date, calculate duration based on maximum incubation period (e.g., 14 days for Ebola, 10 days for SARS-CoV-2), provide daily symptom monitoring, arrange testing if symptomatic, ensure basic needs (food, medical care, mental health support). Isolation implementation: separate case in dedicated room with ventilation, use PPE for caregivers, determine release criteria (time-based or test-based), monitor for complications. Home quarantine/isolation requires clear instructions, regular check-ins, and contingency plans for worsening symptoms. Facility-based quarantine needed when home conditions inadequate or high-risk exposures.",
   "source": "CDC isolation/quarantine guidance, WHO infection prevention protocols",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

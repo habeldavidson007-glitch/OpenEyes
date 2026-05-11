@@ -1,0 +1,16 @@
+{
+  "id": "PH-2098_population_health_metrics_latest_data",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "population health metrics",
+    "public_health",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Population Health Metrics - recent research findings, updated guidelines, emerging practices",
+  "source_url": "https://www.cdc.gov/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

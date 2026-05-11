@@ -1,0 +1,16 @@
+{
+  "id": "MAC-1901_capital_flow_management_definition",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "capital flow management",
+    "macroeconomics",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Capital Flow Management - core economic concept, measurement approach, theoretical foundation",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}

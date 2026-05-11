@@ -1,0 +1,17 @@
+{
+  "id": "COM-2006_cybersecurity_risk_management_definition",
+  "domain": "economy",
+  "subdomain": "COM",
+  "sector": "COM",
+  "tags": [
+    "cybersecurity risk management",
+    "commerce",
+    "business",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Cybersecurity Risk Management - core business concept, theoretical framework, measurement approach",
+  "source_url": "https://hbr.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026
+}
