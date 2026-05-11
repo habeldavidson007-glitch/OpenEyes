@@ -1,9 +1,7 @@
-```gitignore
-# Python compiled files
-*.pyc
-__pycache__/
+```
+# Test results
+test_results/
 
 # Logs
-*.log
 logs/
 ```
