@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["HIV", "antiretroviral therapy", "pathogenesis", "U=U"],
+    "reasoning_role": "definition",
+    "content": "Human Immunodeficiency Virus (HIV) is a retrovirus that infects CD4+ T lymphocytes, leading to progressive immune dysfunction. HIV-1 causes most global infections; HIV-2 is less pathogenic and concentrated in West Africa. Without treatment, HIV progresses through acute infection (flu-like illness 2-4 weeks post-exposure), chronic asymptomatic phase (years), and AIDS (CD4 <200 cells/μL or AIDS-defining conditions). Antiretroviral therapy (ART) suppresses viral replication, preserves immune function, and prevents transmission. U=U (Undetectable = Untransmittable): individuals with sustained undetectable viral load (<200 copies/mL) cannot sexually transmit HIV, based on HPTN 052, PARTNER, and Opposites Attract studies.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["HIV", "ART", "treatment", "regimens"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Initial ART regimens for treatment-naïve adults: 1) Bictegravir/TDF/FTC or Bictegravir/TAF/FTC (single tablet); 2) Dolutegravir + TDF/FTC or TAF/FTC; 3) Dolutegravir/lamivudine (for selected patients without HBV, baseline VL <500,000, no resistance). Preferred protease inhibitor-based: Darunavir/cobicistat + TDF/FTC or TAF/FTC. Treatment goals: viral suppression (<50 copies/mL) within 3-6 months, immune reconstitution, prevention of transmission. Monitoring: viral load at baseline, 2-8 weeks after initiation/change, then every 3-6 months; CD4 count at baseline and periodically. Lifelong adherence critical to prevent resistance. Pre-exposure prophylaxis (PrEP) with TDF/FTC or TAF/FTC reduces acquisition risk by >99% when adherent.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["HIV", "diagnosis", "testing", "staging"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "HIV diagnosis follows CDC algorithm: 1) Fourth-generation HIV-1/2 antigen/antibody combination immunoassay (detects p24 antigen + antibodies, window period ~18 days); 2) If reactive, HIV-1/HIV-2 antibody differentiation assay confirms type; 3) If differentiation assay negative/indeterminate, HIV-1 RNA NAT confirms acute infection. Rapid tests provide results in <30 minutes but require confirmation. Viral load quantifies HIV RNA for monitoring treatment response. CD4 count assesses immune status: normal 500-1,500 cells/μL; AIDS defined as CD4 <200 cells/μL or CD4 percentage <14%. Baseline resistance testing (genotype) guides regimen selection. Screening recommended for all adults 15-65 years and high-risk populations.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

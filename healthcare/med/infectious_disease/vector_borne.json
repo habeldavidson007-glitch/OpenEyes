@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["vector-borne disease", "Lyme", "malaria", "dengue"],
+    "reasoning_role": "definition",
+    "content": "Vector-borne diseases transmitted by arthropods cause significant global morbidity. Lyme disease (Borrelia burgdorferi): tick-borne (Ixodes), endemic to Northeast/Midwest US, Europe; stages: early localized (erythema migrans 'bull's-eye rash'), early disseminated (multiple EM lesions, facial palsy, meningitis, carditis), late (arthritis, encephalopathy). Malaria (Plasmodium species): mosquito-borne (Anopheles); P. falciparum most severe (cerebral malaria, organ failure); P. vivax/ovale have hypnozoites causing relapses. Dengue (flavivirus): Aedes mosquito; spectrum from mild fever to severe dengue (plasma leakage, hemorrhage, organ impairment); secondary infection with different serotype increases severe disease risk via antibody-dependent enhancement. Other: Zika (microcephaly in pregnancy), Chikungunya (severe arthralgia), West Nile (neuroinvasive disease).",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["vector-borne disease", "treatment", "doxycycline", "antimalarials"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Lyme disease: early localized - doxycycline 100mg BID x10 days (or amoxicillin, cefuroxime); early disseminated/late - doxycycline x14-21 days; neurologic/cardiac involvement may require IV ceftriaxone 2g daily x14-28 days. Malaria (uncomplicated P. falciparum): artemether-lumefantrine (Coartem) or atovaquone-proguanil (Malarone); severe malaria: IV artesunate first-line (superior to quinine), switch to oral ACT when tolerating. P. vivax/ovale: add primaquine or tafenoquine for hypnozoite eradication (check G6PD first). Dengue: supportive care only (fluids, antipyretics, avoid NSAIDs due to bleeding risk); monitor for warning signs of severe dengue (abdominal pain, persistent vomiting, mucosal bleeding, lethargy, rising hematocrit with falling platelets). No specific antiviral therapy.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["vector-borne disease", "diagnosis", "serology", "smear"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Lyme disease: clinical diagnosis if classic EM rash in endemic area; otherwise two-tier serology (EIA/ELISA followed by Western blot if positive/equivocal); PCR from synovial fluid/CSF in select cases. Malaria: thick and thin blood smears (gold standard, allows species ID and parasitemia quantification); rapid diagnostic tests (RDTs) detect antigens (HRP2 for P. falciparum, pLDH/aldolase for pan-malaria); repeat smears q12-24h if initial negative but high suspicion. Dengue: NS1 antigen (acute phase days 1-7), IgM/IgG serology (IgM positive after day 5), RT-PCR for viral RNA. Travel history critical for diagnosis. Prophylaxis recommendations: malaria chemoprophylaxis based on destination resistance patterns (atovaquone-proguanil, doxycycline, mefloquine, tafenoquine); tick bite prevention for Lyme (permethrin-treated clothing, DEET, tick checks).",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

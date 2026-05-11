@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["C. difficile", "CDI", "antibiotic-associated diarrhea", "recurrence"],
+    "reasoning_role": "definition",
+    "content": "Clostridioides difficile infection (CDI) is the leading cause of healthcare-associated infectious diarrhea. Risk factors: antibiotic exposure (especially clindamycin, fluoroquinolones, cephalosporins, penicillins), age ≥65, hospitalization, proton pump inhibitor use, immunocompromise, prior CDI. Pathogenesis: antibiotic disruption of gut microbiota allows C. difficile spore germination and toxin production (toxin A enterotoxin, toxin B cytotoxin); hypervirulent NAP1/BI/027 strain produces binary toxin and has higher recurrence/mortality. Clinical spectrum: asymptomatic colonization to mild diarrhea to fulminant colitis with toxic megacolon, perforation, sepsis. Diagnosis requires unformed stool plus positive toxin test or nucleic acid amplification test (NAAT). Recurrence occurs in 20-30% after initial episode, up to 60% after multiple recurrences.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["C. difficile", "treatment", "fidaxomicin", "fecal transplant"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Initial non-severe CDI: fidaxomicin 200mg BID x10 days (preferred, lower recurrence) or vancomycin 125mg QID x10 days; metronidazole 500mg TID x10 days only if others unavailable. Severe CDI (WBC ≥15,000 or creatinine ≥1.5x baseline): fidaxomicin or vancomycin. Fulminant CDI (hypotension, shock, ileus, megacolon): vancomycin 500mg QID orally/NG + metronidazole 500mg IV q8h; consider rectal vancomycin if ileus. First recurrence: fidaxomicin (if not used initially) or vancomycin taper/pulse regimen. Multiple recurrences: fidaxomicin, vancomycin taper, or bezlotoxumab (monoclonal antibody against toxin B) added to antibiotics. Fecal microbiota transplantation (FMT) for ≥3 recurrences or 2 recurrences requiring hospitalization; ~85-90% efficacy. Rebiotix (fecal microbiota suspension) and Vowst (fecal spores) FDA-approved for recurrence prevention.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["C. difficile", "diagnosis", "toxin testing", "GDH"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "CDI diagnosis algorithm: 1) Test only unformed stool from patients with clinically significant diarrhea (≥3 unformed stools in 24 hours); 2) Two-step algorithm preferred: glutamate dehydrogenase (GDH) antigen screen (high sensitivity) followed by toxin EIA confirmation (high specificity); discordant results resolved by NAAT; 3) Standalone NAAT highly sensitive but may detect colonization without disease - correlate with clinical presentation. Toxin cell culture cytotoxicity assay is gold standard but slow (24-48 hours). Endoscopy shows pseudomembranes (yellow-white plaques) in severe cases but not required for diagnosis. Imaging (CT abdomen) for complications: colonic wall thickening, pericolonic stranding, ascites. Test of cure not recommended as PCR can remain positive despite clinical resolution.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

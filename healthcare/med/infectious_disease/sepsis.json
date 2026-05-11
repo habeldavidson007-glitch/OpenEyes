@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["sepsis", "Sepsis-3", "critical care", "definition"],
+    "reasoning_role": "definition",
+    "content": "Sepsis is defined (Sepsis-3, 2016) as life-threatening organ dysfunction caused by a dysregulated host response to infection. Septic shock is a subset of sepsis with circulatory and cellular/metabolic abnormalities associated with higher mortality: persistent hypotension requiring vasopressors to maintain MAP ≥65 mmHg AND serum lactate >2 mmol/L despite adequate fluid resuscitation. Organ dysfunction is identified by acute change in SOFA score ≥2 points. Quick SOFA (qSOFA) uses respiratory rate ≥22/min, altered mentation, or systolic BP ≤100 mmHg to identify patients with suspected infection at risk for poor outcomes.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["sepsis", "treatment", "Surviving Sepsis Campaign", "bundle"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Sepsis treatment follows the Surviving Sepsis Campaign Hour-1 Bundle: 1) Measure lactate level; remeasure if initial >2 mmol/L; 2) Obtain blood cultures before antibiotics; 3) Administer broad-spectrum antibiotics; 4) Begin rapid crystalloid administration (30 mL/kg) for hypotension or lactate ≥4 mmol/L; 5) Apply vasopressors if hypotensive during/after fluid resuscitation to maintain MAP ≥65 mmHg. Additional measures: source control within 12 hours, consider corticosteroids for refractory shock (hydrocortisone 200 mg/day), glucose control 140-180 mg/dL, venous thromboembolism prophylaxis. Early goal-directed therapy elements (CVP/ScvO2 targets) no longer recommended based on ProCESS/ARISE/PROMISE trials.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["sepsis", "diagnosis", "SOFA", "biomarkers"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Sepsis diagnosis requires: 1) Confirmed or suspected infection; 2) Evidence of organ dysfunction (SOFA score components: PaO2/FiO2 ratio, platelets, bilirubin, mean arterial pressure, Glasgow Coma Scale, creatinine/urine output). qSOFA screens for sepsis risk but has limited sensitivity. Biomarkers: procalcitonin aids bacterial vs viral differentiation and antibiotic stewardship decisions; lactate indicates tissue hypoperfusion. Blood cultures (2 sets, aerobic+anaerobic) before antibiotics when possible. Imaging to identify source. Differential diagnosis includes non-infectious SIRS causes (pancreatitis, trauma, burns). Sequential organ assessment guides prognosis and treatment escalation.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

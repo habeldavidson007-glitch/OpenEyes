@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["prion disease", "CJD", "neurodegenerative", "protein misfolding"],
+    "reasoning_role": "definition",
+    "content": "Prion diseases are rare, fatal neurodegenerative disorders caused by misfolded prion protein (PrP^Sc) that propagates by converting normal cellular prion protein (PrP^C) to pathological form. Sporadic Creutzfeldt-Jakob disease (sCJD): most common (85%), onset ~60 years, rapid cognitive decline, myoclonus, ataxia, visual disturbances; median survival 4-6 months. Variant CJD (vCJD): linked to bovine spongiform encephalopathy (mad cow disease), younger onset, psychiatric symptoms prominent. Genetic forms: familial CJD, Gerstmann-Sträussler-Scheinker, fatal familial insomnia (PRNP gene mutations). Iatrogenic CJD: from contaminated surgical instruments, corneal/dural transplants, human growth hormone. Prions resist standard sterilization; no effective treatment exists due to unique mechanism (no nucleic acid target).",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["prion disease", "CJD", "supportive care", "palliative"],
+    "reasoning_role": "treatment_protocol",
+    "content": "No curative or disease-modifying treatment exists for prion diseases. Management is entirely supportive/palliative: benzodiazepines (clonazepam) for myoclonus and agitation; antipsychotics for behavioral symptoms; analgesics for discomfort; nutritional support via feeding tube as dysphagia develops; seizure management if present. Multidisciplinary palliative care involvement early given uniformly fatal prognosis. Infection control: standard precautions sufficient for routine care; special handling for high-risk tissues (brain, spinal cord, posterior eye); use disposable instruments when possible or extended sterilization protocols (autoclave 134°C for 18 minutes or sodium hydroxide pretreatment). Experimental therapies (quinacrine, doxycycline, monoclonal antibodies) have not demonstrated clinical benefit in trials.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["prion disease", "diagnosis", "RT-QuIC", "MRI", "EEG"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "CJD diagnosis: 1) Clinical criteria (rapidly progressive dementia plus ≥2 of: myoclonus, visual/cerebellar signs, pyramidal/extrapyramidal signs, akinetic mutism); 2) MRI brain: cortical ribboning and basal ganglia hyperintensity on DWI/FLAIR (highly sensitive/specific); 3) EEG: periodic sharp wave complexes (specific but insensitive, late finding); 4) CSF: elevated 14-3-3 protein, tau, neuron-specific enolase (markers of rapid neuronal destruction); 5) RT-QuIC (real-time quaking-induced conversion): detects prion seeding activity in CSF, >95% specificity, now CDC case definition criterion; 6) Definitive diagnosis requires brain biopsy or autopsy (spongiform change, neuronal loss, gliosis, PrP deposition). Genetic testing for PRNP mutations in suspected familial cases.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

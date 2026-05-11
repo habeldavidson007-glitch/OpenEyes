@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["vaccination", "herd immunity", "adjuvants", "immunology"],
+    "reasoning_role": "definition",
+    "content": "Vaccines stimulate adaptive immunity without causing disease. Types: live attenuated (MMR, varicella, yellow fever - contraindicated in pregnancy/immunocompromise), inactivated (polio IPV, hepatitis A), subunit/conjugate (hepatitis B, HPV, pneumococcal), toxoid (tetanus, diphtheria), mRNA (COVID-19), viral vector (Ebola, some COVID-19). Herd immunity threshold: proportion immune needed to interrupt transmission = 1 - 1/R0; measles R0~12-18 requires ~95% immunity, polio R0~5-7 requires ~80%. Adjuvants enhance immune response: aluminum salts (most common), MF59 (squalene oil-in-water emulsion), AS01 (liposome-based in shingles vaccine), CpG oligonucleotides. Mechanisms: depot effect, innate immune activation, improved antigen presentation.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["vaccination", "schedule", "contraindications", "catch-up"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Routine immunization schedules (CDC/ACIP): infancy (HepB, DTaP, Hib, IPV, PCV, rotavirus), childhood (MMR, varicella, HepA at 12-15 months; boosters 4-6 years), adolescence (Tdap, MenACWY, HPV at 11-12 years), adult (annual influenza, Td/Tdap q10yrs, zoster ≥50, pneumococcal ≥65 or risk conditions). Contraindications: severe allergic reaction to previous dose/component; live vaccines contraindicated in pregnancy and severe immunocompromise. Precautions: moderate/severe acute illness. Catch-up vaccination: follow minimum intervals, don't restart series regardless of time elapsed. Travel vaccines based on destination (yellow fever, typhoid, Japanese encephalitis, rabies). Vaccine co-administration generally safe (except live parenteral vaccines if not given same day, separate by 4 weeks).",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["vaccination", "effectiveness", "serology", "titers"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Vaccine effectiveness assessment: 1) Clinical efficacy from randomized trials; 2) Real-world effectiveness from observational studies; 3) Immunogenicity correlates (antibody titers, cellular immunity). Serologic testing for immunity: indicated for select situations (HBsAb post-vaccination in healthcare workers, varicella IgG in uncertain history, measles/rubella titers in pregnancy screening). Not routinely recommended for most vaccines due to good correlation between documented vaccination and protection. Vaccine failure: primary (no seroconversion) vs secondary (waning immunity). Outbreak settings may warrant revaccination regardless of prior status (e.g., mumps third dose). Adverse event monitoring: VAERS (passive reporting), Vaccine Safety Datalink (active surveillance); serious adverse events extremely rare compared to disease risks.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

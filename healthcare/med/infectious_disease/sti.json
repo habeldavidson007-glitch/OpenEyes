@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["STI", "sexually transmitted infection", "gonorrhea", "syphilis"],
+    "reasoning_role": "definition",
+    "content": "Sexually transmitted infections (STIs) remain major public health concern. Gonorrhea (Neisseria gonorrhoeae): urethritis, cervicitis, pharyngitis, proctitis; complications include PID, epididymitis, disseminated gonococcal infection; increasing antimicrobial resistance (cephalosporin-resistant strains emerging). Syphilis (Treponema pallidum): primary (painless chancre), secondary (maculopapular rash including palms/soles, condyloma lata), latent (seropositive without symptoms), tertiary (gummas, cardiovascular, neurosyphilis); congenital syphilis rates rising. Chlamydia (C. trachomatis): most common bacterial STI, often asymptomatic; causes PID, infertility, reactive arthritis. HSV: lifelong infection with recurrent outbreaks. HPV: causes genital warts and cancers (cervical, anal, oropharyngeal); vaccines prevent high-risk types.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["STI", "treatment", "ceftriaxone", "penicillin"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Gonorrhea: ceftriaxone 500mg IM single dose (<150kg) or 1g IM (≥150kg); add doxycycline 100mg BID x7 days if chlamydia not excluded. Pharyngeal gonorrhea requires test-of-cure 7-14 days post-treatment. Syphilis: primary/secondary/early latent - benzathine penicillin G 2.4 million units IM single dose; late latent/tertiary - 2.4 million units IM weekly x3 doses; neurosyphilis - aqueous crystalline penicillin G 18-24 million units IV daily x10-14 days. Chlamydia: doxycycline 100mg BID x7 days (preferred); azithromycin 1g single dose alternative (pregnancy). Genital herpes: acyclovir, valacyclovir, famciclovir for episodic/suppressive therapy. HPV: no treatment for virus itself; treat warts (imiquimod, podofilox, cryotherapy) and dysplasia. Partner notification and treatment essential.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["STI", "diagnosis", "NAAT", "serology"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Gonorrhea/chlamydia: nucleic acid amplification tests (NAAT) from urine, vaginal, cervical, urethral, pharyngeal, or rectal swabs based on exposure sites; culture for antibiotic susceptibility testing if treatment failure. Syphilis: nontreponemal tests (RPR, VDRL) for screening/monitoring treatment response; treponemal tests (FTA-ABS, TP-PA, EIA/CIA) for confirmation; reverse algorithm uses treponemal screen first. HSV: PCR from lesion swab (preferred), viral culture (lower sensitivity), type-specific serology for prior exposure. Trichomonas: NAAT (most sensitive), wet mount (low sensitivity ~50%). Screening recommendations: sexually active women <25 annually for chlamydia/gonorrhea; MSM every 3-6 months; all adults at least once for HIV/syphilis; pregnant women comprehensive screening.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]
