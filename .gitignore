@@ -1,40 +1,5 @@
 ```
-# Compiled and build artifacts
-*.pyc
-__pycache__/
-*.o
-*.obj
-dist/
-build/
-target/
-
-# Dependencies
-.venv/
-venv/
-node_modules/
-.mypy_cache/
-.pytest_cache/
-
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-
-# Environment
-.env
-.env.local
-.env.*
-
-# Editors
-.vscode/
-.idea/
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
-
-# System files
-.DS_Store
-Thumbs.db
+# Health data JSON files - assuming these are source data files
+# No build artifacts, dependencies, or temp files detected in changes
+# Keeping .gitignore empty as only source/config files are present
 ```

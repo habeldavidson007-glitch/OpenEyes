@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "topic": "Social Determinants of Health",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Social determinants of health (SDOH) are the non-medical factors that influence health outcomes, including conditions in which people are born, grow, work, live, and age. These encompass economic stability, education access and quality, healthcare access and quality, neighborhood and built environment, and social and community context. The WHO Commission on Social Determinants of Health (2008) established that SDOH account for a substantial proportion of health inequities within and between countries. Evidence demonstrates that socioeconomic status is one of the strongest predictors of health outcomes, with gradient effects observed across the entire socioeconomic spectrum, not just at extremes.",
+      "tags": ["public_health", "health_equity", "social_factors", "population_health"],
+      "reasoning_role": "foundational_knowledge"
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Interventions addressing social determinants require multi-sectoral approaches beyond traditional healthcare delivery. Evidence-based strategies include: (1) Economic interventions such as earned income tax credits, minimum wage policies, and housing subsidies showing measurable health improvements; (2) Educational interventions including early childhood education programs (e.g., Head Start) demonstrating long-term health benefits; (3) Healthcare access expansions through Medicaid, community health centers, and transportation assistance; (4) Environmental improvements including healthy food access initiatives, safe housing codes, and green space development; (5) Social cohesion building through community organizing and social prescribing programs. Screening for social needs in clinical settings (e.g., PRAPARE tool) should be paired with closed-loop referral systems to community resources. Population-level policy interventions show greater impact than individual-level interventions alone.",
+      "tags": ["intervention", "policy", "health_equity", "community_health"],
+      "reasoning_role": "actionable_guidance"
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Assessment of social determinants involves both individual and population-level measurement. Individual screening tools include: AHC-HRSN (Accountable Health Communities Health-Related Social Needs) screening tool, PRAPARE (Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences), and CMS Accountable Health Communities screening instrument covering domains of food insecurity, housing instability, transportation needs, utility difficulties, and interpersonal safety. Population-level indicators include: Area Deprivation Index (ADI), Social Vulnerability Index (SVI), Gini coefficient for income inequality, poverty rates, educational attainment distributions, unemployment rates, and segregation indices. Health outcome measures should be stratified by SDOH indicators to identify disparities. Causal inference methods (natural experiments, instrumental variables) help distinguish correlation from causation in SDOH research.",
+      "tags": ["measurement", "screening", "assessment", "health_disparities"],
+      "reasoning_role": "analytical_framework"
+    }
+  ],
+  "source": "WHO Commission on Social Determinants of Health, CDC Social Determinants of Health, National Academies of Sciences Engineering Medicine",
+  "credibility_class": "A",
+  "year": 2024
+}

@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "topic": "Obesity as Public Health Issue",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Obesity is a complex chronic disease characterized by abnormal or excessive fat accumulation that presents risk to health. WHO defines obesity as BMI ≥30 kg/m², with class I (30-34.9), class II (35-39.9), and class III (≥40, formerly 'morbid obesity'). However, BMI has limitations—it doesn't distinguish fat from muscle mass, varies by ethnicity (lower cutoffs for Asian populations), and doesn't capture fat distribution (visceral adiposity more metabolically harmful). Global obesity has nearly tripled since 1975—13% of adults obese, 39% overweight in 2016. Obesity causes include: genetic factors (heritability 40-70%), epigenetic changes, obesogenic environment (calorie-dense food availability, sedentary lifestyles), socioeconomic factors, medications, sleep disruption, and endocrine disruptors. Health consequences include type 2 diabetes, cardiovascular disease, multiple cancers, osteoarthritis, and mental health conditions.",
+      "tags": ["obesity", "chronic_disease", "nutrition", "metabolic_health"],
+      "reasoning_role": "foundational_knowledge"
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Population-level obesity interventions target multiple levels: (1) Policy interventions—sugar-sweetened beverage taxes (Mexico, Berkeley showing reduced consumption), front-of-package warning labels (Chile, Uruguay), marketing restrictions to children, school nutrition standards, urban planning for active transport; (2) Environmental changes—healthy food access initiatives, zoning limiting fast-food density near schools, safe parks and recreation facilities, workplace wellness programs; (3) Healthcare system approaches—routine BMI screening, intensive behavioral counseling (USPSTF recommendation), pharmacotherapy access (GLP-1 agonists showing 15-20% weight loss), bariatric surgery coverage; (4) Individual interventions—calorie restriction, increased physical activity, behavioral modification, but limited long-term success without environmental support. Evidence shows individual-focused interventions insufficient without addressing obesogenic environment. Weight stigma reduction essential for effective public health approach.",
+      "tags": ["policy", "prevention", "intervention", "health_equity"],
+      "reasoning_role": "actionable_guidance"
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Obesity assessment at population level includes: (1) Anthropometric measures—BMI (weight/height²), waist circumference (>102cm men, >88cm women indicates central adiposity), waist-to-hip ratio, waist-to-height ratio (>0.5 concerning); (2) Body composition—DXA scans (gold standard), bioelectrical impedance, skinfold measurements; (3) Metabolic health markers—fasting glucose, HbA1c, lipid panel, blood pressure, liver enzymes (NAFLD screening); (4) Surveillance systems—NHANES (US), BRFSS, Global Burden of Disease Study, WHO Global Health Observatory; (5) Risk stratification—Edmonton Obesity Staging System considers comorbidities, functional status, quality of life beyond BMI alone. Childhood obesity uses age/sex-specific percentiles (≥95th percentile). Limitations include self-reported data accuracy, changing demographics requiring updated reference standards, and need for better measures of adiposity and metabolic health.",
+      "tags": ["measurement", "surveillance", "risk_stratification", "biomarkers"],
+      "reasoning_role": "analytical_framework"
+    }
+  ],
+  "source": "WHO Global Health Observatory, CDC National Center for Chronic Disease Prevention, USPSTF Recommendations, Lancet Commission on Obesity",
+  "credibility_class": "A",
+  "year": 2024
+}

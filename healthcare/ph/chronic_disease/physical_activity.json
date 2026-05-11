@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "topic": "Physical Activity Guidelines",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Physical activity is any bodily movement produced by skeletal muscles requiring energy expenditure, including work, transport, household tasks, and recreational activities. Exercise is planned, structured, repetitive physical activity for fitness improvement. WHO 2020 guidelines recommend: adults 150-300 minutes moderate or 75-150 minutes vigorous aerobic activity weekly plus muscle-strengthening 2+ days; older adults add balance training; children/adolescents 60 minutes daily moderate-to-vigorous activity. Benefits include reduced all-cause mortality (up to 30% risk reduction), cardiovascular disease prevention/treatment, type 2 diabetes prevention, cancer risk reduction (colon, breast, endometrial), improved mental health, cognitive function, bone health, and weight management. Physical inactivity causes 6-10% of major NCDs globally. Sedentary behavior (prolonged sitting) independently increases mortality risk even with adequate exercise.",
+      "tags": ["physical_activity", "exercise", "prevention", "chronic_disease"],
+      "reasoning_role": "foundational_knowledge"
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Physical activity promotion strategies: (1) Individual counseling—exercise prescription using FITT principle (Frequency, Intensity, Time, Type), motivational interviewing, behavioral goal-setting, self-monitoring tools; (2) Clinical programs—cardiac rehabilitation, pulmonary rehabilitation, diabetes prevention program (DPP showing 58% diabetes risk reduction with 150 min/week activity); (3) Community interventions—walking groups, park-based programs, workplace wellness challenges, active transport initiatives; (4) Environmental/policy approaches—complete streets design, safe routes to school, park/recreation facility investment, building codes for stairs, point-of-decision prompts; (5) Digital interventions—wearable activity trackers, smartphone apps, exergaming. Evidence supports multi-component interventions. Barriers addressed through accessible facilities, culturally appropriate programs, childcare provision, and addressing safety concerns. Any activity better than none; incremental increases beneficial.",
+      "tags": ["intervention", "exercise_prescription", "behavior_change", "policy"],
+      "reasoning_role": "actionable_guidance"
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Physical activity assessment methods: (1) Self-report—International Physical Activity Questionnaire (IPAQ), Global Physical Activity Questionnaire (GPAQ), accelerometers with validated cutpoints; (2) Objective measures—accelerometers (ActiGraph, Fitbit), pedometers (step counts, 10,000 steps/day target), heart rate monitors, doubly labeled water (gold standard for energy expenditure); (3) Fitness measures—VO2 max (cardiorespiratory fitness), grip strength, chair stand test, gait speed (functional mobility); (4) Sedentary behavior—activPAL monitors distinguishing sitting/standing, screen time logs; (5) Population surveillance—BRFSS physical activity module, NHANES accelerometer data, WHO Global Action Plan monitoring framework. Limitations include self-report overestimation, device cost for population studies, varying intensity thresholds by age/fitness level, and capturing sporadic activity patterns. Functional capacity assessment essential for older adults and clinical populations.",
+      "tags": ["measurement", "assessment", "surveillance", "fitness"],
+      "reasoning_role": "analytical_framework"
+    }
+  ],
+  "source": "WHO Guidelines on Physical Activity and Sedentary Behaviour 2020, US Physical Activity Guidelines Advisory Committee, CDC Physical Activity Basics",
+  "credibility_class": "A",
+  "year": 2024
+}

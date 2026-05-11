@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "topic": "Global Health Burden",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Global health burden measurement quantifies population health losses from diseases, injuries, and risk factors to inform policy priorities. Key metrics: Disability-Adjusted Life Years (DALYs) combine years of life lost (YLL) from premature mortality and years lived with disability (YLD) weighted by severity; Quality-Adjusted Life Years (QALYs) measure health gains for economic evaluation; Healthy Life Expectancy (HALE) estimates years expected in good health. Global Burden of Disease (GBD) Study provides comprehensive assessments across 204 countries, 371 diseases/injuries, 88 risk factors. Epidemiological transition describes shift from infectious to chronic diseases as populations develop, though many countries face double burden. Leading global DALY causes 2021: ischemic heart disease, stroke, COVID-19, lower respiratory infections, neonatal disorders. Substantial variation by region—Sub-Saharan Africa still dominated by infectious diseases, high-income countries by chronic conditions. Risk factor attribution identifies prevention opportunities.",
+      "tags": ["global_health", "burden_of_disease", "metrics", "epidemiology"],
+      "reasoning_role": "foundational_knowledge"
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Addressing global health burden requires multi-level strategies: (1) Universal Health Coverage—financial protection, quality essential services access, essential medicines availability; (2) Primary healthcare strengthening—comprehensive continuous care, community health workers, integrated service delivery; (3) Disease-specific initiatives—immunization programs (Gavi), HIV/AIDS treatment (PEPFAR, Global Fund), malaria control (bed nets, ACTs), tuberculosis DOTS strategy, neglected tropical disease mass drug administration; (4) Risk factor reduction—tobacco control (FCTC), salt/sugar reduction, air quality improvement, road safety measures; (5) Health system investments—workforce training, infrastructure development, supply chain strengthening, health information systems, emergency preparedness; (6) Social determinants—poverty reduction, education (especially girls), water/sanitation access, gender equity; (7) Global health security—International Health Regulations implementation, surveillance capacity, laboratory networks, rapid response teams. Cost-effectiveness guides resource allocation (DALYs averted per dollar). Equity-focused approaches prioritize worst-off populations.",
+      "tags": ["intervention", "health_systems", "global_health_security", "equity"],
+      "reasoning_role": "actionable_guidance"
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Global health burden assessment methodology: (1) Mortality data—vital registration systems, verbal autopsy for settings without death certification, sibling history surveys, demographic surveillance sites; (2) Morbidity data—household surveys (DHS, MICS), hospital records, disease registries, claims data, published literature systematic reviews; (3) Disability weights—population surveys valuing health states, expert panels, patient-reported outcomes; (4) Risk factor measurement—household surveys (STEPS), environmental monitoring, sales data, comparative risk assessment framework; (5) Statistical methods—DisMod-MR disease modeling, Cause of Death Ensemble modeling (CODEm), spatiotemporal Gaussian process regression, uncertainty quantification through Monte Carlo simulation; (6) Attribution analyses—population attributable fractions for risk factors, counterfactual scenarios. Limitations include data gaps (especially mental health, rare diseases), measurement error in low-resource settings, disability weight cultural variability, and attribution uncertainty for multimorbidity. GBD results updated annually with methodological improvements.",
+      "tags": ["measurement", "methodology", "surveillance", "modeling"],
+      "reasoning_role": "analytical_framework"
+    }
+  ],
+  "source": "Institute for Health Metrics and Evaluation Global Burden of Disease Study, WHO World Health Statistics, World Bank World Development Indicators",
+  "credibility_class": "A",
+  "year": 2024
+}
