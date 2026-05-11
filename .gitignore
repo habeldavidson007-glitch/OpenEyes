@@ -1,39 +1,46 @@
 ```
-# Python
+# Build artifacts and generated files
+openeyes/fragment_library/fragments/*.json
+
+# Dependencies and virtual environments
+.venv/
+venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-env/
-venv/
-.venv/
-.ENV
-.python-version
-.pytest_cache/
-.mypy_cache/
 
-# Logs
+# Logs and temporary files
 *.log
+*.tmp
+*.swp
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment variables
+# Environment files
 .env
 .env.local
 *.env.*
 
-# Coverage reports
-.coverage
-htmlcov/
-coverage/
-
-# IDE
+# IDE and editor files
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.mypy_cache/
 ```

@@ -16,8 +16,8 @@
   "weight": 1.0,
   "compatible_with": [],
   "incompatible_with": [],
-  "subdomain": null,
-  "reasoning_role": null,
+  "subdomain": "MED",
+  "reasoning_role": "counter_argument",
   "source_type": null,
   "year": null,
   "sub_question": null

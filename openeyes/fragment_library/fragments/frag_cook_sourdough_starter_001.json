@@ -16,7 +16,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "subdomain": null,
-  "reasoning_role": null,
+  "reasoning_role": "definition",
   "source_type": null,
   "year": null,
   "sub_question": null

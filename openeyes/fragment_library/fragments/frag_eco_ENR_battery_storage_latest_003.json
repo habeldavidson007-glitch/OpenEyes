@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_ENR_battery_storage_latest_003",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "tags": [
+    "battery_storage",
+    "renewables"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Renewables fragment: battery_storage. Role: latest_data. Cost structures and integration challenges.",
+  "source": "IEA",
+  "source_url": "https://iea.org/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "last_verified": "2026-05-11"
+}
