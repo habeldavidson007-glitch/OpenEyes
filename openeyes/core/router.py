@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from openeyes.core.domain_validator import validate_query_domain
+
 DOMAIN_KEYWORDS: dict[str, tuple[str, ...]] = {
     "economy": (
         "economy", "economic", "finance", "financial", "market", "trading",
@@ -51,22 +53,30 @@ DOMAIN_KEYWORDS: dict[str, tuple[str, ...]] = {
 
 def route_domain(query: str, domain: str | None = None) -> str:
     """
-    P0 FIX: Route query to appropriate domain with governance support.
+    P2 FIX: Use advanced domain validator with phrase/concept matching.
     
-    If domain is explicitly provided, use it. Otherwise, scan for keywords
-    across all supported domains including the new governance domain.
+    If domain is explicitly provided, use it. Otherwise, use the advanced
+    validator which provides better accuracy through context-aware matching.
+    Falls back to keyword matching if validator returns unknown or low confidence.
     """
     if domain:
         return domain.lower()
     
+    # Try advanced validator first
+    validated_domain, confidence, _ = validate_query_domain(query)
+    
+    if validated_domain != "unknown" and confidence > 0.4:
+        return validated_domain
+    
+    # Fallback to keyword matching
     q = query.lower()
     best = "general"
     best_score = 0
-    
+
     for d, kws in DOMAIN_KEYWORDS.items():
         score = sum(1 for kw in kws if kw in q)
         if score > best_score:
             best = d
             best_score = score
-    
+
     return best

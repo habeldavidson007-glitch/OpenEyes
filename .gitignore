@@ -1,24 +1,27 @@
-```gitignore
-# Python cache files
+```
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Test results
-test_results/
-
-# Environment files
-.env
-.env.local
-*.env.*
+# Compiled and build artifacts
+*.o
+*.obj
+*.out
+*.so
+*.dll
+*.a
+*.class
 
 # Dependencies
 .venv/
 venv/
-node_modules/
+.env
+.env.local
+.env.*
 
-# Logs and temporary files
+# Logs and temp files
 *.log
 *.tmp
 *.swp
@@ -27,21 +30,16 @@ node_modules/
 .vscode/
 .idea/
 
-# Coverage reports
+# Coverage
 .coverage
-htmlcov/
 coverage/
+htmlcov/
 
-# Build artifacts
+# Distribution / packaging
 dist/
 build/
-target/
-*.class
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.a
-*.out
+*.tar.gz
+*.whl
+*.egg
+*.egg-info/
 ```
