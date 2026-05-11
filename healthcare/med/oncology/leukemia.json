@@ -1,0 +1,34 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "fragments": [
+    {
+      "id": "hc_med_onc_le_def_001",
+      "tags": ["oncology", "leukemia", "ALL", "AML", "CLL", "CML", "classification"],
+      "reasoning_role": "definition",
+      "content": "Leukemias are hematologic malignancies characterized by abnormal proliferation of blood cells. Acute leukemias (rapid progression, immature blasts): Acute lymphoblastic leukemia (ALL) - lymphoid origin, most common childhood cancer, also occurs in adults; Acute myeloid leukemia (AML) - myeloid origin, most common acute leukemia in adults, median age 68. Chronic leukemias (indolent, mature cells): Chronic lymphocytic leukemia (CLL) - mature B-cells, most common adult leukemia in Western countries; Chronic myeloid leukemia (CML) - myeloid lineage, Philadelphia chromosome (BCR-ABL fusion). AML classification (WHO 2022): by genetics (NPM1, CEBPA, RUNX1-RUNX1T1, CBFB-MYH11, PML-RARA), myelodysplasia-related, therapy-related, NOS. ALL: B-ALL (CD19+, CD10+, TdT+) vs T-ALL (cytoplasmic CD3+, CD7+). CLL: CD5+, CD23+, dim surface immunoglobulin, mutated vs unmutated IGHV status prognostic.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/36789012/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_le_treat_001",
+      "tags": ["oncology", "leukemia", "treatment", "chemotherapy", "targeted therapy", "transplant"],
+      "reasoning_role": "treatment_protocol",
+      "content": "Treatment varies by type and risk. AML: induction chemotherapy '7+3' (cytarabine x7 days + anthracycline x3 days); CPX-351 for secondary AML; venetoclax + hypomethylating agent for unfit patients (VIALE-A trial). Consolidation: high-dose cytarabine for favorable/intermediate risk; allogeneic transplant for adverse risk or measurable residual disease (MRD) positive. FLT3-mutated: midostaurin or gilteritinib (quizartinib approved 2023). IDH1/2 mutations: ivosidenib/enasidenib. ALL: multi-agent chemotherapy (vincristine, steroids, anthracycline, asparaginase) over 2-3 years; Ph+ ALL adds TKI (dasatinib/ponatinib); blinatumomab (BiTE) or inotuzumab for relapsed; CAR-T (tisagenlecleucel) for relapsed/refractory B-ALL. CML: TKI therapy (imatinib, dasatinib, nilotinib, bosutinib, ponatinib, asciminib); treatment-free remission possible with deep molecular response. CLL: watch-and-wait for early asymptomatic; FCR (fludarabine, cyclophosphamide, rituximab) for fit young patients; BTK inhibitors (ibrutinib, acalabrutinib, zanubrutinib); venetoclax + obinutuzumab fixed duration.",
+      "source": "https://www.nccn.org/guidelines",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_le_diag_001",
+      "tags": ["oncology", "leukemia", "diagnosis", "flow cytometry", "cytogenetics", "molecular testing"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "Diagnosis requires peripheral blood and bone marrow evaluation. CBC often shows cytopenias (anemia, thrombocytopenia) with or without elevated WBC; circulating blasts suggest acute leukemia. Bone marrow aspiration/biopsy: ≥20% blasts defines acute leukemia (except APL with PML-RARA). Flow cytometry: immunophenotyping determines lineage (myeloid: CD13, CD33, MPO; B-cell: CD19, CD20, CD10; T-cell: CD3, CD7). Cytogenetics: karyotype identifies chromosomal abnormalities (prognostic in AML: favorable t(8;21), inv(16), t(15;17); adverse complex karyotype, -5, -7, TP53). FISH detects specific translocations (BCR-ABL for CML/Ph+ ALL, PML-RARA for APL). Molecular testing: NGS panel for mutations (FLT3, NPM1, IDH1/2, TP53 in AML; NOTCH1, SF3B1, del(17p)/TP53 in CLL). Minimal residual disease (MRD) monitoring by flow cytometry or PCR predicts relapse risk. Lumbar puncture for CNS involvement in ALL.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/35890123/",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

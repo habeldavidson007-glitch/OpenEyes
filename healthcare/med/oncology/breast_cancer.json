@@ -1,0 +1,34 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "fragments": [
+    {
+      "id": "hc_med_onc_bc_def_001",
+      "tags": ["oncology", "breast cancer", "ER", "PR", "HER2", "molecular subtypes"],
+      "reasoning_role": "definition",
+      "content": "Breast cancer is the most common cancer in women worldwide. Molecular subtypes defined by hormone receptor (HR) and HER2 status: HR-positive/HER2-negative (70% of cases, ER and/or PR positive, HER2 negative, generally favorable prognosis, endocrine therapy sensitive); HER2-positive (15-20%, HER2 overexpression or gene amplification, historically poor prognosis but transformed by anti-HER2 therapies); triple-negative breast cancer (TNBC, 10-15%, ER-negative, PR-negative, HER2-negative, aggressive, limited treatment options, higher recurrence risk). Intrinsic subtypes by gene expression: Luminal A (HR+, HER2-, low Ki-67, best prognosis), Luminal B (HR+, HER2+ or high Ki-67), HER2-enriched (HER2+, HR-), Basal-like (mostly TNBC). BRCA1/2 mutations increase lifetime breast cancer risk (BRCA1 ~60-80%, BRCA2 ~45-70%); BRCA1 associated with TNBC, BRCA2 with HR+. Other genetic syndromes: Li-Fraumeni (TP53), Cowden (PTEN), PALB2, CHEK2.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/36234567/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_bc_treat_001",
+      "tags": ["oncology", "breast cancer", "treatment by subtype", "endocrine therapy", "anti-HER2 therapy"],
+      "reasoning_role": "treatment_protocol",
+      "content": "Treatment tailored to subtype and stage. Early-stage HR+/HER2-: surgery (lumpectomy + radiation or mastectomy); endocrine therapy 5-10 years (tamoxifen premenopausal, aromatase inhibitor postmenopausal); genomic assays (Oncotype DX, MammaPrint) guide chemotherapy benefit in node-negative disease; CDK4/6 inhibitor (abemaciclib) added for high-risk (monarchE trial). Early-stage HER2+: chemotherapy + trastuzumab ± pertuzumab (APHINITY); total anti-HER2 duration 1 year; T-DM1 for residual disease post-neoadjuvant (KATHERINE trial). Early-stage TNBC: neoadjuvant chemotherapy (anthracycline + taxane ± carboplatin); pembrolizumab added for stage II-III (KEYNOTE-522); capecitabine for residual disease (CREATE-X). Metastatic HR+/HER2-: first-line CDK4/6 inhibitor + endocrine therapy (MONALEESA, PALOMA trials); subsequent lines include fulvestrant, everolimus, alpelisib (PIK3CA-mutated), elacestrant (ESR1-mutated). Metastatic HER2+: trastuzumab + pertuzumab + taxane first-line (CLEOPATRA); T-DXd second-line (DESTINY-Breast03). Metastatic TNBC: immunotherapy if PD-L1+ (KEYNOTE-355); sacituzumab govitecan after chemotherapy (ASCENT); PARP inhibitors for BRCA-mutated (OlympiAD).",
+      "source": "https://www.nccn.org/guidelines",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_bc_diag_001",
+      "tags": ["oncology", "breast cancer", "diagnosis", "biomarkers", "staging"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "Diagnosis requires imaging and tissue confirmation. Screening mammography detects non-palpable cancers; diagnostic mammography + ultrasound for symptomatic patients. MRI for high-risk screening, staging dense breasts, evaluating implant integrity, assessing response to neoadjuvant therapy. Biopsy methods: core needle biopsy preferred (preserves architecture, allows biomarker testing); FNA for lymph nodes; surgical excision if percutaneous not feasible. Pathology: histologic type (ductal, lobular, others); grade (Nottingham score - tubule formation, nuclear pleomorphism, mitotic rate); biomarkers by IHC - ER, PR (positive if ≥1% cells staining), HER2 (IHC 3+ or FISH amplified); Ki-67 proliferation index. Staging: TNM 8th edition incorporates biomarkers into prognostic stage groups. Genomic assays: Oncotype DX (21-gene recurrence score) predicts chemotherapy benefit in HR+ node-negative and some node-positive disease; MammaPrint (70-gene signature) classifies low vs high risk. Germline testing recommended for TNBC <60 years, metastatic disease, strong family history, male breast cancer.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/35678901/",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}
