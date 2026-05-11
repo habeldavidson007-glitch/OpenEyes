@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["heart failure", "HFrEF", "HFpEF", "classification", "pathophysiology"],
+    "reasoning_role": "definition",
+    "content": "Heart failure (HF) is a clinical syndrome characterized by typical symptoms (dyspnea, fatigue, fluid retention) and signs (elevated JVP, crackles, peripheral edema) due to structural or functional cardiac abnormality. Classification by ejection fraction: HFrEF (reduced EF ≤40%), HFmrEF (mildly reduced EF 41-49%), HFpEF (preserved EF ≥50%). ACC/AHA stages: Stage A (at risk, no structural disease), Stage B (structural disease, no symptoms), Stage C (structural disease with current/prior symptoms), Stage D (refractory HF requiring advanced therapies). NYHA functional class I-IV describes symptom severity. Pathophysiology involves neurohormonal activation (RAAS, sympathetic nervous system, natriuretic peptides), ventricular remodeling, and progressive dysfunction. Common etiologies: ischemic heart disease, hypertension, valvular disease, cardiomyopathies (dilated, hypertrophic, restrictive), arrhythmias, toxins (alcohol, chemotherapy).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
+    "credibility_class": "guideline",
+    "year": 2022
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["HFrEF", "treatment", "GDMT", "quadruple therapy", "pharmacology"],
+    "reasoning_role": "treatment_protocol",
+    "content": "HFrEF guideline-directed medical therapy (GDMT) consists of four foundational drug classes: (1) Beta-blockers (carvedilol, metoprolol succinate, bisoprolol)—reduce mortality, start low and titrate slowly; (2) ARNI (sacubitril/valsartan) preferred over ACEi/ARB—PARADIGM-HF showed superior outcomes vs enalapril, reduce NT-proBNP, reverse remodeling; (3) MRA (spironolactone or eplerenone)—RALES and EMPHASIS-HF trials showed mortality benefit, monitor potassium; (4) SGLT2 inhibitors (dapagliflozin or empagliflozin)—DAPA-HF and EMPEROR-Reduced trials showed benefit regardless of diabetes status. Diuretics (loop diuretics like furosemide, torsemide, bumetanide) for symptom relief but no mortality benefit. Additional options: hydralazine/isosorbide dinitrate for Black patients with persistent symptoms (A-HeFT trial), ivabradine for HR ≥70 despite beta-blocker, digoxin for symptom control. Device therapy: ICD for primary prevention if EF ≤35% after ≥3 months GDMT, CRT if QRS ≥150ms with LBBB morphology.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
+    "credibility_class": "guideline",
+    "year": 2022
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["HFpEF", "diagnosis", "treatment", "evidence gaps"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "HFpEF diagnosis requires: (1) signs/symptoms of HF, (2) LVEF ≥50%, (3) evidence of structural heart disease (LVH, LA enlargement) or diastolic dysfunction (elevated filling pressures). Scoring systems: H2FPEF score and HFA-PEFF algorithm incorporate clinical, echocardiographic, and biomarker data. Natriuretic peptides may be lower than in HFrEF; NT-proBNP >125 pg/mL or BNP >35 pg/mL supports diagnosis. Treatment evidence is limited compared to HFrEF. EMPEROR-Preserved and DELIVER trials showed SGLT2 inhibitors reduce HF hospitalizations in HFpEF (now Class 2a recommendation). Diuretics essential for volume management. Blood pressure control critical (target <130/80). ARNI may provide benefit (PARAGON-HF showed trend toward benefit, especially in women and EF <57%). MRA showed modest benefit in TOPCAT trial (Americas cohort). Treat comorbidities: atrial fibrillation (rate/rhythm control, anticoagulation), obesity (weight loss), sleep apnea (CPAP), diabetes, anemia. Exercise training improves functional capacity. No proven mortality-reducing therapy yet—major evidence gap.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
+    "credibility_class": "guideline",
+    "year": 2022
+  }
+]

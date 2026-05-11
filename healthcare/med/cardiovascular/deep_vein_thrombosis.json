@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["deep vein thrombosis", "DVT", "Virchow triad", "pathophysiology"],
+    "reasoning_role": "definition",
+    "content": "Deep vein thrombosis (DVT) is formation of blood clot in deep veins, most commonly lower extremities (proximal: popliteal, femoral, iliac; distal: calf veins). Annual incidence ~1-2 per 1000. Virchow's triad describes pathogenesis: venous stasis (immobility, paralysis, heart failure, AF, venous obstruction), endothelial injury (surgery especially orthopedic, trauma, prior DVT, indwelling catheters), hypercoagulability (inherited: factor V Leiden, prothrombin gene mutation, protein C/S deficiency, antithrombin deficiency; acquired: cancer, pregnancy, OCPs/HRT, antiphospholipid syndrome, myeloproliferative disorders). Clinical features: unilateral leg swelling, pain, warmth, erythema, dilated superficial veins, tenderness along deep venous system; however, up to 50% asymptomatic. Complications: pulmonary embolism (30-50% untreated proximal DVT), post-thrombotic syndrome (chronic pain, swelling, skin changes, ulcers in 20-50% within 2 years), recurrence (30% at 10 years).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+    "credibility_class": "guideline",
+    "year": 2022
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["DVT", "diagnosis", "ultrasound", "Wells score", "D-dimer"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "DVT diagnosis: clinical pretest probability using Wells score (clinical signs/symptoms, active cancer, paralysis/immobilization, bedridden >3 days, localized tenderness, entire leg swelling, calf swelling >3cm vs asymptomatic side, pitting edema, collateral superficial veins, alternative diagnosis less likely than DVT). Score ≥2: likely DVT; <2: unlikely. Unlikely DVT: D-dimer first (high sensitivity ~95%, low specificity); if negative, DVT ruled out; if positive, proceed to ultrasound. Likely DVT or positive D-dimer: compression ultrasonography—noncompressible vein diagnostic. Single proximal ultrasound sufficient if D-dimer negative or low clinical suspicion; if high suspicion with negative initial ultrasound, repeat in 1 week (to detect propagating calf DVT) or perform whole-leg ultrasound. MRI/MRV for pelvic vein thrombosis or contraindications to ultrasound. Contrast venography gold standard but rarely used (invasive, nephrotoxic).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+    "credibility_class": "guideline",
+    "year": 2022
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["DVT treatment", "anticoagulation", "prophylaxis", "duration"],
+    "reasoning_role": "treatment_protocol",
+    "content": "DVT treatment: anticoagulation for minimum 3 months. DOACs preferred (apixaban, rivaroxaban allow immediate oral monotherapy; dabigatran/edoxaban require 5-10 days LMWH bridging). LMWH preferred in cancer (though DOACs increasingly used except GI/GU malignancies with bleeding risk), severe renal impairment, pregnancy. Warfarin (target INR 2-3) if DOACs contraindicated. Inferior vena cava filter only if absolute contraindication to anticoagulation or recurrent VTE despite therapeutic anticoagulation—remove when anticoagulation can be started. Thrombolysis (catheter-directed) considered for extensive proximal DVT (<14 days symptoms) with low bleeding risk to prevent post-thrombotic syndrome (ATTRACT trial showed mixed results). Duration: 3 months for provoked DVT (transient risk factor); extended/indefinite for unprovoked DVT (assess bleeding risk), recurrent VTE, active cancer, persistent risk factors. Prophylaxis: mechanical (intermittent pneumatic compression) and/or pharmacologic (LMWH, unfractionated heparin, fondaparinux) for hospitalized medical patients, post-surgical patients especially orthopedic (total hip/knee arthroplasty—10-35 days).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+    "credibility_class": "guideline",
+    "year": 2022
+  }
+]

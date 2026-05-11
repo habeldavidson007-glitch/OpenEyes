@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["hypertension", "cardiovascular", "diagnosis", "staging", "treatment"],
+    "reasoning_role": "definition",
+    "content": "Hypertension is defined as sustained elevated blood pressure. ACC/AHA 2017 guidelines define Stage 1 as SBP 130-139 or DBP 80-89 mmHg; Stage 2 as SBP ≥140 or DBP ≥90 mmHg. JNC8 and European guidelines use ≥140/90 threshold. Diagnosis requires average of ≥2 readings on ≥2 occasions. White coat hypertension (elevated in office, normal at home) and masked hypertension (normal in office, elevated at home) require ambulatory or home monitoring for accurate diagnosis. Primary (essential) hypertension accounts for 90-95% of cases; secondary causes include renal disease, primary aldosteronism, obstructive sleep apnea, thyroid disorders, and medications (NSAIDs, decongestants, oral contraceptives).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/29133354/",
+    "credibility_class": "guideline",
+    "year": 2017
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["hypertension", "cardiovascular", "treatment algorithm", "pharmacology"],
+    "reasoning_role": "treatment_protocol",
+    "content": "First-line antihypertensive agents: thiazide diuretics (chlorthalidone preferred over HCTZ), ACE inhibitors, ARBs, or calcium channel blockers. For Black patients without CKD, initial therapy should be thiazide or CCB. For CKD patients, ACEi or ARB recommended regardless of race. Stage 1 hypertension with ASCVD risk ≥10% or existing CVD/diabetes/CKD: initiate pharmacologic therapy plus lifestyle modifications. Stage 2 hypertension: initiate two first-line agents from different classes (preferably single-pill combination). Lifestyle modifications: DASH diet, sodium restriction (<1500mg ideal, <2300mg acceptable), weight loss (5-10% body weight), physical activity (150 min/week moderate), moderation of alcohol (≤2 drinks/day men, ≤1 women). Treatment goal: <130/80 mmHg for most adults based on SPRINT trial evidence showing reduced CV events with intensive control.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/29133354/",
+    "credibility_class": "guideline",
+    "year": 2017
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["hypertension", "cardiovascular", "resistant hypertension", "secondary causes"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Resistant hypertension: BP above goal despite concurrent use of 3 antihypertensive agents of different classes (including a diuretic) at optimal doses, or controlled BP requiring ≥4 medications. Evaluate for medication nonadherence, white coat effect, lifestyle factors (high sodium intake, obesity, alcohol), and secondary causes. Most common secondary causes: primary aldosteronism (5-10% of resistant HTN), obstructive sleep apnea, renal parenchymal disease, renal artery stenosis. Screening for primary aldosteronism: aldosterone-to-renin ratio. Renal artery stenosis suspected with flash pulmonary edema, asymmetric kidneys, rise in creatinine >30% after ACEi/ARB initiation. Spironolactone is most effective fourth-line agent for resistant hypertension (PATHWAY-2 trial). Consider referral to hypertension specialist.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/26964362/",
+    "credibility_class": "clinical_trial",
+    "year": 2016
+  }
+]

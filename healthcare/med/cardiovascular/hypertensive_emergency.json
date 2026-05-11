@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["hypertensive emergency", "hypertensive crisis", "definition", "target organ damage"],
+    "reasoning_role": "definition",
+    "content": "Hypertensive emergency (HE) is severe elevation in blood pressure (typically SBP >180 and/or DBP >120 mmHg) with acute target organ damage (TOD), requiring immediate BP reduction. Distinguished from hypertensive urgency (severe HTN without acute TOD—can be managed with oral medications and outpatient follow-up). TOD defines the emergency: hypertensive encephalopathy (headache, confusion, visual changes, seizures), acute ischemic or hemorrhagic stroke, acute coronary syndrome, acute heart failure/pulmonary edema, aortic dissection, acute kidney injury, eclampsia, malignant hypertension (retinopathy with papilledema, hemorrhages, exudates), microangiopathic hemolytic anemia. Pathophysiology: abrupt increase in systemic vascular resistance triggers endothelial injury, fibrinoid necrosis of arterioles, platelet activation, microthrombi formation, end-organ ischemia. Annual incidence ~1-2% of hypertensive patients. Higher risk in those with chronic HTN, medication nonadherence, renal disease, substance use (cocaine, amphetamines).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35026997/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["hypertensive emergency", "treatment", "IV antihypertensives", "BP targets"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Hypertensive emergency management: ICU admission, continuous BP monitoring (arterial line preferred), IV antihypertensives. General goal: reduce MAP by no more than 20-25% in first hour, then to 160/100-110 over next 2-6 hours, then gradual normalization over 24-48 hours. Exceptions: aortic dissection (SBP <120 within 20 minutes, HR <60), acute ischemic stroke (permissive HTN unless thrombolysis planned—then <185/110), intracerebral hemorrhage (SBP 140-160), ACS (reduce myocardial oxygen demand). Preferred agents: nicardipine (calcium channel blocker—titratable, cerebral/coronary vasodilation), clevidipine (ultra-short acting CCB), labetalol (combined alpha/beta blocker—avoid in asthma, heart block), esmolol (short-acting beta-1 selective—good for aortic dissection), nitroglycerin (venodilator—preferred for ACS, pulmonary edema), nitroprusside (arterial/venous dilator—avoid in renal impairment, risk of cyanide toxicity), fenoldopam (dopamine agonist—renal vasodilation), hydralazine (unpredictable, reflex tachycardia—avoid except in pregnancy). Avoid sublingual nifedipine (unpredictable, risk of stroke/MI).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35026997/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["hypertensive emergency", "specific conditions", "stroke", "dissection", "pregnancy"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Condition-specific management: Aortic dissection: most urgent—reduce SBP <120 mmHg and HR <60 bpm within 20 minutes using esmolol or labetalol plus nitroprusside/nicardipine; pain control critical. Acute ischemic stroke: permissive hypertension (allow up to 220/120) unless thrombolysis planned (then <185/110 before and <180/105 for 24 hours after); avoid aggressive lowering (reduces cerebral perfusion). Intracerebral hemorrhage: INTERACT2 and ATACH-2 trials support SBP target 140-160 mmHg. Acute coronary syndrome: nitroglycerin first-line (reduces preload, coronary vasodilation), beta-blockers if no heart failure/shock; target SBP <140 if tolerated. Acute heart failure: nitroglycerin, nitroprusside, or nesiritide plus loop diuretics; avoid beta-blockers initially. Eclampsia/preeclampsia: magnesium sulfate for seizure prophylaxis, hydralazine or labetalol or nifedipine for BP control; target SBP 140-150, DBP 90-100; deliver fetus when stable. Pheochromocytoma crisis: alpha-blockade first (phentolamine), then beta-blockade (never beta-blocker alone—unopposed alpha stimulation). Cocaine-induced: benzodiazepines first, phentolamine or nitroglycerin; avoid pure beta-blockers.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35026997/",
+    "credibility_class": "guideline",
+    "year": 2021
+  }
+]

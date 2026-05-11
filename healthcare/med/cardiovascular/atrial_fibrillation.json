@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["atrial fibrillation", "mechanism", "pathophysiology", "classification"],
+    "reasoning_role": "definition",
+    "content": "Atrial fibrillation (AF) is a supraventricular tachyarrhythmia characterized by uncoordinated atrial activation and ineffective atrial contraction. ECG findings: irregularly irregular rhythm, absent P waves, variable R-R intervals, fibrillatory waves. Classification: paroxysmal (terminates spontaneously or with intervention within 7 days), persistent (>7 days or requiring cardioversion), long-standing persistent (>12 months), permanent (accepted by patient and clinician). Pathophysiology involves triggers (often from pulmonary veins) and substrate (atrial remodeling, fibrosis, dilation). Risk factors: age, hypertension, heart failure, valvular disease (especially mitral), obesity, sleep apnea, diabetes, hyperthyroidism, alcohol ('holiday heart'), genetics. AF causes loss of atrial kick (reduces cardiac output 10-30%), rapid ventricular response (causes symptoms and tachycardia-induced cardiomyopathy), and stasis leading to thrombus formation (stroke risk 5-fold increase).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34590638/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["atrial fibrillation", "stroke risk", "CHA2DS2-VASc", "anticoagulation"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Stroke risk stratification in non-valvular AF uses CHA2DS2-VASc score: Congestive HF (1), Hypertension (1), Age ≥75 (2), Diabetes (1), Stroke/TIA/thromboembolism (2), Vascular disease (1), Age 65-74 (1), Sex category female (1). Score ≥2 in men or ≥3 in women: oral anticoagulation recommended. Score 1 in men or 2 in women: consider anticoagulation based on patient values and preferences. Score 0 in men or 1 in women: no anticoagulation. DOACs (apixaban, rivaroxaban, dabigatran, edoxaban) preferred over warfarin except in mechanical valves or moderate-severe mitral stenosis (use warfarin). ARISTOTLE (apixaban), ROCKET-AF (rivaroxaban), RE-LY (dabigatran), ENGAGE-AF (edoxaban) trials showed DOACs noninferior or superior to warfarin for stroke prevention with lower intracranial hemorrhage risk. Bleeding risk assessed with HAS-BLED score (not to withhold anticoagulation but to address modifiable factors). Left atrial appendage occlusion (Watchman device) alternative for patients with contraindications to long-term anticoagulation.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34590638/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["atrial fibrillation", "rate control", "rhythm control", "ablation"],
+    "reasoning_role": "treatment_protocol",
+    "content": "AF management involves two strategies: rate control vs rhythm control. Rate control targets resting HR <80 bpm (symptomatic) or <110 bpm (lenient strategy—RACE II trial showed noninferior outcomes). Agents: beta-blockers (first-line), non-DHP calcium channel blockers (diltiazem, verapamil; avoid in HFrEF), digoxin (adjunct, especially in HF). Rhythm control aims to restore/maintain sinus rhythm. EAST-AFNET 4 trial (2020) showed early rhythm control reduced CV outcomes in recently diagnosed AF. Cardioversion (electrical or pharmacological with flecainide, propafenone, ibutilide, amiodarone) for symptomatic patients. Antiarrhythmic drugs for maintenance: flecainide/propafenone (no structural heart disease), sotalol, dofetilide (requires monitored initiation), dronedarone (avoid in permanent AF or HFrEF), amiodarone (most effective but significant long-term toxicity). Catheter ablation (pulmonary vein isolation) superior to antiarrhythmics for maintaining sinus rhythm (CABANA, FIRE AND ICE trials); first-line option for symptomatic paroxysmal AF, especially young patients. Surgical Maze procedure during cardiac surgery. All patients still need anticoagulation based on CHA2DS2-VASc regardless of rhythm strategy.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34590638/",
+    "credibility_class": "guideline",
+    "year": 2021
+  }
+]
