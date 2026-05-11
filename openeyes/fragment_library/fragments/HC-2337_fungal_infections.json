@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Invasive candidiasis/candidemia: echinocandin first-line (caspofungin 70mg load then 50mg daily, micafungin 100mg daily, anidulafungin 200mg load then 100mg daily); step down to fluconazole 800mg load then 400mg daily if susceptible and clinically stable. Remove infected catheters. Duration: 14 days after first negative culture and symptom resolution. Invasive aspergillosis: voriconazole 6mg/kg IV BID x2 doses then 4mg/kg BID (or oral 200-300mg BID) preferred; isavuconazole alternative (no QT prolongation, no monitoring needed); liposomal amphotericin B 3-5 mg/kg for refractory/intolerant. Combination therapy not routinely recommended. PJP: TMP-SMX 15-20 mg/kg/day divided q6-8h x21 days (add prednisone if moderate-severe with hypoxia); alternatives: atovaquone, clindamycin-primaquine, pentamidine. Cryptococcal meningitis: liposomal amphotericin B + flucytosine induction x2 weeks, fluconazole consolidation/maintenance.",
   "source": "pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2337",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

@@ -13,9 +13,10 @@
   "content": "Perinatal mental health disorders occur during pregnancy and/or within 12 months postpartum. Postpartum depression (PPD) affects ~10-15% of mothers, characterized by depressed mood, anhedonia, guilt, fatigue, sleep/appetite disturbances, difficulty bonding with infant. Postpartum anxiety and OCD also common. Postpartum psychosis is rare (~1-2/1000 births) but psychiatric emergency involving delusions, hallucinations, confusion, typically onset within 2 weeks postpartum; strong association with bipolar disorder. Risk factors: history of depression/anxiety, inadequate social support, stressful life events, obstetric complications, infant temperament. Untreated perinatal mental illness affects maternal functioning, infant development, family relationships.",
   "source": "PubMed",
   "source_url": "https://www.nimh.nih.gov/health/topics/womens-mental-health",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

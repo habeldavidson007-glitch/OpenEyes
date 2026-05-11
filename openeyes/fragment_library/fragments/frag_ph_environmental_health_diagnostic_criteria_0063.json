@@ -13,9 +13,10 @@
   "content": "Environmental health assessment involves: (1) Exposure assessment\u2014environmental monitoring (air quality indices, water testing), biomonitoring (blood lead levels, urinary metabolites, hair analysis), personal exposure monitors, geographic information systems mapping proximity to hazards; (2) Health outcome surveillance\u2014disease registries (cancer, birth defects), hospital discharge data with environmental ICD codes, syndromic surveillance for acute exposures; (3) Causal inference\u2014toxicological evidence, dose-response relationships, temporal patterns, consistency across studies; (4) Vulnerability assessment\u2014age (children, elderly), pre-existing conditions, genetic polymorphisms affecting metabolism, cumulative exposure burdens. CDC's Environmental Public Health Tracking Network integrates exposure and health data. Challenges include latency between exposure and disease, multiple simultaneous exposures (mixture effects), and confounding by socioeconomic factors.",
   "source": "CDC",
   "source_url": "https://www.cdc.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

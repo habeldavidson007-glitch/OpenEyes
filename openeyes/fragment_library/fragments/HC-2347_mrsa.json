@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "MRSA diagnosis: 1) Culture on selective media (chromogenic agar) with cefoxitin disk diffusion or oxacillin screen; 2) Molecular detection of mecA/mecC genes by PCR (rapid, 1-8 hours); 3) Phenotypic confirmation with cefoxitin MIC. Blood cultures essential for suspected bacteremia (2 sets before antibiotics). Wound cultures from deep tissue/debridement preferred over superficial swabs. Nasal screening identifies colonization (up to 30% population colonized with MSSA, 1-2% with MRSA); decolonization with mupirocin nasal ointment BID x5 days + chlorhexidine body washes reduces surgical site infections. Vancomycin-intermediate S. aureus (VISA, MIC 4-8 mcg/mL) and vancomycin-resistant S. aureus (VRSA, MIC \u226516 mcg/mL) emerging; alternative agents required.",
   "source": "cdc.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2347",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

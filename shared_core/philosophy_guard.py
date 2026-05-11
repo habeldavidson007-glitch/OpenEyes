@@ -188,6 +188,8 @@ class PhilosophyGuard:
             return self._check_recency_cap(proposal, config)
         elif check_type == "requires_uncertainty_note":
             return self._check_requires_uncertainty_note(proposal, config)
+        elif check_type == "prohibit_source_type":
+            return self._check_prohibit_source_type(proposal, config)
         
         # Unknown rule type
         return {
@@ -427,6 +429,49 @@ class PhilosophyGuard:
         return {
             "passed": True,
             "message": "Prediction content includes appropriate uncertainty language"
+        }
+
+    def _check_prohibit_source_type(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """Check if proposal has a prohibited source type."""
+        prohibited = config.get("prohibited", [])
+        source_type = proposal.get("source_type", "")
+        
+        # Also check source_url domain for common prohibited types
+        source_url = proposal.get("source_url", "")
+        
+        if not prohibited:
+            return {
+                "passed": True,
+                "message": "No source type restrictions defined"
+            }
+        
+        if source_type in prohibited:
+            return {
+                "passed": False,
+                "message": f"Source type '{source_type}' is prohibited",
+                "severity": "error"
+            }
+        
+        # Check for prohibited domains in URL
+        prohibited_domains = {
+            "anecdotal": [],
+            "personal_blog": ["blogspot", "wordpress.com", "medium.com", "substack"],
+            "social_media": ["twitter.com", "facebook.com", "instagram.com", "tiktok.com", "reddit.com"]
+        }
+        
+        for ptype in prohibited:
+            domains = prohibited_domains.get(ptype, [])
+            for domain in domains:
+                if domain in source_url.lower():
+                    return {
+                        "passed": False,
+                        "message": f"Source URL contains prohibited domain '{domain}' ({ptype})",
+                        "severity": "error"
+                    }
+        
+        return {
+            "passed": True,
+            "message": "Source type is acceptable"
         }
 
     def _check_cognitive_simplicity(self, proposal: Dict) -> Dict[str, Any]:

@@ -13,9 +13,10 @@
   "content": "Generic drugs are copies of brand-name drugs that have the same active ingredient, dosage form, strength, route of administration, and intended use. The Abbreviated New Drug Application (ANDA) pathway, established by the Hatch-Waxman Act of 1984, allows generic approval without repeating clinical efficacy trials if bioequivalence to the reference listed drug (RLD) is demonstrated. Generics must be therapeutically equivalent (same clinical effect and safety profile). Upon approval, generics receive an 'AB' therapeutic equivalence rating in the Orange Book, indicating they can be substituted for the brand at the pharmacy level.",
   "source": "fda.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

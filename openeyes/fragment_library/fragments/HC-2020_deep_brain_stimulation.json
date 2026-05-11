@@ -12,8 +12,9 @@
   "reasoning_role": "definition",
   "content": "Deep Brain Stimulation (DBS) involves surgically implanting electrodes in specific brain regions connected to a pulse generator. FDA-approved for Parkinson's disease, essential tremor, dystonia, and OCD (under Humanitarian Device Exemption). Investigational for treatment-resistant depression (targeting subcallosal cingulate, ventral capsule/ventral striatum). DBS modulates abnormal circuit activity, offering reversible, adjustable treatment. Depression trials show ~50% response in highly refractory cases, but results are mixed. Risks include surgical complications (hemorrhage ~2%), infection, hardware malfunction, and mood changes. Patient selection is critical; DBS is reserved for those failing all other treatments including ECT. Ongoing research aims to identify better targets and predictors of response.",
   "source": "fda.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2020",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

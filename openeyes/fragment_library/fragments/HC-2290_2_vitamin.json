@@ -12,8 +12,9 @@
   ],
   "content": "Diagnosis based on serum 25-hydroxyvitamin D [25(OH)D] level - reflects cutaneous synthesis and dietary intake, half-life ~2-3 weeks. 1,25-dihydroxyvitamin D not useful for assessing status (may be normal/elevated in deficiency due to secondary hyperparathyroidism). Classification (controversial, varies by organization): severe deficiency <12 ng/mL (<30 nmol/L); deficiency <20 ng/mL (<50 nmol/L); insufficiency 20-29 ng/mL (50-74 nmol/L); sufficiency \u226530 ng/mL (\u226575 nmol/L); potential toxicity >150 ng/mL (>375 nmol/L). IOM considers \u226520 ng/mL adequate for bone health; Endocrine Society recommends \u226530 ng/mL. Screening not recommended for general population; test high-risk groups: osteoporosis, fractures, malabsorption (celiac, IBD, bariatric surgery), obesity, CKD, liver disease, granulomatous diseases, certain medications, limited sun exposure, dark skin. Also measure calcium, phosphorus, alkaline phosphatase, PTH if deficiency suspected.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/33985616/",
-  "credibility_class": "peer_reviewed_guideline",
+  "credibility_class": "clinical_guideline",
   "year": 2024,
   "reasoning_role": "definition",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "peer_reviewed_guideline"
 }

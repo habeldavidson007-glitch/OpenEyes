@@ -10,8 +10,9 @@
   "reasoning_role": "definition",
   "content": "Adaptive trial implementation requires: pre-specified adaptation rules in the protocol and statistical analysis plan, independent data monitoring committee (IDMC) to review unblinded interim data, simulation studies to evaluate operating characteristics (type I error, power, expected sample size), and robust statistical methods (alpha spending functions, combination tests, conditional power). Timing of interim analyses must be carefully planned (e.g., after 50% and 75% of events). Adaptations should be operationally feasible without introducing bias. Blinding must be maintained for site personnel and sponsors. Regulatory acceptance requires clear documentation of decision rules, preservation of trial integrity, and appropriate statistical methodology. Platform trials (e.g., STAMPEDE, I-SPY2) exemplify master protocols enabling multiple treatments to be evaluated efficiently.",
   "source": "fda.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2205",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Zoonotic diseases are infections transmitted from vertebrate animals to humans, accounting for approximately 60% of known human pathogens and 75% of emerging infectious diseases. Spillover occurs when a pathogen crosses the species barrier through: direct contact (bites, scratches), indirect contact (contaminated environments), vector-borne transmission (mosquitoes, ticks), or foodborne routes (undercooked meat, unpasteurized dairy). Drivers of spillover include: land use changes (deforestation, urbanization), wildlife trade, agricultural intensification, climate change altering vector ranges, and increased human-animal contact. Examples: HIV (primates), SARS-CoV-2 (likely bats via intermediate host), Ebola (bats), avian influenza (poultry).",
   "source": "WHO Zoonoses guidelines, CDC One Health framework",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

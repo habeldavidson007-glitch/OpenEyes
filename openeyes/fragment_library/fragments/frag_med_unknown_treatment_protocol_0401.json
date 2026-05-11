@@ -15,9 +15,10 @@
   "content": "Treatment based on ASCVD risk stratification. Statins first-line for LDL lowering: high-intensity (atorvastatin 40-80mg, rosuvastatin 20-40mg) for clinical ASCVD or high-risk primary prevention; moderate-intensity for intermediate risk. Add ezetimibe if LDL remains above threshold on maximally tolerated statin. PCSK9 inhibitors (alirocumab, evolocumab) or inclisiran (siRNA) for FH or statin-intolerant patients not at goal. Bempedoic acid alternative for statin-intolerant. For severe hypertriglyceridemia (\u2265500 mg/dL): fibrates (fenofibrate preferred over gemfibrozil with statins), prescription omega-3 fatty acids (icosapent ethyl - REDUCE-IT trial showed CVD benefit; omega-3 acid ethyl esters), niacin rarely used now. Lifestyle foundation: Mediterranean diet, reduce saturated/trans fats, increase soluble fiber, weight loss, regular exercise, limit alcohol (raises triglycerides). FH requires aggressive early treatment, often combination therapy, cascade screening of relatives.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/36506509/",
-  "credibility_class": "peer_reviewed_guideline",
+  "credibility_class": "clinical_guideline",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "peer_reviewed_guideline"
 }

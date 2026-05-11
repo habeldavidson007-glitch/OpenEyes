@@ -14,9 +14,10 @@
   "content": "Status epilepticus (SE) is a life-threatening neurological emergency defined as continuous seizure activity \u22655 minutes OR recurrent seizures without recovery of consciousness between events. Operational definition based on evidence that seizures lasting >5 minutes are unlikely to self-terminate. Classification: convulsive SE (generalized tonic-clonic movements, most dangerous), nonconvulsive SE (altered mental status with electrographic seizures, requires EEG diagnosis), focal SE (aura continua, epilepsia partialis continua). Stages: early SE (<30 min), established SE (30-60 min), refractory SE (fails benzodiazepine + one antiseizure medication), super-refractory SE (continues >24 hours after anesthesia initiation or recurs on weaning). Mortality: 3-40% depending on etiology, age, duration. Causes: medication nonadherence (most common in known epilepsy), acute symptomatic (stroke, trauma, infection, metabolic, toxic), new-onset epilepsy. Pathophysiology: failure of GABAergic inhibition, upregulation of excitatory NMDA receptors, neuronal injury begins within minutes.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Vector control involves interventions to reduce or eliminate disease-transmitting arthropods (mosquitoes, ticks, fleas, sandflies). Primary methods: environmental management (eliminating breeding sites, drainage), biological control (larvivorous fish, Bacillus thuringiensis israelensis), chemical control (larvicides, adulticides, insecticide-treated nets, indoor residual spraying), and personal protection (repellents, protective clothing). Vector-borne diseases include malaria, dengue, Zika, chikungunya, Lyme disease, and leishmaniasis. Insecticide resistance threatens control effectiveness\u2014mosquitoes have developed resistance to all major insecticide classes through metabolic enzymes, target site mutations, and behavioral avoidance.",
   "source": "WHO Global Vector Control Response, CDC Vector Control guidelines",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

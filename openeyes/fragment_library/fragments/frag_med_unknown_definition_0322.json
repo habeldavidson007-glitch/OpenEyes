@@ -14,9 +14,10 @@
   "content": "Radiation therapy uses high-energy particles or waves to damage tumor DNA, causing cell death. External beam radiation therapy (EBRT) delivers radiation from outside the body: 3D conformal radiation therapy (3D-CRT) shapes beams to tumor; intensity-modulated radiation therapy (IMRT) varies beam intensity for complex shapes; volumetric modulated arc therapy (VMAT) delivers continuous arc rotation; stereotactic body radiation therapy (SBRT/SRS) delivers high-dose precise radiation in 1-5 fractions. Proton therapy uses protons with Bragg peak effect, sparing distal tissues. Brachytherapy places radioactive sources inside/near tumor: low-dose rate (LDR) permanent seeds (prostate cancer); high-dose rate (HDR) temporary catheters (cervical, breast cancer). Radiobiology principles: 4 R's - repair (normal tissue repairs sublethal damage), reassortment (cells redistribute through cell cycle), repopulation (tumor cells proliferate between fractions), reoxygenation (hypoxic cells become oxygenated, more radiosensitive).",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/36123456/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

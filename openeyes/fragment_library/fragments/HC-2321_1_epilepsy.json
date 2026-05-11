@@ -13,7 +13,8 @@
   "reasoning_role": "definition",
   "content": "Antiepileptic drug (AED) selection depends on seizure type, patient factors, and side effect profile. Focal seizures: first-line includes lamotrigine, levetiracetam, carbamazepine, oxcarbazepine. Generalized tonic-clonic: valproate (most effective but teratogenic), lamotrigine, levetiracetam. Absence seizures: ethosuximide (first-line for pure absence), valproate, lamotrigine. Myoclonic seizures: valproate, levetiracetam, topiramate. Key considerations: (1) Drug interactions\u2014carbamazepine, phenytoin, phenobarbital are CYP450 inducers reducing efficacy of oral contraceptives, warfarin, many medications. (2) Teratogenicity\u2014valproate highest risk (neural tube defects, cognitive impairment); avoid in women of childbearing potential. Lamotrigine and levetiracetam have lower teratogenic risk. (3) Titration\u2014lamotrigine requires slow titration to prevent Stevens-Johnson syndrome. (4) Monitoring\u2014phenytoin has nonlinear kinetics; carbamazepine causes hyponatremia; valproate requires LFT/platelet monitoring. Refractory epilepsy (failure of 2 appropriate AEDs) warrants epilepsy center referral for surgical evaluation, vagal nerve stimulation, or responsive neurostimulation.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/30879033/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

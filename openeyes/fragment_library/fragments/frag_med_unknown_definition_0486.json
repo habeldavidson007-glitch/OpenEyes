@@ -14,9 +14,10 @@
   "content": "Dementia diagnosis uses DSM-5 criteria for major neurocognitive disorder: significant cognitive decline from prior level in \u22651 domain (complex attention, executive function, learning/memory, language, perceptual-motor, social cognition) interfering with independence; not occurring exclusively during delirium; not better explained by another mental disorder. Evaluation: (1) History from patient and informant (onset, progression, functional impact). (2) Cognitive screening: MMSE (copyrighted), MoCA (more sensitive for MCI, scores <26 abnormal), Mini-Cog (3-word recall + clock draw). Formal neuropsychological testing characterizes pattern (hippocampal in AD, frontal-subcortical in vascular/FTD). (3) Laboratory: CBC, CMP, TSH, B12, folate; consider RPR, HIV if risk factors. (4) Imaging: MRI brain (preferred) or CT to assess atrophy pattern, vascular burden, exclude reversible causes (tumor, SDH, NPH). AD shows medial temporal/hippocampal atrophy; vascular shows infarcts, white matter disease; FTD shows frontal/anterior temporal atrophy; LBD may show occipital hypometabolism on FDG-PET. DaT scan (dopamine transporter SPECT) supports LBD diagnosis (reduced striatal uptake). Differential: delirium (acute onset, inattention, fluctuating course), depression (prominent mood symptoms, effort-dependent cognitive testing).",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

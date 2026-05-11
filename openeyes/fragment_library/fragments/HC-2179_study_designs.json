@@ -13,8 +13,9 @@
   "reasoning_role": "definition",
   "content": "Study designs form a hierarchy of evidence for causal inference. Randomized Controlled Trials (RCTs) randomly assign participants to intervention or control groups, minimizing confounding and providing the strongest evidence for treatment efficacy. Cohort studies follow exposed and unexposed groups forward in time to observe outcomes, establishing temporality and suitable for studying multiple outcomes from one exposure, but vulnerable to confounding. Case-control studies start with outcomes (cases) and compare their past exposures to controls without the outcome, efficient for rare diseases but susceptible to recall bias. Cross-sectional studies measure exposure and outcome simultaneously at one time point, useful for prevalence estimates but cannot establish temporality. The evidence hierarchy ranks: systematic reviews/meta-analyses of RCTs at the top, followed by individual RCTs, cohort studies, case-control studies, cross-sectional studies, case series, and expert opinion. Each design has strengths: RCTs for internal validity, cohort studies for natural history and multiple outcomes, case-control for rare diseases, cross-sectional for hypothesis generation and burden estimation.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/31906877/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2179",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Mental health parity laws require insurers to provide equal coverage for mental health and substance use disorder treatment as for medical/surgical care. The federal Mental Health Parity and Addiction Equity Act (MHPAEA, 2008) prohibits more restrictive financial requirements (copays, deductibles) or treatment limitations (visit limits, prior authorization) for behavioral health. However, enforcement gaps persist: inadequate provider networks, excessive denials, and non-quantitative barriers (narrow formularies, difficult authorization). The ACA strengthened parity by including mental health in essential health benefits. Recent DOL guidance emphasizes network adequacy and outcomes data. Despite legal protections, patients still face significant access barriers due to poor implementation.",
   "source": "dol.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2036",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

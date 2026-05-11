@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Patient safety encompasses prevention of healthcare-associated harm. Key categories: (1) Medication errors - wrong drug, dose, patient, or route (affecting 5% of hospitalized patients); (2) Hospital-acquired infections - CLABSI, CAUTI, SSI, C. difficile (7% of patients in developed countries); (3) Surgical complications - wrong-site surgery, retained instruments, postoperative sepsis; (4) Diagnostic errors - delayed/missed diagnoses (estimated 10-15% of cases); (5) Healthcare-associated venous thromboembolism. The WHO estimates 134 million adverse events annually in low/middle-income countries causing 2.6 million deaths. In the US, preventable harm causes ~250,000 deaths/year, making it the third leading cause of death.",
   "source": "who.int",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

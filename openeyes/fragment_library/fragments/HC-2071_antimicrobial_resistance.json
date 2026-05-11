@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Antimicrobial resistance (AMR) occurs when microorganisms evolve mechanisms to survive drug exposure, rendering treatments ineffective. AMR is a global public health threat causing approximately 1.27 million deaths annually directly and contributing to nearly 5 million deaths. ESKAPE pathogens (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, Enterobacter species) are priority organisms due to multidrug resistance and healthcare impact. Resistance mechanisms include: enzyme production (beta-lactamases), target modification, efflux pumps, and reduced permeability. Drivers: antibiotic overuse in humans and animals, inadequate infection prevention, poor sanitation, and lack of new antibiotics in development pipeline.",
   "source": "WHO Global AMR Surveillance, CDC Antibiotic Resistance Threats Report",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

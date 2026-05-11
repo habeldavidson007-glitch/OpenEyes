@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Pneumonia is classified by acquisition setting: Community-acquired pneumonia (CAP) occurs outside hospitals or within 48 hours of admission; Hospital-acquired pneumonia (HAP) develops \u226548 hours after admission; Ventilator-associated pneumonia (VAP) occurs >48-72 hours after endotracheal intubation. CAP pathogens include Streptococcus pneumoniae (most common), Haemophilus influenzae, atypical organisms (Mycoplasma pneumoniae, Legionella, Chlamydophila), and respiratory viruses. HAP/VAP pathogens include Pseudomonas aeruginosa, MRSA, Enterobacteriaceae, and Acinetobacter. Aspiration pneumonia involves anaerobes from oropharyngeal flora.",
   "source": "pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2363",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

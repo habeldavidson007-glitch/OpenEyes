@@ -12,8 +12,9 @@
   "reasoning_role": "definition",
   "content": "Ketamine is an NMDA receptor antagonist with rapid antidepressant effects, often within hours, unlike traditional antidepressants taking weeks. Esketamine (S-enantiomer) is FDA-approved as nasal spray for treatment-resistant depression and depression with acute suicidal ideation. Mechanism involves glutamate surge, AMPA receptor activation, and BDNF-mediated synaptic plasticity. Dosing: esketamine 56-84mg intranasally twice weekly initially, then weekly/biweekly maintenance. Requires administration in certified clinics with 2-hour monitoring due to dissociation and blood pressure elevation risks. Response rates ~50-70% in treatment-resistant populations. Long-term safety data still emerging; potential for misuse requires careful patient selection.",
   "source": "fda.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2031",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

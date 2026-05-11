@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "FDA approval criteria require: substantial evidence of effectiveness from adequate and well-controlled investigations (typically two Phase III trials or one exceptionally robust trial), acceptable safety profile where benefits outweigh risks, appropriate labeling reflecting indications, dosing, warnings, and adverse reactions, and compliant manufacturing under cGMP. Priority review criteria include: ability to treat serious conditions, potential for significant improvement over existing therapies (e.g., enhanced efficacy, reduced toxicity, improved adherence). Breakthrough Therapy criteria require: treatment of serious/life-threatening condition, preliminary clinical evidence indicating substantial improvement on clinically significant endpoints. Approximately 90% of standard review and 95% of priority review applications are approved within their respective timelines.",
   "source": "fda.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2206",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

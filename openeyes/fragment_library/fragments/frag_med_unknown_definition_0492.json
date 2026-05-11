@@ -14,9 +14,10 @@
   "content": "Neuromodulation candidate evaluation requires multidisciplinary assessment. DBS Parkinson's: confirm idiopathic PD (UK Brain Bank criteria), document levodopa response (>30% UPDRS-III improvement in acute challenge), assess motor complications (wearing-off, dyskinesia duration/severity), cognitive screening (MoCA \u226526 preferred, formal neuropsychological testing if borderline), psychiatric evaluation (exclude active depression, psychosis, impulse control disorders), MRI brain (exclude significant atrophy, vascular burden, structural lesions). Essential tremration: quantify tremor severity ( Bain scale), exclude reversible causes (thyroid, medications). Dystonia: genetic testing if early-onset (DYT1), assess distribution (generalized/segmental better candidates than focal). TMS depression: confirm MDD diagnosis (DSM-5), document treatment resistance (failure \u22651-2 adequate antidepressant trials), exclude contraindications (metallic implants within 30cm of coil, cochlear implant, history of seizures), screen for bipolar disorder (risk of mania). Outcome measures: UPDRS-III for PD, Fahn-Tolosa-Marin for tremor, Burke-Fahn-Marsden for dystonia, HAM-D/MADRS for depression, seizure frequency for epilepsy. Realistic expectations crucial\u2014DBS improves symptoms but doesn't halt disease progression.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

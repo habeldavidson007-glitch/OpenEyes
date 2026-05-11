@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Acute HBV: supportive care; antivirals only for severe/fulminant cases. Chronic HBV treatment indications: HBeAg+ with ALT >2x ULN and DNA >20,000 IU/mL; HBeAg- with ALT >2x ULN and DNA >2,000 IU/mL; any cirrhosis with detectable DNA; extrahepatic manifestations; immunosuppression prophylaxis. First-line agents: tenofovir alafenamide (TAF) 25mg daily, tenofovir disoproxil fumarate (TDF) 300mg daily, or entecavir 0.5mg daily (1mg if lamivudine-resistant). Pegylated interferon-alpha finite course (48 weeks) for selected patients. Treatment goals: HBV DNA suppression, ALT normalization, HBeAg seroconversion, ideally HBsAg loss ('functional cure'). Duration often indefinite; may stop in select HBeAg+ after seroconversion + consolidation. Monitor for resistance, renal/bone toxicity (TDF), hepatocellular carcinoma surveillance every 6 months.",
   "source": "pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2379",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

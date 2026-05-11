@@ -12,9 +12,10 @@
   "content": "Biosimilars are biological products highly similar to an already FDA-approved reference biologic, with no clinically meaningful differences in safety, purity, and potency. Unlike generic small-molecule drugs, biosimilars are not identical due to the complexity of biological manufacturing (living cells, post-translational modifications). The Biologics Price Competition and Innovation Act (BPCIA) of 2010 created an abbreviated approval pathway (351(k)) requiring analytical studies, animal studies, and clinical studies demonstrating similarity. Interchangeable biosimilars meet additional standards allowing pharmacy-level substitution without prescriber intervention.",
   "source": "fda.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

@@ -9,8 +9,9 @@
   "reasoning_role": "definition",
   "content": "Definition content for confidence_intervals.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2182",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

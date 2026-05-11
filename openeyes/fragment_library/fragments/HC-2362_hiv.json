@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "HIV diagnosis follows CDC algorithm: 1) Fourth-generation HIV-1/2 antigen/antibody combination immunoassay (detects p24 antigen + antibodies, window period ~18 days); 2) If reactive, HIV-1/HIV-2 antibody differentiation assay confirms type; 3) If differentiation assay negative/indeterminate, HIV-1 RNA NAT confirms acute infection. Rapid tests provide results in <30 minutes but require confirmation. Viral load quantifies HIV RNA for monitoring treatment response. CD4 count assesses immune status: normal 500-1,500 cells/\u03bcL; AIDS defined as CD4 <200 cells/\u03bcL or CD4 percentage <14%. Baseline resistance testing (genotype) guides regimen selection. Screening recommended for all adults 15-65 years and high-risk populations.",
   "source": "cdc.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2362",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

@@ -14,9 +14,10 @@
   "content": "Volume of distribution (Vd) is a theoretical volume relating the amount of drug in the body to its plasma concentration: Vd = Amount of drug / Plasma concentration. It indicates the extent of drug distribution beyond plasma into tissues. Vd does not represent a real physiologic volume but reflects tissue affinity. Small Vd (~3-5L, plasma volume): drugs stay in circulation (warfarin, heparin - highly protein bound). Moderate Vd (~14L, extracellular fluid): aminoglycosides. Large Vd (>40L, total body water or more): extensive tissue distribution (digoxin Vd=500L, chloroquine Vd=15,000L). High Vd drugs are poorly removed by dialysis.",
   "source": "fda.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2025,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

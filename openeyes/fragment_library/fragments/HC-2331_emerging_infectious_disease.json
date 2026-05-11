@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Outbreak response framework: 1) Detection and verification (case identification, laboratory confirmation); 2) Risk assessment (transmissibility, severity, spread potential); 3) Containment measures: case isolation, contact tracing and quarantine, infection prevention/control, social distancing if needed; 4) Medical countermeasures: therapeutics (repurposed drugs, monoclonal antibodies, convalescent plasma), vaccines (platform technologies enable rapid development); 5) Communication: transparent risk communication, combat misinformation; 6) International coordination under International Health Regulations (IHR 2005). Travel restrictions generally limited utility, may delay spread. Healthcare system preparedness: surge capacity, PPE stockpiles, negative pressure rooms. Post-outbreak: after-action reviews, system strengthening.",
   "source": "who.int",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2331",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

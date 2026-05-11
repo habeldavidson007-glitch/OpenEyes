@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "NPI implementation hierarchy: (1) Universal masking in indoor public spaces\u2014reduces emission and inhalation of respiratory particles; (2) Improved ventilation\u2014increases air exchanges, uses HEPA filtration; (3) Physical distancing\u2014maintains \u22651 meter separation; (4) Hand hygiene\u2014soap/water or alcohol-based sanitizer; (5) Gathering restrictions\u2014limits crowd size and density; (6) School/workplace modifications\u2014hybrid models, cohorting; (7) Stay-at-home orders\u2014last resort for severe outbreaks. Layered NPIs (multiple simultaneous measures) show additive effects. Timing matters: early implementation prevents exponential growth; late implementation has limited impact.",
   "source": "Lancet Respiratory Medicine, CDC MMWR NPI evaluations",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

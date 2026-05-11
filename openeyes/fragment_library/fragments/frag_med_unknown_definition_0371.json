@@ -14,9 +14,10 @@
   "content": "Treatment depends on stage and molecular profile. Early stage (I-III): surgical resection primary treatment; adjuvant chemotherapy for stage III (FOLFOX or CAPOX 3-6 months based on risk); stage II high-risk features (T4, obstruction, perforation, <12 nodes examined, lymphovascular invasion) may receive adjuvant chemo. Metastatic (stage IV): molecular testing mandatory (RAS, BRAF, MSI/MMR, HER2). Left-sided, RAS wild-type: anti-EGFR (cetuximab/panitumumab) + chemotherapy superior to bevacizumab (FIRE-3, CALGB/SWOG 80405). Right-sided: bevacizumab + chemotherapy preferred. BRAF V600E: encorafenib + cetuximab after first-line (BEACON trial). MSI-H/dMMR: immunotherapy first-line - pembrolizumab (KEYNOTE-177) or nivolumab \u00b1 ipilimumab (CheckMate-8HW) superior to chemotherapy. HER2-amplified, RAS wild-type: trastuzumab + tucatinib (MOUNTAINEER) or trastuzumab deruxtecan (DESTINY-CRC01). KRAS G12C: adagrasib + cetuximab (KRYSTAL-10). Liver-limited metastases: consider hepatectomy or ablation if resectable. Rectal cancer: neoadjuvant chemoradiation or total neoadjuvant therapy (TNT) for locally advanced disease.",
   "source": "PubMed",
   "source_url": "https://www.nccn.org/guidelines",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

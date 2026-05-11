@@ -11,7 +11,8 @@
   "reasoning_role": "latest_data",
   "content": "Sports Medicine Exercise - recent clinical trials, updated guidelines, emerging therapies",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "peer_reviewed",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2026,
-  "source": "PubMed"
+  "source": "PubMed",
+  "_original_credibility_class": "peer_reviewed"
 }

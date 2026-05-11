@@ -10,10 +10,11 @@
   "reasoning_role": "definition",
   "content": "NSCLC treatment depends on stage and molecular profile. Early stage (I-II): surgical resection (lobectomy preferred); adjuvant chemotherapy for stage II-III; adjuvant osimertinib for EGFR-mutated (ADAURA trial); adjuvant immunotherapy (atezolizumab/pembrolizumab) for PD-L1+ after chemo. Locally advanced (stage III): concurrent chemoradiation followed by durvalumab consolidation (PACIFIC trial showed significant OS benefit). Metastatic (stage IV): molecular testing mandatory before treatment. EGFR-mutated: osimertinib first-line (FLAURA, median OS 38.6 months). ALK-positive: alectinib or lorlatinib first-line. ROS1-positive: entrectinib or crizotinib. No driver mutation: immunotherapy \u00b1 chemotherapy based on PD-L1. PD-L1 \u226550%: pembrolizumab monotherapy (KEYNOTE-024). PD-L1 1-49%: pembrolizumab + chemotherapy (KEYNOTE-189 for non-squamous, KEYNOTE-407 for squamous). PD-L1 <1%: immunotherapy + chemotherapy or nivolumab + ipilimumab + chemotherapy (CheckMate 9LA). SCLC: limited stage - concurrent chemoradiation (etoposide + cisplatin/carboplatin); extensive stage - chemo + immunotherapy (atezolizumab/durvalumab + platinum/etoposide).",
   "source": "https://www.nccn.org/guidelines",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "domain": "healthcare",
   "subdomain": "MED",
   "sector": "MED",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

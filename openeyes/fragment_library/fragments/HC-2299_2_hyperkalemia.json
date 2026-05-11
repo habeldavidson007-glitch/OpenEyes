@@ -12,8 +12,9 @@
   ],
   "content": "Diagnostic approach: Confirm true hyperkalemia (repeat level, assess for hemolysis). Obtain immediate ECG for any K+ >6.0 or symptomatic patient. Assess renal function (BUN, creatinine), acid-base status (bicarbonate, ABG if severe), glucose. Evaluate medication list thoroughly. For persistent unexplained hyperkalemia: measure plasma renin activity and aldosterone to diagnose hypoaldosteronism (low aldosterone with high renin suggests primary adrenal insufficiency; low aldosterone with low renin suggests hyporeninemic hypoaldosteronism/type 4 RTA). Calculate transtubular potassium gradient (TTKG) if uncertain about renal potassium handling: TTKG = (urine K \u00d7 serum osmolality)/(serum K \u00d7 urine osmolality); <7 suggests impaired renal excretion. Consider cortisol level if adrenal insufficiency suspected. Evaluate for rhabdomyolysis (CK), tumor lysis (LDH, uric acid, phosphate) if clinically indicated.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/33985614/",
-  "credibility_class": "peer_reviewed_guideline",
+  "credibility_class": "clinical_guideline",
   "year": 2024,
   "reasoning_role": "definition",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "peer_reviewed_guideline"
 }

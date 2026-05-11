@@ -14,9 +14,10 @@
   "content": "SCI management begins with immobilization (cervical collar, log-roll precautions) and ABCs. High-dose methylprednisolone (30mg/kg bolus then 5.4mg/kg/hr \u00d7 23 hours) within 8 hours is controversial\u2014NASCIS trials showed modest benefit but risks (infection, hyperglycemia); not standard in many centers. Early surgical decompression (<24 hours) recommended for compressive lesions, unstable fractures. Hemodynamic support: maintain MAP 85-90 mmHg for 5-7 days to optimize cord perfusion (vasopressors if needed). DVT prophylaxis critical (high risk): LMWH preferred, IVC filter if anticoagulation contraindicated. Bladder management: indwelling catheter acutely, transition to intermittent catheterization. Bowel program: stool softeners, stimulants, digital stimulation. Spasticity management: baclofen (oral or intrathecal pump), tizanidine, botulinum toxin, phenol blocks. Neuropathic pain: gabapentin, pregabalin, amitriptyline. Rehabilitation: intensive multidisciplinary program focusing on mobility (wheelchair skills, bracing, FES), ADLs, vocational training, psychological support. Complications: autonomic dysreflexia (T6 and above\u2014noxious stimulus causes severe hypertension, treat by removing stimulus), pressure ulcers, UTIs, respiratory complications, heterotopic ossification, osteoporosis.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

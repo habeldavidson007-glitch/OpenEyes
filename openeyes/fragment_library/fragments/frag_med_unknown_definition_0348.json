@@ -14,9 +14,10 @@
   "content": "When and how to order genomic testing. Testing indications: metastatic/unresectable disease (NCCN recommends for most solid tumors); recurrent disease; rare cancers with limited standard options; consideration for tumor-agnostic therapies; clinical trial eligibility. Sample requirements: adequate tumor cellularity (>20%); FFPE tissue preferred; fresh frozen for research; liquid biopsy if tissue unavailable or inadequate. Turnaround time: 2-4 weeks for most commercial panels. Interpretation challenges: distinguishing driver from passenger mutations; clonal hematopoiesis of indeterminate potential (CHIP) causing false positives in liquid biopsy; variants of uncertain significance (VUS) should not guide treatment. Incidental germline findings: 10-15% of somatic tests reveal potential germline mutations (BRCA1/2, Lynch syndrome genes, TP53, etc.); genetic counseling referral required for confirmed/suspected germline findings. Re-testing at progression identifies resistance mechanisms (EGFR C797S, ALK G1202R, KRAS G12C secondary mutations). Cost and reimbursement vary by payer and indication.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/35678901/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

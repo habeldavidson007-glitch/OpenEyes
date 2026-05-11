@@ -12,8 +12,9 @@
   ],
   "content": "Treatment depends on etiology. For exogenous: gradual taper of glucocorticoid if clinically feasible. Cushing disease (pituitary): transsphenoidal surgical resection first-line (remission 60-90% for microadenomas); repeat surgery or radiation therapy for persistent/recurrent disease; medical therapy as bridge or long-term if surgery contraindicated/unsuccessful. Ectopic ACTH: resect tumor if localized; if metastatic, medical cortisol suppression plus oncologic treatment. Adrenal causes: unilateral adrenalectomy for adenoma/carcinoma; bilateral adrenalectomy for bilateral hyperplasia (requires lifelong glucocorticoid and mineralocorticoid replacement). Medical therapies inhibit cortisol synthesis: ketoconazole (hepatotoxicity monitoring), metyrapone, osilodrostat, mitotane (adrenal carcinoma); mifepristone (glucocorticoid receptor antagonist) for hyperglycemia control. Pasireotide (somatostatin analog) for Cushing disease. Bilateral adrenalectomy definitive but causes permanent adrenal insufficiency and risk of Nelson syndrome (pituitary tumor growth).",
   "source": "https://pubmed.ncbi.nlm.nih.gov/33985611/",
-  "credibility_class": "peer_reviewed_guideline",
+  "credibility_class": "clinical_guideline",
   "year": 2024,
   "reasoning_role": "definition",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "peer_reviewed_guideline"
 }

@@ -13,9 +13,10 @@
   "content": "Phase IV trials and post-marketing surveillance occur after regulatory approval, monitoring drug safety and effectiveness in real-world clinical practice. These studies can be required by regulators (post-marketing requirements, PMRs) or initiated by manufacturers (post-marketing commitments, PMCs). Phase IV evaluates long-term safety, rare adverse events not detected in pre-approval trials, effectiveness in broader populations, optimal use patterns, and comparative effectiveness versus other treatments. Pharmacovigilance systems continuously collect and analyze adverse event reports from healthcare providers, patients, and literature.",
   "source": "fda.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

@@ -11,7 +11,8 @@
   "reasoning_role": "definition",
   "content": "Rt estimation methods include: EpiEstim package using incidence data and serial interval distribution, renewal equation approaches, or Bayesian hierarchical models. Key challenges: right-censoring of recent data, underreporting, changing testing patterns, and importation cases. Rt should be interpreted with credible intervals\u2014wide intervals indicate uncertainty. Subnational Rt estimates reveal geographic heterogeneity. Rt based on deaths lags transmission by 2-4 weeks; case-based Rt is timelier but sensitive to testing changes. Effective Rt monitoring requires consistent case definitions and stable testing capacity.",
   "source": "Eurosurveillance, CDC MMWR surveillance guidelines",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

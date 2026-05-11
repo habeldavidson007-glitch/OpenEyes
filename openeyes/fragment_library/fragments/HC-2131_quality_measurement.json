@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Healthcare quality measurement follows Donabedian's framework: (1) Structure - characteristics of care setting (staffing ratios, board certification rates, technology availability); (2) Process - what providers do (medication reconciliation, timely antibiotics, screening rates); (3) Outcomes - patient health results (mortality, complications, functional status, patient-reported outcomes). Process measures are easier to attribute to provider actions but may not correlate with outcomes. Outcome measures require risk adjustment for case mix but better reflect patient experience. CMS Hospital Compare reports >100 measures across mortality, complications, readmissions, patient experience, and timely/effective care domains.",
   "source": "cms.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

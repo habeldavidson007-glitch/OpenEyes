@@ -14,9 +14,10 @@
   "content": "Diagnosis by dual-energy X-ray absorptiometry (DEXA) of lumbar spine and hip. WHO criteria based on T-score (comparison to young adult mean): normal \u2265-1.0, osteopenia (low bone mass) -1.0 to -2.5, osteoporosis \u2264-2.5. Z-score (age-matched) used in premenopausal women, men <50; Z-score \u2264-2.0 suggests secondary cause. FRAX tool estimates 10-year fracture risk using clinical risk factors \u00b1 femoral neck BMD; treatment considered if 10-year hip fracture risk \u22653% or major osteoporotic fracture risk \u226520% (US thresholds). Indications for DEXA: women \u226565, men \u226570, younger postmenopausal women/adults 50-69 with risk factors, adults with fragility fracture, conditions/medications causing bone loss. Vertebral imaging (VFA or X-ray) if height loss, kyphosis, or suspected vertebral fracture. Laboratory evaluation to exclude secondary causes: CBC, CMP, calcium, phosphorus, 25-OH vitamin D, TSH, PTH, testosterone (men), celiac screen, SPEP/UPEP if indicated.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985615/",
-  "credibility_class": "peer_reviewed_guideline",
+  "credibility_class": "clinical_guideline",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "peer_reviewed_guideline"
 }

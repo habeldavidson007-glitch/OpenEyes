@@ -11,7 +11,8 @@
   "reasoning_role": "latest_data",
   "content": "Nanomedicine Formulations - recent technological advances, emerging platforms, industry trends",
   "source_url": "https://www.fda.gov/drugs",
-  "credibility_class": "peer_reviewed",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2026,
-  "source": "FDA"
+  "source": "FDA",
+  "_original_credibility_class": "peer_reviewed"
 }

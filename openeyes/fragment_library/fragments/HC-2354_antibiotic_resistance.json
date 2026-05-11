@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Antibiotic resistance occurs when bacteria evolve mechanisms to withstand antimicrobial drugs. The ESKAPE pathogens (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, Enterobacter species) represent the leading causes of multidrug-resistant infections globally. Resistance mechanisms include: enzymatic degradation (beta-lactamases), target modification (altered penicillin-binding proteins), efflux pumps that expel antibiotics, and reduced membrane permeability. Horizontal gene transfer via plasmids, transposons, and integrons accelerates spread between bacterial species.",
   "source": "pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2354",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

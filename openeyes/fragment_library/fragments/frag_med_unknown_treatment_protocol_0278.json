@@ -13,9 +13,10 @@
   "content": "Renal dose adjustment strategies: reduce individual dose while maintaining frequency (gentamicin); extend dosing interval while maintaining dose (vancomycin); or both. CrCl-based dosing guidelines available in prescribing information. For CrCl 30-50: typically 50-75% of normal dose; CrCl 10-30: 25-50% of normal dose; CrCl <10: avoid or use minimal doses with monitoring. Dialysis considerations: schedule post-dialysis dosing for dialyzable drugs (aminoglycosides, vancomycin); supplemental doses needed after dialysis. Avoid nephrotoxic combinations (NSAIDs + ACE inhibitors + diuretics = triple whammy). Metformin: reduce dose if eGFR 30-45; contraindicated <30. DOACs: apixaban safest in CKD; avoid dabigatran if CrCl <30.",
   "source": "nih.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2025,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

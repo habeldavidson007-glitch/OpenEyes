@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Disease surveillance systems systematically collect, analyze, and disseminate health data for public health action. Passive surveillance relies on routine reporting from healthcare providers (e.g., notifiable disease reports)\u2014cost-effective but suffers from underreporting. Active surveillance involves proactive case-finding through regular outreach to providers or laboratories\u2014more complete but resource-intensive. Sentinel surveillance monitors specific sites or populations to detect trends (e.g., influenza-like illness networks). Syndromic surveillance uses pre-diagnostic data (ER chief complaints, OTC medication sales) for early outbreak detection.",
   "source": "CDC surveillance guidelines, WHO Global Outbreak Alert and Response Network",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

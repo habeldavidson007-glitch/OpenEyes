@@ -14,9 +14,10 @@
   "content": "Dementia is a syndrome of progressive cognitive decline interfering with daily functioning, affecting ~10% of those >65 years, ~30% >85 years. Major types: Alzheimer's disease (60-80%, memory-predominant early, amyloid/tau pathology), vascular dementia (20%, stepwise decline, executive dysfunction prominent, cerebrovascular disease on imaging), Lewy body dementia (LBD, 5-10%, visual hallucinations, parkinsonism, fluctuating cognition, REM sleep behavior disorder, alpha-synuclein pathology), frontotemporal dementia (FTD, 5-10%, behavioral variant\u2014disinhibition, apathy, loss of empathy; or primary progressive aphasia\u2014language predominant; tau or TDP-43 pathology). Mixed dementia (AD + vascular) common in elderly. Reversible causes ('treatable dementias'): normal pressure hydrocephalus, B12 deficiency, hypothyroidism, depression ('pseudodementia'), medication effects (anticholinergics, benzodiazepines), sleep apnea, neurosyphilis, HIV.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }
