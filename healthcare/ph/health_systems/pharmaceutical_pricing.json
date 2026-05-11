@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_pharm_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["pharmaceutical pricing", "reference pricing", "PBM", "negotiation"],
+    "reasoning_role": "definition",
+    "content": "Pharmaceutical pricing mechanisms vary globally: (1) External reference pricing - prices benchmarked against other countries (most EU nations); (2) Internal reference pricing - drugs grouped by therapeutic class with common reimbursement level; (3) Price-volume agreements - rebates if sales exceed thresholds; (4) Free pricing with negotiation - US system where PBMs negotiate confidential rebates; (5) Government price controls - direct setting of maximum prices. Pharmacy Benefit Managers (PBMs) in the US act as intermediaries between manufacturers, insurers, and pharmacies, negotiating rebates (often 20-50% of list price) but criticized for opaque practices and favoring high-list-price drugs.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_pharm_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["pharmaceutical pricing", "reform", "Medicare negotiation", "policy"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Pharmaceutical pricing reforms include: (1) Direct government negotiation - US Medicare gained limited negotiation authority under Inflation Reduction Act (2022), targeting 10 high-spend drugs initially; (2) International reference pricing proposals - indexing US prices to OECD averages; (3) PBM reform - banning spread pricing, requiring pass-through of rebates; (4) Value-based pricing - linking payment to outcomes (e.g., refund if drug doesn't work); (5) Compulsory licensing - allowing generic production when prices excessive (rarely used in high-income countries). The US Inflation Reduction Act also caps insulin at $35/month for Medicare beneficiaries and limits out-of-pocket costs to $2,000 annually starting 2025.",
+    "source": "fda.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_pharm_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["pharmaceutical pricing", "comparison", "affordability", "access"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Drug price comparisons reveal stark differences: insulin costs ~$300/vial in US vs $30-80 in Canada/Europe; cancer immunotherapies $150,000-200,000/year in US vs 30-50% lower elsewhere. US pharmaceutical spending per capita ($1,400) is 2-3x higher than other high-income countries despite similar utilization. Factors driving US prices: patent evergreening (minor modifications extending exclusivity), delayed generic entry (pay-for-delay settlements), lack of price negotiation historically, and PBM rebate structures incentivizing high list prices. The WHO estimates 1.3 billion people globally cannot access essential medicines due to cost, with cancer drugs particularly unaffordable even in high-income countries.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

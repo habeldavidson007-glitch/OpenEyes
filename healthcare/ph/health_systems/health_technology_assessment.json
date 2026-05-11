@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_hta_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["health technology assessment", "QALY", "cost-effectiveness", "NICE"],
+    "reasoning_role": "definition",
+    "content": "Health Technology Assessment (HTA) is a systematic evaluation of properties, effects, and impacts of health technologies (drugs, devices, procedures) to inform policy decisions. The UK's NICE (National Institute for Health and Care Excellence) pioneered using Quality-Adjusted Life Years (QALYs) to measure cost-effectiveness. A QALY combines quantity and quality of life, where 1 QALY equals one year in perfect health. NICE typically uses a threshold of £20,000-30,000 per QALY gained for recommending treatments. HTA considers clinical effectiveness, cost-effectiveness, ethical considerations, and impact on health inequalities.",
+    "source": "nice.org.uk",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_hta_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["health technology assessment", "decision making", "pricing", "reimbursement"],
+    "reasoning_role": "treatment_protocol",
+    "content": "HTA process follows standardized steps: (1) Scope definition - identify population, comparators, outcomes; (2) Systematic evidence review - clinical trials, observational studies; (3) Economic modeling - decision trees, Markov models projecting lifetime costs/outcomes; (4) Uncertainty analysis - sensitivity analyses, value of information; (5) Stakeholder consultation - patients, clinicians, manufacturers; (6) Appraisal committee decision. NICE's methods require intention-to-treat analysis, appropriate comparators (current standard care), and NHS perspective for costs. For end-of-life treatments, higher thresholds may apply. Managed entry agreements (price discounts, outcome-based payments) enable access when uncertainty is high.",
+    "source": "nice.org.uk",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_hta_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["health technology assessment", "QALY calculation", "ICER", "interpretation"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Cost-effectiveness is determined by the Incremental Cost-Effectiveness Ratio (ICER): (Cost_new - Cost_old) / (QALY_new - QALY_old). An ICER below the threshold indicates good value. QALYs are calculated by multiplying time spent in a health state by its utility weight (0=death, 1=perfect health), derived from instruments like EQ-5D or SF-6D. Criticisms of QALYs include: discrimination against disabled people (lower baseline utility), ageism (older people have fewer life-years to gain), and difficulty capturing caregiver burden. Alternative metrics include Disability-Adjusted Life Years (DALYs) used in global health, and Equal Value of Life Years Gained (evLYG) proposed in the US to avoid QALY limitations.",
+    "source": "nice.org.uk",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

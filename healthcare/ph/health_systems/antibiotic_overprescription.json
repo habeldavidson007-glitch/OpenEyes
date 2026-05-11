@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_abx_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["antibiotic overprescription", "antimicrobial resistance", "stewardship", "inappropriate use"],
+    "reasoning_role": "definition",
+    "content": "Antibiotic overprescription is a major public health threat: 30-50% of antibiotic use in humans is unnecessary or inappropriate. Common scenarios: viral respiratory infections (colds, flu, bronchitis) where antibiotics have no benefit; unnecessarily broad-spectrum agents when narrow would suffice; excessive duration (7 days when 3-5 adequate); agricultural use (70% of US antibiotics sold for livestock). Consequences include: Clostridioides difficile infection (500,000 cases/year US, 29,000 deaths), adverse drug reactions, microbiome disruption linked to obesity/allergies, and antimicrobial resistance (AMR). AMR causes 2.8 million infections and 35,000 deaths annually in the US, projected to cause 10 million deaths globally by 2050 without intervention.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_abx_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["antibiotic overprescription", "stewardship interventions", "audit and feedback", "diagnostic stewardship"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Antibiotic stewardship interventions that work: (1) Audit and feedback - prospective review with prescriber feedback reduces inappropriate use 20-40%; (2) Clinical decision support - EHR alerts for duplicate therapy, renal dosing, culture follow-up; (3) Delayed prescribing - 'wait-and-see' prescriptions for otitis media, sinusitis reducing fill rates 50-70%; (4) Diagnostic stewardship - procalcitonin testing to guide antibiotic discontinuation in respiratory infections (reduces duration 2-3 days); (5) Public education - campaigns like CDC's 'Be Antibiotics Aware' reducing patient expectations; (6) Accountability - designating stewardship leaders, tracking/prescribing metrics. Outpatient stewardship reduced antibiotic prescribing for acute respiratory infections from 50% to 35% over 10 years. Inpatient programs show 20-30% reduction in antibiotic use without worse outcomes.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_abx_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["antibiotic overprescription", "measurement", "appropriate use criteria", "resistance patterns"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Measuring appropriate antibiotic use: (1) Outpatient metrics - % of URI visits with antibiotics (target <35%), % of strep pharyngitis with testing before prescribing (target >90%); (2) Inpatient metrics - days of therapy per 1,000 patient-days, % compliance with surgical prophylaxis guidelines (stop within 24 hours); (3) Resistance surveillance - CDC's AR Isolate Bank tracks resistance patterns; (4) Peer comparison - facility-level prescribing compared to regional/national benchmarks. High-performing systems achieve: <25% antibiotic prescribing for viral URIs, >95% guideline-concordant surgical prophylaxis, <400 days of therapy/1,000 patient-days. Regional variation persists: some US states have 2x higher prescribing rates than others despite similar disease burden, suggesting practice pattern rather than patient need drives variation.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

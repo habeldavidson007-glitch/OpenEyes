@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_pc_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["primary care", "gatekeeper", "continuity", "comprehensive care"],
+    "reasoning_role": "definition",
+    "content": "Primary care is defined by four attributes: (1) First contact - accessible entry point for new health problems; (2) Continuity - ongoing relationship with a provider over time; (3) Comprehensiveness - addressing most health needs including prevention, acute care, and chronic disease management; (4) Coordination - integrating care across specialists and settings. Gatekeeper systems require primary care referral for specialist access (UK, Netherlands, Canada), while open-access systems allow direct specialist consultation (US, Germany). Primary care physician density ranges from 0.5-1.5 per 1,000 population globally, with higher densities associated with better health outcomes.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_pc_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["primary care", "strengthening", "team-based care", "medical home"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Primary care strengthening strategies include: (1) Patient-Centered Medical Home (PCMH) model - team-based care with care coordinators, extended hours, care management for complex patients; (2) Panel management - proactive outreach for preventive services and chronic disease monitoring; (3) Integrated behavioral health - co-located mental health providers addressing depression, anxiety, substance use; (4) Community health workers - extending reach for underserved populations; (5) Payment reform - per-member-per-month care management fees alongside visit-based payments. Studies show PCMH implementation reduces ED visits by 15-20%, hospitalizations by 10-15%, and improves preventive service delivery.",
+    "source": "ahrq.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_pc_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["primary care", "outcomes", "evidence", "population health"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Evidence for primary care effectiveness is robust: Countries with stronger primary care orientation have 20-30% lower all-cause mortality, 15-25% lower cardiovascular mortality, and better self-rated health. Within countries, regions with higher primary care physician density show lower rates of low birth weight, asthma hospitalizations, and diabetes complications. Continuity of care (seeing same provider >75% of visits) associated with 25% lower mortality, 20% fewer ED visits, and better medication adherence. The 'primary care effect' persists after adjusting for socioeconomic factors, suggesting independent contribution through early detection, coordinated management, and trust-based relationships enabling behavior change.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_ehr_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["electronic health records", "EHR", "interoperability", "health IT"],
+    "reasoning_role": "definition",
+    "content": "Electronic Health Records (EHRs) are digital versions of patient charts containing: demographics, problem lists, medications, allergies, immunizations, lab results, imaging reports, clinical notes, and order entry. Key functions: (1) Clinical documentation - structured and free-text notes; (2) Computerized provider order entry (CPOE) - reducing handwriting errors; (3) Clinical decision support - drug interaction alerts, preventive care reminders; (4) e-Prescribing - direct transmission to pharmacies; (5) Patient portals - access to records, messaging, appointment scheduling. US EHR adoption reached 96% of hospitals and 88% of office-based physicians by 2021 following HITECH Act incentives ($30+ billion). However, interoperability remains limited despite standards like HL7 FHIR.",
+    "source": "healthit.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_ehr_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["electronic health records", "optimization", "burnout", "usability"],
+    "reasoning_role": "treatment_protocol",
+    "content": "EHR optimization strategies address documented burdens: (1) Documentation improvement - scribes (virtual or in-person), voice recognition, template optimization reducing physician documentation time by 1-2 hours/day; (2) Inbox management - team-based routing, standing orders for common requests, limiting patient portal message volume; (3) Alert optimization - reducing alert fatigue by suppressing low-value alerts (from 50-100/day to 10-20 high-priority); (4) Interoperability advancement - TEFCA framework enabling nationwide exchange, FHIR APIs for app integration; (5) Usability improvements - specialty-specific workflows, reduced clicks for common tasks. Physicians spend 2:1 ratio of EHR time to face-to-face time (6 hours EHR for 4 hours patient care), contributing to burnout. Well-optimized EHRs show 20-30% reduction in documentation time.",
+    "source": "ahrq.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_ehr_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["electronic health records", "benefits", "harms", "measurement"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "EHR impact assessment shows mixed results: Benefits - medication error reduction 50-80%, preventive service delivery improvement 10-20%, care coordination through information sharing, population health management capabilities, research data availability. Harms/limitations - clinician burnout (40-50% prevalence), alert fatigue leading to missed critical warnings, copy-paste errors propagating inaccurate information, cybersecurity vulnerabilities (healthcare has highest ransomware rates), digital divide limiting patient portal use. Cost-benefit analyses show $30,000-50,000 per physician in implementation costs with 3-5 year ROI through billing improvements, reduced transcription, and avoided duplicate testing. Interoperability gaps persist: only 30-40% of providers can electronically find/receive patient data from outside organizations.",
+    "source": "healthit.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

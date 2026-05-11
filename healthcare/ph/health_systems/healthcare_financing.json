@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_fin_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["healthcare financing", "Bismarck", "Beveridge", "health systems"],
+    "reasoning_role": "definition",
+    "content": "Healthcare financing models are categorized into four main types: (1) Bismarck model - social health insurance funded by employer/employee payroll contributions, with multiple non-profit sickness funds (Germany, France, Japan); (2) Beveridge model - tax-funded national health service with government provision (UK, Spain, Nordic countries); (3) National Health Insurance - single-payer combining Beveridge funding with private delivery (Canada, South Korea, Taiwan); (4) Out-of-pocket model - no organized financing, patients pay directly (most low-income countries). Each model has distinct implications for equity, efficiency, and access.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_fin_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["healthcare financing", "reform", "policy", "coverage"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Health system reform toward universal coverage typically follows a pathway: (1) Consolidate fragmented insurance schemes to increase risk pooling; (2) Expand mandatory enrollment through employment-based or residence-based mechanisms; (3) Increase government subsidies for vulnerable populations; (4) Reduce benefit package exclusions progressively; (5) Shift from fee-for-service to capitation or DRG payments to control costs. Germany's 2009 reform created a central health fund redistributing revenues across sickness funds. The Netherlands' 2006 reform mandated private insurance with risk equalization. Evidence shows multi-payer Bismarck systems can achieve equity comparable to single-payer through strong regulation and risk adjustment.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_fin_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["healthcare financing", "comparison", "performance", "metrics"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Healthcare financing systems are evaluated on three criteria: (1) Financial protection - measured by catastrophic expenditure incidence and impoverishment rates (Bismarck/Beveridge systems <5% vs out-of-pocket systems >30%); (2) Risk pooling - assessed by pool size and fragmentation (single national pools most efficient); (3) Progressivity - whether financing burden falls disproportionately on wealthy (tax-based systems most progressive, out-of-pocket least). OECD data shows per capita spending varies from $400-800 in Bismarck countries to $3,000-5,000 in US hybrid system, with Beveridge countries achieving similar outcomes at lower cost. Administrative costs range from 2-4% in single-payer to 15-25% in multi-payer private insurance systems.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

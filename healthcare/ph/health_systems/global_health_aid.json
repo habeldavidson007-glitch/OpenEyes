@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_aid_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["global health aid", "development assistance", "vertical programs", "horizontal programs"],
+    "reasoning_role": "definition",
+    "content": "Global health development assistance for health (DAH) totaled $43 billion in 2022, with major donors including US ($13B via PEPFAR, USAID), EU institutions, UK, Germany, and Gates Foundation ($5B annually). Aid approaches: (1) Vertical programs - disease-specific initiatives (PEPFAR for HIV, Global Fund for HIV/TB/malaria, Gavi for vaccines) with dedicated funding streams and implementation structures; (2) Horizontal programs - strengthening overall health systems (workforce, infrastructure, supply chains); (3) Hybrid approaches - using vertical funding to build horizontal capacity. Criticisms of vertical programs include fragmentation, parallel systems, brain drain from public sector, and sustainability concerns. However, PEPFAR is credited with saving 25 million lives and preventing 5+ million infant HIV infections since 2003.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_aid_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["global health aid", "effectiveness", "country ownership", "alignment"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Improving global health aid effectiveness requires: (1) Country ownership - aligning with national health strategies rather than donor priorities; (2) Harmonization - donors coordinating to reduce transaction costs (Sector Wide Approaches - SWAps); (3) Use of country systems - channeling funds through government budgets when governance adequate; (4) Focus on results - measurable outcomes over inputs; (5) Mutual accountability - transparent reporting by both donors and recipients. Paris Declaration (2005) and Accra Agenda (2008) established these principles, but implementation remains limited (<30% of aid uses country systems). Successful examples: Rwanda's health system strengthening through pooled donor funds achieving >90% immunization coverage and 60% reduction in child mortality 2000-2015; Thailand's universal coverage achieved with minimal external aid through domestic financing.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_aid_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["global health aid", "impact evaluation", "cost-effectiveness", "sustainability"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Health aid impact assessment shows mixed results: Successful areas - vaccination campaigns (Gavi estimated to prevent 15 million deaths by 2030), HIV treatment scale-up (PEPFAR supporting 20 million on ART), malaria control (bed nets reducing child mortality 20%). Limited success areas - maternal mortality (slow progress despite investment), health system strengthening (difficult to attribute outcomes), sustainability after aid withdrawal. Cost-effectiveness varies widely: bed nets $50-100 per life-year saved, ART $300-500 per life-year in low-income settings, versus some health system investments lacking clear metrics. Aid dependency concerns: Sub-Saharan African countries receive 20-50% of health funding from external sources, creating vulnerability to donor priority shifts. Transition planning essential as countries graduate from low-income status.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

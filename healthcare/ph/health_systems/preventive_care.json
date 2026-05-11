@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_prev_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["preventive care", "screening", "vaccination", "cost-effectiveness"],
+    "reasoning_role": "definition",
+    "content": "Preventive care encompasses three levels: (1) Primary prevention - preventing disease onset (vaccination, smoking cessation, healthy diet); (2) Secondary prevention - early detection before symptoms (cancer screening, blood pressure monitoring, lipid screening); (3) Tertiary prevention - preventing complications in established disease (diabetes foot care, cardiac rehabilitation). USPSTF grades recommendations A (strongly recommended) through D (recommended against), with I for insufficient evidence. Cost-effectiveness varies widely: childhood vaccination ($5-50/QALY), colorectal cancer screening ($5,000-20,000/QALY), while some preventive interventions exceed treatment cost-effectiveness.",
+    "source": "uspreventiveservicestaskforce.org",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_prev_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["preventive care", "implementation", "barriers", "strategies"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Increasing preventive care utilization requires multi-level strategies: (1) System-level - electronic health record reminders, standing orders enabling nurses to vaccinate without physician order, patient registries tracking due services; (2) Provider-level - audit/feedback on screening rates, default ordering for eligible patients; (3) Patient-level - outreach calls/texts, reducing out-of-pocket costs (ACA eliminated cost-sharing for USPSTF A/B recommendations), navigation assistance; (4) Community-level - pharmacy-based vaccination, mobile screening units, workplace wellness programs. Multifaceted interventions increase colorectal cancer screening by 20-30 percentage points versus single strategies (10-15 points).",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_prev_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["preventive care", "value", "overdiagnosis", "appropriate use"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Preventive care value assessment considers: (1) Number needed to screen/treat - mammography NNS=500-1,000 to prevent one breast cancer death over 10 years; (2) Overdiagnosis risk - PSA screening detects many indolent prostate cancers leading to unnecessary treatment harms; (3) Age appropriateness - colonoscopy screening generally stops at 75-85 depending on comorbidities; (4) Risk stratification - lung cancer screening only for 50-80 year olds with ≥20 pack-year smoking history. Low-value preventive services include routine vitamin D screening in asymptomatic adults, annual ECGs in low-risk patients, and ovarian cancer screening in average-risk women. Choosing Wisely campaign identifies 80+ preventive services lacking evidence.",
+    "source": "uspreventiveservicestaskforce.org",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]
