@@ -4,57 +4,38 @@
 __pycache__/
 *.o
 *.obj
-*.so
-*.a
-*.dll
-*.exe
-*.out
+dist/
+build/
+target/
 
 # Dependencies
 .venv/
 venv/
-env/
-pip-log.txt
-pipenv.lock
-requirements.txt.bak
+node_modules/
+.mypy_cache/
+.pytest_cache/
+.gradle/
 
 # Logs and temp files
 *.log
 *.tmp
 *.swp
-*.swo
-*.bak
-*.orig
-*~
 
-# Environment variables
+# Environment
 .env
 .env.local
 .env.*
-!env.sample
-!env.example
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-.coverage.*
-
-# Testing
-.pytest_cache/
-.mypy_cache/
-.tox/
-nosetests.xml
-
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
-MANIFEST
 
 # Editors
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# System files
+.DS_Store
+Thumbs.db
 ```
