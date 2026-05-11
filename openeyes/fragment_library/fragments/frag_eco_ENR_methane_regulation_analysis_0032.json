@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_ENR_methane_regulation_analysis_0032",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "tags": [
+    "methane_regulation",
+    "policy"
+  ],
+  "reasoning_role": "definition",
+  "content": "Additional methane_regulation analysis variant 2.",
+  "source": "EPA",
+  "source_url": "https://epa.gov/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "last_verified": "2026-05-11"
+}
