@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_trade_finance_def_015",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "trade_finance",
+    "letters_of_credit",
+    "global_trade",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Trade finance: Instruments facilitating international commerce. Letters of credit (LCs) guarantee payment upon document presentation. Banker's acceptances, export credit agencies, factoring also used. Trade finance gap: $2.5T annually, concentrated in SMEs, developing countries. ICC estimates 80-90% of trade uses some form of financing.",
+  "source": "icc_banking_commission",
+  "source_url": "https://iccwbo.org/",
+  "credibility_class": "industry_organization",
+  "year": 2024,
+  "weight": 0.93
+}

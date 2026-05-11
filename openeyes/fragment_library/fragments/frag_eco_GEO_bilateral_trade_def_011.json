@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_bilateral_trade_def_011",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "bilateral_trade",
+    "fta",
+    "trade_agreements",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Bilateral trade agreements: Treaties between two countries reducing trade barriers. Typical coverage: tariff elimination schedules, rules of origin, services, investment, IP, labor/environmental standards. Examples: USMCA, EU-Japan EPA, Australia-UK FTA. Average negotiation time: 3-7 years.",
+  "source": "ustr_government",
+  "source_url": "https://ustr.gov/trade-agreements/free-trade-agreements",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.94
+}

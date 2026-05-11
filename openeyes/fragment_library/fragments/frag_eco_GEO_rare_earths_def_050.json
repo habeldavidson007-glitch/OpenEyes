@@ -1,0 +1,18 @@
+{
+  "id": "frag_eco_GEO_rare_earths_def_050",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "rare_earth_dominance",
+    "trade_policy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Rare earth elements (REE): 17 elements critical for magnets, defense, electronics. China 60% mining, 85% separation capacity. 2010 export restrictions shocked markets. MP Materials (US), Lynas (Australia) rebuilding non-China capacity. Substitution research ongoing. Strategic stockpiles maintained by major economies.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.93
+}

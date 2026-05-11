@@ -1,0 +1,18 @@
+{
+  "id": "frag_eco_GEO_cbam_counter_045",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "cbam_criticism",
+    "trade_policy",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "CBAM critiques: Protectionism disguised as climate policy. Disproportionate impact on developing countries. Complex emissions verification. Risk of trade retaliation. May violate WTO non-discrimination principles. Alternative: international carbon price floor. EU defending as necessary for climate ambition.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "think_tank",
+  "year": 2024,
+  "weight": 0.89
+}
