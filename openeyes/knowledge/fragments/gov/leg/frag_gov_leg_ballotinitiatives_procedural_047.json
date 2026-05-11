@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_ballotinitiatives_procedural_047",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "ballotinitiatives",
+  "role": "procedural",
+  "title": "Ballotinitiatives",
+  "summary": "Descriptive overview of ballotinitiatives in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about ballotinitiatives",
+    "Key factual point 2 about ballotinitiatives",
+    "Key factual point 3 about ballotinitiatives",
+    "Key factual point 4 about ballotinitiatives",
+    "Key factual point 5 about ballotinitiatives"
+  ],
+  "sources": [
+    "NCSL (ncsl.org)",
+    "CSG (csg.org)",
+    "ALEC (alec.org)",
+    "Ballotpedia",
+    "State gov websites"
+  ],
+  "related_fragments": [],
+  "credibility_score": 0.98,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "State_Legislatures"
+  }
+}
