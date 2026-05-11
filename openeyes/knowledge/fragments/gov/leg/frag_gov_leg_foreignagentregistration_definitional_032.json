@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_foreignagentregistration_definitional_032",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "foreignagentregistration",
+  "role": "definitional",
+  "title": "Foreignagentregistration",
+  "summary": "Descriptive overview of foreignagentregistration in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about foreignagentregistration",
+    "Key factual point 2 about foreignagentregistration",
+    "Key factual point 3 about foreignagentregistration",
+    "Key factual point 4 about foreignagentregistration",
+    "Key factual point 5 about foreignagentregistration"
+  ],
+  "sources": [
+    "Senate SOPR",
+    "FEC (fec.gov)",
+    "OpenSecrets.org",
+    "GAO",
+    "Brookings"
+  ],
+  "related_fragments": [],
+  "credibility_score": 0.98,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "Lobbying_Influence"
+  }
+}

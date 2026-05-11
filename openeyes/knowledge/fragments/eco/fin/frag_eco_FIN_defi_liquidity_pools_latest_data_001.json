@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_defi_liquidity_pools_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "defi",
+    "crypto",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "DeFi TVL peaked at $180B in November 2021, fell to $40B in 2023 bear market, recovered to $90B by 2024. Concentration increased\u2014top 10 protocols control 70% of TVL. Yield compression occurred as competition intensified, with sustainable APYs settling at 5-15% for major pools.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

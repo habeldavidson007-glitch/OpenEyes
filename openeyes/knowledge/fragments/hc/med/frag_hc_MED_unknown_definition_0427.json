@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0427",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "diabetes",
+    "metabolism",
+    "insulin resistance",
+    "hyperglycemia"
+  ],
+  "reasoning_role": "definition",
+  "content": "Type 2 diabetes mellitus (T2DM) is a chronic metabolic disorder characterized by insulin resistance and relative insulin deficiency, leading to hyperglycemia. Pathophysiology involves progressive beta-cell dysfunction alongside peripheral insulin resistance in muscle, liver, and adipose tissue. Genetic predisposition combined with environmental factors (obesity, sedentary lifestyle, aging) drives disease development. Diagnostic criteria: HbA1c \u22656.5%, fasting plasma glucose \u2265126 mg/dL, 2-hour OGTT \u2265200 mg/dL, or random glucose \u2265200 mg/dL with symptoms. T2DM accounts for 90-95% of all diabetes cases. Chronic hyperglycemia leads to microvascular (retinopathy, nephropathy, neuropathy) and macrovascular (coronary artery disease, stroke, peripheral arterial disease) complications.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/32804972/",
+  "credibility_class": "clinical_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "peer_reviewed_guideline"
+}

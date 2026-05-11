@@ -1,0 +1,21 @@
+{
+  "id": "hc_med_onc_ly_treat_001",
+  "tags": [
+    "oncology",
+    "lymphoma",
+    "treatment",
+    "chemotherapy",
+    "immunotherapy",
+    "CAR-T"
+  ],
+  "reasoning_role": "definition",
+  "content": "Treatment depends on type, stage, and risk. Classical HL: early stage - ABVD (doxorubicin, bleomycin, vinblastine, dacarbazine) x2-4 cycles + involved-site radiation; advanced stage - ABVD x6 cycles or A-AVD (brentuximab vedotin replaces bleomycin, ECHELON-1 trial); relapsed - salvage chemotherapy + autologous transplant; brentuximab vedotin or checkpoint inhibitors (nivolumab, pembrolizumab) for refractory. DLBCL: R-CHOP (rituximab, cyclophosphamide, doxorubicin, vincristine, prednisone) x6 cycles standard; Pola-R-CHP (polatuzumab) for high-risk (POLARIS); CNS prophylaxis for high-risk sites; CAR-T (axicabtagene, tisagenlecleucel, lisocabtagene) for relapsed/refractory. Follicular lymphoma: asymptomatic low-burden - observation; symptomatic/bulky - rituximab + chemotherapy (bendamustine, CHOP, CVP); rituximab maintenance; lenalidomide + rituximab alternative. Mantle cell: intensive regimens for fit young patients (cytarabine-containing) + autologous transplant; BTK inhibitors (ibrutinib, acalabrutinib, zanubrutinib) for relapsed. Marginal zone: rituximab \u00b1 chemotherapy; H. pylori eradication for gastric MALT lymphoma.",
+  "source": "https://www.nccn.org/guidelines",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

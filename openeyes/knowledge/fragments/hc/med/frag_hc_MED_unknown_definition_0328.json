@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0328",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "oncology",
+    "lymphoma",
+    "Hodgkin",
+    "non-Hodgkin",
+    "classification",
+    "B-cell",
+    "T-cell"
+  ],
+  "reasoning_role": "definition",
+  "content": "Lymphomas are malignancies of lymphocytes classified as Hodgkin lymphoma (HL) or non-Hodgkin lymphoma (NHL). Hodgkin lymphoma: characterized by Reed-Sternberg cells (CD30+, CD15+, PAX5 weak+); subtypes include classical HL (nodular sclerosis, mixed cellularity, lymphocyte-rich, lymphocyte-depleted) and nodular lymphocyte-predominant HL (NLPHL, CD20+, 'popcorn cells'). Non-Hodgkin lymphoma: diverse group (>60 subtypes). B-cell NHL (85%): diffuse large B-cell lymphoma (DLBCL, most common, aggressive), follicular lymphoma (indolent, t(14;18) BCL2), mantle cell lymphoma (t(11;14) cyclin D1, aggressive), marginal zone lymphoma (indolent), Burkitt lymphoma (t(8;14) MYC, very aggressive), CLL/SLL. T-cell NHL (15%): peripheral T-cell lymphoma NOS, anaplastic large cell lymphoma (ALCL, CD30+, ALK+ or ALK-), angioimmunoblastic T-cell lymphoma, cutaneous T-cell lymphoma (mycosis fungoides, S\u00e9zary syndrome).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36890123/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

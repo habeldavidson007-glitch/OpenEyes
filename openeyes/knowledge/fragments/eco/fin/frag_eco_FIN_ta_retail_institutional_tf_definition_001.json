@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_retail_institutional_tf_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "behavioral",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Retail traders predominantly use short timeframes (1-min to 1-hour) seeking quick profits. Institutions operate on longer timeframes (daily to monthly) executing strategic positions. This mismatch causes retail to misinterpret institutional accumulation as noise and institutional profit-taking as reversal. Retail gets chopped trying to trade institutional flows on incompatible timeframes.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

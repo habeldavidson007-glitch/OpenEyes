@@ -1,0 +1,19 @@
+{
+  "id": "FIN-125",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "fiscal_policy",
+    "government_spending",
+    "taxation",
+    "macroeconomics"
+  ],
+  "content": "Fiscal policy refers to the use of government spending and taxation to influence the economy. Unlike monetary policy which is controlled by central banks, fiscal policy is determined by elected governments through budget legislation. Expansionary fiscal policy involves increased government spending or reduced taxes to stimulate economic growth during recessions. Contractionary fiscal policy reduces spending or increases taxes to cool an overheating economy and control inflation. The effectiveness of fiscal policy depends on the multiplier effect\u2014how much economic activity is generated per dollar of government spending.",
+  "year": "2024",
+  "source": "IMF Fiscal Monitor",
+  "source_url": "https://www.imf.org/en/Publications/FM",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "international_institution",
+  "sector": "MAC"
+}

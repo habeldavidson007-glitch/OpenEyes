@@ -1,0 +1,33 @@
+{
+  "id": "gov_sub_votingrights_analytical_219",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "votingrights",
+  "role": "analytical",
+  "summary": "Descriptive overview of votingrights in substantive law: fundamental right, restrictions, Shelby County impact.",
+  "key_points": [
+    "fundamental right is a fundamental concept in constrights law.",
+    "Legal standards for votingrights are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine votingrights in litigation.",
+    "The doctrine of votingrights has evolved through Supreme Court precedents.",
+    "Understanding votingrights requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "US Constitution",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Civil Rights",
+    "Brennan Center"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_righttotravel_definitional_216",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

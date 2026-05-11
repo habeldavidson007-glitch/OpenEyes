@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_crypto_regulation_def_001",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "regulation",
+    "ethereum",
+    "definition",
+    "sec",
+    "crypto",
+    "bitcoin"
+  ],
+  "reasoning_role": "definition",
+  "content": "Cryptocurrency regulation varies globally. US approach: SEC treats many tokens as securities requiring registration; CFTC regulates bitcoin as commodity; FinCEN enforces AML/KYC rules; IRS taxes crypto as property. Key issues: Howey Test application to tokens, exchange registration, custody rules, stablecoin legislation, DeFi regulation, taxation treatment. EU implemented MiCA (Markets in Crypto-Assets) framework. Asia ranges from supportive (Singapore, Japan) to restrictive (China ban). Regulatory clarity viewed as necessary for institutional adoption but concerns exist about innovation impact.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/cryptocurrency",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.92,
+  "sector": "REG"
+}

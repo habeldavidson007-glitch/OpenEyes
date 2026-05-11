@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_backtesting_definition_10",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "survivorship_bias",
+    "technical_analysis",
+    "backtesting",
+    "definition",
+    "overfitting"
+  ],
+  "reasoning_role": "definition",
+  "content": "Backtesting evaluates strategies on historical data. Key pitfalls: survivorship bias (testing only current constituents), look-ahead bias (using future data), overfitting (curve-fitting parameters to past data). Proper backtesting requires: out-of-sample testing, walk-forward analysis, realistic transaction costs, slippage modeling. A strategy working in backtest may fail live due to regime changes, liquidity shifts, or market adaptation.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/b/backtesting.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

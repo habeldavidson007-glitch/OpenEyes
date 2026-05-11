@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_breakout_trading_counter_argument_08",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "breakout_trading",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "False breakouts vastly outnumber genuine breakouts in most markets. Whipsaws at key levels are common as stops are hunted. Breakout strategies have low win rates requiring large winners to compensate, which rarely materialize. Volume confirmation is unreliable; can be manipulated or misleading. Breakouts often reverse immediately, trapping late entrants. Range-bound markets punish breakout traders continuously. Successful breakout trading requires exceptional discipline and risk management most lack.",
+  "source": "Educational Resource",
+  "source_url": "https://www.traders.com/false-breakouts-study",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

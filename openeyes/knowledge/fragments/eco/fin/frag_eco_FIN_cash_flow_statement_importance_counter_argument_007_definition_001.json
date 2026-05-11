@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_cash_flow_statement_importance_counter_argument_007",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "free_cash_flow",
+    "price_to_fcf",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "While cash flow is king, Operating Cash Flow can be temporarily inflated by delaying payables or accelerating receivables (working capital management). Sustainable FCF must be analyzed over multi-year cycles to smooth out such tactical adjustments.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov/files/form10-k.pdf",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

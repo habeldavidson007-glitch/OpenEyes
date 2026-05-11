@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0465",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "spinal-cord-injury",
+    "diagnosis",
+    "ASIA-scale",
+    "MRI-spine",
+    "classification"
+  ],
+  "reasoning_role": "definition",
+  "content": "SCI diagnosis and classification uses ASIA (American Spinal Injury Association) Impairment Scale. Neurological exam: test 10 myotomes (C5-T1, L2-S1) for strength (0-5), 28 dermatomes for light touch and pinprick (0-2). Key muscles: C5 elbow flexors, C6 wrist extensors, C7 elbow extensors, C8 finger flexors, T1 finger abductors, L2 hip flexors, L3 knee extensors, L4 ankle dorsiflexors, L5 great toe extensors, S1 ankle plantarflexors. Sacral sparing (anal sensation, voluntary anal contraction) determines completeness. ASIA grades: A = complete (no sacral sparing), B = sensory incomplete, C = motor incomplete (<50% key muscles below injury have strength \u22653), D = motor incomplete (\u226550% key muscles \u22653), E = normal. Imaging: CT spine for bony injury/fractures; MRI for cord compression, edema, hemorrhage, ligamentous injury. Prognosis: incomplete injuries have better recovery potential; central cord syndrome often recovers ambulation; Brown-S\u00e9quard has best prognosis. SCIM (Spinal Cord Independence Measure) tracks functional outcomes.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

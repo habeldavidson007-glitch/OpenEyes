@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_binance_dominance_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto",
+    "market_structure",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Following 2023 DOJ settlement and CEO change, Binance market share declined from 60% to 45%. Competitors Coinbase, OKX, Bybit gained share. Decentralized exchanges captured 15% of spot volume, up from 5% in 2022. Market structure diversified but remains concentrated among top 5 venues.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

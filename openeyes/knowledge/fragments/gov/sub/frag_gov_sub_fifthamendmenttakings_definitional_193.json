@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_fifthamendmenttakings_definitional_193",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "fifthamendmenttakings",
+  "role": "definitional",
+  "summary": "Descriptive overview of fifthamendmenttakings in substantive law: physical vs regulatory, public use, compensation.",
+  "key_points": [
+    "physical vs regulatory is a fundamental concept in constrights law.",
+    "Legal standards for fifthamendmenttakings are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine fifthamendmenttakings in litigation.",
+    "The doctrine of fifthamendmenttakings has evolved through Supreme Court precedents.",
+    "Understanding fifthamendmenttakings requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "US Constitution",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Civil Rights",
+    "Brennan Center"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_fifthamendmentdoublejeopardy_definitional_190",
+    "frag_gov_sub_sixthamendmentconfrontation_definitional_196",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

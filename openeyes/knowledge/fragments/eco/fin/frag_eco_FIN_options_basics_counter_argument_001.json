@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_options_basics_counter_001",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "latest_data",
+    "options",
+    "derivatives",
+    "risk_management"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Options complexity creates risks for inexperienced investors. Time decay (theta) erodes option value, hurting buyers. Implied volatility changes dramatically affect prices independent of direction. Most retail option buyers lose money. Zero-day options (expiring same day) have surged, raising concerns about gambling-like behavior and potential market impacts from dealer hedging.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/options-market-20210618.html",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.95,
+  "sector": "REG"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_logicmodels_definitional_037",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "logicmodels",
+  "role": "definitional",
+  "title": "Logicmodels",
+  "summary": "Descriptive overview of logicmodels in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about logicmodels",
+    "Key factual point 2 about logicmodels",
+    "Key factual point 3 about logicmodels",
+    "Key factual point 4 about logicmodels",
+    "Key factual point 5 about logicmodels"
+  ],
+  "sources": [
+    "GAO (gao.gov)",
+    "CBO (cbo.gov)",
+    "OMB (omb.gov)",
+    "RAND",
+    "Campbell Collaboration"
+  ],
+  "related_fragments": [],
+  "credibility_score": 0.98,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "Policy_Evaluation"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_righttotravel_procedural_215",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "righttotravel",
+  "role": "procedural",
+  "summary": "Descriptive overview of righttotravel in substantive law: interstate migration, international travel restrictions.",
+  "key_points": [
+    "interstate migration is a fundamental concept in constrights law.",
+    "Legal standards for righttotravel are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine righttotravel in litigation.",
+    "The doctrine of righttotravel has evolved through Supreme Court precedents.",
+    "Understanding righttotravel requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "US Constitution",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Civil Rights",
+    "Brennan Center"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_righttoprivacy_definitional_212",
+    "frag_gov_sub_votingrights_definitional_218",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

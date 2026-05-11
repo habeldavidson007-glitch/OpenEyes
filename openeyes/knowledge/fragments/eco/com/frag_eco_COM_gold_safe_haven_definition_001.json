@@ -1,0 +1,20 @@
+{
+  "id": "frag_eco_COM_gold_safe_haven_definition_001",
+  "domain": "economy",
+  "subdomain": "COM",
+  "tags": [
+    "gold",
+    "safe haven",
+    "precious metals",
+    "crisis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Gold functions as a safe haven asset during periods of economic uncertainty, geopolitical tension, or market stress. Investors flock to gold because it has intrinsic value, limited supply, and historically maintains purchasing power when fiat currencies weaken. The metal's negative correlation with risk assets like equities makes it an effective portfolio diversifier.",
+  "source": "World Gold Council",
+  "source_url": "https://www.gold.org/goldhub/research/gold-as-a-safe-haven",
+  "credibility_class": "news_article",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

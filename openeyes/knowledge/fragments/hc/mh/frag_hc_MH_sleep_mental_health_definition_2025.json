@@ -1,0 +1,19 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "neuroscience",
+    "sleep",
+    "mental health",
+    "REM sleep"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sleep and mental health have a bidirectional relationship: psychiatric disorders disrupt sleep, and sleep disturbances increase psychiatric risk. REM sleep is crucial for emotional processing and memory consolidation; REM abnormalities occur in depression (shortened latency, increased density) and PTSD (nightmares, fragmented REM). Insomnia doubles depression risk and predicts relapse. Sleep deprivation can temporarily improve depression but worsens mania in bipolar disorder. Circadian rhythm disruption contributes to seasonal affective disorder and bipolar instability. Treating sleep problems (CBT-I for insomnia, CPAP for sleep apnea) often improves psychiatric symptoms. Sleep hygiene, regular schedules, and light therapy support mental health recovery.",
+  "source": "nimh.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2025",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

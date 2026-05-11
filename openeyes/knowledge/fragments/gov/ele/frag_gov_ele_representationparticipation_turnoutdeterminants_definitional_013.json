@@ -1,0 +1,29 @@
+{
+  "id": "frag_gov_ele_representationparticipation_turnoutdeterminants_definitional_013",
+  "domain": "gov",
+  "sector": "ele",
+  "category": "representationparticipation",
+  "topic": "Turnout determinants",
+  "topic_slug": "turnoutdeterminants",
+  "role": "definitional",
+  "summary": "Defines turnout determinants within electoral systems, describing registration barriers, competitiveness, weather, mandatory voting.",
+  "key_points": [
+    "Turnout determinants is a core concept in electoral system design.",
+    "Key characteristics include: registration barriers, competitiveness, weather, mandatory voting.",
+    "Scholars measure this concept using standardized indicators.",
+    "Variations exist across different democratic systems globally.",
+    "The concept is distinct from related electoral phenomena."
+  ],
+  "sources": [
+    "Freedom House (freedomhouse.org)",
+    "International IDEA (idea.int)",
+    "Inter-Parliamentary Union (ipu.org)",
+    "Brennan Center for Justice (brennancenter.org)",
+    "MIT Election Lab (electionlab.mit.edu)"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_compliant": true,
+  "related_fragments": [],
+  "last_updated": "2024-01-15",
+  "version": "1.0"
+}

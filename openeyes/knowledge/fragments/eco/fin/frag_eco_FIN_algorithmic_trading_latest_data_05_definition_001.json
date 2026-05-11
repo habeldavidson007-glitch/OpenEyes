@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_algorithmic_trading_latest_data_05",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "latest_data",
+    "technical_analysis",
+    "algorithmic_trading"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Algorithmic trading volume reached new highs in 2024, estimated at over 75% of equity trading. New SEC regulations proposed in early 2024 aim to increase algo trading transparency. Machine learning-based algos increasingly dominate, adapting to patterns faster than ever. The impact of algos on market structure and technical patterns remains an active research area.",
+  "source": "Educational Resource",
+  "source_url": "https://www.tradingview.com/ideas/algo-trading-patterns-2024",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

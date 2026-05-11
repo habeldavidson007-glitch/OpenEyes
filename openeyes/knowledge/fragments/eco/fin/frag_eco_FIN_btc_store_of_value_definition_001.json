@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_store_of_value_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "bitcoin",
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "The 'Digital Gold' thesis posits Bitcoin serves as a sovereign, censorship-resistant store of value due to its scarcity and durability.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

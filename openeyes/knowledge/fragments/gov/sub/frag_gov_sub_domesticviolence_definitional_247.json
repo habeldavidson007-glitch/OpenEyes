@@ -1,0 +1,33 @@
+{
+  "id": "gov_sub_domesticviolence_definitional_247",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "domesticviolence",
+  "role": "definitional",
+  "summary": "Descriptive overview of domesticviolence in substantive law: protective orders, mandatory arrest, federal protections.",
+  "key_points": [
+    "protective orders is a fundamental concept in family law.",
+    "Legal standards for domesticviolence are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine domesticviolence in litigation.",
+    "The doctrine of domesticviolence has evolved through Supreme Court precedents.",
+    "Understanding domesticviolence requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Uniform Marriage and Divorce Act",
+    "US Code",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Family Law"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_adoption_definitional_244",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

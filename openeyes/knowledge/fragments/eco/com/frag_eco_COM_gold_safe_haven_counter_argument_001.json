@@ -1,0 +1,22 @@
+{
+  "id": "frag_eco_COM_gold_safe_haven_counter_001",
+  "domain": "economy",
+  "subdomain": "COM",
+  "tags": [
+    "gold",
+    "safe haven",
+    "criticism",
+    "opportunity cost"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Gold's safe haven status is overstated. The metal produces no cash flow, pays no dividends or interest, and incurs storage costs. During many crisis periods, gold has failed to protect wealth in real terms. The 2013 gold crash (-28%) occurred despite ongoing monetary easing. Treasury Inflation-Protected Securities (TIPS) and diversified portfolios often outperform gold over long horizons while providing actual income.",
+  "source": "Bloomberg Analysis",
+  "source_url": "https://www.bloomberg.com/opinion/articles/gold-safe-haven-myth",
+  "credibility_class": "news_article",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [
+    "frag_eco_COM_gold_safe_haven_definition_001"
+  ],
+  "weight": 1.0
+}

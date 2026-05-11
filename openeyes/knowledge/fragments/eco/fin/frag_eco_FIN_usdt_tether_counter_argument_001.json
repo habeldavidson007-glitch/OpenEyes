@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_usdt_tether_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto",
+    "ethereum"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Despite skepticism, USDT has survived multiple bank crises and redemptions, proving resilience through market stress tests.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

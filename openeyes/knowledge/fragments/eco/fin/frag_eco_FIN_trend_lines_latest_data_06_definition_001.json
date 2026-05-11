@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_trend_lines_latest_data_06",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "trend_lines",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "In 2024, trend line analysis proved particularly relevant in the bond market, where the 10-year Treasury yield formed a clear ascending trend line from October 2023 lows. The break of this trend line in March 2024 signaled a significant shift in rate expectations. Tech stocks showed a multi-year uptrend line that was tested but held in the 2024 correction. Currency traders watched EUR/USD trend lines closely as ECB and Fed policy diverged.",
+  "source": "Educational Resource",
+  "source_url": "https://www.tradingview.com/chart/BTCUSD/trend-line-analysis-2024",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

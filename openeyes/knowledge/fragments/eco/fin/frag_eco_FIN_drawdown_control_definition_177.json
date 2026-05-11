@@ -1,0 +1,17 @@
+{
+  "id": "FIN-177",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "algorithmic_trading",
+    "drawdown control"
+  ],
+  "content": "Drawdown control mechanisms protect capital during losing streaks. Maximum drawdown limits trigger position reduction or strategy shutdown. Stop-loss orders limit per-trade losses but can be gamed by market makers hunting stops. Volatility-targeting adjusts position size inversely to recent volatility. Circuit breakers halt trading when daily losses exceed thresholds.",
+  "year": 2024,
+  "source": "Risk Management in Algorithmic Trading",
+  "source_url": "https://example.com/FIN-177",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
+}

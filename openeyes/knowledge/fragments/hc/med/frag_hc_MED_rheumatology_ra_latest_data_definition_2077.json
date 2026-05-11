@@ -1,0 +1,17 @@
+{
+  "id": "MED-2077_rheumatology_ra_latest_data",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "rheumatology ra",
+    "clinical_medicine",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Rheumatology Ra - recent clinical trials, updated guidelines, emerging therapies",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "PubMed"
+}

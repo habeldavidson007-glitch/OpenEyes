@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_quantitative_tightening_counter_005",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "quantitative_tightening",
+    "qt",
+    "monetary_policy",
+    "fed",
+    "balance_sheet",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Critics warn QT poses risks to financial stability and economic growth. Concerns include: (1) potential for market disruption if reduction proceeds too quickly; (2) interaction with fiscal policy as reduced Fed demand for Treasuries may raise government borrowing costs; (3) uncertainty about the appropriate endpoint\u2014how small the balance sheet should be; (4) risk of triggering a 'tantrum' episode similar to 2013 taper tantrum; (5) potential strain on bank reserves affecting repo markets and short-term funding; (6) asymmetric effects where QT may have stronger contractionary impact than QE's expansionary effect; and (7) complications from simultaneous interest rate increases. Some argue passive QT lacks the precision of active rate policy and may be unnecessary if rate policy is sufficiently restrictive.",
+  "source": "International Monetary Fund Working Papers",
+  "source_url": "https://www.imf.org/en/Publications/WP/Issues/2023/03/15/Quantitative-Tightening-Lessons-from-History-530847",
+  "credibility_class": "academic_research",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

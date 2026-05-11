@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hypertensive emergency",
+    "treatment",
+    "IV antihypertensives",
+    "BP targets"
+  ],
+  "reasoning_role": "definition",
+  "content": "Hypertensive emergency management: ICU admission, continuous BP monitoring (arterial line preferred), IV antihypertensives. General goal: reduce MAP by no more than 20-25% in first hour, then to 160/100-110 over next 2-6 hours, then gradual normalization over 24-48 hours. Exceptions: aortic dissection (SBP <120 within 20 minutes, HR <60), acute ischemic stroke (permissive HTN unless thrombolysis planned\u2014then <185/110), intracerebral hemorrhage (SBP 140-160), ACS (reduce myocardial oxygen demand). Preferred agents: nicardipine (calcium channel blocker\u2014titratable, cerebral/coronary vasodilation), clevidipine (ultra-short acting CCB), labetalol (combined alpha/beta blocker\u2014avoid in asthma, heart block), esmolol (short-acting beta-1 selective\u2014good for aortic dissection), nitroglycerin (venodilator\u2014preferred for ACS, pulmonary edema), nitroprusside (arterial/venous dilator\u2014avoid in renal impairment, risk of cyanide toxicity), fenoldopam (dopamine agonist\u2014renal vasodilation), hydralazine (unpredictable, reflex tachycardia\u2014avoid except in pregnancy). Avoid sublingual nifedipine (unpredictable, risk of stroke/MI).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35026997/",
+  "credibility_class": "guideline",
+  "year": 2021,
+  "id": "HC-2394",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

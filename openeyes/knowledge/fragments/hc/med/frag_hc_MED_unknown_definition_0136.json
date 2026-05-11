@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0136",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "clinical trial endpoints",
+    "surrogate endpoints",
+    "overall survival",
+    "progression-free survival"
+  ],
+  "reasoning_role": "definition",
+  "content": "Clinical trial endpoints are outcomes used to measure treatment effect. Surrogate endpoints are biomarkers or intermediate outcomes (e.g., tumor shrinkage, blood pressure, HbA1c) that substitute for direct measures of how patients feel, function, or survive. Clinical endpoints directly measure patient benefit (overall survival, quality of life, symptom improvement). In oncology, overall survival (OS) is the gold standard but requires long follow-up; progression-free survival (PFS) and objective response rate (ORR) are commonly used surrogates. Validated surrogates have established correlation with clinical benefit; 'reasonably likely' surrogates support accelerated approval pending confirmation.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

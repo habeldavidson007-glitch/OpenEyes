@@ -1,0 +1,18 @@
+{
+  "id": "frag_phr_unknown_treatment_protocol_0182",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "phr"
+  ],
+  "reasoning_role": "definition",
+  "content": "Management of drug-induced QT prolongation: (1) Discontinue offending agent(s); (2) Correct electrolyte abnormalities (maintain K+ >4.0 mEq/L, Mg2+ >2.0 mg/dL); (3) Avoid concomitant QT-prolonging drugs and CYP inhibitors that increase drug levels; (4) For TdP with hemodynamic instability, immediate defibrillation; (5) For stable TdP, IV magnesium sulfate 2g bolus followed by infusion; (6) Consider temporary overdrive pacing or isoproterenol to increase heart rate; (7) Monitor continuously until QTc normalizes. Prevention includes baseline ECG before starting high-risk drugs, follow-up ECG at steady state, avoiding multiple QT-prolonging agents, dose adjustment in renal/hepatic impairment, and monitoring drug levels when available. Patients with congenital long QT syndrome require special consideration.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

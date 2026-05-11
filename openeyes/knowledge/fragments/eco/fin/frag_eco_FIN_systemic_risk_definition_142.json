@@ -1,0 +1,19 @@
+{
+  "id": "FIN-142",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "systemic_risk",
+    "financial_stability",
+    "too_big_to_fail",
+    "risk_management"
+  ],
+  "content": "Systemic risk is the danger that failure of one institution or market disruption triggers cascading failures throughout the financial system. Channels include: direct exposures (interbank lending, derivatives), asset fire sales (forced selling depresses prices, triggering more selling), and loss of confidence (runs on shadow banks). The 2008 crisis demonstrated how Lehman's collapse froze global credit markets. Post-crisis reforms designated Systemically Important Financial Institutions (SIFIs) subject to higher capital requirements and resolution planning (living wills). Central clearing for derivatives and stress testing aim to reduce systemic risk. However, risks migrate to less-regulated sectors\u2014non-bank financial intermediation now accounts for half of global financial assets.",
+  "year": "2024",
+  "source": "Financial Stability Board",
+  "source_url": "https://www.fsb.org/workstreams/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
+}

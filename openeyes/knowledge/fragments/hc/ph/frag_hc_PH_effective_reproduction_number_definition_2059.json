@@ -1,0 +1,19 @@
+{
+  "id": "HC-2059",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "effective reproduction number",
+    "Rt",
+    "epidemiology",
+    "outbreak monitoring"
+  ],
+  "reasoning_role": "definition",
+  "content": "The effective reproduction number (Rt) is the average number of secondary infections produced by an infected individual at time t during an outbreak, accounting for immunity, interventions, and behavior changes. Unlike R0 (which assumes complete susceptibility), Rt reflects real-time transmission dynamics. Rt changes as susceptible population decreases through infection or vaccination, and as interventions modify contact rates or transmission probability. When Rt > 1, cases increase; when Rt < 1, cases decline. Rt estimation uses case counts, hospitalization data, or death counts with statistical models accounting for reporting delays.",
+  "source": "WHO outbreak analytics, CDC epidemiology principles",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

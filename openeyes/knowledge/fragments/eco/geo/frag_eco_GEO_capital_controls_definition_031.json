@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_capital_controls_def_031",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "capital_controls",
+    "financial_stability",
+    "policy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Capital controls: Government restrictions on cross-border financial flows. Types: inflow controls (reserve requirements, taxes), outflow controls (approval requirements, holding periods). Goals: prevent overheating, maintain monetary autonomy, stabilize currency. IMF view evolved from opposition to 'institutional view' accepting temporary, targeted use. Effectiveness varies by enforcement capacity.",
+  "source": "imf_capital_flows",
+  "source_url": "https://www.imf.org/en/Topics/macroeconomic-management-and-financial-stability/capital-flows",
+  "credibility_class": "international_organization",
+  "year": 2024,
+  "weight": 0.94
+}

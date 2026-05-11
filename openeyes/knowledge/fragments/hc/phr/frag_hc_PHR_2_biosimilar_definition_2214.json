@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "biosimilar",
+    "interchangeability",
+    "biologic approval"
+  ],
+  "reasoning_role": "definition",
+  "content": "Biosimilar approval criteria require: high similarity to reference product despite minor differences in clinically inactive components, same mechanism(s) of action, route of administration, dosage form, and strength as reference product, no clinically meaningful differences in safety, purity, potency across conditions of use, and facility meeting GMP standards. Interchangeability criteria add: biosimilar must be expected to produce same clinical result as reference in any given patient, and for multi-dose products, risk of alternating/switching is not greater than using reference alone. FDA publishes lists of approved biosimilars and interchangeable products. Biosimilars receive 1-year exclusivity from first interchangeable approval. Reference biologics have 12 years of data exclusivity before biosimilar applications can be submitted. Over 40 biosimilars have been approved in the US as of 2024.",
+  "source": "fda.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2214",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

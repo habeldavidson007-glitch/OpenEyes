@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_bid_ask_spread_latest_001",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "market_cap",
+    "volatility",
+    "risk_management",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Average spreads for S&P 500 stocks remain near historic lows in basis points but absolute dollar spreads increased with higher stock prices. Spread widening during volatility events remains consistent pattern.",
+  "source": "BLS",
+  "source_url": "https://www.bls.gov/data/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.9,
+  "sector": "FIN"
+}

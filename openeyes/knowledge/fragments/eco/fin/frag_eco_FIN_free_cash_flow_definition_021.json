@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_free_cash_flow_definition_definition_021",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "free_cash_flow",
+    "price_to_fcf",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "definition",
+  "content": "The cash flow statement tracks the movement of cash via Operating, Investing, and Financing activities. Unlike the income statement, it is harder to manipulate and reveals the actual cash generated, which is essential for funding operations, paying dividends, and servicing debt.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

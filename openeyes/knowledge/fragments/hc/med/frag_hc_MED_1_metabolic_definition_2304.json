@@ -1,0 +1,20 @@
+{
+  "id": "endo_metsyn_trt_001",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "metabolic syndrome",
+    "lifestyle",
+    "weight loss",
+    "statins",
+    "antihypertensives"
+  ],
+  "content": "Primary intervention: lifestyle modification targeting weight reduction (5-10% body weight), increased physical activity (\u2265150 min/week moderate intensity), and dietary changes (Mediterranean or DASH diet, reduced refined carbohydrates, increased fiber). Weight loss improves all metabolic syndrome components. Pharmacologic therapy directed at individual risk factors: statins for dyslipidemia (high-intensity for those with elevated ASCVD risk); antihypertensives (ACE inhibitors/ARBs preferred for metabolic benefits); metformin for impaired fasting glucose/prediabetes (Diabetes Prevention Program showed 31% diabetes risk reduction). GLP-1 receptor agonists increasingly used for weight management and cardiometabolic risk reduction in obese patients. Smoking cessation critical. Aspirin considered for primary prevention based on individual CVD risk assessment. Regular monitoring of all components essential.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/32804973/",
+  "credibility_class": "clinical_guideline",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "peer_reviewed_guideline"
+}

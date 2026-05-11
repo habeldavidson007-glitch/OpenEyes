@@ -1,0 +1,16 @@
+{
+  "content": "When a drug recall occurs, healthcare providers must: (1) Identify affected lots using recall notices on FDA website; (2) Quarantine inventory immediately; (3) Notify patients who received the product, prioritizing Class I recalls; (4) Arrange replacement therapy with alternative products; (5) Document all actions in patient records; (6) Report adverse events related to recalled products to FDA MedWatch. For Class I recalls involving critical medications (e.g., sterile injectables, life-sustaining drugs), urgent patient notification within 24-48 hours is recommended. Pharmacies must maintain recall logs and participate in FDA effectiveness checks.",
+  "source": "fda.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "id": "HC-2228",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "tags": [
+    "phr"
+  ],
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "frag_gov_gov_separationofpowers_analytical_006",
+  "domain": "gov",
+  "sector": "GOV",
+  "category": "Presidential Systems",
+  "topic": "Separation of Powers",
+  "role": "analytical",
+  "title": "Separation of Powers: Analytical Analysis",
+  "content": {
+    "summary": "Academic debate centers on whether separation of powers produces efficiency or gridlock, and how partisan polarization affects inter-branch relations.",
+    "key_points": [
+      "Divided government historically common; unified government no guarantee of productivity",
+      "Judicial deference doctrines (Chevron, Auer) shift power to executive agencies",
+      "Partisan polarization increases inter-branch conflict regardless of institutional design",
+      "Emergency powers create temporary power concentration, often become permanent",
+      "Comparative studies show US system more fragmented than parliamentary systems",
+      "Oversight effectiveness varies with party control and media attention"
+    ],
+    "sources": [
+      "David Mayhew, Divided We Govern (1991)",
+      "Jacob Hacker & Paul Pierson, American Amnesia (2016)",
+      "Comparative political science literature on institutional design"
+    ],
+    "related_fragments": [],
+    "last_updated": "2024-01-15",
+    "credibility_score": 0.98,
+    "philosophy_guard_passed": true,
+    "philosophy_guard_note": "Descriptive claim about presidential systems; no normative advocacy regarding what should be"
+  }
+}

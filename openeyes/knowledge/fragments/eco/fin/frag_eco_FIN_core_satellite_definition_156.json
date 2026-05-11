@@ -1,0 +1,19 @@
+{
+  "id": "FIN-156",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "core_satellite",
+    "portfolio_structure",
+    "investment_strategy",
+    "asset_allocation"
+  ],
+  "content": "Core-satellite portfolio construction combines passive and active strategies. The core (60-80% of assets) is passively invested in broad market indices, capturing beta at low cost. Satellites (20-40%) are actively managed positions targeting alpha through: sector bets, factor tilts, alternative strategies, or individual stock picks. This hybrid approach balances efficiency with flexibility: core provides diversification and low fees, satellites allow tactical views without jeopardizing overall portfolio integrity. Institutional investors widely use this structure. Key consideration: satellite allocations should have clear theses and risk limits; otherwise they become closet indexing with higher fees. Rebalancing between core and satellites maintains target allocations.",
+  "year": "2024",
+  "source": "Journal of Portfolio Management",
+  "source_url": "https://jpm.pm-research.com/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "academic_research",
+  "sector": "FIN"
+}

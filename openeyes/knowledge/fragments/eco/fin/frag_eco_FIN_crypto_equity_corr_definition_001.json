@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_crypto_equity_corr_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "Since 2020, BTC has shown moderate positive correlation with Nasdaq, driven by shared liquidity drivers (rates, QE).",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

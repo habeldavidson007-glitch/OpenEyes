@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_custody_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto",
+    "risk_management"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Custodial solutions reintroduce counterparty risk that crypto aimed to eliminate. FTX, Celsius, Voyager failures showed customer funds were not segregated. Even regulated custodians face operational risks. Self-custody requires technical expertise most lack. No solution perfectly balances security, convenience, and accessibility.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

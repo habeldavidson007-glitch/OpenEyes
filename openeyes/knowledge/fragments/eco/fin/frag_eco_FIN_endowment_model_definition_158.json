@@ -1,0 +1,19 @@
+{
+  "id": "FIN-158",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "endowment_model",
+    "institutional_investing",
+    "alternative_assets",
+    "portfolio_construction"
+  ],
+  "content": "The endowment model, pioneered by Yale's David Swensen, emphasizes diversification beyond stocks and bonds into alternative assets: private equity, venture capital, hedge funds, real estate, commodities, and timber. Key principles: heavy equity tilt (including illiquid equities), active management in inefficient markets, and long-term horizon exploiting illiquidity premium. Yale's endowment averaged 10%+ annual returns over three decades, outperforming traditional portfolios. However, the model has limitations: requires large scale for access to top managers, illiquidity creates cash flow challenges, and success depended heavily on manager selection. Post-2008, many institutions copied the approach, potentially diluting its edge. Best suited for perpetual pools of capital with spending rules allowing volatility.",
+  "year": "2024",
+  "source": "Journal of Endowment Management",
+  "source_url": "https://www.nacubo.org/research/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "academic_research",
+  "sector": "FIN"
+}

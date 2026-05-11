@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_labor_force_participation_latest_014",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "labor_market",
+    "employment",
+    "demographics",
+    "macro",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "LFPR data continues to be released monthly with the employment situation report. Prime-age LFPR has recovered to near pre-pandemic levels, but overall LFPR remains below 2000 peaks due to aging. Gender gaps in participation have narrowed but persist. Early retirement trends accelerated during the pandemic ('Great Resignation'). Disability applications and enrollments affect participation among working-age adults. Policy discussions focus on childcare, paid leave, and retirement age reforms to boost participation. Immigration policy affects labor supply projections.",
+  "source": "Bureau of Labor Statistics CPS Data",
+  "source_url": "https://www.bls.gov/charts/employment-situation/civilian-labor-force-participation-rate.htm",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

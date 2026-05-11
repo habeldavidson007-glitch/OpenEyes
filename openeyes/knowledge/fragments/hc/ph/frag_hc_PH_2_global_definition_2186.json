@@ -1,0 +1,18 @@
+{
+  "content": "Global health burden assessment methodology: (1) Mortality data\u2014vital registration systems, verbal autopsy for settings without death certification, sibling history surveys, demographic surveillance sites; (2) Morbidity data\u2014household surveys (DHS, MICS), hospital records, disease registries, claims data, published literature systematic reviews; (3) Disability weights\u2014population surveys valuing health states, expert panels, patient-reported outcomes; (4) Risk factor measurement\u2014household surveys (STEPS), environmental monitoring, sales data, comparative risk assessment framework; (5) Statistical methods\u2014DisMod-MR disease modeling, Cause of Death Ensemble modeling (CODEm), spatiotemporal Gaussian process regression, uncertainty quantification through Monte Carlo simulation; (6) Attribution analyses\u2014population attributable fractions for risk factors, counterfactual scenarios. Limitations include data gaps (especially mental health, rare diseases), measurement error in low-resource settings, disability weight cultural variability, and attribution uncertainty for multimorbidity. GBD results updated annually with methodological improvements.",
+  "tags": [
+    "measurement",
+    "methodology",
+    "surveillance",
+    "modeling"
+  ],
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "year": 2024,
+  "source": "https://www.cdc.gov/",
+  "id": "HC-2186",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
+}

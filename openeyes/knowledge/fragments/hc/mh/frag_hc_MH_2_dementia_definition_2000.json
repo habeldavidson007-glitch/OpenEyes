@@ -1,0 +1,20 @@
+{
+  "content": "BPSD is not a standalone DSM-5 diagnosis but rather a clinical syndrome occurring in context of major/neurocognitive disorder (dementia). Assessment involves: comprehensive history (symptom onset, frequency, severity, triggers), mental status examination, physical examination to rule out delirium/medical causes, medication review, laboratory tests (CBC, metabolic panel, thyroid, B12), brain imaging if indicated. Use standardized instruments: Neuropsychiatric Inventory (NPI), Cohen-Mansfield Agitation Inventory (CMAI), Cornell Scale for Depression in Dementia. Differentiate from delirium (acute onset, fluctuating course, inattention), primary psychiatric disorders, medication side effects. Document target symptoms for treatment monitoring.",
+  "tags": [
+    "assessment",
+    "NPI",
+    "delirium-differential",
+    "dementia",
+    "BPSD"
+  ],
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2022,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2000",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

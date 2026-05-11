@@ -1,0 +1,19 @@
+{
+  "id": "HC-2102",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "climate change",
+    "adaptation",
+    "mitigation",
+    "health system resilience"
+  ],
+  "reasoning_role": "definition",
+  "content": "Health sector climate responses include: (1) Adaptation - heat early warning systems (reducing heat mortality 20-30%), vector surveillance and control, climate-resilient infrastructure (flood-proof hospitals), drought-resistant food systems; (2) Mitigation - healthcare decarbonization (healthcare contributes 4-5% of global emissions, anesthesia gases and inhalers are potent greenhouse gases), sustainable supply chains, plant-based hospital meals; (3) Co-benefits - active transport (cycling/walking) reducing both emissions and cardiovascular disease, reduced air pollution from fossil fuel transition preventing 4-8 million premature deaths annually. Health adaptation funding remains inadequate: <5% of climate finance targets health. Successful examples: France's heat wave plan reduced excess mortality from 15,000 (2003) to 2,000 (2006 heat wave of similar intensity).",
+  "source": "who.int",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

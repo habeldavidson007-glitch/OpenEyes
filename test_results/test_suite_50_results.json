@@ -1,0 +1,462 @@
+{
+  "summary": {
+    "total_queries": 50,
+    "success_count": 40,
+    "emergency_halt_count": 2,
+    "failure_count": 8,
+    "success_rate": 84.0,
+    "total_time_sec": 0.24,
+    "avg_response_time_sec": 0.005,
+    "timestamp": "2026-05-11T15:19:02.522684"
+  },
+  "results": [
+    {
+      "query": "What is a trade deficit?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 0.5,
+      "status": "SUCCESS",
+      "response_time_sec": 0.203,
+      "correct": true
+    },
+    {
+      "query": "Explain mental health therapy options",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is a yield curve inversion?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 0.4090909090909091,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "Explain federalism in the US",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 0.5555555555555556,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "Explain the amendment process",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 0.8333333333333334,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "How do antibiotics work?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "How is hypertension treated?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What causes a recession?",
+      "expected_domain": "economy",
+      "classified_domain": "healthcare",
+      "confidence": 0.35294117647058826,
+      "status": "WRONG_DOMAIN",
+      "response_time_sec": 0.0,
+      "correct": false
+    },
+    {
+      "query": "What are side effects of statins?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "How does a bill become law?",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 0.6363636363636364,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "How does insulin work in the body?",
+      "expected_domain": "healthcare",
+      "classified_domain": "economy",
+      "confidence": 0.75,
+      "status": "WRONG_DOMAIN",
+      "response_time_sec": 0.0,
+      "correct": false
+    },
+    {
+      "query": "How does unemployment get measured?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "How does the Federal Reserve fight inflation?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 0.8666666666666667,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What's the difference between GDP and GNP?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 0.8571428571428571,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What are the effects of raising interest rates?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 0.9,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What are symptoms of type 2 diabetes?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.011,
+      "correct": true
+    },
+    {
+      "query": "Explain the veto power",
+      "expected_domain": "governance",
+      "classified_domain": "healthcare",
+      "confidence": 0.5,
+      "status": "WRONG_DOMAIN",
+      "response_time_sec": 0.0,
+      "correct": false
+    },
+    {
+      "query": "How is depression diagnosed?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "Explain separation of powers",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What are the stages of cancer?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "How do treasury bonds work?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "How do treaties get ratified?",
+      "expected_domain": "governance",
+      "classified_domain": "healthcare",
+      "confidence": 0.5,
+      "status": "WRONG_DOMAIN",
+      "response_time_sec": 0.0,
+      "correct": false
+    },
+    {
+      "query": "What is chemotherapy?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is the current federal funds rate?",
+      "expected_domain": "economy",
+      "classified_domain": "healthcare",
+      "confidence": 0.3333333333333333,
+      "status": "WRONG_DOMAIN",
+      "response_time_sec": 0.0,
+      "correct": false
+    },
+    {
+      "query": "What is executive privilege?",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "Explain quantitative easing in simple terms",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is the Electoral College?",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 0.9,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is the filibuster?",
+      "expected_domain": "governance",
+      "classified_domain": "healthcare",
+      "confidence": 0.5,
+      "status": "WRONG_DOMAIN",
+      "response_time_sec": 0.0,
+      "correct": false
+    },
+    {
+      "query": "How do mortgages work?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 0.8,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is fiscal policy?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "I think I overdosed on pills",
+      "expected_domain": "healthcare_emergency",
+      "status": "EMERGENCY_HALT",
+      "emergency_type": "overdose",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "Explain stock market basics",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "Explain how vaccines work",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is the difference between viral and bacterial infections?",
+      "expected_domain": "healthcare",
+      "classified_domain": "governance",
+      "confidence": 0.8,
+      "status": "WRONG_DOMAIN",
+      "response_time_sec": 0.0,
+      "correct": false
+    },
+    {
+      "query": "How are Supreme Court justices appointed?",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is judicial review?",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is cryptocurrency?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is physical therapy?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "Explain supply and demand",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 0.5,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "Explain the difference between MRI and CT scan",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What causes Alzheimer's disease?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.015,
+      "correct": true
+    },
+    {
+      "query": "I have chest pain and trouble breathing",
+      "expected_domain": "healthcare_emergency",
+      "status": "EMERGENCY_HALT",
+      "emergency_type": "chest_pain",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is campaign finance reform?",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.001,
+      "correct": true
+    },
+    {
+      "query": "What is the difference between House and Senate?",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 0.8333333333333334,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is the role of the Vice President?",
+      "expected_domain": "governance",
+      "classified_domain": "healthcare",
+      "confidence": 0.5,
+      "status": "WRONG_DOMAIN",
+      "response_time_sec": 0.0,
+      "correct": false
+    },
+    {
+      "query": "What is gerrymandering?",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "How does inflation affect my savings?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "How does lobbying work?",
+      "expected_domain": "governance",
+      "classified_domain": "governance",
+      "confidence": 1.0,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What is a healthy blood pressure reading?",
+      "expected_domain": "healthcare",
+      "classified_domain": "healthcare",
+      "confidence": 0.5,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    },
+    {
+      "query": "What caused the 2008 financial crisis?",
+      "expected_domain": "economy",
+      "classified_domain": "economy",
+      "confidence": 0.9,
+      "status": "SUCCESS",
+      "response_time_sec": 0.0,
+      "correct": true
+    }
+  ]
+}

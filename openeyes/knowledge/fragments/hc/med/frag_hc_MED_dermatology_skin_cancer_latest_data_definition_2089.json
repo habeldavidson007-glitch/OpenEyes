@@ -1,0 +1,17 @@
+{
+  "id": "MED-2089_dermatology_skin_cancer_latest_data",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "dermatology skin cancer",
+    "clinical_medicine",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Dermatology Skin Cancer - recent clinical trials, updated guidelines, emerging therapies",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "PubMed"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_phr_unknown_treatment_protocol_0194",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "phr",
+    "safety"
+  ],
+  "reasoning_role": "definition",
+  "content": "Healthcare providers should follow evidence-based protocols for managing drug safety issues, including proper monitoring, reporting adverse events, and implementing risk mitigation strategies.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0339",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "oncology",
+    "prostate cancer",
+    "diagnosis",
+    "biopsy",
+    "staging"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnosis requires tissue confirmation. PSA elevation triggers evaluation: consider age-specific ranges, PSA velocity, free/total PSA ratio, PHI (Prostate Health Index), 4Kscore. Multiparametric MRI (mpMRI) increasingly used before biopsy; PI-RADS score 1-5 predicts clinically significant cancer; MRI-targeted biopsy superior to systematic alone (PRECISION trial). Transrectal or transperineal biopsy: systematic 12-core standard; MRI-targeted cores added for suspicious lesions. Pathology: Gleason score from biopsy/surgical specimen; percent core involvement; perineural invasion. Staging: bone scan and CT/MRI for high-risk disease or symptoms; PSMA PET/CT increasingly used (more sensitive than conventional imaging, detects recurrence at lower PSA). Post-prostatectomy monitoring: PSA should be undetectable (<0.1); rising PSA indicates recurrence. Biochemical recurrence definition: post-radiation PSA nadir + 2 ng/mL (Phoenix criteria); post-prostatectomy PSA \u22650.2 ng/mL confirmed.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35789012/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

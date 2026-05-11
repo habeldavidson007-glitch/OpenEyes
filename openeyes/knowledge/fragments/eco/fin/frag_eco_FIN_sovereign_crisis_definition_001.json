@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_sovereign_crisis_def_01",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "tags": [
+    "sovereign_debt",
+    "emerging_markets",
+    "warning",
+    "definition",
+    "first_line"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sovereign crises typically follow: 1) External shock (commodity drop, rate hike), 2) Currency depreciation, 3) Inability to roll over USD debt, 4) Default or IMF bailout. Triggers include sudden stops in capital flows and banking sector fragility.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.93,
+  "sector": "GEO"
+}

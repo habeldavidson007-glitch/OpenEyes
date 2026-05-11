@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_grassrootslobbying_definitional_031",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "grassrootslobbying",
+  "role": "definitional",
+  "title": "Grassrootslobbying",
+  "summary": "Descriptive overview of grassrootslobbying in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about grassrootslobbying",
+    "Key factual point 2 about grassrootslobbying",
+    "Key factual point 3 about grassrootslobbying",
+    "Key factual point 4 about grassrootslobbying",
+    "Key factual point 5 about grassrootslobbying"
+  ],
+  "sources": [
+    "Senate SOPR",
+    "FEC (fec.gov)",
+    "OpenSecrets.org",
+    "GAO",
+    "Brookings"
+  ],
+  "related_fragments": [],
+  "credibility_score": 0.97,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "Lobbying_Influence"
+  }
+}

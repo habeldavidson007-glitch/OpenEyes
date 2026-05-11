@@ -1,0 +1,18 @@
+{
+  "id": "FIN-107",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "reverse_repo"
+  ],
+  "content": "ON RRP facility lets eligible counterparties lend cash to Fed overnight against Treasuries, earning the ON RRP rate. Sets floor under short-term rates. Peaked at $2.5T in 2022, primarily money market funds seeking safe yield.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "government_agency",
+  "sector": "MAC"
+}

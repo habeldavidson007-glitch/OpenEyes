@@ -1,0 +1,29 @@
+{
+  "id": "frag_fin_operating_margin_efficiency_latest_data_017",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "return_on_invested_capital",
+    "return_on_equity",
+    "peg_ratio",
+    "price_to_sales",
+    "operating_margin",
+    "price_to_book",
+    "ev_ebitda",
+    "inventory_turnover",
+    "pe_ratio",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent data through 2024 shows Operating Margin Efficiency metrics are diverging across sectors. Investors are increasingly prioritizing cash yield and balance sheet strength over pure growth narratives in the current higher-for-longer rate regime.",
+  "source": "analyst_consensus",
+  "source_url": "https://www.morningstar.com/articles/valuation-metrics",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

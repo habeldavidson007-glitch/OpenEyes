@@ -1,0 +1,21 @@
+{
+  "id": "frag_ph_maternal_mortality_definition_0079",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "maternal_health",
+    "mortality",
+    "health_equity",
+    "pregnancy"
+  ],
+  "reasoning_role": "definition",
+  "content": "Maternal mortality is defined as death of a woman while pregnant or within 42 days of pregnancy termination, from any cause related to or aggravated by the pregnancy or its management. Maternal mortality ratio (MMR) measures deaths per 100,000 live births. Global MMR declined 34% from 2000-2020 but remains unacceptably high at 223/100,000, with wide disparities (Sub-Saharan Africa 545 vs high-income countries 12). US MMR increased to 23.8/100,000 in 2020, with stark racial disparities (Black women 55.3, White women 19.1). Leading causes globally: hemorrhage (27%), hypertensive disorders (14%), sepsis (11%), unsafe abortion (8%), embolism (3%). In high-income countries: cardiovascular conditions, cardiomyopathy, hemorrhage, mental health conditions including suicide and overdose. Preventable fraction estimated at 60-80%. Social determinants, structural racism, and healthcare access significantly influence outcomes.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

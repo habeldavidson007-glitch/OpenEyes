@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0281",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "tapering_protocols",
+    "addiction_treatment",
+    "MAT",
+    "detoxification",
+    "stigma_reduction"
+  ],
+  "reasoning_role": "definition",
+  "content": "Management differs fundamentally: Physical dependence requires gradual tapering to prevent withdrawal (opioid taper 10% per week; benzodiazepine taper over months using long-acting agent; beta-blocker taper over 1-2 weeks to prevent rebound hypertension/tachycardia). Addiction treatment involves: detoxification (managed withdrawal), rehabilitation (behavioral therapy, counseling), medication-assisted treatment (methadone/buprenorphine for opioid use disorder; naltrexone for alcohol/opioid; acamprosate for alcohol), long-term recovery support. Opioid example: cancer patient on chronic opioids has physical dependence - continue opioids, taper slowly if discontinuing. Patient seeking early refills, using multiple prescribers, IV use has addiction - refer for addiction treatment, consider MAT. Stigma reduction: avoid terms like 'abuse,' 'addict'; use 'substance use disorder,' 'person with addiction.'",
+  "source": "nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

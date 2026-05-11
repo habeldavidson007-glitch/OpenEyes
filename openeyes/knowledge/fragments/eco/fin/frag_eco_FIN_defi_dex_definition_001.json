@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_dex_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "defi",
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "AMM-based exchanges (Uniswap) using liquidity pools (x*y=k) instead of order books, allowing permissionless token swaps.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "REG-006",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "emir",
+    "derivatives",
+    "trade_reporting",
+    "eu_regulation",
+    "central_clearing"
+  ],
+  "reasoning_role": "definition",
+  "content": "EMIR (European Market Infrastructure Regulation) establishes EU framework for OTC derivatives regulation. Key reporting requirements: (1) All derivative contracts (OTC and exchange-traded) must be reported to trade repositories registered with ESMA, (2) Reports due T+1 (next business day), (3) Both counterparties responsible for reporting (delegable), (4) Report includes valuation, collateral, lifecycle events. Additional requirements: central clearing mandate for standardized OTC derivatives through CCPs, risk mitigation for non-cleared derivatives (portfolio reconciliation, compression, dispute resolution), margin requirements for uncleared derivatives (phased implementation 2016-2022 based on AANA thresholds). EMIR Refit (2019) streamlined reporting, clarified clearing obligations, reduced burden for small financial counterparties and non-financial counterparties.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

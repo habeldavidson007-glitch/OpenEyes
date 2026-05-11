@@ -1,0 +1,20 @@
+{
+  "id": "neuro-tia-dx",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "TIA",
+    "diagnosis",
+    "MRI-DWI",
+    "carotid-imaging",
+    "workup"
+  ],
+  "reasoning_role": "definition",
+  "content": "TIA diagnosis is clinical but requires urgent workup to confirm etiology and guide prevention. Neuroimaging: MRI brain with DWI within 24 hours\u201430-50% of clinically diagnosed TIAs show acute infarction (then classified as stroke, not TIA). Vascular imaging: carotid ultrasound or CTA/MRA head and neck to identify extracranial/intracranial stenosis, dissection, occlusion. Cardiac evaluation: ECG for atrial fibrillation, telemetry/Holter monitor (prolonged monitoring increases AF detection), echocardiogram (TTE/TEE) for cardioembolic sources (thrombus, PFO, valvular disease, cardiomyopathy). Laboratory: CBC, CMP, fasting lipid panel, HbA1c, coagulation studies. Hypercoagulable testing if young (<50) or suggestive history. EEG if seizure suspected (positive symptoms, postictal deficits). Differential diagnosis: seizure/Todd's paralysis (positive spreading symptoms, post-event confusion), migraine aura (gradual spread, positive symptoms, headache), hypoglycemia, peripheral vertigo, functional disorder. Risk stratification: ABCD2 score guides urgency (high-risk scores 6-7 warrant hospital admission); however, imaging findings (DWI positivity, significant stenosis) better predict recurrence than ABCD2 alone. Rapid access TIA clinics reduce time to treatment and stroke risk.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

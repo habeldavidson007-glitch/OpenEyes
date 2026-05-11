@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_recallelections_procedural_049",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "recallelections",
+  "role": "procedural",
+  "title": "Recallelections",
+  "summary": "Descriptive overview of recallelections in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about recallelections",
+    "Key factual point 2 about recallelections",
+    "Key factual point 3 about recallelections",
+    "Key factual point 4 about recallelections",
+    "Key factual point 5 about recallelections"
+  ],
+  "sources": [
+    "NCSL (ncsl.org)",
+    "CSG (csg.org)",
+    "ALEC (alec.org)",
+    "Ballotpedia",
+    "State gov websites"
+  ],
+  "related_fragments": [],
+  "credibility_score": 1.0,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "State_Legislatures"
+  }
+}

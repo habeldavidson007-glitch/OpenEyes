@@ -1,0 +1,19 @@
+{
+  "id": "FIN-148",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "momentum",
+    "factor_investing",
+    "market_anomalies",
+    "investment_strategies"
+  ],
+  "content": "Momentum is the tendency for assets that have performed well to continue outperforming, and poor performers to continue underperforming. Jegadeesh and Titman (1993) documented that buying past 12-month winners and selling losers generates significant excess returns, persisting across markets and time periods. Momentum works on timescales of 3-12 months; beyond that, reversal effects dominate. Explanations include: behavioral (investors underreact to news initially, then overreact), risk-based (momentum stocks are riskier in crashes), and institutional (fund flows chase performance). Momentum strategies suffer from high turnover and can experience severe drawdowns during reversals (March 2009 saw momentum crash 50%+). It's now recognized as a distinct factor alongside value and size.",
+  "year": "2023",
+  "source": "Journal of Finance",
+  "source_url": "https://onlinelibrary.wiley.com/journal/15406261",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "academic_research",
+  "sector": "FIN"
+}

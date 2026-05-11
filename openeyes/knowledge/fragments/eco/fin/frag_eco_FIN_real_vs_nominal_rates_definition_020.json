@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_real_vs_nominal_rates_def_020",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "interest_rate",
+    "real_rates",
+    "inflation",
+    "macro",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Nominal interest rates are the stated rates not adjusted for inflation. Real interest rates equal nominal rates minus expected inflation, representing the true cost of borrowing and return to lending in purchasing power terms. The Fisher equation formalizes this: real rate \u2248 nominal rate - expected inflation. Real rates determine intertemporal choices\u2014saving versus consuming, investment decisions. When inflation is high, nominal rates can be positive while real rates are negative, effectively taxing savers and subsidizing borrowers. Real rates are unobservable directly since they depend on inflation expectations. Ex ante real rates use expected inflation; ex post real rates use realized inflation. TIPS yields provide market-based real rate measures for indexed securities.",
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/real-rates-20190615.htm",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

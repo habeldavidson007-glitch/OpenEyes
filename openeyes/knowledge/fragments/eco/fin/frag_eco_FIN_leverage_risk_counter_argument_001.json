@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_leverage_risk_counter_argument",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "risk_management",
+    "leverage",
+    "amplification",
+    "margin_call",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Sophisticated investors argue that leverage itself is not risky if applied to low-volatility, diversified portfolios with conservative haircuts (e.g., risk parity). The risk lies in mismatched liquidity (borrowing short to invest in illiquid assets) and lack of stress testing, not leverage per se.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

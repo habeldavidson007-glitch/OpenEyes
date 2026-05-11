@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_mean_reversion_latest_data_06",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "latest_data",
+    "mean_reversion",
+    "rsi",
+    "overbought",
+    "oversold",
+    "divergence"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Mean reversion strategies struggled in the trending Q1 2024 environment. Sector mean reversion opportunities emerged in early 2024 after 2023's dispersion. Statistical arbitrage funds reported challenging conditions in early 2024. Mean reversion signals in valuation metrics suggested potential opportunities in certain sectors.",
+  "source": "Educational Resource",
+  "source_url": "https://www.stockcharts.com/articles/mean-reversion-signals",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

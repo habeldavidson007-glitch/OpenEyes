@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_de_dollarization_data_01",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "tags": [
+    "dollar",
+    "geopolitical_risk",
+    "currency",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "BRICS trade in local currencies rose to 35% (from 20% in 2015). Russia-China trade 90% non-USD. However, global SWIFT USD share remains >40%. Digital Yuan pilot expanded but volume negligible vs USD CHIPS system.",
+  "source": "peer_reviewed_study",
+  "source_url": "https://www.bis.org/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_de_dollarization_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.9211999999999999,
+  "sector": "GEO"
+}

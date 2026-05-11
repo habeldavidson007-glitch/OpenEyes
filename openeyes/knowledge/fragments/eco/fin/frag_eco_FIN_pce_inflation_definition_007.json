@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_pce_inflation_def_007",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "pce",
+    "inflation",
+    "personal_consumption",
+    "macro",
+    "fed",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "The Personal Consumption Expenditures (PCE) price index measures the prices that persons living in the United States, or on behalf of them, pay for goods and services purchased. Produced monthly by the Bureau of Economic Analysis (BEA), PCE covers all consumption regardless of whether the good or service was purchased directly by households or provided through government programs or employer-provided benefits. The PCE index uses a chain-weighted formula that accounts for substitution between categories as relative prices change, addressing a key limitation of CPI. The Federal Reserve has explicitly adopted the 2% inflation target in terms of PCE rather than CPI, citing PCE's broader scope and superior treatment of substitution. Core PCE excludes food and energy prices and is the Fed's preferred inflation gauge.",
+  "source": "Bureau of Economic Analysis",
+  "source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

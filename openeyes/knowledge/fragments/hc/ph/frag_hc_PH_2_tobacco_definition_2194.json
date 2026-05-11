@@ -1,0 +1,18 @@
+{
+  "content": "Tobacco use assessment includes: (1) Screening\u2014all patients at every visit (USPSTF Grade A recommendation); (2) Quantification\u2014pack-years calculation (packs per day \u00d7 years smoked), cigarettes per day, time to first cigarette (indicates addiction severity); (3) Dependence assessment\u2014Fagerstr\u00f6m Test for Nicotine Dependence evaluating time to first cigarette, difficulty refraining, morning craving; (4) Biomarkers\u2014cotinine levels (serum, saliva, urine) for objective measurement, exhaled carbon monoxide for recent smoking; (5) Readiness to quit\u2014stages of change model (precontemplation, contemplation, preparation, action, maintenance). Secondhand smoke exposure assessed through home/car rules, workplace policies. Youth screening includes e-cigarette use assessment (JUUL, vaping). Population surveillance uses BRFSS, NHIS, NYTS, and Global Adult Tobacco Survey.",
+  "tags": [
+    "screening",
+    "assessment",
+    "biomarkers",
+    "surveillance"
+  ],
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "year": 2024,
+  "source": "https://www.cdc.gov/",
+  "id": "HC-2194",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_fomc_meetings_counter_002",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "fomc",
+    "fed",
+    "interest_rate",
+    "monetary_policy",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Critics argue FOMC deliberations lack transparency despite post-meeting statements and press conferences. Meeting transcripts are released with a five-year lag, limiting real-time accountability. Some economists contend the Committee's composition gives disproportionate influence to Wall Street perspectives through the New York Fed's permanent voting seat. Regional Fed presidents, who are not appointed by elected officials, have voting power on monetary policy affecting the entire nation. Additionally, the consensus-driven approach may obscure important dissenting views, though dissents are recorded. Critics also note that emergency meetings and unconventional policy tools (like quantitative easing) have expanded FOMC power beyond traditional boundaries with limited congressional oversight.",
+  "source": "Government Accountability Office Reports",
+  "source_url": "https://www.gao.gov/products/gao-21-105sp",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

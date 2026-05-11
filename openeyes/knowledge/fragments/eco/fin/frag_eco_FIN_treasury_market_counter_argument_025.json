@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_treasury_market_counter_025",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "treasury",
+    "bonds",
+    "fixed_income",
+    "debt_market",
+    "macro",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Despite its size, the Treasury market has shown vulnerability to dysfunction. The March 2020 'dash for cash' saw liquidity evaporate despite Fed intervention, revealing structural fragilities. Concentration among primary dealers creates intermediation bottlenecks. Regulatory constraints on bank balance sheets limit market-making capacity. Electronic trading growth has benefits but may amplify flash crash risks. Large Fed holdings distort market functioning and price discovery. Fiscal sustainability concerns could eventually affect Treasury creditworthiness perception, though this remains tail risk. Foreign official holdings create geopolitical dependencies. Market plumbing issues (repo market stresses) can spill over. Ongoing reforms address settlement cycles, central clearing, and capital requirements.",
+  "source": "U.S. Department of the Treasury Working Papers",
+  "source_url": "https://home.treasury.gov/news/press-releases/reports-on-treasury-market-structure",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

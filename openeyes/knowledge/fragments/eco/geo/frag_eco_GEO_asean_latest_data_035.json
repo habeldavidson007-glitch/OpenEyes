@@ -1,0 +1,18 @@
+{
+  "id": "frag_eco_GEO_asean_latest_035",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "asean",
+    "china_relations",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "ASEAN dynamics 2024: China largest trading partner ($975B annually). RCEP implementation advancing. US IPEF engagement mixed. Myanmar crisis unresolved. Indonesia G20 presidency elevated profile. Vietnam, Philippines balancing China relations. Digital economy framework agreement signed. Supply chain diversification beneficiary (China+1 strategy).",
+  "source": "asean_stats",
+  "source_url": "https://stats.asean.org/",
+  "credibility_class": "international_organization",
+  "year": 2024,
+  "weight": 0.92
+}

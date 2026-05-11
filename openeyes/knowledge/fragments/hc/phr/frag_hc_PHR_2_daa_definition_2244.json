@@ -1,0 +1,21 @@
+{
+  "id": "phr_mdc_daa_hcv_diagnostic",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "hepatitis C",
+    "DAA",
+    "NS5A",
+    "NS5B",
+    "cure",
+    "SVR"
+  ],
+  "content": "Direct-Acting Antivirals for HCV diagnostic and monitoring criteria placeholder - contraindications, adverse effects profile, drug interactions, monitoring parameters, and special population considerations based on FDA labeling and post-marketing surveillance.",
+  "source": "fda.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

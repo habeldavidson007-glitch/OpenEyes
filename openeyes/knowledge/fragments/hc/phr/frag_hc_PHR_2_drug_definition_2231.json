@@ -1,0 +1,17 @@
+{
+  "content": "RUCAM score components: time to onset from drug initiation (0 to +3 points), course after drug cessation (+1 to +3), risk factors (alcohol, pregnancy, age +1 each), concomitant drugs (-3 to +1), exclusion of non-drug causes (+2 to -3), known hepatotoxicity of drug (+1 to +3), response to rechallenge (+1 to +3, usually not performed). Scores: \u22658 = highly probable, 6-7 = probable, 3-5 = possible, \u22642 = unlikely. Hy's Law criteria for serious DILI: ALT or AST >3x ULN, total bilirubin >2x ULN without initial cholestasis, no other apparent cause. FDA requires Hy's Law cases in clinical trials to be reported immediately. DILI diagnosis requires careful temporal assessment and exclusion of viral, autoimmune, metabolic, and vascular causes through appropriate testing.",
+  "source": "fda.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "id": "HC-2231",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "tags": [
+    "phr",
+    "safety"
+  ],
+  "_original_credibility_class": "A"
+}

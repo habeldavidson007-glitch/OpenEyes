@@ -1,0 +1,18 @@
+{
+  "id": "PHR-2158_nanomedicine_formulations_latest_data",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "nanomedicine formulations",
+    "pharmaceuticals",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Nanomedicine Formulations - recent technological advances, emerging platforms, industry trends",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2026,
+  "source": "FDA",
+  "_original_credibility_class": "peer_reviewed"
+}

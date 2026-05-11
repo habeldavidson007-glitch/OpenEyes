@@ -1,0 +1,19 @@
+{
+  "id": "HC-2099",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "health technology assessment",
+    "decision making",
+    "pricing",
+    "reimbursement"
+  ],
+  "reasoning_role": "definition",
+  "content": "HTA process follows standardized steps: (1) Scope definition - identify population, comparators, outcomes; (2) Systematic evidence review - clinical trials, observational studies; (3) Economic modeling - decision trees, Markov models projecting lifetime costs/outcomes; (4) Uncertainty analysis - sensitivity analyses, value of information; (5) Stakeholder consultation - patients, clinicians, manufacturers; (6) Appraisal committee decision. NICE's methods require intention-to-treat analysis, appropriate comparators (current standard care), and NHS perspective for costs. For end-of-life treatments, higher thresholds may apply. Managed entry agreements (price discounts, outcome-based payments) enable access when uncertainty is high.",
+  "source": "nice.org.uk",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

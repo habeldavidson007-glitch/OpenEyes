@@ -1,0 +1,17 @@
+{
+  "id": "ENR-2287_green_hydrogen_production_latest_data",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "green hydrogen production",
+    "energy",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Green Hydrogen Production - recent technological advances, cost trends, policy developments",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "EIA"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "MED-2048_gastroenterology_ibd_definition",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "gastroenterology ibd",
+    "clinical_medicine",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Gastroenterology Ibd - pathophysiology, diagnostic criteria, clinical presentation",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "PubMed"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "frag_gov_sec_terrorism_definitional_064",
+  "domain": "gov",
+  "sector": "sec",
+  "topic": "terrorism",
+  "role": "definitional",
+  "title": "Terrorism",
+  "summary": "Terrorism is defined by: definitions, typologies, organizational structures, financing.",
+  "key_points": [
+    "Terrorism involves definitions, typologies, organizational structures, financing.",
+    "Primary sources include RAND Corporation, SIPRI, CSIS.",
+    "This topic is part of the Security & Conflict sector in the Governance domain.",
+    "Descriptive analysis covers institutional arrangements and documented outcomes.",
+    "Evidence-based assessment draws from RAND Corporation and peer-reviewed research."
+  ],
+  "sources": [
+    {
+      "name": "RAND Corporation",
+      "url": "https://example.gov",
+      "type": "secondary"
+    },
+    {
+      "name": "SIPRI",
+      "url": "https://example.gov",
+      "type": "secondary"
+    },
+    {
+      "name": "CSIS",
+      "url": "https://example.gov",
+      "type": "secondary"
+    },
+    {
+      "name": "Congressional Research Service",
+      "url": "https://example.gov",
+      "type": "secondary"
+    },
+    {
+      "name": "Jane's",
+      "url": "https://example.gov",
+      "type": "secondary"
+    }
+  ],
+  "related_fragments": [],
+  "credibility_score": 0.96,
+  "philosophy_guard_passed": true,
+  "is_descriptive_not_normative": true,
+  "metadata": {
+    "created_by": "openeyes_fragment_generator",
+    "category": "conflict",
+    "target_audience": "policy analysts, researchers, students"
+  }
+}

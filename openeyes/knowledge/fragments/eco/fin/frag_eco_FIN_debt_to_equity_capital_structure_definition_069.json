@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_debt_to_equity_capital_structure_definition_069",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "revenue_recognition",
+    "interest_coverage",
+    "fundamental_analysis",
+    "debt_to_equity",
+    "valuation",
+    "earnings"
+  ],
+  "reasoning_role": "definition",
+  "content": "The Debt-to-Equity (D/E) ratio measures financial leverage by comparing total liabilities to shareholders' equity. A high D/E indicates aggressive financing with debt, which amplifies returns but increases bankruptcy risk during downturns.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

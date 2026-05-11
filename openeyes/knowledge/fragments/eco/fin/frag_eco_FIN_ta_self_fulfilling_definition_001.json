@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_self_fulfilling_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "TA works partly because enough participants watch same levels and act similarly. Round numbers ($50k BTC), moving averages (200-day), and classic patterns become focal points. Stop-loss clusters at obvious levels amplify moves when breached.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

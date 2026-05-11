@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_superpacs_legal_029",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "superpacs",
+  "role": "legal",
+  "title": "Superpacs",
+  "summary": "Descriptive overview of superpacs in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about superpacs",
+    "Key factual point 2 about superpacs",
+    "Key factual point 3 about superpacs",
+    "Key factual point 4 about superpacs",
+    "Key factual point 5 about superpacs"
+  ],
+  "sources": [
+    "Senate SOPR",
+    "FEC (fec.gov)",
+    "OpenSecrets.org",
+    "GAO",
+    "Brookings"
+  ],
+  "related_fragments": [],
+  "credibility_score": 1.0,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "Lobbying_Influence"
+  }
+}

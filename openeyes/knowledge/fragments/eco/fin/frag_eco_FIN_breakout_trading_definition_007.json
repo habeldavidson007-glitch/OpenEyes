@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_breakout_trading_definition_07",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "definition",
+    "breakout_trading",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Breakout trading enters positions when price moves beyond defined ranges. Valid breakouts show: decisive close beyond level, increasing volume, follow-through. False breakouts (traps) are common: price briefly breaches level then reverses. Filters: wait for retest, use volatility expansion confirmation, require volume surge. Breakouts from longer consolidations tend to be more reliable. Risk management crucial due to whipsaw frequency.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/b/breakout.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_neutral_interest_rate_latest_021",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "interest_rate",
+    "neutral_rate",
+    "monetary_policy",
+    "fed",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Estimates of r* continue to evolve with new data and methods. Federal Reserve staff and external researchers update models regularly. Recent estimates suggest r* may have risen modestly from pandemic lows but remains below historical averages. FOMC participants' long-run real rate projections in the SEP provide Committee members' r* views. Debate continues about whether r* will remain low due to structural factors or rise with fiscal deficits and deglobalization. Policy implications hinge on r* assessments\u2014lower r* means less room to cut rates in downturns.",
+  "source": "Federal Reserve SEP Projections",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl.htm",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

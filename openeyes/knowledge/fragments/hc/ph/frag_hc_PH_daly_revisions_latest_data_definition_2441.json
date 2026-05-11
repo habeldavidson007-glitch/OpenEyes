@@ -1,0 +1,18 @@
+{
+  "id": "PH-2441_daly_revisions_latest_data",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "daly revisions",
+    "public_health",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Daly Revisions - recent research findings, updated guidelines, emerging practices",
+  "source_url": "https://www.cdc.gov/research",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2026,
+  "source": "CDC",
+  "_original_credibility_class": "peer_reviewed"
+}

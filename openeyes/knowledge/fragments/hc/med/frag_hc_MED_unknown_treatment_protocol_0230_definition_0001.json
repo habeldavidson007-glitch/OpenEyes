@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0230",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "beta blockers",
+    "dosing",
+    "clinical use",
+    "titration"
+  ],
+  "reasoning_role": "definition",
+  "content": "Beta blocker selection and dosing depends on indication and patient characteristics. For heart failure: carvedilol starting 3.125mg BID, target 25mg BID; metoprolol succinate starting 12.5-25mg daily, target 200mg daily; bisoprolol starting 1.25mg daily, target 10mg daily. Titrate slowly every 2-4 weeks as tolerated. For hypertension: metoprolol tartrate 25-100mg BID or metoprolol succinate 25-200mg daily; atenolol 25-100mg daily. For post-MI: metoprolol tartrate 25-50mg BID, titrate to 100mg BID. For atrial fibrillation rate control: metoprolol tartrate 25-50mg q6h PRN or scheduled. Monitor heart rate (target 55-70 bpm for most indications), blood pressure, and signs of heart failure exacerbation during titration. Reduce dose or hold if HR <50 bpm, SBP <90 mmHg, or worsening heart failure symptoms. Avoid in acute decompensated heart failure until stabilized.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

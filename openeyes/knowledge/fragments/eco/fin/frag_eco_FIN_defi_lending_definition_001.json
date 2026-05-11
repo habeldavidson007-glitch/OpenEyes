@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_lending_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "defi",
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "Protocol-based lending (Aave, Compound) requiring over-collateralization (e.g., deposit $150 ETH to borrow $100 USDC).",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

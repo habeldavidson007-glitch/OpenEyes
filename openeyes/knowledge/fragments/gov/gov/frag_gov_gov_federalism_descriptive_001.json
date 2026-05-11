@@ -1,0 +1,75 @@
+{
+  "fragment_id": "frag_gov_gov_federalism_descriptive_001",
+  "domain": "gov",
+  "sector": "gov",
+  "topic": "federalism",
+  "role": "descriptive",
+  "version": "1.0.0",
+  "title": "Federalism: Division of Powers in the United States",
+  "content": {
+    "summary": "Federalism in the United States divides governmental authority between the national government and state governments, with each possessing distinct powers and responsibilities as defined by the Constitution.",
+    "body": "The US Constitution establishes a federal system through three primary mechanisms: (1) Enumerated powers granted to the federal government in Article I, Section 8, including regulation of interstate commerce, coinage of money, and declaration of war; (2) The Tenth Amendment reserves powers not delegated to the federal government to the states or the people; (3) The Supremacy Clause in Article VI establishes that federal law takes precedence over conflicting state law. Key Supreme Court decisions have shaped federal-state relations: McCulloch v. Maryland (1819) affirmed implied federal powers under the Necessary and Proper Clause; Gibbons v. Ogden (1824) established broad federal authority over interstate commerce; United States v. Lopez (1995) limited congressional power under the Commerce Clause. Contemporary federalism issues include Medicaid expansion under the Affordable Care Act (NFIB v. Sebelius, 2012), marijuana legalization conflicts between state and federal law, and immigration enforcement disputes.",
+    "key_points": [
+      "Constitution divides power between federal and state governments",
+      "Enumerated powers grant specific authority to federal government",
+      "Tenth Amendment reserves remaining powers to states",
+      "Supremacy Clause establishes federal law priority",
+      "Supreme Court interpretations have evolved federal-state balance"
+    ],
+    "examples": [
+      "Federal government regulates interstate highways; states set speed limits",
+      "Federal government sets minimum wage; states may establish higher minimums",
+      "Both levels levy taxes and maintain court systems"
+    ]
+  },
+  "sources": [
+    {
+      "type": "primary_legal",
+      "citation": "US Constitution, Articles I-VI, Amendments X, XIV",
+      "url": "https://www.congress.gov/constitution",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "case_law",
+      "citation": "McCulloch v. Maryland, 17 U.S. 316 (1819)",
+      "url": "https://www.supremecourt.gov/opinions/landmark/mcculloch.pdf",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "case_law",
+      "citation": "NFIB v. Sebelius, 567 U.S. 519 (2012)",
+      "url": "https://www.supremecourt.gov/opinions/11pdf/11-393.pdf",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "scholarly",
+      "citation": "Elazar, Daniel J. Federal Systems of Government. Praeger, 1994.",
+      "url": null,
+      "accessed": null
+    }
+  ],
+  "cross_references": [
+    {"domain": "gov", "sector": "sub", "topic": "constitutional_rights", "relationship": "tenth_amendment_interpretation"},
+    {"domain": "gov", "sector": "leg", "topic": "appropriations", "relationship": "federal_spending_power"},
+    {"domain": "eco", "sector": "reg", "topic": "state_regulation", "relationship": "commerce_clause_limits"}
+  ],
+  "quantitative_data": null,
+  "temporal_scope": {
+    "historical_start": 1789,
+    "current_as_of": "2025-01-15",
+    "is_evolving": true
+  },
+  "philosophy_guard_check": {
+    "is_descriptive": true,
+    "normative_claims_present": false,
+    "multiple_perspectives_included": true,
+    "verifiable": true
+  },
+  "metadata": {
+    "created": "2025-01-15",
+    "author": "OpenEyes Knowledge Team",
+    "review_status": "pending",
+    "confidence_level": 0.95,
+    "tags": ["federalism", "constitutional_law", "state_rights", "separation_of_powers"]
+  }
+}

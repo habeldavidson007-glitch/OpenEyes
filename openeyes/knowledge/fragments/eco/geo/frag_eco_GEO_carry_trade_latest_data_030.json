@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_carry_trade_latest_030",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "carry_trade",
+    "yen",
+    "unwind",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Carry trade 2024: JPY carry trade estimated $800B-1T. BoJ policy normalization (rate hikes, QT) triggering partial unwind. August 2024 volatility spike as yen strengthened sharply. EM FX under pressure but contained. Turkish lira, Mexican peso, Indonesian rupiah most exposed. Hedging costs rising. Fed pivot timing critical for EM stability.",
+  "source": "morgan_stanley_research",
+  "source_url": "https://www.morganstanley.com/",
+  "credibility_class": "investment_bank",
+  "year": 2024,
+  "weight": 0.91
+}

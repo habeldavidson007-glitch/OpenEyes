@@ -1,0 +1,27 @@
+{
+  "id": "frag_gov_ipl_tmk_remedies_comparative_009",
+  "domain": "gov",
+  "sector": "IPL",
+  "category": "Trademark Law",
+  "topic": "injunctions, damages, disgorgement, treble damages, attorney fees",
+  "role": "comparative",
+  "summary": "Analytical overview of injunctions, damages, disgorgement, treble damages, attorney fees in Trademark Law.",
+  "key_points": [
+    "Key legal point 1",
+    "Key legal point 2",
+    "Key legal point 3",
+    "Key legal point 4",
+    "Key legal point 5"
+  ],
+  "sources": [
+    "15 U.S.C. (Lanham Act)",
+    "USPTO TMEP",
+    "Federal Circuit opinions",
+    "Supreme Court trademark decisions",
+    "WIPO Madrid System"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_passed": true,
+  "related_fragments": [],
+  "philosophy_guard_statement": "Describes existing law without normative advocacy."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_htf_confluence_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "market_structure",
+    "multi_timeframe"
+  ],
+  "reasoning_role": "definition",
+  "content": "Higher timeframe confluence means aligning trades with structure on timeframes above your trading chart. Daily structure overrides hourly; weekly overrides daily. Trading with HTF trend improves win rate and reduces noise. Counter-trend trades on lower timeframes face headwinds as HTF participants dominate price action at key levels.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

@@ -1,0 +1,18 @@
+{
+  "content": "Interventions to address food deserts include: (1) Retail interventions: incentives for supermarkets to locate in underserved areas (tax credits, zoning changes), healthy corner store programs converting existing stores, mobile markets and produce trucks; (2) Alternative distribution: farmers markets with SNAP/EBT acceptance, community-supported agriculture subsidies, food cooperatives, online grocery delivery partnerships; (3) Community-based solutions: community gardens, urban agriculture, food hubs, gleaning programs; (4) Policy approaches: zoning for mixed-use development, transit improvements connecting residents to grocery stores, healthy food financing initiatives (e.g., Pennsylvania Fresh Food Financing Initiative); (5) Individual support: SNAP benefits expansion, WIC program, nutrition education (SNAP-Ed). Evidence for health impact is mixed\u2014supermarket introduction alone shows modest effects on consumption without complementary interventions like pricing strategies and nutrition education.",
+  "tags": [
+    "intervention",
+    "food_security",
+    "community_development",
+    "nutrition_policy"
+  ],
+  "reasoning_role": "latest_data",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "year": 2024,
+  "source": "https://www.cdc.gov/",
+  "id": "HC-2193",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
+}

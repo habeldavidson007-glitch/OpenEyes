@@ -1,0 +1,18 @@
+{
+  "id": "PHR-2179_personalized_medicine_approaches_latest_data",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "personalized medicine approaches",
+    "pharmaceuticals",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Personalized Medicine Approaches - recent technological advances, emerging platforms, industry trends",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2026,
+  "source": "FDA",
+  "_original_credibility_class": "peer_reviewed"
+}

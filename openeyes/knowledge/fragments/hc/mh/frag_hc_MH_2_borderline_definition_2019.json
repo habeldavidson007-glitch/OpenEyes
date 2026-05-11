@@ -1,0 +1,19 @@
+{
+  "content": "DSM-5-TR BPD criteria: Pervasive pattern of instability in relationships, self-image, affects, impulsivity beginning by early adulthood, present in various contexts, indicated by \u22655 of: frantic efforts to avoid abandonment, unstable/intense relationships (idealization/devaluation), identity disturbance, impulsivity in \u22652 potentially self-damaging areas, recurrent suicidal behavior/gestures/threats/self-mutilation, affective instability due to mood reactivity, chronic emptiness, inappropriate intense anger/difficulty controlling anger, transient stress-related paranoid ideation/severe dissociative symptoms. Not better explained by another mental disorder, substance effects, or medical condition.",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "BPD",
+    "personality-disorder"
+  ],
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2022,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2019",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

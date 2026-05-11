@@ -1,0 +1,18 @@
+{
+  "id": "MH-2257_histrionic_personality_latest_data",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "histrionic personality",
+    "mental_health",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Histrionic Personality - recent research findings, emerging treatments, updated guidelines",
+  "source_url": "https://www.nimh.nih.gov/research",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2026,
+  "source": "NIMH",
+  "_original_credibility_class": "peer_reviewed"
+}

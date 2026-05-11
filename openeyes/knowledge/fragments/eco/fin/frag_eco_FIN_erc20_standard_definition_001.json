@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_erc20_standard_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto",
+    "definition",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "ERC-20 defines standard functions (transfer, approve, balanceOf) for fungible tokens on Ethereum. Launched 2015, enabled ICO boom 2017. Over 500k ERC-20 tokens exist, though most are inactive. Requires ETH for gas fees.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_bos_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Break of Structure (BOS) confirms trend continuation when price exceeds previous swing high (uptrend) or swing low (downtrend). Valid BOS requires decisive break with follow-through, not just wick penetration. BOS events provide trend confirmation and potential entry points for continuation trades. Multiple BOS sequences define strong trending markets.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

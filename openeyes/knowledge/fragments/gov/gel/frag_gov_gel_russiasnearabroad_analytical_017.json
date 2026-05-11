@@ -1,0 +1,33 @@
+{
+  "id": "gov-GEL-RUSSIASNEARABROAD-ANALYTICAL-017",
+  "domain": "GOVERNANCE",
+  "sector": "GEL",
+  "topic": "Russiasnearabroad",
+  "role": "analytical",
+  "summary": "Russiasnearabroad: Eurasian Economic Union",
+  "content": {
+    "overview": "This fragment describes russiasnearabroad in geopolitical analysis. Eurasian Economic Union.",
+    "key_points": [
+      "Eurasian Economic Union",
+      "CSTO defense pact",
+      "Frozen conflicts four",
+      "Special interests doctrine",
+      "Ukraine escalation"
+    ],
+    "sources": [
+      "World Bank WGI (databank.worldbank.org)",
+      "Freedom House (freedomhouse.org)",
+      "CSIS (csis.org)",
+      "Brookings (brookings.edu)",
+      "Carnegie (carnegieendowment.org)",
+      "Lowy Institute (lowyinstitute.org)"
+    ],
+    "philosophy_guard": "Describes what IS - theories patterns cases. Not what SHOULD BE.",
+    "credibility_score": 0.94
+  },
+  "metadata": {
+    "created": "2024",
+    "format_version": "2.0",
+    "cross_references": []
+  }
+}

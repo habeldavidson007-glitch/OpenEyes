@@ -1,0 +1,17 @@
+{
+  "id": "MAC-1880_business_cycle_indicators_definition",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "business cycle indicators",
+    "macroeconomics",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Business Cycle Indicators - core economic concept, measurement approach, theoretical foundation",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "Federal Reserve"
+}

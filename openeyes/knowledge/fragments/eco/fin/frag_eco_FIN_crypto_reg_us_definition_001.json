@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_crypto_reg_us_definition",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "regulation",
+    "crypto",
+    "sec",
+    "cftc",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "US crypto regulation is currently a bifurcated framework between the SEC (securities laws) and CFTC (commodities laws). The SEC applies the Howey Test to determine if tokens are securities. The CFTC regulates Bitcoin and Ethereum as commodities. Recent executive orders call for a unified framework, but legislation (e.g., Lummis-Gillibrand) remains stalled.",
+  "source": "government_source",
+  "source_url": "https://www.cftc.gov",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

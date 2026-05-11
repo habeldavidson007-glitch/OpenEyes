@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_dischargepetition_procedural_005",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "dischargepetition",
+  "role": "procedural",
+  "title": "Dischargepetition",
+  "summary": "Descriptive overview of dischargepetition in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about dischargepetition",
+    "Key factual point 2 about dischargepetition",
+    "Key factual point 3 about dischargepetition",
+    "Key factual point 4 about dischargepetition",
+    "Key factual point 5 about dischargepetition"
+  ],
+  "sources": [
+    "Congress.gov",
+    "GPO (govinfo.gov)",
+    "CRS Reports",
+    "Senate.gov/House.gov",
+    "Brookings"
+  ],
+  "related_fragments": [],
+  "credibility_score": 0.96,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "Legislative_Process"
+  }
+}

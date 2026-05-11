@@ -1,0 +1,18 @@
+{
+  "id": "HC-2051",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "vaccine effectiveness studies",
+    "test-negative design",
+    "cohort studies"
+  ],
+  "reasoning_role": "definition",
+  "content": "Vaccine effectiveness study designs: (1) Test-negative case-control\u2014compares vaccination status among those testing positive vs negative for the pathogen; controls for healthcare-seeking behavior. (2) Cohort studies\u2014follows vaccinated and unvaccinated populations over time, calculates incidence rates. (3) Screening method\u2014compares vaccine coverage in cases versus population coverage. (4) Household transmission studies\u2014measures secondary attack rates by vaccination status. Key adjustments needed: age, comorbidities, occupation, calendar time (to account for variant changes), and prior infection. Waning effectiveness assessed by time since vaccination stratification.",
+  "source": "CDC MMWR vaccine effectiveness methods, Eurosurveillance",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

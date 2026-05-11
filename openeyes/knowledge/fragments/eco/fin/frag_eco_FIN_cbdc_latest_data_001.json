@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_cbdc_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "latest_data",
+    "crypto"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "China's e-CNY widely piloted. Fed researching 'FedNow' but no CBDC commitment. BIS driving cross-border CBDC interoperability projects.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

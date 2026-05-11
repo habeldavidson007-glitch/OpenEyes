@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_votingprocedures_procedural_009",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "votingprocedures",
+  "role": "procedural",
+  "title": "Votingprocedures",
+  "summary": "Descriptive overview of votingprocedures in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about votingprocedures",
+    "Key factual point 2 about votingprocedures",
+    "Key factual point 3 about votingprocedures",
+    "Key factual point 4 about votingprocedures",
+    "Key factual point 5 about votingprocedures"
+  ],
+  "sources": [
+    "Congress.gov",
+    "GPO (govinfo.gov)",
+    "CRS Reports",
+    "Senate.gov/House.gov",
+    "Brookings"
+  ],
+  "related_fragments": [],
+  "credibility_score": 1.0,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "Legislative_Process"
+  }
+}

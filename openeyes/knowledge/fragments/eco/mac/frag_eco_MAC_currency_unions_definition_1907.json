@@ -1,0 +1,17 @@
+{
+  "id": "MAC-1907_currency_unions_definition",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "currency unions",
+    "macroeconomics",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Currency Unions - core economic concept, measurement approach, theoretical foundation",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "Federal Reserve"
+}

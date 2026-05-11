@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_pinbar_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "price_action"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Pin bars have high failure rates in isolation\u2014studies show 45-55% success rate without confluence. In trending markets, counter-trend pin bars fail frequently as momentum overwhelms rejection signals. Retail traders often enter at pin bar close without waiting for confirmation, getting trapped when price continues against them.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

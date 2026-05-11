@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_stop_hunt_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "market_structure",
+    "behavioral"
+  ],
+  "reasoning_role": "definition",
+  "content": "Stop hunts occur when price deliberately moves to trigger clustered stop-loss orders before reversing. Retail traders place stops at obvious levels (below support, above resistance, round numbers). Large players know this and push price to access liquidity. Stop hunts create wicky candles that trap breakout traders and shake out position holders before genuine moves.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

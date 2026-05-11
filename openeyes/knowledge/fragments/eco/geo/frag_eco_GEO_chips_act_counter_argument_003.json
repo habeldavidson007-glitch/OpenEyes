@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_chips_act_counter_003",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "chips_act",
+    "semiconductors",
+    "export_controls",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "CHIPS Act limitations: $52B represents only ~6% of global chip capex annually. TSMC, Samsung remain dominant. Export controls may accelerate China's indigenous development. Subsidies risk overcapacity in mature nodes. Labor shortage constrains US manufacturing expansion.",
+  "source": "semi_analysis",
+  "source_url": "https://www.semianalysis.com/",
+  "credibility_class": "industry_analysis",
+  "year": 2024,
+  "weight": 0.87
+}

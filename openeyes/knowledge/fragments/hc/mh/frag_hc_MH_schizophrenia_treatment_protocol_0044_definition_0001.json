@@ -1,0 +1,21 @@
+{
+  "id": "frag_mh_schizophrenia_treatment_protocol_0044",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "antipsychotics",
+    "clozapine",
+    "psychosocial-intervention",
+    "treatment-resistant"
+  ],
+  "reasoning_role": "definition",
+  "content": "First-line treatment: second-generation antipsychotics (SGAs) like risperidone, olanzapine, quetiapine, aripiprazole, or first-generation (FGAs) like haloperidol. Choice depends on side effect profile, patient preference, and prior response. Clozapine is reserved for treatment-resistant schizophrenia (failure of \u22652 antipsychotics) with superior efficacy but requires monitoring for agranulocytosis. Long-acting injectables improve adherence. Psychosocial interventions include CBT for psychosis, family psychoeducation, supported employment, and social skills training. Early intervention programs improve long-term outcomes. Regular monitoring for metabolic syndrome, extrapyramidal symptoms, and tardive dyskinesia is essential.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

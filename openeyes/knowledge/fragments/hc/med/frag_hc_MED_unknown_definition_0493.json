@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0493",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "neuropathy",
+    "peripheral-nerve",
+    "diabetic",
+    "axonal",
+    "demyelinating"
+  ],
+  "reasoning_role": "definition",
+  "content": "Peripheral neuropathy refers to damage of peripheral nerves, affecting ~2.4% of general population, up to 8% of elderly. Classification: by distribution (mononeuropathy, mononeuritis multiplex, polyneuropathy), by fiber type (sensory, motor, autonomic; large-fiber vs small-fiber), by pathology (axonal degeneration vs demyelination). Common causes: diabetes (most common, distal symmetric sensorimotor), alcohol, B12 deficiency, hypothyroidism, renal failure, medications (chemotherapy, amiodarone, metronidazole), autoimmune (CIDP, vasculitis), hereditary (Charcot-Marie-Tooth), infections (HIV, Lyme, leprosy), toxins. Small-fiber neuropathy affects pain/temperature fibers (burning pain, autonomic symptoms) with normal NCS; diagnosed by skin biopsy showing reduced intraepidermal nerve fiber density. Large-fiber neuropathy affects proprioception/vibration, causes sensory ataxia, areflexia, abnormal NCS.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/30936517/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "FIN-163",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "algorithmic_trading",
+    "backtesting",
+    "slippage_modeling"
+  ],
+  "content": "Slippage is the difference between expected execution price and actual fill price, caused by latency, spread, and market impact. In backtesting, realistic slippage models must account for order size relative to average volume, volatility regime, and exchange liquidity. Institutional strategies often assume 1-3 basis points slippage for liquid equities, but crypto and small-cap stocks can experience 50+ basis points.",
+  "year": 2024,
+  "source": "Algorithmic Trading and DMA",
+  "source_url": "https://example.com/FIN-163",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
+}

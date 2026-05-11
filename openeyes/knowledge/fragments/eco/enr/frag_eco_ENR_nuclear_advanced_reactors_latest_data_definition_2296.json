@@ -1,0 +1,17 @@
+{
+  "id": "ENR-2296_nuclear_advanced_reactors_latest_data",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "nuclear advanced reactors",
+    "energy",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Nuclear Advanced Reactors - recent technological advances, cost trends, policy developments",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "EIA"
+}

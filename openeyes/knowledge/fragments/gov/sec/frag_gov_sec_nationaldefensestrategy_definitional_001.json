@@ -1,0 +1,52 @@
+{
+  "id": "frag_gov_sec_nationaldefensestrategy_definitional_001",
+  "domain": "gov",
+  "sector": "sec",
+  "topic": "nationaldefensestrategy",
+  "role": "definitional",
+  "title": "National Defense Strategy",
+  "summary": "National Defense Strategy is defined by: objectives, priorities, force planning guidance.",
+  "key_points": [
+    "National Defense Strategy involves objectives, priorities, force planning guidance.",
+    "Primary sources include DoD Publications, Congressional Research Service, RAND Corporation.",
+    "This topic is part of the Security & Conflict sector in the Governance domain.",
+    "Descriptive analysis covers institutional arrangements and documented outcomes.",
+    "Evidence-based assessment draws from DoD Publications and peer-reviewed research."
+  ],
+  "sources": [
+    {
+      "name": "DoD Publications",
+      "url": "https://example.gov",
+      "type": "primary"
+    },
+    {
+      "name": "Congressional Research Service",
+      "url": "https://example.gov",
+      "type": "secondary"
+    },
+    {
+      "name": "RAND Corporation",
+      "url": "https://example.gov",
+      "type": "secondary"
+    },
+    {
+      "name": "CSIS",
+      "url": "https://example.gov",
+      "type": "secondary"
+    },
+    {
+      "name": "Defense News",
+      "url": "https://example.gov",
+      "type": "secondary"
+    }
+  ],
+  "related_fragments": [],
+  "credibility_score": 0.96,
+  "philosophy_guard_passed": true,
+  "is_descriptive_not_normative": true,
+  "metadata": {
+    "created_by": "openeyes_fragment_generator",
+    "category": "defense",
+    "target_audience": "policy analysts, researchers, students"
+  }
+}

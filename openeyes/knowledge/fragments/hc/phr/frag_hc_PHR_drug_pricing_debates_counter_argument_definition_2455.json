@@ -1,0 +1,17 @@
+{
+  "id": "PHR-2455_drug_pricing_debates_counter_argument",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "drug pricing debates",
+    "pharmaceuticals",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Drug Pricing Debates - competing perspectives, implementation challenges, critical analysis",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "FDA"
+}

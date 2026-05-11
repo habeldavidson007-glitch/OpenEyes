@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_btc_mempool_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "bitcoin",
+    "counter_argument",
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Mempool dynamics can lead to unpredictable fees during congestion spikes. Users may overpay significantly during peak periods, and low-priority transactions can remain stuck for days.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

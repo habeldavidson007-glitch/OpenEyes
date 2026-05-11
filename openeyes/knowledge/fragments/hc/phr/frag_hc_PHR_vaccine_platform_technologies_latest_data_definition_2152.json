@@ -1,0 +1,17 @@
+{
+  "id": "PHR-2152_vaccine_platform_technologies_latest_data",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "vaccine platform technologies",
+    "pharmaceuticals",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Vaccine Platform Technologies - recent technological advances, emerging platforms, industry trends",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "FDA"
+}

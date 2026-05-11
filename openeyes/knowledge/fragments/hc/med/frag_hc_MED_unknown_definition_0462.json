@@ -1,0 +1,24 @@
+{
+  "id": "frag_med_unknown_definition_0462",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "alzheimers-disease",
+    "diagnosis",
+    "biomarker",
+    "PET",
+    "CSF",
+    "NIA-AA"
+  ],
+  "reasoning_role": "definition",
+  "content": "AD diagnosis uses 2018 NIA-AA Research Framework defining AD biologically via biomarkers (ATN system), independent of clinical symptoms. A (amyloid): positive amyloid PET or low CSF A\u03b242 or A\u03b242/40 ratio. T (tau): positive tau PET or elevated CSF phosphorylated tau (p-tau). N (neurodegeneration): structural MRI (medial temporal atrophy), FDG-PET (temporoparietal hypometabolism), or elevated CSF total tau. Clinical diagnosis: history of progressive episodic memory impairment plus deficits in other cognitive domains (language, visuospatial, executive function), functional impairment. MMSE/MoCA screen cognition; MoCA more sensitive for MCI. Neuropsychological testing characterizes pattern (hippocampal-predominant in AD). MRI excludes vascular, tumor, NPH; shows hippocampal/medial temporal atrophy. FDG-PET shows temporoparietal hypometabolism. Amyloid PET detects fibrillar A\u03b2. CSF biomarkers: low A\u03b242, elevated p-tau and t-tau. Blood biomarkers emerging: plasma p-tau217, p-tau181, GFAP show high accuracy for AD pathology. Differential diagnosis: vascular dementia, Lewy body dementia (visual hallucinations, parkinsonism, fluctuations), frontotemporal dementia (behavioral/language predominant), reversible causes (B12 deficiency, hypothyroidism, depression).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

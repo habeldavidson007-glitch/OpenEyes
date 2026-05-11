@@ -1,0 +1,19 @@
+{
+  "content": "DSM-5-TR criteria: Recurrent unexpected panic attacks (abrupt surge of intense fear/discomfort peaking within minutes with \u22654 symptoms: palpitations, sweating, trembling, dyspnea, choking, chest pain, nausea, dizziness, chills/heat, paresthesias, derealization, fear of losing control/going crazy, fear of dying). \u22651 attack followed by \u22651 month of: persistent concern about additional attacks/consequences, or significant maladaptive behavioral change related to attacks. Disturbance not attributable to substance effects, medical condition, or better explained by another mental disorder (social anxiety, specific phobia, OCD, PTSD). Agoraphobia diagnosed separately if present.",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "panic-attack",
+    "panic-disorder"
+  ],
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2022,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2005",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

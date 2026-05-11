@@ -1,0 +1,19 @@
+{
+  "id": "HC-2135",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "health workforce",
+    "retention",
+    "training",
+    "policy"
+  ],
+  "reasoning_role": "definition",
+  "content": "Workforce strengthening strategies: (1) Expand training capacity - increase medical/nursing school seats, accelerate programs (3-year MD programs); (2) Rural training tracks - required rural rotations, rural campuses showing 2-3x higher rural practice rates; (3) Financial incentives - loan repayment ($50,000-100,000 for 3-5 years rural service), rural salary supplements; (4) Task shifting - training community health workers, nurses, pharmacists for roles traditionally physician-only (HIV ART initiation, chronic disease management) with equivalent outcomes; (5) Team-based care - optimizing scope of practice, reducing administrative burden; (6) International recruitment ethics - bilateral agreements compensating source countries. Ethiopia's Health Extension Program trained 40,000 health workers achieving 85% immunization coverage.",
+  "source": "who.int",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "frag_gov_gov_territorialgov_procedural_095",
+  "domain": "gov",
+  "sector": "GOV",
+  "category": "Federalism & Subnational Governance",
+  "topic": "Territorial Governance",
+  "role": "procedural",
+  "title": "Territorial Governance: Procedural Analysis",
+  "content": {
+    "summary": ". This fragment outlines the operational procedures, processes, and implementation mechanisms.",
+    "key_points": [
+      "Step-by-step process for territorial governance",
+      "Responsible actors and their roles",
+      "Timeline and sequencing requirements",
+      "Documentation and record-keeping",
+      "Appeals or review mechanisms if applicable"
+    ],
+    "sources": [
+      "Congressional Research Service reports",
+      "U.S. Constitution",
+      "Constitution Annotated (congress.gov)",
+      "Government Publishing Office",
+      "Relevant Supreme Court opinions"
+    ],
+    "related_fragments": [],
+    "last_updated": "2024-01-15",
+    "credibility_score": 0.95,
+    "philosophy_guard_passed": true,
+    "philosophy_guard_note": "Descriptive claim about federalism & subnational governance; no normative advocacy regarding what should be"
+  }
+}

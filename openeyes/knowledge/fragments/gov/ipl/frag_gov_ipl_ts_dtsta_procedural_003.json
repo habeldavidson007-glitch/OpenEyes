@@ -1,0 +1,27 @@
+{
+  "id": "frag_gov_ipl_ts_dtsta_procedural_003",
+  "domain": "gov",
+  "sector": "IPL",
+  "category": "Trade Secrets",
+  "topic": "federal cause of action, ex parte seizure",
+  "role": "procedural",
+  "summary": "Procedural overview of federal cause of action, ex parte seizure in Trade Secrets.",
+  "key_points": [
+    "Key legal point 1",
+    "Key legal point 2",
+    "Key legal point 3",
+    "Key legal point 4",
+    "Key legal point 5"
+  ],
+  "sources": [
+    "18 U.S.C. (DTSA)",
+    "Uniform Trade Secrets Act",
+    "Federal Circuit opinions",
+    "Restatement (Third) Unfair Competition",
+    "State court decisions"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_passed": true,
+  "related_fragments": [],
+  "philosophy_guard_statement": "Describes existing law without normative advocacy."
+}

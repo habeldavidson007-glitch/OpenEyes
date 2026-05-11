@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_cycles_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "latest_data",
+    "crypto"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Previous cycle tops: 2013, 2017, 2021. Drawdowns averaged 80-85%. 2024 cycle showing earlier institutional front-running.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

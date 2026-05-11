@@ -1,0 +1,19 @@
+{
+  "id": "HC-2065",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "quarantine",
+    "isolation",
+    "infectious disease control",
+    "public health"
+  ],
+  "reasoning_role": "definition",
+  "content": "Quarantine and isolation are distinct public health measures. Quarantine separates and restricts movement of individuals exposed to a contagious disease during the incubation period to see if they become sick. Isolation separates infected individuals from those not infected, regardless of symptom status. Quarantine applies to asymptomatic contacts; isolation applies to confirmed cases. Duration is based on disease-specific incubation periods (quarantine) or infectious periods (isolation). Legal authority for quarantine/isolation varies by jurisdiction but generally requires public health emergency declarations.",
+  "source": "CDC quarantine/isolation guidelines, WHO International Health Regulations",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

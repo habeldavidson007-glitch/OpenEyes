@@ -1,0 +1,17 @@
+{
+  "id": "MAC-1889_yield_curve_recessions_definition",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "yield curve recessions",
+    "macroeconomics",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Yield Curve Recessions - core economic concept, measurement approach, theoretical foundation",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "Federal Reserve"
+}

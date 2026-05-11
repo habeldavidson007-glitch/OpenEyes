@@ -1,0 +1,20 @@
+{
+  "id": "frag_eco_GEO_sovereign_default_def_025",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "sovereign_debt",
+    "default",
+    "restructuring",
+    "creditors",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sovereign default process: Failure to meet debt service obligations. Triggers: economic shock, political crisis, debt overhang. Restructuring involves creditor negotiations, haircuts, maturity extensions. Paris Club (official creditors), London Club (commercial banks), bondholders. Collective action clauses prevent holdouts. IMF typically involved in program design.",
+  "source": "paris_club_official",
+  "source_url": "http://www.clubdeparis.org/",
+  "credibility_class": "international_organization",
+  "year": 2024,
+  "weight": 0.94
+}

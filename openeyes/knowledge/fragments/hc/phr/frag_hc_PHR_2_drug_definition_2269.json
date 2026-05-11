@@ -1,0 +1,19 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "content": "DDI severity classification: Contraindicated (major toxicity expected, avoid combination); Major (potential serious outcome, usually avoid but may use with monitoring/modification); Moderate (effect may be noticeable, consider modification); Minor (minimal clinical significance). Interaction mechanism determination: timing helps distinguish PK (delayed onset as levels change) vs PD (immediate effect). In vitro studies predict interactions using recombinant enzymes, hepatocytes, transporter assays. Clinical DDI studies measure AUC/Cmax changes in presence of perpetrator drug. Regulatory guidance requires DDI evaluation during drug development for new molecular entities. Real-world evidence from pharmacovigilance databases identifies rare interactions not detected in trials.",
+  "tags": [
+    "severity_classification",
+    "mechanism_determination",
+    "DDI_studies",
+    "regulatory_requirements"
+  ],
+  "source": "ema.europa.eu",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "reasoning_role": "definition",
+  "id": "HC-2269",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "frag_gov_ele_democraticbacksliding_populismdemocracy_definitional_019",
+  "domain": "gov",
+  "sector": "ele",
+  "category": "democraticbacksliding",
+  "topic": "Populism and democracy",
+  "topic_slug": "populismdemocracy",
+  "role": "definitional",
+  "summary": "Defines populism and democracy within electoral systems, describing anti-pluralism, majoritarianism, institutional attacks.",
+  "key_points": [
+    "Populism and democracy is a core concept in electoral system design.",
+    "Key characteristics include: anti-pluralism, majoritarianism, institutional attacks.",
+    "Scholars measure this concept using standardized indicators.",
+    "Variations exist across different democratic systems globally.",
+    "The concept is distinct from related electoral phenomena."
+  ],
+  "sources": [
+    "Freedom House (freedomhouse.org)",
+    "International IDEA (idea.int)",
+    "Inter-Parliamentary Union (ipu.org)",
+    "Brennan Center for Justice (brennancenter.org)",
+    "MIT Election Lab (electionlab.mit.edu)"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_compliant": true,
+  "related_fragments": [],
+  "last_updated": "2024-01-15",
+  "version": "1.0"
+}

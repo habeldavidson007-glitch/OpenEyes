@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_moving_averages_latest_data_09",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "moving_average",
+    "death_cross",
+    "technical_analysis",
+    "latest_data",
+    "moving_averages",
+    "golden_cross"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "The 200-day moving average continues to serve as critical support/resistance in 2024 markets. NVIDIA's pullback to its 50-day MA in February 2024 provided a textbook bounce opportunity. The golden cross in regional banks in early 2024 preceded a significant rally. Crypto traders watched Bitcoin's relationship to its 200-week MA as a long-term trend indicator. Recent research shows MA effectiveness varies by market regime, with trending markets showing higher MA reliability.",
+  "source": "Educational Resource",
+  "source_url": "https://www.stockcharts.com/articles/goldendeathcross.html",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

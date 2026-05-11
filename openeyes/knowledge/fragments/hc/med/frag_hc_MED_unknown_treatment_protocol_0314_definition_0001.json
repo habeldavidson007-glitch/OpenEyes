@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0314",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "interaction_management",
+    "dose_adjustment",
+    "monitoring",
+    "avoidance_strategies"
+  ],
+  "reasoning_role": "definition",
+  "content": "Management strategies for DDIs: avoid combination if alternative exists (clarithromycin + simvastatin \u2192 use azithromycin or pravastatin); adjust dose (warfarin dose reduction when starting amiodarone); monitor closely (INR when antibiotics alter warfarin metabolism); separate administration times (levothyroxine 4 hours from calcium/iron); stagger dosing to minimize PK interactions. High-risk combinations requiring avoidance: MAO inhibitors + SSRIs (serotonin syndrome); nitrates + PDE5 inhibitors (severe hypotension); QT-prolonging drugs combined (torsades risk); dual antiplatelet + anticoagulant (bleeding - limit duration). Use interaction checkers before prescribing; educate patients about OTC/herbal interactions (St. John's wort induces CYP3A4).",
+  "source": "nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

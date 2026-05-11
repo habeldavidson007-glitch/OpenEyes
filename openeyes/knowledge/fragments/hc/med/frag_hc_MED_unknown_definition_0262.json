@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0262",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "SGLT2 inhibitors",
+    "diabetes",
+    "heart failure",
+    "CKD",
+    "mechanism"
+  ],
+  "reasoning_role": "definition",
+  "content": "SGLT2 (sodium-glucose cotransporter-2) inhibitors are oral antidiabetic agents that block glucose and sodium reabsorption in the proximal renal tubule, causing urinary glucose excretion (60-80g/day). Agents include empagliflozin, dapagliflozin, canagliflozin, and ertugliflozin. Beyond glycemic control, SGLT2 inhibitors provide cardiovascular and renal benefits through multiple mechanisms: osmotic diuresis reduces preload and afterload, weight loss (2-3kg), blood pressure reduction (3-5 mmHg systolic), improved myocardial energetics, reduced inflammation, and decreased intraglomerular pressure. Indications now extend beyond type 2 diabetes to include heart failure with reduced ejection fraction (HFrEF), heart failure with preserved ejection fraction (HFpEF), and chronic kidney disease regardless of diabetes status. Major outcome trials (EMPA-REG OUTCOME, DECLARE-TIMI 58, DAPA-HF, EMPA-KIDNEY) demonstrated 14% reduction in MACE, 30% reduction in heart failure hospitalization, and 30-40% reduction in CKD progression.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

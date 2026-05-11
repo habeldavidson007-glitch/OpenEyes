@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_atr_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "indicators",
+    "risk_management"
+  ],
+  "reasoning_role": "definition",
+  "content": "Average True Range (ATR) measures volatility by calculating average of true range (greatest of: high-low, |high-prev close|, |low-prev close|) over specified period. Higher ATR indicates greater volatility. Used for position sizing (smaller size when ATR high), stop placement (stops at multiples of ATR), and comparing volatility across instruments. Does not indicate direction.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

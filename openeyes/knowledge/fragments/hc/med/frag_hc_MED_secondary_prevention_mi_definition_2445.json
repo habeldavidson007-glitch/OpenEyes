@@ -1,0 +1,19 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "post-MI",
+    "DAPT",
+    "beta-blocker",
+    "ACE inhibitor",
+    "statin"
+  ],
+  "reasoning_role": "definition",
+  "content": "Essential medications post-MI: (1) Dual antiplatelet therapy (DAPT): aspirin 81mg daily indefinitely plus P2Y12 inhibitor (clopidogrel 75mg, ticagrelor 90mg BID, or prasugrel 10mg daily) for 12 months minimum after ACS; shorter duration (3-6 months) considered if high bleeding risk; extended beyond 12 months if high ischemic risk and low bleeding risk. (2) Beta-blocker: metoprolol succinate, carvedilol, or bisoprolol for \u22653 years (indefinitely if LVEF \u226440%, HF, or ongoing ischemia); reduces mortality, reinfarction, arrhythmias. (3) ACE inhibitor (or ARB if intolerant): indicated for all post-MI, especially with LVEF \u226440%, anterior MI, diabetes, CKD; start within 24 hours if stable; reduces remodeling, mortality. (4) High-intensity statin: atorvastatin 40-80mg or rosuvastatin 20-40mg regardless of baseline LDL; add ezetimibe or PCSK9 inhibitor if LDL remains above goal. (5) Aldosterone antagonist: eplerenone or spironolactone if LVEF \u226440% with HF or diabetes (EPHESUS trial).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/36857096/",
+  "credibility_class": "guideline",
+  "year": 2023,
+  "id": "HC-2445",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

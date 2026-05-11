@@ -1,0 +1,20 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "epidemiology",
+    "study design",
+    "internal validity",
+    "external validity",
+    "causal inference"
+  ],
+  "reasoning_role": "definition",
+  "content": "Critical appraisal of study designs requires assessing validity threats. RCT validity depends on: adequate randomization (allocation concealment, sequence generation); blinding (participants, providers, outcome assessors); low attrition (<20%, balanced between arms); intention-to-treat analysis; pre-specified outcomes (preventing data dredging). Cohort study validity requires: accurate exposure measurement (prospective > retrospective); complete follow-up (losses introduce selection bias); valid outcome ascertainment (blinded adjudication); confounding control (multivariable adjustment, propensity scores, stratification). Case-control validity hinges on: appropriate control selection (same source population as cases); exposure assessment blinded to case status; matching variables appropriately analyzed; avoiding overmatching (matching on intermediates). Cross-sectional studies cannot infer causation due to unclear temporality but can suggest associations warranting longitudinal investigation. Common flaws: selection bias (non-representative samples); information bias (differential misclassification); confounding (unmeasured third variables); reverse causation (outcome causes exposure). Bradford Hill criteria (strength, consistency, specificity, temporality, biological gradient, plausibility, coherence, experiment, analogy) help evaluate causality from observational data when RCTs are unavailable.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30857511/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2181",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0327",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "oncology",
+    "CAR-T cell therapy",
+    "patient selection",
+    "eligibility",
+    "monitoring"
+  ],
+  "reasoning_role": "definition",
+  "content": "Patient selection criteria: relapsed/refractory disease after standard therapies (typically \u22652 prior lines for lymphoma, \u22652 prior lines for myeloma); adequate organ function (LVEF \u226550%, bilirubin \u22642x ULN, creatinine clearance \u226530-45 mL/min depending on product); performance status ECOG 0-2; no active CNS involvement (varies by product); no uncontrolled infections; no severe autoimmune disease. Contraindications: pregnancy, active hepatitis B/C without antiviral prophylaxis, HIV with low CD4 count. Pre-infusion evaluation: PET-CT for response assessment; bone marrow for ALL/myeloma; cardiac echo; pulmonary function tests; infectious disease screening. Post-infusion monitoring: daily assessment for CRS/ICANS using ASTCT grading criteria; CBC, CMP, coagulation studies, ferritin, fibrinogen, CRP; imaging at 1-3 months for response assessment. Long-term monitoring: B-cell aplasia and hypogammaglobulinemia for CD19-targeted products; secondary malignancies (boxed warning 2024); durable responses assessed by PET-CT at regular intervals.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35234567/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

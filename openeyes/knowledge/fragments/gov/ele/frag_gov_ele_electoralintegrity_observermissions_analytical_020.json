@@ -1,0 +1,29 @@
+{
+  "id": "frag_gov_ele_electoralintegrity_observermissions_analytical_020",
+  "domain": "gov",
+  "sector": "ele",
+  "category": "electoralintegrity",
+  "topic": "Observer missions",
+  "topic_slug": "observermissions",
+  "role": "analytical",
+  "summary": "Analyzes the mechanisms and impacts of observer missions, examining domestic vs international, methodologies, impact.",
+  "key_points": [
+    "Research shows Observer missions affects electoral outcomes through multiple pathways.",
+    "Empirical studies indicate: domestic vs international, methodologies, impact.",
+    "Causal mechanisms link this factor to broader democratic performance.",
+    "Trade-offs exist between competing electoral values.",
+    "Measurement challenges complicate cross-national comparisons."
+  ],
+  "sources": [
+    "Freedom House (freedomhouse.org)",
+    "International IDEA (idea.int)",
+    "Inter-Parliamentary Union (ipu.org)",
+    "Brennan Center for Justice (brennancenter.org)",
+    "MIT Election Lab (electionlab.mit.edu)"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_compliant": true,
+  "related_fragments": [],
+  "last_updated": "2024-01-15",
+  "version": "1.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_margin_regulations_counter_argument",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "regulation",
+    "margin",
+    "leverage",
+    "reg_t",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "High margin requirements constrain capital efficiency for professional investors and hedgers. Critics argue that rigid Reg T limits are outdated for sophisticated portfolios where offsetting risks (e.g., long/short pairs) should allow lower margin via Portfolio Margin accounts. Conversely, post-2021 discussions suggest retail margin access is too loose.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

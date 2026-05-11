@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0286",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "therapeutic_index",
+    "narrow_TI",
+    "drug_monitoring",
+    "toxicity_risk",
+    "bioequivalence"
+  ],
+  "reasoning_role": "definition",
+  "content": "Therapeutic index (TI) is the ratio between toxic and therapeutic drug concentrations: TI = TD50/ED50 (dose toxic to 50% / dose effective in 50%) or TC50/EC50 for concentrations. Narrow therapeutic index (NTI) drugs have TI <2, requiring careful dosing and monitoring. NTI drugs include: warfarin (INR 2-3 therapeutic, >4 bleeding risk), digoxin (0.5-0.9 ng/mL therapeutic, >1.2 toxicity), lithium (0.6-1.2 mEq/L therapeutic, >1.5 toxicity), phenytoin (10-20 mcg/mL), theophylline (10-20 mcg/mL), aminoglycosides, cyclosporine. Small dose changes or drug interactions can cause toxicity or therapeutic failure. FDA requires bioequivalence standards of 90-111% for NTI drugs vs 80-125% for others.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

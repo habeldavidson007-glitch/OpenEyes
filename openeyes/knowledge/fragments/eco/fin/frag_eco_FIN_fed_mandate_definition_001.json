@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_fed_mandate_def_001",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "fed",
+    "central_bank",
+    "monetary_policy",
+    "macro",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "The Federal Reserve operates under a dual mandate established by Congress: maximum employment and stable prices. The dual mandate was formalized in the Federal Reserve Reform Act of 1977, which amended the Federal Reserve Act. Maximum employment refers to the highest level of employment that can be sustained without generating inflationary pressures. Stable prices is typically interpreted as an inflation rate of 2 percent over the longer run, as measured by the annual change in the Personal Consumption Expenditures (PCE) price index. The Fed must balance these two objectives when setting monetary policy, though they are generally complementary in the longer run.",
+  "source": "Federal Reserve Act, Section 2A",
+  "source_url": "https://www.federalreserve.gov/aboutthefed/section2a.htm",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

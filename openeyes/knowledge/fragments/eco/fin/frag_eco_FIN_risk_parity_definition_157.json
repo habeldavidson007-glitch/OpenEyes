@@ -1,0 +1,19 @@
+{
+  "id": "FIN-157",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "risk_parity",
+    "asset_allocation",
+    "portfolio_construction",
+    "alternative_strategies"
+  ],
+  "content": "Risk parity allocates capital so each asset class contributes equally to portfolio risk, rather than equal dollar amounts. Traditional 60/40 portfolios are actually 90% equity risk because stocks are far more volatile than bonds. Risk parity uses leverage on bonds to match stock risk contributions, then diversifies across equities, bonds, commodities, and currencies. Bridgewater's All Weather fund popularized the approach. Benefits: true diversification, better performance in inflationary environments where stocks and bonds both struggle. Risks: leverage amplifies losses if correlations break down (both stocks and bonds fall together), and interest rate sensitivity. Post-2022, when bonds fell alongside stocks, risk parity faced scrutiny but remains valid for investors seeking non-traditional diversification.",
+  "year": "2024",
+  "source": "Journal of Alternative Investments",
+  "source_url": "https://jai.pm-research.com/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "academic_research",
+  "sector": "FIN"
+}

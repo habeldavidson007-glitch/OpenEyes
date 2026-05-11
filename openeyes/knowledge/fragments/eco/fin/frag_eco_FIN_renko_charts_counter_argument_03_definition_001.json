@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_renko_charts_counter_argument_03",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "counter_argument",
+    "technical_analysis",
+    "renko_charts"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Renko's brick formation creates significant lag, missing optimal entry/exit points. Brick size selection dramatically impacts results with no optimal methodology. Renko charts obscure important time-based information like consolidation duration. Gaps and rapid moves create ambiguous brick sequences. Backtesting Renko strategies is complicated by non-time-based structure. Renko's apparent trend clarity is retrospective; real-time brick formation generates whipsaws. Limited adoption reduces self-fulfilling dynamics. Standard indicators don't translate cleanly to Renko format.",
+  "source": "Educational Resource",
+  "source_url": "https://www.tradingmethods.org/renko-information-loss",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

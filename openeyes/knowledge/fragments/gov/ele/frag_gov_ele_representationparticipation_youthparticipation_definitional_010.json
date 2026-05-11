@@ -1,0 +1,29 @@
+{
+  "id": "frag_gov_ele_representationparticipation_youthparticipation_definitional_010",
+  "domain": "gov",
+  "sector": "ele",
+  "category": "representationparticipation",
+  "topic": "Youth political participation",
+  "topic_slug": "youthparticipation",
+  "role": "definitional",
+  "summary": "Defines youth political participation within electoral systems, describing voting age debates, youth councils, digital activism.",
+  "key_points": [
+    "Youth political participation is a core concept in electoral system design.",
+    "Key characteristics include: voting age debates, youth councils, digital activism.",
+    "Scholars measure this concept using standardized indicators.",
+    "Variations exist across different democratic systems globally.",
+    "The concept is distinct from related electoral phenomena."
+  ],
+  "sources": [
+    "Freedom House (freedomhouse.org)",
+    "International IDEA (idea.int)",
+    "Inter-Parliamentary Union (ipu.org)",
+    "Brennan Center for Justice (brennancenter.org)",
+    "MIT Election Lab (electionlab.mit.edu)"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_compliant": true,
+  "related_fragments": [],
+  "last_updated": "2024-01-15",
+  "version": "1.0"
+}
