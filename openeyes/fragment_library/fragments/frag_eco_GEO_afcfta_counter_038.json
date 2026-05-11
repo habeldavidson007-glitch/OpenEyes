@@ -1,0 +1,18 @@
+{
+  "id": "frag_eco_GEO_afcfta_counter_038",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "afcfta",
+    "implementation_challenges",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "AfCFTA implementation hurdles: Infrastructure deficits (transport, energy) constrain trade. Overlapping RECs create complexity. Rules of origin negotiations slow. Non-tariff barriers pervasive. Political instability in some regions. Revenue loss concerns (tariffs significant fiscal source). Manufacturing capacity limited - risk of developed country dominance. Guided trade initiative pilot phase ongoing.",
+  "source": "uneca_analysis",
+  "source_url": "https://unece.org/",
+  "credibility_class": "international_organization",
+  "year": 2024,
+  "weight": 0.89
+}

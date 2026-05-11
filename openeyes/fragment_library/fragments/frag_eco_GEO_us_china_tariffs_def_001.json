@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_us_china_tariffs_def_001",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "us_china",
+    "trade_war",
+    "tariffs",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "US-China trade war began in 2018 with Section 301 tariffs on $34B of Chinese goods. Escalated to cover ~$370B annually. Average tariff rate on Chinese imports rose from 3% to 21%. China retaliated with tariffs on $110B of US goods, targeting agriculture and energy.",
+  "source": "congressional_research_service",
+  "source_url": "https://crs.gov/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.95
+}

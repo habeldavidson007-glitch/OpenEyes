@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_wto_function_def_009",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "wto",
+    "trade_organization",
+    "dispute_resolution",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "WTO (World Trade Organization): Established 1995, 164 members. Core functions: administer trade agreements, forum for negotiations, dispute settlement, monitoring national trade policies. Most-favored-nation and national treatment are founding principles. Budget: ~$200M annually.",
+  "source": "wto_official",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "international_organization",
+  "year": 2024,
+  "weight": 0.96
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_supply_chain_concentration_def_013",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "supply_chain",
+    "concentration_risk",
+    "resilience",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Supply chain concentration risk: Critical dependencies on single sources or geographies. Examples: Taiwan semiconductors (90%+ advanced nodes), China rare earths (60% mining, 85% processing), India pharmaceuticals (20%+ generic drugs). COVID exposed vulnerabilities, triggering policy responses globally.",
+  "source": "white_house_supply_chain_report",
+  "source_url": "https://www.whitehouse.gov/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.95
+}
