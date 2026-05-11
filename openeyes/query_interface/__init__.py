@@ -21,6 +21,7 @@ from openeyes.fragment_library import FragmentLibrary
 from openeyes.swarm import Swarm, FragmentCandidate, create_api_connectors
 from openeyes.dice_table import WurfelspielAssembler, DiceTable
 from openeyes.domain_rules import get_domain_rules, get_domain_tier, DomainRulesLoader
+from openeyes.core.kap import build_kap, kap_to_trace
 
 from shared_core.monte_carlo_engine import (
     monte_carlo_evolve, 
@@ -317,8 +318,60 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
             # DELIBERATION MODE: Full Monte Carlo pipeline
             print("[DELIBERATION MODE] No compiled logic found, running full verification\n")
             
-            # Step 1: Swarm decomposition and retrieval (using normalized query)
-            candidates = self._run_swarm(normalized_query)
+            # Step 0.5: Extract keywords for KAP
+            from openeyes.core.kap import build_kap
+            keywords = [
+                w for w in normalized_query.lower().split() 
+                if w not in {'what', 'is', 'are', 'the', 'a', 'an', 'for', 'with', 'in', 'on', 'at', 'to', 'of', 'and', 'or', 'but', 'how', 'which', 'when', 'where', 'why', 'can', 'could', 'should', 'would', 'may', 'might', 'must', 'shall', 'i', 'me', 'my', 'we', 'us', 'our', 'you', 'your', 'he', 'she', 'it', 'they', 'them', 'their'} and len(w) > 2
+            ]
+            
+            # Step 0.6: Build KAP — reason about what this query needs
+            kap = build_kap(
+                query=normalized_query,
+                domain=self.domain,
+                keywords=keywords
+            )
+            
+            # Step 0.7: Log KAP trace
+            kap_trace = kap_to_trace(kap)
+            print(f"\n{kap_trace}\n")
+            
+            # Step 0.8: Execute retrieval layer by layer
+            candidates_by_layer = self.swarm.retrieve_by_kap(
+                query=normalized_query,
+                domain=self.domain,
+                kap=kap
+            )
+            
+            # Step 0.9: Check mandatory layers all have results
+            halt_reason = None
+            for layer in kap.mandatory_layers():
+                missing_key = f"{layer.name}_MISSING"
+                if missing_key in candidates_by_layer:
+                    halt_reason = (
+                        f"Mandatory knowledge layer '{layer.name}' returned no fragments. "
+                        f"Purpose: {layer.purpose}. "
+                        f"Searched for roles: {layer.required_roles} "
+                        f"with tags: {layer.target_tags}"
+                    )
+                    break
+            
+            if halt_reason:
+                result.update(self._build_halt_response(
+                    reason=halt_reason,
+                    failed_candidates=[],
+                    domain=self.domain
+                ))
+                print(f"\n[HALT] {result['halt_reason']}")
+                return self._finalize_result(result, start_time, trace_id)
+            
+            # Step 0.10: Flatten candidates from all layers for Monte Carlo
+            all_candidates = []
+            for layer_name, candidates in candidates_by_layer.items():
+                if not layer_name.endswith('_MISSING'):
+                    all_candidates.extend(candidates)
+            
+            candidates = all_candidates
             
             if not candidates:
                 # FIX 1: Hard HALT - no content after this
@@ -521,17 +574,24 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
         # Convert FragmentCandidate objects to dicts
         return [c.to_dict() for c in candidates]
     
-    def _run_monte_carlo(self, candidates: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def _run_monte_carlo(self, candidates) -> List[Dict[str, Any]]:
         """Run Monte Carlo evaluation on candidates."""
         survivors = []
         
         # Determine domain tier for appropriate thresholds
         from openeyes.domain_rules import get_domain_tier
+        from openeyes.swarm import FragmentCandidate
         domain_tier = get_domain_tier(self.domain)
         
         for candidate in candidates:
+            # Handle both FragmentCandidate objects and dict candidates
+            if isinstance(candidate, FragmentCandidate):
+                cand_dict = candidate.to_dict()
+            else:
+                cand_dict = candidate
+            
             # Create single-fragment composition for evaluation
-            composition = [candidate]
+            composition = [cand_dict]
             
             # Evaluate composition with domain tier
             eval_result = evaluate_composition(
@@ -557,7 +617,7 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
             # Check survival criteria using survives_mc with tier-adjusted thresholds
             survival_result = survives_mc(
                 score=eval_result.mean_score,
-                selected=[candidate],
+                selected=[cand_dict],
                 variance=eval_result.variance,
                 survival_probability=eval_result.survival_probability,
                 aggregate_stats={},
@@ -569,44 +629,46 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
             if survival_result["passed"]:
                 # Add evaluation metrics to candidate
                 # CRITICAL: Use 'score' key (not 'mc_score') for assembler compatibility
-                candidate["score"] = eval_result.mean_score
-                candidate["mc_variance"] = eval_result.variance
-                candidate["mc_survival_prob"] = eval_result.survival_probability
-                candidate["reasoning_role"] = candidate.get("reasoning_role", "unknown")
-                candidate["source_type"] = candidate.get("source_type", "tertiary")
-                candidate["year"] = candidate.get("year", 0)
+                cand_dict["score"] = eval_result.mean_score
+                cand_dict["mc_variance"] = eval_result.variance
+                cand_dict["mc_survival_prob"] = eval_result.survival_probability
+                cand_dict["reasoning_role"] = cand_dict.get("reasoning_role", "unknown")
+                cand_dict["source_type"] = cand_dict.get("source_type", "tertiary")
+                cand_dict["year"] = cand_dict.get("year", 0)
                 
                 # FIX: Normalize fragment keys for Philosophy Guard compatibility
                 # Swarm fragments use 'fragment_id' but Philosophy Guard expects 'id'
-                if "fragment_id" in candidate and "id" not in candidate:
-                    candidate["id"] = candidate["fragment_id"]
+                if "fragment_id" in cand_dict and "id" not in cand_dict:
+                    cand_dict["id"] = cand_dict["fragment_id"]
                 # Swarm fragments use 'credibility_estimate' but Philosophy Guard expects 'credibility_class'
-                if "credibility_estimate" in candidate and "credibility_class" not in candidate:
+                if "credibility_estimate" in cand_dict and "credibility_class" not in cand_dict:
                     # Map numeric estimate to class name for rule compatibility
-                    cred_est = candidate["credibility_estimate"]
+                    cred_est = cand_dict["credibility_estimate"]
                     if cred_est >= 0.9:
-                        candidate["credibility_class"] = "international_institution"
+                        cand_dict["credibility_class"] = "international_institution"
                     elif cred_est >= 0.8:
-                        candidate["credibility_class"] = "academic_research"
+                        cand_dict["credibility_class"] = "academic_research"
                     elif cred_est >= 0.7:
-                        candidate["credibility_class"] = "financial_publication"
+                        cand_dict["credibility_class"] = "financial_publication"
                     elif cred_est >= 0.5:
-                        candidate["credibility_class"] = "financial_news"
+                        cand_dict["credibility_class"] = "financial_news"
                     else:
-                        candidate["credibility_class"] = "anecdotal"
+                        cand_dict["credibility_class"] = "anecdotal"
                 # Ensure tags field exists (some sources use 'domain_tags')
-                if "domain_tags" in candidate and "tags" not in candidate:
-                    candidate["tags"] = candidate["domain_tags"]
+                if "domain_tags" in cand_dict and "tags" not in cand_dict:
+                    cand_dict["tags"] = cand_dict["domain_tags"]
                 # Ensure last_verified exists for age checks
-                if "last_verified" not in candidate:
+                if "last_verified" not in cand_dict:
                     from datetime import datetime
-                    candidate["last_verified"] = datetime.now().strftime("%Y-%m-%d")
+                    cand_dict["last_verified"] = datetime.now().strftime("%Y-%m-%d")
                 
-                survivors.append(candidate)
+                survivors.append(cand_dict)
                 
-                print(f"  ✓ Fragment {candidate.get('fragment_id', candidate.get('id', 'unknown'))[:20]}... survived (score={eval_result.mean_score:.1f})")
+                frag_id = cand_dict.get('fragment_id', cand_dict.get('id', 'unknown'))
+                print(f"  ✓ Fragment {frag_id[:20] if frag_id else 'unknown'}... survived (score={eval_result.mean_score:.1f})")
             else:
-                print(f"  ✗ Fragment {candidate.get('fragment_id', 'unknown')[:20]}... failed MC (score={eval_result.mean_score:.1f}, var={eval_result.variance:.1f})")
+                frag_id = cand_dict.get('fragment_id', 'unknown')
+                print(f"  ✗ Fragment {frag_id[:20] if frag_id else 'unknown'}... failed MC (score={eval_result.mean_score:.1f}, var={eval_result.variance:.1f})")
         
         return survivors
     
