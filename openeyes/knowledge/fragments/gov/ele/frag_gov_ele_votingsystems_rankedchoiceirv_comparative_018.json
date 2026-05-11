@@ -1,0 +1,29 @@
+{
+  "id": "frag_gov_ele_votingsystems_rankedchoiceirv_comparative_018",
+  "domain": "gov",
+  "sector": "ele",
+  "category": "votingsystems",
+  "topic": "Ranked Choice Voting (IRV)",
+  "topic_slug": "rankedchoiceirv",
+  "role": "comparative",
+  "summary": "Compares approaches to ranked choice voting (irv) across systems, analyzing instant runoff, elimination rounds, US implementations.",
+  "key_points": [
+    "Different countries adopt varying approaches to ranked choice voting (irv).",
+    "Comparative analysis reveals: instant runoff, elimination rounds, US implementations.",
+    "Institutional context shapes how this factor operates in practice.",
+    "Reform efforts draw on lessons from other jurisdictions.",
+    "No single model dominates; contextual fit matters."
+  ],
+  "sources": [
+    "Freedom House (freedomhouse.org)",
+    "International IDEA (idea.int)",
+    "Inter-Parliamentary Union (ipu.org)",
+    "Brennan Center for Justice (brennancenter.org)",
+    "MIT Election Lab (electionlab.mit.edu)"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_compliant": true,
+  "related_fragments": [],
+  "last_updated": "2024-01-15",
+  "version": "1.0"
+}

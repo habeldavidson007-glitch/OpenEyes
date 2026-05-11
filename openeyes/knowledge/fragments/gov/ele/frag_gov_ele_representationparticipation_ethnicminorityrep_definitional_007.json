@@ -1,0 +1,29 @@
+{
+  "id": "frag_gov_ele_representationparticipation_ethnicminorityrep_definitional_007",
+  "domain": "gov",
+  "sector": "ele",
+  "category": "representationparticipation",
+  "topic": "Ethnic minority representation",
+  "topic_slug": "ethnicminorityrep",
+  "role": "definitional",
+  "summary": "Defines ethnic minority representation within electoral systems, describing reserved constituencies, proportional systems, consociationalism.",
+  "key_points": [
+    "Ethnic minority representation is a core concept in electoral system design.",
+    "Key characteristics include: reserved constituencies, proportional systems, consociationalism.",
+    "Scholars measure this concept using standardized indicators.",
+    "Variations exist across different democratic systems globally.",
+    "The concept is distinct from related electoral phenomena."
+  ],
+  "sources": [
+    "Freedom House (freedomhouse.org)",
+    "International IDEA (idea.int)",
+    "Inter-Parliamentary Union (ipu.org)",
+    "Brennan Center for Justice (brennancenter.org)",
+    "MIT Election Lab (electionlab.mit.edu)"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_compliant": true,
+  "related_fragments": [],
+  "last_updated": "2024-01-15",
+  "version": "1.0"
+}
