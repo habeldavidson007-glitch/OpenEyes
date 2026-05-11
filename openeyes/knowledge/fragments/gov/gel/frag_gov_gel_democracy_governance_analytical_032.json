@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_gel_democracy_governance_analytical_032",
+  "domain": "gov",
+  "sector": "gel",
+  "topic": "democracy_governance",
+  "role": "analytical",
+  "summary": "Analysis of the Democracy-governance relationship reveals significant variation across countries and regions. V-Dem vs WGI correlations, divergences. Research shows correlations with economic development, institutional quality, and political stability.",
+  "key_points": [
+    "Analytical framework for understanding Democracy-governance relationship",
+    "Cross-country comparative analysis patterns",
+    "Relationship with other governance dimensions",
+    "Debates on causality vs correlation",
+    "Policy implications from observed trends"
+  ],
+  "sources": [
+    "World Bank Worldwide Governance Indicators (databank.worldbank.org)",
+    "Kaufmann, Kraay, Mastruzzi (2010) WGI Methodology Paper",
+    "Freedom House Freedom in the World",
+    "V-Dem Institute Democracy Reports",
+    "CSIS Strategic Analysis"
+  ],
+  "related_fragments": [
+    "frag_gov_gel_voice_accountability_definitional_001",
+    "frag_gov_gel_political_stability_analytical_002",
+    "frag_gov_gel_rule_of_law_quantitative_005"
+  ],
+  "philosophy_guard": "PASS - Describes what IS: measurable governance indicators and empirical patterns. No normative claims about what OUGHT to be.",
+  "credibility_score": 0.97,
+  "tier": "TIER_1",
+  "last_updated": "2024-01-15",
+  "data_year": "2022"
+}
