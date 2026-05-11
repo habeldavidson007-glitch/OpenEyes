@@ -52,6 +52,8 @@ class Fragment:
     year: Optional[int] = None            # Publication year for temporal scoring
     sub_question: Optional[str] = None    # The specific sub-question this fragment answers
     verified: Optional[bool] = None       # Whether fragment has been verified (legacy field)
+    _original_credibility_class: Optional[str] = None  # Audit trail for credibility class changes
+    _reasoning_role_auto_classified: Optional[bool] = None  # Track auto-classification
     
     def __post_init__(self):
         """Auto-set last_verified if not provided."""
