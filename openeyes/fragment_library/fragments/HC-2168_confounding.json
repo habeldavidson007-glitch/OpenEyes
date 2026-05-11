@@ -6,7 +6,7 @@
     "confounding",
     "epidemiology"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Application content for confounding.",
   "source": "https://www.cdc.gov/",
   "credibility_class": "A",

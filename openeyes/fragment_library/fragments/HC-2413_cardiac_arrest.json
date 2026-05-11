@@ -7,7 +7,7 @@
     "targeted temperature management",
     "prognosis"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Post-cardiac arrest care: optimize hemodynamics (MAP \u226565 mmHg, often higher needed for cerebral perfusion), oxygenation (SpO2 92-98%, avoid hyperoxia), ventilation (normocapnia, PaCO2 35-45 mmHg), glucose control (140-180 mg/dL). Targeted Temperature Management (TTM): TTM2 trial (2021) showed no difference between 33\u00b0C vs strict normothermia with fever prevention in comatose OHCA patients; current guidelines recommend active temperature control with fever prevention (\u226437.5\u00b0C) for at least 72 hours, target 32-36\u00b0C reasonable. Coronary angiography: immediate for STEMI or suspected cardiac cause; delayed/selective for others. Neurologic prognostication: wait \u226572 hours after return to normothermia, use multimodal approach (clinical exam, EEG, SSEP, MRI, biomarkers NSE/S100B). Avoid premature withdrawal of life support. Seizure prophylaxis/treatment common (up to 20% have seizures). Consider ECMO-CPR (extracorporeal CPR) for refractory arrest in specialized centers\u2014EOLIA and other trials show benefit in selected patients. Rehabilitation and psychological support for survivors.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/34785654/",
   "credibility_class": "clinical_trial",

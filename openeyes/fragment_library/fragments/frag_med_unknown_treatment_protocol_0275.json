@@ -9,7 +9,7 @@
     "opioid_dosing",
     "statin_selection"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Dosing adjustments by Child-Pugh class: Class A (mild): consider 25% dose reduction for high-extraction drugs; Class B (moderate): 50% dose reduction or avoid; Class C (severe): avoid most hepatically-metabolized drugs. Benzodiazepines: use lorazepam, oxazepam, temazepam (glucuronidation preserved in liver disease) instead of diazepam, midazolam (CYP metabolism). Opioids: reduce morphine, hydromorphone doses; avoid meperidine (toxic metabolite accumulation). Statins: avoid simvastatin in cirrhosis; use pravastatin cautiously. Anticoagulation: warfarin sensitivity increased (reduced clotting factor synthesis); DOACs generally avoided in severe hepatic impairment. Monitor for hepatic encephalopathy precipitated by sedatives/opioids.",
   "source": "nih.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",

@@ -10,7 +10,7 @@
     "fertility",
     "hirsutism"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Treatment tailored to patient goals. For menstrual regulation/hyperandrogenism (not seeking pregnancy): combined oral contraceptives first-line (suppress LH, increase SHBG, reduce ovarian androgens); add antiandrogen (spironolactone 50-100mg BID) if inadequate response after 6 months - must use contraception due to teratogenicity. Metformin (1500-2000mg/day) improves insulin sensitivity, may restore ovulation, beneficial for metabolic parameters but less effective for hirsutism. Lifestyle modification (weight loss 5-10%) improves all PCOS features. For infertility: letrozole first-line for ovulation induction (superior to clomiphene); clomiphene alternative; gonadotropins or IVF if oral agents fail. Metformin adjunctive for ovulation induction in some cases. Endometrial protection essential if not having regular withdrawal bleeds. Screen/treat comorbidities: glucose intolerance, dyslipidemia, hypertension, sleep apnea, depression.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985610/",

@@ -8,7 +8,7 @@
     "electroconvulsive therapy",
     "depression"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Electroconvulsive Therapy (ECT) remains the most effective treatment for severe depression, particularly with psychotic features, catatonia, or acute suicidality. Under general anesthesia, electrical current induces a controlled seizure. Typical course: 6-12 treatments over 2-4 weeks, then maintenance if needed. Response rates exceed 80% in severe depression. Mechanism likely involves neuroplasticity, neurotransmitter changes, and anti-inflammatory effects. Modern techniques (right unilateral electrode placement, ultra-brief pulse) minimize cognitive side effects. Memory loss (retrograde and anterograde) is the main concern, usually improving within months. ECT is underutilized due to stigma despite strong evidence. Also effective in mania, catatonia, and Parkinson's disease.",
   "source": "apa.org",
   "credibility_class": "A",

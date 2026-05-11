@@ -8,7 +8,7 @@
     "priority review",
     "breakthrough therapy"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "The FDA review process begins with pre-NDA meetings to align on data requirements. New Drug Application (NDA) submission includes all preclinical and clinical data, proposed labeling, manufacturing information, and risk management plans. FDA conducts filing review (60 days) to determine if the application is complete. If filed, substantive review evaluates efficacy (adequate and well-controlled trials), safety (adverse event profile, risk-benefit), and CMC (chemistry, manufacturing, controls). Advisory Committee meetings may be convened for external expert input. Facility inspections verify GMP compliance. Review outcomes include approval, complete response letter (CRL) detailing deficiencies, or withdrawal by sponsor.",
   "source": "fda.gov",
   "credibility_class": "A",

@@ -6,7 +6,7 @@
     "intention to treat",
     "epidemiology"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Quality criteria for intention_to_treat.",
   "source": "https://www.ncbi.nlm.nih.gov/books/",
   "credibility_class": "A",

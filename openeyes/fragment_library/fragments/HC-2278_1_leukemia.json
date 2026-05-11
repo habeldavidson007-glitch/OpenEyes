@@ -8,7 +8,7 @@
     "targeted therapy",
     "transplant"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Treatment varies by type and risk. AML: induction chemotherapy '7+3' (cytarabine x7 days + anthracycline x3 days); CPX-351 for secondary AML; venetoclax + hypomethylating agent for unfit patients (VIALE-A trial). Consolidation: high-dose cytarabine for favorable/intermediate risk; allogeneic transplant for adverse risk or measurable residual disease (MRD) positive. FLT3-mutated: midostaurin or gilteritinib (quizartinib approved 2023). IDH1/2 mutations: ivosidenib/enasidenib. ALL: multi-agent chemotherapy (vincristine, steroids, anthracycline, asparaginase) over 2-3 years; Ph+ ALL adds TKI (dasatinib/ponatinib); blinatumomab (BiTE) or inotuzumab for relapsed; CAR-T (tisagenlecleucel) for relapsed/refractory B-ALL. CML: TKI therapy (imatinib, dasatinib, nilotinib, bosutinib, ponatinib, asciminib); treatment-free remission possible with deep molecular response. CLL: watch-and-wait for early asymptomatic; FCR (fludarabine, cyclophosphamide, rituximab) for fit young patients; BTK inhibitors (ibrutinib, acalabrutinib, zanubrutinib); venetoclax + obinutuzumab fixed duration.",
   "source": "https://www.nccn.org/guidelines",
   "credibility_class": "A",

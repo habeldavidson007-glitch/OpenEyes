@@ -10,7 +10,7 @@
     "OGTT",
     "glucose tolerance"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Two screening approaches: One-step (IADPSG/WHO): 75g OGTT at 24-28 weeks; diagnose if any value meets/exceeds: fasting \u226592 mg/dL, 1-hour \u2265180 mg/dL, 2-hour \u2265153 mg/dL. Two-step (common in US): 50g glucose challenge test (non-fasting); if 1-hour \u2265130-140 mg/dL, proceed to diagnostic 100g OGTT (Carpenter-Coustan criteria): diagnose if \u22652 values meet/exceed: fasting \u226595, 1-hour \u2265180, 2-hour \u2265155, 3-hour \u2265140 mg/dL. Early screening (<24 weeks) recommended for high-risk women using standard diagnostic criteria. Universal screening recommended at 24-28 weeks. Postpartum screening essential: 75g OGTT at 6-12 weeks postpartum, then every 1-3 years given high progression risk to T2DM.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/34593690/",

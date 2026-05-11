@@ -6,7 +6,7 @@
     "confidence intervals",
     "epidemiology"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Quality criteria for confidence_intervals.",
   "source": "https://www.ncbi.nlm.nih.gov/books/",
   "credibility_class": "A",

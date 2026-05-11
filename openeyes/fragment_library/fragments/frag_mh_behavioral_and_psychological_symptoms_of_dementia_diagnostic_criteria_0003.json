@@ -10,7 +10,7 @@
     "dementia",
     "BPSD"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "BPSD is not a standalone DSM-5 diagnosis but rather a clinical syndrome occurring in context of major/neurocognitive disorder (dementia). Assessment involves: comprehensive history (symptom onset, frequency, severity, triggers), mental status examination, physical examination to rule out delirium/medical causes, medication review, laboratory tests (CBC, metabolic panel, thyroid, B12), brain imaging if indicated. Use standardized instruments: Neuropsychiatric Inventory (NPI), Cohen-Mansfield Agitation Inventory (CMAI), Cornell Scale for Depression in Dementia. Differentiate from delirium (acute onset, fluctuating course, inattention), primary psychiatric disorders, medication side effects. Document target symptoms for treatment monitoring.",
   "source": "PubMed",
   "source_url": "https://www.psychiatry.org/psychiatrists/practice/dsm",

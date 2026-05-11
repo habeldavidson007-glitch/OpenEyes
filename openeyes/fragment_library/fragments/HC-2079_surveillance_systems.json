@@ -8,7 +8,7 @@
     "underreporting",
     "data completeness"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Surveillance system evaluation metrics: completeness (proportion of actual cases captured), timeliness (time from event to report), sensitivity (ability to detect true cases), positive predictive value (proportion of reported cases that are true), and representativeness (how well data reflect the population). Capture-recapture methods estimate total cases by comparing multiple data sources. Underreporting factors include: lack of provider awareness, diagnostic uncertainty, administrative burden, and asymptomatic infections. Surveillance gaps identified through periodic assessments guide system improvements and resource allocation.",
   "source": "Epidemiologic Reviews, CDC surveillance evaluation framework",
   "credibility_class": "A",

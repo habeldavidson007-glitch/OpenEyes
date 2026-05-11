@@ -9,7 +9,7 @@
     "intervention",
     "pharmacotherapy"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Evidence-based tobacco control uses the MPOWER package: (1) Monitor tobacco use and prevention policies; (2) Protect people from tobacco smoke through comprehensive smoke-free laws; (3) Offer help to quit tobacco\u2014cessation counseling (individual, group, telephone quitlines), pharmacotherapy (nicotine replacement therapy, varenicline, bupropion); combination NRT more effective than single form; (4) Warn about dangers through graphic warning labels, mass media campaigns; (5) Enforce bans on tobacco advertising, promotion, sponsorship; (6) Raise taxes on tobacco\u2014most effective single intervention, price elasticity higher for youth. Clinical interventions follow the 5 A's: Ask, Advise, Assess, Assist, Arrange. E-cigarettes as cessation tools remain controversial\u2014may help some smokers quit but dual use common. Youth prevention requires flavor restrictions, age verification, marketing limits.",
   "source": "CDC",
   "source_url": "https://www.cdc.gov",

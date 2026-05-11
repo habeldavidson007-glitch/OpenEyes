@@ -7,7 +7,7 @@
     "endocrine therapy",
     "anti-HER2 therapy"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Treatment tailored to subtype and stage. Early-stage HR+/HER2-: surgery (lumpectomy + radiation or mastectomy); endocrine therapy 5-10 years (tamoxifen premenopausal, aromatase inhibitor postmenopausal); genomic assays (Oncotype DX, MammaPrint) guide chemotherapy benefit in node-negative disease; CDK4/6 inhibitor (abemaciclib) added for high-risk (monarchE trial). Early-stage HER2+: chemotherapy + trastuzumab \u00b1 pertuzumab (APHINITY); total anti-HER2 duration 1 year; T-DM1 for residual disease post-neoadjuvant (KATHERINE trial). Early-stage TNBC: neoadjuvant chemotherapy (anthracycline + taxane \u00b1 carboplatin); pembrolizumab added for stage II-III (KEYNOTE-522); capecitabine for residual disease (CREATE-X). Metastatic HR+/HER2-: first-line CDK4/6 inhibitor + endocrine therapy (MONALEESA, PALOMA trials); subsequent lines include fulvestrant, everolimus, alpelisib (PIK3CA-mutated), elacestrant (ESR1-mutated). Metastatic HER2+: trastuzumab + pertuzumab + taxane first-line (CLEOPATRA); T-DXd second-line (DESTINY-Breast03). Metastatic TNBC: immunotherapy if PD-L1+ (KEYNOTE-355); sacituzumab govitecan after chemotherapy (ASCENT); PARP inhibitors for BRCA-mutated (OlympiAD).",
   "source": "https://www.nccn.org/guidelines",
   "credibility_class": "A",

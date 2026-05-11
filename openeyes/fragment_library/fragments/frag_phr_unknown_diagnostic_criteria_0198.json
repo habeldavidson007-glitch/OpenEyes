@@ -7,7 +7,7 @@
     "phr",
     "safety"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Assessment criteria include evaluating risk factors, monitoring parameters, and determining appropriate interventions based on established guidelines and regulatory requirements.",
   "source": "pubmed.ncbi.nlm.nih.gov",
   "source_url": "https://www.fda.gov",

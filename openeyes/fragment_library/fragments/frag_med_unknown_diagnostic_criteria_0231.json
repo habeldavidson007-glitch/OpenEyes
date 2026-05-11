@@ -9,7 +9,7 @@
     "adverse effects",
     "contraindications"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Beta blocker appropriateness assessment requires evaluation of contraindications and monitoring parameters. Absolute contraindications: severe bradycardia (HR <50 bpm), second or third-degree AV block without pacemaker, cardiogenic shock, decompensated heart failure requiring IV inotropes, severe hypotension (SBP <90 mmHg), severe reactive airway disease (for non-selective agents). Relative contraindications: asthma (use cardioselective agents cautiously), peripheral arterial disease (may worsen claudication), diabetes (may mask hypoglycemia symptoms), depression history. Monitoring requirements: baseline and periodic heart rate, blood pressure, ECG if conduction disease risk, signs/symptoms of heart failure, glucose in diabetics, lipid panel (some agents may worsen lipids). Adverse effects include bradycardia, hypotension, fatigue, cold extremities, erectile dysfunction, sleep disturbances, and depression. Drug interactions: verapamil/diltiazem (additive bradycardia/heart block), clonidine (rebound hypertension if beta blocker stopped first), insulin/oral hypoglycemics (masked hypoglycemia).",
   "source": "fda.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",

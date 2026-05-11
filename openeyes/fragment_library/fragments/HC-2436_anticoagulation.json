@@ -9,7 +9,7 @@
     "VTE",
     "dosing"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Anticoagulation indications and dosing: Atrial fibrillation (CHA2DS2-VASc \u22652 men/\u22653 women): apixaban 5mg BID (reduce to 2.5mg BID if \u22652 of age \u226580, weight \u226460kg, creatinine \u22651.5), rivaroxaban 20mg daily with evening meal (15mg if CrCl 30-50), dabigatran 150mg BID (75mg if CrCl 15-30), edoxaban 60mg daily (30mg if CrCl 15-50, weight \u226460kg, or P-gp inhibitor). VTE treatment: acute phase (first 5-21 days) requires therapeutic anticoagulation; DOACs have loading strategies (rivaroxaban 15mg BID x21 days then 20mg; apixaban 10mg BID x7 days then 5mg); warfarin requires bridging with LMWH until INR therapeutic. Extended treatment: indefinite for unprovoked proximal DVT/PE or ongoing risk factors; 3 months for provoked VTE with resolved risk factor. Cancer-associated thrombosis: DOACs now preferred over LMWH (SELECT-D, CARAVAGGIO trials) except GI/GU cancers with high bleeding risk. Orthopedic prophylaxis: 10-35 days post-surgery depending on procedure.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/34076510/",
   "credibility_class": "guideline",

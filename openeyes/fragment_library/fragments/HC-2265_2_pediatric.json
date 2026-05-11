@@ -13,7 +13,7 @@
   "source": "ema.europa.eu",
   "credibility_class": "A",
   "year": 2025,
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "id": "HC-2265",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov"
 }

@@ -7,7 +7,7 @@
     "risk stratification",
     "shared decision making"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Screening recommendations based on evidence of mortality reduction. Breast cancer: USPSTF recommends biennial mammography ages 50-74; individualize ages 40-49. ACS recommends annual starting at 45, biennial after 55. High-risk women (BRCA mutation, strong family history) start earlier with MRI + mammography. Colorectal cancer: average risk start age 45 (ACS) or 50 (USPSTF); options include colonoscopy every 10 years, FIT annually, stool DNA every 3 years, CT colonography every 5 years. Continue until age 75; individualize 76-85. Prostate cancer: shared decision-making ages 55-69; discuss risks/benefits including overdiagnosis, overtreatment. High-risk (African American, family history) may start at 40-45. Lung cancer: annual low-dose CT ages 50-80 with \u226520 pack-year smoking history, current smoker or quit <15 years. Cervical cancer: ages 21-29 Pap every 3 years; ages 30-65 Pap+HPV every 5 years or Pap alone every 3 years.",
   "source": "https://www.cancer.org/screening",
   "credibility_class": "A",

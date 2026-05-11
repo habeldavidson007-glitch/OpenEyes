@@ -8,7 +8,7 @@
     "intervention effectiveness",
     "systematic review"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "NPI evidence assessment challenges: randomized trials often infeasible, reliance on observational studies with confounding, varying compliance levels, and simultaneous implementation of multiple NPIs making attribution difficult. Systematic reviews show: mask mandates associated with reduced transmission (adjusted OR 0.5-0.8); ventilation improvements reduce airborne transmission; school closures alone show modest effect but contribute when combined with other NPIs. Effectiveness depends on context: population density, baseline transmission, variant characteristics, and cultural acceptance. Economic and mental health impacts must be weighed against infection prevention benefits.",
   "source": "Cochrane Reviews, Nature Human Behaviour systematic analyses",
   "credibility_class": "A",

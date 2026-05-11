@@ -10,7 +10,7 @@
     "DOAC",
     "reversal"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Anticoagulants diagnostic and monitoring criteria placeholder - contraindications, adverse effects profile, drug interactions, monitoring parameters, and special population considerations based on FDA labeling and post-marketing surveillance.",
   "source": "fda.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",

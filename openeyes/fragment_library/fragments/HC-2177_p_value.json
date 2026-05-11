@@ -6,7 +6,7 @@
     "p value",
     "epidemiology"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Application content for p_value.",
   "source": "https://www.cdc.gov/",
   "credibility_class": "A",

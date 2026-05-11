@@ -6,7 +6,7 @@
     "causation correlation",
     "epidemiology"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Quality criteria for causation_correlation.",
   "source": "https://www.ncbi.nlm.nih.gov/books/",
   "credibility_class": "A",

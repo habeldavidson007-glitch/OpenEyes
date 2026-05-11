@@ -6,7 +6,7 @@
     "relative risk odds ratio",
     "epidemiology"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Application content for relative_risk_odds_ratio.",
   "source": "https://www.cdc.gov/",
   "credibility_class": "A",

@@ -11,7 +11,7 @@
     "psychotherapy",
     "lithium"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Screening: Edinburgh Postnatal Depression Scale (EPDS), PHQ-9 at prenatal/postpartum visits. Mild-moderate depression: psychotherapy first-line (IPT, CBT), peer support, practical support. Moderate-severe: antidepressants (SSRIs\u2014sertraline most studied in breastfeeding, considered compatible), often combined with psychotherapy. Brexanolone (IV allopregnanolone) FDA-approved for severe PPD; zuranolone (oral) also approved. Postpartum psychosis: psychiatric hospitalization, mood stabilizers (lithium), antipsychotics, ECT if severe; contraindicated to leave mother alone with infant until stabilized. Treatment decisions balance maternal benefit, breastfeeding considerations, infant exposure. Partner/family involvement important. Early intervention improves outcomes.",
   "source": "PubMed",
   "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",

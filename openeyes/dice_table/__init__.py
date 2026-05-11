@@ -320,6 +320,13 @@ class WurfelspielAssembler:
         "unknown": 5
     }
     
+    # Role priority for assembly ordering: definition first, then latest_data, then counter_argument
+    ROLE_PRIORITY = {
+        'definition': 0,      # Always first
+        'latest_data': 1,     # Second
+        'counter_argument': 2, # After definition and latest_data
+    }
+    
     def __init__(self, dice_table: Optional[DiceTable] = None):
         """
         Initialize the assembler.
@@ -535,6 +542,7 @@ class WurfelspielAssembler:
         2. Evidence/treatment fragments middle
         3. Dosage/monitoring fragments later
         4. Uncertainty notes last
+        5. DEFINITION role always before COUNTER_ARGUMENT role
         
         Cellular Automata: Run 3 generations of fragment interaction before sequencing.
         """
@@ -575,12 +583,39 @@ class WurfelspielAssembler:
             
             return self.SEQUENCE_PRIORITY.get(fragment_class, 5)
         
-        # Sort by priority (use ca_score if available from CA)
+        def get_role_priority(frag: Dict[str, Any]) -> int:
+            """Get priority based on reasoning_role for assembly ordering."""
+            role = frag.get('reasoning_role', 'definition')
+            return self.ROLE_PRIORITY.get(role, 1)
+        
+        # Sort by role priority first (definition before counter_argument), then by class priority, then by score
         sorted_fragments = sorted(
             ca_fragments, 
-            key=lambda f: (get_priority(f), -f.get('ca_score', f.get('score', 50)))
+            key=lambda f: (get_role_priority(f), get_priority(f), -f.get('ca_score', f.get('score', 50)))
         )
+        
+        # Deduplicate counter_arguments: keep only the best one per topic cluster
+        sorted_fragments = self._deduplicate_counters(sorted_fragments)
+        
         return sorted_fragments
+    
+    def _deduplicate_counters(self, sequenced_fragments: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Keep only the best counter_argument per topic cluster."""
+        seen_counter_topics = set()
+        result = []
+        
+        for frag in sequenced_fragments:
+            if frag.get('reasoning_role') == 'counter_argument':
+                # Use primary tag as topic identifier
+                primary_tag = frag.get('tags', ['unknown'])[0]
+                if primary_tag not in seen_counter_topics:
+                    seen_counter_topics.add(primary_tag)
+                    result.append(frag)
+                # Skip duplicate counter on same topic
+            else:
+                result.append(frag)
+        
+        return result
     
     def _build_answer_text(
         self,

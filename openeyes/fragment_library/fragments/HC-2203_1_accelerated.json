@@ -7,7 +7,7 @@
     "surrogate endpoints",
     "confirmatory trials"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Accelerated approval process: sponsors submit NDA with evidence showing effect on validated or reasonably likely surrogate endpoint (e.g., tumor response rate, progression-free survival, viral load reduction, biomarker changes). FDA reviews with priority timeline (6 months). Approval includes specific requirements for post-marketing confirmatory trials, which must be underway at time of approval or completed shortly after. Labeling clearly states the basis for approval and that continued approval depends on verification of clinical benefit. FDA may impose additional restrictions such as limited distribution or specialized prescriber requirements. The Accelerated Approval pathway has been increasingly scrutinized when confirmatory trials are delayed or fail.",
   "source": "fda.gov",
   "credibility_class": "A",

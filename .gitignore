@@ -1,7 +1,42 @@
 ```
-# Test results
-test_results/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py~
+
+# Dependencies
+.venv/
+venv/
+env/
+.env
+.env.local
+.env.*
 
 # Logs
+*.log
 logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
 ```

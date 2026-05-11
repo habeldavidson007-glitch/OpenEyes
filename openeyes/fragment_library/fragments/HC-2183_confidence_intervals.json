@@ -6,7 +6,7 @@
     "confidence intervals",
     "epidemiology"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Application content for confidence_intervals.",
   "source": "https://www.cdc.gov/",
   "credibility_class": "A",

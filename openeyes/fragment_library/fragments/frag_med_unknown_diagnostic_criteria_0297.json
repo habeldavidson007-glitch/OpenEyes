@@ -9,7 +9,7 @@
     "CPIC_evidence_levels",
     "preemptive_genotyping"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Genetic testing methodologies: PCR-based genotyping for known variants (rapid, inexpensive); next-generation sequencing for comprehensive panels; microarray chips for multiple variants simultaneously. Turnaround time varies: point-of-care tests 1-2 hours; commercial labs 3-14 days. Phenotype confirmation possible with probe drugs but rarely needed clinically. Allele nomenclature standardized: *1 = wild-type/function; *2-*9 etc. = variant alleles with defined functional impact. CPIC levels evidence: Level A (high) - gene-drug pairs with actionable recommendations (CYP2C19-clopidogrel, TPMT-thiopurines); Level B (moderate) - potential actionability. Preemptive genotyping (panel testing before prescribing) increasingly used in health systems. Insurance coverage variable; cost-effectiveness demonstrated for several gene-drug pairs.",
   "source": "ema.europa.eu",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",

@@ -10,7 +10,7 @@
     "MRI",
     "lumbar-drain"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "NPH diagnosis requires: (1) Clinical triad (gait disturbance required, plus cognitive impairment and/or urinary incontinence). (2) Imaging: MRI brain showing ventriculomegaly out of proportion to sulcal atrophy. Evans index >0.3 (ratio of maximal frontal horn width to inner skull diameter). Supportive features: disproportionately enlarged subarachnoid space hydrocephalus (DESH)\u2014tight high convexity sulci with enlarged Sylvian fissures, callosal angle <90\u00b0 on coronal MRI, aqueductal flow void. (3) Exclusion of contraindications: significant cortical atrophy (suggests neurodegenerative disease), severe small vessel disease, prior radiation. (4) CSF studies: opening pressure normal (<20 cm H2O), routine studies normal (excludes infection, inflammation). (5) Response to CSF removal: large-volume lumbar drain or tap test with objective improvement in gait (timed walk, gait analysis) and/or cognition. Differential diagnosis workup: neuropsychological testing (subcortical vs cortical pattern), DaT scan if parkinsonism prominent (normal in NPH), amyloid PET if Alzheimer's suspected.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
   "credibility_class": "A",

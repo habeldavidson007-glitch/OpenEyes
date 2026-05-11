@@ -8,7 +8,7 @@
     "thrombolysis",
     "embolectomy"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "PE treatment based on risk stratification. All patients: anticoagulation unless contraindicated. DOACs preferred for most (apixaban, rivaroxaban allow immediate oral loading; dabigatran/edoxaban require 5 days parenteral bridging). LMWH preferred in cancer (though DOACs increasingly used), severe renal impairment (CrCl <30), pregnancy. Warfarin if DOACs contraindicated/unavailable. Duration: 3 months for provoked PE (transient risk factor resolved); extended/indefinite for unprovoked PE, recurrent VTE, active cancer, ongoing risk factors. Massive PE (hypotension/shock): systemic thrombolysis (alteplase 100mg over 2 hours) unless absolute contraindication (prior hemorrhagic stroke, active bleeding, recent neurosurgery); reduces mortality but increases major bleeding including intracranial hemorrhage. Catheter-directed thrombolysis (lower dose) or mechanical thrombectomy alternatives for high bleeding risk. Surgical embolectomy for failed thrombolysis or contraindications. Intermediate-risk PE: monitor closely; consider rescue thrombolysis if deterioration. Low-risk PE: early discharge possible with DOACs. IVC filter only if absolute contraindication to anticoagulation or recurrent PE despite therapeutic anticoagulation.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
   "credibility_class": "guideline",

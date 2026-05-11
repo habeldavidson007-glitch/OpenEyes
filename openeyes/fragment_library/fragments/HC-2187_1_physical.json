@@ -6,7 +6,7 @@
     "behavior_change",
     "policy"
   ],
-  "reasoning_role": "actionable_guidance",
+  "reasoning_role": "latest_data",
   "domain": "healthcare",
   "subdomain": "PH",
   "sector": "PH",

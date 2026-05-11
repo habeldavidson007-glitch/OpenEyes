@@ -8,7 +8,7 @@
     "dose selection",
     "efficacy"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Phase II success criteria include: statistically significant improvement on primary efficacy endpoint versus control, acceptable safety profile with manageable adverse events, clear dose-response relationship enabling dose selection, and evidence of clinical benefit (not just surrogate markers). Go/no-go decisions consider effect size, therapeutic index, competitive landscape, and commercial potential. Common failure reasons include insufficient efficacy, unexpected safety signals, poor tolerability, or inability to differentiate from existing treatments. Oncology Phase II trials often use objective response rate (ORR) or progression-free survival (PFS) as primary endpoints.",
   "source": "fda.gov",
   "credibility_class": "A",

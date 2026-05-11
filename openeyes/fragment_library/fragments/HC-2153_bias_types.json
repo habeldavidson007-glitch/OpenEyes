@@ -6,7 +6,7 @@
     "bias types",
     "epidemiology"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Application content for bias_types.",
   "source": "https://www.cdc.gov/",
   "credibility_class": "A",

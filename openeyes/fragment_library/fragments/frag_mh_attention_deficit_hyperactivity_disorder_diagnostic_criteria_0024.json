@@ -9,7 +9,7 @@
     "ADHD",
     "neurodevelopmental"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "DSM-5-TR ADHD criteria: \u22656 symptoms (\u22655 for age \u226517) of inattention and/or hyperactivity-impulsivity persisting \u22656 months to degree inconsistent with developmental level. Several symptoms present before age 12. Present in \u22652 settings (home, school/work, social). Clear evidence of interference with functioning/quality of life. Not better explained by another mental disorder. Presentation specifiers: combined, predominantly inattentive, predominantly hyperactive-impulsive. Severity specifiers: mild, moderate, severe. Partial remission specifier for those previously meeting full criteria. Common comorbidities: learning disorders, oppositional defiant disorder, anxiety, depression, substance use disorders.",
   "source": "PubMed",
   "source_url": "https://www.psychiatry.org/psychiatrists/practice/dsm",

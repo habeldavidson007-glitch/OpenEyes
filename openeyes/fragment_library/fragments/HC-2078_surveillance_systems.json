@@ -8,7 +8,7 @@
     "notifiable diseases",
     "data quality"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Surveillance system design: (1) Define objectives (early detection, trend monitoring, program evaluation); (2) Establish case definitions (suspected, probable, confirmed); (3) Determine data sources (providers, labs, vital records); (4) Set reporting frequency and formats; (5) Ensure data quality through validation and completeness checks; (6) Analyze data with appropriate denominators; (7) Disseminate findings to stakeholders; (8) Evaluate system attributes (simplicity, flexibility, acceptability, sensitivity, predictive value positive, representativeness, timeliness, stability). Electronic health record integration improves timeliness and completeness.",
   "source": "CDC MMWR surveillance best practices, WHO surveillance standards",
   "credibility_class": "A",

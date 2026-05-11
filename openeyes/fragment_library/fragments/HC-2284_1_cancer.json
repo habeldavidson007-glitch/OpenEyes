@@ -7,7 +7,7 @@
     "nutrition",
     "pharmacologic interventions"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Management requires multimodal approach. Nutritional intervention: early dietitian referral; oral nutritional supplements (high-protein, high-calorie); omega-3 fatty acids (EPA) may stabilize weight; enteral feeding if functional GI tract and reasonable prognosis; parenteral nutrition only if intestinal failure and anticipated survival >2-3 months. Pharmacologic: megestrol acetate (progestin) improves appetite and weight (mostly fat/fluid, not muscle); corticosteroids short-term appetite improvement (dexamethasone 4-8mg daily); cannabinoids (dronabinol) limited evidence; ghrelin agonists (anamorelin approved in Japan, investigational elsewhere); NSAIDs may reduce inflammation. Exercise: resistance training preserves muscle mass when combined with nutrition; aerobic exercise improves function. Anti-cytokine approaches: anti-IL-6, anti-TNF agents investigational. Myostatin inhibitors in development. Treatment of reversible contributors: pain, depression, nausea, constipation, mucositis. Early palliative care integration improves outcomes. Refractory cachexia: focus on comfort measures, small frequent meals, favorite foods.",
   "source": "https://www.nccn.org/guidelines",
   "credibility_class": "A",

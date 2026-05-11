@@ -9,7 +9,7 @@
     "displacement_interactions",
     "dialysis"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Clinical implications of protein binding guide dosing in special populations and drug interaction management. In hypoalbuminemia (liver disease, nephrotic syndrome, malnutrition): total drug concentrations may appear low but free (active) concentration is normal; monitor free drug levels for phenytoin, valproate. In uremia: altered albumin structure reduces binding; use free drug monitoring. Drug displacement: starting rifampin displaces warfarin but clinical effect is minor compared to CYP induction; sulfonamides displace bilirubin in neonates causing kernicterus (contraindicated). For highly protein-bound drugs with narrow therapeutic index, consider measuring free rather than total concentrations. Dialysis removes only free drug; high protein binding limits dialyzability.",
   "source": "nih.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",

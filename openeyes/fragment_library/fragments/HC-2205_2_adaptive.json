@@ -7,7 +7,7 @@
     "interim analysis",
     "sample size re-estimation"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Regulatory acceptance criteria for adaptive designs: adaptations must be pre-specified with clear decision rules, statistical methods must control type I error at nominal level (typically 0.05), modifications cannot introduce operational bias, and results must remain interpretable. Common concerns include: inflation of type I error if adaptations are not properly controlled, potential for bias if blinding is compromised, complexity in interpretation and communication of results, and risk of selecting spurious findings from multiple looks. Successful applications include: oncology trials with early stopping for overwhelming efficacy, rare disease trials with sample size re-estimation due to uncertain effect sizes, and seamless designs reducing development time. FDA's Complex Innovative Trial Design (CID) pilot program facilitates dialogue on novel designs. Adaptive designs are now accepted in ~20-30% of pivotal trials.",
   "source": "fda.gov",
   "credibility_class": "A",

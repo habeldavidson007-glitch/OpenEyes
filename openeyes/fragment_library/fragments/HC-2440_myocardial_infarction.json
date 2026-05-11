@@ -8,7 +8,7 @@
     "GRACE score",
     "timing of angiography"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "NSTEMI management requires risk stratification to determine timing of invasive strategy. GRACE score predicts 6-month mortality: very high risk (>140) indicates immediate angiography (<2 hours); high risk (140 or dynamic ST changes, troponin rise/fall, hemodynamic instability) indicates early angiography (<24 hours); intermediate risk indicates angiography within 72 hours. TIMI score also used for risk assessment. Initial medical therapy: dual antiplatelet therapy (aspirin + P2Y12 inhibitor\u2014ticagrelor or clopidogrel; avoid prasugrel until anatomy known), anticoagulation (fondaparinux preferred unless PCI planned, then UFH or enoxaparin), high-intensity statin, beta-blocker, ACEi/ARB. Glycoprotein IIb/IIIa inhibitors reserved for bailout during PCI or very high thrombus burden. Routine use of oxygen only if saturation <90% or respiratory distress.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/33453222/",
   "credibility_class": "guideline",

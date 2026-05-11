@@ -8,7 +8,7 @@
     "treatment",
     "oseltamivir"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Antiviral treatment recommended for all hospitalized patients, severe/progressive illness, and high-risk outpatients (age \u226565, <2 years, pregnancy, chronic conditions, immunocompromise, BMI \u226540). Initiate within 48 hours of symptom onset (benefit still possible if started later in severe cases). Options: oseltamivir 75mg BID x5 days (oral, preferred for most); zanamivir 10mg BID x5 days (inhaled, avoid in asthma/COPD); peramivir 600mg IV single dose; baloxavir single dose (cap-dependent endonuclease inhibitor, avoid with dairy/cations). Chemoprophylaxis: oseltamivir or zanamivir for post-exposure prophylaxis in high-risk individuals. Supportive care: antipyretics (avoid aspirin in children due to Reye syndrome), hydration. Antibiotics only for bacterial superinfection.",
   "source": "cdc.gov",
   "credibility_class": "A",

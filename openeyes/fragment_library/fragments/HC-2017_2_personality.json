@@ -9,7 +9,7 @@
   "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
   "credibility_class": "A",
   "year": 2022,
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "domain": "healthcare",
   "subdomain": "MH",
   "sector": "MH",

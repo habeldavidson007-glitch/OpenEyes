@@ -8,7 +8,7 @@
     "MI diagnosis",
     "0/1-hour algorithm"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "High-sensitivity troponin enables rapid MI rule-out/rule-in algorithms. ESC 0/1-hour algorithm: baseline hs-cTn measured at presentation, repeat at 1 hour. Rule-out: baseline below limit of detection AND 1-hour delta below threshold (very low NPV ~99%). Rule-in: baseline above 99th percentile OR significant 1-hour delta (high PPV). Observe zone: intermediate values require continued evaluation. Universal Definition of MI: rise/fall of cTn with at least one value >99th percentile URL plus evidence of ischemia (symptoms, ECG changes, imaging evidence, coronary thrombus). Types: Type 1 (spontaneous plaque rupture), Type 2 (supply-demand mismatch), Type 3 (cardiac arrest before biomarkers available), Type 4a (PCI-related, >5x 99th percentile), Type 4b (stent thrombosis), Type 5 (CABG-related, >10x 99th percentile). Sex-specific cutoffs: women have lower 99th percentile than men\u2014using sex-specific thresholds improves MI diagnosis in women.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/30571638/",
   "credibility_class": "guideline",

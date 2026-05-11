@@ -9,7 +9,7 @@
     "fibrinolysis",
     "treatment"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "STEMI treatment: immediate reperfusion is critical. Primary PCI is preferred if available within 120 minutes of first medical contact; goal door-to-balloon time <90 minutes. If PCI unavailable within 120 minutes, administer fibrinolytic (alteplase, tenecteplase, reteplase) within 30 minutes of hospital arrival (door-to-needle time), provided no contraindications (prior hemorrhagic stroke, ischemic stroke <3 months, intracranial neoplasm, active bleeding, suspected aortic dissection). Fibrinolysis most effective within 2 hours of symptom onset. After fibrinolysis, transfer to PCI-capable center for pharmacoinvasive strategy (angiography within 3-24 hours). Adjunctive therapy: aspirin 162-325mg chewed, P2Y12 inhibitor (ticagrelor 180mg or clopidogrel 600mg), anticoagulation (unfractionated heparin or enoxaparin), high-intensity statin, beta-blocker if no heart failure/shock risk, ACEi within 24 hours.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/33453222/",
   "credibility_class": "guideline",

@@ -9,7 +9,7 @@
     "extraction_ratio",
     "liver_function_tests"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Child-Pugh scoring: Bilirubin (<2=1, 2-3=2, >3=3 mg/dL); Albumin (>3.5=1, 2.8-3.5=2, <2.8=3 g/dL); INR (<1.7=1, 1.7-2.3=2, >2.3=3); Ascites (none=1, mild=2, moderate-severe=3); Encephalopathy (none=1, grade 1-2=2, grade 3-4=3). MELD score (bilirubin, INR, creatinine) predicts mortality but less used for dosing. Drug extraction ratio determines impact: high-extraction drugs (morphine, propranolol) have reduced clearance and increased bioavailability in cirrhosis; low-extraction drugs (warfarin, phenytoin) affected mainly by protein binding changes. Liver function tests (AST, ALT, ALP) indicate injury but don't correlate with metabolic capacity. No simple test quantifies hepatic drug metabolism; clinical assessment guides dosing.",
   "source": "ema.europa.eu",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",

@@ -8,7 +8,7 @@
     "heart failure",
     "prognosis"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Natriuretic peptides in heart failure: BNP produced by ventricular myocytes in response to stretch; cleaved to active BNP (half-life 20 min) and inactive NT-proBNP (half-life 60-120 min, more stable). Diagnostic utility: acute dyspnea in ED\u2014BNP >500 pg/mL or NT-proBNP >450-1800 pg/mL (age-dependent) strongly suggests HF; very low values effectively rule out HF. Guideline-directed HF management includes natriuretic peptide measurement for diagnosis and risk stratification. Factors affecting levels: elevated in renal dysfunction, AF, older age, female sex; lower in obesity (adipose tissue clearance). Serial measurements guide therapy\u2014reduction with treatment correlates with improved outcomes. Prognostic value: higher levels predict mortality and hospitalization in HF, post-MI, stable CAD. Used in combination with clinical assessment and echocardiography. Not recommended for population screening but useful for risk stratification in high-risk patients.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
   "credibility_class": "guideline",

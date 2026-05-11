@@ -10,7 +10,7 @@
     "dependence",
     "withdrawal"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Benzodiazepines treatment protocol content placeholder - dosing recommendations, titration schedules, indication-specific regimens, monitoring requirements, and dose adjustments for renal/hepatic impairment based on FDA prescribing information.",
   "source": "fda.gov",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",

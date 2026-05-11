@@ -8,7 +8,7 @@
     "vancomycin",
     "daptomycin"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Skin/soft tissue infections: incision and drainage primary for abscesses; add antibiotics for severe/systemic infection - TMP-SMX DS BID, doxycycline 100mg BID, or clindamycin 450mg QID (check D-test for inducible resistance). Severe infections (bacteremia, pneumonia, endocarditis): vancomycin IV (target AUC/MIC 400-600, trough 15-20 mcg/mL) or daptomycin 6-10 mg/kg IV daily (not for pneumonia - inactivated by surfactant). Alternatives: linezolid 600mg IV/PO BID (excellent lung penetration), ceftaroline 600mg IV q8h (fifth-generation cephalosporin with MRSA activity), telavancin, tedizolid. Duration: uncomplicated SSTI 5-10 days; bacteremia minimum 14 days from first negative culture; endocarditis 6+ weeks. Source control critical (device removal, drainage).",
   "source": "pubmed.ncbi.nlm.nih.gov",
   "credibility_class": "A",

@@ -6,7 +6,7 @@
     "number needed to treat",
     "epidemiology"
   ],
-  "reasoning_role": "treatment_protocol",
+  "reasoning_role": "definition",
   "content": "Application content for number_needed_to_treat.",
   "source": "https://www.cdc.gov/",
   "credibility_class": "A",

@@ -10,7 +10,7 @@
     "antibodies",
     "ultrasound"
   ],
-  "reasoning_role": "diagnostic_criteria",
+  "reasoning_role": "definition",
   "content": "Initial test: serum TSH (most sensitive screening test). If abnormal, measure free T4. Hypothyroidism pattern: elevated TSH, low free T4 (overt); elevated TSH, normal free T4 (subclinical). Hyperthyroidism pattern: suppressed TSH (<0.4 mIU/L), elevated free T4 and/or T3 (overt); suppressed TSH, normal free T4/T3 (subclinical). Etiology workup: thyroid peroxidase antibodies (TPOAb) for Hashimoto's; TSH receptor antibodies (TRAb/TSI) for Graves'. Thyroid ultrasound for nodules, goiter characterization. Radioactive iodine uptake scan differentiates causes of hyperthyroidism (high in Graves'/toxic nodules, low in thyroiditis). Fine-needle aspiration biopsy for suspicious nodules per ATA guidelines. Consider ESR/CRP if painful thyroid suggests subacute thyroiditis.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985607/",
