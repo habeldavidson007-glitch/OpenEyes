@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["drug safety", "REMS", "pharmacovigilance", "FDA", "risk management"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Risk Evaluation and Mitigation Strategies (REMS) are FDA-mandated programs designed to ensure that benefits of certain high-risk medications outweigh their risks. REMS may include: Medication Guides for patients, Communication Plans for healthcare providers, Elements To Assure Safe Use (ETASU) such as prescriber certification, pharmacy certification, patient enrollment, laboratory monitoring, or restricted distribution. Examples include isotretinoin (iPLEDGE program requiring pregnancy prevention), clozapine (ANC monitoring to prevent agranulocytosis), thalidomide/lenalidomide (STEPS program for teratogenicity and thrombosis prevention), and opioids (training requirements for prescribers). REMS are required at approval or post-market when new safety signals emerge.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "For REMS-required medications: (1) Verify prescriber is certified in the REMS program before dispensing; (2) Confirm patient enrollment and completion of required counseling; (3) Ensure baseline and ongoing monitoring requirements are met (e.g., ANC for clozapine, pregnancy tests for isotretinoin); (4) Document all REMS-related activities in medical record; (5) Dispense only authorized quantities between monitoring intervals; (6) Report adverse events to REMS program; (7) Reauthorize prescriptions per program requirements. Pharmacies must be certified to dispense REMS drugs. Failure to comply with ETASU can result in FDA enforcement actions and loss of prescribing/dispensing privileges.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "REMS compliance criteria vary by program but generally include: prescriber certification (completion of training, attestation of knowledge), pharmacy certification (staff training, systems for verification), patient enrollment (signed acknowledgment forms, consent to monitoring), laboratory monitoring (specific tests at defined intervals), pregnancy prevention (contraception requirements, testing schedules), and dispensing restrictions (authorized locations, quantity limits). Non-compliance results in inability to prescribe, dispense, or receive medication. REMS effectiveness is assessed through metrics like prescriber knowledge surveys, patient adherence rates, and adverse event incidence. FDA may modify or discontinue REMS when risks are adequately managed or new data emerges.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["adverse drug reactions", "pharmacovigilance", "ADR classification", "causality assessment"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Adverse drug reactions (ADRs) are noxious, unintended responses to drugs occurring at doses normally used for prophylaxis, diagnosis, or therapy. Type A reactions (augmented) are predictable, dose-dependent, and related to pharmacological effects (e.g., bleeding with anticoagulants, hypoglycemia with insulin, sedation with benzodiazepines). They account for 80-90% of ADRs. Type B reactions (bizarre) are unpredictable, not dose-dependent, often immune-mediated (e.g., anaphylaxis, Stevens-Johnson syndrome, drug-induced lupus). Type C (chronic), D (delayed), E (end-of-use/withdrawal), and F (failure of efficacy) are additional categories. The Rawlins-Thompson classification guides prevention and management strategies.",
+      "source": "pubmed.ncbi.nlm.nih.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "ADR management: (1) Assess severity and temporal relationship to drug exposure; (2) For Type A reactions, reduce dose or discontinue drug; (3) For Type B reactions, discontinue immediately and avoid rechallenge; (4) Provide supportive care (antihistamines for allergic reactions, corticosteroids for severe hypersensitivity, epinephrine for anaphylaxis); (5) Report serious ADRs to FDA MedWatch or national pharmacovigilance systems; (6) Document in patient record as allergy/intolerance; (7) Consider alternative therapies. Rechallenge is contraindicated for severe Type B reactions. Desensitization protocols exist for certain essential drugs (penicillin, chemotherapy). Prevention includes therapeutic drug monitoring for narrow therapeutic index drugs and pharmacogenomic testing where indicated.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Causality assessment uses structured algorithms: Naranjo Scale (definite ≥9, probable 5-8, possible 1-4, doubtful ≤0), WHO-UMC criteria (certain, probable/likely, possible, unlikely, conditional/unclassified, unassessable), and RUCAM score for hepatotoxicity. Factors evaluated include: temporal relationship, dechallenge response, rechallenge outcome, alternative causes, drug levels, previous reactions, and objective evidence. Time-to-onset varies: anaphylaxis (minutes-hours), serum sickness (1-2 weeks), SJS/TEN (4-28 days), DRESS (2-8 weeks). Serious ADRs requiring reporting include: death, life-threatening events, hospitalization, disability, congenital anomalies, or medically significant events. Healthcare providers should maintain high suspicion for ADRs in patients with new symptoms after medication changes.",
+      "source": "pubmed.ncbi.nlm.nih.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

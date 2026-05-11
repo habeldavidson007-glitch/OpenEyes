@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["off-label prescribing", "evidence-based medicine", "legal considerations", "FDA regulation"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Off-label prescribing refers to using FDA-approved medications for indications, dosages, routes of administration, or patient populations not included in the approved labeling. Off-label use is legal and common, representing approximately 20% of all prescriptions. It is particularly prevalent in oncology (chemotherapy regimens), pediatrics (lack of pediatric trials), psychiatry, and rare diseases. The FDA regulates drug marketing but does not regulate the practice of medicine; physicians may prescribe approved drugs as they deem appropriate. However, manufacturers are prohibited from promoting off-label uses without FDA approval. Evidence quality for off-label uses varies widely from robust clinical trial data to anecdotal reports.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Best practices for off-label prescribing: (1) Review available evidence (clinical trials, systematic reviews, guidelines); (2) Assess risk-benefit ratio considering patient-specific factors; (3) Consider whether standard therapies have failed or are contraindicated; (4) Discuss off-label nature with patient, including evidence quality, potential risks, and alternatives; (5) Document rationale and informed consent discussion in medical record; (6) Monitor outcomes and adverse effects carefully; (7) Report adverse events to FDA MedWatch. Insurance coverage for off-label uses varies; some require peer-reviewed literature support or compendia listing (e.g., NCCN for oncology). Pharmacists should verify evidence and counsel patients on off-label status.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Legal and ethical considerations: Off-label prescribing is protected under the practice of medicine doctrine but must meet standard of care. Malpractice liability may arise if harm occurs and evidence supporting the use was inadequate. Key factors in liability cases: availability of alternative approved treatments, quality of supporting evidence, informed consent documentation, and adherence to professional guidelines. The Affordable Care Act requires Medicare Part D to cover off-label cancer uses if supported by specific compendia. Manufacturers face False Claims Act liability if they cause off-label claims to be submitted to federal programs through illegal promotion. Physicians should stay current with emerging evidence as off-label uses may become standard of care or gain FDA approval over time.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}
