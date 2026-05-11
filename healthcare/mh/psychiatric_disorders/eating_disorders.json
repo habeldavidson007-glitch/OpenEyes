@@ -1,0 +1,32 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "topic": "Eating Disorders",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Eating disorders include Anorexia Nervosa (restrictive energy intake leading to significantly low weight, intense fear of gaining weight, disturbed body image), Bulimia Nervosa (recurrent binge eating with loss of control followed by compensatory behaviors like vomiting, laxatives, fasting, excessive exercise), and Binge Eating Disorder (recurrent binge eating without compensatory behaviors). Anorexia has highest mortality rate of any psychiatric disorder (~5-6% per decade) due to medical complications and suicide. Lifetime prevalence: anorexia ~0.6%, bulimia ~1-2%, BED ~2-3%. Pathophysiology involves genetic factors, neurobiological alterations in reward/restriction circuits, perfectionism traits, sociocultural pressures.",
+      "tags": ["anorexia", "bulimia", "binge-eating", "eating-disorder"],
+      "source": "https://www.nimh.nih.gov/health/topics/eating-disorders",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Anorexia: nutritional rehabilitation is priority (medical monitoring for refeeding syndrome), Family-Based Treatment (FBT/Maudsley) first-line for adolescents, CBT-E (enhanced cognitive behavioral therapy) or MANTRA for adults. Weight restoration precedes psychological work. Bulimia/BED: CBT-E first-line, IPT alternative. SSRIs (fluoxetine high dose for bulimia) reduce binge/purge frequency. Lisdexamfetamine FDA-approved for moderate-severe BED. Medical monitoring essential (electrolytes, cardiac status, bone density). Higher levels of care (residential, inpatient) for severe cases. Multidisciplinary team approach (medical, nutritional, psychological) optimal. Relapse prevention critical.",
+      "tags": ["FBT", "CBT-E", "nutritional-rehabilitation", "fluoxetine", "lisdexamfetamine"],
+      "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "DSM-5-TR criteria: Anorexia—energy restriction leading to significantly low weight (context-dependent), intense fear of gaining weight/becoming fat, disturbed body image/undue influence of weight on self-evaluation/denial of seriousness. Subtypes: restricting vs binge-eating/purging. Bulimia—recurrent binge eating (large amount + loss of control) and compensatory behaviors ≥1/week for ≥3 months, self-evaluation unduly influenced by shape/weight. BED—recurrent binge eating ≥1/week for ≥3 months without compensatory behaviors, marked distress. Severity specifiers based on BMI (anorexia) or episode frequency (bulimia/BED). Amenorrhea no longer required for anorexia diagnosis.",
+      "tags": ["DSM-5-TR", "diagnostic-criteria", "anorexia", "bulimia", "BED"],
+      "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+      "credibility_class": "A",
+      "year": 2022
+    }
+  ]
+}

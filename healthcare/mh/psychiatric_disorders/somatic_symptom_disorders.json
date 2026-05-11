@@ -1,0 +1,32 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "topic": "Somatic Symptom and Related Disorders",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Somatic Symptom Disorder involves one or more distressing somatic symptoms causing significant disruption to daily life, accompanied by excessive thoughts/feelings/behaviors related to symptoms (disproportionate thoughts about seriousness, persistently high anxiety about health/symptoms, excessive time/energy devoted to symptoms). Symptoms may or may not be associated with diagnosed medical condition; the key is the disproportionate response. Related disorders include Illness Anxiety Disorder (preoccupation with having serious illness, minimal/no somatic symptoms), Conversion Disorder (functional neurological symptoms incompatible with recognized conditions), Factitious Disorder (falsification of symptoms for sick role). Prevalence ~5-7%. Pathophysiology involves altered interoceptive awareness, catastrophizing, central sensitization.",
+      "tags": ["somatic-symptom-disorder", "illness-anxiety", "conversion-disorder", "medically-unexplained"],
+      "source": "https://www.nimh.nih.gov/health/topics/mental-health-information",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Management focuses on improving functioning rather than symptom elimination. Regular scheduled visits with single provider reduce unnecessary testing/procedures. Validate patient experience while gently redirecting from organic focus. CBT addresses catastrophic thinking, reduces healthcare utilization, improves coping. Mindfulness-based therapies help with symptom acceptance. Antidepressants (SSRIs/SNRIs) may help comorbid depression/anxiety and have some evidence for reducing somatic symptom burden. For Conversion Disorder: physical therapy, occupational therapy, psychological treatment addressing stressors. Avoid reinforcing sick role while maintaining therapeutic alliance. Gradual activity increase, focus on function over symptoms. Multidisciplinary approach optimal for complex cases.",
+      "tags": ["CBT", "scheduled-visits", "antidepressants", "validation", "functional-improvement"],
+      "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "DSM-5-TR Somatic Symptom Disorder criteria: One or more somatic symptoms that are distressing or result in significant disruption of daily life. Excessive thoughts/feelings/behaviors related to symptoms as manifested by ≥1: disproportionate/persistent thoughts about symptom seriousness, persistently high level of anxiety about health/symptoms, excessive time/energy devoted to symptoms/health concerns. Although any one symptom may not persist continuously, state of being symptomatic is persistent (typically >6 months). Specifiers: with predominant pain, persistent course, severity (mild/moderate/severe). Illness Anxiety Disorder: preoccupation with having/acquiring serious illness, somatic symptoms not present/mild, high anxiety about health, excessive health-related behaviors or maladaptive avoidance, illness preoccupation ≥6 months.",
+      "tags": ["DSM-5-TR", "diagnostic-criteria", "somatic-symptom", "illness-anxiety"],
+      "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+      "credibility_class": "A",
+      "year": 2022
+    }
+  ]
+}
