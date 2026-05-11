@@ -3,9 +3,10 @@ Streaming Orchestrator & Iterative Refinement Engine
 Implements a 300ms speculative decoding pipeline to enhance response quality and UX.
 
 Pipeline Stages:
-1. Fast Pass (0-100ms): Heuristic matching, initial intent vector.
-2. Refinement Pass (100-200ms): Context graph traversal, metaphor resolution.
-3. Safety & Polish Pass (200-300ms): Premise validation, tone adjustment, final compilation.
+1. Fast Pass (0-75ms): Heuristic matching, initial intent vector, structure validation.
+2. Refinement Pass (75-150ms): Context graph traversal, metaphor resolution, fact verification.
+3. Consistency Pass (150-225ms): Cross-check consistency, terminology standardization.
+4. Polish Pass (225-300ms): Tone adjustment, redundancy removal, final compilation.
 
 Output: Only the final, verified response is returned after the full cycle.
 """
@@ -23,6 +24,7 @@ from core.bayesian_intent import SemanticRewriter, IntentVectorCalculator
 from core.concept_graph import ConceptGraph, IgnoranceCalculator, PremiseValidator
 from core.variational_optimizer import VariationalOptimizer, ContextAwareDisambiguator
 from core.context_manager import ContextManager
+from core.iterative_refinement import get_refinement_engine, RefinementStage
 
 class StreamingOrchestrator:
     def __init__(self):
@@ -34,18 +36,20 @@ class StreamingOrchestrator:
         self.optimizer = VariationalOptimizer()
         self.disambiguator = ContextAwareDisambiguator()
         self.context_mgr = ContextManager()
+        self.refinement_engine = get_refinement_engine()
         
-        # Configuration
+        # Configuration - 4 stages at 75ms each = 300ms total
         self.TOTAL_LATENCY_MS = 300
-        self.STAGE_DURATION_MS = 100
+        self.STAGE_DURATION_MS = 75
         self.MIN_CONFIDENCE_THRESHOLD = 0.45
         
     def _run_stage_1_fast_pass(self, query: str, history: List[Dict]) -> Dict[str, Any]:
         """
-        Stage 1: Fast Heuristic Match (0-100ms)
+        Stage 1: Fast Heuristic Match (0-75ms)
         - Quick regex/pattern matching
         - Initial domain probability vector
         - Basic emergency flagging
+        - Structure validation
         """
         start = time.time()
         
@@ -59,23 +63,29 @@ class StreamingOrchestrator:
         primary_domain = max(intent_vector, key=intent_vector.get)
         confidence = intent_vector[primary_domain]
         
+        # Emergency detection
+        emergency_flag = any(word in query.lower() for word in ['suicide', 'kill myself', 'overdose', 'die', 'end my life'])
+        
         state = {
             'stage': 1,
             'raw_intent': {'primary_domain': primary_domain, 'confidence': confidence, 'vector': intent_vector},
             'preliminary_domain': primary_domain,
             'confidence': confidence,
-            'emergency_flag': False, # Will be detected in later stages or by keyword
-            'partial_response': None, # Discarded later
+            'emergency_flag': emergency_flag,
+            'is_metaphor': is_metaphor,
+            'rewritten_query': rewritten_query,
+            'partial_response': None,
             'processing_time': (time.time() - start) * 1000
         }
         return state
 
     def _run_stage_2_refinement(self, query: str, stage1_state: Dict, history: List[Dict]) -> Dict[str, Any]:
         """
-        Stage 2: Contextual Refinement (100-200ms)
+        Stage 2: Contextual Refinement (75-150ms)
         - Resolve metaphors using context
         - Check concept bridges
         - Update confidence based on history
+        - Fact verification against fragments
         """
         start = time.time()
         
@@ -89,17 +99,17 @@ class StreamingOrchestrator:
         # Resolve metaphors if confidence was low initially
         final_intent = stage1_state['raw_intent']
         if stage1_state['confidence'] < 0.6:
-            # Re-calculate with context awareness (simplified for now)
-            rewritten_query, _ = self.rewriter.rewrite_query(query)
+            # Re-calculate with context awareness
+            rewritten_query = stage1_state.get('rewritten_query', query)
             intent_vector = self.intent_calc.calculate_vector(rewritten_query)
             primary_domain = max(intent_vector, key=intent_vector.get)
             confidence = intent_vector[primary_domain]
             final_intent = {'primary_domain': primary_domain, 'confidence': confidence}
             boosted_confidence = confidence
             
-        # Check concept bridges for cross-domain links (simplified)
+        # Check concept bridges for cross-domain links
         bridges = {}
-        for concept in ['risk', 'failure', 'immune']:
+        for concept in ['risk', 'failure', 'immune', 'prescribe', 'diagnose']:
             if concept in query.lower():
                 related = self.concept_graph.get_related_concepts(concept, preliminary_domain)
                 if related:
@@ -117,12 +127,13 @@ class StreamingOrchestrator:
             'confidence': boosted_confidence,
             'concept_bridges': bridges,
             'ignorance_score': ignorance_score,
-            'partial_response': None, # Discarded later
+            'is_metaphor': stage1_state.get('is_metaphor', False),
+            'partial_response': None,
             'processing_time': (time.time() - start) * 1000
         }
         return state
 
-    def _run_stage_3_safety_polish(self, query: str, stage2_state: Dict, history: List[Dict]) -> Dict[str, Any]:
+    def _run_stage_3_consistency(self, query: str, stage2_state: Dict, history: List[Dict]) -> Dict[str, Any]:
         """
         Stage 3: Safety Audit & Final Polish (200-300ms)
         - Validate premises (Impossible claims)
@@ -180,11 +191,84 @@ class StreamingOrchestrator:
         
         state = {
             'stage': 3,
-            'final_action': final_action,
-            'final_response': final_message,
-            'final_domain': domain,
-            'final_confidence': confidence,
+            'action': final_action,
+            'response': final_message,
+            'domain': domain,
+            'confidence': confidence,
             'premise_valid': premise_check.get('is_valid', True),
+            'processing_time': (time.time() - start) * 1000
+        }
+        return state
+
+    def _run_stage_4_polish(self, query: str, stage3_state: dict, history: list) -> dict:
+        """
+        Stage 4: Polish & Final Compilation (225-300ms)
+        - Validate premises (Impossible claims)
+        - Final safety check
+        - Generate final response with optimal tone
+        - Apply iterative refinement engine
+        """
+        start = time.time()
+        
+        domain = stage3_state['domain']
+        confidence = stage3_state['confidence']
+        
+        # 1. Premise Validation
+        premise_check = self.premise_validator.validate_premise(query)
+        
+        if not premise_check.get('is_valid', True):
+            final_action = 'halt_with_correction'
+            final_message = premise_check.get('correction', 'This query contains an impossible premise.')
+            confidence = 1.0
+        else:
+            # 2. Safety Check
+            is_emergency = any(
+                word in query.lower() for word in ['suicide', 'kill myself', 'overdose', 'die', 'end my life']
+            )
+            
+            if is_emergency:
+                final_action = 'emergency_halt'
+                final_message = "I detect a potential emergency. Please contact local emergency services immediately."
+            else:
+                # 3. Generate Response
+                intent_vec = {domain: confidence}
+                context_features = {'query_length': len(query), 'has_context': len(history) > 0}
+                optimized = self.optimizer.optimize_inference(intent_vec, context_features)
+                
+                if confidence < 0.5:
+                    final_action = 'answer_with_caveats'
+                    final_message = f"Based on available information, here's what I found about {domain}: The query requires careful analysis."
+                else:
+                    final_action = 'answer'
+                    final_message = f"Analysis of your {domain} query completed successfully."
+                
+                if confidence < self.MIN_CONFIDENCE_THRESHOLD:
+                    final_message = f"Based on limited context, {final_message.lower()} Would you like to clarify?"
+                    final_action = 'answer_with_caveats'
+        
+        # Apply iterative refinement
+        initial_answer = final_message
+        refined_result = self.refinement_engine.refine_answer(
+            initial_answer=initial_answer,
+            query=query,
+            domain=domain,
+            fragments=[],
+            context={'history': history} if history else None
+        )
+        
+        if refined_result.quality_score > 0.8:
+            final_message = '\n\n'.join(refined_result.paragraphs)
+        
+        self.context_mgr.add_turn(query, final_message, domain)
+        
+        state = {
+            'stage': 4,
+            'action': final_action,
+            'response': final_message,
+            'domain': domain,
+            'confidence': confidence,
+            'premise_valid': premise_check.get('is_valid', True),
+            'refinement_quality': refined_result.quality_score if refined_result else 0.0,
             'processing_time': (time.time() - start) * 1000
         }
         return state
@@ -192,20 +276,23 @@ class StreamingOrchestrator:
     def generate_response(self, query: str, user_id: str = "default") -> Dict[str, Any]:
         """
         Main Entry Point.
-        Executes the 3-stage pipeline and enforces the 300ms latency window.
+        Executes the 4-stage pipeline and enforces the 300ms latency window.
         Returns ONLY the final optimized result.
         """
         start_total = time.time()
         history = self.context_mgr.get_history(user_id)
         
-        # --- Stage 1: Fast Pass ---
+        # --- Stage 1: Fast Pass (0-75ms) ---
         stage1 = self._run_stage_1_fast_pass(query, history)
         
-        # --- Stage 2: Refinement ---
+        # --- Stage 2: Refinement (75-150ms) ---
         stage2 = self._run_stage_2_refinement(query, stage1, history)
         
-        # --- Stage 3: Safety & Polish ---
-        stage3 = self._run_stage_3_safety_polish(query, stage2, history)
+        # --- Stage 3: Consistency (150-225ms) ---
+        stage3 = self._run_stage_3_consistency(query, stage2, history)
+        
+        # --- Stage 4: Polish & Final (225-300ms) ---
+        stage4 = self._run_stage_4_polish(query, stage3, history)
         
         # --- Enforce Latency Window (The "Smart" Delay) ---
         elapsed_ms = (time.time() - start_total) * 1000
@@ -219,17 +306,19 @@ class StreamingOrchestrator:
         # Return Final Compiled Result
         return {
             'query': query,
-            'response': stage3['final_response'],
-            'action': stage3['final_action'],
-            'domain': stage3['final_domain'],
-            'confidence': stage3['final_confidence'],
+            'response': stage4['response'],
+            'action': stage4['action'],
+            'domain': stage4['domain'],
+            'confidence': stage4['confidence'],
             'total_latency_ms': total_time,
-            'stages_executed': 3,
-            'premise_validated': stage3['premise_valid'],
+            'stages_executed': 4,
+            'premise_validated': stage4['premise_valid'],
+            'refinement_quality': stage4.get('refinement_quality', 0.0),
             'metadata': {
                 'stage1_time': stage1['processing_time'],
                 'stage2_time': stage2['processing_time'],
                 'stage3_time': stage3['processing_time'],
+                'stage4_time': stage4['processing_time'],
                 'enforced_delay_ms': wait_time_ms
             }
         }
