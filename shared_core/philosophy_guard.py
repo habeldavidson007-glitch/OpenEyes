@@ -385,16 +385,28 @@ class PhilosophyGuard:
     
     def _check_requires_uncertainty_note(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
         """
-        FIN-004: Fragments with price prediction tags must include uncertainty note.
+        FIN-004 / HC-004: Fragments with price prediction or treatment dosage tags must include uncertainty note.
         Checks if content contains hedging language when trigger tags are present.
+        
+        FIX 3: Added support for allowed_tags to bypass uncertainty check for treatment_dosage fragments.
         """
         trigger_tags = config.get("trigger_tags", ["price_target", "prediction", "forecast"])
+        allowed_tags = config.get("allowed_tags", [])  # FIX 3: Tags that bypass uncertainty requirement
         fragment_tags = proposal.get("tags", [])
         content = proposal.get("content", "").lower()
-        
+
         # Check if any trigger tag is present
         has_trigger = any(tag in fragment_tags for tag in trigger_tags)
         
+        # FIX 3: If fragment has an allowed_tag (like treatment_dosage), skip uncertainty check
+        if has_trigger and allowed_tags:
+            has_allowed = any(tag in fragment_tags for tag in allowed_tags)
+            if has_allowed:
+                return {
+                    "passed": True,
+                    "message": f"Fragment has allowed tag ({allowed_tags}), uncertainty note not required"
+                }
+
         if has_trigger:
             # Look for uncertainty/hedging language
             uncertainty_phrases = [
@@ -402,21 +414,21 @@ class PhilosophyGuard:
                 "not guaranteed", "past performance", "no assurance",
                 "speculative", "hypothetical", "illustration only"
             ]
-            
+
             has_uncertainty = any(phrase in content for phrase in uncertainty_phrases)
-            
+
             if not has_uncertainty:
                 return {
                     "passed": False,
                     "message": "Fragment contains price prediction/forecast content but lacks required uncertainty disclaimer",
                     "severity": "error"
                 }
-        
+
         return {
             "passed": True,
             "message": "Prediction content includes appropriate uncertainty language"
         }
-    
+
     def _check_cognitive_simplicity(self, proposal: Dict) -> Dict[str, Any]:
         """
         Check if proposal maintains cognitive simplicity.

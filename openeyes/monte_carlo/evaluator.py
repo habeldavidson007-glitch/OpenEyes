@@ -12,4 +12,5 @@ def dual_roll_score(domain: str, fragments: list[Fragment], gaussian_noise: np.n
     cred = np.array([get_credibility_score(domain, f.source_type) for f in fragments], dtype=float).mean()
     weight = np.array([f.effective_weight for f in fragments], dtype=float).mean() * 100.0
     base = 0.6 * cred + 0.4 * weight
-    return np.clip(base + gaussian_noise * 4.0, 0.0, 100.0)
+    # FIX 2: Reduce noise magnitude from 4.0 to 2.0 for better discrimination
+    return np.clip(base + gaussian_noise * 2.0, 0.0, 100.0)

@@ -119,7 +119,8 @@ class EKDStore:
         confidence: float,
         primary_tags: List[str],
         kap_intent_type: str,
-        trigger_query: str
+        trigger_query: str,
+        fragment_library=None  # For Improvement 1: Fragment Confidence Inheritance
     ) -> Optional[EmergentKnowledgeDomain]:
         """
         Create or update an EKD from a successful query resolution.
@@ -127,12 +128,19 @@ class EKDStore:
         Only called when confidence >= CRYSTALLIZATION_THRESHOLD.
         Returns the created/updated cluster.
         """
-        CRYSTALLIZATION_THRESHOLD = 75.0
+        CRYSTALLIZATION_THRESHOLD = 65.0
+        MIN_FRAGMENT_COUNT = 8  # FIX 1: Minimum fragment gate
         
         if confidence < CRYSTALLIZATION_THRESHOLD:
             return None
         
         if not fragment_ids:
+            return None
+        
+        # FIX 1: Require minimum 8 fragments to crystallize
+        if len(fragment_ids) < MIN_FRAGMENT_COUNT:
+            print(f"[EKD] Crystallization blocked: only {len(fragment_ids)} fragments "
+                  f"(minimum {MIN_FRAGMENT_COUNT} required)")
             return None
         
         cluster_id = self._generate_cluster_id(canonical_query, domain)
@@ -210,8 +218,47 @@ class EKDStore:
             print(f"[EKD] New cluster crystallized: {cluster_id} "
                   f"({len(fragment_ids)} fragments, confidence {confidence:.1f}%)")
         
+        # IMPROVEMENT 1: Fragment Confidence Inheritance
+        # When a fragment contributes to a successful cluster, boost its weight
+        if fragment_library is not None:
+            self._apply_fragment_confidence_inheritance(fragment_ids, confidence, fragment_library)
+        
         self.save()
         return cluster
+    
+    def _apply_fragment_confidence_inheritance(
+        self, 
+        fragment_ids: List[str], 
+        confidence: float,
+        fragment_library
+    ) -> None:
+        """
+        IMPROVEMENT 1: Fragment Confidence Inheritance
+        
+        When a fragment contributes to a successful EKD cluster, that success
+        propagates back to the fragment's individual weight in the gene pool.
+        
+        - Successful cluster (crystallizes): +0.03 bonus to each fragment
+        - This creates feedback loop where fragments learn from co-survival history
+        """
+        from shared_core.survival_and_weights import load_gene_pool, save_gene_pool
+        
+        pool = load_gene_pool()
+        bonus = 0.03  # Small boost for contributing to successful cluster
+        
+        for frag_id in fragment_ids:
+            if frag_id in pool:
+                current_weight = pool[frag_id].get("weight", 1.0)
+                new_weight = min(current_weight + bonus, 2.0)  # Cap at max weight
+                pool[frag_id]["weight"] = round(new_weight, 2)
+                print(f"[EKD] Fragment {frag_id[:20]}... weight boosted: "
+                      f"{current_weight:.2f} → {new_weight:.2f} (+{bonus})")
+            else:
+                # Initialize new entry if fragment not in gene pool
+                pool[frag_id] = {"id": frag_id, "weight": 1.0 + bonus}
+                print(f"[EKD] Fragment {frag_id[:20]}... added to gene pool with weight {1.0 + bonus:.2f}")
+        
+        save_gene_pool(pool)
     
     def find_matching_cluster(
         self, 
