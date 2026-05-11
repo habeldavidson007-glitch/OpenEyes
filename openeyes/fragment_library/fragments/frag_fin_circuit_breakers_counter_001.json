@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_circuit_breakers_counter_001",
-  "domain": "finance",
-  "subdomain": "market_structure",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "volatility",
     "stock_market",
@@ -16,5 +16,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.95
+  "weight": 0.95,
+  "sector": "FIN"
 }

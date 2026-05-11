@@ -46,6 +46,7 @@ class Fragment:
     compatible_with: List[str] = field(default_factory=list)
     incompatible_with: List[str] = field(default_factory=list)
     subdomain: Optional[str] = None
+    sector: Optional[str] = None  # Economy sector: FIN, ENR, COM, MAC, GEO, REG
     reasoning_role: Optional[str] = None  # "definition", "counter_argument", "latest_data"
     source_type: Optional[str] = None     # "primary", "secondary", "tertiary"
     year: Optional[int] = None            # Publication year for temporal scoring

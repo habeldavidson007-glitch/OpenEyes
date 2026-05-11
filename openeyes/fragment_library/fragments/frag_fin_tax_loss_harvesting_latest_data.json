@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_tax_loss_harvesting_latest_data",
-  "domain": "finance",
-  "subdomain": "regulation",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "tax",
     "harvesting",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

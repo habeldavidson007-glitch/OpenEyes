@@ -1,7 +1,7 @@
 {
   "id": "FIN-138",
-  "domain": "finance",
-  "subdomain": "derivatives",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "credit_default_swaps",
     "credit_derivatives",
@@ -14,5 +14,6 @@
   "source_url": "https://www.isda.org/research/market-surveys/",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "financial_publication"
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
 }

@@ -1,7 +1,7 @@
 {
   "id": "FIN-129",
-  "domain": "finance",
-  "subdomain": "monetary_policy",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "fiscal_policy",
     "fiscal_multiplier",
@@ -14,5 +14,6 @@
   "source_url": "https://www.imf.org/en/Publications/WP",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "international_institution"
+  "credibility_class": "international_institution",
+  "sector": "MAC"
 }

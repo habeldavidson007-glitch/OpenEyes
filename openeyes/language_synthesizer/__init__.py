@@ -13,10 +13,10 @@ from typing import List, Dict, Any, Optional, Tuple
 # Out-of-domain response for queries outside OpenEyes' knowledge scope
 OUT_OF_DOMAIN_RESPONSE = """This query is outside OpenEyes' current knowledge scope.
 
-OpenEyes covers: financial markets, monetary policy, economic indicators, 
-crypto assets, technical analysis, earnings and fundamentals, and financial regulation.
+OpenEyes covers: the global economy including financial markets, energy markets, 
+commodities, agriculture, macroeconomic indicators, geopolitical risk, and economic regulation.
 
-For general knowledge questions, a search engine will serve you better here."""
+For general knowledge questions outside economics, a search engine will serve you better here."""
 
 
 class LanguageSynthesizer:
@@ -218,16 +218,31 @@ class LanguageSynthesizer:
         relevance_scores = []
         for frag in fragments:
             content = frag.get("content", "").lower()
+            tags = frag.get("tags", [])
             score = 0
-            # Check if fragment contains key query terms
+            
+            # Check if fragment contains key query terms in content
             for topic in key_topics:
                 if len(topic) > 3 and topic in content:
-                    score += 10
+                    score += 15
+            
+            # Check if fragment tags match query topics (strong signal)
+            for topic in key_topics:
+                if any(topic in tag or tag in topic for tag in tags):
+                    score += 25
+            
             # Check if fragment is about the specific entity asked
             if "country" in query_words and any(word in content for word in ["poorest", "richest", "gdp per capita", "lowest income"]):
                 score += 50
             if "currency" in query_words and any(word in content for word in ["highest", "valued", "exchange rate", "dinar", "kuwait"]):
                 score += 50
+            if "stock" in query_words or "exchange" in query_words:
+                if any(word in content or word in tags for word in ["stock_market", "exchange", "trading", "equity", "market_structure"]):
+                    score += 40
+            if "advice" in query_words or "best" in query_words:
+                if any(word in content or word in tags for word in ["advice", "strategy", "best_practices", "guidance", "recommendation"]):
+                    score += 30
+            
             relevance_scores.append(score)
         
         avg_relevance = sum(relevance_scores) / len(relevance_scores) if relevance_scores else 0

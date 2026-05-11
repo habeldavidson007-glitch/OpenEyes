@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_pe_ratio_limitations_latest_data_044",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "peg_ratio",
     "price_to_sales",
@@ -20,5 +20,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

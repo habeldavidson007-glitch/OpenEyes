@@ -1,7 +1,7 @@
 {
   "id": "FIN-148",
-  "domain": "finance",
-  "subdomain": "asset_pricing",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "momentum",
     "factor_investing",
@@ -14,5 +14,6 @@
   "source_url": "https://onlinelibrary.wiley.com/journal/15406261",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "FIN"
 }

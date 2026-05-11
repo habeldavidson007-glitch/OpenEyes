@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_dollar_milkshake_counter_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "dollar",
     "macro",
@@ -20,5 +20,6 @@
     "frag_fin_dollar_milkshake_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.9025
+  "weight": 0.9025,
+  "sector": "MAC"
 }

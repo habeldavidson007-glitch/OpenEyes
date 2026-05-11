@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_options_basics_latest_001",
-  "domain": "finance",
-  "subdomain": "derivatives",
+  "domain": "economy",
+  "subdomain": "REG",
   "tags": [
     "latest_data",
     "options",
@@ -16,5 +16,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.85
+  "weight": 0.85,
+  "sector": "REG"
 }

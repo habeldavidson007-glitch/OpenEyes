@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_timeframe_analysis_counter_argument_05",
-  "domain": "finance",
-  "subdomain": "technical_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "timeframe_analysis",
     "counter_argument",
@@ -15,5 +15,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

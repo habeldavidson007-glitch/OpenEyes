@@ -1,5 +1,14 @@
 {
-  "domain": "finance",
+  "domain": "economy",
+  "hierarchy_version": "1.0",
+  "sectors": {
+    "FIN": "Finance & Markets",
+    "ENR": "Energy & Power", 
+    "COM": "Commodities & Agriculture",
+    "MAC": "Macroeconomics & Indicators",
+    "GEO": "Geopolitics & Trade Policy",
+    "REG": "Regulation & Compliance"
+  },
   "canonical_tags": [
     "macro", "monetary_policy", "fiscal_policy", "inflation", "deflation",
     "interest_rate", "fed_funds_rate", "yield_curve", "inverted_yield_curve",
@@ -25,7 +34,24 @@
     "consumer_discretionary", "industrials", "utilities", "real_estate",
     "central_bank", "fed", "ecb", "boj", "pboc", "bank_of_england",
     "quantitative_easing", "quantitative_tightening", "balance_sheet",
+    "energy_markets", "oil", "natural_gas", "crude_oil", "brent", "wti",
+    "opec", "energy_production", "renewable_energy", "solar", "wind",
+    "nuclear", "lng", "pipeline", "refining", "upstream", "downstream",
+    "commodities", "gold", "silver", "copper", "aluminum", "zinc", "nickel",
+    "precious_metals", "industrial_metals", "agriculture", "wheat", "corn",
+    "soybeans", "coffee", "sugar", "cotton", "livestock", "cattle",
+    "commodity_futures", "contango", "backwardation", "storage_costs",
+    "geopolitical_risk", "trade_policy", "tariffs", "sanctions", "supply_chain",
+    "emerging_markets", "developed_markets", "frontier_markets",
     "first_line", "warning", "contraindication", "definition",
     "counter_argument", "latest_data"
-  ]
+  ],
+  "tag_to_sector_mapping": {
+    "FIN": ["equities", "stock_market", "bull_market", "bear_market", "market_correction", "sp500", "nasdaq", "dow_jones", "index_fund", "etf", "fixed_income", "bonds", "treasury", "corporate_bonds", "yield", "duration", "credit_risk", "default_risk", "investment_grade", "junk_bonds", "crypto", "bitcoin", "ethereum", "defi", "stablecoin", "on_chain_metrics", "proof_of_work", "proof_of_stake", "blockchain", "smart_contracts", "earnings", "revenue", "gross_margin", "operating_margin", "net_margin", "free_cash_flow", "eps", "guidance", "analyst_estimates", "beat_miss", "valuation", "pe_ratio", "price_to_fcf", "price_to_sales", "ev_ebitda", "fundamental_analysis", "technical_analysis", "momentum", "support_resistance", "moving_average", "rsi", "macd", "volume", "market_cap", "risk_management", "volatility", "var", "hedging", "diversification", "correlation", "beta", "alpha", "sharpe_ratio", "drawdown", "options", "futures", "forex", "currency", "exchange_rate", "sector", "financials"],
+    "ENR": ["energy_markets", "oil", "natural_gas", "crude_oil", "brent", "wti", "opec", "energy_production", "renewable_energy", "solar", "wind", "nuclear", "lng", "pipeline", "refining", "upstream", "downstream", "energy"],
+    "COM": ["commodities", "gold", "silver", "copper", "aluminum", "zinc", "nickel", "precious_metals", "industrial_metals", "agriculture", "wheat", "corn", "soybeans", "coffee", "sugar", "cotton", "livestock", "cattle", "commodity_futures", "contango", "backwardation", "storage_costs"],
+    "MAC": ["macro", "monetary_policy", "fiscal_policy", "inflation", "deflation", "interest_rate", "fed_funds_rate", "yield_curve", "inverted_yield_curve", "gdp", "recession", "economic_growth", "employment", "unemployment", "nonfarm_payroll", "labor_market", "consumer_spending", "retail_sales", "central_bank", "fed", "ecb", "boj", "pboc", "bank_of_england", "quantitative_easing", "quantitative_tightening", "balance_sheet"],
+    "GEO": ["geopolitical_risk", "trade_policy", "tariffs", "sanctions", "supply_chain", "emerging_markets", "developed_markets", "frontier_markets"],
+    "REG": ["regulation", "sec", "dodd_frank", "basel_iii", "insider_trading", "short_selling", "margin", "margin_call", "leverage", "derivatives"]
+  }
 }

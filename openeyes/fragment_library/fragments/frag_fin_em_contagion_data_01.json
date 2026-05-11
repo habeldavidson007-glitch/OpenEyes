@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_em_contagion_data_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "GEO",
   "tags": [
     "emerging_markets",
     "sovereign_debt",
@@ -18,5 +18,6 @@
     "frag_fin_em_contagion_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.9114
+  "weight": 0.9114,
+  "sector": "GEO"
 }

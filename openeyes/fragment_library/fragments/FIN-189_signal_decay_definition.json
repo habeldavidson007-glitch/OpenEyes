@@ -1,7 +1,7 @@
 {
   "id": "FIN-189",
-  "domain": "finance",
-  "subdomain": "algorithmic_trading",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "algorithmic_trading",
     "signal decay"
@@ -12,5 +12,6 @@
   "source_url": "https://example.com/FIN-189",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "financial_publication"
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
 }

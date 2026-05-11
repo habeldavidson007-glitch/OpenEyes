@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_elliott_wave_counter_argument_07",
-  "domain": "finance",
-  "subdomain": "technical_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "elliott_wave",
     "counter_argument",
@@ -15,5 +15,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

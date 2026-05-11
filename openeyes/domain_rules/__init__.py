@@ -30,7 +30,8 @@ DOMAIN_TIERS = {
     "aviation_safety": "tier0",
     
     # Tier 1: High Stakes - Strict HALT, Primary sources only
-    "medical": "tier1",
+    "healthcare": "tier1",
+    "medical": "tier1",  # Legacy alias for healthcare
     "law": "tier1", 
     "legal": "tier1",
     "nuclear": "tier1",
@@ -40,11 +41,12 @@ DOMAIN_TIERS = {
     
     # Tier 2: Medium Stakes - Moderate HALT, Mix of Primary/Secondary
     "engineering": "tier2",
-    "finance": "tier2",
+    "economy": "tier2",
+    "finance": "tier2",  # Legacy alias for economy
+    "economics": "tier2",  # Legacy alias for economy
     "history": "tier2",
     "technology": "tier2",
     "science": "tier2",
-    "economics": "tier2",
     "business": "tier2",
     "education": "tier2",
     "environmental": "tier2",
@@ -74,8 +76,8 @@ DOMAIN_TIERS = {
 # Maps source_type to base_score per domain, aligned with real-world epistemology
 # Higher scores = more credible sources for that domain
 CREDIBILITY_HIERARCHIES = {
-    # Tier 1: Medical - Strict hierarchy, peer-reviewed evidence paramount
-    "medical": {
+    # Tier 1: Healthcare - Strict hierarchy, peer-reviewed evidence paramount
+    "healthcare": {
         "clinical_guideline": 98,      # Highest: Official clinical guidelines (CDC, WHO, NIH)
         "peer_reviewed_study": 95,     # Peer-reviewed research studies
         "systematic_review": 93,       # Systematic reviews/meta-analyses
@@ -86,6 +88,20 @@ CREDIBILITY_HIERARCHIES = {
         "news_article": 50,            # Medical news (secondary reporting)
         "forum": 25,                   # Patient forums (anecdotal)
         "anecdotal": 20                # Personal anecdotes
+    },
+    
+    # Legacy alias for healthcare
+    "medical": {
+        "clinical_guideline": 98,
+        "peer_reviewed_study": 95,
+        "systematic_review": 93,
+        "textbook": 85,
+        "government_source": 85,
+        "expert_consensus": 80,
+        "case_report": 60,
+        "news_article": 50,
+        "forum": 25,
+        "anecdotal": 20
     },
     
     # Tier 1: Legal - Primary authority is everything
@@ -117,17 +133,32 @@ CREDIBILITY_HIERARCHIES = {
         "forum": 30                    # Engineering forums (StackExchange, etc.)
     },
     
-    # Tier 2: Finance - Regulatory and primary market data
-    "finance": {
+    # Tier 2: Finance/Economy - Regulatory and primary market data
+    "economy": {
         "sec_filing": 98,              # SEC filings (10-K, 10-Q, etc.)
         "regulatory_guidance": 95,     # SEC, FINRA, Fed guidance
         "primary_market_data": 90,     # Direct market data (Bloomberg, Reuters)
         "central_bank_report": 90,     # Federal Reserve, ECB reports
         "audited_statement": 88,       # Audited financial statements
+        "energy_agency_report": 88,    # EIA, IEA energy reports
+        "commodity_exchange_data": 88, # CME, LME commodity data
         "analyst_report": 70,          # Professional analyst reports
         "financial_news": 55,          # Financial news (WSJ, FT)
         "investment_blog": 40,         # Investment blogs
         "forum": 25                    # Investment forums (Reddit, etc.)
+    },
+    
+    # Tier 2: Finance (Legacy alias for Economy)
+    "finance": {
+        "sec_filing": 98,
+        "regulatory_guidance": 95,
+        "primary_market_data": 90,
+        "central_bank_report": 90,
+        "audited_statement": 88,
+        "analyst_report": 70,
+        "financial_news": 55,
+        "investment_blog": 40,
+        "forum": 25
     },
     
     # Tier 3: Cooking - Established institutions > experts > community
@@ -214,6 +245,55 @@ CREDIBILITY_HIERARCHIES = {
 
 # Embedded domain rules (fallback if JSON files not found)
 EMBEDDED_RULES = {
+    "healthcare": {
+        "domain": "healthcare",
+        "tier": "tier1",
+        "version": "1.0",
+        "rules": [
+            {
+                "id": "HC-001",
+                "name": "Do No Harm",
+                "description": "No fragment may recommend a treatment with a known fatal interaction",
+                "check_type": "blacklist_tag_conflict",
+                "config": {"flag": "fatal_interaction"},
+                "halt_on_failure": True
+            },
+            {
+                "id": "HC-002",
+                "name": "Evidence-Based Only",
+                "description": "All treatment fragments must have primary source credibility",
+                "check_type": "minimum_source_type",
+                "config": {"allowed": ["primary"]},
+                "halt_on_failure": True
+            },
+            {
+                "id": "HC-003",
+                "name": "Cite Source",
+                "description": "Every fragment must carry a source URL",
+                "check_type": "requires_field",
+                "config": {"field": "source_url"},
+                "halt_on_failure": True
+            },
+            {
+                "id": "HC-004",
+                "name": "Recent Data Required",
+                "description": "At least one fragment must have data from 2024 or later",
+                "check_type": "requires_recent_data",
+                "config": {"min_year": 2024},
+                "halt_on_failure": False
+            },
+            {
+                "id": "HC-005",
+                "name": "Counter-Arguments Checked",
+                "description": "Must include risk/contraindication information",
+                "check_type": "requires_reasoning_role",
+                "config": {"role": "counter_argument"},
+                "halt_on_failure": False
+            }
+        ]
+    },
+    
+    # Legacy alias for healthcare
     "medical": {
         "domain": "medical",
         "tier": "tier1",
@@ -504,8 +584,11 @@ class DomainRulesLoader:
         if domain_lower in self._cache:
             return self._cache[domain_lower]
         
-        # Try to load from file
+        # Try to load from file (check both root and subdirectories)
         rules_file = self.rules_dir / f"{domain_lower}.json"
+        
+        # Also check for subdirectory structure (e.g., healthcare/healthcare.json)
+        subdir_rules_file = self.rules_dir / domain_lower / f"{domain_lower}.json"
         
         if rules_file.exists():
             try:
@@ -523,6 +606,25 @@ class DomainRulesLoader:
                 
             except (json.JSONDecodeError, IOError) as e:
                 print(f"[DomainRulesLoader] Error loading {rules_file}: {e}")
+                # Fall through to check subdirectory or embedded rules
+        
+        # Check subdirectory structure
+        if subdir_rules_file.exists():
+            try:
+                with open(subdir_rules_file, 'r') as f:
+                    rules_config = json.load(f)
+                
+                # Validate structure
+                if "rules" not in rules_config:
+                    rules_config["rules"] = []
+                if "tier" not in rules_config:
+                    rules_config["tier"] = self.get_domain_tier(domain_lower)
+                
+                self._cache[domain_lower] = rules_config
+                return rules_config
+                
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"[DomainRulesLoader] Error loading {subdir_rules_file}: {e}")
                 # Fall through to embedded rules
         
         # Use embedded rules if available

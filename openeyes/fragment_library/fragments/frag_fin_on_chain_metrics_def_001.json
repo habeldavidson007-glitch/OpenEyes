@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_on_chain_metrics_def_001",
-  "domain": "finance",
-  "subdomain": "crypto",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "ethereum",
     "definition",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.78
+  "weight": 0.78,
+  "sector": "FIN"
 }

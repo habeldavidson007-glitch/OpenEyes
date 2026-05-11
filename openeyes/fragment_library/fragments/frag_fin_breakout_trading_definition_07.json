@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_breakout_trading_definition_07",
-  "domain": "finance",
-  "subdomain": "technical_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "definition",
     "breakout_trading",
@@ -15,5 +15,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

@@ -1,7 +1,7 @@
 {
   "id": "FIN-124",
-  "domain": "finance",
-  "subdomain": "monetary_policy",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "federal_reserve",
     "monetary_policy",
@@ -13,5 +13,6 @@
   "source_url": "https://www.federalreserve.gov/",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "government_agency"
+  "credibility_class": "government_agency",
+  "sector": "MAC"
 }

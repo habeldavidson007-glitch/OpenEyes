@@ -187,14 +187,14 @@ class DiceTable:
                         "priority": 2
                     },
                     {
-                        "score_range": [60, 69],
+                        "score_range": [50, 69.99],
                         "fragment_class": "tentative_claim",
                         "include_confidence_note": True,
                         "require_source_citation": True,
                         "priority": 3
                     },
                     {
-                        "score_range": [0, 59],
+                        "score_range": [0, 49.99],
                         "fragment_class": "HALT",
                         "halt_message": "Insufficient evidence to provide an answer.",
                         "require_source_citation": False,

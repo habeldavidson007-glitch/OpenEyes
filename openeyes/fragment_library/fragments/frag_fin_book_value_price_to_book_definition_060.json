@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_book_value_price_to_book_definition_060",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "peg_ratio",
     "price_to_sales",
@@ -20,5 +20,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

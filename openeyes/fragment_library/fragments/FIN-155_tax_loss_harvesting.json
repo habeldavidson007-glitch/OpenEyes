@@ -1,7 +1,7 @@
 {
   "id": "FIN-155",
-  "domain": "finance",
-  "subdomain": "portfolio_management",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "tax_loss_harvesting",
     "tax_efficiency",
@@ -14,5 +14,6 @@
   "source_url": "https://jwm.pm-research.com/",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "FIN"
 }

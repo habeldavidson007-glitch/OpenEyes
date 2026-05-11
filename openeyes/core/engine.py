@@ -18,6 +18,7 @@ from openeyes.identity import IdentityEngine, IdentityType
 from openeyes.ingestion.web_scraper import scrape_authoritative_sources
 from openeyes.ingestion.auto_fragment import convert_to_fragments, verify_consistency
 from openeyes.core.intent_router import route_intent
+from openeyes.core.reasoning_engine import get_reasoning_engine
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
@@ -102,7 +103,8 @@ class OpenEyesEngine:
         # PHASE 1-2: Autonomous Research Loop (if confidence would be low)
         # Check if we have enough high-quality fragments
         high_evidence_count = sum(1 for f in filtered if getattr(f, 'evidence_level', '') == 'high')
-        if high_evidence_count < 2 and intent in {"current_events", "factual_entity"}:
+        intent_type = intent.intent_type if hasattr(intent, 'intent_type') else str(intent)
+        if high_evidence_count < 2 and intent_type in {"current_events", "factual_entity"}:
             _pipeline_log(f"[AUTONOMOUS] Low evidence detected ({high_evidence_count} high-evidence fragments), triggering web research...")
             
             # Phase 1: Scrape authoritative sources
@@ -127,6 +129,23 @@ class OpenEyesEngine:
                     weighted_filtered.append(frag)
             filtered = weighted_filtered
             _pipeline_log(f"[IDENTITY] {identity.config.name} filtered to {len(filtered)} fragments")
+        
+        # Apply 5-Stage Reasoning Engine
+        if filtered:
+            _pipeline_log(f"[REASONING] Running 5-stage reasoning pipeline...")
+            reasoning_engine = get_reasoning_engine()
+            trace = reasoning_engine.process(normalized_query, domain, filtered)
+            
+            # Update fragment weights based on reasoning results
+            # Fragments already have their weights adjusted in-place by the engine
+            
+            _pipeline_log(f"[REASONING] Confidence: {trace.final_confidence:.1f}%, Actionability: {trace.actionability_score:.2f}")
+            _pipeline_log(f"[REASONING] Cross-domain links: {len(trace.cross_domain_links)}, Contradictions: {len(trace.contradictions_detected)}")
+            
+            # Store trace in fragments metadata for audit
+            for frag in filtered:
+                if not hasattr(frag, 'reasoning_trace'):
+                    frag.reasoning_trace = trace
         
         return filtered
 
@@ -154,6 +173,9 @@ class OpenEyesEngine:
             result["confidence"] = round(min(99.0, result["confidence"] + 5.0 * len(priors)), 2)
 
         replay = json.loads(result["replay"])
+        # Generate narrative from result
+        narrative = result.get("narrative", {"context": "", "scenarios": {}, "recommendation": ""})
+        
         # Pass fragment count for narrative expansion
         answer = _compose_user_answer(
             query,

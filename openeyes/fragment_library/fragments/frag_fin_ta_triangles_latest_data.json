@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_ta_triangles_latest_data",
-  "domain": "finance",
-  "subdomain": "technical_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "chart_patterns",
     "latest_data",
@@ -15,5 +15,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

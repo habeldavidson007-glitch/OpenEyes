@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_sovereign_crisis_data_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "GEO",
   "tags": [
     "sovereign_debt",
     "emerging_markets",
@@ -18,5 +18,6 @@
     "frag_fin_sovereign_crisis_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.9114
+  "weight": 0.9114,
+  "sector": "GEO"
 }

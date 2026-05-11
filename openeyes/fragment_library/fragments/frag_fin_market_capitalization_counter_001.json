@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_market_capitalization_counter_001",
-  "domain": "finance",
-  "subdomain": "equities",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "market_cap",
     "equities",
@@ -15,5 +15,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.95
+  "weight": 0.95,
+  "sector": "FIN"
 }

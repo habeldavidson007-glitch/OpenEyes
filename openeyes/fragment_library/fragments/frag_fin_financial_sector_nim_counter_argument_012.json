@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_financial_sector_nim_counter_argument_012",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "ENR",
   "tags": [
     "technology",
     "healthcare",
@@ -24,5 +24,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "ENR"
 }

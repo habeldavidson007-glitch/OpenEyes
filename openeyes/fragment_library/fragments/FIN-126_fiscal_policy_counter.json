@@ -1,7 +1,7 @@
 {
   "id": "FIN-126",
-  "domain": "finance",
-  "subdomain": "monetary_policy",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "fiscal_policy",
     "government_debt",
@@ -14,5 +14,6 @@
   "source_url": "https://www.aeaweb.org/journals/jep",
   "verified": true,
   "reasoning_role": "counter_argument",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "MAC"
 }

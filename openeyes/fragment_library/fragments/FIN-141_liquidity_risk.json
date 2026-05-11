@@ -1,7 +1,7 @@
 {
   "id": "FIN-141",
-  "domain": "finance",
-  "subdomain": "risk_management",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "liquidity_risk",
     "market_liquidity",
@@ -14,5 +14,6 @@
   "source_url": "https://www.federalreserve.gov/financial-stability.htm",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "financial_publication"
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
 }

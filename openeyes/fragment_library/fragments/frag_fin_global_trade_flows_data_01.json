@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_global_trade_flows_data_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "global_trade",
     "macro",
@@ -18,5 +18,6 @@
     "frag_fin_global_trade_flows_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.9114
+  "weight": 0.9114,
+  "sector": "MAC"
 }

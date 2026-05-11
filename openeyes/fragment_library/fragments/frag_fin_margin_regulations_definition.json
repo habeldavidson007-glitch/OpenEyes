@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_margin_regulations_definition",
-  "domain": "finance",
-  "subdomain": "regulation",
+  "domain": "economy",
+  "subdomain": "REG",
   "tags": [
     "regulation",
     "margin",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "REG"
 }

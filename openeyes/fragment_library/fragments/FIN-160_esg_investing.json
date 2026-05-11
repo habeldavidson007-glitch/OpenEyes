@@ -1,7 +1,7 @@
 {
   "id": "FIN-160",
-  "domain": "finance",
-  "subdomain": "portfolio_management",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "esg_investing",
     "sustainable_finance",
@@ -14,5 +14,6 @@
   "source_url": "https://www.tandfonline.com/journals/rjsf20",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "FIN"
 }

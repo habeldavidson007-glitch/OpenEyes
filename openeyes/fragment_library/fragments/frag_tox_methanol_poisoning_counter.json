@@ -1,7 +1,7 @@
 {
   "id": "frag_tox_methanol_poisoning_002",
-  "domain": "medical",
-  "subdomain": "toxicology",
+  "domain": "healthcare",
+  "subdomain": "MED",
   "tags": [
     "methanol",
     "poisoning",

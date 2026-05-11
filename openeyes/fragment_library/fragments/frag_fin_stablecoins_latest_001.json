@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_stablecoins_latest_001",
-  "domain": "finance",
-  "subdomain": "crypto",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "crypto",
     "stablecoin",
@@ -16,5 +16,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.75
+  "weight": 0.75,
+  "sector": "FIN"
 }

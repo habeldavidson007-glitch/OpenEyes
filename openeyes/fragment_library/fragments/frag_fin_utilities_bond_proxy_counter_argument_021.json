@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_utilities_bond_proxy_counter_argument_021",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "fundamental_analysis",
     "earnings",
@@ -15,5 +15,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

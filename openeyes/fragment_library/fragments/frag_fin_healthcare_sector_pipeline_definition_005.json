@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_healthcare_sector_pipeline_definition_005",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "ENR",
   "tags": [
     "technology",
     "peg_ratio",
@@ -29,5 +29,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "ENR"
 }

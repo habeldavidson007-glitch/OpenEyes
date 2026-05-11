@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_boj_ycc_counter_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "boj",
     "yield_curve",
@@ -20,5 +20,6 @@
     "frag_fin_boj_ycc_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.855
+  "weight": 0.855,
+  "sector": "MAC"
 }

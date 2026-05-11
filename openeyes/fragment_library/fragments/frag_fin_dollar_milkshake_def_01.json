@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_dollar_milkshake_def_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "dollar",
     "macro",
@@ -18,5 +18,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.95
+  "weight": 0.95,
+  "sector": "MAC"
 }

@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_working_capital_cash_conversion_latest_data_077",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "fundamental_analysis",
     "earnings",
@@ -15,5 +15,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

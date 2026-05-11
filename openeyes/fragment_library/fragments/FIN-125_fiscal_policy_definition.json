@@ -1,7 +1,7 @@
 {
   "id": "FIN-125",
-  "domain": "finance",
-  "subdomain": "monetary_policy",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "fiscal_policy",
     "government_spending",
@@ -14,5 +14,6 @@
   "source_url": "https://www.imf.org/en/Publications/FM",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "international_institution"
+  "credibility_class": "international_institution",
+  "sector": "MAC"
 }

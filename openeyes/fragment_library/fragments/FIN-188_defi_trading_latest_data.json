@@ -1,7 +1,7 @@
 {
   "id": "FIN-188",
-  "domain": "finance",
-  "subdomain": "algorithmic_trading",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "algorithmic_trading",
     "defi trading"
@@ -12,5 +12,6 @@
   "source_url": "https://example.com/FIN-188",
   "verified": true,
   "reasoning_role": "latest_data",
-  "credibility_class": "financial_publication"
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
 }

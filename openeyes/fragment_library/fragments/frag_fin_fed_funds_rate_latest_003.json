@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_fed_funds_rate_latest_003",
-  "domain": "finance",
-  "subdomain": "macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "fed_funds_rate",
     "interest_rate",
@@ -17,5 +17,6 @@
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "MAC"
 }

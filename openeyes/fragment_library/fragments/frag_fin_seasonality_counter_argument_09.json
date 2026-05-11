@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_seasonality_counter_argument_09",
-  "domain": "finance",
-  "subdomain": "technical_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "seasonality",
     "technical_analysis",
@@ -18,5 +18,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

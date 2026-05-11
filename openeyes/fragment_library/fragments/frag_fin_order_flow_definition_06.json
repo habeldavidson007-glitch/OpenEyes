@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_order_flow_definition_06",
-  "domain": "finance",
-  "subdomain": "technical_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "definition",
     "order_flow",
@@ -16,5 +16,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

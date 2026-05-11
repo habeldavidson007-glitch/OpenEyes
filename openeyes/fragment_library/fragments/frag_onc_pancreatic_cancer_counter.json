@@ -1,7 +1,7 @@
 {
-  "id": "frag_onc_pancreatic_cancer_002",
-  "domain": "medical",
-  "subdomain": "oncology",
+  "id": "frag_onc_pancreatic_cancer_counter_001",
+  "domain": "healthcare",
+  "subdomain": "MED",
   "tags": [
     "pancreatic_cancer",
     "symptoms",
@@ -15,6 +15,9 @@
   "last_verified": "2026-05-08",
   "weight": 1.0,
   "reasoning_role": "counter_argument",
+  "source_type": "clinical_guideline",
+  "year": 2026,
+  "sub_question": "Why is early diagnosis difficult?",
   "compatible_with": [
     "frag_onc_pancreatic_cancer_001"
   ],

@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_inflation_expectations_counter_019",
-  "domain": "finance",
-  "subdomain": "macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "inflation",
     "expectations",
@@ -17,5 +17,6 @@
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "MAC"
 }

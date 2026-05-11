@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_currency_wars_counter_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "GEO",
   "tags": [
     "forex",
     "currency",
@@ -20,5 +20,6 @@
     "frag_fin_currency_wars_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.8929999999999999
+  "weight": 0.8929999999999999,
+  "sector": "GEO"
 }

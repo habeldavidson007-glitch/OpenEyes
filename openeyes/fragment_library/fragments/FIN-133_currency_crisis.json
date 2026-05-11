@@ -1,7 +1,7 @@
 {
   "id": "FIN-133",
-  "domain": "finance",
-  "subdomain": "international_finance",
+  "domain": "economy",
+  "subdomain": "GEO",
   "tags": [
     "currency_crisis",
     "emerging_markets",
@@ -14,5 +14,6 @@
   "source_url": "https://www.aeaweb.org/journals/jel",
   "verified": true,
   "reasoning_role": "definition",
-  "credibility_class": "academic_research"
+  "credibility_class": "academic_research",
+  "sector": "GEO"
 }

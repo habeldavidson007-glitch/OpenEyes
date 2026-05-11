@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_income_statement_structure_definition_000",
-  "domain": "finance",
-  "subdomain": "fundamental_analysis",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "net_margin",
     "valuation",
@@ -19,5 +19,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

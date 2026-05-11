@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_futures_contracts_counter_001",
-  "domain": "finance",
-  "subdomain": "derivatives",
+  "domain": "economy",
+  "subdomain": "COM",
   "tags": [
     "derivatives",
     "commodities",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.95
+  "weight": 0.95,
+  "sector": "COM"
 }

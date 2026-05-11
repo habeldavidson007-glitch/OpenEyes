@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_correlation_breakdown_definition",
-  "domain": "finance",
-  "subdomain": "risk_management",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "risk_management",
     "correlation",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

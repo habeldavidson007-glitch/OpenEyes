@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_tax_treatment_investments_latest_data",
-  "domain": "finance",
-  "subdomain": "regulation",
+  "domain": "economy",
+  "subdomain": "REG",
   "tags": [
     "tax",
     "capital_gains",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "REG"
 }

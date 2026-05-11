@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_geopolitical_premium_def_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "ENR",
   "tags": [
     "geopolitical_risk",
     "oil",
@@ -17,5 +17,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 0.93
+  "weight": 0.93,
+  "sector": "ENR"
 }

@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_commodity_supercycle_counter_01",
-  "domain": "finance",
-  "subdomain": "global_macro",
+  "domain": "economy",
+  "subdomain": "COM",
   "tags": [
     "commodities",
     "macro",
@@ -19,5 +19,6 @@
     "frag_fin_commodity_supercycle_def_01"
   ],
   "incompatible_with": [],
-  "weight": 0.8835
+  "weight": 0.8835,
+  "sector": "COM"
 }

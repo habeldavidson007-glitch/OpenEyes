@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_onchain_sopr_definition",
-  "domain": "finance",
-  "subdomain": "crypto",
+  "domain": "economy",
+  "subdomain": "FIN",
   "tags": [
     "crypto",
     "on_chain_metrics",
@@ -15,5 +15,6 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "FIN"
 }

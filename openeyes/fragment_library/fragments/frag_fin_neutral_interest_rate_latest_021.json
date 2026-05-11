@@ -1,7 +1,7 @@
 {
   "id": "frag_fin_neutral_interest_rate_latest_021",
-  "domain": "finance",
-  "subdomain": "macro",
+  "domain": "economy",
+  "subdomain": "MAC",
   "tags": [
     "interest_rate",
     "neutral_rate",
@@ -17,5 +17,6 @@
   "year": 2026,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "sector": "MAC"
 }
