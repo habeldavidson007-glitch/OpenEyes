@@ -1,0 +1,40 @@
+{
+  "fragments": [
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Therapeutic Index",
+      "role": "definition",
+      "content": "Therapeutic index (TI) is the ratio between toxic and therapeutic drug concentrations: TI = TD50/ED50 (dose toxic to 50% / dose effective in 50%) or TC50/EC50 for concentrations. Narrow therapeutic index (NTI) drugs have TI <2, requiring careful dosing and monitoring. NTI drugs include: warfarin (INR 2-3 therapeutic, >4 bleeding risk), digoxin (0.5-0.9 ng/mL therapeutic, >1.2 toxicity), lithium (0.6-1.2 mEq/L therapeutic, >1.5 toxicity), phenytoin (10-20 mcg/mL), theophylline (10-20 mcg/mL), aminoglycosides, cyclosporine. Small dose changes or drug interactions can cause toxicity or therapeutic failure. FDA requires bioequivalence standards of 90-111% for NTI drugs vs 80-125% for others.",
+      "tags": ["therapeutic_index", "narrow_TI", "drug_monitoring", "toxicity_risk", "bioequivalence"],
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2025
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Therapeutic Index",
+      "role": "treatment_protocol",
+      "content": "Management of NTI drugs requires: therapeutic drug monitoring (TDM) with timing critical (trough levels before next dose; peak levels when indicated); consistent formulation use (brand vs generic switching may alter levels); patient education on adherence and interaction recognition; regular clinical assessment for toxicity signs. Warfarin: monitor INR weekly initially, then monthly when stable; maintain food consistency (vitamin K). Digoxin: check level 6-8 hours post-dose; monitor renal function, potassium, magnesium. Lithium: check level 12 hours post-dose; monitor thyroid, renal function; maintain sodium/fluid intake. Phenytoin: monitor free levels in hypoalbuminemia; watch for nystagmus, ataxia, confusion. Gentamicin: extended-interval dosing with random levels or traditional dosing with peak/trough.",
+      "tags": ["TDM", "formulation_consistency", "patient_education", "toxicity_monitoring"],
+      "source": "nih.gov",
+      "credibility_class": "A",
+      "year": 2025
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Therapeutic Index",
+      "role": "diagnostic_criteria",
+      "content": "Therapeutic ranges established from population studies correlating concentrations with efficacy and toxicity. Individual therapeutic targets may vary: warfarin INR 2-3 for most indications, 2.5-3.5 for mechanical mitral valve; digoxin 0.5-0.9 for heart failure (higher associated with mortality), 0.8-1.2 for atrial fibrillation. TDM interpretation requires understanding timing: steady state achieved after 4-5 half-lives; trough drawn immediately before next dose; peak timing drug-specific (gentamicin 30 min post-infusion, phenytoin 2-4 hours post-dose). Free drug monitoring for highly protein-bound drugs in special populations. Population pharmacokinetics uses Bayesian forecasting to individualize dosing based on sparse samples. Toxicity diagnosis: clinical signs plus supratherapeutic levels confirm; subtherapeutic levels with treatment failure indicate need for dose increase.",
+      "tags": ["therapeutic_ranges", "timing_requirements", "free_drug_levels", "Bayesian_dosing"],
+      "source": "ema.europa.eu",
+      "credibility_class": "A",
+      "year": 2025
+    }
+  ]
+}

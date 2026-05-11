@@ -1,0 +1,40 @@
+{
+  "fragments": [
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Volume of Distribution",
+      "role": "definition",
+      "content": "Volume of distribution (Vd) is a theoretical volume relating the amount of drug in the body to its plasma concentration: Vd = Amount of drug / Plasma concentration. It indicates the extent of drug distribution beyond plasma into tissues. Vd does not represent a real physiologic volume but reflects tissue affinity. Small Vd (~3-5L, plasma volume): drugs stay in circulation (warfarin, heparin - highly protein bound). Moderate Vd (~14L, extracellular fluid): aminoglycosides. Large Vd (>40L, total body water or more): extensive tissue distribution (digoxin Vd=500L, chloroquine Vd=15,000L). High Vd drugs are poorly removed by dialysis.",
+      "tags": ["volume_of_distribution", "Vd", "tissue_distribution", "protein_binding", "dialysis"],
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2025
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Volume of Distribution",
+      "role": "treatment_protocol",
+      "content": "Vd determines loading dose calculation: Loading dose = Target concentration × Vd / Bioavailability. For drugs with large Vd, substantial loading doses are needed to achieve therapeutic levels quickly (e.g., digoxin, amiodarone). In obesity: lipophilic drugs (benzodiazepines, propofol) distribute into adipose tissue requiring weight-based dosing using total body weight; hydrophilic drugs (aminoglycosides) use adjusted body weight. In elderly: decreased total body water reduces Vd for hydrophilic drugs, increasing plasma concentrations. In ascites/edema: increased extracellular fluid increases Vd for hydrophilic drugs, potentially requiring higher doses. Vd changes in pregnancy due to increased plasma volume and body fat.",
+      "tags": ["loading_dose_calculation", "obesity_dosing", "elderly_dosing", "pregnancy_dosing"],
+      "source": "nih.gov",
+      "credibility_class": "A",
+      "year": 2025
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Volume of Distribution",
+      "role": "diagnostic_criteria",
+      "content": "Vd is calculated from plasma concentration measurements after IV administration: Vd = Dose / C0 (concentration at time zero, extrapolated from elimination curve). Apparent Vd at steady state (Vdss) accounts for tissue equilibration. Central volume (Vc) represents initial distribution space before tissue equilibration. Multi-compartment models describe drugs with distinct distribution and elimination phases. Factors affecting Vd: molecular size (large molecules stay in plasma), lipophilicity (lipid-soluble drugs have high Vd), protein binding (high binding reduces Vd), tissue binding (increases Vd), ionization (charged molecules have lower Vd). Pathologic states alter Vd: burns increase Vd due to capillary leak; dehydration decreases Vd.",
+      "tags": ["Vd_calculation", "compartment_models", "protein_binding_effects", "pathologic_changes"],
+      "source": "ema.europa.eu",
+      "credibility_class": "A",
+      "year": 2025
+    }
+  ]
+}
