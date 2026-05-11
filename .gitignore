@@ -1,43 +1,4 @@
-```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.py~
-
-# Dependencies
-.venv/
-venv/
-env/
-.env
-.env.local
-.env.*
-
-# Build artifacts
-build/
-dist/
-*.egg-info/
-
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Logs
-*.log
-
-# Coverage
-.coverage
-coverage/
-htmlcov/
-
-# Temp files
-*.tmp
-*.temp
-
-# OS
-.DS_Store
-Thumbs.db
+```gitignore
+# Test results and reports
+test_results/
 ```
