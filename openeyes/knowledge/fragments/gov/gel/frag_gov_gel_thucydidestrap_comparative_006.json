@@ -1,0 +1,33 @@
+{
+  "id": "gov-GEL-THUCYDIDESTRAP-COMPARATIVE-006",
+  "domain": "GOVERNANCE",
+  "sector": "GEL",
+  "topic": "Thucydidestrap",
+  "role": "comparative",
+  "summary": "Thucydidestrap: From Thucydides History of Peloponnesian War",
+  "content": {
+    "overview": "This fragment describes thucydidestrap in geopolitical analysis. From Thucydides History of Peloponnesian War.",
+    "key_points": [
+      "From Thucydides History of Peloponnesian War",
+      "Rising power challenges hegemon increases war risk",
+      "Allison 16 cases 12 resulted in war",
+      "Critics cite peaceful transitions",
+      "US-China relations framework"
+    ],
+    "sources": [
+      "World Bank WGI (databank.worldbank.org)",
+      "Freedom House (freedomhouse.org)",
+      "CSIS (csis.org)",
+      "Brookings (brookings.edu)",
+      "Carnegie (carnegieendowment.org)",
+      "Lowy Institute (lowyinstitute.org)"
+    ],
+    "philosophy_guard": "Describes what IS - theories patterns cases. Not what SHOULD BE.",
+    "credibility_score": 0.94
+  },
+  "metadata": {
+    "created": "2024",
+    "format_version": "2.0",
+    "cross_references": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "gov-GEL-INDOPACIFICSTRATEGY-COMPARATIVE-003",
+  "domain": "GOVERNANCE",
+  "sector": "GEL",
+  "topic": "Indopacificstrategy",
+  "role": "comparative",
+  "summary": "Indopacificstrategy: Indian Pacific Ocean maritime space",
+  "content": {
+    "overview": "This fragment describes indopacificstrategy in geopolitical analysis. Indian Pacific Ocean maritime space.",
+    "key_points": [
+      "Indian Pacific Ocean maritime space",
+      "East Southeast South Asia Oceania",
+      "Freedom of navigation operations",
+      "QUAD coordination",
+      "Rules-based order"
+    ],
+    "sources": [
+      "World Bank WGI (databank.worldbank.org)",
+      "Freedom House (freedomhouse.org)",
+      "CSIS (csis.org)",
+      "Brookings (brookings.edu)",
+      "Carnegie (carnegieendowment.org)",
+      "Lowy Institute (lowyinstitute.org)"
+    ],
+    "philosophy_guard": "Describes what IS - theories patterns cases. Not what SHOULD BE.",
+    "credibility_score": 0.94
+  },
+  "metadata": {
+    "created": "2024",
+    "format_version": "2.0",
+    "cross_references": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "gov-GEL-SPHEREOFINFLUENCE-COMPARATIVE-012",
+  "domain": "GOVERNANCE",
+  "sector": "GEL",
+  "topic": "Sphereofinfluence",
+  "role": "comparative",
+  "summary": "Sphereofinfluence: Region of exclusive influence claim",
+  "content": {
+    "overview": "This fragment describes sphereofinfluence in geopolitical analysis. Region of exclusive influence claim.",
+    "key_points": [
+      "Region of exclusive influence claim",
+      "Monroe Doctrine Western Hemisphere",
+      "Russia post-Soviet space claim",
+      "International law rejects formal spheres",
+      "Informal spheres persist"
+    ],
+    "sources": [
+      "World Bank WGI (databank.worldbank.org)",
+      "Freedom House (freedomhouse.org)",
+      "CSIS (csis.org)",
+      "Brookings (brookings.edu)",
+      "Carnegie (carnegieendowment.org)",
+      "Lowy Institute (lowyinstitute.org)"
+    ],
+    "philosophy_guard": "Describes what IS - theories patterns cases. Not what SHOULD BE.",
+    "credibility_score": 0.94
+  },
+  "metadata": {
+    "created": "2024",
+    "format_version": "2.0",
+    "cross_references": []
+  }
+}
