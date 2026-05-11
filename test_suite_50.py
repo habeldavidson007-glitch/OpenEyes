@@ -94,7 +94,7 @@ def run_test_suite():
         try:
             # Import here to catch any import errors
             from openeyes.core.emergency_detection import detect_emergency
-            from openeyes.core.domain_validator import classify_domain
+            from openeyes.core.domain_validator import validate_query_domain as classify_domain
             
             # P0: Emergency detection FIRST
             is_emergency, emergency_type, resources = detect_emergency(query)
@@ -116,7 +116,7 @@ def run_test_suite():
                 continue
             
             # Domain classification
-            classified_domain, confidence = classify_domain(query)
+            classified_domain, confidence, _ = classify_domain(query)
             print(f"  Classified as: {classified_domain} (confidence: {confidence:.2f})")
             
             # Simulate retrieval (would normally call actual retrieval)
