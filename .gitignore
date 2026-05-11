@@ -1,10 +1,36 @@
-```gitignore
-# Python cache files
+# Build and test artifacts
+test_results/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Environment and cache
+.env
+.env.local
+.env.*
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Compiled Python files in specific directories
-openeyes/core/__pycache__/
-```
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
