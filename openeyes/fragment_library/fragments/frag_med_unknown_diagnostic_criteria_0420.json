@@ -15,9 +15,10 @@
   "content": "Diagnosis requires \u22653 of 5 criteria (harmonized definition): (1) Waist circumference: population-specific cutoffs (US/Europe: men \u2265102cm, women \u226588cm; South Asian/Chinese/Japanese: men \u226590cm, women \u226580cm); (2) Triglycerides: \u2265150 mg/dL (\u22651.7 mmol/L) or drug treatment for elevated triglycerides; (3) HDL cholesterol: <40 mg/dL (<1.0 mmol/L) in men, <50 mg/dL (<1.3 mmol/L) in women, or drug treatment for reduced HDL; (4) Blood pressure: systolic \u2265130 and/or diastolic \u226585 mmHg, or antihypertensive drug treatment; (5) Fasting plasma glucose: \u2265100 mg/dL (\u22655.6 mmol/L) or previously diagnosed type 2 diabetes. Measurement protocol: waist at iliac crest after normal expiration; fasting lipid panel and glucose after 8-12 hour fast; BP average of two readings. No single test confirms metabolic syndrome - it's a clinical diagnosis based on component presence.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/32804973/",
-  "credibility_class": "peer_reviewed_guideline",
+  "credibility_class": "clinical_guideline",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "peer_reviewed_guideline"
 }

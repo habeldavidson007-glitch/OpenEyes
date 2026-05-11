@@ -10,9 +10,10 @@
     "pregnancy_dosing"
   ],
   "source": "nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2025,
   "reasoning_role": "definition",
   "id": "HC-2268",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

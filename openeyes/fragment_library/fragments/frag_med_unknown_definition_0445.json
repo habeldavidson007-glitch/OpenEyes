@@ -14,9 +14,10 @@
   "content": "Vestibular disorders cause vertigo (illusion of motion), dizziness, imbalance. Benign paroxysmal positional vertigo (BPPV) is most common cause of vertigo\u2014brief (<1 minute) episodes triggered by head position changes (rolling in bed, looking up), caused by otoconia dislodged into semicircular canals (posterior canal most common). Vestibular neuritis: acute prolonged vertigo (days-weeks) from viral inflammation of vestibular nerve, no hearing loss. Labyrinthitis: vestibular neuritis plus hearing loss (cochlear involvement). M\u00e9ni\u00e8re's disease: episodic vertigo (20 minutes to 12 hours), fluctuating low-frequency hearing loss, tinnitus, aural fullness; caused by endolymphatic hydrops (increased endolymph pressure). Vestibular migraine: vertigo episodes with migraine features or history. Bilateral vestibulopathy: oscillopsia (visual blurring with head movement), imbalance from bilateral vestibular loss (ototoxicity like gentamicin, autoimmune, degenerative). Central causes of vertigo: stroke (cerebellar, brainstem), multiple sclerosis, tumors (acoustic neuroma/vestibular schwannoma).",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/30936517/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Synaptic pruning is the developmental process where excess synapses are eliminated to increase neural efficiency. It occurs most intensely during early childhood and adolescence. During adolescence, up to 40% of synapses in the prefrontal cortex are pruned. This process is guided by experience ('use it or lose it') and microglial activity. Excessive or aberrant pruning during adolescence is hypothesized to contribute to schizophrenia onset, particularly in the prefrontal cortex, leading to cognitive deficits. Genetic risk variants for schizophrenia affect complement system proteins involved in pruning. Understanding this process informs early intervention strategies for psychosis and highlights the vulnerability of the adolescent brain.",
   "source": "nimh.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2032",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

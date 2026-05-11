@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Initial ART regimens for treatment-na\u00efve adults: 1) Bictegravir/TDF/FTC or Bictegravir/TAF/FTC (single tablet); 2) Dolutegravir + TDF/FTC or TAF/FTC; 3) Dolutegravir/lamivudine (for selected patients without HBV, baseline VL <500,000, no resistance). Preferred protease inhibitor-based: Darunavir/cobicistat + TDF/FTC or TAF/FTC. Treatment goals: viral suppression (<50 copies/mL) within 3-6 months, immune reconstitution, prevention of transmission. Monitoring: viral load at baseline, 2-8 weeks after initiation/change, then every 3-6 months; CD4 count at baseline and periodically. Lifelong adherence critical to prevent resistance. Pre-exposure prophylaxis (PrEP) with TDF/FTC or TAF/FTC reduces acquisition risk by >99% when adherent.",
   "source": "cdc.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2361",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

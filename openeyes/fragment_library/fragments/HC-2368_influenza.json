@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Influenza diagnosis: 1) Rapid influenza diagnostic tests (RIDT) detect viral antigens in 10-15 minutes but have variable sensitivity (50-70%); 2) Rapid molecular assays (NAAT) provide results in 15-30 minutes with high sensitivity/specificity; 3) RT-PCR (gold standard) from nasopharyngeal swab, nasal aspirate, or bronchoalveolar lavage. Testing indicated during influenza season for hospitalized patients, high-risk individuals, and when results affect management. Surveillance specimens track circulating strains for vaccine formulation. Vaccine effectiveness varies annually (40-60% typical) based on strain match; quadrivalent vaccines cover two A strains (H1N1, H3N2) and two B lineages. Annual vaccination recommended for all \u22656 months unless contraindicated.",
   "source": "cdc.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2368",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

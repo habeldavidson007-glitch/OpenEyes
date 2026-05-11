@@ -1,7 +1,7 @@
 {
   "content": "For REMS-required medications: (1) Verify prescriber is certified in the REMS program before dispensing; (2) Confirm patient enrollment and completion of required counseling; (3) Ensure baseline and ongoing monitoring requirements are met (e.g., ANC for clozapine, pregnancy tests for isotretinoin); (4) Document all REMS-related activities in medical record; (5) Dispense only authorized quantities between monitoring intervals; (6) Report adverse events to REMS program; (7) Reauthorize prescriptions per program requirements. Pharmacies must be certified to dispense REMS drugs. Failure to comply with ETASU can result in FDA enforcement actions and loss of prescribing/dispensing privileges.",
   "source": "fda.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "reasoning_role": "definition",
   "domain": "healthcare",
@@ -11,5 +11,6 @@
   "source_url": "https://pubmed.ncbi.nlm.nih.gov",
   "tags": [
     "phr"
-  ]
+  ],
+  "_original_credibility_class": "A"
 }

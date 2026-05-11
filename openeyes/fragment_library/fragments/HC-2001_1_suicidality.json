@@ -8,12 +8,13 @@
     "means-restriction"
   ],
   "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "reasoning_role": "definition",
   "domain": "healthcare",
   "subdomain": "MH",
   "sector": "MH",
   "id": "HC-2001",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

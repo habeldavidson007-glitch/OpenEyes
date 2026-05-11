@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Payment reform progression moves from volume to value: (1) DRG refinement - adding complication/comorbidity tiers, outcome adjustments; (2) Hospital Readmissions Reduction Program - penalties for excess readmissions (CMS reduced payments by up to 3% for high readmission rates); (3) Hospital Value-Based Purchasing - tying 2% of Medicare payments to quality scores; (4) Bundled Payment for Care Improvement (BPCI) - voluntary programs for joint replacement, cardiac surgery showing 5-10% savings without quality deterioration; (5) Accountable Care Organizations (ACOs) - shared savings if spending below benchmark with quality targets met. Medicare ACOs achieved $2.4 billion savings in 2022 while improving quality metrics.",
   "source": "cms.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

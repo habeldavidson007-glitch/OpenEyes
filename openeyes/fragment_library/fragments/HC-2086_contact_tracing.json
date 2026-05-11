@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Contact tracing is the systematic identification, notification, and monitoring of individuals exposed to an infectious disease case. Core components: case identification, contact elicitation (who they interacted with during infectious period), risk stratification (close vs casual contacts), notification with confidentiality, and monitoring for symptoms or testing. Effectiveness depends on: speed (contacts reached before they become infectious), completeness (proportion of contacts identified), and compliance (contacts adhering to quarantine/testing). Contact tracing is most effective when R0 is modest (<2.5) and pre-symptomatic transmission is limited.",
   "source": "WHO contact tracing guidelines, CDC outbreak response protocols",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

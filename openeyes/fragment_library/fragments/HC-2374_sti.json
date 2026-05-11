@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Gonorrhea/chlamydia: nucleic acid amplification tests (NAAT) from urine, vaginal, cervical, urethral, pharyngeal, or rectal swabs based on exposure sites; culture for antibiotic susceptibility testing if treatment failure. Syphilis: nontreponemal tests (RPR, VDRL) for screening/monitoring treatment response; treponemal tests (FTA-ABS, TP-PA, EIA/CIA) for confirmation; reverse algorithm uses treponemal screen first. HSV: PCR from lesion swab (preferred), viral culture (lower sensitivity), type-specific serology for prior exposure. Trichomonas: NAAT (most sensitive), wet mount (low sensitivity ~50%). Screening recommendations: sexually active women <25 annually for chlamydia/gonorrhea; MSM every 3-6 months; all adults at least once for HIV/syphilis; pregnant women comprehensive screening.",
   "source": "cdc.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2374",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

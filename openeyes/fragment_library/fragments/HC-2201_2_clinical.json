@@ -10,8 +10,9 @@
   "reasoning_role": "definition",
   "content": "Analysis of failure causes: Lack of efficacy accounts for 40-50% of Phase II/III failures\u2014often due to poor target validation, inadequate preclinical models, wrong patient population, or insufficient drug exposure. Safety/toxicity causes 20-30% of failures\u2014sometimes predictable from mechanism (on-target toxicity) or idiosyncratic (off-target). Strategic/commercial reasons (changing priorities, market dynamics, funding) account for 10-15%. Poor pharmacokinetics, formulation issues, or manufacturing problems cause 5-10%. Time trends show modest improvement in success rates over past decade due to better patient selection (biomarkers, precision medicine), improved trial design, and more rigorous go/no-go criteria. First-in-class drugs have lower success rates than follow-on products. External factors like regulatory stringency and competitive landscape also influence continuation decisions.",
   "source": "pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2201",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

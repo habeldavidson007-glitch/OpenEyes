@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "An epidemic curve (epi curve) is a histogram showing case counts by date of symptom onset, revealing outbreak patterns. Three main types exist: point source (sharp peak, rapid decline\u2014single exposure like foodborne illness), propagated (successive waves growing taller\u2014person-to-person transmission), and continuous common source (sustained plateau\u2014ongoing exposure like contaminated water). The shape indicates transmission mode, incubation period (time from exposure to peak), and outbreak magnitude. Epi curves help identify the exposure period and evaluate intervention effectiveness.",
   "source": "CDC outbreak investigation guidelines, WHO field epidemiology manual",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

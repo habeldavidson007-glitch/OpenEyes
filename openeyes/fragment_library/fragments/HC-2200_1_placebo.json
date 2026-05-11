@@ -10,8 +10,9 @@
   "reasoning_role": "definition",
   "content": "Clinical trial strategies to address placebo effects include: randomized placebo-controlled design (gold standard for isolating drug effect), active comparator trials when placebo is unethical, run-in periods to exclude high placebo responders (controversial), enrichment designs selecting patients unlikely to respond to placebo, and centralized rater training to reduce assessment variability. Blinding integrity is crucial\u2014patients and investigators should not be able to guess treatment assignment better than chance. Nocebo mitigation involves careful informed consent language (emphasizing tolerability without minimizing risks), positive framing, and building therapeutic alliance. In open-label extension studies, placebo effects diminish but don't disappear. Some trials use 'placebo lead-in' followed by randomization of placebo responders to active drug vs. continued placebo.",
   "source": "pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2200",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

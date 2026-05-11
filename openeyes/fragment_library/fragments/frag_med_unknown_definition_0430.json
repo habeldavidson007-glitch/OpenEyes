@@ -14,9 +14,10 @@
   "content": "Polycystic ovary syndrome (PCOS) is the most common endocrine disorder in reproductive-age women, affecting 6-12% prevalence. Characterized by hyperandrogenism (clinical: hirsutism, acne, alopecia; or biochemical: elevated testosterone), ovulatory dysfunction (oligo/anovulation manifesting as irregular menses), and polycystic ovarian morphology on ultrasound. Pathophysiology involves insulin resistance (present in ~70% regardless of BMI), hyperinsulinemia stimulating ovarian androgen production, altered gonadotropin secretion (elevated LH:FSH ratio), and genetic predisposition. Rotterdam criteria (2003) require \u22652 of 3 features for diagnosis. Long-term health risks include type 2 diabetes (4-fold increased risk), metabolic syndrome, cardiovascular disease, endometrial cancer (from unopposed estrogen), infertility, mood disorders.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985610/",
-  "credibility_class": "peer_reviewed_guideline",
+  "credibility_class": "clinical_guideline",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "peer_reviewed_guideline"
 }

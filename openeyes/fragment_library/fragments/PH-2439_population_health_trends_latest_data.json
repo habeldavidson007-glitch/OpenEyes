@@ -11,7 +11,8 @@
   "reasoning_role": "latest_data",
   "content": "Population Health Trends - recent research findings, updated guidelines, emerging practices",
   "source_url": "https://www.cdc.gov/research",
-  "credibility_class": "peer_reviewed",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2026,
-  "source": "CDC"
+  "source": "CDC",
+  "_original_credibility_class": "peer_reviewed"
 }

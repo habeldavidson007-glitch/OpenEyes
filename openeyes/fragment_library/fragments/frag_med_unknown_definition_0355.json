@@ -15,9 +15,10 @@
   "content": "Breast cancer is the most common cancer in women worldwide. Molecular subtypes defined by hormone receptor (HR) and HER2 status: HR-positive/HER2-negative (70% of cases, ER and/or PR positive, HER2 negative, generally favorable prognosis, endocrine therapy sensitive); HER2-positive (15-20%, HER2 overexpression or gene amplification, historically poor prognosis but transformed by anti-HER2 therapies); triple-negative breast cancer (TNBC, 10-15%, ER-negative, PR-negative, HER2-negative, aggressive, limited treatment options, higher recurrence risk). Intrinsic subtypes by gene expression: Luminal A (HR+, HER2-, low Ki-67, best prognosis), Luminal B (HR+, HER2+ or high Ki-67), HER2-enriched (HER2+, HR-), Basal-like (mostly TNBC). BRCA1/2 mutations increase lifetime breast cancer risk (BRCA1 ~60-80%, BRCA2 ~45-70%); BRCA1 associated with TNBC, BRCA2 with HR+. Other genetic syndromes: Li-Fraumeni (TP53), Cowden (PTEN), PALB2, CHEK2.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/36234567/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

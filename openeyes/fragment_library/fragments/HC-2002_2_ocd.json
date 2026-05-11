@@ -8,12 +8,13 @@
     "compulsions"
   ],
   "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2022,
   "reasoning_role": "definition",
   "domain": "healthcare",
   "subdomain": "MH",
   "sector": "MH",
   "id": "HC-2002",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

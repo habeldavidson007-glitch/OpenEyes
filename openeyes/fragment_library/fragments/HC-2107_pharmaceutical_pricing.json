@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Pharmaceutical pricing mechanisms vary globally: (1) External reference pricing - prices benchmarked against other countries (most EU nations); (2) Internal reference pricing - drugs grouped by therapeutic class with common reimbursement level; (3) Price-volume agreements - rebates if sales exceed thresholds; (4) Free pricing with negotiation - US system where PBMs negotiate confidential rebates; (5) Government price controls - direct setting of maximum prices. Pharmacy Benefit Managers (PBMs) in the US act as intermediaries between manufacturers, insurers, and pharmacies, negotiating rebates (often 20-50% of list price) but criticized for opaque practices and favoring high-list-price drugs.",
   "source": "who.int",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

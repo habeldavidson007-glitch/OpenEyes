@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Methicillin-resistant Staphylococcus aureus (MRSA) is resistant to all beta-lactam antibiotics due to mecA gene encoding altered penicillin-binding protein 2a (PBP2a). Healthcare-associated MRSA (HA-MRSA): typically multidrug-resistant, causes invasive infections (bloodstream, pneumonia, surgical site); predominant clone USA100 (ST5). Community-associated MRSA (CA-MRSA): often susceptible to non-beta-lactams, causes skin/soft tissue infections in healthy individuals; USA300 (ST8) with Panton-Valentine leukocidin (PVL) toxin causing necrosis. Livestock-associated MRSA (LA-MRSA): CC398 strain from animal contact. Risk factors: prior antibiotic use, hospitalization, dialysis, indwelling devices, injection drug use, crowded settings (prisons, military barracks). Mortality for MRSA bacteremia 15-25%.",
   "source": "pubmed.ncbi.nlm.nih.gov",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "id": "HC-2345",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }

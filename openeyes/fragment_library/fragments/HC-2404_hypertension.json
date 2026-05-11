@@ -11,8 +11,9 @@
   "reasoning_role": "definition",
   "content": "Resistant hypertension: BP above goal despite concurrent use of 3 antihypertensive agents of different classes (including a diuretic) at optimal doses, or controlled BP requiring \u22654 medications. Evaluate for medication nonadherence, white coat effect, lifestyle factors (high sodium intake, obesity, alcohol), and secondary causes. Most common secondary causes: primary aldosteronism (5-10% of resistant HTN), obstructive sleep apnea, renal parenchymal disease, renal artery stenosis. Screening for primary aldosteronism: aldosterone-to-renin ratio. Renal artery stenosis suspected with flash pulmonary edema, asymmetric kidneys, rise in creatinine >30% after ACEi/ARB initiation. Spironolactone is most effective fourth-line agent for resistant hypertension (PATHWAY-2 trial). Consider referral to hypertension specialist.",
   "source": "https://pubmed.ncbi.nlm.nih.gov/26964362/",
-  "credibility_class": "clinical_trial",
+  "credibility_class": "academic_research",
   "year": 2016,
   "id": "HC-2404",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "clinical_trial"
 }

@@ -14,9 +14,10 @@
   "content": "Multiple sclerosis (MS) is a chronic autoimmune demyelinating disease of the CNS characterized by inflammation, demyelination, and neurodegeneration. Clinical courses: relapsing-remitting MS (RRMS, 85% at onset) with discrete attacks followed by remission; secondary progressive MS (SPMS) with gradual worsening after initial RRMS; primary progressive MS (PPMS, 15%) with steady progression from onset. Pathophysiology involves T-cell mediated attack on myelin oligodendrocytes, blood-brain barrier disruption, and formation of periventricular, juxtacortical, infratentorial, and spinal cord plaques. McDonald criteria (2017 revision) require dissemination in space (\u22651 T2 lesion in \u22652 characteristic CNS regions) and time (simultaneous gadolinium-enhancing and non-enhancing lesions, or new T2/enhancing lesion on follow-up). CSF oligoclonal bands support diagnosis. Progressive disease involves microglial activation and compartmentalized inflammation behind closed blood-brain barrier.",
   "source": "PubMed",
   "source_url": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0
+  "weight": 1.0,
+  "_original_credibility_class": "A"
 }

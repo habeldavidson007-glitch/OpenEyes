@@ -12,7 +12,8 @@
   "reasoning_role": "definition",
   "content": "Non-pharmaceutical interventions (NPIs) are public health measures that don't require medications or vaccines to reduce disease transmission. Categories include: personal protective measures (masks, hand hygiene, respiratory etiquette), environmental measures (ventilation, surface cleaning), and social distancing measures (physical distancing, school closures, workplace modifications, gathering limits, stay-at-home orders). NPIs work by reducing contact rate, transmission probability per contact, or infectious period. Evidence quality varies: masks and ventilation have strong mechanistic and observational support; school closures show mixed effectiveness depending on community transmission levels.",
   "source": "WHO NPI guidelines, CDC pandemic preparedness documents",
-  "credibility_class": "A",
+  "credibility_class": "peer_reviewed_journal",
   "year": 2024,
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
 }
