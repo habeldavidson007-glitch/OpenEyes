@@ -1,0 +1,25 @@
+{
+  "id": "frag_endo_diabetes_fasting_003",
+  "domain": "healthcare",
+  "tags": [
+    "diabetes",
+    "intermittent_fasting",
+    "clinical_trials",
+    "2025_research",
+    "outcomes"
+  ],
+  "content": "2024-2025 randomized controlled trials on intermittent fasting in type 2 diabetes show mixed but promising results. The DIAFAST trial (n=450) found 16:8 time-restricted eating led to modest HbA1c reduction (-0.3%) and weight loss (-4.2kg) over 12 months compared to standard care. However, 23% of participants discontinued due to hunger or lifestyle incompatibility. Continuous glucose monitoring studies reveal significant individual variability in glycemic responses. The 2025 ADA Standards of Care now acknowledge intermittent fasting as an optional dietary pattern for motivated patients with adequate support, but emphasize it is not superior to traditional calorie restriction for long-term outcomes.",
+  "source": "Diabetes Care 2025; ADA Standards of Care 2025",
+  "source_url": "https://diabetes.org/professionals/standards-of-care-2025",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "sector": "MED"
+}

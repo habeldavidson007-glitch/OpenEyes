@@ -1,0 +1,34 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "fragments": [
+    {
+      "id": "hc_med_onc_po_def_001",
+      "tags": ["oncology", "precision oncology", "genomic profiling", "tumor agnostic", "personalized medicine"],
+      "reasoning_role": "definition",
+      "content": "Precision oncology tailors cancer treatment based on individual tumor molecular characteristics rather than tissue of origin. Genomic profiling approaches: targeted gene panels (50-500+ genes, most common clinical use); whole exome sequencing (all coding regions, ~20,000 genes); whole genome sequencing (entire genome including non-coding); RNA sequencing (gene expression, fusions). Types of alterations detected: single nucleotide variants (SNVs), insertions/deletions (indels), copy number alterations (amplifications, deletions), gene fusions/rearrangements, tumor mutational burden (TMB), microsatellite instability (MSI). Actionable alterations have matched therapies with clinical evidence. Tumor-agnostic approvals: pembrolizumab for MSI-H/dMMR tumors (2017) and TMB-H (≥10 mut/Mb, 2019); larotrectinib/entrectinib for NTRK fusion-positive solid tumors (2018/2019); dabrafenib + trametinib for BRAF V600E solid tumors (2022). Challenges: variant interpretation (pathogenic vs VUS), tumor heterogeneity, clonal evolution, access/equity.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/36567890/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_po_treat_001",
+      "tags": ["oncology", "precision oncology", "targeted therapy selection", "basket trials", "clinical decision making"],
+      "reasoning_role": "treatment_protocol",
+      "content": "Treatment selection based on genomic findings. Evidence levels for actionability (ESMO ESCAT scale): Tier I - clinically actionable (FDA-approved for indication or strong evidence from prospective trials); Tier II - potentially actionable (early phase trials, retrospective data, biologic rationale); Tier III - preclinical evidence only. Basket trials enroll patients by molecular alteration regardless of tumor type: NCI-MATCH, ASCO TAPUR, MyPathway demonstrated feasibility but variable response rates by tumor type. Examples of matched therapies: EGFR mutations - osimertinib (lung, also investigational in other EGFR-mutant tumors); HER2 amplification/mutation - trastuzumab deruxtecan (breast, gastric, now pan-tumor approval 2024); BRAF V600E - dabrafenib + trametinib; NTRK fusions - larotrectinib/entrectinib; RET fusions - selpercatinib; MET exon 14 skipping - capmatinib/tepotinib. Combination strategies address resistance mechanisms. Liquid biopsy (ctDNA) enables monitoring of response and emerging resistance without repeat tissue biopsy. Molecular tumor boards review complex cases.",
+      "source": "https://www.nccn.org/guidelines",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_po_diag_001",
+      "tags": ["oncology", "precision oncology", "testing criteria", "interpretation", "germline findings"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "When and how to order genomic testing. Testing indications: metastatic/unresectable disease (NCCN recommends for most solid tumors); recurrent disease; rare cancers with limited standard options; consideration for tumor-agnostic therapies; clinical trial eligibility. Sample requirements: adequate tumor cellularity (>20%); FFPE tissue preferred; fresh frozen for research; liquid biopsy if tissue unavailable or inadequate. Turnaround time: 2-4 weeks for most commercial panels. Interpretation challenges: distinguishing driver from passenger mutations; clonal hematopoiesis of indeterminate potential (CHIP) causing false positives in liquid biopsy; variants of uncertain significance (VUS) should not guide treatment. Incidental germline findings: 10-15% of somatic tests reveal potential germline mutations (BRCA1/2, Lynch syndrome genes, TP53, etc.); genetic counseling referral required for confirmed/suspected germline findings. Re-testing at progression identifies resistance mechanisms (EGFR C797S, ALK G1202R, KRAS G12C secondary mutations). Cost and reimbursement vary by payer and indication.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/35678901/",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

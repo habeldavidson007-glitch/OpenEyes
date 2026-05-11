@@ -1,0 +1,19 @@
+{
+  "id": "neuro-neuromodulation-tx",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "neuromodulation",
+    "DBS-programming",
+    "TMS-protocol",
+    "treatment-protocol",
+    "patient-selection"
+  ],
+  "reasoning_role": "definition",
+  "content": "Neuromodulation requires careful patient selection and programming. DBS for Parkinson's: candidates must have idiopathic PD with good levodopa response but disabling motor fluctuations/dyskinesias despite optimal medical therapy; exclude significant cognitive impairment, psychiatric disease, atypical parkinsonism. Surgical procedure: stereotactic electrode placement (awake craniotomy with microelectrode recording or asleep under general anesthesia with intraoperative imaging), IPG implantation in chest. Programming begins 2-4 weeks post-op: adjust amplitude, frequency (typically 130-185 Hz), pulse width to optimize benefit/minimize side effects (paresthesias, muscle tightening, visual phenomena, speech/balance problems). Multiple contacts allow directional steering. Battery life 3-5 years (non-rechargeable) or 9-15 years (rechargeable). TMS for depression: daily sessions (5 days/week \u00d7 4-6 weeks), left DLPFC high-frequency (10Hz, 120% motor threshold, 3000 pulses/session) or right DLPFC low-frequency (1Hz) or bilateral theta burst (intermittent 50Hz bursts\u2014shorter session time, non-inferior efficacy). Side effects: scalp discomfort, headache, rare seizure (<0.1%). Contraindications: metal implants near coil, seizure disorder (relative), pacemaker/ICD (relative). VNS: gradual titration over months; cough/voice changes common initially.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

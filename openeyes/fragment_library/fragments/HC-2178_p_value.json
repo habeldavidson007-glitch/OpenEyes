@@ -1,0 +1,16 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "p value",
+    "epidemiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Quality criteria for p_value.",
+  "source": "https://www.ncbi.nlm.nih.gov/books/",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2178",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

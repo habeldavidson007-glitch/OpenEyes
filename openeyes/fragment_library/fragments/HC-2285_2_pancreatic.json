@@ -1,0 +1,19 @@
+{
+  "id": "hc_med_onc_pc_diag_001",
+  "tags": [
+    "oncology",
+    "pancreatic cancer",
+    "diagnosis",
+    "imaging",
+    "biomarkers"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnosis requires imaging and tissue confirmation. Preferred imaging: pancreatic protocol CT (multiphase with arterial and portal venous phases) or MRI/MRCP; assesses resectability (arterial involvement - celiac, SMA, hepatic artery; venous involvement - SMV, portal vein). Endoscopic ultrasound (EUS) with FNA/FNB provides tissue diagnosis, especially for small lesions or when CT-guided biopsy not feasible. ERCP for biliary stenting if obstructive jaundice. CA 19-9 tumor marker: elevated in 80% but not diagnostic (can be elevated in benign biliary obstruction); useful for monitoring treatment response; Lewis antigen-negative individuals (5-10%) cannot produce CA 19-9. Staging: TNM system; potentially resectable, borderline resectable, locally advanced, metastatic classification guides treatment. Germline testing recommended for all patients (NCCN guidelines) given high rate of actionable mutations. PET-CT may detect occult metastases. Diagnostic laparoscopy considered before major resection to rule out peritoneal metastases not visible on imaging.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35678902/",
+  "credibility_class": "A",
+  "year": 2024,
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

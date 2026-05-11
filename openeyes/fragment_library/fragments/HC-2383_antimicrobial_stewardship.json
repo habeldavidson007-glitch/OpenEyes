@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "antimicrobial stewardship",
+    "metrics",
+    "DOT",
+    "resistance tracking"
+  ],
+  "reasoning_role": "definition",
+  "content": "AMS program metrics: 1) Process measures: antibiotic time-out completion, guideline adherence, IV-to-PO conversion rates; 2) Outcome measures: Days of Therapy (DOT) per 1,000 patient-days (preferred over defined daily doses), resistance rates (MRSA, VRE, CRE, ESBL), C. difficile infection rates, adverse drug events; 3) Balancing measures: clinical cure rates, readmissions, mortality (ensure stewardship doesn't compromise care). Antibiotic Spectrum Index quantifies collateral damage. Benchmarking against NHSN data. Economic impact: reduced drug costs offset by personnel; overall cost savings from prevented adverse events and shorter LOS. Diagnostic accuracy metrics: appropriate culture collection before antibiotics, rapid test utilization. Stewardship ROI demonstrated in multiple studies through reduced consumption without increased complications.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2383",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

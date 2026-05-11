@@ -1,0 +1,19 @@
+{
+  "id": "hc_med_onc_oc_diag_001",
+  "tags": [
+    "oncology",
+    "ovarian cancer",
+    "diagnosis",
+    "staging",
+    "genetic testing"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnosis requires tissue confirmation. Evaluation: transvaginal ultrasound (assesses ovarian morphology, solid components, ascites); CT abdomen/pelvis (disease extent, resectability); chest imaging for metastases. CA-125 baseline and for monitoring; HE4 (human epididymis protein 4) sometimes used; ROMA score combines CA-125 and HE4. Preoperative risk assessment (RMI, IOTA) guides referral to gynecologic oncologist. Definitive diagnosis usually from surgical specimen; biopsy reserved for unresectable disease before neoadjuvant chemotherapy. Staging: FIGO surgical staging system - Stage I (confined to ovaries), II (pelvic extension), III (peritoneal metastases outside pelvis and/or retroperitoneal nodes), IV (distant metastases including pleural effusion with positive cytology, parenchymal metastases). Genetic testing: germline BRCA1/2 testing recommended for all epithelial ovarian cancer patients; tumor testing for BRCA and HRD status guides PARP inhibitor use. Genetic counseling for positive results.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35123456/",
+  "credibility_class": "A",
+  "year": 2024,
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_ve_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["vaccine effectiveness", "vaccine efficacy", "real-world evidence", "epidemiology"],
+    "reasoning_role": "definition",
+    "content": "Vaccine efficacy and vaccine effectiveness measure different aspects of vaccine performance. Vaccine efficacy is measured in randomized controlled trials under ideal conditions: (attack rate in vaccinated - attack rate in placebo) / attack rate in placebo. It answers 'can the vaccine work?' Vaccine effectiveness is measured in real-world observational studies after licensure, accounting for variable storage, administration, population heterogeneity, and circulating variants. It answers 'does the vaccine work in practice?' Effectiveness is typically lower than efficacy due to real-world factors but provides more relevant public health guidance.",
+    "source": "CDC vaccine surveillance guidelines, WHO vaccine evaluation framework",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_ve_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["vaccine effectiveness studies", "test-negative design", "cohort studies"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Vaccine effectiveness study designs: (1) Test-negative case-control—compares vaccination status among those testing positive vs negative for the pathogen; controls for healthcare-seeking behavior. (2) Cohort studies—follows vaccinated and unvaccinated populations over time, calculates incidence rates. (3) Screening method—compares vaccine coverage in cases versus population coverage. (4) Household transmission studies—measures secondary attack rates by vaccination status. Key adjustments needed: age, comorbidities, occupation, calendar time (to account for variant changes), and prior infection. Waning effectiveness assessed by time since vaccination stratification.",
+    "source": "CDC MMWR vaccine effectiveness methods, Eurosurveillance",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_ve_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["VE interpretation", "bias in VE studies", "effectiveness metrics"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Vaccine effectiveness interpretation challenges: healthy user bias (vaccinated individuals differ systematically from unvaccinated), confounding by indication (high-risk groups prioritized), misclassification of vaccination status or outcomes, and changing case definitions. Effectiveness varies by outcome: higher against severe disease/hospitalization than against infection. Variant-specific effectiveness requires genomic surveillance linkage. Time-varying effectiveness reflects waning immunity or immune escape variants. Confidence intervals indicate precision; overlapping CIs don't necessarily mean no difference. Real-world effectiveness informs booster timing and target populations.",
+    "source": "Vaccine journal, CDC ACIP evidence frameworks",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

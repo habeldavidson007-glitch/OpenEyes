@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0479",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "brain-tumor",
+    "temozolomide",
+    "radiation",
+    "treatment-protocol",
+    "Stupp-protocol"
+  ],
+  "reasoning_role": "definition",
+  "content": "Brain tumor treatment is multimodal: surgery, radiation, chemotherapy, tumor-treating fields. Maximal safe surgical resection is first-line for accessible tumors\u2014improves survival and reduces mass effect. Glioblastoma: Stupp protocol\u2014radiation (60 Gy in 30 fractions) with concurrent temozolomide (75 mg/m\u00b2 daily), followed by adjuvant temozolomide (150-200 mg/m\u00b2 days 1-5 every 28 days \u00d7 6-12 cycles). MGMT methylated tumors benefit most from temozolomide. Tumor-treating fields (Optune)\u2014wearable device delivering low-intensity alternating electric fields\u2014improves survival when added to temozolomide (median OS 20.9 vs 16.0 months). Bevacizumab (anti-VEGF) used for recurrent GBM\u2014reduces edema and steroid requirement but no OS benefit. Low-grade gliomas: observation for asymptomatic small lesions; surgery for symptomatic/progressive; radiation and PCV chemotherapy (procarbazine, CCNU, vincristine) or temozolomide for high-risk features. Meningiomas: observation for small asymptomatic; surgery for symptomatic/large; radiation for atypical/malignant or unresectable. Brain metastases: stereotactic radiosurgery (SRS) for limited metastases, whole-brain radiation for multiple, surgery for large symptomatic lesions. Supportive care: dexamethasone for edema (taper ASAP), levetiracetam for seizures (no prophylaxis unless seizure occurred), DVT prophylaxis.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

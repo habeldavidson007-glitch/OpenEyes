@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "topic": "Health Disparities",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Health disparities are preventable differences in the burden of disease, injury, violence, or opportunities to achieve optimal health that are experienced by socially disadvantaged populations. These disparities are closely linked with social, economic, and environmental disadvantage and are driven by historical and contemporary racism, discrimination, and exclusion. Health disparities manifest across multiple dimensions including race/ethnicity, socioeconomic status, gender, sexual orientation, disability status, geographic location, and immigration status. The concept distinguishes from 'health differences' by emphasizing that disparities are systematic, avoidable, and unjust. Healthy People 2030 defines health disparities as 'a particular type of health difference that is closely linked with social, economic, and/or environmental disadvantage.' Measurement requires comparison between advantaged and disadvantaged groups using appropriate reference populations.",
+      "tags": ["health_equity", "disparities", "social_justice", "population_health"],
+      "reasoning_role": "foundational_knowledge"
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Addressing health disparities requires multi-level interventions: (1) Structural/policy level: anti-discrimination laws, equitable funding formulas for healthcare facilities, Medicaid expansion, living wage policies, housing desegregation efforts; (2) Healthcare system level: culturally competent care training, diverse workforce recruitment, language access services, implicit bias training with accountability measures, community health worker integration, patient navigation programs; (3) Community level: participatory research approaches, community-based participatory interventions, trusted messenger programs, faith-based health initiatives; (4) Individual level: patient empowerment education, shared decision-making tools adapted for low health literacy. Evidence supports targeted universalism—setting universal goals while implementing targeted strategies for specific populations. Data stratification by race, ethnicity, language, and social factors is essential for identifying and monitoring disparities. Accountability mechanisms include disparity reduction targets and public reporting.",
+      "tags": ["intervention", "health_equity", "policy", "culturally_competent_care"],
+      "reasoning_role": "actionable_guidance"
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Measuring health disparities requires: (1) Appropriate comparison groups—identifying the most advantaged group as reference rather than population average; (2) Multiple metrics including absolute differences (rate differences), relative differences (rate ratios), slope index of inequality, and concentration indices; (3) Stratified data collection with standardized race/ethnicity categories (OMB standards), preferred language, sexual orientation, gender identity, disability status; (4) Contextual measures including area-level deprivation indices, segregation indices, provider density measures; (5) Life course perspective capturing disparities at different life stages. Statistical methods include interaction testing to determine if disparities vary across subgroups, decomposition analysis to identify contributing factors, and causal mediation analysis. CDC's DISPARITIES database and AHRQ's National Healthcare Quality and Disparities Report provide standardized measurement frameworks. Small sample sizes in minority groups require oversampling or multi-year aggregation.",
+      "tags": ["measurement", "statistics", "data_collection", "health_surveillance"],
+      "reasoning_role": "analytical_framework"
+    }
+  ],
+  "source": "CDC Office of Minority Health and Health Equity, Healthy People 2030, National Healthcare Quality and Disparities Report (AHRQ)",
+  "credibility_class": "A",
+  "year": 2024
+}

@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "topic": "Tobacco Control",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Tobacco use remains the leading preventable cause of death globally, causing over 8 million deaths annually including 1.3 million from secondhand smoke exposure. Tobacco-related diseases include lung cancer, COPD, cardiovascular disease, stroke, and multiple other cancers. Nicotine addiction develops through dopaminergic reward pathways, with withdrawal symptoms including irritability, anxiety, difficulty concentrating, and cravings. E-cigarettes and vaping products present emerging challenges—potentially less harmful than combustible tobacco for adult smokers but creating new addiction pathways for youth. The WHO Framework Convention on Tobacco Control (FCTC) provides the international treaty framework. Tobacco industry tactics include targeting marginalized communities, youth-oriented marketing, and political interference.",
+      "tags": ["tobacco", "addiction", "prevention", "nicotine"],
+      "reasoning_role": "foundational_knowledge"
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Evidence-based tobacco control uses the MPOWER package: (1) Monitor tobacco use and prevention policies; (2) Protect people from tobacco smoke through comprehensive smoke-free laws; (3) Offer help to quit tobacco—cessation counseling (individual, group, telephone quitlines), pharmacotherapy (nicotine replacement therapy, varenicline, bupropion); combination NRT more effective than single form; (4) Warn about dangers through graphic warning labels, mass media campaigns; (5) Enforce bans on tobacco advertising, promotion, sponsorship; (6) Raise taxes on tobacco—most effective single intervention, price elasticity higher for youth. Clinical interventions follow the 5 A's: Ask, Advise, Assess, Assist, Arrange. E-cigarettes as cessation tools remain controversial—may help some smokers quit but dual use common. Youth prevention requires flavor restrictions, age verification, marketing limits.",
+      "tags": ["cessation", "policy", "intervention", "pharmacotherapy"],
+      "reasoning_role": "actionable_guidance"
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Tobacco use assessment includes: (1) Screening—all patients at every visit (USPSTF Grade A recommendation); (2) Quantification—pack-years calculation (packs per day × years smoked), cigarettes per day, time to first cigarette (indicates addiction severity); (3) Dependence assessment—Fagerström Test for Nicotine Dependence evaluating time to first cigarette, difficulty refraining, morning craving; (4) Biomarkers—cotinine levels (serum, saliva, urine) for objective measurement, exhaled carbon monoxide for recent smoking; (5) Readiness to quit—stages of change model (precontemplation, contemplation, preparation, action, maintenance). Secondhand smoke exposure assessed through home/car rules, workplace policies. Youth screening includes e-cigarette use assessment (JUUL, vaping). Population surveillance uses BRFSS, NHIS, NYTS, and Global Adult Tobacco Survey.",
+      "tags": ["screening", "assessment", "biomarkers", "surveillance"],
+      "reasoning_role": "analytical_framework"
+    }
+  ],
+  "source": "CDC Office on Smoking and Health, WHO Report on the Global Tobacco Epidemic, USPSTF Recommendations, Cochrane Tobacco Addiction Reviews",
+  "credibility_class": "A",
+  "year": 2024
+}

@@ -1,0 +1,37 @@
+{
+  "fragments": [
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "tags": ["orphan drug", "rare disease", "incentives", "controversy"],
+      "reasoning_role": "definition",
+      "content": "Orphan drug designation applies to treatments for rare diseases affecting fewer than 200,000 people in the US (or >200,000 if development costs cannot be recovered). The Orphan Drug Act of 1983 created incentives to encourage pharmaceutical development for small patient populations that would otherwise be commercially unviable. Designated drugs receive tax credits for clinical trials, waiver of FDA user fees (worth ~$3 million), eligibility for grants, and 7 years of market exclusivity independent of patent protection. Over 600 orphan drugs have been approved since 1983, compared to only 10 in the decade before the Act.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "tags": ["orphan drug", "rare disease", "incentives", "controversy"],
+      "reasoning_role": "treatment_protocol",
+      "content": "Orphan drug designation process: sponsors submit request to FDA's Office of Orphan Products Development (OOPD) before NDA submission, providing prevalence data, scientific rationale, and preliminary evidence. Designation can be granted at any development stage but provides no guarantee of approval. Benefits include: 25% tax credit on qualified clinical testing expenses, annual grant funding up to $200,000 for protocol development, written assistance from FDA on study design, and 7-year exclusivity starting at approval date. Exclusivity prevents FDA from approving same drug for same indication regardless of patent status, with exceptions for clinical superiority or insufficient supply. Some drugs receive multiple orphan designations for different rare diseases.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "tags": ["orphan drug", "rare disease", "incentives", "controversy"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "Orphan drug designation criteria: disease prevalence <200,000 US patients OR >200,000 patients with inability to recover development costs from US sales. Prevalence calculation uses epidemiological data, considering disease definition, diagnostic criteria, and population estimates. Controversies include: 'salami slicing' (narrowly defining diseases to qualify), blockbuster orphan drugs (some generate >$1B annually despite small populations), high prices (median annual cost >$100,000), and potential abuse where companies initially seek orphan designation then expand to broader indications. Recent reforms address some concerns while maintaining core incentives. Approximately one-third of novel drug approvals now have orphan designation, raising questions about whether the program has exceeded its original intent.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

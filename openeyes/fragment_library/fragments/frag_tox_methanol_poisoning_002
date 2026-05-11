@@ -1,0 +1,25 @@
+{
+  "id": "frag_tox_methanol_poisoning_002",
+  "domain": "healthcare",
+  "tags": [
+    "methanol",
+    "poisoning",
+    "differential_diagnosis",
+    "treatment_limitations",
+    "prognosis"
+  ],
+  "content": "Methanol poisoning treatment has significant limitations and risks. Fomepizole, the preferred antidote, is expensive and may not be available in all hospitals. Ethanol infusion, an alternative, requires intensive monitoring and can cause intoxication complications. Hemodialysis, needed for severe cases, carries risks of hypotension and electrolyte imbalances. Even with treatment, visual damage may be irreversible if formic acid has already damaged the optic nerve. Prognosis depends heavily on time to treatment - delays beyond 12 hours significantly increase mortality and morbidity. Some survivors experience permanent neurological deficits despite aggressive treatment.",
+  "source": "WHO Guidelines on Methanol Poisoning Management & CDC Clinical Updates",
+  "source_url": "https://www.who.int/publications/i/item/9789240061640",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "sector": "MED"
+}

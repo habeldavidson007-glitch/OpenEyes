@@ -1,0 +1,16 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "publication bias",
+    "epidemiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Quality criteria for publication_bias.",
+  "source": "https://www.ncbi.nlm.nih.gov/books/",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2145",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

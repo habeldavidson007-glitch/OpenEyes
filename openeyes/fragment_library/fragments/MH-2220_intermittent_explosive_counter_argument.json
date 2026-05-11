@@ -1,0 +1,17 @@
+{
+  "id": "MH-2220_intermittent_explosive_counter_argument",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "intermittent explosive",
+    "mental_health",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Intermittent Explosive - diagnostic controversies, treatment debates, cultural considerations",
+  "source_url": "https://www.nimh.nih.gov/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "NIMH"
+}

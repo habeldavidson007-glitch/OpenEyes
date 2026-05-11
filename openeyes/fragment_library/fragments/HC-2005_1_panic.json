@@ -1,0 +1,19 @@
+{
+  "content": "First-line pharmacotherapy: SSRIs (sertraline, paroxetine, escitalopram) or SNRIs (venlafaxine); start low and titrate slowly to avoid initial activation. Benzodiazepines (clonazepam, alprazolam) provide rapid relief but limited to short-term/adjunctive use due to dependence risk. Cognitive Behavioral Therapy (CBT) is highly effective, including psychoeducation, cognitive restructuring (addressing catastrophic misinterpretations), interoceptive exposure (inducing physical sensations to reduce fear), and in vivo exposure for agoraphobic avoidance. CBT effects are durable post-treatment. Combination therapy may benefit severe cases. Treatment duration typically 12+ months before gradual tapering.",
+  "tags": [
+    "SSRI",
+    "CBT",
+    "exposure-therapy",
+    "benzodiazepines",
+    "treatment"
+  ],
+  "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2005",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

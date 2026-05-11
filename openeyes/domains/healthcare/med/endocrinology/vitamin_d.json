@@ -1,0 +1,43 @@
+{
+  "fragments": [
+    {
+      "id": "endo_vitamind_def_001",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "topic": "Vitamin D",
+      "role": "definition",
+      "tags": ["vitamin D", "calciferol", "deficiency", "bone health", "supplementation"],
+      "content": "Vitamin D is a fat-soluble vitamin/hormone essential for calcium homeostasis and bone health. Two forms: vitamin D3 (cholecalciferol) from skin synthesis via UVB radiation and animal sources; vitamin D2 (ergocalciferol) from plants/fungi. Hepatic 25-hydroxylation produces 25-hydroxyvitamin D [25(OH)D], the major circulating form and best indicator of status. Renal 1α-hydroxylation produces active 1,25-dihydroxyvitamin D (calcitriol), regulated by PTH, calcium, phosphate, FGF23. Functions: increases intestinal calcium/phosphate absorption, promotes bone mineralization, modulates immune function, affects muscle strength. Deficiency causes rickets in children (growth plate abnormalities), osteomalacia in adults (bone pain, proximal myopathy). Controversy exists regarding optimal levels and supplementation benefits beyond bone health (cancer, cardiovascular, autoimmune disease prevention evidence inconsistent).",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/33985616/",
+      "credibility_class": "peer_reviewed_guideline",
+      "year": 2024
+    },
+    {
+      "id": "endo_vitamind_trt_001",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "topic": "Vitamin D",
+      "role": "treatment_protocol",
+      "tags": ["vitamin D", "cholecalciferol", "ergocalciferol", "dosing", "deficiency treatment"],
+      "content": "Treatment of deficiency (25-OH D <20 ng/mL): adults - cholecalciferol 50,000 IU weekly × 8 weeks or 6000 IU daily, then maintenance 1500-2000 IU daily; alternative ergocalciferol 50,000 IU weekly × 8 weeks. Obese patients, malabsorption syndromes, or medications affecting vitamin D metabolism (anticonvulsants, glucocorticoids, rifampin) may require 2-3× higher doses. Monitor 25-OH D after 3-4 months, adjust to maintain level ≥30 ng/mL (some guidelines accept ≥20 ng/mL). Maintenance for sufficiency: 600-800 IU/day (IOM) or 1500-2000 IU/day (Endocrine Society) for adults; higher for elderly, dark-skinned individuals, limited sun exposure. Toxicity rare, usually from excessive supplementation (>10,000 IU/day long-term): hypercalcemia, hypercalciuria, nephrocalcinosis. Upper tolerable limit 4000 IU/day for adults without monitoring. Calcitriol reserved for hypoparathyroidism, CKD stage 4-5.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/33985616/",
+      "credibility_class": "peer_reviewed_guideline",
+      "year": 2024
+    },
+    {
+      "id": "endo_vitamind_diag_001",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "topic": "Vitamin D",
+      "role": "diagnostic_criteria",
+      "tags": ["vitamin D", "25-hydroxyvitamin D", "deficiency", "insufficiency", "screening"],
+      "content": "Diagnosis based on serum 25-hydroxyvitamin D [25(OH)D] level - reflects cutaneous synthesis and dietary intake, half-life ~2-3 weeks. 1,25-dihydroxyvitamin D not useful for assessing status (may be normal/elevated in deficiency due to secondary hyperparathyroidism). Classification (controversial, varies by organization): severe deficiency <12 ng/mL (<30 nmol/L); deficiency <20 ng/mL (<50 nmol/L); insufficiency 20-29 ng/mL (50-74 nmol/L); sufficiency ≥30 ng/mL (≥75 nmol/L); potential toxicity >150 ng/mL (>375 nmol/L). IOM considers ≥20 ng/mL adequate for bone health; Endocrine Society recommends ≥30 ng/mL. Screening not recommended for general population; test high-risk groups: osteoporosis, fractures, malabsorption (celiac, IBD, bariatric surgery), obesity, CKD, liver disease, granulomatous diseases, certain medications, limited sun exposure, dark skin. Also measure calcium, phosphorus, alkaline phosphatase, PTH if deficiency suspected.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/33985616/",
+      "credibility_class": "peer_reviewed_guideline",
+      "year": 2024
+    }
+  ]
+}

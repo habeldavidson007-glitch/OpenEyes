@@ -1,0 +1,19 @@
+{
+  "id": "phr_mdc_acei_arb_diagnostic",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "ACE inhibitors",
+    "ARBs",
+    "contraindications",
+    "adverse effects",
+    "monitoring"
+  ],
+  "content": "Contraindications for ACE inhibitors and ARBs: pregnancy (teratogenic - fetal renal damage, oligohydramnios, death), history of angioedema with RAAS blockade, bilateral renal artery stenosis, hyperkalemia (>5.5 mEq/L). ACE inhibitor-specific: prior ACE inhibitor-induced angioedema (absolute contraindication to all ACE inhibitors; ARB may be tried cautiously if essential). Monitoring parameters: baseline serum creatinine, eGFR, potassium; repeat 1-2 weeks after initiation or dose increase; monitor every 3-6 months when stable. Expected findings: small creatinine increase (up to 30% from baseline) is acceptable and expected due to efferent arteriole dilation. Adverse effects: hypotension (especially first dose), hyperkalemia, acute kidney injury (in setting of volume depletion or NSAID use), cough (ACE inhibitors only, 5-20%), angioedema (rare, more common in African Americans), rash, taste disturbance (captopril). Drug interactions: NSAIDs (attenuate antihypertensive effect, increase renal risk), potassium supplements/spironolactone (hyperkalemia risk), lithium (increased levels).",
+  "source": "fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

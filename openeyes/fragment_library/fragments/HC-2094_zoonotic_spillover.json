@@ -1,0 +1,17 @@
+{
+  "id": "HC-2094",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "zoonotic surveillance",
+    "spillover risk assessment",
+    "emerging disease monitoring"
+  ],
+  "reasoning_role": "definition",
+  "content": "Zoonotic spillover risk assessment considers: pathogen factors (genetic adaptability to humans, receptor binding capability), host factors (phylogenetic proximity to humans, population density, shedding routes), and environmental factors (human encroachment, climate suitability for vectors). Surveillance approaches: serological surveys in high-risk populations, syndromic surveillance in healthcare facilities near wildlife interfaces, pathogen screening in wildlife trade, and genomic sequencing to detect adaptive mutations. Risk hotspots identified through spatial modeling combining land use, wildlife diversity, and human population data. Priority zoonoses monitored through early warning systems with predefined response triggers.",
+  "source": "Nature Ecology & Evolution, WHO Emerging Diseases surveillance framework",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

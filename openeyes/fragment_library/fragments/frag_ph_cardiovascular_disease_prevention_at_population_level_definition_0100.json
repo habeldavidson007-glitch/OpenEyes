@@ -1,0 +1,21 @@
+{
+  "id": "frag_ph_cardiovascular_disease_prevention_at_population_level_definition_0100",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "cardiovascular_disease",
+    "prevention",
+    "population_health",
+    "risk_factors"
+  ],
+  "reasoning_role": "definition",
+  "content": "Cardiovascular disease (CVD) remains the leading cause of death globally, responsible for approximately 17.9 million deaths annually. CVD includes coronary heart disease, stroke, heart failure, peripheral arterial disease, and rheumatic heart disease. Population prevention strategies address modifiable risk factors: hypertension (leading attributable risk), dyslipidemia, diabetes, smoking, obesity, physical inactivity, unhealthy diet, and harmful alcohol use. The population strategy (Rose's prevention paradox) aims to shift entire population risk distribution through policy/environmental changes, complementing high-risk individual approaches. Social determinants significantly influence CVD disparities. Life course perspective recognizes that cardiovascular health trajectories begin in utero and accumulate across lifespan. Ideal cardiovascular health (AHA's Life's Essential 8) includes optimal levels of blood pressure, lipids, glucose, BMI, plus healthy behaviors.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

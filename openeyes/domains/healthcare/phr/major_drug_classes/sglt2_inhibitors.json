@@ -1,0 +1,43 @@
+{
+  "fragments": [
+    {
+      "id": "phr_mdc_sglt2_def",
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "SGLT2 Inhibitors",
+      "role": "definition",
+      "tags": ["SGLT2 inhibitors", "diabetes", "heart failure", "CKD", "mechanism"],
+      "content": "SGLT2 (sodium-glucose cotransporter-2) inhibitors are oral antidiabetic agents that block glucose and sodium reabsorption in the proximal renal tubule, causing urinary glucose excretion (60-80g/day). Agents include empagliflozin, dapagliflozin, canagliflozin, and ertugliflozin. Beyond glycemic control, SGLT2 inhibitors provide cardiovascular and renal benefits through multiple mechanisms: osmotic diuresis reduces preload and afterload, weight loss (2-3kg), blood pressure reduction (3-5 mmHg systolic), improved myocardial energetics, reduced inflammation, and decreased intraglomerular pressure. Indications now extend beyond type 2 diabetes to include heart failure with reduced ejection fraction (HFrEF), heart failure with preserved ejection fraction (HFpEF), and chronic kidney disease regardless of diabetes status. Major outcome trials (EMPA-REG OUTCOME, DECLARE-TIMI 58, DAPA-HF, EMPA-KIDNEY) demonstrated 14% reduction in MACE, 30% reduction in heart failure hospitalization, and 30-40% reduction in CKD progression.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "phr_mdc_sglt2_treatment",
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "SGLT2 Inhibitors",
+      "role": "treatment_protocol",
+      "tags": ["SGLT2 inhibitors", "dosing", "indications", "titration"],
+      "content": "SGLT2 inhibitor dosing varies by agent and indication. For type 2 diabetes: empagliflozin 10mg daily, may increase to 25mg; dapagliflozin 5-10mg daily; canagliflozin 100-300mg daily; ertugliflozin 5-15mg daily. For heart failure (HFrEF and HFpEF): dapagliflozin 10mg daily; empagliflozin 10mg daily. For CKD: dapagliflozin 10mg daily (eGFR ≥25); empagliflozin 10mg daily (eGFR ≥20). Initiation requires minimum eGFR thresholds (varies by agent, typically ≥20-25 mL/min/1.73m² for HF/CKD indications). Glycemic efficacy diminishes as eGFR declines, but cardiorenal benefits persist. Take in morning with or without food. Hold during acute illness, surgery, or prolonged fasting to reduce DKA risk. Monitor volume status, especially in elderly or those on diuretics (consider reducing loop diuretic dose). Continue even if eGFR declines after initiation unless dialysis required.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "phr_mdc_sglt2_diagnostic",
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "SGLT2 Inhibitors",
+      "role": "diagnostic_criteria",
+      "tags": ["SGLT2 inhibitors", "adverse effects", "contraindications", "monitoring"],
+      "content": "Contraindications: severe renal impairment (eGFR <20-25 depending on agent and indication), dialysis, history of serious hypersensitivity, type 1 diabetes (DKA risk). Warnings/precautions: diabetic ketoacidosis (may occur with normal glucose - 'euglycemic DKA'), acute kidney injury, urosepsis/pyelonephritis, genital mycotic infections, hypotension, lower limb amputation (canagliflozin signal), bone fracture risk. Monitoring: baseline and periodic renal function, volume status, signs/symptoms of DKA (nausea, vomiting, abdominal pain, malaise), genital infections, foot exams in high-risk patients. Common adverse effects: genital mycotic infections (5-10%, more common in women), urinary tract infections, volume depletion, increased urination. Rare but serious: Fournier's gangrene (necrotizing fasciitis of perineum), euglycemic DKA (hold 3-4 days before surgery). Drug interactions: diuretics (additive volume depletion), insulin/sulfonylureas (hypoglycemia risk when combined).",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

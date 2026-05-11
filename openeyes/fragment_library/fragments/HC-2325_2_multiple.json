@@ -1,0 +1,19 @@
+{
+  "id": "neuro-ms-dx",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "multiple-sclerosis",
+    "McDonald-criteria",
+    "MRI",
+    "diagnosis",
+    "oligoclonal-bands"
+  ],
+  "reasoning_role": "definition",
+  "content": "MS diagnosis uses 2017 McDonald Criteria requiring dissemination in space (DIS) and time (DIT). DIS: \u22651 T2-hyperintense lesion in \u22652 of 4 CNS regions: periventricular, cortical/juxtacortical, infratentorial, spinal cord. DIT demonstrated by: (1) simultaneous presence of gadolinium-enhancing and non-enhancing lesions, OR (2) new T2 or enhancing lesion on follow-up MRI, OR (3) positive CSF oligoclonal bands (allows DIT diagnosis at first scan). MRI protocol: brain and entire spine with and without gadolinium. Typical findings: ovoid periventricular lesions perpendicular to ventricles (Dawson's fingers), juxtacortical U-fiber involvement, infratentorial lesions, short-segment spinal cord lesions (<3 vertebral segments). CSF: oligoclonal IgG bands present in >90% (not specific but supports diagnosis). Evoked potentials (visual, somatosensory, motor) detect subclinical pathway involvement. Differential diagnosis includes NMOSD (AQP4-IgG positive, longitudinally extensive transverse myelitis), MOGAD, vasculitis, sarcoidosis, B12 deficiency, Lyme disease.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/29274884/",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

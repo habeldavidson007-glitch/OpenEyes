@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["UTI", "urinary tract infection", "uncomplicated", "complicated"],
+    "reasoning_role": "definition",
+    "content": "Urinary tract infections (UTIs) are classified as uncomplicated or complicated. Uncomplicated UTI occurs in healthy, non-pregnant women with no structural/functional urinary tract abnormalities. Complicated UTI involves: male gender, pregnancy, immunocompromise, diabetes, renal failure, urinary obstruction, indwelling catheters, recent instrumentation, or multidrug-resistant pathogens. Cystitis affects the bladder (dysuria, frequency, urgency, suprapubic pain); pyelonephritis involves kidney infection (fever, flank pain, costovertebral angle tenderness). Escherichia coli causes 75-90% of uncomplicated UTIs; other pathogens include Klebsiella, Proteus, Enterococcus, Staphylococcus saprophyticus.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["UTI", "treatment", "antibiotics", "resistance"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Uncomplicated cystitis treatment: nitrofurantoin 100mg BID x5 days (first-line), TMP-SMX DS BID x3 days (if local resistance <20%), fosfomycin 3g single dose, or pivmecillinam. Fluoroquinolones reserved for resistant cases due to safety concerns. Uncomplicated pyelonephritis: ciprofloxacin 500mg BID x7 days or levofloxacin 750mg daily x5 days; if fluoroquinolone resistance suspected, give initial IV ceftriaxone or aminoglycoside then oral therapy. Complicated UTI: broader empiric coverage based on risk factors and local antibiogram (fluoroquinolone, beta-lactam/beta-lactamase inhibitor, carbapenem for ESBL risk); tailor to culture results. Duration 7-14 days depending on severity. Asymptomatic bacteriuria treated only in pregnancy or before urologic procedures.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["UTI", "diagnosis", "urinalysis", "culture"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "UTI diagnosis requires: 1) Compatible symptoms (dysuria, frequency, urgency, suprapubic pain for cystitis; fever, flank pain for pyelonephritis); 2) Urinalysis showing pyuria (>10 WBC/hpf or positive leukocyte esterase) and/or bacteriuria; 3) Urine culture confirming significant bacteriuria (≥10³ CFU/mL in symptomatic women with acute cystitis, ≥10⁴ CFU/mL for pyelonephritis, ≥10⁵ CFU/mL traditional threshold). Dipstick nitrite has high specificity but lower sensitivity. Gram stain useful for rapid pathogen identification. Imaging (renal ultrasound, CT) indicated for complicated UTI, treatment failure, recurrent infections, or suspected obstruction/abscess. Blood cultures recommended for severe pyelonephritis or sepsis.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

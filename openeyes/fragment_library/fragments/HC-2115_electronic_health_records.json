@@ -1,0 +1,18 @@
+{
+  "id": "HC-2115",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "electronic health records",
+    "benefits",
+    "harms",
+    "measurement"
+  ],
+  "reasoning_role": "definition",
+  "content": "EHR impact assessment shows mixed results: Benefits - medication error reduction 50-80%, preventive service delivery improvement 10-20%, care coordination through information sharing, population health management capabilities, research data availability. Harms/limitations - clinician burnout (40-50% prevalence), alert fatigue leading to missed critical warnings, copy-paste errors propagating inaccurate information, cybersecurity vulnerabilities (healthcare has highest ransomware rates), digital divide limiting patient portal use. Cost-benefit analyses show $30,000-50,000 per physician in implementation costs with 3-5 year ROI through billing improvements, reduced transcription, and avoided duplicate testing. Interoperability gaps persist: only 30-40% of providers can electronically find/receive patient data from outside organizations.",
+  "source": "healthit.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

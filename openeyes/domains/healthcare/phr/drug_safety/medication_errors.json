@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["medication errors", "patient safety", "pharmacovigilance", "error prevention"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Medication errors are preventable events that may cause or lead to inappropriate medication use or patient harm while the medication is in the control of the healthcare professional, patient, or consumer. Types include: prescribing errors (wrong drug, dose, frequency, route), transcription errors (miscommunication, illegible handwriting), dispensing errors (wrong drug, strength, labeling), administration errors (wrong patient, time, technique), and monitoring errors (failure to review labs, assess response). Contributing factors include look-alike/sound-alike drugs, decimal point errors, unit confusion (mg vs mcg), fatigue, interruptions, inadequate staffing, and poor communication. The National Coordinating Council for Medication Error Reporting and Prevention (NCC MERP) categorizes errors by severity from A (no error) to I (death).",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "When a medication error occurs: (1) Assess patient immediately for adverse effects; (2) Stabilize if harm has occurred; (3) Notify prescriber and pharmacy; (4) Document error details in medical record (not blame-focused); (5) Report through institutional incident reporting system; (6) Disclose to patient/family per institutional policy; (7) Implement corrective actions to prevent recurrence. Prevention strategies include: computerized physician order entry (CPOE) with clinical decision support, barcode medication administration, standardized concentrations, tall man lettering for look-alike drugs, independent double-checks for high-alert medications, medication reconciliation at transitions, and creating a culture of safety that encourages reporting without fear of punishment.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Medication error classification by harm potential: Category C-E (error reached patient but no harm or temporary harm requiring intervention), Category F-H (temporary or permanent harm requiring prolonged hospitalization or life-sustaining treatment), Category I (death). High-alert medications requiring extra safeguards include: insulin, opioids, anticoagulants, concentrated electrolytes, chemotherapy, neuromuscular blockers. Root cause analysis of errors examines system factors: workflow design, environmental factors, human factors, communication patterns, and technology issues. Error reporting systems (ISMP, FDA MedWatch) aggregate data to identify patterns and drive system improvements. Organizations track error rates per 1,000 doses administered as quality metrics.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

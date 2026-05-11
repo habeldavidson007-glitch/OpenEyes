@@ -1,0 +1,20 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "neuroscience",
+    "neurotransmitters",
+    "dopamine",
+    "serotonin",
+    "norepinephrine",
+    "glutamate"
+  ],
+  "reasoning_role": "definition",
+  "content": "Neurotransmitter systems are chemical messengers that transmit signals across synapses in the brain. Dopamine regulates reward, motivation, and motor control; dysfunction is implicated in Parkinson's disease, schizophrenia, and addiction. Serotonin modulates mood, sleep, appetite, and cognition; SSRIs target this system for depression and anxiety. Norepinephrine affects arousal, attention, and stress response; SNRIs and NRIs target this pathway. Glutamate is the primary excitatory neurotransmitter, critical for learning and memory via NMDA and AMPA receptors; excess glutamate can cause excitotoxicity. GABA is the primary inhibitory neurotransmitter; benzodiazepines enhance GABA activity. Imbalances in these systems underlie many psychiatric disorders.",
+  "source": "nimh.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2028",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

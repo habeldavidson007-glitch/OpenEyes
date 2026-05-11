@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["MRSA", "methicillin-resistant Staph aureus", "CA-MRSA", "HA-MRSA"],
+    "reasoning_role": "definition",
+    "content": "Methicillin-resistant Staphylococcus aureus (MRSA) is resistant to all beta-lactam antibiotics due to mecA gene encoding altered penicillin-binding protein 2a (PBP2a). Healthcare-associated MRSA (HA-MRSA): typically multidrug-resistant, causes invasive infections (bloodstream, pneumonia, surgical site); predominant clone USA100 (ST5). Community-associated MRSA (CA-MRSA): often susceptible to non-beta-lactams, causes skin/soft tissue infections in healthy individuals; USA300 (ST8) with Panton-Valentine leukocidin (PVL) toxin causing necrosis. Livestock-associated MRSA (LA-MRSA): CC398 strain from animal contact. Risk factors: prior antibiotic use, hospitalization, dialysis, indwelling devices, injection drug use, crowded settings (prisons, military barracks). Mortality for MRSA bacteremia 15-25%.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["MRSA", "treatment", "vancomycin", "daptomycin"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Skin/soft tissue infections: incision and drainage primary for abscesses; add antibiotics for severe/systemic infection - TMP-SMX DS BID, doxycycline 100mg BID, or clindamycin 450mg QID (check D-test for inducible resistance). Severe infections (bacteremia, pneumonia, endocarditis): vancomycin IV (target AUC/MIC 400-600, trough 15-20 mcg/mL) or daptomycin 6-10 mg/kg IV daily (not for pneumonia - inactivated by surfactant). Alternatives: linezolid 600mg IV/PO BID (excellent lung penetration), ceftaroline 600mg IV q8h (fifth-generation cephalosporin with MRSA activity), telavancin, tedizolid. Duration: uncomplicated SSTI 5-10 days; bacteremia minimum 14 days from first negative culture; endocarditis 6+ weeks. Source control critical (device removal, drainage).",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["MRSA", "diagnosis", "culture", "PCR"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "MRSA diagnosis: 1) Culture on selective media (chromogenic agar) with cefoxitin disk diffusion or oxacillin screen; 2) Molecular detection of mecA/mecC genes by PCR (rapid, 1-8 hours); 3) Phenotypic confirmation with cefoxitin MIC. Blood cultures essential for suspected bacteremia (2 sets before antibiotics). Wound cultures from deep tissue/debridement preferred over superficial swabs. Nasal screening identifies colonization (up to 30% population colonized with MSSA, 1-2% with MRSA); decolonization with mupirocin nasal ointment BID x5 days + chlorhexidine body washes reduces surgical site infections. Vancomycin-intermediate S. aureus (VISA, MIC 4-8 mcg/mL) and vancomycin-resistant S. aureus (VRSA, MIC ≥16 mcg/mL) emerging; alternative agents required.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

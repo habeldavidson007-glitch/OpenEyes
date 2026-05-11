@@ -1,0 +1,16 @@
+{
+  "content": "Assessment criteria include evaluating risk factors, monitoring parameters, and determining appropriate interventions based on established guidelines and regulatory requirements.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "id": "HC-2234",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "tags": [
+    "phr",
+    "safety"
+  ]
+}

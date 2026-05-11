@@ -1,0 +1,21 @@
+{
+  "id": "frag_ph_alcohol_use_disorder_definition_0076",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "alcohol",
+    "addiction",
+    "substance_use",
+    "mental_health"
+  ],
+  "reasoning_role": "definition",
+  "content": "Alcohol use disorder (AUD) is a chronic relapsing brain disease characterized by compulsive alcohol use, loss of control over intake, and negative emotional state when not using. DSM-5 criteria include 11 symptoms ranging from mild (2-3 symptoms) to severe (6+ symptoms): drinking more/longer than intended, unsuccessful cut-down attempts, time spent obtaining/using/recovering, cravings, failure to fulfill obligations, social/interpersonal problems, giving up activities, hazardous use, continued use despite physical/psychological problems, tolerance, and withdrawal. Alcohol causes over 200 health conditions including liver disease, pancreatitis, cardiovascular disease, multiple cancers, and neurological damage. Global burden: 3 million deaths annually (5.3% of all deaths). Binge drinking (4+ drinks women, 5+ men in 2 hours) poses acute risks even without AUD diagnosis.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

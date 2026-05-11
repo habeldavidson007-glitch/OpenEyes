@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["drug safety", "pharmacovigilance", "FDA", "black box warning", "labeling"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Black box warnings (boxed warnings) are the FDA's strongest safety alerts required on prescription drug labeling. They appear in a black-bordered box at the beginning of the prescribing information and highlight risks that may lead to serious injury or death. Triggers include: mortality risk, life-threatening adverse reactions, contraindications in specific populations, or risks requiring special monitoring. Examples include suicidality with antidepressants in young adults, teratogenicity with isotretinoin, serious infections with immunosuppressants, and bleeding risk with anticoagulants. The warning remains until post-market data demonstrates acceptable risk-benefit balance.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "When prescribing drugs with black box warnings: (1) Review full warning content before initiating therapy; (2) Assess patient-specific risk factors; (3) Obtain informed consent documenting discussion of boxed warning risks; (4) Implement required monitoring (e.g., CBC for clozapine, pregnancy tests for isotretinoin, liver function for hepatotoxic drugs); (5) Educate patients on warning signs requiring immediate medical attention; (6) Consider alternatives if risk outweighs benefit; (7) Document rationale for use despite warnings. For certain drugs, enrollment in REMS programs is mandatory. Prescribers should periodically reassess continued need and monitor for emerging safety signals.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Clinical implications of black box warnings include: heightened vigilance for specific adverse events, mandatory baseline and periodic testing, restricted prescribing to qualified providers, patient registry enrollment requirements, and contraindications in defined populations. Providers must recognize that black box warnings do not prohibit use but require enhanced risk management. Failure to heed boxed warnings may constitute negligence in malpractice proceedings. Pharmacists must counsel patients on boxed warning risks during dispensing. Institutions may require additional approval steps for high-risk medications. Post-market surveillance data continues to inform whether warnings should be strengthened, modified, or removed.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

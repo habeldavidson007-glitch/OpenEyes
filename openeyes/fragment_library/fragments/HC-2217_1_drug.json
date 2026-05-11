@@ -1,0 +1,15 @@
+{
+  "content": "Clinical management during drug shortages: (1) Assess inventory and project duration; (2) Implement conservation strategies (dose optimization, alternative routes, smaller vial sizes); (3) Identify therapeutic alternatives within class or different classes; (4) Develop institutional protocols for prioritization (e.g., reserve critical drugs for most vulnerable patients); (5) Communicate with prescribers about available alternatives and dosing changes; (6) Compound preparations if commercially unavailable (following USP <797> standards); (7) Coordinate with group purchasing organizations and other institutions; (8) Document all substitutions in medical records. ASHP guidelines recommend forming multidisciplinary shortage committees. Patient safety must remain paramount; avoid using expired products unless no alternatives exist and benefits clearly outweigh risks.",
+  "source": "fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "id": "HC-2217",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "tags": [
+    "phr"
+  ]
+}

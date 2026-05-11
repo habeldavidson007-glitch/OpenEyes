@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "topic": "Cancer Prevention at Population Level",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Cancer prevention encompasses primary prevention (reducing incidence by addressing risk factors), secondary prevention (early detection through screening), and tertiary prevention (reducing complications in diagnosed patients). An estimated 30-50% of cancers are preventable. Major modifiable risk factors include: tobacco use (22% of cancer deaths), alcohol consumption, obesity/overweight, physical inactivity, unhealthy diet, occupational carcinogens, environmental pollutants, and infections (HPV, HBV, HCV, H. pylori causing 13% of cancers globally). Primary prevention strategies target these factors through policy and individual interventions. Vaccination against HPV (cervical, anal, oropharyngeal cancers) and HBV (liver cancer) represents highly effective primary prevention. Secondary prevention through evidence-based screening reduces mortality from breast, cervical, colorectal, and lung cancers.",
+      "tags": ["cancer", "prevention", "screening", "vaccination"],
+      "reasoning_role": "foundational_knowledge"
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Population-level cancer prevention interventions: (1) Tobacco control—comprehensive MPOWER measures reducing lung and multiple other cancers; (2) Vaccination programs—HPV vaccination (9-valent vaccine preventing 90% HPV-related cancers), HBV vaccination (universal infant vaccination); (3) Screening programs—organized population-based screening with quality assurance: mammography (biennial 50-74 years), cervical cytology/HPV testing (21-65 years), colonoscopy/FIT (45-75 years), low-dose CT for high-risk smokers; (4) Policy interventions—alcohol taxation and availability restrictions, trans fat bans, processed meat labeling, occupational exposure limits, air quality standards; (5) Sun safety—shade structures, sunscreen access, tanning bed restrictions for minors; (6) Chemoprevention—aspirin for colorectal cancer in select populations, tamoxifen/raloxifene for high-risk breast cancer. Navigation programs improve screening completion. Overdiagnosis/overtreatment risks require balanced communication.",
+      "tags": ["policy", "vaccination", "screening", "intervention"],
+      "reasoning_role": "actionable_guidance"
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Cancer prevention assessment includes: (1) Risk stratification—family history assessment (BRCA, Lynch syndrome identification), genetic counseling/testing criteria, risk prediction models (Gail model for breast cancer, CRC risk scores); (2) Screening eligibility—age-based guidelines (USPSTF, ACS, specialty societies), risk-based modifications, shared decision-making for borderline cases; (3) Program monitoring—screening participation rates, positivity rates, interval cancer rates, stage distribution shifts, false positive/negative rates; (4) Quality indicators—colonoscopy adenoma detection rate (>25% men, >15% women), mammography recall rates, cervical screening adequacy; (5) Population surveillance—cancer registry data (SEER), incidence/mortality trends, disparity monitoring. Emerging approaches include risk-stratified screening intervals, liquid biopsies for early detection, and polygenic risk scores. Cost-effectiveness analyses guide resource allocation decisions.",
+      "tags": ["risk_stratification", "screening", "quality_assurance", "surveillance"],
+      "reasoning_role": "analytical_framework"
+    }
+  ],
+  "source": "WHO International Agency for Research on Cancer, CDC National Comprehensive Cancer Control Program, USPSTF Cancer Screening Recommendations, American Cancer Society Guidelines",
+  "credibility_class": "A",
+  "year": 2024
+}

@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "content": "Clinical applications of half-life guide dosing interval selection and predict drug accumulation. Dosing interval typically equals half-life for maintenance therapy. Loading dose achieves therapeutic levels immediately when half-life is long (e.g., digoxin t1/2=36h, amiodarone t1/2=58 days). Time to steady state = 4-5 half-lives regardless of dose size; increasing dose accelerates achievement of target concentration but not steady state timing. When discontinuing drugs: those with short half-lives may cause withdrawal (alprazolam t1/2=11h); long half-life drugs taper themselves (fluoxetine t1/2=4-6 days, active metabolite 7-15 days). Renal/hepatic impairment prolongs half-life requiring dose reduction or interval extension.",
+  "tags": [
+    "loading_dose",
+    "steady_state",
+    "dose_adjustment",
+    "withdrawal_prevention"
+  ],
+  "source": "nih.gov",
+  "credibility_class": "A",
+  "year": 2025,
+  "reasoning_role": "definition",
+  "id": "HC-2259",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

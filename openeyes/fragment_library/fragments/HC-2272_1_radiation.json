@@ -1,0 +1,19 @@
+{
+  "id": "hc_med_onc_rt_treat_001",
+  "tags": [
+    "oncology",
+    "radiation therapy",
+    "fractionation",
+    "dosing",
+    "treatment planning"
+  ],
+  "reasoning_role": "definition",
+  "content": "Fractionation schedules balance tumor control and normal tissue toxicity. Conventional fractionation: 1.8-2 Gy per fraction, once daily, 5 days/week; total dose 60-70 Gy over 6-7 weeks for definitive treatment. Hypofractionation: larger doses per fraction (2.5-3 Gy), shorter overall time; standard for breast cancer (40-42.5 Gy in 15-16 fractions), prostate cancer (60 Gy in 20 fractions). SBRT: very high dose per fraction (6-20 Gy), 1-5 fractions; used for early-stage lung cancer, liver metastases, brain metastases, spine metastases. Hyperfractionation: smaller doses twice daily, higher total dose; investigated in head/neck cancer. Treatment planning: CT simulation defines target volumes (GTV, CTV, PTV); organs at risk contoured; dose constraints based on QUANTEC guidelines. Concurrent chemoradiation enhances efficacy in many cancers (head/neck, lung, cervical, anal) but increases toxicity. Adjuvant radiation post-surgery reduces local recurrence (breast, rectal, endometrial cancers).",
+  "source": "https://www.nccn.org/guidelines",
+  "credibility_class": "A",
+  "year": 2024,
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

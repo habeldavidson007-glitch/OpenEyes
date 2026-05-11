@@ -1,0 +1,37 @@
+{
+  "fragments": [
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "tags": ["adaptive trial design", "interim analysis", "sample size re-estimation"],
+      "reasoning_role": "definition",
+      "content": "Adaptive trial designs allow pre-planned modifications to trial parameters based on interim data analysis without compromising trial integrity or validity. Unlike traditional fixed designs, adaptive trials can modify sample size, drop ineffective treatment arms, adjust randomization ratios, or change patient populations while controlling type I error. Common adaptations include: group sequential designs (early stopping for efficacy/futility), sample size re-estimation, adaptive randomization (response-adaptive, covariate-adaptive), seamless Phase II/III designs, and population enrichment strategies. FDA issued guidance on adaptive designs in 2010 and 2019, emphasizing pre-specification and statistical rigor.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "tags": ["adaptive trial design", "interim analysis", "sample size re-estimation"],
+      "reasoning_role": "treatment_protocol",
+      "content": "Adaptive trial implementation requires: pre-specified adaptation rules in the protocol and statistical analysis plan, independent data monitoring committee (IDMC) to review unblinded interim data, simulation studies to evaluate operating characteristics (type I error, power, expected sample size), and robust statistical methods (alpha spending functions, combination tests, conditional power). Timing of interim analyses must be carefully planned (e.g., after 50% and 75% of events). Adaptations should be operationally feasible without introducing bias. Blinding must be maintained for site personnel and sponsors. Regulatory acceptance requires clear documentation of decision rules, preservation of trial integrity, and appropriate statistical methodology. Platform trials (e.g., STAMPEDE, I-SPY2) exemplify master protocols enabling multiple treatments to be evaluated efficiently.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "tags": ["adaptive trial design", "interim analysis", "sample size re-estimation"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "Regulatory acceptance criteria for adaptive designs: adaptations must be pre-specified with clear decision rules, statistical methods must control type I error at nominal level (typically 0.05), modifications cannot introduce operational bias, and results must remain interpretable. Common concerns include: inflation of type I error if adaptations are not properly controlled, potential for bias if blinding is compromised, complexity in interpretation and communication of results, and risk of selecting spurious findings from multiple looks. Successful applications include: oncology trials with early stopping for overwhelming efficacy, rare disease trials with sample size re-estimation due to uncertain effect sizes, and seamless designs reducing development time. FDA's Complex Innovative Trial Design (CID) pilot program facilitates dialogue on novel designs. Adaptive designs are now accepted in ~20-30% of pivotal trials.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

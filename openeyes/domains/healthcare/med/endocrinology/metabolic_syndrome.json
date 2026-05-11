@@ -1,0 +1,43 @@
+{
+  "fragments": [
+    {
+      "id": "endo_metsyn_def_001",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "topic": "Metabolic Syndrome",
+      "role": "definition",
+      "tags": ["metabolic syndrome", "cardiometabolic", "insulin resistance", "cardiovascular risk"],
+      "content": "Metabolic syndrome is a cluster of interconnected cardiometabolic risk factors that increase risk for type 2 diabetes and cardiovascular disease. Multiple definitions exist; harmonized criteria (2009) require ≥3 of 5 components: (1) Abdominal obesity: waist circumference ≥102cm men, ≥88cm women (ethnicity-specific cutoffs); (2) Elevated triglycerides: ≥150 mg/dL or on treatment; (3) Reduced HDL cholesterol: <40 mg/dL men, <50 mg/dL women or on treatment; (4) Elevated blood pressure: ≥130/85 mmHg or on antihypertensive therapy; (5) Elevated fasting glucose: ≥100 mg/dL or previously diagnosed T2DM. Pathophysiology centers on insulin resistance, visceral adiposity, chronic inflammation, and endothelial dysfunction. Prevalence ~20-25% globally, increases with age. Individuals with metabolic syndrome have 2-fold increased CVD risk and 5-fold increased diabetes risk.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/32804973/",
+      "credibility_class": "peer_reviewed_guideline",
+      "year": 2024
+    },
+    {
+      "id": "endo_metsyn_trt_001",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "topic": "Metabolic Syndrome",
+      "role": "treatment_protocol",
+      "tags": ["metabolic syndrome", "lifestyle", "weight loss", "statins", "antihypertensives"],
+      "content": "Primary intervention: lifestyle modification targeting weight reduction (5-10% body weight), increased physical activity (≥150 min/week moderate intensity), and dietary changes (Mediterranean or DASH diet, reduced refined carbohydrates, increased fiber). Weight loss improves all metabolic syndrome components. Pharmacologic therapy directed at individual risk factors: statins for dyslipidemia (high-intensity for those with elevated ASCVD risk); antihypertensives (ACE inhibitors/ARBs preferred for metabolic benefits); metformin for impaired fasting glucose/prediabetes (Diabetes Prevention Program showed 31% diabetes risk reduction). GLP-1 receptor agonists increasingly used for weight management and cardiometabolic risk reduction in obese patients. Smoking cessation critical. Aspirin considered for primary prevention based on individual CVD risk assessment. Regular monitoring of all components essential.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/32804973/",
+      "credibility_class": "peer_reviewed_guideline",
+      "year": 2024
+    },
+    {
+      "id": "endo_metsyn_diag_001",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "topic": "Metabolic Syndrome",
+      "role": "diagnostic_criteria",
+      "tags": ["metabolic syndrome", "waist circumference", "triglycerides", "HDL", "blood pressure", "glucose"],
+      "content": "Diagnosis requires ≥3 of 5 criteria (harmonized definition): (1) Waist circumference: population-specific cutoffs (US/Europe: men ≥102cm, women ≥88cm; South Asian/Chinese/Japanese: men ≥90cm, women ≥80cm); (2) Triglycerides: ≥150 mg/dL (≥1.7 mmol/L) or drug treatment for elevated triglycerides; (3) HDL cholesterol: <40 mg/dL (<1.0 mmol/L) in men, <50 mg/dL (<1.3 mmol/L) in women, or drug treatment for reduced HDL; (4) Blood pressure: systolic ≥130 and/or diastolic ≥85 mmHg, or antihypertensive drug treatment; (5) Fasting plasma glucose: ≥100 mg/dL (≥5.6 mmol/L) or previously diagnosed type 2 diabetes. Measurement protocol: waist at iliac crest after normal expiration; fasting lipid panel and glucose after 8-12 hour fast; BP average of two readings. No single test confirms metabolic syndrome - it's a clinical diagnosis based on component presence.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/32804973/",
+      "credibility_class": "peer_reviewed_guideline",
+      "year": 2024
+    }
+  ]
+}

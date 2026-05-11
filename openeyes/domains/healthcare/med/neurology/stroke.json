@@ -1,0 +1,40 @@
+{
+  "fragments": [
+    {
+      "id": "neuro-stroke-def",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["stroke", "ischemic", "hemorrhagic", "tPA", "thrombectomy", "acute-care"],
+      "reasoning_role": "definition",
+      "content": "Stroke is classified as ischemic (87% of cases, caused by vessel occlusion) or hemorrhagic (13%, caused by bleeding). Ischemic stroke results from thrombotic or embolic occlusion; hemorrhagic from intracerebral or subarachnoid bleeding. The ischemic penumbra represents salvageable tissue surrounding the infarct core. Time-to-treatment is critical: 'time is brain' with approximately 1.9 million neurons lost per minute during large-vessel occlusion. tPA (alteplase/tenecteplase) window is 0-4.5 hours from symptom onset for eligible patients. Mechanical thrombectomy extends treatment window to 6-24 hours for large-vessel occlusions based on perfusion imaging (DAWN, DEFUSE-3 trials). Hemorrhagic stroke requires blood pressure control, reversal of anticoagulation, and possible neurosurgical intervention.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/29412947/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "neuro-stroke-tx",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["stroke", "tPA", "thrombectomy", "treatment-protocol", "guidelines"],
+      "reasoning_role": "treatment_protocol",
+      "content": "Acute ischemic stroke treatment algorithm: (1) Immediate non-contrast CT to exclude hemorrhage. (2) If within 4.5 hours and no contraindications: IV tPA (alteplase 0.9 mg/kg, max 90mg; or tenecteplase 0.25 mg/kg). Contraindications include recent surgery, bleeding diathesis, BP >185/110 despite treatment. (3) For large-vessel occlusion (ICA, M1 MCA, basilar): mechanical thrombectomy up to 6 hours universally, and 6-24 hours with favorable perfusion imaging (mismatch between core and penumbra). (4) Antiplatelet therapy: aspirin 160-325mg within 24-48 hours (delayed 24 hours post-tPA). (5) Secondary prevention: statin therapy, BP control (<130/80), anticoagulation for atrial fibrillation (DOAC preferred), carotid endarterectomy/stenting for symptomatic stenosis >70%. Hemorrhagic stroke management focuses on BP control (SBP 140-160), reversal agents (PCC for warfarin, idarucizumab for dabigatran, andexanet alfa for factor Xa inhibitors), and neurosurgical consultation.",
+      "source": "https://www.ahajournals.org/doi/10.1161/STR.0000000000000375",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "neuro-stroke-dx",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["stroke", "diagnosis", "imaging", "NIHSS", "ASPECTS"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "Stroke diagnosis requires: (1) Clinical assessment using NIH Stroke Scale (NIHSS, score 0-42, higher=worse) evaluating consciousness, gaze, visual fields, facial palsy, motor function, ataxia, sensation, language, dysarthria, extinction/inattention. Score ≥6 suggests large-vessel occlusion. (2) Imaging: Non-contrast CT immediately to differentiate ischemic vs hemorrhagic. CT angiography (CTA) identifies vessel occlusion amenable to thrombectomy. CT perfusion distinguishes infarct core from penumbra. MRI with DWI is more sensitive for early ischemia but less available emergently. ASPECTS score (0-10) on CT quantifies early ischemic changes in MCA territory; score ≥6 favors thrombectomy benefit. (3) Laboratory: glucose (hypoglycemia mimics stroke), coagulation studies, troponin. (4) ECG and telemetry for atrial fibrillation detection. ABCD2 score predicts TIA stroke risk but not used for acute stroke diagnosis.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/31588876/",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

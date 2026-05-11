@@ -1,0 +1,17 @@
+{
+  "id": "HC-2067",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "quarantine effectiveness",
+    "isolation criteria",
+    "public health law"
+  ],
+  "reasoning_role": "definition",
+  "content": "Quarantine effectiveness depends on: timing (started before symptom onset), adherence (monitored through visits or technology), and support services (addressing barriers to compliance). Ethical considerations include: least restrictive means, proportionality to risk, transparency, and addressing socioeconomic impacts. Release from quarantine: symptom-free through incubation period, or negative test if test-based strategy used. Release from isolation: time-based (e.g., 5-10 days from symptom onset plus 24 hours fever-free) or test-based (two negative tests). Immunocompromised individuals may require longer isolation due to prolonged viral shedding.",
+  "source": "CDC MMWR, WHO ethical considerations for public health measures",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

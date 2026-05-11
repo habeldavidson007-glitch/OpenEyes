@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hepatitis B",
+    "diagnosis",
+    "serology",
+    "HBsAg"
+  ],
+  "reasoning_role": "definition",
+  "content": "HBV serologic markers: HBsAg (current infection), anti-HBs (immunity), anti-HBc IgM (acute infection), anti-HBc total/IgG (past/current infection), HBeAg (active replication), anti-HBe (reduced replication), HBV DNA (viral load quantification). Acute HBV: HBsAg+, anti-HBc IgM+, HBeAg+/variable. Resolved infection: HBsAg-, anti-HBs+, anti-HBc IgG+. Vaccinated: anti-HBs+ only. Chronic HBV: HBsAg+ >6 months, anti-HBc IgG+, anti-HBc IgM-. 'Window period': HBsAg cleared, anti-HBs not yet detectable, only anti-HBc IgM positive. HBV DNA quantification guides treatment decisions and monitors response. Genotyping not routinely needed. Liver biopsy or non-invasive fibrosis assessment (FibroScan, FIB-4) stages disease. Screening recommended for high-risk populations and all pregnant women.",
+  "source": "cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2380",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

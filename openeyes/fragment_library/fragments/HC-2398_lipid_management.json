@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "familial hypercholesterolemia",
+    "FH",
+    "LDL apheresis",
+    "screening"
+  ],
+  "reasoning_role": "definition",
+  "content": "Familial hypercholesterolemia (FH): autosomal dominant disorder (LDLR, APOB, PCSK9 mutations) causing severely elevated LDL from birth. Heterozygous FH (1:200-250 prevalence): untreated LDL 190-450 mg/dL, premature ASCVD (men <55, women <60). Homozygous FH (1:160,000-300,000): LDL >450-1000 mg/dL, childhood ASCVD, tendon xanthomas, corneal arcus. Diagnosis: Dutch Lipid Clinic Network criteria (clinical history, physical exam, LDL level, family history, genetic testing). Cascade screening of first-degree relatives essential. Treatment: high-intensity statin from diagnosis (children as young as 8-10 years), often need combination therapy (ezetimibe, PCSK9 inhibitor). Homozygous FH may require lomitapide (MTP inhibitor), evinacumab (angiopoietin-like 3 inhibitor), or LDL apheresis (extracorporeal LDL removal every 1-2 weeks). New therapies in development: gene therapy, mRNA-based approaches. Early diagnosis and aggressive treatment critical\u2014lifetime exposure to high LDL drives ASCVD risk.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33722022/",
+  "credibility_class": "guideline",
+  "year": 2021,
+  "id": "HC-2398",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

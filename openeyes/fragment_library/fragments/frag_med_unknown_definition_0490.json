@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0490",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "neuromodulation",
+    "DBS",
+    "TMS",
+    "deep-brain-stimulation",
+    "neurostimulation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Neuromodulation uses electrical or magnetic stimulation to alter neural activity for therapeutic purposes. Deep brain stimulation (DBS): surgically implanted electrodes deliver high-frequency stimulation to specific brain targets. FDA-approved indications: Parkinson's disease (subthalamic nucleus or GPi targets\u2014improves motor fluctuations, dyskinesias, tremor), essential tremor (VIM thalamus\u2014reduces tremor), dystonia (GPi\u2014especially generalized/segmental dystonia), OCD (anterior limb of internal capsule\u2014refractory cases). Investigational: depression (subcallosal cingulate, VC/VS), epilepsy (ANT thalamus\u2014approved for focal epilepsy), Tourette syndrome, addiction. Mechanism: high-frequency stimulation inhibits pathological neuronal firing, modulates network activity. Transcranial magnetic stimulation (TMS): non-invasive magnetic coil over scalp induces electrical currents in cortex. FDA-approved: major depressive disorder (left DLPFC\u2014rTMS; bilateral\u2014theta burst), OCD (medial prefrontal/anterior cingulate), smoking cessation, migraine with aura (single-pulse TMS). Vagus nerve stimulation (VNS): implanted pulse generator stimulates left vagus nerve\u2014approved for refractory epilepsy and treatment-resistant depression.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

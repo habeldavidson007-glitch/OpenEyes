@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["cardiac biomarkers", "troponin", "BNP", "myocardial injury"],
+    "reasoning_role": "definition",
+    "content": "Cardiac biomarkers are measurable substances indicating cardiac pathology. Cardiac troponins (cTnI, cTnT) are regulatory proteins released with myocardial injury. High-sensitivity assays (hs-cTn) detect concentrations 10-100x lower than conventional assays, enabling earlier MI diagnosis. Troponin elevation indicates myocardial injury but not necessarily MI—distinguish acute (rising/falling pattern) from chronic elevation. Causes of elevated troponin without ACS: heart failure, renal failure, myocarditis, pulmonary embolism, sepsis, strenuous exercise, tachyarrhythmias. Natriuretic peptides (BNP, NT-proBNP) released with ventricular stretch/volume overload. BNP <100 pg/mL or NT-proBNP <300 pg/mL makes HF unlikely; higher values support HF diagnosis (age-specific cutoffs for NT-proBNP: >450 age <50, >900 age 50-75, >1800 age >75). Other biomarkers: CK-MB (less specific than troponin), myoglobin (early but nonspecific), hs-CRP (inflammation, CV risk stratification), Galectin-3, ST2 (emerging HF biomarkers).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/30571638/",
+    "credibility_class": "guideline",
+    "year": 2018
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["troponin", "high-sensitivity assay", "MI diagnosis", "0/1-hour algorithm"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "High-sensitivity troponin enables rapid MI rule-out/rule-in algorithms. ESC 0/1-hour algorithm: baseline hs-cTn measured at presentation, repeat at 1 hour. Rule-out: baseline below limit of detection AND 1-hour delta below threshold (very low NPV ~99%). Rule-in: baseline above 99th percentile OR significant 1-hour delta (high PPV). Observe zone: intermediate values require continued evaluation. Universal Definition of MI: rise/fall of cTn with at least one value >99th percentile URL plus evidence of ischemia (symptoms, ECG changes, imaging evidence, coronary thrombus). Types: Type 1 (spontaneous plaque rupture), Type 2 (supply-demand mismatch), Type 3 (cardiac arrest before biomarkers available), Type 4a (PCI-related, >5x 99th percentile), Type 4b (stent thrombosis), Type 5 (CABG-related, >10x 99th percentile). Sex-specific cutoffs: women have lower 99th percentile than men—using sex-specific thresholds improves MI diagnosis in women.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/30571638/",
+    "credibility_class": "guideline",
+    "year": 2018
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["BNP", "NT-proBNP", "heart failure", "prognosis"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Natriuretic peptides in heart failure: BNP produced by ventricular myocytes in response to stretch; cleaved to active BNP (half-life 20 min) and inactive NT-proBNP (half-life 60-120 min, more stable). Diagnostic utility: acute dyspnea in ED—BNP >500 pg/mL or NT-proBNP >450-1800 pg/mL (age-dependent) strongly suggests HF; very low values effectively rule out HF. Guideline-directed HF management includes natriuretic peptide measurement for diagnosis and risk stratification. Factors affecting levels: elevated in renal dysfunction, AF, older age, female sex; lower in obesity (adipose tissue clearance). Serial measurements guide therapy—reduction with treatment correlates with improved outcomes. Prognostic value: higher levels predict mortality and hospitalization in HF, post-MI, stable CAD. Used in combination with clinical assessment and echocardiography. Not recommended for population screening but useful for risk stratification in high-risk patients.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
+    "credibility_class": "guideline",
+    "year": 2022
+  }
+]

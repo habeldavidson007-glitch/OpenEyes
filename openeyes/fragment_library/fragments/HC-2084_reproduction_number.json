@@ -1,0 +1,18 @@
+{
+  "id": "HC-2084",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "reproduction number",
+    "R0",
+    "epidemiology",
+    "transmission dynamics"
+  ],
+  "reasoning_role": "definition",
+  "content": "R0 informs public health intervention thresholds. To achieve herd immunity through vaccination, the proportion needed is calculated as (1 - 1/R0). For measles (R0=15), approximately 93% vaccination coverage is required. Interventions reduce effective reproduction number (Rt): isolation reduces infectious period, masks reduce transmission probability, social distancing reduces contact rate. During outbreaks, Rt monitoring guides intervention intensity. When Rt drops below 1, case numbers decline exponentially. Real-time Rt estimation uses case data with generation time distributions.",
+  "source": "WHO outbreak response guidelines, CDC MMWR",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

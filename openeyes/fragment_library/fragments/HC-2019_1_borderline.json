@@ -1,0 +1,18 @@
+{
+  "content": "Psychotherapy is first-line: Dialectical Behavior Therapy (DBT) has strongest evidence, targeting emotion regulation, distress tolerance, interpersonal effectiveness, mindfulness through individual therapy, skills groups, phone coaching, therapist consultation team. Other effective therapies: Mentalization-Based Treatment (MBT), Transference-Focused Psychotherapy (TFP), Schema-Focused Therapy. No medications approved specifically for BPD; pharmacotherapy targets specific symptoms (mood stabilizers for affective instability, atypical antipsychotics for cognitive-perceptual symptoms, SSRIs for comorbid depression/anxiety). Avoid polypharmacy. Hospitalization reserved for acute safety crises. Long-term prognosis generally favorable with appropriate treatment.",
+  "tags": [
+    "DBT",
+    "psychotherapy",
+    "mentalization",
+    "emotion-regulation"
+  ],
+  "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2019",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

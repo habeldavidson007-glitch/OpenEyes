@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "antibiotic resistance",
+    "diagnosis",
+    "laboratory"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnosis of antibiotic resistance involves: 1) Culture and susceptibility testing (disk diffusion, broth microdilution for MIC determination); 2) Rapid molecular tests detecting resistance genes (mecA for MRSA, vanA/vanB for VRE, KPC/NDM/OXA-48 for carbapenemases); 3) Phenotypic confirmation tests (combined disk tests for ESBL, carbapenemase production); 4) MALDI-TOF MS for rapid organism identification. Interpretive breakpoints follow CLSI or EUCAST standards. Screening cultures (nasal for MRSA, rectal for VRE/CRE) identify colonization in high-risk patients. Whole genome sequencing increasingly used for outbreak investigation and resistance mechanism elucidation.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2356",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["counterfeit medicines", "drug safety", "global health", "supply chain security"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Counterfeit medicines are falsified medical products that deliberately misrepresent their identity, composition, or source. They may contain wrong ingredients, incorrect dosages, no active ingredient, or toxic substances. The WHO estimates that 1 in 10 medical products in low- and middle-income countries is substandard or falsified. High-risk categories include: life-saving medications (antibiotics, antimalarials, chemotherapy), controlled substances (opioids, benzodiazepines), lifestyle drugs (erectile dysfunction, weight loss), and expensive specialty medications. Counterfeits enter supply chains through unauthorized distributors, internet pharmacies, and compromised distribution systems. The FDA's Drug Supply Chain Security Act (DSCSA) requires track-and-trace systems to prevent counterfeit entry.",
+      "source": "who.int",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Prevention and response to counterfeit medicines: (1) Purchase only from licensed, authorized distributors; (2) Verify drug appearance (color, shape, imprint, packaging quality); (3) Check for tampering signs; (4) Use verification technologies (serialization, RFID, blockchain where available); (5) Report suspected counterfeits to FDA MedWatch and manufacturer; (6) Test suspicious products through certified laboratories; (7) Notify patients if counterfeit product was dispensed; (8) Coordinate with law enforcement for criminal investigations. Healthcare providers should educate patients about risks of purchasing from unverified online pharmacies. Institutions should maintain secure storage and monitor for diversion. Global efforts include WHO's Member State Mechanism and INTERPOL operations targeting counterfeit drug networks.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Red flags for counterfeit medicines: unusually low prices, packaging differences (spelling errors, poor print quality, different colors), tablet/capsule appearance variations, lack of required labeling elements, missing lot numbers or expiration dates, products from unauthorized sources, and unexpected therapeutic failure or adverse effects. Analytical testing can confirm counterfeits through: dissolution testing, spectroscopy (NIR, Raman), chromatography (HPLC), and mass spectrometry. The FDA maintains an illicit online pharmacy list. DSCSA requirements include: product tracing at transaction level, verification systems for suspect products, and authorization of trading partners. Patients should use VIPPS-accredited online pharmacies. Counterfeit detection increasingly uses smartphone apps and portable spectrometers in resource-limited settings.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["drug safety", "pharmacovigilance", "FDA", "recalls", "regulatory"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Drug recalls are actions taken to remove or correct a marketed drug product that violates FDA regulations. Recalls can be voluntary (initiated by manufacturer) or mandatory (ordered by FDA under FD&C Act Section 518(e)). The FDA classifies recalls into three categories: Class I (reasonable probability of serious adverse health consequences or death), Class II (may cause temporary or medically reversible adverse health consequences), and Class III (unlikely to cause adverse health consequences). The recall process involves notification to distributors, public warnings, effectiveness checks, and status reports to FDA until termination.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "When a drug recall occurs, healthcare providers must: (1) Identify affected lots using recall notices on FDA website; (2) Quarantine inventory immediately; (3) Notify patients who received the product, prioritizing Class I recalls; (4) Arrange replacement therapy with alternative products; (5) Document all actions in patient records; (6) Report adverse events related to recalled products to FDA MedWatch. For Class I recalls involving critical medications (e.g., sterile injectables, life-sustaining drugs), urgent patient notification within 24-48 hours is recommended. Pharmacies must maintain recall logs and participate in FDA effectiveness checks.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Recall classification criteria: Class I requires reasonable probability that use/exposure will cause serious adverse health consequences or death (e.g., contamination with toxic substances, wrong strength of potent drug, absence of active ingredient in life-sustaining drug). Class II applies when use/exposure may cause temporary or medically reversible adverse health consequences, or where probability of serious effects is remote (e.g., minor labeling errors, particulate matter below action levels). Class III covers situations where use/exposure is not likely to cause adverse health consequences (e.g., minor defects in packaging, off-specification appearance without safety impact). Classification determines recall strategy depth and public notification requirements.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

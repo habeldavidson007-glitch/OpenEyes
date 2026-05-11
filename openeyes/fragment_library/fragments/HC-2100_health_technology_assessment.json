@@ -1,0 +1,18 @@
+{
+  "id": "HC-2100",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "health technology assessment",
+    "QALY calculation",
+    "ICER",
+    "interpretation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Cost-effectiveness is determined by the Incremental Cost-Effectiveness Ratio (ICER): (Cost_new - Cost_old) / (QALY_new - QALY_old). An ICER below the threshold indicates good value. QALYs are calculated by multiplying time spent in a health state by its utility weight (0=death, 1=perfect health), derived from instruments like EQ-5D or SF-6D. Criticisms of QALYs include: discrimination against disabled people (lower baseline utility), ageism (older people have fewer life-years to gain), and difficulty capturing caregiver burden. Alternative metrics include Disability-Adjusted Life Years (DALYs) used in global health, and Equal Value of Life Years Gained (evLYG) proposed in the US to avoid QALY limitations.",
+  "source": "nice.org.uk",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

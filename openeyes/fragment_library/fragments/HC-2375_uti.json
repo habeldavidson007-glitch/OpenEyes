@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "UTI",
+    "urinary tract infection",
+    "uncomplicated",
+    "complicated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Urinary tract infections (UTIs) are classified as uncomplicated or complicated. Uncomplicated UTI occurs in healthy, non-pregnant women with no structural/functional urinary tract abnormalities. Complicated UTI involves: male gender, pregnancy, immunocompromise, diabetes, renal failure, urinary obstruction, indwelling catheters, recent instrumentation, or multidrug-resistant pathogens. Cystitis affects the bladder (dysuria, frequency, urgency, suprapubic pain); pyelonephritis involves kidney infection (fever, flank pain, costovertebral angle tenderness). Escherichia coli causes 75-90% of uncomplicated UTIs; other pathogens include Klebsiella, Proteus, Enterococcus, Staphylococcus saprophyticus.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2375",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

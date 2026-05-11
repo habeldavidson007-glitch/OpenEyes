@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["tuberculosis", "latent TB", "active TB", "drug resistance"],
+    "reasoning_role": "definition",
+    "content": "Tuberculosis (TB) is caused by Mycobacterium tuberculosis complex. Latent TB infection (LTBI) represents asymptomatic infection without radiographic or microbiologic evidence of active disease; ~5-10% lifetime reactivation risk (higher in immunocompromised). Active TB disease involves symptomatic infection with tissue destruction, most commonly pulmonary (cough, fever, night sweats, weight loss, hemoptysis) but can be extrapulmonary (lymph nodes, pleura, CNS, bone, genitourinary). Drug-resistant TB includes: MDR-TB (resistant to isoniazid and rifampin), Pre-XDR-TB (MDR + resistance to any fluoroquinolone), XDR-TB (MDR + resistance to any fluoroquinolone + at least one Group A drug: bedaquiline, linezolid, or pretomanid).",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["tuberculosis", "treatment", "drug regimens", "MDR-TB"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Drug-susceptible pulmonary TB: intensive phase 2 months with RIPE (rifampin, isoniazid, pyrazinamide, ethambutol) daily; continuation phase 4 months with RI daily. Alternative 4-month regimen: rifapentine-moxifloxacin-based (CDC TBTC Study 31/A5349). LTBI treatment options: 3HP (isoniazid+rifapentine weekly x3 months), 4R (rifampin daily x4 months), 3HR (isoniazid+rifampin daily x3 months), or 6-9H (isoniazin monotherapy). MDR-TB: all-oral regimens preferred including bedaquiline, linezolid, fluoroquinolone, clofazimine, cycloserine; duration 6-20 months depending on regimen. Newer 6-month BPaLM regimen (bedaquiline, pretomanid, linezolid, moxifloxacin) for MDR/Pre-XDR-TB. Directly observed therapy (DOT) recommended for adherence.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["tuberculosis", "diagnosis", "IGRA", "PPD", "smear"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "LTBI diagnosis: positive IGRA (QuantiFERON-TB Gold, T-SPOT.TB) or TST (PPD) with no evidence of active disease. IGRA preferred for BCG-vaccinated individuals. Active TB diagnosis: 1) Clinical presentation; 2) Chest radiograph (upper lobe infiltrates, cavitation); 3) Microbiologic confirmation via acid-fast bacilli smear microscopy, nucleic acid amplification test (NAAT/Xpert MTB/RIF for rapid detection and rifampin resistance), and mycobacterial culture (gold standard, allows drug susceptibility testing). Three sputum samples collected ≥8 hours apart, at least one early morning. Extrapulmonary TB requires site-specific sampling (CSF, pleural fluid, tissue biopsy). Drug susceptibility testing critical for all isolates given rising resistance.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

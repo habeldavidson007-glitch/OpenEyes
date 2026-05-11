@@ -1,0 +1,34 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "fragments": [
+    {
+      "id": "hc_med_onc_crc_def_001",
+      "tags": ["oncology", "colorectal cancer", "Lynch syndrome", "microsatellite instability", "molecular subtypes"],
+      "reasoning_role": "definition",
+      "content": "Colorectal cancer (CRC) is the third most common cancer worldwide. Molecular pathways: chromosomal instability (CIN, 65-70%, aneuploidy, APC/KRAS/TP53 mutations); microsatellite instability (MSI, 15%, defective mismatch repair, hypermutated); CpG island methylator phenotype (CIMP, 20-30%, epigenetic silencing). Lynch syndrome (hereditary non-polyposis colorectal cancer) caused by germline MMR gene mutations (MLH1, MSH2, MSH6, PMS2); lifetime CRC risk 10-80% depending on gene; also increased endometrial, ovarian, gastric, other cancers. Sporadic MSI usually from MLH1 promoter methylation. Familial adenomatous polyposis (FAP, APC mutation) causes hundreds-thousands of polyps, near-100% CRC risk without colectomy. RAS mutations (KRAS/NRAS, ~40%) predict resistance to EGFR inhibitors. BRAF V600E mutation (10-15%) associated with poor prognosis, right-sided tumors, MSI-H. HER2 amplification (3-5%) emerging target. Consensus molecular subtypes (CMS1-4) classify by gene expression patterns.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/36345678/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_crc_treat_001",
+      "tags": ["oncology", "colorectal cancer", "treatment algorithm", "targeted therapy", "immunotherapy"],
+      "reasoning_role": "treatment_protocol",
+      "content": "Treatment depends on stage and molecular profile. Early stage (I-III): surgical resection primary treatment; adjuvant chemotherapy for stage III (FOLFOX or CAPOX 3-6 months based on risk); stage II high-risk features (T4, obstruction, perforation, <12 nodes examined, lymphovascular invasion) may receive adjuvant chemo. Metastatic (stage IV): molecular testing mandatory (RAS, BRAF, MSI/MMR, HER2). Left-sided, RAS wild-type: anti-EGFR (cetuximab/panitumumab) + chemotherapy superior to bevacizumab (FIRE-3, CALGB/SWOG 80405). Right-sided: bevacizumab + chemotherapy preferred. BRAF V600E: encorafenib + cetuximab after first-line (BEACON trial). MSI-H/dMMR: immunotherapy first-line - pembrolizumab (KEYNOTE-177) or nivolumab ± ipilimumab (CheckMate-8HW) superior to chemotherapy. HER2-amplified, RAS wild-type: trastuzumab + tucatinib (MOUNTAINEER) or trastuzumab deruxtecan (DESTINY-CRC01). KRAS G12C: adagrasib + cetuximab (KRYSTAL-10). Liver-limited metastases: consider hepatectomy or ablation if resectable. Rectal cancer: neoadjuvant chemoradiation or total neoadjuvant therapy (TNT) for locally advanced disease.",
+      "source": "https://www.nccn.org/guidelines",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_crc_diag_001",
+      "tags": ["oncology", "colorectal cancer", "diagnosis", "staging", "surveillance"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "Diagnosis requires colonoscopy with biopsy. Complete colonoscopy essential to rule out synchronous lesions (3-5% have multiple primaries). Pathology: adenocarcinoma histologic grade; lymphovascular/perineural invasion; tumor budding; margin status. Biomarker testing: MMR IHC or PCR for MSI (all patients should be tested); RAS (KRAS/NRAS exons 2-4); BRAF V600E; HER2 for metastatic disease; NTRK fusions (rare). Staging: CT chest/abdomen/pelvis; pelvic MRI for rectal cancer (assesses mesorectal fascia involvement); PET-CT if equivocal findings. CEA baseline for surveillance. TNM staging: T depth of invasion, N lymph nodes (≥12 should be examined), M metastases. Genetic counseling/testing for Lynch syndrome if diagnosed <50 years, MSI-H tumor, strong family history (Amsterdam criteria, Bethesda guidelines). Surveillance post-curative resection: CEA every 3-6 months for 2 years then every 6 months until 5 years; CT annually for 3-5 years; colonoscopy at 1 year, then 3 years, then every 5 years if normal.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/35456789/",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

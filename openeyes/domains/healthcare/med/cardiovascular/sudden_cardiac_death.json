@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["sudden cardiac death", "SCD", "ventricular arrhythmias", "causes"],
+    "reasoning_role": "definition",
+    "content": "Sudden cardiac death (SCD) is unexpected natural death from cardiac cause within 1 hour of symptom onset (or within 24 hours if unwitnessed). Annual incidence ~300,000-350,000 in US; ~50% of all CV deaths. Most common mechanism: ventricular tachyarrhythmias (VF/pulseless VT) in 75-80%; bradyarrhythmias/asystole in remainder. Etiologies by age: <35 years—structural heart disease (hypertrophic cardiomyopathy most common, anomalous coronaries, ARVC), channelopathies (long QT, Brugada, CPVT), commotio cordis, myocarditis; >35 years—coronary artery disease (75-80% have significant CAD, many with prior MI), cardiomyopathies (dilated, hypertrophic), valvular disease (AS), HF. Risk factors: reduced LVEF (strongest predictor), prior MI, HF, family history, genetic mutations, syncope, NSVT on monitoring. Survival depends on immediate CPR and defibrillation—each minute delay reduces survival 7-10%. Most SCD occurs outside hospital (~85%); bystander AED use critical.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/33106097/",
+    "credibility_class": "guideline",
+    "year": 2020
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["ICD", "implantable cardioverter-defibrillator", "primary prevention", "secondary prevention"],
+    "reasoning_role": "treatment_protocol",
+    "content": "ICD therapy for SCD prevention: Secondary prevention (survivors of cardiac arrest or sustained VT with hemodynamic compromise)—Class I indication unless reversible cause identified. Primary prevention (prevent first event): LVEF ≤35% despite ≥3 months GDMT with NYHA class II-III symptoms (ischemic or nonischemic cardiomyopathy); LVEF ≤30% with NYHA class I (ischemic); post-MI ≥40 days (earlier placement not beneficial—DINAMIT trial showed harm); nonischemic dilated cardiomyopathy (DEFINITE, SCD-HeFT trials). Timing critical: wait ≥40 days post-MI, ≥90 days post-revascularization, ≥3 months on GDMT to allow for potential EF recovery. Device types: transvenous ICD (standard), subcutaneous ICD (no intravascular leads—reduces lead complications, no pacing capability except transient post-shock), CRT-D (if QRS ≥150ms with LBBB and EF ≤35%). Complications: inappropriate shocks (SVT, lead failure), infections, lead fractures, psychological impact. Shared decision-making essential, especially in elderly/comorbid patients.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/33106097/",
+    "credibility_class": "guideline",
+    "year": 2020
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["channelopathies", "long QT", "Brugada", "CPVT", "genetic testing"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Inherited arrhythmia syndromes (channelopathies): Long QT syndrome (LQTS)—QTc >460ms women or >450ms men, risk of torsades de pointes triggered by adrenergic stress (LQT1—exercise, LQT2—auditory stimuli, LQT3—sleep); treatment: beta-blockers (nadolol, propranolol most effective), avoid QT-prolonging drugs, ICD if symptomatic despite beta-blockers or very high risk (QTc >500ms, genotype LQT3). Brugada syndrome—coved ST elevation V1-V3 (type 1 diagnostic), VF risk especially during sleep; fever precipitates arrhythmias (aggressive antipyretics); ICD for symptomatic patients, consider for asymptomatic with spontaneous type 1 pattern plus risk factors. Catecholaminergic polymorphic VT (CPVT)—normal resting ECG, bidirectional/polymorphic VT with exercise; RYR2 or CASQ2 mutations; treatment: nadolol, flecainide adjunct, ICD if refractory. Short QT syndrome, early repolarization syndrome rare. Genetic testing recommended for probands, cascade screening for family members. Arrhythmogenic right ventricular cardiomyopathy (ARVC)—fibrofatty replacement of RV, epsilon waves, VT with LBBB morphology; exercise restriction critical (accelerates disease), ICD for high risk.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/33106097/",
+    "credibility_class": "guideline",
+    "year": 2020
+  }
+]

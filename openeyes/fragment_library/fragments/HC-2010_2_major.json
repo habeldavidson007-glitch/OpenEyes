@@ -1,0 +1,18 @@
+{
+  "content": "DSM-5-TR criteria for MDD require \u22655 symptoms during the same 2-week period representing change from previous functioning, with at least one being (1) depressed mood or (2) loss of interest/pleasure. Additional symptoms: significant weight/appetite change, insomnia/hypersomnia, psychomotor agitation/retardation, fatigue, worthlessness/excessive guilt, diminished concentration, recurrent suicidal ideation. Symptoms must cause clinically significant distress/impairment and not be attributable to substances, medical conditions, or better explained by other psychiatric disorders (e.g., bipolar, schizophrenia, bereavement). Specifiers include severity (mild/moderate/severe), psychotic features, remission status, and anxious distress.",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "depression",
+    "assessment"
+  ],
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "year": 2022,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2010",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

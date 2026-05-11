@@ -1,0 +1,40 @@
+{
+  "fragments": [
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Drug-Drug Interactions",
+      "role": "definition",
+      "content": "Drug-drug interactions (DDIs) occur when one drug alters the pharmacokinetics or pharmacodynamics of another. Pharmacokinetic interactions affect ADME: absorption (antacids reduce fluoroquinolone absorption), distribution (protein binding displacement), metabolism (CYP inhibition/induction), excretion (P-glycoprotein competition). Pharmacodynamic interactions involve additive/synergistic effects (benzodiazepines + opioids = respiratory depression) or antagonism (beta-blockers reverse beta-agonists). Clinically significant DDIs cause therapeutic failure or toxicity. Risk increases with polypharmacy, narrow therapeutic index drugs, and comorbidities. Major databases catalog known interactions; clinical judgment determines relevance.",
+      "tags": ["drug_interactions", "pharmacokinetic", "pharmacodynamic", "polypharmacy", "DDI"],
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2025
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Drug-Drug Interactions",
+      "role": "treatment_protocol",
+      "content": "Management strategies for DDIs: avoid combination if alternative exists (clarithromycin + simvastatin → use azithromycin or pravastatin); adjust dose (warfarin dose reduction when starting amiodarone); monitor closely (INR when antibiotics alter warfarin metabolism); separate administration times (levothyroxine 4 hours from calcium/iron); stagger dosing to minimize PK interactions. High-risk combinations requiring avoidance: MAO inhibitors + SSRIs (serotonin syndrome); nitrates + PDE5 inhibitors (severe hypotension); QT-prolonging drugs combined (torsades risk); dual antiplatelet + anticoagulant (bleeding - limit duration). Use interaction checkers before prescribing; educate patients about OTC/herbal interactions (St. John's wort induces CYP3A4).",
+      "tags": ["interaction_management", "dose_adjustment", "monitoring", "avoidance_strategies"],
+      "source": "nih.gov",
+      "credibility_class": "A",
+      "year": 2025
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Drug-Drug Interactions",
+      "role": "diagnostic_criteria",
+      "content": "DDI severity classification: Contraindicated (major toxicity expected, avoid combination); Major (potential serious outcome, usually avoid but may use with monitoring/modification); Moderate (effect may be noticeable, consider modification); Minor (minimal clinical significance). Interaction mechanism determination: timing helps distinguish PK (delayed onset as levels change) vs PD (immediate effect). In vitro studies predict interactions using recombinant enzymes, hepatocytes, transporter assays. Clinical DDI studies measure AUC/Cmax changes in presence of perpetrator drug. Regulatory guidance requires DDI evaluation during drug development for new molecular entities. Real-world evidence from pharmacovigilance databases identifies rare interactions not detected in trials.",
+      "tags": ["severity_classification", "mechanism_determination", "DDI_studies", "regulatory_requirements"],
+      "source": "ema.europa.eu",
+      "credibility_class": "A",
+      "year": 2025
+    }
+  ]
+}

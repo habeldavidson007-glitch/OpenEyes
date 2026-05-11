@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["HFpEF", "heart failure with preserved ejection fraction", "diastolic dysfunction", "pathophysiology"],
+    "reasoning_role": "definition",
+    "content": "Heart failure with preserved ejection fraction (HFpEF) accounts for ~50% of all heart failure cases. Defined as HF syndrome with LVEF ≥50%, evidence of structural heart disease (LVH, LA enlargement) or diastolic dysfunction (elevated filling pressures). Pathophysiology: systemic proinflammatory state (obesity, diabetes, aging, hypertension) causes coronary microvascular endothelial inflammation, reduced NO bioavailability, cardiomyocyte hypertrophy and fibrosis, increased passive stiffness, impaired relaxation. Unlike HFrEF, no single dominant mechanism—heterogeneous phenotype. Comorbidities integral to pathophysiology: obesity, diabetes, AF, CKD, anemia, sleep apnea, pulmonary hypertension. Demographics: older, more often female, higher BMI, more non-cardiac comorbidities than HFrEF. Natural history: similar mortality to HFrEF, more hospitalizations for non-CV causes.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
+    "credibility_class": "guideline",
+    "year": 2022
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["HFpEF", "diagnosis", "H2FPEF score", "echocardiography"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "HFpEF diagnosis requires integration of clinical, laboratory, and imaging data. HFA-PEFF algorithm: Step 1—pretest assessment (symptoms, signs, NT-proBNP >125 pg/mL or BNP >35 pg/mL, ECG); Step 2—echocardiography (structural: LV mass index ≥95 g/m² men or ≥85 g/m² women, LA volume index ≥34 mL/m²; functional: average E/e' ≥13, TR velocity >2.8 m/s, global longitudinal strain <16%); score ≥5 diagnostic. H2FPEF score: Heavy (BMI >30, 2 pts), Hypertensive (2+ antihypertensives, 1 pt), Atrial fibrillation (1 pt), Pulmonary hypertension (TR velocity >2.8 m/s, 1 pt), Elder (>60 years, 1 pt), Filling pressure (E/e' >9, 1 pt); score ≥6 high probability. Exercise testing with stress echo or invasive hemodynamics (gold standard—PCWP >15 mmHg at rest or >25 mmHg with exercise) for uncertain cases. Cardiac MRI for tissue characterization (fibrosis, amyloid).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/30683100/",
+    "credibility_class": "guideline",
+    "year": 2019
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["HFpEF", "treatment", "SGLT2 inhibitors", "evidence gaps"],
+    "reasoning_role": "treatment_protocol",
+    "content": "HFpEF treatment focuses on symptom management and comorbidity optimization. Diuretics essential for volume overload (loop diuretics, add thiazide for synergy). SGLT2 inhibitors: EMPEROR-Preserved and DELIVER trials showed empagliflozin and dapagliflozin reduce HF hospitalizations across EF spectrum including HFpEF (now Class 2a recommendation, evolving to Class 1). Blood pressure control critical (target <130/80). ARNI: PARAGON-HF showed trend toward benefit vs valsartan, especially in women, EF <57%, lower NT-proBNP; reasonable alternative to ACEi/ARB. MRA: TOPCAT trial showed benefit in Americas cohort (higher event rates); consider in selected patients. Treat comorbidities aggressively: AF (rate/rhythm control, anticoagulation), obesity (weight loss—LEGACY trial showed improved symptoms), diabetes (SGLT2i, GLP-1 agonists), sleep apnea (CPAP), anemia/iron deficiency (IV iron), ischemia (revascularization if indicated). Exercise training improves functional capacity and quality of life. No proven mortality-reducing therapy yet—major evidence gap compared to HFrEF.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/36853285/",
+    "credibility_class": "clinical_trial",
+    "year": 2023
+  }
+]

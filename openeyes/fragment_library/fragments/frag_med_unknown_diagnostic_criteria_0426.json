@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0426",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "diabetes",
+    "autoantibodies",
+    "C-peptide",
+    "DKA",
+    "diagnosis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnosis confirmed by hyperglycemia criteria (same as T2DM: HbA1c \u22656.5%, fasting glucose \u2265126 mg/dL, random \u2265200 mg/dL with symptoms) PLUS evidence of autoimmune beta-cell destruction. Diagnostic workup: measure diabetes autoantibodies (GAD65 most sensitive, IA-2, ZnT8, IAA); low/undetectable C-peptide indicates insulin deficiency. DKA presentation common at diagnosis: glucose >250 mg/dL, pH <7.3, bicarbonate <18 mEq/L, positive ketones. Differentiation from T2DM critical: younger age, lean body habitus, rapid onset, ketosis-prone favor T1DM. Staging system proposed: Stage 1 (normoglycemia + \u22652 autoantibodies), Stage 2 (dysglycemia + autoantibodies), Stage 3 (clinical diabetes). Screening autoantibodies in first-degree relatives considered for prevention trials.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985567/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

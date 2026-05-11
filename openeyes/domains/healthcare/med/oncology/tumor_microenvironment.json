@@ -1,0 +1,34 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "fragments": [
+    {
+      "id": "hc_med_onc_tme_def_001",
+      "tags": ["oncology", "tumor microenvironment", "immune cells", "stroma", "immunotherapy response"],
+      "reasoning_role": "definition",
+      "content": "The tumor microenvironment (TME) comprises cancer cells and surrounding non-malignant cells that influence tumor behavior. Cellular components: immune cells (T-cells, B-cells, NK cells, macrophages, dendritic cells, myeloid-derived suppressor cells, neutrophils); stromal cells (cancer-associated fibroblasts, endothelial cells, pericytes, adipocytes). Non-cellular components: extracellular matrix (collagen, fibronectin, hyaluronic acid), cytokines, chemokines, growth factors, metabolites. TME classification: 'hot' tumors (inflamed, T-cell infiltrated, responsive to immunotherapy - melanoma, NSCLC, MSI-H cancers); 'cold' tumors (immune-excluded or immune-desert, poor immunotherapy response - pancreatic, prostate, glioblastoma). Immunosuppressive mechanisms: PD-L1 expression, T-regulatory cells, M2 macrophages, MDSCs, inhibitory cytokines (TGF-β, IL-10), metabolic suppression (adenosine, tryptophan depletion, lactate accumulation). TME evolves under treatment pressure, contributing to resistance.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/36234567/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_tme_treat_001",
+      "tags": ["oncology", "tumor microenvironment", "therapeutic targeting", "combination strategies"],
+      "reasoning_role": "treatment_protocol",
+      "content": "Targeting the TME enhances treatment efficacy. Converting 'cold' to 'hot' tumors: radiation therapy induces immunogenic cell death, releases antigens; certain chemotherapies (anthracyclines, oxaliplatin) are immunogenic; oncolytic viruses (T-VEC) directly infect tumors and stimulate immunity; STING agonists activate innate immunity. Overcoming immunosuppression: anti-VEGF agents normalize vasculature, reduce MDSCs (bevacizumab combinations); CSF-1R inhibitors deplete M2 macrophages; TGF-β inhibitors block stromal barrier; adenosine pathway inhibitors (CD73, A2A receptor antagonists); IDO inhibitors (mixed results). Targeting cancer-associated fibroblasts: FAP-targeted therapies, vitamin D analogs, hedgehog inhibitors (limited success in pancreatic cancer). Improving T-cell infiltration: CXCR4 inhibitors disrupt stromal barrier; hyaluronidase reduces matrix density. Combination approaches: checkpoint inhibitors + anti-angiogenics (pembrolizumab + lenvatinib); CAR-T cells with TME-modifying agents; bispecific antibodies engaging T-cells. Clinical trials ongoing for many TME-targeting strategies.",
+      "source": "https://www.nccn.org/guidelines",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "hc_med_onc_tme_diag_001",
+      "tags": ["oncology", "tumor microenvironment", "biomarkers", "gene expression profiling", "spatial analysis"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "TME characterization guides treatment selection. Gene expression profiling: immunoscore quantifies CD3+ and CD8+ T-cell density in tumor core and invasive margin (validated in colorectal cancer); T-cell inflamed gene signature predicts checkpoint inhibitor response; TGF-β signature identifies patients unlikely to benefit from immunotherapy alone. Multiplex immunohistochemistry: simultaneous detection of multiple markers (CD3, CD8, PD-1, PD-L1, FOXP3, CD68) preserves spatial relationships; identifies immune cell localization and interactions. Spatial transcriptomics: maps gene expression to tissue architecture; reveals cell-cell communication networks. Imaging biomarkers: PET tracers for immune cell tracking (investigational); radiomics extracts features from CT/MRI correlating with TME characteristics. Circulating biomarkers: cytokine profiles; exosome content; ctDNA dynamics reflect TME changes. Functional assays: organoid co-cultures with autologous immune cells test drug sensitivity. TME assessment increasingly integrated into clinical trials for patient stratification.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/35345678/",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

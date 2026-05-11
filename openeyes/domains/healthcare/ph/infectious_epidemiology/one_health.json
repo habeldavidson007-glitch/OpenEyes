@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_onehealth_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["One Health", "human-animal-environment interface", "zoonoses", "public health"],
+    "reasoning_role": "definition",
+    "content": "One Health is a collaborative, multisectoral approach recognizing that human health is interconnected with animal and environmental health. The framework addresses complex health challenges at the human-animal-environment interface: zoonotic diseases (60% of human pathogens), antimicrobial resistance (driven by use in humans, animals, agriculture), food safety (contamination along farm-to-table chain), and climate change impacts on disease patterns. One Health emphasizes that solutions require coordination across human medicine, veterinary medicine, environmental science, and related disciplines. Approximately 75% of emerging infectious diseases are zoonotic, making One Health critical for pandemic prevention.",
+    "source": "WHO-FAO-OIE-WHOE One Health Joint Plan, CDC One Health framework",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_onehealth_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["One Health implementation", "intersectoral collaboration", "zoonotic disease control"],
+    "reasoning_role": "treatment_protocol",
+    "content": "One Health implementation requires: (1) Institutional mechanisms—joint committees, memoranda of understanding between ministries; (2) Integrated surveillance—shared data systems linking human, animal, and environmental monitoring; (3) Coordinated outbreak response—joint investigation teams, shared laboratory capacity; (4) Workforce development—cross-disciplinary training, joint exercises; (5) Research collaboration—prioritize transdisciplinary projects; (6) Policy alignment—harmonized regulations on antibiotic use, wildlife trade, food safety. Successful examples: rabies elimination through coordinated dog vaccination and human PEP, avian influenza control through poultry culling and farmer protection, AMR reduction through stewardship in human and veterinary sectors.",
+    "source": "One Health Joint Plan of Action (WHO/FAO/OIE/WOAH), Lancet One Health Commission",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_onehealth_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["One Health metrics", "intersectoral coordination", "evaluation framework"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "One Health effectiveness measured through: process indicators (frequency of intersectoral meetings, data sharing agreements, joint training events), output indicators (integrated surveillance reports, coordinated outbreak responses, joint research publications), and outcome indicators (reduced zoonotic disease incidence, slower AMR emergence, improved food safety metrics). Barriers to implementation: siloed funding streams, disciplinary jargon differences, lack of career incentives for collaboration, and data sharing restrictions. Enablers include: high-level political commitment, dedicated coordination offices, shared laboratory infrastructure, and standardized data formats. Economic analyses demonstrate cost-effectiveness of preventive One Health approaches versus reactive responses.",
+    "source": "Frontiers in Public Health One Health evaluations, WHO Joint External Evaluation tools",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

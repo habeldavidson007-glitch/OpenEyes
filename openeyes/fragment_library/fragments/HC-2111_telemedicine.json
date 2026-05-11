@@ -1,0 +1,18 @@
+{
+  "id": "HC-2111",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "telemedicine",
+    "implementation",
+    "hybrid care",
+    "equity"
+  ],
+  "reasoning_role": "definition",
+  "content": "Effective telemedicine implementation requires: (1) Technology infrastructure - broadband access, user-friendly platforms, EHR integration; (2) Workflow redesign - pre-visit tech checks, virtual waiting rooms, appropriate triage (which conditions suitable for telehealth); (3) Reimbursement parity - CMS and private payers now covering telehealth at similar rates to in-person (temporary COVID waivers made permanent for many services); (4) Hybrid care models - combining in-person and virtual visits based on clinical need; (5) Addressing digital divide - providing devices, data plans, tech support for underserved populations. Studies show telehealth reduces no-show rates (from 15-20% to 5-10%), improves chronic disease control (HbA1c reduction 0.5-1.0%), and increases access for rural/mobility-limited patients.",
+  "source": "ahrq.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

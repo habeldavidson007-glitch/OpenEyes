@@ -1,0 +1,19 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hypertension",
+    "cardiovascular",
+    "diagnosis",
+    "staging",
+    "treatment"
+  ],
+  "reasoning_role": "definition",
+  "content": "Hypertension is defined as sustained elevated blood pressure. ACC/AHA 2017 guidelines define Stage 1 as SBP 130-139 or DBP 80-89 mmHg; Stage 2 as SBP \u2265140 or DBP \u226590 mmHg. JNC8 and European guidelines use \u2265140/90 threshold. Diagnosis requires average of \u22652 readings on \u22652 occasions. White coat hypertension (elevated in office, normal at home) and masked hypertension (normal in office, elevated at home) require ambulatory or home monitoring for accurate diagnosis. Primary (essential) hypertension accounts for 90-95% of cases; secondary causes include renal disease, primary aldosteronism, obstructive sleep apnea, thyroid disorders, and medications (NSAIDs, decongestants, oral contraceptives).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/29133354/",
+  "credibility_class": "guideline",
+  "year": 2017,
+  "id": "HC-2402",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "HC-2060",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "Rt",
+    "intervention effectiveness",
+    "epidemic control"
+  ],
+  "reasoning_role": "definition",
+  "content": "Driving Rt below 1 requires reducing transmission through multiple mechanisms: decreasing infectious period (testing, isolation, treatment), reducing transmission probability (masks, ventilation, hand hygiene), or reducing contact rate (social distancing, lockdowns, school closures). The combination needed depends on initial Rt. For example, if Rt = 2.5 without interventions, measures must reduce transmission by >60% to achieve Rt < 1. Real-time Rt monitoring enables adaptive responses: intensifying measures when Rt rises, relaxing when sustained below 1. Lag time between intervention and Rt change equals generation time plus reporting delay.",
+  "source": "Lancet Infectious Diseases, WHO pandemic response guidelines",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

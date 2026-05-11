@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["antimicrobial stewardship", "AMS", "antibiotic optimization", "resistance prevention"],
+    "reasoning_role": "definition",
+    "content": "Antimicrobial stewardship (AMS) refers to coordinated interventions promoting appropriate antimicrobial use: right drug, dose, duration, route. Goals: optimize clinical outcomes, minimize unintended consequences (toxicity, C. difficile, resistance selection), preserve antimicrobial effectiveness. CDC Core Elements for hospitals: leadership commitment, accountability (physician leader), pharmacy expertise, action (at least one recommended intervention like prospective audit/feedback or formulary restriction), tracking (antibiotic use and resistance), reporting (regular feedback to prescribers), education. Stewardship applies beyond antibiotics to antifungals, antivirals, antiparasitics. Drivers of inappropriate use: diagnostic uncertainty, patient expectations, time pressure, fear of treatment failure, habit. Resistance is a collective action problem - individual prescribing affects community/ecosystem.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["antimicrobial stewardship", "interventions", "audit and feedback", "de-escalation"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Effective AMS interventions: 1) Prospective audit with feedback: pharmacist/ID physician reviews cultures, recommends narrowing, IV-to-PO conversion, dose optimization, duration; 2) Formulary restriction/preauthorization for broad-spectrum agents; 3) Clinical pathways/order sets for common syndromes (CAP, UTI, SSTI); 4) Diagnostic stewardship: appropriate culture collection, procalcitonin algorithms to guide initiation/discontinuation; 5) Time-out at 48-72 hours: reassess need when cultures return; 6) De-escalation: narrow spectrum based on culture results; 7) Duration optimization: shorter courses often equivalent (5 days CAP, 3-5 days uncomplicated cystitis, 7 days Gram-negative bacteremia). Outpatient stewardship addresses ~80% of antibiotic volume: delayed prescribing, symptom management, patient education materials.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["antimicrobial stewardship", "metrics", "DOT", "resistance tracking"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "AMS program metrics: 1) Process measures: antibiotic time-out completion, guideline adherence, IV-to-PO conversion rates; 2) Outcome measures: Days of Therapy (DOT) per 1,000 patient-days (preferred over defined daily doses), resistance rates (MRSA, VRE, CRE, ESBL), C. difficile infection rates, adverse drug events; 3) Balancing measures: clinical cure rates, readmissions, mortality (ensure stewardship doesn't compromise care). Antibiotic Spectrum Index quantifies collateral damage. Benchmarking against NHSN data. Economic impact: reduced drug costs offset by personnel; overall cost savings from prevented adverse events and shorter LOS. Diagnostic accuracy metrics: appropriate culture collection before antibiotics, rapid test utilization. Stewardship ROI demonstrated in multiple studies through reduced consumption without increased complications.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

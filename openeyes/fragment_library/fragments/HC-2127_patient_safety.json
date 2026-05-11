@@ -1,0 +1,18 @@
+{
+  "id": "HC-2127",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "patient safety",
+    "measurement",
+    "HACs",
+    "PSIs"
+  ],
+  "reasoning_role": "definition",
+  "content": "Patient safety measurement uses: (1) AHRQ Patient Safety Indicators (PSIs) - 21 measures derived from administrative data (e.g., PSI-9 postoperative hemorrhage, PSI-12 DVT/PE); (2) CDC NHSN surveillance - standardized infection ratios for HAIs comparing observed to predicted infections; (3) Trigger tools - retrospective chart review using 'triggers' (antidote administration, lab abnormalities) identifying adverse events missed by voluntary reporting; (4) Global Trigger Tool - IHI method finding 30-50% of patients experience harm; (5) Patient-reported safety concerns. Hospital-acquired condition rates: CLABSI 0.5-2.0 per 1,000 line-days, CAUTI 1.5-4.0 per 1,000 catheter-days, C. difficile 3-8 per 10,000 patient-days. Top decile hospitals achieve 50% lower rates than bottom decile.",
+  "source": "ahrq.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

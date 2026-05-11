@@ -1,0 +1,19 @@
+{
+  "id": "neuro-sleep-dx",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "sleep-disorders",
+    "diagnosis",
+    "polysomnography",
+    "MSLT",
+    "sleep-study"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sleep disorder diagnosis requires clinical evaluation and often sleep studies. OSA: in-lab polysomnography (PSG) is gold standard\u2014measures EEG, EOG, EMG, airflow, respiratory effort, oxygen saturation, ECG, leg movements. AHI = (apneas + hypopneas)/hour sleep. Home sleep apnea testing (HSAT) acceptable for uncomplicated suspected OSA. Narcolepsy: overnight PSG followed by Multiple Sleep Latency Test (MSLT)\u2014mean sleep latency <8 minutes plus \u22652 sleep-onset REM periods (SOREMPs) confirms diagnosis. CSF hypocretin-1 low in narcolepsy type 1. RLS: clinical diagnosis using four essential criteria (urge to move legs, worse at rest, relieved by movement, worse evening/night); supported by periodic limb movements on PSG, low ferritin. Insomnia: clinical diagnosis based on history; PSG not routinely indicated unless suspect sleep apnea, periodic limb movement disorder, or parasomnias. Sleep diaries and actigraphy (wearable movement monitor) for 1-2 weeks assess sleep patterns and circadian rhythms. Epworth Sleepiness Scale quantifies daytime sleepiness (score >10 abnormal). Differential diagnosis: insufficient sleep syndrome, depression, medication effects, medical conditions (pain, nocturia, dyspnea).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

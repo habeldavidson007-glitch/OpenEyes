@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["bloodstream infection", "BSI", "catheter-related", "sepsis"],
+    "reasoning_role": "definition",
+    "content": "Bloodstream infections (BSI) are classified as primary (no identifiable source) or secondary (from focus like pneumonia, UTI, intra-abdominal). Catheter-related bloodstream infection (CRBSI) requires: positive blood culture from catheter AND clinical signs of infection (fever, chills, hypotension) AND no other apparent source. Central line-associated BSI (CLABSI) is CDC surveillance definition: laboratory-confirmed BSI in patient with central line within 48 hours, not related to infection at another site. Common pathogens: coagulase-negative staphylococci (especially catheter-associated), S. aureus, Enterobacteriaceae, Candida species, Pseudomonas. Risk factors: central venous catheters, total parenteral nutrition, hemodialysis, immunosuppression, prolonged hospitalization. Mortality 15-25%, higher with multidrug-resistant organisms and delayed appropriate therapy.",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["bloodstream infection", "treatment", "empiric antibiotics", "source control"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Empiric therapy for suspected BSI/sepsis: vancomycin (MRSA coverage) + antipseudomonal beta-lactam (cefepime, piperacillin-tazobactam, meropenem) based on local antibiogram and patient risk factors. Add echinocandin if Candida risk (TPN, abdominal surgery, prolonged antibiotics, femoral catheter). De-escalate based on culture results. CRBSI management: remove catheter if S. aureus, Candida, Pseudomonas, Bacillus, Mycobacterium, or if severe sepsis/hemodynamic instability; consider antibiotic lock therapy with catheter salvage for coagulase-negative staphylococci if no complications. Duration: uncomplicated Gram-negative 7 days, S. aureus minimum 14 days from first negative culture (longer if metastatic foci), Candida 14 days after clearance. Echocardiography recommended for S. aureus bacteremia to rule out endocarditis.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["bloodstream infection", "diagnosis", "blood culture", "differential time"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "BSI diagnosis: 1) Blood cultures before antibiotics (2-3 sets from different sites, 20-30mL per set for adults); 2) For suspected CRBSI: paired quantitative cultures from catheter and peripheral vein (≥3:1 ratio catheter:peripheral suggests CRBSI) or differential time to positivity (DTP ≥2 hours earlier from catheter indicates CRBSI). Contaminants vs true pathogens: coagulase-negative staphylococci, Corynebacterium, Propionibacterium often contaminants unless multiple positive cultures or prosthetic material present. Rapid diagnostics: PCR panels (BioFire, T2), MALDI-TOF for organism ID, molecular resistance gene detection. Imaging to identify source/metastatic infection. Procalcitonin kinetics may guide duration. Remove and culture catheter tip if removed (≥15 CFU by roll plate method significant).",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

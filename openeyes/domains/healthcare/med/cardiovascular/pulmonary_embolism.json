@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["pulmonary embolism", "PE", "pathophysiology", "Virchow triad"],
+    "reasoning_role": "definition",
+    "content": "Pulmonary embolism (PE) is obstruction of pulmonary artery or branches, usually by thrombus from deep veins (DVT). Annual incidence ~1-2 per 1000. Pathophysiology: thrombus dislodges from proximal leg/pelvic veins, travels to pulmonary circulation, causes mechanical obstruction (increased pulmonary vascular resistance, RV strain/failure) and humoral mediator release (hypoxic vasoconstriction, ventilation-perfusion mismatch). Virchow's triad: stasis (immobility, heart failure, AF), endothelial injury (surgery, trauma, catheters), hypercoagulability (cancer, pregnancy, OCPs, inherited thrombophilias). Risk stratification crucial for management: massive (high-risk) PE with hypotension/shock—highest mortality; submassive (intermediate-risk) with RV dysfunction but normal BP; low-risk without RV dysfunction or biomarker elevation. Clinical presentation: dyspnea (most common), pleuritic chest pain, cough, hemoptysis, syncope (suggests massive PE), tachycardia, tachypnea, hypoxia. Wells score and Geneva score estimate pretest probability.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+    "credibility_class": "guideline",
+    "year": 2022
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["PE", "diagnosis", "CTPA", "D-dimer", "risk stratification"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "PE diagnosis algorithm: assess clinical probability (Wells or Geneva score). Low/moderate probability: D-dimer first (high sensitivity, low specificity); if negative, PE ruled out; if positive, proceed to imaging. High probability or unstable: proceed directly to CT pulmonary angiography (CTPA)—gold standard showing filling defect in pulmonary arteries. CTPA contraindications (renal failure, contrast allergy): V/Q scan (preferred if normal CXR, pregnancy) or lower extremity ultrasound (if DVT found, treat as PE). ECG may show sinus tachycardia, S1Q3T3 pattern, RBBB, T-wave inversions V1-V4 (RV strain). Troponin and BNP elevated with RV strain. Echocardiogram: RV dilation, McConnell sign (RV free wall akinesis with apical sparing), septal flattening, pulmonary hypertension—critical in unstable patients. PESI (Pulmonary Embolism Severity Index) or sPESI stratifies mortality risk. Simplified Geneva and Wells scores guide testing strategy.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+    "credibility_class": "guideline",
+    "year": 2022
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["PE treatment", "anticoagulation", "thrombolysis", "embolectomy"],
+    "reasoning_role": "treatment_protocol",
+    "content": "PE treatment based on risk stratification. All patients: anticoagulation unless contraindicated. DOACs preferred for most (apixaban, rivaroxaban allow immediate oral loading; dabigatran/edoxaban require 5 days parenteral bridging). LMWH preferred in cancer (though DOACs increasingly used), severe renal impairment (CrCl <30), pregnancy. Warfarin if DOACs contraindicated/unavailable. Duration: 3 months for provoked PE (transient risk factor resolved); extended/indefinite for unprovoked PE, recurrent VTE, active cancer, ongoing risk factors. Massive PE (hypotension/shock): systemic thrombolysis (alteplase 100mg over 2 hours) unless absolute contraindication (prior hemorrhagic stroke, active bleeding, recent neurosurgery); reduces mortality but increases major bleeding including intracranial hemorrhage. Catheter-directed thrombolysis (lower dose) or mechanical thrombectomy alternatives for high bleeding risk. Surgical embolectomy for failed thrombolysis or contraindications. Intermediate-risk PE: monitor closely; consider rescue thrombolysis if deterioration. Low-risk PE: early discharge possible with DOACs. IVC filter only if absolute contraindication to anticoagulation or recurrent PE despite therapeutic anticoagulation.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+    "credibility_class": "guideline",
+    "year": 2022
+  }
+]

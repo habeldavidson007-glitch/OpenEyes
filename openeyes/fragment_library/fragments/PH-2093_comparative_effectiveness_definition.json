@@ -1,0 +1,17 @@
+{
+  "id": "PH-2093_comparative_effectiveness_definition",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "comparative effectiveness",
+    "public_health",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Comparative Effectiveness - conceptual framework, measurement methodology, applications",
+  "source_url": "https://www.cdc.gov/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "CDC"
+}

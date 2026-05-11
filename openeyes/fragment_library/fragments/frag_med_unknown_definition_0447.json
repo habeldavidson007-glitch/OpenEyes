@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0447",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "vestibular-disorders",
+    "diagnosis",
+    "Dix-Hallpike",
+    "head-thrust",
+    "audiometry"
+  ],
+  "reasoning_role": "definition",
+  "content": "Vestibular diagnosis requires careful history and bedside examination. History: timing (episodic vs continuous), triggers (positional, spontaneous), duration (seconds = BPPV; minutes-hours = M\u00e9ni\u00e8re's, vestibular migraine; days = neuritis), associated symptoms (hearing loss, tinnitus, headache, focal neurologic signs). Dix-Hallpike test for BPPV: rapid head extension and rotation elicits torsional-upbeating nystagmus with latency and fatigability (posterior canal). Supine roll test for horizontal canal BPPV. HINTS exam for acute vestibular syndrome (differentiates stroke from neuritis): Head Impulse test (abnormal = peripheral), Nystagmus (direction-changing = central), Test of Skew (vertical deviation = central); HINTS more sensitive than MRI early in stroke. Audiometry: low-frequency sensorineural hearing loss in M\u00e9ni\u00e8re's. VNG (videonystagmography) assesses ocular motor and caloric function. vHIT (video head impulse test) quantifies vestibulo-ocular reflex. VEMP (vestibular evoked myogenic potentials) tests otolith function. Rotatory chair for bilateral vestibulopathy. MRI internal auditory canals with gadolinium for suspected acoustic neuroma, central causes. Orthostatic vitals for orthostatic hypotension mimicking dizziness.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

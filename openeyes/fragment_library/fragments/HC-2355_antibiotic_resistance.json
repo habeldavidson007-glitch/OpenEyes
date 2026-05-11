@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "antibiotic resistance",
+    "stewardship",
+    "clinical management"
+  ],
+  "reasoning_role": "definition",
+  "content": "Management of antibiotic-resistant infections requires: 1) Source control (drainage, debridement, device removal); 2) Empiric therapy based on local antibiogram and patient risk factors; 3) Definitive therapy guided by culture/sensitivity results; 4) Combination therapy for certain resistant organisms (e.g., carbapenem-resistant Enterobacteriaceae). Antimicrobial stewardship programs reduce resistance through: prospective audit with feedback, formulary restrictions, diagnostic stewardship, dose optimization using pharmacokinetic/pharmacodynamic principles, and de-escalation when cultures return. CDC Core Elements include leadership commitment, accountability, drug expertise, action, tracking, reporting, and education.",
+  "source": "cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2355",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

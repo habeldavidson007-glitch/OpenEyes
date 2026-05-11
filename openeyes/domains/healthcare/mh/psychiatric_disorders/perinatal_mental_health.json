@@ -1,0 +1,32 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "topic": "Perinatal Mental Health",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Perinatal mental health disorders occur during pregnancy and/or within 12 months postpartum. Postpartum depression (PPD) affects ~10-15% of mothers, characterized by depressed mood, anhedonia, guilt, fatigue, sleep/appetite disturbances, difficulty bonding with infant. Postpartum anxiety and OCD also common. Postpartum psychosis is rare (~1-2/1000 births) but psychiatric emergency involving delusions, hallucinations, confusion, typically onset within 2 weeks postpartum; strong association with bipolar disorder. Risk factors: history of depression/anxiety, inadequate social support, stressful life events, obstetric complications, infant temperament. Untreated perinatal mental illness affects maternal functioning, infant development, family relationships.",
+      "tags": ["postpartum-depression", "perinatal", "PPD", "postpartum-psychosis"],
+      "source": "https://www.nimh.nih.gov/health/topics/womens-mental-health",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Screening: Edinburgh Postnatal Depression Scale (EPDS), PHQ-9 at prenatal/postpartum visits. Mild-moderate depression: psychotherapy first-line (IPT, CBT), peer support, practical support. Moderate-severe: antidepressants (SSRIs—sertraline most studied in breastfeeding, considered compatible), often combined with psychotherapy. Brexanolone (IV allopregnanolone) FDA-approved for severe PPD; zuranolone (oral) also approved. Postpartum psychosis: psychiatric hospitalization, mood stabilizers (lithium), antipsychotics, ECT if severe; contraindicated to leave mother alone with infant until stabilized. Treatment decisions balance maternal benefit, breastfeeding considerations, infant exposure. Partner/family involvement important. Early intervention improves outcomes.",
+      "tags": ["EPDS", "SSRI", "sertraline", "brexanolone", "psychotherapy", "lithium"],
+      "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "DSM-5-TR includes 'with peripartum onset' specifier for depressive/bipolar episodes: onset during pregnancy or within 4 weeks postpartum (though clinically, postpartum period often extended to 12 months). Postpartum depression meets criteria for Major Depressive Disorder with peripartum specifier. Key features may include: mood lability, tearfulness, anxiety about infant care, intrusive thoughts about harm to infant (distinguish from psychotic commands), difficulty bonding. Postpartum 'blues' (50-80% of mothers): mild mood symptoms days 3-5 postpartum, self-limited, doesn't meet depression criteria. Postpartum psychosis: rapid onset mood symptoms (mania/depression), delusions (often infant-related), hallucinations, disorganization, insomnia; requires immediate evaluation as psychiatric emergency.",
+      "tags": ["DSM-5-TR", "peripartum-onset", "postpartum-depression", "screening", "EPDS"],
+      "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+      "credibility_class": "A",
+      "year": 2022
+    }
+  ]
+}

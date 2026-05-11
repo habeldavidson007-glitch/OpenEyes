@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["drug shortages", "supply chain", "FDA", "clinical management", "regulatory response"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Drug shortages occur when demand exceeds supply of a medically necessary drug. The FDA defines a shortage as a period when total supply cannot meet current or projected demand at the user level. Causes include: manufacturing quality issues (sterility failures, contamination), raw material shortages, production delays, business decisions (discontinuation of low-margin generics), increased demand, regulatory actions, and natural disasters. Shortages disproportionately affect sterile injectables, oncology drugs, antibiotics, and parenteral nutrition components. The FDA Drug Shortage Database tracks ongoing shortages. Since 2013, FDA has required manufacturers to notify FDA of potential discontinuations or interruptions that could lead to shortages.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Clinical management during drug shortages: (1) Assess inventory and project duration; (2) Implement conservation strategies (dose optimization, alternative routes, smaller vial sizes); (3) Identify therapeutic alternatives within class or different classes; (4) Develop institutional protocols for prioritization (e.g., reserve critical drugs for most vulnerable patients); (5) Communicate with prescribers about available alternatives and dosing changes; (6) Compound preparations if commercially unavailable (following USP <797> standards); (7) Coordinate with group purchasing organizations and other institutions; (8) Document all substitutions in medical records. ASHP guidelines recommend forming multidisciplinary shortage committees. Patient safety must remain paramount; avoid using expired products unless no alternatives exist and benefits clearly outweigh risks.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Shortage severity classification: Critical (no alternatives available, life-saving drug, immediate patient harm expected), Significant (limited alternatives, may require treatment modifications), Moderate (alternatives available with some clinical differences). FDA prioritizes resolution based on severity. Regulatory responses include: expedited review of supplemental applications for new manufacturers, temporary importation of foreign-approved versions, enforcement discretion for minor specification deviations, and compounding pharmacy authorization. The Food and Drug Administration Safety and Innovation Act (FDASIA) enhanced FDA's ability to prevent and mitigate shortages. Manufacturers face penalties for failing to report potential shortages. Long-term solutions include diversifying supply chains, maintaining buffer inventories, and addressing economic disincentives for generic production.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

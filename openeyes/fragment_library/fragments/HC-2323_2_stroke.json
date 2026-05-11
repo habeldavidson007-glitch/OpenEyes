@@ -1,0 +1,19 @@
+{
+  "id": "neuro-stroke-dx",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "stroke",
+    "diagnosis",
+    "imaging",
+    "NIHSS",
+    "ASPECTS"
+  ],
+  "reasoning_role": "definition",
+  "content": "Stroke diagnosis requires: (1) Clinical assessment using NIH Stroke Scale (NIHSS, score 0-42, higher=worse) evaluating consciousness, gaze, visual fields, facial palsy, motor function, ataxia, sensation, language, dysarthria, extinction/inattention. Score \u22656 suggests large-vessel occlusion. (2) Imaging: Non-contrast CT immediately to differentiate ischemic vs hemorrhagic. CT angiography (CTA) identifies vessel occlusion amenable to thrombectomy. CT perfusion distinguishes infarct core from penumbra. MRI with DWI is more sensitive for early ischemia but less available emergently. ASPECTS score (0-10) on CT quantifies early ischemic changes in MCA territory; score \u22656 favors thrombectomy benefit. (3) Laboratory: glucose (hypoglycemia mimics stroke), coagulation studies, troponin. (4) ECG and telemetry for atrial fibrillation detection. ABCD2 score predicts TIA stroke risk but not used for acute stroke diagnosis.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/31588876/",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

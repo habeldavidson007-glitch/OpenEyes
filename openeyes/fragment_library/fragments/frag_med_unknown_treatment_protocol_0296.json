@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0296",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "genotype_guided_dosing",
+    "clopidogrel_resistance",
+    "codeine_safety",
+    "thiopurine_dosing",
+    "abacavir_screening"
+  ],
+  "reasoning_role": "definition",
+  "content": "Clinical implementation examples: CYP2C19 poor metabolizers on clopidogrel have reduced active metabolite, higher cardiovascular event rates - use prasugrel or ticagrelor instead. CYP2D6 poor metabolizers: codeine/tramadol ineffective (need conversion to active metabolites); use morphine directly. CYP2D6 ultrarapid metabolizers: codeine toxicity risk (rapid conversion to morphine) - avoid entirely. TPMT deficiency: thiopurine (azathioprine, 6-MP) dose reduction 50-90% or alternative agent to prevent life-threatening myelosuppression. UGT1A1*28 homozygotes: irinotecan dose reduction 30% to prevent severe neutropenia/diarrhea. HLA-B*5701 screening mandatory before abacavir - positive = contraindicated. Warfarin: CYP2C9/VKORC1 genotyping guides initial dose but INR monitoring still required.",
+  "source": "nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

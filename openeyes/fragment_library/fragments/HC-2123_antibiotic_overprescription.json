@@ -1,0 +1,18 @@
+{
+  "id": "HC-2123",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "antibiotic overprescription",
+    "stewardship interventions",
+    "audit and feedback",
+    "diagnostic stewardship"
+  ],
+  "reasoning_role": "definition",
+  "content": "Antibiotic stewardship interventions that work: (1) Audit and feedback - prospective review with prescriber feedback reduces inappropriate use 20-40%; (2) Clinical decision support - EHR alerts for duplicate therapy, renal dosing, culture follow-up; (3) Delayed prescribing - 'wait-and-see' prescriptions for otitis media, sinusitis reducing fill rates 50-70%; (4) Diagnostic stewardship - procalcitonin testing to guide antibiotic discontinuation in respiratory infections (reduces duration 2-3 days); (5) Public education - campaigns like CDC's 'Be Antibiotics Aware' reducing patient expectations; (6) Accountability - designating stewardship leaders, tracking/prescribing metrics. Outpatient stewardship reduced antibiotic prescribing for acute respiratory infections from 50% to 35% over 10 years. Inpatient programs show 20-30% reduction in antibiotic use without worse outcomes.",
+  "source": "cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

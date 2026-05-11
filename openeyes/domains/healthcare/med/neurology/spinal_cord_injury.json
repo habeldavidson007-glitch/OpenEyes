@@ -1,0 +1,40 @@
+{
+  "fragments": [
+    {
+      "id": "neuro-sci-def",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["spinal-cord-injury", "SCI", "tetraplegia", "paraplegia", "ASIA"],
+      "reasoning_role": "definition",
+      "content": "Spinal cord injury (SCI) is damage to the spinal cord causing temporary or permanent neurological deficits. Incidence ~17,000/year in US, predominantly young males. Mechanisms: traumatic (motor vehicle accidents, falls, violence, sports) vs non-traumatic (tumor, infection, vascular, degenerative). Classification by level: tetraplegia/quadriplegia (cervical, affects arms and legs), paraplegia (thoracic/lumbar/sacral, affects legs only). Completeness: complete (no motor/sensory function below injury including sacral segments S4-S5) vs incomplete (some preservation). Incomplete syndromes: central cord (upper > lower extremity weakness, often hyperextension in elderly with stenosis), Brown-Séquard (hemisection—ipsilateral motor/proprioception loss, contralateral pain/temp loss), anterior cord (motor and pain/temp loss, preserved proprioception), cauda equina (LMN signs, bowel/bladder dysfunction, saddle anesthesia). Spinal shock: transient flaccidity and areflexia immediately post-injury, resolves over days-weeks with return of reflexes and possible spasticity.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "neuro-sci-tx",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["spinal-cord-injury", "methylprednisolone", "surgical-decompression", "treatment-protocol", "rehabilitation"],
+      "reasoning_role": "treatment_protocol",
+      "content": "SCI management begins with immobilization (cervical collar, log-roll precautions) and ABCs. High-dose methylprednisolone (30mg/kg bolus then 5.4mg/kg/hr × 23 hours) within 8 hours is controversial—NASCIS trials showed modest benefit but risks (infection, hyperglycemia); not standard in many centers. Early surgical decompression (<24 hours) recommended for compressive lesions, unstable fractures. Hemodynamic support: maintain MAP 85-90 mmHg for 5-7 days to optimize cord perfusion (vasopressors if needed). DVT prophylaxis critical (high risk): LMWH preferred, IVC filter if anticoagulation contraindicated. Bladder management: indwelling catheter acutely, transition to intermittent catheterization. Bowel program: stool softeners, stimulants, digital stimulation. Spasticity management: baclofen (oral or intrathecal pump), tizanidine, botulinum toxin, phenol blocks. Neuropathic pain: gabapentin, pregabalin, amitriptyline. Rehabilitation: intensive multidisciplinary program focusing on mobility (wheelchair skills, bracing, FES), ADLs, vocational training, psychological support. Complications: autonomic dysreflexia (T6 and above—noxious stimulus causes severe hypertension, treat by removing stimulus), pressure ulcers, UTIs, respiratory complications, heterotopic ossification, osteoporosis.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "neuro-sci-dx",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["spinal-cord-injury", "diagnosis", "ASIA-scale", "MRI-spine", "classification"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "SCI diagnosis and classification uses ASIA (American Spinal Injury Association) Impairment Scale. Neurological exam: test 10 myotomes (C5-T1, L2-S1) for strength (0-5), 28 dermatomes for light touch and pinprick (0-2). Key muscles: C5 elbow flexors, C6 wrist extensors, C7 elbow extensors, C8 finger flexors, T1 finger abductors, L2 hip flexors, L3 knee extensors, L4 ankle dorsiflexors, L5 great toe extensors, S1 ankle plantarflexors. Sacral sparing (anal sensation, voluntary anal contraction) determines completeness. ASIA grades: A = complete (no sacral sparing), B = sensory incomplete, C = motor incomplete (<50% key muscles below injury have strength ≥3), D = motor incomplete (≥50% key muscles ≥3), E = normal. Imaging: CT spine for bony injury/fractures; MRI for cord compression, edema, hemorrhage, ligamentous injury. Prognosis: incomplete injuries have better recovery potential; central cord syndrome often recovers ambulation; Brown-Séquard has best prognosis. SCIM (Spinal Cord Independence Measure) tracks functional outcomes.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0480",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "brain-tumor",
+    "diagnosis",
+    "MRI",
+    "WHO-classification",
+    "molecular-markers"
+  ],
+  "reasoning_role": "definition",
+  "content": "Brain tumor diagnosis requires neuroimaging and tissue diagnosis. MRI brain with and without gadolinium is imaging modality of choice: GBM shows ring-enhancing lesion with central necrosis, surrounding edema, crosses midline via corpus callosum ('butterfly glioma'); meningioma shows dural-based enhancement with dural tail; metastases often multiple at gray-white junction. Advanced imaging: perfusion MRI (elevated rCBV in high-grade tumors), MR spectroscopy (elevated choline, reduced NAA), amino acid PET (FET, FDOPA) for tumor delineation and recurrence vs radiation necrosis. Tissue diagnosis via stereotactic biopsy or resection for histopathology and molecular testing. WHO 2021 molecular markers required: IDH1/2 mutation, 1p/19q codeletion (FISH), ATRX, p53, MGMT promoter methylation, TERT promoter, EGFR amplification, chromosome +7/-10. Lumbar puncture generally contraindicated with mass effect (herniation risk). Differential diagnosis: abscess (restricted diffusion, clinical infection), demyelination (open-ring enhancement), subacute infarct (vascular territory, DWI restriction), radiation necrosis (history, perfusion/PET helps). RANO criteria standardize response assessment incorporating imaging, steroids, clinical status.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

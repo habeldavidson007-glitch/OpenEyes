@@ -23,6 +23,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from openeyes.fragment_library import FragmentLibrary, Fragment
+from openeyes.core.kap import build_kap, KnowledgeAcquisitionPlan, kap_to_trace
 
 
 # Trusted Finance Sources Whitelist
@@ -706,6 +707,82 @@ class Swarm:
             "sub_questions": sub_questions,
             "num_sub_questions": len(sub_questions)
         }
+    
+    def _get_fragment_role(self, fragment_id: str) -> str:
+        """Look up fragment's reasoning_role from library."""
+        try:
+            frag = self.library._fragments.get(fragment_id)
+            if frag:
+                return getattr(frag, 'reasoning_role', 'definition')
+        except:
+            pass
+        return 'definition'
+    
+    def _extract_tags_from_candidates(self, candidates: List[FragmentCandidate]) -> List[str]:
+        """Extract the most common tags from a set of candidates for DFS propagation."""
+        from collections import Counter
+        all_tags = []
+        for c in candidates:
+            try:
+                frag = self.library._fragments.get(c.fragment_id)
+                if frag:
+                    all_tags.extend(getattr(frag, 'tags', []))
+            except:
+                pass
+        tag_counts = Counter(all_tags)
+        return [tag for tag, _ in tag_counts.most_common(5)]
+    
+    def retrieve_by_kap(
+        self, 
+        query: str, 
+        domain: str,
+        kap: KnowledgeAcquisitionPlan
+    ) -> Dict[str, List[FragmentCandidate]]:
+        """
+        Execute retrieval layer by layer according to the KAP.
+        Returns a dict of {layer_name: [candidates]} for traceability.
+        
+        For DFS intent: each layer's results inform the next layer's tag targets
+        For BFS intent: all layers retrieved in parallel (sorted by priority)
+        """
+        results_by_layer = {}
+        
+        for layer in kap.sorted_layers():
+            layer_candidates = []
+            
+            # Build the search query for this layer
+            # Combine layer's target_tags with required roles
+            for role in layer.required_roles:
+                for tag in layer.target_tags[:3]:  # Top 3 tags per role
+                    candidates = self.library_agent.retrieve(
+                        sub_question=f"{tag}",
+                        domain=domain,
+                    )
+                    # Filter to only fragments with the required role
+                    role_matched = [
+                        c for c in candidates 
+                        if self._get_fragment_role(c.fragment_id) == role
+                    ]
+                    layer_candidates.extend(role_matched)
+            
+            # If DFS mode — use this layer's surviving fragments to 
+            # inform the next layer's tag targets
+            if kap.intent.search_mode == 'DFS' and layer_candidates:
+                next_layer_idx = kap.layers.index(layer) + 1
+                if next_layer_idx < len(kap.layers):
+                    next_layer = kap.sorted_layers()[next_layer_idx]
+                    if not next_layer.target_tags:
+                        # Propagate discovered tags from survivors
+                        discovered_tags = self._extract_tags_from_candidates(layer_candidates)
+                        next_layer.target_tags = discovered_tags[:5]
+            
+            results_by_layer[layer.name] = layer_candidates
+            
+            # If mandatory layer returned nothing — flag it
+            if layer.mandatory and not layer_candidates:
+                results_by_layer[f"{layer.name}_MISSING"] = []
+        
+        return results_by_layer
 
 
 # Placeholder API connectors (to be implemented with real API keys)

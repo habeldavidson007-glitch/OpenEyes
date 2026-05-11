@@ -1,0 +1,19 @@
+{
+  "id": "endo_dm2_diag_001",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "diabetes",
+    "HbA1c",
+    "glucose",
+    "screening",
+    "prediabetes"
+  ],
+  "content": "Diagnostic criteria for T2DM: Any one of the following confirms diagnosis: (1) HbA1c \u22656.5% using NGSP-certified method; (2) Fasting plasma glucose \u2265126 mg/dL (\u22657.0 mmol/L) after \u22658-hour fast; (3) 2-hour plasma glucose \u2265200 mg/dL during 75g OGTT; (4) Random plasma glucose \u2265200 mg/dL with classic hyperglycemia symptoms. Abnormal results should be confirmed with repeat testing unless unequivocal hyperglycemia present. Prediabetes defined as HbA1c 5.7-6.4%, fasting glucose 100-125 mg/dL, or 2-hour OGTT 140-199 mg/dL. Screening recommended for adults \u226535 years, or younger with BMI \u226525 kg/m\u00b2 plus risk factors (family history, hypertension, dyslipidemia, physical inactivity, high-risk ethnicity, history of gestational diabetes). Annual screening for prediabetes; every 3 years if normal.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/36506506/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

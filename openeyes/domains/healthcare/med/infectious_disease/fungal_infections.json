@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["fungal infection", "Candida", "Aspergillus", "invasive fungal disease"],
+    "reasoning_role": "definition",
+    "content": "Invasive fungal infections cause significant morbidity/mortality in immunocompromised hosts. Candida species: most common cause of invasive fungal infection; C. albicans most frequent but non-albicans (glabrata, parapsilosis, tropicalis, auris) increasing. Risk factors: central venous catheters, TPN, broad-spectrum antibiotics, abdominal surgery, neutropenia, ICU stay. Aspergillus species: invasive aspergillosis primarily affects neutropenic patients, transplant recipients, high-dose corticosteroids; pulmonary invasion with angioinvasion causing hemorrhagic infarction. Cryptococcus neoformans: meningoencephalitis in advanced HIV (CD4 <100). Pneumocystis jirovecii: pneumonia in HIV and other immunocompromised. Endemic mycoses (Histoplasma, Blastomyces, Coccidioides): geographic distribution, can disseminate in immunocompromised.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["fungal infection", "treatment", "echinocandin", "azole"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Invasive candidiasis/candidemia: echinocandin first-line (caspofungin 70mg load then 50mg daily, micafungin 100mg daily, anidulafungin 200mg load then 100mg daily); step down to fluconazole 800mg load then 400mg daily if susceptible and clinically stable. Remove infected catheters. Duration: 14 days after first negative culture and symptom resolution. Invasive aspergillosis: voriconazole 6mg/kg IV BID x2 doses then 4mg/kg BID (or oral 200-300mg BID) preferred; isavuconazole alternative (no QT prolongation, no monitoring needed); liposomal amphotericin B 3-5 mg/kg for refractory/intolerant. Combination therapy not routinely recommended. PJP: TMP-SMX 15-20 mg/kg/day divided q6-8h x21 days (add prednisone if moderate-severe with hypoxia); alternatives: atovaquone, clindamycin-primaquine, pentamidine. Cryptococcal meningitis: liposomal amphotericin B + flucytosine induction x2 weeks, fluconazole consolidation/maintenance.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["fungal infection", "diagnosis", "beta-D-glucan", "galactomannan"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Fungal diagnostics: 1) Blood cultures for Candida (low sensitivity ~50%, take 2-4 days); 2) Non-culture biomarkers: beta-D-glucan (elevated in most invasive fungal infections except Cryptococcus and Mucorales), galactomannan (Aspergillus-specific, serum/BAL); 3) PCR assays emerging but not standardized; 4) Imaging: CT chest for aspergillosis (halo sign early, air crescent later); 5) Histopathology from tissue biopsy gold standard (hyphae with acute angle branching for Aspergillus, pseudohyphae/yeast for Candida). T2 Candida panel detects directly from blood in 3-5 hours. Cryptococcal antigen highly sensitive/specific for cryptococcal meningitis. PJP diagnosis: induced sputum or BAL with DFA staining or PCR. Antifungal susceptibility testing guides therapy for resistant isolates (C. auris often multidrug-resistant).",
+    "source": "cdc.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

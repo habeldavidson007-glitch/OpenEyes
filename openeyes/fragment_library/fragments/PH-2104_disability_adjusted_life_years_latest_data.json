@@ -1,0 +1,17 @@
+{
+  "id": "PH-2104_disability_adjusted_life_years_latest_data",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "disability adjusted life years",
+    "public_health",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Disability Adjusted Life Years - recent research findings, updated guidelines, emerging practices",
+  "source_url": "https://www.cdc.gov/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "CDC"
+}

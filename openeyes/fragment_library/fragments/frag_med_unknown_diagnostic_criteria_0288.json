@@ -1,0 +1,21 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0288",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "therapeutic_ranges",
+    "timing_requirements",
+    "free_drug_levels",
+    "Bayesian_dosing"
+  ],
+  "reasoning_role": "definition",
+  "content": "Therapeutic ranges established from population studies correlating concentrations with efficacy and toxicity. Individual therapeutic targets may vary: warfarin INR 2-3 for most indications, 2.5-3.5 for mechanical mitral valve; digoxin 0.5-0.9 for heart failure (higher associated with mortality), 0.8-1.2 for atrial fibrillation. TDM interpretation requires understanding timing: steady state achieved after 4-5 half-lives; trough drawn immediately before next dose; peak timing drug-specific (gentamicin 30 min post-infusion, phenytoin 2-4 hours post-dose). Free drug monitoring for highly protein-bound drugs in special populations. Population pharmacokinetics uses Bayesian forecasting to individualize dosing based on sparse samples. Toxicity diagnosis: clinical signs plus supratherapeutic levels confirm; subtherapeutic levels with treatment failure indicate need for dose increase.",
+  "source": "ema.europa.eu",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

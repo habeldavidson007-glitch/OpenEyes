@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "bloodstream infection",
+    "BSI",
+    "catheter-related",
+    "sepsis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Bloodstream infections (BSI) are classified as primary (no identifiable source) or secondary (from focus like pneumonia, UTI, intra-abdominal). Catheter-related bloodstream infection (CRBSI) requires: positive blood culture from catheter AND clinical signs of infection (fever, chills, hypotension) AND no other apparent source. Central line-associated BSI (CLABSI) is CDC surveillance definition: laboratory-confirmed BSI in patient with central line within 48 hours, not related to infection at another site. Common pathogens: coagulase-negative staphylococci (especially catheter-associated), S. aureus, Enterobacteriaceae, Candida species, Pseudomonas. Risk factors: central venous catheters, total parenteral nutrition, hemodialysis, immunosuppression, prolonged hospitalization. Mortality 15-25%, higher with multidrug-resistant organisms and delayed appropriate therapy.",
+  "source": "cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2384",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

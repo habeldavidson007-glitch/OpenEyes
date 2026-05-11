@@ -1,0 +1,17 @@
+{
+  "id": "MH-2194_dissociative_disorders_latest_data",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "dissociative disorders",
+    "mental_health",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Dissociative Disorders - recent research findings, emerging treatments, updated guidelines",
+  "source_url": "https://www.nimh.nih.gov/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "NIMH"
+}

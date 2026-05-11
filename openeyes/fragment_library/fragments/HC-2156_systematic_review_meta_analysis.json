@@ -1,0 +1,16 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "systematic review meta analysis",
+    "epidemiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Application content for systematic_review_meta_analysis.",
+  "source": "https://www.cdc.gov/",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2156",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

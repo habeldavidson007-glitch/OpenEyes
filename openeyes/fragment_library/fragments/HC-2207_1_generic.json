@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "generic drug",
+    "ANDA",
+    "bioequivalence",
+    "paragraph IV"
+  ],
+  "reasoning_role": "definition",
+  "content": "ANDA submission requirements include: demonstration of bioequivalence (typically fasting pharmacokinetic study in healthy volunteers showing 90% CI for AUC and Cmax within 80-125% of RLD), same active ingredient, dosage form, strength, and route of administration as RLD, labeling essentially identical to RLD (except differences due to patent protection or exclusivity), and compliance with cGMP manufacturing standards. Bioequivalence studies measure rate and extent of absorption; for narrow therapeutic index drugs, tighter limits may apply. Certain products require additional studies (food-effect, steady-state, clinical endpoint studies for locally acting drugs). FDA reviews ANDAs for scientific, quality, and labeling adequacy.",
+  "source": "fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2207",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

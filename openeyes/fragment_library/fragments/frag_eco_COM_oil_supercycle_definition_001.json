@@ -16,7 +16,5 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0,
-  "grundy_value": -1,
-  "robustness_status": "PENDING"
+  "weight": 1.0
 }

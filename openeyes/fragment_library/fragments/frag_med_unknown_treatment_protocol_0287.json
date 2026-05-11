@@ -1,0 +1,21 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0287",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "TDM",
+    "formulation_consistency",
+    "patient_education",
+    "toxicity_monitoring"
+  ],
+  "reasoning_role": "definition",
+  "content": "Management of NTI drugs requires: therapeutic drug monitoring (TDM) with timing critical (trough levels before next dose; peak levels when indicated); consistent formulation use (brand vs generic switching may alter levels); patient education on adherence and interaction recognition; regular clinical assessment for toxicity signs. Warfarin: monitor INR weekly initially, then monthly when stable; maintain food consistency (vitamin K). Digoxin: check level 6-8 hours post-dose; monitor renal function, potassium, magnesium. Lithium: check level 12 hours post-dose; monitor thyroid, renal function; maintain sodium/fluid intake. Phenytoin: monitor free levels in hypoalbuminemia; watch for nystagmus, ataxia, confusion. Gentamicin: extended-interval dosing with random levels or traditional dosing with peak/trough.",
+  "source": "nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

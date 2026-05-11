@@ -1,0 +1,17 @@
+{
+  "id": "ENR-2328_electric_vehicle_grid_counter_argument",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "electric vehicle grid",
+    "energy",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Electric Vehicle Grid - economic challenges, scalability concerns, competing approaches",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "EIA"
+}

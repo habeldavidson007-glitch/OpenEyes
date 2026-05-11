@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["drug-induced liver injury", "DILI", "hepatotoxicity", "RUCAM score", "pharmacovigilance"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Drug-induced liver injury (DILI) is liver damage caused by medications, herbal products, or dietary supplements. It is classified as hepatocellular (ALT elevation predominant), cholestatic (ALP elevation predominant), or mixed. DILI is the leading cause of acute liver failure in the US and a common reason for drug withdrawal from the market. Intrinsic DILI is dose-dependent and predictable (e.g., acetaminophen toxicity). Idiosyncratic DILI is unpredictable, not dose-dependent, and may have latency periods of days to months. Common culprits include antibiotics (amoxicillin-clavulanate), anticonvulsants, NSAIDs, statins, TB medications, and herbal supplements (green tea extract, kava). The Roussel Uclaf Causality Assessment Method (RUCAM) is the standard tool for establishing causality.",
+      "source": "pubmed.ncbi.nlm.nih.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "DILI management: (1) Immediately discontinue suspected agent(s); (2) Assess severity (bilirubin, INR, encephalopathy); (3) Rule out other causes (viral hepatitis, autoimmune, ischemic, biliary obstruction); (4) For acetaminophen toxicity, administer N-acetylcysteine within 8-10 hours; (5) Consider corticosteroids for immune-mediated DILI (checkpoint inhibitor hepatitis, DRESS); (6) Monitor LFTs weekly until improvement, then monthly until normalization; (7) Refer to hepatology if bilirubin >3x ULN with ALT elevation (Hy's Law indicates 10% risk of liver failure/transplant); (8) Avoid rechallenge with implicated drug. Most cases resolve within weeks to months after discontinuation. Chronic DILI may develop into vanishing bile duct syndrome or cirrhosis.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "RUCAM score components: time to onset from drug initiation (0 to +3 points), course after drug cessation (+1 to +3), risk factors (alcohol, pregnancy, age +1 each), concomitant drugs (-3 to +1), exclusion of non-drug causes (+2 to -3), known hepatotoxicity of drug (+1 to +3), response to rechallenge (+1 to +3, usually not performed). Scores: ≥8 = highly probable, 6-7 = probable, 3-5 = possible, ≤2 = unlikely. Hy's Law criteria for serious DILI: ALT or AST >3x ULN, total bilirubin >2x ULN without initial cholestasis, no other apparent cause. FDA requires Hy's Law cases in clinical trials to be reported immediately. DILI diagnosis requires careful temporal assessment and exclusion of viral, autoimmune, metabolic, and vascular causes through appropriate testing.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

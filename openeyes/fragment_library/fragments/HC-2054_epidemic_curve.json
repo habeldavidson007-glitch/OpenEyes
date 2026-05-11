@@ -1,0 +1,17 @@
+{
+  "id": "HC-2054",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "epidemic curve",
+    "outbreak analysis",
+    "transmission pattern"
+  ],
+  "reasoning_role": "definition",
+  "content": "Constructing an epi curve requires: accurate case definitions, symptom onset dates (not report dates), and appropriate time intervals (typically 1/4 to 1/3 of incubation period). Analysis steps: identify index case, determine outbreak pattern, estimate incubation period from exposure to peak, calculate attack rates by exposure category. For point source outbreaks, all cases occur within one incubation period. Propagated outbreaks show generations of cases with intervals matching serial interval. Interventions should target identified transmission mode: remove contamination source for point source, interrupt chains for propagated.",
+  "source": "CDC MMWR outbreak investigation protocols",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

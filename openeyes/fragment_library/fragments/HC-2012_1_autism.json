@@ -1,0 +1,19 @@
+{
+  "content": "No pharmacological treatment addresses core ASD symptoms; medications target co-occurring conditions (irritability: risperidone/aripiprazole FDA-approved; ADHD symptoms: stimulants/atomoxetine; anxiety/depression: SSRIs). Evidence-based behavioral interventions: Early Intensive Behavioral Intervention (EIBI)/Applied Behavior Analysis (ABA), Naturalistic Developmental Behavioral Interventions (NDBI), Early Start Denver Model. Speech-language therapy, occupational therapy, social skills training address specific deficits. Educational accommodations critical. Parent-mediated interventions improve outcomes. Early diagnosis and intervention (before age 3) associated with better outcomes. Transition planning essential for adolescents/adults.",
+  "tags": [
+    "ABA",
+    "early-intervention",
+    "behavioral-therapy",
+    "risperidone",
+    "aripiprazole"
+  ],
+  "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2012",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

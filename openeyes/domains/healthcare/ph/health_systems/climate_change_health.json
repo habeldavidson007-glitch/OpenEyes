@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_clim_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["climate change", "health impacts", "heat mortality", "vector-borne disease"],
+    "reasoning_role": "definition",
+    "content": "Climate change affects health through multiple pathways: (1) Direct effects - heat-related illness and mortality (heat waves cause 5,000-10,000 excess deaths annually in Europe alone), extreme weather injuries; (2) Vector-borne diseases - expanded geographic range of mosquitoes transmitting malaria, dengue, Zika (dengue cases increased 8x globally since 2000); (3) Food security - crop yield reductions affecting nutrition (projected 20% increase in malnutrition by 2050); (4) Air quality - increased ozone and particulate matter from wildfires exacerbating respiratory/cardiovascular disease; (5) Water-borne diseases - flooding contaminating water supplies; (6) Mental health - climate anxiety, displacement trauma. WHO estimates climate change causes 150,000 deaths annually currently, projected to reach 250,000/year by 2030-2050.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_clim_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["climate change", "adaptation", "mitigation", "health system resilience"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Health sector climate responses include: (1) Adaptation - heat early warning systems (reducing heat mortality 20-30%), vector surveillance and control, climate-resilient infrastructure (flood-proof hospitals), drought-resistant food systems; (2) Mitigation - healthcare decarbonization (healthcare contributes 4-5% of global emissions, anesthesia gases and inhalers are potent greenhouse gases), sustainable supply chains, plant-based hospital meals; (3) Co-benefits - active transport (cycling/walking) reducing both emissions and cardiovascular disease, reduced air pollution from fossil fuel transition preventing 4-8 million premature deaths annually. Health adaptation funding remains inadequate: <5% of climate finance targets health. Successful examples: France's heat wave plan reduced excess mortality from 15,000 (2003) to 2,000 (2006 heat wave of similar intensity).",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_clim_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["climate change", "vulnerability assessment", "burden measurement", "equity"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Climate health vulnerability assessment considers: (1) Exposure - frequency/intensity of climate hazards (heat days, flood risk, fire zones); (2) Sensitivity - population characteristics (age, comorbidities, outdoor work); (3) Adaptive capacity - healthcare access, early warning systems, social safety nets. Vulnerable populations include: elderly (>65 years have 2-3x heat mortality risk), children (developing thermoregulation, longer lifetime exposure), low-income communities (limited AC, substandard housing), outdoor workers, those with chronic diseases. Measurement tools: Disability-Adjusted Life Years (DALYs) attributable to climate factors, excess mortality during extreme events, disease incidence trends in expanding endemic zones. Climate attribution studies increasingly quantify specific health impacts: 37% of heat-related deaths already attributable to anthropogenic climate change. Equity concerns: lowest-emitting countries (Sub-Saharan Africa) face highest health burdens.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

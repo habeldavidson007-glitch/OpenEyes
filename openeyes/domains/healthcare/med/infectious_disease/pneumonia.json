@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["pneumonia", "CAP", "HAP", "classification"],
+    "reasoning_role": "definition",
+    "content": "Pneumonia is classified by acquisition setting: Community-acquired pneumonia (CAP) occurs outside hospitals or within 48 hours of admission; Hospital-acquired pneumonia (HAP) develops ≥48 hours after admission; Ventilator-associated pneumonia (VAP) occurs >48-72 hours after endotracheal intubation. CAP pathogens include Streptococcus pneumoniae (most common), Haemophilus influenzae, atypical organisms (Mycoplasma pneumoniae, Legionella, Chlamydophila), and respiratory viruses. HAP/VAP pathogens include Pseudomonas aeruginosa, MRSA, Enterobacteriaceae, and Acinetobacter. Aspiration pneumonia involves anaerobes from oropharyngeal flora.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["pneumonia", "treatment", "antibiotics", "severity scoring"],
+    "reasoning_role": "treatment_protocol",
+    "content": "CAP treatment is guided by severity scores (CURB-65 or PSI/PORT score). Outpatient: healthy patients receive amoxicillin or doxycycline; comorbidities warrant combination beta-lactam + macrolide or respiratory fluoroquinolone monotherapy. Inpatient non-ICU: beta-lactam (ceftriaxone, ampicillin-sulbactam) + macrolide OR respiratory fluoroquinolone. ICU: beta-lactam + macrolide OR beta-lactam + respiratory fluoroquinolone; add vancomycin or linezolid if MRSA suspected; add piperacillin-tazobactam or cefepime if Pseudomonas risk. HAP/VAP: empiric coverage for MRSA (vancomycin/linezolid) plus antipseudomonal agent based on local antibiogram. Duration typically 5-7 days for CAP if clinical stability achieved.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["pneumonia", "diagnosis", "imaging", "severity"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Pneumonia diagnosis requires: 1) Compatible clinical presentation (cough, fever, dyspnea, pleuritic chest pain); 2) Chest radiograph showing new infiltrate (required for definitive diagnosis); 3) Supporting labs (leukocytosis, elevated CRP/procalcitonin). CURB-65 assesses severity: Confusion, Urea >7 mmol/L, Respiratory rate ≥30/min, Blood pressure (systolic <90 or diastolic ≤60), age ≥65 (score 0-5; ≥2 suggests hospitalization). PSI/PORT score incorporates more variables for mortality prediction. Sputum Gram stain/culture indicated for severe CAP or HAP/VAP. Blood cultures recommended for severe CAP. Urinary antigens for Legionella/S. pneumoniae in select cases. CT chest if complications suspected or diagnosis uncertain.",
+    "source": "pubmed.ncbi.nlm.nih.gov",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

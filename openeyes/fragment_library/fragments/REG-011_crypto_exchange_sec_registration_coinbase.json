@@ -1,0 +1,22 @@
+{
+  "id": "REG-011",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "crypto",
+    "sec",
+    "exchange_registration",
+    "coinbase",
+    "securities_law"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "SEC position on crypto exchange registration: platforms facilitating trading of crypto assets that are securities must register as national securities exchanges or operate under exemption. Key requirements: (1) Registration under Exchange Act Section 6, (2) Compliance with exchange rules (listing standards, surveillance, member regulation), (3) ATS alternative: register as broker-dealer and file Form ATS. Coinbase case: SEC lawsuit filed June 2023 alleges Coinbase operated unregistered exchange, broker-dealer, and clearing agency; offers unregistered securities (staking program). Coinbase motion to dismiss granted in part (March 2024)\u2014staking claims dismissed, exchange/broker claims proceed. Case significance: judicial determination of which tokens are securities, applicability of traditional securities laws to crypto platforms. Outcome will shape regulatory landscape.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_surv_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["surveillance systems", "disease surveillance", "public health monitoring", "epidemiology"],
+    "reasoning_role": "definition",
+    "content": "Disease surveillance systems systematically collect, analyze, and disseminate health data for public health action. Passive surveillance relies on routine reporting from healthcare providers (e.g., notifiable disease reports)—cost-effective but suffers from underreporting. Active surveillance involves proactive case-finding through regular outreach to providers or laboratories—more complete but resource-intensive. Sentinel surveillance monitors specific sites or populations to detect trends (e.g., influenza-like illness networks). Syndromic surveillance uses pre-diagnostic data (ER chief complaints, OTC medication sales) for early outbreak detection.",
+    "source": "CDC surveillance guidelines, WHO Global Outbreak Alert and Response Network",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_surv_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["surveillance implementation", "notifiable diseases", "data quality"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Surveillance system design: (1) Define objectives (early detection, trend monitoring, program evaluation); (2) Establish case definitions (suspected, probable, confirmed); (3) Determine data sources (providers, labs, vital records); (4) Set reporting frequency and formats; (5) Ensure data quality through validation and completeness checks; (6) Analyze data with appropriate denominators; (7) Disseminate findings to stakeholders; (8) Evaluate system attributes (simplicity, flexibility, acceptability, sensitivity, predictive value positive, representativeness, timeliness, stability). Electronic health record integration improves timeliness and completeness.",
+    "source": "CDC MMWR surveillance best practices, WHO surveillance standards",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_surv_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["surveillance evaluation", "underreporting", "data completeness"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Surveillance system evaluation metrics: completeness (proportion of actual cases captured), timeliness (time from event to report), sensitivity (ability to detect true cases), positive predictive value (proportion of reported cases that are true), and representativeness (how well data reflect the population). Capture-recapture methods estimate total cases by comparing multiple data sources. Underreporting factors include: lack of provider awareness, diagnostic uncertainty, administrative burden, and asymptomatic infections. Surveillance gaps identified through periodic assessments guide system improvements and resource allocation.",
+    "source": "Epidemiologic Reviews, CDC surveillance evaluation framework",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

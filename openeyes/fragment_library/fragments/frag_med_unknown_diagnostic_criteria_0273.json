@@ -1,0 +1,21 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0273",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "causality_assessment",
+    "exposure_evaluation",
+    "prenatal_diagnosis",
+    "pregnancy_registries"
+  ],
+  "reasoning_role": "definition",
+  "content": "Establishing teratogenicity requires: consistent pattern of defects (specific syndrome), temporal relationship (exposure during critical period), biological plausibility, dose-response relationship, reproducibility across studies. Single case reports insufficient; registry data and cohort studies needed. Confounding factors: underlying maternal disease may cause defects (diabetes, epilepsy); recall bias in retrospective studies; healthy user bias. Evaluation of exposed pregnancy: detailed ultrasound (18-20 weeks anatomy scan), fetal echocardiography for cardiac teratogens, amniocentesis if indicated. Postnatal assessment: physical examination, developmental monitoring. Causality assessment tools: WHO-UMC criteria, Naranjo scale adapted for pregnancy. Registry follow-up essential for new drugs; pregnancy exposure registries mandated for some medications.",
+  "source": "ema.europa.eu",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

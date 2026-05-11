@@ -1,0 +1,19 @@
+{
+  "id": "frag_phr_unknown_definition_0157",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "phr",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Drug shortages occur when demand exceeds supply of a medically necessary drug. The FDA defines a shortage as a period when total supply cannot meet current or projected demand at the user level. Causes include: manufacturing quality issues (sterility failures, contamination), raw material shortages, production delays, business decisions (discontinuation of low-margin generics), increased demand, regulatory actions, and natural disasters. Shortages disproportionately affect sterile injectables, oncology drugs, antibiotics, and parenteral nutrition components. The FDA Drug Shortage Database tracks ongoing shortages. Since 2013, FDA has required manufacturers to notify FDA of potential discontinuations or interruptions that could lead to shortages.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

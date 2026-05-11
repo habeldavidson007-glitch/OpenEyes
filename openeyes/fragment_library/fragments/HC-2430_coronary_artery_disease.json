@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "stable angina",
+    "diagnosis",
+    "stress testing",
+    "coronary CT angiography"
+  ],
+  "reasoning_role": "definition",
+  "content": "Stable CAD diagnosis: clinical assessment (pretest probability based on age, sex, symptom typicality), resting ECG (may show prior MI, LVH, ST-T changes), echocardiogram (wall motion abnormalities, EF). Functional testing for ischemia: exercise ECG (if able to exercise and interpretable ECG), stress echocardiography (exercise or dobutamine), nuclear perfusion imaging (SPECT or PET with exercise or vasodilator), stress cardiac MRI. Anatomic testing: coronary CT angiography (CCTA) excellent for ruling out CAD in low-intermediate risk patients (high negative predictive value), can characterize plaque; invasive coronary angiography gold standard, allows immediate PCI if needed. ISCHEMIA trial showed no difference in CV outcomes between initial invasive vs conservative strategy in stable CAD with moderate-severe ischemia, supporting medical therapy first-line. FFR (fractional flow reserve) or iFR during angiography determines physiologic significance of intermediate lesions (FFR \u22640.80 indicates ischemia-producing stenosis).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/32876562/",
+  "credibility_class": "clinical_trial",
+  "year": 2020,
+  "id": "HC-2430",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

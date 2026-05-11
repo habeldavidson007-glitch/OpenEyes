@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0238",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hepatitis C",
+    "DAA",
+    "NS5A",
+    "NS5B",
+    "cure",
+    "SVR"
+  ],
+  "reasoning_role": "definition",
+  "content": "Direct-Acting Antivirals for HCV definition and mechanism content placeholder - detailed pharmacological information including mechanism of action, receptor targets, pharmacokinetic properties, and therapeutic indications based on FDA labeling and clinical evidence.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

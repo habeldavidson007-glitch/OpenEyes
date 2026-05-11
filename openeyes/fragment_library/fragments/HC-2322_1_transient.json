@@ -1,0 +1,19 @@
+{
+  "id": "neuro-tia-tx",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "TIA",
+    "antiplatelet",
+    "anticoagulation",
+    "treatment-protocol",
+    "carotid-endarterectomy"
+  ],
+  "reasoning_role": "definition",
+  "content": "TIA treatment focuses on urgent evaluation and secondary prevention. Immediate management: aspirin 160-325mg ASAP (reduces early stroke risk by ~80%). Dual antiplatelet therapy (DAPT): clopidogrel 75mg daily PLUS aspirin 81mg daily for 21 days (CHANCE/POINT trials\u2014reduces 90-day stroke risk by ~25% in high-risk TIA/minor stroke), then clopidogrel monotherapy. For atrial fibrillation: anticoagulation with DOAC (apixaban, rivaroxaban, dabigatran, edoxaban) instead of antiplatelet; timing depends on infarct size (immediate for TIA, delayed 3-14 days for stroke to reduce hemorrhagic conversion risk). High-intensity statin (atorvastatin 80mg or rosuvastatin 20-40mg) regardless of LDL. BP control target <130/80 long-term. Carotid revascularization: symptomatic carotid stenosis 70-99% benefits from carotid endarterectomy (CEA) within 2 weeks (NASCET trial); 50-69% modest benefit in men; <50% no benefit. Carotid stenting alternative for high surgical risk. Intracranial stenosis: aggressive medical management (DAPT \u00d7 90 days, intensive risk factor control) preferred over stenting (SAMMPRIS trial). Lifestyle: smoking cessation, Mediterranean diet, exercise, weight management.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

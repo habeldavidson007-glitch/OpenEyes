@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0412",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "diabetes",
+    "pregnancy",
+    "gestational",
+    "hyperglycemia",
+    "maternal health"
+  ],
+  "reasoning_role": "definition",
+  "content": "Gestational diabetes mellitus (GDM) is defined as glucose intolerance first recognized during pregnancy, typically diagnosed in second or third trimester. Pathophysiology involves placental hormones (human placental lactogen, progesterone, cortisol) causing insulin resistance that exceeds maternal beta-cell compensatory capacity. Risk factors: obesity, advanced maternal age (>35), family history of diabetes, previous GDM, certain ethnicities (Hispanic, Asian, African American, Native American). GDM affects 6-9% of pregnancies. Complications include macrosomia, birth trauma, neonatal hypoglycemia, preeclampsia, cesarean delivery. Long-term risks: 50% develop T2DM within 10 years postpartum; offspring at increased risk for obesity and metabolic syndrome.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/34593690/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

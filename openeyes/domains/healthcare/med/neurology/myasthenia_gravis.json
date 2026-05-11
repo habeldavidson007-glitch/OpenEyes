@@ -1,0 +1,40 @@
+{
+  "fragments": [
+    {
+      "id": "neuro-myasthenia-def",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["myasthenia-gravis", "MG", "acetylcholine-receptor", "neuromuscular-junction", "autoimmune"],
+      "reasoning_role": "definition",
+      "content": "Myasthenia gravis (MG) is an autoimmune disorder of the neuromuscular junction causing fluctuating muscle weakness and fatigability. Incidence 1-9/100,000/year, bimodal distribution (young women 20-40, older men >60). Pathophysiology: antibodies against postsynaptic acetylcholine receptors (AChR, 85% of generalized MG), muscle-specific kinase (MuSK, 5-10%, more severe bulbar/respiratory involvement), or LRP4. Antibodies cause receptor blockade, internalization, and complement-mediated damage reducing safety factor for neuromuscular transmission. Clinical features: painless weakness worsening with activity, improving with rest; ocular symptoms (ptosis, diplopia—often initial presentation), bulbar symptoms (dysarthria, dysphagia, chewing fatigue), limb weakness (proximal > distal), respiratory muscle involvement (myasthenic crisis). Thymic abnormalities in 75% (hyperplasia in young, thymoma in 10-15%). Myasthenic crisis: respiratory failure requiring intubation, triggered by infection, surgery, medications (aminoglycosides, fluoroquinolones, beta-blockers, magnesium).",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "neuro-myasthenia-tx",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["myasthenia-gravis", "pyridostigmine", "immunosuppression", "treatment-protocol", "crisis"],
+      "reasoning_role": "treatment_protocol",
+      "content": "MG treatment includes symptomatic therapy and immunotherapy. Symptomatic: pyridostigmine (acetylcholinesterase inhibitor) 30-120mg every 3-6 hours—first-line for all patients; side effects include muscarinic symptoms (salivation, lacrimation, diarrhea, bradycardia) treated with glycopyrrolate. Immunotherapy for inadequate pyridostigmine response: (1) Corticosteroids (prednisone)—rapid onset but long-term toxicity; start low and titrate to avoid transient worsening. (2) Non-steroidal immunosuppressants: azathioprine (slow onset 6-12 months, check TPMT), mycophenolate mofetil, cyclosporine, tacrolimus, methotrexate. (3) Rapid therapies for exacerbations/crisis: IVIG (2g/kg over 2-5 days) or plasma exchange (5 exchanges)—temporary bridge to slower immunosuppressants. (4) Biologics: eculizumab/ravulizumab (complement C5 inhibitors, AChR+ refractory MG), efgartigimod (FcRn blocker, reduces IgG), rituximab (especially MuSK-MG). Thymectomy: indicated for thymoma (all ages); recommended for AChR+ generalized MG age <65 even without thymoma (MGTX trial showed benefit). Crisis management: ICU care, intubation if FVC <20mL/kg or NIF <-30cmH2O, IVIG/PLEX, treat triggers, hold pyridostigmine when intubated (increases secretions).",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "neuro-myasthenia-dx",
+      "domain": "healthcare",
+      "subdomain": "MED",
+      "sector": "MED",
+      "tags": ["myasthenia-gravis", "diagnosis", "ice-pack-test", "SFEMG", "antibody"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "MG diagnosis requires clinical features plus confirmatory testing. Bedside tests: ice pack test (ptosis improvement after 2 minutes of ice application—sensitive for ocular MG), sustained upgaze test (induces/worsens ptosis). Serology: AChR antibodies (binding, blocking, modulating) positive in 85% generalized, 50% ocular MG; MuSK antibodies in AChR-negative patients (more bulbar/respiratory involvement); LRP4, agrin antibodies in double-seronegative cases. Electrodiagnostics: repetitive nerve stimulation (RNS) shows >10% decrement at 2-3Hz; single-fiber EMG (SFEMG) shows increased jitter—most sensitive test (>95%) but non-specific. Chest CT/MRI to evaluate thymus (thymoma vs hyperplasia). Differential diagnosis: Lambert-Eaton myasthenic syndrome (LEMS—proximal weakness improves with use, associated with SCLC, anti-VGCC antibodies, incremental RNS response), botulism (descending paralysis, pupillary involvement), congenital myasthenic syndromes (genetic, childhood onset), mitochondrial myopathies, oculopharyngeal muscular dystrophy. MGFA clinical classification grades severity (Class I: ocular only; Class II-IV: varying generalized weakness; Class V: intubation). QMG score quantifies severity for monitoring.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "content": "Clinical management of tolerance: opioid rotation when tolerance limits analgesia (incomplete cross-tolerance allows dose reduction); drug holidays to restore sensitivity (nitrates require 10-12 hour nitrate-free interval); combination therapy to reduce individual drug tolerance development (cancer pain: opioids + NSAIDs + adjuvants); scheduled dosing rather than PRN to maintain steady levels and minimize tolerance. Benzodiazepine tolerance: limit duration to 2-4 weeks for anxiety/insomnia; if long-term needed, consider intermittent dosing or switch to non-benzodiazepine alternatives. Stimulant tolerance in ADHD: drug holidays may help but risk symptom recurrence; consider dose adjustment or alternative agents. Preventing tolerance: use lowest effective dose; avoid unnecessary dose escalation; address underlying causes rather than escalating symptomatic treatment.",
+  "tags": [
+    "opioid_rotation",
+    "drug_holidays",
+    "combination_therapy",
+    "dose_optimization"
+  ],
+  "source": "nih.gov",
+  "credibility_class": "A",
+  "year": 2025,
+  "reasoning_role": "definition",
+  "id": "HC-2264",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

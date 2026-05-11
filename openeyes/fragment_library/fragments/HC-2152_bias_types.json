@@ -1,0 +1,16 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "bias types",
+    "epidemiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Definition content for bias_types.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2152",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

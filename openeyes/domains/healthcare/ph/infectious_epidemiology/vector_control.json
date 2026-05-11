@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_vector_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["vector control", "mosquito control", "insecticide resistance", "public health"],
+    "reasoning_role": "definition",
+    "content": "Vector control involves interventions to reduce or eliminate disease-transmitting arthropods (mosquitoes, ticks, fleas, sandflies). Primary methods: environmental management (eliminating breeding sites, drainage), biological control (larvivorous fish, Bacillus thuringiensis israelensis), chemical control (larvicides, adulticides, insecticide-treated nets, indoor residual spraying), and personal protection (repellents, protective clothing). Vector-borne diseases include malaria, dengue, Zika, chikungunya, Lyme disease, and leishmaniasis. Insecticide resistance threatens control effectiveness—mosquitoes have developed resistance to all major insecticide classes through metabolic enzymes, target site mutations, and behavioral avoidance.",
+    "source": "WHO Global Vector Control Response, CDC Vector Control guidelines",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_vector_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["vector control strategies", "integrated vector management", "insecticide resistance management"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Integrated Vector Management (IVM) combines multiple approaches: (1) Source reduction—eliminate standing water, improve waste management; (2) Larval control—apply larvicides to unavoidable breeding sites, use biological agents; (3) Adult control—space spraying during outbreaks, indoor residual spraying for endophilic vectors; (4) Personal protection—distribute insecticide-treated bed nets, promote repellent use; (5) Housing improvements—screens, air conditioning; (6) Community engagement—mobilize residents for source reduction. Insecticide resistance management: rotate insecticide classes, use combinations, preserve susceptible alleles through refugia. Surveillance monitors vector density, species composition, infection rates, and insecticide susceptibility.",
+    "source": "WHO IVM guidelines, Pesticide Resistance Action Committee recommendations",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_vector_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["vector surveillance", "insecticide resistance testing", "control effectiveness"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Vector surveillance methods: larval surveys (Breteau index, house index for Aedes), adult trapping (CDC light traps, BG-Sentinel, human landing catches), and ovitraps for egg monitoring. Insecticide resistance testing: WHO tube tests, CDC bottle bioassays measure mortality after exposure; molecular assays detect resistance mutations (kdr, ace-1). Entomological inoculation rate estimates transmission intensity. Control effectiveness evaluated through pre/post intervention comparisons of vector density, human biting rates, and disease incidence. Climate change expands vector ranges poleward and to higher elevations, requiring adaptive surveillance and control strategies.",
+    "source": "WHO Vector Surveillance guidelines, American Journal of Tropical Medicine and Hygiene",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": ["drug safety", "pharmacovigilance", "pharmaceuticals"],
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "This topic covers key aspects of drug safety and pharmacovigilance including regulatory requirements, clinical implications, and best practices for healthcare providers.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "Healthcare providers should follow evidence-based protocols for managing drug safety issues, including proper monitoring, reporting adverse events, and implementing risk mitigation strategies.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Assessment criteria include evaluating risk factors, monitoring parameters, and determining appropriate interventions based on established guidelines and regulatory requirements.",
+      "source": "pubmed.ncbi.nlm.nih.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

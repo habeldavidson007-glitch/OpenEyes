@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_pandemic_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["pandemic preparedness", "International Health Regulations", "IHR", "WHO", "public health emergency"],
+    "reasoning_role": "definition",
+    "content": "Pandemic preparedness encompasses the capabilities and plans needed to detect, respond to, and recover from pandemic-scale infectious disease outbreaks. The International Health Regulations (IHR 2005) is a legally binding instrument requiring 196 countries to develop core surveillance and response capacities and notify WHO of potential public health emergencies of international concern (PHEIC). Key components: early warning systems, laboratory capacity, rapid response teams, risk communication, healthcare surge capacity, and coordination mechanisms. Gaps identified during COVID-19 include: insufficient diagnostic capacity, supply chain vulnerabilities, inequitable vaccine access, fragmented global governance, and inadequate financing for preparedness.",
+    "source": "WHO International Health Regulations, Global Preparedness Monitoring Board reports",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_pandemic_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["pandemic response", "preparedness planning", "public health capacity building"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Pandemic preparedness actions: (1) Surveillance—strengthen event-based and indicator-based systems, genomic sequencing networks; (2) Laboratory—expand PCR capacity, establish sentinel testing sites, ensure reagent supply chains; (3) Workforce—train epidemiologists, laboratorians, contact tracers, maintain surge rosters; (4) Healthcare capacity—stockpile PPE, ventilators, therapeutics; plan facility expansion; (5) Vaccines/therapeutics—advance purchase agreements, technology transfer platforms, clinical trial networks; (6) Risk communication—pre-drafted messages, social media monitoring, combat misinformation; (7) Coordination—incident management systems, multi-sectoral task forces, international collaboration. Regular exercises test and refine plans.",
+    "source": "WHO Pandemic Influenza Preparedness Framework, CDC Public Health Emergency Preparedness capabilities",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_pandemic_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["pandemic preparedness gaps", "IHR implementation", "global health security"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Pandemic preparedness assessment tools: Joint External Evaluation (JEE) scores IHR core capacities across 19 technical areas; SPAR (State Party Self-Assessment Annual Reporting) tracks progress; Global Health Security Index benchmarks national capabilities. Persistent gaps: only ~30% of countries achieved high JEE scores; financing shortfalls estimated at $10-30 billion annually needed globally; weak primary healthcare systems limit detection; limited manufacturing capacity in low-income regions; inadequate data sharing mechanisms. Post-COVID reforms proposed: new pandemic treaty, strengthened WHO authority, permanent financing mechanism, technology transfer hubs, and equity frameworks for countermeasure access.",
+    "source": "WHO JEE reports, Global Health Security Index, Independent Panel for Pandemic Preparedness and Response",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

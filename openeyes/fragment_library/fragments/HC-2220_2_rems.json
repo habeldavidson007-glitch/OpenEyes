@@ -1,0 +1,15 @@
+{
+  "content": "REMS compliance criteria vary by program but generally include: prescriber certification (completion of training, attestation of knowledge), pharmacy certification (staff training, systems for verification), patient enrollment (signed acknowledgment forms, consent to monitoring), laboratory monitoring (specific tests at defined intervals), pregnancy prevention (contraception requirements, testing schedules), and dispensing restrictions (authorized locations, quantity limits). Non-compliance results in inability to prescribe, dispense, or receive medication. REMS effectiveness is assessed through metrics like prescriber knowledge surveys, patient adherence rates, and adverse event incidence. FDA may modify or discontinue REMS when risks are adequately managed or new data emerges.",
+  "source": "fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "id": "HC-2220",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "tags": [
+    "phr"
+  ]
+}

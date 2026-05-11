@@ -1,0 +1,17 @@
+{
+  "id": "PHR-2132_good_manufacturing_practice_definition",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "good manufacturing practice",
+    "pharmaceuticals",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Good Manufacturing Practice - technical approach, regulatory requirements, quality standards",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "FDA"
+}

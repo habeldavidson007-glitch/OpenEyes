@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_hs_work_def_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["health workforce", "shortage", "maldistribution", "task shifting"],
+    "reasoning_role": "definition",
+    "content": "Global health workforce challenges include: (1) Shortage - WHO estimates deficit of 10 million health workers by 2030, concentrated in low-income countries (Sub-Saharan Africa has 3% of global health workers for 24% of disease burden); (2) Maldistribution - urban concentration leaving rural areas underserved (rural areas have 1/3 the physicians per capita); (3) Skill mix imbalance - overspecialization in some regions, insufficient primary care providers; (4) Migration ('brain drain') - 25% of physicians in OECD countries trained abroad; (5) Burnout - 40-50% of physicians report burnout symptoms. Density thresholds: 23 health workers per 10,000 population needed for essential service coverage; 46 countries below this threshold.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_work_trt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["health workforce", "retention", "training", "policy"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Workforce strengthening strategies: (1) Expand training capacity - increase medical/nursing school seats, accelerate programs (3-year MD programs); (2) Rural training tracks - required rural rotations, rural campuses showing 2-3x higher rural practice rates; (3) Financial incentives - loan repayment ($50,000-100,000 for 3-5 years rural service), rural salary supplements; (4) Task shifting - training community health workers, nurses, pharmacists for roles traditionally physician-only (HIV ART initiation, chronic disease management) with equivalent outcomes; (5) Team-based care - optimizing scope of practice, reducing administrative burden; (6) International recruitment ethics - bilateral agreements compensating source countries. Ethiopia's Health Extension Program trained 40,000 health workers achieving 85% immunization coverage.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_hs_work_dia_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["health workforce", "metrics", "productivity", "retention"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Workforce metrics include: (1) Density - physicians/nurses per 1,000 population (US: 2.6 physicians, 14.5 nurses; UK: 2.8 physicians, 7.9 nurses; Sub-Saharan Africa median: 0.2 physicians, 1.5 nurses); (2) Productivity - patient encounters per provider per day (primary care: 15-25 typical); (3) Retention rates - % remaining in rural practice after 5 years (40-60% without interventions, 70-80% with comprehensive support); (4) Vacancy rates - open positions as % of budgeted FTE (rural hospitals: 10-20% vs urban 5-8%); (5) Burnout measures - Maslach Burnout Inventory scores. Physician aging is a concern: 40% of US physicians >55 years old, with 1/3 of family physicians planning retirement within 5 years. Projected US shortage: 37,800-124,000 physicians by 2034.",
+    "source": "who.int",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

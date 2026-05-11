@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["anticoagulation", "warfarin", "NOAC", "DOAC", "mechanism"],
+    "reasoning_role": "definition",
+    "content": "Anticoagulants prevent thrombus formation by inhibiting coagulation cascade. Warfarin: vitamin K antagonist, inhibits synthesis of factors II, VII, IX, X and proteins C, S. Requires INR monitoring (target 2.0-3.0 for most indications, 2.5-3.5 for mechanical mitral valve). Many drug-drug and drug-food interactions (CYP2C9 metabolism, vitamin K intake). DOACs/NOACs (direct oral anticoagulants): dabigatran (direct thrombin inhibitor), rivaroxaban/apixaban/edoxaban (factor Xa inhibitors). Fixed dosing, no routine monitoring, fewer interactions, rapid onset/offset. Renal clearance varies: dabigatran 80%, edoxaban 50%, rivaroxaban 33%, apixaban 25%—apixaban safest in CKD. Indications: atrial fibrillation stroke prevention, VTE treatment and prevention, post-orthopedic surgery prophylaxis. Contraindications: mechanical heart valves (use warfarin), moderate-severe mitral stenosis with AF (warfarin), severe renal impairment (varies by agent), active bleeding, antiphospholipid syndrome (warfarin preferred).",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34076510/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["anticoagulation", "indications", "AF", "VTE", "dosing"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Anticoagulation indications and dosing: Atrial fibrillation (CHA2DS2-VASc ≥2 men/≥3 women): apixaban 5mg BID (reduce to 2.5mg BID if ≥2 of age ≥80, weight ≤60kg, creatinine ≥1.5), rivaroxaban 20mg daily with evening meal (15mg if CrCl 30-50), dabigatran 150mg BID (75mg if CrCl 15-30), edoxaban 60mg daily (30mg if CrCl 15-50, weight ≤60kg, or P-gp inhibitor). VTE treatment: acute phase (first 5-21 days) requires therapeutic anticoagulation; DOACs have loading strategies (rivaroxaban 15mg BID x21 days then 20mg; apixaban 10mg BID x7 days then 5mg); warfarin requires bridging with LMWH until INR therapeutic. Extended treatment: indefinite for unprovoked proximal DVT/PE or ongoing risk factors; 3 months for provoked VTE with resolved risk factor. Cancer-associated thrombosis: DOACs now preferred over LMWH (SELECT-D, CARAVAGGIO trials) except GI/GU cancers with high bleeding risk. Orthopedic prophylaxis: 10-35 days post-surgery depending on procedure.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34076510/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["anticoagulation reversal", "bleeding management", "andexanet alfa", "idarucizumab"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Anticoagulation reversal for major/life-threatening bleeding: Warfarin: 4-factor prothrombin complex concentrate (PCC) 25-50 units/kg + IV vitamin K 5-10mg (FFP if PCC unavailable). Dabigatran: idarucizumab 5g IV (monoclonal antibody fragment, immediate reversal); hemodialysis also removes dabigatran. Factor Xa inhibitors (rivaroxaban, apixaban, edoxaban): andexanet alfa (recombinant modified factor Xa decoy) 400-800mg IV bolus + infusion (approved for life-threatening bleeding); 4-factor PCC 50 units/kg if andexanet unavailable (off-label but commonly used). Minor bleeding: hold anticoagulant, local measures, consider dose reduction when resuming. Perioperative management: low bleeding risk procedures—continue DOAC, skip morning dose day of procedure; moderate-high risk—hold DOAC 2-4 days before (longer if renal impairment); warfarin hold 5 days, bridge with LMWH if high thrombotic risk (mechanical mitral valve, recent VTE <3 months, AF with CHA2DS2-VASc ≥5). Resume anticoagulation 24-72 hours post-procedure depending on bleeding risk.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/31390618/",
+    "credibility_class": "guideline",
+    "year": 2019
+  }
+]

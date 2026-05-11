@@ -1,0 +1,19 @@
+{
+  "id": "endo_osteoporosis_trt_001",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "osteoporosis",
+    "bisphosphonates",
+    "denosumab",
+    "teriparatide",
+    "romosozumab"
+  ],
+  "content": "Foundation: adequate calcium (1000-1200mg/day total from diet + supplements) and vitamin D (800-2000 IU/day to maintain 25-OH vitamin D >30 ng/mL), weight-bearing exercise, fall prevention, smoking cessation. Pharmacologic therapy for T-score \u2264-2.5, prior fragility fracture, or osteopenia with high FRAX risk. First-line: bisphosphonates (alendronate, risedronate PO weekly; zoledronic acid IV yearly) - inhibit osteoclasts, reduce vertebral/hip fractures. Alternatives: denosumab (RANKL inhibitor, SC q6months) - potent antiresorptive, reversible effect requires transition plan. Anabolic agents for severe osteoporosis (T-score <-3.0 or multiple fractures): teriparatide/abaloparatide (PTH analogs, daily SC, max 2 years); romosozumab (sclerostin inhibitor, monthly SC, 12 months) - increases formation, reduces resorption, cardiovascular risk warning. Drug holiday after 3-5 years bisphosphonates if fracture risk decreases. Monitor with repeat DEXA every 1-2 years.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33985615/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

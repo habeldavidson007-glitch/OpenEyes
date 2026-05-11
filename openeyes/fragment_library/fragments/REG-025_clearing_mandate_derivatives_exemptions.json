@@ -1,0 +1,22 @@
+{
+  "id": "REG-025",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "central_clearing",
+    "ccp",
+    "derivatives",
+    "dodd_frank",
+    "emir"
+  ],
+  "reasoning_role": "definition",
+  "content": "Central clearing mandate for derivatives established under Dodd-Frank (US) and EMIR (EU) requires standardized OTC derivatives to clear through central counterparties (CCPs). Covered products: interest rate swaps (fixed-floating, basis, OIS), credit default swaps (CDX, iTraxx indices), equity/index swaps. Exemptions: (1) End-user clearing exemption\u2014non-financial entities hedging commercial risk, (2) Small financial institution exemption, (3) Foreign exchange swaps/swaptions exempted (Treasury determination 2013), (4) Inter-affiliate transactions (with conditions), (5) Pre-enactment/transition swaps. Rationale: reduce counterparty risk, increase transparency, enable multilateral netting. CCPs stand between counterparties as buyer to every seller/seller to every buyer, managing risk through margin, default funds, loss mutualization. Post-mandate: >80% of eligible interest rate swaps centrally cleared. Concerns: CCP concentration risk, procyclicality of margin calls, interoperability.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

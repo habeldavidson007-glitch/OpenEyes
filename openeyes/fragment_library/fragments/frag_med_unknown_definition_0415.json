@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0415",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "adrenal insufficiency",
+    "Addison disease",
+    "cortisol",
+    "aldosterone",
+    "adrenal crisis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Adrenal insufficiency (AI) results from inadequate cortisol production. Classification: (1) Primary AI (Addison disease) - adrenal gland destruction: autoimmune (most common in developed countries), tuberculosis, metastatic disease, hemorrhage, genetic disorders (congenital adrenal hyperplasia, adrenoleukodystrophy). Characterized by low cortisol, high ACTH, mineralocorticoid deficiency (low aldosterone), and hyperpigmentation (from elevated ACTH/MSH). (2) Secondary AI - pituitary ACTH deficiency: tumors, surgery, radiation, Sheehan syndrome, infiltrative diseases. (3) Tertiary AI - hypothalamic-pituitary-adrenal axis suppression from chronic exogenous glucocorticoids (most common overall). Mineralocorticoid function preserved in secondary/tertiary. Symptoms: fatigue, weakness, weight loss, anorexia, nausea, abdominal pain, hypotension, salt craving (primary). Adrenal crisis: life-threatening with hypotension/shock, hyponatremia, hyperkalemia (primary), hypoglycemia, fever.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985612/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

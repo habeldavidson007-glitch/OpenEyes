@@ -1,0 +1,20 @@
+{
+  "id": "endo_gout_trt_001",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "gout",
+    "colchicine",
+    "NSAIDs",
+    "allopurinol",
+    "febuxostat",
+    "urate-lowering"
+  ],
+  "content": "Acute flare treatment (start within 24 hours): NSAIDs (indomethacin, naproxen, celecoxib); colchicine 1.2mg then 0.6mg 1 hour later, then 0.6mg daily-bid (lower doses than historical); glucocorticoids (prednisone 30-40mg daily \u00d7 5-10 days, or intra-articular). IL-1 inhibitors (anakinra) for refractory cases. Urate-lowering therapy (ULT) indications: \u22652 flares/year, tophi, CKD stage \u22653, urolithiasis, serum urate >9mg/dL. First-line: allopurinol (xanthine oxidase inhibitor) start 100mg/day (50mg if CKD), titrate every 2-5 weeks to target urate <6mg/dL (<5mg/dL if tophaceous); max 800mg/day. Febuxostat alternative (cardiovascular safety concerns). Probenecid (uricosuric) if eGFR >50. Pegloticase (recombinant uricase) for refractory severe gout. Flare prophylaxis when starting ULT: colchicine 0.6mg daily-bid, low-dose NSAID, or prednisone \u226410mg/day for \u22656 months. Lifestyle: weight loss, limit alcohol/purines, avoid fructose beverages.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33985617/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

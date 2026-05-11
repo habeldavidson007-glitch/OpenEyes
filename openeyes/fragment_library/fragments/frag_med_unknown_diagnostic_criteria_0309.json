@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0309",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "PK_parameters",
+    "Cmax",
+    "AUC",
+    "half_life",
+    "clearance",
+    "bioavailability"
+  ],
+  "reasoning_role": "definition",
+  "content": "Key pharmacokinetic parameters used to characterize drug behavior include: Cmax (peak plasma concentration), Tmax (time to peak), AUC (area under curve - total exposure), half-life (t1/2 - time for 50% elimination), clearance (CL - volume cleared per unit time), volume of distribution (Vd - theoretical distribution space), and bioavailability (F - fraction reaching systemic circulation). These are measured through serial blood sampling after drug administration. Population PK modeling uses sparse sampling to estimate parameters in clinical settings. Non-compartmental analysis calculates AUC using trapezoidal rule. Compartmental modeling fits data to mathematical models (one-, two-, or three-compartment) to predict concentrations over time.",
+  "source": "ema.europa.eu",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

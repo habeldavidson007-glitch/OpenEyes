@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0377",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "vitamin D",
+    "cholecalciferol",
+    "ergocalciferol",
+    "dosing",
+    "deficiency treatment"
+  ],
+  "reasoning_role": "definition",
+  "content": "Treatment of deficiency (25-OH D <20 ng/mL): adults - cholecalciferol 50,000 IU weekly \u00d7 8 weeks or 6000 IU daily, then maintenance 1500-2000 IU daily; alternative ergocalciferol 50,000 IU weekly \u00d7 8 weeks. Obese patients, malabsorption syndromes, or medications affecting vitamin D metabolism (anticonvulsants, glucocorticoids, rifampin) may require 2-3\u00d7 higher doses. Monitor 25-OH D after 3-4 months, adjust to maintain level \u226530 ng/mL (some guidelines accept \u226520 ng/mL). Maintenance for sufficiency: 600-800 IU/day (IOM) or 1500-2000 IU/day (Endocrine Society) for adults; higher for elderly, dark-skinned individuals, limited sun exposure. Toxicity rare, usually from excessive supplementation (>10,000 IU/day long-term): hypercalcemia, hypercalciuria, nephrocalcinosis. Upper tolerable limit 4000 IU/day for adults without monitoring. Calcitriol reserved for hypoparathyroidism, CKD stage 4-5.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985616/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,16 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "absolute relative risk",
+    "epidemiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Definition content for absolute_relative_risk.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2140",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

@@ -16,7 +16,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "subdomain": "MED",
-  "reasoning_role": "supporting_evidence",
+  "reasoning_role": "counter_argument",
   "source_type": "clinical_guideline",
   "year": 2026,
   "sub_question": "What are the risk factors and differential diagnoses?"

@@ -1,0 +1,18 @@
+{
+  "id": "HC-2130",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "universal health coverage",
+    "measurement",
+    "indicators",
+    "monitoring"
+  ],
+  "reasoning_role": "definition",
+  "content": "UHC progress is assessed through the Universal Health Coverage Service Coverage Index (SCI), which tracks 14 tracer indicators across four domains: reproductive/maternal/newborn/child health (family planning, antenatal care, immunization); infectious diseases (HIV, TB, malaria treatment); non-communicable diseases (hypertension treatment, cancer screening); and health system capacity (hospital beds, health workers). Financial protection is measured by incidence of catastrophic health expenditure (>10% household income) and impoverishing health spending. Current global SCI averages 67/100, with wide variation between high-income (80+) and low-income (<50) countries.",
+  "source": "who.int",
+  "credibility_class": "A",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

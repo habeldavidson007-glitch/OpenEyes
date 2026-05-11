@@ -1,0 +1,18 @@
+{
+  "content": "DSM-5-TR Insomnia Disorder criteria: Predominant complaint of dissatisfaction with sleep quantity/quality with \u22651 symptoms: difficulty initiating sleep, difficulty maintaining sleep (frequent awakenings/trouble returning to sleep), early morning awakening with inability to return to sleep. Causes clinically significant distress/impairment in daytime functioning (fatigue, mood disturbance, cognitive impairment, reduced motivation/energy, increased errors/accidents, tension headaches, GI symptoms, concern about sleep). Sleep difficulty occurs \u22653 nights/week, present for \u22653 months, occurs despite adequate opportunity for sleep. Not better explained by/exclusive to another sleep-wake disorder, substance effects, or co-occurring mental/medical disorders. Specifiers: episodic, persistent, recurrent.",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "insomnia",
+    "sleep-disorder"
+  ],
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "year": 2022,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2004",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "endo_dm1_trt_001",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "diabetes",
+    "insulin therapy",
+    "basal-bolus",
+    "pump",
+    "monitoring"
+  ],
+  "content": "Treatment requires intensive insulin therapy via multiple daily injections (MDI) or continuous subcutaneous insulin infusion (CSII/pump). Basal-bolus regimen: long-acting basal insulin (glargine, detemir, degludec) once/twice daily plus rapid-acting bolus insulin (lispro, aspart, glulisine) before meals. Insulin dosing based on carbohydrate counting (typically 1 unit per 10-15g carbs) and correction factor (1 unit lowers glucose by 30-50 mg/dL). Continuous glucose monitoring (CGM) strongly recommended; target time-in-range (70-180 mg/dL) >70%, time-below-range <4%. Hybrid closed-loop systems (automated insulin delivery) improve glycemic control and reduce hypoglycemia. Adjunct therapies: pramlintide for postprandial control; SGLT2 inhibitors off-label with caution for DKA risk. Target HbA1c <7% individualized.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/34941888/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

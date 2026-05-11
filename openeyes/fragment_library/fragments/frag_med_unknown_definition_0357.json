@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0357",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "oncology",
+    "breast cancer",
+    "diagnosis",
+    "biomarkers",
+    "staging"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnosis requires imaging and tissue confirmation. Screening mammography detects non-palpable cancers; diagnostic mammography + ultrasound for symptomatic patients. MRI for high-risk screening, staging dense breasts, evaluating implant integrity, assessing response to neoadjuvant therapy. Biopsy methods: core needle biopsy preferred (preserves architecture, allows biomarker testing); FNA for lymph nodes; surgical excision if percutaneous not feasible. Pathology: histologic type (ductal, lobular, others); grade (Nottingham score - tubule formation, nuclear pleomorphism, mitotic rate); biomarkers by IHC - ER, PR (positive if \u22651% cells staining), HER2 (IHC 3+ or FISH amplified); Ki-67 proliferation index. Staging: TNM 8th edition incorporates biomarkers into prognostic stage groups. Genomic assays: Oncotype DX (21-gene recurrence score) predicts chemotherapy benefit in HR+ node-negative and some node-positive disease; MammaPrint (70-gene signature) classifies low vs high risk. Germline testing recommended for TNBC <60 years, metastatic disease, strong family history, male breast cancer.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35678901/",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

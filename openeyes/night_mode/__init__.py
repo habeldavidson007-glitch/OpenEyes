@@ -46,6 +46,52 @@ NIGHT_MODE_SCHEDULE = [
     }
 ]
 
+def evolve_ekd_clusters(fragment_library=None, ekd_store_path="openeyes/data/ekd_store.json"):
+    """
+    Nightly EKD evolution job.
+    
+    For each cluster:
+    1. Validate all fragment IDs still exist
+    2. Check if newer fragments exist that should replace decayed ones
+    3. Recompute cluster confidence based on current fragment weights
+    4. Flag clusters that haven't been activated in 30+ days for review
+    """
+    logger.info("[Night Mode] Evolving EKD clusters...")
+    try:
+        from openeyes.core.ekd import EKDStore
+        from datetime import datetime, timedelta
+        
+        store = EKDStore(ekd_store_path)
+        
+        evolved = 0
+        flagged = 0
+        
+        cutoff = (datetime.now() - timedelta(days=30)).isoformat()
+        
+        for cluster_id, cluster in store.clusters.items():
+            # Validate fragments still exist
+            valid_ids = [
+                fid for fid in cluster.fragment_ids
+                if fragment_library and fid in fragment_library._fragments
+            ]
+            
+            if len(valid_ids) < len(cluster.fragment_ids):
+                removed = len(cluster.fragment_ids) - len(valid_ids)
+                cluster.fragment_ids = valid_ids
+                cluster.fragments_lost += removed
+                evolved += 1
+            
+            # Flag stale clusters
+            if cluster.last_activated < cutoff and cluster.activation_count < 3:
+                flagged += 1
+        
+        store.save()
+        logger.info(f"[Night Mode] EKD evolution: {evolved} clusters updated, "
+                   f"{flagged} clusters flagged as stale")
+    except Exception as e:
+        logger.error(f"[Night Mode] EKD evolution failed: {e}")
+
+
 def run_scrapers(fragment_library=None):
     """Execute all finance scrapers to fetch new data."""
     logger.info("[Night Mode] Starting scrapers...")
@@ -145,6 +191,7 @@ JOB_REGISTRY = {
     'fill_gaps_from_halts': fill_gaps_from_halts,
     'consolidate_synapses': consolidate_synapses,
     'generate_obsidian_report': generate_obsidian_report,
+    'evolve_ekd_clusters': evolve_ekd_clusters,
 }
 
 def execute_job(job_name: str):

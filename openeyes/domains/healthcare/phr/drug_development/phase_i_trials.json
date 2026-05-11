@@ -1,0 +1,37 @@
+{
+  "fragments": [
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "tags": ["Phase I trials", "dose escalation", "safety", "first-in-human"],
+      "reasoning_role": "definition",
+      "content": "Phase I trials are the first stage of human testing for investigational drugs, primarily focused on safety and tolerability. These studies typically enroll 20-100 healthy volunteers (except in oncology where patients are used). The primary objective is to determine the maximum tolerated dose (MTD), characterize pharmacokinetics (absorption, distribution, metabolism, excretion), and identify dose-limiting toxicities. Phase I trials usually last several months and establish the safety profile before proceeding to efficacy testing.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "tags": ["Phase I trials", "dose escalation", "safety", "first-in-human"],
+      "reasoning_role": "treatment_protocol",
+      "content": "Phase I trial design uses dose-escalation methodology: starting at a conservative dose (typically 1/10th of the no-observed-adverse-effect level from animal studies), then incrementally increasing doses in cohorts of 3-6 subjects. Common designs include 3+3 escalation, accelerated titration, or model-based approaches (CRM—continual reassessment method). Subjects are monitored for adverse events, vital signs, ECG changes, and laboratory abnormalities. Pharmacokinetic sampling determines Cmax, Tmax, AUC, half-life, and accumulation. Food-effect and drug-drug interaction sub-studies may be included.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "tags": ["Phase I trials", "dose escalation", "safety", "first-in-human"],
+      "reasoning_role": "diagnostic_criteria",
+      "content": "Phase I success criteria include: acceptable safety profile with manageable adverse events, defined maximum tolerated dose or recommended Phase II dose (RP2D), predictable pharmacokinetics supporting intended dosing frequency, and no unexpected severe toxicities. Dose-limiting toxicity (DLT) is typically defined as Grade 3+ adverse event related to study drug occurring in ≥33% of subjects at a dose level. Oncology Phase I trials use different endpoints (objective response rate, disease control rate) since they enroll patients rather than healthy volunteers. Approximately 70% of drugs pass Phase I and advance to Phase II.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

@@ -19,5 +19,6 @@
   "compatible_with": [
     "frag_endo_diabetes_fasting_001"
   ],
-  "incompatible_with": []
+  "incompatible_with": [],
+  "year": 2024
 }

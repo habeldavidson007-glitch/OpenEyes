@@ -1,0 +1,19 @@
+{
+  "id": "frag_phr_unknown_definition_0187",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "phr",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Medication errors are preventable events that may cause or lead to inappropriate medication use or patient harm while the medication is in the control of the healthcare professional, patient, or consumer. Types include: prescribing errors (wrong drug, dose, frequency, route), transcription errors (miscommunication, illegible handwriting), dispensing errors (wrong drug, strength, labeling), administration errors (wrong patient, time, technique), and monitoring errors (failure to review labs, assess response). Contributing factors include look-alike/sound-alike drugs, decimal point errors, unit confusion (mg vs mcg), fatigue, interruptions, inadequate staffing, and poor communication. The National Coordinating Council for Medication Error Reporting and Prevention (NCC MERP) categorizes errors by severity from A (no error) to I (death).",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

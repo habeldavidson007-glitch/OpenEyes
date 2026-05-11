@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["myocardial infarction", "STEMI", "NSTEMI", "acute coronary syndrome", "pathophysiology"],
+    "reasoning_role": "definition",
+    "content": "Myocardial infarction (MI) is myocardial cell death due to prolonged ischemia. Universal Definition classifies MI into 5 types: Type 1 (spontaneous, plaque rupture/erosion with thrombus), Type 2 (supply-demand mismatch without plaque rupture), Type 3 (cardiac arrest with suspected MI before biomarkers available), Type 4 (PCI-related), Type 5 (CABG-related). STEMI vs NSTEMI distinction based on ECG: STEMI shows ST elevation in ≥2 contiguous leads (≥2mm men, ≥1.5mm women in V2-V3; ≥1mm other leads) or new LBBB, indicating complete coronary occlusion requiring immediate reperfusion. NSTEMI shows ST depression, T-wave inversion, or normal ECG with elevated troponin, indicating partial occlusion. Both are acute coronary syndromes (ACS); unstable angina has ischemic symptoms without troponin elevation.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/30571638/",
+    "credibility_class": "guideline",
+    "year": 2018
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["STEMI", "reperfusion", "PCI", "fibrinolysis", "treatment"],
+    "reasoning_role": "treatment_protocol",
+    "content": "STEMI treatment: immediate reperfusion is critical. Primary PCI is preferred if available within 120 minutes of first medical contact; goal door-to-balloon time <90 minutes. If PCI unavailable within 120 minutes, administer fibrinolytic (alteplase, tenecteplase, reteplase) within 30 minutes of hospital arrival (door-to-needle time), provided no contraindications (prior hemorrhagic stroke, ischemic stroke <3 months, intracranial neoplasm, active bleeding, suspected aortic dissection). Fibrinolysis most effective within 2 hours of symptom onset. After fibrinolysis, transfer to PCI-capable center for pharmacoinvasive strategy (angiography within 3-24 hours). Adjunctive therapy: aspirin 162-325mg chewed, P2Y12 inhibitor (ticagrelor 180mg or clopidogrel 600mg), anticoagulation (unfractionated heparin or enoxaparin), high-intensity statin, beta-blocker if no heart failure/shock risk, ACEi within 24 hours.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/33453222/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["NSTEMI", "risk stratification", "GRACE score", "timing of angiography"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "NSTEMI management requires risk stratification to determine timing of invasive strategy. GRACE score predicts 6-month mortality: very high risk (>140) indicates immediate angiography (<2 hours); high risk (140 or dynamic ST changes, troponin rise/fall, hemodynamic instability) indicates early angiography (<24 hours); intermediate risk indicates angiography within 72 hours. TIMI score also used for risk assessment. Initial medical therapy: dual antiplatelet therapy (aspirin + P2Y12 inhibitor—ticagrelor or clopidogrel; avoid prasugrel until anatomy known), anticoagulation (fondaparinux preferred unless PCI planned, then UFH or enoxaparin), high-intensity statin, beta-blocker, ACEi/ARB. Glycoprotein IIb/IIIa inhibitors reserved for bailout during PCI or very high thrombus burden. Routine use of oxygen only if saturation <90% or respiratory distress.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/33453222/",
+    "credibility_class": "guideline",
+    "year": 2021
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "id": "frag_ph_social_determinants_of_health_definition_0073",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "public_health",
+    "health_equity",
+    "social_factors",
+    "population_health"
+  ],
+  "reasoning_role": "definition",
+  "content": "Social determinants of health (SDOH) are the non-medical factors that influence health outcomes, including conditions in which people are born, grow, work, live, and age. These encompass economic stability, education access and quality, healthcare access and quality, neighborhood and built environment, and social and community context. The WHO Commission on Social Determinants of Health (2008) established that SDOH account for a substantial proportion of health inequities within and between countries. Evidence demonstrates that socioeconomic status is one of the strongest predictors of health outcomes, with gradient effects observed across the entire socioeconomic spectrum, not just at extremes.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

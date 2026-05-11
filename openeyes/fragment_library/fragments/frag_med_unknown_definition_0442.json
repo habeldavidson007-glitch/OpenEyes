@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0442",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "headache",
+    "tension-type",
+    "cluster",
+    "secondary-headache",
+    "differential"
+  ],
+  "reasoning_role": "definition",
+  "content": "Headache disorders are among the most common neurological complaints. Primary headaches (90%+) include migraine, tension-type headache (TTH), and trigeminal autonomic cephalalgias (cluster headache). Tension-type headache: bilateral, pressing/tightening quality, mild-moderate intensity, not aggravated by activity, no nausea (may have photophobia OR phonophobia but not both); episodic (<15 days/month) or chronic (\u226515 days/month). Cluster headache: severe unilateral orbital/temporal pain lasting 15-180 minutes, with ipsilateral autonomic features (ptosis, miosis, lacrimation, rhinorrhea, conjunctival injection), restlessness/agitation; occurs in clusters (weeks-months) with remission periods; more common in men, associated with smoking. Secondary headaches result from underlying pathology: subarachnoid hemorrhage (thunderclap), meningitis (fever, nuchal rigidity), giant cell arteritis (age >50, jaw claudication, elevated ESR), idiopathic intracranial hypertension (obese women of childbearing age, papilledema), CSF leak (orthostatic), brain tumor (progressive, worse in morning), medication overuse headache.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/30335648/",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

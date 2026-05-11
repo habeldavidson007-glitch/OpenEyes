@@ -1,0 +1,22 @@
+{
+  "id": "REG-005",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "mifid_ii",
+    "best_execution",
+    "investor_protection",
+    "eu_regulation",
+    "execution_quality"
+  ],
+  "reasoning_role": "definition",
+  "content": "MiFID II best execution requirements (Article 27) mandate investment firms to take all sufficient steps to obtain the best possible result for clients when executing orders. Best result measured by total consideration (price + costs), including: execution price, transaction costs, speed, likelihood of execution/settlement, size, nature of order. Firms must establish execution policies identifying execution venues used, factors affecting execution quality. Annual review required. Retail clients receive highest protection level\u2014price/costs paramount unless other factors prevail. Professional clients may prioritize other factors. Firms must monitor execution quality, publish top five execution venues annually, and obtain client consent to execution policy. Measurement involves transaction cost analysis (TCA), comparing achieved prices against benchmarks.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

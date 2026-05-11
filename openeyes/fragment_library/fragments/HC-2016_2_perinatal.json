@@ -1,0 +1,19 @@
+{
+  "content": "DSM-5-TR includes 'with peripartum onset' specifier for depressive/bipolar episodes: onset during pregnancy or within 4 weeks postpartum (though clinically, postpartum period often extended to 12 months). Postpartum depression meets criteria for Major Depressive Disorder with peripartum specifier. Key features may include: mood lability, tearfulness, anxiety about infant care, intrusive thoughts about harm to infant (distinguish from psychotic commands), difficulty bonding. Postpartum 'blues' (50-80% of mothers): mild mood symptoms days 3-5 postpartum, self-limited, doesn't meet depression criteria. Postpartum psychosis: rapid onset mood symptoms (mania/depression), delusions (often infant-related), hallucinations, disorganization, insomnia; requires immediate evaluation as psychiatric emergency.",
+  "tags": [
+    "DSM-5-TR",
+    "peripartum-onset",
+    "postpartum-depression",
+    "screening",
+    "EPDS"
+  ],
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "year": 2022,
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2016",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

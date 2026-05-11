@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_rt_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["effective reproduction number", "Rt", "epidemiology", "outbreak monitoring"],
+    "reasoning_role": "definition",
+    "content": "The effective reproduction number (Rt) is the average number of secondary infections produced by an infected individual at time t during an outbreak, accounting for immunity, interventions, and behavior changes. Unlike R0 (which assumes complete susceptibility), Rt reflects real-time transmission dynamics. Rt changes as susceptible population decreases through infection or vaccination, and as interventions modify contact rates or transmission probability. When Rt > 1, cases increase; when Rt < 1, cases decline. Rt estimation uses case counts, hospitalization data, or death counts with statistical models accounting for reporting delays.",
+    "source": "WHO outbreak analytics, CDC epidemiology principles",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_rt_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["Rt", "intervention effectiveness", "epidemic control"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Driving Rt below 1 requires reducing transmission through multiple mechanisms: decreasing infectious period (testing, isolation, treatment), reducing transmission probability (masks, ventilation, hand hygiene), or reducing contact rate (social distancing, lockdowns, school closures). The combination needed depends on initial Rt. For example, if Rt = 2.5 without interventions, measures must reduce transmission by >60% to achieve Rt < 1. Real-time Rt monitoring enables adaptive responses: intensifying measures when Rt rises, relaxing when sustained below 1. Lag time between intervention and Rt change equals generation time plus reporting delay.",
+    "source": "Lancet Infectious Diseases, WHO pandemic response guidelines",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_rt_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["Rt estimation", "epidemic curve", "surveillance"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Rt estimation methods include: EpiEstim package using incidence data and serial interval distribution, renewal equation approaches, or Bayesian hierarchical models. Key challenges: right-censoring of recent data, underreporting, changing testing patterns, and importation cases. Rt should be interpreted with credible intervals—wide intervals indicate uncertainty. Subnational Rt estimates reveal geographic heterogeneity. Rt based on deaths lags transmission by 2-4 weeks; case-based Rt is timelier but sensitive to testing changes. Effective Rt monitoring requires consistent case definitions and stable testing capacity.",
+    "source": "Eurosurveillance, CDC MMWR surveillance guidelines",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

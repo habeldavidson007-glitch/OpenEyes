@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["aortic stenosis", "etiology", "pathophysiology", "classification"],
+    "reasoning_role": "definition",
+    "content": "Aortic stenosis (AS) is obstruction of left ventricular outflow due to a narrowed aortic valve. Etiologies: degenerative calcific (most common in elderly—age-related, similar pathobiology to atherosclerosis), congenital bicuspid valve (presents 50s-60s vs 70s-80s for tricuspid), rheumatic heart disease (rare in developed countries, associated with mitral disease). Pathophysiology: progressive valve narrowing increases LV afterload, causing concentric hypertrophy, diastolic dysfunction, eventually systolic dysfunction and heart failure. Classic triad: angina (increased demand, decreased supply), syncope (fixed output unable to increase with exertion), dyspnea/heart failure (elevated filling pressures). Once symptoms develop, average survival without intervention: angina 5 years, syncope 3 years, heart failure 2 years. Severity classification: mild (jet velocity 2.0-2.9 m/s, mean gradient <20 mmHg, AVA >1.5 cm²), moderate (3.0-3.9 m/s, 20-39 mmHg, 1.0-1.5 cm²), severe (≥4.0 m/s, ≥40 mmHg, ≤1.0 cm²), very severe (≥5.0 m/s, ≥60 mmHg). Low-flow low-gradient AS requires dobutamine stress echo or CT calcium scoring.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34489012/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["aortic stenosis", "diagnosis", "echocardiography", "symptoms"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "AS diagnosis: physical exam shows crescendo-decrescendo systolic murmur at right upper sternal border radiating to carotids, delayed carotid upstroke (pulsus parvus et tardus), soft/absent A2, S4 gallop. Echocardiography is primary diagnostic tool: transthoracic echo assesses valve morphology, gradients, valve area (continuity equation), LV function, concomitant valve disease. Doppler measurements: peak jet velocity, mean gradient, dimensionless index (LVOT VTI / AV VTI; <0.25 suggests severe AS). Exercise testing useful for asymptomatic severe AS to elicit symptoms or abnormal BP response. Cardiac catheterization if discordance between clinical and echo findings or before noncardiac surgery. Biomarkers: elevated BNP predicts worse outcomes. CT aortic valve calcium scoring: Agatston score >2000 men or >1200 women indicates severe AS; useful for low-flow low-gradient cases. Cardiac MRI for LV mass, fibrosis assessment. Regular surveillance: mild AS every 3-5 years, moderate every 1-2 years, severe every 6-12 months or if symptoms change.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34489012/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["aortic stenosis", "TAVR", "SAVR", "treatment selection"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Severe symptomatic AS requires valve replacement—no medical therapy improves survival. Options: Surgical AVR (SAVR) or Transcatheter AVR (TAVR). TAVR initially for inoperable/high-risk patients (PARTNER trial), now expanded to all risk categories. PARTNER 3 (low risk) and Evolut Low Risk trials showed TAVR noninferior or superior to SAVR for death/stroke/rehospitalization at 1-2 years. Current guidelines: TAVR preferred for age >80 or life expectancy <10 years or high surgical risk; SAVR preferred for age <65 or life expectancy >20 years or need for concomitant cardiac surgery; either reasonable for ages 65-80 (shared decision-making). TAVR advantages: less invasive, shorter recovery, lower bleeding/AKI risk; disadvantages: higher pacemaker rate, paravalvular leak, uncertain long-term durability (>10 years). SAVR advantages: proven durability (>20 years), lower pacemaker/leak rates; disadvantages: sternotomy, longer recovery, more bleeding/AF. Mechanical valves require warfarin; bioprosthetic avoid anticoagulation but degenerate over time. Pre-procedure evaluation: coronary angiography, peripheral vascular access assessment, CT annulus sizing, heart team discussion.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34489012/",
+    "credibility_class": "guideline",
+    "year": 2021
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["statins", "mechanism of action", "HMG-CoA reductase", "lipid lowering"],
+    "reasoning_role": "definition",
+    "content": "Statins are HMG-CoA reductase inhibitors that block cholesterol synthesis rate-limiting step in liver. Mechanism: competitive inhibition of HMG-CoA reductase reduces intracellular cholesterol, upregulating LDL receptors, increasing hepatic LDL clearance, lowering circulating LDL-C by 30-60% depending on potency and dose. Pleiotropic effects: improve endothelial function, stabilize atherosclerotic plaques, reduce inflammation (lower hs-CRP), decrease thrombosis risk. Statin intensity: high-intensity (atorvastatin 40-80mg, rosuvastatin 20-40mg) lowers LDL ≥50%; moderate-intensity (atorvastatin 10-20mg, rosuvastatin 5-10mg, simvastatin 20-40mg, pravastatin 40-80mg) lowers 30-49%; low-intensity lowers <30%. Rosuvastatin and atorvastatin most potent (longest half-lives). Lipophilic statins (simvastatin, lovastatin, atorvastatin) may have more muscle penetration; hydrophilic (pravastatin, rosuvastatin) potentially fewer drug interactions.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/33722022/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["statins", "clinical trials", "evidence base", "cardiovascular outcomes"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Landmark statin trials established cardiovascular benefit: 4S (simvastatin post-MI—30% mortality reduction), WOSCOPS (pravastatin primary prevention), LIPID (pravastatin ACS), HPS (simvastatin high-risk patients—benefit regardless of baseline LDL), TNT (atorvastatin 80mg vs 10mg post-ACS—intensive better), IMPROVE-IT (ezetimibe added to statin—modest additional benefit), FOURIER (evolocumab PCSK9 inhibitor added to statin—further LDL reduction and CV benefit), REDUCE-IT (icosapent ethyl added to statin—reduced CV events). Meta-analyses show each 1 mmol/L (39 mg/dL) LDL reduction yields ~22% relative risk reduction in major vascular events. Statins recommended for: clinical ASCVD (secondary prevention), LDL ≥190 mg/dL (familial hypercholesterolemia), diabetes age 40-75 with LDL 70-189, primary prevention with 10-year ASCVD risk ≥7.5% (consider if 5-7.5%). Benefit greatest in highest risk patients; absolute risk reduction proportional to baseline risk.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/33722022/",
+    "credibility_class": "guideline",
+    "year": 2021
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "MED",
+    "sector": "MED",
+    "tags": ["statins", "side effects", "myopathy", "diabetes risk", "management"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Statin adverse effects: myalgias (muscle pain without CK elevation) common (5-10% in practice, similar to placebo in blinded trials—nocebo effect significant); myopathy (muscle symptoms with CK >10x ULN) rare (0.1%); rhabdomyolysis very rare (<0.01%). Risk factors for myopathy: advanced age, female sex, low BMI, renal/hepatic impairment, hypothyroidism, vitamin D deficiency, drug interactions (CYP3A4 inhibitors with simvastatin/lovastatin/atorvastatin; gemfibrozil). Management: check baseline CK only if high risk; if symptoms develop, check CK, rule out other causes (hypothyroidism, vitamin D deficiency); if CK normal/mildly elevated, continue or rechallenge; if CK >10x ULN, stop statin. New-onset diabetes: slight increased risk (9% relative increase, ~0.1% absolute per year), primarily in predisposed patients; CV benefits far outweigh diabetes risk. Liver enzyme elevation: transient mild ALT/AST elevation common; check baseline LFTs, repeat only if symptoms; true hepatotoxicity extremely rare. Cognitive effects: no consistent evidence of cognitive decline; FDA removed warning in 2019.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/29371096/",
+    "credibility_class": "meta_analysis",
+    "year": 2018
+  }
+]

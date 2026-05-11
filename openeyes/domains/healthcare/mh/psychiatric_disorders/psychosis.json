@@ -1,0 +1,32 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "topic": "Psychosis",
+  "fragments": [
+    {
+      "role": "definition",
+      "content": "Psychosis refers to a group of symptoms involving loss of contact with reality, including delusions (fixed false beliefs despite contrary evidence), hallucinations (sensory perceptions without external stimulus, auditory most common), disorganized thinking/speech (loose associations, word salad, tangentiality), and grossly disorganized/abnormal motor behavior (including catatonia). Psychosis occurs in schizophrenia spectrum disorders, mood disorders with psychotic features (bipolar, depression), substance-induced psychosis, medical conditions (delirium, dementia, neurological disorders), and brief psychotic disorder. First-episode psychosis typically emerges in late adolescence/early adulthood. Differential diagnosis critical as treatment varies by etiology.",
+      "tags": ["psychosis", "delusions", "hallucinations", "first-episode"],
+      "source": "https://www.nimh.nih.gov/health/topics/schizophrenia",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "treatment_protocol",
+      "content": "First-episode psychosis: early intervention programs improve outcomes. Antipsychotic medication first-line—start low, go slow to minimize side effects; second-generation (aripiprazole, risperidone, olanzapine) often preferred initially due to lower EPS risk, though metabolic monitoring essential. Address comorbid substance use. Psychosocial interventions: CBT for psychosis, family psychoeducation, supported employment/education, case management. Duration of untreated psychosis correlates with poorer outcomes—rapid assessment/treatment critical. For mood disorders with psychotic features: antipsychotic + mood stabilizer/antidepressant. Medical/substance-induced: treat underlying cause. Clozapine for treatment-resistant cases. Long-term maintenance reduces relapse risk.",
+      "tags": ["antipsychotics", "first-episode", "early-intervention", "CBT-for-psychosis", "clozapine"],
+      "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "role": "diagnostic_criteria",
+      "content": "Psychosis is a symptom cluster, not a standalone DSM-5 diagnosis. Assessment determines underlying etiology: Schizophrenia (≥6 months with functional decline), Schizophreniform (1-6 months), Brief Psychotic Disorder (<1 month, full return to baseline), Delusional Disorder (non-bizarre delusions ≥1 month, preserved functioning), Schizoaffective (psychosis + mood episode with ≥2 weeks psychosis without mood symptoms), Mood Disorder with Psychotic Features (psychosis only during mood episodes), Substance/Medication-Induced (temporal relationship to substance/medication), Psychosis Due to Medical Condition (evidence from history/exam/labs). Rule out delirium (fluctuating consciousness, inattention). Comprehensive workup includes labs, toxicology, neuroimaging when indicated.",
+      "tags": ["differential-diagnosis", "DSM-5-TR", "schizophrenia", "mood-disorder", "medical-causes"],
+      "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+      "credibility_class": "A",
+      "year": 2022
+    }
+  ]
+}

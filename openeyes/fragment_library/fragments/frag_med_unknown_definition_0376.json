@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0376",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "vitamin D",
+    "calciferol",
+    "deficiency",
+    "bone health",
+    "supplementation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Vitamin D is a fat-soluble vitamin/hormone essential for calcium homeostasis and bone health. Two forms: vitamin D3 (cholecalciferol) from skin synthesis via UVB radiation and animal sources; vitamin D2 (ergocalciferol) from plants/fungi. Hepatic 25-hydroxylation produces 25-hydroxyvitamin D [25(OH)D], the major circulating form and best indicator of status. Renal 1\u03b1-hydroxylation produces active 1,25-dihydroxyvitamin D (calcitriol), regulated by PTH, calcium, phosphate, FGF23. Functions: increases intestinal calcium/phosphate absorption, promotes bone mineralization, modulates immune function, affects muscle strength. Deficiency causes rickets in children (growth plate abnormalities), osteomalacia in adults (bone pain, proximal myopathy). Controversy exists regarding optimal levels and supplementation benefits beyond bone health (cancer, cardiovascular, autoimmune disease prevention evidence inconsistent).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985616/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}
