@@ -1,0 +1,83 @@
+{
+  "fragment_id": "frag_gov_sub_contractformation_definitional_001",
+  "domain": "gov",
+  "sector": "sub",
+  "topic": "contract_formation",
+  "role": "definitional",
+  "version": "1.0.0",
+  "title": "Contract Formation: Essential Elements Under US Law",
+  "content": {
+    "summary": "A legally enforceable contract requires offer, acceptance, consideration, mutual assent, capacity, and lawful purpose under US common law and the Uniform Commercial Code.",
+    "body": "Contract formation requires six essential elements: (1) Offer: A definite promise or commitment to do or refrain from doing something, communicated to the offeree with intent to be bound. Terms must be sufficiently definite for a court to determine breach and remedy. (2) Acceptance: Unconditional agreement to the offer's terms, communicated to the offeror. Mirror image rule requires acceptance match offer exactly; any variation constitutes counteroffer. UCC §2-207 modifies this for commercial transactions. (3) Consideration: Something of legal value exchanged between parties; may be benefit to promisor or detriment to promisee. Past consideration is invalid; pre-existing duty rule prohibits using existing obligations as consideration. (4) Mutual Assent (Meeting of Minds): Both parties understand and agree to essential terms; objective theory of contracts examines outward manifestations rather than subjective intent. (5) Capacity: Parties must have legal ability to contract; minors (under 18 in most states), mentally incapacitated persons, and intoxicated persons may lack capacity. (6) Lawful Purpose: Contract cannot require illegal acts or violate public policy. Statute of Frauds requires written contracts for: land sales, contracts not performable within one year, goods over $500 (UCC), suretyship agreements, and marriage consideration.",
+    "key_points": [
+      "Offer must be definite with intent to be bound",
+      "Acceptance must mirror offer terms (common law)",
+      "Consideration requires exchange of legal value",
+      "Mutual assent judged by objective standard",
+      "Minors generally lack contractual capacity",
+      "Illegal purposes render contracts void",
+      "Statute of Frauds requires writing for specific categories"
+    ],
+    "examples": [
+      "Carlill v. Carbolic Smoke Ball Co. (1893): Advertisement constituted valid offer due to specificity and deposit showing intent",
+      "Hyde v. Wrench (1840): Counteroffer of £950 rejected original £1,000 offer; later attempt to accept original was invalid",
+      "Hamer v. Sidway (1891): Nephew's forbearance from drinking/smoking constituted valid consideration for uncle's promise"
+    ]
+  },
+  "sources": [
+    {
+      "type": "restatement",
+      "citation": "Restatement (Second) of Contracts §§1-81 (American Law Institute, 1981)",
+      "url": "https://www.ali.org/publications/show/restatements-second-contracts/",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "statutory",
+      "citation": "Uniform Commercial Code Article 2",
+      "url": "https://www.law.cornell.edu/ucc/2",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "case_law",
+      "citation": "Lucy v. Zehmer, 196 Va. 493 (1954)",
+      "url": "https://casetext.com/case/lucy-v-zehmer",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "scholarly",
+      "citation": "Farnsworth, E. Allan. Contracts. Aspen Publishers, 2004.",
+      "url": null,
+      "accessed": null
+    }
+  ],
+  "cross_references": [
+    {"domain": "gov", "sector": "jud", "topic": "civil_procedure", "relationship": "breach_of_contract_claims"},
+    {"domain": "gov", "sector": "sub", "topic": "breach_of_contract", "relationship": "enforcement_remedies"},
+    {"domain": "eco", "sector": "fin", "topic": "financial_instruments", "relationship": "contractual_obligations"},
+    {"domain": "eco", "sector": "lab", "topic": "employment_contracts", "relationship": "specialized_application"}
+  ],
+  "quantitative_data": {
+    "ucc_goods_threshold_usd": 500,
+    "statute_of_limitations_years_typical": 6,
+    "minor_age_majority_typical": 18
+  },
+  "temporal_scope": {
+    "historical_start": 1800,
+    "current_as_of": "2025-01-15",
+    "is_evolving": true,
+    "notes": "Common law evolves through state court decisions; UCC adopted with variations across states"
+  },
+  "philosophy_guard_check": {
+    "is_descriptive": true,
+    "normative_claims_present": false,
+    "multiple_perspectives_included": false,
+    "verifiable": true
+  },
+  "metadata": {
+    "created": "2025-01-15",
+    "author": "OpenEyes Knowledge Team",
+    "review_status": "pending",
+    "confidence_level": 0.97,
+    "tags": ["contract_law", "formation", "consideration", "offer_acceptance", "common_law", "ucc"]
+  }
+}

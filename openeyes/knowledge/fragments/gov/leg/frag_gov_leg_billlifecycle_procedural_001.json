@@ -1,0 +1,83 @@
+{
+  "fragment_id": "frag_gov_leg_billlifecycle_procedural_001",
+  "domain": "gov",
+  "sector": "leg",
+  "topic": "bill_lifecycle",
+  "role": "procedural",
+  "version": "1.0.0",
+  "title": "Federal Legislative Process: How a Bill Becomes Law",
+  "content": {
+    "summary": "The federal legislative process requires bicameral passage through the House and Senate followed by presidential action, with multiple procedural checkpoints that enable deliberation and amendment.",
+    "body": "A bill's journey through Congress follows these steps: (1) Introduction: Only members of Congress may introduce bills; representatives file in the House clerk's office, senators on the Senate floor. Bills receive numbering (H.R. for House, S. for Senate). (2) Committee Assignment: The Speaker of the House or Senate presiding officer refers the bill to relevant committee(s). Approximately 90% of bills die in committee without action. (3) Committee Action: Committees may hold hearings, request executive agency input, mark up (amend) the bill, vote to report it favorably/unfavorably, or table it. (4) Floor Consideration: House bills go to the Rules Committee which sets debate terms; Senate bills go directly to the floor. House debate is limited; Senate debate is generally unlimited unless cloture invoked. (5) Voting: Simple majority required in both chambers, though budget reconciliation requires only 51 votes in Senate. (6) Conference Committee: If chambers pass different versions, a conference committee reconciles differences; both chambers must approve the conference report. (7) Presidential Action: President may sign (becomes law), veto (returns to Congress; two-thirds override required in each chamber), or allow to become law without signature after 10 days (excluding Sundays). Pocket veto occurs if Congress adjourns during the 10-day period.",
+    "key_points": [
+      "Only members of Congress may introduce legislation",
+      "Committee referral determines initial fate; ~90% die in committee",
+      "House Rules Committee controls floor debate terms",
+      "Senate filibuster requires 60 votes for cloture on most legislation",
+      "Identical text must pass both chambers",
+      "Presidential veto requires two-thirds supermajority to override"
+    ],
+    "examples": [
+      "Affordable Care Act (H.R. 3590): Passed House 219-212, Senate 60-39, signed March 2010",
+      "Tax Cuts and Jobs Act (H.R. 1): Used reconciliation procedure, passed Senate 51-48, signed December 2017",
+      "Veto override example: Justice Against Sponsors of Terrorism Act (2016), overridden 97-1 in Senate, 348-77 in House"
+    ]
+  },
+  "sources": [
+    {
+      "type": "primary_government",
+      "citation": "US Constitution, Article I, Sections 1-7",
+      "url": "https://www.congress.gov/constitution",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "primary_government",
+      "citation": "House Rules and Manual, 118th Congress",
+      "url": "https://docs.house.gov/meetings/RU/RU00/20230103/",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "primary_government",
+      "citation": "Senate Manual, 118th Congress",
+      "url": "https://www.govinfo.gov/app/details/CPRT-117SPRT52803",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "scholarly",
+      "citation": "Congressional Research Service. 'The Legislative Process.' RL30294.",
+      "url": "https://crsreports.congress.gov",
+      "accessed": "2025-01-15"
+    }
+  ],
+  "cross_references": [
+    {"domain": "gov", "sector": "gov", "topic": "bicameralism", "relationship": "structural_requirement"},
+    {"domain": "gov", "sector": "leg", "topic": "filibuster", "relationship": "senate_procedure"},
+    {"domain": "gov", "sector": "leg", "topic": "reconciliation", "relationship": "budget_exception"},
+    {"domain": "gov", "sector": "sub", "topic": "statutory_interpretation", "relationship": "legislative_history"}
+  ],
+  "quantitative_data": {
+    "bills_introduced_118th_congress": 14523,
+    "bills_enacted_118th_congress": 417,
+    "enactment_rate": 0.029,
+    "average_days_to_passage": 187
+  },
+  "temporal_scope": {
+    "historical_start": 1789,
+    "current_as_of": "2025-01-15",
+    "is_evolving": true,
+    "notes": "Procedures evolve with each Congress through rule changes"
+  },
+  "philosophy_guard_check": {
+    "is_descriptive": true,
+    "normative_claims_present": false,
+    "multiple_perspectives_included": false,
+    "verifiable": true
+  },
+  "metadata": {
+    "created": "2025-01-15",
+    "author": "OpenEyes Knowledge Team",
+    "review_status": "pending",
+    "confidence_level": 0.98,
+    "tags": ["legislative_process", "congress", "bill_passage", "procedure", "lawmaking"]
+  }
+}

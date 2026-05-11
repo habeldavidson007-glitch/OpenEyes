@@ -109,6 +109,18 @@ INTENT_PATTERNS = {
         r'\bright now\b',
         r'\bneed help now\b',
         r'\bcall 911\b',
+        r'\ber\b',
+        r'\bemergency room\b',
+        r'\bhospital\b',
+        r'\boverdose\b',
+        r'\bpoison\b',
+        r'\btook too much\b',
+        r'\bchest pain\b',
+        r'\bshortness of breath\b',
+        r'\bcan\'t breathe\b',
+        r'\bsevere.*headache\b',
+        r'\bheart attack\b',
+        r'\bstroke\b',
     ],
     QueryIntent.SYMPTOM_CHECK: [
         r'\bi have\b',
@@ -144,6 +156,8 @@ EMERGENCY_KEYWORDS = [
     'heart attack', 'chest pain', 'can\'t breathe', 'stroke',
     'overdose', 'poisoning', 'severe bleeding', 'unconscious',
     'seizure', 'anaphylaxis', 'severe allergic reaction',
+    'er', 'emergency room', 'hospital', 'took too much',
+    'shortness of breath', 'severe headache', 'difficulty breathing',
 ]
 
 # Crisis resources
