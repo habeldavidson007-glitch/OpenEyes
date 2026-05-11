@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "topic": "Volume of Distribution",
+  "content": "Vd is calculated from plasma concentration measurements after IV administration: Vd = Dose / C0 (concentration at time zero, extrapolated from elimination curve). Apparent Vd at steady state (Vdss) accounts for tissue equilibration. Central volume (Vc) represents initial distribution space before tissue equilibration. Multi-compartment models describe drugs with distinct distribution and elimination phases. Factors affecting Vd: molecular size (large molecules stay in plasma), lipophilicity (lipid-soluble drugs have high Vd), protein binding (high binding reduces Vd), tissue binding (increases Vd), ionization (charged molecules have lower Vd). Pathologic states alter Vd: burns increase Vd due to capillary leak; dehydration decreases Vd.",
+  "tags": [
+    "Vd_calculation",
+    "compartment_models",
+    "protein_binding_effects",
+    "pathologic_changes"
+  ],
+  "source": "ema.europa.eu",
+  "credibility_class": "A",
+  "year": 2025,
+  "reasoning_role": "diagnostic_criteria",
+  "id": "HC-2268"
+}

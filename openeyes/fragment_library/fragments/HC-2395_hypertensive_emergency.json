@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hypertensive emergency",
+    "specific conditions",
+    "stroke",
+    "dissection",
+    "pregnancy"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Condition-specific management: Aortic dissection: most urgent\u2014reduce SBP <120 mmHg and HR <60 bpm within 20 minutes using esmolol or labetalol plus nitroprusside/nicardipine; pain control critical. Acute ischemic stroke: permissive hypertension (allow up to 220/120) unless thrombolysis planned (then <185/110 before and <180/105 for 24 hours after); avoid aggressive lowering (reduces cerebral perfusion). Intracerebral hemorrhage: INTERACT2 and ATACH-2 trials support SBP target 140-160 mmHg. Acute coronary syndrome: nitroglycerin first-line (reduces preload, coronary vasodilation), beta-blockers if no heart failure/shock; target SBP <140 if tolerated. Acute heart failure: nitroglycerin, nitroprusside, or nesiritide plus loop diuretics; avoid beta-blockers initially. Eclampsia/preeclampsia: magnesium sulfate for seizure prophylaxis, hydralazine or labetalol or nifedipine for BP control; target SBP 140-150, DBP 90-100; deliver fetus when stable. Pheochromocytoma crisis: alpha-blockade first (phentolamine), then beta-blockade (never beta-blocker alone\u2014unopposed alpha stimulation). Cocaine-induced: benzodiazepines first, phentolamine or nitroglycerin; avoid pure beta-blockers.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35026997/",
+  "credibility_class": "guideline",
+  "year": 2021,
+  "id": "HC-2395"
+}

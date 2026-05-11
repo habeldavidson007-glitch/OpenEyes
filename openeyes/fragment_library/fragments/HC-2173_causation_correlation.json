@@ -1,0 +1,15 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "causation correlation",
+    "epidemiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Definition content for causation_correlation.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2173"
+}

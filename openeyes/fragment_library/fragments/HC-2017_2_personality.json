@@ -1,0 +1,17 @@
+{
+  "content": "DSM-5-TR general PD criteria: enduring pattern of inner experience/behavior deviating from cultural expectations in \u22652 areas (cognition, affectivity, interpersonal functioning, impulse control); inflexible/pervasive across situations; leads to clinically significant distress/impairment; stable over time (onset adolescence/early adulthood); not better explained by another mental disorder, substance effects, or medical condition. Specific criteria vary by PD type (e.g., Borderline requires \u22655 of 9 criteria including abandonment fears, unstable relationships, identity disturbance, impulsivity, suicidality, affective instability, emptiness, anger, paranoia/dissociation). DSM-5 includes Alternative Model for Personality Disorders (Section III) using dimensional approach (impairment in personality functioning + pathological traits).",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "personality-disorder",
+    "dimensional-model"
+  ],
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "year": 2022,
+  "reasoning_role": "diagnostic_criteria",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2017"
+}

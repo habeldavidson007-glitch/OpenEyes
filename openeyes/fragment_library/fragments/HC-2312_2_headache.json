@@ -1,0 +1,18 @@
+{
+  "id": "neuro-headache-dx",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "headache",
+    "diagnosis",
+    "ICHD-3",
+    "red-flags",
+    "SNOOP4"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Headache diagnosis uses ICHD-3 criteria and clinical evaluation. Tension-type headache: \u226510 episodes with \u22652 of: bilateral location, pressing/tightening quality, mild-moderate intensity, not aggravated by routine activity; no nausea/vomiting, \u22641 of photophobia/phonophobia. Cluster headache: \u22655 attacks with severe unilateral orbital/temporal pain lasting 15-180 minutes untreated, plus \u22651 ipsilateral autonomic symptom (conjunctival injection, lacrimation, nasal congestion, rhinorrhea, forehead/facial sweating, miosis, ptosis, eyelid edema) and/or sense of restlessness. Red flags requiring imaging/laboratory workup (SNOOP4): Systemic symptoms (fever, weight loss, night sweats), Neurologic deficit (focal signs, altered consciousness, papilledema), Onset sudden (thunderclap\u2014peak <1 minute), Onset after age 50 (consider GCA\u2014check ESR/CRP), Pattern change (progressive worsening), Positional headache (worse upright suggests CSF leak; worse supine suggests IIH), Precipitated by Valsalva, Pregnancy/postpartum (CVST, preeclampsia, RCVS), Painful eye with autonomic features (rule out acute angle-closure glaucoma), Post-traumatic onset. Diagnostic tests: ESR/CRP for GCA, LP for IIH (opening pressure >25 cm H2O) or meningitis, MRI/MRV for structural/vascular causes, CT for acute hemorrhage.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "credibility_class": "A",
+  "year": 2024
+}

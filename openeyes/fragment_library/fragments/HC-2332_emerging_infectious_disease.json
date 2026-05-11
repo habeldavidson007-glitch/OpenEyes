@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "emerging infectious disease",
+    "diagnosis",
+    "metagenomics",
+    "biosafety"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "EID diagnosis challenges: unknown pathogen requires unbiased detection methods. Approaches: 1) Metagenomic next-generation sequencing (mNGS) from clinical specimens identifies novel pathogens without prior knowledge; 2) Pan-viral/pan-bacterial PCR panels detect broad pathogen classes; 3) Serology for exposure history; 4) Electron microscopy for viral morphology. Biosafety considerations: BSL-3/4 containment for high-consequence pathogens; appropriate PPE; sample inactivation protocols. Pathogen discovery pipeline: sequence \u2192 phylogenetic analysis \u2192 culture isolation (if possible) \u2192 diagnostic assay development \u2192 therapeutic/vaccine targets. Genomic epidemiology tracks transmission chains and evolution in real-time. Data sharing critical: GISAID for influenza/SARS-CoV-2 sequences, GenBank for broader pathogen genomics.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2332"
+}

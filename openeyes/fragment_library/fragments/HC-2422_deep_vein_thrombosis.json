@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "DVT treatment",
+    "anticoagulation",
+    "prophylaxis",
+    "duration"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "DVT treatment: anticoagulation for minimum 3 months. DOACs preferred (apixaban, rivaroxaban allow immediate oral monotherapy; dabigatran/edoxaban require 5-10 days LMWH bridging). LMWH preferred in cancer (though DOACs increasingly used except GI/GU malignancies with bleeding risk), severe renal impairment, pregnancy. Warfarin (target INR 2-3) if DOACs contraindicated. Inferior vena cava filter only if absolute contraindication to anticoagulation or recurrent VTE despite therapeutic anticoagulation\u2014remove when anticoagulation can be started. Thrombolysis (catheter-directed) considered for extensive proximal DVT (<14 days symptoms) with low bleeding risk to prevent post-thrombotic syndrome (ATTRACT trial showed mixed results). Duration: 3 months for provoked DVT (transient risk factor); extended/indefinite for unprovoked DVT (assess bleeding risk), recurrent VTE, active cancer, persistent risk factors. Prophylaxis: mechanical (intermittent pneumatic compression) and/or pharmacologic (LMWH, unfractionated heparin, fondaparinux) for hospitalized medical patients, post-surgical patients especially orthopedic (total hip/knee arthroplasty\u201410-35 days).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+  "credibility_class": "guideline",
+  "year": 2022,
+  "id": "HC-2422"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "endo_lipid_diag_001",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "topic": "Lipid Disorders",
+  "tags": [
+    "lipid disorders",
+    "lipid panel",
+    "LDL",
+    "non-HDL",
+    "apoB",
+    "screening"
+  ],
+  "content": "Diagnosis via fasting or non-fasting lipid panel: total cholesterol, HDL-C, triglycerides, calculated or direct LDL-C. Non-HDL cholesterol (total - HDL) increasingly used as it captures all atherogenic particles. Apolipoprotein B (apoB) reflects particle number, may be superior predictor. Lipoprotein(a) measured once in lifetime to identify genetic elevation (>50 mg/dL or >125 nmol/L). Screening: adults 20+ every 4-6 years if low risk; more frequently with risk factors. Children: universal screening once at 9-11 years and again at 17-21; targeted screening earlier if family history. FH diagnosis: Dutch Lipid Clinic Network criteria use LDL level, physical findings (xanthomas, corneal arcus), family history of premature ASCVD/high cholesterol, genetic testing if available. Evaluate secondary causes: TSH, liver enzymes, creatinine, urine protein, glucose/HbA1c, medication review. Risk calculators (ASCVD Risk Estimator, SCORE) guide treatment decisions.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/36506509/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "reasoning_role": "diagnostic_criteria"
+}

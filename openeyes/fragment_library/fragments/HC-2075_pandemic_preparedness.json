@@ -1,0 +1,16 @@
+{
+  "id": "HC-2075",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "pandemic response",
+    "preparedness planning",
+    "public health capacity building"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Pandemic preparedness actions: (1) Surveillance\u2014strengthen event-based and indicator-based systems, genomic sequencing networks; (2) Laboratory\u2014expand PCR capacity, establish sentinel testing sites, ensure reagent supply chains; (3) Workforce\u2014train epidemiologists, laboratorians, contact tracers, maintain surge rosters; (4) Healthcare capacity\u2014stockpile PPE, ventilators, therapeutics; plan facility expansion; (5) Vaccines/therapeutics\u2014advance purchase agreements, technology transfer platforms, clinical trial networks; (6) Risk communication\u2014pre-drafted messages, social media monitoring, combat misinformation; (7) Coordination\u2014incident management systems, multi-sectoral task forces, international collaboration. Regular exercises test and refine plans.",
+  "source": "WHO Pandemic Influenza Preparedness Framework, CDC Public Health Emergency Preparedness capabilities",
+  "credibility_class": "A",
+  "year": 2024
+}

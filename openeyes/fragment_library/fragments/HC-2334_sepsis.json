@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "sepsis",
+    "treatment",
+    "Surviving Sepsis Campaign",
+    "bundle"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Sepsis treatment follows the Surviving Sepsis Campaign Hour-1 Bundle: 1) Measure lactate level; remeasure if initial >2 mmol/L; 2) Obtain blood cultures before antibiotics; 3) Administer broad-spectrum antibiotics; 4) Begin rapid crystalloid administration (30 mL/kg) for hypotension or lactate \u22654 mmol/L; 5) Apply vasopressors if hypotensive during/after fluid resuscitation to maintain MAP \u226565 mmHg. Additional measures: source control within 12 hours, consider corticosteroids for refractory shock (hydrocortisone 200 mg/day), glucose control 140-180 mg/dL, venous thromboembolism prophylaxis. Early goal-directed therapy elements (CVP/ScvO2 targets) no longer recommended based on ProCESS/ARISE/PROMISE trials.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2334"
+}

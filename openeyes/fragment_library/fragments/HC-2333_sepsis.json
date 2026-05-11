@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "sepsis",
+    "Sepsis-3",
+    "critical care",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sepsis is defined (Sepsis-3, 2016) as life-threatening organ dysfunction caused by a dysregulated host response to infection. Septic shock is a subset of sepsis with circulatory and cellular/metabolic abnormalities associated with higher mortality: persistent hypotension requiring vasopressors to maintain MAP \u226565 mmHg AND serum lactate >2 mmol/L despite adequate fluid resuscitation. Organ dysfunction is identified by acute change in SOFA score \u22652 points. Quick SOFA (qSOFA) uses respiratory rate \u226522/min, altered mentation, or systolic BP \u2264100 mmHg to identify patients with suspected infection at risk for poor outcomes.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2333"
+}

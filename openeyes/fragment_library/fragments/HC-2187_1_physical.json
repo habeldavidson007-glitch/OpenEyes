@@ -1,0 +1,17 @@
+{
+  "role": "treatment_protocol",
+  "content": "Physical activity promotion strategies: (1) Individual counseling\u2014exercise prescription using FITT principle (Frequency, Intensity, Time, Type), motivational interviewing, behavioral goal-setting, self-monitoring tools; (2) Clinical programs\u2014cardiac rehabilitation, pulmonary rehabilitation, diabetes prevention program (DPP showing 58% diabetes risk reduction with 150 min/week activity); (3) Community interventions\u2014walking groups, park-based programs, workplace wellness challenges, active transport initiatives; (4) Environmental/policy approaches\u2014complete streets design, safe routes to school, park/recreation facility investment, building codes for stairs, point-of-decision prompts; (5) Digital interventions\u2014wearable activity trackers, smartphone apps, exergaming. Evidence supports multi-component interventions. Barriers addressed through accessible facilities, culturally appropriate programs, childcare provision, and addressing safety concerns. Any activity better than none; incremental increases beneficial.",
+  "tags": [
+    "intervention",
+    "exercise_prescription",
+    "behavior_change",
+    "policy"
+  ],
+  "reasoning_role": "actionable_guidance",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "year": 2024,
+  "source": "https://www.cdc.gov/",
+  "id": "HC-2187"
+}

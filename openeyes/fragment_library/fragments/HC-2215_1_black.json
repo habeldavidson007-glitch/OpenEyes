@@ -1,0 +1,11 @@
+{
+  "content": "When prescribing drugs with black box warnings: (1) Review full warning content before initiating therapy; (2) Assess patient-specific risk factors; (3) Obtain informed consent documenting discussion of boxed warning risks; (4) Implement required monitoring (e.g., CBC for clozapine, pregnancy tests for isotretinoin, liver function for hepatotoxic drugs); (5) Educate patients on warning signs requiring immediate medical attention; (6) Consider alternatives if risk outweighs benefit; (7) Document rationale for use despite warnings. For certain drugs, enrollment in REMS programs is mandatory. Prescribers should periodically reassess continued need and monitor for emerging safety signals.",
+  "source": "fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "reasoning_role": "treatment_protocol",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "id": "HC-2215"
+}

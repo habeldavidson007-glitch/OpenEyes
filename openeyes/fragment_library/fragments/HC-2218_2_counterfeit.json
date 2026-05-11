@@ -1,0 +1,11 @@
+{
+  "content": "Red flags for counterfeit medicines: unusually low prices, packaging differences (spelling errors, poor print quality, different colors), tablet/capsule appearance variations, lack of required labeling elements, missing lot numbers or expiration dates, products from unauthorized sources, and unexpected therapeutic failure or adverse effects. Analytical testing can confirm counterfeits through: dissolution testing, spectroscopy (NIR, Raman), chromatography (HPLC), and mass spectrometry. The FDA maintains an illicit online pharmacy list. DSCSA requirements include: product tracing at transaction level, verification systems for suspect products, and authorization of trading partners. Patients should use VIPPS-accredited online pharmacies. Counterfeit detection increasingly uses smartphone apps and portable spectrometers in resource-limited settings.",
+  "source": "fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "reasoning_role": "diagnostic_criteria",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "id": "HC-2218"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "HC-2126",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "patient safety",
+    "interventions",
+    "checklists",
+    "culture of safety"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Evidence-based safety interventions include: (1) Checklists - WHO Surgical Safety Checklist reduced complications by 36%, mortality by 47%; (2) Hand hygiene programs - multimodal strategies (education, reminders, feedback) reduce HAIs by 30-50%; (3) Medication reconciliation - pharmacist-led review at transitions reduces adverse drug events by 50%; (4) Central line bundles - maximal barrier precautions, chlorhexidine skin prep, daily line necessity review reduced CLABSI by >70%; (5) Early warning scores - MEWS/NEWS triggering rapid response teams reduce cardiac arrests by 20-30%; (6) Culture of safety - non-punitive error reporting, leadership commitment, teamwork training. CMS no longer pays for 'never events' (wrong-site surgery, retained objects) since 2008.",
+  "source": "who.int",
+  "credibility_class": "A",
+  "year": 2024
+}

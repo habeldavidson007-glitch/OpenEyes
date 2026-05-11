@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "vaccination",
+    "effectiveness",
+    "serology",
+    "titers"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Vaccine effectiveness assessment: 1) Clinical efficacy from randomized trials; 2) Real-world effectiveness from observational studies; 3) Immunogenicity correlates (antibody titers, cellular immunity). Serologic testing for immunity: indicated for select situations (HBsAb post-vaccination in healthcare workers, varicella IgG in uncertain history, measles/rubella titers in pregnancy screening). Not routinely recommended for most vaccines due to good correlation between documented vaccination and protection. Vaccine failure: primary (no seroconversion) vs secondary (waning immunity). Outbreak settings may warrant revaccination regardless of prior status (e.g., mumps third dose). Adverse event monitoring: VAERS (passive reporting), Vaccine Safety Datalink (active surveillance); serious adverse events extremely rare compared to disease risks.",
+  "source": "cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2371"
+}

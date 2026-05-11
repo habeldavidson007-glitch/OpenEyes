@@ -1,0 +1,17 @@
+{
+  "id": "HC-2121",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "global health aid",
+    "impact evaluation",
+    "cost-effectiveness",
+    "sustainability"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Health aid impact assessment shows mixed results: Successful areas - vaccination campaigns (Gavi estimated to prevent 15 million deaths by 2030), HIV treatment scale-up (PEPFAR supporting 20 million on ART), malaria control (bed nets reducing child mortality 20%). Limited success areas - maternal mortality (slow progress despite investment), health system strengthening (difficult to attribute outcomes), sustainability after aid withdrawal. Cost-effectiveness varies widely: bed nets $50-100 per life-year saved, ART $300-500 per life-year in low-income settings, versus some health system investments lacking clear metrics. Aid dependency concerns: Sub-Saharan African countries receive 20-50% of health funding from external sources, creating vulnerability to donor priority shifts. Transition planning essential as countries graduate from low-income status.",
+  "source": "who.int",
+  "credibility_class": "A",
+  "year": 2024
+}

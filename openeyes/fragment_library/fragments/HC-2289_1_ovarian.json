@@ -1,0 +1,18 @@
+{
+  "id": "hc_med_onc_oc_treat_001",
+  "tags": [
+    "oncology",
+    "ovarian cancer",
+    "treatment",
+    "debulking surgery",
+    "PARP inhibitors"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Treatment involves surgery and chemotherapy. Early stage (I-II): surgical staging (TAH-BSO, omentectomy, lymph node dissection, peritoneal biopsies); adjuvant chemotherapy for stage IC-II (carboplatin + paclitaxel x6 cycles). Advanced stage (III-IV): primary debulking surgery aiming for R0 resection (no visible residual) followed by carboplatin + paclitaxel x6 cycles; or neoadjuvant chemotherapy x3-4 cycles, interval debulking, then additional chemotherapy (EORTC 55971, CHORUS trials showed equivalent OS). Intraperitoneal chemotherapy considered for optimally debulked stage III. Maintenance therapy: PARP inhibitors for BRCA-mutated (olaparib, niraparib, rucaparib) based on SOLO-1, PRIMA trials; bevacizumab for high-risk patients. Recurrent disease: platinum-sensitive (>6 months since last platinum) - platinum-based doublet + bevacizumab, then PARP inhibitor maintenance; platinum-resistant (<6 months) - single-agent non-platinum (liposomal doxorubicin, weekly paclitaxel, gemcitabine, topotecan) \u00b1 bevacizumab. FR\u03b1-positive patients: mirvetuximab soravtansine (SORAYA trial).",
+  "source": "https://www.nccn.org/guidelines",
+  "credibility_class": "A",
+  "year": 2024,
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED"
+}

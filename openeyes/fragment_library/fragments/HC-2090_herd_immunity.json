@@ -1,0 +1,16 @@
+{
+  "id": "HC-2090",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "herd immunity",
+    "vaccine coverage",
+    "immunization programs"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Achieving herd immunity requires sustained high vaccination coverage. Strategies include: routine immunization programs, catch-up campaigns, school entry requirements, and targeting high-transmission groups. Vaccine effectiveness modifies the required coverage: if vaccine efficacy is 90%, coverage must exceed HIT/0.9. Waning immunity necessitates boosters. Herd immunity thresholds assume homogeneous mixing; in reality, geographic pockets of low coverage enable outbreaks even with high national coverage. Elimination requires maintaining immunity above HIT despite importation risk. Herd immunity cannot be achieved for diseases without lasting immunity or animal reservoirs.",
+  "source": "CDC Pink Book, WHO position papers on vaccines",
+  "credibility_class": "A",
+  "year": 2024
+}

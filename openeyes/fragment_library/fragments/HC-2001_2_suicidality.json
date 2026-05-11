@@ -1,0 +1,18 @@
+{
+  "content": "DSM-5-TR includes suicidal behavior disorder (research condition): self-initiated behavior with expectation/understanding of potential death; not including nonsuicidal self-injury (no intent to die). Clinical assessment documents: suicidal ideation (frequency, intensity, duration, controllability), plan (specificity, lethality, availability of means), intent (subjective expectation of death), preparatory behaviors (acquiring means, writing note, giving away possessions), past attempts (number, methods, medical severity, intent), aborted/interrupted attempts, nonsuicidal self-injury, risk/protective factors, reasons for living. Use standardized tools: Columbia-Suicide Severity Rating Scale (C-SSRS), Beck Scale for Suicide Ideation. Document thoroughly for continuity of care.",
+  "tags": [
+    "DSM-5-TR",
+    "assessment",
+    "C-SSRS",
+    "suicide-risk",
+    "documentation"
+  ],
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "year": 2022,
+  "reasoning_role": "diagnostic_criteria",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "id": "HC-2001"
+}

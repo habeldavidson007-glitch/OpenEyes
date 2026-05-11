@@ -1,0 +1,18 @@
+{
+  "id": "neuro-neuropathy-tx",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "neuropathy",
+    "pain-management",
+    "gabapentin",
+    "treatment-protocol",
+    "underlying-cause"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Neuropathy treatment addresses underlying cause and symptomatic pain management. Cause-specific: glycemic control for diabetic neuropathy (prevents progression, limited reversal), B12 replacement, thyroid hormone, alcohol cessation, immunotherapy for autoimmune (IVIG, steroids, plasma exchange for CIDP; steroids/immunosuppression for vasculitis), discontinuation of offending drugs. Neuropathic pain management: first-line includes gabapentinoids (gabapentin 300-3600mg/day, pregabalin 150-600mg/day\u2014dose adjust for renal function), SNRIs (duloxetine 60-120mg/day, venlafaxine), TCAs (amitriptyline/nortriptyline 25-150mg at bedtime\u2014anticholinergic/cardiac side effects limit use in elderly). Second-line: topical agents (lidocaine 5% patch for focal pain, capsaicin 8% patch), tramadol (short-term, addiction risk). Third-line: strong opioids (avoid chronic use), botulinum toxin for focal neuropathic pain. Combination therapy often needed. Non-pharmacologic: TENS, acupuncture, physical therapy, foot care for diabetic neuropathy. Refractory cases: spinal cord stimulation, dorsal root ganglion stimulation.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/31832428/",
+  "credibility_class": "A",
+  "year": 2024
+}

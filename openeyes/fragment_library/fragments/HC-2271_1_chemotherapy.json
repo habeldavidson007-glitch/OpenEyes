@@ -1,0 +1,18 @@
+{
+  "id": "hc_med_onc_cp_treat_001",
+  "tags": [
+    "oncology",
+    "chemotherapy",
+    "dosing",
+    "toxicity management",
+    "supportive care"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Chemotherapy administration follows evidence-based protocols. Dosing calculated by body surface area (BSA) or weight; renal/hepatic adjustment required for many agents. Cycles typically every 1-3 weeks allowing bone marrow recovery. Common regimens: FOLFOX (colon cancer), AC-T (breast cancer), CHOP (lymphoma), BEP (testicular cancer). Pre-medications prevent reactions: dexamethasone, ondansetron, aprepitant for nausea; diphenhydramine for hypersensitivity. Growth factor support (G-CSF) reduces neutropenia risk when febrile neutropenia risk >20%. Dose modifications: reduce 20-25% for grade 3-4 toxicity; delay until counts recover (ANC >1500, platelets >100,000). Toxicity management: antiemetics per emetogenic risk; mucosal care for stomatitis; loperamide for diarrhea; erythropoietin for anemia (controversial). Tumor lysis syndrome prophylaxis with allopurinol/rasburicase for high-burden hematologic malignancies.",
+  "source": "https://www.nccn.org/guidelines",
+  "credibility_class": "A",
+  "year": 2024,
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED"
+}

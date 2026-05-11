@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "coronary artery disease",
+    "risk factors",
+    "atherosclerosis",
+    "pathophysiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Coronary artery disease (CAD) is caused by atherosclerotic plaque buildup in coronary arteries, leading to myocardial ischemia. Pathophysiology: endothelial dysfunction allows LDL cholesterol infiltration into intima, oxidation, macrophage recruitment forming foam cells, fatty streak development, smooth muscle cell migration, fibrous cap formation. Vulnerable plaques have thin caps, large lipid cores, and inflammation\u2014prone to rupture causing acute thrombosis (MI). Risk factors: modifiable (smoking, hypertension, dyslipidemia, diabetes, obesity, physical inactivity, unhealthy diet), non-modifiable (age, male sex, family history, genetics), emerging (Lp(a), hs-CRP, social determinants). ASCVD risk calculators (Pooled Cohort Equations, SCORE2) estimate 10-year risk to guide prevention. Clinical presentations: stable angina (predictable chest pain with exertion), ACS (unstable angina, NSTEMI, STEMI), silent ischemia, heart failure, arrhythmias, sudden cardiac death.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/36857096/",
+  "credibility_class": "guideline",
+  "year": 2023,
+  "id": "HC-2429"
+}

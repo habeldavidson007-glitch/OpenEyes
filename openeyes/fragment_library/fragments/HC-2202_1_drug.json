@@ -1,0 +1,16 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "drug pricing",
+    "R&D costs",
+    "pharmaceutical economics"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Drug pricing methodologies vary: cost-plus pricing (R&D costs plus margin\u2014rarely used transparently), value-based pricing (price reflects clinical benefit and cost savings), reference pricing (based on prices in other countries or therapeutic alternatives), and what-the-market-can-bear (maximizing revenue based on demand elasticity). US prices are typically 2-4x higher than other OECD countries due to lack of direct government negotiation (though this is changing with Inflation Reduction Act), PBM rebate systems, and fragmented payers. High list prices are often offset by confidential rebates (40-60% for many drugs). Net prices (after rebates) are rarely disclosed. Orphan drugs and gene therapies command premium prices ($100,000-$3+ million per treatment) due to small populations and curative potential claims.",
+  "source": "fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2202"
+}

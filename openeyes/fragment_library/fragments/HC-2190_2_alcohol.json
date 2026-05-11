@@ -1,0 +1,17 @@
+{
+  "role": "diagnostic_criteria",
+  "content": "AUD assessment tools: (1) Screening\u2014AUDIT (Alcohol Use Disorders Identification Test, 10 items), AUDIT-C (3-item consumption screen), CAGE questionnaire (Cut down, Annoyed, Guilty, Eye-opener), single-question screens ('How many times...'); (2) Diagnostic interviews\u2014DSM-5 criteria assessment, SCID (Structured Clinical Interview for DSM); (3) Severity measures\u2014AUDIT total score (8-15 hazardous, 16-19 harmful, 20+ dependent), DSM-5 severity specifiers; (4) Biomarkers\u2014PEth (phosphatidylethanol) for heavy drinking past 2-4 weeks, GGT, MCV, CDT (carbohydrate-deficient transferrin), ethyl glucuronide in urine/hair; (5) Withdrawal risk\u2014CIWA-Ar (Clinical Institute Withdrawal Assessment) for monitoring detoxification. Co-occurring mental health disorders common (depression, anxiety, PTSD) requiring integrated treatment. Liver function tests assess alcohol-related organ damage.",
+  "tags": [
+    "screening",
+    "diagnosis",
+    "biomarkers",
+    "assessment"
+  ],
+  "reasoning_role": "analytical_framework",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "year": 2024,
+  "source": "https://www.cdc.gov/",
+  "id": "HC-2190"
+}

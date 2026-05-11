@@ -1,0 +1,16 @@
+{
+  "id": "HC-2052",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "VE interpretation",
+    "bias in VE studies",
+    "effectiveness metrics"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Vaccine effectiveness interpretation challenges: healthy user bias (vaccinated individuals differ systematically from unvaccinated), confounding by indication (high-risk groups prioritized), misclassification of vaccination status or outcomes, and changing case definitions. Effectiveness varies by outcome: higher against severe disease/hospitalization than against infection. Variant-specific effectiveness requires genomic surveillance linkage. Time-varying effectiveness reflects waning immunity or immune escape variants. Confidence intervals indicate precision; overlapping CIs don't necessarily mean no difference. Real-world effectiveness informs booster timing and target populations.",
+  "source": "Vaccine journal, CDC ACIP evidence frameworks",
+  "credibility_class": "A",
+  "year": 2024
+}

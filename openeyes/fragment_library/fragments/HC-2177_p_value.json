@@ -1,0 +1,15 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "p value",
+    "epidemiology"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Application content for p_value.",
+  "source": "https://www.cdc.gov/",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2177"
+}

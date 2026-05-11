@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "sepsis",
+    "diagnosis",
+    "SOFA",
+    "biomarkers"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Sepsis diagnosis requires: 1) Confirmed or suspected infection; 2) Evidence of organ dysfunction (SOFA score components: PaO2/FiO2 ratio, platelets, bilirubin, mean arterial pressure, Glasgow Coma Scale, creatinine/urine output). qSOFA screens for sepsis risk but has limited sensitivity. Biomarkers: procalcitonin aids bacterial vs viral differentiation and antibiotic stewardship decisions; lactate indicates tissue hypoperfusion. Blood cultures (2 sets, aerobic+anaerobic) before antibiotics when possible. Imaging to identify source. Differential diagnosis includes non-infectious SIRS causes (pancreatitis, trauma, burns). Sequential organ assessment guides prognosis and treatment escalation.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2335"
+}

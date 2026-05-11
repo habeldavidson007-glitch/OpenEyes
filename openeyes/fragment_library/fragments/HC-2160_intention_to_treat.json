@@ -1,0 +1,15 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "intention to treat",
+    "epidemiology"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Quality criteria for intention_to_treat.",
+  "source": "https://www.ncbi.nlm.nih.gov/books/",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2160"
+}

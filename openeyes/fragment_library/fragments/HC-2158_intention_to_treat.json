@@ -1,0 +1,15 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "intention to treat",
+    "epidemiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Definition content for intention_to_treat.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2158"
+}

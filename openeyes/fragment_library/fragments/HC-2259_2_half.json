@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "topic": "Half-life",
+  "content": "Half-life is calculated from the terminal elimination phase of the concentration-time curve: t1/2 = 0.693 / ke (elimination rate constant). Determined by plotting log concentration vs time and measuring slope of terminal phase. Context-sensitive half-life applies to IV infusions: time for 50% decrease after stopping infusion, which increases with infusion duration for drugs with multi-compartment kinetics (e.g., fentanyl, propofol). Effective half-life may differ from elimination half-life for drugs with active metabolites or non-linear kinetics. Zero-order kinetics (constant amount eliminated per time, not fraction) occurs with saturable metabolism (phenytoin, ethanol) where half-life increases with concentration.",
+  "tags": [
+    "ke_elimination_constant",
+    "terminal_phase",
+    "context_sensitive_half_life",
+    "zero_order_kinetics"
+  ],
+  "source": "ema.europa.eu",
+  "credibility_class": "A",
+  "year": 2025,
+  "reasoning_role": "diagnostic_criteria",
+  "id": "HC-2259"
+}

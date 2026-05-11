@@ -1,0 +1,20 @@
+{
+  "id": "endo_gdm_trt_001",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "topic": "Gestational Diabetes",
+  "tags": [
+    "diabetes",
+    "pregnancy",
+    "diet",
+    "insulin",
+    "metformin",
+    "monitoring"
+  ],
+  "content": "Management begins with medical nutrition therapy: carbohydrate distribution throughout day (minimum 175g/day), focus on low glycemic index foods, avoid excessive weight gain. Self-monitoring of blood glucose: fasting and 1-hour or 2-hour postprandial targets (fasting <95 mg/dL, 1-hour <140 mg/dL, 2-hour <120 mg/dL). If lifestyle modification fails to achieve targets after 1-2 weeks, pharmacotherapy initiated. Insulin is first-line: basal insulin (NPH or detemir) for fasting hyperglycemia; rapid-acting (lispro, aspart) for postprandial elevation. Metformin increasingly used as alternative but crosses placenta; glyburide less favored due to higher neonatal hypoglycemia risk. Postpartum: discontinue medications, screen for persistent diabetes at 6-12 weeks with 75g OGTT, then every 1-3 years.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/34593690/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "reasoning_role": "treatment_protocol"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "HC-2116",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "healthcare financing",
+    "Bismarck",
+    "Beveridge",
+    "health systems"
+  ],
+  "reasoning_role": "definition",
+  "content": "Healthcare financing models are categorized into four main types: (1) Bismarck model - social health insurance funded by employer/employee payroll contributions, with multiple non-profit sickness funds (Germany, France, Japan); (2) Beveridge model - tax-funded national health service with government provision (UK, Spain, Nordic countries); (3) National Health Insurance - single-payer combining Beveridge funding with private delivery (Canada, South Korea, Taiwan); (4) Out-of-pocket model - no organized financing, patients pay directly (most low-income countries). Each model has distinct implications for equity, efficiency, and access.",
+  "source": "who.int",
+  "credibility_class": "A",
+  "year": 2024
+}

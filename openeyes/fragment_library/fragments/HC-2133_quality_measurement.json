@@ -1,0 +1,17 @@
+{
+  "id": "HC-2133",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "healthcare quality",
+    "risk adjustment",
+    "measurement validity",
+    "limitations"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Quality measure validity requires: (1) Evidence link between measure and outcomes - HEDIS measures backed by systematic reviews; (2) Risk adjustment adequacy - APR-DRG, Elixhauser comorbidity indices explain 60-70% of mortality variation; (3) Measurement reliability - sufficient sample sizes for stable estimates (\u226530 cases/year minimum); (4) Attribution accuracy - assigning outcomes to responsible providers (complicated by care fragmentation); (5) Gaming detection - monitoring for upcoding, cherry-picking patients, or neglecting unmeasured aspects. Composite measures (e.g., CMS Star Ratings) weight components but may mask specific weaknesses. Patient-reported outcome measures (PROMs) increasingly used but response bias and case-mix differences challenge comparisons.",
+  "source": "ahrq.gov",
+  "credibility_class": "A",
+  "year": 2024
+}

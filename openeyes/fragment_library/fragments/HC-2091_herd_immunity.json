@@ -1,0 +1,17 @@
+{
+  "id": "HC-2091",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "herd immunity threshold",
+    "R0",
+    "vaccine effectiveness",
+    "calculation"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "HIT calculation refinements account for: pre-existing cross-immunity, age-structured contact patterns, spatial heterogeneity, and waning immunity. Basic formula (1 - 1/R0) assumes perfect, lifelong immunity and random mixing\u2014rarely true. Age-stratified models weight immunity by contact rates (children have higher contacts for many diseases). Seroprevalence surveys measure actual population immunity. For SARS-CoV-2, evolving variants and waning immunity made stable herd immunity unlikely. Herd immunity should be viewed as a dynamic equilibrium requiring ongoing vaccination, not a one-time achievement.",
+  "source": "Nature Immunology, Lancet Infectious Diseases",
+  "credibility_class": "A",
+  "year": 2024
+}

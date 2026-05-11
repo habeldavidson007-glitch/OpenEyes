@@ -1,0 +1,17 @@
+{
+  "id": "HC-2112",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "telemedicine",
+    "limitations",
+    "appropriate use",
+    "outcomes"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Telemedicine appropriateness criteria: Suitable for - medication management, mental health therapy, chronic disease follow-up, minor acute conditions (UTI, conjunctivitis), dermatology (with good images), post-operative checks. Not suitable for - chest pain, severe abdominal pain, trauma, conditions requiring physical exam (joint effusion, heart murmurs), procedures. Limitations include: inability to perform hands-on examination, technology barriers for elderly/low-literacy patients, licensing restrictions across state/country borders, variable audio/video quality affecting diagnostic accuracy. Studies show diagnostic concordance 80-90% with in-person for appropriate conditions, but higher rates of antibiotic prescribing for respiratory infections (potential overprescribing). Equity concerns: 20-30% lower telehealth use among elderly, limited English proficiency, and lowest income quintile.",
+  "source": "ahrq.gov",
+  "credibility_class": "A",
+  "year": 2024
+}

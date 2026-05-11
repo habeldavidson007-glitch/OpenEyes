@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "aortic stenosis",
+    "etiology",
+    "pathophysiology",
+    "classification"
+  ],
+  "reasoning_role": "definition",
+  "content": "Aortic stenosis (AS) is obstruction of left ventricular outflow due to a narrowed aortic valve. Etiologies: degenerative calcific (most common in elderly\u2014age-related, similar pathobiology to atherosclerosis), congenital bicuspid valve (presents 50s-60s vs 70s-80s for tricuspid), rheumatic heart disease (rare in developed countries, associated with mitral disease). Pathophysiology: progressive valve narrowing increases LV afterload, causing concentric hypertrophy, diastolic dysfunction, eventually systolic dysfunction and heart failure. Classic triad: angina (increased demand, decreased supply), syncope (fixed output unable to increase with exertion), dyspnea/heart failure (elevated filling pressures). Once symptoms develop, average survival without intervention: angina 5 years, syncope 3 years, heart failure 2 years. Severity classification: mild (jet velocity 2.0-2.9 m/s, mean gradient <20 mmHg, AVA >1.5 cm\u00b2), moderate (3.0-3.9 m/s, 20-39 mmHg, 1.0-1.5 cm\u00b2), severe (\u22654.0 m/s, \u226540 mmHg, \u22641.0 cm\u00b2), very severe (\u22655.0 m/s, \u226560 mmHg). Low-flow low-gradient AS requires dobutamine stress echo or CT calcium scoring.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/34489012/",
+  "credibility_class": "guideline",
+  "year": 2021,
+  "id": "HC-2447"
+}

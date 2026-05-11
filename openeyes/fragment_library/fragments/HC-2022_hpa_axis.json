@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "neuroscience",
+    "HPA axis",
+    "stress",
+    "cortisol",
+    "depression"
+  ],
+  "reasoning_role": "definition",
+  "content": "The HPA (hypothalamic-pituitary-adrenal) axis is the body's central stress response system. When stressed, the hypothalamus releases CRH, stimulating the pituitary to release ACTH, which triggers cortisol release from the adrenal glands. Cortisol mobilizes energy and suppresses non-essential functions during acute stress. Chronic stress leads to HPA axis dysregulation: either hyperactivity (elevated cortisol) or hypoactivity (blunted response). In depression, HPA hyperactivity is common, with elevated cortisol contributing to hippocampal atrophy and cognitive symptoms. PTSD often shows hypocortisolism. Normalizing HPA function is a therapeutic goal; antidepressants, psychotherapy, and stress reduction techniques can help restore balance.",
+  "source": "nimh.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2022"
+}

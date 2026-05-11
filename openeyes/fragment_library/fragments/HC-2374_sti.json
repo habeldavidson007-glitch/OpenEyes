@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "STI",
+    "diagnosis",
+    "NAAT",
+    "serology"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Gonorrhea/chlamydia: nucleic acid amplification tests (NAAT) from urine, vaginal, cervical, urethral, pharyngeal, or rectal swabs based on exposure sites; culture for antibiotic susceptibility testing if treatment failure. Syphilis: nontreponemal tests (RPR, VDRL) for screening/monitoring treatment response; treponemal tests (FTA-ABS, TP-PA, EIA/CIA) for confirmation; reverse algorithm uses treponemal screen first. HSV: PCR from lesion swab (preferred), viral culture (lower sensitivity), type-specific serology for prior exposure. Trichomonas: NAAT (most sensitive), wet mount (low sensitivity ~50%). Screening recommendations: sexually active women <25 annually for chlamydia/gonorrhea; MSM every 3-6 months; all adults at least once for HIV/syphilis; pregnant women comprehensive screening.",
+  "source": "cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "id": "HC-2374"
+}
