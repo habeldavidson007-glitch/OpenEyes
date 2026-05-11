@@ -1,20 +1,23 @@
 ```
-# Compiled and build artifacts
+# Healthcare PHR drug class data
+# (Preserving existing rules if any)
+
+# Compiled/Binary files
 *.pyc
-__pycache__/
-*.o
-*.obj
 *.class
+*.o
 *.exe
 *.dll
 *.so
 *.a
+*.obj
 *.out
 
 # Dependencies
-.venv/
-venv/
 node_modules/
+venv/
+.venv/
+__pycache__/
 .mypy_cache/
 .pytest_cache/
 dist/
@@ -22,26 +25,22 @@ build/
 target/
 .gradle/
 
-# Logs and temp files
-*.log
-*.tmp
+# Editor/IDE files
+.vscode/
+.idea/
 *.swp
 *.swo
+*.tmp
 
-# Environment variables
+# System/Environment files
+.DS_Store
+Thumbs.db
 .env
 .env.local
 *.env.*
 
-# Editors and IDEs
-.vscode/
-.idea/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
+# Logs and coverage
+*.log
 coverage/
 htmlcov/
 .coverage

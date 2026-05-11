@@ -1,0 +1,58 @@
+{
+  "fragments": [
+    {
+      "id": "phr_mdc_monoclonal_antibodies_def",
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Monoclonal Antibodies",
+      "role": "definition",
+      "tags": [
+        "monoclonal antibodies",
+        "biologics",
+        "immunotherapy",
+        "naming convention"
+      ],
+      "content": "Monoclonal Antibodies definition and mechanism content placeholder - detailed pharmacological information including mechanism of action, receptor targets, pharmacokinetic properties, and therapeutic indications based on FDA labeling and clinical evidence.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "phr_mdc_monoclonal_antibodies_treatment",
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Monoclonal Antibodies",
+      "role": "treatment_protocol",
+      "tags": [
+        "monoclonal antibodies",
+        "biologics",
+        "immunotherapy",
+        "naming convention"
+      ],
+      "content": "Monoclonal Antibodies treatment protocol content placeholder - dosing recommendations, titration schedules, indication-specific regimens, monitoring requirements, and dose adjustments for renal/hepatic impairment based on FDA prescribing information.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "phr_mdc_monoclonal_antibodies_diagnostic",
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "Monoclonal Antibodies",
+      "role": "diagnostic_criteria",
+      "tags": [
+        "monoclonal antibodies",
+        "biologics",
+        "immunotherapy",
+        "naming convention"
+      ],
+      "content": "Monoclonal Antibodies diagnostic and monitoring criteria placeholder - contraindications, adverse effects profile, drug interactions, monitoring parameters, and special population considerations based on FDA labeling and post-marketing surveillance.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "fragments": [
+    {
+      "id": "phr_mdc_jak_inhibitors_def",
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "JAK Inhibitors",
+      "role": "definition",
+      "tags": [
+        "JAK",
+        "Janus kinase",
+        "autoimmune",
+        "rheumatology",
+        "tofacitinib"
+      ],
+      "content": "JAK Inhibitors definition and mechanism content placeholder - detailed pharmacological information including mechanism of action, receptor targets, pharmacokinetic properties, and therapeutic indications based on FDA labeling and clinical evidence.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "phr_mdc_jak_inhibitors_treatment",
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "JAK Inhibitors",
+      "role": "treatment_protocol",
+      "tags": [
+        "JAK",
+        "Janus kinase",
+        "autoimmune",
+        "rheumatology",
+        "tofacitinib"
+      ],
+      "content": "JAK Inhibitors treatment protocol content placeholder - dosing recommendations, titration schedules, indication-specific regimens, monitoring requirements, and dose adjustments for renal/hepatic impairment based on FDA prescribing information.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    },
+    {
+      "id": "phr_mdc_jak_inhibitors_diagnostic",
+      "domain": "healthcare",
+      "subdomain": "PHR",
+      "sector": "PHR",
+      "topic": "JAK Inhibitors",
+      "role": "diagnostic_criteria",
+      "tags": [
+        "JAK",
+        "Janus kinase",
+        "autoimmune",
+        "rheumatology",
+        "tofacitinib"
+      ],
+      "content": "JAK Inhibitors diagnostic and monitoring criteria placeholder - contraindications, adverse effects profile, drug interactions, monitoring parameters, and special population considerations based on FDA labeling and post-marketing surveillance.",
+      "source": "fda.gov",
+      "credibility_class": "A",
+      "year": 2024
+    }
+  ]
+}
