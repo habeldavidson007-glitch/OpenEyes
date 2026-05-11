@@ -54,7 +54,10 @@
       "name": "Require Uncertainty for Treatment Claims",
       "description": "Any fragment making treatment efficacy claims must include uncertainty note or confidence interval",
       "check_type": "requires_uncertainty_note",
-      "config": { "trigger_tags": ["treatment", "efficacy", "cure", "therapy"] }
+      "config": { 
+        "trigger_tags": ["treatment", "efficacy", "cure", "therapy", "treatment_dosage", "dosage"],
+        "allowed_tags": ["treatment_dosage", "dosage"]
+      }
     },
     {
       "id": "HC-005",

@@ -655,18 +655,19 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
             )
             
             # Set tier-appropriate thresholds
+            # FIX 2: Tighter survival thresholds to reduce survivors from 128-218 to 20-40 range
             if domain_tier == "tier1":
-                score_threshold = 50  # Lower threshold for individual fragments
-                variance_threshold = 600
-                survival_prob_threshold = 0.3
+                score_threshold = 65  # Increased from 50 to require higher quality
+                variance_threshold = 300  # Reduced from 600 for tighter stability
+                survival_prob_threshold = 0.55  # Increased from 0.3 for better discrimination
             elif domain_tier == "tier2":
-                score_threshold = 45
-                variance_threshold = 700
-                survival_prob_threshold = 0.25
+                score_threshold = 65  # Increased from 45
+                variance_threshold = 300  # Reduced from 700
+                survival_prob_threshold = 0.55  # Increased from 0.25
             else:  # tier3
-                score_threshold = 40
-                variance_threshold = 800
-                survival_prob_threshold = 0.2
+                score_threshold = 65  # Increased from 40
+                variance_threshold = 300  # Reduced from 800
+                survival_prob_threshold = 0.55  # Increased from 0.2
             
             # Check survival criteria using survives_mc with tier-adjusted thresholds
             survival_result = survives_mc(
