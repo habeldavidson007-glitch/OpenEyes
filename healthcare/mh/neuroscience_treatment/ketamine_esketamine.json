@@ -1,0 +1,11 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": ["neuroscience", "ketamine", "esketamine", "depression", "rapid antidepressant"],
+  "reasoning_role": "treatment_protocol",
+  "content": "Ketamine is an NMDA receptor antagonist with rapid antidepressant effects, often within hours, unlike traditional antidepressants taking weeks. Esketamine (S-enantiomer) is FDA-approved as nasal spray for treatment-resistant depression and depression with acute suicidal ideation. Mechanism involves glutamate surge, AMPA receptor activation, and BDNF-mediated synaptic plasticity. Dosing: esketamine 56-84mg intranasally twice weekly initially, then weekly/biweekly maintenance. Requires administration in certified clinics with 2-hour monitoring due to dissociation and blood pressure elevation risks. Response rates ~50-70% in treatment-resistant populations. Long-term safety data still emerging; potential for misuse requires careful patient selection.",
+  "source": "fda.gov",
+  "credibility_class": "A",
+  "year": 2024
+}
