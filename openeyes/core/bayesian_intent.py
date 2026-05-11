@@ -80,6 +80,16 @@ class IntentVectorCalculator:
         'secure': {'economy': 0.5, 'governance': 0.4, 'healthcare': 0.1},
         'fund': {'economy': 0.9, 'governance': 0.1},
         'trust': {'economy': 0.6, 'governance': 0.2, 'healthcare': 0.2},
+        'treatment': {'healthcare': 0.7, 'economy': 0.2, 'governance': 0.1},
+        'failure': {'economy': 0.5, 'healthcare': 0.3, 'governance': 0.2},
+        'verdict': {'governance': 0.6, 'economy': 0.3, 'healthcare': 0.1},
+        'liability': {'governance': 0.5, 'economy': 0.4, 'healthcare': 0.1},
+        'structure': {'governance': 0.4, 'economy': 0.3, 'healthcare': 0.3},
+        'diabetes': {'healthcare': 1.0},
+        'vaccines': {'healthcare': 1.0},
+        'mRNA': {'healthcare': 1.0},
+        'hypertension': {'healthcare': 1.0},
+        'symptoms': {'healthcare': 0.8, 'economy': 0.2},
     }
 
     def calculate_vector(self, query: str) -> Dict[str, float]:
