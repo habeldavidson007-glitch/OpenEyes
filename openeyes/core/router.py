@@ -1,13 +1,35 @@
 from __future__ import annotations
 
 DOMAIN_KEYWORDS: dict[str, tuple[str, ...]] = {
-    "medical": ("symptom", "cancer", "diagnosis", "treatment", "drug", "disease", "patient", "hospital", "antibiotic", "medicine", "health"),
-    "legal": ("law", "contract", "lawsuit", "legal", "rights", "court", "attorney", "judge"),
-    "engineering": ("load", "beam", "concrete", "stress", "design", "safety factor", "structural"),
-    "economy": ("economy", "economic", "finance", "financial", "market", "trading", "investment", "stocks", "portfolio", "rich", "return", "risk", "money", "banking", "currency", "inflation", "gdp", "interest rate", "fed", "treasury", "bond", "commodity", "energy market", "oil price"),
-    "cooking": ("recipe", "cook", "bake", "ingredients", "kitchen", "food"),
-    "technology": ("quantum", "computer", "software", "algorithm", "AI", "machine learning", "tech", "blockchain", "crypto"),
-    "science": ("physics", "chemistry", "biology", "experiment", "research", "scientific"),
+    "economy": (
+        "economy", "economic", "finance", "financial", "market", "trading",
+        "investment", "stocks", "portfolio", "return", "risk", "money",
+        "banking", "currency", "inflation", "gdp", "recession", "interest rate",
+        "federal reserve", "fed", "crypto", "bitcoin", "ethereum", "bonds",
+        "treasury", "earnings", "revenue", "valuation", "pe ratio", "dividend",
+        "commodity", "oil", "gold", "energy", "geopolitical", "trade war",
+        "tariff", "sanctions", "forex", "exchange rate", "hedge", "derivatives",
+        "options", "futures", "etf", "index fund", "sector", "bull", "bear",
+        "yield", "spread", "liquidity", "volatility", "short selling", "margin"
+    ),
+    "healthcare": (
+        "health", "medical", "medicine", "doctor", "patient", "disease",
+        "symptom", "diagnosis", "treatment", "drug", "vaccine", "cancer",
+        "surgery", "hospital", "clinical", "pharmaceutical", "therapy",
+        "antibiotic", "virus", "bacteria", "chronic", "acute", "mental health",
+        "nutrition", "exercise", "wellness", "public health", "epidemiology",
+        "mrna", "immune", "antibody", "dose", "trial", "fda", "who", "nih"
+    ),
+    "engineering": (
+        "load", "beam", "concrete", "stress", "design", "safety factor",
+        "structural", "civil", "mechanical", "electrical", "circuit", "voltage",
+        "material", "tensile", "compression", "welding", "blueprint"
+    ),
+    "legal": (
+        "law", "contract", "lawsuit", "legal", "rights", "court",
+        "attorney", "judge", "regulation", "compliance", "statute",
+        "precedent", "liability", "tort", "jurisdiction"
+    ),
 }
 
 

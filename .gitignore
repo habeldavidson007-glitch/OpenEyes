@@ -5,35 +5,36 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-env/
+*.so
+.coverage
+coverage/
+htmlcov/
+
+# Environment
+.env
+.env.local
+.env.*
 venv/
 .venv/
-.ENV
-.python-version
-.pytest_cache/
-.mypy_cache/
+env/
+ENV/
 
 # Logs
 *.log
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment variables
-.env
-.env.local
-*.env.*
-
-# Coverage reports
-.coverage
-htmlcov/
-coverage/
+# Temporary files
+*.tmp
+*.temp
+*~
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
+
+# Build and distribution
+dist/
+build/
+*.egg-info/
 ```
