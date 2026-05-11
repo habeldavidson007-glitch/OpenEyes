@@ -1,0 +1,19 @@
+{
+  "id": "HC-2106",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "preventive care",
+    "value",
+    "overdiagnosis",
+    "appropriate use"
+  ],
+  "reasoning_role": "definition",
+  "content": "Preventive care value assessment considers: (1) Number needed to screen/treat - mammography NNS=500-1,000 to prevent one breast cancer death over 10 years; (2) Overdiagnosis risk - PSA screening detects many indolent prostate cancers leading to unnecessary treatment harms; (3) Age appropriateness - colonoscopy screening generally stops at 75-85 depending on comorbidities; (4) Risk stratification - lung cancer screening only for 50-80 year olds with \u226520 pack-year smoking history. Low-value preventive services include routine vitamin D screening in asymptomatic adults, annual ECGs in low-risk patients, and ovarian cancer screening in average-risk women. Choosing Wisely campaign identifies 80+ preventive services lacking evidence.",
+  "source": "uspreventiveservicestaskforce.org",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

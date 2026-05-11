@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_onchain_sopr_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto",
+    "on_chain_metrics",
+    "bitcoin"
+  ],
+  "reasoning_role": "definition",
+  "content": "Spent Output Profit Ratio (SOPR) measures whether coins moved were sold at profit or loss. SOPR = realized price / price at creation. Values above 1 indicate profit-taking; below 1 shows loss-cutting. Extended periods below 1 often mark cycle bottoms as weak hands capitulate.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

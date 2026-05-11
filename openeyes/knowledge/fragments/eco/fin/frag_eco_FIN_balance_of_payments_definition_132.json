@@ -1,0 +1,19 @@
+{
+  "id": "FIN-132",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "balance_of_payments",
+    "current_account",
+    "capital_account",
+    "international_finance"
+  ],
+  "content": "The balance of payments (BoP) is a comprehensive record of all economic transactions between residents of a country and the rest of the world. It has two main accounts: the current account (trade in goods and services, investment income, transfers) and the capital/financial account (investment flows, loans, reserve changes). By accounting identity, BoP must balance\u2014a current account deficit requires a capital account surplus. The U.S. has run persistent current account deficits since the 1980s, financed by foreign purchases of U.S. assets. Large sustained deficits can signal competitiveness problems or excessive consumption, while surpluses may indicate underconsumption or export-led growth strategies.",
+  "year": "2024",
+  "source": "IMF Balance of Payments Manual",
+  "source_url": "https://www.imf.org/external/pubs/bopman/index.htm",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "international_institution",
+  "sector": "FIN"
+}

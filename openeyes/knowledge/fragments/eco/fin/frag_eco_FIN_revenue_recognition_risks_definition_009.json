@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_revenue_recognition_risks_definition_009",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "revenue_recognition",
+    "interest_coverage",
+    "fundamental_analysis",
+    "debt_to_equity",
+    "valuation",
+    "earnings"
+  ],
+  "reasoning_role": "definition",
+  "content": "Revenue Recognition Risks is a core concept in fundamental analysis. It involves evaluating specific financial metrics or structural elements to determine a company's intrinsic value, operational efficiency, and long-term viability.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov/files/form10-k.pdf",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

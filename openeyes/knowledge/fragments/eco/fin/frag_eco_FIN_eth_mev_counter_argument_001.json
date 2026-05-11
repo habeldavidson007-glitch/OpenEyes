@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_eth_mev_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "MEV extraction harms regular users through worse execution prices and network congestion. Frontrunning bots add artificial slippage to DEX trades. While some MEV (like arbitrage) maintains market efficiency, predatory extraction creates negative externalities. Proposer-Builder Separation (PBS) attempts to democratize MEV distribution.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

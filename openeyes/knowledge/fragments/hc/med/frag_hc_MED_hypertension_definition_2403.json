@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hypertension",
+    "cardiovascular",
+    "treatment algorithm",
+    "pharmacology"
+  ],
+  "reasoning_role": "definition",
+  "content": "First-line antihypertensive agents: thiazide diuretics (chlorthalidone preferred over HCTZ), ACE inhibitors, ARBs, or calcium channel blockers. For Black patients without CKD, initial therapy should be thiazide or CCB. For CKD patients, ACEi or ARB recommended regardless of race. Stage 1 hypertension with ASCVD risk \u226510% or existing CVD/diabetes/CKD: initiate pharmacologic therapy plus lifestyle modifications. Stage 2 hypertension: initiate two first-line agents from different classes (preferably single-pill combination). Lifestyle modifications: DASH diet, sodium restriction (<1500mg ideal, <2300mg acceptable), weight loss (5-10% body weight), physical activity (150 min/week moderate), moderation of alcohol (\u22642 drinks/day men, \u22641 women). Treatment goal: <130/80 mmHg for most adults based on SPRINT trial evidence showing reduced CV events with intensive control.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/29133354/",
+  "credibility_class": "guideline",
+  "year": 2017,
+  "id": "HC-2403",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

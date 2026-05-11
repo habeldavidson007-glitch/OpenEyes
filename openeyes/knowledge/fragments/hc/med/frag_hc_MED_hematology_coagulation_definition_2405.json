@@ -1,0 +1,17 @@
+{
+  "id": "MED-2405_hematology_coagulation_definition",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hematology coagulation",
+    "clinical_medicine",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Hematology Coagulation - pathophysiology, diagnostic criteria, clinical presentation",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "PubMed"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_return_on_invested_capital_roic_definition_066",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "return_on_invested_capital",
+    "return_on_equity",
+    "operating_margin",
+    "inventory_turnover",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Return on Invested Capital (ROIC) measures how efficiently a company uses capital to generate profits. Formula: NOPAT / Invested Capital. Warren Buffett favors this metric as it reveals whether a company has a true moat by earning returns above its cost of capital.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

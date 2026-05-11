@@ -1,0 +1,22 @@
+{
+  "id": "REG-021",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "tokenization",
+    "digital_securities",
+    "blockchain",
+    "regulatory_pilots",
+    "dlt"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Tokenization of assets regulatory treatment varies by asset class and jurisdiction. Securities tokenization: treated as securities under Howey test\u2014registration/exemption required, transfer restrictions apply, qualified custodians needed. US pilot programs: (1) Project Guardian (MAS Singapore)\u2014institutional DeFi for asset tokenization, (2) Project Atlas (Fed/NYDFS)\u2014wholesale CBDC and tokenized deposits, (3) DTCC Project Ion\u2014tokenized fund settlement. EU: DLT Pilot Regime (Jan 2023) allows trading/settlement of tokenized securities on DLT without traditional infrastructure. Key regulatory questions: (1) Legal status of on-chain transfers vs. traditional settlement, (2) Custody requirements for private keys, (3) Cross-border recognition, (4) Smart contract enforceability. Industry awaiting clarity on treatment of fractionalized real-world assets, programmable features, automated compliance.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

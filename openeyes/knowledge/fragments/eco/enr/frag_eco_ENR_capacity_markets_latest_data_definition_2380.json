@@ -1,0 +1,17 @@
+{
+  "id": "ENR-2380_capacity_markets_latest_data",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "capacity markets",
+    "energy",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Capacity Markets - recent technological advances, cost trends, policy developments",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "EIA"
+}

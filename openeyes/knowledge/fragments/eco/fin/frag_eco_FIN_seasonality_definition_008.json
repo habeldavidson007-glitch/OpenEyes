@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_seasonality_definition_08",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "seasonality",
+    "technical_analysis",
+    "january_effect",
+    "sell_in_may",
+    "santa_claus_rally",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Seasonality refers to recurring patterns tied to calendar periods. January Effect: small caps outperform in January (tax-loss harvesting reversal). 'Sell in May': weaker returns May-October historically. Santa Claus Rally: year-end strength. Quarter-end window dressing by institutions. While statistically documented, effects have diminished with awareness. Seasonality provides probabilistic edges, not certainties. Combine with current technical/fundamental context.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/s/seasonality.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

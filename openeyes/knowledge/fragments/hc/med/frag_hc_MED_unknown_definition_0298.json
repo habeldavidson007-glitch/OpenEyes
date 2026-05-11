@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0298",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "drug_tolerance",
+    "enzyme_induction",
+    "receptor_downregulation",
+    "tachyphylaxis",
+    "cross_tolerance"
+  ],
+  "reasoning_role": "definition",
+  "content": "Drug tolerance is a diminished response to a drug following repeated administration, requiring higher doses to achieve the same effect. Mechanisms include: pharmacokinetic tolerance (increased metabolism via enzyme induction - alcohol, barbiturates); pharmacodynamic tolerance (receptor downregulation/desensitization - opioids, benzodiazepines); tachyphylaxis (rapid tolerance after few doses - nitrates, amphetamines). Cross-tolerance occurs between drugs with similar mechanisms (benzodiazepines and alcohol both act on GABA receptors). Tolerance develops at different rates for different effects: opioid tolerance to analgesia and euphoria develops quickly; tolerance to constipation and miosis develops minimally. Reverse tolerance (sensitization) occurs with some drugs (alcohol neurotoxicity, stimulant psychosis).",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_tax_treatment_investments_definition",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "tax",
+    "capital_gains",
+    "wash_sale",
+    "regulation",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Investment income is taxed differently based on source and holding period. Long-term capital gains (assets held >1 year) are taxed at preferential rates (0%, 15%, 20%) compared to ordinary income. Short-term gains are taxed as ordinary income. Dividends are classified as 'qualified' (lower rate) or 'ordinary'. The Wash Sale Rule disallows claiming a loss if the same security is repurchased within 30 days.",
+  "source": "government_source",
+  "source_url": "https://www.irs.gov",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

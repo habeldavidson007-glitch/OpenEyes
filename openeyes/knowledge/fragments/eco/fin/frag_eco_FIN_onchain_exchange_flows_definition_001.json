@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_onchain_exchange_flows_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "definition",
+  "content": "Large exchange inflows often precede selling pressure as users move coins to trade. Outflows suggest accumulation and cold storage. Whale movements (>1000 BTC) receive particular attention. Net outflows during price declines indicate HODLing conviction; inflows during rallies suggest profit-taking intent.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "HC-2081",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "vector control strategies",
+    "integrated vector management",
+    "insecticide resistance management"
+  ],
+  "reasoning_role": "definition",
+  "content": "Integrated Vector Management (IVM) combines multiple approaches: (1) Source reduction\u2014eliminate standing water, improve waste management; (2) Larval control\u2014apply larvicides to unavoidable breeding sites, use biological agents; (3) Adult control\u2014space spraying during outbreaks, indoor residual spraying for endophilic vectors; (4) Personal protection\u2014distribute insecticide-treated bed nets, promote repellent use; (5) Housing improvements\u2014screens, air conditioning; (6) Community engagement\u2014mobilize residents for source reduction. Insecticide resistance management: rotate insecticide classes, use combinations, preserve susceptible alleles through refugia. Surveillance monitors vector density, species composition, infection rates, and insecticide susceptibility.",
+  "source": "WHO IVM guidelines, Pesticide Resistance Action Committee recommendations",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

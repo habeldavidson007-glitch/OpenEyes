@@ -1,0 +1,33 @@
+{
+  "id": "gov-GEL-SAHELINSTABILITY-COMPARATIVE-030",
+  "domain": "GOVERNANCE",
+  "sector": "GEL",
+  "topic": "Sahelinstability",
+  "role": "comparative",
+  "summary": "Sahelinstability: JNIM IS Sahel expanding",
+  "content": {
+    "overview": "This fragment describes sahelinstability in geopolitical analysis. JNIM IS Sahel expanding.",
+    "key_points": [
+      "JNIM IS Sahel expanding",
+      "Coups Mali Burkina Niger",
+      "France Russia UN interventions",
+      "Climate resource competition",
+      "G5 Sahel limited"
+    ],
+    "sources": [
+      "World Bank WGI (databank.worldbank.org)",
+      "Freedom House (freedomhouse.org)",
+      "CSIS (csis.org)",
+      "Brookings (brookings.edu)",
+      "Carnegie (carnegieendowment.org)",
+      "Lowy Institute (lowyinstitute.org)"
+    ],
+    "philosophy_guard": "Describes what IS - theories patterns cases. Not what SHOULD BE.",
+    "credibility_score": 0.94
+  },
+  "metadata": {
+    "created": "2024",
+    "format_version": "2.0",
+    "cross_references": []
+  }
+}

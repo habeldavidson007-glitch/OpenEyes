@@ -1,0 +1,22 @@
+{
+  "id": "frag_mh_post_traumatic_stress_disorder_treatment_protocol_0035",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "trauma-focused-therapy",
+    "EMDR",
+    "prolonged-exposure",
+    "SSRI",
+    "prazosin"
+  ],
+  "reasoning_role": "definition",
+  "content": "Trauma-focused psychotherapies are first-line: Prolonged Exposure (PE), Cognitive Processing Therapy (CPT), and EMDR (Eye Movement Desensitization and Reprocessing) show strongest evidence. These address traumatic memories directly through exposure/cognitive restructuring. Pharmacotherapy: SSRIs (sertraline, paroxetine FDA-approved; fluoxetine also used) and SNRI (venlafaxine) are first-line medications. Prazosin may help trauma-related nightmares. Benzodiazepines are not recommended (may interfere with extinction learning). Treatment typically continues 6-12 months after response. Early intervention within days of trauma is not recommended; watchful waiting for acute stress symptoms is preferred.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

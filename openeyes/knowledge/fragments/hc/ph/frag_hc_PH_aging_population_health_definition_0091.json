@@ -1,0 +1,22 @@
+{
+  "id": "frag_ph_aging_population_health_definition_0091",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "aging",
+    "geriatrics",
+    "population_health",
+    "functional_ability"
+  ],
+  "reasoning_role": "definition",
+  "content": "Global population aging represents unprecedented demographic shift\u2014people 65+ years will outnumber children under 5 by 2030. By 2050, 1 in 6 people globally will be over 65 (up from 1 in 11 in 2019). Healthy aging defined by WHO as developing and maintaining functional ability enabling well-being in older age. Functional ability comprises intrinsic capacity (physical/mental capacities), environment (home, community, society), and their interaction. Compression of morbidity hypothesis suggests delaying disease onset can reduce lifetime disability burden, though evidence is mixed. Key health concerns: multimorbidity (average 3+ chronic conditions), geriatric syndromes (falls, frailty, delirium, incontinence, pressure ulcers), cognitive impairment/dementia, social isolation, polypharmacy. Ageism remains significant barrier to healthy aging. Life course perspective recognizes aging trajectories shaped by cumulative advantages/disadvantages across lifespan.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

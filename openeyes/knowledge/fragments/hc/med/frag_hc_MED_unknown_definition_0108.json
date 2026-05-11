@@ -1,0 +1,21 @@
+{
+  "id": "frag_med_unknown_definition_0108",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "placebo effect",
+    "nocebo",
+    "clinical trial design"
+  ],
+  "reasoning_role": "definition",
+  "content": "Placebo response measurement in trials: difference between baseline and endpoint in placebo arm (placebo response rate), proportion of placebo patients meeting response criteria (e.g., \u226550% pain reduction, \u226530% HAM-D decrease in depression). High placebo rates can obscure drug-placebo differences, leading to trial failure despite true drug efficacy. Factors increasing placebo response include: subjective endpoints, frequent site visits, elaborate rituals, patient expectations, milder disease severity, and shorter trial duration. Nocebo adverse event rates in placebo arms often reach 20-30%, complicating safety signal detection. Ethical considerations limit placebo use when effective treatments exist; non-inferiority designs may be required. Meta-analyses show increasing placebo responses over time in some indications (e.g., neuropathic pain, depression), potentially due to trial design changes and patient expectations.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

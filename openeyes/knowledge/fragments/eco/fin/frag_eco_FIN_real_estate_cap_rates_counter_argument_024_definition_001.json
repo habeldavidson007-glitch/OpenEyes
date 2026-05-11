@@ -1,0 +1,29 @@
+{
+  "id": "frag_fin_real_estate_cap_rates_counter_argument_024",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "tags": [
+    "technology",
+    "healthcare",
+    "energy",
+    "real_estate",
+    "consumer_discretionary",
+    "utilities",
+    "industrials",
+    "financials",
+    "sector",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "While Real Estate Cap Rates is widely used, skeptics note it can be distorted by accounting tricks, cyclical factors, or extreme macro conditions. It should never be used in isolation but rather as part of a holistic framework including cash flow verification and qualitative assessment.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENR"
+}

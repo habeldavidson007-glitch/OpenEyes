@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_eth_mev_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "MEV represents profit validators can extract by reordering, including, or excluding transactions within blocks they produce. Common strategies include frontrunning DEX trades, arbitrage between protocols, and liquidation opportunities. MEV totaled billions annually, creating arms race among searchers and validators.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

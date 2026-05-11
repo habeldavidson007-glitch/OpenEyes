@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0409",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "NAFLD",
+    "NASH",
+    "fatty liver",
+    "steatohepatitis",
+    "metabolic"
+  ],
+  "reasoning_role": "definition",
+  "content": "Non-alcoholic fatty liver disease (NAFLD), now increasingly termed metabolic dysfunction-associated steatotic liver disease (MASLD), encompasses a spectrum from simple hepatic steatosis to non-alcoholic steatohepatitis (NASH/MASH) to cirrhosis and hepatocellular carcinoma. Definition: hepatic fat accumulation >5% of hepatocytes in absence of significant alcohol consumption (<21 drinks/week men, <14 women) and secondary causes. Pathophysiology: 'multiple-hit' hypothesis involving insulin resistance, lipotoxicity, oxidative stress, inflammation, gut microbiome alterations. Strongly associated with metabolic syndrome components (obesity, T2DM, dyslipidemia, hypertension). Prevalence ~25% globally, higher in Hispanics, lower in African Americans. NASH (steatosis + inflammation + hepatocyte injury) affects 20-30% of NAFLD patients; 10-20% of NASH progresses to cirrhosis over decades. Leading indication for liver transplantation in US.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36506508/",
+  "credibility_class": "clinical_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "peer_reviewed_guideline"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "HC-2104",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "preventive care",
+    "screening",
+    "vaccination",
+    "cost-effectiveness"
+  ],
+  "reasoning_role": "definition",
+  "content": "Preventive care encompasses three levels: (1) Primary prevention - preventing disease onset (vaccination, smoking cessation, healthy diet); (2) Secondary prevention - early detection before symptoms (cancer screening, blood pressure monitoring, lipid screening); (3) Tertiary prevention - preventing complications in established disease (diabetes foot care, cardiac rehabilitation). USPSTF grades recommendations A (strongly recommended) through D (recommended against), with I for insufficient evidence. Cost-effectiveness varies widely: childhood vaccination ($5-50/QALY), colorectal cancer screening ($5,000-20,000/QALY), while some preventive interventions exceed treatment cost-effectiveness.",
+  "source": "uspreventiveservicestaskforce.org",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_eco_COM_ag_weather_risk_latest_001",
+  "domain": "economy",
+  "subdomain": "COM",
+  "tags": [
+    "agriculture",
+    "2024",
+    "El Nino",
+    "crop production"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "The 2023-24 El Nino event reduced global rice production by 3.2 MMT, with India's export ban (July 2023) amplifying price impacts. Thai 5% broken rice prices rose 25% to $650/tonne by Q1 2024. However, favorable conditions in Brazil produced record soybean harvests (155 MMT), offsetting some losses. NOAA forecasts 60% probability of La Nina developing by Q3 2025, potentially reversing these patterns.",
+  "source": "FAO Food Price Index & Crop Prospects",
+  "source_url": "https://www.fao.org/worldfoodsituation/foodpricesindex/en/",
+  "credibility_class": "government_source",
+  "year": 2025,
+  "compatible_with": [
+    "frag_eco_COM_ag_weather_risk_definition_001"
+  ],
+  "incompatible_with": [],
+  "weight": 1.0
+}

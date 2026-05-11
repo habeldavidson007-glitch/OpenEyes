@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_eth_merge_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "proof_of_stake"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Post-Merge centralization concerns emerged as liquid staking providers accumulated significant voting power. Lido controls over 30% of staked ETH, approaching theoretical attack thresholds. Critics argue this creates systemic risk if staking providers collude or suffer technical failures.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

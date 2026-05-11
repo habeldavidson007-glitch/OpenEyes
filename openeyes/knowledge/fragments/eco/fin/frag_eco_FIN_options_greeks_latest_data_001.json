@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_options_greeks_latest_001",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "options",
+    "risk_management",
+    "volatility",
+    "derivatives",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Dealer gamma positioning receives increased attention as potential market stability indicator. Large negative gamma environments associated with elevated volatility. Zero-day options create unique gamma dynamics due to rapid time decay.",
+  "source": "OCC",
+  "source_url": "https://www.optionsclearing.com/market-data/volume/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.85,
+  "sector": "REG"
+}

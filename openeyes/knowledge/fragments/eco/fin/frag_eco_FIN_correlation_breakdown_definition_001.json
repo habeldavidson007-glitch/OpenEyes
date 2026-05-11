@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_correlation_breakdown_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "risk_management",
+    "correlation",
+    "diversification",
+    "crisis",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Correlation breakdown refers to the phenomenon where asset correlations converge to 1 during market crises, causing diversification strategies to fail precisely when they are needed most. Assets that are uncorrelated in normal markets (e.g., stocks and bonds, or different equity sectors) often sell off together in a liquidity crunch.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

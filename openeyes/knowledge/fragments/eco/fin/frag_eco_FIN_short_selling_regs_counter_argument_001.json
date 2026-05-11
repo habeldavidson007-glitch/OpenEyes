@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_short_selling_regs_counter_argument",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "regulation",
+    "short_selling",
+    "uptick_rule",
+    "market_structure",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Proponents of unrestricted short selling argue it provides essential price discovery and exposes fraud (e.g., Enron, Wirecard). Restrictions like the Uptick Rule can impede efficient price correction during crashes and reduce liquidity when it is needed most. Some argue the 2021 meme-stock volatility showed that halting shorts does not stop volatility, as call options drive gamma squeezes instead.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

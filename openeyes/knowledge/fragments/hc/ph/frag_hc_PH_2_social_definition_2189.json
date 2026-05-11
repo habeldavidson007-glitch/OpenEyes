@@ -1,0 +1,18 @@
+{
+  "content": "Assessment of social determinants involves both individual and population-level measurement. Individual screening tools include: AHC-HRSN (Accountable Health Communities Health-Related Social Needs) screening tool, PRAPARE (Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences), and CMS Accountable Health Communities screening instrument covering domains of food insecurity, housing instability, transportation needs, utility difficulties, and interpersonal safety. Population-level indicators include: Area Deprivation Index (ADI), Social Vulnerability Index (SVI), Gini coefficient for income inequality, poverty rates, educational attainment distributions, unemployment rates, and segregation indices. Health outcome measures should be stratified by SDOH indicators to identify disparities. Causal inference methods (natural experiments, instrumental variables) help distinguish correlation from causation in SDOH research.",
+  "tags": [
+    "measurement",
+    "screening",
+    "assessment",
+    "health_disparities"
+  ],
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "year": 2024,
+  "source": "https://www.cdc.gov/",
+  "id": "HC-2189",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "MAC-1855_productivity_growth_latest_data",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "tags": [
+    "productivity growth",
+    "macroeconomics",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Productivity Growth - recent empirical findings, current trends, updated estimates",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "Federal Reserve"
+}

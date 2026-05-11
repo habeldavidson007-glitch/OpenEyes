@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_usdt_tether_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto",
+    "ethereum"
+  ],
+  "reasoning_role": "definition",
+  "content": "Largest stablecoin by market cap; historically faced scrutiny over reserve composition (commercial paper vs cash/treasuries).",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_btc_blocksize_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Bitcoin Cash (8MB blocks) launched Aug 2017. Subsequent forks included SV (Satoshi Vision). BTC remained dominant with >90% of crypto market cap despite scaling limitations.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

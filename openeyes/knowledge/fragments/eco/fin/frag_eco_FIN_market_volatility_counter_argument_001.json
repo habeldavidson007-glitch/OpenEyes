@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_market_volatility_counter_001",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "risk_management",
+    "vix",
+    "var",
+    "volatility",
+    "latest_data"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Volatility is imperfect risk measure. Assumes normal distribution (fat tails ignored). Doesn't distinguish upside vs downside moves. Low volatility can breed complacency and excessive risk-taking (volatility paradox). Volatility targeting strategies can amplify moves. VIX calculation methodology has quirks. Volatility products (VIX futures, ETNs) suffer from contango, making long-term holding costly.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/volatility-puzzle-20210520.html",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.95,
+  "sector": "FIN"
+}

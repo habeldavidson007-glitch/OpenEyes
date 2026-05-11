@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_soft_hard_landing_def_022",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "recession",
+    "economic_growth",
+    "inflation",
+    "fed",
+    "landing",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "A soft landing occurs when the Federal Reserve successfully slows economic growth enough to reduce inflation without triggering a recession. A hard landing occurs when tightening causes a recession with significant job losses and output decline. Soft landings require precise calibration\u2014enough restriction to cool inflation but not so much as to break the economy. Historical examples of soft landings are debated; the 1994-1995 episode is often cited. Hard landings have been more common, including the Volcker disinflation of the early 1980s which induced severe recessions but ultimately restored price stability. Achieving soft landings is complicated by long and variable policy lags, making it difficult to know when sufficient restriction has been achieved.",
+  "source": "Federal Reserve Economic Research",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/soft-landings-20230315.htm",
+  "credibility_class": "academic_research",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

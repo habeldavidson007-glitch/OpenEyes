@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_container_shipping_latest_014",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "container_shipping",
+    "logistics",
+    "rate_volatility",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Container shipping 2024: Red Sea attacks forcing Cape rerouting, adding 10-14 days transit time. Rates up 150-200% on Asia-Europe routes. Panama Canal drought restrictions easing. New vessel deliveries creating overcapacity concerns. Port strikes avoided at US East Coast. Digitalization (bill of lading) progressing slowly.",
+  "source": "lloyds_list",
+  "source_url": "https://lloydslist.maritimeintelligence.informa.com/",
+  "credibility_class": "industry_publication",
+  "year": 2024,
+  "weight": 0.91
+}

@@ -1,0 +1,19 @@
+{
+  "id": "FIN-143",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "stress_testing",
+    "bank_regulation",
+    "capital_planning",
+    "risk_management"
+  ],
+  "content": "Stress testing evaluates how financial institutions withstand adverse economic scenarios. The Federal Reserve's annual Dodd-Frank Act Stress Tests (DFAST) and Comprehensive Capital Analysis and Review (CCAR) project bank losses under severely adverse scenarios including GDP decline, unemployment spike, and market crashes. Banks failing must restrict capital distributions (dividends, buybacks). Scenarios include: baseline (expected path), adverse (recession), and severely adverse (crisis with market stress component for large banks). European Banking Authority conducts similar EU-wide tests. Criticisms include: models may not capture tail risks, scenarios may be too\u6e29\u548c, and tests create moral hazard if banks assume they're too important to fail.",
+  "year": "2024",
+  "source": "Federal Reserve DFAST Results",
+  "source_url": "https://www.federalreserve.gov/supervisionreg/stress-tests.htm",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_carry_trade_def_01",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "forex",
+    "leverage",
+    "risk_management",
+    "japan",
+    "definition",
+    "first_line"
+  ],
+  "reasoning_role": "definition",
+  "content": "Carry trade involves borrowing in low-yield currency (e.g., JPY, CHF) to invest in high-yield assets (e.g., USD bonds, EM equities). Profit = interest rate differential. Unwinds violently when funding currency appreciates or volatility spikes (VIX > 20).",
+  "source": "peer_reviewed_study",
+  "source_url": "https://www.bis.org/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.94,
+  "sector": "REG"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "endo_nafld_diag_001",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "NAFLD",
+    "NASH",
+    "liver biopsy",
+    "FIB-4",
+    "elastography",
+    "imaging"
+  ],
+  "content": "Diagnosis requires: (1) Evidence of hepatic steatosis - imaging (ultrasound first-line, shows increased echogenicity; CAP on FibroScan; MRI-PDFF most accurate) or histology; (2) Exclusion of significant alcohol use; (3) Exclusion of other liver diseases (viral hepatitis, autoimmune, genetic hemochromatosis, Wilson disease, drug-induced). Liver biopsy gold standard for diagnosing NASH and staging fibrosis but not routinely performed. Non-invasive fibrosis assessment: FIB-4 score (age, AST, ALT, platelets) - low risk <1.3, high risk >2.67; NAFLD fibrosis score; ELF test; vibration-controlled transient elastography (FibroScan) measures liver stiffness. Screening approach: identify at-risk (T2DM, metabolic syndrome), check ALT/AST (often elevated, AST:ALT ratio >1 suggests advanced fibrosis), calculate FIB-4, refer high-risk for specialist evaluation/biopsy consideration. HCC surveillance in cirrhotic NAFLD per guidelines.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/36506508/",
+  "credibility_class": "clinical_guideline",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "peer_reviewed_guideline"
+}

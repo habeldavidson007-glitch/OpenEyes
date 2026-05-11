@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_crypto_market_cap_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sum of circulating supply * price for all assets. Often criticized for double-counting via wrapped tokens and staked derivatives.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

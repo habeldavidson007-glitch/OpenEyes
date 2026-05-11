@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_lending_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "defi",
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Over-collateralization limits capital efficiency and prevents unsecured credit markets which drive real-world economic growth.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

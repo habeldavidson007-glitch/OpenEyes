@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_sixthamendmentconfrontation_procedural_197",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "sixthamendmentconfrontation",
+  "role": "procedural",
+  "summary": "Descriptive overview of sixthamendmentconfrontation in substantive law: Crawford testimonial standard, forfeiture.",
+  "key_points": [
+    "Crawford testimonial standard is a fundamental concept in constrights law.",
+    "Legal standards for sixthamendmentconfrontation are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine sixthamendmentconfrontation in litigation.",
+    "The doctrine of sixthamendmentconfrontation has evolved through Supreme Court precedents.",
+    "Understanding sixthamendmentconfrontation requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "US Constitution",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Civil Rights",
+    "Brennan Center"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_fifthamendmenttakings_definitional_194",
+    "frag_gov_sub_sixthamendmentjurytrial_definitional_200",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_volume_profile_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "volume",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Volume Profile displays trading activity at specific price levels over time rather than by time period like traditional volume. It reveals which prices attracted most transactions (high volume nodes) versus least (low volume nodes). Point of Control (POC) marks the price with highest volume. Value Area contains 70% of volume around POC.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

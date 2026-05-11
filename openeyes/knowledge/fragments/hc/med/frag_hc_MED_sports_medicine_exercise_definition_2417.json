@@ -1,0 +1,18 @@
+{
+  "id": "MED-2417_sports_medicine_exercise_definition",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "sports medicine exercise",
+    "clinical_medicine",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sports Medicine Exercise - pathophysiology, diagnostic criteria, clinical presentation",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2026,
+  "source": "PubMed",
+  "_original_credibility_class": "peer_reviewed"
+}

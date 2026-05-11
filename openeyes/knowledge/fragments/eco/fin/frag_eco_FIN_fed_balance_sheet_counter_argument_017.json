@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_fed_balance_sheet_counter_017",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "fed",
+    "balance_sheet",
+    "monetary_policy",
+    "quantitative_easing",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Large balance sheets create potential risks and complications. Exit strategies require careful calibration to avoid market disruption. Holdings of MBS create exposure to housing market risks and complicate normalization. Interest paid on reserves affects Fed remittances to the Treasury\u2014when rates rise, the Fed can operate at a loss, deferring remittances. Large-scale asset purchases blur lines between monetary and fiscal policy. Foreign holdings of Treasuries may be displaced by Fed purchases, affecting international monetary relations. Balance sheet policies affect income distribution through asset price channels. Some argue the Fed should return to a smaller 'corridor' system with minimal balance sheet, while others advocate maintaining ample reserves for financial stability.",
+  "source": "Government Accountability Office Reports",
+  "source_url": "https://www.gao.gov/products/gao-23-106267",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

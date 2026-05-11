@@ -1,0 +1,18 @@
+{
+  "content": "Older adult health assessment includes: (1) Functional status\u2014Activities of Daily Living (ADLs: bathing, dressing, eating, toileting, transferring), Instrumental ADLs (managing medications, finances, transportation), gait speed (<0.8 m/s indicates frailty); (2) Geriatric syndromes\u2014frailty (Fried phenotype, Clinical Frailty Scale), fall risk (Timed Up and Go, STEADI algorithm), cognitive impairment (Mini-Cog, MoCA, MMSE), depression (Geriatric Depression Scale), delirium (CAM); (3) Multimorbidity assessment\u2014disease count, weighted indices (Charlson Comorbidity Index), patient-reported burden; (4) Polypharmacy review\u2014medication count (>5 indicates polypharmacy), Beers Criteria for potentially inappropriate medications, drug-drug interactions; (5) Social determinants\u2014social isolation (UCLA Loneliness Scale), caregiver strain, food insecurity, financial toxicity; (6) Population indicators\u2014life expectancy, healthy life expectancy, disability-free life expectancy, long-term care utilization. Limitations include underrepresentation of oldest-old in research, performance bias in those with disabilities, and need for proxy respondents with cognitive impairment.",
+  "tags": [
+    "assessment",
+    "geriatric_syndromes",
+    "functional_status",
+    "surveillance"
+  ],
+  "reasoning_role": "definition",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "year": 2024,
+  "source": "https://www.cdc.gov/",
+  "id": "HC-2195",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
+}

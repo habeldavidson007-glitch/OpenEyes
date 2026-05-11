@@ -1,0 +1,17 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "relative risk odds ratio",
+    "epidemiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Quality criteria for relative_risk_odds_ratio.",
+  "source": "https://www.ncbi.nlm.nih.gov/books/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2151",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0277",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "renal_dosing",
+    "GFR",
+    "creatinine_clearance",
+    "kidney_impairment",
+    "drug_accumulation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Renal dosing adjusts drug regimens based on kidney function to prevent toxicity from drug accumulation. Glomerular filtration rate (GFR) determines clearance of renally eliminated drugs. Estimated GFR (eGFR) calculated from serum creatinine using CKD-EPI or MDRD equations; Cockcroft-Gault formula estimates creatinine clearance (CrCl) for drug dosing. Normal GFR: 90-120 mL/min. Mild impairment: 60-89; Moderate: 30-59; Severe: 15-29; Kidney failure: <15. Drugs requiring renal adjustment: aminoglycosides, vancomycin, digoxin, lithium, gabapentin, direct oral anticoagulants (except apixaban), metformin (contraindicated if eGFR <30). Some drugs are safe regardless of renal function due to hepatic metabolism.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

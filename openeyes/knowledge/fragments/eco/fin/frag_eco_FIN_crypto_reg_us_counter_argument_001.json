@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_crypto_reg_us_counter_argument",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "regulation",
+    "crypto",
+    "sec",
+    "cftc",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Industry advocates argue the SEC's 'regulation by enforcement' strategy creates a chilling effect, driving innovation offshore. They contend that most utility tokens are not securities and that a new, tailored statutory regime is needed rather than fitting crypto into 1930s laws. Opponents argue that without strict securities laws, investor protection in crypto is nonexistent.",
+  "source": "government_source",
+  "source_url": "https://www.cftc.gov",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

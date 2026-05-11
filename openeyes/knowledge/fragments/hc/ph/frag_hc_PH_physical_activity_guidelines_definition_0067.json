@@ -1,0 +1,21 @@
+{
+  "id": "frag_ph_physical_activity_guidelines_definition_0067",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "physical_activity",
+    "exercise",
+    "prevention",
+    "chronic_disease"
+  ],
+  "reasoning_role": "definition",
+  "content": "Physical activity is any bodily movement produced by skeletal muscles requiring energy expenditure, including work, transport, household tasks, and recreational activities. Exercise is planned, structured, repetitive physical activity for fitness improvement. WHO 2020 guidelines recommend: adults 150-300 minutes moderate or 75-150 minutes vigorous aerobic activity weekly plus muscle-strengthening 2+ days; older adults add balance training; children/adolescents 60 minutes daily moderate-to-vigorous activity. Benefits include reduced all-cause mortality (up to 30% risk reduction), cardiovascular disease prevention/treatment, type 2 diabetes prevention, cancer risk reduction (colon, breast, endometrial), improved mental health, cognitive function, bone health, and weight management. Physical inactivity causes 6-10% of major NCDs globally. Sedentary behavior (prolonged sitting) independently increases mortality risk even with adequate exercise.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

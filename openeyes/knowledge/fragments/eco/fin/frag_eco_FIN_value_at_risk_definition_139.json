@@ -1,0 +1,19 @@
+{
+  "id": "FIN-139",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "value_at_risk",
+    "risk_metrics",
+    "risk_management",
+    "financial_institutions"
+  ],
+  "content": "Value at Risk (VaR) measures the maximum potential loss over a specified time horizon at a given confidence level. A 1-day 95% VaR of $10 million means there's a 5% chance of losing more than $10 million in one day. Three calculation methods: historical simulation (uses actual past returns), variance-covariance (assumes normal distribution), and Monte Carlo (simulates thousands of scenarios). VaR became industry standard after J.P. Morgan published its methodology in 1994. Basel regulations require banks to hold capital based on VaR. Criticisms include: doesn't measure tail losses beyond the confidence level, assumes normal distributions despite fat tails, and can create false sense of precision. Expected Shortfall now supplements VaR in regulations.",
+  "year": "2024",
+  "source": "Basel Committee on Banking Supervision",
+  "source_url": "https://www.bis.org/bcbs/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
+}

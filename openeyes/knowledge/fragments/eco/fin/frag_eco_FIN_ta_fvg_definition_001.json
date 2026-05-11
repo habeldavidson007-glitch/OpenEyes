@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_fvg_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "ict_concepts",
+    "price_action"
+  ],
+  "reasoning_role": "definition",
+  "content": "Fair Value Gap (FVG) is an ICT concept representing a three-candle imbalance where the first and third candle wicks don't overlap. The gap between them represents inefficient pricing that algorithmic models tend to revisit. Traders use FVGs as entry zones expecting mean reversion to fill the inefficiency before trend continuation.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

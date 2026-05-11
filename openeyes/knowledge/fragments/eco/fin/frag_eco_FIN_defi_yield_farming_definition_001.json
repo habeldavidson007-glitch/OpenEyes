@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_defi_yield_farming_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "defi",
+    "crypto",
+    "yield"
+  ],
+  "reasoning_role": "definition",
+  "content": "Yield farming involves moving capital between protocols to maximize returns from trading fees and token emissions. Early adopters capture highest yields from bootstrapping incentives. APYs often exceed 100% initially but decay rapidly as more capital enters. Sustainable yields typically settle at 5-20% after incentive phases end.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

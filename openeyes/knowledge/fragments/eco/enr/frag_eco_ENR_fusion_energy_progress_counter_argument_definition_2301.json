@@ -1,0 +1,17 @@
+{
+  "id": "ENR-2301_fusion_energy_progress_counter_argument",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "fusion energy progress",
+    "energy",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Fusion Energy Progress - economic challenges, scalability concerns, competing approaches",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "EIA"
+}

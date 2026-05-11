@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_var_cvar_metrics_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "risk_management",
+    "var",
+    "cvar",
+    "metrics",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Regulators are pushing for 'Stressed VaR' and 'Expected Shortfall' over standard VaR. Firms are increasingly supplementing parametric VaR with Monte Carlo simulations and historical stress scenarios to better capture non-linear risks and correlation breakdowns.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

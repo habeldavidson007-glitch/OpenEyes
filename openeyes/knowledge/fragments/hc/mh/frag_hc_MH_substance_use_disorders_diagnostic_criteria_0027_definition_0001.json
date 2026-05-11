@@ -1,0 +1,21 @@
+{
+  "id": "frag_mh_substance_use_disorders_diagnostic_criteria_0027",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "SUD",
+    "addiction"
+  ],
+  "reasoning_role": "definition",
+  "content": "DSM-5-TR SUD criteria: Problematic substance use leading to impairment/distress, \u22652 of following within 12 months: (1) larger amounts/longer than intended, (2) persistent desire/unsuccessful efforts to control use, (3) great deal of time spent obtaining/using/recovering, (4) craving, (5) failure to fulfill major role obligations, (6) continued use despite social/interpersonal problems, (7) important activities given up/reduced, (8) recurrent use in hazardous situations, (9) continued use despite physical/psychological problems, (10) tolerance, (11) withdrawal. Specifiers: in early/sustained remission, on maintenance therapy, in controlled environment. Substance-specific diagnoses (alcohol, cannabis, opioids, stimulants, sedatives, tobacco, etc.).",
+  "source": "PubMed",
+  "source_url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "year": 2022,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frag_eco_GEO_tiktok_data_sovereignty_latest_005",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "tiktok",
+    "data_sovereignty",
+    "china",
+    "tech_regulation",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "TikTok legislation 2024: Protecting Americans from Foreign Adversary Controlled Applications Act passed April 2024. Requires ByteDance divestiture within 270 days or app banned from US app stores. TikTok filed lawsuit challenging constitutionality. Montana state ban blocked by federal court.",
+  "source": "congressional_record",
+  "source_url": "https://www.congress.gov/",
+  "credibility_class": "government_legislation",
+  "year": 2024,
+  "weight": 0.95
+}

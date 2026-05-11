@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_dollar_index_def_024",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "dollar",
+    "currency",
+    "exchange_rate",
+    "forex",
+    "dxy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "The U.S. Dollar Index (DXY, USDX, DX) measures the value of the U.S. dollar relative to a basket of six major currencies: euro (57.6%), Japanese yen (13.6%), British pound (11.9%), Canadian dollar (9.1%), Swedish krona (4.2%), and Swiss franc (3.6%). Introduced in 1973 with a base of 100, the index is geometrically weighted. A reading above 100 indicates dollar appreciation versus the basket; below 100 indicates depreciation. The dollar index is influenced by interest rate differentials, economic growth differentials, safe-haven flows, trade balances, and central bank policies. A strong dollar makes U.S. exports more expensive and imports cheaper, affecting trade balances and multinational earnings. The Federal Reserve monitors dollar movements for inflation and growth implications.",
+  "source": "ICE (Intercontinental Exchange)",
+  "source_url": "https://www.theice.com/ice-usdx/index",
+  "credibility_class": "financial_news",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

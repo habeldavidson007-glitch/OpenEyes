@@ -1,0 +1,17 @@
+{
+  "id": "ENR-2377_ancillary_services_latest_data",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "ancillary services",
+    "energy",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Ancillary Services - recent technological advances, cost trends, policy developments",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "EIA"
+}

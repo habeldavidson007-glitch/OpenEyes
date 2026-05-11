@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_ENR_shale_counter_006",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "tags": [
+    "shale",
+    "oil"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Oil market fragment: shale. Role: counter_argument. Covers fundamentals, market dynamics, and current conditions.",
+  "source": "EIA",
+  "source_url": "https://eia.gov/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "last_verified": "2026-05-11"
+}

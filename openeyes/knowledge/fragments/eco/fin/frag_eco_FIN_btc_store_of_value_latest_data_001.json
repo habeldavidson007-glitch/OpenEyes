@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_btc_store_of_value_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "latest_data",
+    "bitcoin",
+    "crypto"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Institutional allocation remains <1% of global wealth. Correlation with tech equities has fluctuated between 0.4 and 0.8 in 2023-2024.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

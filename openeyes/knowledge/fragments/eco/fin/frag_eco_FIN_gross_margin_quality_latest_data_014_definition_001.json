@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_gross_margin_quality_latest_data_014",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "return_on_invested_capital",
+    "return_on_equity",
+    "operating_margin",
+    "inventory_turnover",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent data through 2024 shows Gross Margin Quality metrics are diverging across sectors. Investors are increasingly prioritizing cash yield and balance sheet strength over pure growth narratives in the current higher-for-longer rate regime.",
+  "source": "analyst_consensus",
+  "source_url": "https://www.morningstar.com/articles/valuation-metrics",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

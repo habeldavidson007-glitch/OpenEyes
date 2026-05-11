@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_fomc_meetings_latest_002",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "fomc",
+    "fed",
+    "interest_rate",
+    "monetary_policy",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "The FOMC maintained its regular eight-meeting schedule through 2024-2026. Meeting dates are announced well in advance, allowing markets to prepare. Recent meetings have featured heightened attention to inflation dynamics, labor market tightness, and financial stability concerns. The Summary of Economic Projections (SEP), including the 'dot plot' of individual FOMC participants' rate projections, is released at four meetings per year. Market participants closely analyze FOMC statements for changes in language that might signal policy shifts. Communication strategy has evolved to provide clearer forward guidance while maintaining flexibility to respond to changing economic conditions.",
+  "source": "FOMC Meeting Calendar",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

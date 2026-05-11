@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_eth_staking_yield_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "staking",
+    "yield"
+  ],
+  "reasoning_role": "definition",
+  "content": "Ethereum staking yield comes from block rewards, transaction tips, and MEV. Current APR ranges 3-5%, inversely related to total staked amount. Yield is not guaranteed\u2014slashing penalties and opportunity costs reduce effective returns. Stakers also face liquidity lock-up until withdrawals are processed.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

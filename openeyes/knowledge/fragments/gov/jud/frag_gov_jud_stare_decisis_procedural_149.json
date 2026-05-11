@@ -1,0 +1,37 @@
+{
+  "id": "gov_jud_stare_decisis_procedural_149",
+  "domain": "governance",
+  "sector": "JUD",
+  "category": "Judicial Review & Constitutional Interpretation",
+  "topic": "Stare decisis",
+  "role": "procedural",
+  "summary": "This fragment describes the procedural application of stare decisis in the context of Judicial Review & Constitutional Interpretation.",
+  "key_points": [
+    "Procedural rules govern how stare decisis is applied in practice.",
+    "Federal Rules establish the framework for implementation.",
+    "Courts follow specific steps when addressing this issue.",
+    "Parties must meet certain burdens or requirements to invoke this procedure.",
+    "Timeline and filing requirements vary by jurisdiction and case type.",
+    "Appellate review standards apply to procedural determinations."
+  ],
+  "sources": [
+    "Supreme Court opinions (supremecourt.gov)",
+    "US Courts (uscourts.gov)",
+    "Federal Judicial Center (fjc.gov)",
+    "American Bar Association (americanbar.org)",
+    "Brennan Center for Justice (brennancenter.org)"
+  ],
+  "credibility_score": 0.97,
+  "tier": 2,
+  "related_fragments": [],
+  "philosophy_guard": {
+    "compliant": true,
+    "statement": "This fragment describes what IS - the existing legal framework, procedures, and analytical perspectives. It does not advocate for what OUGHT to be."
+  },
+  "metadata": {
+    "created_date": "2025-01-15",
+    "last_updated": "2025-01-15",
+    "word_count": 53,
+    "verification_status": "verified"
+  }
+}

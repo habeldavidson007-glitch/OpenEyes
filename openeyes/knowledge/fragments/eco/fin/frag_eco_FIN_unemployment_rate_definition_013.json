@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_unemployment_rate_def_013",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "unemployment",
+    "labor_market",
+    "employment",
+    "macro",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "The unemployment rate measures the percentage of the labor force that is jobless and actively seeking employment. It is derived from the Current Population Survey (CPS), a monthly survey of about 60,000 households conducted by the Census Bureau for the BLS. To be counted as unemployed, individuals must be without a job, available to work, and have actively looked for work in the prior four weeks. The labor force consists of employed plus unemployed persons. Those not working and not seeking work are 'not in the labor force.' The official unemployment rate is U-3. Alternative measures include U-6 (broadest, including marginally attached workers and those working part-time for economic reasons) and U-4, U-5 (intermediate measures). Duration of unemployment and reasons for unemployment are also reported.",
+  "source": "Bureau of Labor Statistics",
+  "source_url": "https://www.bls.gov/cps/",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "FIN-115",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "term_premium"
+  ],
+  "content": "Term premium is extra yield demanded for holding long-term bonds vs rolling short-term. Compensates for rate and inflation uncertainty. QE compresses term premiums; QT raises them. Can turn negative (2016-2021), signaling extreme duration demand. Estimated via ACM model.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "government_agency",
+  "sector": "MAC"
+}

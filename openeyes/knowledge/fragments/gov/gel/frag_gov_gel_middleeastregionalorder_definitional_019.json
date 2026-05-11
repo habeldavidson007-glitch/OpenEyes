@@ -1,0 +1,33 @@
+{
+  "id": "gov-GEL-MIDDLEEASTREGIONALORDER-DEFINITIONAL-019",
+  "domain": "GOVERNANCE",
+  "sector": "GEL",
+  "topic": "Middleeastregionalorder",
+  "role": "definitional",
+  "summary": "Middleeastregionalorder: Sunni-Shia Saudi-Iran rivalry",
+  "content": {
+    "overview": "This fragment describes middleeastregionalorder in geopolitical analysis. Sunni-Shia Saudi-Iran rivalry.",
+    "key_points": [
+      "Sunni-Shia Saudi-Iran rivalry",
+      "Arab-Israeli Abraham Accords",
+      "Proxy conflicts Yemen Syria",
+      "Regional powers compete",
+      "US retrenchment"
+    ],
+    "sources": [
+      "World Bank WGI (databank.worldbank.org)",
+      "Freedom House (freedomhouse.org)",
+      "CSIS (csis.org)",
+      "Brookings (brookings.edu)",
+      "Carnegie (carnegieendowment.org)",
+      "Lowy Institute (lowyinstitute.org)"
+    ],
+    "philosophy_guard": "Describes what IS - theories patterns cases. Not what SHOULD BE.",
+    "credibility_score": 0.94
+  },
+  "metadata": {
+    "created": "2024",
+    "format_version": "2.0",
+    "cross_references": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_forward_guidance_def_018",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "fed",
+    "forward_guidance",
+    "monetary_policy",
+    "communication",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Forward guidance is central bank communication about the likely future path of monetary policy. It aims to shape market and public expectations, thereby influencing longer-term interest rates and economic decisions today. Forms include: (1) qualitative guidance\u2014general descriptions of outlook and policy inclinations; (2) calendar-based guidance\u2014commitments to keep rates low until specific dates; (3) state-contingent guidance\u2014linking policy to economic thresholds like unemployment or inflation rates; (4) instrument paths\u2014explicit projections of future rate levels. Forward guidance became prominent after the 2008 crisis when rates hit the zero lower bound. The FOMC uses post-meeting statements, economic projections (including the dot plot), and Chair press conferences to convey guidance.",
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/fomc.htm",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

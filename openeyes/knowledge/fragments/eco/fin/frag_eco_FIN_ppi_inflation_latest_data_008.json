@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_ppi_inflation_latest_008",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "ppi",
+    "inflation",
+    "producer_prices",
+    "macro",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "PPI data continues to be released monthly, typically around the 12th of each month. Goods PPI showed significant volatility during 2020-2023 due to pandemic-related supply chain disruptions and commodity price swings. Services PPI has been more stable but warrants attention for persistent inflation signals. Energy and food components show high volatility and are often excluded for core measures. Analysts compare PPI trends with CPI and import price indices to gauge inflation pipeline pressures. Input PPI (prices producers pay) versus output PPI (prices they receive) provides insight into margin pressures.",
+  "source": "Bureau of Labor Statistics News Releases",
+  "source_url": "https://www.bls.gov/ppi/#tables",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

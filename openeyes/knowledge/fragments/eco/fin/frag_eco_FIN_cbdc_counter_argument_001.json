@@ -1,0 +1,18 @@
+{
+  "id": "frag_fin_cbdc_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "CBDCs pose privacy risks and potential for programmable money controls (expiration dates, spending restrictions) threatening financial freedom.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

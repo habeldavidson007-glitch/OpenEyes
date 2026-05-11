@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_ENR_carbon_credits_counter_001",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "tags": [
+    "carbon_credits",
+    "transition"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Energy transition: carbon_credits. Role: counter_argument. Policy and economics of decarbonization.",
+  "source": "FERC",
+  "source_url": "https://ferc.gov/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "last_verified": "2026-05-11"
+}

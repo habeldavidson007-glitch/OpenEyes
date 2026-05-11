@@ -1,0 +1,29 @@
+{
+  "id": "frag_gov_ele_democraticbacksliding_electionmanipulation_definitional_007",
+  "domain": "gov",
+  "sector": "ele",
+  "category": "democraticbacksliding",
+  "topic": "Strategic manipulation of elections",
+  "topic_slug": "electionmanipulation",
+  "role": "definitional",
+  "summary": "Defines strategic manipulation of elections within electoral systems, describing playing field tilting, legalistic authoritarianism.",
+  "key_points": [
+    "Strategic manipulation of elections is a core concept in electoral system design.",
+    "Key characteristics include: playing field tilting, legalistic authoritarianism.",
+    "Scholars measure this concept using standardized indicators.",
+    "Variations exist across different democratic systems globally.",
+    "The concept is distinct from related electoral phenomena."
+  ],
+  "sources": [
+    "Freedom House (freedomhouse.org)",
+    "International IDEA (idea.int)",
+    "Inter-Parliamentary Union (ipu.org)",
+    "Brennan Center for Justice (brennancenter.org)",
+    "MIT Election Lab (electionlab.mit.edu)"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_compliant": true,
+  "related_fragments": [],
+  "last_updated": "2024-01-15",
+  "version": "1.0"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "frag_eco_GEO_currency_manipulation_latest_029",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "currency_manipulation",
+    "monitoring_list",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Currency monitoring 2024: Treasury watchlist includes China, Japan, Germany, India, Italy, Korea, Mexico, Singapore, Switzerland, Taiwan, Thailand, Vietnam. No formal manipulator designation since 2020 (China briefly labeled). Yen weakness (150+/USD) drawing scrutiny but BoJ intervention limited. China managing gradual depreciation amid property crisis.",
+  "source": "treasury_fx_report_2024",
+  "source_url": "https://home.treasury.gov/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.93
+}

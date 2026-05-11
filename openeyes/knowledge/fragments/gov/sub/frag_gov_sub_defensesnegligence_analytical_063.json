@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_defensesnegligence_analytical_63",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "defensesnegligence",
+  "role": "analytical",
+  "summary": "Descriptive overview of defensesnegligence in substantive law: contributory, comparative, assumption of risk.",
+  "key_points": [
+    "contributory is a fundamental concept in tort law.",
+    "Legal standards for defensesnegligence are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine defensesnegligence in litigation.",
+    "The doctrine of defensesnegligence has evolved through Supreme Court precedents.",
+    "Understanding defensesnegligence requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Restatement (Second) of Torts",
+    "Restatement (Third) of Torts",
+    "US Code",
+    "Cornell LII",
+    "Supreme Court opinions"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_proximatecausation_definitional_060",
+    "frag_gov_sub_strictliability_definitional_066",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

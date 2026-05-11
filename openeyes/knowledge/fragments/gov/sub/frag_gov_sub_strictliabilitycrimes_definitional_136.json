@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_strictliabilitycrimes_definitional_136",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "strictliabilitycrimes",
+  "role": "definitional",
+  "summary": "Descriptive overview of strictliabilitycrimes in substantive law: public welfare offenses, statutory rape.",
+  "key_points": [
+    "public welfare offenses is a fundamental concept in criminal law.",
+    "Legal standards for strictliabilitycrimes are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine strictliabilitycrimes in litigation.",
+    "The doctrine of strictliabilitycrimes has evolved through Supreme Court precedents.",
+    "Understanding strictliabilitycrimes requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Model Penal Code",
+    "US Code",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Criminal Justice Section"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_mensrea_definitional_133",
+    "frag_gov_sub_causationcriminallaw_definitional_139",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

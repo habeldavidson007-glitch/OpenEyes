@@ -1,0 +1,19 @@
+{
+  "id": "HC-2139",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "primary care",
+    "outcomes",
+    "evidence",
+    "population health"
+  ],
+  "reasoning_role": "definition",
+  "content": "Evidence for primary care effectiveness is robust: Countries with stronger primary care orientation have 20-30% lower all-cause mortality, 15-25% lower cardiovascular mortality, and better self-rated health. Within countries, regions with higher primary care physician density show lower rates of low birth weight, asthma hospitalizations, and diabetes complications. Continuity of care (seeing same provider >75% of visits) associated with 25% lower mortality, 20% fewer ED visits, and better medication adherence. The 'primary care effect' persists after adjusting for socioeconomic factors, suggesting independent contribution through early detection, coordinated management, and trust-based relationships enabling behavior change.",
+  "source": "who.int",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

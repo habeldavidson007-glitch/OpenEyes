@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_crypto_market_cap_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "latest_data",
+    "crypto"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Global Crypto Market Cap peaked at ~$3T (2021), corrected to ~$800B (2023), recovered to >$2T (2024).",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

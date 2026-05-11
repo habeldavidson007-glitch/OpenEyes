@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_defi_dex_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "defi",
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "AMMs suffer from impermanent loss for liquidity providers and are vulnerable to MEV (Maximal Extractable Value) extraction by bots.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

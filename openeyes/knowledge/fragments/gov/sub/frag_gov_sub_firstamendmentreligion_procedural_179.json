@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_firstamendmentreligion_procedural_179",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "firstamendmentreligion",
+  "role": "procedural",
+  "summary": "Descriptive overview of firstamendmentreligion in substantive law: Establishment Clause tests, Free Exercise standards.",
+  "key_points": [
+    "Establishment Clause tests is a fundamental concept in constrights law.",
+    "Legal standards for firstamendmentreligion are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine firstamendmentreligion in litigation.",
+    "The doctrine of firstamendmentreligion has evolved through Supreme Court precedents.",
+    "Understanding firstamendmentreligion requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "US Constitution",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Civil Rights",
+    "Brennan Center"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_firstamendmentspeech_definitional_176",
+    "frag_gov_sub_secondamendment_definitional_182",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

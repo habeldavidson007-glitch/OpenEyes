@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_onchain_stablecoin_supply_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto",
+    "definition",
+    "on_chain_metrics"
+  ],
+  "reasoning_role": "definition",
+  "content": "SSR = BTC market cap / stablecoin market cap. Measures potential buying power relative to BTC size. Low SSR = high dry powder (bullish). High SSR = stablecoins deployed or absent (bearish). Complement to stablecoin supply charts.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

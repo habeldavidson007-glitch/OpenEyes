@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_leverage_risk_definition",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "risk_management",
+    "leverage",
+    "amplification",
+    "margin_call",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Leverage risk is the potential for amplified losses when using borrowed capital. While leverage magnifies gains in favorable conditions, it accelerates losses in adverse ones, potentially leading to margin calls and forced liquidation at unfavorable prices. It introduces path dependency: even a correct long-term thesis can fail if short-term volatility triggers a margin call.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

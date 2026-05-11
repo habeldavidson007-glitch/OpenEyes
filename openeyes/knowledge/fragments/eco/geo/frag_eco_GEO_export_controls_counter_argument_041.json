@@ -1,0 +1,18 @@
+{
+  "id": "frag_eco_GEO_export_controls_counter_041",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "export_controls_critique",
+    "trade_policy",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Export control limitations: Accelerates China indigenous development incentives. Collateral damage to US semiconductor industry (China 30-40% market). Allies hesitant on full alignment. Enforcement challenges through third countries. Long-term technological decoupling may harm innovation ecosystems.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "think_tank",
+  "year": 2024,
+  "weight": 0.89
+}

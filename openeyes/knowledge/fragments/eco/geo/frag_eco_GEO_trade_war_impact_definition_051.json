@@ -1,0 +1,18 @@
+{
+  "id": "frag_eco_GEO_trade_war_impact_def_051",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "trade_war_impact",
+    "geopolitics",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Trade war economic impact: US GDP reduced ~0.3% per Fed studies. Manufacturing employment declined in affected sectors. Consumer prices increased on tariffed goods. Agricultural exports required government subsidies. Supply chain reconfiguration costs significant. Long-term strategic competition continues despite Phase One.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.93
+}

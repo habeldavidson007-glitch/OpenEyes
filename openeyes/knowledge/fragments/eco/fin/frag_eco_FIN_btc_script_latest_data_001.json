@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_btc_script_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Taproot adoption reached 15-20% of transactions by 2024, enabling more complex scripts with better privacy. Ordinals protocol leverages Script for NFT-like inscriptions.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

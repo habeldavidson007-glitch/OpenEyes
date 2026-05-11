@@ -1,0 +1,19 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "COVID-19",
+    "SARS-CoV-2",
+    "long COVID",
+    "variants"
+  ],
+  "reasoning_role": "definition",
+  "content": "COVID-19 is caused by SARS-CoV-2, a betacoronavirus with spike protein mediating ACE2 receptor entry. Clinical spectrum ranges from asymptomatic infection to severe pneumonia with ARDS, multiorgan failure, and death. Long COVID (post-acute sequelae of SARS-CoV-2) involves symptoms persisting \u22653 months after acute infection: fatigue, dyspnea, cognitive dysfunction ('brain fog'), post-exertional malaise, autonomic dysfunction (POTS). Pathophysiology includes viral persistence, immune dysregulation, endothelial dysfunction, and microclots. Variants of concern have evolved: Alpha, Delta, and predominantly Omicron lineages (BA.1, BA.2, BA.4/5, XBB, JN.1) with increased transmissibility and immune escape but generally reduced severity in vaccinated populations.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2348",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

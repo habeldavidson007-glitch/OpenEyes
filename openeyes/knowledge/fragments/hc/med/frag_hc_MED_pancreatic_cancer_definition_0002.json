@@ -1,0 +1,23 @@
+{
+  "id": "frag_onc_pancreatic_cancer_002",
+  "domain": "healthcare",
+  "tags": [
+    "pancreatic_cancer",
+    "symptoms",
+    "differential_diagnosis",
+    "risk_factors"
+  ],
+  "content": "Pancreatic cancer symptoms often mimic less serious conditions like pancreatitis, gallstones, or peptic ulcers, leading to misdiagnosis. Risk factors include smoking, chronic pancreatitis, obesity, family history, and certain genetic mutations (BRCA2, PALB2). However, most people with these risk factors do not develop pancreatic cancer, and many patients have no identifiable risk factors. Screening is not routinely recommended for average-risk individuals due to low prevalence and lack of effective early detection methods.",
+  "source": "National Comprehensive Cancer Network (NCCN) Guidelines",
+  "source_url": "https://www.nccn.org/guidelines/guidelines-detail?category=1&id=1446",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "reasoning_role": "counter_argument",
+  "source_type": "clinical_guideline",
+  "year": 2026,
+  "sub_question": "What are the risk factors and differential diagnoses?"
+}

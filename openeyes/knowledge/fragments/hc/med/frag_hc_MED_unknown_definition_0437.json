@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0437",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "sleep-disorders",
+    "CPAP",
+    "modafinil",
+    "treatment-protocol",
+    "CBT-I"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sleep disorder treatment is condition-specific. OSA: CPAP (continuous positive airway pressure) is first-line for moderate-severe OSA\u2014eliminates apneas, improves sleepiness, may reduce cardiovascular risk. Weight loss critical (even 10% reduction improves AHI). Alternatives: mandibular advancement devices (mild-moderate OSA), positional therapy (positional OSA), hypoglossal nerve stimulation (Inspire\u2014moderate-severe OSA, CPAP-intolerant, BMI <35), upper airway surgery (uvulopalatopharyngoplasty, maxillomandibular advancement\u2014selected cases). Central sleep apnea: treat underlying cause (optimize heart failure), adaptive servo-ventilation (ASV\u2014contraindicated in HFrEF with LVEF \u226445%), oxygen, acetazolamide. Narcolepsy: stimulants (modafinil/armodafinil first-line, methylphenidate, amphetamines) for sleepiness; sodium oxybate (GHB) for cataplexy and sleepiness (take at night, restricted distribution); pitolisant (histamine H3 inverse agonist); antidepressants (venlafaxine, fluoxetine) for cataplexy. RLS: check ferritin (replete if <75 ng/mL); alpha-2-delta ligands (gabapentin, pregabalin\u2014first-line); dopamine agonists (pramipexole, ropinirole\u2014risk of augmentation with long-term use); opioids for refractory cases. Insomnia: CBT-I (cognitive behavioral therapy for insomnia\u2014first-line, superior long-term to medications); sleep hygiene; medications short-term only (zolpidem, eszopiclone, ramelteon, doxepin, orexin antagonists like suvorexant).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_bitcoin_market_counter_001",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "crypto",
+    "bitcoin",
+    "blockchain",
+    "latest_data"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Bitcoin faces significant criticisms: energy consumption from mining, use in illicit activity, lack of intrinsic value, extreme volatility limiting monetary utility, regulatory uncertainty. Environmental concerns led some institutions to avoid bitcoin. Scalability limits transaction throughput. Competition from other cryptocurrencies and central bank digital currencies threatens dominance. Correlation with risk assets increased, undermining inflation hedge narrative.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/publications/2022-may-financial-stability-report.htm",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.95,
+  "sector": "FIN"
+}

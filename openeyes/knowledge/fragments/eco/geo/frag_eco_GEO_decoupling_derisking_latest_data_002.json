@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_GEO_decoupling_derisking_latest_002",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "decoupling",
+    "de_risking",
+    "supply_chain",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "2024 de-risking metrics: US direct investment in China down 90% from 2022 peak. EU investment declined 47%. Friend-shoring to Mexico, Vietnam, India accelerated. However, US-China trade in non-restricted categories remains near record highs, limiting practical impact.",
+  "source": "rhodium_group",
+  "source_url": "https://rhg.com/",
+  "credibility_class": "research_firm",
+  "year": 2024,
+  "weight": 0.91
+}

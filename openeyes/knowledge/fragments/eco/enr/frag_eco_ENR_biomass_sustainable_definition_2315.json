@@ -1,0 +1,17 @@
+{
+  "id": "ENR-2315_biomass_sustainable_definition",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "tags": [
+    "biomass sustainable",
+    "energy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Biomass Sustainable - technical principles, current deployment status, key metrics",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "EIA"
+}

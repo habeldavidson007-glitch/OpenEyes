@@ -1,0 +1,19 @@
+{
+  "id": "HC-2103",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "climate change",
+    "vulnerability assessment",
+    "burden measurement",
+    "equity"
+  ],
+  "reasoning_role": "definition",
+  "content": "Climate health vulnerability assessment considers: (1) Exposure - frequency/intensity of climate hazards (heat days, flood risk, fire zones); (2) Sensitivity - population characteristics (age, comorbidities, outdoor work); (3) Adaptive capacity - healthcare access, early warning systems, social safety nets. Vulnerable populations include: elderly (>65 years have 2-3x heat mortality risk), children (developing thermoregulation, longer lifetime exposure), low-income communities (limited AC, substandard housing), outdoor workers, those with chronic diseases. Measurement tools: Disability-Adjusted Life Years (DALYs) attributable to climate factors, excess mortality during extreme events, disease incidence trends in expanding endemic zones. Climate attribution studies increasingly quantify specific health impacts: 37% of heat-related deaths already attributable to anthropogenic climate change. Equity concerns: lowest-emitting countries (Sub-Saharan Africa) face highest health burdens.",
+  "source": "who.int",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

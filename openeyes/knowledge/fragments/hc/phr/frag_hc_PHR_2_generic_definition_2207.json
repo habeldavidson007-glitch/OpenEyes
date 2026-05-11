@@ -1,0 +1,19 @@
+{
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "generic drug",
+    "ANDA",
+    "bioequivalence",
+    "paragraph IV"
+  ],
+  "reasoning_role": "definition",
+  "content": "Paragraph IV certification is a legal challenge asserting that patents listed in the Orange Book for the RLD are invalid, unenforceable, or will not be infringed by the generic. First applicant to file a substantially complete ANDA with Paragraph IV certification receives 180 days of marketing exclusivity against other generics, creating significant financial incentive. This often triggers patent infringement litigation by brand manufacturers, with 30-month stay of generic approval while litigation proceeds (if brand sues within 45 days). Settlements sometimes involve 'pay-for-delay' agreements where brand pays generic to delay launch, which face antitrust scrutiny. Generic approval criteria: bioequivalence established, no unresolved patent/exclusivity barriers, adequate manufacturing quality. Generics typically cost 80-85% less than brand names after multiple competitors enter.",
+  "source": "fda.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2207",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_market_capitalization_def_001",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "market_cap",
+    "equities",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Market capitalization equals share price multiplied by outstanding shares. Large-cap typically refers to companies valued above $10 billion, mid-cap $2-10 billion, small-cap under $2 billion (thresholds vary). Size categories correlate with risk-return profiles: large-caps tend more stable with lower volatility, small-caps offer higher growth potential but greater risk. Many indices and funds categorize holdings by market cap for diversification and risk management.",
+  "source": "SEC",
+  "source_url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/market-capitalization",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.88,
+  "sector": "FIN"
+}

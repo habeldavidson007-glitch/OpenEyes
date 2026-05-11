@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_sector_rotation_cycles_definition_099",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "dividends",
+    "insider_trading",
+    "share_buybacks",
+    "valuation",
+    "sector_rotation",
+    "earnings",
+    "fundamental_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sector rotation is an investment strategy of moving capital between sectors based on economic cycle stages (early recovery, expansion, slowdown, recession). Defensive sectors (utilities, staples) outperform in downturns; cyclicals (tech, industrials) lead in recoveries.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

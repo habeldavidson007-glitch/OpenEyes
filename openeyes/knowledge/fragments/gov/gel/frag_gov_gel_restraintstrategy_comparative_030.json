@@ -1,0 +1,33 @@
+{
+  "id": "gov-GEL-RESTRAINTSTRATEGY-COMPARATIVE-030",
+  "domain": "GOVERNANCE",
+  "sector": "GEL",
+  "topic": "Restraintstrategy",
+  "role": "comparative",
+  "summary": "Restraintstrategy: Offshore balancing variant",
+  "content": {
+    "overview": "This fragment describes restraintstrategy in geopolitical analysis. Offshore balancing variant.",
+    "key_points": [
+      "Offshore balancing variant",
+      "Selective engagement core interests",
+      "Reduce forward deployment",
+      "Overextension drains resources",
+      "Diplomatic over military"
+    ],
+    "sources": [
+      "World Bank WGI (databank.worldbank.org)",
+      "Freedom House (freedomhouse.org)",
+      "CSIS (csis.org)",
+      "Brookings (brookings.edu)",
+      "Carnegie (carnegieendowment.org)",
+      "Lowy Institute (lowyinstitute.org)"
+    ],
+    "philosophy_guard": "Describes what IS - theories patterns cases. Not what SHOULD BE.",
+    "credibility_score": 0.94
+  },
+  "metadata": {
+    "created": "2024",
+    "format_version": "2.0",
+    "cross_references": []
+  }
+}

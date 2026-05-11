@@ -1,0 +1,22 @@
+{
+  "id": "REG-019",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "private_credit",
+    "systemic_risk",
+    "fsoc",
+    "alternative_lending",
+    "shadow_banking"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Private credit regulation facing growing scrutiny due to sector growth ($1.7 trillion AUM globally) and systemic risk concerns. Current regulatory gaps: (1) Limited transparency\u2014no public disclosure requirements, (2) Valuation discretion\u2014GP-determined valuations vs. mark-to-market, (3) Leverage opacity\u2014fund-level and portfolio company leverage often undisclosed, (4) Interconnectedness\u2014banks increasingly lend to private credit funds. Regulatory developments: (1) SEC private fund rules (Aug 2023) require quarterly statements, audits, fairness opinions for adviser-led secondaries\u2014partially blocked by court challenge, (2) FSOC considering designation of large private credit managers as SIFIs, (3) Fed monitoring bank exposures via supervisory guidance, (4) EIOPA (EU) proposing insurance sector exposure limits. Concerns: maturity transformation, covenant-lite terms, refinancing risks in downturn, potential contagion to broader credit markets.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

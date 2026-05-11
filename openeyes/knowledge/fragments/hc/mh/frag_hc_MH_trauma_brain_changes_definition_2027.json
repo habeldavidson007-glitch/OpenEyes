@@ -1,0 +1,21 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "neuroscience",
+    "trauma",
+    "PTSD",
+    "amygdala",
+    "hippocampus",
+    "prefrontal cortex"
+  ],
+  "reasoning_role": "definition",
+  "content": "Trauma produces measurable brain changes visible on neuroimaging. The amygdala (fear center) becomes hyperactive, triggering exaggerated threat responses. The hippocampus (memory consolidation) often shows reduced volume, impairing contextual memory and contributing to flashbacks. The prefrontal cortex (executive control, emotion regulation) shows reduced activity and connectivity, weakening top-down regulation of fear. These changes create a self-reinforcing cycle: hypervigilance, intrusive memories, and impaired extinction of fear responses. Early intervention may prevent chronic changes. Trauma-focused therapies (prolonged exposure, EMDR) can normalize brain function. Neuroplasticity offers hope: successful treatment is associated with increased hippocampal volume and restored prefrontal-amygdala connectivity.",
+  "source": "nimh.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2027",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

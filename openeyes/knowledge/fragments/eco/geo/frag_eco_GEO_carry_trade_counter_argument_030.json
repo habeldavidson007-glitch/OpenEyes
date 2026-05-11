@@ -1,0 +1,18 @@
+{
+  "id": "frag_eco_GEO_carry_trade_counter_030",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "carry_trade",
+    "vulnerability",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "EM carry trade resilience improved: Larger FX reserves buffers ($12T aggregate). Reduced USD-denominated debt vs. 1990s. Flexible exchange rates absorb shocks better. Macroprudential tools (capital flow management) deployed proactively. However, frontier markets remain vulnerable. Fed tightening cycle 2022-24 tested but avoided systemic crisis.",
+  "source": "iif_em_outlook",
+  "source_url": "https://www.iif.com/",
+  "credibility_class": "industry_organization",
+  "year": 2024,
+  "weight": 0.88
+}

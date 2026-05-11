@@ -1,0 +1,18 @@
+{
+  "id": "frag_eco_GEO_countervailing_def_043",
+  "domain": "economy",
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "tags": [
+    "countervailing_duties",
+    "trade_policy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Countervailing duties (CVD): Offset foreign government subsidies that benefit imported goods. Requires subsidy specificity, injury to domestic industry. WTO SCM Agreement disciplines. China CVD cases frequent (SOE financing, land, energy subsidies). CVD rates can exceed 100%. Parallel AD/CVD investigations common.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.93
+}

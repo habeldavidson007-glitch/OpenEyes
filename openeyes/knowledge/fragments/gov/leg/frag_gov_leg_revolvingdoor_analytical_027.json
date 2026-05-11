@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_revolvingdoor_analytical_027",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "revolvingdoor",
+  "role": "analytical",
+  "title": "Revolvingdoor",
+  "summary": "Descriptive overview of revolvingdoor in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about revolvingdoor",
+    "Key factual point 2 about revolvingdoor",
+    "Key factual point 3 about revolvingdoor",
+    "Key factual point 4 about revolvingdoor",
+    "Key factual point 5 about revolvingdoor"
+  ],
+  "sources": [
+    "Senate SOPR",
+    "FEC (fec.gov)",
+    "OpenSecrets.org",
+    "GAO",
+    "Brookings"
+  ],
+  "related_fragments": [],
+  "credibility_score": 0.98,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "Lobbying_Influence"
+  }
+}

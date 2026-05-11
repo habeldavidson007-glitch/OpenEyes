@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_candlestick_patterns_counter_argument_03",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "engulfing",
+    "technical_analysis",
+    "candlestick_patterns",
+    "doji",
+    "counter_argument",
+    "hammer"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Academic studies consistently show candlestick patterns have minimal predictive power when tested objectively. Pattern recognition is highly subjective; different analysts identify different patterns. Survivorship bias makes successful patterns memorable while failures are forgotten. Transaction costs eliminate any small edge patterns might have. Modern markets dominated by algos don't respect centuries-old Japanese rice trading patterns. Most published pattern success rates suffer from data mining and look-ahead bias.",
+  "source": "Educational Resource",
+  "source_url": "https://www.cambridge.org/candlestick-patterns-statistical-study",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

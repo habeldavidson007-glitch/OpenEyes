@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_origin_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "bitcoin",
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "Bitcoin is a decentralized digital asset created in 2009 by Satoshi Nakamoto with a hard-capped supply of 21 million coins, enforced by consensus rules.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

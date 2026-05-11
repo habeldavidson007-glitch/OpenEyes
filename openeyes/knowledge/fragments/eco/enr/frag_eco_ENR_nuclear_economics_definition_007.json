@@ -1,0 +1,19 @@
+{
+  "id": "frag_eco_ENR_nuclear_economics_definition_007",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "tags": [
+    "nuclear_economics",
+    "power"
+  ],
+  "reasoning_role": "definition",
+  "content": "Power markets: nuclear_economics. Role: definition. Market design and infrastructure.",
+  "source": "DOE",
+  "source_url": "https://energy.gov/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "last_verified": "2026-05-11"
+}

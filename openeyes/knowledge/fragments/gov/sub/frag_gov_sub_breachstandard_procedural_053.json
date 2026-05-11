@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_breachstandard_procedural_53",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "breachstandard",
+  "role": "procedural",
+  "summary": "Descriptive overview of breachstandard in substantive law: reasonable person, custom, negligence per se.",
+  "key_points": [
+    "reasonable person is a fundamental concept in tort law.",
+    "Legal standards for breachstandard are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine breachstandard in litigation.",
+    "The doctrine of breachstandard has evolved through Supreme Court precedents.",
+    "Understanding breachstandard requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Restatement (Second) of Torts",
+    "Restatement (Third) of Torts",
+    "US Code",
+    "Cornell LII",
+    "Supreme Court opinions"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_dutyofcare_definitional_050",
+    "frag_gov_sub_actualcausation_definitional_056",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

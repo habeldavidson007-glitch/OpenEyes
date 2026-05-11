@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_obv_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "volume",
+    "indicators"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "OBV treats all up/down days equally regardless of magnitude\u2014a 0.1% gain receives same volume addition as 10% gain. This oversimplification distorts accumulation/distribution picture. Gap days create discontinuities OBV handles poorly. Modern alternatives like Accumulation/Distribution Line and Money Flow Index address some limitations.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

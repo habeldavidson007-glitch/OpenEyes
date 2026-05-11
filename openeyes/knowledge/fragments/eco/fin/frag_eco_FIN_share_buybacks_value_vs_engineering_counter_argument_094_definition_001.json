@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_share_buybacks_value_vs_engineering_counter_argument_094",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "dividends",
+    "insider_trading",
+    "share_buybacks",
+    "valuation",
+    "sector_rotation",
+    "earnings",
+    "fundamental_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Buybacks are often timed poorly\u2014companies tend to buy back stock at highs using borrowed money, then stop during crashes. This destroys shareholder value. Critics argue cash should be reinvested in R&D or CapEx instead of financial engineering.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

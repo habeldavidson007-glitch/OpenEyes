@@ -1,0 +1,20 @@
+{
+  "id": "neuro-vestibular-tx",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "vestibular-disorders",
+    "Epley-maneuver",
+    "treatment-protocol",
+    "betahistine",
+    "vestibular-rehab"
+  ],
+  "reasoning_role": "definition",
+  "content": "Vestibular disorder treatment depends on etiology. BPPV: canalith repositioning maneuvers\u2014Epley maneuver for posterior canal (80-90% effective after 1-3 treatments), Semont maneuver alternative, barbecue roll for horizontal canal. No role for vestibular suppressants long-term. Vestibular neuritis/labyrinthitis: acute phase (first 24-72 hours) vestibular suppressants (meclizine, dimenhydrinate, benzodiazepines) and antiemetics; corticosteroids (prednisone taper) may improve recovery if started within 3 days. After acute phase: discontinue suppressants (impede compensation), start vestibular rehabilitation therapy (gaze stabilization, habituation, balance exercises). M\u00e9ni\u00e8re's disease: low-salt diet (<2g/day sodium), diuretics (HCTZ/triamterene), betahistine (H1 agonist/H3 antagonist, widely used outside US, limited evidence). Intratympanic steroids for refractory cases; intratympanic gentamicin for severe refractory vertigo (chemical labyrinthectomy\u2014hearing loss risk). Endolymphatic sac surgery for refractory cases. Vestibular migraine: migraine preventives (topiramate, verapamil, venlafaxine, amitriptyline), trigger management. Bilateral vestibulopathy: vestibular rehabilitation (limited benefit if complete loss), fall prevention, avoid ototoxins. Acoustic neuroma: observation (small, asymptomatic), stereotactic radiosurgery, or microsurgical resection.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/31832428/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

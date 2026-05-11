@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_btc_origin_latest_data",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "latest_data",
+    "bitcoin",
+    "crypto"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "As of 2024, ~19.7M BTC are mined. The final coin is projected to be mined around 2140. Current inflation rate is <1% post-2024 halving.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

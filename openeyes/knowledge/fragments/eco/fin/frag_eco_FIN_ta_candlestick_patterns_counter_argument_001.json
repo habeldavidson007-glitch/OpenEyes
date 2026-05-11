@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_candlestick_patterns_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Single candlestick patterns have ~50% accuracy\u2014coin flip. Reliability improves with confluence (support/resistance, volume, trend context). Crypto's volatility creates many false signals.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

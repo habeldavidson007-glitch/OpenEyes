@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_ta_adx_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "ADX is lagging indicator\u2014by time ADX confirms trend, move may be mature. Whipsaws frequent during transitions. Crypto's tendency for parabolic moves can keep ADX elevated longer than expected.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

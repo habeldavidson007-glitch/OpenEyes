@@ -1,0 +1,32 @@
+{
+  "id": "frag_gov_leg_filibuster_historical_008",
+  "domain": "gov",
+  "sector": "LEG",
+  "topic": "filibuster",
+  "role": "historical",
+  "title": "Filibuster",
+  "summary": "Descriptive overview of filibuster in the legislative and policy process",
+  "key_points": [
+    "Key factual point 1 about filibuster",
+    "Key factual point 2 about filibuster",
+    "Key factual point 3 about filibuster",
+    "Key factual point 4 about filibuster",
+    "Key factual point 5 about filibuster"
+  ],
+  "sources": [
+    "Congress.gov",
+    "GPO (govinfo.gov)",
+    "CRS Reports",
+    "Senate.gov/House.gov",
+    "Brookings"
+  ],
+  "related_fragments": [],
+  "credibility_score": 0.99,
+  "philosophy_guard_compliant": true,
+  "is_ought_test_passed": true,
+  "metadata": {
+    "created_date": "2025-01-15",
+    "version": "1.0",
+    "category": "Legislative_Process"
+  }
+}

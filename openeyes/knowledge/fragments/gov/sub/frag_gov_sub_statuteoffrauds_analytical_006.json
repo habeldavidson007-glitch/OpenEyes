@@ -1,0 +1,34 @@
+{
+  "id": "gov_sub_statuteoffrauds_analytical_6",
+  "domain": "governance",
+  "sector": "SUB",
+  "topic": "statuteoffrauds",
+  "role": "analytical",
+  "summary": "Descriptive overview of statuteoffrauds in substantive law: writing requirements, part performance exception.",
+  "key_points": [
+    "writing requirements is a fundamental concept in contract law.",
+    "Legal standards for statuteoffrauds are established through case law and statutory interpretation.",
+    "Courts apply specific tests to determine statuteoffrauds in litigation.",
+    "The doctrine of statuteoffrauds has evolved through Supreme Court precedents.",
+    "Understanding statuteoffrauds requires analysis of both historical context and modern applications."
+  ],
+  "sources": [
+    "Restatement (Second) of Contracts",
+    "Uniform Commercial Code Article 2",
+    "Cornell LII",
+    "Supreme Court opinions",
+    "ABA Section of Business Law"
+  ],
+  "credibility_score": 0.96,
+  "last_updated": "2024-01-15",
+  "related_fragments": [
+    "frag_gov_sub_contractformation_definitional_003",
+    "frag_gov_sub_parolevidencerule_definitional_009",
+    "frag_gov_jud_civilprocedure_definitional_001",
+    "frag_gov_leg_legislativeprocess_definitional_001"
+  ],
+  "philosophy_guard_compliant": true,
+  "philosophy_guard_statement": "This fragment describes existing legal doctrines and their applications without advocating for normative changes.",
+  "tier": "TIER_2",
+  "verification_status": "verified"
+}

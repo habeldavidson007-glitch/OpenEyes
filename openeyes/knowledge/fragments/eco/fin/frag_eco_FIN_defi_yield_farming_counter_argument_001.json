@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_defi_yield_farming_counter_argument",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "defi",
+    "crypto",
+    "yield"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Most advertised yield farming APYs are misleading, denominated in volatile tokens that depreciate. Farmers often lose principal value exceeding earned yield. Token emissions dilute holders, creating sell pressure. Many 'high APY' opportunities are Ponzi-like, paying early farmers with late entrants' capital.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_defi_composability_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "defi",
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "DeFi composability ('money legos') allows protocols to integrate seamlessly. Aave deposits can collateralize Maker vaults, which fund Curve liquidity, earning multiple yield streams. This enables complex strategies but creates interdependencies. Failure in one protocol can cascade through connected systems.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

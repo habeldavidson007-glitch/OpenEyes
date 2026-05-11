@@ -1,0 +1,17 @@
+{
+  "id": "FIN-179",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "algorithmic_trading",
+    "factor investing"
+  ],
+  "content": "Factor investing targets specific return drivers: value, momentum, quality, low volatility, and size. Multi-factor models combine factors for diversification. Smart beta ETFs implement factor strategies passively. Factor timing attempts to overweight factors based on economic conditions but has limited evidence. Factor crowding occurs when too much capital chases the same signal.",
+  "year": 2024,
+  "source": "AQR Capital Management Research",
+  "source_url": "https://example.com/FIN-179",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "FIN"
+}

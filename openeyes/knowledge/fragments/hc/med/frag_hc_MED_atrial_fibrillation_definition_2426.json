@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "atrial fibrillation",
+    "mechanism",
+    "pathophysiology",
+    "classification"
+  ],
+  "reasoning_role": "definition",
+  "content": "Atrial fibrillation (AF) is a supraventricular tachyarrhythmia characterized by uncoordinated atrial activation and ineffective atrial contraction. ECG findings: irregularly irregular rhythm, absent P waves, variable R-R intervals, fibrillatory waves. Classification: paroxysmal (terminates spontaneously or with intervention within 7 days), persistent (>7 days or requiring cardioversion), long-standing persistent (>12 months), permanent (accepted by patient and clinician). Pathophysiology involves triggers (often from pulmonary veins) and substrate (atrial remodeling, fibrosis, dilation). Risk factors: age, hypertension, heart failure, valvular disease (especially mitral), obesity, sleep apnea, diabetes, hyperthyroidism, alcohol ('holiday heart'), genetics. AF causes loss of atrial kick (reduces cardiac output 10-30%), rapid ventricular response (causes symptoms and tachycardia-induced cardiomyopathy), and stasis leading to thrombus formation (stroke risk 5-fold increase).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/34590638/",
+  "credibility_class": "guideline",
+  "year": 2021,
+  "id": "HC-2426",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

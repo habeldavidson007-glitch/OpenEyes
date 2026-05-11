@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_oil_markets_counter_01",
+  "domain": "economy",
+  "subdomain": "ENR",
+  "tags": [
+    "oil",
+    "commodities",
+    "inflation",
+    "counter_argument",
+    "warning"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Energy transition creates 'underinvestment trap'. Capex discipline prevents supply surge even at high prices, risking spikes if demand surprises. Conversely, EV adoption acceleration could strand assets faster than models predict, crashing prices.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_oil_markets_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.8835,
+  "sector": "ENR"
+}

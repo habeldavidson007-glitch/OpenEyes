@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_elliott_wave_latest_data_08",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "elliott_wave",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Elliott Wave practitioners identified a potential Wave 3 in Bitcoin during Q1 2024. Competing wave counts in the S&P 500 reflected market uncertainty in early 2024. Elliott Wave analysis of long-term cycles suggested we're in late-stage bull market. Social media Elliott Wave predictions showed mixed accuracy in Q1 2024.",
+  "source": "Educational Resource",
+  "source_url": "https://www.elliottwave-forecast.com/current-count-2024",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

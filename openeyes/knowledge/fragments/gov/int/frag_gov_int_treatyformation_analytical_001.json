@@ -1,0 +1,81 @@
+{
+  "fragment_id": "frag_gov_int_treatyformation_analytical_001",
+  "domain": "gov",
+  "sector": "int",
+  "topic": "treaty_formation",
+  "role": "analytical",
+  "version": "1.0.0",
+  "title": "Treaty Formation and Entry into Force Under International Law",
+  "content": {
+    "summary": "Treaties are formed through negotiation, signature, ratification, and entry into force according to procedures established by the Vienna Convention on the Law of Treaties (1969).",
+    "body": "Treaty formation follows a multi-stage process: (1) Negotiation: States or international organizations negotiate terms through diplomatic conferences or working groups. Text adoption typically requires consensus or two-thirds vote. (2) Signature: Representatives sign the treaty, often subject to ratification. Signature alone may create obligation to refrain from acts defeating treaty's object and purpose (VCLT Art. 18). (3) Ratification: Domestic approval process varies by state; US requires Senate advice and consent (two-thirds); UK requires parliamentary scrutiny; France requires constitutional review. (4) Instrument Exchange: States deposit instruments of ratification with designated depositary (UN Secretary-General for multilateral treaties). (5) Entry into Force: Treaty specifies conditions (e.g., '30 days after 50th ratification'); Paris Agreement entered into force after 55 parties representing 55% of emissions ratified. (6) Reservations: States may exclude/modify legal effect of provisions unless prohibited or incompatible with treaty's object/purpose (VCLT Art. 19-23). Customary international law binds all states; treaties bind only parties (pacta sunt servanda).",
+    "key_points": [
+      "Negotiation concludes with text adoption by consensus or vote",
+      "Signature creates good faith obligation even before ratification",
+      "Ratification procedures vary by domestic constitutional law",
+      "Entry into force depends on treaty-specified thresholds",
+      "Reservations permitted unless incompatible with treaty purpose",
+      "Pacta sunt servanda: treaties binding on parties must be performed"
+    ],
+    "examples": [
+      "Vienna Convention on Diplomatic Relations (1961): Entered into force April 24, 1964 after 22 ratifications",
+      "Paris Climate Agreement (2015): Entered into force November 4, 2016; unique dual threshold of 55 parties/55% emissions",
+      "US New START Treaty (2010): Signed April 2010, Senate ratified 71-26, entered into force February 2011"
+    ]
+  },
+  "sources": [
+    {
+      "type": "treaty",
+      "citation": "Vienna Convention on the Law of Treaties, 1155 UNTS 331 (1969)",
+      "url": "https://treaties.un.org/pages/ViewDetailsIII.aspx?src=IND&mtdsg_no=XXIII-1&chapter=23",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "treaty",
+      "citation": "Paris Agreement, FCCC/CP/2015/L.9/Rev.1 (2015)",
+      "url": "https://unfccc.int/sites/default/files/english_paris_agreement.pdf",
+      "accessed": "2025-01-15"
+    },
+    {
+      "type": "scholarly",
+      "citation": "Aust, Anthony. Modern Treaty Law and Practice. Cambridge University Press, 3rd ed., 2013.",
+      "url": null,
+      "accessed": null
+    },
+    {
+      "type": "primary_government",
+      "citation": "US Constitution, Article II, Section 2",
+      "url": "https://www.congress.gov/constitution",
+      "accessed": "2025-01-15"
+    }
+  ],
+  "cross_references": [
+    {"domain": "gov", "sector": "int", "topic": "pacta_sunt_servanda", "relationship": "foundational_principle"},
+    {"domain": "gov", "sector": "leg", "topic": "bill_lifecycle", "relationship": "domestic_approval_comparison"},
+    {"domain": "gov", "sector": "sub", "topic": "contract_formation", "relationship": "analogous_domestic_concept"}
+  ],
+  "quantitative_data": {
+    "vclt_parties_count": 116,
+    "average_years_to_entry_force": 4.2,
+    "treaties_deposited_un_annually": 80
+  },
+  "temporal_scope": {
+    "historical_start": 1648,
+    "current_as_of": "2025-01-15",
+    "is_evolving": true,
+    "notes": "VCLT codified customary law; some major powers (US, China) not parties but follow its provisions as customary law"
+  },
+  "philosophy_guard_check": {
+    "is_descriptive": true,
+    "normative_claims_present": false,
+    "multiple_perspectives_included": false,
+    "verifiable": true
+  },
+  "metadata": {
+    "created": "2025-01-15",
+    "author": "OpenEyes Knowledge Team",
+    "review_status": "pending",
+    "confidence_level": 0.96,
+    "tags": ["treaty_law", "international_law", "vclt", "ratification", "diplomacy"]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "frag_med_unknown_definition_0331",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "oncology",
+    "immunotherapy",
+    "checkpoint inhibitors",
+    "PD-1",
+    "PD-L1",
+    "CTLA-4"
+  ],
+  "reasoning_role": "definition",
+  "content": "Immunotherapy harnesses the immune system to fight cancer. Checkpoint inhibitors block proteins that prevent T-cells from attacking tumors. PD-1 (programmed death-1) receptors on T-cells bind PD-L1 on tumor cells, suppressing immune response; anti-PD-1 antibodies (pembrolizumab, nivolumab) or anti-PD-L1 (atezolizumab, durvalumab) restore T-cell activity. CTLA-4 (cytotoxic T-lymphocyte antigen-4) regulates early T-cell activation; ipilimumab blocks CTLA-4. Other targets: LAG-3 (relatlimab), TIGIT (investigational). CAR-T cell therapy engineers patient T-cells to express chimeric antigen receptors targeting CD19 (lymphoma, leukemia) or BCMA (myeloma). Bispecific antibodies (blinatumomab) engage T-cells directly with tumor cells. Cancer vaccines (sipuleucel-T for prostate) and oncolytic viruses (T-VEC for melanoma) are emerging approaches.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36215678/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

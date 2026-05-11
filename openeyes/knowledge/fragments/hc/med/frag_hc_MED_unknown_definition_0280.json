@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0280",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "physical_dependence",
+    "addiction",
+    "withdrawal",
+    "substance_use_disorder",
+    "DSM5"
+  ],
+  "reasoning_role": "definition",
+  "content": "Physical dependence and addiction are distinct concepts often confused. Physical dependence is a physiologic state where abrupt drug cessation causes withdrawal symptoms due to neuroadaptation. It develops predictably with chronic use of many medications (opioids, benzodiazepines, beta-blockers, clonidine, corticosteroids) and is expected, not pathological. Addiction (substance use disorder) is a chronic brain disease characterized by: compulsive use despite harm, craving, loss of control over use, continued use despite negative consequences, prioritizing drug use over other activities. Physical dependence can exist without addiction (cancer patient on opioids); addiction can exist without significant physical dependence (cocaine). The DSM-5 criteria for substance use disorder focus on behavioral patterns, not physiologic dependence.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

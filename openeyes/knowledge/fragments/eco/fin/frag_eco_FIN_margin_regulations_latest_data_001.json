@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_margin_regulations_latest_data",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "regulation",
+    "margin",
+    "leverage",
+    "reg_t",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Brokerages have increasingly moved clients to 'Portfolio Margin' accounts which calculate risk-based requirements rather than fixed percentages, allowing higher leverage for hedged positions but requiring $150k+ equity. Regulatory focus is on ensuring risk models used for these calculations are robust.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

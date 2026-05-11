@@ -1,0 +1,19 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "fungal infection",
+    "diagnosis",
+    "beta-D-glucan",
+    "galactomannan"
+  ],
+  "reasoning_role": "definition",
+  "content": "Fungal diagnostics: 1) Blood cultures for Candida (low sensitivity ~50%, take 2-4 days); 2) Non-culture biomarkers: beta-D-glucan (elevated in most invasive fungal infections except Cryptococcus and Mucorales), galactomannan (Aspergillus-specific, serum/BAL); 3) PCR assays emerging but not standardized; 4) Imaging: CT chest for aspergillosis (halo sign early, air crescent later); 5) Histopathology from tissue biopsy gold standard (hyphae with acute angle branching for Aspergillus, pseudohyphae/yeast for Candida). T2 Candida panel detects directly from blood in 3-5 hours. Cryptococcal antigen highly sensitive/specific for cryptococcal meningitis. PJP diagnosis: induced sputum or BAL with DFA staining or PCR. Antifungal susceptibility testing guides therapy for resistant isolates (C. auris often multidrug-resistant).",
+  "source": "cdc.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2338",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A"
+}

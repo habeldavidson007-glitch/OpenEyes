@@ -1,0 +1,18 @@
+{
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "lipid management",
+    "LDL targets",
+    "cholesterol",
+    "ASCVD prevention"
+  ],
+  "reasoning_role": "definition",
+  "content": "Lipid management is cornerstone of ASCVD prevention and treatment. LDL cholesterol is primary target\u2014causally linked to atherosclerosis (genetic, epidemiologic, imaging, RCT evidence). Risk stratification guides intensity: very high risk (clinical ASCVD, multiple major events, or 1 high-risk event plus multiple conditions)\u2014LDL goal <70 mg/dL; high risk (diabetes age 40-75, severe CKD, LDL \u2265190, 10-year ASCVD risk \u226520%)\u2014goal <100 mg/dL; moderate risk (diabetes age 40-75 without complications, 10-year risk 7.5-20%)\u2014goal <130 mg/dL. Non-HDL cholesterol (total minus HDL) and apolipoprotein B (apoB, particle number) are secondary targets, especially with hypertriglyceridemia. Lp(a) measured once in lifetime\u2014elevated (>50 mg/dL or >125 nmol/L) is independent risk factor. Triglycerides: nonfasting acceptable for screening; if \u2265175 mg/dL, consider lifestyle, address secondary causes.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33722022/",
+  "credibility_class": "guideline",
+  "year": 2021,
+  "id": "HC-2396",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+}

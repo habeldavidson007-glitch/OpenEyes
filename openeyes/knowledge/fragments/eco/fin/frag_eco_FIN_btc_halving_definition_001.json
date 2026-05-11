@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_btc_halving_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "bitcoin",
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "A pre-programmed event occurring every 210,000 blocks (~4 years) that cuts the miner block reward in half, reducing new supply issuance.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

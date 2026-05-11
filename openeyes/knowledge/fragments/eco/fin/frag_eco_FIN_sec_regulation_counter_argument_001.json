@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_sec_regulation_counter_argument",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "regulation",
+    "sec",
+    "enforcement",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Critics argue that SEC regulation often creates compliance burdens that disproportionately affect smaller issuers, potentially reducing market entry and innovation. Some contend that enforcement actions are sometimes driven by political cycles rather than consistent legal principles, creating regulatory uncertainty. Additionally, the 'regulation by enforcement' approach in emerging areas like crypto is criticized for lacking clear ex-ante rules.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_forward_guidance_latest_018",
+  "domain": "economy",
+  "subdomain": "MAC",
+  "tags": [
+    "fed",
+    "forward_guidance",
+    "monetary_policy",
+    "communication",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "FOMC forward guidance has evolved toward greater flexibility post-pandemic. Recent statements emphasize data-dependence rather than pre-commitment. The dot plot continues to provide individual FOMC participants' rate projections but is explicitly labeled as conditional on economic outlook. Chair press conferences elaborate on Committee thinking while maintaining flexibility. Market pricing of expected rates (fed funds futures, OIS) provides real-time feedback on guidance effectiveness. Research continues on optimal communication strategies balancing clarity and flexibility.",
+  "source": "Federal Reserve Communications",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAC"
+}

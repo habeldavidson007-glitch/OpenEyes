@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_definition_0337",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "oncology",
+    "prostate cancer",
+    "PSA",
+    "Gleason score",
+    "risk stratification"
+  ],
+  "reasoning_role": "definition",
+  "content": "Prostate cancer is the most common cancer in men in developed countries. PSA (prostate-specific antigen) screening is controversial due to overdiagnosis of indolent cancers. Risk stratification guides management: very low/low risk (PSA <10, Gleason 6, T1-T2a, <50% cores positive); favorable intermediate (one intermediate factor); unfavorable intermediate (multiple intermediate factors or Gleason 4 pattern predominant); high (PSA >20, Gleason 8-9, T3); very high (T4, Gleason 10, primary Gleason 5). Gleason scoring (Grade Groups 1-5): Grade Group 1 (Gleason 3+3=6), 2 (3+4=7), 3 (4+3=7), 4 (8), 5 (9-10); Grade Group predicts prognosis. Genomic classifiers (Decipher, Oncotype DX Prostate, Prolaris) refine risk assessment. Molecular features: TMPRSS2-ERG fusion (~50%), PTEN loss, TP53 mutations in advanced disease; HRR gene mutations (BRCA2, ATM, others) in 10-20% metastatic; MSI-H rare (<3%).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36678901/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A"
+}

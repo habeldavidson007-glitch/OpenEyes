@@ -1,0 +1,19 @@
+{
+  "id": "frag_fin_ta_choch_definition",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "tags": [
+    "technical_analysis",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Change of Character (CHOCH) signals potential trend reversal when price breaks structure in opposite direction of prevailing trend. In uptrends, CHOCH occurs when price makes lower low instead of higher low. It's the first indication momentum shifted but doesn't guarantee reversal\u2014often requires confirmation through subsequent structure breaks.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "FIN"
+}

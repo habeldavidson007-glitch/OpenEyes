@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_mifid_ii_eu_latest_data",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "regulation",
+    "mifid_ii",
+    "europe",
+    "transparency",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Post-Brexit, the UK has begun diverging from MiFID II rules to boost competitiveness (e.g., relaxing research unbundling for certain firms). The EU continues to refine the framework under the Capital Markets Union initiative to deepen cross-border investment.",
+  "source": "government_source",
+  "source_url": "https://ec.europa.eu",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}
