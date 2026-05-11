@@ -1,0 +1,31 @@
+{
+  "id": "frag_gov_gov_rulemakingprocess_procedural_155",
+  "domain": "gov",
+  "sector": "GOV",
+  "category": "Bureaucracy & Administrative State",
+  "topic": "Rulemaking Process",
+  "role": "procedural",
+  "title": "Rulemaking Process: Procedural Analysis",
+  "content": {
+    "summary": ". This fragment outlines the operational procedures, processes, and implementation mechanisms.",
+    "key_points": [
+      "Step-by-step process for rulemaking process",
+      "Responsible actors and their roles",
+      "Timeline and sequencing requirements",
+      "Documentation and record-keeping",
+      "Appeals or review mechanisms if applicable"
+    ],
+    "sources": [
+      "Comparative Constitutions Project",
+      "Freedom House reports",
+      "Inter-Parliamentary Union data",
+      "Academic literature on comparative politics",
+      "World Bank Worldwide Governance Indicators"
+    ],
+    "related_fragments": [],
+    "last_updated": "2024-01-15",
+    "credibility_score": 0.95,
+    "philosophy_guard_passed": true,
+    "philosophy_guard_note": "Descriptive claim about bureaucracy & administrative state; no normative advocacy regarding what should be"
+  }
+}

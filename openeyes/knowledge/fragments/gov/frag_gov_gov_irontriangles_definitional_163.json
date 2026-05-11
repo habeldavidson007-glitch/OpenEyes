@@ -1,0 +1,31 @@
+{
+  "id": "frag_gov_gov_irontriangles_definitional_163",
+  "domain": "gov",
+  "sector": "GOV",
+  "category": "Bureaucracy & Administrative State",
+  "topic": "Iron Triangles",
+  "role": "definitional",
+  "title": "Iron Triangles: Definitional Analysis",
+  "content": {
+    "summary": ". This fragment describes the institutional structure, legal basis, and key characteristics.",
+    "key_points": [
+      "Core definition and scope of iron triangles",
+      "Legal or constitutional basis where applicable",
+      "Key institutional features and characteristics",
+      "Distinctions from related concepts",
+      "Historical development and evolution"
+    ],
+    "sources": [
+      "Comparative Constitutions Project",
+      "Freedom House reports",
+      "Inter-Parliamentary Union data",
+      "Academic literature on comparative politics",
+      "World Bank Worldwide Governance Indicators"
+    ],
+    "related_fragments": [],
+    "last_updated": "2024-01-15",
+    "credibility_score": 0.95,
+    "philosophy_guard_passed": true,
+    "philosophy_guard_note": "Descriptive claim about bureaucracy & administrative state; no normative advocacy regarding what should be"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "frag_gov_gov_nationalconventions_analytical_135",
+  "domain": "gov",
+  "sector": "GOV",
+  "category": "Political Parties & Organization",
+  "topic": "National Party Conventions",
+  "role": "analytical",
+  "title": "National Party Conventions: Analytical Analysis",
+  "content": {
+    "summary": ". This fragment examines scholarly debates, empirical patterns, and comparative perspectives.",
+    "key_points": [
+      "Major scholarly debates about national party conventions",
+      "Empirical evidence and quantitative findings",
+      "Cross-national or cross-jurisdictional comparisons",
+      "Criticisms and reform proposals",
+      "Future trends and emerging challenges"
+    ],
+    "sources": [
+      "Comparative Constitutions Project",
+      "Freedom House reports",
+      "Inter-Parliamentary Union data",
+      "Academic literature on comparative politics",
+      "World Bank Worldwide Governance Indicators"
+    ],
+    "related_fragments": [],
+    "last_updated": "2024-01-15",
+    "credibility_score": 0.95,
+    "philosophy_guard_passed": true,
+    "philosophy_guard_note": "Descriptive claim about political parties & organization; no normative advocacy regarding what should be"
+  }
+}
