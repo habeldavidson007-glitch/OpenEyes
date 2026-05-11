@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_zoon_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["zoonotic disease", "spillover", "emerging infectious disease", "One Health"],
+    "reasoning_role": "definition",
+    "content": "Zoonotic diseases are infections transmitted from vertebrate animals to humans, accounting for approximately 60% of known human pathogens and 75% of emerging infectious diseases. Spillover occurs when a pathogen crosses the species barrier through: direct contact (bites, scratches), indirect contact (contaminated environments), vector-borne transmission (mosquitoes, ticks), or foodborne routes (undercooked meat, unpasteurized dairy). Drivers of spillover include: land use changes (deforestation, urbanization), wildlife trade, agricultural intensification, climate change altering vector ranges, and increased human-animal contact. Examples: HIV (primates), SARS-CoV-2 (likely bats via intermediate host), Ebola (bats), avian influenza (poultry).",
+    "source": "WHO Zoonoses guidelines, CDC One Health framework",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_zoon_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["spillover prevention", "zoonotic surveillance", "pandemic prevention"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Spillover prevention strategies: (1) Wildlife trade regulation—ban high-risk species markets, enforce biosecurity; (2) Land use planning—maintain buffer zones between wildlife and human settlements; (3) Agricultural biosecurity—separate livestock from wildlife, vaccinate domestic animals; (4) Occupational protection—PPE for farmers, veterinarians, wildlife workers; (5) Food safety—cook meat thoroughly, pasteurize dairy; (6) Vector control—reduce mosquito/tick habitats; (7) Surveillance at human-animal interface—test wildlife, livestock, and high-risk human populations. Early detection requires integrated animal-human surveillance systems with rapid information sharing.",
+    "source": "FAO-OIE-WHO Tripartite guidelines, Lancet Planetary Health",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_zoon_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["zoonotic surveillance", "spillover risk assessment", "emerging disease monitoring"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Zoonotic spillover risk assessment considers: pathogen factors (genetic adaptability to humans, receptor binding capability), host factors (phylogenetic proximity to humans, population density, shedding routes), and environmental factors (human encroachment, climate suitability for vectors). Surveillance approaches: serological surveys in high-risk populations, syndromic surveillance in healthcare facilities near wildlife interfaces, pathogen screening in wildlife trade, and genomic sequencing to detect adaptive mutations. Risk hotspots identified through spatial modeling combining land use, wildlife diversity, and human population data. Priority zoonoses monitored through early warning systems with predefined response triggers.",
+    "source": "Nature Ecology & Evolution, WHO Emerging Diseases surveillance framework",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

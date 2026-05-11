@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_npi_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["non-pharmaceutical interventions", "NPIs", "pandemic response", "public health"],
+    "reasoning_role": "definition",
+    "content": "Non-pharmaceutical interventions (NPIs) are public health measures that don't require medications or vaccines to reduce disease transmission. Categories include: personal protective measures (masks, hand hygiene, respiratory etiquette), environmental measures (ventilation, surface cleaning), and social distancing measures (physical distancing, school closures, workplace modifications, gathering limits, stay-at-home orders). NPIs work by reducing contact rate, transmission probability per contact, or infectious period. Evidence quality varies: masks and ventilation have strong mechanistic and observational support; school closures show mixed effectiveness depending on community transmission levels.",
+    "source": "WHO NPI guidelines, CDC pandemic preparedness documents",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_npi_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["NPI effectiveness", "mask evidence", "social distancing", "pandemic control"],
+    "reasoning_role": "treatment_protocol",
+    "content": "NPI implementation hierarchy: (1) Universal masking in indoor public spaces—reduces emission and inhalation of respiratory particles; (2) Improved ventilation—increases air exchanges, uses HEPA filtration; (3) Physical distancing—maintains ≥1 meter separation; (4) Hand hygiene—soap/water or alcohol-based sanitizer; (5) Gathering restrictions—limits crowd size and density; (6) School/workplace modifications—hybrid models, cohorting; (7) Stay-at-home orders—last resort for severe outbreaks. Layered NPIs (multiple simultaneous measures) show additive effects. Timing matters: early implementation prevents exponential growth; late implementation has limited impact.",
+    "source": "Lancet Respiratory Medicine, CDC MMWR NPI evaluations",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_npi_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["NPI evidence", "intervention effectiveness", "systematic review"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "NPI evidence assessment challenges: randomized trials often infeasible, reliance on observational studies with confounding, varying compliance levels, and simultaneous implementation of multiple NPIs making attribution difficult. Systematic reviews show: mask mandates associated with reduced transmission (adjusted OR 0.5-0.8); ventilation improvements reduce airborne transmission; school closures alone show modest effect but contribute when combined with other NPIs. Effectiveness depends on context: population density, baseline transmission, variant characteristics, and cultural acceptance. Economic and mental health impacts must be weighed against infection prevention benefits.",
+    "source": "Cochrane Reviews, Nature Human Behaviour systematic analyses",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

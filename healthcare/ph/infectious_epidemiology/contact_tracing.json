@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_contact_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["contact tracing", "outbreak control", "infectious disease", "public health"],
+    "reasoning_role": "definition",
+    "content": "Contact tracing is the systematic identification, notification, and monitoring of individuals exposed to an infectious disease case. Core components: case identification, contact elicitation (who they interacted with during infectious period), risk stratification (close vs casual contacts), notification with confidentiality, and monitoring for symptoms or testing. Effectiveness depends on: speed (contacts reached before they become infectious), completeness (proportion of contacts identified), and compliance (contacts adhering to quarantine/testing). Contact tracing is most effective when R0 is modest (<2.5) and pre-symptomatic transmission is limited.",
+    "source": "WHO contact tracing guidelines, CDC outbreak response protocols",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_contact_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["contact tracing", "quarantine", "disease containment"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Contact tracing protocol: (1) Interview cases within 24-48 hours of diagnosis about contacts during infectious period; (2) Define close contact (typically >15 minutes within 6 feet over 24 hours); (3) Notify contacts within 24 hours, provide exposure information without revealing case identity; (4) Recommend quarantine duration based on incubation period (e.g., 14 days for many diseases); (5) Monitor contacts daily for symptoms; (6) Test symptomatic contacts immediately. Digital tools supplement manual tracing but have privacy concerns. Resource requirements: approximately 1 tracer per 30 cases for effective tracing.",
+    "source": "CDC contact tracing guidance, WHO field epidemiology manual",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_contact_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["contact tracing effectiveness", "outbreak metrics", "containment"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Contact tracing effectiveness metrics include: proportion of cases interviewed within 24 hours, proportion of contacts notified within 24 hours of case interview, quarantine adherence rates, and secondary attack rate among traced versus untraced contacts. Challenges limiting effectiveness: asymptomatic transmission, large numbers of casual contacts, community resistance, resource constraints, and delays in testing/results. Forward tracing (identifying who the case infected) is more impactful than backward tracing (finding who infected the case) for reducing Rt, though backward tracing identifies superspreading events.",
+    "source": "Lancet Public Health, CDC MMWR evaluation guidelines",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

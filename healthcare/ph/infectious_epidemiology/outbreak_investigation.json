@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_outbreak_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["outbreak investigation", "epidemic investigation", "public health response", "epidemiology"],
+    "reasoning_role": "definition",
+    "content": "Outbreak investigation is the systematic process of identifying the source, mode of transmission, and risk factors for a cluster of disease cases exceeding expected levels. Core steps: (1) Verify diagnosis and confirm outbreak; (2) Define case definition (person, place, time, clinical criteria); (3) Find cases systematically; (4) Describe data by time (epi curve), place (maps), and person (demographics, exposures); (5) Develop hypotheses about source and transmission; (6) Test hypotheses with analytic studies (cohort or case-control); (7) Implement control measures; (8) Communicate findings; (9) Maintain surveillance. Speed is critical to prevent additional cases.",
+    "source": "CDC outbreak investigation guidelines, WHO field epidemiology manual",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_outbreak_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["outbreak investigation steps", "attack rate", "analytic epidemiology"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Outbreak investigation protocol: Establish case definition balancing sensitivity and specificity. Calculate attack rates (cases/exposed) and relative risks for suspected exposures. For cohort studies: compare attack rates between exposed and unvaccinated. For case-control studies: calculate odds ratios comparing exposure among cases vs controls. Environmental assessment identifies contamination sources. Laboratory testing confirms etiology and links cases through molecular subtyping (PFGE, whole genome sequencing). Control measures implemented immediately when source identified, without waiting for analytic study completion if evidence is strong.",
+    "source": "CDC MMWR outbreak investigation protocols, Field Epidemiology Manual",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_outbreak_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["outbreak analysis", "case-control study", "cohort study", "epidemiologic methods"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Analytic study selection in outbreaks: cohort studies when population is well-defined and small (wedding attendees, cruise ship passengers); case-control studies when population is large or undefined (community-wide outbreaks). Sample size calculations ensure adequate power. Confounding controlled through stratification or multivariate regression. Dose-response relationships strengthen causal inference. Outbreak declaration ends when: no new cases for two incubation periods, source eliminated, and control measures sustained. Final reports document timeline, epidemiology, laboratory findings, control measures, and lessons learned for future preparedness.",
+    "source": "American Journal of Epidemiology, CDC outbreak investigation training",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]

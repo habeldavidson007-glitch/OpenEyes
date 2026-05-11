@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ph_infepi_r0_001",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["reproduction number", "R0", "epidemiology", "infectious disease", "transmission"],
+    "reasoning_role": "definition",
+    "content": "The basic reproduction number (R0) is the average number of secondary infections produced by a single infected individual in a completely susceptible population. R0 is determined by three factors: the duration of infectiousness, the probability of transmission per contact, and the contact rate. An R0 > 1 indicates an epidemic will grow; R0 < 1 means it will die out. R0 values vary widely: measles has R0 of 12-18, while seasonal influenza has R0 of 1-2. R0 assumes no interventions and complete susceptibility, making it a theoretical maximum rather than a real-world measure.",
+    "source": "CDC epidemiology principles, WHO outbreak guidelines",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_r0_002",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["reproduction number", "R0", "epidemiology", "transmission dynamics"],
+    "reasoning_role": "treatment_protocol",
+    "content": "R0 informs public health intervention thresholds. To achieve herd immunity through vaccination, the proportion needed is calculated as (1 - 1/R0). For measles (R0=15), approximately 93% vaccination coverage is required. Interventions reduce effective reproduction number (Rt): isolation reduces infectious period, masks reduce transmission probability, social distancing reduces contact rate. During outbreaks, Rt monitoring guides intervention intensity. When Rt drops below 1, case numbers decline exponentially. Real-time Rt estimation uses case data with generation time distributions.",
+    "source": "WHO outbreak response guidelines, CDC MMWR",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "id": "ph_infepi_r0_003",
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["R0", "herd immunity", "vaccination threshold", "epidemiology"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "R0 calculation methods include: next-generation matrix approaches using contact patterns, final size equation from epidemic curves, or exponential growth rate with generation time. Key limitations: R0 varies by population density, behavior, and environment; it's not a biological constant. Superspreading events create overdispersion not captured by mean R0. During emerging outbreaks, early R0 estimates have wide confidence intervals. R0 should not be compared across diseases without considering generation time—diseases with same R0 but shorter generation times spread faster.",
+    "source": "Nature Reviews Microbiology, CDC epidemiology training",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]
