@@ -1,0 +1,22 @@
+{
+  "id": "frag_mh_generalized_anxiety_disorder_treatment_protocol_0029",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "SSRI",
+    "SNRI",
+    "CBT",
+    "buspirone",
+    "treatment"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "First-line treatments include SSRIs (escitalopram, sertraline, paroxetine) and SNRIs (venlafaxine, duloxetine). Buspirone is an alternative anxiolytic. Benzodiazepines provide rapid relief but are limited to short-term use due to dependence risk. Cognitive Behavioral Therapy (CBT) is equally effective as medication and may have more durable benefits after discontinuation; key components include cognitive restructuring, worry exposure, and relaxation training. Combination therapy (medication + CBT) may benefit severe cases. Treatment duration typically 6-12 months after symptom remission before gradual tapering. Pregabalin shows efficacy in some studies.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

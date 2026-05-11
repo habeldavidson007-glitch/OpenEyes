@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0461",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "alzheimers-disease",
+    "cholinesterase-inhibitor",
+    "memantine",
+    "anti-amyloid",
+    "treatment-protocol"
+  ],
+  "reasoning_role": "definition",
+  "content": "AD treatment includes symptomatic cognitive enhancers and new disease-modifying anti-amyloid therapies. Symptomatic: (1) Cholinesterase inhibitors (donepezil, rivastigmine, galantamine) for mild-moderate AD; modest cognitive/functional benefit; side effects include nausea, diarrhea, bradycardia, syncope. Donepezil also approved for severe AD. (2) Memantine (NMDA receptor antagonist) for moderate-severe AD; can combine with cholinesterase inhibitor; side effects include dizziness, headache, confusion. Disease-modifying anti-amyloid monoclonal antibodies: lecanemab (Leqembi) and donanemab approved for early AD (MCI/mild dementia) with confirmed amyloid pathology. Lecanemab reduces amyloid and shows modest clinical benefit (0.45-point slowing on CDR-SB over 18 months); requires IV infusion every 2 weeks, MRI monitoring for ARIA (amyloid-related imaging abnormalities\u2014edema/microhemorrhage, more common in APOE \u03b54 carriers). Donanemab targets deposited amyloid, treatment duration guided by amyloid PET clearance. ARIA risk requires baseline and serial MRIs, APOE genotyping recommended. Non-pharmacologic: cognitive stimulation, caregiver support, safety modifications, advance care planning. BPSD management: non-drug approaches first; antipsychotics only for severe agitation/psychosis (black box warning for mortality in dementia).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/37462286/",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

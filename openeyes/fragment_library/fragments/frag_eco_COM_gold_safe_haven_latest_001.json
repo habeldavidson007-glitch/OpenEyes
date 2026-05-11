@@ -18,7 +18,5 @@
     "frag_eco_COM_gold_safe_haven_definition_001"
   ],
   "incompatible_with": [],
-  "weight": 1.0,
-  "grundy_value": -1,
-  "robustness_status": "PENDING"
+  "weight": 1.0
 }

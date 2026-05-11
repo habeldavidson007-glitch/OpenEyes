@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0428",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "diabetes",
+    "metformin",
+    "GLP-1",
+    "SGLT2",
+    "insulin"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Treatment algorithm for T2DM: First-line therapy is metformin (500-2000 mg/day) unless contraindicated. For patients with established ASCVD, heart failure, or CKD, initiate GLP-1 receptor agonist (semaglutide, liraglutide, dulaglutide) or SGLT2 inhibitor (empagliflozin, dapagliflozin, canagliflozin) regardless of HbA1c or metformin use. If additional glycemic control needed, consider combination therapy based on comorbidities: GLP-1 RA preferred for weight loss and ASCVD risk reduction; SGLT2i for heart failure and CKD; DPP-4 inhibitors as weight-neutral option; sulfonylureas as cost-effective but hypoglycemia risk; TZDs effective but fluid retention concerns. Insulin therapy indicated when HbA1c >10%, symptomatic hyperglycemia, or failure of multiple oral agents. Target HbA1c <7% for most adults, individualized based on age, comorbidities, hypoglycemia risk.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36506506/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

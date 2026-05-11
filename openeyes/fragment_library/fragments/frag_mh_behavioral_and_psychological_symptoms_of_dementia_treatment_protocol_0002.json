@@ -1,0 +1,22 @@
+{
+  "id": "frag_mh_behavioral_and_psychological_symptoms_of_dementia_treatment_protocol_0002",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "non-pharmacological",
+    "antipsychotics",
+    "SSRI",
+    "cholinesterase-inhibitor",
+    "caregiver-support"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "First-line: non-pharmacological interventions\u2014identify/treat underlying medical causes (pain, infection, constipation), optimize environment (reduce noise, maintain routines), address unmet needs, person-centered care, meaningful activities, music therapy, bright light therapy for sleep. Caregiver education/support essential. Pharmacotherapy reserved for severe symptoms causing danger/distress: antidepressants (SSRIs like citalopram, sertraline) for depression/anxiety; cholinesterase inhibitors/memantine may help some behavioral symptoms. Antipsychotics (risperidone, olanzapine, quetiapine) only for severe agitation/psychosis unresponsive to other measures due to increased mortality/stroke risk in elderly dementia patients (black box warning); use lowest dose, shortest duration, regular reassessment for discontinuation.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

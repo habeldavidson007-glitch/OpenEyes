@@ -1,0 +1,21 @@
+{
+  "id": "frag_med_unknown_definition_0139",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "Phase II trials",
+    "proof of concept",
+    "dose selection",
+    "efficacy"
+  ],
+  "reasoning_role": "definition",
+  "content": "Phase II trials are the first studies to evaluate drug efficacy in patients with the target disease, while continuing safety assessment. These trials typically enroll 100-300 patients and last several months to 2 years. Phase II is divided into IIa (proof-of-concept, demonstrating biological activity) and IIb (dose-finding, establishing optimal dosing). The primary goal is to determine whether the drug shows sufficient efficacy signal to justify large-scale Phase III testing. Approximately 30-40% of drugs successfully advance from Phase II to Phase III.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

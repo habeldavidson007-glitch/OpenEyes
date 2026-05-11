@@ -1,0 +1,21 @@
+{
+  "id": "frag_mh_generalized_anxiety_disorder_definition_0028",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "anxiety",
+    "GAD",
+    "worry",
+    "DSM-5"
+  ],
+  "reasoning_role": "definition",
+  "content": "Generalized Anxiety Disorder (GAD) is characterized by excessive, uncontrollable worry about multiple events or activities occurring more days than not for at least 6 months. The anxiety and worry are associated with \u22653 physical/cognitive symptoms: restlessness, fatigue, difficulty concentrating, irritability, muscle tension, or sleep disturbance. Symptoms cause clinically significant distress/impairment and are not attributable to substances, medical conditions, or other mental disorders. GAD has a lifetime prevalence of ~5-6%, with female predominance (2:1). Pathophysiology involves amygdala hyperactivity, prefrontal cortex dysregulation, GABAergic dysfunction, and genetic factors (heritability ~30%).",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/generalized-anxiety-disorder",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_phr_unknown_diagnostic_criteria_0198",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "phr",
+    "safety"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Assessment criteria include evaluating risk factors, monitoring parameters, and determining appropriate interventions based on established guidelines and regulatory requirements.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

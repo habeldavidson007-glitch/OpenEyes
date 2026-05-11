@@ -1,5 +1,4 @@
 {
-  "role": "diagnostic_criteria",
   "content": "Diabetes prevention assessment includes: (1) Screening criteria\u2014USPSTF recommends screening adults 35-70 years with overweight/obesity; ADA recommends screening all adults \u226535 years, earlier with risk factors (family history, race/ethnicity, gestational diabetes history, PCOS, hypertension, dyslipidemia); (2) Diagnostic tests\u2014fasting plasma glucose (100-125 mg/dL prediabetes, \u2265126 diabetes), HbA1c (5.7-6.4% prediabetes, \u22656.5% diabetes), 2-hour OGTT (140-199 mg/dL prediabetes, \u2265200 diabetes); (3) Risk stratification\u2014ADA Diabetes Risk Test, FINDRISC, QDiabetes risk scores identifying candidates for intensive intervention; (4) Monitoring\u2014annual screening for prediabetes progression, weight tracking, lifestyle behavior assessment; (5) Population surveillance\u2014NHANES prevalence data, BRFSS behavioral indicators, national diabetes registries. Continuous glucose monitoring emerging for prediabetes research. Limitations include HbA1c variability by race/ethnicity, anemia affecting accuracy, and discordance between diagnostic tests.",
   "tags": [
     "screening",
@@ -14,5 +13,6 @@
   "year": 2024,
   "source": "https://www.cdc.gov/",
   "id": "HC-2196",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
 }

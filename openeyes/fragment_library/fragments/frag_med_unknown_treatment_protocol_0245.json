@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0245",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "JAK",
+    "Janus kinase",
+    "autoimmune",
+    "rheumatology",
+    "tofacitinib"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "JAK Inhibitors treatment protocol content placeholder - dosing recommendations, titration schedules, indication-specific regimens, monitoring requirements, and dose adjustments for renal/hepatic impairment based on FDA prescribing information.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

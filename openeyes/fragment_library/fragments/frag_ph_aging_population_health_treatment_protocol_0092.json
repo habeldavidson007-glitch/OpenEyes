@@ -1,0 +1,21 @@
+{
+  "id": "frag_ph_aging_population_health_treatment_protocol_0092",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "intervention",
+    "geriatric_care",
+    "policy",
+    "community_support"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Healthy aging interventions target multiple levels: (1) Individual level\u2014physical activity (strength/balance training preventing falls), nutrition (adequate protein, vitamin D), cognitive stimulation, social engagement, preventive services (vaccinations, cancer screening with individualized decisions), medication optimization (deprescribing); (2) Clinical models\u2014Geriatric Assessment (comprehensive multidimensional evaluation), Age-Friendly Health Systems (4Ms: What Matters, Medication, Mentation, Mobility), PACE programs for frail elders; (3) Community approaches\u2014senior centers, congregate meals, transportation services, friendly visitor programs, fall prevention classes (Tai Chi, Otago); (4) Environmental modifications\u2014home safety assessments, grab bars, improved lighting, universal design principles; (5) Policy interventions\u2014Social Security, Medicare/Medicaid, Older Americans Act services, caregiver support (respite, training), long-term care financing reform, elder abuse prevention; (6) Technology\u2014remote monitoring, medication dispensers, emergency response systems, telehealth. Person-centered care prioritizes individual goals over disease-focused metrics.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

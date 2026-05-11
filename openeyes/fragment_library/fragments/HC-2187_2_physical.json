@@ -1,5 +1,4 @@
 {
-  "role": "diagnostic_criteria",
   "content": "Physical activity assessment methods: (1) Self-report\u2014International Physical Activity Questionnaire (IPAQ), Global Physical Activity Questionnaire (GPAQ), accelerometers with validated cutpoints; (2) Objective measures\u2014accelerometers (ActiGraph, Fitbit), pedometers (step counts, 10,000 steps/day target), heart rate monitors, doubly labeled water (gold standard for energy expenditure); (3) Fitness measures\u2014VO2 max (cardiorespiratory fitness), grip strength, chair stand test, gait speed (functional mobility); (4) Sedentary behavior\u2014activPAL monitors distinguishing sitting/standing, screen time logs; (5) Population surveillance\u2014BRFSS physical activity module, NHANES accelerometer data, WHO Global Action Plan monitoring framework. Limitations include self-report overestimation, device cost for population studies, varying intensity thresholds by age/fitness level, and capturing sporadic activity patterns. Functional capacity assessment essential for older adults and clinical populations.",
   "tags": [
     "measurement",
@@ -14,5 +13,6 @@
   "year": 2024,
   "source": "https://www.cdc.gov/",
   "id": "HC-2187",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
 }

@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0421",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "bariatric surgery",
+    "metabolic surgery",
+    "weight loss",
+    "obesity treatment",
+    "gastric bypass"
+  ],
+  "reasoning_role": "definition",
+  "content": "Metabolic bariatric surgery encompasses surgical procedures that induce weight loss and improve metabolic comorbidities through restrictive, malabsorptive, and hormonal mechanisms. Major procedures: (1) Roux-en-Y gastric bypass (RYGB) - creates small gastric pouch (~30mL) connected to jejunum, bypassing duodenum; combines restriction and mild malabsorption; most studied with longest track record; (2) Sleeve gastrectomy - removes ~80% of stomach along greater curvature, creating tubular 'sleeve'; primarily restrictive with hormonal effects (reduced ghrelin); now most commonly performed; (3) Biliopancreatic diversion with duodenal switch (BPD/DS) - sleeve gastrectomy plus extensive intestinal bypass; most effective for weight loss but highest nutritional risk; (4) Adjustable gastric banding - largely abandoned due to poor long-term outcomes. Mechanisms beyond restriction/malabsorption: altered gut hormones (increased GLP-1, PYY; decreased ghrelin), bile acid changes, microbiome alterations. Diabetes remission in 60-80% of T2DM patients.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36506510/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

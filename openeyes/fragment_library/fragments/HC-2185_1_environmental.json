@@ -1,5 +1,4 @@
 {
-  "role": "treatment_protocol",
   "content": "Environmental health interventions operate at multiple levels: (1) Primary prevention\u2014regulatory standards (EPA NAAQS for air quality, Safe Drinking Water Act), emission controls, chemical bans/restrictions (e.g., lead paint, asbestos), industrial permitting; (2) Exposure reduction\u2014air filtration systems, water filters certified for specific contaminants, soil remediation, housing code enforcement, integrated pest management; (3) Clinical interventions\u2014biomonitoring for lead/mercury levels, chelation therapy for heavy metal poisoning (controversial except for severe cases), asthma management plans addressing triggers; (4) Community advocacy\u2014citizen science monitoring, environmental justice litigation, policy advocacy for stricter standards. Climate change mitigation co-benefits include reduced air pollution. Precautionary principle guides action when evidence is suggestive but not conclusive.",
   "tags": [
     "intervention",
@@ -14,5 +13,6 @@
   "year": 2024,
   "source": "https://www.cdc.gov/",
   "id": "HC-2185",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
 }

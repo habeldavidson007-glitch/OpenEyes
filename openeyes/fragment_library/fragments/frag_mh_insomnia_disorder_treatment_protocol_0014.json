@@ -1,0 +1,22 @@
+{
+  "id": "frag_mh_insomnia_disorder_treatment_protocol_0014",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "CBT-I",
+    "stimulus-control",
+    "sleep-restriction",
+    "zolpidem",
+    "orexin-antagonist"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "First-line treatment: Cognitive Behavioral Therapy for Insomnia (CBT-I), which includes stimulus control (bed only for sleep/sex, leave bed if not asleep in 20 min), sleep restriction (limit time in bed to actual sleep time), cognitive therapy (address maladaptive beliefs about sleep), relaxation training, sleep hygiene education. CBT-I shows durable benefits post-treatment. Pharmacotherapy: short-term use of sedative-hypnotics (zolpidem, eszopiclone, zaleplon), benzodiazepines (temazepam), orexin receptor antagonists (suvorexant, lemborexant), ramelteon (melatonin agonist), low-dose doxepin. Medications generally limited to short-term due to tolerance, dependence, side effects (falls, cognitive impairment). Address comorbid conditions.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

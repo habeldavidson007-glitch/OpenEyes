@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0393",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "GLP-1",
+    "patient selection",
+    "contraindications",
+    "monitoring",
+    "efficacy"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Patient selection criteria: For T2DM - preferred in patients with established ASCVD, heart failure, CKD, or those needing weight loss; HbA1c reduction 1-1.5% expected. For obesity - BMI \u226530 or \u226527 with comorbidities; weight loss expectations: liraglutide ~5-8%, semaglutide 2.4mg ~15% (STEP trials). Baseline assessment before initiation: renal function, liver enzymes, history of pancreatitis, personal/family history of MTC/MEN2, pregnancy status. Contraindications absolute: history of MTC, MEN2, pregnancy. Relative contraindications: severe gastroparesis, prior pancreatitis, severe renal impairment. Monitoring: glycemic control (HbA1c every 3 months), weight trajectory, renal function periodically, symptoms of pancreatitis (severe abdominal pain), gallbladder symptoms. Discontinue if <5% weight loss after 12 weeks on maintenance obesity dose (liraglutide) or <5% after 16 weeks (semaglutide 2.4mg).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/34941889/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

@@ -1,0 +1,21 @@
+{
+  "id": "frag_ph_cancer_prevention_at_population_level_treatment_protocol_0098",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "policy",
+    "vaccination",
+    "screening",
+    "intervention"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Population-level cancer prevention interventions: (1) Tobacco control\u2014comprehensive MPOWER measures reducing lung and multiple other cancers; (2) Vaccination programs\u2014HPV vaccination (9-valent vaccine preventing 90% HPV-related cancers), HBV vaccination (universal infant vaccination); (3) Screening programs\u2014organized population-based screening with quality assurance: mammography (biennial 50-74 years), cervical cytology/HPV testing (21-65 years), colonoscopy/FIT (45-75 years), low-dose CT for high-risk smokers; (4) Policy interventions\u2014alcohol taxation and availability restrictions, trans fat bans, processed meat labeling, occupational exposure limits, air quality standards; (5) Sun safety\u2014shade structures, sunscreen access, tanning bed restrictions for minors; (6) Chemoprevention\u2014aspirin for colorectal cancer in select populations, tamoxifen/raloxifene for high-risk breast cancer. Navigation programs improve screening completion. Overdiagnosis/overtreatment risks require balanced communication.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

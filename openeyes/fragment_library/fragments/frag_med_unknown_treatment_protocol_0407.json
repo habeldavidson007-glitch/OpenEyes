@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0407",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "obesity",
+    "weight loss",
+    "GLP-1",
+    "bariatric surgery",
+    "lifestyle"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Treatment approach based on BMI and comorbidities. Lifestyle intervention foundation: caloric deficit (500-750 kcal/day deficit produces 0.5-0.75 kg/week loss), reduced-calorie diet (Mediterranean, DASH, low-carbohydrate all effective), physical activity \u2265150 min/week, behavioral strategies. Pharmacotherapy indicated for BMI \u226530 or \u226527 with comorbidities: GLP-1 receptor agonists (semaglutide 2.4mg weekly - STEP trials showed ~15% weight loss; liraglutide 3mg daily); dual GIP/GLP-1 agonist tirzepatide (~20% weight loss); phentermine/topiramate ER; naltrexone/bupropion; orlistat. Metabolic/bariatric surgery for BMI \u226540 or \u226535 with comorbidities: Roux-en-Y gastric bypass (~25-30% total weight loss), sleeve gastrectomy (~20-25%), biliopancreatic diversion (most effective but highest risk). Surgery improves/remits T2DM, reduces mortality. Long-term follow-up essential for nutritional deficiencies.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36506507/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

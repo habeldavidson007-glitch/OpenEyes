@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0360",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "oncology",
+    "cancer cachexia",
+    "assessment",
+    "screening",
+    "diagnostic criteria"
+  ],
+  "reasoning_role": "definition",
+  "content": "Assessment tools for cachexia screening and diagnosis. Weight monitoring: serial weights at each visit; >2% loss warrants evaluation. Body composition: CT-based muscle area measurement at L3 vertebra (research/tertiary centers); DEXA scan for lean body mass; bioelectrical impedance analysis (BIA) estimates fat-free mass; handgrip strength dynamometry assesses muscle function. Inflammatory markers: CRP, albumin, IL-6 correlate with cachexia severity. Appetite assessment: FAACT (Functional Assessment of Anorexia/Cachexia Therapy) questionnaire; simplified eating questionnaires. Performance status: ECOG/Karnofsky scores often decline with cachexia. Staging: determine precachexia vs cachexia vs refractory based on weight loss, symptoms, prognosis. Differential diagnosis: rule out mechanical obstruction, depression, untreated pain, medication side effects, endocrine disorders (hypothyroidism, adrenal insufficiency). Prognostic significance: cachexia associated with reduced survival independent of stage; mGPS (modified Glasgow Prognostic Score) combining CRP and albumin predicts outcomes.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35456789/",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

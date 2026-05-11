@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0389",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hyponatremia",
+    "hypertonic saline",
+    "fluid restriction",
+    "vaptans",
+    "correction rate"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Treatment based on severity, acuity, and volume status. Severe symptomatic (seizures, altered mental status): immediate 3% hypertonic saline 100-150mL IV bolus, repeat up to 3 times if needed; target increase 4-6 mEq/L in first few hours. Hypovolemic: isotonic saline to restore volume (suppresses ADH). Euvolemic (SIADH): fluid restriction (<800-1000mL/day), salt tablets, loop diuretics; vaptans (tolvaptan) for refractory cases; demeclocycline for chronic SIADH. Hypervolemic: fluid and sodium restriction, loop diuretics, treat underlying condition; vaptans in select cases. Correction rate critical: limit to 6-8 mEq/L in first 24 hours, <18 mEq/L in 48 hours to prevent osmotic demyelination syndrome (ODS). Higher risk of ODS if alcoholism, malnutrition, liver disease, hypokalemia. If overcorrection occurs, use DDAVP and D5W to re-lower sodium. Chronic asymptomatic: gradual correction with fluid restriction, address underlying cause.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985613/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

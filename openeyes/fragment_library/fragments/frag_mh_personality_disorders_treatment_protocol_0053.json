@@ -1,0 +1,22 @@
+{
+  "id": "frag_mh_personality_disorders_treatment_protocol_0053",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "DBT",
+    "psychotherapy",
+    "schema-therapy",
+    "MBT",
+    "therapeutic-alliance"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Psychotherapy is primary treatment. Borderline PD: DBT (strongest evidence), MBT, TFP, schema therapy. Antisocial PD: limited evidence, focus on substance use comorbidity, contingency management. Avoidant/Dependent/OCPD: CBT, schema therapy, psychodynamic approaches. Cluster A: supportive therapy, social skills training; antipsychotics may help cognitive-perceptual symptoms. No medications approved specifically for PDs; pharmacotherapy targets specific symptoms (mood stabilizers for impulsivity/affective instability, SSRIs for anxiety/depression, atypical antipsychotics for cognitive-perceptual symptoms). Avoid polypharmacy. Treatment engagement challenging; therapeutic alliance critical. Long-term perspective needed; personality change gradual. Comorbid conditions (depression, anxiety, SUD) require concurrent treatment.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

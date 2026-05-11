@@ -1,0 +1,22 @@
+{
+  "id": "frag_mh_attention_deficit_hyperactivity_disorder_treatment_protocol_0023",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "stimulants",
+    "methylphenidate",
+    "amphetamine",
+    "atomoxetine",
+    "behavioral-intervention"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "First-line pharmacotherapy: stimulants (methylphenidate or amphetamine formulations) with robust evidence for efficacy (~70-80% response rate). Long-acting formulations preferred for adherence and reduced abuse potential. Non-stimulants: atomoxetine (SNRI), guanfacine/clonidine (alpha-2 agonists), viloxazine\u2014used when stimulants ineffective/not tolerated or as adjuncts. Behavioral interventions: parent training (children), classroom management, organizational skills training, CBT (adults). Combination therapy often optimal. Monitoring includes growth (children), cardiovascular parameters, sleep, appetite, mood changes. Treatment often continues long-term given chronic nature.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

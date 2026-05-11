@@ -1,0 +1,20 @@
+{
+  "id": "frag_phr_unknown_definition_0154",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "phr",
+    "definition",
+    "safety"
+  ],
+  "reasoning_role": "definition",
+  "content": "This topic covers key aspects of drug safety and pharmacovigilance including regulatory requirements, clinical implications, and best practices for healthcare providers.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

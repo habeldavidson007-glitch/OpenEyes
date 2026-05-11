@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0380",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hyperuricemia",
+    "allopurinol",
+    "lifestyle",
+    "asymptomatic",
+    "treatment threshold"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Asymptomatic hyperuricemia: generally NOT recommended to treat pharmacologically per ACR and EULAR guidelines, as most never develop gout and risks of lifelong ULT may outweigh benefits. Exceptions where treatment considered: serum urate >13 mg/dL (men) or >10 mg/dL (women) with high risk of tumor lysis syndrome; before starting chemotherapy for hematologic malignancies; recurrent uric acid kidney stones; patients receiving rasburicase for tumor lysis prevention. Lifestyle modifications for all: weight loss if overweight/obese, limit alcohol (especially beer and spirits), reduce high-purine foods (organ meats, certain seafood), avoid fructose-sweetened beverages, increase low-fat dairy intake (uricosuric effect), stay well-hydrated, consider coffee consumption. Review and adjust medications contributing to hyperuricemia if alternatives available (e.g., switch thiazide to losartan which has mild uricosuric effect). Treat comorbidities aggressively.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985618/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

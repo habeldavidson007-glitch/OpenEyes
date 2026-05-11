@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0362",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "oncology",
+    "pancreatic cancer",
+    "treatment",
+    "surgery criteria",
+    "chemotherapy"
+  ],
+  "reasoning_role": "definition",
+  "content": "Treatment determined by resectability. Resectable (no arterial contact, patent SMV/PV): upfront surgery (Whipple procedure for head, distal pancreatectomy for body/tail) followed by adjuvant chemotherapy. Modified FOLFIRINOX preferred for fit patients (PRODIGE 24 trial, median OS 54.4 months); gemcitabine + capecitabine alternative. Borderline resectable (limited arterial contact, reconstructible vein involvement): neoadjuvant chemotherapy (FOLFIRINOX or gemcitabine + nab-paclitaxel) \u00b1 radiation, then restaging for surgery. Locally advanced (unresectable, no metastases): systemic chemotherapy primary; consider consolidation chemoradiation for local control; some convert to resectable. Metastatic: first-line FOLFIRINOX (fit patients) or gemcitabine + nab-paclitaxel; second-line nanoliposomal irinotecan + 5-FU (NAPOLI-1). Targeted therapy: olaparib for germline BRCA-mutated metastatic disease after platinum (POLO trial); pembrolizumab for MSI-H (<1%). NALIRIFOX (liposomal irinotecan + 5-FU/LV) approved first-line based on NAPOLI-3 trial. Supportive care critical: biliary stenting for jaundice, celiac plexus block for pain, pancreatic enzyme replacement, nutritional support, diabetes management.",
+  "source": "PubMed",
+  "source_url": "https://www.nccn.org/guidelines",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

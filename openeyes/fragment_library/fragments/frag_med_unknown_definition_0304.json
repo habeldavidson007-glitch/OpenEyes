@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0304",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "protein_binding",
+    "albumin",
+    "alpha_1_acid_glycoprotein",
+    "free_drug",
+    "drug_interactions"
+  ],
+  "reasoning_role": "definition",
+  "content": "Protein binding refers to the reversible attachment of drugs to plasma proteins, primarily albumin (binds acidic drugs) and alpha-1-acid glycoprotein (binds basic drugs). Only unbound (free) drug is pharmacologically active, can distribute to tissues, and undergoes metabolism/excretion. Highly bound drugs (>90%): warfarin 99%, phenytoin 90%, valproate 90%. Binding is saturable and concentration-dependent. Drug displacement interactions occur when two highly-bound drugs compete, transiently increasing free fraction of one. However, clinical significance is usually limited because increased free drug is rapidly cleared, establishing new equilibrium. Hypoalbuminemia increases free fraction of acidic drugs.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

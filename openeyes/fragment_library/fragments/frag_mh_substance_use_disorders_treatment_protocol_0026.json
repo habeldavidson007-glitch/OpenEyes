@@ -1,0 +1,22 @@
+{
+  "id": "frag_mh_substance_use_disorders_treatment_protocol_0026",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "MOUD",
+    "methadone",
+    "buprenorphine",
+    "naltrexone",
+    "contingency-management"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Treatment approaches vary by substance. Opioid Use Disorder: Medication for OUD (MOUD) first-line\u2014methadone, buprenorphine, or extended-release naltrexone reduce mortality and improve outcomes; combine with counseling/behavioral therapies. Alcohol Use Disorder: naltrexone, acamprosate, disulfiram; motivational interviewing, CBT, contingency management. Tobacco: NRT, varenicline, bupropion plus behavioral support. Stimulant use: contingency management has strongest evidence; no FDA-approved medications yet. Benzodiazepines: gradual tapering. Treatment settings range from outpatient to residential based on severity. Recovery support services, peer support, and addressing co-occurring mental health conditions essential for long-term success.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

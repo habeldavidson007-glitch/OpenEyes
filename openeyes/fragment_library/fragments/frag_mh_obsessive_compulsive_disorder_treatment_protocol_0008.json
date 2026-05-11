@@ -1,0 +1,22 @@
+{
+  "id": "frag_mh_obsessive_compulsive_disorder_treatment_protocol_0008",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "ERP",
+    "CBT",
+    "SSRI",
+    "clomipramine",
+    "augmentation"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "First-line psychotherapy: Exposure and Response Prevention (ERP), a form of CBT involving gradual exposure to anxiety-provoking stimuli while preventing compulsive responses. ERP shows durable benefits post-treatment. First-line pharmacotherapy: SSRIs at higher doses than for depression (e.g., fluoxetine 60-80mg, sertraline 150-200mg, fluvoxamine 200-300mg) with adequate trial duration (10-12 weeks). Clomipramine (TCA) is effective but limited by side effects. Augmentation strategies for partial response include low-dose antipsychotics (risperidone, aripiprazole). Treatment typically continues 1-2 years before considering tapering. Deep brain stimulation reserved for severe treatment-refractory cases.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

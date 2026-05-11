@@ -1,5 +1,4 @@
 {
-  "role": "diagnostic_criteria",
   "content": "Measuring health disparities requires: (1) Appropriate comparison groups\u2014identifying the most advantaged group as reference rather than population average; (2) Multiple metrics including absolute differences (rate differences), relative differences (rate ratios), slope index of inequality, and concentration indices; (3) Stratified data collection with standardized race/ethnicity categories (OMB standards), preferred language, sexual orientation, gender identity, disability status; (4) Contextual measures including area-level deprivation indices, segregation indices, provider density measures; (5) Life course perspective capturing disparities at different life stages. Statistical methods include interaction testing to determine if disparities vary across subgroups, decomposition analysis to identify contributing factors, and causal mediation analysis. CDC's DISPARITIES database and AHRQ's National Healthcare Quality and Disparities Report provide standardized measurement frameworks. Small sample sizes in minority groups require oversampling or multi-year aggregation.",
   "tags": [
     "measurement",
@@ -14,5 +13,6 @@
   "year": 2024,
   "source": "https://www.cdc.gov/",
   "id": "HC-2192",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
 }

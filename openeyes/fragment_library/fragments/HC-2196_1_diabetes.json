@@ -1,5 +1,4 @@
 {
-  "role": "treatment_protocol",
   "content": "Evidence-based diabetes prevention approaches: (1) Lifestyle programs\u2014CDC-recognized National DPP delivering year-long curriculum on nutrition, physical activity, stress management, problem-solving; delivered in-person, online, or distance learning; (2) Pharmacotherapy\u2014metformin for high-risk individuals (BMI\u226535, age<60, history of gestational diabetes), GLP-1 agonists showing promise for weight loss/diabetes prevention; (3) Policy interventions\u2014sugar-sweetened beverage taxes, healthy school food standards, built environment for active living, food labeling requirements; (4) Healthcare system integration\u2014routine prediabetes screening, electronic health record prompts, referral systems to DPP, insurance coverage for prevention programs; (5) Community approaches\u2014faith-based programs, community health worker delivery, culturally adapted interventions; (6) Digital health\u2014mobile apps, remote coaching, wearable devices. Cost-effectiveness analyses show lifestyle intervention cost-effective long-term. Scalability remains challenge requiring innovative delivery models.",
   "tags": [
     "intervention",
@@ -14,5 +13,6 @@
   "year": 2024,
   "source": "https://www.cdc.gov/",
   "id": "HC-2196",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
 }

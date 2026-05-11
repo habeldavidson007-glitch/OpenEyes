@@ -8,5 +8,9 @@
   "subdomain": "PHR",
   "sector": "PHR",
   "id": "HC-2226",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "tags": [
+    "phr",
+    "safety"
+  ]
 }

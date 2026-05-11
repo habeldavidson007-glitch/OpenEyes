@@ -1,5 +1,4 @@
 {
-  "role": "treatment_protocol",
   "content": "AUD treatment follows stepped-care approach: (1) Screening and brief intervention (SBIRT)\u2014AUDIT-C screening, motivational interviewing for risky drinkers; (2) Outpatient treatment\u2014mutual help groups (AA, SMART Recovery), counseling (CBT, MET, 12-step facilitation); (3) Pharmacotherapy\u2014naltrexone (reduces craving/reward), acamprosate (maintains abstinence), disulfiram (aversion therapy), off-label options (topiramate, gabapentin); (4) Medically managed withdrawal\u2014for severe dependence with CIWA-Ar monitoring, benzodiazepines for seizure prevention, thiamine supplementation; (5) Residential/inpatient treatment\u2014for severe AUD or failed outpatient attempts; (6) Recovery support\u2014peer recovery coaches, sober living environments, continuing care. Population-level interventions: taxation, minimum unit pricing, availability restrictions, marketing regulations, drunk driving laws. Harm reduction strategies include moderate drinking goals for some patients.",
   "tags": [
     "treatment",
@@ -14,5 +13,6 @@
   "year": 2024,
   "source": "https://www.cdc.gov/",
   "id": "HC-2190",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov"
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline"
 }

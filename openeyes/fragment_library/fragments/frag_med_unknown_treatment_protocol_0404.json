@@ -1,0 +1,23 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0404",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "hyperkalemia",
+    "calcium gluconate",
+    "insulin",
+    "albuterol",
+    "dialysis",
+    "potassium binders"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Emergency treatment for K+ >6.0-6.5 mEq/L or ECG changes: (1) Cardiac membrane stabilization: calcium gluconate 1g IV (or calcium chloride 500mg via central line), repeat if ECG unchanged after 5-10 minutes; (2) Shift potassium intracellularly: regular insulin 10 units IV with 25g dextrose (onset 15-30 min, lasts 4-6 hours); albuterol 10-20mg nebulized (adjunctive); sodium bicarbonate 50-100 mEq IV if acidemic; (3) Remove potassium: loop diuretics (if renal function adequate), potassium binders (sodium polystyrene sulfonate 15-60g PO, patiromer, sodium zirconium cyclosilicate), hemodialysis (definitive for severe cases or renal failure). Chronic management: dietary potassium restriction, review/adjust medications causing hyperkalemia, chronic potassium binders for CKD patients on RAAS inhibitors, treat underlying cause. Monitor for rebound hypokalemia after treatment.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985614/",
+  "credibility_class": "peer_reviewed_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

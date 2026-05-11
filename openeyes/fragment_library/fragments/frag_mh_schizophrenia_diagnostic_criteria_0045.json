@@ -1,0 +1,21 @@
+{
+  "id": "frag_mh_schizophrenia_diagnostic_criteria_0045",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "psychosis",
+    "schizophrenia"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "DSM-5-TR criteria: \u22652 symptoms for \u22651 month (or less if successfully treated), with at least one being delusions, hallucinations, or disorganized speech; other symptoms include grossly disorganized/catatonic behavior or negative symptoms. Continuous signs persist for \u22656 months including \u22651 month of active symptoms plus prodromal/residual periods. Significant functional impairment in work, relationships, or self-care. Schizoaffective and mood disorders ruled out. Substance/medical causes excluded. Specifiers include first episode vs multiple episodes, acute episode status, severity, and presence of catatonia. Course specifiers: episodic with/without residual symptoms, or continuous.",
+  "source": "PubMed",
+  "source_url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "year": 2022,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

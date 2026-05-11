@@ -1,0 +1,21 @@
+{
+  "id": "frag_ph_health_disparities_definition_0082",
+  "domain": "healthcare",
+  "subdomain": "PH",
+  "sector": "PH",
+  "tags": [
+    "health_equity",
+    "disparities",
+    "social_justice",
+    "population_health"
+  ],
+  "reasoning_role": "definition",
+  "content": "Health disparities are preventable differences in the burden of disease, injury, violence, or opportunities to achieve optimal health that are experienced by socially disadvantaged populations. These disparities are closely linked with social, economic, and environmental disadvantage and are driven by historical and contemporary racism, discrimination, and exclusion. Health disparities manifest across multiple dimensions including race/ethnicity, socioeconomic status, gender, sexual orientation, disability status, geographic location, and immigration status. The concept distinguishes from 'health differences' by emphasizing that disparities are systematic, avoidable, and unjust. Healthy People 2030 defines health disparities as 'a particular type of health difference that is closely linked with social, economic, and/or environmental disadvantage.' Measurement requires comparison between advantaged and disadvantaged groups using appropriate reference populations.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

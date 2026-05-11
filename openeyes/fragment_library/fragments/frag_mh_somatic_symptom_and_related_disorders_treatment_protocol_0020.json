@@ -1,0 +1,22 @@
+{
+  "id": "frag_mh_somatic_symptom_and_related_disorders_treatment_protocol_0020",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "CBT",
+    "scheduled-visits",
+    "antidepressants",
+    "validation",
+    "functional-improvement"
+  ],
+  "reasoning_role": "treatment_protocol",
+  "content": "Management focuses on improving functioning rather than symptom elimination. Regular scheduled visits with single provider reduce unnecessary testing/procedures. Validate patient experience while gently redirecting from organic focus. CBT addresses catastrophic thinking, reduces healthcare utilization, improves coping. Mindfulness-based therapies help with symptom acceptance. Antidepressants (SSRIs/SNRIs) may help comorbid depression/anxiety and have some evidence for reducing somatic symptom burden. For Conversion Disorder: physical therapy, occupational therapy, psychological treatment addressing stressors. Avoid reinforcing sick role while maintaining therapeutic alliance. Gradual activity increase, focus on function over symptoms. Multidisciplinary approach optimal for complex cases.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

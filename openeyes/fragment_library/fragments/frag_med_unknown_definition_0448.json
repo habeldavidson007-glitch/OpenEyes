@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0448",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "myasthenia-gravis",
+    "MG",
+    "acetylcholine-receptor",
+    "neuromuscular-junction",
+    "autoimmune"
+  ],
+  "reasoning_role": "definition",
+  "content": "Myasthenia gravis (MG) is an autoimmune disorder of the neuromuscular junction causing fluctuating muscle weakness and fatigability. Incidence 1-9/100,000/year, bimodal distribution (young women 20-40, older men >60). Pathophysiology: antibodies against postsynaptic acetylcholine receptors (AChR, 85% of generalized MG), muscle-specific kinase (MuSK, 5-10%, more severe bulbar/respiratory involvement), or LRP4. Antibodies cause receptor blockade, internalization, and complement-mediated damage reducing safety factor for neuromuscular transmission. Clinical features: painless weakness worsening with activity, improving with rest; ocular symptoms (ptosis, diplopia\u2014often initial presentation), bulbar symptoms (dysarthria, dysphagia, chewing fatigue), limb weakness (proximal > distal), respiratory muscle involvement (myasthenic crisis). Thymic abnormalities in 75% (hyperplasia in young, thymoma in 10-15%). Myasthenic crisis: respiratory failure requiring intubation, triggered by infection, surgery, medications (aminoglycosides, fluoroquinolones, beta-blockers, magnesium).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

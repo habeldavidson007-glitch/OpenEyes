@@ -1,0 +1,19 @@
+{
+  "id": "frag_phr_unknown_diagnostic_criteria_0159",
+  "domain": "healthcare",
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "tags": [
+    "phr",
+    "treatment"
+  ],
+  "reasoning_role": "diagnostic_criteria",
+  "content": "Shortage severity classification: Critical (no alternatives available, life-saving drug, immediate patient harm expected), Significant (limited alternatives, may require treatment modifications), Moderate (alternatives available with some clinical differences). FDA prioritizes resolution based on severity. Regulatory responses include: expedited review of supplemental applications for new manufacturers, temporary importation of foreign-approved versions, enforcement discretion for minor specification deviations, and compounding pharmacy authorization. The Food and Drug Administration Safety and Innovation Act (FDASIA) enhanced FDA's ability to prevent and mitigate shortages. Manufacturers face penalties for failing to report potential shortages. Long-term solutions include diversifying supply chains, maintaining buffer inventories, and addressing economic disincentives for generic production.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

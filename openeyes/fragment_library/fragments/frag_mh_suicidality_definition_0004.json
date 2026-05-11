@@ -1,0 +1,21 @@
+{
+  "id": "frag_mh_suicidality_definition_0004",
+  "domain": "healthcare",
+  "subdomain": "MH",
+  "sector": "MH",
+  "tags": [
+    "suicide",
+    "suicidal-ideation",
+    "risk-assessment",
+    "prevention"
+  ],
+  "reasoning_role": "definition",
+  "content": "Suicidality encompasses suicidal ideation (thoughts of killing oneself), suicide plan (specific method/formulation), suicide attempt (self-injurious behavior with intent to die), and completed suicide. Risk factors include psychiatric disorders (depression, bipolar, schizophrenia, SUD, personality disorders), previous attempts (strongest predictor), family history, chronic medical conditions, acute stressors, access to lethal means, social isolation, hopelessness. Protective factors include social support, coping skills, reasons for living, restricted access to lethal means. Suicide is leading cause of death in young people globally. Assessment requires direct questioning about ideation, plan, intent, means, past attempts, and protective factors.",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/suicide-prevention",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

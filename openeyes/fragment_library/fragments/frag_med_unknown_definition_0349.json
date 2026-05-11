@@ -1,0 +1,22 @@
+{
+  "id": "frag_med_unknown_definition_0349",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "oncology",
+    "cancer staging",
+    "TNM system",
+    "prognosis",
+    "diagnosis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Cancer staging is a standardized method to describe the extent of cancer in the body. The TNM system, developed by AJCC and UICC, classifies cancers by: T (Tumor) - size and extent of primary tumor (T0-T4); N (Nodes) - whether cancer has spread to nearby lymph nodes (N0-N3); M (Metastasis) - whether cancer has spread to distant organs (M0 or M1). Stage groups combine TNM into overall stages: Stage 0 (carcinoma in situ), Stage I (localized, small tumor), Stage II-III (regional spread, larger tumors or node involvement), Stage IV (distant metastasis). Staging determines prognosis, guides treatment selection, enables comparison of outcomes across institutions, and facilitates clinical trial enrollment. Anatomic staging uses imaging and pathology; prognostic stage groups incorporate biomarkers for certain cancers.",
+  "source": "PubMed",
+  "source_url": "https://cancerstaging.org",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

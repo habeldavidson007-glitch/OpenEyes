@@ -1,0 +1,20 @@
+{
+  "id": "frag_med_unknown_definition_0117",
+  "domain": "healthcare",
+  "subdomain": "MED",
+  "sector": "MED",
+  "tags": [
+    "accelerated approval",
+    "surrogate endpoints",
+    "confirmatory trials"
+  ],
+  "reasoning_role": "definition",
+  "content": "Accelerated approval eligibility criteria include: treatment for serious or life-threatening disease, drug demonstrates effect on surrogate endpoint reasonably likely to predict clinical benefit, and unmet medical need exists (no adequate therapy or advantage over existing treatments). Validated surrogate endpoints have established correlation with clinical outcomes (e.g., LDL cholesterol and cardiovascular events). 'Reasonably likely' surrogates have weaker but plausible correlation requiring stronger confirmatory evidence. Confirmatory trial requirements: adequate and well-controlled studies demonstrating clinical benefit, initiation before or at approval, completion typically within 3-5 years. FDA enforcement mechanisms for failed confirmatory trials include public communications, labeling changes, restricted distribution, or withdrawal proceedings. Approximately 20% of novel drug approvals use accelerated pathway; about 10-15% ultimately face withdrawal or indication restriction.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}
