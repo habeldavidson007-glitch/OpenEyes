@@ -10,6 +10,12 @@ from openeyes.core.router import route_domain
 from openeyes.knowledge.fragments import Fragment
 from openeyes.knowledge.live_fetch import fetch_live_fragments, jit_synthesize_fragments, normalize_query
 from openeyes.knowledge.retrieval import retrieve_records
+from openeyes.knowledge.graceful_degradation import (
+    classify_intent,
+    process_query_with_degradation,
+    check_safety_halt,
+    GradedResponse,
+)
 from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.memory import ingest_case, retrieve_similar
 from openeyes.storage.vault import write_audit_log
@@ -164,9 +170,50 @@ class OpenEyesEngine:
 
     def answer(self, query: str, domain: str | None = None) -> dict:
         routed_domain = route_domain(query, domain)
+        
+        # P1: Classify query intent before processing
+        intent = classify_intent(query)
+        
+        # P1: Check for immediate safety halt
+        should_halt, halt_reason = check_safety_halt(query, intent, 0.5)  # Initial confidence estimate
+        if should_halt:
+            # Return crisis resources immediately
+            return {
+                "status": "HALT_SAFETY",
+                "answer_class": "SAFETY_HALT",
+                "answer": f"Safety concern detected: {halt_reason}. Please seek immediate professional help.",
+                "confidence": 0.0,
+                "domain": routed_domain,
+                "emergency_resources": self._get_emergency_resources(intent),
+                "narrative": {"context": "", "scenarios": {}, "recommendation": "Seek professional help immediately"},
+                "replay": {},
+                "data_recency_years": 0,
+            }
+        
         frags = self._fragments_for(query, routed_domain)
         priors = retrieve_similar(self.memory_path, query, routed_domain)
+        
+        # Calculate base confidence from Monte Carlo
         result = self.mc.run(query=query, domain=routed_domain, fragments=frags)
+        
+        # P1: Apply graceful degradation instead of binary HALT
+        base_confidence = result.get("confidence", 0.0) / 100.0  # Convert to 0-1 scale
+        
+        # Use graceful degradation for medical/safety-sensitive domains
+        if routed_domain in ["healthcare", "medical"] or intent.requires_medical_disclaimer:
+            graded_result = process_query_with_degradation(query, frags, base_confidence)
+            
+            # Override with graded response
+            result["status"] = graded_result["status"]
+            result["confidence"] = graded_result["confidence"]["percent"] * 100
+            
+            # Add disclaimers and resources to narrative
+            if "important_notice" in graded_result:
+                result["disclaimers"] = graded_result["important_notice"]
+            if "urgent_resources" in graded_result:
+                result["emergency_resources"] = graded_result["urgent_resources"]
+        
+        # Legacy fallback for non-medical domains
         if result["status"].startswith("HALT") and frags:
             result["status"] = "ANSWER_LOW_CONFIDENCE"
         if priors and result.get("confidence", 0.0) < 60:
@@ -185,7 +232,7 @@ class OpenEyesEngine:
             fragments_count=len(frags),
             fragments=frags
         )
-        answer_class = "ANSWER_CONFIDENT" if result["status"] == "ANSWER" else "ANSWER_LOW_CONFIDENCE"
+        answer_class = "ANSWER_CONFIDENT" if result["status"] == "ANSWER_HIGH_CONFIDENCE" else "ANSWER_LOW_CONFIDENCE"
 
         out = {
             "status": result["status"],
@@ -197,6 +244,13 @@ class OpenEyesEngine:
             "replay": replay,
             "data_recency_years": self._estimate_data_recency_years(frags),
         }
+        
+        # Add P1 enhancements
+        if "disclaimers" in result:
+            out["disclaimers"] = result["disclaimers"]
+        if "emergency_resources" in result:
+            out["emergency_resources"] = result["emergency_resources"]
+        
         ingest_case(
             self.memory_path,
             {
@@ -211,6 +265,27 @@ class OpenEyesEngine:
         )
         write_audit_log(self.vault_path, query, out)
         return out
+    
+    @staticmethod
+    def _get_emergency_resources(intent) -> dict:
+        """Get emergency resources based on intent."""
+        resources = {}
+        
+        # Always provide immediate emergency contact for urgency
+        if intent.urgency_detected:
+            resources['immediate'] = 'Call 911 or your local emergency number immediately'
+        
+        # Provide crisis lifeline for suicide/self-harm related queries
+        if intent.intent.value == 'urgency' or intent.suggested_routing == 'emergency':
+            resources['crisis'] = '988 Suicide & Crisis Lifeline (US)'
+            resources['text_line'] = 'Text HOME to 741741 for Crisis Text Line'
+        
+        # Poison control for overdose/poisoning queries
+        query_keywords = str(intent.entities) if hasattr(intent, 'entities') else ''
+        if any(kw in query_keywords.lower() for kw in ['overdose', 'poison']):
+            resources['poison'] = 'Poison Control: 1-800-222-1222 (US)'
+        
+        return resources
 
     @staticmethod
     def _estimate_data_recency_years(fragments: list[Fragment]) -> int:

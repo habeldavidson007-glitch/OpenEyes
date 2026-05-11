@@ -442,7 +442,11 @@ def check_safety_halt(query: str, intent: IntentClassification, confidence: floa
     query_lower = query.lower()
     
     # Immediate halt for self-harm (redirect to crisis resources)
-    if any(kw in query_lower for kw in ['suicide', 'kill myself', 'end my life']):
+    self_harm_keywords = [
+        'suicide', 'kill myself', 'end my life', 'harm myself', 
+        'self-harm', 'cutting myself', 'take my own life'
+    ]
+    if any(kw in query_lower for kw in self_harm_keywords):
         return True, "SELF_HARM_DETECTED"
     
     # Halt for emergency medical situations (provide crisis resources)
