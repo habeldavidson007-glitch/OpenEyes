@@ -1,23 +1,47 @@
-```
-# Binary/compiled files
-*.bin
+```gitignore
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Logs and temp files
-*.log
-*.tmp
+# Test results
+test_results/
 
-# Environment
+# Environment files
 .env
 .env.local
-.env.*
+*.env.*
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
 
 # Editors
 .vscode/
 .idea/
 
-# Coverage and testing
+# Coverage reports
 .coverage
-coverage/
 htmlcov/
-.pytest_cache/
+coverage/
+
+# Build artifacts
+dist/
+build/
+target/
+*.class
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
 ```
