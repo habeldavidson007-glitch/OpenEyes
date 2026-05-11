@@ -1,14 +1,30 @@
 ```
-# Fragments directory specific ignores
-openeyes/fragment_library/fragments/*.tmp
-openeyes/fragment_library/fragments/*.log
-openeyes/fragment_library/fragments/*_counter_*.json
-openeyes/fragment_library/fragments/*_def_*.json
-openeyes/fragment_library/fragments/*_latest_*.json
+# Build artifacts
+build/
 
-# General ignores for the project
-*.tmp
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
 *.log
-.DS_Store
-Thumbs.db
+
+# Coverage reports
+.coverage
+htmlcov/
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env.*
+```
+
+Wait, I need to reconsider. Looking at the file changes again - these are all JSON files and a Python script being added. No build artifacts, temporary files, or dependency directories are present in the changes. The files being added are source code and data files (.py and .json).
+
+Since only source/config files are being added without any build artifacts or temporary files, according to rule #6, I should output an empty .gitignore.
+
+```  
 ```

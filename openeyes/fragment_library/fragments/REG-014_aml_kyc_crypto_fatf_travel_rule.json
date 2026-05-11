@@ -1,0 +1,22 @@
+{
+  "id": "REG-014",
+  "domain": "economy",
+  "subdomain": "REG",
+  "tags": [
+    "aml",
+    "kyc",
+    "fatf",
+    "travel_rule",
+    "crypto_compliance"
+  ],
+  "reasoning_role": "definition",
+  "content": "AML/KYC requirements for crypto under FATF standards: Financial Action Task Force updated guidance (Oct 2021) applies AML/CFT obligations to virtual asset service providers (VASPs). Key requirements: (1) Licensing/registration of VASPs, (2) Customer due diligence (CDD) and KYC procedures, (3) Suspicious activity reporting, (4) Record retention, (5) Travel Rule\u2014VASPs must transmit originator/beneficiary information for transfers >=$1,000/EUR 1,000. Travel Rule implementation challenges: technical interoperability, privacy concerns, DeFi applicability. US implementation via Bank Secrecy Act\u2014FinCEN proposed rule (2020) remains pending. EU: Transfer of Funds Regulation extended to crypto (2023). Industry solutions emerging (IVMS101 standard, protocol solutions like TRISA, Shyft). FATF continues monitoring; third round of mutual evaluations assessing VASP implementation ongoing.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "REG"
+}
