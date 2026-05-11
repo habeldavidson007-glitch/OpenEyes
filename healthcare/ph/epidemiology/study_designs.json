@@ -1,0 +1,35 @@
+[
+  {
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["epidemiology", "study design", "RCT", "cohort study", "case-control", "evidence hierarchy"],
+    "reasoning_role": "definition",
+    "content": "Study designs form a hierarchy of evidence for causal inference. Randomized Controlled Trials (RCTs) randomly assign participants to intervention or control groups, minimizing confounding and providing the strongest evidence for treatment efficacy. Cohort studies follow exposed and unexposed groups forward in time to observe outcomes, establishing temporality and suitable for studying multiple outcomes from one exposure, but vulnerable to confounding. Case-control studies start with outcomes (cases) and compare their past exposures to controls without the outcome, efficient for rare diseases but susceptible to recall bias. Cross-sectional studies measure exposure and outcome simultaneously at one time point, useful for prevalence estimates but cannot establish temporality. The evidence hierarchy ranks: systematic reviews/meta-analyses of RCTs at the top, followed by individual RCTs, cohort studies, case-control studies, cross-sectional studies, case series, and expert opinion. Each design has strengths: RCTs for internal validity, cohort studies for natural history and multiple outcomes, case-control for rare diseases, cross-sectional for hypothesis generation and burden estimation.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/31906877/",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["epidemiology", "study design", "randomization", "confounding", "bias"],
+    "reasoning_role": "treatment_protocol",
+    "content": "Selecting appropriate study designs depends on research questions, ethics, feasibility, and resources. RCTs are mandatory for regulatory approval of new treatments but may be unethical (withholding proven treatment), impractical (long latency outcomes), or too expensive. Cohort studies excel for: studying harmful exposures where randomization is unethical (smoking, occupational hazards); examining multiple outcomes from one exposure; establishing disease natural history; when exposure is rare. Prospective cohorts minimize recall bias but require long follow-up; retrospective cohorts use existing data but have limited variable availability. Case-control studies are optimal for: rare diseases (cancers, congenital anomalies); diseases with long latency; initial hypothesis testing before committing to expensive cohorts. Controls must represent the source population that produced cases. Cross-sectional studies serve public health surveillance, healthcare needs assessment, and generating hypotheses about associations. Nested case-control studies within cohorts combine advantages: cohort's defined population with case-control efficiency. Pragmatic RCTs bridge efficacy-effectiveness gaps by testing interventions in real-world settings with broad inclusion criteria.",
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK448143/",
+    "credibility_class": "A",
+    "year": 2024
+  },
+  {
+    "domain": "healthcare",
+    "subdomain": "PH",
+    "sector": "PH",
+    "tags": ["epidemiology", "study design", "internal validity", "external validity", "causal inference"],
+    "reasoning_role": "diagnostic_criteria",
+    "content": "Critical appraisal of study designs requires assessing validity threats. RCT validity depends on: adequate randomization (allocation concealment, sequence generation); blinding (participants, providers, outcome assessors); low attrition (<20%, balanced between arms); intention-to-treat analysis; pre-specified outcomes (preventing data dredging). Cohort study validity requires: accurate exposure measurement (prospective > retrospective); complete follow-up (losses introduce selection bias); valid outcome ascertainment (blinded adjudication); confounding control (multivariable adjustment, propensity scores, stratification). Case-control validity hinges on: appropriate control selection (same source population as cases); exposure assessment blinded to case status; matching variables appropriately analyzed; avoiding overmatching (matching on intermediates). Cross-sectional studies cannot infer causation due to unclear temporality but can suggest associations warranting longitudinal investigation. Common flaws: selection bias (non-representative samples); information bias (differential misclassification); confounding (unmeasured third variables); reverse causation (outcome causes exposure). Bradford Hill criteria (strength, consistency, specificity, temporality, biological gradient, plausibility, coherence, experiment, analogy) help evaluate causality from observational data when RCTs are unavailable.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/30857511/",
+    "credibility_class": "A",
+    "year": 2024
+  }
+]
