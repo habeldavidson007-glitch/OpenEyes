@@ -66,10 +66,17 @@ class IndexedFragment:
                     topic = parts[3]
                     role = parts[4]
                     
-                    # Extract keywords from content
+                    # Extract keywords from content - handle dict vs string
                     claim = data.get('claim', '') or data.get('content', '')
                     evidence = data.get('evidence', '')
-                    keywords = extract_keywords(claim + ' ' + evidence)
+                    
+                    # Ensure we're working with strings
+                    if isinstance(claim, dict):
+                        claim = str(claim.get('text', '') or claim.get('content', ''))
+                    if isinstance(evidence, dict):
+                        evidence = str(evidence.get('text', ''))
+                    
+                    keywords = extract_keywords(str(claim) + ' ' + str(evidence))
                     
                     return cls._create_fragment(
                         data=data,
@@ -210,8 +217,16 @@ class LocalFragmentIndex:
     - Semantic similarity search
     """
     
-    def __init__(self, base_path: str = None):
-        self.base_path = base_path or '/workspace/openeyes/domains'
+    def __init__(self, base_paths: list[str] = None):
+        # Support multiple fragment locations
+        if base_paths is None:
+            self.base_paths = [
+                '/workspace/openeyes/domains',  # Legacy healthcare/economy location
+                '/workspace/openeyes/knowledge/fragments',  # New governance location
+            ]
+        else:
+            self.base_paths = base_paths if isinstance(base_paths, list) else [base_paths]
+        
         self.index: dict[str, list[IndexedFragment]] = defaultdict(list)  # domain -> fragments
         self.keyword_index: dict[str, list[IndexedFragment]] = defaultdict(list)  # keyword -> fragments
         self.entity_index: dict[str, list[IndexedFragment]] = defaultdict(list)  # entity -> fragments
@@ -220,42 +235,50 @@ class LocalFragmentIndex:
         self._loaded = False
     
     def load_all(self) -> int:
-        """Load all fragments from the domains directory."""
+        """Load all fragments from ALL domain directories."""
         if self._loaded:
             return self.total_fragments
         
         count = 0
-        domains_dir = Path(self.base_path)
         
-        if not domains_dir.exists():
-            print(f"[LOCAL_INDEX] Domains directory not found: {domains_dir}")
-            return 0
-        
-        # Find ALL JSON files (not just frag_*.json pattern)
-        # Legacy format uses descriptive names like hepatic_dosing.json
-        for json_file in domains_dir.rglob('*.json'):
-            indexed_frag = IndexedFragment.from_json_file(str(json_file))
-            if indexed_frag:
-                # Add to domain index
-                self.index[indexed_frag.domain].append(indexed_frag)
-                
-                # Add to keyword index
-                for kw in indexed_frag.keywords:
-                    self.keyword_index[kw].append(indexed_frag)
-                
-                # Add to entity index (topic-level entities)
-                entity_key = f"{indexed_frag.domain}:{indexed_frag.topic}"
-                self.entity_index[entity_key].append(indexed_frag)
-                
-                # Add to hierarchical index
-                hier_key = (indexed_frag.domain, indexed_frag.sector, indexed_frag.topic)
-                self.domain_sector_topic_index[hier_key].append(indexed_frag)
-                
-                count += 1
+        for base_path in self.base_paths:
+            domains_dir = Path(base_path)
+            
+            if not domains_dir.exists():
+                print(f"[LOCAL_INDEX] Directory not found: {domains_dir}")
+                continue
+            
+            print(f"[LOCAL_INDEX] Scanning directory: {domains_dir}")
+            
+            # Find ALL JSON files recursively
+            for json_file in domains_dir.rglob('*.json'):
+                indexed_frag = IndexedFragment.from_json_file(str(json_file))
+                if indexed_frag:
+                    # Add to domain index
+                    self.index[indexed_frag.domain].append(indexed_frag)
+                    
+                    # Add to keyword index
+                    for kw in indexed_frag.keywords:
+                        self.keyword_index[kw].append(indexed_frag)
+                    
+                    # Add to entity index (topic-level entities)
+                    entity_key = f"{indexed_frag.domain}:{indexed_frag.topic}"
+                    self.entity_index[entity_key].append(indexed_frag)
+                    
+                    # Add to hierarchical index
+                    hier_key = (indexed_frag.domain, indexed_frag.sector, indexed_frag.topic)
+                    self.domain_sector_topic_index[hier_key].append(indexed_frag)
+                    
+                    count += 1
         
         self.total_fragments = count
         self._loaded = True
-        print(f"[LOCAL_INDEX] Loaded {count} fragments from {self.base_path}")
+        print(f"[LOCAL_INDEX] Loaded {count} total fragments across all directories")
+        
+        # Print domain breakdown
+        for domain, frags in self.index.items():
+            print(f"[LOCAL_INDEX]   - {domain}: {len(frags)} fragments")
+        
         return count
     
     def search_by_keywords(self, query: str, domain: str = None, limit: int = 10) -> list[Fragment]:

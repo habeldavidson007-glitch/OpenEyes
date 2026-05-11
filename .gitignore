@@ -1,7 +1,38 @@
 ```
-# Test results
-test_results/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Audit and vault files
-.openeyes/vault/audit/memory.bin
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Dependencies
+.venv/
+venv/
+.env/
+
+# Editors
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Build artifacts
+dist/
+build/
+target/
 ```

@@ -25,6 +25,7 @@ from openeyes.ingestion.web_scraper import scrape_authoritative_sources
 from openeyes.ingestion.auto_fragment import convert_to_fragments, verify_consistency
 from openeyes.core.intent_router import route_intent
 from openeyes.core.reasoning_engine import get_reasoning_engine
+from openeyes.core.emergency_detection import detect_emergency, get_emergency_message
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
@@ -54,18 +55,29 @@ def _compose_user_answer(
     fragments_count: int = 0,
     fragments: list[Fragment] | None = None
 ) -> str:
-    """Compose answer directly from fragments without narrative expansion."""
-    if not fragments:
-        return "No verified information available for this query."
+    """
+    P0 CRITICAL FIX: Compose answer ONLY from retrieved fragments.
     
-    # Build answer from fragment content only
+    This prevents hallucination by ensuring answers are strictly derived
+    from actual fragment content, not generated or inferred text.
+    """
+    if not fragments or len(fragments) == 0:
+        return "No verified information available for this query in our knowledge base."
+    
+    # Build answer from fragment content only - NO synthesis or generation
     answer_parts = []
-    for frag in fragments[:5]:  # Limit to top 5 fragments
-        content = getattr(frag, "content", "") or getattr(frag, "claim", "")
+    for frag in fragments[:5]:  # Limit to top 5 most relevant fragments
+        # Extract content from fragment (handle different attribute names)
+        content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
+        
         if content:
             answer_parts.append(content)
     
-    return "\n\n".join(answer_parts) if answer_parts else "No verified information available."
+    if not answer_parts:
+        return "No verified information available for this query in our knowledge base."
+    
+    # Join with clear separation
+    return "\n\n".join(answer_parts)
 
 
 class OpenEyesEngine:
@@ -169,12 +181,30 @@ class OpenEyesEngine:
         )
 
     def answer(self, query: str, domain: str | None = None) -> dict:
+        # P0 CRITICAL FIX: Emergency detection BEFORE any processing
+        is_emergency, emergency_type, emergency_resources = detect_emergency(query)
+        if is_emergency:
+            # IMMEDIATE HALT - Do not proceed with answer generation
+            return {
+                "status": "HALT_EMERGENCY",
+                "answer_class": "EMERGENCY_HALT",
+                "answer": get_emergency_message(emergency_type, emergency_resources),
+                "confidence": 0.0,
+                "domain": domain or "healthcare",
+                "emergency": True,
+                "emergency_type": emergency_type,
+                "emergency_resources": emergency_resources,
+                "narrative": {"context": "Medical emergency detected", "scenarios": {}, "recommendation": "Seek immediate medical attention"},
+                "replay": {},
+                "data_recency_years": 0,
+            }
+        
         routed_domain = route_domain(query, domain)
         
         # P1: Classify query intent before processing
         intent = classify_intent(query)
         
-        # P1: Check for immediate safety halt
+        # P1: Check for immediate safety halt (secondary check)
         should_halt, halt_reason = check_safety_halt(query, intent, 0.5)  # Initial confidence estimate
         if should_halt:
             # Return crisis resources immediately
