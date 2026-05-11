@@ -22,6 +22,7 @@ from openeyes.swarm import Swarm, FragmentCandidate, create_api_connectors
 from openeyes.dice_table import WurfelspielAssembler, DiceTable
 from openeyes.domain_rules import get_domain_rules, get_domain_tier, DomainRulesLoader
 from openeyes.core.kap import build_kap, kap_to_trace
+from openeyes.core.ekd import EKDStore
 
 from shared_core.monte_carlo_engine import (
     monte_carlo_evolve, 
@@ -189,6 +190,9 @@ class OpenEyes:
         # Initialize Compiled Logic Index (Instinct Layer)
         self.compiled_logic = CompiledLogicIndex()
         
+        # Initialize EKD Store
+        self.ekd_store = EKDStore()
+        
         # Initialize Obsidian connector (optional)
         self.obsidian = None
         if obsidian_vault_path:
@@ -332,18 +336,52 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
                 keywords=keywords
             )
             
-            # Step 0.7: Log KAP trace
+            # Step 0.7: EKD check — find matching knowledge cluster
+            ekd_match = self.ekd_store.find_matching_cluster(
+                canonical_query=normalized_query,
+                domain=self.domain,
+                primary_tags=keywords[:5]
+            )
+            
+            cluster_fragments = []
+            if ekd_match:
+                # Activate cluster — get its pre-validated fragments as head start
+                cluster_fragments = self.ekd_store.get_cluster_fragments(
+                    ekd_match, self.library
+                )
+                print(f"[EKD] Activated cluster v{ekd_match.current_version}: "
+                      f"{len(cluster_fragments)} fragments pre-loaded")
+            
+            # Step 0.8: Log KAP trace
             kap_trace = kap_to_trace(kap)
             print(f"\n{kap_trace}\n")
             
-            # Step 0.8: Execute retrieval layer by layer
+            # Step 0.9: Execute retrieval layer by layer
             candidates_by_layer = self.swarm.retrieve_by_kap(
                 query=normalized_query,
                 domain=self.domain,
                 kap=kap
             )
             
-            # Step 0.9: Check mandatory layers all have results
+            # Step 0.10: Merge cluster fragments with fresh retrieval
+            # Cluster fragments get a slight priority boost (they're pre-validated)
+            all_candidates = list(cluster_fragments)
+            for layer_name, candidates in candidates_by_layer.items():
+                if not layer_name.endswith('_MISSING'):
+                    all_candidates.extend(candidates)
+            
+            # Deduplicate by fragment_id
+            seen_ids = set()
+            unique_candidates = []
+            for c in all_candidates:
+                frag_id = getattr(c, 'fragment_id', getattr(c, 'id', str(c)))
+                if frag_id not in seen_ids:
+                    seen_ids.add(frag_id)
+                    unique_candidates.append(c)
+            
+            candidates = unique_candidates
+            
+            # Step 0.11: Check mandatory layers all have results
             halt_reason = None
             for layer in kap.mandatory_layers():
                 missing_key = f"{layer.name}_MISSING"
@@ -546,6 +584,22 @@ To answer this, the library would need: general knowledge or encyclopedia fragme
                     print(f"[Logic Hardening] Created new synapse from this successful query")
                 except Exception as e:
                     print(f"[Logic Hardening] Could not create synapse: {e}")
+            
+            # EKD CRYSTALLIZATION: If answer succeeded with high confidence, crystallize into EKD
+            if not result.get('halt') and result.get('confidence', 0) >= 75.0:
+                used_fragment_ids = [
+                    f.get('fragment_id', '') 
+                    for f in result.get('fragments_used', [])
+                ]
+                self.ekd_store.crystallize(
+                    canonical_query=normalized_query,
+                    domain=self.domain,
+                    fragment_ids=used_fragment_ids,
+                    confidence=result.get('confidence', 0),
+                    primary_tags=keywords[:5],
+                    kap_intent_type=kap.intent.intent_type,
+                    trigger_query=query_text
+                )
             
             # Success!
             print(f"\n{'='*60}")
