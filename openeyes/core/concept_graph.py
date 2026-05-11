@@ -104,18 +104,36 @@ class PremiseValidator:
     
     IMPOSSIBLE_PATTERNS = [
         # Financial impossibilities
-        (r'\bguaranteed\b.*\breturn\b.*\bzero\s+risk\b', "No investment guarantees returns with zero risk"),
-        (r'\bimmune\b.*\b(?:failure|loss|risk)\b', "No strategy provides complete immunity to financial loss"),
-        (r'\b100%\s*(?:success|profit|gain)\b', "No investment has 100% success rate"),
+        (r'\bguaranteed\b.*\breturn\b', "No investment guarantees returns"),
+        (r'\bzero\s+risk\b', "No investment has zero risk"),
+        (r'\brisk\s+free.*profit\b', "Profit without risk is impossible"),
+        (r'\balways\s+wins\b', "No strategy always wins"),
+        (r'\bnever\s+loses\b', "No strategy never loses"),
+        (r'\bimmune\s+to.*(?:loss|failure|risk)\b', "No strategy provides complete immunity to financial loss"),
+        (r'\bimmune\s+to\s+all\b', "Nothing is immune to all risks"),
+        (r'\b100%\s*(?:success|profit|gain|return)\b', "No investment has 100% success rate"),
         (r'\bfree\s+money\b', "There is no such thing as free money without risk or effort"),
+        (r'\bcannot\s+fail\b', "All strategies carry some risk of failure"),
+        (r'\binfallible\b', "No strategy is infallible"),
+        (r'\bmagic\s+bullet\b', "There is no magic bullet in investing"),
+        (r'\bsecret\s+loophole\b', "Secret loopholes for guaranteed profit don't exist"),
+        (r'\bguaranteed\s+wealth\b', "Guaranteed wealth is impossible"),
+        (r'\bsecret\s+to.*guaranteed\b', "No secret guarantees wealth"),
         
         # Medical impossibilities
-        (r'\bcure\s+all\b.*\bdisease\b', "No single cure exists for all diseases"),
+        (r'\bcure\s+all\b.*\bdisease', "No single cure exists for all diseases"),
+        (r'\bcure\s+for\s+all\s+diseases\b', "No single cure exists for all diseases"),
+        (r'\bcure\s+everything\b', "No cure exists for everything"),
         (r'\bzero\s+side\s+effects\b', "All medical interventions carry some risk of side effects"),
         
-        # Governance impossibilities
+        # Governance/General impossibilities
         (r'\bperfect\s+democracy\b', "No political system achieves perfect democracy"),
-        (r'\babsolute\s+power\b.*\bno\s+corruption\b', "Absolute power without corruption is historically unprecedented"),
+        (r'\babsolute\s+power\b', "Absolute power without corruption is historically unprecedented"),
+        (r'\babsolute\s+control\b', "Absolute control is impossible"),
+        (r'\bpredict.*future.*perfectly\b', "Perfect prediction of the future is impossible"),
+        (r'\b100%\s*accurate.*prediction\b', "100% accurate predictions are impossible"),
+        (r'\bsolves\s+all\s+problems\b', "No policy solves all problems without tradeoffs"),
+        (r'\bwithout\s+tradeoffs?\b', "All solutions involve tradeoffs"),
     ]
     
     def validate_premise(self, query: str) -> Dict:

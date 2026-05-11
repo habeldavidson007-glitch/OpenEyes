@@ -1,4 +1,10 @@
 ```gitignore
-# Test results and reports
-test_results/
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled Python files in specific directories
+openeyes/core/__pycache__/
 ```
