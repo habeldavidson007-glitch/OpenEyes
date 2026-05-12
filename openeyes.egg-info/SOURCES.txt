@@ -33,6 +33,7 @@ openeyes/core/logical_synthesizer.py
 openeyes/core/narrative.py
 openeyes/core/reasoning_engine.py
 openeyes/core/router.py
+openeyes/core/synthesis_engine.py
 openeyes/dice_table/__init__.py
 openeyes/domain_functor/__init__.py
 openeyes/domain_rules/__init__.py
@@ -67,6 +68,8 @@ openeyes/storage/memory.py
 openeyes/storage/vault.py
 openeyes/success_pattern_learner/__init__.py
 openeyes/swarm/__init__.py
+openeyes/ui/__init__.py
+openeyes/ui/control_deck.py
 shared_core/__init__.py
 shared_core/monte_carlo_engine.py
 shared_core/obsidian_connector.py
