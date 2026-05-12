@@ -10,14 +10,15 @@ from openeyes.knowledge.hierarchies import normalize_domain
 DOMAIN_KEYWORDS: dict[str, tuple[str, ...]] = {
     "economy": (
         "economy", "economic", "finance", "financial", "market", "trading",
-        "investment", "stocks", "portfolio", "return", "risk", "money",
+        "investment", "stocks", "stock", "portfolio", "return", "risk", "money",
         "banking", "currency", "inflation", "gdp", "recession", "interest rate",
         "federal reserve", "fed", "crypto", "bitcoin", "ethereum", "bonds",
         "treasury", "earnings", "revenue", "valuation", "pe ratio", "dividend",
         "commodity", "oil", "gold", "energy", "geopolitical", "trade war",
         "tariff", "sanctions", "forex", "exchange rate", "hedge", "derivatives",
         "options", "futures", "etf", "index fund", "sector", "bull", "bear",
-        "yield", "spread", "liquidity", "volatility", "short selling", "margin"
+        "yield", "spread", "liquidity", "volatility", "short selling", "margin",
+        "roi", "roe", "roa"
     ),
     "healthcare": (
         "health", "medical", "medicine", "doctor", "patient", "disease",
