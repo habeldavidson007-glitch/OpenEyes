@@ -1,34 +1,7 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Audit logs
+.openeyes/vault/audit/*.md
 
-# Dependencies
-.venv/
-venv/
-env/
-.env
-.env.local
-.env.*
-
-# Build artifacts
-build/
-dist/
-*.egg-info/
-
-# Editors
-.vscode/
-.idea/
-
-# System
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Memory/Caching
-.openeyes/vault/audit/memory.bin
+# Binary files
+*.bin
 ```
