@@ -20,18 +20,32 @@ class RetrievalRecord:
 
 def retrieve_records(query: str, domain: str, limit: int) -> List[RetrievalRecord]:
     """
-    Enhanced retrieval with local fragment support.
+    Enhanced retrieval with local fragment support and swarm integration.
     
     New retrieval chain:
-    1. Local fragments (curated knowledge base) - FAST & RELIABLE
-    2. Live web fetch (external APIs) - For recent/missing info
-    3. JIT synthesis (only for non-verified domains) - Fallback
+    1. Swarm WAL buffer (pre-computed autonomous harvest data) - ZERO LATENCY
+    2. Local fragments (curated knowledge base) - FAST & RELIABLE
+    3. Live web fetch (external APIs) - For recent/missing info
+    4. JIT synthesis (only for non-verified domains) - Fallback
     
-    This fixes the critical bug where 280+ local fragments were never queried.
+    This integrates the Autonomous Signal-Pulse Swarm into the query pipeline,
+    enabling zero-latency answers from pre-harvested, tokenized data.
     """
     frags: List[Fragment] = []
     
-    # PRIORITY 1: Local fragment retrieval (NEW - P0 fix)
+    # PRIORITY 0: Swarm WAL buffer (NEW - autonomous harvest data)
+    try:
+        from openeyes.swarm.swarm_retrieval import integrate_swarm_with_retrieval
+        swarm_frags = integrate_swarm_with_retrieval(query, domain, limit=limit)
+        if swarm_frags:
+            frags.extend(swarm_frags)
+            print(f"[RETRIEVAL] Found {len(swarm_frags)} fragments from SWARM (pre-computed)")
+    except ImportError as e:
+        print(f"[RETRIEVAL] Swarm integration not available: {e}")
+    except Exception as e:
+        print(f"[RETRIEVAL] Swarm retrieval error: {e}")
+    
+    # PRIORITY 1: Local fragment retrieval (curated knowledge base)
     # Map domain names to internal codes
     domain_code_map = {
         'healthcare': 'hc',
@@ -48,7 +62,7 @@ def retrieve_records(query: str, domain: str, limit: int) -> List[RetrievalRecor
     except Exception as e:
         print(f"[RETRIEVAL] Local retrieval error: {e}")
     
-    # PRIORITY 2: Live web fetch (if local insufficient)
+    # PRIORITY 2: Live web fetch (if local + swarm insufficient)
     if len(frags) < limit:
         remaining = limit - len(frags)
         live_frags = fetch_live_fragments(query, domain, limit=remaining)
@@ -80,6 +94,10 @@ def retrieve_records(query: str, domain: str, limit: int) -> List[RetrievalRecor
         # Boost confidence for local curated fragments
         if hasattr(f, 'source_id') and f.source_id.endswith('.json'):
             confidence = min(0.95, confidence + 0.15)  # Local fragments get boost
+        
+        # Boost confidence for swarm-harvested fragments (pre-verified)
+        if hasattr(f, 'swarm_metadata'):
+            confidence = min(0.95, confidence + 0.10)  # Swarm fragments get boost
         
         records.append(
             RetrievalRecord(
