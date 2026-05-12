@@ -1,7 +1,7 @@
 ```
-# Audit logs
-.openeyes/vault/audit/*.md
-
-# Binary files
+# Binary and compiled files
 *.bin
+
+# Environment and cache
+.openeyes/
 ```
