@@ -1,12 +1,52 @@
 ```
-# Binary/compiled files
-*.bin
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Local development
-.openeyes/
+# Database
+wal_buffer.db
 
-# Environment
+# Dependencies
+.venv/
+venv/
+env/
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+*.egg-info/
+
+# Logs
+*.log
+
+# Environment files
 .env
 .env.local
 *.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+.coverage.*
+.nox/
+.tox/
+
+# Cache
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
 ```
