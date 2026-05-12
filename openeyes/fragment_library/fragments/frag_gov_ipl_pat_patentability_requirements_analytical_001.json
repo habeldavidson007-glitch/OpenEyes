@@ -10,7 +10,13 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "trademark",
+    "copyright",
+    "patent",
+    "counter_argument"
+  ],
   "content": "Fragment frag_gov_ipl_pat_patentability_requirements_analytical_001",
   "source": "Unknown"
 }

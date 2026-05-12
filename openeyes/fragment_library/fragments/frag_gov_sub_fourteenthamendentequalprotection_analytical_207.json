@@ -10,7 +10,10 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "counter_argument"
+  ],
   "content": "Fragment gov_sub_fourteenthamendentequalprotection_analytical_207",
   "source": "Unknown"
 }

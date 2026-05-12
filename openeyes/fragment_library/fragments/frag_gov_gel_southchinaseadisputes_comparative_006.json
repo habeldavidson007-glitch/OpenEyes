@@ -3,7 +3,10 @@
   "domain": "governance",
   "sector": "GEL",
   "content": "{'overview': 'This fragment describes southchinaseadisputes in geopolitical analysis. Nine-dash line China claim.', 'key_points': ['Nine-dash line China claim', '2016 ruling rejected claim', 'China rejected ruling', 'Artificial island building', 'Multiple claimants'], 'sources': ['World Bank WGI (databank.worldbank.org)', 'Freedom House (freedomhouse.org)', 'CSIS (csis.org)', 'Brookings (brookings.edu)', 'Carnegie (carnegieendowment.org)', 'Lowy Institute (lowyinstitute.org)'], 'philosophy_guard': 'Describes what IS - theories patterns cases. Not what SHOULD BE.', 'credibility_score': 0.94}",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "counter_argument"
+  ],
   "source": "Unknown",
   "source_url": "https://www.un.org",
   "credibility_class": "anecdotal",

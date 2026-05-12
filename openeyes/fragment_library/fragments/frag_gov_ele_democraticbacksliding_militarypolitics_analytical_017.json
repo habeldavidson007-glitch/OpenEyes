@@ -10,7 +10,13 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "democracy",
+    "electoral_system",
+    "counter_argument",
+    "democratic_backsliding"
+  ],
   "content": "Fragment frag_gov_ele_democraticbacksliding_militarypolitics_analytical_017",
   "source": "Unknown"
 }

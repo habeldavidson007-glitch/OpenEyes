@@ -10,7 +10,10 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition"
+  ],
   "content": "Fragment frag_gov_ipl_tmk_international_definitional_008",
   "source": "Unknown"
 }

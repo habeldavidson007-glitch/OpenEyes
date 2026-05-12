@@ -10,7 +10,12 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition",
+    "election",
+    "voting"
+  ],
   "content": "Fragment frag_gov_ele_votingsystems_electoralthresholds_definitional_025",
   "source": "Unknown"
 }

@@ -10,7 +10,11 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "counter_argument",
+    "treaty"
+  ],
   "content": "Fragment frag_gov_sec_inftreaty_analytical_096",
   "source": "Unknown"
 }

@@ -10,7 +10,15 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "voting",
+    "democracy",
+    "definition",
+    "electoral_system",
+    "democratic_backsliding",
+    "election"
+  ],
   "content": "Fragment frag_gov_ele_democraticbacksliding_electionmanipulation_definitional_007",
   "source": "Unknown"
 }

@@ -10,7 +10,10 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "latest_data",
+    "GOV"
+  ],
   "content": "Fragment gov_sub_concurrentownership_procedural_95",
   "source": "Unknown"
 }

@@ -10,7 +10,12 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition",
+    "election",
+    "voting"
+  ],
   "content": "Fragment gov_jud_jury_selection_procedural_092",
   "source": "Unknown"
 }

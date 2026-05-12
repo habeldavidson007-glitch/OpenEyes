@@ -10,7 +10,12 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "judiciary",
+    "definition",
+    "court"
+  ],
   "content": "Fragment gov_jud_supreme_court_procedural_005",
   "source": "Unknown"
 }

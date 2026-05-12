@@ -10,7 +10,11 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition",
+    "treaty"
+  ],
   "content": "Fragment frag_gov_int_treatyinterpretation_procedural_014",
   "source": "Unknown"
 }

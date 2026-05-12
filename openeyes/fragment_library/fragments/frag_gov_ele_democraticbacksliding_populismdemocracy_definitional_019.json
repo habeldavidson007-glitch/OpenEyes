@@ -10,7 +10,14 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "democracy",
+    "electoral_system",
+    "democratic_backsliding",
+    "definition",
+    "populism"
+  ],
   "content": "Fragment frag_gov_ele_democraticbacksliding_populismdemocracy_definitional_019",
   "source": "Unknown"
 }

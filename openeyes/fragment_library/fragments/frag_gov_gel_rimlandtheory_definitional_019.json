@@ -3,7 +3,10 @@
   "domain": "governance",
   "sector": "GEL",
   "content": "{'overview': 'This fragment describes rimlandtheory in geopolitical analysis. Spykman modification of Mackinder.', 'key_points': ['Spykman modification of Mackinder', 'Coastal Eurasia Europe Middle East Asia', 'Controlling Rimland key', 'Foundation for containment', 'Indo-Pacific application'], 'sources': ['World Bank WGI (databank.worldbank.org)', 'Freedom House (freedomhouse.org)', 'CSIS (csis.org)', 'Brookings (brookings.edu)', 'Carnegie (carnegieendowment.org)', 'Lowy Institute (lowyinstitute.org)'], 'philosophy_guard': 'Describes what IS - theories patterns cases. Not what SHOULD BE.', 'credibility_score': 0.94}",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition"
+  ],
   "source": "Unknown",
   "source_url": "https://www.un.org",
   "credibility_class": "anecdotal",

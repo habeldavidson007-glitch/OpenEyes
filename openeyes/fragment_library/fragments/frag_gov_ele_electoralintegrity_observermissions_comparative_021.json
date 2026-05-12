@@ -10,7 +10,12 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "counter_argument",
+    "election",
+    "voting"
+  ],
   "content": "Fragment frag_gov_ele_electoralintegrity_observermissions_comparative_021",
   "source": "Unknown"
 }

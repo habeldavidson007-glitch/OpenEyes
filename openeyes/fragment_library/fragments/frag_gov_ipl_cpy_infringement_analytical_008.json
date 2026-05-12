@@ -10,7 +10,10 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "counter_argument"
+  ],
   "content": "Fragment frag_gov_ipl_cpy_infringement_analytical_008",
   "source": "Unknown"
 }

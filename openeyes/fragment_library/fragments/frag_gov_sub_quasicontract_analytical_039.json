@@ -10,7 +10,10 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "counter_argument"
+  ],
   "content": "Fragment gov_sub_quasicontract_analytical_39",
   "source": "Unknown"
 }

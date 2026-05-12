@@ -3,7 +3,10 @@
   "domain": "governance",
   "sector": "GOV",
   "content": "{'summary': '. This fragment examines scholarly debates, empirical patterns, and comparative perspectives.', 'key_points': ['Major scholarly debates about comparative presidentialism', 'Empirical evidence and quantitative findings', 'Cross-national or cross-jurisdictional comparisons', 'Criticisms and reform proposals', 'Future trends and emerging challenges'], 'sources': ['Congressional Research Service reports', 'U.S. Constitution', 'Constitution Annotated (congress.gov)', 'Government Publishing Office', 'Relevant Supreme Court opinions'], 'related_fragments': [], 'last_updated': '2024-01-15', 'credibility_score': 0.95, 'philosophy_guard_passed': True, 'philosophy_guard_note': 'Descriptive claim about presidential systems; no normative advocacy regarding what should be'}",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "counter_argument"
+  ],
   "source": "Unknown",
   "source_url": "https://www.un.org",
   "credibility_class": "anecdotal",

@@ -10,7 +10,11 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "national_security",
+    "GOV",
+    "counter_argument"
+  ],
   "content": "Fragment frag_gov_sec_spacesecurity_analytical_147",
   "source": "Unknown"
 }

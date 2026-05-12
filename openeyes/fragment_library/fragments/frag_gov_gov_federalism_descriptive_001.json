@@ -2,7 +2,11 @@
   "domain": "governance",
   "sector": "gov",
   "content": "{'summary': 'Federalism in the United States divides governmental authority between the national government and state governments, with each possessing distinct powers and responsibilities as defined by the Constitution.', 'body': 'The US Constitution establishes a federal system through three primary mechanisms: (1) Enumerated powers granted to the federal government in Article I, Section 8, including regulation of interstate commerce, coinage of money, and declaration of war; (2) The Tenth Amendment reserves powers not delegated to the federal government to the states or the people; (3) The Supremacy Clause in Article VI establishes that federal law takes precedence over conflicting state law. Key Supreme Court decisions have shaped federal-state relations: McCulloch v. Maryland (1819) affirmed implied federal powers under the Necessary and Proper Clause; Gibbons v. Ogden (1824) established broad federal authority over interstate commerce; United States v. Lopez (1995) limited congressional power under the Commerce Clause. Contemporary federalism issues include Medicaid expansion under the Affordable Care Act (NFIB v. Sebelius, 2012), marijuana legalization conflicts between state and federal law, and immigration enforcement disputes.', 'key_points': ['Constitution divides power between federal and state governments', 'Enumerated powers grant specific authority to federal government', 'Tenth Amendment reserves remaining powers to states', 'Supremacy Clause establishes federal law priority', 'Supreme Court interpretations have evolved federal-state balance'], 'examples': ['Federal government regulates interstate highways; states set speed limits', 'Federal government sets minimum wage; states may establish higher minimums', 'Both levels levy taxes and maintain court systems']}",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition",
+    "federalism"
+  ],
   "source": "Unknown",
   "source_url": "https://www.un.org",
   "credibility_class": "anecdotal",

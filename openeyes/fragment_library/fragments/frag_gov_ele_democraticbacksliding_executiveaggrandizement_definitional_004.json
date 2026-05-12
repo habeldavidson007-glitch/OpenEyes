@@ -10,7 +10,14 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "democracy",
+    "electoral_system",
+    "democratic_backsliding",
+    "definition",
+    "separation_of_powers"
+  ],
   "content": "Fragment frag_gov_ele_democraticbacksliding_executiveaggrandizement_definitional_004",
   "source": "Unknown"
 }

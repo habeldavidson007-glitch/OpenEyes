@@ -10,7 +10,11 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition",
+    "federalism"
+  ],
   "content": "Fragment gov_jud_federal_state_jurisdiction_definitional_028",
   "source": "Unknown"
 }

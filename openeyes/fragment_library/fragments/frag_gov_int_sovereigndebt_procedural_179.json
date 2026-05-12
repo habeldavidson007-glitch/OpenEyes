@@ -10,7 +10,11 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition",
+    "sovereignty"
+  ],
   "content": "Fragment frag_gov_int_sovereigndebt_procedural_179",
   "source": "Unknown"
 }

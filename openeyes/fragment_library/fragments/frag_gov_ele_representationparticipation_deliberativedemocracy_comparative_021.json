@@ -10,7 +10,12 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "electoral_system",
+    "GOV",
+    "democracy",
+    "counter_argument"
+  ],
   "content": "Fragment frag_gov_ele_representationparticipation_deliberativedemocracy_comparative_021",
   "source": "Unknown"
 }

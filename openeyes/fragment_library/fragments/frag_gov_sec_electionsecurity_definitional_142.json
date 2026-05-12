@@ -10,7 +10,13 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "national_security",
+    "GOV",
+    "voting",
+    "definition",
+    "election"
+  ],
   "content": "Fragment frag_gov_sec_electionsecurity_definitional_142",
   "source": "Unknown"
 }

@@ -10,7 +10,11 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "counter_argument",
+    "voting"
+  ],
   "content": "Fragment frag_gov_ele_votingsystems_singletransfervote_analytical_014",
   "source": "Unknown"
 }

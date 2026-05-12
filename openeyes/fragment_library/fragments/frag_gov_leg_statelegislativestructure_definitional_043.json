@@ -10,7 +10,12 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition",
+    "parliament",
+    "legislature"
+  ],
   "content": "Fragment frag_gov_leg_statelegislativestructure_definitional_043",
   "source": "Unknown"
 }

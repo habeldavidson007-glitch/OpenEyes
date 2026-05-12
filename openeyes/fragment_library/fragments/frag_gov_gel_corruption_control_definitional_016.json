@@ -10,7 +10,11 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition",
+    "corruption"
+  ],
   "content": "Fragment frag_gov_gel_corruption_control_definitional_016",
   "source": "Unknown"
 }

@@ -10,7 +10,10 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition"
+  ],
   "content": "Fragment frag_gov_sec_nationaldefensestrategy_definitional_001",
   "source": "Unknown"
 }

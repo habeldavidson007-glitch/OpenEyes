@@ -3,7 +3,10 @@
   "domain": "governance",
   "sector": "GOV",
   "content": "{'summary': '. This fragment outlines the operational procedures, processes, and implementation mechanisms.', 'key_points': ['Step-by-step process for semi-constitutional monarchies', 'Responsible actors and their roles', 'Timeline and sequencing requirements', 'Documentation and record-keeping', 'Appeals or review mechanisms if applicable'], 'sources': ['Comparative Constitutions Project', 'Freedom House reports', 'Inter-Parliamentary Union data', 'Academic literature on comparative politics', 'World Bank Worldwide Governance Indicators'], 'related_fragments': [], 'last_updated': '2024-01-15', 'credibility_score': 0.95, 'philosophy_guard_passed': True, 'philosophy_guard_note': 'Descriptive claim about monarchies & hybrid regimes; no normative advocacy regarding what should be'}",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "definition"
+  ],
   "source": "Unknown",
   "source_url": "https://www.un.org",
   "credibility_class": "anecdotal",

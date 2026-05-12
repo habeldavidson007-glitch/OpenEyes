@@ -10,7 +10,12 @@
   "grundy_value": -1,
   "robustness_status": "PENDING",
   "source_url": "https://www.un.org",
-  "tags": [],
+  "tags": [
+    "GOV",
+    "judiciary",
+    "definition",
+    "court"
+  ],
   "content": "Fragment gov_jud_judicial_appointments_procedural_017",
   "source": "Unknown"
 }
