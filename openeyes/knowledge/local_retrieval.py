@@ -554,29 +554,44 @@ def retrieve_local_fragments(query: str, domain: str = None, limit: int = 10) ->
     
     index = get_local_index()
     
-    # Normalize domain code using central function
+    # Normalize domain code using central function, but keep original for fallback
     normalized_domain = normalize_domain(domain) if domain else None
+    
+    # CRITICAL FIX: The index uses short codes (eco, hc, gov), not full names
+    # So we need to use the original domain code if it's already a short code
+    domain_code = domain.lower() if domain else None
     
     # Step 1: Entity recognition
     entities = recognize_entities(query, index)
     
     if entities:
-        # Search by primary entity
+        # Search by primary entity - try both normalized and code forms
         primary_entity = entities[0]
         results = index.search_by_entity(
             primary_entity['text'],
             entity_type=primary_entity['type'],
-            domain=normalized_domain,
+            domain=domain_code,
             limit=limit
         )
         if results:
             return results
+        
+        # Fallback: try with normalized domain if code didn't work
+        if normalized_domain and normalized_domain != domain_code:
+            results = index.search_by_entity(
+                primary_entity['text'],
+                entity_type=primary_entity['type'],
+                domain=normalized_domain,
+                limit=limit
+            )
+            if results:
+                return results
     
-    # Step 2: Keyword search fallback
-    results = index.search_by_keywords(query, domain=normalized_domain, limit=limit)
+    # Step 2: Keyword search fallback - try domain code first
+    results = index.search_by_keywords(query, domain=domain_code, limit=limit)
     
     # If no results and domain was specified, try without domain filter
-    if not results and normalized_domain:
+    if not results and domain_code:
         results = index.search_by_keywords(query, domain=None, limit=limit)
     
     return results
