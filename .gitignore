@@ -5,48 +5,25 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Database
-wal_buffer.db
-
-# Dependencies
-.venv/
-venv/
-env/
-node_modules/
-
-# Build artifacts
-dist/
-build/
-target/
-*.egg-info/
-
 # Logs
 *.log
 
-# Environment files
+# Environment
 .env
 .env.local
 *.env.*
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
+# Databases
+*.db
 
-# OS
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Testing
-.coverage
-htmlcov/
-.coverage.*
-.nox/
-.tox/
-
-# Cache
-.mypy_cache/
-.pytest_cache/
-.hypothesis/
+# Audit logs and vault
+.openeyes/vault/audit/
 ```

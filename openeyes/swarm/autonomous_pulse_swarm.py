@@ -101,6 +101,11 @@ class WALBuffer:
     """
     Write-Ahead Log buffer for agents.
     Agents write here during active phase, never read from main DB.
+    
+    NEW: Sector-based fragment registration (ECO, GOV, HC)
+    - Fragments are immediately categorized by domain sector
+    - Expired fragments are flagged for archiver
+    - Creates self-updating knowledge base
     """
     
     def __init__(self, db_path: str):
@@ -119,29 +124,87 @@ class WALBuffer:
                     data_type TEXT,
                     content TEXT,
                     tokens_json TEXT,
+                    domain_sector TEXT,  -- NEW: ECO, GOV, HC, etc.
+                    is_expired INTEGER DEFAULT 0,  -- NEW: Flag for archiver
+                    expiry_time TEXT,  -- NEW: When fragment expires
                     processed INTEGER DEFAULT 0
                 )
             """)
             self._conn.execute("CREATE INDEX IF NOT EXISTS idx_unprocessed ON wal_buffer(processed)")
+            self._conn.execute("CREATE INDEX IF NOT EXISTS idx_sector ON wal_buffer(domain_sector)")
+            self._conn.execute("CREATE INDEX IF NOT EXISTS idx_expired ON wal_buffer(is_expired)")
             self._initialized = True
     
-    async def write(self, agent_id: str, data_type: str, content: str, tokens: Optional[Dict] = None):
-        """Write data to WAL buffer (write-only during active phase)."""
+    async def write(self, agent_id: str, data_type: str, content: str, 
+                    tokens: Optional[Dict] = None, domain_sector: str = "GENERAL",
+                    ttl_hours: int = 24):
+        """
+        Write data to WAL buffer with sector classification.
+        
+        Args:
+            agent_id: Source agent ID
+            data_type: Type of data (tokenized_content, new_content, etc.)
+            content: The actual content/fragment
+            tokens: Optional tokenization data
+            domain_sector: Domain sector (ECO, GOV, HC, TECH, etc.)
+            ttl_hours: Time-to-live in hours before fragment is considered expired
+        """
         self._ensure_initialized()
         import json
+        from datetime import datetime, timedelta
+        
+        expiry_time = (datetime.now() + timedelta(hours=ttl_hours)).isoformat()
         
         self._conn.execute(
-            """INSERT INTO wal_buffer (agent_id, timestamp, data_type, content, tokens_json)
-               VALUES (?, ?, ?, ?, ?)""",
+            """INSERT INTO wal_buffer 
+               (agent_id, timestamp, data_type, content, tokens_json, domain_sector, expiry_time)
+               VALUES (?, ?, ?, ?, ?, ?, ?)""",
             (agent_id, datetime.now().isoformat(), data_type, content, 
-             json.dumps(tokens) if tokens else None)
+             json.dumps(tokens) if tokens else None, domain_sector.upper(), expiry_time)
         )
+        
+        print(f"[WAL] Registered fragment in sector {domain_sector.upper()}: {content[:80]}...")
+    
+    async def get_expired_fragments(self) -> List[Dict[str, Any]]:
+        """Retrieve all expired fragments for archiver processing."""
+        self._ensure_initialized()
+        from datetime import datetime
+        
+        cursor = self._conn.execute(
+            """SELECT id, agent_id, timestamp, data_type, content, tokens_json, domain_sector
+               FROM wal_buffer 
+               WHERE expiry_time < ? AND is_expired = 0""",
+            (datetime.now().isoformat(),)
+        )
+        
+        expired = []
+        for row in cursor.fetchall():
+            expired.append({
+                "id": row[0],
+                "agent_id": row[1],
+                "timestamp": row[2],
+                "data_type": row[3],
+                "content": row[4],
+                "tokens": json.loads(row[5]) if row[5] else None,
+                "domain_sector": row[6]
+            })
+        
+        # Mark as expired
+        self._conn.execute(
+            "UPDATE wal_buffer SET is_expired = 1 WHERE expiry_time < ?",
+            (datetime.now().isoformat(),)
+        )
+        
+        return expired
     
     async def flush_to_main_db(self, main_db_path: str):
-        """Move all buffered data to main database."""
+        """Move all buffered data to main database, organized by sector."""
         self._ensure_initialized()
-        # Implementation would transfer WAL entries to main SQLite DB
-        print(f"[WAL] Flushing {self._get_pending_count()} entries to main DB")
+        count = self._get_pending_count()
+        print(f"[WAL] Flushing {count} entries to main DB (organized by sector)")
+        
+        # In production: transfer WAL entries to main SQLite DB with sector indexing
+        # This maintains the sector structure in the main knowledge base
     
     def _get_pending_count(self) -> int:
         self._ensure_initialized()
@@ -286,12 +349,17 @@ class HarvesterAgent(BaseAgent):
                     # Extract meaningful data (e.g., price from JSON)
                     extracted_data = self._extract_key_data(content, source_url)
                     
-                    # Write to WAL buffer with REAL data
+                    # Determine domain sector from URL
+                    domain_sector = self._classify_domain_sector(source_url)
+                    
+                    # Write to WAL buffer with REAL data and sector classification
                     await wal_buffer.write(
                         agent_id=self.config.agent_id,
                         data_type="tokenized_content" if extracted_data else "new_content",
                         content=extracted_data or f"Data harvested from {source_url}",
-                        tokens={"hash": content_hash, "source": source_url, "raw_content": content[:500]}
+                        tokens={"hash": content_hash, "source": source_url, "raw_content": content[:500]},
+                        domain_sector=domain_sector,
+                        ttl_hours=6  # Financial/crypto data expires in 6 hours (high volatility)
                     )
                     
                     # Fire SIG_PROCESS to wake Workers
@@ -429,6 +497,85 @@ class HarvesterAgent(BaseAgent):
                 return f"As of {today}, Key data found: {', '.join(values)} (Source: {url})"
         
         return ""
+    
+    def _classify_domain_sector(self, url: str) -> str:
+        """
+        Classify URL into domain sector for fragment organization.
+        
+        Sectors:
+        - ECO: Economy, Finance, Crypto, Commodities
+        - GOV: Government, Policy, Regulations
+        - HC: Healthcare, Medical, Pharmaceuticals
+        - TECH: Technology, Software, Hardware
+        - NEWS: General News, Media
+        - GENERAL: Everything else
+        """
+        url_lower = url.lower()
+        
+        # SPECIFIC DOMAIN CHECKS FIRST (before generic keyword matching)
+        # These take precedence over generic keywords like "rss", "news", "coin"
+        
+        # Technology sites (check before RSS/news because they have rss feeds)
+        if any(domain in url_lower for domain in [
+            'techcrunch.com', 'hackernoon.com',
+        ]):
+            return "TECH"
+        
+        # Crypto/Finance news sites (check before ECO because they contain "coin")
+        if any(domain in url_lower for domain in [
+            'cointelegraph.com', 'coindesk.com',
+        ]):
+            return "NEWS"
+        
+        # Major financial news (check before general news)
+        if any(domain in url_lower for domain in [
+            'reuters.com', 'bloomberg.com',
+        ]):
+            return "NEWS"
+        
+        # Healthcare sites (check before NEWS because they have news sections)
+        if any(domain in url_lower for domain in [
+            'healthline.com', 'webmd.com', 'mayoclinic.org',
+        ]):
+            return "HC"
+        
+        # Government domains (check early due to .gov TLD)
+        if '.gov' in url_lower:
+            return "GOV"
+        
+        # GENERIC KEYWORD CHECKS (after specific domains)
+        
+        # Economy/Finance/Crypto APIs and data sources
+        if any(keyword in url_lower for keyword in [
+            'crypto', 'bitcoin', 'btc', 'eth', 'binance',
+            'exchange', 'forex', 'rate', 'currency',
+            'stock', 'ticker', 'alphavantage', 'gold', 'silver', 'commodity',
+            'finance', 'trading', 'market'
+        ]):
+            return "ECO"
+        
+        # Healthcare/Medical keywords
+        if any(keyword in url_lower for keyword in [
+            'health', 'medical', 'hospital', 'clinic', 'pharma', 'drug',
+            'medicine', 'patient', 'disease', 'covid', 'vaccine', 'clinical',
+            'healthcare', 'med', 'nih', 'who', 'fda'
+        ]):
+            return "HC"
+        
+        # Technology keywords
+        if any(keyword in url_lower for keyword in [
+            'tech', 'software', 'hardware', 'api', 'github', 'dev', 'code',
+            'programming', 'ai', 'ml', 'blockchain', 'cloud', 'server',
+        ]):
+            return "TECH"
+        
+        # News/Media (generic catch-all)
+        if any(keyword in url_lower for keyword in [
+            'news', 'rss', 'feed', 'media', 'press', 'article', 'blog',
+        ]):
+            return "NEWS"
+        
+        return "GENERAL"
 
 
 class WorkerAgent(BaseAgent):
@@ -481,7 +628,7 @@ class OrganizerAgent(BaseAgent):
         self.last_organize_time: Optional[datetime] = None
     
     async def execute(self, wal_buffer: WALBuffer, token_bucket: TokenBucket):
-        """Organize buffered data, update rules."""
+        """Organize buffered data, update rules, process expired fragments."""
         if self.state != AgentState.HARVESTING:
             return
         
@@ -493,6 +640,24 @@ class OrganizerAgent(BaseAgent):
         self.last_organize_time = now
         print(f"[Organizer {self.config.agent_id}] Calculating TF-IDF scores...")
         
+        # NEW: Process expired fragments for archiving
+        expired_fragments = await wal_buffer.get_expired_fragments()
+        if expired_fragments:
+            print(f"[Organizer] Found {len(expired_fragments)} expired fragments to archive")
+            
+            # Group by sector for organized archival
+            by_sector = {}
+            for frag in expired_fragments:
+                sector = frag['domain_sector']
+                if sector not in by_sector:
+                    by_sector[sector] = []
+                by_sector[sector].append(frag)
+            
+            # Archive each sector's expired fragments
+            for sector, fragments in by_sector.items():
+                print(f"[Organizer] Archiving {len(fragments)} expired {sector} fragments")
+                # In production: move to long-term archive storage with sector indexing
+        
         # Simulate TF-IDF calculation
         tfidf_scores = {"sample_term": 0.85}
         
@@ -503,7 +668,8 @@ class OrganizerAgent(BaseAgent):
         await self.signal_bus.fire_signal(SignalType.SIG_ARCHIVE, {
             "tfidf_scores": tfidf_scores,
             "new_thresholds": new_thresholds,
-            "organized_at": now.isoformat()
+            "organized_at": now.isoformat(),
+            "expired_by_sector": {k: len(v) for k, v in by_sector.items()}
         })
         
         print(f"[Organizer {self.config.agent_id}] Archive signal fired")
