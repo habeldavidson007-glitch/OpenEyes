@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_afcfta_def_038",
+  "domain": "economy",
+  "tags": [
+    "afcfta",
+    "africa",
+    "free_trade",
+    "definition"
+  ],
+  "content": "African Continental Free Trade Area (AfCFTA): 54 signatories, 1.3B people, $3.4T GDP. Launched 2021, trading began 2022. Goal: create single African market. Tariff elimination on 90% goods, services liberalization, free movement protocol. Potential gains: +7% income by 2035 (World Bank). Intra-Africa trade only 15% currently vs. 60% Europe.",
+  "source": "afcfta_secretariat",
+  "source_url": "https://afcfta.au.int/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.94,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

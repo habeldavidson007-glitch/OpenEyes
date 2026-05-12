@@ -1,0 +1,33 @@
+{
+  "id": "frag_fin_dollar_milkshake_counter_01",
+  "domain": "economy",
+  "tags": [
+    "dollar",
+    "macro",
+    "liquidity",
+    "counter_argument",
+    "counter_argument",
+    "warning"
+  ],
+  "content": "Critics argue theory ignores US twin deficits and potential loss of confidence. If US fiscal path becomes unsustainable, foreign buyers may demand higher premiums or diversify, breaking the milkshake loop. Multipolar reserve system could dilute effect.",
+  "source": "government_source",
+  "source_url": "https://www.federalreserve.gov/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.9025,
+  "compatible_with": [
+    "frag_fin_dollar_milkshake_def_01"
+  ],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_asean_counter_035",
+  "domain": "economy",
+  "tags": [
+    "asean",
+    "integration_limits",
+    "counter_argument"
+  ],
+  "content": "ASEAN integration limitations: Non-interference principle constrains collective action. Development gaps wide (Singapore GDP/capita 50x Myanmar). NTBs persist despite tariff elimination. Services liberalization limited. South China Sea disputes divide members. Consensus requirement enables obstruction. 'ASEAN centrality' challenged by US-China rivalry.",
+  "source": "iseas_yusof_ishak",
+  "source_url": "https://www.iseas.edu.sg/",
+  "credibility_class": "research_institute",
+  "last_verified": "2026-05-12",
+  "weight": 0.88,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

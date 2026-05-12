@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_asean_def_035",
+  "domain": "economy",
+  "tags": [
+    "asean",
+    "southeast_asia",
+    "regional_bloc",
+    "definition"
+  ],
+  "content": "ASEAN (Association of Southeast Asian Nations): 10 members, 675M people, $3.6T GDP. Founded 1967. ASEAN Economic Community launched 2015. Goals: single market, production base, equitable development. Trade intra-ASEAN ~22%. Consensus-based decision making ('ASEAN Way'). Centrality in regional architecture (ASEAN+3, EAS, ARF).",
+  "source": "asean_secretariat",
+  "source_url": "https://asean.org/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.94,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

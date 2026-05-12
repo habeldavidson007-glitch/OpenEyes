@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0457",
+  "domain": "healthcare",
+  "tags": [
+    "normal-pressure-hydrocephalus",
+    "NPH",
+    "hydrocephalus",
+    "gait-disturbance",
+    "shunt"
+  ],
+  "content": "Normal pressure hydrocephalus (NPH) is a communicating hydrocephalus characterized by ventriculomegaly with normal opening pressure, causing the classic triad: gait disturbance (magnetic gait\u2014feet stuck to floor, wide-based), cognitive impairment (subcortical dementia\u2014slowed processing, executive dysfunction), and urinary incontinence (urgency progressing to incontinence). 'Wet, wobbly, and wacky.' Incidence increases with age; often misdiagnosed as Alzheimer's or Parkinson's. Pathophysiology: impaired CSF absorption at arachnoid granulations leading to ventricular enlargement, stretching of periventricular white matter tracts (especially corona radiata affecting leg fibers). Secondary NPH follows subarachnoid hemorrhage, meningitis, head trauma. Idiopathic NPH (iNPH) has no identifiable cause. Differential diagnosis: Alzheimer's disease (memory predominant early), vascular dementia (stepwise decline, focal signs), Parkinson's disease (rest tremor, better levodopa response).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

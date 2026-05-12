@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0274",
+  "domain": "healthcare",
+  "tags": [
+    "hepatic_dosing",
+    "Child_Pugh",
+    "liver_impairment",
+    "CYP450",
+    "first_pass_metabolism"
+  ],
+  "content": "Hepatic dosing adjusts drug regimens for liver impairment, which affects metabolism of hepatically-cleared drugs. Liver disease reduces CYP450 enzyme activity, decreases protein synthesis (lower albumin), and may cause portosystemic shunting bypassing first-pass metabolism. Child-Pugh score assesses severity: bilirubin, albumin, INR, ascites, encephalopathy (Class A: 5-6 points mild; B: 7-9 moderate; C: 10-15 severe). Drugs requiring hepatic adjustment: statins, benzodiazepines, opioids, warfarin, many antidepressants. Avoid hepatotoxic drugs in liver disease: acetaminophen >2g/day, isoniazid, methotrexate, amiodarone. Some drugs are safe due to renal elimination.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

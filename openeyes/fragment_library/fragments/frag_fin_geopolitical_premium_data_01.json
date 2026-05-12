@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_geopolitical_premium_data_01",
+  "domain": "economy",
+  "tags": [
+    "geopolitical_risk",
+    "oil",
+    "macro",
+    "latest_data"
+  ],
+  "content": "2022 Ukraine invasion: Brent spiked to $139, settled to $85 as Russian oil found buyers. 2023 Israel-Hamas: Muted oil reaction ($90 range) due to ample spare capacity. 2024 Red Sea attacks: Freight rates up 300%, oil impact contained.",
+  "source": "government_source",
+  "source_url": "https://www.imf.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.9114,
+  "compatible_with": [
+    "frag_fin_geopolitical_premium_def_01"
+  ],
+  "incompatible_with": [],
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

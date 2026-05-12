@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ta_put_call_ratio_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "content": "Extreme readings can persist during strong trends. Ratio shifted structurally lower as institutions buy protective puts. Crypto options market smaller than futures; signals less reliable than equities.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

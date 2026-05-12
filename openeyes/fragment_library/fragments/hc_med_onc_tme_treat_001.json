@@ -1,0 +1,29 @@
+{
+  "id": "hc_med_onc_tme_treat_001",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "tumor microenvironment",
+    "therapeutic targeting",
+    "combination strategies"
+  ],
+  "content": "Targeting the TME enhances treatment efficacy. Converting 'cold' to 'hot' tumors: radiation therapy induces immunogenic cell death, releases antigens; certain chemotherapies (anthracyclines, oxaliplatin) are immunogenic; oncolytic viruses (T-VEC) directly infect tumors and stimulate immunity; STING agonists activate innate immunity. Overcoming immunosuppression: anti-VEGF agents normalize vasculature, reduce MDSCs (bevacizumab combinations); CSF-1R inhibitors deplete M2 macrophages; TGF-\u03b2 inhibitors block stromal barrier; adenosine pathway inhibitors (CD73, A2A receptor antagonists); IDO inhibitors (mixed results). Targeting cancer-associated fibroblasts: FAP-targeted therapies, vitamin D analogs, hedgehog inhibitors (limited success in pancreatic cancer). Improving T-cell infiltration: CXCR4 inhibitors disrupt stromal barrier; hyaluronidase reduces matrix density. Combination approaches: checkpoint inhibitors + anti-angiogenics (pembrolizumab + lenvatinib); CAR-T cells with TME-modifying agents; bispecific antibodies engaging T-cells. Clinical trials ongoing for many TME-targeting strategies.",
+  "source": "https://www.nccn.org/guidelines",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

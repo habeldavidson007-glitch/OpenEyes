@@ -1,0 +1,29 @@
+{
+  "id": "HC-2118",
+  "domain": "healthcare",
+  "tags": [
+    "healthcare financing",
+    "comparison",
+    "performance",
+    "metrics"
+  ],
+  "content": "Healthcare financing systems are evaluated on three criteria: (1) Financial protection - measured by catastrophic expenditure incidence and impoverishment rates (Bismarck/Beveridge systems <5% vs out-of-pocket systems >30%); (2) Risk pooling - assessed by pool size and fragmentation (single national pools most efficient); (3) Progressivity - whether financing burden falls disproportionately on wealthy (tax-based systems most progressive, out-of-pocket least). OECD data shows per capita spending varies from $400-800 in Bismarck countries to $3,000-5,000 in US hybrid system, with Beveridge countries achieving similar outcomes at lower cost. Administrative costs range from 2-4% in single-payer to 15-25% in multi-payer private insurance systems.",
+  "source": "who.int",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

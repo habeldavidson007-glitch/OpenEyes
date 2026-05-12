@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_market_bubbles_counter_001",
+  "domain": "economy",
+  "tags": [
+    "bull_market",
+    "bear_market",
+    "market_correction",
+    "volatility",
+    "latest_data"
+  ],
+  "content": "Bubble identification is notoriously unreliable. Many supposed bubbles reflect legitimate value changes. Fed officials hesitant to declare bubbles, preferring to address aftermath. 'Irrational exuberance' warnings often premature. Shorting bubbles dangerous due to timing uncertainty and potential for further irrationality. Some argue bubbles inevitable in capitalist systems due to human psychology and credit cycles. Prevention through regulation debated but implementation challenging.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/investor/alerts/bubbles",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

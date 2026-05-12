@@ -1,0 +1,32 @@
+{
+  "id": "frag_fin_income_statement_structure_definition_000",
+  "domain": "economy",
+  "tags": [
+    "net_margin",
+    "valuation",
+    "operating_margin",
+    "gross_margin",
+    "fundamental_analysis",
+    "earnings",
+    "revenue"
+  ],
+  "content": "The income statement reports a company's financial performance over a specific period. Key components include Revenue (top line), Cost of Goods Sold (COGS), Gross Profit, Operating Expenses, Operating Income, Interest/Taxes, and Net Income (bottom line). It follows GAAP/IFRS standards to show profitability.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov/files/form10-k.pdf",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

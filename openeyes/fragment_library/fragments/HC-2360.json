@@ -1,0 +1,29 @@
+{
+  "id": "HC-2360",
+  "domain": "healthcare",
+  "tags": [
+    "HIV",
+    "antiretroviral therapy",
+    "pathogenesis",
+    "U=U"
+  ],
+  "content": "Human Immunodeficiency Virus (HIV) is a retrovirus that infects CD4+ T lymphocytes, leading to progressive immune dysfunction. HIV-1 causes most global infections; HIV-2 is less pathogenic and concentrated in West Africa. Without treatment, HIV progresses through acute infection (flu-like illness 2-4 weeks post-exposure), chronic asymptomatic phase (years), and AIDS (CD4 <200 cells/\u03bcL or AIDS-defining conditions). Antiretroviral therapy (ART) suppresses viral replication, preserves immune function, and prevents transmission. U=U (Undetectable = Untransmittable): individuals with sustained undetectable viral load (<200 copies/mL) cannot sexually transmit HIV, based on HPTN 052, PARTNER, and Opposites Attract studies.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

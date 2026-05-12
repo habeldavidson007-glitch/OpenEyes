@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ta_emh_critique_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "content": "Behavioral finance shows markets aren't perfectly efficient\u2014human psychology creates repeatable patterns. TA works not because of magic but because many participants believe in it (self-fulfilling). Limits to arbitrage prevent instant correction.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

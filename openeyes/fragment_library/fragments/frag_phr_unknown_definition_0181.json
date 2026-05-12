@@ -1,0 +1,27 @@
+{
+  "id": "frag_phr_unknown_definition_0181",
+  "domain": "healthcare",
+  "tags": [
+    "phr",
+    "definition"
+  ],
+  "content": "QT prolongation is a delay in ventricular repolarization measured on ECG as prolonged QT interval (corrected for heart rate as QTc). Normal QTc is <450ms in men and <470ms in women. Prolongation >500ms or increase >60ms from baseline significantly increases risk of torsades de pointes (TdP), a polymorphic ventricular tachycardia that can degenerate into ventricular fibrillation and sudden death. Drugs cause QT prolongation by blocking the IKr potassium channel (hERG channel). High-risk classes include: Class IA and III antiarrhythmics, antipsychotics (haloperidol, thioridazine, ziprasidone), antidepressants (TCAs, citalopram), antibiotics (macrolides, fluoroquinolones), antiemetics (ondansetron, droperidol), methadone, and some antifungals. CredibleMeds.org maintains updated lists of QT-prolonging drugs by risk category.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

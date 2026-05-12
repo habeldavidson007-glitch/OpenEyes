@@ -1,0 +1,28 @@
+{
+  "id": "FIN-114",
+  "domain": "economy",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "boj_ycc"
+  ],
+  "content": "Bank of Japan pioneered yield curve control in 2016, targeting short rate (-0.1%) and 10y JGB yield (initially 0%, later +/- 0.5%). Unlike Fed targeting quantities, YCC targets yields and expands balance sheet as needed. Ended negative rates in 2024 but maintained YCC.",
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

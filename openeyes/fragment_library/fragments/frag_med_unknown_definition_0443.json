@@ -1,0 +1,31 @@
+{
+  "id": "frag_med_unknown_definition_0443",
+  "domain": "healthcare",
+  "tags": [
+    "headache",
+    "tension-type",
+    "cluster",
+    "treatment-protocol",
+    "oxygen",
+    "sumatriptan"
+  ],
+  "content": "Headache treatment depends on type. Tension-type headache: acute treatment with simple analgesics (acetaminophen, NSAIDs); avoid opioids. Chronic TTH prevention: amitriptyline (first-line, 10-75mg at bedtime), mirtazapine, venlafaxine; non-pharmacologic (stress management, physical therapy, acupuncture, biofeedback). Cluster headache acute treatment: high-flow oxygen (100% at 12-15 L/min via non-rebreather for 15-20 minutes\u2014first-line, safe, effective), subcutaneous sumatriptan 6mg (rapid onset, can repeat once in 24 hours), intranasal sumatriptan or zolmitriptan. Cluster prevention: verapamil (first-line, start 80mg TID, titrate up to 480-960mg/day, requires ECG monitoring for heart block), galcanezumab (monthly injection for episodic cluster), lithium (second-line, monitor levels/thyroid/renal), topiramate. Transitional prevention: prednisone taper (60mg \u00d7 5 days then taper) or greater occipital nerve block (steroid + local anesthetic) to bridge until preventive takes effect. Refractory cases: occipital nerve stimulation, sphenopalatine ganglion stimulation, deep brain stimulation (hypothalamus\u2014last resort). Medication overuse headache: withdraw offending medication (abruptly for triptans/NSAIDs, taper for opioids/benzodiazepines), bridge with steroids/NSAIDs, initiate preventive.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

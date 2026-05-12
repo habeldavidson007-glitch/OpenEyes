@@ -1,0 +1,29 @@
+{
+  "id": "frag_fin_market_makers_def_001",
+  "domain": "economy",
+  "tags": [
+    "market_cap",
+    "volatility",
+    "equities",
+    "definition"
+  ],
+  "content": "Market makers are firms or individuals that stand ready to buy and sell securities continuously, providing liquidity to markets. They quote both bid and ask prices, profiting from the spread while managing inventory risk. Designated Market Makers (DMMs) on NYSE have formal obligations to maintain fair and orderly markets. Market makers use sophisticated models to manage risk, adjust quotes based on order flow, and hedge positions. Their presence reduces bid-ask spreads and enables immediate trade execution.",
+  "source": "SEC",
+  "source_url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/market-maker",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.88,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

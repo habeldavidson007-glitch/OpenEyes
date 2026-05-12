@@ -1,0 +1,29 @@
+{
+  "id": "HC-2414",
+  "domain": "healthcare",
+  "tags": [
+    "cardiac biomarkers",
+    "troponin",
+    "BNP",
+    "myocardial injury"
+  ],
+  "content": "Cardiac biomarkers are measurable substances indicating cardiac pathology. Cardiac troponins (cTnI, cTnT) are regulatory proteins released with myocardial injury. High-sensitivity assays (hs-cTn) detect concentrations 10-100x lower than conventional assays, enabling earlier MI diagnosis. Troponin elevation indicates myocardial injury but not necessarily MI\u2014distinguish acute (rising/falling pattern) from chronic elevation. Causes of elevated troponin without ACS: heart failure, renal failure, myocarditis, pulmonary embolism, sepsis, strenuous exercise, tachyarrhythmias. Natriuretic peptides (BNP, NT-proBNP) released with ventricular stretch/volume overload. BNP <100 pg/mL or NT-proBNP <300 pg/mL makes HF unlikely; higher values support HF diagnosis (age-specific cutoffs for NT-proBNP: >450 age <50, >900 age 50-75, >1800 age >75). Other biomarkers: CK-MB (less specific than troponin), myoglobin (early but nonspecific), hs-CRP (inflammation, CV risk stratification), Galectin-3, ST2 (emerging HF biomarkers).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30571638/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2018,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

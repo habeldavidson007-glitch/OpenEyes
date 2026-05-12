@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_mifid_ii_eu_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "regulation",
+    "mifid_ii",
+    "europe",
+    "transparency",
+    "counter_argument"
+  ],
+  "content": "Critics argue MiFID II's unbundling of research led to a decline in coverage for small-cap stocks, as asset managers cut research budgets when forced to pay explicitly. The compliance burden is also cited as driving consolidation among smaller European brokers and reducing market liquidity compared to US markets.",
+  "source": "government_source",
+  "source_url": "https://ec.europa.eu",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

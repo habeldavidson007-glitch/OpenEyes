@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_crypto_liquidation_cascades_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "definition",
+    "market_structure"
+  ],
+  "content": "When leveraged positions hit liquidation price, they're forcibly closed at market, pushing price further and triggering more liquidations. Cascades cause flash crashes. Long squeezes (downward) more violent than short squeezes due to panic selling.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "HC-2442",
+  "domain": "healthcare",
+  "tags": [
+    "HFrEF",
+    "treatment",
+    "GDMT",
+    "quadruple therapy",
+    "pharmacology"
+  ],
+  "content": "HFrEF guideline-directed medical therapy (GDMT) consists of four foundational drug classes: (1) Beta-blockers (carvedilol, metoprolol succinate, bisoprolol)\u2014reduce mortality, start low and titrate slowly; (2) ARNI (sacubitril/valsartan) preferred over ACEi/ARB\u2014PARADIGM-HF showed superior outcomes vs enalapril, reduce NT-proBNP, reverse remodeling; (3) MRA (spironolactone or eplerenone)\u2014RALES and EMPHASIS-HF trials showed mortality benefit, monitor potassium; (4) SGLT2 inhibitors (dapagliflozin or empagliflozin)\u2014DAPA-HF and EMPEROR-Reduced trials showed benefit regardless of diabetes status. Diuretics (loop diuretics like furosemide, torsemide, bumetanide) for symptom relief but no mortality benefit. Additional options: hydralazine/isosorbide dinitrate for Black patients with persistent symptoms (A-HeFT trial), ivabradine for HR \u226570 despite beta-blocker, digoxin for symptom control. Device therapy: ICD for primary prevention if EF \u226435% after \u22653 months GDMT, CRT if QRS \u2265150ms with LBBB morphology.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

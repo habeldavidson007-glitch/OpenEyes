@@ -1,0 +1,29 @@
+{
+  "id": "HC-2021",
+  "domain": "healthcare",
+  "tags": [
+    "neuroscience",
+    "ECT",
+    "electroconvulsive therapy",
+    "depression"
+  ],
+  "content": "Electroconvulsive Therapy (ECT) remains the most effective treatment for severe depression, particularly with psychotic features, catatonia, or acute suicidality. Under general anesthesia, electrical current induces a controlled seizure. Typical course: 6-12 treatments over 2-4 weeks, then maintenance if needed. Response rates exceed 80% in severe depression. Mechanism likely involves neuroplasticity, neurotransmitter changes, and anti-inflammatory effects. Modern techniques (right unilateral electrode placement, ultra-brief pulse) minimize cognitive side effects. Memory loss (retrograde and anterograde) is the main concern, usually improving within months. ECT is underutilized due to stigma despite strong evidence. Also effective in mania, catatonia, and Parkinson's disease.",
+  "source": "apa.org",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

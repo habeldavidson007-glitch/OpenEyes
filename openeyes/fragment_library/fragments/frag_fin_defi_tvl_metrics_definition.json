@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_defi_tvl_metrics_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "defi",
+    "definition"
+  ],
+  "content": "TVL measures total assets deposited in a protocol. Calculated as sum of all locked collateral. Higher TVL suggests trust and liquidity depth. However, double-counting occurs when assets are rehypothecated across protocols.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

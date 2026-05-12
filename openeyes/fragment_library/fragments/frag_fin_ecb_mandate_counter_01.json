@@ -1,0 +1,32 @@
+{
+  "id": "frag_fin_ecb_mandate_counter_01",
+  "domain": "economy",
+  "tags": [
+    "ecb",
+    "monetary_policy",
+    "eurozone",
+    "counter_argument",
+    "warning"
+  ],
+  "content": "Critics argue the ECB's strict inflation focus ignores employment disparities across the Eurozone. The 'one size fits all' monetary policy often conflicts with divergent fiscal needs of member states (e.g., Germany vs. Greece), limiting effectiveness during asymmetric shocks.",
+  "source": "government_source",
+  "source_url": "https://www.ecb.europa.eu/home/html/index.en.html",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.874,
+  "compatible_with": [
+    "frag_fin_ecb_mandate_def_01"
+  ],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

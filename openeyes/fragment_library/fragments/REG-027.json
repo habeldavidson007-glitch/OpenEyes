@@ -1,0 +1,30 @@
+{
+  "id": "REG-027",
+  "domain": "economy",
+  "tags": [
+    "market_manipulation",
+    "spoofing",
+    "layering",
+    "sec",
+    "cftc"
+  ],
+  "content": "Market manipulation definitions under securities/commodities laws encompass various deceptive practices. Spoofing: placing bids/offers with intent to cancel before execution to create false appearance of demand/supply (prohibited under Dodd-Frank, CEA). Layering: multiple orders at different price levels creating illusion of order book depth, cancelled when price moves favorably. Other manipulative practices: (1) Wash trading\u2014simultaneous buy/sell creating false volume, (2) Marking the close\u2014trading at settlement to manipulate closing price, (3) Pump and dump\u2014false promotion followed by sale, (4) Bear raid\u2014coordinated short selling with negative propaganda. Regulatory actions: SEC/CFTC increasingly use pattern recognition, order book analysis. Notable cases: Navinder Sarao (Flash Crash spoofing, 2015), multiple HFT firm settlements. Penalties: disgorgement, civil penalties, criminal prosecution, trading bans. Technology enables detection but also sophisticated evasion techniques.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

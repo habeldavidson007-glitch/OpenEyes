@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_onchain_nvt_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "on_chain_metrics",
+    "bitcoin"
+  ],
+  "content": "Network Value to Transactions (NVT) ratio divides market cap by daily transaction volume (in USD). High NVT suggests overvaluation relative to network usage\u2014similar to P/E ratio. Spikes often preceded price corrections. NVT Signal uses moving average crossovers for timing signals.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

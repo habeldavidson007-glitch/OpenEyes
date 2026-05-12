@@ -1,0 +1,28 @@
+{
+  "id": "HC-2070",
+  "domain": "healthcare",
+  "tags": [
+    "One Health metrics",
+    "intersectoral coordination",
+    "evaluation framework"
+  ],
+  "content": "One Health effectiveness measured through: process indicators (frequency of intersectoral meetings, data sharing agreements, joint training events), output indicators (integrated surveillance reports, coordinated outbreak responses, joint research publications), and outcome indicators (reduced zoonotic disease incidence, slower AMR emergence, improved food safety metrics). Barriers to implementation: siloed funding streams, disciplinary jargon differences, lack of career incentives for collaboration, and data sharing restrictions. Enablers include: high-level political commitment, dedicated coordination offices, shared laboratory infrastructure, and standardized data formats. Economic analyses demonstrate cost-effectiveness of preventive One Health approaches versus reactive responses.",
+  "source": "Frontiers in Public Health One Health evaluations, WHO Joint External Evaluation tools",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

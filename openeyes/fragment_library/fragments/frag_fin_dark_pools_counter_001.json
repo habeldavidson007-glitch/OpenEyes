@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_dark_pools_counter_001",
+  "domain": "economy",
+  "tags": [
+    "market_cap",
+    "stock_market",
+    "latest_data"
+  ],
+  "content": "Dark pools fragment markets and harm price discovery by removing liquidity from public view. Retail investors disadvantaged by not accessing same venues. Conflicts of interest prevalent: some dark pools operated by banks that trade against customers. High-frequency traders exploit dark pool information. Academic studies show significant information leakage despite anonymity claims. Some dark pools engaged in illegal practices (Barclays, Credit Suisse settlements). Transparency advocates call for restrictions or elimination.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/dark-pools-20210420.html",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "REG-026",
+  "domain": "economy",
+  "tags": [
+    "margin",
+    "uncleared_derivatives",
+    "initial_margin",
+    "variation_margin",
+    "otc_derivatives"
+  ],
+  "content": "Margin requirements for uncleared derivatives implemented under Dodd-Frank/EMIR to address risks from non-centrally cleared trades. Two components: (1) Initial margin (IM)\u2014collateral for potential future exposure, (2) Variation margin (VM)\u2014daily collateral for mark-to-market changes. Phase-in schedule (based on average aggregate notional amount): VM completed 2017 for all covered entities; IM phased 2016-2022 across 6 tranches (threshold declining from $3T to $50M). Current state: all entities with >$50M AAN subject to both IM and VM requirements. Requirements: segregation of IM with independent custodian, eligible collateral (cash, Treasuries, agencies, corporate bonds, equities with haircuts), threshold/MTA parameters, regulatory margin models or standard schedule. Impact: estimated $2T+ IM posted globally, reduced uncollateralized exposures, increased liquidity demands. Challenges: non-centrally cleared products, cross-border recognition, compression/netting efficiency.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

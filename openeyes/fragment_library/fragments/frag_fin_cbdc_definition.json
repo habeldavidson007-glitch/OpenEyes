@@ -1,0 +1,26 @@
+{
+  "id": "frag_fin_cbdc_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto"
+  ],
+  "content": "Digital form of fiat currency issued by central banks (e.g., Digital Yuan, Euro pilot). Distinct from crypto; centralized and surveillable.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

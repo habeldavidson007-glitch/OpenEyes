@@ -1,0 +1,26 @@
+{
+  "id": "frag_phr_unknown_treatment_protocol_0161",
+  "domain": "healthcare",
+  "tags": [
+    "phr"
+  ],
+  "content": "Prevention and response to counterfeit medicines: (1) Purchase only from licensed, authorized distributors; (2) Verify drug appearance (color, shape, imprint, packaging quality); (3) Check for tampering signs; (4) Use verification technologies (serialization, RFID, blockchain where available); (5) Report suspected counterfeits to FDA MedWatch and manufacturer; (6) Test suspicious products through certified laboratories; (7) Notify patients if counterfeit product was dispensed; (8) Coordinate with law enforcement for criminal investigations. Healthcare providers should educate patients about risks of purchasing from unverified online pharmacies. Institutions should maintain secure storage and monitor for diversion. Global efforts include WHO's Member State Mechanism and INTERPOL operations targeting counterfeit drug networks.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

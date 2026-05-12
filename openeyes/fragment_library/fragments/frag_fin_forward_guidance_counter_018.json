@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_forward_guidance_counter_018",
+  "domain": "economy",
+  "tags": [
+    "fed",
+    "forward_guidance",
+    "monetary_policy",
+    "communication",
+    "counter_argument"
+  ],
+  "content": "Forward guidance faces credibility and flexibility tradeoffs. Explicit commitments can box in policymakers if conditions change unexpectedly, forcing undesirable choices between reneging (damaging credibility) and following through (suboptimal policy). Markets may overinterpret vague guidance, creating volatility when language changes. Calendar-based guidance proved problematic when recovery timelines shifted. State-contingent guidance requires specifying thresholds that may prove inappropriate. Guidance effectiveness diminishes when rates are far from the zero lower bound. Communication complexity can confuse rather than clarify. Some argue central banks should focus on actions rather than words, letting policy speak for itself. Research suggests guidance works best when economic outlook is clear and policymakers are unified.",
+  "source": "Bank for International Settlements Working Papers",
+  "source_url": "https://www.bis.org/publ/work896.htm",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

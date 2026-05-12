@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_defi_impermanent_loss_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "defi",
+    "crypto",
+    "risk_management"
+  ],
+  "content": "Impermanent loss is often misunderstood as rare edge case when it's the norm for volatile pairs. Providing liquidity for assets with different fundamentals guarantees IL over time. Many LPs lose money despite earning fees because IL exceeds trading revenue. Stablecoin pairs minimize but don't eliminate this risk.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

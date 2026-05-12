@@ -1,0 +1,26 @@
+{
+  "id": "frag_phr_unknown_treatment_protocol_0188",
+  "domain": "healthcare",
+  "tags": [
+    "phr"
+  ],
+  "content": "When a medication error occurs: (1) Assess patient immediately for adverse effects; (2) Stabilize if harm has occurred; (3) Notify prescriber and pharmacy; (4) Document error details in medical record (not blame-focused); (5) Report through institutional incident reporting system; (6) Disclose to patient/family per institutional policy; (7) Implement corrective actions to prevent recurrence. Prevention strategies include: computerized physician order entry (CPOE) with clinical decision support, barcode medication administration, standardized concentrations, tall man lettering for look-alike drugs, independent double-checks for high-alert medications, medication reconciliation at transitions, and creating a culture of safety that encourages reporting without fear of punishment.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

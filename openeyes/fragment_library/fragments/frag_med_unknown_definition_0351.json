@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0351",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "cancer staging",
+    "diagnostic imaging",
+    "pathology",
+    "biomarkers"
+  ],
+  "content": "Staging requires comprehensive diagnostic workup. Imaging: CT chest/abdomen/pelvis for most solid tumors; MRI for brain, rectal, prostate cancers; PET-CT for lymphoma, lung cancer, melanoma; bone scan for prostate, breast cancer with symptoms. Pathology: biopsy confirms diagnosis, provides histologic grade; surgical specimens determine pathologic stage (pTNM). Endoscopy: colonoscopy for colorectal cancer, bronchoscopy for lung cancer, EGD for GI cancers. Bone marrow biopsy for hematologic malignancies. Biomarkers: PSA for prostate, CA-125 for ovarian, CEA for colorectal monitoring. Molecular testing: EGFR/ALK for lung cancer, HER2 for breast, KRAS/NRAS for colorectal, BRAF for melanoma. Clinical stage (cTNM) based on pre-treatment evaluation; pathologic stage (pTNM) after surgery; restaging (rTNM) for recurrence. AJCC 8th edition incorporates molecular markers for breast, prostate, thyroid cancers into prognostic stage groups.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35045071/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

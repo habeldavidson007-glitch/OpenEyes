@@ -1,0 +1,29 @@
+{
+  "id": "HC-2064",
+  "domain": "healthcare",
+  "tags": [
+    "outbreak analysis",
+    "case-control study",
+    "cohort study",
+    "epidemiologic methods"
+  ],
+  "content": "Analytic study selection in outbreaks: cohort studies when population is well-defined and small (wedding attendees, cruise ship passengers); case-control studies when population is large or undefined (community-wide outbreaks). Sample size calculations ensure adequate power. Confounding controlled through stratification or multivariate regression. Dose-response relationships strengthen causal inference. Outbreak declaration ends when: no new cases for two incubation periods, source eliminated, and control measures sustained. Final reports document timeline, epidemiology, laboratory findings, control measures, and lessons learned for future preparedness.",
+  "source": "American Journal of Epidemiology, CDC outbreak investigation training",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

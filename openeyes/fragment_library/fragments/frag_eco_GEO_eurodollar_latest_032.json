@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_eurodollar_latest_032",
+  "domain": "economy",
+  "tags": [
+    "eurodollar",
+    "cross_border",
+    "latest_data"
+  ],
+  "content": "Eurodollar markets 2024: Cross-border claims $13T (BIS data). London still largest center despite Brexit. Asia growing share. Basis swap spreads normalized post-2020 stress. FRA-OIS spread stable. Fed RRP facility absorbing excess liquidity. Regulatory arbitrage continues as banks optimize G-SIB surcharges. CBDC developments could reshape architecture long-term.",
+  "source": "bis_locational_banking",
+  "source_url": "https://www.bis.org/statistics/bankstats.htm",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

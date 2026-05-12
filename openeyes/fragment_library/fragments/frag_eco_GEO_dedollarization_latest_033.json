@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_dedollarization_latest_033",
+  "domain": "economy",
+  "tags": [
+    "dedollarization",
+    "gold",
+    "cbdc",
+    "latest_data"
+  ],
+  "content": "Dedollarization indicators 2024: Central bank gold purchases record 1,136t (2022), 1,037t (2023). China reserves 2,264t gold. BRICS local currency trade ~30%. mBridge CBDC pilot successful. However, dollar share in reserves stabilized ~58%. Euro flat at 20%. Yuan gains marginal. Sanctions accelerate alternatives but fundamentals (liquidity, institutions) favor dollar persistence.",
+  "source": "wgc_gold_demand",
+  "source_url": "https://www.gold.org/goldhub/data/gold-demand-trends",
+  "credibility_class": "industry_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

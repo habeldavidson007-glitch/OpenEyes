@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_definition_0418",
+  "domain": "healthcare",
+  "tags": [
+    "metabolic syndrome",
+    "cardiometabolic",
+    "insulin resistance",
+    "cardiovascular risk"
+  ],
+  "content": "Metabolic syndrome is a cluster of interconnected cardiometabolic risk factors that increase risk for type 2 diabetes and cardiovascular disease. Multiple definitions exist; harmonized criteria (2009) require \u22653 of 5 components: (1) Abdominal obesity: waist circumference \u2265102cm men, \u226588cm women (ethnicity-specific cutoffs); (2) Elevated triglycerides: \u2265150 mg/dL or on treatment; (3) Reduced HDL cholesterol: <40 mg/dL men, <50 mg/dL women or on treatment; (4) Elevated blood pressure: \u2265130/85 mmHg or on antihypertensive therapy; (5) Elevated fasting glucose: \u2265100 mg/dL or previously diagnosed T2DM. Pathophysiology centers on insulin resistance, visceral adiposity, chronic inflammation, and endothelial dysfunction. Prevalence ~20-25% globally, increases with age. Individuals with metabolic syndrome have 2-fold increased CVD risk and 5-fold increased diabetes risk.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/32804973/",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

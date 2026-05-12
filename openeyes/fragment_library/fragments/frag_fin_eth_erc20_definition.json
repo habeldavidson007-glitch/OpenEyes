@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_eth_erc20_definition",
+  "domain": "economy",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "tokens"
+  ],
+  "content": "ERC-20 is a technical standard for fungible tokens on Ethereum, defining functions like transfer(), balanceOf(), and approve(). Launched in 2015, it enabled the ICO boom and subsequent token economy. Over 500,000 ERC-20 tokens exist, though most lack liquidity or utility.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

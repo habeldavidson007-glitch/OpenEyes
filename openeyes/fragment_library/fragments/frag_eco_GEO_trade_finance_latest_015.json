@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_trade_finance_latest_015",
+  "domain": "economy",
+  "tags": [
+    "trade_finance",
+    "letters_of_credit",
+    "global_trade",
+    "latest_data"
+  ],
+  "content": "Trade finance 2024: Digital LC platforms (Contour, Komgo) gaining traction but still <5% market share. Sanctions compliance complexity increasing (Russia, Iran). Interest rate environment raising financing costs. Green trade finance emerging - sustainability-linked LCs. Supply chain finance volumes recovering post-COVID.",
+  "source": "baft_annual_report",
+  "source_url": "https://www.baft.org/",
+  "credibility_class": "industry_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.91,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

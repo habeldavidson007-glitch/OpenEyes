@@ -1,0 +1,29 @@
+{
+  "id": "HC-2095",
+  "domain": "healthcare",
+  "tags": [
+    "hospital payment",
+    "DRG",
+    "bundled payments",
+    "capitation"
+  ],
+  "content": "Hospital payment systems determine provider incentives and healthcare costs: (1) Fee-for-service - payment per individual service, incentivizes volume; (2) Diagnosis-Related Groups (DRG) - fixed payment per admission based on diagnosis, incentivizes efficiency and shorter stays (adopted by Medicare 1983, now used in >50 countries); (3) Bundled payments - single payment for episode of care including pre/post-operative care, aligns incentives across providers; (4) Capitation - fixed per-member-per-month payment regardless of utilization, incentivizes prevention but risks under-treatment; (5) Global budgets - fixed annual allocation for hospital, used in rural hospitals and some integrated systems.",
+  "source": "cms.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

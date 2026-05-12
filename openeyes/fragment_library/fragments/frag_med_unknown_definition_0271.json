@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0271",
+  "domain": "healthcare",
+  "tags": [
+    "teratogenicity",
+    "pregnancy_categories",
+    "PLLR",
+    "organogenesis",
+    "fetal_defects"
+  ],
+  "content": "Teratogenicity refers to a drug's ability to cause fetal malformations when administered during pregnancy. Critical periods: pre-embryonic (days 0-14, 'all-or-none' effect), embryonic (days 15-60, organogenesis - highest risk for structural defects), fetal (week 9-birth, functional deficits, growth restriction). FDA replaced letter categories (A, B, C, D, X) in 2015 with narrative Pregnancy and Lactation Labeling Rule (PLLR) providing risk summaries, clinical considerations, and data. Known human teratogens: isotretinoin (craniofacial, cardiac, CNS defects), thalidomide (limb reduction), warfarin (nasal hypoplasia, stippled epiphyses), valproate (neural tube defects), ACE inhibitors (renal dysgenesis, oligohydramnios), methotrexate (multiple anomalies), alcohol (fetal alcohol syndrome).",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

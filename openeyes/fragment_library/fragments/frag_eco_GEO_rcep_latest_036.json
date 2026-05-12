@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_rcep_latest_036",
+  "domain": "economy",
+  "tags": [
+    "rcep",
+    "implementation",
+    "latest_data"
+  ],
+  "content": "RCEP implementation 2024: All 15 members ratified. Tariff cuts proceeding on schedule. Rules of origin certificates issued 1M+. South Korea reporting increased exports to China, Japan. Philippines, Thailand utilizing preferences for agriculture. Indonesia concerned about Chinese manufacturing competition. Expansion discussions ongoing (India rejoining?, other applicants).",
+  "source": "rcep_secretariat",
+  "source_url": "https://rcepsec.org/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

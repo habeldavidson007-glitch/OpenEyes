@@ -1,0 +1,27 @@
+{
+  "id": "FIN-189",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "signal decay"
+  ],
+  "content": "Signal decay measures how quickly alpha erodes after discovery. Half-life is the time for signal strength to reduce by 50%. High-frequency signals decay in milliseconds; fundamental factors persist for quarters. Signal decay accelerates as more capital discovers the same pattern. Successful quant shops continuously research new signals while managing decay.",
+  "source": "Finding Alphas",
+  "source_url": "https://example.com/FIN-189",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2023,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

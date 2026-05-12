@@ -1,0 +1,29 @@
+{
+  "id": "HC-2432",
+  "domain": "healthcare",
+  "tags": [
+    "pulmonary embolism",
+    "PE",
+    "pathophysiology",
+    "Virchow triad"
+  ],
+  "content": "Pulmonary embolism (PE) is obstruction of pulmonary artery or branches, usually by thrombus from deep veins (DVT). Annual incidence ~1-2 per 1000. Pathophysiology: thrombus dislodges from proximal leg/pelvic veins, travels to pulmonary circulation, causes mechanical obstruction (increased pulmonary vascular resistance, RV strain/failure) and humoral mediator release (hypoxic vasoconstriction, ventilation-perfusion mismatch). Virchow's triad: stasis (immobility, heart failure, AF), endothelial injury (surgery, trauma, catheters), hypercoagulability (cancer, pregnancy, OCPs, inherited thrombophilias). Risk stratification crucial for management: massive (high-risk) PE with hypotension/shock\u2014highest mortality; submassive (intermediate-risk) with RV dysfunction but normal BP; low-risk without RV dysfunction or biomarker elevation. Clinical presentation: dyspnea (most common), pleuritic chest pain, cough, hemoptysis, syncope (suggests massive PE), tachycardia, tachypnea, hypoxia. Wells score and Geneva score estimate pretest probability.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "FIN-162",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "backtesting",
+    "overfitting_risk"
+  ],
+  "content": "Overfitting in backtesting occurs when a strategy is optimized too closely to historical noise rather than genuine market patterns. Signs of overfitting include excessive parameters, perfect equity curves, and dramatic performance degradation on out-of-sample data. The deflated Sharpe ratio and probability of backtest overfitting (PBO) are statistical tools to detect overfitting before live deployment.",
+  "source": "Journal of Portfolio Management",
+  "source_url": "https://example.com/FIN-162",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2023,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "HC-2033",
+  "domain": "healthcare",
+  "tags": [
+    "neuroscience",
+    "neuroplasticity",
+    "brain adaptation",
+    "therapy"
+  ],
+  "content": "Neuroplasticity refers to the brain's ability to reorganize itself by forming new neural connections throughout life. This includes synaptic plasticity (strengthening or weakening of synapses) and structural plasticity (growth of new neurons or changes in brain architecture). Neuroplasticity underlies learning, memory, and recovery from brain injury. Therapeutically, it explains how psychotherapy, particularly CBT, can produce lasting changes in brain function. Antidepressants may work partly by promoting neuroplasticity through BDNF (brain-derived neurotrophic factor). Exercise, mindfulness, and cognitive training also enhance neuroplasticity. The concept challenges the old view that adult brains are fixed, offering hope for recovery in psychiatric and neurological conditions.",
+  "source": "nimh.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

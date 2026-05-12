@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_crypto_funding_rates_latest_data",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "derivatives",
+    "latest_data"
+  ],
+  "content": "During 2024 Bitcoin rally, funding rates reached extreme positives exceeding 100% annualized, preceding multiple 20%+ corrections. Negative funding events coincided with local bottoms. Perpetual futures now represent 70% of crypto derivatives volume, making funding rates critical sentiment indicators.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

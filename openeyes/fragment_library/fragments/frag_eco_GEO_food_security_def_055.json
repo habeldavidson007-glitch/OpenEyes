@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_food_security_def_055",
+  "domain": "economy",
+  "tags": [
+    "food_security",
+    "geopolitics",
+    "definition"
+  ],
+  "content": "Food security geopolitics: Russia-Ukraine war disrupted wheat, fertilizer supplies. Black Sea Grain Initiative collapsed 2023. Food inflation hit import-dependent nations. Export restrictions cascaded (20+ countries). Strategic grain reserves, diversified sourcing prioritized. Climate change amplifying volatility. MENA, Africa most vulnerable regions.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

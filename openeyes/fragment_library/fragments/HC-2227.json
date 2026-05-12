@@ -1,0 +1,26 @@
+{
+  "id": "HC-2227",
+  "domain": "healthcare",
+  "tags": [
+    "phr"
+  ],
+  "content": "Medication error classification by harm potential: Category C-E (error reached patient but no harm or temporary harm requiring intervention), Category F-H (temporary or permanent harm requiring prolonged hospitalization or life-sustaining treatment), Category I (death). High-alert medications requiring extra safeguards include: insulin, opioids, anticoagulants, concentrated electrolytes, chemotherapy, neuromuscular blockers. Root cause analysis of errors examines system factors: workflow design, environmental factors, human factors, communication patterns, and technology issues. Error reporting systems (ISMP, FDA MedWatch) aggregate data to identify patterns and drive system improvements. Organizations track error rates per 1,000 doses administered as quality metrics.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

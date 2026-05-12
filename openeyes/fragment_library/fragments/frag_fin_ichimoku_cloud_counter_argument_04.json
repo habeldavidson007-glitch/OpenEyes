@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ichimoku_cloud_counter_argument_04",
+  "domain": "economy",
+  "tags": [
+    "counter_argument",
+    "technical_analysis",
+    "ichimoku_cloud"
+  ],
+  "content": "Ichimoku's complexity creates illusion of precision without actual predictive power. Multiple components generate conflicting signals with no objective resolution. The cloud's forward projection is arbitrary and often wrong. Steep learning curve discourages proper testing. Few rigorous academic studies support Ichimoku effectiveness. Component parameters lack empirical foundation. Simpler indicators often perform equally well. Ichimoku's Japanese origin adds exotic appeal but no analytical advantage. Subjectivity in interpretation undermines consistency.",
+  "source": "Educational Resource",
+  "source_url": "https://www.tradingresearch.org/ichimoku-complexity-vs-value",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

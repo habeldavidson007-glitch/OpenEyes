@@ -1,0 +1,29 @@
+{
+  "id": "HC-2400",
+  "domain": "healthcare",
+  "tags": [
+    "metabolic syndrome",
+    "treatment",
+    "lifestyle",
+    "pharmacotherapy"
+  ],
+  "content": "Metabolic syndrome management targets individual components and overall CV risk. Lifestyle modification is cornerstone: weight loss (5-10% reduces all components), Mediterranean or DASH diet, physical activity (\u2265150 min/week moderate aerobic plus resistance training), smoking cessation, sleep optimization, stress reduction. Pharmacologic treatment: statins for dyslipidemia (primary therapy regardless of metabolic syndrome diagnosis), antihypertensives (ACEi/ARB preferred\u2014may improve insulin sensitivity), metformin for prediabetes/diabetes (Diabetes Prevention Program showed 31% diabetes risk reduction with lifestyle vs 58% with metformin), GLP-1 receptor agonists for obesity/diabetes (promote weight loss, CV benefit), SGLT2 inhibitors for diabetes/CVD/HF (CV and renal benefits). Antiplatelet therapy (aspirin) considered based on overall ASCVD risk. Treat NAFLD with weight loss, vitamin E in select non-diabetic patients. Address sleep apnea with CPAP. No single medication treats all components\u2014comprehensive risk factor management essential.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/29371096/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2018,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "HC-2420",
+  "domain": "healthcare",
+  "tags": [
+    "deep vein thrombosis",
+    "DVT",
+    "Virchow triad",
+    "pathophysiology"
+  ],
+  "content": "Deep vein thrombosis (DVT) is formation of blood clot in deep veins, most commonly lower extremities (proximal: popliteal, femoral, iliac; distal: calf veins). Annual incidence ~1-2 per 1000. Virchow's triad describes pathogenesis: venous stasis (immobility, paralysis, heart failure, AF, venous obstruction), endothelial injury (surgery especially orthopedic, trauma, prior DVT, indwelling catheters), hypercoagulability (inherited: factor V Leiden, prothrombin gene mutation, protein C/S deficiency, antithrombin deficiency; acquired: cancer, pregnancy, OCPs/HRT, antiphospholipid syndrome, myeloproliferative disorders). Clinical features: unilateral leg swelling, pain, warmth, erythema, dilated superficial veins, tenderness along deep venous system; however, up to 50% asymptomatic. Complications: pulmonary embolism (30-50% untreated proximal DVT), post-thrombotic syndrome (chronic pain, swelling, skin changes, ulcers in 20-50% within 2 years), recurrence (30% at 10 years).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

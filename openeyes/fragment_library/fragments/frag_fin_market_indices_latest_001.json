@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_market_indices_latest_001",
+  "domain": "economy",
+  "tags": [
+    "latest_data",
+    "sp500",
+    "index_fund",
+    "dow_jones",
+    "etf",
+    "nasdaq"
+  ],
+  "content": "S&P 500 currently trades at forward P/E above historical average. Index fund assets exceed $10 trillion in US equities. Passive vs active split continues shifting toward passive strategies.",
+  "source": "FRED",
+  "source_url": "https://fred.stlouisfed.org/series/SP500",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.88,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

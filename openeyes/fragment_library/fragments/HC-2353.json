@@ -1,0 +1,30 @@
+{
+  "id": "HC-2353",
+  "domain": "healthcare",
+  "tags": [
+    "prion disease",
+    "diagnosis",
+    "RT-QuIC",
+    "MRI",
+    "EEG"
+  ],
+  "content": "CJD diagnosis: 1) Clinical criteria (rapidly progressive dementia plus \u22652 of: myoclonus, visual/cerebellar signs, pyramidal/extrapyramidal signs, akinetic mutism); 2) MRI brain: cortical ribboning and basal ganglia hyperintensity on DWI/FLAIR (highly sensitive/specific); 3) EEG: periodic sharp wave complexes (specific but insensitive, late finding); 4) CSF: elevated 14-3-3 protein, tau, neuron-specific enolase (markers of rapid neuronal destruction); 5) RT-QuIC (real-time quaking-induced conversion): detects prion seeding activity in CSF, >95% specificity, now CDC case definition criterion; 6) Definitive diagnosis requires brain biopsy or autopsy (spongiform change, neuronal loss, gliosis, PrP deposition). Genetic testing for PRNP mutations in suspected familial cases.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

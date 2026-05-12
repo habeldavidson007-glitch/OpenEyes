@@ -1,0 +1,26 @@
+{
+  "id": "HC-2221",
+  "domain": "healthcare",
+  "tags": [
+    "phr"
+  ],
+  "content": "ADR management: (1) Assess severity and temporal relationship to drug exposure; (2) For Type A reactions, reduce dose or discontinue drug; (3) For Type B reactions, discontinue immediately and avoid rechallenge; (4) Provide supportive care (antihistamines for allergic reactions, corticosteroids for severe hypersensitivity, epinephrine for anaphylaxis); (5) Report serious ADRs to FDA MedWatch or national pharmacovigilance systems; (6) Document in patient record as allergy/intolerance; (7) Consider alternative therapies. Rechallenge is contraindicated for severe Type B reactions. Desensitization protocols exist for certain essential drugs (penicillin, chemotherapy). Prevention includes therapeutic drug monitoring for narrow therapeutic index drugs and pharmacogenomic testing where indicated.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

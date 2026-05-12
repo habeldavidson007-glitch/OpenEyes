@@ -1,0 +1,31 @@
+{
+  "id": "frag_med_unknown_definition_0367",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "cancer screening",
+    "early detection",
+    "mammography",
+    "colonoscopy",
+    "PSA"
+  ],
+  "content": "Cancer screening aims to detect cancer before symptoms develop, when treatment is more effective. Screening criteria (Wilson-Jungner): important health problem, understood natural history, recognizable early stage, effective treatment available, suitable test, acceptable to population, cost-effective. Mammography uses low-dose X-rays to detect breast cancer; digital breast tomosynthesis (3D mammography) improves cancer detection, reduces false positives. Colonoscopy visualizes entire colon, allows polyp removal; alternatives include FIT (fecal immunochemical test), stool DNA (Cologuard), CT colonography. PSA (prostate-specific antigen) blood test for prostate cancer screening is controversial due to overdiagnosis of indolent cancers. Low-dose CT for lung cancer screening in high-risk smokers. Cervical cancer screening: Pap smear (cytology) and HPV testing. Screening intervals and ages vary by guideline organization (USPSTF, ACS, specialty societies).",
+  "source": "PubMed",
+  "source_url": "https://www.uspreventiveservicestaskforce.org/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

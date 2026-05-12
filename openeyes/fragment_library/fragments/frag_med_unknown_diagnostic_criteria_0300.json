@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0300",
+  "domain": "healthcare",
+  "tags": [
+    "tolerance_diagnosis",
+    "dose_escalation",
+    "hyperalgesia_differentiation",
+    "tolerance_vs_addiction"
+  ],
+  "content": "Tolerance diagnosis based on: documented dose escalation without disease progression; diminished clinical effect despite adherence; withdrawal symptoms suggesting physical dependence (often accompanies tolerance). Differentiate from: disease progression (worsening condition requires higher doses); pseudoaddiction (undertreated pain seeking relief); hyperalgesia (opioid-induced increased pain sensitivity - paradoxical response requiring dose reduction not increase). Quantitative assessment: track dose-response relationship over time; calculate morphine milligram equivalents (MME) for opioids; monitor therapeutic indices. Experimental measures: receptor binding studies show decreased density/sensitivity; metabolic studies demonstrate increased clearance. Tolerance vs addiction: tolerance is expected physiologic adaptation; addiction involves compulsive use despite harm, craving, loss of control.",
+  "source": "ema.europa.eu",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

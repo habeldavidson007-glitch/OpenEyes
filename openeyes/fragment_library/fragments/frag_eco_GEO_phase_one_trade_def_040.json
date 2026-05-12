@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_phase_one_trade_def_040",
+  "domain": "economy",
+  "tags": [
+    "phase_one_trade_deal",
+    "trade_policy",
+    "definition"
+  ],
+  "content": "US-China Phase One deal (Jan 2020): China committed purchase $200B additional US goods/services over 2017 baseline. Covered manufactured goods, agriculture, energy, services. Included IP protection, technology transfer provisions. Trade war ceasefire temporary. Purchases fell short (~60% achieved).",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

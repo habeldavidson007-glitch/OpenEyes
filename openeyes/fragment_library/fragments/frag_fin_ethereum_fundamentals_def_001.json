@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_ethereum_fundamentals_def_001",
+  "domain": "economy",
+  "tags": [
+    "smart_contracts",
+    "ethereum",
+    "defi",
+    "definition",
+    "blockchain",
+    "crypto"
+  ],
+  "content": "Ethereum is blockchain platform enabling smart contracts and decentralized applications (dApps). Launched 2015 by Vitalik Buterin and others. Native cryptocurrency is Ether (ETH). Unlike Bitcoin's limited scripting, Ethereum supports programmable contracts executing automatically when conditions met. Transitioned from proof-of-work to proof-of-stake (The Merge, 2022), reducing energy consumption ~99%. Use cases include DeFi protocols, NFTs, DAOs, and tokenization. Layer-2 solutions improve scalability. ETH used for transaction fees (gas) and staking to secure network.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/investor/alerts/ether-and-other-virtual-currencies",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

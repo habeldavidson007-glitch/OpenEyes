@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_belt_road_def_007",
+  "domain": "economy",
+  "tags": [
+    "belt_and_road",
+    "china",
+    "infrastructure",
+    "development",
+    "definition"
+  ],
+  "content": "Belt and Road Initiative (BRI): China's global infrastructure strategy launched 2013. Two components: Silk Road Economic Belt (land routes) and 21st Century Maritime Silk Road. 150+ countries signed MOUs. Cumulative investment: $1-1.3 trillion through 2023. Focus: ports, railways, energy, digital infrastructure.",
+  "source": "world_bank_report",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

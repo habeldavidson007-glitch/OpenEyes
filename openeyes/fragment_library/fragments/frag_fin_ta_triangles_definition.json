@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ta_triangles_definition",
+  "domain": "economy",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "content": "Symmetrical triangles: converging trendlines, breakout direction uncertain. Ascending triangles: flat resistance + rising lows, bullish bias. Descending triangles: flat support + falling highs, bearish bias. Breakout typically occurs 2/3-3/4 through pattern.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

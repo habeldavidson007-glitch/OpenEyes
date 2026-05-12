@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0306",
+  "domain": "healthcare",
+  "tags": [
+    "binding_measurement",
+    "fraction_bound",
+    "Kd_affinity",
+    "acute_phase_reactant"
+  ],
+  "content": "Protein binding is measured by equilibrium dialysis or ultrafiltration, separating free from bound drug. Fraction bound = (Total - Free) / Total \u00d7 100%. Normal albumin: 3.5-5.0 g/dL; each 1 g/dL decrease reduces binding capacity by ~20%. Alpha-1-acid glycoprotein is an acute-phase reactant, increasing in inflammation, trauma, MI - increasing binding of basic drugs (lidocaine, propranolol). Binding affinity expressed as dissociation constant (Kd); lower Kd indicates tighter binding. Non-linear binding occurs when therapeutic concentrations approach protein binding capacity (saturation kinetics). Temperature and pH affect binding; acidosis decreases albumin binding. In vitro artifact: sample handling can alter measured binding if temperature changes.",
+  "source": "ema.europa.eu",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

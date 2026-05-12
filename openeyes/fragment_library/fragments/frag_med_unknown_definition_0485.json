@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0485",
+  "domain": "healthcare",
+  "tags": [
+    "dementia",
+    "cholinesterase-inhibitor",
+    "memantine",
+    "treatment-protocol",
+    "BPSD"
+  ],
+  "content": "Dementia treatment includes cognitive enhancers, non-pharmacologic interventions, and management of behavioral symptoms. Alzheimer's/Lewy body/Parkinson's disease dementia: cholinesterase inhibitors (donepezil, rivastigmine, galantamine) provide modest symptomatic benefit for cognition/function; rivastigmine patch reduces GI side effects. Memantine (NMDA antagonist) for moderate-severe AD, can combine with ChEI. Vascular dementia: focus on vascular risk reduction (BP control, statins, diabetes management, antiplatelets); ChEI may provide modest benefit. FTD: no effective cognitive enhancers; ChEI may worsen behavior. Non-pharmacologic: cognitive stimulation, structured routines, caregiver education/support, environmental modifications (safety, reduce overstimulation), advance care planning. Behavioral and psychological symptoms of dementia (BPSD): first-line non-drug approaches (identify triggers, modify environment, music therapy, validation therapy). Pharmacologic only for severe distress/danger: antidepressants (SSRIs for depression/anxiety), antipsychotics (atypical\u2014quetiapine, risperidone) only for severe agitation/psychosis unresponsive to non-drug measures (black box warning: increased mortality in dementia patients; use lowest dose, shortest duration, informed consent). Avoid benzodiazepines (falls, confusion, paradoxical agitation).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

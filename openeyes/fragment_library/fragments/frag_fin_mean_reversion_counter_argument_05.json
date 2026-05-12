@@ -1,0 +1,32 @@
+{
+  "id": "frag_fin_mean_reversion_counter_argument_05",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "mean_reversion",
+    "rsi",
+    "oversold",
+    "overbought",
+    "divergence",
+    "counter_argument"
+  ],
+  "content": "Mean reversion fails catastrophically in trending markets, generating unlimited losses without stops. Identifying the 'mean' is subjective and shifts over time. What appears as mean reversion opportunity may be structural break. Transaction costs from frequent trading accumulate. Mean reversion requires capital to withstand extended adverse moves. Statistical arbitrage requires sophistication beyond retail capabilities. 'Cheap can get cheaper' in momentum-driven markets. Mean reversion timing is exceptionally difficult.",
+  "source": "Educational Resource",
+  "source_url": "https://www.academic-finance.org/mean-reversion-limits",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

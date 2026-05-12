@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_var_cvar_metrics_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "risk_management",
+    "var",
+    "cvar",
+    "metrics",
+    "counter_argument"
+  ],
+  "content": "VaR is heavily criticized for assuming normal distributions and underestimating fat tails (black swans). It can create a false sense of security, as seen in 2008 when VaR models failed to predict correlated systemic collapses. CVaR is theoretically superior but harder to calculate accurately due to lack of historical tail data.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

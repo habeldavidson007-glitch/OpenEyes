@@ -1,0 +1,29 @@
+{
+  "id": "HC-2369",
+  "domain": "healthcare",
+  "tags": [
+    "vaccination",
+    "herd immunity",
+    "adjuvants",
+    "immunology"
+  ],
+  "content": "Vaccines stimulate adaptive immunity without causing disease. Types: live attenuated (MMR, varicella, yellow fever - contraindicated in pregnancy/immunocompromise), inactivated (polio IPV, hepatitis A), subunit/conjugate (hepatitis B, HPV, pneumococcal), toxoid (tetanus, diphtheria), mRNA (COVID-19), viral vector (Ebola, some COVID-19). Herd immunity threshold: proportion immune needed to interrupt transmission = 1 - 1/R0; measles R0~12-18 requires ~95% immunity, polio R0~5-7 requires ~80%. Adjuvants enhance immune response: aluminum salts (most common), MF59 (squalene oil-in-water emulsion), AS01 (liposome-based in shingles vaccine), CpG oligonucleotides. Mechanisms: depot effect, innate immune activation, improved antigen presentation.",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "frag_fin_ev_ebitda_enterprise_value_latest_data_059",
+  "domain": "economy",
+  "tags": [
+    "peg_ratio",
+    "price_to_sales",
+    "price_to_book",
+    "ev_ebitda",
+    "pe_ratio",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "content": "Recent data through 2024 shows Ev Ebitda Enterprise Value metrics are diverging across sectors. Investors are increasingly prioritizing cash yield and balance sheet strength over pure growth narratives in the current higher-for-longer rate regime.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

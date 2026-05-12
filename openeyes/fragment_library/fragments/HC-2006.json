@@ -1,0 +1,30 @@
+{
+  "id": "HC-2006",
+  "domain": "healthcare",
+  "tags": [
+    "CBT",
+    "scheduled-visits",
+    "antidepressants",
+    "validation",
+    "functional-improvement"
+  ],
+  "content": "Management focuses on improving functioning rather than symptom elimination. Regular scheduled visits with single provider reduce unnecessary testing/procedures. Validate patient experience while gently redirecting from organic focus. CBT addresses catastrophic thinking, reduces healthcare utilization, improves coping. Mindfulness-based therapies help with symptom acceptance. Antidepressants (SSRIs/SNRIs) may help comorbid depression/anxiety and have some evidence for reducing somatic symptom burden. For Conversion Disorder: physical therapy, occupational therapy, psychological treatment addressing stressors. Avoid reinforcing sick role while maintaining therapeutic alliance. Gradual activity increase, focus on function over symptoms. Multidisciplinary approach optimal for complex cases.",
+  "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "HC-2128",
+  "domain": "healthcare",
+  "tags": [
+    "universal health coverage",
+    "health systems",
+    "access",
+    "equity"
+  ],
+  "content": "Universal Health Coverage (UHC) is defined by WHO as ensuring all people have access to needed health services of sufficient quality without suffering financial hardship. It encompasses three dimensions: population coverage (who is covered), service coverage (which services are included), and cost coverage (what proportion of costs are paid collectively). UHC is measured through service coverage indices and catastrophic health expenditure rates. The Sustainable Development Goal target 3.8 aims to achieve UHC by 2030, including financial risk protection and access to quality essential healthcare services.",
+  "source": "who.int",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

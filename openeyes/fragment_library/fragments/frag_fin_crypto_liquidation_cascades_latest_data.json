@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_crypto_liquidation_cascades_latest_data",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "latest_data",
+    "market_structure"
+  ],
+  "content": "May 2021 crash liquidated $10B+ in hours. FTX collapse triggered $2B+ liquidations. Typical cascade: 10-20% price move triggers 5-10x that volume in liquidations.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

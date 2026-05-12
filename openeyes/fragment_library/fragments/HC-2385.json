@@ -1,0 +1,29 @@
+{
+  "id": "HC-2385",
+  "domain": "healthcare",
+  "tags": [
+    "bloodstream infection",
+    "treatment",
+    "empiric antibiotics",
+    "source control"
+  ],
+  "content": "Empiric therapy for suspected BSI/sepsis: vancomycin (MRSA coverage) + antipseudomonal beta-lactam (cefepime, piperacillin-tazobactam, meropenem) based on local antibiogram and patient risk factors. Add echinocandin if Candida risk (TPN, abdominal surgery, prolonged antibiotics, femoral catheter). De-escalate based on culture results. CRBSI management: remove catheter if S. aureus, Candida, Pseudomonas, Bacillus, Mycobacterium, or if severe sepsis/hemodynamic instability; consider antibiotic lock therapy with catheter salvage for coagulase-negative staphylococci if no complications. Duration: uncomplicated Gram-negative 7 days, S. aureus minimum 14 days from first negative culture (longer if metastatic foci), Candida 14 days after clearance. Echocardiography recommended for S. aureus bacteremia to rule out endocarditis.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

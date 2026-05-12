@@ -1,0 +1,27 @@
+{
+  "id": "FIN-186",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "options trading"
+  ],
+  "content": "Options trading strategies exploit mispricings in implied volatility surfaces. Volatility skew reflects market pricing of tail risk. Straddles profit from volatility expansion, iron condors from contraction. Delta-hedging maintains neutral exposure to underlying price. Gamma scalping profits from realized volatility exceeding implied. Options Greeks measure sensitivity to various risk factors.",
+  "source": "Option Volatility and Pricing",
+  "source_url": "https://example.com/FIN-186",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

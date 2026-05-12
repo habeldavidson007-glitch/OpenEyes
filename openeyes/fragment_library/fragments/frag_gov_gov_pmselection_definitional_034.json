@@ -1,18 +1,29 @@
 {
   "id": "frag_gov_gov_pmselection_definitional_034",
   "domain": "governance",
-  "sector": "GOV",
-  "content": "{'summary': '. This fragment describes the institutional structure, legal basis, and key characteristics.', 'key_points': ['Core definition and scope of prime minister selection', 'Legal or constitutional basis where applicable', 'Key institutional features and characteristics', 'Distinctions from related concepts', 'Historical development and evolution'], 'sources': ['UK Parliament publications', 'Inter-Parliamentary Union data', 'Comparative Constitutions Project', 'Freedom House reports', 'Academic literature on Westminster systems'], 'related_fragments': [], 'last_updated': '2024-01-15', 'credibility_score': 0.95, 'philosophy_guard_passed': True, 'philosophy_guard_note': 'Descriptive claim about parliamentary systems; no normative advocacy regarding what should be'}",
   "tags": [
     "GOV",
     "definition",
     "election",
     "voting"
   ],
+  "content": "{'summary': '. This fragment describes the institutional structure, legal basis, and key characteristics.', 'key_points': ['Core definition and scope of prime minister selection', 'Legal or constitutional basis where applicable', 'Key institutional features and characteristics', 'Distinctions from related concepts', 'Historical development and evolution'], 'sources': ['UK Parliament publications', 'Inter-Parliamentary Union data', 'Comparative Constitutions Project', 'Freedom House reports', 'Academic literature on Westminster systems'], 'related_fragments': [], 'last_updated': '2024-01-15', 'credibility_score': 0.95, 'philosophy_guard_passed': True, 'philosophy_guard_note': 'Descriptive claim about parliamentary systems; no normative advocacy regarding what should be'}",
   "source": "Unknown",
   "source_url": "https://www.un.org",
   "credibility_class": "anecdotal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
   "subdomain": "GOV",
+  "sector": "GOV",
   "reasoning_role": "definition",
-  "year": 2024
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
 }

@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_algorithmic_trading_counter_argument_04",
+  "domain": "economy",
+  "tags": [
+    "counter_argument",
+    "technical_analysis",
+    "algorithmic_trading"
+  ],
+  "content": "Algo trading has made traditional TA patterns less reliable as algos front-run predictable retail behavior. Stop hunts and liquidity grabs target obvious technical levels. The speed advantage of institutional algos makes retail TA participation disadvantageous. Flash crashes demonstrate systemic risks from algo concentration. Patterns that worked pre-algo era often fail now. Retail traders using TA are essentially providing liquidity for sophisticated algos. The arms race favors those with fastest data and execution.",
+  "source": "Educational Resource",
+  "source_url": "https://www.sec.gov/market-structure-algo-impact",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

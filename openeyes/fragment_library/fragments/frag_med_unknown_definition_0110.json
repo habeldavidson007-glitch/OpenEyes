@@ -1,0 +1,28 @@
+{
+  "id": "frag_med_unknown_definition_0110",
+  "domain": "healthcare",
+  "tags": [
+    "clinical trial failure rates",
+    "drug development attrition",
+    "phase transition"
+  ],
+  "content": "Phase transition success rates (approximate, varies by study and era): Phase I to Phase II: 60-70% (safety/PK issues cause most failures); Phase II to Phase III: 30-40% (efficacy signal insufficient or safety concerns emerge); Phase III to approval: 50-60% (failure to confirm efficacy, safety signals in larger populations, or commercial considerations). Oncology has particularly low Phase II-III success (~25-30%) due to reliance on surrogate endpoints that don't always predict survival benefit. CNS/psychiatry also has high failure rates (~80-90% in Phase II/III) due to poor translational models and high placebo responses. Strategies to improve success include: better target validation, biomarker-driven patient selection, adaptive designs, earlier go/no-go decisions, and learning from failed programs.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

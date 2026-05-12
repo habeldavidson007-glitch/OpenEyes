@@ -1,0 +1,27 @@
+{
+  "id": "FIN-181",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "sentiment analysis"
+  ],
+  "content": "Sentiment analysis uses NLP to extract market sentiment from news, social media, and SEC filings. Lexicon-based approaches count positive/negative words. Machine learning classifiers train on labeled data. Transformer models like BERT capture context better. Sentiment signals work best on short horizons and must be combined with other factors.",
+  "source": "Natural Language Processing in Finance",
+  "source_url": "https://example.com/FIN-181",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

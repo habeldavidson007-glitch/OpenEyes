@@ -1,0 +1,27 @@
+{
+  "id": "frag_fin_ta_volume_profile_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "volume"
+  ],
+  "content": "Volume Profile's effectiveness depends heavily on lookback period selection\u2014different periods show different POC and value areas. In trending markets, old profile levels become irrelevant quickly. The tool works best in ranged markets where mean reversion dominates. Over-reliance on historical volume nodes ignores changing market conditions.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_liquidity_crisis_def_001",
+  "domain": "economy",
+  "tags": [
+    "risk_management",
+    "definition",
+    "var",
+    "correlation",
+    "volatility"
+  ],
+  "content": "Liquidity crisis occurs when markets cannot absorb selling without dramatic price declines. Characteristics: bid-ask spreads widen dramatically, trading volumes surge but executions fail, normally liquid assets become unsellable, fire sales propagate across markets, funding liquidity dries up. Examples: 2008 Lehman collapse (commercial paper froze), 2010 Flash Crash, 2019 Repo spike, March 2020 COVID panic (even Treasuries illiquid). Causes: leverage unwinding, margin calls, redemptions forcing sales, counterparty fears, regulatory constraints on market making. Central banks often intervene as lender of last resort.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/liquidity-20210820.html",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

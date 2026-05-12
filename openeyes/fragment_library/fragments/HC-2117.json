@@ -1,0 +1,29 @@
+{
+  "id": "HC-2117",
+  "domain": "healthcare",
+  "tags": [
+    "healthcare financing",
+    "reform",
+    "policy",
+    "coverage"
+  ],
+  "content": "Health system reform toward universal coverage typically follows a pathway: (1) Consolidate fragmented insurance schemes to increase risk pooling; (2) Expand mandatory enrollment through employment-based or residence-based mechanisms; (3) Increase government subsidies for vulnerable populations; (4) Reduce benefit package exclusions progressively; (5) Shift from fee-for-service to capitation or DRG payments to control costs. Germany's 2009 reform created a central health fund redistributing revenues across sickness funds. The Netherlands' 2006 reform mandated private insurance with risk equalization. Evidence shows multi-payer Bismarck systems can achieve equity comparable to single-payer through strong regulation and risk adjustment.",
+  "source": "who.int",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

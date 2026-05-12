@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_energy_transition_def_056",
+  "domain": "economy",
+  "tags": [
+    "energy_transition",
+    "geopolitics",
+    "definition"
+  ],
+  "content": "Energy transition geopolitics: Shift from fossil fuel geography to critical mineral geography creates new dependencies. Oil exporters face stranded asset risks. Renewable supply chains concentrated (solar China 80%, batteries Asia 75%). Grid interconnection, storage create new interdependencies. Just transition financing for developing countries contentious.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

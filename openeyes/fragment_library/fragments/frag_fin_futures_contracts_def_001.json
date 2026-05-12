@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_futures_contracts_def_001",
+  "domain": "economy",
+  "tags": [
+    "commodities",
+    "forex",
+    "definition",
+    "futures",
+    "derivatives"
+  ],
+  "content": "Futures are standardized contracts to buy/sell underlying asset at specified price on future date. Unlike options, futures obligate both parties. Used for hedging (producers/consumers lock prices) and speculation. Margin requirements allow leverage (typically 5-15% of contract value). Daily mark-to-market settles gains/losses. Contracts specify quantity, quality, delivery location/date. Most positions closed before delivery via offsetting trade. Underlying assets include commodities (oil, gold, grains), financial instruments (indices, bonds, currencies), and cryptocurrencies.",
+  "source": "CFTC",
+  "source_url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/FuturesFAQ.htm",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.9,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "COM",
+  "sector": "COM",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "HC-2412",
+  "domain": "healthcare",
+  "tags": [
+    "CPR",
+    "quality",
+    "compression depth",
+    "rate",
+    "evidence"
+  ],
+  "content": "High-quality CPR elements: compression rate 100-120/min, depth 5-6 cm (2-2.4 inches) in adults, full chest recoil between compressions, minimize interruptions (<10 seconds), avoid excessive ventilation. Compression-to-ventilation ratio 30:2 for single rescuer; continuous compressions with asynchronous ventilations once advanced airway placed. Hands-only CPR (compressions only) recommended for untrained bystanders\u2014equivalent outcomes for adult sudden collapse. Mechanism: direct cardiac compression and thoracic pump generate blood flow (coronary perfusion pressure critical for ROSC). Feedback devices improve CPR quality. Switch compressors every 2 minutes to prevent fatigue. Defibrillation: biphasic shocks 120-200J (follow device-specific recommendations); resume CPR immediately after shock without rhythm check. Epinephrine 1mg IV/IO every 3-5 minutes improves ROSC and survival to discharge but not neurologically intact survival; give as soon as possible for non-shockable rhythms, after second shock for shockable rhythms. Amiodarone 300mg then 150mg for refractory VF/pVT.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33106097/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2020,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "HC-2417",
+  "domain": "healthcare",
+  "tags": [
+    "HFpEF",
+    "heart failure with preserved ejection fraction",
+    "diastolic dysfunction",
+    "pathophysiology"
+  ],
+  "content": "Heart failure with preserved ejection fraction (HFpEF) accounts for ~50% of all heart failure cases. Defined as HF syndrome with LVEF \u226550%, evidence of structural heart disease (LVH, LA enlargement) or diastolic dysfunction (elevated filling pressures). Pathophysiology: systemic proinflammatory state (obesity, diabetes, aging, hypertension) causes coronary microvascular endothelial inflammation, reduced NO bioavailability, cardiomyocyte hypertrophy and fibrosis, increased passive stiffness, impaired relaxation. Unlike HFrEF, no single dominant mechanism\u2014heterogeneous phenotype. Comorbidities integral to pathophysiology: obesity, diabetes, AF, CKD, anemia, sleep apnea, pulmonary hypertension. Demographics: older, more often female, higher BMI, more non-cardiac comorbidities than HFrEF. Natural history: similar mortality to HFrEF, more hospitalizations for non-CV causes.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

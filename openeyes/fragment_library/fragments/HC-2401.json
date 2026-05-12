@@ -1,0 +1,29 @@
+{
+  "id": "HC-2401",
+  "domain": "healthcare",
+  "tags": [
+    "visceral adiposity",
+    "insulin resistance",
+    "inflammation",
+    "pathophysiology"
+  ],
+  "content": "Pathophysiology of metabolic syndrome: visceral adipose tissue is metabolically active, releasing free fatty acids, adipokines (leptin, resistin, visfatin), and proinflammatory cytokines (TNF-\u03b1, IL-6, MCP-1). This creates chronic low-grade inflammation and insulin resistance. Free fatty acids impair insulin signaling in liver and muscle, increase hepatic glucose production, reduce glucose uptake. Adiponectin (anti-inflammatory, insulin-sensitizing) is reduced. Ectopic fat deposition in liver (NAFLD), muscle, pancreas worsens metabolic dysfunction. Endothelial dysfunction results from oxidative stress, reduced NO bioavailability, increased endothelin-1. Prothrombotic state: elevated PAI-1, fibrinogen, factor VII; impaired fibrinolysis. Mitochondrial dysfunction, gut microbiome alterations, genetic predisposition contribute. Insulin resistance precedes hyperglycemia by years\u2014compensatory hyperinsulinemia maintains normal glucose until beta-cell failure. Early intervention critical before irreversible organ damage.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/29133354/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2017,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "review",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

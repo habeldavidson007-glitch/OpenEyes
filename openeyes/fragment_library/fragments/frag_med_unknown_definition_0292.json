@@ -1,0 +1,31 @@
+{
+  "id": "frag_med_unknown_definition_0292",
+  "domain": "healthcare",
+  "tags": [
+    "CYP450",
+    "drug_metabolism",
+    "CYP3A4",
+    "CYP2D6",
+    "pharmacogenomics",
+    "polymorphisms"
+  ],
+  "content": "Cytochrome P450 (CYP) enzymes are heme-containing proteins responsible for phase I metabolism of ~75% of clinically used drugs. Major isoforms: CYP3A4/5 (metabolizes ~50% of drugs including statins, calcium channel blockers, immunosuppressants), CYP2D6 (25% of drugs - beta blockers, SSRIs, opioids, tamoxifen), CYP2C9 (warfarin, phenytoin, NSAIDs), CYP2C19 (PPIs, clopidogrel, some antidepressants), CYP1A2 (caffeine, theophylline, clozapine). Genetic polymorphisms create poor, intermediate, extensive (normal), and ultrarapid metabolizer phenotypes. CYP3A4 is inducible; CYP2D6 has no clinically relevant inducers.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "frag_phr_unknown_definition_0166",
+  "domain": "healthcare",
+  "tags": [
+    "phr",
+    "definition",
+    "safety"
+  ],
+  "content": "Risk Evaluation and Mitigation Strategies (REMS) are FDA-mandated programs designed to ensure that benefits of certain high-risk medications outweigh their risks. REMS may include: Medication Guides for patients, Communication Plans for healthcare providers, Elements To Assure Safe Use (ETASU) such as prescriber certification, pharmacy certification, patient enrollment, laboratory monitoring, or restricted distribution. Examples include isotretinoin (iPLEDGE program requiring pregnancy prevention), clozapine (ANC monitoring to prevent agranulocytosis), thalidomide/lenalidomide (STEPS program for teratogenicity and thrombosis prevention), and opioids (training requirements for prescribers). REMS are required at approval or post-market when new safety signals emerge.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

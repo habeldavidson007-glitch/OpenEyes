@@ -1,0 +1,29 @@
+{
+  "id": "HC-2350",
+  "domain": "healthcare",
+  "tags": [
+    "COVID-19",
+    "diagnosis",
+    "PCR",
+    "antigen testing"
+  ],
+  "content": "COVID-19 diagnosis: 1) NAAT/PCR (gold standard, highest sensitivity, detects viral RNA); 2) Rapid antigen tests (lower sensitivity, best for symptomatic patients within first week, serial testing improves sensitivity); 3) Antibody tests indicate prior infection/vaccination but not acute diagnosis. Testing indicated for symptomatic individuals, post-exposure screening, pre-procedure requirements. Isolation guidance: stay home until fever-free 24 hours without antipyretics and symptoms improving; wear mask through day 10. Severity classification: mild (no hypoxia), moderate (oxygen saturation \u226590% on room air), severe (<90% on room air, respiratory rate >30, lung infiltrates >50%), critical (respiratory failure, septic shock, organ dysfunction).",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "HC-2343",
+  "domain": "healthcare",
+  "tags": [
+    "C. difficile",
+    "treatment",
+    "fidaxomicin",
+    "fecal transplant"
+  ],
+  "content": "Initial non-severe CDI: fidaxomicin 200mg BID x10 days (preferred, lower recurrence) or vancomycin 125mg QID x10 days; metronidazole 500mg TID x10 days only if others unavailable. Severe CDI (WBC \u226515,000 or creatinine \u22651.5x baseline): fidaxomicin or vancomycin. Fulminant CDI (hypotension, shock, ileus, megacolon): vancomycin 500mg QID orally/NG + metronidazole 500mg IV q8h; consider rectal vancomycin if ileus. First recurrence: fidaxomicin (if not used initially) or vancomycin taper/pulse regimen. Multiple recurrences: fidaxomicin, vancomycin taper, or bezlotoxumab (monoclonal antibody against toxin B) added to antibiotics. Fecal microbiota transplantation (FMT) for \u22653 recurrences or 2 recurrences requiring hospitalization; ~85-90% efficacy. Rebiotix (fecal microbiota suspension) and Vowst (fecal spores) FDA-approved for recurrence prevention.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

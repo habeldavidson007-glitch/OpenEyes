@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_definition_0146",
+  "domain": "healthcare",
+  "tags": [
+    "Phase IV",
+    "post-marketing",
+    "real-world evidence",
+    "pharmacovigilance"
+  ],
+  "content": "Post-marketing surveillance employs multiple methodologies: spontaneous adverse event reporting systems (FDA FAERS, EMA EudraVigilance), mandated Phase IV clinical trials, observational studies using electronic health records and claims databases, patient registries for specific diseases or exposures, and active surveillance programs (FDA Sentinel Initiative). Risk Evaluation and Mitigation Strategies (REMS) may be required for drugs with serious safety concerns, including medication guides, communication plans, and elements to assure safe use (ETASU). Signal detection uses statistical methods to identify disproportionate reporting of specific adverse events.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

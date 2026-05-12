@@ -1,0 +1,29 @@
+{
+  "id": "HC-2365",
+  "domain": "healthcare",
+  "tags": [
+    "pneumonia",
+    "diagnosis",
+    "imaging",
+    "severity"
+  ],
+  "content": "Pneumonia diagnosis requires: 1) Compatible clinical presentation (cough, fever, dyspnea, pleuritic chest pain); 2) Chest radiograph showing new infiltrate (required for definitive diagnosis); 3) Supporting labs (leukocytosis, elevated CRP/procalcitonin). CURB-65 assesses severity: Confusion, Urea >7 mmol/L, Respiratory rate \u226530/min, Blood pressure (systolic <90 or diastolic \u226460), age \u226565 (score 0-5; \u22652 suggests hospitalization). PSI/PORT score incorporates more variables for mortality prediction. Sputum Gram stain/culture indicated for severe CAP or HAP/VAP. Blood cultures recommended for severe CAP. Urinary antigens for Legionella/S. pneumoniae in select cases. CT chest if complications suspected or diagnosis uncertain.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

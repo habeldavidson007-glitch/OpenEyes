@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0388",
+  "domain": "healthcare",
+  "tags": [
+    "hyponatremia",
+    "sodium",
+    "SIADH",
+    "hypovolemia",
+    "fluid balance"
+  ],
+  "content": "Hyponatremia is serum sodium <135 mEq/L, the most common electrolyte disorder in clinical practice. Classification by tonicity: hypotonic (true hyponatremia, most common), isotonic (pseudohyponatremia from hyperlipidemia/hyperproteinemia), hypertonic (hyperglycemia, mannitol). Hypotonic hyponatremia classified by volume status: (1) Hypovolemic - sodium and water loss (diuretics, GI losses, third-spacing, mineralocorticoid deficiency); (2) Euvolemic - normal total body sodium with excess water (SIADH, hypothyroidism, glucocorticoid deficiency, psychogenic polydipsia, thiazides); (3) Hypervolemic - increased total body sodium with greater water retention (heart failure, cirrhosis, nephrotic syndrome, renal failure). Symptoms depend on severity and acuity: mild (nausea, malaise), moderate (headache, confusion, lethargy), severe (seizures, coma, respiratory arrest). Acute (<48 hours) more symptomatic than chronic due to cerebral edema.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985613/",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

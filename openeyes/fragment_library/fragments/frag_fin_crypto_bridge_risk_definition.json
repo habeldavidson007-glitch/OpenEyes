@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_crypto_bridge_risk_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "risk_management",
+    "defi"
+  ],
+  "content": "Cross-chain bridges lock assets on source chain and mint wrapped versions on destination. They concentrate risk\u2014bridge contracts hold billions in locked assets. Attack vectors include validator compromise, smart contract bugs, and oracle manipulation. Bridges represent highest-risk DeFi primitive, responsible for 60%+ of hacked funds.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

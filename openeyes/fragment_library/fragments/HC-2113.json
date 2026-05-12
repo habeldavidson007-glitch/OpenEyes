@@ -1,0 +1,29 @@
+{
+  "id": "HC-2113",
+  "domain": "healthcare",
+  "tags": [
+    "electronic health records",
+    "EHR",
+    "interoperability",
+    "health IT"
+  ],
+  "content": "Electronic Health Records (EHRs) are digital versions of patient charts containing: demographics, problem lists, medications, allergies, immunizations, lab results, imaging reports, clinical notes, and order entry. Key functions: (1) Clinical documentation - structured and free-text notes; (2) Computerized provider order entry (CPOE) - reducing handwriting errors; (3) Clinical decision support - drug interaction alerts, preventive care reminders; (4) e-Prescribing - direct transmission to pharmacies; (5) Patient portals - access to records, messaging, appointment scheduling. US EHR adoption reached 96% of hospitals and 88% of office-based physicians by 2021 following HITECH Act incentives ($30+ billion). However, interoperability remains limited despite standards like HL7 FHIR.",
+  "source": "healthit.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

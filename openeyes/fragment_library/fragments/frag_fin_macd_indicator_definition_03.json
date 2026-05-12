@@ -1,0 +1,29 @@
+{
+  "id": "frag_fin_macd_indicator_definition_03",
+  "domain": "economy",
+  "tags": [
+    "definition",
+    "macd",
+    "technical_analysis",
+    "macd_indicator"
+  ],
+  "content": "The Moving Average Convergence Divergence (MACD) shows the relationship between two EMAs. MACD Line = 12-day EMA minus 26-day EMA. Signal Line = 9-day EMA of MACD Line. Histogram = MACD Line minus Signal Line. Crossovers signal momentum shifts; histogram expansion/contraction shows momentum strength. Zero-line crossovers indicate trend changes. Best used with other indicators due to lag.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/m/macd.asp",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

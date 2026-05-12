@@ -1,0 +1,29 @@
+{
+  "id": "FIN-135",
+  "domain": "economy",
+  "tags": [
+    "derivatives",
+    "financial_instruments",
+    "hedging",
+    "risk_management"
+  ],
+  "content": "Derivatives are financial contracts whose value derives from an underlying asset, index, or rate. The four main types are forwards (customized OTC agreements to buy/sell at future date), futures (standardized exchange-traded forwards), options (right but not obligation to buy/sell), and swaps (exchange of cash flows). Derivatives serve three primary functions: hedging (reducing risk), speculation (taking leveraged positions), and arbitrage (exploiting price discrepancies). The global derivatives market exceeds $600 trillion in notional value, with interest rate swaps being the largest segment. Counterparty risk\u2014the chance the other party defaults\u2014is a key concern, addressed through clearinghouses and collateral requirements post-2008.",
+  "source": "Bank for International Settlements",
+  "source_url": "https://www.bis.org/statistics/derstats.htm",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": "2024",
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

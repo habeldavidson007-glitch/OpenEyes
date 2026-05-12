@@ -1,0 +1,30 @@
+{
+  "id": "HC-2030",
+  "domain": "healthcare",
+  "tags": [
+    "mental health",
+    "social determinants",
+    "ACEs",
+    "income",
+    "inequality"
+  ],
+  "content": "Social determinants profoundly impact mental health outcomes. Low income and poverty increase stress, limit access to care, and correlate with higher rates of depression, anxiety, and psychosis. Adverse Childhood Experiences (ACEs) - abuse, neglect, household dysfunction - show dose-response relationships with adult mental illness, substance use, and suicide. Each additional ACE increases risk significantly. Discrimination, social isolation, and neighborhood violence also contribute. Housing instability and food insecurity exacerbate symptoms. Addressing social determinants through integrated services, housing-first models, income support, and trauma-informed care improves outcomes more effectively than clinical interventions alone. Mental health policy must address upstream social factors.",
+  "source": "nimh.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

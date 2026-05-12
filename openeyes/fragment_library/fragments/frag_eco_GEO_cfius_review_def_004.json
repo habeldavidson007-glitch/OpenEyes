@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_cfius_review_def_004",
+  "domain": "economy",
+  "tags": [
+    "cfius",
+    "foreign_investment",
+    "national_security",
+    "definition"
+  ],
+  "content": "CFIUS (Committee on Foreign Investment in the US): Interagency committee reviewing foreign investments for national security risks. FIRRMA (2018) expanded jurisdiction to include real estate, critical tech, sensitive data. Mandatory filing required for certain transactions involving foreign government control.",
+  "source": "treasury_department",
+  "source_url": "https://home.treasury.gov/policy-issues/international-policy/the-committee-on-foreign-investment-in-the-united-states-cfius",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.96,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

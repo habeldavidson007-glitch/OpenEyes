@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_dedollarization_counter_033",
+  "domain": "economy",
+  "tags": [
+    "dedollarization",
+    "timeline",
+    "counter_argument"
+  ],
+  "content": "Dedollarization timeline reality check: Network effects create extreme inertia. Dollar share declined only 13 percentage points over 24 years (71% to 58%). At this pace, parity with euro would take centuries. Sectors most affected: sanctioned economies (Russia, Iran), commodity trade (partial yuan adoption). Core functions (reserves, vehicle currency, anchor) remain dollar-dominated. Gradual erosion, not sudden collapse.",
+  "source": "barry_eichengreen_analysis",
+  "source_url": "https://econ.berkeley.edu/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.91,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

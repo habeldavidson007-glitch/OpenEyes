@@ -1,0 +1,28 @@
+{
+  "id": "HC-2063",
+  "domain": "healthcare",
+  "tags": [
+    "outbreak investigation steps",
+    "attack rate",
+    "analytic epidemiology"
+  ],
+  "content": "Outbreak investigation protocol: Establish case definition balancing sensitivity and specificity. Calculate attack rates (cases/exposed) and relative risks for suspected exposures. For cohort studies: compare attack rates between exposed and unvaccinated. For case-control studies: calculate odds ratios comparing exposure among cases vs controls. Environmental assessment identifies contamination sources. Laboratory testing confirms etiology and links cases through molecular subtyping (PFGE, whole genome sequencing). Control measures implemented immediately when source identified, without waiting for analytic study completion if evidence is strong.",
+  "source": "CDC MMWR outbreak investigation protocols, Field Epidemiology Manual",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

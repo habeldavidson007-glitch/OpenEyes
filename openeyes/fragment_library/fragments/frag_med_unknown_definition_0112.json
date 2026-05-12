@@ -1,0 +1,28 @@
+{
+  "id": "frag_med_unknown_definition_0112",
+  "domain": "healthcare",
+  "tags": [
+    "drug pricing",
+    "R&D costs",
+    "pharmaceutical economics"
+  ],
+  "content": "The cost of drug development is a contentious topic with significant implications for pricing policy and access. A widely cited 2016 study by DiMasi et al. estimated the average cost to bring a new drug to market at $2.6 billion (in 2013 dollars), including capital costs and failures. This figure has been heavily debated. Critics argue it's inflated due to industry-funded methodology, inclusion of opportunity costs, and lack of transparency. Alternative analyses suggest median R&D costs may be substantially lower ($50-500 million for many drugs), particularly for repurposed drugs, biosimilars, or those developed with public funding. The debate centers on what costs should be included and how they justify drug prices.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

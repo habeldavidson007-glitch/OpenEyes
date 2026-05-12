@@ -1,19 +1,27 @@
 {
   "id": "frag_eco_ENR_distributed_energy_definition_004",
   "domain": "economy",
-  "subdomain": "ENR",
   "tags": [
     "distributed_energy",
     "power"
   ],
-  "reasoning_role": "definition",
   "content": "Power markets: distributed_energy. Role: definition. Market design and infrastructure.",
   "source": "DOE",
   "source_url": "https://energy.gov/",
   "credibility_class": "government_source",
-  "year": 2024,
+  "last_verified": "2026-05-11",
+  "weight": 1.0,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0,
-  "last_verified": "2026-05-11"
+  "subdomain": "ENR",
+  "sector": null,
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
 }

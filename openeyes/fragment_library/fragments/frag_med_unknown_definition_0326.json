@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0326",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "CAR-T cell therapy",
+    "treatment process",
+    "toxicity management",
+    "efficacy"
+  ],
+  "content": "Treatment process: leukapheresis collects T-cells; manufacturing takes 2-4 weeks; bridging therapy may be needed; lymphodepleting chemotherapy (fludarabine + cyclophosphamide) x3 days before infusion; CAR-T infusion (single dose); monitoring in certified center for \u22657 days post-infusion. Efficacy: DLBCL - overall response rate (ORR) 50-80%, complete response (CR) 40-60% (ZUMA-1, JULIET, TRANSCEND trials); ALL - CR 60-90% in children/young adults (ELIANA trial); myeloma - ORR 70-95% with BCMA-targeted CAR-T (CARTITUDE, KarMMa). Toxicities: cytokine release syndrome (CRS) - fever, hypotension, hypoxia, graded 1-4, treated with tocilizumab (IL-6 receptor antagonist) and steroids; immune effector cell-associated neurotoxicity syndrome (ICANS) - confusion, aphasia, seizures, cerebral edema, treated with steroids; prolonged cytopenias; hypogammaglobulinemia requiring IVIG; infection risk. REMS program required for prescribing centers.",
+  "source": "PubMed",
+  "source_url": "https://www.nccn.org/guidelines",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

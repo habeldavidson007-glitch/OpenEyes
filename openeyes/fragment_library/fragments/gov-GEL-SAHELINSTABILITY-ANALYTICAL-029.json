@@ -1,0 +1,27 @@
+{
+  "id": "gov-GEL-SAHELINSTABILITY-ANALYTICAL-029",
+  "domain": "governance",
+  "tags": [
+    "GOV",
+    "counter_argument"
+  ],
+  "content": "{'overview': 'This fragment describes sahelinstability in geopolitical analysis. JNIM IS Sahel expanding.', 'key_points': ['JNIM IS Sahel expanding', 'Coups Mali Burkina Niger', 'France Russia UN interventions', 'Climate resource competition', 'G5 Sahel limited'], 'sources': ['World Bank WGI (databank.worldbank.org)', 'Freedom House (freedomhouse.org)', 'CSIS (csis.org)', 'Brookings (brookings.edu)', 'Carnegie (carnegieendowment.org)', 'Lowy Institute (lowyinstitute.org)'], 'philosophy_guard': 'Describes what IS - theories patterns cases. Not what SHOULD BE.', 'credibility_score': 0.94}",
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GOV",
+  "sector": "GEL",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

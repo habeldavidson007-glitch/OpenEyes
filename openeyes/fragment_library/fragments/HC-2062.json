@@ -1,0 +1,29 @@
+{
+  "id": "HC-2062",
+  "domain": "healthcare",
+  "tags": [
+    "outbreak investigation",
+    "epidemic investigation",
+    "public health response",
+    "epidemiology"
+  ],
+  "content": "Outbreak investigation is the systematic process of identifying the source, mode of transmission, and risk factors for a cluster of disease cases exceeding expected levels. Core steps: (1) Verify diagnosis and confirm outbreak; (2) Define case definition (person, place, time, clinical criteria); (3) Find cases systematically; (4) Describe data by time (epi curve), place (maps), and person (demographics, exposures); (5) Develop hypotheses about source and transmission; (6) Test hypotheses with analytic studies (cohort or case-control); (7) Implement control measures; (8) Communicate findings; (9) Maintain surveillance. Speed is critical to prevent additional cases.",
+  "source": "CDC outbreak investigation guidelines, WHO field epidemiology manual",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

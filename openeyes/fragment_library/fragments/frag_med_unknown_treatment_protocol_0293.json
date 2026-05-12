@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0293",
+  "domain": "healthcare",
+  "tags": [
+    "CYP_inhibitors",
+    "CYP_inducers",
+    "drug_interactions",
+    "phenotype_guided_dosing"
+  ],
+  "content": "Clinical management requires recognizing CYP inhibitors and inducers. Strong CYP3A4 inhibitors (increase substrate levels): clarithromycin, itraconazole, ritonavir, grapefruit juice - avoid with simvastatin, contraindicated with some antiarrhythmics. Moderate inhibitors: fluconazole, diltiazem, verapamil. Strong inducers (decrease substrate levels): rifampin, carbamazepine, phenytoin, St. John's wort - can reduce oral contraceptive efficacy, transplant rejection risk with cyclosporine. CYP2D6 poor metabolizers: codeine ineffective (needs conversion to morphine); tamoxifen reduced efficacy; atomoxetine toxicity. CYP2D6 ultrarapid metabolizers: codeine toxicity risk. CYP2C19 poor metabolizers: clopidogrel ineffective - use prasugrel/ticagrelor. CYP2C9 poor metabolizers: warfarin sensitivity - lower doses needed.",
+  "source": "nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "phr_mdc_sglt2_diagnostic",
+  "domain": "healthcare",
+  "tags": [
+    "SGLT2 inhibitors",
+    "adverse effects",
+    "contraindications",
+    "monitoring"
+  ],
+  "content": "Contraindications: severe renal impairment (eGFR <20-25 depending on agent and indication), dialysis, history of serious hypersensitivity, type 1 diabetes (DKA risk). Warnings/precautions: diabetic ketoacidosis (may occur with normal glucose - 'euglycemic DKA'), acute kidney injury, urosepsis/pyelonephritis, genital mycotic infections, hypotension, lower limb amputation (canagliflozin signal), bone fracture risk. Monitoring: baseline and periodic renal function, volume status, signs/symptoms of DKA (nausea, vomiting, abdominal pain, malaise), genital infections, foot exams in high-risk patients. Common adverse effects: genital mycotic infections (5-10%, more common in women), urinary tract infections, volume depletion, increased urination. Rare but serious: Fournier's gangrene (necrotizing fasciitis of perineum), euglycemic DKA (hold 3-4 days before surgery). Drug interactions: diuretics (additive volume depletion), insulin/sulfonylureas (hypoglycemia risk when combined).",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

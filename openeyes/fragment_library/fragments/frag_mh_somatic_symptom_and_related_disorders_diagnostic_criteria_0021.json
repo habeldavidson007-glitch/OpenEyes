@@ -1,0 +1,29 @@
+{
+  "id": "frag_mh_somatic_symptom_and_related_disorders_diagnostic_criteria_0021",
+  "domain": "healthcare",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "somatic-symptom",
+    "illness-anxiety"
+  ],
+  "content": "DSM-5-TR Somatic Symptom Disorder criteria: One or more somatic symptoms that are distressing or result in significant disruption of daily life. Excessive thoughts/feelings/behaviors related to symptoms as manifested by \u22651: disproportionate/persistent thoughts about symptom seriousness, persistently high level of anxiety about health/symptoms, excessive time/energy devoted to symptoms/health concerns. Although any one symptom may not persist continuously, state of being symptomatic is persistent (typically >6 months). Specifiers: with predominant pain, persistent course, severity (mild/moderate/severe). Illness Anxiety Disorder: preoccupation with having/acquiring serious illness, somatic symptoms not present/mild, high anxiety about health, excessive health-related behaviors or maladaptive avoidance, illness preoccupation \u22656 months.",
+  "source": "PubMed",
+  "source_url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

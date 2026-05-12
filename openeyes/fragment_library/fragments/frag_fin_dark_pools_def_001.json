@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_dark_pools_def_001",
+  "domain": "economy",
+  "tags": [
+    "market_cap",
+    "definition",
+    "stock_market"
+  ],
+  "content": "Dark pools are private exchanges where institutional investors trade securities anonymously without displaying orders publicly. Operate as Alternative Trading Systems (ATS) registered with SEC. Purpose: allow large trades without market impact (pre-trade transparency would signal intentions, moving prices against trader). Trades reported after execution at NBBO (National Best Bid and Offer). Dark pools charge lower fees than lit exchanges. Concerns: two-tiered market favoring institutions, potential conflicts when dark pool operators also engage in proprietary trading, information leakage.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/fast-answers/answersdarkpoolhtm.html",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

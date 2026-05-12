@@ -1,0 +1,27 @@
+{
+  "id": "FIN-180",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "event driven"
+  ],
+  "content": "Event-driven strategies profit from corporate events: earnings announcements, M&A deals, spinoffs, bankruptcies. Earnings straddles buy options before announcements betting on volatility expansion. Merger arbitrage buys target company stock after deal announcement, capturing spread between current price and acquisition price. Event risk includes deal breakage and regulatory rejection.",
+  "source": "Event-Driven Investing",
+  "source_url": "https://example.com/FIN-180",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2023,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_definition_0142",
+  "domain": "healthcare",
+  "tags": [
+    "orphan drug",
+    "rare disease",
+    "incentives",
+    "controversy"
+  ],
+  "content": "Orphan drug designation applies to treatments for rare diseases affecting fewer than 200,000 people in the US (or >200,000 if development costs cannot be recovered). The Orphan Drug Act of 1983 created incentives to encourage pharmaceutical development for small patient populations that would otherwise be commercially unviable. Designated drugs receive tax credits for clinical trials, waiver of FDA user fees (worth ~$3 million), eligibility for grants, and 7 years of market exclusivity independent of patent protection. Over 600 orphan drugs have been approved since 1983, compared to only 10 in the decade before the Act.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

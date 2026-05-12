@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_container_shipping_def_014",
+  "domain": "economy",
+  "tags": [
+    "container_shipping",
+    "logistics",
+    "trade_infrastructure",
+    "definition"
+  ],
+  "content": "Container shipping: Backbone of global trade - 90% of goods by volume. Three alliances control 80%+ capacity. Rate volatility extreme: Shanghai-LA rates ranged from $1,500 to $20,000+ per FEU during COVID. Bottlenecks at ports, canals (Suez, Panama) create cascading delays. Fleet orderbook at record highs 2024.",
+  "source": "unctad_review",
+  "source_url": "https://unctad.org/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

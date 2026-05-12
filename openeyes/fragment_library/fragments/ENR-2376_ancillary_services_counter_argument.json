@@ -1,0 +1,28 @@
+{
+  "id": "ENR-2376_ancillary_services_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "ancillary services",
+    "energy",
+    "counter_argument"
+  ],
+  "content": "Ancillary Services - economic challenges, scalability concerns, competing approaches",
+  "source": "EIA",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

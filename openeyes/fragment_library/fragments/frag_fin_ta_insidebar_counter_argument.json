@@ -1,0 +1,27 @@
+{
+  "id": "frag_fin_ta_insidebar_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "price_action"
+  ],
+  "content": "Inside bar breakout failure rates exceed 60% in choppy markets. False breakouts in both directions (fakeouts) are common as algorithms hunt stops placed at obvious levels. The pattern requires strong directional context to work\u2014inside bars in ranges produce whipsaws. Multiple timeframe confluence improves reliability significantly.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

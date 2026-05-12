@@ -1,0 +1,29 @@
+{
+  "id": "frag_ph_cancer_prevention_at_population_level_definition_0097",
+  "domain": "healthcare",
+  "tags": [
+    "cancer",
+    "prevention",
+    "screening",
+    "vaccination"
+  ],
+  "content": "Cancer prevention encompasses primary prevention (reducing incidence by addressing risk factors), secondary prevention (early detection through screening), and tertiary prevention (reducing complications in diagnosed patients). An estimated 30-50% of cancers are preventable. Major modifiable risk factors include: tobacco use (22% of cancer deaths), alcohol consumption, obesity/overweight, physical inactivity, unhealthy diet, occupational carcinogens, environmental pollutants, and infections (HPV, HBV, HCV, H. pylori causing 13% of cancers globally). Primary prevention strategies target these factors through policy and individual interventions. Vaccination against HPV (cervical, anal, oropharyngeal cancers) and HBV (liver cancer) represents highly effective primary prevention. Secondary prevention through evidence-based screening reduces mortality from breast, cervical, colorectal, and lung cancers.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "HC-2024",
+  "domain": "healthcare",
+  "tags": [
+    "neuroscience",
+    "TMS",
+    "transcranial magnetic stimulation",
+    "depression"
+  ],
+  "content": "Transcranial Magnetic Stimulation (TMS) uses magnetic fields to stimulate specific brain regions non-invasively. FDA-approved for treatment-resistant depression (since 2008), OCD, migraine, and smoking cessation. Standard protocol: high-frequency (10Hz) stimulation of left dorsolateral prefrontal cortex (DLPFC) daily for 4-6 weeks. Response rates ~50-60%, remission ~30%. Theta burst stimulation (iTBS) delivers treatment in 3 minutes vs 37 minutes with comparable efficacy. Side effects are mild (scalp discomfort, headache); seizure risk is extremely low (<0.1%). TMS is covered by most insurers after 2-4 medication failures. Deep TMS coils reach medial prefrontal and anterior cingulate regions.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

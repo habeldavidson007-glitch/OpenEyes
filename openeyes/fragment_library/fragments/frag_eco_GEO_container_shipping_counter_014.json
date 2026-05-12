@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_container_shipping_counter_014",
+  "domain": "economy",
+  "tags": [
+    "container_shipping",
+    "logistics",
+    "rate_volatility",
+    "counter_argument"
+  ],
+  "content": "Shipping rate volatility drivers: Pandemic disruptions were exceptional, not structural. Overcapacity returning as new vessels delivered. Rate normalization expected 2024-25. Alliance system maintains pricing power but faces antitrust scrutiny. Port automation, canal expansions reducing bottleneck risks long-term.",
+  "source": "drewry_shipping_analytics",
+  "source_url": "https://www.drewry.co.uk/",
+  "credibility_class": "industry_analysis",
+  "last_verified": "2026-05-12",
+  "weight": 0.88,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

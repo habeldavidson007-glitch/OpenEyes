@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_btc_block_size_debate_definition",
+  "domain": "economy",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "governance"
+  ],
+  "content": "The 2015-2017 block size debate centered on whether to increase block capacity. One faction advocated larger blocks for lower fees; another prioritized decentralization through small blocks, pushing scaling to Layer 2. Segwit compromise maintained 1MB base limit while adding witness data, effectively increasing capacity without hard fork.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

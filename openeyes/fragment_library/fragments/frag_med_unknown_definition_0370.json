@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0370",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "colorectal cancer",
+    "Lynch syndrome",
+    "microsatellite instability",
+    "molecular subtypes"
+  ],
+  "content": "Colorectal cancer (CRC) is the third most common cancer worldwide. Molecular pathways: chromosomal instability (CIN, 65-70%, aneuploidy, APC/KRAS/TP53 mutations); microsatellite instability (MSI, 15%, defective mismatch repair, hypermutated); CpG island methylator phenotype (CIMP, 20-30%, epigenetic silencing). Lynch syndrome (hereditary non-polyposis colorectal cancer) caused by germline MMR gene mutations (MLH1, MSH2, MSH6, PMS2); lifetime CRC risk 10-80% depending on gene; also increased endometrial, ovarian, gastric, other cancers. Sporadic MSI usually from MLH1 promoter methylation. Familial adenomatous polyposis (FAP, APC mutation) causes hundreds-thousands of polyps, near-100% CRC risk without colectomy. RAS mutations (KRAS/NRAS, ~40%) predict resistance to EGFR inhibitors. BRAF V600E mutation (10-15%) associated with poor prognosis, right-sided tumors, MSI-H. HER2 amplification (3-5%) emerging target. Consensus molecular subtypes (CMS1-4) classify by gene expression patterns.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36345678/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

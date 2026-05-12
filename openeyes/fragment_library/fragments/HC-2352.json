@@ -1,0 +1,29 @@
+{
+  "id": "HC-2352",
+  "domain": "healthcare",
+  "tags": [
+    "prion disease",
+    "CJD",
+    "supportive care",
+    "palliative"
+  ],
+  "content": "No curative or disease-modifying treatment exists for prion diseases. Management is entirely supportive/palliative: benzodiazepines (clonazepam) for myoclonus and agitation; antipsychotics for behavioral symptoms; analgesics for discomfort; nutritional support via feeding tube as dysphagia develops; seizure management if present. Multidisciplinary palliative care involvement early given uniformly fatal prognosis. Infection control: standard precautions sufficient for routine care; special handling for high-risk tissues (brain, spinal cord, posterior eye); use disposable instruments when possible or extended sterilization protocols (autoclave 134\u00b0C for 18 minutes or sodium hydroxide pretreatment). Experimental therapies (quinacrine, doxycycline, monoclonal antibodies) have not demonstrated clinical benefit in trials.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

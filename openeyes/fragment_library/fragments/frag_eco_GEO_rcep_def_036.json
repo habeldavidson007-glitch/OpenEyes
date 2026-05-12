@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_rcep_def_036",
+  "domain": "economy",
+  "tags": [
+    "rcep",
+    "trade_agreement",
+    "asia",
+    "definition"
+  ],
+  "content": "RCEP (Regional Comprehensive Economic Partnership): 15 members (ASEAN+5: China, Japan, Korea, Australia, NZ). Entered force 2022. Covers 30% global GDP, population. Tariff elimination on 90% goods over 20 years. Rules of origin cumulation. Less ambitious than CPTPP on labor, environment, SOEs. First FTA linking China-Japan-Korea.",
+  "source": "rcep_official",
+  "source_url": "https://rcepsec.org/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.94,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_dollar_dominance_counter_026",
+  "domain": "economy",
+  "tags": [
+    "dollar",
+    "reserve_currency",
+    "challenges",
+    "counter_argument"
+  ],
+  "content": "Dollar vulnerability factors: US fiscal deficits unsustainable long-term ($34T debt, 7%+ deficit). Political polarization risks debt ceiling crises. Sanctions weaponization creating incentives for alternatives. Rising US-China decoupling fragments system. Digital currencies could bypass traditional channels. However, no near-term replacement viable.",
+  "source": "cfr_dollar_analysis",
+  "source_url": "https://www.cfr.org/",
+  "credibility_class": "think_tank",
+  "last_verified": "2026-05-12",
+  "weight": 0.89,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

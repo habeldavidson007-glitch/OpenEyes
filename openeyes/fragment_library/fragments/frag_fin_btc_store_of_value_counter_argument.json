@@ -1,0 +1,27 @@
+{
+  "id": "frag_fin_btc_store_of_value_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "bitcoin",
+    "crypto"
+  ],
+  "content": "High volatility (>70% drawdowns) challenges its utility as a short-term store of value compared to stable assets like gold or treasuries.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

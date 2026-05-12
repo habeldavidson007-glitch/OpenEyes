@@ -1,0 +1,29 @@
+{
+  "id": "HC-2189",
+  "domain": "healthcare",
+  "tags": [
+    "intervention",
+    "policy",
+    "health_equity",
+    "community_health"
+  ],
+  "content": "Interventions addressing social determinants require multi-sectoral approaches beyond traditional healthcare delivery. Evidence-based strategies include: (1) Economic interventions such as earned income tax credits, minimum wage policies, and housing subsidies showing measurable health improvements; (2) Educational interventions including early childhood education programs (e.g., Head Start) demonstrating long-term health benefits; (3) Healthcare access expansions through Medicaid, community health centers, and transportation assistance; (4) Environmental improvements including healthy food access initiatives, safe housing codes, and green space development; (5) Social cohesion building through community organizing and social prescribing programs. Screening for social needs in clinical settings (e.g., PRAPARE tool) should be paired with closed-loop referral systems to community resources. Population-level policy interventions show greater impact than individual-level interventions alone.",
+  "source": "https://www.cdc.gov/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

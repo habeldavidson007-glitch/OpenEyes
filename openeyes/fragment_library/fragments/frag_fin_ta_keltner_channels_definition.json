@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ta_keltner_channels_definition",
+  "domain": "economy",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "content": "Keltner Channels = EMA centerline with ATR-based bands (typically 2\u00d7 ATR). Similar to Bollinger Bands but use ATR instead of standard deviation. Squeeze = bands tighten, signaling potential breakout. Trend follows band touch in strong moves.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

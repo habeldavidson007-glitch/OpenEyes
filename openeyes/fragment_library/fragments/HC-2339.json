@@ -1,0 +1,29 @@
+{
+  "id": "HC-2339",
+  "domain": "healthcare",
+  "tags": [
+    "hepatitis C",
+    "HCV",
+    "direct-acting antivirals",
+    "cure"
+  ],
+  "content": "Hepatitis C virus (HCV) is an RNA flavivirus causing acute and chronic hepatitis. Transmission primarily percutaneous (injection drug use most common in developed countries); sexual and perinatal transmission less efficient. Acute infection often asymptomatic; 75-85% progress to chronic infection. Chronic HCV leads to cirrhosis in 10-20% over 20-30 years; hepatocellular carcinoma risk increases with cirrhosis. Extrahepatic manifestations: cryoglobulinemia, glomerulonephritis, porphyria cutanea tarda, lymphoma. Genotypes 1-7; genotype 1 most common globally. Unlike HBV, no vaccine exists. Direct-acting antivirals (DAAs) revolutionized treatment with >95% sustained virologic response (SVR, considered cure) across all genotypes with 8-12 week oral regimens.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0382",
+  "domain": "healthcare",
+  "tags": [
+    "thyroid cancer",
+    "papillary",
+    "follicular",
+    "anaplastic",
+    "medullary"
+  ],
+  "content": "Thyroid cancer is the most common endocrine malignancy. Four main histologic types: (1) Papillary thyroid carcinoma (PTC) - 80-85% of cases, arises from follicular cells, often spreads via lymphatics, excellent prognosis; (2) Follicular thyroid carcinoma (FTC) - 10-15%, hematogenous spread to bone/lung, prognosis intermediate; (3) Medullary thyroid carcinoma (MTC) - 3-5%, from parafollicular C-cells, secretes calcitonin, 25% hereditary (MEN2 syndromes); (4) Anaplastic thyroid carcinoma (ATC) - 1-2%, undifferentiated, aggressive with poor prognosis (median survival months). Risk factors: radiation exposure (especially childhood), family history, iodine deficiency (follicular), genetic mutations (BRAF V600E in PTC, RET in MTC). Incidence increasing due to detection of small papillary cancers.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985608/",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

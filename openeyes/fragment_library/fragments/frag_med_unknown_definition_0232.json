@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0232",
+  "domain": "healthcare",
+  "tags": [
+    "ACE inhibitors",
+    "ARBs",
+    "RAAS",
+    "hypertension",
+    "heart failure"
+  ],
+  "content": "ACE inhibitors (angiotensin-converting enzyme inhibitors) and ARBs (angiotensin receptor blockers) both target the renin-angiotensin-aldosterone system (RAAS) but at different points. ACE inhibitors (lisinopril, enalapril, ramipril, captopril) block conversion of angiotensin I to angiotensin II and reduce bradykinin breakdown. ARBs (losartan, valsartan, candesartan, irbesartan, telmisartan) selectively block AT1 receptors, preventing angiotensin II binding. Both reduce blood pressure, decrease aldosterone secretion, and provide organ protection. ACE inhibitors increase bradykinin levels, causing cough (5-20% of patients) and angioedema (rare but serious). ARBs do not affect bradykinin, so cough and angioedema rates similar to placebo. Both classes indicated for hypertension, heart failure with reduced ejection fraction, post-MI, diabetic nephropathy, and CKD with proteinuria. Evidence shows comparable cardiovascular outcomes between classes. ARBs preferred when ACE inhibitor intolerance (cough) develops.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

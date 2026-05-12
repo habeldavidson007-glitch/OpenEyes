@@ -1,0 +1,29 @@
+{
+  "id": "HC-2120",
+  "domain": "healthcare",
+  "tags": [
+    "global health aid",
+    "effectiveness",
+    "country ownership",
+    "alignment"
+  ],
+  "content": "Improving global health aid effectiveness requires: (1) Country ownership - aligning with national health strategies rather than donor priorities; (2) Harmonization - donors coordinating to reduce transaction costs (Sector Wide Approaches - SWAps); (3) Use of country systems - channeling funds through government budgets when governance adequate; (4) Focus on results - measurable outcomes over inputs; (5) Mutual accountability - transparent reporting by both donors and recipients. Paris Declaration (2005) and Accra Agenda (2008) established these principles, but implementation remains limited (<30% of aid uses country systems). Successful examples: Rwanda's health system strengthening through pooled donor funds achieving >90% immunization coverage and 60% reduction in child mortality 2000-2015; Thailand's universal coverage achieved with minimal external aid through domestic financing.",
+  "source": "who.int",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

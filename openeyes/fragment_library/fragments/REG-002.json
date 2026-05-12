@@ -1,0 +1,30 @@
+{
+  "id": "REG-002",
+  "domain": "economy",
+  "tags": [
+    "dodd_frank",
+    "stress_testing",
+    "dfast",
+    "ccar",
+    "banking_supervision"
+  ],
+  "content": "Dodd-Frank Act stress testing includes two distinct programs: DFAST (Dodd-Frank Act Stress Testing) and CCAR (Comprehensive Capital Analysis and Review). DFAST applies to large banks ($100B+ assets) and tests capital adequacy under severely adverse scenarios over 9 quarters. The Federal Reserve conducts the analysis using prescribed assumptions. CCAR applies to G-SIBs and largest banks ($250B+), combining quantitative stress testing with qualitative assessment of capital planning processes. CCAR evaluates whether banks have robust forward-looking capital planning and sufficient capital to continue operations during stress. Banks failing CCAR face restrictions on capital distributions (dividends, buybacks). Both test credit risk, market risk, and operational risk under macroeconomic scenarios including GDP decline, unemployment spike, and market shocks.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

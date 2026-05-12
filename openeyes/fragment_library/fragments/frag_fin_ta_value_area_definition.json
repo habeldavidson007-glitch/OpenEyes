@@ -1,0 +1,27 @@
+{
+  "id": "frag_fin_ta_value_area_definition",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "volume"
+  ],
+  "content": "Value Area encompasses the price range containing 70% of total volume (one standard deviation). Value Area High (VAH) and Low (VAL) mark boundaries. Price accepting above VAH signals bullish control; accepting below VAL signals bearish control. Rejections at VAH/VAL offer mean reversion opportunities back toward POC.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

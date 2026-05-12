@@ -1,0 +1,30 @@
+{
+  "id": "HC-2391",
+  "domain": "healthcare",
+  "tags": [
+    "PAD",
+    "diagnosis",
+    "ABI",
+    "imaging",
+    "treatment"
+  ],
+  "content": "PAD diagnosis: resting ABI first-line test. Exercise ABI if resting normal but high suspicion (drop >20% post-exercise diagnostic). Segmental pressures and pulse volume recordings localize disease level. Duplex ultrasound assesses stenosis severity, graft surveillance. CTA or MRA for procedural planning (anatomic detail, calcification assessment). Catheter angiography reserved for intervention. Treatment: cardiovascular risk reduction paramount (statins, antiplatelet therapy, BP control, smoking cessation, diabetes management). Antiplatelet therapy: aspirin 75-100mg daily or clopidogrel 75mg daily; COMPASS trial showed rivaroxaban 2.5mg BID plus aspirin superior to aspirin alone for CV and limb events in symptomatic PAD. Claudication management: supervised exercise therapy (SET) most effective\u201430-45 minutes treadmill walking 3x/week for 12 weeks improves walking distance; cilostazol 100mg BID contraindicated in heart failure (improves walking distance, mechanism PDE3 inhibition); pentoxifylline less effective. Revascularization indications: disabling claudication despite medical/exercise therapy, critical limb ischemia, acute limb ischemia.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35578885/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

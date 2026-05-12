@@ -1,0 +1,27 @@
+{
+  "id": "FIN-171",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "market making"
+  ],
+  "content": "Market making strategies provide liquidity by continuously quoting bid and ask prices, profiting from the spread. Key challenges include managing inventory risk (avoiding directional exposure), adverse selection (informed traders picking off stale quotes), and competition. Modern market makers use machine learning to predict short-term price movements and adjust spreads dynamically.",
+  "source": "Market Making and High-Frequency Trading",
+  "source_url": "https://example.com/FIN-171",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

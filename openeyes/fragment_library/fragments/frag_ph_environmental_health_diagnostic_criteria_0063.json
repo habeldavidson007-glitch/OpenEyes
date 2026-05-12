@@ -1,0 +1,29 @@
+{
+  "id": "frag_ph_environmental_health_diagnostic_criteria_0063",
+  "domain": "healthcare",
+  "tags": [
+    "measurement",
+    "exposure_assessment",
+    "surveillance",
+    "biomonitoring"
+  ],
+  "content": "Environmental health assessment involves: (1) Exposure assessment\u2014environmental monitoring (air quality indices, water testing), biomonitoring (blood lead levels, urinary metabolites, hair analysis), personal exposure monitors, geographic information systems mapping proximity to hazards; (2) Health outcome surveillance\u2014disease registries (cancer, birth defects), hospital discharge data with environmental ICD codes, syndromic surveillance for acute exposures; (3) Causal inference\u2014toxicological evidence, dose-response relationships, temporal patterns, consistency across studies; (4) Vulnerability assessment\u2014age (children, elderly), pre-existing conditions, genetic polymorphisms affecting metabolism, cumulative exposure burdens. CDC's Environmental Public Health Tracking Network integrates exposure and health data. Challenges include latency between exposure and disease, multiple simultaneous exposures (mixture effects), and confounding by socioeconomic factors.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

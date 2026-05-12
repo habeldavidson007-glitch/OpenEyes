@@ -1,0 +1,29 @@
+{
+  "id": "HC-2443",
+  "domain": "healthcare",
+  "tags": [
+    "HFpEF",
+    "diagnosis",
+    "treatment",
+    "evidence gaps"
+  ],
+  "content": "HFpEF diagnosis requires: (1) signs/symptoms of HF, (2) LVEF \u226550%, (3) evidence of structural heart disease (LVH, LA enlargement) or diastolic dysfunction (elevated filling pressures). Scoring systems: H2FPEF score and HFA-PEFF algorithm incorporate clinical, echocardiographic, and biomarker data. Natriuretic peptides may be lower than in HFrEF; NT-proBNP >125 pg/mL or BNP >35 pg/mL supports diagnosis. Treatment evidence is limited compared to HFrEF. EMPEROR-Preserved and DELIVER trials showed SGLT2 inhibitors reduce HF hospitalizations in HFpEF (now Class 2a recommendation). Diuretics essential for volume management. Blood pressure control critical (target <130/80). ARNI may provide benefit (PARAGON-HF showed trend toward benefit, especially in women and EF <57%). MRA showed modest benefit in TOPCAT trial (Americas cohort). Treat comorbidities: atrial fibrillation (rate/rhythm control, anticoagulation), obesity (weight loss), sleep apnea (CPAP), diabetes, anemia. Exercise training improves functional capacity. No proven mortality-reducing therapy yet\u2014major evidence gap.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

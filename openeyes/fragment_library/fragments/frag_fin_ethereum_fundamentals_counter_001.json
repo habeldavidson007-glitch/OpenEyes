@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_ethereum_fundamentals_counter_001",
+  "domain": "economy",
+  "tags": [
+    "smart_contracts",
+    "ethereum",
+    "defi",
+    "blockchain",
+    "crypto",
+    "latest_data"
+  ],
+  "content": "Ethereum faces scalability challenges despite improvements. High gas fees during congestion limit usability. Competition from alternative smart contract platforms intensified. Smart contract bugs and exploits caused billions in losses. Regulatory uncertainty around whether ETH is a security. Staking centralization concerns as large validators dominate. Layer-2 fragmentation complicates user experience.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/publications/2022-may-financial-stability-report.htm",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

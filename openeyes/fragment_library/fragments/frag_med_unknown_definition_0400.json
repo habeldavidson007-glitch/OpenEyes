@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0400",
+  "domain": "healthcare",
+  "tags": [
+    "lipid disorders",
+    "hypercholesterolemia",
+    "familial hypercholesterolemia",
+    "triglycerides",
+    "dyslipidemia"
+  ],
+  "content": "Lipid disorders encompass abnormalities in cholesterol and triglyceride metabolism that increase atherosclerotic cardiovascular disease (ASCVD) risk. Major types: (1) Elevated LDL cholesterol - primary driver of atherosclerosis; (2) Low HDL cholesterol - associated with increased CVD risk though raising HDL hasn't shown benefit; (3) Hypertriglyceridemia - independent risk factor, severe levels (>500 mg/dL) cause pancreatitis; (4) Elevated lipoprotein(a) - genetically determined, independent CVD risk factor. Familial hypercholesterolemia (FH): autosomal dominant disorder (LDLR, APOB, PCSK9 mutations) causing very high LDL from birth (heterozygous LDL 190-450 mg/dL, homozygous >450 mg/dL), premature ASCVD, tendon xanthomas, corneal arcus. Prevalence 1:200-250 for heterozygous FH. Secondary causes: hypothyroidism, nephrotic syndrome, cholestatic liver disease, medications (thiazides, beta-blockers, retinoids, immunosuppressants, antiretrovirals).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36506509/",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

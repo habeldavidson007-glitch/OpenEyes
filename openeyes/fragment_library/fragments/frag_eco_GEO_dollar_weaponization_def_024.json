@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_dollar_weaponization_def_024",
+  "domain": "economy",
+  "tags": [
+    "dollar_hegemony",
+    "weaponization",
+    "reserve_currency",
+    "definition"
+  ],
+  "content": "Dollar weaponization debate: US leveraging dollar's reserve currency status (58% of global reserves, 88% of FX transactions) for foreign policy goals. Access to dollar clearing (CHIPS, Fedwire) becomes coercive tool. Critics argue overuse undermines trust, accelerates dedollarization. Defenders say it's legitimate statecraft, dollar dominance reflects fundamentals.",
+  "source": "zoltan_pozsar_analysis",
+  "source_url": "https://www.credit-suisse.com/",
+  "credibility_class": "investment_bank",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

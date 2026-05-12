@@ -1,0 +1,29 @@
+{
+  "id": "frag_fin_volume_profile_counter_argument_06",
+  "domain": "economy",
+  "tags": [
+    "volume_profile",
+    "volume",
+    "technical_analysis",
+    "counter_argument"
+  ],
+  "content": "Volume profile requires extensive historical data not always available, especially for newer instruments. Value area calculations vary by software, creating inconsistency. POC significance diminishes as more traders watch it. Volume profile assumes past volume distribution predicts future, which isn't always true. Institutional order splitting obscures true volume distribution. Profile shape interpretation is subjective. Static profiles miss evolving market dynamics. Composite profiles spanning long periods may be irrelevant to current conditions.",
+  "source": "Educational Resource",
+  "source_url": "https://www.marketprofile.org/volume-profile-limitations",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_taiwan_strait_risk_def_006",
+  "domain": "economy",
+  "tags": [
+    "taiwan",
+    "supply_chain",
+    "semiconductors",
+    "geopolitical_risk",
+    "definition"
+  ],
+  "content": "Taiwan Strait economic risk: Taiwan produces 92% of advanced semiconductors (<10nm). TSMC alone makes 60% of global chips. Conflict would eliminate advanced chip supply for 6-12 months minimum. Estimated global GDP impact: $2.7-3.5 trillion. Defense, auto, AI sectors most vulnerable.",
+  "source": "cfr_special_report",
+  "source_url": "https://www.cfr.org/",
+  "credibility_class": "think_tank",
+  "last_verified": "2026-05-12",
+  "weight": 0.94,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

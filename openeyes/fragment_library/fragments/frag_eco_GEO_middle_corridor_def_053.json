@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_middle_corridor_def_053",
+  "domain": "economy",
+  "tags": [
+    "middle_corridor",
+    "geopolitics",
+    "definition"
+  ],
+  "content": "Middle Corridor (Trans-Caspian Route): Alternative trade route Europe-Asia avoiding Russia. Capacity 3M tons annually vs. Northern 100M+. Infrastructure gaps limit potential. EU, Kazakhstan investing heavily. Georgia, Azerbaijan, Turkey key nodes. Ukraine war accelerated interest. Still marginal but strategic diversification value.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

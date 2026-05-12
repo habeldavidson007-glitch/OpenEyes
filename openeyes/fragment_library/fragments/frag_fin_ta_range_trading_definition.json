@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ta_range_trading_definition",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "market_structure",
+    "trading_strategies"
+  ],
+  "content": "Range trading identifies horizontal support and resistance boundaries where price oscillates. Strategy: buy near support, sell near resistance, stop beyond range boundaries. Works in absence of trending catalysts. Range breakouts eventually occur\u2014traders must manage transition. Volume profile helps identify value area within range for optimal entry/exit placement.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

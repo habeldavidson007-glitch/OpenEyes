@@ -1,0 +1,29 @@
+{
+  "id": "HC-2125",
+  "domain": "healthcare",
+  "tags": [
+    "patient safety",
+    "medication errors",
+    "hospital-acquired infections",
+    "adverse events"
+  ],
+  "content": "Patient safety encompasses prevention of healthcare-associated harm. Key categories: (1) Medication errors - wrong drug, dose, patient, or route (affecting 5% of hospitalized patients); (2) Hospital-acquired infections - CLABSI, CAUTI, SSI, C. difficile (7% of patients in developed countries); (3) Surgical complications - wrong-site surgery, retained instruments, postoperative sepsis; (4) Diagnostic errors - delayed/missed diagnoses (estimated 10-15% of cases); (5) Healthcare-associated venous thromboembolism. The WHO estimates 134 million adverse events annually in low/middle-income countries causing 2.6 million deaths. In the US, preventable harm causes ~250,000 deaths/year, making it the third leading cause of death.",
+  "source": "who.int",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

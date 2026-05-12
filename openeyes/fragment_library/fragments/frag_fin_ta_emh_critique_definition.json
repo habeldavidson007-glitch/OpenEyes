@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ta_emh_critique_definition",
+  "domain": "economy",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "content": "EMH states prices reflect all available information, making TA useless for excess returns. Weak-form EMH specifically claims past prices can't predict future. Any predictable pattern should be arbitraged away instantly. Random walk theory supports EMH.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

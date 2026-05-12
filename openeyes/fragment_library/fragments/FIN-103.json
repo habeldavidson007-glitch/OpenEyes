@@ -1,0 +1,28 @@
+{
+  "id": "FIN-103",
+  "domain": "economy",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "quantitative_easing"
+  ],
+  "content": "QE effectiveness diminished with each round. Research shows QE1 lowered 10y yields 80-120bp but QE4 only 20-40bp. Diminishing returns reflect market anticipation and saturation of portfolio rebalancing effects.",
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

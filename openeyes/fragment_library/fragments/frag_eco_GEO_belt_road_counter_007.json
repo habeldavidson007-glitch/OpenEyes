@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_belt_road_counter_007",
+  "domain": "economy",
+  "tags": [
+    "belt_and_road",
+    "china",
+    "infrastructure",
+    "debt_trap",
+    "counter_argument"
+  ],
+  "content": "BRI debt trap critique: Sri Lanka Hambantota Port frequently cited as debt trap example. However, research shows most debt distress predates BRI. Terms often commercial rather than predatory. Debt relief granted in multiple cases. Primary issues: weak governance, corruption, project viability rather than intentional trapping.",
+  "source": "aiddata_study",
+  "source_url": "https://www.aiddata.org/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.89,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

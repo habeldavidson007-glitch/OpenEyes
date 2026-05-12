@@ -1,0 +1,30 @@
+{
+  "id": "frag_mh_eating_disorders_diagnostic_criteria_0042",
+  "domain": "healthcare",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "anorexia",
+    "bulimia",
+    "BED"
+  ],
+  "content": "DSM-5-TR criteria: Anorexia\u2014energy restriction leading to significantly low weight (context-dependent), intense fear of gaining weight/becoming fat, disturbed body image/undue influence of weight on self-evaluation/denial of seriousness. Subtypes: restricting vs binge-eating/purging. Bulimia\u2014recurrent binge eating (large amount + loss of control) and compensatory behaviors \u22651/week for \u22653 months, self-evaluation unduly influenced by shape/weight. BED\u2014recurrent binge eating \u22651/week for \u22653 months without compensatory behaviors, marked distress. Severity specifiers based on BMI (anorexia) or episode frequency (bulimia/BED). Amenorrhea no longer required for anorexia diagnosis.",
+  "source": "PubMed",
+  "source_url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

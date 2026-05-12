@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_eth_eip1559_definition",
+  "domain": "economy",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "transaction_fees"
+  ],
+  "content": "EIP-1559, implemented August 2021, restructured Ethereum fees into base fee (burned) and priority tip (to miners/validators). Base fee adjusts algorithmically based on network congestion, improving fee predictability. The burn mechanism makes ETH deflationary during high usage periods.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

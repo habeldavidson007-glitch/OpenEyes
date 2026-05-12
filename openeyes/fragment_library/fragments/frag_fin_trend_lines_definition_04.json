@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_trend_lines_definition_04",
+  "domain": "economy",
+  "tags": [
+    "definition",
+    "trend_lines",
+    "technical_analysis"
+  ],
+  "content": "Trend lines are diagonal lines drawn on charts to identify the direction and strength of a trend. An uptrend line connects successive higher lows, while a downtrend line connects lower highs. Properly drawn trend lines require at least two touch points, with three or more confirming validity. They serve as dynamic support/resistance and help traders identify potential reversal points when broken.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/t/trendline.asp",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

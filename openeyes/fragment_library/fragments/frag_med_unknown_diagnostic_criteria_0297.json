@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0297",
+  "domain": "healthcare",
+  "tags": [
+    "genetic_testing_methods",
+    "allele_nomenclature",
+    "CPIC_evidence_levels",
+    "preemptive_genotyping"
+  ],
+  "content": "Genetic testing methodologies: PCR-based genotyping for known variants (rapid, inexpensive); next-generation sequencing for comprehensive panels; microarray chips for multiple variants simultaneously. Turnaround time varies: point-of-care tests 1-2 hours; commercial labs 3-14 days. Phenotype confirmation possible with probe drugs but rarely needed clinically. Allele nomenclature standardized: *1 = wild-type/function; *2-*9 etc. = variant alleles with defined functional impact. CPIC levels evidence: Level A (high) - gene-drug pairs with actionable recommendations (CYP2C19-clopidogrel, TPMT-thiopurines); Level B (moderate) - potential actionability. Preemptive genotyping (panel testing before prescribing) increasingly used in health systems. Insurance coverage variable; cost-effectiveness demonstrated for several gene-drug pairs.",
+  "source": "ema.europa.eu",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

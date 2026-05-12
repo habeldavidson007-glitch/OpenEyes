@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_dollar_dominance_latest_026",
+  "domain": "economy",
+  "tags": [
+    "dollar",
+    "reserve_currency",
+    "trends",
+    "latest_data"
+  ],
+  "content": "Dollar trends 2024: DXY index elevated (~103) on rate differentials. Foreign holdings of US Treasuries at $7.6T (China $775B, Japan $1.1T). Dollar funding stress episodes rare but impactful (2019 repo crisis, March 2020). Fed swap lines with 14 central banks provide backstop. De-dollarization narrative overblown but marginal diversification occurring.",
+  "source": "treasury TIC_data",
+  "source_url": "https://home.treasury.gov/policy-issues/financing-the-government/statistics/treasury-international-capital-tic-system",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.94,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

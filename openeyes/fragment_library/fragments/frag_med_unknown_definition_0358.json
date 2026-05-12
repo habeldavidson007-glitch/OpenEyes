@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0358",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "cancer cachexia",
+    "muscle wasting",
+    "mechanism",
+    "prognosis"
+  ],
+  "content": "Cancer cachexia is a multifactorial syndrome characterized by ongoing loss of skeletal muscle mass (with or without fat loss) that cannot be fully reversed by conventional nutritional support. Diagnostic criteria: weight loss >5% over 6 months; or BMI <20 with >2% weight loss; or sarcopenia with >2% weight loss. Prevalence: 50-80% of advanced cancer patients, varies by tumor type (pancreatic 80-90%, gastric 70-80%, lung 60-70%, colorectal 50-60%). Pathophysiology: tumor-derived factors (PIF, LMF), systemic inflammation (IL-6, TNF-\u03b1, IL-1, CRP), metabolic alterations (increased energy expenditure, insulin resistance, lipolysis, proteolysis via ubiquitin-proteasome pathway), anorexia (central appetite suppression), reduced physical activity. Cachexia stages: precachexia (<5% weight loss, anorexia, metabolic changes); cachexia (meets criteria); refractory cachexia (active catabolism, poor performance status, life expectancy <3 months). Impact: reduces treatment tolerance, increases toxicity, impairs quality of life, independent predictor of mortality.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36345678/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

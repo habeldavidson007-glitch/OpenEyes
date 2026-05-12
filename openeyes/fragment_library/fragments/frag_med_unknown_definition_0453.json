@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0453",
+  "domain": "healthcare",
+  "tags": [
+    "status-epilepticus",
+    "diagnosis",
+    "EEG",
+    "etiology-workup",
+    "classification"
+  ],
+  "content": "SE diagnosis is clinical for convulsive SE; EEG required for nonconvulsive SE and monitoring refractory cases. Clinical features: generalized tonic-clonic movements (convulsive), altered consciousness with subtle motor signs (eyelid myoclonia, nystagmus, facial twitching) or no motor signs (nonconvulsive), focal motor/sensory phenomena (focal SE). EEG criteria: generalized spike-wave/polyspike-wave \u226530 minutes, or recurrent seizures without return to baseline. Continuous EEG monitoring essential in comatose patients, refractory SE, and after anesthetic initiation (detect ongoing electrographic seizures when motor signs suppressed by paralysis). Etiology workup: emergent labs (glucose, electrolytes, CBC, renal/hepatic function, tox screen, AED levels if applicable), CT/MRI brain (stroke, hemorrhage, tumor, abscess), LP if infection suspected, autoimmune encephalitis panel if subacute onset with psychiatric features. Differential diagnosis: psychogenic nonepileptic status (eyes closed, asynchronous movements, normal EEG), syncope with myoclonus, movement disorders, delirium tremens, shivering/rigors. Prognostic factors: longer duration, older age, anoxic etiology, refractoriness predict worse outcomes. STESS (Status Epilepticus Severity Score) helps predict mortality.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

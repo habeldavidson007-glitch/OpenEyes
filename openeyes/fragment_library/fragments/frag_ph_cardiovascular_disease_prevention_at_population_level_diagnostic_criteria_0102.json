@@ -1,0 +1,29 @@
+{
+  "id": "frag_ph_cardiovascular_disease_prevention_at_population_level_diagnostic_criteria_0102",
+  "domain": "healthcare",
+  "tags": [
+    "risk_assessment",
+    "biomarkers",
+    "surveillance",
+    "screening"
+  ],
+  "content": "CVD prevention assessment includes: (1) Risk prediction\u2014Pooled Cohort Equations (10-year ASCVD risk), SCORE2 (European), QRISK3 (UK), Framingham Risk Score; lifetime risk estimation for younger adults; (2) Biomarkers\u2014blood pressure (multiple readings, home monitoring), lipid panel (LDL-C, non-HDL-C, ApoB), HbA1c/glucose, high-sensitivity CRP (selected cases), lipoprotein(a) for risk refinement; (3) Subclinical disease\u2014coronary artery calcium scoring for intermediate-risk individuals, carotid intima-media thickness, ankle-brachial index; (4) Population surveillance\u2014BRFSS behavioral risk factors, NHANES biomarker data, WHO STEPS methodology, national CVD registries; (5) Quality metrics\u2014hypertension control rates, statin adherence, cardiac rehabilitation participation. Emerging markers include genetic risk scores, novel imaging techniques. Risk calculator limitations include outdated coefficients, lack of social determinants integration, and reduced accuracy in diverse populations.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

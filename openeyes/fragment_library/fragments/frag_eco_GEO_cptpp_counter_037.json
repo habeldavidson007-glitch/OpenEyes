@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_cptpp_counter_037",
+  "domain": "economy",
+  "tags": [
+    "cptpp",
+    "challenges",
+    "counter_argument"
+  ],
+  "content": "CPTPP challenges: China applied 2021 but faces member skepticism (SOE practices, human rights). Taiwan application creates diplomatic complications. US not returning under Biden. Economic benefits concentrated among larger members. Compliance costs burden smaller economies. Some provisions (investor-state dispute settlement) controversial domestically.",
+  "source": "lowy_institute",
+  "source_url": "https://www.lowyinstitute.org/",
+  "credibility_class": "think_tank",
+  "last_verified": "2026-05-12",
+  "weight": 0.88,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

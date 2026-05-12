@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_export_controls_def_041",
+  "domain": "economy",
+  "tags": [
+    "export_controls_regime",
+    "trade_policy",
+    "definition"
+  ],
+  "content": "Technology export controls: Restrictions on dual-use technology exports for national security reasons. Wassenaar Arrangement coordinates multilateral controls. Entity List restricts specific Chinese firms (Huawei, SMIC). Foreign Direct Product Rule extends US jurisdiction globally. October 2023 rules covered AI chips, quantum, advanced computing.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

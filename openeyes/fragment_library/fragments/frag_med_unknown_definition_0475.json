@@ -1,0 +1,31 @@
+{
+  "id": "frag_med_unknown_definition_0475",
+  "domain": "healthcare",
+  "tags": [
+    "stroke",
+    "ischemic",
+    "hemorrhagic",
+    "tPA",
+    "thrombectomy",
+    "acute-care"
+  ],
+  "content": "Stroke is classified as ischemic (87% of cases, caused by vessel occlusion) or hemorrhagic (13%, caused by bleeding). Ischemic stroke results from thrombotic or embolic occlusion; hemorrhagic from intracerebral or subarachnoid bleeding. The ischemic penumbra represents salvageable tissue surrounding the infarct core. Time-to-treatment is critical: 'time is brain' with approximately 1.9 million neurons lost per minute during large-vessel occlusion. tPA (alteplase/tenecteplase) window is 0-4.5 hours from symptom onset for eligible patients. Mechanical thrombectomy extends treatment window to 6-24 hours for large-vessel occlusions based on perfusion imaging (DAWN, DEFUSE-3 trials). Hemorrhagic stroke requires blood pressure control, reversal of anticoagulation, and possible neurosurgical intervention.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/29412947/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

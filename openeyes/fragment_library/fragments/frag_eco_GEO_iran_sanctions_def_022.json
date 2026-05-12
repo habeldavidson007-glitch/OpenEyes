@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_iran_sanctions_def_022",
+  "domain": "economy",
+  "tags": [
+    "iran",
+    "sanctions",
+    "nuclear",
+    "middle_east",
+    "definition"
+  ],
+  "content": "Iran sanctions regime: Among longest-standing comprehensive sanctions programs. Nuclear-related sanctions intensified 2006-2015, eased under JCPOA (2015), reimposed after US withdrawal (2018). Cover oil exports, banking, shipping, nuclear technology. Secondary sanctions target third-country entities doing business with Iran. 'Maximum pressure' campaign ongoing.",
+  "source": "state_department",
+  "source_url": "https://www.state.gov/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

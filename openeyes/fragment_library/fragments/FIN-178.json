@@ -1,0 +1,27 @@
+{
+  "id": "FIN-178",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "correlation matrix"
+  ],
+  "content": "Correlation matrices measure relationships between asset returns for portfolio construction. Diversification benefits arise from low or negative correlations. However, correlations increase during crises precisely when diversification is needed most. Dynamic correlation models using GARCH or DCC capture time-varying relationships. Hierarchical clustering groups assets by similarity for risk parity allocation.",
+  "source": "Modern Portfolio Theory and Investment Analysis",
+  "source_url": "https://example.com/FIN-178",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2023,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "PH-2444_implementation_advances_latest_data",
+  "domain": "healthcare",
+  "tags": [
+    "implementation advances",
+    "public_health",
+    "latest_data"
+  ],
+  "content": "Implementation Advances - recent research findings, updated guidelines, emerging practices",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov/research",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

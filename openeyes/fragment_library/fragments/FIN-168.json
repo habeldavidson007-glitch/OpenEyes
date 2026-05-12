@@ -1,0 +1,28 @@
+{
+  "id": "FIN-168",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "backtesting",
+    "momentum_strategies"
+  ],
+  "content": "Momentum strategies profit from the persistence of price trends across assets. Time-series momentum goes long assets with positive returns over a lookback period and short those with negative returns. Academic research shows momentum exists across equities, futures, FX, and commodities, with 3-12 month lookback periods showing strongest signals. Momentum crashes occur during sharp reversals.",
+  "source": "Journal of Finance - Time Series Momentum",
+  "source_url": "https://example.com/FIN-168",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "frag_phr_unknown_definition_0151",
+  "domain": "healthcare",
+  "tags": [
+    "phr",
+    "definition",
+    "safety"
+  ],
+  "content": "Black box warnings (boxed warnings) are the FDA's strongest safety alerts required on prescription drug labeling. They appear in a black-bordered box at the beginning of the prescribing information and highlight risks that may lead to serious injury or death. Triggers include: mortality risk, life-threatening adverse reactions, contraindications in specific populations, or risks requiring special monitoring. Examples include suicidality with antidepressants in young adults, teratogenicity with isotretinoin, serious infections with immunosuppressants, and bleeding risk with anticoagulants. The warning remains until post-market data demonstrates acceptable risk-benefit balance.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

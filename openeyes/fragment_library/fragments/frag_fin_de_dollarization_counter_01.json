@@ -1,0 +1,32 @@
+{
+  "id": "frag_fin_de_dollarization_counter_01",
+  "domain": "economy",
+  "tags": [
+    "dollar",
+    "geopolitical_risk",
+    "currency",
+    "counter_argument",
+    "warning"
+  ],
+  "content": "Hype exceeds reality. USD share of trade invoicing remains ~50% (vs 15% US trade share). Network effects, liquidity depth, and rule of law make USD irreplaceable short-term. 'De-dollarization' often just diversification at margins, not systemic shift.",
+  "source": "peer_reviewed_study",
+  "source_url": "https://www.bis.org/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.8929999999999999,
+  "compatible_with": [
+    "frag_fin_de_dollarization_def_01"
+  ],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

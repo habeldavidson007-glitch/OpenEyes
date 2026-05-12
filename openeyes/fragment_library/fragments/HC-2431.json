@@ -1,0 +1,29 @@
+{
+  "id": "HC-2431",
+  "domain": "healthcare",
+  "tags": [
+    "CAD treatment",
+    "medical therapy",
+    "revascularization",
+    "PCI vs CABG"
+  ],
+  "content": "Stable CAD management: lifestyle modifications (smoking cessation, Mediterranean diet, exercise, weight management) plus optimal medical therapy. Antianginal medications: beta-blockers (first-line), calcium channel blockers, long-acting nitrates, ranolazine (late sodium current inhibitor). Secondary prevention: high-intensity statin (atorvastatin 40-80mg or rosuvastatin 20-40mg), antiplatelet therapy (aspirin 75-100mg daily; clopidogrel if aspirin intolerant), ACEi/ARB (especially with HTN, DM, CKD, HFrEF), beta-blocker post-MI or with HFrEF. Revascularization indications: symptom control despite OMT, left main disease, multivessel CAD with reduced EF, large area of ischemia. PCI preferred for single-vessel or focal disease; DES (drug-eluting stents) standard. CABG preferred for left main disease, multivessel CAD with diabetes (FREEDOM trial), complex multivessel disease (higher SYNTAX score), or concomitant valve surgery. CABG provides better long-term patency and fewer repeat revascularizations but higher perioperative risk. DAPT duration after PCI: 6-12 months depending on bleeding/ischemic risk.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/36857096/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2023,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

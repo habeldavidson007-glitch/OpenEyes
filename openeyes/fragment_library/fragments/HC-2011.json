@@ -1,0 +1,29 @@
+{
+  "id": "HC-2011",
+  "domain": "healthcare",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "PTSD",
+    "trauma"
+  ],
+  "content": "DSM-5-TR PTSD criteria: Exposure to trauma (Criterion A). Intrusion symptoms (\u22651): involuntary memories, nightmares, flashbacks, psychological/physiological distress to cues. Avoidance (\u22651): trauma-related thoughts/feelings or external reminders. Negative cognitions/mood (\u22652): amnesia, negative beliefs, distorted blame, persistent negative emotions, diminished interest, detachment, inability to experience positive emotions. Arousal/reactivity (\u22652): irritability/aggression, reckless behavior, hypervigilance, exaggerated startle, concentration problems, sleep disturbance. Duration >1 month, clinically significant distress/impairment, not attributable to substances/medical conditions. Specifiers: with dissociative symptoms (depersonalization/derealization), with delayed expression.",
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

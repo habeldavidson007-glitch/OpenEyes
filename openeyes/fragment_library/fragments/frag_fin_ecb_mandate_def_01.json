@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_ecb_mandate_def_01",
+  "domain": "economy",
+  "tags": [
+    "ecb",
+    "monetary_policy",
+    "eurozone",
+    "definition",
+    "first_line"
+  ],
+  "content": "The European Central Bank (ECB) primary mandate is price stability, defined as inflation below but close to 2% over the medium term. Unlike the Fed's dual mandate, the ECB focuses primarily on inflation, with secondary support for EU economic policies. Structure includes the Governing Council, Executive Board, and General Council.",
+  "source": "government_source",
+  "source_url": "https://www.ecb.europa.eu/home/html/index.en.html",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

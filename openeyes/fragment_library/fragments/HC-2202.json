@@ -1,0 +1,28 @@
+{
+  "id": "HC-2202",
+  "domain": "healthcare",
+  "tags": [
+    "drug pricing",
+    "R&D costs",
+    "pharmaceutical economics"
+  ],
+  "content": "Controversies around R&D cost estimates include: DiMasi study excluded drugs developed without industry funding (e.g., NIH-discovered), used non-public data from pharmaceutical companies, included substantial opportunity cost assumptions (cost of capital during development), and counted marketing expenditures as R&D in some analyses. Public funding contributes significantly to drug discovery\u2014NIH funds ~$40 billion annually in biomedical research, underlying many approved drugs. Studies show ~50% of new molecular entities have origins in public-sector research. Price-R&D relationship is questioned: pharmaceutical companies spend more on marketing than R&D (approximately 25% vs 15-20% of revenue), profit margins exceed most industries (15-20% net), and price increases often exceed inflation without corresponding R&D investment. Policy proposals include: Medicare price negotiation, international reference pricing, R&D transparency requirements, and delinking R&D costs from product prices.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

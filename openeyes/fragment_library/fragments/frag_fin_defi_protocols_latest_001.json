@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_defi_protocols_latest_001",
+  "domain": "economy",
+  "tags": [
+    "defi",
+    "smart_contracts",
+    "blockchain",
+    "crypto",
+    "latest_data"
+  ],
+  "content": "DeFi TVL declined from peak but stabilized. Regulatory scrutiny increased following high-profile failures. Real-world asset tokenization emerged as growth area. Cross-chain bridges remain vulnerability point.",
+  "source": "DeFi Llama",
+  "source_url": "https://defillama.com/",
+  "credibility_class": "financial_news",
+  "last_verified": "2026-05-12",
+  "weight": 0.75,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

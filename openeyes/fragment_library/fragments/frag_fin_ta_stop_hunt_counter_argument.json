@@ -1,0 +1,27 @@
+{
+  "id": "frag_fin_ta_stop_hunt_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "market_structure"
+  ],
+  "content": "Not every wick represents intentional stop hunting\u2014some reflect genuine information-driven moves. Attributing all adverse price action to manipulation creates victim mentality preventing objective analysis. Stops at obvious levels get hunted because everyone places them there\u2014the solution is less obvious placement, not conspiracy theories. Markets are competitive; persistent exploitation opportunities get arbitraged away.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

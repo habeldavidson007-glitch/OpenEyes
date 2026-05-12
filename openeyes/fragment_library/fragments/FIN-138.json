@@ -1,0 +1,29 @@
+{
+  "id": "FIN-138",
+  "domain": "economy",
+  "tags": [
+    "credit_default_swaps",
+    "credit_derivatives",
+    "hedging",
+    "risk_management"
+  ],
+  "content": "A credit default swap (CDS) is a derivative that transfers credit risk from one party to another. The protection buyer pays periodic premiums to the seller; if a credit event occurs (default, bankruptcy, restructuring), the seller compensates the buyer for losses on the reference entity's debt. CDS spreads reflect market-implied default probability\u2014a 100 basis point spread suggests roughly 1-2% annual default risk. CDS enabled investors to speculate on or hedge credit risk without owning the underlying bonds. During the 2008 crisis, CDS on mortgage-backed securities amplified losses when AIG couldn't meet obligations. Post-crisis reforms mandated central clearing for standardized CDS to reduce counterparty risk.",
+  "source": "ISDA Market Survey",
+  "source_url": "https://www.isda.org/research/market-surveys/",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": "2024",
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

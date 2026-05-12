@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_counterparty_risk_definition",
+  "domain": "economy",
+  "tags": [
+    "risk_management",
+    "counterparty",
+    "credit_risk",
+    "otc",
+    "definition"
+  ],
+  "content": "Counterparty risk is the probability that the other party in a financial contract (e.g., derivative, repo, loan) will default before final settlement. In OTC derivatives, this is mitigated by collateral (margin) and netting agreements (CSA). The 2008 AIG crisis exemplified systemic counterparty risk where one failure threatened the entire chain.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

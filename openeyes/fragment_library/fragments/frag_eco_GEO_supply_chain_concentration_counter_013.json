@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_supply_chain_concentration_counter_013",
+  "domain": "economy",
+  "tags": [
+    "supply_chain",
+    "concentration_risk",
+    "resilience",
+    "counter_argument"
+  ],
+  "content": "Concentration risk mitigation limits: Diversification costly and slow. Some concentration reflects genuine comparative advantage (geology, cluster effects). Redundancy conflicts with efficiency mandates. SMEs lack resources for multi-sourcing. Strategic stockpiles expensive. Complete supply chain sovereignty unrealistic for most economies.",
+  "source": "bcg_supply_chain_analysis",
+  "source_url": "https://www.bcg.com/",
+  "credibility_class": "consulting_firm",
+  "last_verified": "2026-05-12",
+  "weight": 0.86,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

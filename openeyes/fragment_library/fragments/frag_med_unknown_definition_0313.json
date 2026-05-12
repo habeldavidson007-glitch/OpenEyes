@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0313",
+  "domain": "healthcare",
+  "tags": [
+    "drug_interactions",
+    "pharmacokinetic",
+    "pharmacodynamic",
+    "polypharmacy",
+    "DDI"
+  ],
+  "content": "Drug-drug interactions (DDIs) occur when one drug alters the pharmacokinetics or pharmacodynamics of another. Pharmacokinetic interactions affect ADME: absorption (antacids reduce fluoroquinolone absorption), distribution (protein binding displacement), metabolism (CYP inhibition/induction), excretion (P-glycoprotein competition). Pharmacodynamic interactions involve additive/synergistic effects (benzodiazepines + opioids = respiratory depression) or antagonism (beta-blockers reverse beta-agonists). Clinically significant DDIs cause therapeutic failure or toxicity. Risk increases with polypharmacy, narrow therapeutic index drugs, and comorbidities. Major databases catalog known interactions; clinical judgment determines relevance.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

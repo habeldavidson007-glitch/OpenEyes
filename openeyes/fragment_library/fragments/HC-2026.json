@@ -1,0 +1,29 @@
+{
+  "id": "HC-2026",
+  "domain": "healthcare",
+  "tags": [
+    "mental health",
+    "stigma",
+    "discrimination",
+    "public health"
+  ],
+  "content": "Mental health stigma involves negative attitudes, stereotypes, and discrimination against people with psychiatric conditions. It manifests as public stigma (societal prejudice), self-stigma (internalized shame), and structural stigma (institutional policies). Consequences include delayed help-seeking, treatment dropout, social isolation, employment/housing discrimination, and worse health outcomes. Measurement tools include the Internalized Stigma of Mental Illness (ISMI) scale and Attribution Questionnaire. Reduction strategies include education (challenging myths), contact-based interventions (personal stories), protest against media misrepresentation, and legislative protections (parity laws, disability rights). Recovery-oriented language and peer advocacy shift narratives from pathology to resilience. Despite progress, stigma remains a major barrier to care globally.",
+  "source": "nimh.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

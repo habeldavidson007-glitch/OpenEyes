@@ -1,0 +1,30 @@
+{
+  "id": "frag_mh_suicidality_treatment_protocol_0005",
+  "domain": "healthcare",
+  "tags": [
+    "safety-planning",
+    "DBT",
+    "lithium",
+    "clozapine",
+    "means-restriction"
+  ],
+  "content": "Immediate safety: hospitalize if imminent risk (specific plan, intent, means available, unable to contract for safety). Safety planning intervention includes: recognizing warning signs, internal coping strategies, social contacts for distraction, family/friends for help, professional resources, making environment safe (means restriction). Evidence-based therapies: Dialectical Behavior Therapy (DBT) reduces attempts in BPD; Cognitive Therapy for Suicide Prevention (CT-SP); Collaborative Assessment and Management of Suicidality (CAMS). Pharmacotherapy: treat underlying disorders (lithium reduces suicide in bipolar/depression; clozapine reduces suicide in schizophrenia; ketamine shows rapid anti-suicidal effects). Means restriction counseling critical. Follow-up contact post-discharge reduces reattempts.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

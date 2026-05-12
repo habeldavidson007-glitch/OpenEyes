@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_mfn_status_counter_016",
+  "domain": "economy",
+  "tags": [
+    "mfN",
+    "most_favored_nation",
+    "wto",
+    "trade_policy",
+    "counter_argument"
+  ],
+  "content": "MFN erosion critique: Proliferation of FTAs creates discriminatory trading system. National security exceptions increasingly abused for economic protectionism. De facto MFN violations through non-tariff barriers common. Developing countries disadvantaged by preference erosion as tariffs decline. System moving toward managed trade.",
+  "source": "cfr_trade_analysis",
+  "source_url": "https://www.cfr.org/",
+  "credibility_class": "think_tank",
+  "last_verified": "2026-05-12",
+  "weight": 0.88,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

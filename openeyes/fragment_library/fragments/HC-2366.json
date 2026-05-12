@@ -1,0 +1,29 @@
+{
+  "id": "HC-2366",
+  "domain": "healthcare",
+  "tags": [
+    "influenza",
+    "antigenic shift",
+    "antigenic drift",
+    "vaccine"
+  ],
+  "content": "Influenza is caused by orthomyxoviruses: Influenza A (subtypes based on hemagglutinin H1-H18 and neuraminidase N1-N11), Influenza B (Victoria and Yamagata lineages), Influenza C (mild disease), and Influenza D (cattle only). Antigenic drift: gradual accumulation of point mutations in HA/NA genes causing seasonal epidemics requiring annual vaccine updates. Antigenic shift: reassortment of gene segments between different influenza strains (often involving animal reservoirs) causing pandemics (e.g., 2009 H1N1). Transmission via respiratory droplets and fomites. Incubation 1-4 days. Symptoms: abrupt fever, myalgia, headache, cough, sore throat, fatigue. Complications: pneumonia (viral or bacterial superinfection), myocarditis, encephalitis, exacerbation of chronic conditions.",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

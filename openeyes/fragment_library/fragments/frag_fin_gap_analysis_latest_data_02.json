@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_gap_analysis_latest_data_02",
+  "domain": "economy",
+  "tags": [
+    "latest_data",
+    "technical_analysis",
+    "gap_analysis"
+  ],
+  "content": "Gap-and-go patterns worked well in earnings season Q1 2024 for mega-cap tech. Overnight gaps in crypto markets continued to provide trading opportunities in 2024. Gap-fill tendencies varied significantly by sector and market cap in recent analysis. Earnings-related gaps showed different characteristics than technical gaps in 2024 data.",
+  "source": "Educational Resource",
+  "source_url": "https://www.stockcharts.com/articles/gap-types-trading",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

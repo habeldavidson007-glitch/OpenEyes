@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_market_capitalization_counter_001",
+  "domain": "economy",
+  "tags": [
+    "market_cap",
+    "equities",
+    "latest_data"
+  ],
+  "content": "Market cap classifications have limitations. Revenue and operations may not match cap size categorization. Small-cap premium (higher expected returns) has been inconsistent historically. Mega-cap concentration in major indices creates hidden risks. Market cap doesn't account for debt levels or cash positions that affect true enterprise value.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/small-cap-premium-20190614.html",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

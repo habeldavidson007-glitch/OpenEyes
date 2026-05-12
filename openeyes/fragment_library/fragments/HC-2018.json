@@ -1,0 +1,29 @@
+{
+  "id": "HC-2018",
+  "domain": "healthcare",
+  "tags": [
+    "DSM-5-TR",
+    "bipolar-I",
+    "bipolar-II",
+    "diagnostic-criteria"
+  ],
+  "content": "DSM-5-TR criteria: Manic episode requires abnormally elevated/expansive/irritable mood and increased energy/activity for \u22651 week (or any duration if hospitalized), plus \u22653 symptoms (grandiosity, decreased sleep need, pressured speech, flight of ideas, distractibility, increased activity, excessive risky activities) causing marked impairment. Hypomanic episode: similar symptoms for \u22654 consecutive days with unequivocal change in functioning but not markedly impairing. Bipolar I: \u22651 manic episode (depressive episode common but not required). Bipolar II: \u22651 hypomanic AND \u22651 major depressive episode, no history of mania. Cyclothymic disorder: \u22652 years of hypomanic and depressive symptoms not meeting full episode criteria. Specifiers include current episode type, severity, psychotic features, and rapid cycling (\u22654 episodes/year).",
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

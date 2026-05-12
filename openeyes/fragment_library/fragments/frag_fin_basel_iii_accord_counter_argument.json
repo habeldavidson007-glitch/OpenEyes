@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_basel_iii_accord_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "regulation",
+    "basel_iii",
+    "banking",
+    "capital_requirements",
+    "counter_argument"
+  ],
+  "content": "Critics, including some industry groups, argue that excessive capital requirements under Basel III Endgame reduce market making capacity, widen bid-ask spreads, and push activity into less regulated shadow banking sectors. Some economists argue that while safety increases, the cost of credit for consumers and businesses rises, potentially slowing economic growth.",
+  "source": "international_org",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

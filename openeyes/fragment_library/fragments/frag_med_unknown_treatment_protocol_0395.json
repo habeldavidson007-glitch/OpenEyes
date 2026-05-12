@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0395",
+  "domain": "healthcare",
+  "tags": [
+    "thyroid",
+    "levothyroxine",
+    "methimazole",
+    "radioactive iodine",
+    "beta-blockers"
+  ],
+  "content": "Hypothyroidism treatment: levothyroxine (synthetic T4) replacement, dosed by weight (~1.6 mcg/kg/day), adjusted based on TSH every 6-8 weeks until stable. Take on empty stomach, separate from calcium/iron supplements. Target TSH 0.5-4.5 mIU/L (individualized; lower targets in pregnancy, thyroid cancer). Hyperthyroidism treatment options: (1) Antithyroid drugs: methimazole first-line (except first trimester pregnancy - use PTU), typical duration 12-18 months for Graves'; (2) Radioactive iodine (I-131): definitive therapy, contraindicated in pregnancy/breastfeeding, often leads to hypothyroidism; (3) Thyroidectomy: for large goiters, suspicion of malignancy, patient preference. Beta-blockers (propranolol, atenolol) for symptom control. Thyroid storm: medical emergency requiring ICU, antithyroid drugs, iodine, steroids, beta-blockers.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985607/",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

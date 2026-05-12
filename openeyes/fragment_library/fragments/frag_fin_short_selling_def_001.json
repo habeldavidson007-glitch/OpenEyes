@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_short_selling_def_001",
+  "domain": "economy",
+  "tags": [
+    "margin",
+    "definition",
+    "short_selling",
+    "leverage",
+    "derivatives"
+  ],
+  "content": "Short selling involves borrowing securities and selling them, hoping to repurchase later at lower price. Profit equals sale price minus repurchase price minus borrowing costs. Short sellers must maintain margin accounts with collateral. Borrowing fees vary based on stock availability. Short interest (shares sold short as % of float) signals bearish sentiment. Shorts contribute to price discovery by expressing negative views, but unlimited loss potential makes it risky. Short squeezes occur when rising prices force shorts to cover, accelerating upward moves.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/investor/pubs/ss-faq.htm",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

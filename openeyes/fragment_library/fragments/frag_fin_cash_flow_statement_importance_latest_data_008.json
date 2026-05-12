@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_cash_flow_statement_importance_latest_data_008",
+  "domain": "economy",
+  "tags": [
+    "free_cash_flow",
+    "price_to_fcf",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "content": "Recent data through 2024 shows Cash Flow Statement Importance metrics are diverging across sectors. Investors are increasingly prioritizing cash yield and balance sheet strength over pure growth narratives in the current higher-for-longer rate regime.",
+  "source": "government_source",
+  "source_url": "https://www.sec.gov/files/form10-k.pdf",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

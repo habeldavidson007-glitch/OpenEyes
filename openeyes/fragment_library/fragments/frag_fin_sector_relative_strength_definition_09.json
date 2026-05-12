@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_sector_relative_strength_definition_09",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "sector_relative_strength",
+    "sector_rotation",
+    "relative_strength",
+    "definition"
+  ],
+  "content": "Relative strength compares asset performance against a benchmark or peers. Sector rotation strategies move capital to outperforming sectors. Measured by ratio charts or momentum rankings. Strong sectors in bull markets: technology, consumer discretionary. Defensive sectors (utilities, staples) outperform in downturns. RS helps identify leadership early. However, mean reversion eventually occurs; today's leaders become tomorrow's laggards.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/s/relativestrength.asp",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

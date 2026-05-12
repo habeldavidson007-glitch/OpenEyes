@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_seasonality_counter_argument_09",
+  "domain": "economy",
+  "tags": [
+    "seasonality",
+    "technical_analysis",
+    "sell_in_may",
+    "counter_argument",
+    "santa_claus_rally",
+    "january_effect"
+  ],
+  "content": "Seasonal patterns diminish as they become widely known and arbitraged. The January Effect largely disappeared after academic publication. 'Sell in May' has underperformed in recent decades. Small sample sizes for annual patterns make statistical significance questionable. Structural market changes (globalization, 24/7 trading, passive flows) reduce seasonal impacts. Seasonality ignores current fundamental/technical context. Data mining across calendar periods ensures some patterns appear significant by chance.",
+  "source": "Educational Resource",
+  "source_url": "https://www.schwarzald.com/january-effect-disappeared",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

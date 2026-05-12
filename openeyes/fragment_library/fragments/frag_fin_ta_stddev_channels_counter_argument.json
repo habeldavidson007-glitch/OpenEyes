@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ta_stddev_channels_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "indicators",
+    "volatility"
+  ],
+  "content": "Standard deviation assumes normal distribution of returns, but financial returns exhibit fat tails\u2014extreme moves occur more frequently than model predicts. Price can ride channel edges for extended periods during strong trends, punishing counter-trend trades. Channel width depends heavily on lookback period selection. Less adaptive than Bollinger Bands during volatility regime changes.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

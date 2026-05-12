@@ -1,0 +1,29 @@
+{
+  "id": "HC-2124",
+  "domain": "healthcare",
+  "tags": [
+    "antibiotic overprescription",
+    "measurement",
+    "appropriate use criteria",
+    "resistance patterns"
+  ],
+  "content": "Measuring appropriate antibiotic use: (1) Outpatient metrics - % of URI visits with antibiotics (target <35%), % of strep pharyngitis with testing before prescribing (target >90%); (2) Inpatient metrics - days of therapy per 1,000 patient-days, % compliance with surgical prophylaxis guidelines (stop within 24 hours); (3) Resistance surveillance - CDC's AR Isolate Bank tracks resistance patterns; (4) Peer comparison - facility-level prescribing compared to regional/national benchmarks. High-performing systems achieve: <25% antibiotic prescribing for viral URIs, >95% guideline-concordant surgical prophylaxis, <400 days of therapy/1,000 patient-days. Regional variation persists: some US states have 2x higher prescribing rates than others despite similar disease burden, suggesting practice pattern rather than patient need drives variation.",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

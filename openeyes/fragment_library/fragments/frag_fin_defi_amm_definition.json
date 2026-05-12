@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_defi_amm_definition",
+  "domain": "economy",
+  "tags": [
+    "defi",
+    "crypto",
+    "market_structure"
+  ],
+  "content": "Automated Market Makers (AMMs) use mathematical formulas instead of order books for price discovery. The constant product formula x*y=k ensures liquidity at all prices. As one token is bought, its price increases along the curve. Uniswap popularized this model, enabling permissionless token swaps without counterparties.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "FIN-184",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "transaction costs"
+  ],
+  "content": "Transaction cost analysis (TCA) measures all costs of trading: commissions, spreads, market impact, opportunity cost. Implementation shortfall compares actual portfolio return to paper portfolio return assuming no costs. Market impact models estimate price movement caused by trading, typically scaling with square root of volume participation.",
+  "source": "CFA Institute",
+  "source_url": "https://example.com/FIN-184",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

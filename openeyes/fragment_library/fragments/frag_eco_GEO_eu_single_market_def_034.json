@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_eu_single_market_def_034",
+  "domain": "economy",
+  "tags": [
+    "eu",
+    "single_market",
+    "regional_integration",
+    "definition"
+  ],
+  "content": "EU Single Market: Four freedoms - goods, services, capital, people move freely. 27 members, 450M consumers, $17T GDP. Customs union eliminates internal tariffs, common external tariff. Harmonized regulations, mutual recognition. Eurozone 20 members share currency. Single Market adds 8-9% to EU GDP vs. no integration scenario.",
+  "source": "europa_official",
+  "source_url": "https://single-market-economy.ec.europa.eu/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.96,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

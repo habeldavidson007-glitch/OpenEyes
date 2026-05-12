@@ -1,16 +1,27 @@
 {
+  "id": "frag_gov_ele_votingsystems_comparative_001",
   "domain": "governance",
-  "sector": "ele",
-  "content": "{'summary': 'Electoral systems translate votes into seats through various mechanisms including plurality/majoritarian, proportional representation, and mixed systems, each producing distinct political outcomes.', 'body': \"Three primary electoral system families exist: (1) Plurality/Majoritarian Systems: First-Past-The-Post (FPTP) awards seat to candidate with most votes (UK, US, Canada, India); Two-Round System requires majority, with runoff if no candidate achieves 50%+1 (France presidential elections); Alternative Vote (Ranked Choice) allows ranking candidates, eliminates lowest until majority achieved (Australia House). Characteristics: Tend toward two-party systems (Duverger's Law), single-party governments, strong executive, but may produce disproportionate results (2019 UK: Conservatives 43.6% votes \u2192 56.2% seats). (2) Proportional Representation (PR): Party List PR allocates seats proportionally to vote share using formulas (d'Hondt, Sainte-Lagu\u00eb); Single Transferable Vote enables ranked choice in multi-member districts (Ireland, Malta); Thresholds typically 3-5% prevent fragmentation. Characteristics: Multi-party systems, coalition governments, better minority representation, but potential instability (Israel, Italy). (3) Mixed Systems: Mixed Member Proportional (MMP) combines FPTP districts with compensatory list seats (Germany, New Zealand); Parallel systems run both separately without compensation (Japan, Russia). Duverger's mechanical effect (seat allocation) and psychological effect (strategic voting) explain party system convergence.\", 'key_points': ['FPTP produces two-party systems and single-party governments', 'PR yields multi-party coalitions and proportional outcomes', \"Duverger's Law: plurality systems favor two-party competition\", 'Electoral thresholds (3-5%) limit party fragmentation in PR', 'MMP combines local representation with proportionality', 'No system simultaneously maximizes all democratic values'], 'examples': ['2019 UK Election: Conservatives 43.6% votes \u2192 365 seats (56.2%); Lib Dems 11.5% \u2192 11 seats (1.7%)', '2021 New Zealand: Labour 50.0% votes \u2192 65 seats (50.8%); Greens 7.9% \u2192 10 seats (7.7%) under MMP', '2022 Netherlands: 17 parties won seats; highest vote-getter (VVD) received only 23.6%']}",
   "tags": [
     "GOV",
     "counter_argument"
   ],
+  "content": "{'summary': 'Electoral systems translate votes into seats through various mechanisms including plurality/majoritarian, proportional representation, and mixed systems, each producing distinct political outcomes.', 'body': \"Three primary electoral system families exist: (1) Plurality/Majoritarian Systems: First-Past-The-Post (FPTP) awards seat to candidate with most votes (UK, US, Canada, India); Two-Round System requires majority, with runoff if no candidate achieves 50%+1 (France presidential elections); Alternative Vote (Ranked Choice) allows ranking candidates, eliminates lowest until majority achieved (Australia House). Characteristics: Tend toward two-party systems (Duverger's Law), single-party governments, strong executive, but may produce disproportionate results (2019 UK: Conservatives 43.6% votes \u2192 56.2% seats). (2) Proportional Representation (PR): Party List PR allocates seats proportionally to vote share using formulas (d'Hondt, Sainte-Lagu\u00eb); Single Transferable Vote enables ranked choice in multi-member districts (Ireland, Malta); Thresholds typically 3-5% prevent fragmentation. Characteristics: Multi-party systems, coalition governments, better minority representation, but potential instability (Israel, Italy). (3) Mixed Systems: Mixed Member Proportional (MMP) combines FPTP districts with compensatory list seats (Germany, New Zealand); Parallel systems run both separately without compensation (Japan, Russia). Duverger's mechanical effect (seat allocation) and psychological effect (strategic voting) explain party system convergence.\", 'key_points': ['FPTP produces two-party systems and single-party governments', 'PR yields multi-party coalitions and proportional outcomes', \"Duverger's Law: plurality systems favor two-party competition\", 'Electoral thresholds (3-5%) limit party fragmentation in PR', 'MMP combines local representation with proportionality', 'No system simultaneously maximizes all democratic values'], 'examples': ['2019 UK Election: Conservatives 43.6% votes \u2192 365 seats (56.2%); Lib Dems 11.5% \u2192 11 seats (1.7%)', '2021 New Zealand: Labour 50.0% votes \u2192 65 seats (50.8%); Greens 7.9% \u2192 10 seats (7.7%) under MMP', '2022 Netherlands: 17 parties won seats; highest vote-getter (VVD) received only 23.6%']}",
   "source": "Unknown",
   "source_url": "https://www.un.org",
   "credibility_class": "anecdotal",
-  "id": "frag_gov_ele_votingsystems_comparative_001",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
   "subdomain": "GOV",
+  "sector": "ele",
   "reasoning_role": "counter_argument",
-  "year": 2024
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
 }

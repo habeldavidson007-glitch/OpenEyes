@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_currency_wars_def_01",
+  "domain": "economy",
+  "tags": [
+    "forex",
+    "currency",
+    "geopolitical_risk",
+    "trade",
+    "definition",
+    "first_line"
+  ],
+  "content": "Currency wars occur when countries competitively devalue currencies to boost exports. Mechanisms include direct FX intervention, verbal jawboning, or monetary easing. Historically seen in 1930s Great Depression and 2010-2015 post-GFC era.",
+  "source": "peer_reviewed_study",
+  "source_url": "https://www.bis.org/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.94,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

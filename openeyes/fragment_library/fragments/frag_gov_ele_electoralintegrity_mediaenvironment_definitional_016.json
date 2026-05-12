@@ -1,15 +1,6 @@
 {
   "id": "frag_gov_ele_electoralintegrity_mediaenvironment_definitional_016",
   "domain": "governance",
-  "sector": "ele",
-  "subdomain": "GOV",
-  "reasoning_role": "definition",
-  "credibility_class": "government_source",
-  "year": 2024,
-  "weight": 1.0,
-  "grundy_value": -1,
-  "robustness_status": "PENDING",
-  "source_url": "https://www.un.org",
   "tags": [
     "GOV",
     "definition",
@@ -17,5 +8,22 @@
     "voting"
   ],
   "content": "Fragment frag_gov_ele_electoralintegrity_mediaenvironment_definitional_016",
-  "source": "Unknown"
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "government_source",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GOV",
+  "sector": "ele",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
 }

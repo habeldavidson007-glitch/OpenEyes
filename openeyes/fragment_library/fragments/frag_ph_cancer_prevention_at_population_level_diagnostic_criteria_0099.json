@@ -1,0 +1,29 @@
+{
+  "id": "frag_ph_cancer_prevention_at_population_level_diagnostic_criteria_0099",
+  "domain": "healthcare",
+  "tags": [
+    "risk_stratification",
+    "screening",
+    "quality_assurance",
+    "surveillance"
+  ],
+  "content": "Cancer prevention assessment includes: (1) Risk stratification\u2014family history assessment (BRCA, Lynch syndrome identification), genetic counseling/testing criteria, risk prediction models (Gail model for breast cancer, CRC risk scores); (2) Screening eligibility\u2014age-based guidelines (USPSTF, ACS, specialty societies), risk-based modifications, shared decision-making for borderline cases; (3) Program monitoring\u2014screening participation rates, positivity rates, interval cancer rates, stage distribution shifts, false positive/negative rates; (4) Quality indicators\u2014colonoscopy adenoma detection rate (>25% men, >15% women), mammography recall rates, cervical screening adequacy; (5) Population surveillance\u2014cancer registry data (SEER), incidence/mortality trends, disparity monitoring. Emerging approaches include risk-stratified screening intervals, liquid biopsies for early detection, and polygenic risk scores. Cost-effectiveness analyses guide resource allocation decisions.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}
