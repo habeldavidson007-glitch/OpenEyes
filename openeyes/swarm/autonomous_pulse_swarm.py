@@ -572,23 +572,52 @@ class AutonomousSwarm:
         self.signal_bus = signal_bus
         self.wal_buffer = wal_buffer
         self.scheduler = scheduler
+        self._emergency_shutdown = False
+        self._memory_threshold_mb = 500  # Emergency shutoff at 500MB
+        self._health_check_interval = 60  # Check agent health every 60 seconds
     
     @classmethod
-    def create_default(cls, num_harvesters: int = 100, num_workers: int = 50, num_organizers: int = 5) -> 'AutonomousSwarm':
-        """Create a default swarm configuration."""
+    def create_default(
+        cls, 
+        num_harvesters: int = 800, 
+        num_workers: int = 180, 
+        num_organizers: int = 20,
+        known_hashes_path: Optional[str] = "known_hashes.db"
+    ) -> 'AutonomousSwarm':
+        """
+        Create a production-ready swarm with 1000 agents.
+        
+        Role Distribution (Option A modified):
+          - 800 Harvesters (80%): Scan RSS feeds/APIs for new content
+          - 180 Workers (18%): Tokenize and process data
+          - 20 Organizers (2%): TF-IDF, rule updates, archival
+        
+        Args:
+            num_harvesters: Number of harvester agents (default 800)
+            num_workers: Number of worker agents (default 180)
+            num_organizers: Number of organizer agents (default 20)
+            known_hashes_path: Path to persistent hash database
+        """
         signal_bus = SignalBus()
         wal_buffer = WALBuffer("wal_buffer.db")
         
         agents: List[BaseAgent] = []
         known_hashes: Set[str] = set()
         
-        # Create Harvester agents
+        # Load persistent hashes if available (prevents re-scraping after restart)
+        if known_hashes_path:
+            known_hashes = cls._load_persistent_hashes(known_hashes_path)
+            print(f"[Swarm] Loaded {len(known_hashes)} persistent hashes from {known_hashes_path}")
+        
+        # Create Harvester agents with diverse source distribution
         for i in range(num_harvesters):
+            # Distribute across different source types to avoid rate limits
+            source_type = i % 5  # 5 different source categories
             config = AgentConfig(
                 agent_id=f"harvester_{i}",
                 agent_type="harvester",
-                target_sources=[f"https://example.com/feed/{i}"],
-                wake_priority=i % 10  # Distribute priorities
+                target_sources=[f"https://example.com/feed/{source_type}/{i}"],
+                wake_priority=i % 20  # Distribute priorities across 20 batches
             )
             agent = HarvesterAgent(config, signal_bus, known_hashes)
             agents.append(agent)
@@ -598,7 +627,8 @@ class AutonomousSwarm:
             config = AgentConfig(
                 agent_id=f"worker_{i}",
                 agent_type="worker",
-                target_sources=[]
+                target_sources=[],
+                wake_priority=i % 10
             )
             agent = WorkerAgent(config, signal_bus)
             agents.append(agent)
@@ -608,7 +638,8 @@ class AutonomousSwarm:
             config = AgentConfig(
                 agent_id=f"organizer_{i}",
                 agent_type="organizer",
-                target_sources=[]
+                target_sources=[],
+                wake_priority=i
             )
             agent = OrganizerAgent(config, signal_bus)
             agents.append(agent)
@@ -616,26 +647,89 @@ class AutonomousSwarm:
         scheduler = CentralScheduler(
             agents=agents,
             signal_bus=signal_bus,
-            wal_buffer=wal_buffer
+            wal_buffer=wal_buffer,
+            stagger_batch_size=50,  # Wake 50 agents every 3 seconds
+            stagger_interval_seconds=3
         )
         
         return cls(agents, signal_bus, wal_buffer, scheduler)
     
+    @staticmethod
+    def _load_persistent_hashes(db_path: str) -> Set[str]:
+        """Load previously seen hashes from disk to prevent re-scraping."""
+        import sqlite3
+        try:
+            conn = sqlite3.connect(db_path)
+            cursor = conn.execute("SELECT hash FROM seen_hashes")
+            hashes = {row[0] for row in cursor.fetchall()}
+            conn.close()
+            return hashes
+        except Exception:
+            return set()
+    
+    @staticmethod
+    def _save_persistent_hashes(db_path: str, hashes: Set[str]):
+        """Persist hashes to disk for crash recovery."""
+        import sqlite3
+        conn = sqlite3.connect(db_path)
+        conn.execute("CREATE TABLE IF NOT EXISTS seen_hashes (hash TEXT PRIMARY KEY)")
+        for h in hashes:
+            try:
+                conn.execute("INSERT OR IGNORE INTO seen_hashes (hash) VALUES (?)", (h,))
+            except sqlite3.IntegrityError:
+                pass
+        conn.commit()
+        conn.close()
+    
     async def start_continuous(self, num_cycles: int = -1):
         """
-        Start continuous operation.
+        Start continuous operation with safety monitors.
         
         Args:
             num_cycles: Number of cycles to run (-1 for infinite)
         """
         print(f"[Swarm] Starting autonomous operation with {len(self.agents)} agents")
         print(f"[Swarm] Memory footprint (sleeping): ~{sum(a.get_memory_footprint() for a in self.agents) // 1024}KB")
+        print(f"[Swarm] Emergency shutoff threshold: {self._memory_threshold_mb}MB")
         
         cycles_run = 0
         while num_cycles < 0 or cycles_run < num_cycles:
+            # Check for emergency shutdown
+            if self._emergency_shutdown:
+                print("[Swarm] EMERGENCY SHUTDOWN triggered! Stopping all cycles.")
+                break
+            
+            # Monitor memory before each cycle
+            current_ram_mb = sum(a.get_memory_footprint() for a in self.agents) / (1024 * 1024)
+            if current_ram_mb > self._memory_threshold_mb:
+                print(f"[Swarm] CRITICAL: Memory usage {current_ram_mb:.2f}MB exceeds threshold {self._memory_threshold_mb}MB")
+                print("[Swarm] Triggering emergency hibernation...")
+                await self._emergency_hibernate()
+                break
+            
             await self.scheduler.run_cycle()
             cycles_run += 1
+            
+            # Persist hashes after each cycle for crash recovery
+            self._save_persistent_hashes("known_hashes.db", self.scheduler.known_hashes)
+            
             print(f"[Swarm] Completed cycle {cycles_run}")
+    
+    async def _emergency_hibernate(self):
+        """Emergency hibernation: force all agents to sleep immediately."""
+        print("[Swarm] Emergency hibernation initiated!")
+        
+        # Hibernate all agents immediately
+        hibernate_tasks = [agent.hibernate() for agent in self.agents]
+        await asyncio.gather(*hibernate_tasks)
+        
+        # Force garbage collection
+        gc.collect()
+        
+        # Save state
+        self._save_persistent_hashes("known_hashes.db", self.scheduler.known_hashes)
+        
+        print("[Swarm] Emergency hibernation complete. System safe.")
     
     async def run_single_cycle(self):
         """Run a single wake-harvest-sleep cycle."""
@@ -654,8 +748,19 @@ class AutonomousSwarm:
             **scheduler_status,
             "total_agents": len(self.agents),
             "agent_state_distribution": agent_states,
-            "estimated_ram_mb": sum(a.get_memory_footprint() for a in self.agents) / (1024 * 1024)
+            "estimated_ram_mb": sum(a.get_memory_footprint() for a in self.agents) / (1024 * 1024),
+            "emergency_shutdown_enabled": self._emergency_shutdown,
+            "memory_threshold_mb": self._memory_threshold_mb
         }
+    
+    def enable_emergency_shutdown(self):
+        """Enable manual emergency shutdown flag."""
+        self._emergency_shutdown = True
+    
+    def set_memory_threshold(self, threshold_mb: float):
+        """Set custom memory threshold for emergency shutoff."""
+        self._memory_threshold_mb = threshold_mb
+        print(f"[Swarm] Memory threshold set to {threshold_mb}MB")
 
 
 # Convenience function for quick testing
@@ -692,5 +797,100 @@ async def demo_swarm():
     print(f"  Known Hashes: {status['known_hashes']}")
 
 
+async def run_production_swarm(
+    num_harvesters: int = 800,
+    num_workers: int = 180,
+    num_organizers: int = 20,
+    active_minutes: int = 120,
+    sleep_minutes: int = 30,
+    test_mode: bool = False
+):
+    """
+    Launch production swarm with 1000 agents.
+    
+    Args:
+        num_harvesters: Number of harvester agents (default 800)
+        num_workers: Number of worker agents (default 180)
+        num_organizers: Number of organizer agents (default 20)
+        active_minutes: Duration of active hunting phase (default 120)
+        sleep_minutes: Duration of sleep phase (default 30)
+        test_mode: If True, use shortened cycles for testing
+    """
+    print("="*70)
+    print("OpenEyes Production Swarm - 1000 Agents")
+    print("Scaling up with safety monitors enabled")
+    print("="*70)
+    
+    # Create production swarm
+    swarm = AutonomousSwarm.create_default(
+        num_harvesters=num_harvesters,
+        num_workers=num_workers,
+        num_organizers=num_organizers
+    )
+    
+    # Configure scheduler
+    if test_mode:
+        print("\n[TEST MODE] Using shortened cycles for validation...")
+        swarm.scheduler.active_duration = timedelta(seconds=60)
+        swarm.scheduler.sleep_duration = timedelta(seconds=20)
+    else:
+        swarm.scheduler.active_duration = timedelta(minutes=active_minutes)
+        swarm.scheduler.sleep_duration = timedelta(minutes=sleep_minutes)
+    
+    # Set conservative memory threshold for 4GB laptop
+    swarm.set_memory_threshold(500)  # Emergency shutoff at 500MB
+    
+    print(f"\n[Production] Configuration:")
+    print(f"  Harvesters: {num_harvesters}")
+    print(f"  Workers: {num_workers}")
+    print(f"  Organizers: {num_organizers}")
+    print(f"  Total Agents: {len(swarm.agents)}")
+    print(f"  Active Phase: {active_minutes if not test_mode else 1} minutes")
+    print(f"  Sleep Phase: {sleep_minutes if not test_mode else 0.33} minutes")
+    print(f"  Stagger Batch: 50 agents every 3 seconds")
+    print(f"  Rate Limit: 5 requests/second global")
+    print(f"  Memory Threshold: {swarm._memory_threshold_mb}MB")
+    
+    print("\n[Production] Starting autonomous operation...")
+    print("Press Ctrl+C to stop gracefully\n")
+    
+    try:
+        # Run single cycle for test mode, continuous for production
+        if test_mode:
+            await swarm.run_single_cycle()
+            print("\n[Test] Single cycle complete!")
+        else:
+            await swarm.start_continuous(num_cycles=-1)  # Infinite cycles
+        
+        status = swarm.get_swarm_status()
+        print(f"\n[Production] Final Status:")
+        print(f"  Total Agents: {status['total_agents']}")
+        print(f"  Sleeping: {status['sleeping_agents']}")
+        print(f"  Estimated RAM: {status['estimated_ram_mb']:.2f}MB")
+        print(f"  Known Hashes: {status['known_hashes']}")
+        
+    except KeyboardInterrupt:
+        print("\n\n[Production] Graceful shutdown requested...")
+        swarm.enable_emergency_shutdown()
+        await swarm._emergency_hibernate()
+        print("[Production] Swarm hibernated successfully.")
+
+
 if __name__ == "__main__":
-    asyncio.run(demo_swarm())
+    import sys
+    
+    if len(sys.argv) > 1 and sys.argv[1] == "--production":
+        # Run production swarm with 1000 agents
+        asyncio.run(run_production_swarm(test_mode=False))
+    elif len(sys.argv) > 1 and sys.argv[1] == "--test-scale":
+        # Test scaling with 100 agents
+        print("Running scale test with 100 agents...")
+        asyncio.run(run_production_swarm(
+            num_harvesters=80,
+            num_workers=18,
+            num_organizers=2,
+            test_mode=True
+        ))
+    else:
+        # Default: run small demo
+        asyncio.run(demo_swarm())
