@@ -190,6 +190,10 @@ class PhilosophyGuard:
             return self._check_requires_uncertainty_note(proposal, config)
         elif check_type == "prohibit_source_type":
             return self._check_prohibit_source_type(proposal, config)
+        elif check_type == "opinion_language_check":
+            return self._check_opinion_language(proposal, config)
+        elif check_type == "requires_jurisdiction_note":
+            return self._check_requires_jurisdiction_note(proposal, config)
         
         # Unknown rule type
         return {
@@ -704,6 +708,68 @@ class PhilosophyGuard:
             "message": "Prioritizes beginner readability"
         }
     
+    def _check_opinion_language(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """Check if proposal content contains opinion/advocacy language."""
+        forbidden_phrases = config.get("forbidden_phrases", [])
+        
+        if not forbidden_phrases:
+            return {
+                "passed": True,
+                "message": "No opinion language restrictions defined"
+            }
+        
+        # Check content field
+        content = proposal.get("content", "") or proposal.get("change_description", "") or proposal.get("description", "")
+        content_lower = content.lower()
+        
+        found_phrases = []
+        for phrase in forbidden_phrases:
+            if phrase.lower() in content_lower:
+                found_phrases.append(phrase)
+        
+        if found_phrases:
+            return {
+                "passed": False,
+                "message": f"Contains opinion language: {found_phrases}",
+                "severity": "error"
+            }
+        
+        return {
+            "passed": True,
+            "message": "No opinion language detected"
+        }
+    
+    def _check_requires_jurisdiction_note(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
+        """Check if legal/governance fragments include jurisdiction disclaimer when needed."""
+        trigger_tags = config.get("trigger_tags", [])
+        required_note = config.get("note", "")
+        
+        if not trigger_tags:
+            return {
+                "passed": True,
+                "message": "No jurisdiction note requirement defined"
+            }
+        
+        # Check if fragment has any trigger tags
+        frag_tags = proposal.get("tags", [])
+        subdomain = proposal.get("subdomain", "")
+        
+        has_trigger = any(tag in frag_tags for tag in trigger_tags) or subdomain in trigger_tags
+        
+        if has_trigger:
+            content = proposal.get("content", "") or ""
+            if required_note and required_note not in content:
+                return {
+                    "passed": False,
+                    "message": f"Legal fragment requires jurisdiction note: '{required_note}'",
+                    "severity": "warning"
+                }
+        
+        return {
+            "passed": True,
+            "message": "Jurisdiction note requirement satisfied"
+        }
+
     def validate_batch(self, proposals: List[Dict]) -> Dict[str, Any]:
         """
         Validate multiple proposals and generate summary report.
