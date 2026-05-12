@@ -1,14 +1,155 @@
 ```
-# Python compiled files
-*.pyc
+# Environment and config
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Dependencies
+node_modules/
+.venv/
+venv/
 __pycache__/
 
 # Build artifacts
-openeyes.egg-info/
+dist/
+build/
+target/
 
-# Binary files
-*.bin
+# Editors
+.vscode/
+.idea/
 
-# Logs
-.openeyes/vault/audit/*.md
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+*.py~
+*.py.class
+*.py.backup
+*.py.swp
+*.py.swo
+*.py.tmp
+*.py.log
+*.py.err
+*.py.out
+*.py.audit
+*.py.cache
+*.py.compiled
+*.py.cov
+*.py.profile
+*.py.stats
+*.py.trace
+*.py.xcresult
+*.py.xml
+*.py.json
+*.py.csv
+*.py.tsv
+*.py.html
+*.py.pdf
+*.py.docx
+*.py.xlsx
+*.py.pptx
+*.py.odt
+*.py.ods
+*.py.odp
+*.py.rtf
+*.py.tex
+*.py.bib
+*.py.dvi
+*.py.ps
+*.py.eps
+*.py.fig
+*.py.mat
+*.py.pkl
+*.py.pickle
+*.py.h5
+*.py.npz
+*.py.npy
+*.py.dat
+*.py.bin
+*.py.ser
+*.py.obj
+*.py.model
+*.py.weights
+*.py.checkpoint
+*.py.state
+*.py.config
+*.py.settings
+*.py.props
+*.py.properties
+*.py.yml
+*.py.yaml
+*.py.toml
+*.py.ini
+*.py.cfg
+*.py.conf
+*.py.xml
+*.py.json
+*.py.csv
+*.py.tsv
+*.py.txt
+*.py.md
+*.py.rst
+*.py.asciidoc
+*.py.adoc
+*.py.org
+*.py.tex
+*.py.bib
+*.py.dvi
+*.py.ps
+*.py.eps
+*.py.fig
+*.py.mat
+*.py.pkl
+*.py.pickle
+*.py.h5
+*.py.npz
+*.py.npy
+*.py.dat
+*.py.bin
+*.py.ser
+*.py.obj
+*.py.model
+*.py.weights
+*.py.checkpoint
+*.py.state
+*.py.config
+*.py.settings
+*.py.props
+*.py.properties
+*.py.yml
+*.py.yaml
+*.py.toml
+*.py.ini
+*.py.cfg
+*.py.conf
+*.py.xml
+*.py.json
+*.py.csv
+*.py.tsv
+*.py.txt
+*.py.md
+*.py.rst
+*.py.asciidoc
+*.py.adoc
+*.py.org
+
+# Directories for Python
+.openeyes/
 ```
