@@ -262,8 +262,8 @@ class OpenEyesEngine:
         # P1: Apply graceful degradation instead of binary HALT
         base_confidence = result.get("confidence", 0.0) / 100.0  # Convert to 0-1 scale
         
-        # Use graceful degradation for medical/safety-sensitive domains
-        if routed_domain in ["healthcare", "medical"] or intent.requires_medical_disclaimer:
+        # Use graceful degradation for healthcare domain (normalized from hc/medical)
+        if routed_domain == "healthcare" or intent.requires_medical_disclaimer:
             graded_result = process_query_with_degradation(query, frags, base_confidence)
             
             # Override with graded response

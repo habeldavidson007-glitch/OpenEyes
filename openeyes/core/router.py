@@ -1,6 +1,11 @@
 from __future__ import annotations
 
-from openeyes.core.domain_validator import validate_query_domain
+from openeyes.knowledge.hierarchies import normalize_domain
+
+# Three core domains only - all others are sectors within these domains
+# ECO (Economy): fin, enr, com, mac, geo, reg sectors
+# GOV (Governance): leg, jud, sec, sub, ele, gel, gov, int, ipl sectors  
+# HC (Healthcare): med, phr, mh, ph sectors
 
 DOMAIN_KEYWORDS: dict[str, tuple[str, ...]] = {
     "economy": (
@@ -38,37 +43,20 @@ DOMAIN_KEYWORDS: dict[str, tuple[str, ...]] = {
         "military", "intelligence", "cybersecurity", "war", "conflict",
         "nato", "united nations", "security council", "genocide", "human rights"
     ),
-    "engineering": (
-        "load", "beam", "concrete", "stress", "design", "safety factor",
-        "structural", "civil", "mechanical", "electrical", "circuit", "voltage",
-        "material", "tensile", "compression", "welding", "blueprint"
-    ),
-    "legal": (
-        "law", "contract", "lawsuit", "legal", "rights", "court",
-        "attorney", "judge", "regulation", "compliance", "statute",
-        "precedent", "liability", "tort", "jurisdiction"
-    ),
 }
 
 
 def route_domain(query: str, domain: str | None = None) -> str:
     """
-    P2 FIX: Use advanced domain validator with phrase/concept matching.
+    Route query to one of three core domains: economy, governance, healthcare.
     
-    If domain is explicitly provided, use it. Otherwise, use the advanced
-    validator which provides better accuracy through context-aware matching.
-    Falls back to keyword matching if validator returns unknown or low confidence.
+    If domain is explicitly provided, normalize it. Otherwise, use keyword matching.
+    All sector-specific queries (fin, leg, med, phr, etc.) route to their parent domain.
     """
     if domain:
-        return domain.lower()
+        return normalize_domain(domain)
     
-    # Try advanced validator first
-    validated_domain, confidence, _ = validate_query_domain(query)
-    
-    if validated_domain != "unknown" and confidence > 0.4:
-        return validated_domain
-    
-    # Fallback to keyword matching
+    # Keyword matching for three core domains
     q = query.lower()
     best = "general"
     best_score = 0
@@ -79,4 +67,4 @@ def route_domain(query: str, domain: str | None = None) -> str:
             best = d
             best_score = score
 
-    return best
+    return normalize_domain(best)

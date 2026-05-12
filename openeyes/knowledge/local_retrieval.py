@@ -117,17 +117,33 @@ class IndexedFragment:
             
             # Single fragment format (no array)
             if 'content' in data or 'claim' in data:
-                # Infer from path
+                # Infer from path - three core domains only
                 path_parts = filepath.split(os.sep)
                 domain = 'unknown'
                 sector = 'unknown'
                 topic = filename.replace('.json', '')
                 
                 for i, part in enumerate(path_parts):
-                    if part in ['healthcare', 'economy', 'engineering']:
-                        domain = part
-                    elif part in ['phr', 'med', 'mh', 'ph', 'fin', 'enr', 'com', 'mac', 'geo', 'reg']:
+                    # Map directory names to three core domains
+                    if part == 'hc':
+                        domain = 'healthcare'
+                    elif part == 'eco':
+                        domain = 'economy'
+                    elif part == 'gov':
+                        domain = 'governance'
+                    # Sectors within each domain
+                    elif part in ['phr', 'med', 'mh', 'ph']:
                         sector = part
+                        if domain == 'unknown':
+                            domain = 'healthcare'
+                    elif part in ['fin', 'enr', 'com', 'mac', 'geo', 'reg']:
+                        sector = part
+                        if domain == 'unknown':
+                            domain = 'economy'
+                    elif part in ['leg', 'jud', 'sec', 'sub', 'ele', 'gel', 'gov', 'int', 'ipl']:
+                        sector = part
+                        if domain == 'unknown':
+                            domain = 'governance'
                 
                 content = data.get('content', '') or data.get('claim', '')
                 keywords = extract_keywords(content)
@@ -218,11 +234,10 @@ class LocalFragmentIndex:
     """
     
     def __init__(self, base_paths: list[str] = None):
-        # Support multiple fragment locations
+        # Three core domain directories only: eco, gov, hc
         if base_paths is None:
             self.base_paths = [
-                '/workspace/openeyes/domains',  # Legacy healthcare/economy location
-                '/workspace/openeyes/knowledge/fragments',  # New governance location
+                '/workspace/openeyes/knowledge/fragments',  # Main fragment directory with eco/gov/hc
             ]
         else:
             self.base_paths = base_paths if isinstance(base_paths, list) else [base_paths]
@@ -532,18 +547,15 @@ def retrieve_local_fragments(query: str, domain: str = None, limit: int = 10) ->
     1. Recognize entities in query
     2. Search by entity if found
     3. Fall back to keyword search
-    4. Apply domain filtering (supports both 'hc' and 'healthcare')
+    4. Apply domain filtering (supports hc/eco/gov and full names)
     5. Return ranked results
     """
+    from openeyes.knowledge.hierarchies import normalize_domain
+    
     index = get_local_index()
     
-    # Normalize domain code - support both short and long forms
-    domain_map = {
-        'hc': 'healthcare',
-        'eco': 'economy', 
-        'eng': 'engineering',
-    }
-    normalized_domain = domain_map.get(domain, domain) if domain else None
+    # Normalize domain code using central function
+    normalized_domain = normalize_domain(domain) if domain else None
     
     # Step 1: Entity recognition
     entities = recognize_entities(query, index)
@@ -560,7 +572,7 @@ def retrieve_local_fragments(query: str, domain: str = None, limit: int = 10) ->
         if results:
             return results
     
-    # Step 2: Keyword search fallback (try both domain forms)
+    # Step 2: Keyword search fallback
     results = index.search_by_keywords(query, domain=normalized_domain, limit=limit)
     
     # If no results and domain was specified, try without domain filter

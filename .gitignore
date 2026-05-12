@@ -1,12 +1,40 @@
 ```
-# Logs and temp files
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Logs
 *.log
+
+# Temporary files
 *.tmp
+*.swp
+*.swo
 
-# Dependencies
-.openeyes/
-openeyes.egg-info/
+# OS generated files
+.DS_Store
+Thumbs.db
 
-# Test results
-test_results/
+# Editors
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+target/
 ```
