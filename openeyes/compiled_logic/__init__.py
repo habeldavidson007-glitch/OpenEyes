@@ -92,7 +92,13 @@ class CompiledLogicIndex:
     Monte Carlo simulation for novel queries.
     """
     
-    def __init__(self, storage_path: str = "/workspace/openeyes/data/compiled_logic.json"):
+    def __init__(self, storage_path: str = None):
+        # Dynamic path resolution if not provided
+        if storage_path is None:
+            import openeyes
+            package_dir = Path(openeyes.__file__).parent
+            storage_path = str(package_dir.parent / "data" / "compiled_logic.json")
+        
         self.storage_path = storage_path
         self.synapses: Dict[str, Synapse] = {}
         self.keyword_index: Dict[str, List[str]] = {}  # keyword -> [synapse_ids]
@@ -302,6 +308,6 @@ class CompiledLogicIndex:
         }
 
 
-def initialize_compiled_logic_index(storage_path: str = "/workspace/openeyes/data/compiled_logic.json") -> CompiledLogicIndex:
+def initialize_compiled_logic_index(storage_path: str = None) -> CompiledLogicIndex:
     """Initialize and return the Compiled Logic Index singleton."""
     return CompiledLogicIndex(storage_path=storage_path)

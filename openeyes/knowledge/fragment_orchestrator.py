@@ -53,13 +53,13 @@ class FragmentOrchestrator:
         'leg': 'leg',      # Legal (if separate from gov)
     }
     
-    # Base directory for all fragments
-    FRAGMENTS_BASE = Path('/workspace/openeyes/knowledge/fragments')
-    
-    # Legacy fragment library location
-    LEGACY_LIBRARY = Path('/workspace/openeyes/fragment_library/fragments')
-    
     def __init__(self):
+        # Initialize paths dynamically based on package location
+        import openeyes
+        package_dir = Path(openeyes.__file__).parent
+        self.FRAGMENTS_BASE = package_dir / 'knowledge' / 'fragments'
+        self.LEGACY_LIBRARY = package_dir.parent / 'fragment_library' / 'fragments'
+        
         self.moves_made: List[FragmentMove] = []
         self.errors: List[str] = []
         self.stats = {

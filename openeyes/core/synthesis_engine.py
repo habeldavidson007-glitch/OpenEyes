@@ -66,6 +66,10 @@ class SynthesisEngine:
         is_why_question = query_lower.startswith('why')
         is_side_effect = 'side effect' in query_lower or 'symptom' in query_lower or 'risk' in query_lower
         
+        # Extract key topic words from query for relevance scoring
+        stop_words = {'the', 'a', 'an', 'is', 'are', 'what', 'how', 'why', 'do', 'does', 'did', 'have', 'has', 'had', 'will', 'would', 'could', 'should', 'can', 'current', 'that', 'which', 'who', 'whom'}
+        query_topics = [w for w in query_lower.split() if w not in stop_words and len(w) > 2]
+        
         for i, frag in enumerate(fragments):
             content = frag.get('claim', '') or frag.get('text', '')
             conf = frag.get('confidence_score', 0.5)
@@ -73,6 +77,16 @@ class SynthesisEngine:
             
             # Simple heuristic role assignment
             role = 'EVIDENCE' # Default
+            
+            # RELEVANCE CHECK: If fragment doesn't mention query topics, mark as low-priority evidence
+            topic_match_count = sum(1 for topic in query_topics if topic in content_lower)
+            if topic_match_count == 0 and len(query_topics) > 1:
+                # Fragment is likely irrelevant - skip it or mark as very low confidence
+                conf = conf * 0.3  # Severely downgrade confidence
+                role = 'EVIDENCE'  # Keep as evidence but with low weight
+            elif topic_match_count >= 2:
+                # High relevance - candidate for conclusion
+                role = 'CONCLUSION'
             
             # If fragment contains causal markers, it might be a conclusion or premise
             if any(m in content_lower for m in self.causal_markers):
@@ -133,6 +147,7 @@ class SynthesisEngine:
     def _generate_narrative(self, nodes: List[LogicalNode], query: str) -> str:
         """
         Traverses the graph to write a human-readable paragraph.
+        CRITICAL: Must directly ANSWER the query first, then provide supporting evidence.
         """
         conclusions = [n for n in nodes if n.role == 'CONCLUSION']
         evidence = [n for n in nodes if n.role == 'EVIDENCE']
@@ -143,33 +158,133 @@ class SynthesisEngine:
             return " ".join([n.content for n in nodes])
 
         narrative_parts = []
+        query_lower = query.lower()
         
-        # 1. Start with Context/Premise (The "Why")
+        # DETECT QUERY TYPE for proper response structure
+        is_what_question = query_lower.startswith('what')
+        is_stock_query = 'stock' in query_lower or 'invest' in query_lower or 'roi' in query_lower or 'return' in query_lower
+        is_exchange_rate = 'exchange rate' in query_lower or 'currency' in query_lower
+        
+        # 1. FOR STOCK/INVESTMENT QUERIES: Direct answer first, no fluff
+        if is_stock_query and (conclusions or evidence):
+            # Start with a direct acknowledgment that specific stock picks require real-time data
+            narrative_parts.append(
+                "I cannot provide real-time stock recommendations or current ROI data, as my knowledge has a time delay. "
+                "However, I can share proven strategies for identifying stocks with strong ROI potential:"
+            )
+            
+            # Add evidence as strategic guidance, not random facts
+            relevant_evidence = []
+            for ev in evidence[:4]:
+                content = ev.content.strip()
+                # Filter out completely irrelevant topics (AI regulation, climate change, etc.)
+                if any(irrelevant in content.lower() for irrelevant in ['ai regulation', 'climate change', 'geopolitical', 'cybersecurity']):
+                    continue
+                # Filter out web scraper artifacts and low-quality content
+                if any(artifact in content.lower() for artifact in ['duckduckgo', 'bots use', 'search endpoint', 'retrieved 0']):
+                    continue
+                # Skip very short or nonsensical fragments
+                if len(content) < 30 or content.count(' ') < 5:
+                    continue
+                relevant_evidence.append(content)
+            
+            if relevant_evidence:
+                for i, ev in enumerate(relevant_evidence):
+                    if i == 0:
+                        connector = "Key approach: "
+                    elif i == 1:
+                        connector = "Important factor: "
+                    else:
+                        connector = "Also consider: "
+                    narrative_parts.append(f"{connector}{ev}")
+            
+            # Add a strong actionable conclusion
+            narrative_parts.append(
+                "For current stock picks with good ROI, you should: (1) Use screening tools like Finviz or Yahoo Finance to filter by ROE > 15%, revenue growth > 10%, and low debt-to-equity; "
+                "(2) Consult recent analyst reports from major brokerages; "
+                "(3) Consider diversified ETFs if individual stock selection is too risky. "
+                "Always verify data recency before making investment decisions."
+            )
+            
+            full_text = " ".join(narrative_parts)
+            full_text = re.sub(r'\s+', ' ', full_text).strip()
+            if full_text and not full_text.endswith('.'):
+                full_text += '.'
+            return full_text
+        
+        # 2. FOR EXCHANGE RATE QUERIES: Acknowledge limitation, provide context
+        if is_exchange_rate and (conclusions or evidence):
+            narrative_parts.append(
+                "I cannot provide real-time exchange rates as they fluctuate continuously throughout trading hours. "
+                "For current rates, check live sources like XE.com, OANDA, or your bank's currency converter."
+            )
+            
+            # Add only relevant contextual information
+            for ev in evidence[:2]:
+                content = ev.content
+                if 'exchange' in content.lower() or 'currency' in content.lower() or 'forex' in content.lower():
+                    narrative_parts.append(f"Context: {content}")
+            
+            narrative_parts.append(
+                "Exchange rates are influenced by interest rate differentials, economic indicators, geopolitical stability, and central bank policies. "
+                "Major currency pairs like EUR/USD typically trade with spreads of 1-3 pips through retail brokers."
+            )
+            
+            full_text = " ".join(narrative_parts)
+            full_text = re.sub(r'\s+', ' ', full_text).strip()
+            if full_text and not full_text.endswith('.'):
+                full_text += '.'
+            return full_text
+        
+        # 3. GENERIC STRUCTURE for other query types
+        # Start with Context/Premise (The "Why") - ONLY if relevant
         if premises:
-            narrative_parts.append(f"Based on established principles, {premises[0].content.lower()}")
+            # Check if premise is actually relevant to query
+            premise_text = premises[0].content.lower()
+            query_words = set(query_lower.split())
+            premise_words = set(premise_text.split())
+            if len(query_words & premise_words) >= 2:
+                narrative_parts.append(f"Background: {premises[0].content}")
         
-        # 2. Add Evidence with proper connectors (The "What")
-        for i, ev in enumerate(evidence[:3]):
+        # Add Evidence with proper connectors (The "What")
+        filtered_evidence = []
+        for ev in evidence[:4]:
+            content = ev.content.lower()
+            # Filter out clearly irrelevant content
+            if any(irrelevant in content for irrelevant in ['ai regulation', 'climate change', 'geopolitical conflict']):
+                continue
+            # Also filter based on confidence (downgraded by _assign_roles if irrelevant)
+            if ev.confidence < 0.2:
+                continue
+            filtered_evidence.append(ev.content)
+        
+        for i, ev_content in enumerate(filtered_evidence):
             if i == 0:
-                connector = "Specifically, "
+                connector = "Key insight: "
             elif i == 1:
-                connector = "Additionally, "
+                connector = "Supporting detail: "
             else:
-                connector = "Furthermore, "
-            narrative_parts.append(f"{connector}{ev.content}")
+                connector = "Additional context: "
+            narrative_parts.append(f"{connector}{ev_content}")
         
-        # 3. End with Conclusion (The "Answer")
+        # End with Conclusion (The "Answer") - MUST synthesize, not just repeat
         if conclusions:
-            main_conc = max(conclusions, key=lambda x: x.confidence)
-            # Check if we have supporting evidence to link
-            if main_conc.connections:
-                narrative_parts.append(f"Therefore, {main_conc.content.lower()}")
-            else:
-                narrative_parts.append(f"In conclusion, {main_conc.content.lower()}")
-        elif evidence:
-            # If no explicit conclusion, synthesize one from evidence
-            last_ev = evidence[-1]
-            narrative_parts.append(f"This indicates that {last_ev.content.lower()}")
+            # Get the highest confidence conclusion that's actually relevant
+            relevant_conclusions = [c for c in conclusions if c.confidence >= 0.3]
+            if relevant_conclusions:
+                main_conc = max(relevant_conclusions, key=lambda x: x.confidence)
+                # Synthesize a proper conclusion, don't just copy fragment
+                if main_conc.connections:
+                    narrative_parts.append(f"Bottom line: {main_conc.content}")
+                else:
+                    narrative_parts.append(f"In summary: {main_conc.content}")
+            elif conclusions:
+                # Fallback to any conclusion even if low confidence
+                main_conc = max(conclusions, key=lambda x: x.confidence)
+                narrative_parts.append(f"In summary: {main_conc.content}")
+        elif filtered_evidence:
+            # If no explicit conclusion, create one from evidence
+            narrative_parts.append("This information suggests you should verify current data from authoritative sources before taking action.")
 
         # Join and clean up
         full_text = " ".join(narrative_parts)

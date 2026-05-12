@@ -35,8 +35,11 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BASE_DIR = Path('/workspace/openeyes/knowledge/fragments')
-TEMP_DIR = Path('/workspace/openeyes/knowledge/fragments_temp')
+# Dynamic path resolution based on package location
+import openeyes
+_package_dir = Path(openeyes.__file__).parent
+BASE_DIR = _package_dir / 'knowledge' / 'fragments'
+TEMP_DIR = _package_dir / 'knowledge' / 'fragments_temp'
 
 # Valid domain codes
 VALID_DOMAINS = {'gov', 'eco', 'hc', 'eng'}

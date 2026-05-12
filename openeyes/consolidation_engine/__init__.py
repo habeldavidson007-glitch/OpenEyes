@@ -26,7 +26,16 @@ class ConsolidationEngine:
     Runs periodically (Night Mode) to consolidate learning from daily operations.
     """
     
-    def __init__(self, logs_dir: str = "/workspace/logs", vault_dir: str = "/workspace/openeyes_vault"):
+    def __init__(self, logs_dir: str = None, vault_dir: str = None):
+        # Dynamic path resolution if not provided
+        if logs_dir is None or vault_dir is None:
+            import openeyes
+            package_dir = Path(openeyes.__file__).parent
+            if logs_dir is None:
+                logs_dir = str(package_dir.parent / "logs")
+            if vault_dir is None:
+                vault_dir = str(package_dir.parent / "openeyes_vault")
+        
         self.logs_dir = logs_dir
         self.vault_dir = vault_dir
         self.success_logs_path = os.path.join(logs_dir, "success")
