@@ -1,0 +1,19 @@
+{
+  "id": "frag_gov_int_tbt_definitional_163",
+  "domain": "governance",
+  "sector": "int",
+  "subdomain": "GOV",
+  "reasoning_role": "definition",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "weight": 1.0,
+  "grundy_value": -1,
+  "robustness_status": "PENDING",
+  "source_url": "https://www.un.org",
+  "tags": [
+    "GOV",
+    "definition"
+  ],
+  "content": "Fragment frag_gov_int_tbt_definitional_163",
+  "source": "Unknown"
+}

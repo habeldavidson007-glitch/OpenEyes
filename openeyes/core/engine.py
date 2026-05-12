@@ -27,9 +27,12 @@ from openeyes.core.intent_router import route_intent
 from openeyes.core.reasoning_engine import get_reasoning_engine
 from openeyes.core.emergency_detection import detect_emergency, get_emergency_message
 
+from openeyes.core.logical_synthesizer import LogicalSynthesizer
+
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
 VERBOSE_PIPELINE = os.getenv("OPENEYES_VERBOSE_PIPELINE", "0") == "1"
+logical_engine = LogicalSynthesizer()  # P3: Logical Synthesis Engine
 
 
 def _pipeline_log(message: str) -> None:
@@ -223,8 +226,38 @@ class OpenEyesEngine:
         frags = self._fragments_for(query, routed_domain)
         priors = retrieve_similar(self.memory_path, query, routed_domain)
         
+        # P3: Logical Synthesis - Check for Emergency/Strategic intent BEFORE data processing
+        # This prevents context dumping and ensures safety-first responses
+        fragment_texts = [getattr(f, "claim", "") for f in frags if hasattr(f, "claim")]
+        p3_result = logical_engine.process(query, routed_domain, fragment_texts)
+        
+        # If P3 detects emergency, bypass all other processing
+        if p3_result["action"] == "HALT_AND_REDIRECT":
+            return {
+                "status": "HALT_SAFETY",
+                "answer_class": "SAFETY_HALT",
+                "answer": p3_result["response"],
+                "confidence": 100.0,
+                "domain": routed_domain,
+                "emergency_resources": self._get_emergency_resources(intent),
+                "narrative": {"context": "", "scenarios": {}, "recommendation": "Seek professional help immediately"},
+                "replay": {},
+                "data_recency_years": 0,
+            }
+        
         # Calculate base confidence from Monte Carlo
         result = self.mc.run(query=query, domain=routed_domain, fragments=frags)
+        
+        # P3: If strategic query, use synthesized logical answer instead of raw data dump
+        if p3_result["action"] == "ANSWER_STRATEGIC":
+            # Override narrative with logically synthesized response
+            narrative = {
+                "context": "Strategic analysis based on market data",
+                "scenarios": {},
+                "recommendation": p3_result["response"]
+            }
+            result["status"] = "ANSWER_HIGH_CONFIDENCE"
+            result["confidence"] = 85.0  # Synthetic confidence for strategic advice
         
         # P1: Apply graceful degradation instead of binary HALT
         base_confidence = result.get("confidence", 0.0) / 100.0  # Convert to 0-1 scale

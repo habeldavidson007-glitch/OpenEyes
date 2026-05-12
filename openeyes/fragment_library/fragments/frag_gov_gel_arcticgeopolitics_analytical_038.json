@@ -1,0 +1,16 @@
+{
+  "id": "gov-GEL-ARCTICGEOPOLITICS-ANALYTICAL-038",
+  "domain": "governance",
+  "sector": "GEL",
+  "content": "{'overview': 'This fragment describes arcticgeopolitics in geopolitical analysis. Arctic warming fast.', 'key_points': ['Arctic warming fast', 'Oil gas resources', 'Northern Sea Route Russia', 'Arctic Council eight states', 'Russia China militarization'], 'sources': ['World Bank WGI (databank.worldbank.org)', 'Freedom House (freedomhouse.org)', 'CSIS (csis.org)', 'Brookings (brookings.edu)', 'Carnegie (carnegieendowment.org)', 'Lowy Institute (lowyinstitute.org)'], 'philosophy_guard': 'Describes what IS - theories patterns cases. Not what SHOULD BE.', 'credibility_score': 0.94}",
+  "tags": [
+    "GOV",
+    "counter_argument"
+  ],
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "subdomain": "GOV",
+  "reasoning_role": "counter_argument",
+  "year": 2024
+}

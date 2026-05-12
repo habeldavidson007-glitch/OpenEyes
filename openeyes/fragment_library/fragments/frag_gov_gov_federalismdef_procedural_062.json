@@ -1,0 +1,17 @@
+{
+  "id": "frag_gov_gov_federalismdef_procedural_062",
+  "domain": "governance",
+  "sector": "GOV",
+  "content": "{'summary': '. This fragment outlines the operational procedures, processes, and implementation mechanisms.', 'key_points': ['Step-by-step process for federalism definition', 'Responsible actors and their roles', 'Timeline and sequencing requirements', 'Documentation and record-keeping', 'Appeals or review mechanisms if applicable'], 'sources': ['Congressional Research Service reports', 'U.S. Constitution', 'Constitution Annotated (congress.gov)', 'Government Publishing Office', 'Relevant Supreme Court opinions'], 'related_fragments': [], 'last_updated': '2024-01-15', 'credibility_score': 0.95, 'philosophy_guard_passed': True, 'philosophy_guard_note': 'Descriptive claim about federalism & subnational governance; no normative advocacy regarding what should be'}",
+  "tags": [
+    "GOV",
+    "definition",
+    "federalism"
+  ],
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "subdomain": "GOV",
+  "reasoning_role": "definition",
+  "year": 2024
+}

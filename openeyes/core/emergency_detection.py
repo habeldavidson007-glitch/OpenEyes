@@ -30,11 +30,16 @@ EMERGENCY_PATTERNS = {
     ],
     'overdose': [
         r'overdose', r'too\s+many\s+pills', r'overdosed', r'drug\s+overdose',
-        r'pill\s+overdose', r'poisoning', r'ingested\s+toxic'
+        r'pill\s+overdose', r'poisoning', r'ingested\s+toxic', r'take\s+all\s+my\s+pills'
     ],
     'suicidal': [
         r'suicide', r'kill\s+myself', r'end\s+my\s+life', r'self[- ]harm',
-        r'hurt\s+myself', r'suicidal', r'want\s+to\s+die', r'no\s+reason\s+to\s+live'
+        r'hurt\s+myself', r'suicidal', r'want\s+to\s+die', r'no\s+reason\s+to\s+live',
+        r'should\s+i\s+just\s+end\s+it', r'want\s+to\s+die', r'made\s+me\s+want\s+to\s+die',
+        r'thinking\s+of\s+hurting\s+myself', r'how\s+do\s+i\s+end\s+the\s+pain',
+        r'drive\s+.*\s+off\s+a\s+bridge', r'stop\s+breathing', r'peaceful\s+way\s+to\s+exit',
+        r'escape\s+this\s+financial\s+ruin', r'can\'t\s+fix\s+this\s+debt',
+        r'lost\s+everything.*end\s+it', r'bankruptcy.*too\s+much'
     ],
     'anaphylaxis': [
         r'anaphylaxis', r'severe\s+allergic\s+reaction', r'throat\s+swelling',
@@ -47,6 +52,11 @@ EMERGENCY_PATTERNS = {
     'unconscious': [
         r'unconscious', r'passed\s+out', r'won\'t\s+wake\s+up', r'lost\s+consciousness',
         r'fainted\s+and\s+won\'t\s+wake'
+    ],
+    'mental_health_crisis': [
+        r'should\s+i\s+just\s+end\s+it', r'want\s+to\s+die', r'ending\s+pain',
+        r'can\'t\s+take\s+it\s+anymore', r'no\s+hope', r'give\s+up\s+life',
+        r'peaceful\s+way\s+to\s+exit', r'how\s+do\s+i\s+end\s+the\s+pain'
     ]
 }
 

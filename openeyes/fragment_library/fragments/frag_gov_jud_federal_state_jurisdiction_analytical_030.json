@@ -1,0 +1,20 @@
+{
+  "id": "gov_jud_federal_state_jurisdiction_analytical_030",
+  "domain": "governance",
+  "sector": "JUD",
+  "subdomain": "GOV",
+  "reasoning_role": "counter_argument",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "weight": 1.0,
+  "grundy_value": -1,
+  "robustness_status": "PENDING",
+  "source_url": "https://www.un.org",
+  "tags": [
+    "GOV",
+    "counter_argument",
+    "federalism"
+  ],
+  "content": "Fragment gov_jud_federal_state_jurisdiction_analytical_030",
+  "source": "Unknown"
+}

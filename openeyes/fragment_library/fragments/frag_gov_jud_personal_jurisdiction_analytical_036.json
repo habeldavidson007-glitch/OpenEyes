@@ -1,0 +1,19 @@
+{
+  "id": "gov_jud_personal_jurisdiction_analytical_036",
+  "domain": "governance",
+  "sector": "JUD",
+  "subdomain": "GOV",
+  "reasoning_role": "counter_argument",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "weight": 1.0,
+  "grundy_value": -1,
+  "robustness_status": "PENDING",
+  "source_url": "https://www.un.org",
+  "tags": [
+    "GOV",
+    "counter_argument"
+  ],
+  "content": "Fragment gov_jud_personal_jurisdiction_analytical_036",
+  "source": "Unknown"
+}

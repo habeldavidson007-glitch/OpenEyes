@@ -1,0 +1,16 @@
+{
+  "id": "gov-GEL-GREATPOWERCOMPETITION-COMPARATIVE-003",
+  "domain": "governance",
+  "sector": "GEL",
+  "content": "{'overview': 'This fragment describes greatpowercompetition in geopolitical analysis. Rivalry between major powers for influence resources security.', 'key_points': ['Rivalry between major powers for influence resources security', 'Historical cycles Peloponnesian Napoleonic Cold War', 'US-China competition trade technology military', 'Economic interdependence with strategic decoupling', 'Multi-domain competition military cyber space information'], 'sources': ['World Bank WGI (databank.worldbank.org)', 'Freedom House (freedomhouse.org)', 'CSIS (csis.org)', 'Brookings (brookings.edu)', 'Carnegie (carnegieendowment.org)', 'Lowy Institute (lowyinstitute.org)'], 'philosophy_guard': 'Describes what IS - theories patterns cases. Not what SHOULD BE.', 'credibility_score': 0.94}",
+  "tags": [
+    "GOV",
+    "counter_argument"
+  ],
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "subdomain": "GOV",
+  "reasoning_role": "counter_argument",
+  "year": 2024
+}

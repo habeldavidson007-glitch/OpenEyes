@@ -1,0 +1,92 @@
+{
+  "domain": "governance",
+  "version": "0.1",
+  "decay_rate_per_year": 3,
+  "max_fragment_age_years": 5,
+  "tier": 1,
+  "neutrality_required": true,
+  "rules": [
+    {
+      "id": "GOV-001",
+      "name": "Require Source URL",
+      "description": "Every governance fragment must have a source_url",
+      "check_type": "requires_field",
+      "config": {
+        "field": "source_url"
+      }
+    },
+    {
+      "id": "GOV-002",
+      "name": "Require Year",
+      "description": "Every governance fragment must have a year",
+      "check_type": "requires_field",
+      "config": {
+        "field": "year"
+      }
+    },
+    {
+      "id": "GOV-003",
+      "name": "Descriptive Only",
+      "description": "Governance answers must describe what is \u2014 not advocate for what should be",
+      "check_type": "opinion_language_check",
+      "config": {
+        "forbidden_phrases": [
+          "should be abolished",
+          "must be reformed",
+          "is wrong",
+          "is right",
+          "is better than",
+          "is worse than",
+          "clearly superior",
+          "obviously inferior",
+          "undeniably",
+          "everyone knows",
+          "it is obvious that"
+        ]
+      }
+    },
+    {
+      "id": "GOV-004",
+      "name": "No Electoral Recommendations",
+      "description": "OpenEyes never recommends voting for or against any candidate or party",
+      "check_type": "blacklist_tag_conflict",
+      "config": {
+        "forbidden_tags": [
+          "vote_recommendation",
+          "candidate_endorsement",
+          "party_advocacy"
+        ]
+      }
+    },
+    {
+      "id": "GOV-005",
+      "name": "Jurisdiction Context Required",
+      "description": "Legal answers must specify jurisdiction",
+      "check_type": "requires_jurisdiction_note",
+      "config": {
+        "trigger_tags": [
+          "SUB",
+          "JUD",
+          "civil_law",
+          "criminal_law",
+          "contract",
+          "tort"
+        ],
+        "note": "This reflects general legal principles. Specific jurisdictions may vary."
+      }
+    },
+    {
+      "id": "GOV-006",
+      "name": "Minimum Source Quality",
+      "description": "Governance answers require government_source or peer_reviewed_study credibility",
+      "check_type": "minimum_credibility_class",
+      "config": {
+        "allowed": [
+          "government_source",
+          "peer_reviewed_study",
+          "clinical_guideline"
+        ]
+      }
+    }
+  ]
+}

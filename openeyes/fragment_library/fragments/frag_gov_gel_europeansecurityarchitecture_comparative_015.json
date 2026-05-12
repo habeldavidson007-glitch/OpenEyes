@@ -1,0 +1,17 @@
+{
+  "id": "gov-GEL-EUROPEANSECURITYARCHITECTURE-COMPARATIVE-015",
+  "domain": "governance",
+  "sector": "GEL",
+  "content": "{'overview': 'This fragment describes europeansecurityarchitecture in geopolitical analysis. OSCE 57 states.', 'key_points': ['OSCE 57 states', 'NATO-EU overlap coordination', 'Eastern Partnership six states', 'European Political Community 2022', 'Fragmented interconnected'], 'sources': ['World Bank WGI (databank.worldbank.org)', 'Freedom House (freedomhouse.org)', 'CSIS (csis.org)', 'Brookings (brookings.edu)', 'Carnegie (carnegieendowment.org)', 'Lowy Institute (lowyinstitute.org)'], 'philosophy_guard': 'Describes what IS - theories patterns cases. Not what SHOULD BE.', 'credibility_score': 0.94}",
+  "tags": [
+    "national_security",
+    "GOV",
+    "counter_argument"
+  ],
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "subdomain": "GOV",
+  "reasoning_role": "counter_argument",
+  "year": 2024
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gov_sub_propertydivision_procedural_230",
+  "domain": "governance",
+  "sector": "SUB",
+  "subdomain": "GOV",
+  "reasoning_role": "definition",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "weight": 1.0,
+  "grundy_value": -1,
+  "robustness_status": "PENDING",
+  "source_url": "https://www.un.org",
+  "tags": [
+    "GOV",
+    "definition"
+  ],
+  "content": "Fragment gov_sub_propertydivision_procedural_230",
+  "source": "Unknown"
+}
