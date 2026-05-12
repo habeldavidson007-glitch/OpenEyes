@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_cptpp_def_037",
+  "domain": "economy",
+  "tags": [
+    "cptpp",
+    "trade_agreement",
+    "high_standard",
+    "definition"
+  ],
+  "content": "CPTPP (Comprehensive and Progressive Agreement for Trans-Pacific Partnership): 12 members after UK accession 2024. Originally TPP (US withdrew 2017). Covers 15% global GDP. High-standard provisions: labor rights, environmental protection, SOE discipline, digital trade, IP. Tariff elimination on 99% goods. Suspension clauses for some TPP provisions.",
+  "source": "cptpp_official",
+  "source_url": "https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/cptpp/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_crypto_exchange_counterparty_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "definition",
+    "on_chain_metrics"
+  ],
+  "content": "FTX taught: never leave funds on exchanges unnecessarily. Proof of reserves insufficient without proof of liabilities. Commingling customer funds is fraud but hard to detect pre-collapse. Self-custody eliminates counterparty risk but adds operational burden.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://glassnode.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

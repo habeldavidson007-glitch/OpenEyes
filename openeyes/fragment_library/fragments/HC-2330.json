@@ -1,0 +1,29 @@
+{
+  "id": "HC-2330",
+  "domain": "healthcare",
+  "tags": [
+    "emerging infectious disease",
+    "spillover",
+    "surveillance",
+    "zoonosis"
+  ],
+  "content": "Emerging infectious diseases (EIDs) are newly recognized infections or those increasing in incidence/geographic range. ~75% are zoonotic (animal-to-human spillover). Drivers: land use change (deforestation, urbanization), wildlife trade, climate change (expanding vector ranges), antimicrobial resistance, global travel/trade. Recent examples: SARS-CoV-1 (2003), MERS-CoV (2012), Ebola outbreaks, Zika (2015-16), SARS-CoV-2 (2019). Spillover risk factors: high human-wildlife contact (bushmeat hunting, wet markets), intermediate hosts amplifying virus, viral characteristics (RNA viruses higher mutation rates, broad host range). Surveillance systems: WHO Global Outbreak Alert and Response Network (GOARN), CDC Epidemic Intelligence Service, ProMED-mail, HealthMap digital surveillance. One Health approach integrates human, animal, environmental health.",
+  "source": "who.int",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

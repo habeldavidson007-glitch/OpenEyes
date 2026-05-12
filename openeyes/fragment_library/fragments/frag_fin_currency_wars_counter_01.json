@@ -1,0 +1,33 @@
+{
+  "id": "frag_fin_currency_wars_counter_01",
+  "domain": "economy",
+  "tags": [
+    "forex",
+    "currency",
+    "geopolitical_risk",
+    "trade",
+    "counter_argument",
+    "warning"
+  ],
+  "content": "Modern 'currency war' rhetoric often oversimplifies. Most major economies now prefer stable currencies for trade certainty. Aggressive devaluation risks retaliation, capital controls, and loss of reserve status trust. True competitive devaluation is rare today.",
+  "source": "peer_reviewed_study",
+  "source_url": "https://www.bis.org/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.8929999999999999,
+  "compatible_with": [
+    "frag_fin_currency_wars_def_01"
+  ],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

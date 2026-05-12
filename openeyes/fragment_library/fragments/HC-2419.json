@@ -1,0 +1,29 @@
+{
+  "id": "HC-2419",
+  "domain": "healthcare",
+  "tags": [
+    "HFpEF",
+    "treatment",
+    "SGLT2 inhibitors",
+    "evidence gaps"
+  ],
+  "content": "HFpEF treatment focuses on symptom management and comorbidity optimization. Diuretics essential for volume overload (loop diuretics, add thiazide for synergy). SGLT2 inhibitors: EMPEROR-Preserved and DELIVER trials showed empagliflozin and dapagliflozin reduce HF hospitalizations across EF spectrum including HFpEF (now Class 2a recommendation, evolving to Class 1). Blood pressure control critical (target <130/80). ARNI: PARAGON-HF showed trend toward benefit vs valsartan, especially in women, EF <57%, lower NT-proBNP; reasonable alternative to ACEi/ARB. MRA: TOPCAT trial showed benefit in Americas cohort (higher event rates); consider in selected patients. Treat comorbidities aggressively: AF (rate/rhythm control, anticoagulation), obesity (weight loss\u2014LEGACY trial showed improved symptoms), diabetes (SGLT2i, GLP-1 agonists), sleep apnea (CPAP), anemia/iron deficiency (IV iron), ischemia (revascularization if indicated). Exercise training improves functional capacity and quality of life. No proven mortality-reducing therapy yet\u2014major evidence gap compared to HFrEF.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/36853285/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2023,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "clinical_trial",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

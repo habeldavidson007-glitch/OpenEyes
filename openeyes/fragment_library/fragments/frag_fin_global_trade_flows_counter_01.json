@@ -1,0 +1,32 @@
+{
+  "id": "frag_fin_global_trade_flows_counter_01",
+  "domain": "economy",
+  "tags": [
+    "global_trade",
+    "macro",
+    "currency",
+    "counter_argument",
+    "warning"
+  ],
+  "content": "Trade balances matter less in floating fiat regime with deep capital markets. Capital flows (investment) dominate FX moves, not trade balances. US runs deficit but attracts equity/VC inflows, offsetting trade drag. Services surplus (US) also undercounted.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.8835,
+  "compatible_with": [
+    "frag_fin_global_trade_flows_def_01"
+  ],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

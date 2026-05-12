@@ -1,0 +1,29 @@
+{
+  "id": "HC-2376",
+  "domain": "healthcare",
+  "tags": [
+    "UTI",
+    "treatment",
+    "antibiotics",
+    "resistance"
+  ],
+  "content": "Uncomplicated cystitis treatment: nitrofurantoin 100mg BID x5 days (first-line), TMP-SMX DS BID x3 days (if local resistance <20%), fosfomycin 3g single dose, or pivmecillinam. Fluoroquinolones reserved for resistant cases due to safety concerns. Uncomplicated pyelonephritis: ciprofloxacin 500mg BID x7 days or levofloxacin 750mg daily x5 days; if fluoroquinolone resistance suspected, give initial IV ceftriaxone or aminoglycoside then oral therapy. Complicated UTI: broader empiric coverage based on risk factors and local antibiogram (fluoroquinolone, beta-lactam/beta-lactamase inhibitor, carbapenem for ESBL risk); tailor to culture results. Duration 7-14 days depending on severity. Asymptomatic bacteriuria treated only in pregnancy or before urologic procedures.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

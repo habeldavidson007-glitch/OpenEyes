@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_boe_mandate_def_01",
+  "domain": "economy",
+  "tags": [
+    "bank_of_england",
+    "uk",
+    "monetary_policy",
+    "brexit",
+    "definition",
+    "first_line"
+  ],
+  "content": "BoE mandate is CPI inflation target of 2%. Post-Brexit, BoE faces unique challenges: reduced labor mobility causing wage stickiness, new trade frictions impacting supply chains, and sterling volatility affecting import prices independently of domestic demand.",
+  "source": "government_source",
+  "source_url": "https://www.bankofengland.co.uk/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

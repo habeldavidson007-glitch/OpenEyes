@@ -1,0 +1,29 @@
+{
+  "id": "HC-2192",
+  "domain": "healthcare",
+  "tags": [
+    "intervention",
+    "health_equity",
+    "policy",
+    "culturally_competent_care"
+  ],
+  "content": "Addressing health disparities requires multi-level interventions: (1) Structural/policy level: anti-discrimination laws, equitable funding formulas for healthcare facilities, Medicaid expansion, living wage policies, housing desegregation efforts; (2) Healthcare system level: culturally competent care training, diverse workforce recruitment, language access services, implicit bias training with accountability measures, community health worker integration, patient navigation programs; (3) Community level: participatory research approaches, community-based participatory interventions, trusted messenger programs, faith-based health initiatives; (4) Individual level: patient empowerment education, shared decision-making tools adapted for low health literacy. Evidence supports targeted universalism\u2014setting universal goals while implementing targeted strategies for specific populations. Data stratification by race, ethnicity, language, and social factors is essential for identifying and monitoring disparities. Accountability mechanisms include disparity reduction targets and public reporting.",
+  "source": "https://www.cdc.gov/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

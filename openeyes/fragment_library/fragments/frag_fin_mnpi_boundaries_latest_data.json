@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_mnpi_boundaries_latest_data",
+  "domain": "economy",
+  "tags": [
+    "regulation",
+    "mnpi",
+    "compliance",
+    "information",
+    "latest_data"
+  ],
+  "content": "Guidance continues to evolve regarding digital communications. Compliance programs now heavily monitor alternative data sources (satellite imagery, credit card transactions) to ensure they do not cross into MNPI territory, especially when sourced from insiders or hacked data.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

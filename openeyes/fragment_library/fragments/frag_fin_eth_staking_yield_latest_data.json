@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_eth_staking_yield_latest_data",
+  "domain": "economy",
+  "tags": [
+    "ethereum",
+    "crypto",
+    "staking",
+    "yield",
+    "latest_data"
+  ],
+  "content": "As of 2024, over 30 million ETH (25% of supply) is staked, pushing yields toward the lower end of historical ranges at 3.2% APR. Post-Shanghai upgrade withdrawal capability reduced risk premium. Liquid staking derivatives trade at slight premiums reflecting staking yield expectations.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

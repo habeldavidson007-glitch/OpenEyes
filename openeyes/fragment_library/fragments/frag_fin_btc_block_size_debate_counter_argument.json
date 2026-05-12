@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_btc_block_size_debate_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "governance"
+  ],
+  "content": "Critics argue the block size debate resolution created a fee market that prices out small users. Average transaction fees periodically exceed $50 during congestion, making Bitcoin impractical for everyday payments. This contradicts Satoshi's vision of peer-to-peer electronic cash for microtransactions.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

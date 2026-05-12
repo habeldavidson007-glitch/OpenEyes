@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_stagflation_counter_023",
+  "domain": "economy",
+  "tags": [
+    "stagflation",
+    "inflation",
+    "recession",
+    "macro",
+    "economic_growth",
+    "counter_argument"
+  ],
+  "content": "True stagflation\u2014persistent high inflation combined with sustained high unemployment and stagnant growth\u2014is rare. Many alleged stagflation episodes involved temporary supply shocks followed by policy responses that resolved one problem or the other. The 1970s stagflation ultimately required painful monetary tightening to break inflation expectations. Some argue modern central bank credibility makes sustained stagflation unlikely\u2014well-anchored expectations prevent temporary supply shocks from becoming permanent. Others worry that deglobalization, demographic shifts, and climate transition could create structurally higher inflation with lower growth. Policy responses to stagflation remain controversial\u2014some advocate prioritizing inflation fighting, others favor tolerance of temporary inflation to support employment.",
+  "source": "International Monetary Fund Research",
+  "source_url": "https://www.imf.org/en/Publications/WEO/Issues/2023/04/stagflation-concerns",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

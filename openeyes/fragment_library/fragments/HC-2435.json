@@ -1,0 +1,30 @@
+{
+  "id": "HC-2435",
+  "domain": "healthcare",
+  "tags": [
+    "anticoagulation",
+    "warfarin",
+    "NOAC",
+    "DOAC",
+    "mechanism"
+  ],
+  "content": "Anticoagulants prevent thrombus formation by inhibiting coagulation cascade. Warfarin: vitamin K antagonist, inhibits synthesis of factors II, VII, IX, X and proteins C, S. Requires INR monitoring (target 2.0-3.0 for most indications, 2.5-3.5 for mechanical mitral valve). Many drug-drug and drug-food interactions (CYP2C9 metabolism, vitamin K intake). DOACs/NOACs (direct oral anticoagulants): dabigatran (direct thrombin inhibitor), rivaroxaban/apixaban/edoxaban (factor Xa inhibitors). Fixed dosing, no routine monitoring, fewer interactions, rapid onset/offset. Renal clearance varies: dabigatran 80%, edoxaban 50%, rivaroxaban 33%, apixaban 25%\u2014apixaban safest in CKD. Indications: atrial fibrillation stroke prevention, VTE treatment and prevention, post-orthopedic surgery prophylaxis. Contraindications: mechanical heart valves (use warfarin), moderate-severe mitral stenosis with AF (warfarin), severe renal impairment (varies by agent), active bleeding, antiphospholipid syndrome (warfarin preferred).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/34076510/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2021,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

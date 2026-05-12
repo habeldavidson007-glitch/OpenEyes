@@ -1,0 +1,29 @@
+{
+  "id": "HC-2372",
+  "domain": "healthcare",
+  "tags": [
+    "STI",
+    "sexually transmitted infection",
+    "gonorrhea",
+    "syphilis"
+  ],
+  "content": "Sexually transmitted infections (STIs) remain major public health concern. Gonorrhea (Neisseria gonorrhoeae): urethritis, cervicitis, pharyngitis, proctitis; complications include PID, epididymitis, disseminated gonococcal infection; increasing antimicrobial resistance (cephalosporin-resistant strains emerging). Syphilis (Treponema pallidum): primary (painless chancre), secondary (maculopapular rash including palms/soles, condyloma lata), latent (seropositive without symptoms), tertiary (gummas, cardiovascular, neurosyphilis); congenital syphilis rates rising. Chlamydia (C. trachomatis): most common bacterial STI, often asymptomatic; causes PID, infertility, reactive arthritis. HSV: lifelong infection with recurrent outbreaks. HPV: causes genital warts and cancers (cervical, anal, oropharyngeal); vaccines prevent high-risk types.",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

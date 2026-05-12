@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_capital_controls_latest_031",
+  "domain": "economy",
+  "tags": [
+    "capital_controls",
+    "examples",
+    "latest_data"
+  ],
+  "content": "Capital controls 2024: Nigeria tightened FX restrictions amid naira crisis. Egypt multiple devaluations + controls. Argentina maintains strict cepo cambiario. China's 'macroprudential' measures function as targeted controls. Iceland lifted remaining post-2008 controls. Overall trend: fewer formal controls but increased use of macroprudential measures achieving similar goals.",
+  "source": "chinn_itour_index",
+  "source_url": "https://web.pdx.edu/~ito/Chinn-Ito_website.htm",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.91,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

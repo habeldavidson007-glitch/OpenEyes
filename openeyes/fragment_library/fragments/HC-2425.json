@@ -1,0 +1,30 @@
+{
+  "id": "HC-2425",
+  "domain": "healthcare",
+  "tags": [
+    "channelopathies",
+    "long QT",
+    "Brugada",
+    "CPVT",
+    "genetic testing"
+  ],
+  "content": "Inherited arrhythmia syndromes (channelopathies): Long QT syndrome (LQTS)\u2014QTc >460ms women or >450ms men, risk of torsades de pointes triggered by adrenergic stress (LQT1\u2014exercise, LQT2\u2014auditory stimuli, LQT3\u2014sleep); treatment: beta-blockers (nadolol, propranolol most effective), avoid QT-prolonging drugs, ICD if symptomatic despite beta-blockers or very high risk (QTc >500ms, genotype LQT3). Brugada syndrome\u2014coved ST elevation V1-V3 (type 1 diagnostic), VF risk especially during sleep; fever precipitates arrhythmias (aggressive antipyretics); ICD for symptomatic patients, consider for asymptomatic with spontaneous type 1 pattern plus risk factors. Catecholaminergic polymorphic VT (CPVT)\u2014normal resting ECG, bidirectional/polymorphic VT with exercise; RYR2 or CASQ2 mutations; treatment: nadolol, flecainide adjunct, ICD if refractory. Short QT syndrome, early repolarization syndrome rare. Genetic testing recommended for probands, cascade screening for family members. Arrhythmogenic right ventricular cardiomyopathy (ARVC)\u2014fibrofatty replacement of RV, epsilon waves, VT with LBBB morphology; exercise restriction critical (accelerates disease), ICD for high risk.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33106097/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2020,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

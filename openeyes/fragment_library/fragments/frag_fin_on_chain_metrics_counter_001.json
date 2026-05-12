@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_on_chain_metrics_counter_001",
+  "domain": "economy",
+  "tags": [
+    "ethereum",
+    "blockchain",
+    "on_chain_metrics",
+    "bitcoin",
+    "latest_data"
+  ],
+  "content": "On-chain metrics have limitations. Address counts don't equal users (one entity controls many addresses). Exchange flows ambiguous without context. Metrics can give conflicting signals. Historical patterns don't guarantee future results. Data interpretation requires expertise. Some metrics easily manipulated (wash trading). Privacy coins and mixing services obscure true flows. Correlation with price breaks down during extremes.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/publications/2022-may-financial-stability-report.htm",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

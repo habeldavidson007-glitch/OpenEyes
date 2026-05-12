@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_neutral_interest_rate_counter_021",
+  "domain": "economy",
+  "tags": [
+    "interest_rate",
+    "neutral_rate",
+    "monetary_policy",
+    "fed",
+    "counter_argument"
+  ],
+  "content": "r* estimation faces profound challenges. Model uncertainty is large\u2014different approaches yield different estimates. Real-time estimates are subject to substantial revision as data is revised and models updated. r* may not be constant but vary with economic conditions, financial stability, and global factors. Some economists question whether a unique neutral rate exists, arguing multiple equilibria are possible. The relationship between r* and observable variables may have changed post-pandemic. Fiscal policy affects r* through government borrowing, creating endogeneity. Global integration means domestic r* is influenced by worldwide savings and investment. Some argue focus on r* distracts from more directly observable indicators of policy stance. Uncertainty bands around point estimates are so wide as to limit practical utility.",
+  "source": "International Monetary Fund Working Papers",
+  "source_url": "https://www.imf.org/en/Publications/WP/Issues/2023/01/20/The-Natural-Rate-of-Interest-A-Critical-Review-528943",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hc_med_onc_it_treat_001",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "immunotherapy",
+    "treatment selection",
+    "dosing",
+    "response patterns"
+  ],
+  "content": "Checkpoint inhibitor selection depends on cancer type, biomarkers, and prior therapy. Pembrolizumab approved for MSI-H/dMMR tumors regardless of origin (tumor-agnostic); also first-line for NSCLC with PD-L1 \u226550%, head/neck cancer, melanoma. Nivolumab + ipilimumab combination shows superior outcomes in melanoma, renal cell carcinoma, mesothelioma but increased toxicity. Dosing: pembrolizumab 200mg IV q3w or 400mg q6w; nivolumab 240mg q2w or 480mg q4w; continued until progression or 2 years maximum in adjuvant setting. Unique response patterns: pseudoprogression (initial enlargement before response) occurs in ~10%; immune-related RECIST (iRECIST) accounts for this. Hyperprogression (accelerated growth) rare but recognized. Duration: metastatic disease typically continued until progression; adjuvant therapy fixed duration (1 year). Combination with chemotherapy enhances efficacy in many cancers (lung, triple-negative breast).",
+  "source": "https://www.nccn.org/guidelines",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

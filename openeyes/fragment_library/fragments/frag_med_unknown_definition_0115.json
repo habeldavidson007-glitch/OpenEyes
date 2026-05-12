@@ -1,0 +1,28 @@
+{
+  "id": "frag_med_unknown_definition_0115",
+  "domain": "healthcare",
+  "tags": [
+    "accelerated approval",
+    "surrogate endpoints",
+    "confirmatory trials"
+  ],
+  "content": "Accelerated approval is an FDA pathway allowing earlier approval of drugs for serious or life-threatening conditions based on surrogate endpoints reasonably likely to predict clinical benefit, rather than direct evidence of clinical benefit. This pathway was established in 1992 primarily for HIV/AIDS treatments and is now used extensively in oncology, rare diseases, and other areas. Drugs approved via accelerated approval require post-marketing confirmatory trials to verify the anticipated clinical benefit. If confirmatory trials fail to verify benefit, FDA can withdraw approval.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

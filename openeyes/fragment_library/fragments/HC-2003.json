@@ -1,0 +1,30 @@
+{
+  "id": "HC-2003",
+  "domain": "healthcare",
+  "tags": [
+    "DSM-5-TR",
+    "prolonged-grief-disorder",
+    "MDD",
+    "bereavement",
+    "differential-diagnosis"
+  ],
+  "content": "DSM-5-TR Prolonged Grief Disorder: death of close person \u226512 months ago (\u22656 months for children), persistent grief response characterized by identity disruption, marked sense of disbelief, emotional numbness, bitterness, difficulty engaging in life, emotional detachment, feeling life meaningless, intense loneliness. Symptoms cause clinically significant distress/impairment, exceed expected social/cultural norms. Differentiate from MDD: grief-focused thoughts vs pervasive negative thoughts, yearning/longing vs anhedonia, waves of emotion vs persistent depressed mood, preserved self-esteem vs worthlessness, thoughts of joining deceased vs active suicidal ideation. Bereavement exclusion removed from MDD criteria in DSM-5\u2014depression can be diagnosed during bereavement if criteria met.",
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

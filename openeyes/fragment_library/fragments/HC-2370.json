@@ -1,0 +1,29 @@
+{
+  "id": "HC-2370",
+  "domain": "healthcare",
+  "tags": [
+    "vaccination",
+    "schedule",
+    "contraindications",
+    "catch-up"
+  ],
+  "content": "Routine immunization schedules (CDC/ACIP): infancy (HepB, DTaP, Hib, IPV, PCV, rotavirus), childhood (MMR, varicella, HepA at 12-15 months; boosters 4-6 years), adolescence (Tdap, MenACWY, HPV at 11-12 years), adult (annual influenza, Td/Tdap q10yrs, zoster \u226550, pneumococcal \u226565 or risk conditions). Contraindications: severe allergic reaction to previous dose/component; live vaccines contraindicated in pregnancy and severe immunocompromise. Precautions: moderate/severe acute illness. Catch-up vaccination: follow minimum intervals, don't restart series regardless of time elapsed. Travel vaccines based on destination (yellow fever, typhoid, Japanese encephalitis, rabies). Vaccine co-administration generally safe (except live parenteral vaccines if not given same day, separate by 4 weeks).",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

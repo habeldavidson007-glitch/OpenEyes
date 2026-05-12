@@ -1,0 +1,29 @@
+{
+  "id": "frag_mh_autism_spectrum_disorder_definition_0037",
+  "domain": "healthcare",
+  "tags": [
+    "ASD",
+    "autism",
+    "neurodevelopmental",
+    "social-communication"
+  ],
+  "content": "Autism Spectrum Disorder (ASD) is a neurodevelopmental disorder characterized by persistent deficits in social communication/interaction across contexts (social-emotional reciprocity, nonverbal communication, developing/maintaining relationships) and restricted/repetitive patterns of behavior, interests, or activities (stereotyped movements, insistence on sameness, highly restricted interests, sensory hyper/hyporeactivity). Symptoms present in early developmental period, cause clinically significant impairment. ASD is heterogeneous, ranging from requiring very substantial support to requiring support. Prevalence ~1-2%, male predominance (4:1). Pathophysiology involves genetic factors (heritability ~80%, hundreds of genes implicated), altered synaptic function, atypical neural connectivity.",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

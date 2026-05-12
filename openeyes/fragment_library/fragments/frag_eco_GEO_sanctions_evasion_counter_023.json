@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_sanctions_evasion_counter_023",
+  "domain": "economy",
+  "tags": [
+    "sanctions_evasion",
+    "enforcement",
+    "counter_argument"
+  ],
+  "content": "Evasion enforcement challenges: Resource constraints at OFAC, customs agencies. Jurisdictional limitations. Complicity of professional enablers (lawyers, accountants). Technology outpacing regulation. Political will varies by administration. Private sector compliance uneven. Successful cases often require multi-year investigations. Deterrence incomplete.",
+  "source": "gaov_enforcement_audit",
+  "source_url": "https://www.gao.gov/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.88,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

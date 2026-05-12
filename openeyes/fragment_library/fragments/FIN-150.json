@@ -1,0 +1,29 @@
+{
+  "id": "FIN-150",
+  "domain": "economy",
+  "tags": [
+    "correlation",
+    "diversification",
+    "crisis_risk",
+    "portfolio_management"
+  ],
+  "content": "Correlation breakdown refers to the phenomenon where asset correlations increase dramatically during market stress, undermining diversification precisely when it's most needed. In normal markets, stocks and bonds may have low or negative correlation, providing portfolio ballast. During crises (2008, March 2020), correlations approach 1 as investors flee risk assets indiscriminately\u2014a 'flight to quality' benefits only Treasuries and gold. This occurs because: margin calls force selling across positions, risk parity funds deleverage proportionally, and panic overrides fundamental distinctions. Portfolio models assuming stable correlations underestimate tail risk. Solutions include: stress-testing correlations, using options for tail hedging, and recognizing that diversification is a long-term property, not a crisis guarantee.",
+  "source": "Journal of Portfolio Management",
+  "source_url": "https://jpm.pm-research.com/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": "2024",
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

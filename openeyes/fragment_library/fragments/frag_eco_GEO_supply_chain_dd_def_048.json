@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_supply_chain_dd_def_048",
+  "domain": "economy",
+  "tags": [
+    "supply_chain_due_diligence",
+    "trade_policy",
+    "definition"
+  ],
+  "content": "Supply chain due diligence laws: Corporate responsibility for human rights, environmental impacts throughout value chains. Germany Supply Chain Act (2023), EU CSDDD (2024), US Uyghur Forced Labor Prevention Act. Requirements: risk assessment, remediation, reporting. Compliance costs significant. Affects sourcing from high-risk regions.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

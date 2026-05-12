@@ -1,0 +1,30 @@
+{
+  "id": "HC-2441",
+  "domain": "healthcare",
+  "tags": [
+    "heart failure",
+    "HFrEF",
+    "HFpEF",
+    "classification",
+    "pathophysiology"
+  ],
+  "content": "Heart failure (HF) is a clinical syndrome characterized by typical symptoms (dyspnea, fatigue, fluid retention) and signs (elevated JVP, crackles, peripheral edema) due to structural or functional cardiac abnormality. Classification by ejection fraction: HFrEF (reduced EF \u226440%), HFmrEF (mildly reduced EF 41-49%), HFpEF (preserved EF \u226550%). ACC/AHA stages: Stage A (at risk, no structural disease), Stage B (structural disease, no symptoms), Stage C (structural disease with current/prior symptoms), Stage D (refractory HF requiring advanced therapies). NYHA functional class I-IV describes symptom severity. Pathophysiology involves neurohormonal activation (RAAS, sympathetic nervous system, natriuretic peptides), ventricular remodeling, and progressive dysfunction. Common etiologies: ischemic heart disease, hypertension, valvular disease, cardiomyopathies (dilated, hypertrophic, restrictive), arrhythmias, toxins (alcohol, chemotherapy).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35381712/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

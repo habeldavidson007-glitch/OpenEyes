@@ -1,0 +1,29 @@
+{
+  "id": "frag_onc_pancreatic_cancer_001",
+  "domain": "healthcare",
+  "tags": [
+    "pancreatic_cancer",
+    "symptoms",
+    "early_detection",
+    "jaundice"
+  ],
+  "content": "Early symptoms of pancreatic cancer include jaundice (yellowing of skin and eyes), dark urine, light-colored stools, abdominal or back pain, unexplained weight loss, loss of appetite, nausea, and new-onset diabetes. Symptoms are often vague and non-specific in early stages, which contributes to late diagnosis.",
+  "source": "American Cancer Society Guidelines",
+  "source_url": "https://www.cancer.org/cancer/pancreas-cancer/detection-diagnosis-staging/signs-symptoms.html",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": null,
+  "reasoning_role": "definition",
+  "source_type": "clinical_guideline",
+  "year": 2026,
+  "sub_question": "What are the early symptoms?",
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

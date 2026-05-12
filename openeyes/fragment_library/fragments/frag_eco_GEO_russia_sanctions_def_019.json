@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_russia_sanctions_def_019",
+  "domain": "economy",
+  "tags": [
+    "russia",
+    "sanctions",
+    "ukraine",
+    "financial_warfare",
+    "definition"
+  ],
+  "content": "Russia sanctions post-2022 invasion: Unprecedented scope. Central Bank assets frozen ($300B+). Major banks removed from SWIFT. Export controls on semiconductors, energy tech. Oil price cap ($60/barrel). Individual sanctions on oligarchs, officials. Energy imports phased out by EU. Most extensive sanctions ever imposed on major economy.",
+  "source": "eu_council_sanctions",
+  "source_url": "https://www.consilium.europa.eu/en/policies/sanctions/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.96,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

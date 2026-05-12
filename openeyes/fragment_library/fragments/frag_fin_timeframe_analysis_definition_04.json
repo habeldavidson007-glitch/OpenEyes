@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_timeframe_analysis_definition_04",
+  "domain": "economy",
+  "tags": [
+    "definition",
+    "timeframe_analysis",
+    "technical_analysis"
+  ],
+  "content": "Multi-timeframe analysis examines charts across different periods (e.g., daily, 4-hour, 1-hour) to gain comprehensive perspective. Longer timeframes show primary trend; shorter timeframes identify entry points. Conflicts between timeframes create ambiguity; alignment increases trade probability. Top-down approach: start with weekly/daily for direction, then drill down for timing. Each timeframe has noise-to-signal tradeoffs.",
+  "source": "Educational Resource",
+  "source_url": "https://www.tradingview.com/ideas/multi-timeframe-analysis",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

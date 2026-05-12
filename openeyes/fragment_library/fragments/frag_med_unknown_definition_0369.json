@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0369",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "cancer screening",
+    "test performance",
+    "false positives",
+    "overdiagnosis"
+  ],
+  "content": "Screening test performance measured by sensitivity (detects true positives), specificity (correctly identifies negatives), positive predictive value (probability cancer present with positive test). Mammography sensitivity 75-85%, lower in dense breasts; specificity ~90%. False positives lead to unnecessary biopsies, anxiety. Overdiagnosis detects cancers that would never cause harm (DCIS, indolent prostate cancers), leading to overtreatment. PSA screening: sensitivity ~80% but specificity only ~60%; many elevated PSAs are benign (BPH, prostatitis). Number needed to screen (NNS) to prevent one death: mammography ~1000 women screened 10 years; colonoscopy ~300-500; PSA controversial (ERSPC trial NNS ~780, PLCO showed no benefit). Lead-time bias makes survival appear longer without actually extending life. Length-time bias favors detection of slow-growing tumors. Randomized trials show mortality reduction for mammography (15-25%), colonoscopy (60-70% for detected cancers), lung CT (20%).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35345678/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

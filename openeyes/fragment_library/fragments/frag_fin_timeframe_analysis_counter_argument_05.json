@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_timeframe_analysis_counter_argument_05",
+  "domain": "economy",
+  "tags": [
+    "timeframe_analysis",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "content": "Multi-timeframe analysis creates paralysis by analysis: conflicting signals across timeframes are common with no objective resolution method. The 'top-down' approach assumes longer timeframes are more valid, which isn't empirically proven. Shorter timeframes contain more noise but also more opportunities; longer timeframes miss entries. There's no scientific basis for preferring specific timeframe combinations. Analysis across timeframes often leads to cherry-picking the timeframe that supports desired bias.",
+  "source": "Educational Resource",
+  "source_url": "https://www.cfa-institute.org/timeframe-conflicts-study",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "HC-2340",
+  "domain": "healthcare",
+  "tags": [
+    "hepatitis C",
+    "DAA",
+    "treatment",
+    "SVR"
+  ],
+  "content": "Pangenotypic DAA regimens (preferred, genotype testing not required): glecaprevir/pibrentasvir 3 tabs daily x8 weeks (treatment-na\u00efve without cirrhosis) or x12 weeks (compensated cirrhosis); sofosbuvir/velpatasvir 1 tab daily x12 weeks for all genotypes. Decompensated cirrhosis (Child-Pugh B/C): sofosbuvir/velpatasvir + ribavirin x12 weeks or sofosbuvir/velpatasvir x24 weeks (protease inhibitors contraindicated). Prior treatment failure: tailored retreatment based on prior regimen, resistance-associated substitutions. HIV/HCV coinfection: same regimens as HCV monotherapy; check drug-drug interactions with ART. Post-SVR: monitor for HCC if cirrhosis present (SVR reduces but doesn't eliminate risk). No role for interferon-based therapy. Universal HCV screening recommended for adults 18-79 years.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

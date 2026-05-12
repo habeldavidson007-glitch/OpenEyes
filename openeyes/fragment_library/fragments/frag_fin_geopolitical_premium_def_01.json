@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_geopolitical_premium_def_01",
+  "domain": "economy",
+  "tags": [
+    "geopolitical_risk",
+    "oil",
+    "macro",
+    "definition",
+    "first_line"
+  ],
+  "content": "Geopolitical risk premium is the extra return investors demand for holding assets exposed to conflict zones or sanctions risk. Manifests in oil prices, defense stocks, gold, and sovereign spreads. Hard to quantify but visible in volatility spikes.",
+  "source": "government_source",
+  "source_url": "https://www.imf.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

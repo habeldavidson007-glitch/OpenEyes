@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_tiktok_data_sovereignty_counter_005",
+  "domain": "economy",
+  "tags": [
+    "tiktok",
+    "data_sovereignty",
+    "china",
+    "tech_regulation",
+    "counter_argument"
+  ],
+  "content": "TikTok ban critique: No public evidence of data misuse presented. US social media platforms also harvest extensive user data. Selective enforcement raises free speech concerns. Technical isolation ('Project Texas') may be sufficient. Precedent for banning foreign apps threatens open internet principles.",
+  "source": "aclc_policy_brief",
+  "source_url": "https://www.aclu.org/",
+  "credibility_class": "advocacy_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.85,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

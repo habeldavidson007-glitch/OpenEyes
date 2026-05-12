@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_moving_averages_counter_argument_08",
+  "domain": "economy",
+  "tags": [
+    "moving_average",
+    "death_cross",
+    "technical_analysis",
+    "moving_averages",
+    "golden_cross",
+    "counter_argument"
+  ],
+  "content": "Moving averages are inherently lagging indicators, always behind price action. By the time a golden/death cross occurs, much of the move has happened. Research shows MA crossovers underperform buy-and-hold after costs. In sideways markets, MAs generate continuous whipsaws. The popularity of specific periods (50, 200) creates artificial clustering but no fundamental significance. Adaptive MAs attempt to address lag but introduce optimization bias. MAs work in trending markets but fail in ranges.",
+  "source": "Educational Resource",
+  "source_url": "https://www.cfainstitute.org/research/cfa-digest/moving-average-critique",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

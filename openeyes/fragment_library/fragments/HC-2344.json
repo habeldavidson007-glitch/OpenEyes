@@ -1,0 +1,29 @@
+{
+  "id": "HC-2344",
+  "domain": "healthcare",
+  "tags": [
+    "C. difficile",
+    "diagnosis",
+    "toxin testing",
+    "GDH"
+  ],
+  "content": "CDI diagnosis algorithm: 1) Test only unformed stool from patients with clinically significant diarrhea (\u22653 unformed stools in 24 hours); 2) Two-step algorithm preferred: glutamate dehydrogenase (GDH) antigen screen (high sensitivity) followed by toxin EIA confirmation (high specificity); discordant results resolved by NAAT; 3) Standalone NAAT highly sensitive but may detect colonization without disease - correlate with clinical presentation. Toxin cell culture cytotoxicity assay is gold standard but slow (24-48 hours). Endoscopy shows pseudomembranes (yellow-white plaques) in severe cases but not required for diagnosis. Imaging (CT abdomen) for complications: colonic wall thickening, pericolonic stranding, ascites. Test of cure not recommended as PCR can remain positive despite clinical resolution.",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

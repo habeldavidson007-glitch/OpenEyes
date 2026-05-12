@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_quantitative_tightening_def_005",
+  "domain": "economy",
+  "tags": [
+    "quantitative_tightening",
+    "qt",
+    "monetary_policy",
+    "fed",
+    "balance_sheet",
+    "definition"
+  ],
+  "content": "Quantitative tightening (QT) is the process by which the Federal Reserve reduces its balance sheet by allowing securities to mature without reinvestment or by actively selling holdings. QT is the reverse of quantitative easing (QE). The Fed began QT in October 2017 following the post-2008 QE programs and resumed it in June 2022 after pandemic-era expansions. Unlike QE which actively purchases assets, QT typically operates passively through non-reinvestment of maturing securities up to specified monthly caps. The goals include normalizing monetary policy, reducing excess reserves, and creating space for future stimulus. QT affects the economy through similar channels as QE but in reverse: raising longer-term interest rates, tightening financial conditions, and reducing liquidity. The pace and impact depend on the size of reductions and market conditions.",
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/bst_norm.htm",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "frag_fin_dodd_frank_act_definition",
+  "domain": "economy",
+  "tags": [
+    "regulation",
+    "dodd_frank",
+    "systemic_risk",
+    "definition"
+  ],
+  "content": "The Dodd-Frank Wall Street Reform and Consumer Protection Act (2010) was enacted in response to the 2008 financial crisis. Key provisions include the Volcker Rule (restricting proprietary trading by banks), creation of the Consumer Financial Protection Bureau (CFPB), mandatory clearing for derivatives, and the Orderly Liquidation Authority to wind down failing systemic institutions without taxpayer bailouts.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

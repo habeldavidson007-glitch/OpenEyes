@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_crypto_regulation_counter_001",
+  "domain": "economy",
+  "tags": [
+    "regulation",
+    "ethereum",
+    "sec",
+    "crypto",
+    "bitcoin",
+    "latest_data"
+  ],
+  "content": "Regulatory approach criticized as enforcement-first rather than clear rulemaking. Industry argues existing securities laws ill-suited for decentralized networks. Jurisdictional arbitrage pushes activity offshore. Overregulation risks stifling innovation and pushing development to friendlier jurisdictions. Lack of coordinated global framework creates compliance complexity. Some argue self-regulation and code-based governance preferable to traditional regulation for decentralized systems.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/publications/2022-may-financial-stability-report.htm",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

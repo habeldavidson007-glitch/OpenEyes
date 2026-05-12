@@ -1,19 +1,27 @@
 {
   "id": "frag_eco_ENR_futures_curve_definition_005",
   "domain": "economy",
-  "subdomain": "ENR",
   "tags": [
     "futures_curve",
     "oil"
   ],
-  "reasoning_role": "definition",
   "content": "Oil market fragment: futures_curve. Role: definition. Covers fundamentals, market dynamics, and current conditions.",
   "source": "EIA",
   "source_url": "https://eia.gov/",
   "credibility_class": "government_source",
-  "year": 2024,
+  "last_verified": "2026-05-11",
+  "weight": 1.0,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0,
-  "last_verified": "2026-05-11"
+  "subdomain": "ENR",
+  "sector": null,
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
 }

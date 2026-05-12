@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_sanctions_evasion_def_023",
+  "domain": "economy",
+  "tags": [
+    "sanctions_evasion",
+    "shell_companies",
+    "trade_based_money_laundering",
+    "definition"
+  ],
+  "content": "Sanctions evasion methods: Shell companies, front entities, flag-hopping vessels, ship-to-ship transfers, falsified documents, trade-based money laundering (over/under-invoicing), crypto assets, barter arrangements. Third-country intermediaries critical. Dark fleet of aging tankers for sanctioned oil. Estimated $50-100B annual evasion globally.",
+  "source": "global_witness_report",
+  "source_url": "https://www.globalwitness.org/",
+  "credibility_class": "ngo_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.91,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

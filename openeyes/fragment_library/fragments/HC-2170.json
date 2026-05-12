@@ -1,0 +1,30 @@
+{
+  "id": "HC-2170",
+  "domain": "healthcare",
+  "tags": [
+    "epidemiology",
+    "incidence",
+    "prevalence",
+    "disease frequency",
+    "public health metrics"
+  ],
+  "content": "Incidence measures the rate of new cases of a disease occurring in a population during a specified time period, expressed as cases per person-time (e.g., per 1,000 person-years). It captures disease onset and is essential for understanding disease risk and etiology. Prevalence measures the total number of existing cases (both new and pre-existing) in a population at a specific point in time or over a period, expressed as a proportion (e.g., 5% of the population). Prevalence reflects disease burden and is influenced by both incidence and disease duration. High prevalence with low incidence suggests chronic, long-duration conditions (e.g., diabetes), while high incidence with low prevalence suggests acute, short-duration conditions (e.g., influenza). Public health planning uses incidence for prevention strategies and prevalence for resource allocation and healthcare service planning.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/32809674/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

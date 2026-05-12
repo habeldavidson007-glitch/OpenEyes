@@ -1,0 +1,29 @@
+{
+  "id": "HC-2405",
+  "domain": "healthcare",
+  "tags": [
+    "cardiac rehabilitation",
+    "exercise training",
+    "outcomes",
+    "components"
+  ],
+  "content": "Cardiac rehabilitation (CR) is a comprehensive, multidisciplinary program designed to optimize cardiovascular health in patients with established CVD. Core components: (1) medically supervised exercise training, (2) cardiovascular risk factor modification, (3) psychosocial and vocational counseling, (4) patient education. Indications (Class I): post-MI, stable angina, post-PCI, post-CABG, heart valve repair/replacement, heart transplant/LVAD, stable HFrEF. Phases: Phase I (inpatient\u2014early mobilization), Phase II (outpatient supervised\u2014typically 36 sessions over 12 weeks, ECG monitored initially), Phase III (maintenance\u2014supervised but less intensive), Phase IV (independent\u2014long-term maintenance). Benefits: reduces all-cause mortality ~20-25%, CV mortality ~26%, hospital readmissions, improves functional capacity (VO2 max increases 15-30%), quality of life, psychological well-being. Mechanisms: improved endothelial function, autonomic balance, skeletal muscle metabolism, medication adherence.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33106097/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2020,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

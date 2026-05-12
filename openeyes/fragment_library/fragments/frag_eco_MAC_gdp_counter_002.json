@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_MAC_gdp_counter_002",
+  "domain": "economy",
+  "tags": [
+    "gdp",
+    "limitations",
+    "counter_argument"
+  ],
+  "content": "GDP limitations: Does not measure welfare, inequality, environmental degradation, or unpaid work. GDP per capita masks distribution. Alternative measures: Genuine Progress Indicator (GPI), Human Development Index (HDI), OECD Better Life Index.",
+  "source": "stiglitz_sen_fitoussi_commission",
+  "source_url": "https://ec.europa.eu/eurostat/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2023,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

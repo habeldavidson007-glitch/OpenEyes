@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_global_debt_def_01",
+  "domain": "economy",
+  "tags": [
+    "sovereign_debt",
+    "macro",
+    "risk_management",
+    "definition",
+    "first_line"
+  ],
+  "content": "Global debt reached $307T in 2023 (336% of global GDP). Breakdown: Governments $93T, Corporates $120T, Households $94T. High debt limits fiscal response to crises and increases sensitivity to interest rate changes.",
+  "source": "government_source",
+  "source_url": "https://www.imf.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

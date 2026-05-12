@@ -1,0 +1,30 @@
+{
+  "id": "neuro-parkinsons-dx",
+  "domain": "healthcare",
+  "tags": [
+    "parkinsons-disease",
+    "diagnosis",
+    "MDS-criteria",
+    "DAT-scan",
+    "non-motor"
+  ],
+  "content": "PD diagnosis uses MDS Clinical Diagnostic Criteria (2015). Core: bradykinesia plus rest tremor and/or rigidity. Supportive criteria: clear benefit from dopaminergic therapy, levodopa-induced dyskinesia, rest tremor of limb, hyposmia, abnormal cardiac MIBG scintigraphy. Exclusion criteria: cerebellar signs, downward vertical gaze palsy, normal functional neuroimaging of presynaptic dopamine transporters (DAT-SPECT/PET), documented alternative cause. Probable PD requires no exclusion criteria and \u22652 supportive features. Definite PD requires pathological confirmation. DAT-SPECT shows reduced striatal dopamine transporter uptake but cannot distinguish PD from atypical parkinsonism. Red flags suggesting atypical parkinsonism: early falls, rapid progression, poor levodopa response, early autonomic failure (suggests MSA), vertical gaze palsy (PSP), cortical sensory loss (CBD), cerebellar signs. Unified Parkinson's Disease Rating Scale (UPDRS/MDS-UPDRS) quantifies motor and non-motor symptoms for monitoring. Hoehn and Yahr staging describes disease progression (stage 1: unilateral; stage 3: bilateral with balance impairment; stage 5: wheelchair/bedbound).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/26217918/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

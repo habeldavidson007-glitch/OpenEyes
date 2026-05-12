@@ -1,0 +1,27 @@
+{
+  "id": "gov_jud_specialized_article_i_definitional_013",
+  "domain": "governance",
+  "tags": [
+    "GOV",
+    "definition"
+  ],
+  "content": "Fragment gov_jud_specialized_article_i_definitional_013",
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "government_source",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GOV",
+  "sector": "JUD",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

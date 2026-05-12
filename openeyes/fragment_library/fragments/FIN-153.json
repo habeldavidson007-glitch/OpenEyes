@@ -1,0 +1,29 @@
+{
+  "id": "FIN-153",
+  "domain": "economy",
+  "tags": [
+    "rebalancing",
+    "portfolio_management",
+    "asset_allocation",
+    "investment_strategy"
+  ],
+  "content": "Portfolio rebalancing restores target asset allocations after market movements cause drift. If stocks outperform bonds, a 60/40 portfolio might become 70/30\u2014selling stocks and buying bonds returns to target. Rebalancing enforces discipline: selling high and buying low systematically. Methods include: calendar-based (quarterly, annually), threshold-based (when allocation deviates by X%), or hybrid. Annual rebalancing captures most benefits without excessive trading costs. Tax considerations matter: rebalance in tax-advantaged accounts first, use new contributions to buy underweight assets, or employ tax-loss harvesting. Research shows rebalancing adds 0.3-0.5% annual return vs. buy-and-hold, but primary benefit is risk control\u2014preventing portfolio from becoming too concentrated in whichever asset class has rallied.",
+  "source": "Vanguard Research",
+  "source_url": "https://institutional.vanguard.com/research/",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": "2024",
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

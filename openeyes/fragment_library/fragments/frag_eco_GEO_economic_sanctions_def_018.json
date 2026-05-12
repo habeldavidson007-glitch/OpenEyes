@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_economic_sanctions_def_018",
+  "domain": "economy",
+  "tags": [
+    "sanctions",
+    "economic_warfare",
+    "foreign_policy",
+    "definition"
+  ],
+  "content": "Economic sanctions: Coercive measures restricting trade, finance with target countries/entities. Types: comprehensive (country-wide), targeted/Smart (individuals, sectors), secondary (third-country penalties). Primary sanctions apply to domestic entities; secondary extend to foreign firms. Goal: change behavior without military action.",
+  "source": "treasury_ofac",
+  "source_url": "https://ofac.treasury.gov/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.96,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

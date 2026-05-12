@@ -1,0 +1,28 @@
+{
+  "id": "HC-2087",
+  "domain": "healthcare",
+  "tags": [
+    "contact tracing",
+    "quarantine",
+    "disease containment"
+  ],
+  "content": "Contact tracing protocol: (1) Interview cases within 24-48 hours of diagnosis about contacts during infectious period; (2) Define close contact (typically >15 minutes within 6 feet over 24 hours); (3) Notify contacts within 24 hours, provide exposure information without revealing case identity; (4) Recommend quarantine duration based on incubation period (e.g., 14 days for many diseases); (5) Monitor contacts daily for symptoms; (6) Test symptomatic contacts immediately. Digital tools supplement manual tracing but have privacy concerns. Resource requirements: approximately 1 tracer per 30 cases for effective tracing.",
+  "source": "CDC contact tracing guidance, WHO field epidemiology manual",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

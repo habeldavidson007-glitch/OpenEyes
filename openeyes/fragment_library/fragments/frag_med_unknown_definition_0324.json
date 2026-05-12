@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0324",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "radiation therapy",
+    "side effects",
+    "acute toxicity",
+    "late toxicity"
+  ],
+  "content": "Radiation side effects classified as acute (during/within 3 months) or late (>3 months post-treatment). Acute effects: fatigue (universal), skin reactions (erythema, desquamation), mucositis (head/neck, pelvic radiation), esophagitis (thoracic radiation), diarrhea (abdominal/pelvic), cytopenias (large bone marrow volumes irradiated). Managed with supportive care: topical steroids for skin, pain control for mucositis, antidiarrheals, nutritional support. Late effects: fibrosis (tissue scarring, organ dysfunction), lymphedema, xerostomia (permanent after head/neck radiation), cognitive decline (brain radiation), cardiac toxicity (left breast/chest radiation), secondary malignancies (sarcomas, carcinomas in field, latency 5-30 years). Organ-specific constraints: lung V20 <35% (pneumonitis risk), heart mean dose <26 Gy (cardiac events), spinal cord max <50 Gy (myelopathy), bowel V45 <195cc (obstruction risk). RTOG/EORTC toxicity criteria grade adverse events 1-5.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35234567/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

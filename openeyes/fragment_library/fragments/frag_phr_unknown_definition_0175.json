@@ -1,0 +1,27 @@
+{
+  "id": "frag_phr_unknown_definition_0175",
+  "domain": "healthcare",
+  "tags": [
+    "phr",
+    "definition"
+  ],
+  "content": "Off-label prescribing refers to using FDA-approved medications for indications, dosages, routes of administration, or patient populations not included in the approved labeling. Off-label use is legal and common, representing approximately 20% of all prescriptions. It is particularly prevalent in oncology (chemotherapy regimens), pediatrics (lack of pediatric trials), psychiatry, and rare diseases. The FDA regulates drug marketing but does not regulate the practice of medicine; physicians may prescribe approved drugs as they deem appropriate. However, manufacturers are prohibited from promoting off-label uses without FDA approval. Evidence quality for off-label uses varies widely from robust clinical trial data to anecdotal reports.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

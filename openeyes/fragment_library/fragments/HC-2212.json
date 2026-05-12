@@ -1,0 +1,29 @@
+{
+  "id": "HC-2212",
+  "domain": "healthcare",
+  "tags": [
+    "orphan drug",
+    "rare disease",
+    "incentives",
+    "controversy"
+  ],
+  "content": "Orphan drug designation criteria: disease prevalence <200,000 US patients OR >200,000 patients with inability to recover development costs from US sales. Prevalence calculation uses epidemiological data, considering disease definition, diagnostic criteria, and population estimates. Controversies include: 'salami slicing' (narrowly defining diseases to qualify), blockbuster orphan drugs (some generate >$1B annually despite small populations), high prices (median annual cost >$100,000), and potential abuse where companies initially seek orphan designation then expand to broader indications. Recent reforms address some concerns while maintaining core incentives. Approximately one-third of novel drug approvals now have orphan designation, raising questions about whether the program has exceeded its original intent.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

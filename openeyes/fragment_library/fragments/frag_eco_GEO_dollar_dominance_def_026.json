@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_dollar_dominance_def_026",
+  "domain": "economy",
+  "tags": [
+    "dollar",
+    "reserve_currency",
+    "hegemony",
+    "definition"
+  ],
+  "content": "Dollar dominance pillars: 58% of global reserves, 88% of FX transactions, 60% of trade invoicing, 50% of international debt. Backed by US economic size, deep liquid markets, rule of law, military power. Exorbitant privilege: ~$100-150B annual seigniorage. System established at Bretton Woods 1944, persisted after Nixon ended gold convertibility 1971.",
+  "source": "fed_international_finance",
+  "source_url": "https://www.federalreserve.gov/",
+  "credibility_class": "central_bank",
+  "last_verified": "2026-05-12",
+  "weight": 0.96,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

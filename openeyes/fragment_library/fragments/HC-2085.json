@@ -1,0 +1,29 @@
+{
+  "id": "HC-2085",
+  "domain": "healthcare",
+  "tags": [
+    "R0",
+    "herd immunity",
+    "vaccination threshold",
+    "epidemiology"
+  ],
+  "content": "R0 calculation methods include: next-generation matrix approaches using contact patterns, final size equation from epidemic curves, or exponential growth rate with generation time. Key limitations: R0 varies by population density, behavior, and environment; it's not a biological constant. Superspreading events create overdispersion not captured by mean R0. During emerging outbreaks, early R0 estimates have wide confidence intervals. R0 should not be compared across diseases without considering generation time\u2014diseases with same R0 but shorter generation times spread faster.",
+  "source": "Nature Reviews Microbiology, CDC epidemiology training",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

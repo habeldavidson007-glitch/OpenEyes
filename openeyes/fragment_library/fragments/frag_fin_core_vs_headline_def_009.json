@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_core_vs_headline_def_009",
+  "domain": "economy",
+  "tags": [
+    "inflation",
+    "core_inflation",
+    "headline_inflation",
+    "macro",
+    "definition"
+  ],
+  "content": "Headline inflation refers to the total inflation within an economy, including volatile components like food and energy prices. Core inflation excludes food and energy prices, which tend to be more volatile due to supply shocks, weather events, and geopolitical factors. Core inflation is intended to reveal the underlying, persistent trend in prices. Both measures are calculated for CPI and PCE indices. Policymakers, particularly the Federal Reserve, focus heavily on core inflation when making monetary policy decisions because it better predicts future inflation. However, headline inflation remains important for households' actual cost of living. Over long periods, headline and core inflation tend to converge, but they can diverge significantly in the short term during commodity price shocks.",
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/core-inflation-20180315.htm",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hc_med_onc_po_treat_001",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "precision oncology",
+    "targeted therapy selection",
+    "basket trials",
+    "clinical decision making"
+  ],
+  "content": "Treatment selection based on genomic findings. Evidence levels for actionability (ESMO ESCAT scale): Tier I - clinically actionable (FDA-approved for indication or strong evidence from prospective trials); Tier II - potentially actionable (early phase trials, retrospective data, biologic rationale); Tier III - preclinical evidence only. Basket trials enroll patients by molecular alteration regardless of tumor type: NCI-MATCH, ASCO TAPUR, MyPathway demonstrated feasibility but variable response rates by tumor type. Examples of matched therapies: EGFR mutations - osimertinib (lung, also investigational in other EGFR-mutant tumors); HER2 amplification/mutation - trastuzumab deruxtecan (breast, gastric, now pan-tumor approval 2024); BRAF V600E - dabrafenib + trametinib; NTRK fusions - larotrectinib/entrectinib; RET fusions - selpercatinib; MET exon 14 skipping - capmatinib/tepotinib. Combination strategies address resistance mechanisms. Liquid biopsy (ctDNA) enables monitoring of response and emerging resistance without repeat tissue biopsy. Molecular tumor boards review complex cases.",
+  "source": "https://www.nccn.org/guidelines",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

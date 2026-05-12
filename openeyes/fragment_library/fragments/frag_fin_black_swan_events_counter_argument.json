@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_black_swan_events_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "risk_management",
+    "black_swan",
+    "taleb",
+    "tail_risk",
+    "counter_argument"
+  ],
+  "content": "Critics argue the Black Swan theory is unfalsifiable and leads to paralysis. If everything is a potential black swan, no rational calculation is possible. Some propose 'Dragon Kings' (events that are extreme but have precursors/signals) suggesting that with better monitoring, some 'black swans' are actually predictable outliers.",
+  "source": "academic_theory",
+  "source_url": "https://fooledbyrandomness.com",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

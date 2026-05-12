@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_trend_lines_counter_argument_05",
+  "domain": "economy",
+  "tags": [
+    "trend_lines",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "content": "Trend line analysis suffers from confirmation bias: traders see what they want. Studies show trend line breaks fail to predict sustained reversals reliably. The requirement for 'three touches' is arbitrary and retrospectively applied. In trending markets, trend lines are frequently violated temporarily before resuming, generating false signals. Modern portfolio theory suggests trend following adds no alpha after transaction costs. Random walk hypothesis implies trend lines are patterns imposed on randomness.",
+  "source": "Educational Resource",
+  "source_url": "https://www.efficientmarkets.org/critique-technical-analysis",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

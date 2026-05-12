@@ -1,0 +1,29 @@
+{
+  "id": "frag_mh_borderline_personality_disorder_diagnostic_criteria_0060",
+  "domain": "healthcare",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "BPD",
+    "personality-disorder"
+  ],
+  "content": "DSM-5-TR BPD criteria: Pervasive pattern of instability in relationships, self-image, affects, impulsivity beginning by early adulthood, present in various contexts, indicated by \u22655 of: frantic efforts to avoid abandonment, unstable/intense relationships (idealization/devaluation), identity disturbance, impulsivity in \u22652 potentially self-damaging areas, recurrent suicidal behavior/gestures/threats/self-mutilation, affective instability due to mood reactivity, chronic emptiness, inappropriate intense anger/difficulty controlling anger, transient stress-related paranoid ideation/severe dissociative symptoms. Not better explained by another mental disorder, substance effects, or medical condition.",
+  "source": "PubMed",
+  "source_url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

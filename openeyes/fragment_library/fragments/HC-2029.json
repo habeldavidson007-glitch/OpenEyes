@@ -1,0 +1,30 @@
+{
+  "id": "HC-2029",
+  "domain": "healthcare",
+  "tags": [
+    "neuroscience",
+    "psychedelics",
+    "psilocybin",
+    "MDMA",
+    "clinical trials"
+  ],
+  "content": "Psychedelics are being investigated for psychiatric conditions with promising Phase 2/3 trial results. Psilocybin (from magic mushrooms) acts on 5-HT2A receptors, producing altered consciousness and enhanced neuroplasticity. Trials show significant benefits in treatment-resistant depression, end-of-life anxiety, and addiction. MDMA (ecstasy) enhances empathy and reduces fear, showing remarkable efficacy in PTSD when combined with psychotherapy; FDA decision expected 2024. Both require structured psychotherapy integration. Mechanisms include transient ego dissolution, emotional processing, and lasting changes in brain connectivity. Risks include acute anxiety, psychosis in vulnerable individuals, and cardiovascular effects. FDA breakthrough therapy designations accelerate development.",
+  "source": "nimh.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_liquidity_risk_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "risk_management",
+    "liquidity",
+    "market_depth",
+    "bid_ask",
+    "counter_argument"
+  ],
+  "content": "Some argue that liquidity is a function of price; any asset is liquid if the price is low enough. Therefore, 'liquidity risk' is simply price volatility risk mislabeled. However, for leveraged entities, the inability to sell at *model* prices (mark-to-model vs mark-to-market) creates solvency issues regardless of theoretical floor prices.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

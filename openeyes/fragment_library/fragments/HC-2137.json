@@ -1,0 +1,29 @@
+{
+  "id": "HC-2137",
+  "domain": "healthcare",
+  "tags": [
+    "primary care",
+    "gatekeeper",
+    "continuity",
+    "comprehensive care"
+  ],
+  "content": "Primary care is defined by four attributes: (1) First contact - accessible entry point for new health problems; (2) Continuity - ongoing relationship with a provider over time; (3) Comprehensiveness - addressing most health needs including prevention, acute care, and chronic disease management; (4) Coordination - integrating care across specialists and settings. Gatekeeper systems require primary care referral for specialist access (UK, Netherlands, Canada), while open-access systems allow direct specialist consultation (US, Germany). Primary care physician density ranges from 0.5-1.5 per 1,000 population globally, with higher densities associated with better health outcomes.",
+  "source": "who.int",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

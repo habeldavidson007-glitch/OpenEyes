@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0291",
+  "domain": "healthcare",
+  "tags": [
+    "bioequivalence",
+    "AUC_comparison",
+    "generic_approval",
+    "bioavailability_study"
+  ],
+  "content": "Bioavailability is measured by comparing AUC after non-IV administration to AUC after IV administration of the same dose: F = (AUC_oral \u00d7 Dose_IV) / (AUC_IV \u00d7 Dose_oral). Bioequivalence studies compare test vs reference formulations; two products are bioequivalent if 90% CI of geometric mean ratio for AUC and Cmax falls within 80-125%. Absolute bioavailability requires IV comparator; relative bioavailability compares two non-IV formulations. Factors affecting measurement: sampling duration must cover elimination phase; assay sensitivity must detect low concentrations; subjects should be fasting unless food-effect study. Generic approval requires demonstrating bioequivalence to brand-name product.",
+  "source": "ema.europa.eu",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

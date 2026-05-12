@@ -1,0 +1,27 @@
+{
+  "id": "frag_phr_unknown_treatment_protocol_0176",
+  "domain": "healthcare",
+  "tags": [
+    "phr",
+    "safety"
+  ],
+  "content": "Best practices for off-label prescribing: (1) Review available evidence (clinical trials, systematic reviews, guidelines); (2) Assess risk-benefit ratio considering patient-specific factors; (3) Consider whether standard therapies have failed or are contraindicated; (4) Discuss off-label nature with patient, including evidence quality, potential risks, and alternatives; (5) Document rationale and informed consent discussion in medical record; (6) Monitor outcomes and adverse effects carefully; (7) Report adverse events to FDA MedWatch. Insurance coverage for off-label uses varies; some require peer-reviewed literature support or compendia listing (e.g., NCCN for oncology). Pharmacists should verify evidence and counsel patients on off-label status.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

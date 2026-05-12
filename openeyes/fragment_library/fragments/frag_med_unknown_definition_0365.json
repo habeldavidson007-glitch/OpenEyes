@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0365",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "targeted therapy",
+    "treatment selection",
+    "resistance mechanisms",
+    "combination strategies"
+  ],
+  "content": "Targeted therapy requires molecular testing before initiation. EGFR-mutated NSCLC: osimertinib first-line (FLAURA trial showed superior PFS vs earlier generation TKIs). ALK-positive NSCLC: alectinib preferred (ALEX trial). BRAF V600E melanoma: dabrafenib + trametinib combination superior to BRAF inhibitor alone. HER2-positive breast cancer: trastuzumab + pertuzumab + taxane first-line (CLEOPATRA); T-DM1 or trastuzumab deruxtecan for second-line. Resistance mechanisms: secondary mutations (EGFR T790M, C797S), bypass pathway activation (MET amplification), histologic transformation. Upon progression, re-biopsy or liquid biopsy (ctDNA) identifies resistance mechanisms. Next-generation TKIs overcome some resistance (osimertinib for T790M). Combination with chemotherapy or immunotherapy being studied. Duration: continued until progression or unacceptable toxicity; some adjuvant settings have fixed duration (e.g., imatinib 3 years for high-risk GIST).",
+  "source": "PubMed",
+  "source_url": "https://www.nccn.org/guidelines",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

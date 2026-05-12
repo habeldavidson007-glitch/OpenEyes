@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_iran_sanctions_counter_022",
+  "domain": "economy",
+  "tags": [
+    "iran",
+    "sanctions",
+    "effectiveness",
+    "counter_argument"
+  ],
+  "content": "Iran sanctions effectiveness limits: Oil exports recovered to 1.5M bpd via shadow fleet, barter arrangements. China primary buyer. Domestic adaptation through smuggling networks, crypto, hawala. Regime consolidated control over economy via Revolutionary Guard. Humanitarian exemptions insufficient - medicine shortages documented. Nuclear program advanced despite sanctions.",
+  "source": "crs_iran_report",
+  "source_url": "https://crs.gov/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.91,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

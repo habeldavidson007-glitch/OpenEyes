@@ -1,0 +1,27 @@
+{
+  "id": "frag_phr_unknown_diagnostic_criteria_0183",
+  "domain": "healthcare",
+  "tags": [
+    "phr",
+    "safety"
+  ],
+  "content": "Risk stratification for drug-induced TdP: High risk factors include QTc >500ms, history of TdP, congenital long QT syndrome, bradycardia, heart failure, female sex, age >65, electrolyte disturbances (hypokalemia, hypomagnesemia, hypocalcemia), renal/hepatic impairment, and drug interactions increasing QT-prolonging drug levels. The Tisdale Risk Score predicts QT prolongation in hospitalized patients (points for age, sex, diuretics, QTc duration, acute MI, sepsis, number of QT-prolonging drugs). FDA requires thorough QT studies for new drugs to assess proarrhythmic potential. Drugs are categorized as: Known risk (clear evidence of TdP), Possible risk (some evidence but insufficient), Conditional risk (risk under specific conditions), or No known risk. Serial ECG monitoring is recommended when initiating or escalating high-risk medications.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

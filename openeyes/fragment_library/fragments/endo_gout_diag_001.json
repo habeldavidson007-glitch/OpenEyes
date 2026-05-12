@@ -1,0 +1,30 @@
+{
+  "id": "endo_gout_diag_001",
+  "domain": "healthcare",
+  "tags": [
+    "gout",
+    "synovial fluid",
+    "urate crystals",
+    "ACR criteria",
+    "imaging"
+  ],
+  "content": "Gold standard: synovial fluid analysis showing needle-shaped, negatively birefringent monosodium urate crystals under polarized light microscopy. ACR/EULAR classification criteria (2015) use scoring system: clinical pattern (joint involvement, flare characteristics), time course, clinical signs (erythema, tophi), serum urate level, imaging findings. Serum urate often normal during acute flare (urate shifts into joints) - recheck after flare resolves. Imaging: X-ray shows punched-out erosions with overhanging edges in chronic gout; ultrasound shows 'double contour sign' (urate on cartilage surface), tophi; dual-energy CT specifically identifies urate deposits. Differential diagnosis: septic arthritis (always consider, especially monoarticular), pseudogout (calcium pyrophosphate crystals - positively birefringent, rhomboid), cellulitis, trauma. Evaluate for comorbidities: renal function, cardiovascular risk factors, metabolic syndrome components.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33985617/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

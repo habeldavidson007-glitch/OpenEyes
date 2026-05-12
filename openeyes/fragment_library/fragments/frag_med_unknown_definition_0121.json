@@ -1,0 +1,28 @@
+{
+  "id": "frag_med_unknown_definition_0121",
+  "domain": "healthcare",
+  "tags": [
+    "adaptive trial design",
+    "interim analysis",
+    "sample size re-estimation"
+  ],
+  "content": "Adaptive trial designs allow pre-planned modifications to trial parameters based on interim data analysis without compromising trial integrity or validity. Unlike traditional fixed designs, adaptive trials can modify sample size, drop ineffective treatment arms, adjust randomization ratios, or change patient populations while controlling type I error. Common adaptations include: group sequential designs (early stopping for efficacy/futility), sample size re-estimation, adaptive randomization (response-adaptive, covariate-adaptive), seamless Phase II/III designs, and population enrichment strategies. FDA issued guidance on adaptive designs in 2010 and 2019, emphasizing pre-specification and statistical rigor.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

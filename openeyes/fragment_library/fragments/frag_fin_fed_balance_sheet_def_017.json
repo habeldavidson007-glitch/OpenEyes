@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_fed_balance_sheet_def_017",
+  "domain": "economy",
+  "tags": [
+    "fed",
+    "balance_sheet",
+    "monetary_policy",
+    "quantitative_easing",
+    "definition"
+  ],
+  "content": "The Federal Reserve's balance sheet lists its assets and liabilities. Assets consist primarily of U.S. Treasury securities and agency mortgage-backed securities (MBS) acquired through open market operations. Liabilities include Federal Reserve notes (currency in circulation), reserve balances held by depository institutions, and the Treasury's General Account. The balance sheet expanded dramatically from under $1 trillion pre-2008 to nearly $9 trillion by 2022 through quantitative easing programs. Balance sheet size affects the quantity of reserves in the banking system, influencing short-term interest rates and financial conditions. The Fed publishes weekly H.4.1 reports detailing balance sheet components. Composition matters as much as size\u2014MBS holdings affect mortgage rates specifically.",
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/monetarypolicy/bst_recenttrends.htm",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

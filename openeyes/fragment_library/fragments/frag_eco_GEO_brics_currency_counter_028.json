@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_brics_currency_counter_028",
+  "domain": "economy",
+  "tags": [
+    "brics",
+    "alternative_currency",
+    "feasibility",
+    "counter_argument"
+  ],
+  "content": "BRICS currency feasibility problems: No fiscal union, no central bank, divergent national interests. China dominates bloc economically (70% of GDP) - other members reluctant to substitute yuan for dollar. Gold backing impractical (insufficient reserves, price volatility). Historical precedent poor (Euro required deep integration). More likely: bilateral local currency arrangements, not unified currency.",
+  "source": "goldman_sachs_brics",
+  "source_url": "https://www.goldmansachs.com/",
+  "credibility_class": "investment_bank",
+  "last_verified": "2026-05-12",
+  "weight": 0.88,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

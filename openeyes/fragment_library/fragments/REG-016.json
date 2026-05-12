@@ -1,0 +1,30 @@
+{
+  "id": "REG-016",
+  "domain": "economy",
+  "tags": [
+    "esg",
+    "ratings",
+    "methodology",
+    "inconsistency",
+    "sustainability"
+  ],
+  "content": "ESG rating methodology inconsistency across providers stems from divergent approaches to: (1) Scope\u2014different ESG factors weighted differently (MSCI emphasizes carbon, Sustainalytics focuses on controversies), (2) Data sources\u2014company disclosures, NGO reports, media analysis, proprietary research, (3) Weighting schemes\u2014industry-specific vs. universal, dynamic vs. static weights, (4) Scoring methodologies\u2014percentile rankings, absolute scores, letter grades. Studies show low correlation between providers (average 0.3-0.6 correlation MSCI vs. Sustainalytics vs. Refinitiv). Causes: different definitions of materiality, varying geographic coverage, temporal mismatches. Regulatory response: EU considering ESG rating provider regulation; IOSCO published recommendations (Nov 2023) on transparency, methodological rigor, conflict management. Market participants urged to understand methodology differences rather than treating ratings as interchangeable.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

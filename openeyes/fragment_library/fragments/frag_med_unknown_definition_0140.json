@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_definition_0140",
+  "domain": "healthcare",
+  "tags": [
+    "Phase II trials",
+    "proof of concept",
+    "dose selection",
+    "efficacy"
+  ],
+  "content": "Phase II trial design typically uses randomized controlled methodology, often with placebo or active comparator. Multiple dose arms (e.g., low, medium, high) are evaluated to establish dose-response relationships and select the optimal Phase III dose. Primary endpoints are disease-specific efficacy measures (e.g., HbA1c reduction in diabetes, tumor response in oncology, symptom scores in psychiatry). Statistical power is moderate (often 80% power to detect clinically meaningful effect). Adaptive designs allowing dose modifications or early stopping for futility are increasingly used. Biomarker substudies help identify responsive patient subgroups.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

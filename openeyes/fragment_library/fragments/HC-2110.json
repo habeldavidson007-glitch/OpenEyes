@@ -1,0 +1,29 @@
+{
+  "id": "HC-2110",
+  "domain": "healthcare",
+  "tags": [
+    "telemedicine",
+    "telehealth",
+    "remote care",
+    "digital health"
+  ],
+  "content": "Telemedicine encompasses remote healthcare delivery via technology: (1) Synchronous video visits - real-time provider-patient interaction; (2) Asynchronous (store-and-forward) - transmitting images/data for later review (dermatology, radiology); (3) Remote patient monitoring - transmitting vital signs, glucose, weight from home; (4) Mobile health (mHealth) - smartphone apps for symptom tracking, medication reminders; (5) E-consults - specialist consultation without patient visit. Telehealth utilization surged from <1% pre-pandemic to 30-40% of visits during COVID-19 peaks, stabilizing at 10-15% post-pandemic. Evidence shows telemedicine effective for chronic disease management, mental health, dermatology, and follow-up visits, with high patient satisfaction (75-85%).",
+  "source": "ahrq.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

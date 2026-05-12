@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_china_property_crisis_counter_008",
+  "domain": "economy",
+  "tags": [
+    "china",
+    "property",
+    "evergrande",
+    "contagion",
+    "counter_argument"
+  ],
+  "content": "China property contagion limited: Domestic financial system insulated by capital controls. State banks absorb losses with government backing. Global exposure manageable: foreign creditors <10% of developer debt. Primary risk is domestic consumption slowdown, not global financial crisis. Managed decline likely.",
+  "source": "goldman_sachs_research",
+  "source_url": "https://www.goldmansachs.com/",
+  "credibility_class": "investment_bank",
+  "last_verified": "2026-05-12",
+  "weight": 0.87,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

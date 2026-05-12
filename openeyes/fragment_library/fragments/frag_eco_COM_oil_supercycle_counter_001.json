@@ -1,0 +1,31 @@
+{
+  "id": "frag_eco_COM_oil_supercycle_counter_001",
+  "domain": "economy",
+  "tags": [
+    "oil",
+    "supercycle",
+    "criticism",
+    "energy transition"
+  ],
+  "content": "The oil supercycle thesis fails to account for the energy transition. Peak oil demand is projected by IEA to occur before 2030 due to EV adoption, efficiency gains, and policy mandates. Unlike previous supercycles driven by rising demand, the current environment features declining investment in new production alongside falling long-term demand. This creates a 'bumpy plateau' rather than a sustained price surge.",
+  "source": "IEA World Energy Outlook 2024",
+  "source_url": "https://www.iea.org/reports/world-energy-outlook-2024",
+  "credibility_class": "government_source",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [
+    "frag_eco_COM_oil_supercycle_definition_001"
+  ],
+  "subdomain": "COM",
+  "sector": null,
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "frag_fin_high_frequency_trading_counter_001",
+  "domain": "economy",
+  "tags": [
+    "market_cap",
+    "volatility",
+    "stock_market",
+    "latest_data"
+  ],
+  "content": "HFT criticized for creating unstable liquidity that disappears during stress. Flash crashes attributed to HFT interactions. Latency arms race diverts resources from productive investment. Predatory strategies exploit slower participants. Quote stuffing overwhelms systems. Co-location creates two-tiered access. HFT profits from speed advantage rather than fundamental analysis. Some argue HFT acts as modern front-running. Regulatory proposals include minimum resting times, transaction taxes, and batch auctions.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/hft-impact-20210518.html",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

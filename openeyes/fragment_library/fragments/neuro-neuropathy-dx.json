@@ -1,0 +1,30 @@
+{
+  "id": "neuro-neuropathy-dx",
+  "domain": "healthcare",
+  "tags": [
+    "neuropathy",
+    "NCS",
+    "EMG",
+    "diagnosis",
+    "skin-biopsy"
+  ],
+  "content": "Neuropathy diagnosis requires: (1) History and examination: symptom distribution (length-dependent 'stocking-glove' vs non-length-dependent), fiber types involved (sensory: numbness, tingling, pain; motor: weakness, atrophy; autonomic: orthostasis, GI/GU dysfunction, sweating abnormalities). Neurological exam: sensory modalities (pinprick, temperature for small-fiber; vibration, proprioception for large-fiber), strength, reflexes (ankle jerks lost early), gait (sensory ataxia\u2014worse with eyes closed, positive Romberg). (2) Laboratory screening: CBC, CMP, HbA1c/fasting glucose, B12 with methylmalonic acid, TSH, SPEP/UPEP, ESR/CRP, ANA/ENA if autoimmune suspected. (3) Electrodiagnostics: Nerve conduction studies (NCS) distinguish axonal (reduced amplitude) vs demyelinating (slow velocity, prolonged latency, conduction block) patterns; EMG assesses motor unit changes. (4) Specialized tests: skin biopsy for small-fiber neuropathy (intraepidermal nerve fiber density), quantitative sensory testing, autonomic testing (QSART, tilt-table), lumbar puncture (elevated protein in CIDP), genetic testing (hereditary neuropathies), nerve biopsy (vasculitis, amyloid).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

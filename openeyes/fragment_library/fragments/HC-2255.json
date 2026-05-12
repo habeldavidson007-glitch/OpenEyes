@@ -1,0 +1,29 @@
+{
+  "id": "HC-2255",
+  "domain": "healthcare",
+  "tags": [
+    "preconception_counseling",
+    "contraception_requirements",
+    "medication_switching",
+    "risk_communication"
+  ],
+  "content": "Clinical management: preconception counseling for women of childbearing potential on teratogenic medications; contraception requirements (isotretinoin iPLEDGE program requires two forms); medication switching before conception (ACE inhibitors to labetalol/nifedipine; warfarin to LMWH; valproate to lamotrigine/levetiracetam if possible); folic acid supplementation (4mg/day for women on antiepileptics). If exposure occurs: determine gestational age, assess specific drug risk, discuss options (continuation with monitoring, termination). Risk communication: absolute vs relative risk important (baseline malformation rate 3-4%; valproate increases to 10%); most exposures don't cause defects. Resources: TERIS, MotherToBaby, Organization of Teratology Information Services provide evidence-based risk assessments.",
+  "source": "nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

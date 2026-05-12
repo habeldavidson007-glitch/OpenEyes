@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0312",
+  "domain": "healthcare",
+  "tags": [
+    "Vd_calculation",
+    "compartment_models",
+    "protein_binding_effects",
+    "pathologic_changes"
+  ],
+  "content": "Vd is calculated from plasma concentration measurements after IV administration: Vd = Dose / C0 (concentration at time zero, extrapolated from elimination curve). Apparent Vd at steady state (Vdss) accounts for tissue equilibration. Central volume (Vc) represents initial distribution space before tissue equilibration. Multi-compartment models describe drugs with distinct distribution and elimination phases. Factors affecting Vd: molecular size (large molecules stay in plasma), lipophilicity (lipid-soluble drugs have high Vd), protein binding (high binding reduces Vd), tissue binding (increases Vd), ionization (charged molecules have lower Vd). Pathologic states alter Vd: burns increase Vd due to capillary leak; dehydration decreases Vd.",
+  "source": "ema.europa.eu",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

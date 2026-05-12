@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_mfn_status_latest_016",
+  "domain": "economy",
+  "tags": [
+    "mfN",
+    "most_favored_nation",
+    "wto",
+    "trade_policy",
+    "latest_data"
+  ],
+  "content": "MFN status developments 2024: Russia faces highest tariff rates among major economies post-MFN revocation. US-China trade operates under MFN despite tensions (PNTR granted 2000). UK applying WTO terms post-Brexit while negotiating FTAs. Debate continues over whether China should retain MFN given state capitalist practices.",
+  "source": "peterson_institute",
+  "source_url": "https://www.piie.com/",
+  "credibility_class": "think_tank",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

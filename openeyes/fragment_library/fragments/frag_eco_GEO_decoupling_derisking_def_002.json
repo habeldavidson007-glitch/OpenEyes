@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_decoupling_derisking_def_002",
+  "domain": "economy",
+  "tags": [
+    "decoupling",
+    "de_risking",
+    "supply_chain",
+    "definition"
+  ],
+  "content": "Decoupling vs de-risking distinction: Decoupling implies comprehensive economic separation across all sectors. De-risking targets specific vulnerabilities (critical tech, supply chains) while maintaining general trade. EU and US officially pursue de-risking, not decoupling, with China.",
+  "source": "council_on_foreign_relations",
+  "source_url": "https://www.cfr.org/",
+  "credibility_class": "think_tank",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

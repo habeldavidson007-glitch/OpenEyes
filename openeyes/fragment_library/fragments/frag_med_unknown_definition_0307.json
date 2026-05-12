@@ -1,0 +1,32 @@
+{
+  "id": "frag_med_unknown_definition_0307",
+  "domain": "healthcare",
+  "tags": [
+    "pharmacokinetics",
+    "ADME",
+    "drug_behavior",
+    "absorption",
+    "distribution",
+    "metabolism",
+    "excretion"
+  ],
+  "content": "Pharmacokinetics (PK) describes what the body does to a drug, encompassing four key processes: Absorption (how the drug enters systemic circulation), Distribution (how it spreads throughout tissues), Metabolism (chemical modification, primarily in the liver), and Excretion (removal from the body, mainly via kidneys). ADME determines onset, intensity, and duration of drug action. Absorption rate affects time to peak concentration; distribution volume influences loading dose; metabolism rate determines half-life; excretion clearance guides dosing intervals. PK parameters are critical for optimizing dosing regimens and predicting drug behavior in special populations.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

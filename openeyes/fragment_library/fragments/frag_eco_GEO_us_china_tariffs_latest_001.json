@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_us_china_tariffs_latest_001",
+  "domain": "economy",
+  "tags": [
+    "us_china",
+    "trade_war",
+    "tariffs",
+    "latest_data"
+  ],
+  "content": "As of 2024, most Trump-era tariffs remain in place. Biden administration maintained strategic tariffs while launching targeted exclusions. US-China trade deficit narrowed to $279B in 2023 from $418B peak. Trade diversion to Vietnam, Mexico, India accelerated.",
+  "source": "us_trade_representative",
+  "source_url": "https://ustr.gov/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.94,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

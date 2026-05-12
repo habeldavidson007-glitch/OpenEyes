@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_antidumping_def_042",
+  "domain": "economy",
+  "tags": [
+    "antidumping_measures",
+    "trade_policy",
+    "definition"
+  ],
+  "content": "Antidumping duties: Tariffs imposed when imports priced below fair value (normal value), causing material injury to domestic industry. WTO Anti-Dumping Agreement governs. Investigation by Commerce Dept (dumping margin), ITC (injury determination). Duration typically 5 years, renewable. Steel, aluminum, chemicals common targets.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

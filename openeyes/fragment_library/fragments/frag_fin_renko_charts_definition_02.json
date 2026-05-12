@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_renko_charts_definition_02",
+  "domain": "economy",
+  "tags": [
+    "definition",
+    "technical_analysis",
+    "renko_charts"
+  ],
+  "content": "Renko charts use bricks of fixed size, plotted only when price moves that amount. Time is irrelevant; only price movement matters. Filters noise effectively; trends appear as continuous brick sequences. Brick size selection critical: too small = noisy; too large = missed moves. Lag inherent since bricks form only after full movement. Useful for trend-following; poor for timing entries precisely. Combines well with traditional charts.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/r/renko.asp",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

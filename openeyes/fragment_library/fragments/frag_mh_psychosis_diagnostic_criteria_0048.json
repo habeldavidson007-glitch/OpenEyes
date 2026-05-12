@@ -1,0 +1,30 @@
+{
+  "id": "frag_mh_psychosis_diagnostic_criteria_0048",
+  "domain": "healthcare",
+  "tags": [
+    "differential-diagnosis",
+    "DSM-5-TR",
+    "schizophrenia",
+    "mood-disorder",
+    "medical-causes"
+  ],
+  "content": "Psychosis is a symptom cluster, not a standalone DSM-5 diagnosis. Assessment determines underlying etiology: Schizophrenia (\u22656 months with functional decline), Schizophreniform (1-6 months), Brief Psychotic Disorder (<1 month, full return to baseline), Delusional Disorder (non-bizarre delusions \u22651 month, preserved functioning), Schizoaffective (psychosis + mood episode with \u22652 weeks psychosis without mood symptoms), Mood Disorder with Psychotic Features (psychosis only during mood episodes), Substance/Medication-Induced (temporal relationship to substance/medication), Psychosis Due to Medical Condition (evidence from history/exam/labs). Rule out delirium (fluctuating consciousness, inattention). Comprehensive workup includes labs, toxicology, neuroimaging when indicated.",
+  "source": "PubMed",
+  "source_url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

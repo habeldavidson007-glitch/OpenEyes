@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_yuan_internationalization_def_027",
+  "domain": "economy",
+  "tags": [
+    "yuan",
+    "renminbi",
+    "internationalization",
+    "china",
+    "definition"
+  ],
+  "content": "Yuan internationalization: China's strategy to increase RMB use in trade, finance, reserves. Launched 2009. Progress: 3% of global payments (SWIFT), 2.6% of reserves (IMF COFER). Mechanisms: Cross-Border Interbank Payment System (CIPS), currency swap lines (40+ countries), offshore centers (Hong Kong, London). Capital account remains partially closed.",
+  "source": "pboc_official",
+  "source_url": "http://www.pbc.gov.cn/",
+  "credibility_class": "central_bank",
+  "last_verified": "2026-05-12",
+  "weight": 0.94,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_currency_manipulation_def_029",
+  "domain": "economy",
+  "tags": [
+    "currency_manipulation",
+    "fx_policy",
+    "trade",
+    "definition"
+  ],
+  "content": "Currency manipulation definition: Deliberate intervention to weaken currency for trade advantage. IMF criteria: material current account surplus, persistent one-sided FX intervention (>2% GDP annually), net purchases >6 months. US Treasury monitors major partners semiannually. Label triggers bilateral negotiations, potential countervailing duties.",
+  "source": "treasury_fx_report",
+  "source_url": "https://home.treasury.gov/policy-issues/international-policy/exchange-rate-policies-and-analysis",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

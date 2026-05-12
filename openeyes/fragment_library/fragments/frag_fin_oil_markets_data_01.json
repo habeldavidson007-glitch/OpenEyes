@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_oil_markets_data_01",
+  "domain": "economy",
+  "tags": [
+    "oil",
+    "commodities",
+    "inflation",
+    "latest_data"
+  ],
+  "content": "2024 Brent avg $82. OPEC+ extended voluntary cuts (2.2M bpd). US production record 13.3M bpd. Strategic Petroleum Reserve (SPR) refilling at $70-75 range. China demand growth slowed to 1% vs historical 5%.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.9114,
+  "compatible_with": [
+    "frag_fin_oil_markets_def_01"
+  ],
+  "incompatible_with": [],
+  "subdomain": "ENR",
+  "sector": "ENR",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

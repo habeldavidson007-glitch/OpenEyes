@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_bilateral_trade_latest_011",
+  "domain": "economy",
+  "tags": [
+    "bilateral_trade",
+    "fta",
+    "trade_agreements",
+    "latest_data"
+  ],
+  "content": "Bilateral FTAs 2024: 355 RTAs notified to WTO. Trend toward 'deep' agreements covering digital trade, SOEs, regulatory coherence. UK pursuing post-Brexit deals (CPTPP accession, India negotiations). US focusing on IPEF (non-traditional framework). Africa's AfCFTA implementation accelerating.",
+  "source": "wto_rta_database",
+  "source_url": "https://rtais.wto.org/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

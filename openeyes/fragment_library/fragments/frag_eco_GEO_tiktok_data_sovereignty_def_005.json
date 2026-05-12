@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_tiktok_data_sovereignty_def_005",
+  "domain": "economy",
+  "tags": [
+    "tiktok",
+    "data_sovereignty",
+    "china",
+    "tech_regulation",
+    "definition"
+  ],
+  "content": "TikTok data sovereignty debate centers on whether Chinese-owned apps pose national security risks through potential data access by CCP. Project Texas (Oracle partnership) aims to isolate US user data. Broader implications for cross-border data flows, tech decoupling, platform regulation.",
+  "source": "congressional_hearing",
+  "source_url": "https://www.congress.gov/",
+  "credibility_class": "government_proceedings",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

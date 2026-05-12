@@ -1,0 +1,29 @@
+{
+  "id": "frag_mh_major_depressive_disorder_definition_0031",
+  "domain": "healthcare",
+  "tags": [
+    "depression",
+    "mood-disorder",
+    "DSM-5",
+    "diagnosis"
+  ],
+  "content": "Major Depressive Disorder (MDD) is a mood disorder characterized by persistent low mood and/or loss of interest or pleasure (anhedonia) for at least two weeks, accompanied by symptoms such as sleep disturbances, appetite changes, fatigue, feelings of worthlessness, diminished concentration, and recurrent thoughts of death or suicide. According to DSM-5-TR, diagnosis requires at least five symptoms including depressed mood or anhedonia, causing clinically significant distress or impairment. Pathophysiologically, MDD involves dysregulation of monoaminergic neurotransmission (serotonin, norepinephrine, dopamine), HPA axis hyperactivity, neuroinflammation, and reduced neuroplasticity in regions like the hippocampus and prefrontal cortex.",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/depression",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

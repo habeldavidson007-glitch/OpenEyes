@@ -1,0 +1,29 @@
+{
+  "id": "HC-2424",
+  "domain": "healthcare",
+  "tags": [
+    "ICD",
+    "implantable cardioverter-defibrillator",
+    "primary prevention",
+    "secondary prevention"
+  ],
+  "content": "ICD therapy for SCD prevention: Secondary prevention (survivors of cardiac arrest or sustained VT with hemodynamic compromise)\u2014Class I indication unless reversible cause identified. Primary prevention (prevent first event): LVEF \u226435% despite \u22653 months GDMT with NYHA class II-III symptoms (ischemic or nonischemic cardiomyopathy); LVEF \u226430% with NYHA class I (ischemic); post-MI \u226540 days (earlier placement not beneficial\u2014DINAMIT trial showed harm); nonischemic dilated cardiomyopathy (DEFINITE, SCD-HeFT trials). Timing critical: wait \u226540 days post-MI, \u226590 days post-revascularization, \u22653 months on GDMT to allow for potential EF recovery. Device types: transvenous ICD (standard), subcutaneous ICD (no intravascular leads\u2014reduces lead complications, no pacing capability except transient post-shock), CRT-D (if QRS \u2265150ms with LBBB and EF \u226435%). Complications: inappropriate shocks (SVT, lead failure), infections, lead fractures, psychological impact. Shared decision-making essential, especially in elderly/comorbid patients.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33106097/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2020,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

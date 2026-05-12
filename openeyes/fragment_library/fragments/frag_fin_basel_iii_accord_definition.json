@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_basel_iii_accord_definition",
+  "domain": "economy",
+  "tags": [
+    "regulation",
+    "basel_iii",
+    "banking",
+    "capital_requirements",
+    "definition"
+  ],
+  "content": "Basel III is a global regulatory standard on bank capital adequacy, stress testing, and market liquidity risk agreed upon by the Basel Committee on Banking Supervision. It strengthens bank capital requirements by introducing a leverage ratio, liquidity coverage ratio (LCR), and net stable funding ratio (NSFR) to ensure banks can withstand short-term shocks and long-term structural mismatches.",
+  "source": "international_org",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

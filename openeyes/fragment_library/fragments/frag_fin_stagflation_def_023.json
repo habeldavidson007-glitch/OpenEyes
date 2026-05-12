@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_stagflation_def_023",
+  "domain": "economy",
+  "tags": [
+    "stagflation",
+    "inflation",
+    "recession",
+    "macro",
+    "economic_growth",
+    "definition"
+  ],
+  "content": "Stagflation describes the combination of stagnant economic growth (or recession), high unemployment, and high inflation. This combination is particularly challenging for policymakers because tools to combat inflation (tightening) worsen unemployment, while tools to combat unemployment (stimulus) worsen inflation. The term emerged in the 1970s when oil price shocks triggered supply-side inflation while demand weakened. Traditional Keynesian models struggled to explain stagflation, contributing to the rise of monetarist and supply-side economics. The 1973-75 and 1979-82 periods are classic stagflation episodes. Supply shocks (energy, food, supply chains) can create stagflationary dynamics by raising prices while reducing output potential.",
+  "source": "Federal Reserve History",
+  "source_url": "https://www.federalreservehistory.org/essays/stagflation",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

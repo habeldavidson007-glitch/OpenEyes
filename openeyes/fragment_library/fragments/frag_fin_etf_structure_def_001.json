@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_etf_structure_def_001",
+  "domain": "economy",
+  "tags": [
+    "index_fund",
+    "etf",
+    "definition"
+  ],
+  "content": "Exchange-Traded Funds (ETFs) are investment funds traded on stock exchanges. ETFs hold assets like stocks, bonds, or commodities and track an index, sector, or theme. Creation/redemption mechanism allows authorized participants to exchange ETF shares for underlying assets (creation) or vice versa (redemption), keeping market price aligned with net asset value. This arbitrage mechanism provides tax efficiency and tight tracking. ETFs offer intraday trading, lower costs than mutual funds, and transparency through daily holdings disclosure.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/investor/pubs/exchangetradedfunds.htm",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "frag_fin_pboc_ops_data_01",
+  "domain": "economy",
+  "tags": [
+    "pboc",
+    "china",
+    "currency",
+    "monetary_policy",
+    "latest_data"
+  ],
+  "content": "2023-2024 saw multiple RRR cuts totaling 100bps to support property sector. PBOC balance sheet expanded to $6.2T. Yuan fixed near 7.1-7.2 per USD despite pressure, using state bank flows to stabilize currency.",
+  "source": "government_source",
+  "source_url": "http://www.pbc.gov.cn/english/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.8623999999999999,
+  "compatible_with": [
+    "frag_fin_pboc_ops_def_01"
+  ],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

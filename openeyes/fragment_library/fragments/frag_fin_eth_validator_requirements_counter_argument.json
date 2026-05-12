@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_eth_validator_requirements_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "ethereum"
+  ],
+  "content": "32 ETH requirement (~$100k+) excludes retail participants. Solo staking demands technical expertise and 24/7 reliability. Staking pools enable smaller amounts but introduce counterparty risk.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

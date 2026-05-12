@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_liquidity_crisis_counter_001",
+  "domain": "economy",
+  "tags": [
+    "risk_management",
+    "var",
+    "correlation",
+    "volatility",
+    "latest_data"
+  ],
+  "content": "Liquidity is illusory until tested; apparent liquidity vanishes precisely when needed. Post-2008 regulations improved bank resilience but may have pushed risks to shadow banking. ETF liquidity dependent on underlying asset liquidity, creating false sense of security. Market making consolidation increases fragility if key players withdraw. Central bank intervention creates moral hazard, encouraging excessive risk-taking with expectation of bailouts.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/marketstructure/research/liquidity_stress_testing.pdf",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

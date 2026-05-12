@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0464",
+  "domain": "healthcare",
+  "tags": [
+    "spinal-cord-injury",
+    "methylprednisolone",
+    "surgical-decompression",
+    "treatment-protocol",
+    "rehabilitation"
+  ],
+  "content": "SCI management begins with immobilization (cervical collar, log-roll precautions) and ABCs. High-dose methylprednisolone (30mg/kg bolus then 5.4mg/kg/hr \u00d7 23 hours) within 8 hours is controversial\u2014NASCIS trials showed modest benefit but risks (infection, hyperglycemia); not standard in many centers. Early surgical decompression (<24 hours) recommended for compressive lesions, unstable fractures. Hemodynamic support: maintain MAP 85-90 mmHg for 5-7 days to optimize cord perfusion (vasopressors if needed). DVT prophylaxis critical (high risk): LMWH preferred, IVC filter if anticoagulation contraindicated. Bladder management: indwelling catheter acutely, transition to intermittent catheterization. Bowel program: stool softeners, stimulants, digital stimulation. Spasticity management: baclofen (oral or intrathecal pump), tizanidine, botulinum toxin, phenol blocks. Neuropathic pain: gabapentin, pregabalin, amitriptyline. Rehabilitation: intensive multidisciplinary program focusing on mobility (wheelchair skills, bracing, FES), ADLs, vocational training, psychological support. Complications: autonomic dysreflexia (T6 and above\u2014noxious stimulus causes severe hypertension, treat by removing stimulus), pressure ulcers, UTIs, respiratory complications, heterotopic ossification, osteoporosis.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

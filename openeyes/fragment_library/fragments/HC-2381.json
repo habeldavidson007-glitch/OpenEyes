@@ -1,0 +1,29 @@
+{
+  "id": "HC-2381",
+  "domain": "healthcare",
+  "tags": [
+    "antimicrobial stewardship",
+    "AMS",
+    "antibiotic optimization",
+    "resistance prevention"
+  ],
+  "content": "Antimicrobial stewardship (AMS) refers to coordinated interventions promoting appropriate antimicrobial use: right drug, dose, duration, route. Goals: optimize clinical outcomes, minimize unintended consequences (toxicity, C. difficile, resistance selection), preserve antimicrobial effectiveness. CDC Core Elements for hospitals: leadership commitment, accountability (physician leader), pharmacy expertise, action (at least one recommended intervention like prospective audit/feedback or formulary restriction), tracking (antibiotic use and resistance), reporting (regular feedback to prescribers), education. Stewardship applies beyond antibiotics to antifungals, antivirals, antiparasitics. Drivers of inappropriate use: diagnostic uncertainty, patient expectations, time pressure, fear of treatment failure, habit. Resistance is a collective action problem - individual prescribing affects community/ecosystem.",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

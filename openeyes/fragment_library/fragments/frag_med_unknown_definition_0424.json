@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_definition_0424",
+  "domain": "healthcare",
+  "tags": [
+    "diabetes",
+    "autoimmune",
+    "beta-cell destruction",
+    "insulin deficiency"
+  ],
+  "content": "Type 1 diabetes mellitus (T1DM) is an autoimmune disease characterized by T-cell mediated destruction of pancreatic beta cells, resulting in absolute insulin deficiency. Accounts for 5-10% of diabetes cases. Pathogenesis involves genetic susceptibility (HLA-DR3/DR4 haplotypes) combined with environmental triggers (viral infections, early diet, microbiome). Autoantibodies present: GAD65, IA-2, ZnT8, insulin autoantibodies. Onset typically in childhood/adolescence but can occur at any age (LADA - latent autoimmune diabetes in adults). Classic presentation: polyuria, polydipsia, weight loss, diabetic ketoacidosis (DKA). Requires lifelong exogenous insulin therapy. Risk of associated autoimmune conditions: thyroid disease, celiac disease, Addison's disease.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985567/",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

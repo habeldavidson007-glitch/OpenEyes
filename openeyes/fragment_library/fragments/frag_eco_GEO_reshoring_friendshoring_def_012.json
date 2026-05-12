@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_reshoring_friendshoring_def_012",
+  "domain": "economy",
+  "tags": [
+    "reshoring",
+    "friendshoring",
+    "supply_chain",
+    "definition"
+  ],
+  "content": "Reshoring vs friendshoring: Reshoring brings production back to home country. Friendshoring relocates to politically aligned nations. Drivers: supply chain resilience, geopolitical risk, ESG concerns. IMF estimates friendshoring could reduce long-term output by 0.2-7% depending on scenario.",
+  "source": "imf_working_paper",
+  "source_url": "https://www.imf.org/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.94,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

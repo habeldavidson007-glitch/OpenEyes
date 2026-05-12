@@ -1,0 +1,30 @@
+{
+  "id": "REG-009",
+  "domain": "economy",
+  "tags": [
+    "finra",
+    "arbitration",
+    "investor_protection",
+    "dispute_resolution",
+    "broker_dealer"
+  ],
+  "content": "FINRA arbitration is mandatory forum for most investor-broker disputes due to pre-disposition arbitration clauses in customer agreements. Process: (1) Claim filed with FINRA Dispute Resolution Services, (2) Arbitrators selected from roster (public/non-public), (3) Hearing conducted similar to trial but less formal, (4) Decision (award) issued within 30 days of hearing close. Panels typically 3 arbitrators for claims >$100K, single arbitrator otherwise. Investor implications: (1) Waiver of right to jury trial/class action, (2) Limited discovery compared to litigation, (3) No appeal except narrow grounds (corruption, bias, exceeding powers), (4) Generally faster/less expensive than litigation. Statistics: ~2,500-3,000 cases annually, median award ~$30K, investors win ~40-45% of cases going to hearing.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

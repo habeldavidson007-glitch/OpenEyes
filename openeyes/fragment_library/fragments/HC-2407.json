@@ -1,0 +1,29 @@
+{
+  "id": "HC-2407",
+  "domain": "healthcare",
+  "tags": [
+    "cardiac rehabilitation",
+    "barriers",
+    "utilization",
+    "alternative models"
+  ],
+  "content": "CR utilization and barriers: despite Class I recommendations, only 20-30% of eligible patients enroll in US; even lower globally. Barriers: patient-level (lack of awareness, transportation, time, cost, comorbidities, depression), provider-level (failure to refer, underestimate benefit), system-level (limited programs, insurance coverage gaps, geographic access). Women, elderly, racial/ethnic minorities, rural residents less likely to participate. Alternative delivery models to improve access: home-based CR (structured program with remote monitoring), telehealth/virtual CR (video conferencing, mobile apps, wearable devices), hybrid models. Meta-analyses show home-based and center-based CR have similar outcomes for functional capacity, risk factors, quality of life. Hybrid models combine initial supervised sessions with home maintenance. Mobile health technologies enable remote monitoring of HR, activity, symptoms. Insurance coverage expanding (CMS covers home-based CR since 2020). Quality metrics: enrollment rates, completion rates (\u226536 sessions associated with better outcomes), achievement of risk factor goals, patient-reported outcomes.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33106097/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2020,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "review",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

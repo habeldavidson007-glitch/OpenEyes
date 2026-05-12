@@ -1,0 +1,28 @@
+{
+  "id": "MH-2231_delirium_definition",
+  "domain": "healthcare",
+  "tags": [
+    "delirium",
+    "mental_health",
+    "definition"
+  ],
+  "content": "Delirium - DSM-5-TR criteria, clinical features, differential diagnosis",
+  "source": "NIMH",
+  "source_url": "https://www.nimh.nih.gov/research",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

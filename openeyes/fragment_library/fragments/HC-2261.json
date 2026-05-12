@@ -1,0 +1,29 @@
+{
+  "id": "HC-2261",
+  "domain": "healthcare",
+  "tags": [
+    "dose_conversion",
+    "food_effects",
+    "formulation_selection",
+    "therapeutic_monitoring"
+  ],
+  "content": "Clinical implications of bioavailability guide route selection and dose adjustment. When switching from IV to oral: calculate oral dose = IV dose / F. For drugs with low/variable bioavailability (e.g., warfarin F~100%, digoxin F~70%, cyclosporine F~30%), therapeutic monitoring is essential. Food effects: high-fat meals increase bioavailability of lipophilic drugs (griseofulvin, atovaquone); decrease it for others (ampicillin, alendronate). Acid suppression reduces absorption of weak bases requiring acidic environment (ketoconazole, atazanavir). Extended-release formulations maintain steady concentrations but have lower peak levels. Sublingual nitroglycerin bypasses first-pass for rapid onset in angina.",
+  "source": "nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

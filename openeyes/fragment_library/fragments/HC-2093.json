@@ -1,0 +1,28 @@
+{
+  "id": "HC-2093",
+  "domain": "healthcare",
+  "tags": [
+    "spillover prevention",
+    "zoonotic surveillance",
+    "pandemic prevention"
+  ],
+  "content": "Spillover prevention strategies: (1) Wildlife trade regulation\u2014ban high-risk species markets, enforce biosecurity; (2) Land use planning\u2014maintain buffer zones between wildlife and human settlements; (3) Agricultural biosecurity\u2014separate livestock from wildlife, vaccinate domestic animals; (4) Occupational protection\u2014PPE for farmers, veterinarians, wildlife workers; (5) Food safety\u2014cook meat thoroughly, pasteurize dairy; (6) Vector control\u2014reduce mosquito/tick habitats; (7) Surveillance at human-animal interface\u2014test wildlife, livestock, and high-risk human populations. Early detection requires integrated animal-human surveillance systems with rapid information sharing.",
+  "source": "FAO-OIE-WHO Tripartite guidelines, Lancet Planetary Health",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

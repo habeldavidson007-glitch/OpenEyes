@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_soft_hard_landing_counter_022",
+  "domain": "economy",
+  "tags": [
+    "recession",
+    "economic_growth",
+    "inflation",
+    "fed",
+    "landing",
+    "counter_argument"
+  ],
+  "content": "The soft/hard landing dichotomy oversimplifies. Outcomes exist on a spectrum\u2014mild recessions with limited job losses differ from severe downturns. Success criteria are ambiguous\u2014is avoiding technical recession enough, or should employment also remain near potential? Inflation overshoot/undershoot tradeoffs matter. Some argue soft landings require favorable supply-side developments (energy prices, supply chains) beyond Fed control. The 1994-95 'soft landing' was followed by the tech boom, making it unclear how much was skill versus luck. Real-time assessment is impossible\u2014what looks like soft landing initially may later be revised. Labor market scarring can occur even without technical recession. International spillovers from U.S. tightening can cause hard landings abroad even if domestic outcome is soft.",
+  "source": "National Bureau of Economic Research",
+  "source_url": "https://www.nber.org/research/business-cycle-dating",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

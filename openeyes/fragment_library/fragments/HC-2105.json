@@ -1,0 +1,29 @@
+{
+  "id": "HC-2105",
+  "domain": "healthcare",
+  "tags": [
+    "preventive care",
+    "implementation",
+    "barriers",
+    "strategies"
+  ],
+  "content": "Increasing preventive care utilization requires multi-level strategies: (1) System-level - electronic health record reminders, standing orders enabling nurses to vaccinate without physician order, patient registries tracking due services; (2) Provider-level - audit/feedback on screening rates, default ordering for eligible patients; (3) Patient-level - outreach calls/texts, reducing out-of-pocket costs (ACA eliminated cost-sharing for USPSTF A/B recommendations), navigation assistance; (4) Community-level - pharmacy-based vaccination, mobile screening units, workplace wellness programs. Multifaceted interventions increase colorectal cancer screening by 20-30 percentage points versus single strategies (10-15 points).",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

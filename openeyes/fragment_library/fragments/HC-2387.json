@@ -1,0 +1,29 @@
+{
+  "id": "HC-2387",
+  "domain": "healthcare",
+  "tags": [
+    "vector-borne disease",
+    "Lyme",
+    "malaria",
+    "dengue"
+  ],
+  "content": "Vector-borne diseases transmitted by arthropods cause significant global morbidity. Lyme disease (Borrelia burgdorferi): tick-borne (Ixodes), endemic to Northeast/Midwest US, Europe; stages: early localized (erythema migrans 'bull's-eye rash'), early disseminated (multiple EM lesions, facial palsy, meningitis, carditis), late (arthritis, encephalopathy). Malaria (Plasmodium species): mosquito-borne (Anopheles); P. falciparum most severe (cerebral malaria, organ failure); P. vivax/ovale have hypnozoites causing relapses. Dengue (flavivirus): Aedes mosquito; spectrum from mild fever to severe dengue (plasma leakage, hemorrhage, organ impairment); secondary infection with different serotype increases severe disease risk via antibody-dependent enhancement. Other: Zika (microcephaly in pregnancy), Chikungunya (severe arthralgia), West Nile (neuroinvasive disease).",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

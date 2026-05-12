@@ -1,0 +1,29 @@
+{
+  "id": "frag_ph_food_deserts_diagnostic_criteria_0087",
+  "domain": "healthcare",
+  "tags": [
+    "measurement",
+    "geographic_information_systems",
+    "food_environment",
+    "assessment"
+  ],
+  "content": "Assessment of food desert status uses multiple tools: (1) USDA Food Access Research Atlas provides census tract-level data on low-income/low-access designation with various distance thresholds (1/2, 1, 10, 20 miles); (2) CDC's Modified Retail Food Environment Index (mRFEI) calculates percentage of healthy food retailers within census tracts; (3) Ground-truthing through community audits (NEMS-S, Nutrition Environment Measures Survey for Stores) assessing actual food availability, quality, and pricing; (4) Transportation access measures including vehicle ownership rates, public transit routes and frequency; (5) Economic access indicators including food price indices, SNAP redemption patterns. Emerging approaches incorporate online food ordering access, perceived safety affecting shopping patterns, and time burden of food acquisition. Limitations include outdated retail data, failure to capture informal food sources, and not accounting for individual mobility patterns.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hc_med_onc_it_diag_001",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "immunotherapy",
+    "biomarkers",
+    "immune-related adverse events",
+    "patient selection"
+  ],
+  "content": "Biomarker testing guides immunotherapy use. PD-L1 expression measured by IHC (22C3, 28-8, SP142 assays); thresholds vary by cancer (\u22651%, \u226550%). MSI-H/dMMR detected by PCR or IHC for mismatch repair proteins; predicts response across tumor types. Tumor mutational burden (TMB) \u226510 mutations/Mb correlates with response (FDA-approved for pembrolizumab). Gene expression profiling (inflamed vs cold tumors) investigational. Immune-related adverse events (irAEs) require monitoring: dermatitis (most common), colitis (diarrhea), hepatitis (elevated LFTs), pneumonitis (cough, dyspnea), endocrinopathies (thyroiditis, hypophysitis, adrenal insufficiency). Grading per CTCAE; grade 2 holds treatment + steroids; grade 3-4 permanently discontinues most agents + high-dose steroids (prednisone 1-2 mg/kg). Baseline labs: CBC, CMP, TSH, cortisol; monitor every 3-6 weeks. Contraindications: active autoimmune disease requiring immunosuppression, organ transplant recipients.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35891234/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

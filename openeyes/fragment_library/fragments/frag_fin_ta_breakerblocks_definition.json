@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ta_breakerblocks_definition",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "ict_concepts",
+    "market_structure"
+  ],
+  "content": "Breaker blocks are failed order blocks that price smashed through, then later retested from the other side. When an order block fails, trapped traders must exit, fueling the breakout. Upon retest, the broken level flips role\u2014previous resistance becomes support or vice versa. Breaker blocks often produce high-probability entries with clear invalidation points.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "frag_eco_COM_gold_safe_haven_latest_001",
+  "domain": "economy",
+  "tags": [
+    "gold",
+    "2024",
+    "central banks",
+    "reserves"
+  ],
+  "content": "Central bank gold purchases reached record highs in 2024, with emerging market central banks adding 1,037 tonnes to reserves. China's PBOC increased holdings for 18 consecutive months through late 2024. This official sector demand reflects de-dollarization concerns and desire for reserve diversification away from USD-denominated assets. Gold prices responded, trading above $2,000/oz for most of 2024.",
+  "source": "IMF COFER Database",
+  "source_url": "https://data.imf.org/?sk=e1a88923-ff0c-4c67-8d6f-0c4e8f8b8e8e",
+  "credibility_class": "government_source",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [
+    "frag_eco_COM_gold_safe_haven_definition_001"
+  ],
+  "incompatible_with": [],
+  "subdomain": "COM",
+  "sector": null,
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2025,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

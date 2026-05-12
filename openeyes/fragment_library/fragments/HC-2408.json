@@ -1,0 +1,29 @@
+{
+  "id": "HC-2408",
+  "domain": "healthcare",
+  "tags": [
+    "statins",
+    "mechanism of action",
+    "HMG-CoA reductase",
+    "lipid lowering"
+  ],
+  "content": "Statins are HMG-CoA reductase inhibitors that block cholesterol synthesis rate-limiting step in liver. Mechanism: competitive inhibition of HMG-CoA reductase reduces intracellular cholesterol, upregulating LDL receptors, increasing hepatic LDL clearance, lowering circulating LDL-C by 30-60% depending on potency and dose. Pleiotropic effects: improve endothelial function, stabilize atherosclerotic plaques, reduce inflammation (lower hs-CRP), decrease thrombosis risk. Statin intensity: high-intensity (atorvastatin 40-80mg, rosuvastatin 20-40mg) lowers LDL \u226550%; moderate-intensity (atorvastatin 10-20mg, rosuvastatin 5-10mg, simvastatin 20-40mg, pravastatin 40-80mg) lowers 30-49%; low-intensity lowers <30%. Rosuvastatin and atorvastatin most potent (longest half-lives). Lipophilic statins (simvastatin, lovastatin, atorvastatin) may have more muscle penetration; hydrophilic (pravastatin, rosuvastatin) potentially fewer drug interactions.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33722022/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2021,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

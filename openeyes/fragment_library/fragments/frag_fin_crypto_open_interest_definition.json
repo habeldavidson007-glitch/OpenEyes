@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_crypto_open_interest_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "derivatives",
+    "market_structure"
+  ],
+  "content": "Open interest measures outstanding derivative contracts not yet settled. Rising OI with rising prices indicates new long positions entering\u2014bullish but potentially overleveraged. Declining OI suggests position closing. OI spikes often precede volatility as liquidations cascade when price moves against crowded positions.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

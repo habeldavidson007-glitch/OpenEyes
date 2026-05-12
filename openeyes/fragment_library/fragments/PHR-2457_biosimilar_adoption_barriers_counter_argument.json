@@ -1,0 +1,28 @@
+{
+  "id": "PHR-2457_biosimilar_adoption_barriers_counter_argument",
+  "domain": "healthcare",
+  "tags": [
+    "biosimilar adoption barriers",
+    "pharmaceuticals",
+    "counter_argument"
+  ],
+  "content": "Biosimilar Adoption Barriers - competing perspectives, implementation challenges, critical analysis",
+  "source": "FDA",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

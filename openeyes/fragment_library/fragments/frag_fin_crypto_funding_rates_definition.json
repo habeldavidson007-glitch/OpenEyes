@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_crypto_funding_rates_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "derivatives",
+    "market_structure"
+  ],
+  "content": "Funding rates in perpetual futures keep contract prices anchored to spot. Long positions pay shorts when funding is positive (bullish sentiment), shorts pay longs when negative. Extreme rates signal crowded positioning. Annualized rates exceeding 50% often precede corrections as leveraged traders get squeezed.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "HC-2223",
+  "domain": "healthcare",
+  "tags": [
+    "phr"
+  ],
+  "content": "Legal and ethical considerations: Off-label prescribing is protected under the practice of medicine doctrine but must meet standard of care. Malpractice liability may arise if harm occurs and evidence supporting the use was inadequate. Key factors in liability cases: availability of alternative approved treatments, quality of supporting evidence, informed consent documentation, and adherence to professional guidelines. The Affordable Care Act requires Medicare Part D to cover off-label cancer uses if supported by specific compendia. Manufacturers face False Claims Act liability if they cause off-label claims to be submitted to federal programs through illegal promotion. Physicians should stay current with emerging evidence as off-label uses may become standard of care or gain FDA approval over time.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

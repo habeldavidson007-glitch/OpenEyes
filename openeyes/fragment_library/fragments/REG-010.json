@@ -1,0 +1,30 @@
+{
+  "id": "REG-010",
+  "domain": "economy",
+  "tags": [
+    "reg_bi",
+    "broker_dealer",
+    "fiduciary",
+    "sec",
+    "investor_protection"
+  ],
+  "content": "Regulation Best Interest (Reg BI) adopted June 2019 requires broker-dealers to act in retail customers' best interest when making recommendations. Four components: (1) Disclosure obligation\u2014provide Form CRS and disclose conflicts, (2) Care obligation\u2014reasonable diligence, understanding, basis for recommendation, (3) Conflict of interest obligation\u2014identify/mitigate conflicts, (4) Compliance obligation\u2014policies/procedures. Differs from fiduciary standard (RIA standard under Advisers Act): (1) Triggered only at recommendation point vs. ongoing duty, (2) Allows compensation-based conflicts if mitigated/disclosed vs. elimination required, (3) No duty to monitor vs. ongoing monitoring, (4) Suitability-plus vs. loyalty/care prudence. Criticism: creates dual standard confusion; industry view: preserves choice between commission and fee models.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

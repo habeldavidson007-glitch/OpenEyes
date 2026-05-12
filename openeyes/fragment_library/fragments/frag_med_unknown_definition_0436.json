@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0436",
+  "domain": "healthcare",
+  "tags": [
+    "sleep-disorders",
+    "sleep-apnea",
+    "narcolepsy",
+    "restless-legs",
+    "insomnia"
+  ],
+  "content": "Sleep disorders affect ~50 million Americans. Obstructive sleep apnea (OSA): repetitive upper airway collapse during sleep causing apneas/hypopneas, daytime sleepiness, cardiovascular risk. Risk factors: obesity, male sex, age, craniofacial abnormalities. Apnea-hypopnea index (AHI) severity: mild 5-15, moderate 15-30, severe >30 events/hour. Central sleep apnea: respiratory drive failure (heart failure, opioid use, stroke). Narcolepsy: chronic disorder of sleep-wake regulation with excessive daytime sleepiness plus cataplexy (type 1, orexin/hypocretin deficiency) or without cataplexy (type 2). Other features: sleep paralysis, hypnagogic hallucinations, disrupted nighttime sleep. Restless legs syndrome (RLS/Willis-Ekbom disease): urge to move legs with uncomfortable sensations, worse at rest/evening, relieved by movement; associated with iron deficiency, pregnancy, renal failure, neuropathy. Insomnia: difficulty initiating/maintaining sleep or non-restorative sleep \u22653 nights/week for \u22653 months with daytime impairment. Circadian rhythm disorders: delayed sleep phase, shift work disorder, jet lag.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

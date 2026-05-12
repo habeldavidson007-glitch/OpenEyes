@@ -1,0 +1,27 @@
+{
+  "id": "FIN-175",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "crypto trading"
+  ],
+  "content": "Cryptocurrency trading differs from traditional markets in 24/7 operation, fragmented liquidity across dozens of exchanges, and higher volatility. Arbitrage opportunities exist due to price discrepancies between exchanges but require fast execution and capital on multiple venues. Funding rate arbitrage in perpetual futures provides market-neutral yield.",
+  "source": "Crypto Trading: Market Structure and Strategies",
+  "source_url": "https://example.com/FIN-175",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

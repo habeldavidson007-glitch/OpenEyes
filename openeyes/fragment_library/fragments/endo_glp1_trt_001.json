@@ -1,0 +1,30 @@
+{
+  "id": "endo_glp1_trt_001",
+  "domain": "healthcare",
+  "tags": [
+    "GLP-1",
+    "semaglutide",
+    "liraglutide",
+    "dosing",
+    "side effects"
+  ],
+  "content": "Indications: T2DM (all agents); obesity (liraglutide 3mg, semaglutide 2.4mg); ASCVD risk reduction (liraglutide, semaglutide, dulaglutide proven). Dosing requires gradual titration to minimize GI side effects: liraglutide start 0.6mg daily, increase weekly to 1.2-1.8mg (diabetes) or 3mg (obesity); semaglutide SC start 0.25mg weekly, increase monthly to 1-2mg (diabetes) or 2.4mg (obesity); dulaglutide start 0.75mg weekly, titrate to 1.5-4.5mg. Common adverse effects: nausea (most common), vomiting, diarrhea, constipation - usually transient. Contraindications: personal/family history of medullary thyroid carcinoma or MEN2 (rodent C-cell tumor risk); caution with pancreatitis history. Monitor for gallbladder disease. Renal function monitoring advised. Avoid combining with DPP-4 inhibitors (redundant mechanism). Can combine with basal insulin; may allow insulin dose reduction.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/34941889/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

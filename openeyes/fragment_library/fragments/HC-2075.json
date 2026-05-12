@@ -1,0 +1,28 @@
+{
+  "id": "HC-2075",
+  "domain": "healthcare",
+  "tags": [
+    "pandemic response",
+    "preparedness planning",
+    "public health capacity building"
+  ],
+  "content": "Pandemic preparedness actions: (1) Surveillance\u2014strengthen event-based and indicator-based systems, genomic sequencing networks; (2) Laboratory\u2014expand PCR capacity, establish sentinel testing sites, ensure reagent supply chains; (3) Workforce\u2014train epidemiologists, laboratorians, contact tracers, maintain surge rosters; (4) Healthcare capacity\u2014stockpile PPE, ventilators, therapeutics; plan facility expansion; (5) Vaccines/therapeutics\u2014advance purchase agreements, technology transfer platforms, clinical trial networks; (6) Risk communication\u2014pre-drafted messages, social media monitoring, combat misinformation; (7) Coordination\u2014incident management systems, multi-sectoral task forces, international collaboration. Regular exercises test and refine plans.",
+  "source": "WHO Pandemic Influenza Preparedness Framework, CDC Public Health Emergency Preparedness capabilities",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

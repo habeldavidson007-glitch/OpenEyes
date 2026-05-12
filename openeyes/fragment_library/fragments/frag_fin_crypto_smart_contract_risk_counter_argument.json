@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_crypto_smart_contract_risk_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "risk_management",
+    "defi"
+  ],
+  "content": "Multiple audits failed to prevent major exploits including Wormhole ($320M), Nomad ($190M), and Euler ($200M). Audit quality varies widely; some firms rubber-stamp code. Time-tested protocols aren't immune\u2014longstanding code can harbor dormant vulnerabilities. Insurance coverage remains limited and expensive.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://bitcoin.org/en/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

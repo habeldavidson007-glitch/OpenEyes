@@ -1,0 +1,29 @@
+{
+  "id": "HC-2138",
+  "domain": "healthcare",
+  "tags": [
+    "primary care",
+    "strengthening",
+    "team-based care",
+    "medical home"
+  ],
+  "content": "Primary care strengthening strategies include: (1) Patient-Centered Medical Home (PCMH) model - team-based care with care coordinators, extended hours, care management for complex patients; (2) Panel management - proactive outreach for preventive services and chronic disease monitoring; (3) Integrated behavioral health - co-located mental health providers addressing depression, anxiety, substance use; (4) Community health workers - extending reach for underserved populations; (5) Payment reform - per-member-per-month care management fees alongside visit-based payments. Studies show PCMH implementation reduces ED visits by 15-20%, hospitalizations by 10-15%, and improves preventive service delivery.",
+  "source": "ahrq.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

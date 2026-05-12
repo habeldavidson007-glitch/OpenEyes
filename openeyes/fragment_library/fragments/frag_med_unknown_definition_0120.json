@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_definition_0120",
+  "domain": "healthcare",
+  "tags": [
+    "Phase I trials",
+    "dose escalation",
+    "safety",
+    "first-in-human"
+  ],
+  "content": "Phase I success criteria include: acceptable safety profile with manageable adverse events, defined maximum tolerated dose or recommended Phase II dose (RP2D), predictable pharmacokinetics supporting intended dosing frequency, and no unexpected severe toxicities. Dose-limiting toxicity (DLT) is typically defined as Grade 3+ adverse event related to study drug occurring in \u226533% of subjects at a dose level. Oncology Phase I trials use different endpoints (objective response rate, disease control rate) since they enroll patients rather than healthy volunteers. Approximately 70% of drugs pass Phase I and advance to Phase II.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

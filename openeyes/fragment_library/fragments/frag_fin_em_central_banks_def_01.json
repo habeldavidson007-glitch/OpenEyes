@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_em_central_banks_def_01",
+  "domain": "economy",
+  "tags": [
+    "emerging_markets",
+    "central_bank",
+    "inflation",
+    "currency",
+    "definition",
+    "first_line"
+  ],
+  "content": "EM central banks often face 'impossible trinity': cannot simultaneously have free capital flow, fixed exchange rate, and independent monetary policy. When Fed hikes, EMs often must follow to prevent capital flight and currency collapse, importing recession.",
+  "source": "government_source",
+  "source_url": "https://www.imf.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

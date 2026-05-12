@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_market_structure_latest_data_03",
+  "domain": "economy",
+  "tags": [
+    "lower_lows",
+    "technical_analysis",
+    "higher_highs",
+    "latest_data",
+    "market_structure"
+  ],
+  "content": "The S&P 500 maintained its higher-high, higher-low structure throughout Q1 2024 despite periodic pullbacks. The breakdown in market structure in small caps during 2023 remained unrecovered through early 2024. Bitcoin's market structure shifted decisively bullish with the break of prior lower highs in Q1 2024. Market structure analysis combined with on-chain data provided enhanced signals in crypto markets.",
+  "source": "Educational Resource",
+  "source_url": "https://www.stockcharts.com/articles/market-structure-analysis-2024",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

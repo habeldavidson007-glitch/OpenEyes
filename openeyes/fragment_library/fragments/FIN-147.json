@@ -1,0 +1,29 @@
+{
+  "id": "FIN-147",
+  "domain": "economy",
+  "tags": [
+    "behavioral_finance",
+    "investor_psychology",
+    "market_anomalies",
+    "cognitive_bias"
+  ],
+  "content": "Behavioral finance studies how psychological biases cause investors to make irrational decisions, creating market anomalies. Key biases: overconfidence (trading too much), loss aversion (holding losers too long, selling winners too soon\u2014disposition effect), anchoring (fixating on irrelevant reference points), herding (following the crowd), and availability heuristic (overweighting recent events). Prospect Theory (Kahneman & Tversky) shows people feel losses more intensely than equivalent gains. These biases create predictable patterns: momentum, value premium, bubbles and crashes. Unlike EMH which assumes rational actors, behavioral finance recognizes systematic irrationality. However, arbitrage limits whether biases translate to persistent mispricing.",
+  "source": "Journal of Behavioral Finance",
+  "source_url": "https://www.tandfonline.com/journals/hbhf20",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": "2023",
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

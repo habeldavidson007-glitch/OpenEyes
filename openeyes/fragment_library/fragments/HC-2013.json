@@ -1,0 +1,30 @@
+{
+  "id": "HC-2013",
+  "domain": "healthcare",
+  "tags": [
+    "FBT",
+    "CBT-E",
+    "nutritional-rehabilitation",
+    "fluoxetine",
+    "lisdexamfetamine"
+  ],
+  "content": "Anorexia: nutritional rehabilitation is priority (medical monitoring for refeeding syndrome), Family-Based Treatment (FBT/Maudsley) first-line for adolescents, CBT-E (enhanced cognitive behavioral therapy) or MANTRA for adults. Weight restoration precedes psychological work. Bulimia/BED: CBT-E first-line, IPT alternative. SSRIs (fluoxetine high dose for bulimia) reduce binge/purge frequency. Lisdexamfetamine FDA-approved for moderate-severe BED. Medical monitoring essential (electrolytes, cardiac status, bone density). Higher levels of care (residential, inpatient) for severe cases. Multidisciplinary team approach (medical, nutritional, psychological) optimal. Relapse prevention critical.",
+  "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "neuro-tbi-tx",
+  "domain": "healthcare",
+  "tags": [
+    "traumatic-brain-injury",
+    "ICP-management",
+    "treatment-protocol",
+    "decompressive-craniectomy",
+    "rehabilitation"
+  ],
+  "content": "TBI management depends on severity. Mild TBI/concussion: cognitive and physical rest 24-48 hours, then gradual return to activity; avoid second impact before symptom resolution (second impact syndrome\u2014rare but catastrophic). Analgesics for headache (avoid opioids initially), antiemetics. Moderate-severe TBI: ABCs, cervical spine protection, avoid hypotension (SBP <90) and hypoxia (SpO2 <90%) which worsen outcomes. ICP management (target ICP <22 mmHg): head elevation 30\u00b0, sedation (propofol), osmotic therapy (mannitol 0.25-1g/kg or hypertonic saline 3-23.4%), CSF drainage via EVD, neuromuscular blockade. Decompressive craniectomy for refractory elevated ICP (RESCUEicp trial showed survival benefit but more vegetative state survivors). Seizure prophylaxis: levetiracetam or phenytoin \u00d7 7 days only (prevents early seizures, not late). Rehabilitation: early mobilization, PT/OT/speech therapy, cognitive rehabilitation. Chronic issues: spasticity (baclofen, botulinum toxin), post-traumatic headache, mood disorders, cognitive impairment, post-traumatic hypopituitarism (screen for GH, gonadotropin deficiency).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

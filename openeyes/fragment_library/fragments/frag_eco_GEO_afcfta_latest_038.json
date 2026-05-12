@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_afcfta_latest_038",
+  "domain": "economy",
+  "tags": [
+    "afcfta",
+    "progress",
+    "latest_data"
+  ],
+  "content": "AfCFTA progress 2024: 47 countries ratified. Guided Trade Initiative launched with 8 participating countries. Pan-African Payment Settlement System operational. Rules of origin agreed for 88% tariff lines. Free movement protocol slow ratification. Afreximbank $10B facility supporting implementation. Nigeria, South Africa key markets yet to fully engage.",
+  "source": "afreximbank",
+  "source_url": "https://www.afreximbank.com/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

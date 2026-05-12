@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_belt_road_latest_007",
+  "domain": "economy",
+  "tags": [
+    "belt_and_road",
+    "china",
+    "infrastructure",
+    "latest_data"
+  ],
+  "content": "BRI evolution 2024: Shift from megaprojects to 'small and beautiful' initiatives. Digital Silk Road gaining prominence. Green BRI commitments at COP28. Pakistan CPEC facing delays, cost overruns. Africa debt renegotiations ongoing. EU Global Gateway, US PGII positioned as alternatives.",
+  "source": "greenfi_development",
+  "source_url": "https://www.greenfin.dev/",
+  "credibility_class": "research_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.91,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

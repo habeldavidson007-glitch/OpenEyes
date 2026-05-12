@@ -1,0 +1,29 @@
+{
+  "id": "frag_ph_maternal_mortality_treatment_protocol_0080",
+  "domain": "healthcare",
+  "tags": [
+    "intervention",
+    "policy",
+    "health_equity",
+    "quality_improvement"
+  ],
+  "content": "Maternal mortality reduction strategies: (1) Clinical interventions\u2014active management of third stage of labor (oxytocin) preventing postpartum hemorrhage, magnesium sulfate for preeclampsia/eclampsia, antenatal corticosteroids for preterm birth, antibiotics for prelabor rupture of membranes; (2) Health system strengthening\u2014skilled birth attendance, emergency obstetric care availability, blood transfusion services, referral systems, maternal death surveillance and response; (3) Policy approaches\u2014Medicaid expansion improving insurance coverage, paid parental leave, doula/midwifery coverage, implicit bias training accountability; (4) Community interventions\u2014community health workers, group prenatal care, home visiting programs, transportation assistance; (5) Postpartum care extension\u2014continuous Medicaid coverage through 12 months postpartum, early postpartum visits, mental health screening; (6) Addressing disparities\u2014community-based participatory approaches, diversifying workforce, addressing social needs. Maternal Mortality Review Committees identify prevention opportunities. Bundle approaches (AIM Initiative) standardize evidence-based practices.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

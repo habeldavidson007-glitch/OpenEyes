@@ -1,0 +1,30 @@
+{
+  "id": "neuro-myasthenia-dx",
+  "domain": "healthcare",
+  "tags": [
+    "myasthenia-gravis",
+    "diagnosis",
+    "ice-pack-test",
+    "SFEMG",
+    "antibody"
+  ],
+  "content": "MG diagnosis requires clinical features plus confirmatory testing. Bedside tests: ice pack test (ptosis improvement after 2 minutes of ice application\u2014sensitive for ocular MG), sustained upgaze test (induces/worsens ptosis). Serology: AChR antibodies (binding, blocking, modulating) positive in 85% generalized, 50% ocular MG; MuSK antibodies in AChR-negative patients (more bulbar/respiratory involvement); LRP4, agrin antibodies in double-seronegative cases. Electrodiagnostics: repetitive nerve stimulation (RNS) shows >10% decrement at 2-3Hz; single-fiber EMG (SFEMG) shows increased jitter\u2014most sensitive test (>95%) but non-specific. Chest CT/MRI to evaluate thymus (thymoma vs hyperplasia). Differential diagnosis: Lambert-Eaton myasthenic syndrome (LEMS\u2014proximal weakness improves with use, associated with SCLC, anti-VGCC antibodies, incremental RNS response), botulism (descending paralysis, pupillary involvement), congenital myasthenic syndromes (genetic, childhood onset), mitochondrial myopathies, oculopharyngeal muscular dystrophy. MGFA clinical classification grades severity (Class I: ocular only; Class II-IV: varying generalized weakness; Class V: intubation). QMG score quantifies severity for monitoring.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

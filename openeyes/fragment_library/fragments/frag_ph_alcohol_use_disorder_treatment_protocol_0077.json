@@ -1,0 +1,29 @@
+{
+  "id": "frag_ph_alcohol_use_disorder_treatment_protocol_0077",
+  "domain": "healthcare",
+  "tags": [
+    "treatment",
+    "pharmacotherapy",
+    "harm_reduction",
+    "policy"
+  ],
+  "content": "AUD treatment follows stepped-care approach: (1) Screening and brief intervention (SBIRT)\u2014AUDIT-C screening, motivational interviewing for risky drinkers; (2) Outpatient treatment\u2014mutual help groups (AA, SMART Recovery), counseling (CBT, MET, 12-step facilitation); (3) Pharmacotherapy\u2014naltrexone (reduces craving/reward), acamprosate (maintains abstinence), disulfiram (aversion therapy), off-label options (topiramate, gabapentin); (4) Medically managed withdrawal\u2014for severe dependence with CIWA-Ar monitoring, benzodiazepines for seizure prevention, thiamine supplementation; (5) Residential/inpatient treatment\u2014for severe AUD or failed outpatient attempts; (6) Recovery support\u2014peer recovery coaches, sober living environments, continuing care. Population-level interventions: taxation, minimum unit pricing, availability restrictions, marketing regulations, drunk driving laws. Harm reduction strategies include moderate drinking goals for some patients.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

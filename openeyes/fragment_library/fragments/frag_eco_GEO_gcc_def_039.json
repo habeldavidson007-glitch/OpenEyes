@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_gcc_def_039",
+  "domain": "economy",
+  "tags": [
+    "gcc",
+    "gulf",
+    "oil",
+    "regional_bloc",
+    "definition"
+  ],
+  "content": "Gulf Cooperation Council (GCC): 6 members (Saudi Arabia, UAE, Kuwait, Qatar, Bahrain, Oman). 60M people, $2T GDP. Established 1981. Customs union 2003, common market 2008. Currency union stalled (Qatar, Oman out). Oil wealth recycling via sovereign wealth funds ($3T+ combined). Vision 2030 diversification strategies across members.",
+  "source": "gcc_secretariat",
+  "source_url": "https://www.gcc-sg.org/",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

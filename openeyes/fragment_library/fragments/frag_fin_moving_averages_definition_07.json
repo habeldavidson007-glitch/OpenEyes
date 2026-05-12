@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_moving_averages_definition_07",
+  "domain": "economy",
+  "tags": [
+    "moving_average",
+    "death_cross",
+    "technical_analysis",
+    "moving_averages",
+    "golden_cross",
+    "definition"
+  ],
+  "content": "Moving averages smooth price data to identify trends by filtering out short-term fluctuations. Simple Moving Average (SMA) calculates the arithmetic mean over N periods. Exponential Moving Average (EMA) weights recent prices more heavily, making it more responsive. The Golden Cross (50-day crossing above 200-day) signals bullish momentum; Death Cross (opposite) signals bearish. Moving averages also act as dynamic support/resistance levels.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/m/movingaverage.asp",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

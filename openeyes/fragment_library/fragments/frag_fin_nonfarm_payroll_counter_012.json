@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_nonfarm_payroll_counter_012",
+  "domain": "economy",
+  "tags": [
+    "nonfarm_payroll",
+    "employment",
+    "labor_market",
+    "jobs_report",
+    "counter_argument"
+  ],
+  "content": "Nonfarm payrolls has limitations. It counts jobs, not workers\u2014one person holding two jobs is counted twice. It excludes self-employed workers, unpaid family workers, and agricultural workers. The establishment survey cannot detect new businesses until they appear in the sampling frame, potentially missing job creation from startups. Large revisions can significantly alter the picture. The survey misses the gig economy and informal work arrangements. During turning points, preliminary estimates have sometimes been substantially revised. The household survey (which produces the unemployment rate) and establishment survey (payrolls) can diverge. Some argue the focus on headcount ignores underemployment and labor force participation trends.",
+  "source": "Bureau of Labor Statistics Technical Documentation",
+  "source_url": "https://www.bls.gov/web/empsit/cestn.htm",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

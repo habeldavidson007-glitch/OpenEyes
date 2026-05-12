@@ -1,0 +1,30 @@
+{
+  "id": "HC-2172",
+  "domain": "healthcare",
+  "tags": [
+    "epidemiology",
+    "incidence",
+    "prevalence",
+    "measurement error",
+    "bias"
+  ],
+  "content": "Accurate measurement of incidence requires: (1) clear case definition with standardized diagnostic criteria; (2) defined population at risk (excluding those with prior disease); (3) complete case ascertainment through surveillance systems or active case finding; (4) accurate denominator data (person-time at risk). Common biases include: under-ascertainment (missing cases), especially for asymptomatic conditions; changes in diagnostic criteria over time artificially altering incidence trends; migration affecting denominator accuracy. Prevalence measurement requires: (1) representative sampling or complete population enumeration; (2) valid diagnostic tools applied consistently; (3) timing specification (point prevalence vs period prevalence). Biases include: survival bias (prevalent cases are survivors, not incident cases); recall bias in self-reported surveys; non-response bias if diseased individuals are less likely to participate. Period prevalence (cases existing during a time interval) exceeds point prevalence and approximates incidence for short-duration diseases. Administrative data (ICD codes) often underestimate true incidence/prevalence due to coding errors and incomplete capture of undiagnosed cases.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/29405236/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

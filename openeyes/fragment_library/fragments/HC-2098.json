@@ -1,0 +1,29 @@
+{
+  "id": "HC-2098",
+  "domain": "healthcare",
+  "tags": [
+    "health technology assessment",
+    "QALY",
+    "cost-effectiveness",
+    "NICE"
+  ],
+  "content": "Health Technology Assessment (HTA) is a systematic evaluation of properties, effects, and impacts of health technologies (drugs, devices, procedures) to inform policy decisions. The UK's NICE (National Institute for Health and Care Excellence) pioneered using Quality-Adjusted Life Years (QALYs) to measure cost-effectiveness. A QALY combines quantity and quality of life, where 1 QALY equals one year in perfect health. NICE typically uses a threshold of \u00a320,000-30,000 per QALY gained for recommending treatments. HTA considers clinical effectiveness, cost-effectiveness, ethical considerations, and impact on health inequalities.",
+  "source": "nice.org.uk",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

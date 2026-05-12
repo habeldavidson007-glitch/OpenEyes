@@ -1,0 +1,30 @@
+{
+  "id": "REG-013",
+  "domain": "economy",
+  "tags": [
+    "custody",
+    "digital_assets",
+    "sec",
+    "qualified_custodian",
+    "institutional"
+  ],
+  "content": "Digital asset custody rules for institutions: Current framework fragmented across regulators. SEC proposed custody rule amendments (Feb 2023) would expand Investment Advisers Act Rule 206(4)-2 to include crypto assets, requiring qualified custodians (banks, broker-dealers, futures commission merchants). Key issues: (1) Control requirement\u2014how advisers maintain control over private keys, (2) Qualified custodian definition\u2014crypto-native firms generally don't qualify, (3) Segregation requirements\u2014commingling concerns. DOL proposed rule (2023) addresses crypto in retirement accounts. OCC guidance permits national banks to custody crypto. State-level: NYDFS BitLicense regime includes custody requirements. Industry awaiting final SEC rules; comment period closed May 2023. Proposed transition period 12-18 months post-finalization.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

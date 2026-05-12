@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0394",
+  "domain": "healthcare",
+  "tags": [
+    "thyroid",
+    "hypothyroidism",
+    "hyperthyroidism",
+    "TSH",
+    "autoimmune"
+  ],
+  "content": "Thyroid disorders encompass hypothyroidism (underactive thyroid) and hyperthyroidism (overactive thyroid). Hypothyroidism: most commonly Hashimoto's thyroiditis (autoimmune), also post-radioactive iodine, surgery, medications (amiodarone, lithium), iodine deficiency. Symptoms: fatigue, weight gain, cold intolerance, constipation, depression, menorrhagia. Hyperthyroidism: Graves' disease (autoimmune with TSH receptor antibodies) most common, toxic multinodular goiter, toxic adenoma, thyroiditis. Symptoms: weight loss, heat intolerance, palpitations, tremor, anxiety, diarrhea. Thyroid hormones (T4, T3) regulate metabolism, growth, development via nuclear receptors. TSH from pituitary provides sensitive feedback regulation. Subclinical disease: abnormal TSH with normal free T4.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985607/",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

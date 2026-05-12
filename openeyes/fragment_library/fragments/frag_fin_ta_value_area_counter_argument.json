@@ -1,0 +1,27 @@
+{
+  "id": "frag_fin_ta_value_area_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "volume"
+  ],
+  "content": "The 70% value area threshold is arbitrary\u2014other statistical measures might prove equally valid. In strong trends, price rarely returns to value area, making VAH/VAL levels unreliable. Day traders often fade value area breaks incorrectly during news-driven moves. Context determines whether value area acts as magnet or launchpad.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

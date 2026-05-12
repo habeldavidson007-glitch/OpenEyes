@@ -1,0 +1,29 @@
+{
+  "id": "HC-2351",
+  "domain": "healthcare",
+  "tags": [
+    "prion disease",
+    "CJD",
+    "neurodegenerative",
+    "protein misfolding"
+  ],
+  "content": "Prion diseases are rare, fatal neurodegenerative disorders caused by misfolded prion protein (PrP^Sc) that propagates by converting normal cellular prion protein (PrP^C) to pathological form. Sporadic Creutzfeldt-Jakob disease (sCJD): most common (85%), onset ~60 years, rapid cognitive decline, myoclonus, ataxia, visual disturbances; median survival 4-6 months. Variant CJD (vCJD): linked to bovine spongiform encephalopathy (mad cow disease), younger onset, psychiatric symptoms prominent. Genetic forms: familial CJD, Gerstmann-Str\u00e4ussler-Scheinker, fatal familial insomnia (PRNP gene mutations). Iatrogenic CJD: from contaminated surgical instruments, corneal/dural transplants, human growth hormone. Prions resist standard sterilization; no effective treatment exists due to unique mechanism (no nucleic acid target).",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

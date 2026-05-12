@@ -1,0 +1,29 @@
+{
+  "id": "frag_mh_schizophrenia_definition_0043",
+  "domain": "healthcare",
+  "tags": [
+    "schizophrenia",
+    "psychosis",
+    "positive-symptoms",
+    "negative-symptoms"
+  ],
+  "content": "Schizophrenia is a chronic psychotic disorder characterized by disturbances in thought, perception, emotion, and behavior. Core symptoms include positive symptoms (delusions, hallucinations, disorganized speech/behavior), negative symptoms (avolition, alogia, anhedonia, flat affect, social withdrawal), and cognitive impairments (attention, memory, executive function). Onset typically occurs in late adolescence/early adulthood. Pathophysiology involves dopamine hyperactivity in mesolimbic pathways (positive symptoms) and hypoactivity in mesocortical pathways (negative/cognitive symptoms), glutamate NMDA receptor dysfunction, neurodevelopmental abnormalities, and genetic factors (heritability ~80%).",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/schizophrenia",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

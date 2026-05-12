@@ -1,0 +1,29 @@
+{
+  "id": "HC-2023",
+  "domain": "healthcare",
+  "tags": [
+    "neuroscience",
+    "neuroinflammation",
+    "psychiatry",
+    "immune system"
+  ],
+  "content": "Neuroinflammation refers to inflammation within the central nervous system, involving activation of microglia (brain immune cells) and astrocytes, with release of pro-inflammatory cytokines. Chronic neuroinflammation is increasingly implicated in depression, schizophrenia, bipolar disorder, and neurodegenerative diseases. Elevated inflammatory markers (CRP, IL-6, TNF-alpha) are found in subsets of depressed patients. Inflammation can reduce serotonin availability, impair neuroplasticity, and cause 'sickness behavior' resembling depression. Anti-inflammatory agents show modest antidepressant effects in trials. Obesity, stress, and infection can trigger neuroinflammation. This paradigm supports personalized approaches targeting inflammation in treatment-resistant cases.",
+  "source": "nimh.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

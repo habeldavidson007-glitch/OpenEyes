@@ -1,0 +1,28 @@
+{
+  "id": "MH-2215_conduct_disorder_latest_data",
+  "domain": "healthcare",
+  "tags": [
+    "conduct disorder",
+    "mental_health",
+    "latest_data"
+  ],
+  "content": "Conduct Disorder - recent research findings, emerging treatments, updated guidelines",
+  "source": "NIMH",
+  "source_url": "https://www.nimh.nih.gov/research",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

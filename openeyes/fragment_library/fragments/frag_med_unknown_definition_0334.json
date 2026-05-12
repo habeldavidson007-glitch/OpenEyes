@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0334",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "palliative care",
+    "symptom management",
+    "end of life",
+    "quality of life"
+  ],
+  "content": "Palliative care is specialized medical care focused on relieving suffering and improving quality of life for patients with serious illness, regardless of prognosis. It is appropriate at any stage of cancer, from diagnosis through treatment and survivorship or end-of-life care. Core domains: physical symptom management (pain, dyspnea, nausea, fatigue, anorexia); psychological support (anxiety, depression, coping); social support (caregiver burden, financial toxicity, practical needs); spiritual care (meaning, purpose, existential distress); communication and decision-making support (goals of care, advance care planning, prognosis disclosure). Palliative care differs from hospice: palliative care can be provided alongside curative treatment; hospice is for patients with life expectancy \u22646 months who forego curative treatment. Early palliative care integration (within 8 weeks of metastatic diagnosis) improves quality of life, mood, and surprisingly, overall survival (Temel trial, NEJM 2010).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36456789/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

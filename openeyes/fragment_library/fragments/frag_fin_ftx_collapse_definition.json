@@ -1,0 +1,26 @@
+{
+  "id": "frag_fin_ftx_collapse_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto"
+  ],
+  "content": "Nov 2022 bankruptcy revealed commingling of customer funds, lack of reserves, and fraudulent accounting by leadership.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

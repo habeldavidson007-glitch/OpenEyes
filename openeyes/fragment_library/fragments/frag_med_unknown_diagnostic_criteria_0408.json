@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0408",
+  "domain": "healthcare",
+  "tags": [
+    "obesity",
+    "BMI",
+    "waist circumference",
+    "body fat",
+    "comorbidities"
+  ],
+  "content": "Diagnosis primarily clinical using BMI calculated as weight(kg)/height(m)\u00b2. WHO classification: underweight <18.5, normal 18.5-24.9, overweight 25-29.9, obesity class I 30-34.9, class II 35-39.9, class III \u226540 kg/m\u00b2. Asian populations have lower cutoffs (overweight \u226523, obesity \u226525) due to higher metabolic risk at lower BMI. Waist circumference adds risk stratification: elevated \u2265102cm men/\u226588cm women (lower for Asian: \u226590cm men/\u226580cm women). Body composition assessment when BMI misleading (athletes, elderly): DEXA gold standard for body fat percentage (obesity defined as >25% men, >35% women). Evaluation should assess obesity-related comorbidities: fasting glucose/HbA1c, lipid panel, liver enzymes (NAFLD), blood pressure, sleep apnea screening, joint symptoms, depression screening. Identify secondary causes if atypical presentation: hypothyroidism, Cushing syndrome, medications (antipsychotics, antidepressants, steroids).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985609/",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

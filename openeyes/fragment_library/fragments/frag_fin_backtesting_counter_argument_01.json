@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_backtesting_counter_argument_01",
+  "domain": "economy",
+  "tags": [
+    "survivorship_bias",
+    "technical_analysis",
+    "counter_argument",
+    "backtesting",
+    "overfitting"
+  ],
+  "content": "Backtesting is plagued by unavoidable biases: survivorship (only current constituents tested), look-ahead (future data leakage), and overfitting (curve-fitting). Even sophisticated methods like walk-forward analysis can't eliminate all biases. Historical data quality issues (splits, dividends, delistings) corrupt results. Transaction cost estimation is notoriously difficult. Strategies that worked historically often fail going forward due to market adaptation. Data mining ensures some strategies will appear successful by chance alone.",
+  "source": "Educational Resource",
+  "source_url": "https://www.quantstart.com/survivorship-bias-overfitting",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "frag_ph_food_deserts_definition_0085",
+  "domain": "healthcare",
+  "tags": [
+    "food_security",
+    "nutrition",
+    "geographic_disparities",
+    "social_determinants"
+  ],
+  "content": "Food deserts are geographic areas where residents have limited access to affordable, nutritious food, particularly fresh fruits, vegetables, and other whole foods. The USDA defines food deserts using two metrics: (1) Low-income census tracts where at least 20% of residents live below poverty line or median family income is \u226480% of area/state median; AND (2) Limited access where at least 500 people or 33% of population live >1 mile from supermarket in urban areas or >10 miles in rural areas. However, the concept has evolved to recognize that proximity alone doesn't capture food access barriers. 'Food apartheid' is increasingly used to emphasize structural racism and policy decisions creating these conditions. Research shows food deserts correlate with higher rates of obesity, diabetes, and cardiovascular disease, though causality is complex and debated.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

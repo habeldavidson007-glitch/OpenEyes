@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0390",
+  "domain": "healthcare",
+  "tags": [
+    "hyponatremia",
+    "osmolality",
+    "urine sodium",
+    "SIADH",
+    "volume status"
+  ],
+  "content": "Diagnostic algorithm: (1) Confirm hypotonicity: serum osmolality <275 mOsm/kg (excludes pseudohyponatremia, hypertonic causes); (2) Assess volume status clinically (orthostasis, JVP, edema, skin turgor); (3) Measure urine osmolality: <100 mOsm/kg suggests appropriate ADH suppression (psychogenic polydipsia, low solute intake); >100 indicates ADH present; (4) Measure urine sodium: <30 mEq/L suggests hypovolemia (except diuretics, adrenal insufficiency) or hypervolemia; >30 mEq/L suggests SIADH, renal salt wasting, diuretics, mineralocorticoid deficiency. SIADH diagnostic criteria: euvolemia, serum osmolality <275, urine osmolality >100, urine Na >30-40, normal thyroid/adrenal/renal function, no diuretics. Additional tests: TSH, morning cortisol, uric acid (low in SIADH), BUN/creatinine. Calculate corrected sodium for hyperglycemia: add 1.6-2.4 mEq/L per 100 mg/dL glucose >100.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985613/",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

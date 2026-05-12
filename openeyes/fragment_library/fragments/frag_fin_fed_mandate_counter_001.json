@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_fed_mandate_counter_001",
+  "domain": "economy",
+  "tags": [
+    "fed",
+    "central_bank",
+    "monetary_policy",
+    "macro",
+    "counter_argument"
+  ],
+  "content": "Critics argue the dual mandate creates inherent conflicts and ambiguity. Some economists contend that monetary policy cannot sustainably affect real variables like employment in the long run, making the employment mandate potentially misleading. Others argue for a single mandate focused solely on price stability, as adopted by the European Central Bank. The 'maximum employment' concept lacks a precise numerical target, unlike the 2% inflation goal, creating asymmetry in the mandate's implementation. Additionally, some argue the mandate should be expanded to include financial stability as an explicit third objective, particularly after the 2008 financial crisis demonstrated how financial instability can severely impact both employment and prices.",
+  "source": "Various economic critiques",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/the-feds-dual-mandate-20190815.html",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

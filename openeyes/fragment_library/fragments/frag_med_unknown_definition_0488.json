@@ -1,0 +1,31 @@
+{
+  "id": "frag_med_unknown_definition_0488",
+  "domain": "healthcare",
+  "tags": [
+    "migraine",
+    "triptan",
+    "CGRP",
+    "acute-treatment",
+    "prevention",
+    "treatment-protocol"
+  ],
+  "content": "Migraine treatment\u5206\u4e3a acute and preventive strategies. Acute treatment (take early in attack): (1) Mild-moderate: NSAIDs (ibuprofen, naproxen, diclofenac), acetaminophen, combination analgesics (acetaminophen/aspirin/caffeine). (2) Moderate-severe or NSAID-refractory: triptans (sumatriptan, rizatriptan, eletriptan, etc.)\u20145-HT1B/1D agonists causing vasoconstriction and inhibiting CGRP release; contraindicated in cardiovascular disease. Newer options: gepants (ubrogepant, rimegepant\u2014oral CGRP antagonists, no vasoconstriction), ditans (lasmiditan\u20145-HT1F agonist, no vasoconstriction but causes sedation, 8-hour driving restriction). Antiemetics (metoclopramide, prochlorperazine) for nausea and as adjunct analgesics. Preventive treatment indicated for \u22654 migraine days/month, significant disability, or medication overuse: (1) Oral preventives: beta-blockers (propranolol, metoprolol), topiramate (weight loss, cognitive side effects), valproate (teratogenic), amitriptyline, venlafaxine. (2) CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab, eptinezumab)\u2014monthly/quarterly injections, well-tolerated, specific for migraine. (3) OnabotulinumtoxinA for chronic migraine only (PREEMPT protocol). (4) Gepants for prevention: atogepant (daily), rimegepant (every other day). Non-pharmacologic: lifestyle modification, trigger management, biofeedback, CBT, neuromodulation devices.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

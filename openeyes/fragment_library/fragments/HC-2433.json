@@ -1,0 +1,30 @@
+{
+  "id": "HC-2433",
+  "domain": "healthcare",
+  "tags": [
+    "PE",
+    "diagnosis",
+    "CTPA",
+    "D-dimer",
+    "risk stratification"
+  ],
+  "content": "PE diagnosis algorithm: assess clinical probability (Wells or Geneva score). Low/moderate probability: D-dimer first (high sensitivity, low specificity); if negative, PE ruled out; if positive, proceed to imaging. High probability or unstable: proceed directly to CT pulmonary angiography (CTPA)\u2014gold standard showing filling defect in pulmonary arteries. CTPA contraindications (renal failure, contrast allergy): V/Q scan (preferred if normal CXR, pregnancy) or lower extremity ultrasound (if DVT found, treat as PE). ECG may show sinus tachycardia, S1Q3T3 pattern, RBBB, T-wave inversions V1-V4 (RV strain). Troponin and BNP elevated with RV strain. Echocardiogram: RV dilation, McConnell sign (RV free wall akinesis with apical sparing), septal flattening, pulmonary hypertension\u2014critical in unstable patients. PESI (Pulmonary Embolism Severity Index) or sPESI stratifies mortality risk. Simplified Geneva and Wells scores guide testing strategy.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35849077/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2022,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

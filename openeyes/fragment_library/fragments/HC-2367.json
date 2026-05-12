@@ -1,0 +1,29 @@
+{
+  "id": "HC-2367",
+  "domain": "healthcare",
+  "tags": [
+    "influenza",
+    "antivirals",
+    "treatment",
+    "oseltamivir"
+  ],
+  "content": "Antiviral treatment recommended for all hospitalized patients, severe/progressive illness, and high-risk outpatients (age \u226565, <2 years, pregnancy, chronic conditions, immunocompromise, BMI \u226540). Initiate within 48 hours of symptom onset (benefit still possible if started later in severe cases). Options: oseltamivir 75mg BID x5 days (oral, preferred for most); zanamivir 10mg BID x5 days (inhaled, avoid in asthma/COPD); peramivir 600mg IV single dose; baloxavir single dose (cap-dependent endonuclease inhibitor, avoid with dairy/cations). Chemoprophylaxis: oseltamivir or zanamivir for post-exposure prophylaxis in high-risk individuals. Supportive care: antipyretics (avoid aspirin in children due to Reye syndrome), hydration. Antibiotics only for bacterial superinfection.",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

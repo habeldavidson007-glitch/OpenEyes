@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_futures_contracts_counter_001",
+  "domain": "economy",
+  "tags": [
+    "derivatives",
+    "commodities",
+    "forex",
+    "futures",
+    "latest_data"
+  ],
+  "content": "Futures leverage amplifies both gains and losses, causing significant retail losses. Contango (futures priced above spot) creates roll costs for long positions. Backwardation benefits longs but signals supply concerns. Speculative positioning can sometimes amplify price moves beyond fundamentals. Flash crash events have originated in futures markets before spreading to equities.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/futures-market-20210720.html",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "COM",
+  "sector": "COM",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

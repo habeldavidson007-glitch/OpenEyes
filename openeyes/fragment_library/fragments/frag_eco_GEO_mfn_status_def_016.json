@@ -1,0 +1,30 @@
+{
+  "id": "frag_eco_GEO_mfn_status_def_016",
+  "domain": "economy",
+  "tags": [
+    "mfN",
+    "most_favored_nation",
+    "wto",
+    "trade_policy",
+    "definition"
+  ],
+  "content": "Most-Favored-Nation (MFN) status: WTO principle requiring members extend equal tariff treatment to all other members. Exceptions: FTAs, GSP preferences for developing countries, national security. Revocation rare - historically used against Soviet Union (Jackson-Vanik), Myanmar. US revoked Russia MFN (PNTR) status in 2022.",
+  "source": "wto_legal_texts",
+  "source_url": "https://www.wto.org/english/tratop_e/region_e/region_e.htm",
+  "credibility_class": "international_organization",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

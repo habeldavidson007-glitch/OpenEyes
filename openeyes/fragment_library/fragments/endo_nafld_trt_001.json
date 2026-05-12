@@ -1,0 +1,31 @@
+{
+  "id": "endo_nafld_trt_001",
+  "domain": "healthcare",
+  "tags": [
+    "NAFLD",
+    "NASH",
+    "weight loss",
+    "vitamin E",
+    "pioglitazone",
+    "GLP-1"
+  ],
+  "content": "First-line: lifestyle modification - weight loss target 7-10% improves steatosis, \u226510% may reverse fibrosis; Mediterranean diet preferred; aerobic and resistance exercise beneficial independent of weight loss. Vitamin E (alpha-tocopherol 800 IU/day) recommended for non-diabetic adults with biopsy-proven NASH (PIVENS trial); potential prostate cancer/hemorrhagic stroke risk requires discussion. Pioglitazone improves NASH histology in diabetics and non-diabetics (weight gain side effect). GLP-1 receptor agonists (liraglutide, semaglutide) show promise for NASH resolution in trials. Obeticholic acid (FXR agonist) approved 2023 for NASH with fibrosis. Bariatric surgery effective for eligible patients - resolves NASH in ~85%, improves fibrosis. Manage cardiovascular risk factors aggressively (statins safe in NAFLD). Avoid hepatotoxic substances. Coffee consumption associated with reduced fibrosis. No FDA-approved pharmacotherapy specifically for NAFLD until recently; several agents in phase 3 trials.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/36506508/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

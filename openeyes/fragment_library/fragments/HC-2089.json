@@ -1,0 +1,29 @@
+{
+  "id": "HC-2089",
+  "domain": "healthcare",
+  "tags": [
+    "herd immunity",
+    "vaccination",
+    "threshold",
+    "epidemiology"
+  ],
+  "content": "Herd immunity occurs when sufficient population immunity reduces disease transmission, indirectly protecting susceptible individuals. The herd immunity threshold (HIT) is calculated as (1 - 1/R0), representing the proportion needing immunity to achieve Rt < 1. For measles (R0\u224815), HIT is ~93%; for polio (R0\u22486), HIT is ~83%. HIT varies by disease transmissibility, population mixing patterns, and vaccine effectiveness. Natural infection and vaccination both contribute to herd immunity, but vaccination achieves it without disease burden. Heterogeneous mixing means HIT may be lower if high-transmission groups are prioritized.",
+  "source": "WHO vaccination guidelines, CDC epidemiology principles",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

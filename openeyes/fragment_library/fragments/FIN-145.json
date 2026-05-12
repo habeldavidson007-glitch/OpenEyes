@@ -1,0 +1,29 @@
+{
+  "id": "FIN-145",
+  "domain": "economy",
+  "tags": [
+    "fama_french",
+    "factor_investing",
+    "asset_pricing",
+    "equity_factors"
+  ],
+  "content": "The Fama-French three-factor model (1992) extends CAPM by adding size and value factors. Returns are explained by: market factor (excess market return), SMB (small minus big\u2014size premium), and HML (high minus low\u2014value premium, measured by book-to-market). Small-cap and value stocks historically outperform, contradicting CAPM's prediction that only beta matters. In 2015, Fama and French added profitability (RMW) and investment (CMA) factors, creating a five-factor model. Momentum is sometimes added as sixth factor. These models underpin smart beta and factor investing strategies. However, factor premiums can disappear when widely known, and factors experience long drawdown periods.",
+  "source": "Journal of Financial Economics",
+  "source_url": "https://www.journals.elsevier.com/journal-of-financial-economics",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": "2023",
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_defi_liquidity_pools_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "counter_argument",
+    "crypto",
+    "defi"
+  ],
+  "content": "LPs face smart contract risk, impermanent loss, and potential rug pulls on unaudited protocols. Due diligence on code audits, team, and TVL history is essential before providing liquidity.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://uniswap.org",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

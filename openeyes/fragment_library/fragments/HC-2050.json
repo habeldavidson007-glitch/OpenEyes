@@ -1,0 +1,29 @@
+{
+  "id": "HC-2050",
+  "domain": "healthcare",
+  "tags": [
+    "vaccine effectiveness",
+    "vaccine efficacy",
+    "real-world evidence",
+    "epidemiology"
+  ],
+  "content": "Vaccine efficacy and vaccine effectiveness measure different aspects of vaccine performance. Vaccine efficacy is measured in randomized controlled trials under ideal conditions: (attack rate in vaccinated - attack rate in placebo) / attack rate in placebo. It answers 'can the vaccine work?' Vaccine effectiveness is measured in real-world observational studies after licensure, accounting for variable storage, administration, population heterogeneity, and circulating variants. It answers 'does the vaccine work in practice?' Effectiveness is typically lower than efficacy due to real-world factors but provides more relevant public health guidance.",
+  "source": "CDC vaccine surveillance guidelines, WHO vaccine evaluation framework",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

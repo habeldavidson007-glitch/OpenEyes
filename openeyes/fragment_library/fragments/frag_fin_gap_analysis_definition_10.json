@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_gap_analysis_definition_10",
+  "domain": "economy",
+  "tags": [
+    "definition",
+    "technical_analysis",
+    "gap_analysis"
+  ],
+  "content": "Gaps occur when price opens significantly different from prior close. Types: common gaps (fill quickly), breakaway gaps (start new trends), runaway/measurement gaps (mid-trend continuation), exhaustion gaps (end trends). Gap-filling tendency varies by type and market conditions. Gaps represent imbalanced orders overnight. Trading gaps requires understanding context: news-driven gaps behave differently than technical gaps.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/g/gap.asp",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

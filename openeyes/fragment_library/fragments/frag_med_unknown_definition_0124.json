@@ -1,0 +1,29 @@
+{
+  "id": "frag_med_unknown_definition_0124",
+  "domain": "healthcare",
+  "tags": [
+    "FDA approval",
+    "standard review",
+    "priority review",
+    "breakthrough therapy"
+  ],
+  "content": "The FDA has multiple approval pathways with different review timelines and evidence requirements. Standard review applies to drugs offering modest improvements over existing treatments, with a 10-month review clock from NDA submission. Priority review (6-month clock) is granted for drugs treating serious conditions with potential significant improvements in safety or efficacy. Breakthrough Therapy designation (for serious/life-threatening conditions) provides intensive FDA guidance, organizational commitment, and eligibility for accelerated approval if preliminary clinical evidence shows substantial improvement over available therapies.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

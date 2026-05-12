@@ -1,0 +1,26 @@
+{
+  "id": "HC-2215",
+  "domain": "healthcare",
+  "tags": [
+    "phr"
+  ],
+  "content": "Clinical implications of black box warnings include: heightened vigilance for specific adverse events, mandatory baseline and periodic testing, restricted prescribing to qualified providers, patient registry enrollment requirements, and contraindications in defined populations. Providers must recognize that black box warnings do not prohibit use but require enhanced risk management. Failure to heed boxed warnings may constitute negligence in malpractice proceedings. Pharmacists must counsel patients on boxed warning risks during dispensing. Institutions may require additional approval steps for high-risk medications. Post-market surveillance data continues to inform whether warnings should be strengthened, modified, or removed.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

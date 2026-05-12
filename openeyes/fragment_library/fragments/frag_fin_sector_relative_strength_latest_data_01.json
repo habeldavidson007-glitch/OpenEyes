@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_sector_relative_strength_latest_data_01",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "sector_relative_strength",
+    "latest_data",
+    "relative_strength",
+    "sector_rotation"
+  ],
+  "content": "Technology sector relative strength dominated 2024 YTD, continuing the 2023 trend. Energy sector showed improving relative strength in Q1 2024 as oil stabilized. Small cap relative strength remained weak through early 2024, reflecting economic concerns. Sector rotation models incorporating macro factors showed improved performance in recent tests.",
+  "source": "Educational Resource",
+  "source_url": "https://www.stockcharts.com/articles/sector-performance-2024",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

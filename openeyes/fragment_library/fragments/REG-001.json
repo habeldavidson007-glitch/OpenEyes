@@ -1,0 +1,29 @@
+{
+  "id": "REG-001",
+  "domain": "economy",
+  "tags": [
+    "basel_iv",
+    "banking_regulation",
+    "capital_requirements",
+    "international_standards"
+  ],
+  "content": "Basel IV (often called Basel III Endgame) represents the finalization of Basel III reforms agreed in December 2017. Key changes from Basel III include: (1) Revised standardized approach for credit risk with more granular risk weights, (2) New internal ratings-based (IRB) approach limitations removing use of own estimates for certain exposures, (3) Revised operational risk framework replacing advanced measurement approaches with standardized measurement approach, (4) Output floor limiting model benefits to 72.5% of standardized approach capital, (5) Enhanced leverage ratio framework. Implementation timeline: EU began phased implementation January 2023 through 2028; US proposed rules released July 2023 with final rules expected late 2024, phased in through 2028.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "FIN-183",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "regime detection"
+  ],
+  "content": "Regime detection identifies distinct market states: bull, bear, high volatility, low volatility, trending, mean-reverting. Hidden Markov Models infer latent regimes from observable price/volume data. Regime-aware strategies adapt parameters or switch strategies based on detected state. Failure to recognize regime changes causes strategies to underperform when market dynamics shift.",
+  "source": "Quantitative Equity Portfolio Management",
+  "source_url": "https://example.com/FIN-183",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2023,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

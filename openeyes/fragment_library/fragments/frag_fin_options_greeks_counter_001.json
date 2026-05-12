@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_options_greeks_counter_001",
+  "domain": "economy",
+  "tags": [
+    "options",
+    "risk_management",
+    "volatility",
+    "derivatives",
+    "latest_data"
+  ],
+  "content": "Greeks assume continuous markets and normal distributions, failing during gaps or extreme moves. Gamma hedging by dealers can amplify market moves (gamma squeezes). Model risk exists: Black-Scholes assumptions often violated in practice. Greeks change dynamically, requiring constant rebalancing. Tail risk not captured by standard Greek analysis.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/options-hedging-20220315.html",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

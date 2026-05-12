@@ -1,0 +1,30 @@
+{
+  "id": "neuro-gbs-tx",
+  "domain": "healthcare",
+  "tags": [
+    "guillain-barre",
+    "IVIG",
+    "plasma-exchange",
+    "treatment-protocol",
+    "supportive-care"
+  ],
+  "content": "GBS treatment includes immunotherapy and intensive supportive care. Immunotherapy (initiate within 2 weeks of onset): IVIG (0.4 g/kg/day \u00d7 5 days) or plasma exchange (5 exchanges over 1-2 weeks)\u2014equally effective; combining provides no additional benefit. Steroids alone are NOT effective in GBS. Supportive care is critical: ICU monitoring for respiratory failure (FVC <20 mL/kg or NIF <-30 cmH2O indicates need for intubation), autonomic instability (continuous cardiac monitoring, avoid sudden position changes), DVT prophylaxis, pain management (gabapentin, carbamazepine, opioids), nutrition (early NG tube if bulbar involvement), physical/occupational therapy. Complications: aspiration pneumonia, PE, pressure ulcers, ileus, urinary retention. Prognosis: 80% walk independently at 6 months, 60% full recovery at 1 year; 20% have persistent disability. Poor prognostic factors: older age, rapid progression, need for ventilation, hyponatremia, axonal variants. Chronic inflammatory demyelinating polyneuropathy (CIDP) is the chronic counterpart (>8 weeks progression) requiring long-term immunotherapy.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/31832428/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

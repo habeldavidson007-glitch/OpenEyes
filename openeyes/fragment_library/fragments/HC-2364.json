@@ -1,0 +1,29 @@
+{
+  "id": "HC-2364",
+  "domain": "healthcare",
+  "tags": [
+    "pneumonia",
+    "treatment",
+    "antibiotics",
+    "severity scoring"
+  ],
+  "content": "CAP treatment is guided by severity scores (CURB-65 or PSI/PORT score). Outpatient: healthy patients receive amoxicillin or doxycycline; comorbidities warrant combination beta-lactam + macrolide or respiratory fluoroquinolone monotherapy. Inpatient non-ICU: beta-lactam (ceftriaxone, ampicillin-sulbactam) + macrolide OR respiratory fluoroquinolone. ICU: beta-lactam + macrolide OR beta-lactam + respiratory fluoroquinolone; add vancomycin or linezolid if MRSA suspected; add piperacillin-tazobactam or cefepime if Pseudomonas risk. HAP/VAP: empiric coverage for MRSA (vancomycin/linezolid) plus antipseudomonal agent based on local antibiogram. Duration typically 5-7 days for CAP if clinical stability achieved.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

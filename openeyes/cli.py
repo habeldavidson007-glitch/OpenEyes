@@ -117,5 +117,44 @@ def serve(port: int) -> None:
     print(f"API placeholder listening on port {port}")
 
 
+@cli.command()
+@click.option("--cycles", default=1, type=int, help="Number of pulse cycles to run (-1 for infinite)")
+@click.option("--cycle-duration", default=60.0, type=float, help="Total duration of each cycle in seconds")
+@click.option("--harvest-duration", default=20.0, type=float, help="Duration of harvest phase in seconds")
+@click.option("--process-duration", default=15.0, type=float, help="Duration of process phase in seconds")
+@click.option("--archive-duration", default=10.0, type=float, help="Duration of archive phase in seconds")
+@click.option("--hibernation-duration", default=15.0, type=float, help="Duration of hibernation phase in seconds")
+def pulse(cycles: int, cycle_duration: float, harvest_duration: float, 
+          process_duration: float, archive_duration: float, hibernation_duration: float) -> None:
+    """Start the autonomous Signal-Pulse Swarm evidence circulation loop."""
+    from openeyes.swarm import PulseScheduler
+    
+    print("[cyan]Starting Signal-Pulse Swarm autonomous loop...[/cyan]")
+    print(f"  Cycles: {cycles if cycles > 0 else 'infinite'}")
+    print(f"  Cycle duration: {cycle_duration}s")
+    print(f"  Phase durations: HARVEST={harvest_duration}s, PROCESS={process_duration}s, ARCHIVE={archive_duration}s, HIBERNATE={hibernation_duration}s")
+    
+    scheduler = PulseScheduler(
+        cycle_duration=cycle_duration,
+        harvest_duration=harvest_duration,
+        process_duration=process_duration,
+        archive_duration=archive_duration,
+        hibernation_duration=hibernation_duration,
+    )
+    
+    try:
+        max_cycles = None if cycles == -1 else cycles
+        asyncio.run(scheduler.run_continuous(max_cycles=max_cycles))
+    except KeyboardInterrupt:
+        print("\n[yellow]Interrupted by user, shutting down...[/yellow]")
+        asyncio.run(scheduler.shutdown())
+    
+    # Print final metrics
+    print("\n[green]Pulse loop complete. Final metrics:[/green]")
+    metrics = scheduler.get_metrics()
+    for key, value in metrics.items():
+        print(f"  {key}: {value}")
+
+
 if __name__ == "__main__":
     cli()

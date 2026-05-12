@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_ta_fear_greed_latest_data",
+  "domain": "economy",
+  "tags": [
+    "chart_patterns",
+    "latest_data",
+    "technical_analysis"
+  ],
+  "content": "Crypto Fear & Greed Index hit 10 (extreme fear) at 2022 bottom, 95 (extreme greed) at 2021 top. Sustained readings <20 for weeks often mark major bottoms. Mean reversion to 45-55 typical.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

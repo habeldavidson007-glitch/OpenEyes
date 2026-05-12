@@ -1,0 +1,30 @@
+{
+  "id": "frag_mh_grief_vs_depression_treatment_protocol_0011",
+  "domain": "healthcare",
+  "tags": [
+    "complicated-grief-therapy",
+    "supportive-care",
+    "antidepressants",
+    "IPT",
+    "prolonged-grief"
+  ],
+  "content": "Normal grief: supportive care, validation, time, social support, cultural/religious rituals. No indication for antidepressants or formal psychotherapy unless depression develops. Prolonged Grief Disorder: Complicated Grief Therapy (CGT)/Prolonged Grief Disorder Therapy\u2014structured treatment addressing avoidance, restoring life goals, revisiting death story, aspirational goals; shows superiority over supportive therapy/IPDT. Depression following loss: treat as MDD\u2014antidepressants (SSRIs), psychotherapy (CBT, IPT), combination for severe cases. Antidepressants not indicated for normal grief alone. Support groups helpful for bereaved. Monitor for suicide risk, substance use as maladaptive coping. Timing of intervention: avoid pathologizing normal grief while identifying those needing treatment.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

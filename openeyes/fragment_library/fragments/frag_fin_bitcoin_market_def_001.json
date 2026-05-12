@@ -1,0 +1,29 @@
+{
+  "id": "frag_fin_bitcoin_market_def_001",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "definition",
+    "bitcoin",
+    "blockchain"
+  ],
+  "content": "Bitcoin is decentralized digital currency using blockchain technology for peer-to-peer transactions without intermediaries. Created in 2009 by pseudonymous Satoshi Nakamoto. Limited supply of 21 million coins creates scarcity. Mining (proof-of-work) secures network and issues new coins. Bitcoin trades on cryptocurrency exchanges 24/7 globally. Institutional adoption grew with futures, ETFs, and corporate treasury allocations. Volatility remains high compared to traditional assets. Use cases include store of value ('digital gold'), speculative investment, and alternative payment system.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/investor/alerts/bitcoin-and-other-virtual-currencies",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "hc_med_onc_crc_diag_001",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "colorectal cancer",
+    "diagnosis",
+    "staging",
+    "surveillance"
+  ],
+  "content": "Diagnosis requires colonoscopy with biopsy. Complete colonoscopy essential to rule out synchronous lesions (3-5% have multiple primaries). Pathology: adenocarcinoma histologic grade; lymphovascular/perineural invasion; tumor budding; margin status. Biomarker testing: MMR IHC or PCR for MSI (all patients should be tested); RAS (KRAS/NRAS exons 2-4); BRAF V600E; HER2 for metastatic disease; NTRK fusions (rare). Staging: CT chest/abdomen/pelvis; pelvic MRI for rectal cancer (assesses mesorectal fascia involvement); PET-CT if equivocal findings. CEA baseline for surveillance. TNM staging: T depth of invasion, N lymph nodes (\u226512 should be examined), M metastases. Genetic counseling/testing for Lynch syndrome if diagnosed <50 years, MSI-H tumor, strong family history (Amsterdam criteria, Bethesda guidelines). Surveillance post-curative resection: CEA every 3-6 months for 2 years then every 6 months until 5 years; CT annually for 3-5 years; colonoscopy at 1 year, then 3 years, then every 5 years if normal.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35456789/",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "REG-2420_basel_iv_implementation_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "basel iv implementation",
+    "regulation",
+    "counter_argument"
+  ],
+  "content": "Basel IV implementation challenges - capital requirement debates, regional variations, industry pushback on complexity",
+  "source": "SEC",
+  "source_url": "https://www.federalreserve.gov/supervisionreg",
+  "credibility_class": "peer_reviewed",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "REG",
+  "sector": "REG",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

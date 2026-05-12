@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_chips_act_latest_003",
+  "domain": "economy",
+  "tags": [
+    "chips_act",
+    "semiconductors",
+    "export_controls",
+    "latest_data"
+  ],
+  "content": "CHIPS Act implementation 2024: $33B awarded to Intel, TSMC, Samsung, Micron. 38 projects announced across 22 states. October 2023 export controls expanded to cover AI chips, HBM memory. Netherlands, Japan joined restrictions on lithography equipment exports to China.",
+  "source": "white_house",
+  "source_url": "https://www.whitehouse.gov/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.95,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

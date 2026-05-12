@@ -1,0 +1,26 @@
+{
+  "id": "frag_phr_unknown_treatment_protocol_0158",
+  "domain": "healthcare",
+  "tags": [
+    "phr"
+  ],
+  "content": "Clinical management during drug shortages: (1) Assess inventory and project duration; (2) Implement conservation strategies (dose optimization, alternative routes, smaller vial sizes); (3) Identify therapeutic alternatives within class or different classes; (4) Develop institutional protocols for prioritization (e.g., reserve critical drugs for most vulnerable patients); (5) Communicate with prescribers about available alternatives and dosing changes; (6) Compound preparations if commercially unavailable (following USP <797> standards); (7) Coordinate with group purchasing organizations and other institutions; (8) Document all substitutions in medical records. ASHP guidelines recommend forming multidisciplinary shortage committees. Patient safety must remain paramount; avoid using expired products unless no alternatives exist and benefits clearly outweigh risks.",
+  "source": "fda.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

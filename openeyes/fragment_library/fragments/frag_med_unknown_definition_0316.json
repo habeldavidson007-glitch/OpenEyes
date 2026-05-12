@@ -1,0 +1,30 @@
+{
+  "id": "frag_med_unknown_definition_0316",
+  "domain": "healthcare",
+  "tags": [
+    "oncology",
+    "melanoma",
+    "BRAF mutation",
+    "risk factors",
+    "subtypes"
+  ],
+  "content": "Melanoma is the most serious skin cancer, arising from melanocytes. Risk factors: UV radiation exposure (intermittent intense exposure, blistering sunburns), fair skin, numerous nevi (>50), atypical nevi, family history, personal history of melanoma, immunosuppression. Genetic predisposition: CDKN2A mutations (familial atypical multiple mole melanoma syndrome), CDK4, BAP1. Molecular features: BRAF V600 mutations (~50%, V600E most common); NRAS (~20%); NF1 (~15%); triple wild-type (~15%); KIT mutations in acral/mucosal melanoma. Subtypes: superficial spreading (most common, radial growth phase); nodular (vertical growth, aggressive); lentigo maligna (chronic sun-damaged skin, elderly); acral lentiginous (palms, soles, nail beds, not UV-related, more common in darker skin); mucosal (rare, poor prognosis); uveal/ocular (distinct biology, GNAQ/GNA11 mutations). Breslow thickness (mm) is the most important prognostic factor for localized disease.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36901234/",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

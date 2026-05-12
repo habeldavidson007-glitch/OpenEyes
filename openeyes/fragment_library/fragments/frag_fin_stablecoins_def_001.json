@@ -1,0 +1,29 @@
+{
+  "id": "frag_fin_stablecoins_def_001",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "definition",
+    "stablecoin",
+    "defi"
+  ],
+  "content": "Stablecoins are cryptocurrencies designed to maintain stable value relative to reference asset (usually USD). Types: fiat-collateralized (USDC, USDT backed by reserves), crypto-collateralized (DAI overcollateralized with crypto), algorithmic (supply adjusts to maintain peg). Stablecoins enable crypto trading without converting to fiat, serve as DeFi building blocks, and facilitate cross-border payments. Issuers claim reserve backing but transparency varies. Redemption mechanisms differ. Stablecoin market cap exceeded $150 billion at peak.",
+  "source": "SEC",
+  "source_url": "https://www.sec.gov/investor/alerts/stablecoins",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.92,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

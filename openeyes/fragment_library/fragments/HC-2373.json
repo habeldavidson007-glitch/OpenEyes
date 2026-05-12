@@ -1,0 +1,29 @@
+{
+  "id": "HC-2373",
+  "domain": "healthcare",
+  "tags": [
+    "STI",
+    "treatment",
+    "ceftriaxone",
+    "penicillin"
+  ],
+  "content": "Gonorrhea: ceftriaxone 500mg IM single dose (<150kg) or 1g IM (\u2265150kg); add doxycycline 100mg BID x7 days if chlamydia not excluded. Pharyngeal gonorrhea requires test-of-cure 7-14 days post-treatment. Syphilis: primary/secondary/early latent - benzathine penicillin G 2.4 million units IM single dose; late latent/tertiary - 2.4 million units IM weekly x3 doses; neurosyphilis - aqueous crystalline penicillin G 18-24 million units IV daily x10-14 days. Chlamydia: doxycycline 100mg BID x7 days (preferred); azithromycin 1g single dose alternative (pregnancy). Genital herpes: acyclovir, valacyclovir, famciclovir for episodic/suppressive therapy. HPV: no treatment for virus itself; treat warts (imiquimod, podofilox, cryotherapy) and dysplasia. Partner notification and treatment essential.",
+  "source": "cdc.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

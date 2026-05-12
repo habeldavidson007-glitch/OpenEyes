@@ -1,0 +1,28 @@
+{
+  "id": "MAC-1876_output_gap_estimation_latest_data",
+  "domain": "economy",
+  "tags": [
+    "output gap estimation",
+    "macroeconomics",
+    "latest_data"
+  ],
+  "content": "Output Gap Estimation - recent empirical findings, current trends, updated estimates",
+  "source": "Federal Reserve",
+  "source_url": "https://www.nber.org/research",
+  "credibility_class": "peer_reviewed",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2026,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

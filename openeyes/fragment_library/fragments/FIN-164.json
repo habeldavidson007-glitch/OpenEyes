@@ -1,0 +1,28 @@
+{
+  "id": "FIN-164",
+  "domain": "economy",
+  "tags": [
+    "algorithmic_trading",
+    "backtesting",
+    "survivorship_bias"
+  ],
+  "content": "Survivorship bias in backtesting occurs when using current constituent lists that exclude delisted or bankrupt companies, artificially inflating historical returns. Proper backtesting databases must include dead stocks and delisted securities. Studies show survivorship bias can add 2-4% annually to apparent returns in US equity backtests.",
+  "source": "CRSP Database Documentation",
+  "source_url": "https://example.com/FIN-164",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2023,
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

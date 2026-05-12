@@ -8,6 +8,13 @@ Agent Types:
 - LibraryAgent: Retrieves from local fragment library (fastest)
 - APIAgent: Retrieves from external domain APIs (requires API keys)
 - WebAgent: Retrieves from live internet (slowest, credibility scoring required)
+
+Signal-Pulse Swarm Architecture (Autonomous Cyclic Operation):
+- PulseScheduler: Manages autonomous WAKE→HARVEST→PROCESS→ARCHIVE→HIBERNATE cycles
+- SignalBus: Lightweight async event signaling between agents
+- Harvester Agents: Dormant until triggered, collect evidence from sources
+- Processor Agents: Validate and convert evidence to fragments
+- Archiver Agent: Persist fragments to storage with WAL-friendly buffering
 """
 
 import re
@@ -24,6 +31,36 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from openeyes.fragment_library import FragmentLibrary, Fragment
 from openeyes.core.kap import build_kap, KnowledgeAcquisitionPlan, kap_to_trace
+
+# Import Signal-Pulse Swarm components for easy access
+from openeyes.swarm.pulse_scheduler import (
+    PulseScheduler,
+    PulseState,
+    SignalBus,
+    PulseSignal,
+    SignalType,
+    start_autonomous_loop,
+    run_pulse_loop,
+)
+
+from openeyes.swarm.harvesters import (
+    HarvesterAgent,
+    FileSystemHarvester,
+    LibraryHarvester,
+    KnowledgeHarvester,
+    HarvestedEvidence,
+    create_harvesters,
+)
+
+from openeyes.swarm.processors import (
+    FragmentProcessor,
+    ConsolidationProcessor,
+    FragmentArchiver,
+    ProcessingResult,
+    create_processors,
+    create_archiver,
+    create_consolidator,
+)
 
 
 # Trusted Finance Sources Whitelist

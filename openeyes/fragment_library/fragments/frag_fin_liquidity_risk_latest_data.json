@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_liquidity_risk_latest_data",
+  "domain": "economy",
+  "tags": [
+    "risk_management",
+    "liquidity",
+    "market_depth",
+    "bid_ask",
+    "latest_data"
+  ],
+  "content": "The 2019 Repo Crisis and 2020 Treasury market dysfunction highlighted that even 'risk-free' markets can suffer liquidity freezes. Central bank standing repo facilities are now viewed as essential backstops to prevent liquidity spirals from becoming solvency crises.",
+  "source": "educational",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "latest_data",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

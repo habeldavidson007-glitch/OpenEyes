@@ -1,0 +1,27 @@
+{
+  "id": "frag_phr_unknown_definition_0160",
+  "domain": "healthcare",
+  "tags": [
+    "phr",
+    "definition"
+  ],
+  "content": "Counterfeit medicines are falsified medical products that deliberately misrepresent their identity, composition, or source. They may contain wrong ingredients, incorrect dosages, no active ingredient, or toxic substances. The WHO estimates that 1 in 10 medical products in low- and middle-income countries is substandard or falsified. High-risk categories include: life-saving medications (antibiotics, antimalarials, chemotherapy), controlled substances (opioids, benzodiazepines), lifestyle drugs (erectile dysfunction, weight loss), and expensive specialty medications. Counterfeits enter supply chains through unauthorized distributors, internet pharmacies, and compromised distribution systems. The FDA's Drug Supply Chain Security Act (DSCSA) requires track-and-trace systems to prevent counterfeit entry.",
+  "source": "who.int",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PHR",
+  "sector": "PHR",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

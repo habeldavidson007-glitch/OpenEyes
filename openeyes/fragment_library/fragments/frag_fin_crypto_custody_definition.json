@@ -1,0 +1,27 @@
+{
+  "id": "frag_fin_crypto_custody_definition",
+  "domain": "economy",
+  "tags": [
+    "crypto",
+    "risk_management"
+  ],
+  "content": "Crypto custody ranges from self-custody (hardware wallets, multisig) to institutional solutions (Coinbase Custody, BitGo). Cold storage keeps keys offline, immune to remote hacks. Multisig requires multiple signatures for transactions, distributing control. Institutions demand insured custody with regulatory compliance.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

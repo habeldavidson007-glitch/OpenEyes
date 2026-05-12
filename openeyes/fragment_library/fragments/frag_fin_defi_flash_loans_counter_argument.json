@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_defi_flash_loans_counter_argument",
+  "domain": "economy",
+  "tags": [
+    "defi",
+    "crypto",
+    "risk_management"
+  ],
+  "content": "Flash loans enabled billions in DeFi exploits, exposing oracle manipulation vulnerabilities. Attacks on bZx, Cream Finance, and others demonstrated how flash loans amplify existing weaknesses. While not inherently malicious, they reduce attack costs to just gas fees, enabling sophisticated exploits previously impossible.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

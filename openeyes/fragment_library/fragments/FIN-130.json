@@ -1,0 +1,29 @@
+{
+  "id": "FIN-130",
+  "domain": "economy",
+  "tags": [
+    "exchange_rates",
+    "forex",
+    "currency",
+    "international_finance"
+  ],
+  "content": "An exchange rate is the price of one currency expressed in terms of another. In floating exchange rate regimes, rates are determined by supply and demand in foreign exchange markets, influenced by interest rate differentials, inflation expectations, trade balances, and capital flows. The dollar-euro rate, for example, reflects relative economic conditions between the U.S. and Eurozone. Fixed exchange rates are pegged to another currency or basket, requiring central bank intervention to maintain. Real exchange rates adjust nominal rates for price level differences, measuring actual purchasing power parity. Currency appreciation makes imports cheaper but exports less competitive; depreciation has the opposite effect.",
+  "source": "Bank for International Settlements",
+  "source_url": "https://www.bis.org/statistics/eer.htm",
+  "credibility_class": "financial_publication",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": "2024",
+  "sub_question": null,
+  "verified": true,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

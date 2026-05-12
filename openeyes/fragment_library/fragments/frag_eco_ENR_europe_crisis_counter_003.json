@@ -1,0 +1,27 @@
+{
+  "id": "frag_eco_ENR_europe_crisis_counter_003",
+  "domain": "economy",
+  "tags": [
+    "europe_crisis",
+    "gas"
+  ],
+  "content": "Natural gas fragment: europe_crisis. Role: counter_argument. Pricing, trade flows, and storage dynamics.",
+  "source": "EIA",
+  "source_url": "https://eia.gov/naturalgas/",
+  "credibility_class": "government_source",
+  "last_verified": "2026-05-11",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "ENR",
+  "sector": null,
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

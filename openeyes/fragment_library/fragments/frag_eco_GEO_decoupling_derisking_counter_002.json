@@ -1,0 +1,29 @@
+{
+  "id": "frag_eco_GEO_decoupling_derisking_counter_002",
+  "domain": "economy",
+  "tags": [
+    "decoupling",
+    "de_risking",
+    "supply_chain",
+    "counter_argument"
+  ],
+  "content": "De-risking critique: In practice, de-risking creates same disruption as decoupling. Companies face binary choices on tech standards, data governance, supply chains. 'Small yard, high fence' approach expands incrementally. Compliance costs disproportionately burden smaller firms.",
+  "source": "peterson_institute",
+  "source_url": "https://www.piie.com/",
+  "credibility_class": "think_tank",
+  "last_verified": "2026-05-12",
+  "weight": 0.89,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

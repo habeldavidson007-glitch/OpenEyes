@@ -1,0 +1,29 @@
+{
+  "id": "HC-2377",
+  "domain": "healthcare",
+  "tags": [
+    "UTI",
+    "diagnosis",
+    "urinalysis",
+    "culture"
+  ],
+  "content": "UTI diagnosis requires: 1) Compatible symptoms (dysuria, frequency, urgency, suprapubic pain for cystitis; fever, flank pain for pyelonephritis); 2) Urinalysis showing pyuria (>10 WBC/hpf or positive leukocyte esterase) and/or bacteriuria; 3) Urine culture confirming significant bacteriuria (\u226510\u00b3 CFU/mL in symptomatic women with acute cystitis, \u226510\u2074 CFU/mL for pyelonephritis, \u226510\u2075 CFU/mL traditional threshold). Dipstick nitrite has high specificity but lower sensitivity. Gram stain useful for rapid pathogen identification. Imaging (renal ultrasound, CT) indicated for complicated UTI, treatment failure, recurrent infections, or suspected obstruction/abscess. Blood cultures recommended for severe pyelonephritis or sepsis.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MED",
+  "sector": "MED",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

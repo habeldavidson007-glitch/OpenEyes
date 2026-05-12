@@ -1,0 +1,32 @@
+{
+  "id": "frag_fin_china_economy_counter_01",
+  "domain": "economy",
+  "tags": [
+    "china",
+    "recession",
+    "macro",
+    "counter_argument",
+    "warning"
+  ],
+  "content": "China state control allows directed stimulus invisible to Western models. EV/tech export surge offsets property drag. Rural-urban migration room remains. 'Japanification' narrative may be overstated; China income per capita still 1/6 of Japan's at peak.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.8835,
+  "compatible_with": [
+    "frag_fin_china_economy_def_01"
+  ],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

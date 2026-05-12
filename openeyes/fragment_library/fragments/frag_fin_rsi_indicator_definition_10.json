@@ -1,0 +1,32 @@
+{
+  "id": "frag_fin_rsi_indicator_definition_10",
+  "domain": "economy",
+  "tags": [
+    "technical_analysis",
+    "rsi",
+    "oversold",
+    "overbought",
+    "divergence",
+    "definition",
+    "rsi_indicator"
+  ],
+  "content": "The Relative Strength Index (RSI), developed by J. Welles Wilder, measures momentum on a 0-100 scale. Calculated as RSI = 100 - [100/(1+RS)] where RS = average gains/average losses over typically 14 periods. Readings above 70 suggest overbought conditions; below 30 suggest oversold. Divergence between RSI and price can signal potential reversals. However, RSI can remain overbought/oversold during strong trends.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/r/rsi.asp",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "frag_fin_global_trade_flows_def_01",
+  "domain": "economy",
+  "tags": [
+    "global_trade",
+    "macro",
+    "currency",
+    "definition",
+    "first_line"
+  ],
+  "content": "Trade flows drive currency demand and capital allocation. Surplus nations (China, Germany) accumulate reserves/claims; deficit nations (US, UK) consume and issue liabilities. Shifts in supply chains (friend-shoring) alter long-term FX and bond flows.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-12",
+  "weight": 0.93,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MAC",
+  "sector": "MAC",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

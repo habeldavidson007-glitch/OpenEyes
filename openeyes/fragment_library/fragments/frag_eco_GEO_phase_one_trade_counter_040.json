@@ -1,0 +1,28 @@
+{
+  "id": "frag_eco_GEO_phase_one_trade_counter_040",
+  "domain": "economy",
+  "tags": [
+    "phase_one_limitations",
+    "trade_policy",
+    "counter_argument"
+  ],
+  "content": "Phase One shortcomings: Purchase targets unrealistic, not met. Structural issues (subsidies, SOEs) unaddressed. Tariffs remained in place. Enforcement mechanisms weak. Deal expired without replacement. Demonstrated limits of bilateral approach to structural competition.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "think_tank",
+  "last_verified": "2026-05-12",
+  "weight": 0.89,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "GEO",
+  "sector": "GEO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "HC-2082",
+  "domain": "healthcare",
+  "tags": [
+    "vector surveillance",
+    "insecticide resistance testing",
+    "control effectiveness"
+  ],
+  "content": "Vector surveillance methods: larval surveys (Breteau index, house index for Aedes), adult trapping (CDC light traps, BG-Sentinel, human landing catches), and ovitraps for egg monitoring. Insecticide resistance testing: WHO tube tests, CDC bottle bioassays measure mortality after exposure; molecular assays detect resistance mutations (kdr, ace-1). Entomological inoculation rate estimates transmission intensity. Control effectiveness evaluated through pre/post intervention comparisons of vector density, human biting rates, and disease incidence. Climate change expands vector ranges poleward and to higher elevations, requiring adaptive surveillance and control strategies.",
+  "source": "WHO Vector Surveillance guidelines, American Journal of Tropical Medicine and Hygiene",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

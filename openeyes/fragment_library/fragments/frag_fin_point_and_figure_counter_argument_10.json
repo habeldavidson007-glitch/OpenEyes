@@ -1,0 +1,28 @@
+{
+  "id": "frag_fin_point_and_figure_counter_argument_10",
+  "domain": "economy",
+  "tags": [
+    "point_and_figure",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "content": "P&F charts discard valuable time information, losing context about momentum and urgency. Box size selection is arbitrary and dramatically affects signals. P&F patterns suffer same reliability issues as traditional chart patterns. Limited software support reduces accessibility and testing capability. P&F's claimed noise-filtering also filters legitimate signals. Modern markets' speed makes P&F's slow signal generation disadvantageous. Few contemporary traders use P&F, reducing self-fulfilling aspect. Academic research on P&F is virtually non-existent.",
+  "source": "Educational Resource",
+  "source_url": "https://www.chartists.org/pnf-modern-relevance",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

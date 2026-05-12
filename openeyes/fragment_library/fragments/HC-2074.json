@@ -1,0 +1,30 @@
+{
+  "id": "HC-2074",
+  "domain": "healthcare",
+  "tags": [
+    "pandemic preparedness",
+    "International Health Regulations",
+    "IHR",
+    "WHO",
+    "public health emergency"
+  ],
+  "content": "Pandemic preparedness encompasses the capabilities and plans needed to detect, respond to, and recover from pandemic-scale infectious disease outbreaks. The International Health Regulations (IHR 2005) is a legally binding instrument requiring 196 countries to develop core surveillance and response capacities and notify WHO of potential public health emergencies of international concern (PHEIC). Key components: early warning systems, laboratory capacity, rapid response teams, risk communication, healthcare surge capacity, and coordination mechanisms. Gaps identified during COVID-19 include: insufficient diagnostic capacity, supply chain vulnerabilities, inequitable vaccine access, fragmented global governance, and inadequate financing for preparedness.",
+  "source": "WHO International Health Regulations, Global Preparedness Monitoring Board reports",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "PH",
+  "sector": "PH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": "A",
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

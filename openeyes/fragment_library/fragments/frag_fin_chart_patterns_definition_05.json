@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_chart_patterns_definition_05",
+  "domain": "economy",
+  "tags": [
+    "head_and_shoulders",
+    "chart_patterns",
+    "technical_analysis",
+    "cup_and_handle",
+    "double_top",
+    "definition"
+  ],
+  "content": "Classic chart patterns include Head and Shoulders (reversal pattern with three peaks), Double Top/Bottom (reversal after testing level twice), and Cup and Handle (continuation pattern). These patterns reflect crowd psychology and take weeks/months to form. Breakouts should be confirmed with volume. Pattern targets are estimated by measuring the pattern's height. Success rates vary; false breakouts are common.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/c/chartpatterns.asp",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "FIN",
+  "sector": "FIN",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}

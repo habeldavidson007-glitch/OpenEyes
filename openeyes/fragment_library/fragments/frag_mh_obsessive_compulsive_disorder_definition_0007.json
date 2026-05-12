@@ -1,0 +1,29 @@
+{
+  "id": "frag_mh_obsessive_compulsive_disorder_definition_0007",
+  "domain": "healthcare",
+  "tags": [
+    "OCD",
+    "obsessions",
+    "compulsions",
+    "ego-dystonic"
+  ],
+  "content": "Obsessive-Compulsive Disorder (OCD) is characterized by obsessions (recurrent, intrusive, unwanted thoughts, urges, or images causing anxiety/distress) and/or compulsions (repetitive behaviors or mental acts performed to reduce anxiety or prevent feared outcomes). Common obsession themes: contamination, harm, symmetry, taboo thoughts. Common compulsions: washing, checking, ordering, counting, mental rituals. Compulsions are ego-dystonic (recognized as excessive/unreasonable but difficult to resist). Symptoms are time-consuming (>1 hour/day) or cause significant impairment. Lifetime prevalence ~2-3%. Pathophysiology involves cortico-striato-thalamo-cortical circuit dysfunction, serotonin dysregulation, and glutamate abnormalities.",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/obsessive-compulsive-disorder",
+  "credibility_class": "A",
+  "last_verified": "2026-05-12",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "MH",
+  "sector": "MH",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "verified": null,
+  "_original_credibility_class": null,
+  "_reasoning_role_auto_classified": null,
+  "grundy_value": -1,
+  "robustness_status": "PENDING"
+}
