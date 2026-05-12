@@ -131,47 +131,53 @@ class ControlDeck:
         sys.stdout.flush()
         self._last_render_time = time.time()
         
-    def update_step(self, step_name: str, progress: float, status: str, 
-                   color: str = 'BLUE', finalize: bool = False) -> None:
+    def update_step(self, step_name: str, status: str, color: str = 'BLUE', progress: Optional[float] = None) -> None:
         """
-        Update a processing step with progress.
+        Update a processing step with status.
         
         Args:
             step_name: Name of the step
-            progress: Progress percentage (0.0 to 1.0)
-            status: Status message
+            status: Status message (e.g., "PROCESSING...", "14 FRAGMENTS ✓")
             color: Color for the step indicator
-            finalize: If True, move to next line after rendering
+            progress: Optional progress (0.0-1.0). Auto-calculated if status contains percentage
         """
-        show_spinner = not finalize and progress < 1.0
+        # Auto-detect progress from status or use provided value
+        if progress is None:
+            if "✓" in status or "100%" in status:
+                progress = 1.0
+            elif "PROCESSING" in status.upper() or "SEARCHING" in status.upper() or "RUNNING" in status.upper():
+                progress = 0.5
+            else:
+                progress = 0.0
+                
+        show_spinner = progress < 1.0
         self._render_progress_bar(step_name, progress, status, color, show_spinner)
         
-        if finalize:
-            print()  # Move to next line
+        if progress >= 1.0:
+            print()  # Move to next line when complete
             
-    def start_session(self, query: str) -> None:
+    def start_session(self, query: str, domain: str = "auto") -> None:
         """
         Start a new reasoning session.
         
         Args:
             query: The user query to process
+            domain: The domain context (default: "auto")
         """
         self.render_header()
         self.render_query(query)
         self.start_time = time.time()
         self.audit_logs = []
         
-    def log_audit(self, level: str, message: str, timestamp: Optional[float] = None) -> None:
+    def log_audit(self, message: str, level: str = "INFO") -> None:
         """
         Add an audit log entry.
         
         Args:
-            level: Log level (INFO, WARN, ERROR, HALT)
             message: Log message
-            timestamp: Optional timestamp (defaults to current elapsed time)
+            level: Log level (INFO, WARN, ERROR, HALT) - defaults to INFO
         """
-        if timestamp is None:
-            timestamp = self._get_elapsed_time()
+        timestamp = self._get_elapsed_time()
             
         self.audit_logs.append({
             'timestamp': timestamp,
@@ -245,22 +251,30 @@ class ControlDeck:
         self.render_audit_log(expanded=True)
         print(f"\n  └{border}┘")
         
-    def render_success(self, answer_class: str, confidence: float, 
-                      fragments_used: int, vault_path: Optional[str] = None) -> None:
+    def render_success(self, answer_class: str, answer: str, confidence, 
+                      data_recency: int = 0, vault_path: Optional[str] = None) -> None:
         """
         Render a successful answer completion.
         
         Args:
             answer_class: The ANSWER class (e.g., ANSWER_CONFIDENT)
-            confidence: Confidence score (0.0 to 1.0)
-            fragments_used: Number of fragments used in the answer
+            answer: The generated answer text
+            confidence: Confidence score (float or string representation)
+            data_recency: Data recency in years
             vault_path: Optional path to the audit vault transaction
         """
         print()
         border = "─" * self.width
         
+        # Ensure confidence is a float
+        if isinstance(confidence, str):
+            try:
+                confidence = float(confidence)
+            except ValueError:
+                confidence = 0.0
+        
         # Green success banner
-        confidence_pct = confidence * 100
+        confidence_pct = float(confidence)
         success_banner = self._color(f" ✓ ANSWER GENERATED: {answer_class} ({confidence_pct:.1f}% confidence) ", 'GREEN')
         success_banner = success_banner.ljust(self.width + 24)
         print(f"  {success_banner}")
@@ -268,9 +282,10 @@ class ControlDeck:
         
         # Details
         details = [
-            (f"Fragments Used:", f"{fragments_used} frozen fragments isolated"),
+            (f"Answer Length:", f"{len(answer)} characters"),
             (f"Execution Time:", f"{self._get_elapsed_time():.3f}s"),
-            (f"Confidence Score:", f"{confidence:.4f}")
+            (f"Confidence Score:", f"{confidence_pct:.1f}%"),
+            (f"Data Recency:", f"{data_recency} years")
         ]
         
         for label, value in details:
