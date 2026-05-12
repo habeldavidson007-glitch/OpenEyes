@@ -1,7 +1,1 @@
-```
-# Binary and compiled files
-*.bin
-
-# Environment and cache
-.openeyes/
-```
+Nothing to output - the added file 'openeyes/ingestion/live_scraper.py' is a source code file and should not be ignored.
