@@ -90,10 +90,11 @@ class TestComprehensiveDomains:
         
         for query in medical_queries:
             result = self.engine.answer(query, domain="medical")
-            if result.get("decision_class", "").startswith("ANSWER"):
+            # Fix: Use 'status' instead of 'decision_class' (engine returns 'status')
+            if result.get("status", "").startswith("ANSWER"):
                 answers += 1
                 total_chars += len(result.get("answer", ""))
-            elif result.get("decision_class", "").startswith("HALT"):
+            elif result.get("status", "").startswith("HALT"):
                 halts += 1
                 
         print(f"\n=== MEDICAL DOMAIN RESULTS ===")
@@ -175,10 +176,10 @@ class TestComprehensiveDomains:
         
         for query in investment_queries:
             result = self.engine.answer(query, domain="investment")
-            if result.get("decision_class", "").startswith("ANSWER"):
+            if result.get("status", "").startswith("ANSWER"):
                 answers += 1
                 total_chars += len(result.get("answer", ""))
-            elif result.get("decision_class", "").startswith("HALT"):
+            elif result.get("status", "").startswith("HALT"):
                 halts += 1
                 
         print(f"\n=== INVESTMENT DOMAIN RESULTS ===")
@@ -260,10 +261,10 @@ class TestComprehensiveDomains:
         
         for query in healthcare_queries:
             result = self.engine.answer(query, domain="healthcare")
-            if result.get("decision_class", "").startswith("ANSWER"):
+            if result.get("status", "").startswith("ANSWER"):
                 answers += 1
                 total_chars += len(result.get("answer", ""))
-            elif result.get("decision_class", "").startswith("HALT"):
+            elif result.get("status", "").startswith("HALT"):
                 halts += 1
                 
         print(f"\n=== HEALTHCARE DOMAIN RESULTS ===")
@@ -345,10 +346,10 @@ class TestComprehensiveDomains:
         
         for query in economy_queries:
             result = self.engine.answer(query, domain="economy")
-            if result.get("decision_class", "").startswith("ANSWER"):
+            if result.get("status", "").startswith("ANSWER"):
                 answers += 1
                 total_chars += len(result.get("answer", ""))
-            elif result.get("decision_class", "").startswith("HALT"):
+            elif result.get("status", "").startswith("HALT"):
                 halts += 1
                 
         print(f"\n=== ECONOMY DOMAIN RESULTS ===")
@@ -430,10 +431,10 @@ class TestComprehensiveDomains:
         
         for query in general_queries:
             result = self.engine.answer(query, domain="general")
-            if result.get("decision_class", "").startswith("ANSWER"):
+            if result.get("status", "").startswith("ANSWER"):
                 answers += 1
                 total_chars += len(result.get("answer", ""))
-            elif result.get("decision_class", "").startswith("HALT"):
+            elif result.get("status", "").startswith("HALT"):
                 halts += 1
                 
         print(f"\n=== GENERAL KNOWLEDGE RESULTS ===")

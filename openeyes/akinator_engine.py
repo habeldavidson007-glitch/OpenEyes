@@ -439,7 +439,7 @@ class AkinatorEngine:
             
             # Check source types
             if mask.source_types:
-                frag_source = getattr(frag, 'source_type', '')
+                frag_source = getattr(frag, 'source_type', '') or ''
                 if not any(st in frag_source for st in mask.source_types):
                     continue
             

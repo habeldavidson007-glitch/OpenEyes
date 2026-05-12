@@ -8,6 +8,13 @@ Agent Types:
 - LibraryAgent: Retrieves from local fragment library (fastest)
 - APIAgent: Retrieves from external domain APIs (requires API keys)
 - WebAgent: Retrieves from live internet (slowest, credibility scoring required)
+
+Autonomous Pulse Swarm:
+- HarvesterAgent: Scans RSS feeds/APIs for new content hashes
+- WorkerAgent: Converts text to integer tokens
+- OrganizerAgent: Calculates TF-IDF, updates rules
+- CentralScheduler: Manages cyclic wake-harvest-sleep rhythm
+- AutonomousSwarm: Main entry point for bio-inspired operation
 """
 
 import re
@@ -24,6 +31,43 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from openeyes.fragment_library import FragmentLibrary, Fragment
 from openeyes.core.kap import build_kap, KnowledgeAcquisitionPlan, kap_to_trace
+
+# Import autonomous pulse swarm components
+from .autonomous_pulse_swarm import (
+    AgentState,
+    SignalType,
+    AgentConfig,
+    TokenBucket,
+    WALBuffer,
+    BaseAgent,
+    HarvesterAgent,
+    WorkerAgent,
+    OrganizerAgent,
+    SignalBus,
+    CentralScheduler,
+    AutonomousSwarm
+)
+
+__all__ = [
+    # Traditional swarm agents
+    'FragmentCandidate',
+    'LibraryAgent',
+    'APIAgent',
+    'WebAgent',
+    # Autonomous pulse swarm
+    'AgentState',
+    'SignalType',
+    'AgentConfig',
+    'TokenBucket',
+    'WALBuffer',
+    'BaseAgent',
+    'HarvesterAgent',
+    'WorkerAgent',
+    'OrganizerAgent',
+    'SignalBus',
+    'CentralScheduler',
+    'AutonomousSwarm'
+]
 
 
 # Trusted Finance Sources Whitelist

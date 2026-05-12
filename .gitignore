@@ -1,40 +1,29 @@
 ```
-# Compiled Python files
-*.pyc
+# Python
 __pycache__/
-
-# Build and distribution directories
-build/
-dist/
-*.egg-info/
-
-# Virtual environments
-venv/
-.venv/
-.env
-.env.local
-*.env.*
+*.pyc
+*.pyo
+*.pyd
 
 # Logs
 *.log
 
-# Coverage reports
-.coverage
-coverage/
-htmlcov/
+# Environment
+.env
+.env.local
+*.env.*
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
+# Databases
+*.db
+
+# Temporary files
 *.tmp
+*.temp
 
-# OS files
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Testing
-.pytest_cache/
-.mypy_cache/
+# Audit logs and vault
+.openeyes/vault/audit/
 ```
