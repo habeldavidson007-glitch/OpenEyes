@@ -1,23 +1,87 @@
-```gitignore
-# Python compiled files
-*.pyc
+```
+# Python
 __pycache__/
-
-# Logs and temporary files
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
 *.log
-*.tmp
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
 
-# Environment files
-.env
-.env.local
-*.env.*
-
-# Database files
+# Database
 *.db
-*.bin
+*.db-journal
+wal_buffer.db
 
-# Backup and swap files
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
 *.swp
 *.swo
-*~
+
+# Environment
+.env
+.env.local
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+target/
+.gradle/
+node_modules/
+
+# Testing
+htmlcov/
+.coverage
+.coverage.*
+.nox/
+.pytest_cache/
+.hypothesis/
+
+# Audit and vault logs
+.openeyes/vault/audit/*.md
+.openeyes/vault/audit/*.bin
 ```
