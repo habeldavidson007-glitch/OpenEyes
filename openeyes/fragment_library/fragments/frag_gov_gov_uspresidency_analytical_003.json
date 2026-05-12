@@ -1,0 +1,13 @@
+{
+  "id": "frag_gov_gov_uspresidency_analytical_003",
+  "domain": "governance",
+  "sector": "GOV",
+  "content": "{'summary': 'Scholarly analysis examines expansion of presidential power through historical practice, court decisions, and statutory delegations across different eras.', 'key_points': [\"Neustadt's 'power to persuade' thesis emphasizes informal influence over formal authority\", 'Unitary executive theory argues for broad inherent powers, contested by congressional scholars', 'Historical growth of executive branch from 18th century minimalism to modern administrative state', 'War powers tension intensified since WWII, War Powers Resolution (1973) largely ineffective', 'Signing statements increasingly used to assert interpretive authority over legislation', 'Emergency declarations activate statutory powers, subject to limited congressional oversight'], 'sources': ['Richard Neustadt, Presidential Power (1960)', 'Steven Calabresi & Steven Rhodes, The Unitary Executive (1992)', 'Arthur Schlesinger, The Imperial Presidency (1973)', 'CRS analysis of emergency declarations'], 'related_fragments': [], 'last_updated': '2024-01-15', 'credibility_score': 0.98, 'philosophy_guard_passed': True, 'philosophy_guard_note': 'Descriptive claim about presidential systems; no normative advocacy regarding what should be'}",
+  "tags": [],
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "subdomain": "GOV",
+  "reasoning_role": "counter_argument",
+  "year": 2024
+}

@@ -34,11 +34,8 @@ def normalize_query(query: str) -> str:
 
 
 def _infer_general_intent(query_lower: str) -> str:
-    # This function is deprecated - GENERAL_INTENT_TEMPLATES removed
-    # Keeping for backward compatibility but should not be called
-    return "general_analysis"
-
-# Source endpoints (primary APIs)
+    """Fallback intent inference - returns general query."""
+    return query_lower
 WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/title"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
 PUBMED_SEARCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
@@ -589,188 +586,23 @@ def fetch_live_fragments(query: str, domain: str, limit: int = 5) -> list[Fragme
     return unique_frags[:limit]
 
 
-def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list[Fragment]:
+def jit_synthesize_fragments(query: str, domain: str, limit: int = 5) -> list:
     """
-    Just-In-Time (JIT) Synthesizer: Auto-generates fragments when none are found.
+    JIT synthesis is disabled for all verified domains.
+    OpenEyes halts honestly rather than synthesizing unverified content.
     
-    JIT synthesis is DISABLED for verified domains.
-    Only runs for domains with no fragment library coverage.
+    If retrieval returns nothing, the correct behavior is HALT_NO_EVIDENCE
+    not synthesized content that will fail Monte Carlo anyway.
     """
-    # Do not synthesize for verified domains - let the pipeline HALT honestly
-    if domain in VERIFIED_DOMAINS:
+    from openeyes.core.domain_constants import normalize_domain, CANONICAL_DOMAINS
+    
+    normalized = normalize_domain(domain)
+    
+    if normalized in CANONICAL_DOMAINS:
+        # Verified domain — do not synthesize
+        # Return empty so pipeline reaches honest HALT
         return []
     
-    today = datetime.now().strftime("%Y-%m-%d")
-    frags = []
-    query_lower = normalize_query(query)
-    
-    # Domain-specific JIT synthesis
-    if domain == "medical":
-        # General medical knowledge synthesis
-        if "cancer" in query_lower or "tumor" in query_lower or "oncology" in query_lower:
-            frags.append(
-                Fragment(
-                    claim="Cancer is fundamentally a disease of uncontrolled cell proliferation caused by accumulated genetic mutations. Key mechanisms include oncogene activation, tumor suppressor inactivation, DNA repair defects, and immune evasion.",
-                    evidence="Hanahan & Weinberg Hallmarks of Cancer framework; NCI SEER database analysis",
-                    limitations=["General framework; specific cancer types have unique molecular profiles"],
-                    sub_questions=["What genetic mutations cause cancer?", "How do cancers evade immune detection?"],
-                    source_type="peer_reviewed_study",
-                    source_id=f"jit-cancer-{today}",
-                    source_url="https://www.cancer.gov/about-cancer/causes-prevention/genetics",
-                    published_on=today,
-                    jurisdiction="global",
-                    evidence_level="high",
-                )
-            )
-        
-        if "antibiotic" in query_lower or "antimicrobial" in query_lower:
-            frags.append(
-                Fragment(
-                    claim="Antibiotics target bacterial-specific processes: cell wall synthesis (beta-lactams), protein synthesis (macrolides, tetracyclines), DNA replication (fluoroquinolones), and metabolic pathways (sulfonamides). Resistance develops through mutation, horizontal gene transfer, and selective pressure from overuse.",
-                    evidence="WHO Global Antimicrobial Resistance Surveillance; CDC Antibiotic Resistance Threats Report 2019",
-                    limitations=["Resistance patterns vary geographically; new antibiotics in development"],
-                    sub_questions=["How does antibiotic resistance develop?", "What are alternative treatments?"],
-                    source_type="government_report",
-                    source_id=f"jit-amr-{today}",
-                    source_url="https://www.who.int/health-topics/antimicrobial-resistance",
-                    published_on=today,
-                    jurisdiction="global",
-                    evidence_level="high",
-                )
-            )
-    
-    elif domain == "investment":
-        # Investment knowledge synthesis
-        frags.append(
-            Fragment(
-                claim="Portfolio theory demonstrates that diversification across uncorrelated assets reduces risk without sacrificing expected return. The efficient frontier represents optimal risk-return combinations. Long-term equity exposure historically provides positive real returns but with significant short-term volatility.",
-                evidence="Markowitz Modern Portfolio Theory (1952); Fama-French factor models; S&P 500 historical data 1926-2024",
-                limitations=["Past performance doesn't guarantee future results; individual circumstances vary"],
-                sub_questions=["What is the efficient frontier?", "How do factors affect returns?"],
-                source_type="peer_reviewed_study",
-                source_id=f"jit-mpt-{today}",
-                source_url="https://doi.org/10.2307/2975974",
-                published_on=today,
-                jurisdiction="global",
-                evidence_level="high",
-            )
-        )
-        
-        if any(kw in query_lower for kw in ["fast", "quick", "rich", "get rich"]):
-            frags.append(
-                Fragment(
-                    claim="High-return strategies invariably carry high risk. Historical data shows that attempts to rapidly accumulate wealth through leverage, speculation, or concentrated positions have >80% failure rates within 5 years. Sustainable wealth building requires time, diversification, and consistent contributions.",
-                    evidence="Dalbar QAIB studies on investor behavior; SPIVA scorecards on active vs passive management",
-                    limitations=["Individual outcomes vary; some high-risk strategies succeed but are statistically rare"],
-                    sub_questions=["What are realistic return expectations?", "How to manage investment risk?"],
-                    source_type="statistical_bureau",
-                    source_id=f"jit-risk-{today}",
-                    source_url="https://www.dalbar.com/Products/Quantitative-Analysis-of-Investor-Behavior/",
-                    published_on=today,
-                    jurisdiction="US",
-                    evidence_level="high",
-                )
-            )
-    
-    elif domain == "legal":
-        frags.append(
-            Fragment(
-                claim="Legal systems operate on precedent (common law) or codified statutes (civil law). Key principles include burden of proof, due process, and proportionality. Legal outcomes depend on jurisdiction, facts, and interpretation of applicable laws.",
-                evidence="Black's Law Dictionary; Restatement of various legal domains; Supreme Court precedents",
-                limitations=["Not legal advice; consult licensed attorney for specific cases"],
-                sub_questions=["What is the relevant jurisdiction?", "What precedents apply?"],
-                source_type="textbook",
-                source_id=f"jit-legal-{today}",
-                source_url="https://www.law.cornell.edu/wex",
-                published_on=today,
-                jurisdiction="US",
-                evidence_level="moderate",
-            )
-        )
-    
-    elif domain == "engineering":
-        frags.append(
-            Fragment(
-                claim="Engineering design follows systematic processes: requirements analysis, conceptual design, detailed design, testing, and iteration. Safety factors account for uncertainties in loads, materials, and manufacturing. Standards (ISO, ASTM, IEEE) ensure interoperability and safety.",
-                evidence="Engineering fundamentals textbooks; ISO 9001 quality management; professional engineering codes of ethics",
-                limitations=["Specific applications require licensed professional engineer review"],
-                sub_questions=["What are the design requirements?", "What standards apply?"],
-                source_type="standard_specification",
-                source_id=f"jit-eng-{today}",
-                source_url="https://www.iso.org/standards.html",
-                published_on=today,
-                jurisdiction="global",
-                evidence_level="high",
-            )
-        )
-    
-    elif domain == "technology":
-        frags.append(
-            Fragment(
-                claim="Quantum computing leverages quantum mechanical phenomena (superposition, entanglement, interference) to process information. Unlike classical bits (0 or 1), qubits can exist in superposition states, enabling exponential speedup for specific problems like factoring (Shor's algorithm) and database search (Grover's algorithm).",
-                evidence="Nielsen & Chuang 'Quantum Computation and Quantum Information'; IBM Quantum Experience; Google Sycamore processor results",
-                limitations=["Current quantum computers are noisy intermediate-scale (NISQ); error correction remains challenging"],
-                sub_questions=["What is quantum superposition?", "How does quantum entanglement enable computation?"],
-                source_type="textbook",
-                source_id=f"jit-quantum-{today}",
-                source_url="https://quantum-computing.ibm.com/",
-                published_on=today,
-                jurisdiction="global",
-                evidence_level="high",
-            )
-        )
-        if any(kw in query_lower for kw in ["ai", "artificial intelligence", "machine learning"]):
-            frags.append(
-                Fragment(
-                    claim="Machine learning uses statistical algorithms to learn patterns from data without explicit programming. Deep learning employs multi-layer neural networks to model complex non-linear relationships. Key challenges include overfitting, bias-variance tradeoff, and interpretability.",
-                    evidence="Goodfellow et al. 'Deep Learning' (MIT Press 2016); NeurIPS/ICML conference proceedings; industry benchmarks",
-                    limitations=["Model performance depends on data quality; generalization to new domains requires careful validation"],
-                    sub_questions=["What is supervised vs unsupervised learning?", "How do neural networks learn?"],
-                    source_type="conference_paper",
-                    source_id=f"jit-ml-{today}",
-                    source_url="https://www.deeplearningbook.org/",
-                    published_on=today,
-                    jurisdiction="global",
-                    evidence_level="high",
-                )
-            )
-        if "blockchain" in query_lower or "crypto" in query_lower:
-            frags.append(
-                Fragment(
-                    claim="Blockchain is a distributed ledger technology where transactions are recorded in cryptographically linked blocks across a decentralized network. Key properties include immutability (cannot alter past records), transparency (public verification), and consensus mechanisms (Proof of Work, Proof of Stake) that eliminate need for trusted intermediaries.",
-                    evidence="Nakamoto Bitcoin whitepaper 2008; Ethereum yellow paper; academic research on distributed systems",
-                    limitations=["Scalability challenges exist; energy consumption varies by consensus mechanism; regulatory uncertainty in some jurisdictions"],
-                    sub_questions=["How does blockchain achieve consensus?", "What are smart contracts?"],
-                    source_type="technical_manual",
-                    source_id=f"jit-blockchain-{today}",
-                    source_url="https://bitcoin.org/bitcoin.pdf",
-                    published_on=today,
-                    jurisdiction="global",
-                    evidence_level="high",
-                )
-            )
-    
-    elif domain == "science":
-        frags.append(
-            Fragment(
-                claim="Scientific method requires hypothesis formation, experimental testing, peer review, and reproducibility. Scientific knowledge advances through falsification of incorrect theories and accumulation of evidence supporting validated models.",
-                evidence="Popper 'Logic of Scientific Discovery'; Kuhn 'Structure of Scientific Revolutions'; modern research methodology standards",
-                limitations=["Scientific consensus evolves with new evidence; single studies should be interpreted cautiously"],
-                sub_questions=["What is the scientific method?", "How is scientific consensus formed?"],
-                source_type="textbook",
-                source_id=f"jit-science-{today}",
-                source_url="https://www.nationalacademies.org/",
-                published_on=today,
-                jurisdiction="global",
-                evidence_level="high",
-            )
-        )
-    
-    # For all other domains, JIT synthesis is disabled by default.
-    # Only specific domain handlers above generate fragments.
-    # If no fragments were generated, return empty list.
-    
-    # Apply anti-hoax filtering to synthesized fragments
-    filtered = [f for f in frags if _is_factual_content(f.claim)]
-    
-    return filtered[:limit]
+    # For experimental/unknown domains only — original synthesis logic
+    # (keep original code here if needed for future experimental domains)
+    return []

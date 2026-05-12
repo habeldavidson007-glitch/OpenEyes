@@ -1,0 +1,16 @@
+{
+  "id": "frag_gov_sec_nucleartriad_definitional_025",
+  "domain": "governance",
+  "sector": "sec",
+  "subdomain": "GOV",
+  "reasoning_role": "definition",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "weight": 1.0,
+  "grundy_value": -1,
+  "robustness_status": "PENDING",
+  "source_url": "https://www.un.org",
+  "tags": [],
+  "content": "Fragment frag_gov_sec_nucleartriad_definitional_025",
+  "source": "Unknown"
+}

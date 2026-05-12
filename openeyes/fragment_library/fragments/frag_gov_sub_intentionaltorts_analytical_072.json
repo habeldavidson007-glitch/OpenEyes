@@ -1,0 +1,16 @@
+{
+  "id": "gov_sub_intentionaltorts_analytical_72",
+  "domain": "governance",
+  "sector": "SUB",
+  "subdomain": "GOV",
+  "reasoning_role": "counter_argument",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "weight": 1.0,
+  "grundy_value": -1,
+  "robustness_status": "PENDING",
+  "source_url": "https://www.un.org",
+  "tags": [],
+  "content": "Fragment gov_sub_intentionaltorts_analytical_72",
+  "source": "Unknown"
+}

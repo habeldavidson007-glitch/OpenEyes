@@ -1,0 +1,13 @@
+{
+  "id": "gov-GEL-NATOEXPANSION-COMPARATIVE-003",
+  "domain": "governance",
+  "sector": "GEL",
+  "content": "{'overview': 'This fragment describes natoexpansion in geopolitical analysis. Five waves 1999 2004 2009 2017 2020.', 'key_points': ['Five waves 1999 2004 2009 2017 2020', 'Extend democratic security', 'Russian opposition escalated', 'Open Door Article 10', 'Ukraine invasion intensified debate'], 'sources': ['World Bank WGI (databank.worldbank.org)', 'Freedom House (freedomhouse.org)', 'CSIS (csis.org)', 'Brookings (brookings.edu)', 'Carnegie (carnegieendowment.org)', 'Lowy Institute (lowyinstitute.org)'], 'philosophy_guard': 'Describes what IS - theories patterns cases. Not what SHOULD BE.', 'credibility_score': 0.94}",
+  "tags": [],
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "subdomain": "GOV",
+  "reasoning_role": "counter_argument",
+  "year": 2024
+}

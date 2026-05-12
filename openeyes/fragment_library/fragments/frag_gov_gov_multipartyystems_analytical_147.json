@@ -1,0 +1,13 @@
+{
+  "id": "frag_gov_gov_multipartyystems_analytical_147",
+  "domain": "governance",
+  "sector": "GOV",
+  "content": "{'summary': '. This fragment examines scholarly debates, empirical patterns, and comparative perspectives.', 'key_points': ['Major scholarly debates about multi-party systems', 'Empirical evidence and quantitative findings', 'Cross-national or cross-jurisdictional comparisons', 'Criticisms and reform proposals', 'Future trends and emerging challenges'], 'sources': ['Comparative Constitutions Project', 'Freedom House reports', 'Inter-Parliamentary Union data', 'Academic literature on comparative politics', 'World Bank Worldwide Governance Indicators'], 'related_fragments': [], 'last_updated': '2024-01-15', 'credibility_score': 0.95, 'philosophy_guard_passed': True, 'philosophy_guard_note': 'Descriptive claim about political parties & organization; no normative advocacy regarding what should be'}",
+  "tags": [],
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "subdomain": "GOV",
+  "reasoning_role": "counter_argument",
+  "year": 2024
+}

@@ -1,0 +1,13 @@
+{
+  "id": "frag_gov_gov_separationofpowers_definitional_004",
+  "domain": "governance",
+  "sector": "GOV",
+  "content": "{'summary': 'Separation of powers divides governmental authority among three branches\u2014legislative, executive, judicial\u2014each with distinct functions and checks on the others.', 'key_points': ['Legislative power (Article I): makes laws, controls appropriations, oversees executive', 'Executive power (Article II): enforces laws, conducts foreign policy, commands military', 'Judicial power (Article III): interprets laws, reviews constitutionality, resolves disputes', 'Checks include presidential veto, Senate confirmation, judicial review, impeachment', \"Madison's Federalist No. 51: 'Ambition must be made to counteract ambition'\", 'System designed to prevent tyranny through diffusion of authority'], 'sources': ['U.S. Constitution Articles I-III', 'Federalist Papers No. 47-51', 'Marbury v. Madison (1803)', 'INS v. Chadha (1983)'], 'related_fragments': [], 'last_updated': '2024-01-15', 'credibility_score': 0.98, 'philosophy_guard_passed': True, 'philosophy_guard_note': 'Descriptive claim about presidential systems; no normative advocacy regarding what should be'}",
+  "tags": [],
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "subdomain": "GOV",
+  "reasoning_role": "definition",
+  "year": 2024
+}

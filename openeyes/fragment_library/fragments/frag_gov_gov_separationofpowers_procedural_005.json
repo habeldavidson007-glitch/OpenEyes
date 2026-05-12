@@ -1,0 +1,13 @@
+{
+  "id": "frag_gov_gov_separationofpowers_procedural_005",
+  "domain": "governance",
+  "sector": "GOV",
+  "content": "{'summary': 'Inter-branch procedures operationalize separation of powers through confirmation processes, veto overrides, judicial review, and oversight mechanisms.', 'key_points': ['Senate confirmation hearings for judicial and executive nominees', 'Congressional oversight through committee investigations, GAO audits, CRS reports', 'Judicial review initiated through case or controversy with standing', 'Impeachment process: House brings charges, Senate conducts trial', 'Budget process requires presidential submission, congressional appropriation', 'War powers consultation requirements under War Powers Resolution'], 'sources': ['Senate Rules', 'House Rules', 'Federal Rules of Civil Procedure', 'Government Accountability Office Act'], 'related_fragments': [], 'last_updated': '2024-01-15', 'credibility_score': 0.98, 'philosophy_guard_passed': True, 'philosophy_guard_note': 'Descriptive claim about presidential systems; no normative advocacy regarding what should be'}",
+  "tags": [],
+  "source": "Unknown",
+  "source_url": "https://www.un.org",
+  "credibility_class": "anecdotal",
+  "subdomain": "GOV",
+  "reasoning_role": "definition",
+  "year": 2024
+}

@@ -31,6 +31,7 @@ DOMAIN_TIERS = {
     
     # Tier 1: High Stakes - Strict HALT, Primary sources only
     "healthcare": "tier1",
+    "governance": "tier1",
     "medical": "tier1",  # Legacy alias for healthcare
     "law": "tier1", 
     "legal": "tier1",
@@ -250,303 +251,78 @@ EMBEDDED_RULES = {
         "tier": "tier1",
         "version": "1.0",
         "rules": [
-            {
-                "id": "HC-001",
-                "name": "Do No Harm",
-                "description": "No fragment may recommend a treatment with a known fatal interaction",
-                "check_type": "blacklist_tag_conflict",
-                "config": {"flag": "fatal_interaction"},
-                "halt_on_failure": True
-            },
-            {
-                "id": "HC-002",
-                "name": "Evidence-Based Only",
-                "description": "All treatment fragments must have primary source credibility",
-                "check_type": "minimum_source_type",
-                "config": {"allowed": ["primary"]},
-                "halt_on_failure": True
-            },
-            {
-                "id": "HC-003",
-                "name": "Cite Source",
-                "description": "Every fragment must carry a source URL",
-                "check_type": "requires_field",
-                "config": {"field": "source_url"},
-                "halt_on_failure": True
-            },
-            {
-                "id": "HC-004",
-                "name": "Recent Data Required",
-                "description": "At least one fragment must have data from 2024 or later",
-                "check_type": "requires_recent_data",
-                "config": {"min_year": 2024},
-                "halt_on_failure": False
-            },
-            {
-                "id": "HC-005",
-                "name": "Counter-Arguments Checked",
-                "description": "Must include risk/contraindication information",
-                "check_type": "requires_reasoning_role",
-                "config": {"role": "counter_argument"},
-                "halt_on_failure": False
-            }
+            {"id": "HC-001", "name": "Do No Harm", "description": "No fragment may recommend a treatment with a known fatal interaction", "check_type": "blacklist_tag_conflict", "config": {"flag": "fatal_interaction"}, "halt_on_failure": True},
+            {"id": "HC-002", "name": "Evidence-Based Only", "description": "All treatment fragments must have primary source credibility", "check_type": "minimum_source_type", "config": {"allowed": ["primary"]}, "halt_on_failure": True},
+            {"id": "HC-003", "name": "Cite Source", "description": "Every fragment must carry a source URL", "check_type": "requires_field", "config": {"field": "source_url"}, "halt_on_failure": True}
         ]
     },
-    
-    # Legacy alias for healthcare
-    "medical": {
-        "domain": "medical",
+    "governance": {
+        "domain": "governance",
         "tier": "tier1",
-        "version": "0.2",
+        "version": "0.1",
         "rules": [
-            {
-                "id": "MED-001",
-                "name": "Do No Harm",
-                "description": "No fragment may recommend a treatment with a known fatal interaction",
-                "check_type": "blacklist_tag_conflict",
-                "config": {"flag": "fatal_interaction"},
-                "halt_on_failure": True
-            },
-            {
-                "id": "MED-002",
-                "name": "Evidence-Based Only",
-                "description": "All treatment fragments must have primary source credibility",
-                "check_type": "minimum_source_type",
-                "config": {"allowed": ["primary"]},
-                "halt_on_failure": True
-            },
-            {
-                "id": "MED-003",
-                "name": "Cite Source",
-                "description": "Every fragment must carry a source URL",
-                "check_type": "requires_field",
-                "config": {"field": "source_url"},
-                "halt_on_failure": True
-            },
-            {
-                "id": "MED-004",
-                "name": "Recent Data Required",
-                "description": "At least one fragment must have data from 2024 or later",
-                "check_type": "requires_recent_data",
-                "config": {"min_year": 2024},
-                "halt_on_failure": False
-            },
-            {
-                "id": "MED-005",
-                "name": "Counter-Arguments Checked",
-                "description": "Must include risk/contraindication information",
-                "check_type": "requires_reasoning_role",
-                "config": {"role": "counter_argument"},
-                "halt_on_failure": False
-            }
+            {"id": "GOV-001", "name": "Require Source URL", "description": "Every governance fragment must have a source_url", "check_type": "requires_field", "config": {"field": "source_url"}, "halt_on_failure": True},
+            {"id": "GOV-002", "name": "Require Year", "description": "Every governance fragment must have a year", "check_type": "requires_field", "config": {"field": "year"}, "halt_on_failure": True},
+            {"id": "GOV-003", "name": "Descriptive Only", "description": "Governance answers must describe what is - not advocate for what should be", "check_type": "opinion_language_check", "config": {"forbidden_phrases": ["should be abolished", "must be reformed"]}, "halt_on_failure": False},
+            {"id": "GOV-004", "name": "No Electoral Recommendations", "description": "OpenEyes never recommends voting for or against any candidate or party", "check_type": "blacklist_tag_conflict", "config": {"forbidden_tags": ["vote_recommendation", "candidate_endorsement"]}, "halt_on_failure": True},
+            {"id": "GOV-006", "name": "Minimum Source Quality", "description": "Governance answers require government_source or peer_reviewed_study credibility", "check_type": "minimum_source_type", "config": {"allowed": ["government_source", "peer_reviewed_study", "primary"]}, "halt_on_failure": True}
         ]
     },
-    
     "legal": {
         "domain": "legal",
         "tier": "tier1",
         "version": "0.2",
         "rules": [
-            {
-                "id": "LEG-001",
-                "name": "Jurisdiction Consistency",
-                "description": "All fragments must reference the same jurisdiction",
-                "check_type": "consistent_metadata",
-                "config": {"field": "jurisdiction"},
-                "halt_on_failure": True
-            },
-            {
-                "id": "LEG-002",
-                "name": "Primary Authority Required",
-                "description": "Legal claims must cite statutes, regulations, or case law",
-                "check_type": "minimum_source_type",
-                "config": {"allowed": ["primary"]},
-                "halt_on_failure": True
-            },
-            {
-                "id": "LEG-003",
-                "name": "No Outdated Precedent",
-                "description": "Case law must not be overturned or superseded",
-                "check_type": "not_overturned",
-                "config": {},
-                "halt_on_failure": True
-            }
+            {"id": "LEG-001", "name": "Jurisdiction Consistency", "description": "All fragments must reference the same jurisdiction", "check_type": "consistent_metadata", "config": {"field": "jurisdiction"}, "halt_on_failure": True},
+            {"id": "LEG-002", "name": "Primary Authority Required", "description": "Legal claims must cite statutes, regulations, or case law", "check_type": "minimum_source_type", "config": {"allowed": ["primary"]}, "halt_on_failure": True}
         ]
     },
-    
+    "economy": {
+        "domain": "economy",
+        "tier": "tier2",
+        "version": "0.2",
+        "rules": [
+            {"id": "ECO-001", "name": "Source Required", "description": "All economic claims must have source attribution", "check_type": "requires_field", "config": {"field": "source"}, "halt_on_failure": False}
+        ]
+    },
     "engineering": {
         "domain": "engineering",
         "tier": "tier2",
         "version": "0.2",
         "rules": [
-            {
-                "id": "ENG-001",
-                "name": "Safety Standards Compliance",
-                "description": "Must reference applicable safety standards (ISO, ASTM, etc.)",
-                "check_type": "requires_standard_reference",
-                "config": {"standards": ["ISO", "ASTM", "IEEE", "ASME"]},
-                "halt_on_failure": True
-            },
-            {
-                "id": "ENG-002",
-                "name": "Recent Technical Data",
-                "description": "Technical specifications should be from recent sources",
-                "check_type": "minimum_year",
-                "config": {"min_year": 2020},
-                "halt_on_failure": False
-            },
-            {
-                "id": "ENG-003",
-                "name": "Peer-Reviewed Sources Preferred",
-                "description": "Prefer peer-reviewed journals over manufacturer claims",
-                "check_type": "prefer_source_type",
-                "config": {"preferred": ["primary", "secondary"], "discouraged": ["tertiary"]},
-                "halt_on_failure": False
-            }
+            {"id": "ENG-001", "name": "Safety Standards Compliance", "description": "Must reference applicable safety standards", "check_type": "requires_standard_reference", "config": {"standards": ["ISO", "ASTM", "IEEE"]}, "halt_on_failure": True}
         ]
     },
-    
     "cooking": {
         "domain": "cooking",
         "tier": "tier3",
         "version": "0.2",
         "rules": [
-            {
-                "id": "COOK-001",
-                "name": "Allergy Warning",
-                "description": "Must flag common allergens if present",
-                "check_type": "flag_allergens",
-                "config": {"allergens": ["nuts", "dairy", "eggs", "soy", "gluten", "shellfish"]},
-                "halt_on_failure": False
-            },
-            {
-                "id": "COOK-002",
-                "name": "Source Attribution",
-                "description": "Recipe should have a source (can be blog, book, etc.)",
-                "check_type": "requires_field",
-                "config": {"field": "source"},
-                "halt_on_failure": False
-            },
-            {
-                "id": "COOK-003",
-                "name": "Label Unverified Sources",
-                "description": "Tertiary sources must be labeled as unverified",
-                "check_type": "label_tertiary",
-                "config": {"label": "Unverified"},
-                "halt_on_failure": False
-            }
+            {"id": "COOK-001", "name": "Allergy Warning", "description": "Must flag common allergens if present", "check_type": "flag_allergens", "config": {"allergens": ["nuts", "dairy", "eggs"]}, "halt_on_failure": False}
         ]
     },
-    
-    "emergency_medical": {
-        "domain": "emergency_medical",
-        "tier": "tier0",
-        "version": "0.3",
-        "rules": [
-            {
-                "id": "EMERG-001",
-                "name": "Triple Verification Required",
-                "description": "All emergency medical advice must be verified by 3+ independent primary sources",
-                "check_type": "minimum_fragment_count",
-                "config": {"min_count": 3, "source_type": "primary"},
-                "halt_on_failure": True
-            },
-            {
-                "id": "EMERG-002",
-                "name": "Cross-Domain Consensus",
-                "description": "Must have agreement across multiple medical subdomains",
-                "check_type": "requires_consensus",
-                "config": {"min_domains": 2},
-                "halt_on_failure": True
-            },
-            {
-                "id": "EMERG-003",
-                "name": "Real-Time Data Required",
-                "description": "Emergency protocols must reference current year guidelines",
-                "check_type": "minimum_year",
-                "config": {"min_year": 2025},
-                "halt_on_failure": True
-            },
-            {
-                "id": "EMERG-004",
-                "name": "Counter-Argument Mandatory",
-                "description": "Must include contraindications and risk factors",
-                "check_type": "requires_reasoning_role",
-                "config": {"role": "counter_argument"},
-                "halt_on_failure": True
-            }
-        ]
-    },
-    
     "technology": {
         "domain": "technology",
         "tier": "tier2",
         "version": "0.2",
         "rules": [
-            {
-                "id": "TECH-001",
-                "name": "Version Specificity",
-                "description": "Technical information must specify software/hardware versions",
-                "check_type": "requires_field",
-                "config": {"field": "version"},
-                "halt_on_failure": False
-            },
-            {
-                "id": "TECH-002",
-                "name": "Recent Data Preferred",
-                "description": "Technology information should be from last 3 years",
-                "check_type": "minimum_year",
-                "config": {"min_year": 2022},
-                "halt_on_failure": False
-            }
+            {"id": "TECH-001", "name": "Version Specificity", "description": "Technical information must specify versions", "check_type": "requires_field", "config": {"field": "version"}, "halt_on_failure": False}
         ]
     },
-    
     "creative": {
         "domain": "creative",
         "tier": "tier4",
         "version": "0.2",
         "rules": [
-            {
-                "id": "CREATE-001",
-                "name": "Divergent Thinking Encouraged",
-                "description": "Multiple perspectives and creative interpretations welcomed",
-                "check_type": "prefer_reasoning_diversity",
-                "config": {"min_roles": 1},
-                "halt_on_failure": False
-            },
-            {
-                "id": "CREATE-002",
-                "name": "Source Attribution Optional",
-                "description": "Creative works may or may not have formal sources",
-                "check_type": "optional_field",
-                "config": {"field": "source"},
-                "halt_on_failure": False
-            }
+            {"id": "CREATE-001", "name": "Divergent Thinking Encouraged", "description": "Multiple perspectives welcomed", "check_type": "prefer_reasoning_diversity", "config": {"min_roles": 1}, "halt_on_failure": False}
         ]
     },
-    
     "general": {
         "domain": "general",
         "tier": "tier2",
         "version": "0.2",
         "rules": [
-            {
-                "id": "GEN-001",
-                "name": "Source Required",
-                "description": "All claims must have some source attribution",
-                "check_type": "requires_field",
-                "config": {"field": "source"},
-                "halt_on_failure": False
-            },
-            {
-                "id": "GEN-002",
-                "name": "Reasoning Chain Completeness",
-                "description": "Should have definition and at least one other reasoning role",
-                "check_type": "requires_reasoning_diversity",
-                "config": {"min_roles": 2},
-                "halt_on_failure": False
-            }
+            {"id": "GEN-001", "name": "Source Required", "description": "All claims must have some source attribution", "check_type": "requires_field", "config": {"field": "source"}, "halt_on_failure": False}
         ]
     }
 }
