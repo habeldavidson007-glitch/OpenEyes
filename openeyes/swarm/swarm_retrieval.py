@@ -60,19 +60,65 @@ class SwarmRetrievalEngine:
             return []
         
         try:
-            # Search WAL buffer for relevant content
-            # CRITICAL FIX: Include both processed and unprocessed records
-            # Processed records are still valid - they just mean "already retrieved once"
-            # but we should still use them for answering queries
-            cursor = self._wal_conn.execute("""
+            # Build keyword search from query
+            # Extract key terms: "bitcoin price" -> ["bitcoin", "price"]
+            # "exchange rate" -> ["exchange", "rate"]
+            import re
+            query_terms = re.findall(r'\b\w+\b', query.lower())
+            # Filter out common stop words
+            stop_words = {'what', 'is', 'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'current', 'currently'}
+            search_terms = [t for t in query_terms if t not in stop_words and len(t) > 2]
+            
+            if not search_terms:
+                search_terms = query_terms  # Fallback to all terms
+            
+            # Build SQL WHERE clause with OR conditions for each term
+            where_clauses = []
+            params = []
+            for term in search_terms[:5]:  # Limit to 5 terms max
+                where_clauses.append("LOWER(content) LIKE ?")
+                params.append(f"%{term}%")
+            
+            where_sql = " AND ".join([f"({where_clauses[i]})" for i in range(len(where_clauses))]) if where_clauses else "1=1"
+            
+            # CRITICAL FIX: Search WAL buffer using query keywords
+            # Only get tokenized_content (high confidence) first, then new_content
+            cursor = self._wal_conn.execute(f"""
                 SELECT agent_id, timestamp, data_type, content, tokens_json
                 FROM wal_buffer
-                WHERE data_type IN ('new_content', 'tokenized_content')
+                WHERE data_type = 'tokenized_content'
+                AND ({where_sql})
                 ORDER BY timestamp DESC
                 LIMIT ?
-            """, (limit,))
+            """, params + [limit])
             
             rows = cursor.fetchall()
+            
+            # If no tokenized results, try new_content as fallback
+            if not rows:
+                cursor = self._wal_conn.execute(f"""
+                    SELECT agent_id, timestamp, data_type, content, tokens_json
+                    FROM wal_buffer
+                    WHERE data_type = 'new_content'
+                    AND ({where_sql})
+                    ORDER BY timestamp DESC
+                    LIMIT ?
+                """, params + [limit])
+                rows = cursor.fetchall()
+            
+            # If still no results, return latest data for economy/finance domain
+            if not rows and domain.lower() in ['eco', 'economy', 'finance', 'financial']:
+                # Get most recent price/exchange data regardless of query match
+                cursor = self._wal_conn.execute("""
+                    SELECT agent_id, timestamp, data_type, content, tokens_json
+                    FROM wal_buffer
+                    WHERE data_type = 'tokenized_content'
+                    AND (LOWER(content) LIKE '%price%' OR LOWER(content) LIKE '%rate%' OR LOWER(content) LIKE '%usd%' OR LOWER(content) LIKE '%eur%')
+                    ORDER BY timestamp DESC
+                    LIMIT ?
+                """, (limit,))
+                rows = cursor.fetchall()
+            
             fragments = []
             
             for row in rows:
@@ -104,7 +150,9 @@ class SwarmRetrievalEngine:
                 fragments.append(fragment)
             
             if fragments:
-                print(f"[SWARM_RETRIEVAL] Found {len(fragments)} fragments from swarm WAL buffer")
+                print(f"[SWARM_RETRIEVAL] Found {len(fragments)} fragments from swarm WAL buffer for query '{query}'")
+            else:
+                print(f"[SWARM_RETRIEVAL] No matching fragments found for query '{query}' (searched terms: {search_terms})")
             
             return fragments
             

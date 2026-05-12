@@ -1,13 +1,12 @@
 ```
-# Compiled Python files
-*.pyc
-__pycache__/
-
-# Database files
-*.db
-wal_buffer.db
-
-# Memory/bin files
+# Binary/compiled files
 *.bin
+
+# Local development
 .openeyes/
+
+# Environment
+.env
+.env.local
+*.env.*
 ```
