@@ -204,19 +204,28 @@ class PhilosophyGuard:
     
     def _check_blacklist_tag(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
         """Check if proposal contains any blacklisted tags."""
-        flag = config.get("flag", "")
+        # Support both 'flag' (single tag) and 'forbidden_tags' (list of tags) config formats
+        forbidden_tags = config.get("forbidden_tags", [])
+        single_flag = config.get("flag", "")
+        
+        # Convert single flag to list format for unified handling
+        if single_flag and not forbidden_tags:
+            forbidden_tags = [single_flag]
+        
         tags = proposal.get("tags", [])
         
-        if flag in tags:
-            return {
-                "passed": False,
-                "message": f"Proposal contains forbidden tag: {flag}",
-                "severity": "error"
-            }
+        # Check if any forbidden tag is present
+        for forbidden in forbidden_tags:
+            if forbidden in tags:
+                return {
+                    "passed": False,
+                    "message": f"Proposal contains forbidden tag: {forbidden}",
+                    "severity": "error"
+                }
         
         return {
             "passed": True,
-            "message": f"No forbidden tag '{flag}' detected"
+            "message": f"No forbidden tags detected (checked: {forbidden_tags})"
         }
     
     def _check_minimum_credibility(self, proposal: Dict, config: Dict) -> Dict[str, Any]:
