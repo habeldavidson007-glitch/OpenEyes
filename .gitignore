@@ -1,7 +1,38 @@
 ```
-# Audit logs
-.openeyes/vault/audit/*.md
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Binary files
-*.bin
+# Dependencies
+.venv/
+venv/
+env/
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Coverage
+.coverage
+htmlcov/
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
 ```
