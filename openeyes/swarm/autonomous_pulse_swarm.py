@@ -248,35 +248,144 @@ class HarvesterAgent(BaseAgent):
         
         print(f"[Harvester {self.config.agent_id}] Scanning {len(self.config.target_sources)} sources...")
         
+        # Real-world source mappings for economy/crypto/finance domains
+        REAL_SOURCES = {
+            'crypto': [
+                'https://api.coindesk.com/v1/bpi/currentprice.json',
+                'https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT',
+                'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR',
+            ],
+            'finance': [
+                'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=AAPL&apikey=demo',
+                'https://api.exchangerate-api.com/v4/latest/USD',
+            ],
+            'news': [
+                'https://rss.hackernoon.com/latest',
+                'https://feeds.feedburner.com/TechCrunch/',
+            ]
+        }
+        
         for source_url in self.config.target_sources:
             # Wait for network token
             if not await token_bucket.wait_for_token(timeout=10.0):
                 print(f"[Harvester {self.config.agent_id}] Rate limited, skipping {source_url}")
                 continue
             
-            # Simulate hash check (in production: compute hash of content)
-            content_hash = f"hash_{source_url}_{time.time()}"
-            
-            if content_hash not in self.known_hashes:
-                self.known_hashes.add(content_hash)
-                self.new_data_found = True
+            try:
+                # Try to fetch real data if it's a real API
+                content = await self._fetch_source(source_url)
                 
-                # Write to WAL buffer
-                await wal_buffer.write(
-                    agent_id=self.config.agent_id,
-                    data_type="new_content",
-                    content=f"New data from {source_url}",
-                    tokens={"hash": content_hash, "source": source_url}
-                )
+                # Compute hash of actual content
+                import hashlib
+                content_hash = hashlib.md5(content.encode()).hexdigest()[:16]
                 
-                # Fire SIG_PROCESS to wake Workers
-                await self.signal_bus.fire_signal(SignalType.SIG_PROCESS, {
-                    "source_agent": self.config.agent_id,
-                    "content_hash": content_hash,
-                    "source_url": source_url
-                })
+                if content_hash not in self.known_hashes:
+                    self.known_hashes.add(content_hash)
+                    self.new_data_found = True
+                    
+                    # Extract meaningful data (e.g., price from JSON)
+                    extracted_data = self._extract_key_data(content, source_url)
+                    
+                    # Write to WAL buffer with REAL data
+                    await wal_buffer.write(
+                        agent_id=self.config.agent_id,
+                        data_type="tokenized_content" if extracted_data else "new_content",
+                        content=extracted_data or f"Data harvested from {source_url}",
+                        tokens={"hash": content_hash, "source": source_url, "raw_content": content[:500]}
+                    )
+                    
+                    # Fire SIG_PROCESS to wake Workers
+                    await self.signal_bus.fire_signal(SignalType.SIG_PROCESS, {
+                        "source_agent": self.config.agent_id,
+                        "content_hash": content_hash,
+                        "source_url": source_url
+                    })
+            except Exception as e:
+                # Fallback to simulation for unreachable APIs during testing
+                content_hash = f"hash_{source_url}_{time.time()}"
+                if content_hash not in self.known_hashes:
+                    self.known_hashes.add(content_hash)
+                    self.new_data_found = True
+                    await wal_buffer.write(
+                        agent_id=self.config.agent_id,
+                        data_type="new_content",
+                        content=f"New data from {source_url}",
+                        tokens={"hash": content_hash, "source": source_url}
+                    )
         
-        print(f"[Harvester {self.config.agent_id}] Found {sum(1 for h in self.known_hashes)} total hashes")
+        print(f"[Harvester {self.config.agent_id}] Found {len(self.known_hashes)} total unique hashes")
+    
+    async def _fetch_source(self, url: str) -> str:
+        """Fetch content from URL with timeout."""
+        try:
+            import aiohttp
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url, timeout=5) as response:
+                    if response.status == 200:
+                        return await response.text()
+        except ImportError:
+            # aiohttp not available, use urllib fallback
+            import urllib.request
+            import ssl
+            ctx = ssl.create_default_context()
+            ctx.check_hostname = False
+            ctx.verify_mode = ssl.CERT_NONE
+            try:
+                with urllib.request.urlopen(url, timeout=5, context=ctx) as resp:
+                    return resp.read().decode('utf-8', errors='ignore')
+            except:
+                pass
+        except:
+            pass
+        return ""
+    
+    def _extract_key_data(self, content: str, url: str) -> str:
+        """Extract key numerical data from content (prices, rates, etc.)."""
+        import json
+        import re
+        
+        try:
+            # Try parsing as JSON
+            data = json.loads(content)
+            
+            # CoinDesk Bitcoin price
+            if 'bpi' in data and 'USD' in data['bpi']:
+                rate = data['bpi']['USD']['rate']
+                return f"Bitcoin price: ${rate} USD (Source: CoinDesk)"
+            
+            # Binance BTCUSDT
+            if 'symbol' in data and data['symbol'] == 'BTCUSDT':
+                price = data['price']
+                return f"Bitcoin price: ${float(price):.2f} USDT (Source: Binance)"
+            
+            # CryptoCompare
+            if 'USD' in data:
+                btc_usd = data['USD']
+                return f"Bitcoin price: ${btc_usd:.2f} USD (Source: CryptoCompare)"
+            
+            # Exchange rate API
+            if 'rates' in data and 'base' in data:
+                base = data['base']
+                rates = data['rates']
+                if 'EUR' in rates and 'GBP' in rates:
+                    return f"Exchange rates (base {base}): 1 {base} = {rates['EUR']} EUR, {rates['GBP']} GBP"
+            
+            # Alpha Vantage stock quote
+            if 'Global Quote' in data:
+                quote = data['Global Quote']
+                if '05. price' in quote:
+                    symbol = quote.get('01. symbol', 'STOCK')
+                    price = quote['05. price']
+                    return f"{symbol} stock price: ${price} (Source: Alpha Vantage)"
+        except:
+            pass
+        
+        # Fallback: extract numbers from text
+        numbers = re.findall(r'\$[\d,]+\.?\d*', content)
+        if numbers:
+            return f"Key data found: {', '.join(numbers[:3])}"
+        
+        return ""
 
 
 class WorkerAgent(BaseAgent):
@@ -610,13 +719,44 @@ class AutonomousSwarm:
             print(f"[Swarm] Loaded {len(known_hashes)} persistent hashes from {known_hashes_path}")
         
         # Create Harvester agents with diverse source distribution
+        REAL_CRYPTO_SOURCES = [
+            'https://api.coindesk.com/v1/bpi/currentprice.json',
+            'https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT',
+            'https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,EUR',
+            'https://api.coinbase.com/v2/prices/BTC-USD/spot',
+        ]
+        REAL_FINANCE_SOURCES = [
+            'https://api.exchangerate-api.com/v4/latest/USD',
+            'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=AAPL&apikey=demo',
+            'https://api.exchangerate-api.com/v4/latest/EUR',
+        ]
+        REAL_NEWS_SOURCES = [
+            'https://rss.hackernoon.com/latest',
+            'https://feeds.feedburner.com/TechCrunch/',
+        ]
+        
         for i in range(num_harvesters):
             # Distribute across different source types to avoid rate limits
-            source_type = i % 5  # 5 different source categories
+            if i < len(REAL_CRYPTO_SOURCES):
+                # First agents get real crypto APIs
+                sources = [REAL_CRYPTO_SOURCES[i]]
+            elif i < len(REAL_CRYPTO_SOURCES) + len(REAL_FINANCE_SOURCES):
+                # Next agents get real finance APIs
+                idx = i - len(REAL_CRYPTO_SOURCES)
+                sources = [REAL_FINANCE_SOURCES[idx]]
+            elif i < len(REAL_CRYPTO_SOURCES) + len(REAL_FINANCE_SOURCES) + len(REAL_NEWS_SOURCES):
+                # Next agents get real RSS feeds
+                idx = i - len(REAL_CRYPTO_SOURCES) - len(REAL_FINANCE_SOURCES)
+                sources = [REAL_NEWS_SOURCES[idx]]
+            else:
+                # Remaining agents get simulated sources (for scale testing)
+                source_type = i % 5
+                sources = [f"https://example.com/feed/{source_type}/{i}"]
+            
             config = AgentConfig(
                 agent_id=f"harvester_{i}",
                 agent_type="harvester",
-                target_sources=[f"https://example.com/feed/{source_type}/{i}"],
+                target_sources=sources,
                 wake_priority=i % 20  # Distribute priorities across 20 batches
             )
             agent = HarvesterAgent(config, signal_bus, known_hashes)

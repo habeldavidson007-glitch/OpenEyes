@@ -61,10 +61,13 @@ class SwarmRetrievalEngine:
         
         try:
             # Search WAL buffer for relevant content
+            # CRITICAL FIX: Include both processed and unprocessed records
+            # Processed records are still valid - they just mean "already retrieved once"
+            # but we should still use them for answering queries
             cursor = self._wal_conn.execute("""
                 SELECT agent_id, timestamp, data_type, content, tokens_json
                 FROM wal_buffer
-                WHERE processed = 0 AND data_type IN ('new_content', 'tokenized_content')
+                WHERE data_type IN ('new_content', 'tokenized_content')
                 ORDER BY timestamp DESC
                 LIMIT ?
             """, (limit,))
