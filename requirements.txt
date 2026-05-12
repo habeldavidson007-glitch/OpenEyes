@@ -3,3 +3,12 @@ scipy
 click
 rich
 requests
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# Linting (optional, for development)
+flake8>=6.0.0
+black>=23.0.0
+isort>=5.12.0
