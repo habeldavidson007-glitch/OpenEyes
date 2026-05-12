@@ -1,51 +1,24 @@
 ```
-# Python
-__pycache__/
+# Compiled Python files
 *.pyc
-*.pyo
-*.pyd
-
-# Logs
-*.log
-
-# Environment
-.env
-.env.local
-*.env.*
+__pycache__/
 
 # Dependencies
 .venv/
 venv/
-pip-log.txt
-pip-selfcheck.json
+node_modules/
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Temporary files
+# Logs and temp files
+*.log
 *.tmp
-*.temp
-*~
-.swp
-.swo
+*.swp
 
-# Build and distribution artifacts
-dist/
-build/
-*.egg-info/
+# Environment files
+.env
+.env.local
+*.env.*
 
-# Coverage reports
-.coverage
-htmlcov/
-coverage/
-
-# Audit logs and temporary vault files
-.openeyes/vault/audit/*.md
-.openeyes/vault/audit/*.bin
+# Editors
+.vscode/
+.idea/
 ```

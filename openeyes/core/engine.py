@@ -28,12 +28,14 @@ from openeyes.core.reasoning_engine import get_reasoning_engine
 from openeyes.core.emergency_detection import detect_emergency, get_emergency_message
 
 from openeyes.core.logical_synthesizer import LogicalSynthesizer
+from openeyes.core.synthesis_engine import SynthesisEngine
 from openeyes.ui.control_deck import ControlDeck
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
 VERBOSE_PIPELINE = os.getenv("OPENEYES_VERBOSE_PIPELINE", "0") == "1"
 logical_engine = LogicalSynthesizer()  # P3: Logical Synthesis Engine
+synthesis_engine = SynthesisEngine()  # P4: Narrative Synthesis Engine
 
 
 def _pipeline_log(message: str) -> None:
@@ -60,15 +62,39 @@ def _compose_user_answer(
     fragments: list[Fragment] | None = None
 ) -> str:
     """
-    P0 CRITICAL FIX: Compose answer ONLY from retrieved fragments.
+    P4 CRITICAL UPGRADE: Compose answers using Logical Narrative Synthesis.
     
-    This prevents hallucination by ensuring answers are strictly derived
-    from actual fragment content, not generated or inferred text.
+    Instead of just listing facts, this engine builds a coherent argument:
+    Premise -> Evidence -> Conclusion
+    
+    This ensures the answer actually ADDRESSES the query structure, not just
+    dumps related facts.
     """
     if not fragments or len(fragments) == 0:
         return "No verified information available for this query in our knowledge base."
     
-    # Build answer from fragment content only - NO synthesis or generation
+    # Convert Fragment objects to dictionaries for synthesis engine
+    frag_dicts = []
+    for frag in fragments:
+        content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
+        if content:
+            frag_dicts.append({
+                "claim": content,
+                "confidence_score": getattr(frag, "confidence_score", 0.5),
+                "source_url": getattr(frag, "source_url", ""),
+                "domain": getattr(frag, "domain", domain)
+            })
+    
+    # Use Synthesis Engine to build structured narrative
+    if frag_dicts:
+        try:
+            synthesized_narrative = synthesis_engine.synthesize(query, frag_dicts)
+            if synthesized_narrative and len(synthesized_narrative.strip()) > 20:
+                return synthesized_narrative
+        except Exception as e:
+            _pipeline_log(f"[SYNTHESIS] Error: {e}, falling back to fragment listing")
+    
+    # Fallback: Build answer from fragment content only - NO synthesis or generation
     answer_parts = []
     for frag in fragments[:5]:  # Limit to top 5 most relevant fragments
         # Extract content from fragment (handle different attribute names)
