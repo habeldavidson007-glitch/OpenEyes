@@ -28,11 +28,14 @@ from openeyes.core.reasoning_engine import get_reasoning_engine
 from openeyes.core.emergency_detection import detect_emergency, get_emergency_message
 
 from openeyes.core.logical_synthesizer import LogicalSynthesizer
+from openeyes.core.synthesis_engine import SynthesisEngine
+from openeyes.ui.control_deck import ControlDeck
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
 VERBOSE_PIPELINE = os.getenv("OPENEYES_VERBOSE_PIPELINE", "0") == "1"
 logical_engine = LogicalSynthesizer()  # P3: Logical Synthesis Engine
+synthesis_engine = SynthesisEngine()  # P4: Narrative Synthesis Engine
 
 
 def _pipeline_log(message: str) -> None:
@@ -59,15 +62,39 @@ def _compose_user_answer(
     fragments: list[Fragment] | None = None
 ) -> str:
     """
-    P0 CRITICAL FIX: Compose answer ONLY from retrieved fragments.
+    P4 CRITICAL UPGRADE: Compose answers using Logical Narrative Synthesis.
     
-    This prevents hallucination by ensuring answers are strictly derived
-    from actual fragment content, not generated or inferred text.
+    Instead of just listing facts, this engine builds a coherent argument:
+    Premise -> Evidence -> Conclusion
+    
+    This ensures the answer actually ADDRESSES the query structure, not just
+    dumps related facts.
     """
     if not fragments or len(fragments) == 0:
         return "No verified information available for this query in our knowledge base."
     
-    # Build answer from fragment content only - NO synthesis or generation
+    # Convert Fragment objects to dictionaries for synthesis engine
+    frag_dicts = []
+    for frag in fragments:
+        content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
+        if content:
+            frag_dicts.append({
+                "claim": content,
+                "confidence_score": getattr(frag, "confidence_score", 0.5),
+                "source_url": getattr(frag, "source_url", ""),
+                "domain": getattr(frag, "domain", domain)
+            })
+    
+    # Use Synthesis Engine to build structured narrative
+    if frag_dicts:
+        try:
+            synthesized_narrative = synthesis_engine.synthesize(query, frag_dicts)
+            if synthesized_narrative and len(synthesized_narrative.strip()) > 20:
+                return synthesized_narrative
+        except Exception as e:
+            _pipeline_log(f"[SYNTHESIS] Error: {e}, falling back to fragment listing")
+    
+    # Fallback: Build answer from fragment content only - NO synthesis or generation
     answer_parts = []
     for frag in fragments[:5]:  # Limit to top 5 most relevant fragments
         # Extract content from fragment (handle different attribute names)
@@ -184,9 +211,15 @@ class OpenEyesEngine:
         )
 
     def answer(self, query: str, domain: str | None = None) -> dict:
+        # Initialize Control Deck UI
+        ui = ControlDeck()
+        ui.start_session(query, domain or "auto")
+        
         # P0 CRITICAL FIX: Emergency detection BEFORE any processing
         is_emergency, emergency_type, emergency_resources = detect_emergency(query)
         if is_emergency:
+            ui.update_step("EMERGENCY DETECTED", "CRITICAL", color="red")
+            ui.render_halt("HALT_EMERGENCY", f"Medical emergency detected: {emergency_type}", emergency_resources)
             # IMMEDIATE HALT - Do not proceed with answer generation
             return {
                 "status": "HALT_EMERGENCY",
@@ -202,14 +235,20 @@ class OpenEyesEngine:
                 "data_recency_years": 0,
             }
         
+        ui.update_step("Domain Routing", "PROCESSING", color="yellow")
         routed_domain = route_domain(query, domain)
+        ui.update_step("Domain Routing", f"{routed_domain.upper()} ✓", color="green")
         
         # P1: Classify query intent before processing
+        ui.update_step("Intent Classification", "ANALYZING", color="yellow")
         intent = classify_intent(query)
+        ui.update_step("Intent Classification", f"{intent.intent.value} ✓", color="green")
         
         # P1: Check for immediate safety halt (secondary check)
         should_halt, halt_reason = check_safety_halt(query, intent, 0.5)  # Initial confidence estimate
         if should_halt:
+            ui.update_step("Safety Check", "HALT TRIGGERED", color="red")
+            ui.render_halt("HALT_SAFETY", halt_reason, self._get_emergency_resources(intent))
             # Return crisis resources immediately
             return {
                 "status": "HALT_SAFETY",
@@ -223,8 +262,15 @@ class OpenEyesEngine:
                 "data_recency_years": 0,
             }
         
+        # Fragment Retrieval Phase
+        ui.update_step("Fragment Retrieval", "SEARCHING...", color="yellow")
         frags = self._fragments_for(query, routed_domain)
+        ui.update_step("Fragment Retrieval", f"{len(frags)} FRAGMENTS ✓", color="green")
+        ui.log_audit(f"Retrieved {len(frags)} fragments from knowledge base")
+        
+        ui.update_step("Memory Lookup", "SEARCHING...", color="yellow")
         priors = retrieve_similar(self.memory_path, query, routed_domain)
+        ui.update_step("Memory Lookup", f"{len(priors)} PRIORS ✓", color="green")
         
         # P3: Logical Synthesis - Check for Emergency/Strategic intent BEFORE data processing
         # This prevents context dumping and ensures safety-first responses
@@ -233,6 +279,8 @@ class OpenEyesEngine:
         
         # If P3 detects emergency, bypass all other processing
         if p3_result["action"] == "HALT_AND_REDIRECT":
+            ui.update_step("Logical Synthesis", "EMERGENCY HALT", color="red")
+            ui.render_halt("HALT_SAFETY", p3_result["response"], self._get_emergency_resources(intent))
             return {
                 "status": "HALT_SAFETY",
                 "answer_class": "SAFETY_HALT",
@@ -245,11 +293,15 @@ class OpenEyesEngine:
                 "data_recency_years": 0,
             }
         
-        # Calculate base confidence from Monte Carlo
+        # Monte Carlo Swarm Evaluation
+        ui.update_step("Swarm Evaluation", "RUNNING MONTE CARLO...", color="yellow")
         result = self.mc.run(query=query, domain=routed_domain, fragments=frags)
+        ui.update_step("Swarm Evaluation", f"CONFIDENCE: {result.get('confidence', 0):.1f}% ✓", color="green")
+        ui.log_audit(f"Monte Carlo evaluation complete: {result.get('confidence', 0):.1f}% confidence")
         
         # P3: If strategic query, use synthesized logical answer instead of raw data dump
         if p3_result["action"] == "ANSWER_STRATEGIC":
+            ui.update_step("Logical Synthesis", "STRATEGIC MODE", color="cyan")
             # Override narrative with logically synthesized response
             narrative = {
                 "context": "Strategic analysis based on market data",
@@ -258,12 +310,14 @@ class OpenEyesEngine:
             }
             result["status"] = "ANSWER_HIGH_CONFIDENCE"
             result["confidence"] = 85.0  # Synthetic confidence for strategic advice
+            ui.log_audit("Strategic synthesis activated")
         
         # P1: Apply graceful degradation instead of binary HALT
         base_confidence = result.get("confidence", 0.0) / 100.0  # Convert to 0-1 scale
         
-        # Use graceful degradation for medical/safety-sensitive domains
-        if routed_domain in ["healthcare", "medical"] or intent.requires_medical_disclaimer:
+        # Use graceful degradation for healthcare domain (normalized from hc/medical)
+        if routed_domain == "healthcare" or intent.requires_medical_disclaimer:
+            ui.update_step("Graceful Degradation", "APPLYING SAFETY FILTERS", color="yellow")
             graded_result = process_query_with_degradation(query, frags, base_confidence)
             
             # Override with graded response
@@ -275,6 +329,7 @@ class OpenEyesEngine:
                 result["disclaimers"] = graded_result["important_notice"]
             if "urgent_resources" in graded_result:
                 result["emergency_resources"] = graded_result["urgent_resources"]
+            ui.update_step("Graceful Degradation", f"{graded_result['status']} ✓", color="green")
         
         # Legacy fallback for non-medical domains
         if result["status"].startswith("HALT") and frags:
@@ -314,6 +369,10 @@ class OpenEyesEngine:
         if "emergency_resources" in result:
             out["emergency_resources"] = result["emergency_resources"]
         
+        # Log final audit entries
+        ui.log_audit(f"Composing final answer from {len(frags)} fragments")
+        ui.log_audit(f"Final confidence: {result['confidence']:.1f}%")
+        
         ingest_case(
             self.memory_path,
             {
@@ -327,6 +386,13 @@ class OpenEyesEngine:
             }
         )
         write_audit_log(self.vault_path, query, out)
+        
+        # Render final UI output
+        if result["status"].startswith("HALT"):
+            ui.render_halt(result["status"], answer, out.get("emergency_resources", {}))
+        else:
+            ui.render_success(answer_class, answer, out["confidence"], out.get("data_recency_years", 0))
+        
         return out
     
     @staticmethod

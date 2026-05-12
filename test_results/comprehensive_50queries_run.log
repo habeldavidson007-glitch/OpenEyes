@@ -1,0 +1,1517 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.10, pytest-9.0.3, pluggy-1.6.0 -- /usr/local/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace
+configfile: pyproject.toml
+plugins: anyio-4.9.0, libtmux-0.46.2, Faker-37.4.2, cov-7.1.0
+collecting ... OpenBLAS WARNING - could not determine the L2 cache size on this system, assuming 256k
+OpenBLAS WARNING - could not determine the L2 cache size on this system, assuming 256k
+collected 6 items
+
+tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_medical_domain_50_queries [LOCAL_INDEX] Scanning directory: /workspace/openeyes/domains
+[LOCAL_INDEX] Scanning directory: /workspace/openeyes/knowledge/fragments
+[LOCAL_INDEX] Loaded 4580 total fragments across all directories
+[LOCAL_INDEX]   - unknown: 75 fragments
+[LOCAL_INDEX]   - healthcare: 106 fragments
+[LOCAL_INDEX]   - eco: 1645 fragments
+[LOCAL_INDEX]   - gov: 1353 fragments
+[LOCAL_INDEX]   - hc: 1401 fragments
+[RETRIEVAL] Found 5 local fragments for 'what are the symptoms of pancreatic cancer?'
+[RETRIEVAL] Found 5 local fragments for 'how is diabetes diagnosed?'
+[RETRIEVAL] Found 5 local fragments for 'what is the treatment for hypertension?'
+[SCRAPER] Searching medical sources for: what is the treatment for hypertension?
+[SCRAPER] Using search endpoint: https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+treatment+for+hypertension?
+[SCRAPER] Fetching: https://pubmed.ncbi.nlm.nih.gov/
+[SCRAPER] Fetching: https://www.cdc.gov/
+[SCRAPER] Fetching: https://www.who.int/
+[SCRAPER] Retrieved 4 results
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Generated 10 fragments from 4 sources
+[CONSISTENCY] 10/10 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain the stages of chronic kidney disease'
+[SCRAPER] Searching medical sources for: explain the stages of chronic kidney disease
+[SCRAPER] Using search endpoint: https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+stages+of+chronic+kidney+disease
+[SCRAPER] Fetching: https://pubmed.ncbi.nlm.nih.gov/
+[SCRAPER] Fetching: https://www.cdc.gov/
+[SCRAPER] Fetching: https://www.who.int/
+[SCRAPER] Retrieved 4 results
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Generated 10 fragments from 4 sources
+[CONSISTENCY] 10/10 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is the prognosis for leukemia?'
+[SCRAPER] Searching medical sources for: what is the prognosis for leukemia?
+[SCRAPER] Using search endpoint: https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+prognosis+for+leukemia?
+[SCRAPER] Fetching: https://pubmed.ncbi.nlm.nih.gov/
+[SCRAPER] Fetching: https://www.cdc.gov/
+[SCRAPER] Fetching: https://www.who.int/
+[SCRAPER] Retrieved 4 results
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Generated 10 fragments from 4 sources
+[CONSISTENCY] 10/10 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain autoimmune disorders mechanism'
+[SCRAPER] Searching medical sources for: explain autoimmune disorders mechanism
+[SCRAPER] Using search endpoint: https://pubmed.ncbi.nlm.nih.gov/?term=explain+autoimmune+disorders+mechanism
+[SCRAPER] Fetching: https://pubmed.ncbi.nlm.nih.gov/
+[SCRAPER] Fetching: https://www.cdc.gov/
+[SCRAPER] Fetching: https://www.who.int/
+[SCRAPER] Retrieved 4 results
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+auto...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+auto...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+auto...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+auto...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+auto...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Generated 10 fragments from 4 sources
+[CONSISTENCY] 10/10 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'what are risk factors for alzheimer's?'
+[RETRIEVAL] Found 5 local fragments for 'how does chemotherapy work?'
+[RETRIEVAL] Found 5 local fragments for 'what is atrial fibrillation treatment?'
+[SCRAPER] Searching medical sources for: what is atrial fibrillation treatment?
+[SCRAPER] Using search endpoint: https://pubmed.ncbi.nlm.nih.gov/?term=what+is+atrial+fibrillation+treatment?
+[SCRAPER] Fetching: https://pubmed.ncbi.nlm.nih.gov/
+[SCRAPER] Fetching: https://www.cdc.gov/
+[SCRAPER] Fetching: https://www.who.int/
+[SCRAPER] Retrieved 4 results
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+atri...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+atri...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+atri...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+atri...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=what+is+atri...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Generated 10 fragments from 4 sources
+[CONSISTENCY] 10/10 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain copd pathophysiology'
+[SCRAPER] Searching medical sources for: explain copd pathophysiology
+[SCRAPER] Using search endpoint: https://pubmed.ncbi.nlm.nih.gov/?term=explain+copd+pathophysiology
+[SCRAPER] Fetching: https://pubmed.ncbi.nlm.nih.gov/
+[SCRAPER] Fetching: https://www.cdc.gov/
+[SCRAPER] Fetching: https://www.who.int/
+[SCRAPER] Retrieved 4 results
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+copd...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+copd...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+copd...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+copd...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+copd...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Generated 10 fragments from 4 sources
+[CONSISTENCY] 10/10 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'what are symptoms of multiple sclerosis?'
+[RETRIEVAL] Found 5 local fragments for 'how is rheumatoid arthritis managed?'
+[RETRIEVAL] Found 5 local fragments for 'what causes inflammatory bowel disease?'
+[RETRIEVAL] Found 5 local fragments for 'explain the renin-angiotensin system'
+[SCRAPER] Searching medical sources for: explain the renin-angiotensin system
+[SCRAPER] Using search endpoint: https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+renin-angiotensin+system
+[SCRAPER] Fetching: https://pubmed.ncbi.nlm.nih.gov/
+[SCRAPER] Fetching: https://www.cdc.gov/
+[SCRAPER] Fetching: https://www.who.int/
+[SCRAPER] Retrieved 4 results
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/?term=explain+the+...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Created fragment from https://pubmed.ncbi.nlm.nih.gov/...
+[FRAGMENT] Generated 10 fragments from 4 sources
+[CONSISTENCY] 10/10 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is the difference between type 1 and type 2 diabetes?'
+FAILED
+tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_investment_domain_50_queries [RETRIEVAL] Found 7 local fragments for 'what is the current federal reserve interest rate?'
+[SCRAPER] Searching investment sources for: what is the current federal reserve interest rate?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+current+federal+reserve+interest+rate?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+current+federal+reserve+interest+rate?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+current+federal+reserve+interest+rate?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'explain quantitative easing policy'
+[SCRAPER] Searching investment sources for: explain quantitative easing policy
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+quantitative+easing+policy
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+quantitative+easing+policy: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+quantitative+easing+policy
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'how does inflation affect bond prices?'
+[RETRIEVAL] Found 7 local fragments for 'what is the yield curve telling us?'
+[SCRAPER] Searching investment sources for: what is the yield curve telling us?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+yield+curve+telling+us?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+yield+curve+telling+us?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+yield+curve+telling+us?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'analyze the s&p 500 valuation metrics'
+[RETRIEVAL] Found 5 local fragments for 'what are reits and how do they work?'
+[RETRIEVAL] Found 5 local fragments for 'explain the capital asset pricing model'
+[SCRAPER] Searching investment sources for: explain the capital asset pricing model
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+the+capital+asset+pricing+model
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+the+capital+asset+pricing+model: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+the+capital+asset+pricing+model
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'what is the difference between growth and value stocks?'
+[SCRAPER] Searching investment sources for: what is the difference between growth and value stocks?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+difference+between+growth+and+value+stocks?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+difference+between+growth+and+value+stocks?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+difference+between+growth+and+value+stocks?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'how to calculate discounted cash flow?'
+[RETRIEVAL] Found 5 local fragments for 'what drives cryptocurrency prices?'
+[RETRIEVAL] Found 5 local fragments for 'explain options trading strategies'
+[SCRAPER] Searching investment sources for: explain options trading strategies
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+options+trading+strategies
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+options+trading+strategies: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+options+trading+strategies
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'what is portfolio diversification?'
+[SCRAPER] Searching investment sources for: what is portfolio diversification?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+portfolio+diversification?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+portfolio+diversification?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+portfolio+diversification?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'how does dollar-cost averaging work?'
+[RETRIEVAL] Found 5 local fragments for 'what are esg investment criteria?'
+[RETRIEVAL] Found 5 local fragments for 'explain the efficient market hypothesis'
+[SCRAPER] Searching investment sources for: explain the efficient market hypothesis
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+the+efficient+market+hypothesis
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+the+efficient+market+hypothesis: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+the+efficient+market+hypothesis
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'what causes market volatility?'
+[RETRIEVAL] Found 5 local fragments for 'how to hedge against inflation?'
+[RETRIEVAL] Found 7 local fragments for 'what is the role of the sec?'
+[SCRAPER] Searching investment sources for: what is the role of the sec?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+role+of+the+sec?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+role+of+the+sec?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+role+of+the+sec?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'explain margin trading risks'
+[SCRAPER] Searching investment sources for: explain margin trading risks
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+margin+trading+risks
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+margin+trading+risks: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+margin+trading+risks
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'what are derivatives used for?'
+[RETRIEVAL] Found 5 local fragments for 'how does forex trading work?'
+[RETRIEVAL] Found 7 local fragments for 'what is the impact of gdp on markets?'
+[SCRAPER] Searching investment sources for: what is the impact of gdp on markets?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+impact+of+gdp+on+markets?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+impact+of+gdp+on+markets?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+impact+of+gdp+on+markets?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'explain the business cycle phases'
+[SCRAPER] Searching investment sources for: explain the business cycle phases
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+the+business+cycle+phases
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+the+business+cycle+phases: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+the+business+cycle+phases
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'what are leading economic indicators?'
+[RETRIEVAL] Found 5 local fragments for 'how does unemployment affect stocks?'
+[RETRIEVAL] Found 7 local fragments for 'what is the consumer price index?'
+[SCRAPER] Searching investment sources for: what is the consumer price index?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+consumer+price+index?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+consumer+price+index?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+consumer+price+index?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'explain the producer price index'
+[SCRAPER] Searching investment sources for: explain the producer price index
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+the+producer+price+index
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+the+producer+price+index: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+the+producer+price+index
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'what drives oil prices?'
+[RETRIEVAL] Found 5 local fragments for 'how does gold perform as a hedge?'
+[RETRIEVAL] Found 5 local fragments for 'what are commodity futures?'
+[RETRIEVAL] Found 5 local fragments for 'explain the carry trade strategy'
+[SCRAPER] Searching investment sources for: explain the carry trade strategy
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+the+carry+trade+strategy
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+the+carry+trade+strategy: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+the+carry+trade+strategy
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 7 local fragments for 'what is the debt-to-equity ratio?'
+[SCRAPER] Searching investment sources for: what is the debt-to-equity ratio?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+debt-to-equity+ratio?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+debt-to-equity+ratio?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+debt-to-equity+ratio?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'how to analyze a balance sheet?'
+[RETRIEVAL] Found 7 local fragments for 'what is free cash flow?'
+[SCRAPER] Searching investment sources for: what is free cash flow?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+free+cash+flow?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+free+cash+flow?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+free+cash+flow?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'explain enterprise value calculation'
+[SCRAPER] Searching investment sources for: explain enterprise value calculation
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+enterprise+value+calculation
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+enterprise+value+calculation: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+enterprise+value+calculation
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'what are the risks of emerging markets?'
+[RETRIEVAL] Found 5 local fragments for 'how does currency exchange affect multinationals?'
+[RETRIEVAL] Found 7 local fragments for 'what is the vix index?'
+[SCRAPER] Searching investment sources for: what is the vix index?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+vix+index?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+vix+index?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+vix+index?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'explain mean reversion strategy'
+[SCRAPER] Searching investment sources for: explain mean reversion strategy
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+mean+reversion+strategy
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+mean+reversion+strategy: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+mean+reversion+strategy
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'what are momentum investing principles?'
+[RETRIEVAL] Found 5 local fragments for 'how to use technical analysis?'
+[RETRIEVAL] Found 7 local fragments for 'what is the random walk theory?'
+[SCRAPER] Searching investment sources for: what is the random walk theory?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+random+walk+theory?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+random+walk+theory?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+random+walk+theory?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'explain behavioral finance biases'
+[SCRAPER] Searching investment sources for: explain behavioral finance biases
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+behavioral+finance+biases
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+behavioral+finance+biases: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+behavioral+finance+biases
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'what causes bubbles and crashes?'
+[RETRIEVAL] Found 5 local fragments for 'how does algorithmic trading work?'
+[RETRIEVAL] Found 5 local fragments for 'what are dark pools?'
+[RETRIEVAL] Found 5 local fragments for 'explain high-frequency trading'
+[SCRAPER] Searching investment sources for: explain high-frequency trading
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=explain+high-frequency+trading
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=explain+high-frequency+trading: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=explain+high-frequency+trading
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 7 local fragments for 'what is the impact of tariffs on trade?'
+[SCRAPER] Searching investment sources for: what is the impact of tariffs on trade?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+the+impact+of+tariffs+on+trade?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+the+impact+of+tariffs+on+trade?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+the+impact+of+tariffs+on+trade?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+[RETRIEVAL] Found 5 local fragments for 'how does fiscal policy affect markets?'
+[RETRIEVAL] Found 5 local fragments for 'what is modern portfolio theory?'
+[SCRAPER] Searching investment sources for: what is modern portfolio theory?
+[SCRAPER] Using search endpoint: https://www.investopedia.com/search?q=what+is+modern+portfolio+theory?
+[SCRAPER] Failed to fetch https://www.investopedia.com/search?q=what+is+modern+portfolio+theory?: 403 Client Error: Forbidden for url: https://www.investopedia.com/search?q=what+is+modern+portfolio+theory?
+[SCRAPER] Fetching: https://www.sec.gov/
+[SCRAPER] Failed to fetch https://www.sec.gov/: 403 Client Error: Forbidden for url: https://www.sec.gov/
+[SCRAPER] Fetching: https://www.federalreserve.gov/
+[SCRAPER] Fetching: https://www.bls.gov/
+[SCRAPER] Failed to fetch https://www.bls.gov/: 403 Client Error: Forbidden for url: https://www.bls.gov/
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Rejected hoax/uncertain content from https://www.federalreserve.gov/
+[FRAGMENT] Generated 0 fragments from 1 sources
+
+=== INVESTMENT DOMAIN RESULTS ===
+Queries: 50
+Fragments available: 0
+Answers: 0 (0.0%)
+Halts: 0 (0.0%)
+Average answer length: 0 chars
+FAILED
+tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_healthcare_domain_50_queries [RETRIEVAL] Found 7 local fragments for 'what is the affordable care act?'
+[SCRAPER] Searching healthcare sources for: what is the affordable care act?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'explain medicare part d coverage'
+[SCRAPER] Searching healthcare sources for: explain medicare part d coverage
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 2 local fragments for 'how does medicaid eligibility work?'
+[RETRIEVAL] Found 4 local fragments for 'what is universal healthcare?'
+[SCRAPER] Searching healthcare sources for: what is universal healthcare?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'compare single-payer vs multi-payer systems'
+[RETRIEVAL] Found 5 local fragments for 'what are health savings accounts?'
+[RETRIEVAL] Found 1 local fragments for 'explain the insurance marketplace'
+[SCRAPER] Searching healthcare sources for: explain the insurance marketplace
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 2 local fragments for 'what is prior authorization?'
+[SCRAPER] Searching healthcare sources for: what is prior authorization?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does value-based care work?'
+[RETRIEVAL] Found 3 local fragments for 'what are accountable care organizations?'
+[RETRIEVAL] Found 1 local fragments for 'explain bundled payment models'
+[SCRAPER] Searching healthcare sources for: explain bundled payment models
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'what is the role of cms?'
+[SCRAPER] Searching healthcare sources for: what is the role of cms?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 4 local fragments for 'how does hipaa protect patient data?'
+[RETRIEVAL] Found 4 local fragments for 'what are quality metrics in healthcare?'
+[RETRIEVAL] Found 1 local fragments for 'explain readmission penalties'
+[SCRAPER] Searching healthcare sources for: explain readmission penalties
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is telemedicine reimbursement?'
+[SCRAPER] Searching healthcare sources for: what is telemedicine reimbursement?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'how do pharmacy benefit managers work?'
+[RETRIEVAL] Found 7 local fragments for 'what is formulary management?'
+[SCRAPER] Searching healthcare sources for: what is formulary management?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'explain step therapy requirements'
+[SCRAPER] Searching healthcare sources for: explain step therapy requirements
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'what are specialty drugs?'
+[RETRIEVAL] Found 4 local fragments for 'how does clinical trial approval work?'
+[RETRIEVAL] Found 4 local fragments for 'what is fda fast track designation?'
+[SCRAPER] Searching healthcare sources for: what is fda fast track designation?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'explain orphan drug incentives'
+[SCRAPER] Searching healthcare sources for: explain orphan drug incentives
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'what are real-world evidence studies?'
+[RETRIEVAL] Found 3 local fragments for 'how does comparative effectiveness research work?'
+[RETRIEVAL] Found 5 local fragments for 'what is population health management?'
+[SCRAPER] Searching healthcare sources for: what is population health management?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'explain social determinants of health'
+[SCRAPER] Searching healthcare sources for: explain social determinants of health
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'what are health information exchanges?'
+[RETRIEVAL] Found 2 local fragments for 'how does ehr interoperability work?'
+[RETRIEVAL] Found 6 local fragments for 'what is meaningful use?'
+[SCRAPER] Searching healthcare sources for: what is meaningful use?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'explain macra legislation'
+[SCRAPER] Searching healthcare sources for: explain macra legislation
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 3 local fragments for 'what are mips reporting requirements?'
+[RETRIEVAL] Found 5 local fragments for 'how does risk adjustment work?'
+[RETRIEVAL] Found 7 local fragments for 'what is capitation payment?'
+[SCRAPER] Searching healthcare sources for: what is capitation payment?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'explain fee-for-service drawbacks'
+[SCRAPER] Searching healthcare sources for: explain fee-for-service drawbacks
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 4 local fragments for 'what are hospital readmission rates?'
+[RETRIEVAL] Found 1 local fragments for 'how is patient satisfaction measured?'
+[RETRIEVAL] Found 7 local fragments for 'what is the hcahps survey?'
+[SCRAPER] Searching healthcare sources for: what is the hcahps survey?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'explain never events in healthcare'
+[SCRAPER] Searching healthcare sources for: explain never events in healthcare
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 4 local fragments for 'what is surgical site infection prevention?'
+[SCRAPER] Searching healthcare sources for: what is surgical site infection prevention?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 4 local fragments for 'how does sepsis protocol work?'
+[RETRIEVAL] Found 7 local fragments for 'what is rapid response team?'
+[SCRAPER] Searching healthcare sources for: what is rapid response team?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'explain code blue procedures'
+[SCRAPER] Searching healthcare sources for: explain code blue procedures
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 3 local fragments for 'what is palliative care?'
+[SCRAPER] Searching healthcare sources for: what is palliative care?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 2 local fragments for 'how does hospice eligibility work?'
+[RETRIEVAL] Found 2 local fragments for 'what is advance directive?'
+[SCRAPER] Searching healthcare sources for: what is advance directive?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'explain informed consent requirements'
+[SCRAPER] Searching healthcare sources for: explain informed consent requirements
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 1 local fragments for 'what is medical malpractice?'
+[SCRAPER] Searching healthcare sources for: what is medical malpractice?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 3 local fragments for 'how does peer review work?'
+[RETRIEVAL] Found 7 local fragments for 'what is credentialing for physicians?'
+[SCRAPER] Searching healthcare sources for: what is credentialing for physicians?
+[SCRAPER] Retrieved 0 results
+
+=== HEALTHCARE DOMAIN RESULTS ===
+Queries: 50
+Fragments available: 0
+Answers: 0 (0.0%)
+Halts: 0 (0.0%)
+Average answer length: 0 chars
+FAILED
+tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_economy_domain_50_queries [RETRIEVAL] Found 7 local fragments for 'what is gross domestic product?'
+[SCRAPER] Searching economy sources for: what is gross domestic product?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain the business cycle'
+[SCRAPER] Searching economy sources for: explain the business cycle
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does monetary policy work?'
+[RETRIEVAL] Found 7 local fragments for 'what is the federal funds rate?'
+[SCRAPER] Searching economy sources for: what is the federal funds rate?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain open market operations'
+[SCRAPER] Searching economy sources for: explain open market operations
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is quantitative tightening?'
+[SCRAPER] Searching economy sources for: what is quantitative tightening?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does fiscal stimulus work?'
+[RETRIEVAL] Found 7 local fragments for 'what is the multiplier effect?'
+[SCRAPER] Searching economy sources for: what is the multiplier effect?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain supply-side economics'
+[SCRAPER] Searching economy sources for: explain supply-side economics
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is keynesian economics?'
+[SCRAPER] Searching economy sources for: what is keynesian economics?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does trickle-down theory work?'
+[RETRIEVAL] Found 7 local fragments for 'what is modern monetary theory?'
+[SCRAPER] Searching economy sources for: what is modern monetary theory?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain austerity measures'
+[SCRAPER] Searching economy sources for: explain austerity measures
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'what causes hyperinflation?'
+[RETRIEVAL] Found 5 local fragments for 'how does deflation affect economy?'
+[RETRIEVAL] Found 7 local fragments for 'what is stagflation?'
+[SCRAPER] Searching economy sources for: what is stagflation?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain the phillips curve'
+[SCRAPER] Searching economy sources for: explain the phillips curve
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is the laffer curve?'
+[SCRAPER] Searching economy sources for: what is the laffer curve?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does trade deficit impact economy?'
+[RETRIEVAL] Found 7 local fragments for 'what is balance of payments?'
+[SCRAPER] Searching economy sources for: what is balance of payments?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain current account vs capital account'
+[SCRAPER] Searching economy sources for: explain current account vs capital account
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'what are foreign exchange reserves?'
+[RETRIEVAL] Found 5 local fragments for 'how does currency devaluation work?'
+[RETRIEVAL] Found 7 local fragments for 'what is purchasing power parity?'
+[SCRAPER] Searching economy sources for: what is purchasing power parity?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain the impossible trinity'
+[SCRAPER] Searching economy sources for: explain the impossible trinity
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'what causes sovereign debt crisis?'
+[RETRIEVAL] Found 5 local fragments for 'how does credit rating affect borrowing?'
+[RETRIEVAL] Found 7 local fragments for 'what is debt-to-gdp ratio?'
+[SCRAPER] Searching economy sources for: what is debt-to-gdp ratio?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain structural vs cyclical deficit'
+[SCRAPER] Searching economy sources for: explain structural vs cyclical deficit
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is automatic stabilizer?'
+[SCRAPER] Searching economy sources for: what is automatic stabilizer?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does progressive taxation work?'
+[RETRIEVAL] Found 7 local fragments for 'what is regressive tax?'
+[SCRAPER] Searching economy sources for: what is regressive tax?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain corporate tax incidence'
+[SCRAPER] Searching economy sources for: explain corporate tax incidence
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is capital gains tax?'
+[SCRAPER] Searching economy sources for: what is capital gains tax?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does estate tax work?'
+[RETRIEVAL] Found 5 local fragments for 'what is wealth inequality?'
+[SCRAPER] Searching economy sources for: what is wealth inequality?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain the gini coefficient'
+[SCRAPER] Searching economy sources for: explain the gini coefficient
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is social mobility?'
+[SCRAPER] Searching economy sources for: what is social mobility?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does minimum wage affect employment?'
+[RETRIEVAL] Found 7 local fragments for 'what is labor force participation?'
+[SCRAPER] Searching economy sources for: what is labor force participation?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain natural rate of unemployment'
+[SCRAPER] Searching economy sources for: explain natural rate of unemployment
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is frictional unemployment?'
+[SCRAPER] Searching economy sources for: what is frictional unemployment?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does automation affect jobs?'
+[RETRIEVAL] Found 7 local fragments for 'what is gig economy?'
+[SCRAPER] Searching economy sources for: what is gig economy?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'explain universal basic income'
+[SCRAPER] Searching economy sources for: explain universal basic income
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is productivity growth?'
+[SCRAPER] Searching economy sources for: what is productivity growth?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'how does innovation drive economy?'
+[RETRIEVAL] Found 7 local fragments for 'what is creative destruction?'
+[SCRAPER] Searching economy sources for: what is creative destruction?
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 5 local fragments for 'explain network effects'
+[SCRAPER] Searching economy sources for: explain network effects
+[SCRAPER] Retrieved 0 results
+[RETRIEVAL] Found 7 local fragments for 'what is platform economy?'
+[SCRAPER] Searching economy sources for: what is platform economy?
+[SCRAPER] Retrieved 0 results
+
+=== ECONOMY DOMAIN RESULTS ===
+Queries: 50
+Fragments available: 0
+Answers: 0 (0.0%)
+Halts: 0 (0.0%)
+Average answer length: 0 chars
+FAILED
+tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_general_knowledge_50_queries [RETRIEVAL] Found 5 local fragments for 'who was the first president of the united states?'
+[RETRIEVAL] Found 7 local fragments for 'what is the capital of france?'
+[SCRAPER] Searching general sources for: what is the capital of france?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+the+capital+of+france?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+capital...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+capital...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+capital...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain the theory of relativity'
+[SCRAPER] Searching general sources for: explain the theory of relativity
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+the+theory+of+relativity
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+the+theory+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+the+theory+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+the+theory+...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how does photosynthesis work?'
+[RETRIEVAL] Found 5 local fragments for 'what caused world war ii?'
+[RETRIEVAL] Found 2 local fragments for 'who wrote romeo and juliet?'
+[RETRIEVAL] Found 7 local fragments for 'what is the largest planet in our solar system?'
+[SCRAPER] Searching general sources for: what is the largest planet in our solar system?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+the+largest+planet+in+our+solar+system?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=global+economy+outlook+2026
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=geopolitical+conflict+summary+2026
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=climate+change+status+report+2026
+[SCRAPER] Retrieved 4 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+largest...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+largest...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+largest...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=global+economy+outl...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=global+economy+outl...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=global+economy+outl...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=geopolitical+confli...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=geopolitical+confli...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=geopolitical+confli...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=climate+change+stat...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=climate+change+stat...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=climate+change+stat...
+[FRAGMENT] Generated 12 fragments from 4 sources
+[CONSISTENCY] 12/12 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain the water cycle'
+[SCRAPER] Searching general sources for: explain the water cycle
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+the+water+cycle
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+the+water+c...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+the+water+c...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+the+water+c...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is dna?'
+[SCRAPER] Searching general sources for: what is dna?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+dna?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+dna?...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+dna?...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+dna?...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how do vaccines work?'
+[RETRIEVAL] Found 7 local fragments for 'what is climate change?'
+[SCRAPER] Searching general sources for: what is climate change?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+climate+change?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+climate+cha...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+climate+cha...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+climate+cha...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain plate tectonics'
+[SCRAPER] Searching general sources for: explain plate tectonics
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+plate+tectonics
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+plate+tecto...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+plate+tecto...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+plate+tecto...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is the big bang theory?'
+[SCRAPER] Searching general sources for: what is the big bang theory?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+the+big+bang+theory?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+big+ban...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+big+ban...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+big+ban...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'who discovered penicillin?'
+[RETRIEVAL] Found 7 local fragments for 'what is the speed of light?'
+[SCRAPER] Searching general sources for: what is the speed of light?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+the+speed+of+light?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+speed+o...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+speed+o...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+speed+o...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain gravity'
+[SCRAPER] Searching general sources for: explain gravity
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+gravity
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+gravity...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+gravity...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+gravity...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is black hole?'
+[SCRAPER] Searching general sources for: what is black hole?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+black+hole?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+black+hole?...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+black+hole?...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+black+hole?...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how does electricity work?'
+[RETRIEVAL] Found 6 local fragments for 'what is quantum mechanics?'
+[SCRAPER] Searching general sources for: what is quantum mechanics?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+quantum+mechanics?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+quantum+mec...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+quantum+mec...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+quantum+mec...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain evolution by natural selection'
+[SCRAPER] Searching general sources for: explain evolution by natural selection
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+evolution+by+natural+selection
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+evolution+b...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+evolution+b...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+evolution+b...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is the periodic table?'
+[SCRAPER] Searching general sources for: what is the periodic table?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+the+periodic+table?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+periodi...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+periodi...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+periodi...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how does the internet work?'
+[RETRIEVAL] Found 7 local fragments for 'what is artificial intelligence?'
+[SCRAPER] Searching general sources for: what is artificial intelligence?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+artificial+intelligence?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+artificial+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+artificial+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+artificial+...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain blockchain technology'
+[SCRAPER] Searching general sources for: explain blockchain technology
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+blockchain+technology
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+blockchain+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+blockchain+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+blockchain+...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is machine learning?'
+[SCRAPER] Searching general sources for: what is machine learning?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+machine+learning?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+machine+lea...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+machine+lea...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+machine+lea...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how do computers process data?'
+[RETRIEVAL] Found 7 local fragments for 'what is cloud computing?'
+[SCRAPER] Searching general sources for: what is cloud computing?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+cloud+computing?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+cloud+compu...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+cloud+compu...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+cloud+compu...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'explain cybersecurity basics'
+[SCRAPER] Searching general sources for: explain cybersecurity basics
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+cybersecurity+basics
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+cybersecuri...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+cybersecuri...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+cybersecuri...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is renewable energy?'
+[SCRAPER] Searching general sources for: what is renewable energy?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+renewable+energy?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+renewable+e...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+renewable+e...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+renewable+e...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how do solar panels work?'
+[RETRIEVAL] Found 7 local fragments for 'what is nuclear fusion?'
+[SCRAPER] Searching general sources for: what is nuclear fusion?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+nuclear+fusion?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+nuclear+fus...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+nuclear+fus...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+nuclear+fus...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain genetic engineering'
+[SCRAPER] Searching general sources for: explain genetic engineering
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+genetic+engineering
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+genetic+eng...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+genetic+eng...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+genetic+eng...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 4 local fragments for 'what is crispr?'
+[SCRAPER] Searching general sources for: what is crispr?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+crispr?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+crispr?...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+crispr?...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+crispr?...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how does the human brain work?'
+[RETRIEVAL] Found 7 local fragments for 'what is consciousness?'
+[SCRAPER] Searching general sources for: what is consciousness?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+consciousness?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+consciousne...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+consciousne...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+consciousne...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain memory formation'
+[SCRAPER] Searching general sources for: explain memory formation
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+memory+formation
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+memory+form...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+memory+form...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+memory+form...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'what is the scientific method?'
+[SCRAPER] Searching general sources for: what is the scientific method?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+the+scientific+method?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+scienti...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+scienti...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+scienti...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how do peer reviews work?'
+[RETRIEVAL] Found 5 local fragments for 'what is academic publishing?'
+[SCRAPER] Searching general sources for: what is academic publishing?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+academic+publishing?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+academic+pu...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+academic+pu...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+academic+pu...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain open access movement'
+[SCRAPER] Searching general sources for: explain open access movement
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+open+access+movement
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+open+access...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+open+access...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+open+access...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is intellectual property?'
+[SCRAPER] Searching general sources for: what is intellectual property?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+intellectual+property?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+intellectua...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+intellectua...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+intellectua...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how do patents work?'
+[RETRIEVAL] Found 7 local fragments for 'what is copyright law?'
+[SCRAPER] Searching general sources for: what is copyright law?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+copyright+law?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+copyright+l...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+copyright+l...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+copyright+l...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain fair use doctrine'
+[SCRAPER] Searching general sources for: explain fair use doctrine
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+fair+use+doctrine
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+fair+use+do...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+fair+use+do...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+fair+use+do...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is the united nations?'
+[SCRAPER] Searching general sources for: what is the united nations?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+the+united+nations?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+united+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+united+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+united+...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how does nato work?'
+[RETRIEVAL] Found 7 local fragments for 'what is the european union?'
+[SCRAPER] Searching general sources for: what is the european union?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+the+european+union?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+europea...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+europea...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+the+europea...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'explain the geneva conventions'
+[SCRAPER] Searching general sources for: explain the geneva conventions
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=explain+the+geneva+conventions
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+the+geneva+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+the+geneva+...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=explain+the+geneva+...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 7 local fragments for 'what is international law?'
+[SCRAPER] Searching general sources for: what is international law?
+[SCRAPER] Using search endpoint: https://duckduckgo.com/html/?q=what+is+international+law?
+[SCRAPER] Retrieved 1 results
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+internation...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+internation...
+[FRAGMENT] Created fragment from https://duckduckgo.com/html/?q=what+is+internation...
+[FRAGMENT] Generated 3 fragments from 1 sources
+[CONSISTENCY] 3/3 fragments passed consistency check
+[RETRIEVAL] Found 5 local fragments for 'how does the imf work?'
+
+=== GENERAL KNOWLEDGE RESULTS ===
+Queries: 50
+Fragments available: 0
+Answers: 0 (0.0%)
+Halts: 0 (0.0%)
+Average answer length: 0 chars
+FAILED
+tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_comprehensive_summary_report SKIPPED
+
+=================================== FAILURES ===================================
+___________ TestComprehensiveDomains.test_medical_domain_50_queries ____________
+
+self = <test_comprehensive_50_queries.TestComprehensiveDomains object at 0x7fdf2e83db50>
+
+    def test_medical_domain_50_queries(self):
+        """Test 50 medical queries - high stakes domain"""
+        medical_queries = [
+            "What are the symptoms of pancreatic cancer?",
+            "How is diabetes diagnosed?",
+            "What is the treatment for hypertension?",
+            "Explain the stages of chronic kidney disease",
+            "What causes myocardial infarction?",
+            "How to recognize stroke symptoms?",
+            "What is the prognosis for leukemia?",
+            "Explain autoimmune disorders mechanism",
+            "What are risk factors for Alzheimer's?",
+            "How does chemotherapy work?",
+            "What is atrial fibrillation treatment?",
+            "Explain COPD pathophysiology",
+            "What are symptoms of multiple sclerosis?",
+            "How is rheumatoid arthritis managed?",
+            "What causes inflammatory bowel disease?",
+            "Explain the renin-angiotensin system",
+            "What is the difference between Type 1 and Type 2 diabetes?",
+            "How does insulin resistance develop?",
+            "What are complications of untreated hypertension?",
+            "Explain the coagulation cascade",
+            "What is the treatment for deep vein thrombosis?",
+            "How to manage acute asthma attack?",
+            "What causes gastroesophageal reflux disease?",
+            "Explain the pathophysiology of cirrhosis",
+            "What are signs of liver failure?",
+            "How does kidney dialysis work?",
+            "What is the mechanism of action of statins?",
+            "Explain beta-blocker pharmacology",
+            "What are side effects of corticosteroids?",
+            "How to treat bacterial pneumonia?",
+            "What is the difference between viral and bacterial meningitis?",
+            "Explain the immune response to vaccination",
+            "What causes osteoporosis?",
+            "How is thyroid dysfunction diagnosed?",
+            "What are symptoms of hyperthyroidism?",
+            "Explain the hypothalamic-pituitary axis",
+            "What is the treatment for epilepsy?",
+            "How does Parkinson's disease progress?",
+            "What causes depression neurochemically?",
+            "Explain the mechanism of SSRIs",
+            "What are risk factors for breast cancer?",
+            "How is prostate cancer screened?",
+            "What is the TNM staging system?",
+            "Explain tumor marker testing",
+            "What causes anemia?",
+            "How to interpret complete blood count?",
+            "What is disseminated intravascular coagulation?",
+            "Explain septic shock pathophysiology",
+            "What is the treatment for anaphylaxis?",
+            "How does mechanical ventilation work?",
+            "What are indications for ICU admission?"
+        ]
+    
+        answers = 0
+        halts = 0
+        total_chars = 0
+    
+        for query in medical_queries:
+>           result = self.engine.answer(query, domain="medical")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_comprehensive_50_queries.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+openeyes/core/engine.py:226: in answer
+    frags = self._fragments_for(query, routed_domain)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+openeyes/core/engine.py:115: in _fragments_for
+    filtered = akinator.filter_fragments_by_mask(fetched, search_mask)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+openeyes/akinator_engine.py:443: in filter_fragments_by_mask
+    if not any(st in frag_source for st in mask.source_types):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+.0 = <list_iterator object at 0x7fdf2b18fa30>
+
+>   if not any(st in frag_source for st in mask.source_types):
+               ^^^^^^^^^^^^^^^^^
+E   TypeError: argument of type 'NoneType' is not iterable
+
+openeyes/akinator_engine.py:443: TypeError
+__________ TestComprehensiveDomains.test_investment_domain_50_queries __________
+
+self = <test_comprehensive_50_queries.TestComprehensiveDomains object at 0x7fdf2ce99b80>
+
+    def test_investment_domain_50_queries(self):
+        """Test 50 investment/finance queries"""
+        investment_queries = [
+            "What is the current Federal Reserve interest rate?",
+            "Explain quantitative easing policy",
+            "How does inflation affect bond prices?",
+            "What is the yield curve telling us?",
+            "Analyze the S&P 500 valuation metrics",
+            "What are REITs and how do they work?",
+            "Explain the capital asset pricing model",
+            "What is the difference between growth and value stocks?",
+            "How to calculate discounted cash flow?",
+            "What drives cryptocurrency prices?",
+            "Explain options trading strategies",
+            "What is portfolio diversification?",
+            "How does dollar-cost averaging work?",
+            "What are ESG investment criteria?",
+            "Explain the efficient market hypothesis",
+            "What causes market volatility?",
+            "How to hedge against inflation?",
+            "What is the role of the SEC?",
+            "Explain margin trading risks",
+            "What are derivatives used for?",
+            "How does forex trading work?",
+            "What is the impact of GDP on markets?",
+            "Explain the business cycle phases",
+            "What are leading economic indicators?",
+            "How does unemployment affect stocks?",
+            "What is the consumer price index?",
+            "Explain the producer price index",
+            "What drives oil prices?",
+            "How does gold perform as a hedge?",
+            "What are commodity futures?",
+            "Explain the carry trade strategy",
+            "What is the debt-to-equity ratio?",
+            "How to analyze a balance sheet?",
+            "What is free cash flow?",
+            "Explain enterprise value calculation",
+            "What are the risks of emerging markets?",
+            "How does currency exchange affect multinationals?",
+            "What is the VIX index?",
+            "Explain mean reversion strategy",
+            "What are momentum investing principles?",
+            "How to use technical analysis?",
+            "What is the random walk theory?",
+            "Explain behavioral finance biases",
+            "What causes bubbles and crashes?",
+            "How does algorithmic trading work?",
+            "What are dark pools?",
+            "Explain high-frequency trading",
+            "What is the impact of tariffs on trade?",
+            "How does fiscal policy affect markets?",
+            "What is modern portfolio theory?"
+        ]
+    
+        answers = 0
+        halts = 0
+        total_chars = 0
+    
+        for query in investment_queries:
+            result = self.engine.answer(query, domain="investment")
+            if result.get("decision_class", "").startswith("ANSWER"):
+                answers += 1
+                total_chars += len(result.get("answer", ""))
+            elif result.get("decision_class", "").startswith("HALT"):
+                halts += 1
+    
+        print(f"\n=== INVESTMENT DOMAIN RESULTS ===")
+        print(f"Queries: {len(investment_queries)}")
+        print(f"Fragments available: {self.get_domain_fragments_count('investment')}")
+        print(f"Answers: {answers} ({answers/len(investment_queries)*100:.1f}%)")
+        print(f"Halts: {halts} ({halts/len(investment_queries)*100:.1f}%)")
+        print(f"Average answer length: {total_chars/max(answers,1):.0f} chars")
+    
+>       assert answers > 0, "Should get at least some answers in investment domain"
+E       AssertionError: Should get at least some answers in investment domain
+E       assert 0 > 0
+
+tests/test_comprehensive_50_queries.py:191: AssertionError
+__________ TestComprehensiveDomains.test_healthcare_domain_50_queries __________
+
+self = <test_comprehensive_50_queries.TestComprehensiveDomains object at 0x7fdf2ce99e20>
+
+    def test_healthcare_domain_50_queries(self):
+        """Test 50 healthcare system/policy queries"""
+        healthcare_queries = [
+            "What is the Affordable Care Act?",
+            "Explain Medicare Part D coverage",
+            "How does Medicaid eligibility work?",
+            "What is universal healthcare?",
+            "Compare single-payer vs multi-payer systems",
+            "What are health savings accounts?",
+            "Explain the insurance marketplace",
+            "What is prior authorization?",
+            "How does value-based care work?",
+            "What are accountable care organizations?",
+            "Explain bundled payment models",
+            "What is the role of CMS?",
+            "How does HIPAA protect patient data?",
+            "What are quality metrics in healthcare?",
+            "Explain readmission penalties",
+            "What is telemedicine reimbursement?",
+            "How do pharmacy benefit managers work?",
+            "What is formulary management?",
+            "Explain step therapy requirements",
+            "What are specialty drugs?",
+            "How does clinical trial approval work?",
+            "What is FDA fast track designation?",
+            "Explain orphan drug incentives",
+            "What are real-world evidence studies?",
+            "How does comparative effectiveness research work?",
+            "What is population health management?",
+            "Explain social determinants of health",
+            "What are health information exchanges?",
+            "How does EHR interoperability work?",
+            "What is meaningful use?",
+            "Explain MACRA legislation",
+            "What are MIPS reporting requirements?",
+            "How does risk adjustment work?",
+            "What is capitation payment?",
+            "Explain fee-for-service drawbacks",
+            "What are hospital readmission rates?",
+            "How is patient satisfaction measured?",
+            "What is the HCAHPS survey?",
+            "Explain never events in healthcare",
+            "What is surgical site infection prevention?",
+            "How does sepsis protocol work?",
+            "What is rapid response team?",
+            "Explain code blue procedures",
+            "What is palliative care?",
+            "How does hospice eligibility work?",
+            "What is advance directive?",
+            "Explain informed consent requirements",
+            "What is medical malpractice?",
+            "How does peer review work?",
+            "What is credentialing for physicians?"
+        ]
+    
+        answers = 0
+        halts = 0
+        total_chars = 0
+    
+        for query in healthcare_queries:
+            result = self.engine.answer(query, domain="healthcare")
+            if result.get("decision_class", "").startswith("ANSWER"):
+                answers += 1
+                total_chars += len(result.get("answer", ""))
+            elif result.get("decision_class", "").startswith("HALT"):
+                halts += 1
+    
+        print(f"\n=== HEALTHCARE DOMAIN RESULTS ===")
+        print(f"Queries: {len(healthcare_queries)}")
+        print(f"Fragments available: {self.get_domain_fragments_count('healthcare')}")
+        print(f"Answers: {answers} ({answers/len(healthcare_queries)*100:.1f}%)")
+        print(f"Halts: {halts} ({halts/len(healthcare_queries)*100:.1f}%)")
+        print(f"Average answer length: {total_chars/max(answers,1):.0f} chars")
+    
+>       assert answers > 0, "Should get at least some answers in healthcare domain"
+E       AssertionError: Should get at least some answers in healthcare domain
+E       assert 0 > 0
+
+tests/test_comprehensive_50_queries.py:276: AssertionError
+___________ TestComprehensiveDomains.test_economy_domain_50_queries ____________
+
+self = <test_comprehensive_50_queries.TestComprehensiveDomains object at 0x7fdf2ce9a0f0>
+
+    def test_economy_domain_50_queries(self):
+        """Test 50 economy/macroeconomics queries"""
+        economy_queries = [
+            "What is Gross Domestic Product?",
+            "Explain the business cycle",
+            "How does monetary policy work?",
+            "What is the federal funds rate?",
+            "Explain open market operations",
+            "What is quantitative tightening?",
+            "How does fiscal stimulus work?",
+            "What is the multiplier effect?",
+            "Explain supply-side economics",
+            "What is Keynesian economics?",
+            "How does trickle-down theory work?",
+            "What is modern monetary theory?",
+            "Explain austerity measures",
+            "What causes hyperinflation?",
+            "How does deflation affect economy?",
+            "What is stagflation?",
+            "Explain the Phillips curve",
+            "What is the Laffer curve?",
+            "How does trade deficit impact economy?",
+            "What is balance of payments?",
+            "Explain current account vs capital account",
+            "What are foreign exchange reserves?",
+            "How does currency devaluation work?",
+            "What is purchasing power parity?",
+            "Explain the impossible trinity",
+            "What causes sovereign debt crisis?",
+            "How does credit rating affect borrowing?",
+            "What is debt-to-GDP ratio?",
+            "Explain structural vs cyclical deficit",
+            "What is automatic stabilizer?",
+            "How does progressive taxation work?",
+            "What is regressive tax?",
+            "Explain corporate tax incidence",
+            "What is capital gains tax?",
+            "How does estate tax work?",
+            "What is wealth inequality?",
+            "Explain the Gini coefficient",
+            "What is social mobility?",
+            "How does minimum wage affect employment?",
+            "What is labor force participation?",
+            "Explain natural rate of unemployment",
+            "What is frictional unemployment?",
+            "How does automation affect jobs?",
+            "What is gig economy?",
+            "Explain universal basic income",
+            "What is productivity growth?",
+            "How does innovation drive economy?",
+            "What is creative destruction?",
+            "Explain network effects",
+            "What is platform economy?"
+        ]
+    
+        answers = 0
+        halts = 0
+        total_chars = 0
+    
+        for query in economy_queries:
+            result = self.engine.answer(query, domain="economy")
+            if result.get("decision_class", "").startswith("ANSWER"):
+                answers += 1
+                total_chars += len(result.get("answer", ""))
+            elif result.get("decision_class", "").startswith("HALT"):
+                halts += 1
+    
+        print(f"\n=== ECONOMY DOMAIN RESULTS ===")
+        print(f"Queries: {len(economy_queries)}")
+        print(f"Fragments available: {self.get_domain_fragments_count('economy')}")
+        print(f"Answers: {answers} ({answers/len(economy_queries)*100:.1f}%)")
+        print(f"Halts: {halts} ({halts/len(economy_queries)*100:.1f}%)")
+        print(f"Average answer length: {total_chars/max(answers,1):.0f} chars")
+    
+>       assert answers > 0, "Should get at least some answers in economy domain"
+E       AssertionError: Should get at least some answers in economy domain
+E       assert 0 > 0
+
+tests/test_comprehensive_50_queries.py:361: AssertionError
+__________ TestComprehensiveDomains.test_general_knowledge_50_queries __________
+
+self = <test_comprehensive_50_queries.TestComprehensiveDomains object at 0x7fdf2ce9a3c0>
+
+    def test_general_knowledge_50_queries(self):
+        """Test 50 general knowledge queries"""
+        general_queries = [
+            "Who was the first president of the United States?",
+            "What is the capital of France?",
+            "Explain the theory of relativity",
+            "How does photosynthesis work?",
+            "What caused World War II?",
+            "Who wrote Romeo and Juliet?",
+            "What is the largest planet in our solar system?",
+            "Explain the water cycle",
+            "What is DNA?",
+            "How do vaccines work?",
+            "What is climate change?",
+            "Explain plate tectonics",
+            "What is the Big Bang theory?",
+            "Who discovered penicillin?",
+            "What is the speed of light?",
+            "Explain gravity",
+            "What is black hole?",
+            "How does electricity work?",
+            "What is quantum mechanics?",
+            "Explain evolution by natural selection",
+            "What is the periodic table?",
+            "How does the internet work?",
+            "What is artificial intelligence?",
+            "Explain blockchain technology",
+            "What is machine learning?",
+            "How do computers process data?",
+            "What is cloud computing?",
+            "Explain cybersecurity basics",
+            "What is renewable energy?",
+            "How do solar panels work?",
+            "What is nuclear fusion?",
+            "Explain genetic engineering",
+            "What is CRISPR?",
+            "How does the human brain work?",
+            "What is consciousness?",
+            "Explain memory formation",
+            "What is the scientific method?",
+            "How do peer reviews work?",
+            "What is academic publishing?",
+            "Explain open access movement",
+            "What is intellectual property?",
+            "How do patents work?",
+            "What is copyright law?",
+            "Explain fair use doctrine",
+            "What is the United Nations?",
+            "How does NATO work?",
+            "What is the European Union?",
+            "Explain the Geneva Conventions",
+            "What is international law?",
+            "How does the IMF work?"
+        ]
+    
+        answers = 0
+        halts = 0
+        total_chars = 0
+    
+        for query in general_queries:
+            result = self.engine.answer(query, domain="general")
+            if result.get("decision_class", "").startswith("ANSWER"):
+                answers += 1
+                total_chars += len(result.get("answer", ""))
+            elif result.get("decision_class", "").startswith("HALT"):
+                halts += 1
+    
+        print(f"\n=== GENERAL KNOWLEDGE RESULTS ===")
+        print(f"Queries: {len(general_queries)}")
+        print(f"Fragments available: {self.get_domain_fragments_count('general')}")
+        print(f"Answers: {answers} ({answers/len(general_queries)*100:.1f}%)")
+        print(f"Halts: {halts} ({halts/len(general_queries)*100:.1f}%)")
+        print(f"Average answer length: {total_chars/max(answers,1):.0f} chars")
+    
+>       assert answers > 0, "Should get at least some answers in general domain"
+E       AssertionError: Should get at least some answers in general domain
+E       assert 0 > 0
+
+tests/test_comprehensive_50_queries.py:446: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_medical_domain_50_queries
+FAILED tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_investment_domain_50_queries
+FAILED tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_healthcare_domain_50_queries
+FAILED tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_economy_domain_50_queries
+FAILED tests/test_comprehensive_50_queries.py::TestComprehensiveDomains::test_general_knowledge_50_queries
+=================== 5 failed, 1 skipped in 66.78s (0:01:06) ====================

@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.10, pytest-9.0.3, pluggy-1.6.0 -- /usr/local/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace
+configfile: pyproject.toml
+plugins: anyio-4.9.0, libtmux-0.46.2, Faker-37.4.2, cov-7.1.0
+collecting ... collected 27 items
+
+tests/integration/test_engine_domains.py::TestEngineMedicalDomain::test_medical_query_returns_answer PASSED [  3%]
+tests/integration/test_engine_domains.py::TestEngineMedicalDomain::test_medical_query_has_confidence PASSED [  7%]
+tests/integration/test_engine_domains.py::TestEngineMedicalDomain::test_multiple_medical_queries_consistent PASSED [ 11%]
+tests/integration/test_engine_domains.py::TestEngineInvestmentDomain::test_investment_query_returns_answer PASSED [ 14%]
+tests/integration/test_engine_domains.py::TestEngineInvestmentDomain::test_investment_query_has_scenarios PASSED [ 18%]
+tests/integration/test_engine_domains.py::TestEngineGeneralQueries::test_general_query_handled PASSED [ 22%]
+tests/integration/test_engine_domains.py::TestEngineGeneralQueries::test_general_query_uses_live_fetch PASSED [ 25%]
+tests/integration/test_engine_domains.py::TestEngineMemoryAndLearning::test_repeated_query_improves_confidence PASSED [ 29%]
+tests/integration/test_engine_domains.py::TestEngineMemoryAndLearning::test_engine_maintains_state PASSED [ 33%]
+tests/test_e2e.py::test_pancreatic_cancer_5_runs PASSED                  [ 37%]
+tests/test_e2e.py::test_assistive_mode_always_answers PASSED             [ 40%]
+tests/test_e2e.py::test_stable_seed_deterministic PASSED                 [ 44%]
+tests/test_e2e.py::test_memory_ingest_and_narrative PASSED               [ 48%]
+tests/test_e2e.py::test_complex_query_gets_longer_answer PASSED          [ 51%]
+tests/test_e2e.py::test_live_fetch_fills_fragments PASSED                [ 55%]
+tests/unit/test_monte_carlo.py::TestMonteCarloEngine::test_stable_seed_deterministic PASSED [ 59%]
+tests/unit/test_monte_carlo.py::TestMonteCarloEngine::test_stable_seed_different_inputs PASSED [ 62%]
+tests/unit/test_monte_carlo.py::TestMonteCarloEngine::test_stable_seed_consistent_across_calls PASSED [ 66%]
+tests/unit/test_monte_carlo.py::TestMonteCarloEngine::test_initialization PASSED [ 70%]
+tests/unit/test_philosophy_guard.py::TestPhilosophyGuard::test_initialization PASSED [ 74%]
+tests/unit/test_philosophy_guard.py::TestPhilosophyGuard::test_validate_proposal_basic PASSED [ 77%]
+tests/unit/test_philosophy_guard.py::TestPhilosophyGuard::test_validate_proposal_returns_structure PASSED [ 81%]
+tests/unit/test_philosophy_guard.py::TestPhilosophyGuard::test_validate_proposal_empty PASSED [ 85%]
+tests/unit/test_vault.py::TestVault::test_write_audit_log_creates_file PASSED [ 88%]
+tests/unit/test_vault.py::TestVault::test_write_audit_log_returns_latest_path PASSED [ 92%]
+tests/unit/test_vault.py::TestVault::test_write_audit_log_content_structure PASSED [ 96%]
+tests/unit/test_vault.py::TestVault::test_write_audit_log_includes_query PASSED [100%]
+
+============================= 27 passed in 10.04s ==============================
