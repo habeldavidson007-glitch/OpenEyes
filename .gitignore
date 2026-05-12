@@ -1,7 +1,12 @@
 ```
-# Audit logs
-.openeyes/vault/audit/*.md
+# Logs and temp files
+*.log
+*.tmp
 
-# Binary files
-*.bin
+# Dependencies
+.openeyes/
+openeyes.egg-info/
+
+# Test results
+test_results/
 ```
