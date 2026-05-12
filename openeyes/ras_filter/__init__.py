@@ -23,7 +23,13 @@ class RASFilter:
     4. Co-occurrence patterns (fragments that succeed together)
     """
     
-    def __init__(self, ras_state_path: str = "/workspace/openeyes/data/ras_state.json"):
+    def __init__(self, ras_state_path: str = None):
+        # Dynamic path resolution if not provided
+        if ras_state_path is None:
+            import openeyes
+            package_dir = Path(openeyes.__file__).parent
+            ras_state_path = str(package_dir.parent / "data" / "ras_state.json")
+        
         self.ras_state_path = ras_state_path
         self.state = self._load_state()
         

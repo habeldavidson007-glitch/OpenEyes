@@ -18,11 +18,13 @@ from datetime import datetime
 from typing import Dict, List, Any, Optional
 from pathlib import Path
 
-# Configuration
-BINARY_LIB_PATH = Path("/workspace/openeyes/knowledge.oelib")
-REPLAY_BUFFER_PATH = Path("/workspace/logs/neural_replay_buffer.json")
-OBSIDIAN_VAULT_PATH = Path("/workspace/obsidian_vault")
-FRAGMENTS_DIR = Path("/workspace/openeyes/fragment_library/fragments")
+# Configuration - Dynamic path resolution
+import openeyes
+_package_dir = Path(openeyes.__file__).parent
+BINARY_LIB_PATH = _package_dir.parent / "knowledge.oelib"
+REPLAY_BUFFER_PATH = _package_dir.parent / "logs" / "neural_replay_buffer.json"
+OBSIDIAN_VAULT_PATH = _package_dir.parent / "obsidian_vault"
+FRAGMENTS_DIR = _package_dir.parent / "fragment_library" / "fragments"
 
 class BinaryLibraryEngine:
     """Handles binary serialization/deserialization of the fragment library."""

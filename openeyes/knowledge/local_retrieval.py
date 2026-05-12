@@ -236,8 +236,11 @@ class LocalFragmentIndex:
     def __init__(self, base_paths: list[str] = None):
         # Three core domain directories only: eco, gov, hc
         if base_paths is None:
+            # Use dynamic path relative to package location
+            import openeyes
+            package_dir = Path(openeyes.__file__).parent
             self.base_paths = [
-                '/workspace/openeyes/knowledge/fragments',  # Main fragment directory with eco/gov/hc
+                str(package_dir / 'knowledge' / 'fragments'),  # Main fragment directory with eco/gov/hc
             ]
         else:
             self.base_paths = base_paths if isinstance(base_paths, list) else [base_paths]

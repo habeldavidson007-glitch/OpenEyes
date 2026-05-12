@@ -1,1 +1,40 @@
-Nothing to output - the added file 'openeyes/ingestion/live_scraper.py' is a source code file and should not be ignored.
+```
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Build and distribution directories
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+.env
+.env.local
+*.env.*
+
+# Logs
+*.log
+
+# Coverage reports
+.coverage
+coverage/
+htmlcov/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+```

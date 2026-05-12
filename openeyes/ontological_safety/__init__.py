@@ -33,7 +33,13 @@ class OntologicalSafety:
     The assembler physically cannot construct answers that violate safety rules.
     """
     
-    def __init__(self, constraints_path: str = "/workspace/openeyes/domain_rules/safety_constraints.json"):
+    def __init__(self, constraints_path: str = None):
+        # Dynamic path resolution if not provided
+        if constraints_path is None:
+            import openeyes
+            package_dir = Path(openeyes.__file__).parent
+            constraints_path = str(package_dir / "domain_rules" / "safety_constraints.json")
+        
         self.constraints_path = constraints_path
         self.constraints = self._load_constraints()
         
