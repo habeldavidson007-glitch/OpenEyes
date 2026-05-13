@@ -128,22 +128,13 @@ class FragmentLibrary:
             else:
                 frag_data = data
             
-            # Create Fragment object
-            fragment = Fragment(
-                topic=frag_data.get('topic', ''),
-                definition=frag_data.get('definition', ''),
-                counter_argument=frag_data.get('counter_argument', ''),
-                latest_data=frag_data.get('latest_data', ''),
-                source_url=frag_data.get('source_url', ''),
-                year=frag_data.get('year', 0),
-                credibility_score=frag_data.get('credibility_score', 0.5),
-                domain=frag_data.get('domain', ''),
-                sector=frag_data.get('sector', ''),
-                tags=frag_data.get('tags', []),
-                metadata=frag_data.get('metadata', {})
-            )
+            # Use migrate_fragment to handle both old and new formats
+            from openeyes.knowledge.fragments import migrate_fragment
+            fragment = migrate_fragment(frag_data)
             
             # Store filepath in metadata
+            if not hasattr(fragment, 'metadata'):
+                fragment.metadata = {}
             fragment.metadata['filepath'] = filepath
             
             return fragment
@@ -154,19 +145,25 @@ class FragmentLibrary:
     
     def _index_fragment(self, fragment: Fragment):
         """Index a fragment for fast retrieval."""
-        frag_id = f"{fragment.domain}_{fragment.sector}_{fragment.topic}"
+        # Get domain/sector from metadata if not on fragment object
+        domain = getattr(fragment, 'domain', fragment.metadata.get('domain', 'unknown'))
+        sector = getattr(fragment, 'sector', fragment.metadata.get('sector', 'unknown'))
+        topic = getattr(fragment, 'topic', fragment.metadata.get('topic', fragment.source_id))
+        
+        frag_id = f"{domain}_{sector}_{topic}"
         
         self.fragments_by_id[frag_id] = fragment
-        self.fragments_by_domain[fragment.domain].append(fragment)
-        self.fragments_by_sector[fragment.sector].append(fragment)
-        self.fragments_by_topic[fragment.topic].append(fragment)
+        self.fragments_by_domain[domain].append(fragment)
+        self.fragments_by_sector[sector].append(fragment)
+        self.fragments_by_topic[topic].append(fragment)
         
         # Index by keywords/tags
-        for tag in fragment.tags:
+        tags = getattr(fragment, 'tags', fragment.metadata.get('tags', []))
+        for tag in tags:
             self.keyword_index[tag.lower()].append(fragment)
         
         # Also index key terms from topic
-        words = fragment.topic.lower().replace('_', ' ').split()
+        words = topic.lower().replace('_', ' ').split()
         for word in words:
             if len(word) > 2:
                 self.keyword_index[word].append(fragment)
@@ -191,28 +188,40 @@ class FragmentLibrary:
         query_lower = query.lower()
         candidates = []
         
+        # Helper to get topic from fragment
+        def get_topic(frag):
+            return getattr(frag, 'topic', frag.metadata.get('topic', frag.source_id))
+        
+        def get_domain(frag):
+            return getattr(frag, 'domain', frag.metadata.get('domain', 'unknown'))
+        
+        def get_sector(frag):
+            return getattr(frag, 'sector', frag.metadata.get('sector', 'unknown'))
+        
         # Search by keyword matches
         matched_ids = set()
         for word in query_lower.split():
             if len(word) > 2 and word in self.keyword_index:
                 for frag in self.keyword_index[word]:
-                    if frag.topic not in matched_ids:
-                        matched_ids.add(frag.topic)
+                    topic = get_topic(frag)
+                    if topic not in matched_ids:
+                        matched_ids.add(topic)
                         candidates.append((frag, 1.0))
         
         # Search by topic substring match
         for frag_list in self.fragments_by_domain.values():
             for frag in frag_list:
-                if query_lower in frag.topic.lower():
-                    if frag.topic not in matched_ids:
-                        matched_ids.add(frag.topic)
+                topic = get_topic(frag)
+                if query_lower in topic.lower():
+                    if topic not in matched_ids:
+                        matched_ids.add(topic)
                         candidates.append((frag, 0.8))
         
         # Apply filters
         if domain:
-            candidates = [(f, s) for f, s in candidates if f.domain == domain]
+            candidates = [(f, s) for f, s in candidates if get_domain(f) == domain]
         if sector:
-            candidates = [(f, s) for f, s in candidates if f.sector == sector]
+            candidates = [(f, s) for f, s in candidates if get_sector(f) == sector]
         
         # Sort by score and return
         candidates.sort(key=lambda x: x[1], reverse=True)

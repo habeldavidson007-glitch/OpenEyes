@@ -240,7 +240,7 @@ class LocalFragmentIndex:
             import openeyes
             package_dir = Path(openeyes.__file__).parent
             self.base_paths = [
-                str(package_dir / 'knowledge' / 'fragments'),  # Main fragment directory with eco/gov/hc
+                str(package_dir / 'domains'),  # NEW: Domain-based directory structure
             ]
         else:
             self.base_paths = base_paths if isinstance(base_paths, list) else [base_paths]

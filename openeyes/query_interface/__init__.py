@@ -165,8 +165,8 @@ class OpenEyes:
         
         # Initialize fragment library with proper path handling
         if fragment_library_path is None:
-            # Use the fragments directory relative to this module
-            fragment_library_path = Path(__file__).parent.parent / "fragment_library" / "fragments"
+            # Use the domains directory relative to this module (NEW structure)
+            fragment_library_path = Path(__file__).parent.parent / "domains"
         self.library = FragmentLibrary(storage_path=fragment_library_path)
         
         # Initialize API connectors if config provided

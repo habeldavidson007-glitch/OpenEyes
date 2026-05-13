@@ -40,6 +40,40 @@ class Fragment:
 
 
 def migrate_fragment(payload: dict) -> Fragment:
+    # Handle new domain-based fragment format
+    if 'domain' in payload and 'sector' in payload:
+        # New format: domain, sector, reasoning_role, content
+        claim = payload.get("content", "")
+        role = payload.get("reasoning_role", "definition")
+        domain = payload.get("domain", "")
+        sector = payload.get("sector", "")
+        
+        # Build evidence from content and metadata
+        evidence_parts = []
+        if claim:
+            evidence_parts.append(claim)
+        if payload.get('source_url'):
+            evidence_parts.append(f"Source: {payload['source_url']}")
+        if payload.get('year'):
+            evidence_parts.append(f"Year: {payload['year']}")
+        evidence = "\n".join(evidence_parts)
+        
+        return Fragment(
+            claim=claim,
+            evidence=evidence,
+            limitations=[],
+            sub_questions=[],
+            feedback=payload.get("feedback", {"thumbs_up": 0, "thumbs_down": 0}),
+            success_rate_ema=float(payload.get("credibility_score", 0.7)),
+            source_type=payload.get("credibility_class", "peer_reviewed_study"),
+            source_id=payload.get("id", "unknown"),
+            source_url=payload.get("source_url", ""),
+            published_on=str(payload.get("year", "")),
+            jurisdiction=payload.get("jurisdiction", "global"),
+            evidence_level=payload.get("evidence_level", "moderate"),
+        )
+    
+    # Legacy format handling
     claim = payload.get("claim") or payload.get("content") or ""
     return Fragment(
         claim=claim,
