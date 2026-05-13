@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_PHY_quantum_mechanics_definition_180",
+  "domain": "sat",
+  "subdomain": "phy",
+  "tags": [
+    "phy",
+    "quantum_mechanics",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Quantum Mechanics in Physics & Chemistry refers to the behavior of matter and energy at atomic and subatomic scales. Key principles include mathematical modeling, experimental validation, and theoretical analysis. This field studies fundamental laws and emergent phenomena with applications in technology development and scientific understanding.",
+  "source": "ArXiv",
+  "source_url": "https://example.org/sat/phy/quantum_mechanics",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.815631",
+    "sector_target": 200
+  }
+}

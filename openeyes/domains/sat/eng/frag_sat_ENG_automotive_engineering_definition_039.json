@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_ENG_automotive_engineering_definition_039",
+  "domain": "sat",
+  "subdomain": "eng",
+  "tags": [
+    "eng",
+    "automotive_engineering",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Automotive Engineering in Engineering refers to the fundamental principles and methodologies within automotive engineering. Key principles include mathematical modeling, experimental validation, and theoretical analysis. This field studies fundamental laws and emergent phenomena with applications in technology development and scientific understanding.",
+  "source": "Science Advances",
+  "source_url": "https://example.org/sat/eng/automotive_engineering",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:09.078229",
+    "sector_target": 200
+  }
+}

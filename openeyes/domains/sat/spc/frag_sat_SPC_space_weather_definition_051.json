@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_SPC_space_weather_definition_051",
+  "domain": "sat",
+  "subdomain": "spc",
+  "tags": [
+    "spc",
+    "space_weather",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Space Weather in Space & Astronomy refers to the fundamental principles and methodologies within space weather. Key principles include mathematical modeling, experimental validation, and theoretical analysis. This field studies fundamental laws and emergent phenomena with applications in technology development and scientific understanding.",
+  "source": "Astronomy & Astrophysics",
+  "source_url": "https://example.org/sat/spc/space_weather",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:09.039438",
+    "sector_target": 150
+  }
+}

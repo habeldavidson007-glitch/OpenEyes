@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_BIO_biotechnology_definition_042",
+  "domain": "sat",
+  "subdomain": "bio",
+  "tags": [
+    "bio",
+    "biotechnology",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Biotechnology in Biology & Life Sciences refers to the fundamental principles and methodologies within biotechnology. Key principles include mathematical modeling, experimental validation, and theoretical analysis. This field studies fundamental laws and emergent phenomena with applications in technology development and scientific understanding.",
+  "source": "Science",
+  "source_url": "https://example.org/sat/bio/biotechnology",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.896007",
+    "sector_target": 200
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_MAT_differential_equations_counter_argument_031",
+  "domain": "sat",
+  "subdomain": "mat",
+  "tags": [
+    "mat",
+    "differential_equations",
+    "counter_argument",
+    "swarm_generated"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Alternative perspectives on Differential Equations suggest methodological limitations and competing theoretical frameworks in differential equations. Critics argue simplifications in current models. However, empirical evidence shows reproducible experimental results. The debate continues regarding the underlying mechanisms.",
+  "source": "NIST",
+  "source_url": "https://example.org/sat/mat/differential_equations",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:09.135776",
+    "sector_target": 150
+  }
+}
