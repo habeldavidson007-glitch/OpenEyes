@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_macd_indicator_latest_data_05",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "macd",
+    "latest_data",
+    "technical_analysis",
+    "macd_indicator"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "MACD bullish crossovers in the semiconductor sector in late 2023 led into strong 2024 performance. The MACD histogram on the Nasdaq 100 showed consistent positive momentum through Q1 2024. Energy sector MACD signals turned bullish in February 2024 as oil prices stabilized. New adaptive MACD variants adjusting parameters based on volatility showed improved performance in recent backtests.",
+  "source": "Educational Resource",
+  "source_url": "https://www.stockcharts.com/articles/macd-histogram-analysis",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

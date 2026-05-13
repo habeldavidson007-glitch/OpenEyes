@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0289",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "bioavailability",
+    "first_pass_effect",
+    "absorption",
+    "routes_of_administration",
+    "F_fraction"
+  ],
+  "reasoning_role": "definition",
+  "content": "Bioavailability (F) is the fraction of an administered drug dose that reaches systemic circulation unchanged. Intravenous administration has 100% bioavailability by definition. Oral bioavailability is reduced by incomplete absorption and first-pass metabolism in the gut wall and liver. First-pass effect occurs when drugs absorbed from the GI tract pass through the portal vein to the liver before reaching systemic circulation, where extensive metabolism can occur. Bioavailability varies by route: sublingual and rectal partially bypass first-pass; transdermal avoids it entirely; inhalation provides rapid absorption with high bioavailability for some drugs.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

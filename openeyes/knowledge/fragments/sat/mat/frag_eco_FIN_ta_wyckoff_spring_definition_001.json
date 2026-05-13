@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_ta_wyckoff_spring_definition",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "tags": [
+    "technical_analysis",
+    "wyckoff",
+    "price_action"
+  ],
+  "reasoning_role": "definition",
+  "content": "The Spring is Wyckoff's term for false breakdown below accumulation range that quickly reverses. It's the final shakeout trapping bears and forcing weak longs to exit before markup begins. Springs on low volume with rapid recovery signal high-probability long entries. The more dramatic the spring, the stronger the subsequent rally often proves.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAT",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

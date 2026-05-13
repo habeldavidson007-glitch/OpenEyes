@@ -1,0 +1,19 @@
+{
+  "id": "ENR-2311_solar_perovskite_cells_latest_data",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "sector": "MAT",
+  "tags": [
+    "solar perovskite cells",
+    "energy",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Solar Perovskite Cells - recent technological advances, cost trends, policy developments",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "EIA",
+  "original_domain": "economy",
+  "original_sector": "ENR"
+}

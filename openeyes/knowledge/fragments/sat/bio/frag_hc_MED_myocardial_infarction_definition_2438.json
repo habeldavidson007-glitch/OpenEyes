@@ -1,0 +1,21 @@
+{
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "myocardial infarction",
+    "STEMI",
+    "NSTEMI",
+    "acute coronary syndrome",
+    "pathophysiology"
+  ],
+  "reasoning_role": "definition",
+  "content": "Myocardial infarction (MI) is myocardial cell death due to prolonged ischemia. Universal Definition classifies MI into 5 types: Type 1 (spontaneous, plaque rupture/erosion with thrombus), Type 2 (supply-demand mismatch without plaque rupture), Type 3 (cardiac arrest with suspected MI before biomarkers available), Type 4 (PCI-related), Type 5 (CABG-related). STEMI vs NSTEMI distinction based on ECG: STEMI shows ST elevation in \u22652 contiguous leads (\u22652mm men, \u22651.5mm women in V2-V3; \u22651mm other leads) or new LBBB, indicating complete coronary occlusion requiring immediate reperfusion. NSTEMI shows ST depression, T-wave inversion, or normal ECG with elevated troponin, indicating partial occlusion. Both are acute coronary syndromes (ACS); unstable angina has ischemic symptoms without troponin elevation.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30571638/",
+  "credibility_class": "guideline",
+  "year": 2018,
+  "id": "HC-2438",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

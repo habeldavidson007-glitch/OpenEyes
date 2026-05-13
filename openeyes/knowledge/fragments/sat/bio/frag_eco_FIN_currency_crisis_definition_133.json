@@ -1,0 +1,21 @@
+{
+  "id": "FIN-133",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "tags": [
+    "currency_crisis",
+    "emerging_markets",
+    "capital_flows",
+    "international_finance"
+  ],
+  "content": "Currency crises occur when a country's currency rapidly loses value, often forcing central banks to spend reserves or raise interest rates dramatically to defend the exchange rate. First-generation models (Krugman 1979) attribute crises to inconsistent macroeconomic policies\u2014persistent deficits financed by money creation. Second-generation models emphasize self-fulfilling expectations: if investors believe devaluation is likely, they attack the currency, making devaluation inevitable. Emerging markets are most vulnerable due to original sin\u2014inability to borrow abroad in their own currency. The 1997 Asian Financial Crisis and 2001 Argentine crisis exemplify how capital flow reversals can trigger devastating currency collapses with spillover effects.",
+  "year": "2023",
+  "source": "Journal of Economic Literature",
+  "source_url": "https://www.aeaweb.org/journals/jel",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "academic_research",
+  "sector": "BIO",
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "frag_eco_GEO_taiwan_strait_risk_latest_006",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "sector": "ENG",
+  "tags": [
+    "taiwan",
+    "supply_chain",
+    "semiconductors",
+    "geopolitical_risk",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Taiwan semiconductor diversification 2024: TSMC Arizona producing 4nm, planning 3nm. Japan fab operational. Germany fab delayed. CHIPS Act incentives accelerating US capacity. However, Taiwan still accounts for 90%+ of cutting-edge production. Cross-strait tensions elevated following 2024 elections.",
+  "source": "tsmc_investor_report",
+  "source_url": "https://www.tsmc.com/",
+  "credibility_class": "corporate_disclosure",
+  "year": 2024,
+  "weight": 0.93,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

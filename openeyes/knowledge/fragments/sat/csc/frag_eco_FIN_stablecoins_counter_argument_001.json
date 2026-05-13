@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_stablecoins_counter_001",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "crypto",
+    "stablecoin",
+    "defi",
+    "latest_data"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Stablecoin risks became clear with TerraUSD (UST) collapse in 2022. Algorithmic stablecoins proved vulnerable to death spirals. Fiat-backed stablecoins face questions about reserve quality and redemption guarantees. Potential for runs if confidence falters. Systemic risk concerns as stablecoins integrate deeper into financial system. Regulatory frameworks developing but incomplete. Central bank digital currencies may compete with private stablecoins.",
+  "source": "Federal Reserve",
+  "source_url": "https://www.federalreserve.gov/publications/2021-december-financial-stability-report.htm",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.95,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

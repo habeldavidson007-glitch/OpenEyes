@@ -1,0 +1,19 @@
+{
+  "id": "ENR-2367_transmission_infrastructure_counter_argument",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "sector": "ENG",
+  "tags": [
+    "transmission infrastructure",
+    "energy",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Transmission Infrastructure - economic challenges, scalability concerns, competing approaches",
+  "source_url": "https://www.iea.org/research",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "EIA",
+  "original_domain": "economy",
+  "original_sector": "ENR"
+}

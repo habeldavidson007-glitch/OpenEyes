@@ -1,0 +1,19 @@
+{
+  "id": "MED-2051_gastroenterology_liver_disease_definition",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "gastroenterology liver disease",
+    "clinical_medicine",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Gastroenterology Liver Disease - pathophysiology, diagnostic criteria, clinical presentation",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "PubMed",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

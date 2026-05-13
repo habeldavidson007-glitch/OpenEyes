@@ -1,0 +1,20 @@
+{
+  "id": "frag_eco_GEO_strategic_competition_def_052",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "sector": "ENV",
+  "tags": [
+    "strategic_competition",
+    "geopolitics",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "US-China strategic competition framework: Competition without conflict paradigm. Three Cs: Compete where necessary, collaborate where possible (climate, health), manage risks. Guardrails: Defense hotlines, commercial talks. Taiwan, South China Sea, technology core flashpoints. Managed rivalry preferred over containment or accommodation.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.93,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

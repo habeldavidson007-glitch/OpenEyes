@@ -1,0 +1,26 @@
+{
+  "id": "frag_fin_share_buybacks_value_vs_engineering_definition_093",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "dividends",
+    "insider_trading",
+    "share_buybacks",
+    "valuation",
+    "sector_rotation",
+    "earnings",
+    "fundamental_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Share buybacks reduce the share count, increasing EPS and ownership percentage for remaining shareholders. They create value when shares are undervalued but can be destructive financial engineering if used to mask dilution or boost metrics at peak valuations.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "REG"
+}

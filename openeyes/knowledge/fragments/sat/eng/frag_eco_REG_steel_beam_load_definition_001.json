@@ -1,0 +1,26 @@
+{
+  "id": "frag_eng_steel_beam_load_001",
+  "domain": "science_technology",
+  "tags": [
+    "steel_beam",
+    "load_capacity",
+    "structural_design",
+    "civil_engineering"
+  ],
+  "content": "The load-bearing capacity of a steel beam is calculated using the formula: M = \u03c3 \u00d7 Z, where M is the bending moment capacity, \u03c3 is the allowable stress (typically yield strength divided by safety factor), and Z is the section modulus. For A992 steel (Fy=50 ksi), with a safety factor of 1.67, the allowable bending stress is 30 ksi. The section modulus depends on beam geometry - for a W-shape beam, it's provided in steel construction manuals. Maximum uniform load w = 8M/L\u00b2 for simply supported beams, where L is span length.",
+  "source": "AISC Steel Construction Manual 15th Edition & ASCE 7-16",
+  "source_url": "https://www.aisc.org/publications/steel-construction-manual/",
+  "credibility_class": "financial_education",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "ENG",
+  "reasoning_role": "definition",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "sector": "ENG",
+  "original_domain": "engineering",
+  "original_sector": ""
+}

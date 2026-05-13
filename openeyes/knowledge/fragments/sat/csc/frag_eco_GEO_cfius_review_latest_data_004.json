@@ -1,0 +1,21 @@
+{
+  "id": "frag_eco_GEO_cfius_review_latest_004",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "cfius",
+    "foreign_investment",
+    "national_security",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "CFIUS 2023 annual report: 284 notices filed, 132 short-form declarations. 10 transactions blocked or divested. China-related deals down 75% from 2019 peak. Focus shifted to venture capital, minority stakes in AI, biotech, quantum computing startups. Real estate cases near military bases increased.",
+  "source": "treasury_department",
+  "source_url": "https://home.treasury.gov/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.94,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

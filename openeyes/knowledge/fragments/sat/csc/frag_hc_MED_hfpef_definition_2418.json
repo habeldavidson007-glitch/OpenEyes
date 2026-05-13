@@ -1,0 +1,20 @@
+{
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "HFpEF",
+    "diagnosis",
+    "H2FPEF score",
+    "echocardiography"
+  ],
+  "reasoning_role": "definition",
+  "content": "HFpEF diagnosis requires integration of clinical, laboratory, and imaging data. HFA-PEFF algorithm: Step 1\u2014pretest assessment (symptoms, signs, NT-proBNP >125 pg/mL or BNP >35 pg/mL, ECG); Step 2\u2014echocardiography (structural: LV mass index \u226595 g/m\u00b2 men or \u226585 g/m\u00b2 women, LA volume index \u226534 mL/m\u00b2; functional: average E/e' \u226513, TR velocity >2.8 m/s, global longitudinal strain <16%); score \u22655 diagnostic. H2FPEF score: Heavy (BMI >30, 2 pts), Hypertensive (2+ antihypertensives, 1 pt), Atrial fibrillation (1 pt), Pulmonary hypertension (TR velocity >2.8 m/s, 1 pt), Elder (>60 years, 1 pt), Filling pressure (E/e' >9, 1 pt); score \u22656 high probability. Exercise testing with stress echo or invasive hemodynamics (gold standard\u2014PCWP >15 mmHg at rest or >25 mmHg with exercise) for uncertain cases. Cardiac MRI for tissue characterization (fibrosis, amyloid).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30683100/",
+  "credibility_class": "guideline",
+  "year": 2019,
+  "id": "HC-2418",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

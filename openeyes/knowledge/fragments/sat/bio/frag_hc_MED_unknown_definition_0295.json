@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0295",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "pharmacogenomics",
+    "CYP_polymorphisms",
+    "metabolizer_phenotypes",
+    "personalized_medicine",
+    "CPIC"
+  ],
+  "reasoning_role": "definition",
+  "content": "Pharmacogenomics studies how genetic variation affects drug response. Key genes: CYP2D6 (opioids, beta-blockers, SSRIs, tamoxifen), CYP2C19 (clopidogrel, PPIs, antidepressants), CYP2C9/VKORC1 (warfarin), TPMT/NUDT15 (thiopurines), UGT1A1 (irinotecan), SLCO1B1 (statin myopathy risk), HLA-B*1502 (carbamazepine Stevens-Johnson syndrome in Asians), HLA-B*5701 (abacavir hypersensitivity). Polymorphisms create metabolizer phenotypes: poor (no function), intermediate (reduced), extensive/normal (wild-type), ultrarapid (gene duplication/amplification). FDA includes pharmacogenomic information in >300 drug labels; CPIC (Clinical Pharmacogenetics Implementation Consortium) provides evidence-based dosing guidelines.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

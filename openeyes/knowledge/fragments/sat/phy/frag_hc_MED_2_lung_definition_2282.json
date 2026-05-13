@@ -1,0 +1,22 @@
+{
+  "id": "hc_med_onc_lc_diag_001",
+  "tags": [
+    "oncology",
+    "lung cancer",
+    "diagnostic workup",
+    "staging",
+    "molecular testing"
+  ],
+  "reasoning_role": "definition",
+  "content": "Lung cancer diagnosis requires tissue confirmation and comprehensive staging. Initial evaluation: chest CT with contrast, PET-CT for staging (detects distant metastases), brain MRI (especially for adenocarcinoma, SCLC, stage III+). Tissue acquisition: bronchoscopy with biopsy for central lesions; CT-guided needle biopsy for peripheral lesions; EBUS-TBNA for mediastinal lymph node sampling; thoracentesis if pleural effusion present. Pathology: histologic subtype classification; immunohistochemistry (TTF-1 for adenocarcinoma, P40/P63 for squamous); neuroendocrine markers for SCLC. Molecular testing: NGS panel preferred to detect multiple alterations simultaneously; liquid biopsy (ctDNA) if tissue inadequate or for monitoring. Staging: TNM system 8th edition; SCLC traditionally staged as limited (confined to one radiation field) vs extensive. Pulmonary function tests assess surgical candidacy. Performance status (ECOG) guides treatment tolerance. Surveillance post-treatment: CT chest every 6 months for 2 years, then annually.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35567890/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "domain": "science_technology",
+  "subdomain": "PHY",
+  "sector": "PHY",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

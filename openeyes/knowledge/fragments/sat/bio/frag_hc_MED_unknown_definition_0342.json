@@ -1,0 +1,26 @@
+{
+  "id": "frag_med_unknown_definition_0342",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "oncology",
+    "leukemia",
+    "diagnosis",
+    "flow cytometry",
+    "cytogenetics",
+    "molecular testing"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnosis requires peripheral blood and bone marrow evaluation. CBC often shows cytopenias (anemia, thrombocytopenia) with or without elevated WBC; circulating blasts suggest acute leukemia. Bone marrow aspiration/biopsy: \u226520% blasts defines acute leukemia (except APL with PML-RARA). Flow cytometry: immunophenotyping determines lineage (myeloid: CD13, CD33, MPO; B-cell: CD19, CD20, CD10; T-cell: CD3, CD7). Cytogenetics: karyotype identifies chromosomal abnormalities (prognostic in AML: favorable t(8;21), inv(16), t(15;17); adverse complex karyotype, -5, -7, TP53). FISH detects specific translocations (BCR-ABL for CML/Ph+ ALL, PML-RARA for APL). Molecular testing: NGS panel for mutations (FLT3, NPM1, IDH1/2, TP53 in AML; NOTCH1, SF3B1, del(17p)/TP53 in CLL). Minimal residual disease (MRD) monitoring by flow cytometry or PCR predicts relapse risk. Lumbar puncture for CNS involvement in ALL.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35890123/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

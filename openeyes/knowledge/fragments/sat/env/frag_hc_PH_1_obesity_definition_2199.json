@@ -1,0 +1,20 @@
+{
+  "content": "Population-level obesity interventions target multiple levels: (1) Policy interventions\u2014sugar-sweetened beverage taxes (Mexico, Berkeley showing reduced consumption), front-of-package warning labels (Chile, Uruguay), marketing restrictions to children, school nutrition standards, urban planning for active transport; (2) Environmental changes\u2014healthy food access initiatives, zoning limiting fast-food density near schools, safe parks and recreation facilities, workplace wellness programs; (3) Healthcare system approaches\u2014routine BMI screening, intensive behavioral counseling (USPSTF recommendation), pharmacotherapy access (GLP-1 agonists showing 15-20% weight loss), bariatric surgery coverage; (4) Individual interventions\u2014calorie restriction, increased physical activity, behavioral modification, but limited long-term success without environmental support. Evidence shows individual-focused interventions insufficient without addressing obesogenic environment. Weight stigma reduction essential for effective public health approach.",
+  "tags": [
+    "policy",
+    "prevention",
+    "intervention",
+    "health_equity"
+  ],
+  "reasoning_role": "latest_data",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "sector": "ENV",
+  "year": 2024,
+  "source": "https://www.cdc.gov/",
+  "id": "HC-2199",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline",
+  "original_domain": "healthcare",
+  "original_sector": "PH"
+}

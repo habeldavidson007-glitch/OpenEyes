@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0469",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "epilepsy",
+    "seizure",
+    "classification",
+    "focal",
+    "generalized"
+  ],
+  "reasoning_role": "definition",
+  "content": "Epilepsy is defined as \u22652 unprovoked seizures >24 hours apart, or one unprovoked seizure with \u226560% recurrence risk over 10 years. Seizures are classified by onset: focal (aware or impaired awareness, originating in one hemisphere), generalized (bilateral networks, including absence, tonic-clonic, myoclonic, atonic), or unknown onset. Focal seizures may secondarily generalize. Epilepsy syndromes include temporal lobe epilepsy (most common focal), juvenile myoclonic epilepsy (JME), childhood absence epilepsy, and Lennox-Gastaut syndrome. Status epilepticus is continuous seizure >5 minutes or recurrent seizures without recovery. Epileptogenesis involves imbalance between excitatory (glutamate) and inhibitory (GABA) neurotransmission, ion channel dysfunction, and network reorganization.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/28633517/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

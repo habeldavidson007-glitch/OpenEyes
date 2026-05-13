@@ -1,0 +1,23 @@
+{
+  "id": "frag_ph_maternal_mortality_diagnostic_criteria_0081",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "surveillance",
+    "measurement",
+    "quality_assurance",
+    "risk_stratification"
+  ],
+  "reasoning_role": "definition",
+  "content": "Maternal mortality assessment includes: (1) Case identification\u2014death certificate ICD-10 codes (O00-O99 pregnancy-related), linkage with birth certificates, pregnancy checkbox improvement; (2) Classification\u2014pregnancy-associated (during or within year of pregnancy), pregnancy-related (caused by pregnancy complications), preventable (could be avoided with different care); (3) Surveillance systems\u2014CDC Pregnancy Mortality Surveillance System, state Maternal Mortality Review Committees, WHO Maternal Death Surveillance and Response; (4) Near-miss monitoring\u2014severe maternal morbidity indicators (blood transfusion, hysterectomy, ICU admission, cardiac arrest) as quality metrics; (5) Risk stratification\u2014preconception risk assessment, social determinants screening, comorbidity indices. Limitations include underreporting, misclassification, varying definitions across jurisdictions, and small numbers limiting statistical analysis. Real-time surveillance emerging through electronic health records.",
+  "source": "CDC",
+  "source_url": "https://www.cdc.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "original_domain": "healthcare",
+  "original_sector": "PH"
+}

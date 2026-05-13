@@ -1,0 +1,23 @@
+{
+  "id": "hc_med_onc_ly_diag_001",
+  "tags": [
+    "oncology",
+    "lymphoma",
+    "diagnosis",
+    "staging",
+    "PET-CT",
+    "biopsy"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnosis requires excisional lymph node biopsy (preferred over core needle/FNA to preserve architecture). Pathology: immunohistochemistry determines lineage and subtype (B-cell: CD20, CD79a; T-cell: CD3, CD5; HL: CD30, CD15, PAX5); FISH for translocations (MYC, BCL2, BCL6 for 'double-hit' lymphoma); gene expression profiling for some subtypes. Staging: Ann Arbor system with Cotswolds modifications - Stage I (single node region), II (\u22652 regions same side of diaphragm), III (both sides of diaphragm), IV (extranodal involvement); A/B symptoms (fever, night sweats, weight loss >10%). PET-CT standard for staging and response assessment (Deauville score 1-5); bone marrow biopsy often unnecessary if PET negative for HL and DLBCL. Prognostic scores: IPI (International Prognostic Index) for DLBCL (age, stage, LDH, performance status, extranodal sites); FLIPI for follicular lymphoma; IPS for advanced HL. LDH elevation indicates high tumor burden.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35901234/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "domain": "science_technology",
+  "subdomain": "PHY",
+  "sector": "PHY",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

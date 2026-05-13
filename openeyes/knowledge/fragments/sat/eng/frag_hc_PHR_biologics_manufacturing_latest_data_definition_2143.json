@@ -1,0 +1,19 @@
+{
+  "id": "PHR-2143_biologics_manufacturing_latest_data",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "sector": "ENG",
+  "tags": [
+    "biologics manufacturing",
+    "pharmaceuticals",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Biologics Manufacturing - recent technological advances, emerging platforms, industry trends",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "FDA",
+  "original_domain": "healthcare",
+  "original_sector": "PHR"
+}

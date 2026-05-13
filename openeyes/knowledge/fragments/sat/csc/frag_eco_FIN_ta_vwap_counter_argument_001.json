@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_ta_vwap_counter_argument",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "technical_analysis",
+    "indicators",
+    "volume"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "VWAP's effectiveness diminished as algorithmic trading adapted to its widespread use. Large players now manipulate price around VWAP to trigger flows. The indicator assumes uniform volume distribution which rarely occurs\u2014most volume concentrates at open/close. Extended hours trading complicates VWAP calculation. Anchored VWAP variants address some limitations but require subjective anchor point selection.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

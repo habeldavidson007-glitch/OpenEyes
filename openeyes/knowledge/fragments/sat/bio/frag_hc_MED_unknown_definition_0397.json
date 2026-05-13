@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0397",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "osteoporosis",
+    "bone density",
+    "fracture",
+    "DEXA",
+    "postmenopausal"
+  ],
+  "reasoning_role": "definition",
+  "content": "Osteoporosis is a systemic skeletal disease characterized by low bone mass and microarchitectural deterioration of bone tissue, leading to increased bone fragility and fracture risk. Pathophysiology: imbalance between osteoclast-mediated bone resorption and osteoblast-mediated bone formation, favoring resorption. Postmenopausal osteoporosis (type I) from estrogen deficiency increases osteoclast activity; senile osteoporosis (type II) from aging affects both formation and resorption. Risk factors: female sex, advanced age, white/Asian ethnicity, family history, low body weight, smoking, alcohol excess, glucocorticoid use, hypogonadism, hyperthyroidism, malabsorption, vitamin D deficiency. Fragility fractures occur with minimal trauma (fall from standing height); common sites: vertebrae (compression fractures), hip (femoral neck/intertrochanteric), distal radius (Colles fracture). Hip and vertebral fractures associated with increased mortality.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985615/",
+  "credibility_class": "clinical_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

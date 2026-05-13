@@ -1,0 +1,20 @@
+{
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "hypertensive emergency",
+    "hypertensive crisis",
+    "definition",
+    "target organ damage"
+  ],
+  "reasoning_role": "definition",
+  "content": "Hypertensive emergency (HE) is severe elevation in blood pressure (typically SBP >180 and/or DBP >120 mmHg) with acute target organ damage (TOD), requiring immediate BP reduction. Distinguished from hypertensive urgency (severe HTN without acute TOD\u2014can be managed with oral medications and outpatient follow-up). TOD defines the emergency: hypertensive encephalopathy (headache, confusion, visual changes, seizures), acute ischemic or hemorrhagic stroke, acute coronary syndrome, acute heart failure/pulmonary edema, aortic dissection, acute kidney injury, eclampsia, malignant hypertension (retinopathy with papilledema, hemorrhages, exudates), microangiopathic hemolytic anemia. Pathophysiology: abrupt increase in systemic vascular resistance triggers endothelial injury, fibrinoid necrosis of arterioles, platelet activation, microthrombi formation, end-organ ischemia. Annual incidence ~1-2% of hypertensive patients. Higher risk in those with chronic HTN, medication nonadherence, renal disease, substance use (cocaine, amphetamines).",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35026997/",
+  "credibility_class": "guideline",
+  "year": 2021,
+  "id": "HC-2393",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

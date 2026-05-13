@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_ta_elliott_wave_definition",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "technical_analysis",
+    "elliott_wave"
+  ],
+  "reasoning_role": "definition",
+  "content": "Elliott Wave Theory posits markets move in repetitive fractal patterns: five-wave impulses (waves 1, 3, 5 with 2, 4 corrections) followed by three-wave corrections (A, B, C). Wave 3 typically strongest and longest. Wave 4 should not overlap wave 1 territory. Guidelines include alternation (wave 2 and 4 differ in complexity) and channeling. Applies across all timeframes.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

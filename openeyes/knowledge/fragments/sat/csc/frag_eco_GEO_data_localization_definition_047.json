@@ -1,0 +1,20 @@
+{
+  "id": "frag_eco_GEO_data_localization_def_047",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "data_localization",
+    "trade_policy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Data localization requirements: Mandating data storage/processing within national borders. Rationale: privacy, security, law enforcement access. Examples: China Cybersecurity Law, Russia data law, India RBI payment data. Costs: increased compliance, reduced cloud efficiency. Trade tension with US tech companies.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.93,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

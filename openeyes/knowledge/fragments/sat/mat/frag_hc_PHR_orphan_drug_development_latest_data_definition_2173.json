@@ -1,0 +1,19 @@
+{
+  "id": "PHR-2173_orphan_drug_development_latest_data",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "sector": "MAT",
+  "tags": [
+    "orphan drug development",
+    "pharmaceuticals",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Orphan Drug Development - recent technological advances, emerging platforms, industry trends",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "FDA",
+  "original_domain": "healthcare",
+  "original_sector": "PHR"
+}

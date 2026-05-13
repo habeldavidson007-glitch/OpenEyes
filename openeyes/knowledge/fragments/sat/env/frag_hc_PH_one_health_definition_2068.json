@@ -1,0 +1,21 @@
+{
+  "id": "HC-2068",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "sector": "ENV",
+  "tags": [
+    "One Health",
+    "human-animal-environment interface",
+    "zoonoses",
+    "public health"
+  ],
+  "reasoning_role": "definition",
+  "content": "One Health is a collaborative, multisectoral approach recognizing that human health is interconnected with animal and environmental health. The framework addresses complex health challenges at the human-animal-environment interface: zoonotic diseases (60% of human pathogens), antimicrobial resistance (driven by use in humans, animals, agriculture), food safety (contamination along farm-to-table chain), and climate change impacts on disease patterns. One Health emphasizes that solutions require coordination across human medicine, veterinary medicine, environmental science, and related disciplines. Approximately 75% of emerging infectious diseases are zoonotic, making One Health critical for pandemic prevention.",
+  "source": "WHO-FAO-OIE-WHOE One Health Joint Plan, CDC One Health framework",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "PH"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "HC-2076",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "pandemic preparedness gaps",
+    "IHR implementation",
+    "global health security"
+  ],
+  "reasoning_role": "definition",
+  "content": "Pandemic preparedness assessment tools: Joint External Evaluation (JEE) scores IHR core capacities across 19 technical areas; SPAR (State Party Self-Assessment Annual Reporting) tracks progress; Global Health Security Index benchmarks national capabilities. Persistent gaps: only ~30% of countries achieved high JEE scores; financing shortfalls estimated at $10-30 billion annually needed globally; weak primary healthcare systems limit detection; limited manufacturing capacity in low-income regions; inadequate data sharing mechanisms. Post-COVID reforms proposed: new pandemic treaty, strengthened WHO authority, permanent financing mechanism, technology transfer hubs, and equity frameworks for countermeasure access.",
+  "source": "WHO JEE reports, Global Health Security Index, Independent Panel for Pandemic Preparedness and Response",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "PH"
+}

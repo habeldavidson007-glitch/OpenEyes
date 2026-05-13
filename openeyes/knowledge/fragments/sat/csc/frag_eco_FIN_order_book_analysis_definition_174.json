@@ -1,0 +1,19 @@
+{
+  "id": "FIN-174",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "algorithmic_trading",
+    "order book analysis"
+  ],
+  "content": "Order book analysis examines the full depth of market bids and offers beyond the best bid/ask. Level 2 data reveals hidden liquidity, iceberg orders, and order flow imbalance. Features like bid-ask spread dynamics, order book slope, and cancellation rates predict short-term price movements. High-frequency strategies use order book reconstruction to detect informed trading.",
+  "year": 2023,
+  "source": "Order Book Dynamics in Electronic Markets",
+  "source_url": "https://example.com/FIN-174",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

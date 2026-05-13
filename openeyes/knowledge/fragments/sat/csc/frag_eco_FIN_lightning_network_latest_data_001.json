@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_lightning_network_latest_data",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "latest_data",
+    "crypto"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Network capacity >5000 BTC. Integrated by major wallets (CashApp, Strike). El Salvador adoption mixed results. Focus on micropayments.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

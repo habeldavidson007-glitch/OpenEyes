@@ -1,0 +1,20 @@
+{
+  "id": "FIN-110",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "taylor_rule"
+  ],
+  "content": "Taylor Rule formula: Target = Neutral + 0.5*(Inflation Gap) + 0.5*(Output Gap). Provides benchmark for assessing policy stance. Fed doesn't follow mechanically but Taylor Rules help evaluate hawkish/dovish positioning vs historical norms.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "government_agency",
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "MAC"
+}

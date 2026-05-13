@@ -1,29 +1,99 @@
 ```
-# Python
+# Build artifacts and dependencies
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.o
+*.obj
+*.so
+*.dll
+*.a
+*.lib
+*.dylib
+*.exe
+*.out
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+.env
+.env.local
+.env.*
 
 # Logs
 *.log
 
-# Environment
-.env
-.env.local
-*.env.*
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
-# Databases
-*.db
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.whl
+*.egg
 
-# Temporary files
-*.tmp
-*.temp
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# OS generated files
+# OS
 .DS_Store
 Thumbs.db
 
-# Audit logs and vault
-.openeyes/vault/audit/
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+
+# Python specific
+*.py[cod]
+*$py.class
+*$pyc.class
+*.so
+.Python
+install_manifest.txt
+MANIFEST
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# Gradle
+.gradle/
+build/
+
+# Target directory (common in Rust, Java projects)
+target/
+
+# Julia
+julia-*/
+
+# Zig
+zig*/
+
 ```

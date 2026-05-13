@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0466",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "parkinsons-disease",
+    "PD",
+    "dopamine",
+    "alpha-synuclein",
+    "movement-disorder"
+  ],
+  "reasoning_role": "definition",
+  "content": "Parkinson's disease (PD) is a progressive neurodegenerative disorder characterized by loss of dopaminergic neurons in the substantia nigra pars compacta and presence of Lewy bodies (alpha-synuclein aggregates). Motor features (cardinal signs): resting tremor (4-6 Hz, pill-rolling), rigidity (cogwheel), bradykinesia (slowness, decrement on repetitive movements), and postural instability (late feature). Diagnosis requires bradykinesia plus at least one of tremor, rigidity, or postural instability. Non-motor features often precede motor symptoms: hyposmia, REM sleep behavior disorder, constipation, depression, anxiety. Disease progression follows Braak staging (olfactory bulb \u2192 brainstem \u2192 midbrain \u2192 cortex). Genetic forms (10%): SNCA, LRRK2, PARKIN, PINK1 mutations. Pathophysiology involves mitochondrial dysfunction, oxidative stress, impaired protein clearance, and neuroinflammation. Differential diagnosis includes essential tremor, drug-induced parkinsonism, atypical parkinsonism (MSA, PSP, CBD).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33255567/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

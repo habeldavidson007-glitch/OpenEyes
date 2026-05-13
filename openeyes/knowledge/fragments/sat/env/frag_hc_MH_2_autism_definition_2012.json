@@ -1,0 +1,21 @@
+{
+  "content": "DSM-5-TR ASD criteria: Persistent deficits in social communication/interaction (all 3): social-emotional reciprocity deficits, nonverbal communication deficits, relationship development/maintenance deficits. Restricted/repetitive behaviors/interests/activities (\u22652): stereotyped/repetitive movements/object use/speech, insistence on sameness/inflexible adherence to routines, highly restricted/fixed interests, sensory hyper/hyporeactivity. Symptoms present in early developmental period. Cause clinically significant impairment. Not better explained by intellectual disability or global developmental delay. Specifiers: with/without intellectual impairment, with/without language impairment, associated with known medical/genetic condition/environmental factor, associated with another neurodevelopmental/mental/behavioral disorder, with catatonia. Severity levels 1-3 based on support needed.",
+  "tags": [
+    "DSM-5-TR",
+    "diagnostic-criteria",
+    "ASD",
+    "autism"
+  ],
+  "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2022,
+  "reasoning_role": "definition",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "sector": "ENV",
+  "id": "HC-2012",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MH"
+}

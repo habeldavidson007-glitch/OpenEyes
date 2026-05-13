@@ -1,0 +1,20 @@
+{
+  "id": "PHR-2157_nanomedicine_formulations_counter_argument",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "sector": "ENG",
+  "tags": [
+    "nanomedicine formulations",
+    "pharmaceuticals",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Nanomedicine Formulations - manufacturing challenges, cost considerations, scalability issues",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2026,
+  "source": "FDA",
+  "_original_credibility_class": "peer_reviewed",
+  "original_domain": "healthcare",
+  "original_sector": "PHR"
+}

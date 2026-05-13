@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_onchain_realized_price_definition",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "tags": [
+    "crypto",
+    "on_chain_metrics",
+    "bitcoin"
+  ],
+  "reasoning_role": "definition",
+  "content": "Realized price represents average acquisition cost across all coins, calculated by valuing each UTXO at its creation price. It serves as psychological support/resistance. Price below realized cap indicates majority of holders underwater\u2014historically buying opportunities. Above realized cap suggests profitable holders who may take profits.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAT",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

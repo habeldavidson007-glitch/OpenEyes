@@ -1,0 +1,25 @@
+{
+  "id": "frag_fin_china_economy_data_01",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "china",
+    "recession",
+    "macro",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "2023 GDP grew 5.2% (official), likely ~3-4% real. Property sales -10% YoY. Youth unemployment paused reporting after hitting 21%. Deflation: CPI <1%, PPI negative 14 months. Stimulus focused on manufacturing, not household transfers.",
+  "source": "government_source",
+  "source_url": "https://www.worldbank.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_china_economy_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.9114,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "MAC"
+}

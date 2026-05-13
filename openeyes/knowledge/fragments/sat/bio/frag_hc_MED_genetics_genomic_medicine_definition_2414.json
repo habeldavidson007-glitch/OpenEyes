@@ -1,0 +1,20 @@
+{
+  "id": "MED-2414_genetics_genomic_medicine_definition",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "genetics genomic medicine",
+    "clinical_medicine",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Genetics Genomic Medicine - pathophysiology, diagnostic criteria, clinical presentation",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2026,
+  "source": "PubMed",
+  "_original_credibility_class": "peer_reviewed",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

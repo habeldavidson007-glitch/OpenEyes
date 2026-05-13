@@ -1,0 +1,27 @@
+{
+  "id": "frag_tox_methanol_poisoning_003",
+  "domain": "science_technology",
+  "tags": [
+    "methanol",
+    "poisoning",
+    "outbreak_response",
+    "2025_data",
+    "global_health"
+  ],
+  "content": "2024-2025 methanol poisoning outbreaks in Southeast Asia, Africa, and Eastern Europe highlight ongoing public health challenges. WHO reported 2,800+ deaths globally in 2024, primarily from contaminated illicit alcohol. New point-of-care testing devices using enzymatic assays can now detect methanol in beverages within 15 minutes, enabling rapid field screening. Treatment protocols have evolved to include earlier hemodialysis initiation (methanol level >50 mg/dL or pH <7.25) and high-dose folate regimens. The 2025 International Consensus on Methanol Management recommends standardized fomepizole dosing and expanded access programs for low-resource settings.",
+  "source": "WHO Global Methanol Surveillance Report 2025 & Clinical Toxicology",
+  "source_url": "https://www.who.int/teams/environment-climate-change-and-health/chemical-safety-and-health/methanol",
+  "credibility_class": "government_agency",
+  "last_verified": "2026-05-08",
+  "weight": 1.0,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "subdomain": "BIO",
+  "reasoning_role": "counter_argument",
+  "source_type": null,
+  "year": 2024,
+  "sub_question": null,
+  "sector": "BIO",
+  "original_domain": "healthcare",
+  "original_sector": ""
+}

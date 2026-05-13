@@ -1,0 +1,19 @@
+{
+  "id": "FIN-182",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "algorithmic_trading",
+    "alternative data"
+  ],
+  "content": "Alternative data sources provide informational edges: satellite imagery of parking lots and oil tanks, credit card transaction aggregates, web scraping of job postings and product reviews, supply chain tracking via AIS ship data. Data quality varies widely; proper cleaning and validation are essential. Regulatory compliance requires ensuring data was obtained legally.",
+  "year": 2024,
+  "source": "Alternative Data for Investors",
+  "source_url": "https://example.com/FIN-182",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_forex_market_def_001",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "tags": [
+    "currency",
+    "definition",
+    "forex",
+    "exchange_rate"
+  ],
+  "reasoning_role": "definition",
+  "content": "Foreign exchange (forex/FX) market trades currencies globally, operating 24 hours/day across major financial centers. Daily turnover exceeds $7 trillion, making it world's largest market. Currencies trade in pairs (EUR/USD, USD/JPY, etc.). Exchange rates reflect relative economic strength, interest rate differentials, trade flows, and speculation. Major pairs involve USD; crosses don't. Central banks intervene occasionally to influence rates. Forex used for international trade, investment, tourism, and speculation. Leverage commonly available but increases risk substantially.",
+  "source": "SEC",
+  "source_url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/foreign-exchange",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.88,
+  "sector": "BIO",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

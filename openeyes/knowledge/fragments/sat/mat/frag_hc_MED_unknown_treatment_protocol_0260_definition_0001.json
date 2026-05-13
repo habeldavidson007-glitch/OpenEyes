@@ -1,0 +1,24 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0260",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "sector": "MAT",
+  "tags": [
+    "monoclonal antibodies",
+    "biologics",
+    "immunotherapy",
+    "naming convention"
+  ],
+  "reasoning_role": "definition",
+  "content": "Monoclonal Antibodies treatment protocol content placeholder - dosing recommendations, titration schedules, indication-specific regimens, monitoring requirements, and dose adjustments for renal/hepatic impairment based on FDA prescribing information.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

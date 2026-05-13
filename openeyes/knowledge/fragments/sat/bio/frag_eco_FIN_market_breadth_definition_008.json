@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_market_breadth_definition_08",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "tags": [
+    "definition",
+    "technical_analysis",
+    "market_breadth"
+  ],
+  "reasoning_role": "definition",
+  "content": "Market breadth indicators measure participation in market moves. Advance-Decline Line tracks cumulative advancing vs declining issues. New Highs-Lows shows market internal strength. Up Volume vs Down Volume confirms price moves. Narrow breadth during rallies warns of unhealthy advances. Divergences between breadth and indices often precede reversals. Essential for assessing whether index moves reflect broad market or few mega-caps.",
+  "source": "Educational Resource",
+  "source_url": "https://www.investopedia.com/terms/m/marketbreadth.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "BIO",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

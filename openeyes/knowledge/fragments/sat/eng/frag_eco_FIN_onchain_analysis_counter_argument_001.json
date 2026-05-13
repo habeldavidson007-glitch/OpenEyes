@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_onchain_analysis_counter_argument",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Metrics can give false signals in structural regime changes or when long-term holders distribute to new ETF demand.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_unemployment_rate_latest_013",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "tags": [
+    "unemployment",
+    "labor_market",
+    "employment",
+    "macro",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "The unemployment rate continues to be released monthly alongside nonfarm payrolls. U-3 unemployment reached historic lows in the early 2020s before rising modestly. U-6 broad unemployment provides additional context on labor market slack. Demographic breakdowns reveal disparities\u2014youth unemployment typically runs higher than adult rates, and racial disparities persist. Long-term unemployment (27+ weeks) is monitored for hysteresis risks. Job openings data from JOLTS complements unemployment statistics. Wage growth measures help assess labor market tightness. The Sahm Rule uses unemployment rate changes as a recession indicator.",
+  "source": "Bureau of Labor Statistics News Releases",
+  "source_url": "https://www.bls.gov/news.release/empsit.toc.htm",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAT",
+  "original_domain": "economy",
+  "original_sector": "MAC"
+}

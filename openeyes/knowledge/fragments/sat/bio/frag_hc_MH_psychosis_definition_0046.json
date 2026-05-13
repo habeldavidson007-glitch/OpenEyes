@@ -1,0 +1,23 @@
+{
+  "id": "frag_mh_psychosis_definition_0046",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "psychosis",
+    "delusions",
+    "hallucinations",
+    "first-episode"
+  ],
+  "reasoning_role": "definition",
+  "content": "Psychosis refers to a group of symptoms involving loss of contact with reality, including delusions (fixed false beliefs despite contrary evidence), hallucinations (sensory perceptions without external stimulus, auditory most common), disorganized thinking/speech (loose associations, word salad, tangentiality), and grossly disorganized/abnormal motor behavior (including catatonia). Psychosis occurs in schizophrenia spectrum disorders, mood disorders with psychotic features (bipolar, depression), substance-induced psychosis, medical conditions (delirium, dementia, neurological disorders), and brief psychotic disorder. First-episode psychosis typically emerges in late adolescence/early adulthood. Differential diagnosis critical as treatment varies by etiology.",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/schizophrenia",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "original_domain": "healthcare",
+  "original_sector": "MH"
+}

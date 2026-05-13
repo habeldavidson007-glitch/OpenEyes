@@ -1,0 +1,19 @@
+{
+  "id": "PHR-2130_quality_control_pharmaceuticals_counter_argument",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "sector": "ENG",
+  "tags": [
+    "quality control pharmaceuticals",
+    "pharmaceuticals",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Quality Control Pharmaceuticals - manufacturing challenges, cost considerations, scalability issues",
+  "source_url": "https://www.fda.gov/drugs",
+  "credibility_class": "peer_reviewed",
+  "year": 2026,
+  "source": "FDA",
+  "original_domain": "healthcare",
+  "original_sector": "PHR"
+}

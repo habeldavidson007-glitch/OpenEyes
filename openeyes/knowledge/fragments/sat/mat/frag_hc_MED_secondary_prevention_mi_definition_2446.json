@@ -1,0 +1,20 @@
+{
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "sector": "MAT",
+  "tags": [
+    "cardiac rehabilitation",
+    "lifestyle modification",
+    "smoking cessation",
+    "diet"
+  ],
+  "reasoning_role": "definition",
+  "content": "Cardiac rehabilitation: Class I recommendation for all post-MI patients. Supervised program includes exercise training, education, counseling, risk factor modification. Reduces mortality ~20-25%, hospital readmissions, improves functional capacity and quality of life. Underutilized (<30% eligible participate). Components: aerobic exercise (target 30-60 min most days), resistance training, flexibility exercises. Lifestyle modifications: smoking cessation (most impactful\u2014reduces recurrent MI risk by 50%; use counseling, pharmacotherapy [varenicline, bupropion, NRT]), Mediterranean diet (PREDIMED trial showed 30% CV event reduction with Mediterranean diet plus nuts/olive oil vs low-fat diet), weight loss if overweight, stress management, depression screening/treatment (depression common post-MI, associated with worse outcomes), sleep optimization (screen for sleep apnea). Alcohol moderation (\u22641 drink/day women, \u22642 men). Sexual activity can resume when able to climb 2 flights of stairs without symptoms (typically 1-2 weeks post-uncomplicated MI). Influenza and pneumococcal vaccination recommended.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/33106097/",
+  "credibility_class": "guideline",
+  "year": 2020,
+  "id": "HC-2446",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

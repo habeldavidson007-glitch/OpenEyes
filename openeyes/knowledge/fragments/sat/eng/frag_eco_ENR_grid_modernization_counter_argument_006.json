@@ -1,0 +1,22 @@
+{
+  "id": "frag_eco_ENR_grid_modernization_counter_006",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "grid_modernization",
+    "power"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Power markets: grid_modernization. Role: counter_argument. Market design and infrastructure.",
+  "source": "DOE",
+  "source_url": "https://energy.gov/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "last_verified": "2026-05-11",
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": ""
+}

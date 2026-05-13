@@ -1,0 +1,24 @@
+{
+  "id": "frag_med_unknown_definition_0134",
+  "domain": "science_technology",
+  "subdomain": "PHY",
+  "sector": "PHY",
+  "tags": [
+    "drug discovery",
+    "target identification",
+    "hit-to-lead",
+    "preclinical"
+  ],
+  "reasoning_role": "definition",
+  "content": "The drug discovery pipeline follows structured phases: (1) Target validation using genetic, proteomic approaches; (2) High-throughput screening of compound libraries (10,000-100,000+ molecules); (3) Lead optimization improving ADME properties (absorption, distribution, metabolism, excretion); (4) Preclinical IND-enabling studies including toxicology in two species, pharmacokinetics, and formulation development. Success rate from hit to IND submission is approximately 1 in 5,000-10,000 compounds. Modern approaches include structure-based design, AI-driven discovery, and phenotypic screening.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

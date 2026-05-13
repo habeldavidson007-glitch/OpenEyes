@@ -1,0 +1,22 @@
+{
+  "id": "neuro-tbi-dx",
+  "domain": "science_technology",
+  "subdomain": "SPC",
+  "sector": "SPC",
+  "tags": [
+    "traumatic-brain-injury",
+    "diagnosis",
+    "Glasgow-Coma-Scale",
+    "CT-head",
+    "classification"
+  ],
+  "reasoning_role": "definition",
+  "content": "TBI diagnosis uses Glasgow Coma Scale (GCS, score 3-15): Eye opening (1-4), Verbal response (1-5), Motor response (1-6). GCS 13-15 = mild, 9-12 = moderate, 3-8 = severe (intubate if \u22648). Canadian CT Head Rule/New Orleans Criteria guide imaging in mild TBI. Non-contrast CT head emergently for: GCS <15, focal deficit, vomiting, severe headache, age >65, coagulopathy, dangerous mechanism, loss of consciousness/amnesia. CT findings: skull fracture, intracranial hemorrhage (epidural, subdural, subarachnoid, intraparenchymal), cerebral edema, midline shift, mass effect. MRI more sensitive for diffuse axonal injury (microhemorrhages on SWI/GRE), small contusions. Diffusion tensor imaging (DTI) research tool for white matter integrity. Biomarkers under investigation: GFAP, UCH-L1 (FDA-cleared to rule out need for CT in mild TBI). Marshall/Rotterdam CT scores quantify injury severity and predict outcome. Differential diagnosis: stroke, seizure/postictal state, intoxication, metabolic encephalopathy. Prognosis: GCS motor score most predictive; pupillary reactivity important; IMPACT/CRASH calculators estimate outcome.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0335",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "sector": "ENV",
+  "tags": [
+    "oncology",
+    "palliative care",
+    "symptom management",
+    "pain control",
+    "communication"
+  ],
+  "reasoning_role": "definition",
+  "content": "Symptom management principles. Pain: WHO analgesic ladder (non-opioids \u2192 weak opioids \u2192 strong opioids); adjuvant analgesics (gabapentin/pregabalin for neuropathic pain, antidepressants, corticosteroids for bone pain/capsular pain); breakthrough dosing 10-15% of total daily opioid; bowel regimen mandatory with opioids; rotate opioids for inadequate response or side effects. Dyspnea: opioids reduce air hunger; supplemental oxygen if hypoxic; fans/cool air; benzodiazepines for anxiety component; thoracentesis for malignant effusions. Nausea/vomiting: antiemetics by mechanism (5-HT3 antagonists, dopamine antagonists, NK1 antagonists, antihistamines); treat underlying cause (constipation, obstruction, metabolic abnormalities, medications). Fatigue: energy conservation, graded exercise, treat reversible causes (anemia, hypothyroidism, depression); psychostimulants sometimes used. Anorexia/cachexia: small frequent meals, appetite stimulants (megestrol, steroids), address reversible factors. Communication: SPIKES protocol for breaking bad news; REMAP for goals of care discussions; discuss prognosis honestly but with hope; involve family as patient desires.",
+  "source": "PubMed",
+  "source_url": "https://www.nccn.org/guidelines",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

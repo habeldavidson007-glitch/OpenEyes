@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0476",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "stroke",
+    "tPA",
+    "thrombectomy",
+    "treatment-protocol",
+    "guidelines"
+  ],
+  "reasoning_role": "definition",
+  "content": "Acute ischemic stroke treatment algorithm: (1) Immediate non-contrast CT to exclude hemorrhage. (2) If within 4.5 hours and no contraindications: IV tPA (alteplase 0.9 mg/kg, max 90mg; or tenecteplase 0.25 mg/kg). Contraindications include recent surgery, bleeding diathesis, BP >185/110 despite treatment. (3) For large-vessel occlusion (ICA, M1 MCA, basilar): mechanical thrombectomy up to 6 hours universally, and 6-24 hours with favorable perfusion imaging (mismatch between core and penumbra). (4) Antiplatelet therapy: aspirin 160-325mg within 24-48 hours (delayed 24 hours post-tPA). (5) Secondary prevention: statin therapy, BP control (<130/80), anticoagulation for atrial fibrillation (DOAC preferred), carotid endarterectomy/stenting for symptomatic stenosis >70%. Hemorrhagic stroke management focuses on BP control (SBP 140-160), reversal agents (PCC for warfarin, idarucizumab for dabigatran, andexanet alfa for factor Xa inhibitors), and neurosurgical consultation.",
+  "source": "PubMed",
+  "source_url": "https://www.ahajournals.org/doi/10.1161/STR.0000000000000375",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

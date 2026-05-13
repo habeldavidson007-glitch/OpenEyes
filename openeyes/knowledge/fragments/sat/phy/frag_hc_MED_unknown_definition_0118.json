@@ -1,0 +1,24 @@
+{
+  "id": "frag_med_unknown_definition_0118",
+  "domain": "science_technology",
+  "subdomain": "PHY",
+  "sector": "PHY",
+  "tags": [
+    "Phase I trials",
+    "dose escalation",
+    "safety",
+    "first-in-human"
+  ],
+  "reasoning_role": "definition",
+  "content": "Phase I trials are the first stage of human testing for investigational drugs, primarily focused on safety and tolerability. These studies typically enroll 20-100 healthy volunteers (except in oncology where patients are used). The primary objective is to determine the maximum tolerated dose (MTD), characterize pharmacokinetics (absorption, distribution, metabolism, excretion), and identify dose-limiting toxicities. Phase I trials usually last several months and establish the safety profile before proceeding to efficacy testing.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

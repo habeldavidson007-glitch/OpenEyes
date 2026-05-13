@@ -1,0 +1,23 @@
+{
+  "id": "frag_mh_bipolar_disorder_definition_0055",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "bipolar",
+    "mania",
+    "mood-disorder",
+    "DSM-5"
+  ],
+  "reasoning_role": "definition",
+  "content": "Bipolar Disorder is a mood disorder characterized by recurrent episodes of mania/hypomania and depression. Bipolar I requires at least one manic episode (elevated/expansive/irritable mood with increased energy/activity lasting \u22651 week, causing marked impairment or requiring hospitalization). Bipolar II involves hypomanic episodes (similar symptoms but lasting \u22654 days without marked impairment) and major depressive episodes. Mania includes symptoms like grandiosity, decreased need for sleep, pressured speech, racing thoughts, distractibility, increased goal-directed activity, and risky behavior. Pathophysiology involves genetic factors (heritability ~70-80%), neurotransmitter dysregulation, circadian rhythm disruption, and altered neural circuitry in emotion regulation networks.",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/bipolar-disorder",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "original_domain": "healthcare",
+  "original_sector": "MH"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "FIN-109",
+  "domain": "science_technology",
+  "subdomain": "SPC",
+  "tags": [
+    "federal_reserve",
+    "monetary_policy",
+    "neutral_rate"
+  ],
+  "content": "R-star is the theoretical real rate consistent with full employment and stable inflation. Estimated at 0.5-0.75% real, implying 2.5-3% nominal with 2% inflation target. Rates above r* are restrictive; below are accommodative.",
+  "year": 2024,
+  "source": "Federal Reserve Board",
+  "source_url": "https://www.federalreserve.gov/",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "government_agency",
+  "sector": "SPC",
+  "original_domain": "economy",
+  "original_sector": "MAC"
+}

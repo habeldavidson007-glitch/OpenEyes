@@ -1,0 +1,22 @@
+{
+  "domain": "science_technology",
+  "subdomain": "PHY",
+  "sector": "PHY",
+  "content": "Clinical application of pharmacokinetics involves using ADME principles to design optimal dosing regimens. For absorption: consider food effects, formulation (immediate vs extended release), and route selection (oral, IV, transdermal). For distribution: calculate loading doses using volume of distribution (Vd); account for protein binding in hypoalbuminemia. For metabolism: adjust for CYP450 polymorphisms, drug interactions, hepatic impairment. For excretion: modify doses based on creatinine clearance, especially for narrow therapeutic index drugs. Therapeutic drug monitoring applies PK principles to maintain concentrations within therapeutic window, particularly for aminoglycosides, vancomycin, anticonvulsants, and immunosuppressants.",
+  "tags": [
+    "dosing_regimen",
+    "therapeutic_monitoring",
+    "loading_dose",
+    "maintenance_dose",
+    "clinical_application"
+  ],
+  "source": "nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "reasoning_role": "definition",
+  "id": "HC-2267",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "PHR"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "frag_fin_operating_margin_efficiency_definition_015",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "return_on_invested_capital",
+    "return_on_equity",
+    "peg_ratio",
+    "price_to_sales",
+    "operating_margin",
+    "price_to_book",
+    "ev_ebitda",
+    "inventory_turnover",
+    "pe_ratio",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Operating Margin Efficiency is a core concept in fundamental analysis. It involves evaluating specific financial metrics or structural elements to determine a company's intrinsic value, operational efficiency, and long-term viability.",
+  "source": "analyst_consensus",
+  "source_url": "https://www.morningstar.com/articles/valuation-metrics",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

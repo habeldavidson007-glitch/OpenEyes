@@ -1,0 +1,25 @@
+{
+  "id": "frag_fin_stagflation_latest_023",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "tags": [
+    "stagflation",
+    "inflation",
+    "recession",
+    "macro",
+    "economic_growth",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Stagflation concerns emerged in 2022-2023 as inflation surged while growth slowed. However, labor markets remained tight, distinguishing the episode from 1970s stagflation. Supply chain normalization and energy market adjustments helped ease inflation pressures. Core inflation proved stickier than headline. Growth remained positive though below trend. Most analysts assessed stagflation risk as elevated but not baseline. Monitoring focuses on inflation expectations anchoring, productivity trends, and labor market dynamics. Climate transition and geopolitical fragmentation are cited as potential long-term stagflationary forces.",
+  "source": "Federal Reserve Economic Research",
+  "source_url": "https://www.federalreserve.gov/econres/notes/feds-notes/stagflation-analysis-20230615.htm",
+  "credibility_class": "academic_research",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENV",
+  "original_domain": "economy",
+  "original_sector": "MAC"
+}

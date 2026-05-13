@@ -1,0 +1,21 @@
+{
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "sector": "MAT",
+  "tags": [
+    "tuberculosis",
+    "latent TB",
+    "active TB",
+    "drug resistance"
+  ],
+  "reasoning_role": "definition",
+  "content": "Tuberculosis (TB) is caused by Mycobacterium tuberculosis complex. Latent TB infection (LTBI) represents asymptomatic infection without radiographic or microbiologic evidence of active disease; ~5-10% lifetime reactivation risk (higher in immunocompromised). Active TB disease involves symptomatic infection with tissue destruction, most commonly pulmonary (cough, fever, night sweats, weight loss, hemoptysis) but can be extrapulmonary (lymph nodes, pleura, CNS, bone, genitourinary). Drug-resistant TB includes: MDR-TB (resistant to isoniazid and rifampin), Pre-XDR-TB (MDR + resistance to any fluoroquinolone), XDR-TB (MDR + resistance to any fluoroquinolone + at least one Group A drug: bedaquiline, linezolid, or pretomanid).",
+  "source": "who.int",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2357",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

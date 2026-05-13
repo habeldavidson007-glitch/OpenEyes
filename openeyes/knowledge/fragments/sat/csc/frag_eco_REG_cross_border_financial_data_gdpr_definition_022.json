@@ -1,0 +1,24 @@
+{
+  "id": "REG-022",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "data_transfer",
+    "gdpr",
+    "cross_border",
+    "financial_data",
+    "privacy"
+  ],
+  "reasoning_role": "definition",
+  "content": "Cross-border financial data transfer regulations create compliance complexity. GDPR implications for financial services: (1) Personal data transfers outside EU require adequate safeguards (Standard Contractual Clauses, Binding Corporate Rules), (2) Schrems II decision invalidated Privacy Shield\u2014enhanced due diligence required for US transfers, (3) Financial data often qualifies as special category requiring heightened protection, (4) Right to erasure conflicts with record-keeping requirements (MiFID II, AML). US approach: sectoral\u2014GLBA governs financial institution data sharing, state laws (CCPA, NYDFS Part 500) add requirements. Conflicts: EU localization expectations vs. US global processing models, regulatory access conflicts (CLOUD Act vs. GDPR blocking statutes). Solutions: data mapping, transfer impact assessments, supplementary measures (encryption, pseudonymization), contractual arrangements. Post-Brexit UK adequacy decision facilitates UK-EU flows but long-term uncertainty remains.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "REG"
+}

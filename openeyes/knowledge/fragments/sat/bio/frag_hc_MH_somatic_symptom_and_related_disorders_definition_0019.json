@@ -1,0 +1,23 @@
+{
+  "id": "frag_mh_somatic_symptom_and_related_disorders_definition_0019",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "somatic-symptom-disorder",
+    "illness-anxiety",
+    "conversion-disorder",
+    "medically-unexplained"
+  ],
+  "reasoning_role": "definition",
+  "content": "Somatic Symptom Disorder involves one or more distressing somatic symptoms causing significant disruption to daily life, accompanied by excessive thoughts/feelings/behaviors related to symptoms (disproportionate thoughts about seriousness, persistently high anxiety about health/symptoms, excessive time/energy devoted to symptoms). Symptoms may or may not be associated with diagnosed medical condition; the key is the disproportionate response. Related disorders include Illness Anxiety Disorder (preoccupation with having serious illness, minimal/no somatic symptoms), Conversion Disorder (functional neurological symptoms incompatible with recognized conditions), Factitious Disorder (falsification of symptoms for sick role). Prevalence ~5-7%. Pathophysiology involves altered interoceptive awareness, catastrophizing, central sensitization.",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/mental-health-information",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "original_domain": "healthcare",
+  "original_sector": "MH"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_treatment_protocol_0233",
+  "domain": "science_technology",
+  "subdomain": "SPC",
+  "sector": "SPC",
+  "tags": [
+    "ACE inhibitors",
+    "ARBs",
+    "dosing",
+    "titration",
+    "monitoring"
+  ],
+  "reasoning_role": "definition",
+  "content": "ACE inhibitor dosing: lisinopril 2.5-5mg daily start, target 20-40mg daily; enalapril 2.5mg BID start, target 10-20mg BID; ramipril 1.25-2.5mg daily start, target 10mg daily. ARB dosing: losartan 25-50mg daily start, target 50-100mg daily; valsartan 40-80mg BID start, target 160-320mg daily; candesartan 4-8mg daily start, target 16-32mg daily. Start low in heart failure, elderly, or volume-depleted patients. Titrate every 2-4 weeks to target doses proven in trials. Monitor serum creatinine and potassium at baseline, 1-2 weeks after initiation/dose increase, then periodically. Accept up to 30% increase in creatinine from baseline; larger increases require evaluation for renal artery stenosis or volume depletion. Hold if potassium >5.5 mEq/L. Avoid combination ACEi+ARB due to increased adverse events without benefit. Use caution with NSAIDs (reduced efficacy, renal risk), potassium supplements, potassium-sparing diuretics.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

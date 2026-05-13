@@ -1,0 +1,21 @@
+{
+  "id": "frag_eco_GEO_economic_sanctions_counter_018",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "sector": "ENG",
+  "tags": [
+    "sanctions",
+    "economic_warfare",
+    "effectiveness",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Sanctions effectiveness debate: Hufbauer study found ~34% success rate historically. Limitations: regime consolidation ('rally around flag'), adaptation (sanctions evasion), humanitarian costs hurting civilians not elites. Overuse risks reducing impact. Sanctions work better when multilateral, limited objectives, strong enforcement.",
+  "source": "piie_sanctions_study",
+  "source_url": "https://www.piie.com/",
+  "credibility_class": "think_tank",
+  "year": 2024,
+  "weight": 0.9,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

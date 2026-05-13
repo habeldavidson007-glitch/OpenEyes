@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0449",
+  "domain": "science_technology",
+  "subdomain": "SPC",
+  "sector": "SPC",
+  "tags": [
+    "myasthenia-gravis",
+    "pyridostigmine",
+    "immunosuppression",
+    "treatment-protocol",
+    "crisis"
+  ],
+  "reasoning_role": "definition",
+  "content": "MG treatment includes symptomatic therapy and immunotherapy. Symptomatic: pyridostigmine (acetylcholinesterase inhibitor) 30-120mg every 3-6 hours\u2014first-line for all patients; side effects include muscarinic symptoms (salivation, lacrimation, diarrhea, bradycardia) treated with glycopyrrolate. Immunotherapy for inadequate pyridostigmine response: (1) Corticosteroids (prednisone)\u2014rapid onset but long-term toxicity; start low and titrate to avoid transient worsening. (2) Non-steroidal immunosuppressants: azathioprine (slow onset 6-12 months, check TPMT), mycophenolate mofetil, cyclosporine, tacrolimus, methotrexate. (3) Rapid therapies for exacerbations/crisis: IVIG (2g/kg over 2-5 days) or plasma exchange (5 exchanges)\u2014temporary bridge to slower immunosuppressants. (4) Biologics: eculizumab/ravulizumab (complement C5 inhibitors, AChR+ refractory MG), efgartigimod (FcRn blocker, reduces IgG), rituximab (especially MuSK-MG). Thymectomy: indicated for thymoma (all ages); recommended for AChR+ generalized MG age <65 even without thymoma (MGTX trial showed benefit). Crisis management: ICU care, intubation if FVC <20mL/kg or NIF <-30cmH2O, IVIG/PLEX, treat triggers, hold pyridostigmine when intubated (increases secretions).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

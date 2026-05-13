@@ -1,0 +1,19 @@
+{
+  "id": "FIN-176",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "algorithmic_trading",
+    "kelly criterion"
+  ],
+  "content": "Position sizing determines capital allocation per trade based on edge, volatility, and correlation. The Kelly criterion maximizes long-term growth by betting fraction f* = (p*b-q)/b where p is win probability, q is loss probability, b is payoff ratio. Full Kelly is volatile; practitioners use half-Kelly or quarter-Kelly. Risk parity allocates based on volatility contribution rather than dollar amount.",
+  "year": 2023,
+  "source": "Fortune's Formula",
+  "source_url": "https://example.com/FIN-176",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

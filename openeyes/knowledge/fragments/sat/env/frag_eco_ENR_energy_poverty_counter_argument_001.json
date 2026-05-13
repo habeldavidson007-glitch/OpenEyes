@@ -1,0 +1,22 @@
+{
+  "id": "frag_eco_ENR_energy_poverty_counter_001",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "tags": [
+    "energy_poverty",
+    "policy"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Energy policy: energy_poverty. Role: counter_argument. Social and environmental dimensions.",
+  "source": "EPA",
+  "source_url": "https://epa.gov/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "last_verified": "2026-05-11",
+  "sector": "ENV",
+  "original_domain": "economy",
+  "original_sector": ""
+}

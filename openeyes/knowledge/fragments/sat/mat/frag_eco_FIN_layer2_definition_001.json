@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_layer2_definition",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "Scaling protocols (Optimism, Arbitrum, Base) that execute transactions off-chain and settle proofs on Ethereum L1 to reduce costs.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "MAT",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

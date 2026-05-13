@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_ta_institutional_retail_definition",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "technical_analysis",
+    "market_structure",
+    "behavioral"
+  ],
+  "reasoning_role": "definition",
+  "content": "Institutional traders move large size requiring careful execution\u2014accumulate/distribute over time, use algorithms to minimize impact, trade with longer time horizons. Retail traders prefer immediacy\u2014market orders, chase momentum, focus on short timeframes, emotional decision-making. Price action reflects this battle: institutions create levels, retail reacts to them.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

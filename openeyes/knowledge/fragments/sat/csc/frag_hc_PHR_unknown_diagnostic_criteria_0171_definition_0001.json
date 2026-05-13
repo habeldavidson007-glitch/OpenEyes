@@ -1,0 +1,20 @@
+{
+  "id": "frag_phr_unknown_diagnostic_criteria_0171",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "phr"
+  ],
+  "reasoning_role": "definition",
+  "content": "Causality assessment uses structured algorithms: Naranjo Scale (definite \u22659, probable 5-8, possible 1-4, doubtful \u22640), WHO-UMC criteria (certain, probable/likely, possible, unlikely, conditional/unclassified, unassessable), and RUCAM score for hepatotoxicity. Factors evaluated include: temporal relationship, dechallenge response, rechallenge outcome, alternative causes, drug levels, previous reactions, and objective evidence. Time-to-onset varies: anaphylaxis (minutes-hours), serum sickness (1-2 weeks), SJS/TEN (4-28 days), DRESS (2-8 weeks). Serious ADRs requiring reporting include: death, life-threatening events, hospitalization, disability, congenital anomalies, or medically significant events. Healthcare providers should maintain high suspicion for ADRs in patients with new symptoms after medication changes.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "original_domain": "healthcare",
+  "original_sector": "PHR"
+}

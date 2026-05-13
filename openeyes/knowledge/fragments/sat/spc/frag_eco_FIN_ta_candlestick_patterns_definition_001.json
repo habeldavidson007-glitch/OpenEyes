@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_ta_candlestick_patterns_definition",
+  "domain": "science_technology",
+  "subdomain": "SPC",
+  "tags": [
+    "chart_patterns",
+    "definition",
+    "technical_analysis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Japanese candlestick patterns: Doji (indecision), Hammer/Shooting Star (reversal), Engulfing (momentum shift), Morning/Evening Star (multi-candle reversal). Single/multi-candle patterns signal potential turns. Require confirmation from subsequent candles.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "SPC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

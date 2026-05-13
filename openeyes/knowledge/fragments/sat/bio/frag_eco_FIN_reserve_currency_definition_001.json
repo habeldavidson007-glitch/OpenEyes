@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_reserve_currency_def_01",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "tags": [
+    "dollar",
+    "macro",
+    "global_trade",
+    "definition",
+    "first_line"
+  ],
+  "reasoning_role": "definition",
+  "content": "Reserve currency status means central banks hold asset for international transactions and stability. Benefits: Seigniorage, lower borrowing costs, sanction power. Costs: 'Exorbitant privilege' leads to strong currency hurting exporters (Triffin Dilemma).",
+  "source": "government_source",
+  "source_url": "https://www.imf.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.93,
+  "sector": "BIO",
+  "original_domain": "economy",
+  "original_sector": "MAC"
+}

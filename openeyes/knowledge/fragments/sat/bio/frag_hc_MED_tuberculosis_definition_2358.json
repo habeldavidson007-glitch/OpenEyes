@@ -1,0 +1,21 @@
+{
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "tuberculosis",
+    "treatment",
+    "drug regimens",
+    "MDR-TB"
+  ],
+  "reasoning_role": "definition",
+  "content": "Drug-susceptible pulmonary TB: intensive phase 2 months with RIPE (rifampin, isoniazid, pyrazinamide, ethambutol) daily; continuation phase 4 months with RI daily. Alternative 4-month regimen: rifapentine-moxifloxacin-based (CDC TBTC Study 31/A5349). LTBI treatment options: 3HP (isoniazid+rifapentine weekly x3 months), 4R (rifampin daily x4 months), 3HR (isoniazid+rifampin daily x3 months), or 6-9H (isoniazin monotherapy). MDR-TB: all-oral regimens preferred including bedaquiline, linezolid, fluoroquinolone, clofazimine, cycloserine; duration 6-20 months depending on regimen. Newer 6-month BPaLM regimen (bedaquiline, pretomanid, linezolid, moxifloxacin) for MDR/Pre-XDR-TB. Directly observed therapy (DOT) recommended for adherence.",
+  "source": "cdc.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2358",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

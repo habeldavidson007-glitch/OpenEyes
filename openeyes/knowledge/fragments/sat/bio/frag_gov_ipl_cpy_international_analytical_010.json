@@ -1,0 +1,30 @@
+{
+  "id": "frag_gov_ipl_cpy_international_analytical_010",
+  "domain": "science_technology",
+  "sector": "BIO",
+  "category": "Copyright Law",
+  "topic": "Berne Convention, TRIPS, national treatment",
+  "role": "analytical",
+  "summary": "Analytical overview of Berne Convention, TRIPS, national treatment in Copyright Law.",
+  "key_points": [
+    "Key legal point 1",
+    "Key legal point 2",
+    "Key legal point 3",
+    "Key legal point 4",
+    "Key legal point 5"
+  ],
+  "sources": [
+    "17 U.S.C.",
+    "U.S. Copyright Office Compendium",
+    "Federal Circuit opinions",
+    "Supreme Court copyright decisions",
+    "Creative Commons licenses"
+  ],
+  "credibility_score": 0.96,
+  "philosophy_guard_passed": true,
+  "related_fragments": [],
+  "philosophy_guard_statement": "Describes existing law without normative advocacy.",
+  "subdomain": "BIO",
+  "original_domain": "gov",
+  "original_sector": "IPL"
+}

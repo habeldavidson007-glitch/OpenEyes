@@ -1,0 +1,23 @@
+{
+  "id": "frag_fin_after_hours_trading_def_001",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "definition",
+    "volatility",
+    "stock_market",
+    "risk_management"
+  ],
+  "reasoning_role": "definition",
+  "content": "After-hours trading occurs outside regular market hours (9:30 AM - 4:00 PM ET). Pre-market (4:00-9:30 AM) and after-hours (4:00-8:00 PM) sessions enabled by electronic communication networks (ECNs). Allows reaction to earnings releases, economic data, and news announced outside regular hours. Participation lower than regular session, leading to wider spreads and higher volatility. Limit orders recommended over market orders. Not all stocks available for extended hours. Prices may gap significantly at regular open based on after-hours activity.",
+  "source": "FINRA",
+  "source_url": "https://www.finra.org/investors/insights/extended-hours-trading",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.88,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

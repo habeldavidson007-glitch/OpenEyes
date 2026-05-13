@@ -1,0 +1,21 @@
+{
+  "id": "HC-2119",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "sector": "ENV",
+  "tags": [
+    "global health aid",
+    "development assistance",
+    "vertical programs",
+    "horizontal programs"
+  ],
+  "reasoning_role": "definition",
+  "content": "Global health development assistance for health (DAH) totaled $43 billion in 2022, with major donors including US ($13B via PEPFAR, USAID), EU institutions, UK, Germany, and Gates Foundation ($5B annually). Aid approaches: (1) Vertical programs - disease-specific initiatives (PEPFAR for HIV, Global Fund for HIV/TB/malaria, Gavi for vaccines) with dedicated funding streams and implementation structures; (2) Horizontal programs - strengthening overall health systems (workforce, infrastructure, supply chains); (3) Hybrid approaches - using vertical funding to build horizontal capacity. Criticisms of vertical programs include fragmentation, parallel systems, brain drain from public sector, and sustainability concerns. However, PEPFAR is credited with saving 25 million lives and preventing 5+ million infant HIV infections since 2003.",
+  "source": "who.int",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "PH"
+}

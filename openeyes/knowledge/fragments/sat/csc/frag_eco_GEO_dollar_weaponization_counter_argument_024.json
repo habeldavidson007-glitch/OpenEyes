@@ -1,0 +1,21 @@
+{
+  "id": "frag_eco_GEO_dollar_weaponization_counter_024",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "dollar_hegemony",
+    "weaponization",
+    "dedollarization",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Dollar dominance persistence factors: Network effects, deep liquid markets, rule of law, no viable alternative. Euro fragmented, yuan not fully convertible, gold impractical for large transactions. Weaponization concerns real but alternatives worse. BRICS currency proposals lack detail. Dedollarization rhetoric exceeds reality. TINA - There Is No Alternative.",
+  "source": "fed_international_finance",
+  "source_url": "https://www.federalreserve.gov/",
+  "credibility_class": "central_bank",
+  "year": 2024,
+  "weight": 0.93,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

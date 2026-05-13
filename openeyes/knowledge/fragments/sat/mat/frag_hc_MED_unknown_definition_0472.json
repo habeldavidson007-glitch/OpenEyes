@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0472",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "sector": "MAT",
+  "tags": [
+    "TIA",
+    "transient-ischemic-attack",
+    "stroke-risk",
+    "ABCD2",
+    "cerebrovascular"
+  ],
+  "reasoning_role": "definition",
+  "content": "Transient ischemic attack (TIA) is a transient episode of neurological dysfunction caused by focal brain, spinal cord, or retinal ischemia without acute infarction. Traditional definition: symptoms <24 hours; tissue-based definition: no infarction on MRI DWI. TIA is a medical emergency\u2014stroke risk is 10-15% in first 90 days, with ~50% occurring within 48 hours ('warning stroke'). Typical symptoms: sudden onset focal deficit (unilateral weakness/numbness, aphasia, dysarthria, visual field defect, ataxia); negative symptoms (loss of function) rather than positive (spreading tingling suggests migraine). Amaurosis fugax: transient monocular vision loss from ipsilateral carotid emboli ('curtain descending'). Duration typically <1 hour (median 10 minutes). ABCD2 score predicts early stroke risk: Age \u226560 (1), BP \u2265140/90 (1), Clinical features (unilateral weakness 2, speech impairment without weakness 1), Duration \u226560 min (1), Diabetes (1). Score 0-3 low risk, 4-5 moderate, 6-7 high risk.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/30936517/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

@@ -1,0 +1,21 @@
+{
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "hepatitis C",
+    "diagnosis",
+    "antibody",
+    "RNA"
+  ],
+  "reasoning_role": "definition",
+  "content": "HCV diagnosis algorithm: 1) Anti-HCV antibody screening (EIA); 2) If reactive, reflex to HCV RNA PCR to confirm active infection (antibody indicates exposure only - can be false positive or resolved infection). HCV RNA quantification establishes baseline viral load. Genotype testing needed only if using genotype-specific regimens. Liver disease staging: non-invasive methods preferred (FIB-4, APRI, FibroScan/elastography); biopsy rarely needed. ALT may be normal despite significant fibrosis. Spontaneous clearance occurs in 15-25% of acute infections (more likely symptomatic, IL28B CC genotype). Reinfection possible after SVR; ongoing risk reduction counseling essential. HCV core antigen assay alternative where RNA testing unavailable.",
+  "source": "cdc.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2341",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

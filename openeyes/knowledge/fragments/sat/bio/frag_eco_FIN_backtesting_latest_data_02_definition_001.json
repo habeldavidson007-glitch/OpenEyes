@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_backtesting_latest_data_02",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "tags": [
+    "survivorship_bias",
+    "technical_analysis",
+    "latest_data",
+    "backtesting",
+    "overfitting"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "New backtesting platforms released in 2024 incorporate improved survivorship bias handling and alternative data. Research published in Q1 2024 highlighted the extent of overfitting in published trading strategies. Walk-forward optimization techniques gained adoption among systematic traders. The importance of out-of-sample testing was reinforced by several high-profile strategy failures in 2024.",
+  "source": "Educational Resource",
+  "source_url": "https://www.cfa-institute.org/backtesting-best-practices-2024",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "BIO",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

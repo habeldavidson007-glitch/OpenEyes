@@ -1,0 +1,25 @@
+{
+  "id": "frag_fin_market_indices_def_001",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "definition",
+    "sp500",
+    "index_fund",
+    "dow_jones",
+    "etf",
+    "nasdaq"
+  ],
+  "reasoning_role": "definition",
+  "content": "Market indices track performance of selected securities. S&P 500 is float-adjusted market-cap weighted, covering ~500 large-cap US companies. Dow Jones Industrial Average is price-weighted across 30 blue-chip stocks. Nasdaq Composite is market-cap weighted, heavily tech-focused. Index construction affects performance: cap-weighting gives largest companies most influence, equal-weighting treats all components equally, price-weighting favors higher-priced stocks regardless of company size.",
+  "source": "S&P Global",
+  "source_url": "https://www.spglobal.com/spdji/en/documents/methodologies/methodology-index-math.pdf",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 0.85,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

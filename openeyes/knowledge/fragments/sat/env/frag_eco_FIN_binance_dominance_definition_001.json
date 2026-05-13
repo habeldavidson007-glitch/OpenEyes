@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_binance_dominance_definition",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "tags": [
+    "crypto",
+    "market_structure"
+  ],
+  "reasoning_role": "definition",
+  "content": "Binance processes 40-60% of global crypto spot volume, giving it outsized price discovery influence. Order flow concentration means Binance price leads other exchanges. Regulatory actions against Binance create market-wide volatility. The exchange's token BNB gained utility across Binance ecosystem products.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENV",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

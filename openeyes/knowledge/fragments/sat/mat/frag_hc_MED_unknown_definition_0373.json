@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0373",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "sector": "MAT",
+  "tags": [
+    "oncology",
+    "ovarian cancer",
+    "CA-125",
+    "BRCA",
+    "histologic subtypes"
+  ],
+  "reasoning_role": "definition",
+  "content": "Ovarian cancer is the most lethal gynecologic malignancy, often presenting at advanced stage due to vague symptoms. Risk factors: BRCA1/2 mutations (lifetime risk 40-60% for BRCA1, 15-30% for BRCA2), Lynch syndrome, family history, nulliparity, endometriosis (for clear cell and endometrioid subtypes). Protective factors: oral contraceptives, tubal ligation, salpingectomy, breastfeeding. Histologic subtypes: high-grade serous (70%, TP53 mutations nearly universal, BRCA1/2 mutations 15-25%); low-grade serous (KRAS/BRAF mutations); endometrioid (often associated with endometriosis); clear cell (endometriosis association, chemotherapy resistant); mucinous (often metastatic from GI tract); borderline tumors (low malignant potential). Many 'ovarian' cancers originate in fallopian tube fimbriae. CA-125 elevated in 80% of epithelial ovarian cancers but not specific (elevated in endometriosis, fibroids, menstruation, other cancers).",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36012345/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

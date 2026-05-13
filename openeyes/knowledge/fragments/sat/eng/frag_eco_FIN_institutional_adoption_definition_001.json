@@ -1,0 +1,20 @@
+{
+  "id": "frag_fin_institutional_adoption_definition",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "crypto"
+  ],
+  "reasoning_role": "definition",
+  "content": "Entry via ETFs, futures, and custody solutions. Banks (BNY Mellon, State Street) building infrastructure. Allocation still <1%.",
+  "source": "OpenEyes Crypto Knowledge Base",
+  "source_url": "https://ethereum.org",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

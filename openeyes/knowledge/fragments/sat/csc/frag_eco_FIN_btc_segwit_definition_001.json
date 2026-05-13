@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_btc_segwit_definition",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "bitcoin",
+    "crypto",
+    "protocol_upgrade"
+  ],
+  "reasoning_role": "definition",
+  "content": "Segregated Witness (Segwit), activated in 2017, separated signature data from transaction data. This increased effective block capacity from 1MB to approximately 4MB weight units, fixed transaction malleability, and enabled Layer 2 solutions like Lightning Network. Adoption exceeded 80% of transactions within two years.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://ethereum.org/en/developers/docs/",
+  "credibility_class": "academic_research",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

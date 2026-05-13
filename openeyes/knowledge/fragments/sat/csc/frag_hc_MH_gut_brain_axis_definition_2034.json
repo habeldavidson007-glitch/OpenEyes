@@ -1,0 +1,21 @@
+{
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "neuroscience",
+    "gut-brain axis",
+    "microbiome",
+    "mental health"
+  ],
+  "reasoning_role": "definition",
+  "content": "The gut-brain axis is the bidirectional communication system between the gastrointestinal tract and the central nervous system, involving neural, hormonal, and immune pathways. The vagus nerve provides direct neural connection. Gut microbiota produce neurotransmitters (serotonin, GABA, dopamine) and metabolites (short-chain fatty acids) that influence brain function. Dysbiosis (microbial imbalance) is linked to depression, anxiety, and autism spectrum disorder. Probiotics and prebiotics show promise as adjunctive treatments. Inflammation from gut permeability ('leaky gut') may contribute to neuroinflammation. Diet quality affects both microbiome composition and mental health outcomes, supporting nutritional psychiatry approaches.",
+  "source": "nimh.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2034",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MH"
+}

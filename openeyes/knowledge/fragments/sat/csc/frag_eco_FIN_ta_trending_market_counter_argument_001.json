@@ -1,0 +1,21 @@
+{
+  "id": "frag_fin_ta_trending_market_counter_argument",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "technical_analysis",
+    "indicators"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "ADX is lagging\u2014by time it crosses 25, significant trend portion already occurred. Trends identified retrospectively appear obvious but ambiguous in real-time. Many 'trends' prove extended ranges upon closer examination. Regime detection models using machine learning show modest improvement over simple heuristics, suggesting inherent difficulty in real-time trend classification.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com/technical-analysis-4689657",
+  "credibility_class": "financial_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

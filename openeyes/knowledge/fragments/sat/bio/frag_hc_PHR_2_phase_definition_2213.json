@@ -1,0 +1,21 @@
+{
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "Phase IV",
+    "post-marketing",
+    "real-world evidence",
+    "pharmacovigilance"
+  ],
+  "reasoning_role": "definition",
+  "content": "Post-marketing safety signals trigger regulatory action when there is evidence of increased risk beyond the approved labeling. Causality assessment considers temporal relationship, biological plausibility, dechallenge/rechallenge patterns, and alternative explanations. Regulatory responses range from labeling updates (boxed warnings, contraindications) to restricted distribution, additional warnings, or market withdrawal in severe cases. Real-world evidence studies must address confounding through propensity score matching, instrumental variables, or other methods. FDA can require Phase IV trials as a condition of approval; failure to complete them can result in enforcement actions. Approximately 3-5% of approved drugs are eventually withdrawn for safety reasons.",
+  "source": "fda.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2213",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "PHR"
+}

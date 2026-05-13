@@ -1,0 +1,20 @@
+{
+  "content": "Addressing global health burden requires multi-level strategies: (1) Universal Health Coverage\u2014financial protection, quality essential services access, essential medicines availability; (2) Primary healthcare strengthening\u2014comprehensive continuous care, community health workers, integrated service delivery; (3) Disease-specific initiatives\u2014immunization programs (Gavi), HIV/AIDS treatment (PEPFAR, Global Fund), malaria control (bed nets, ACTs), tuberculosis DOTS strategy, neglected tropical disease mass drug administration; (4) Risk factor reduction\u2014tobacco control (FCTC), salt/sugar reduction, air quality improvement, road safety measures; (5) Health system investments\u2014workforce training, infrastructure development, supply chain strengthening, health information systems, emergency preparedness; (6) Social determinants\u2014poverty reduction, education (especially girls), water/sanitation access, gender equity; (7) Global health security\u2014International Health Regulations implementation, surveillance capacity, laboratory networks, rapid response teams. Cost-effectiveness guides resource allocation (DALYs averted per dollar). Equity-focused approaches prioritize worst-off populations.",
+  "tags": [
+    "intervention",
+    "health_systems",
+    "global_health_security",
+    "equity"
+  ],
+  "reasoning_role": "latest_data",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "year": 2024,
+  "source": "https://www.cdc.gov/",
+  "id": "HC-2186",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "clinical_guideline",
+  "original_domain": "healthcare",
+  "original_sector": "PH"
+}

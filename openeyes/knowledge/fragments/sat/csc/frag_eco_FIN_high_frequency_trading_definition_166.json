@@ -1,0 +1,20 @@
+{
+  "id": "FIN-166",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "algorithmic_trading",
+    "backtesting",
+    "high_frequency_trading"
+  ],
+  "content": "High-frequency trading (HFT) relies on ultra-low latency execution, typically measured in microseconds. HFT strategies include market making, statistical arbitrage, and order flow prediction. Success requires co-location at exchanges, FPGA hardware acceleration, and direct market access. The arms race for speed has led to round-trip latencies below 10 microseconds for top firms.",
+  "year": 2024,
+  "source": "Flash Boys: A Wall Street Revolt",
+  "source_url": "https://example.com/FIN-166",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "financial_publication",
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

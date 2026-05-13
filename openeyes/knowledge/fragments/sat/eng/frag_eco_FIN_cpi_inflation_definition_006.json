@@ -1,0 +1,24 @@
+{
+  "id": "frag_fin_cpi_inflation_def_006",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "cpi",
+    "inflation",
+    "consumer_price_index",
+    "macro",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "The Consumer Price Index (CPI) measures the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services. Published monthly by the Bureau of Labor Statistics (BLS), CPI covers categories including food, energy, housing, apparel, transportation, medical care, recreation, education, and other goods and services. The index is based on prices collected from thousands of retail stores, service establishments, rental units, and websites across the U.S. CPI is widely used as an indicator of inflation and cost of living changes. It serves as a cost-of-living adjustment measure for Social Security benefits, federal civil service and military retirement pensions, and federal income tax brackets. The CPI-U (All Urban Consumers) covers approximately 93% of the U.S. population.",
+  "source": "Bureau of Labor Statistics",
+  "source_url": "https://www.bls.gov/cpi/",
+  "credibility_class": "government_agency",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "MAC"
+}

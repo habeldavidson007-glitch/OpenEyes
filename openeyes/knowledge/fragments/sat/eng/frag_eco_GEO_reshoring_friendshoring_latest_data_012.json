@@ -1,0 +1,21 @@
+{
+  "id": "frag_eco_GEO_reshoring_friendshoring_latest_012",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "sector": "ENG",
+  "tags": [
+    "reshoring",
+    "friendshoring",
+    "supply_chain",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Reshoring trends 2024: US manufacturing construction up 80% since 2021 (CHIPS Act driven). Nearshoring to Mexico at record levels - surpassed China as top US trading partner. Vietnam, India gaining share. However, China still accounts for 30% of global manufacturing value-add. Full decoupling economically unfeasible.",
+  "source": "census_bureau",
+  "source_url": "https://www.census.gov/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.93,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

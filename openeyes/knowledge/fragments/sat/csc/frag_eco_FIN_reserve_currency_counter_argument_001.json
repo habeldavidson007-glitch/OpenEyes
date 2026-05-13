@@ -1,0 +1,26 @@
+{
+  "id": "frag_fin_reserve_currency_counter_01",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "dollar",
+    "macro",
+    "global_trade",
+    "counter_argument",
+    "warning"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Network effects make reserve status sticky. Despite US sanctions weaponization, no single alternative exists. Euro lacks fiscal union, Yuan has capital controls, Gold lacks yield/settlement speed. Fragmentation likely (blocs) rather than replacement.",
+  "source": "government_source",
+  "source_url": "https://www.imf.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "compatible_with": [
+    "frag_fin_reserve_currency_def_01"
+  ],
+  "incompatible_with": [],
+  "weight": 0.8835,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "MAC"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "frag_phr_unknown_definition_0199",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "phr",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Drug-induced liver injury (DILI) is liver damage caused by medications, herbal products, or dietary supplements. It is classified as hepatocellular (ALT elevation predominant), cholestatic (ALP elevation predominant), or mixed. DILI is the leading cause of acute liver failure in the US and a common reason for drug withdrawal from the market. Intrinsic DILI is dose-dependent and predictable (e.g., acetaminophen toxicity). Idiosyncratic DILI is unpredictable, not dose-dependent, and may have latency periods of days to months. Common culprits include antibiotics (amoxicillin-clavulanate), anticonvulsants, NSAIDs, statins, TB medications, and herbal supplements (green tea extract, kava). The Roussel Uclaf Causality Assessment Method (RUCAM) is the standard tool for establishing causality.",
+  "source": "pubmed.ncbi.nlm.nih.gov",
+  "source_url": "https://www.fda.gov",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "original_domain": "healthcare",
+  "original_sector": "PHR"
+}

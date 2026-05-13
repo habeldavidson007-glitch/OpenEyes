@@ -1,0 +1,21 @@
+{
+  "id": "frag_eco_GEO_sovereign_default_counter_025",
+  "domain": "science_technology",
+  "subdomain": "ENV",
+  "sector": "ENV",
+  "tags": [
+    "sovereign_debt",
+    "default",
+    "creditor_coordination",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Sovereign restructuring challenges: Creditor fragmentation complicates deals - bilateral (China), multilateral, private bondholders have different interests. China not Paris Club member, opaque lending terms. Vulture funds litigate for full repayment. Lengthy negotiations (Argentina 15 years). Moral hazard vs. debt sustainability tension. Orderly resolution mechanisms inadequate.",
+  "source": "odci_sovereign_debt",
+  "source_url": "https://www.odci.org/",
+  "credibility_class": "research_organization",
+  "year": 2024,
+  "weight": 0.89,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "frag_mh_panic_disorder_definition_0016",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "panic-attack",
+    "panic-disorder",
+    "agoraphobia",
+    "anxiety"
+  ],
+  "reasoning_role": "definition",
+  "content": "Panic Disorder is characterized by recurrent, unexpected panic attacks\u2014sudden surges of intense fear/discomfort peaking within minutes, accompanied by \u22654 physical/cognitive symptoms: palpitations, sweating, trembling, shortness of breath, chest pain, nausea, dizziness, chills/heat sensations, paresthesias, derealization/depersonalization, fear of losing control, or fear of dying. At least one attack is followed by \u22651 month of persistent concern about additional attacks, worry about consequences, or significant maladaptive behavioral change (e.g., avoidance). Panic disorder often co-occurs with agoraphobia. Lifetime prevalence ~2-3%, female predominance (2:1). Pathophysiology involves amygdala hyperactivity, locus coeruleus norepinephrine dysregulation, and respiratory sensitivity.",
+  "source": "PubMed",
+  "source_url": "https://www.nimh.nih.gov/health/topics/panic-disorder",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "original_domain": "healthcare",
+  "original_sector": "MH"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "REG-018",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "tags": [
+    "spac",
+    "sec",
+    "de_spac",
+    "securities_offering",
+    "ipo_alternative"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "SEC SPAC rules adopted January 2024 address regulatory gaps in special purpose acquisition company transactions. Key changes: (1) Enhanced disclosure requirements\u2014conflicts of interest, dilution sources, sponsor compensation, (2) Projection safe harbor eliminated for SPAC de-SPAC transactions (previously available under PSLRA), (3) Underwriters in de-SPAC deals subject to liability as statutory underwriters, (4) Redemption disclosure\u2014minimum redemption thresholds, impact on post-combination company, (5) Shell company status clarification\u2014combined company may be deemed shell if lacking sufficient assets/business. Rationale: protect retail investors from misleading projections, undisclosed conflicts, excessive dilution. Industry impact: increased compliance costs, more conservative projections, potential reduction in SPAC formation. Rules respond to 2020-2021 SPAC boom and subsequent poor performance/redeem rates exceeding 90%.",
+  "source": "regulatory_source",
+  "source_url": "https://www.bis.org",
+  "credibility_class": "international_institution",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "BIO",
+  "original_domain": "economy",
+  "original_sector": "REG"
+}

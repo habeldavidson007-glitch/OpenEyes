@@ -1,0 +1,22 @@
+{
+  "id": "endo_bariatric_trt_001",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "bariatric surgery",
+    "outcomes",
+    "nutritional supplementation",
+    "complications",
+    "follow-up"
+  ],
+  "content": "Indications (ASMBS/IFSO 2022): BMI \u226535 regardless of comorbidities; BMI 30-34.9 with metabolic disease (T2DM, hypertension, dyslipidemia, OSA); consider BMI 27.5-29.9 with uncontrolled T2DM. Preoperative: multidisciplinary evaluation (medical, psychological, nutritional), optimize comorbidities. Postoperative phases: clear liquids (days 1-7), full liquids (weeks 2-3), pureed (weeks 4-5), soft solids (weeks 6-8), regular diet thereafter. Lifelong supplementation mandatory: multivitamin with minerals, calcium citrate 1200-1500mg/day + vitamin D, vitamin B12 (oral/sublingual/injection), iron (especially menstruating women), additional vitamins as needed. Follow-up: frequent first year (2 weeks, 6 weeks, 3, 6, 9, 12 months), then annually with labs monitoring nutritional status. Complications: early (leak, bleeding, DVT/PE); late (strictures, ulcers, internal hernia, gallstones, nutritional deficiencies, hypoglycemia). Weight loss: sleeve ~20-25% total body weight, RYGB ~25-30%, BPD/DS ~30-35% at 1-2 years.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/36506510/",
+  "credibility_class": "clinical_guideline",
+  "year": 2024,
+  "reasoning_role": "definition",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

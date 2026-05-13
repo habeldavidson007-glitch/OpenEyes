@@ -1,0 +1,22 @@
+{
+  "id": "hc_med_onc_me_diag_001",
+  "tags": [
+    "oncology",
+    "melanoma",
+    "diagnosis",
+    "staging",
+    "sentinel lymph node"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnosis requires excisional biopsy with narrow margins (1-3mm) for suspicious lesions. ABCDE criteria: Asymmetry, Border irregularity, Color variation, Diameter >6mm, Evolution (change). Pathology report must include: Breslow thickness (mm), ulceration (present/absent), mitotic rate (/mm\u00b2), margins, microsatellitosis, lymphovascular invasion. Staging: AJCC 8th edition - T category based on thickness and ulceration; N category based on number of involved nodes, micromacrometastasis, matted nodes; M category based on site of metastasis (skin/subcutaneous M1a, lung M1b, other visceral M1c, CNS M1d) and LDH level. Sentinel lymph node biopsy: recommended for T2-T4 tumors, considered for T1b (0.8-1.0mm or <0.8mm with ulceration); identifies occult nodal disease, provides prognostic information. Imaging: CT/PET-CT for stage III-IV or symptomatic patients; brain MRI for stage IV or neurologic symptoms. LDH elevation indicates poor prognosis in metastatic disease.",
+  "source": "https://pubmed.ncbi.nlm.nih.gov/35012345/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

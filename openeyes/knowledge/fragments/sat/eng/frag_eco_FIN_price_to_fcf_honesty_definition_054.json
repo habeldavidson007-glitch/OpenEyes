@@ -1,0 +1,27 @@
+{
+  "id": "frag_fin_price_to_fcf_honesty_definition_054",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "peg_ratio",
+    "price_to_sales",
+    "price_to_book",
+    "ev_ebitda",
+    "pe_ratio",
+    "fundamental_analysis",
+    "earnings",
+    "valuation"
+  ],
+  "reasoning_role": "definition",
+  "content": "Price To Fcf Honesty is a core concept in fundamental analysis. It involves evaluating specific financial metrics or structural elements to determine a company's intrinsic value, operational efficiency, and long-term viability.",
+  "source": "financial_education",
+  "source_url": "https://www.investopedia.com/terms/f/freecashflow.asp",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

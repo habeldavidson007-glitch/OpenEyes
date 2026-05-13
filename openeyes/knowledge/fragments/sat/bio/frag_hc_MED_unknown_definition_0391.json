@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0391",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "GLP-1",
+    "incretin",
+    "diabetes",
+    "weight loss",
+    "cardiovascular"
+  ],
+  "reasoning_role": "definition",
+  "content": "GLP-1 (glucagon-like peptide-1) receptor agonists are incretin mimetics that enhance glucose-dependent insulin secretion, suppress glucagon, slow gastric emptying, and promote satiety. Endogenous GLP-1 secreted by L-cells in response to food intake; rapidly degraded by DPP-4 enzyme (half-life <2 minutes). GLP-1 RAs resistant to DPP-4 degradation. Available agents: short-acting (exenatide BID, lixisenatide) primarily affect postprandial glucose via gastric emptying; long-acting (liraglutide, semaglutide, dulaglutide, exenatide ER) affect fasting and postprandial glucose. Semaglutide available as weekly injection and oral formulation. Mechanism: activate GLP-1 receptors on pancreatic beta cells (insulin secretion), alpha cells (glucagon suppression), brain (satiety centers), GI tract (delayed emptying). Cardiovascular benefits demonstrated in multiple outcome trials.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/34941889/",
+  "credibility_class": "clinical_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

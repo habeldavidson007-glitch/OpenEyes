@@ -1,0 +1,23 @@
+{
+  "id": "frag_eco_COM_oil_supercycle_definition_001",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "oil",
+    "supercycle",
+    "commodity cycle",
+    "long wave"
+  ],
+  "reasoning_role": "definition",
+  "content": "A commodity supercycle is a prolonged period (10-35 years) of above-trend commodity prices driven by structural demand shifts. Historical supercycles occurred during US industrialization (1890s-1910s), WWII reconstruction (1940s-1950s), and China's urbanization boom (2000s). Supercycles require sustained demand growth from a major economy undergoing rapid development, combined with inelastic supply response.",
+  "source": "World Bank Commodity Markets Outlook",
+  "source_url": "https://www.worldbank.org/en/research/commodity-markets",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": ""
+}

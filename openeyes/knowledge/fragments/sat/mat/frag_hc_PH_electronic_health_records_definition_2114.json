@@ -1,0 +1,21 @@
+{
+  "id": "HC-2114",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "sector": "MAT",
+  "tags": [
+    "electronic health records",
+    "optimization",
+    "burnout",
+    "usability"
+  ],
+  "reasoning_role": "definition",
+  "content": "EHR optimization strategies address documented burdens: (1) Documentation improvement - scribes (virtual or in-person), voice recognition, template optimization reducing physician documentation time by 1-2 hours/day; (2) Inbox management - team-based routing, standing orders for common requests, limiting patient portal message volume; (3) Alert optimization - reducing alert fatigue by suppressing low-value alerts (from 50-100/day to 10-20 high-priority); (4) Interoperability advancement - TEFCA framework enabling nationwide exchange, FHIR APIs for app integration; (5) Usability improvements - specialty-specific workflows, reduced clicks for common tasks. Physicians spend 2:1 ratio of EHR time to face-to-face time (6 hours EHR for 4 hours patient care), contributing to burnout. Well-optimized EHRs show 20-30% reduction in documentation time.",
+  "source": "ahrq.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "PH"
+}

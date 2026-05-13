@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0301",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "pediatric_pharmacology",
+    "developmental_changes",
+    "ADME_differences",
+    "neonates",
+    "children"
+  ],
+  "reasoning_role": "definition",
+  "content": "Pediatric pharmacology differs from adults due to developmental changes in ADME processes. Neonates/infants: immature hepatic enzymes (reduced glucuronidation - chloramphenicol gray baby syndrome), reduced GFR (aminoglycoside toxicity risk), higher total body water (increased Vd for hydrophilic drugs), lower protein binding (increased free drug). Children (1-12 years): often faster metabolism than adults (higher mg/kg doses needed for some drugs), mature renal function by 6-12 months. Adolescents: approaching adult physiology but hormonal changes affect drug response. Body composition changes: premature neonates 85% water, adults 60%. Gastric pH higher at birth (affects absorption of weak acids/bases); gastric emptying slower in neonates. Blood-brain barrier more permeable in infants.",
+  "source": "fda.gov",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

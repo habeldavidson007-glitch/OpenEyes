@@ -1,0 +1,22 @@
+{
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "sector": "ENG",
+  "tags": [
+    "epidemiology",
+    "study design",
+    "randomization",
+    "confounding",
+    "bias"
+  ],
+  "reasoning_role": "definition",
+  "content": "Selecting appropriate study designs depends on research questions, ethics, feasibility, and resources. RCTs are mandatory for regulatory approval of new treatments but may be unethical (withholding proven treatment), impractical (long latency outcomes), or too expensive. Cohort studies excel for: studying harmful exposures where randomization is unethical (smoking, occupational hazards); examining multiple outcomes from one exposure; establishing disease natural history; when exposure is rare. Prospective cohorts minimize recall bias but require long follow-up; retrospective cohorts use existing data but have limited variable availability. Case-control studies are optimal for: rare diseases (cancers, congenital anomalies); diseases with long latency; initial hypothesis testing before committing to expensive cohorts. Controls must represent the source population that produced cases. Cross-sectional studies serve public health surveillance, healthcare needs assessment, and generating hypotheses about associations. Nested case-control studies within cohorts combine advantages: cohort's defined population with case-control efficiency. Pragmatic RCTs bridge efficacy-effectiveness gaps by testing interventions in real-world settings with broad inclusion criteria.",
+  "source": "https://www.ncbi.nlm.nih.gov/books/NBK448143/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "id": "HC-2180",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "PH"
+}

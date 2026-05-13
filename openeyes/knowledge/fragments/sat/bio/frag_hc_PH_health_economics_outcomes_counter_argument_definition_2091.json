@@ -1,0 +1,20 @@
+{
+  "id": "PH-2091_health_economics_outcomes_counter_argument",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "health economics outcomes",
+    "public_health",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Health Economics Outcomes - methodological debates, limitations, alternative approaches",
+  "source_url": "https://www.cdc.gov/research",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2026,
+  "source": "CDC",
+  "_original_credibility_class": "peer_reviewed",
+  "original_domain": "healthcare",
+  "original_sector": "PH"
+}

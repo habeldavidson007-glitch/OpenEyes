@@ -1,0 +1,23 @@
+{
+  "id": "frag_mh_bipolar_disorder_treatment_protocol_0056",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "bipolar",
+    "mood-stabilizers",
+    "lithium",
+    "treatment"
+  ],
+  "reasoning_role": "definition",
+  "content": "Acute mania treatment: lithium, valproate, or atypical antipsychotics (e.g., olanzapine, risperidone, quetiapine, aripiprazole); severe cases may require combination therapy. Acute bipolar depression: quetiapine, lurasidone, lamotrigine, or lithium; antidepressants used cautiously due to mania risk. Maintenance: lithium remains first-line with strongest evidence for suicide prevention; alternatives include valproate, lamotrigine (especially for depression prevention), and atypical antipsychotics. Psychoeducation, CBT, interpersonal and social rhythm therapy (IPSRT), and family-focused therapy improve outcomes. Regular monitoring of medication levels, renal/thyroid function (lithium), liver function (valproate), and metabolic parameters is essential.",
+  "source": "PubMed",
+  "source_url": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
+  "credibility_class": "A",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "original_domain": "healthcare",
+  "original_sector": "MH"
+}

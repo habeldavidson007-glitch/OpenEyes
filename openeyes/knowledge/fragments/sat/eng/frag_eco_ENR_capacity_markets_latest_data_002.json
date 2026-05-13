@@ -1,0 +1,22 @@
+{
+  "id": "frag_eco_ENR_capacity_markets_latest_002",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "capacity_markets",
+    "power"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Power markets: capacity_markets. Role: latest_data. Market design and infrastructure.",
+  "source": "DOE",
+  "source_url": "https://energy.gov/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "last_verified": "2026-05-11",
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": ""
+}

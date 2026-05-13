@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0417",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "adrenal insufficiency",
+    "cosyntropin test",
+    "ACTH",
+    "renin",
+    "diagnosis"
+  ],
+  "reasoning_role": "definition",
+  "content": "Diagnostic evaluation: Morning (8AM) serum cortisol - <3 mcg/dL diagnostic of AI, >18 mcg/dL excludes AI, intermediate requires stimulation testing. ACTH level distinguishes primary (elevated) from secondary/tertiary (low/normal). Cosyntropin (ACTH) stimulation test: gold standard - administer 250mcg cosyntropin IM/IV, measure cortisol at 0, 30, 60 minutes; normal response peak cortisol \u226518-20 mcg/dL. Low-dose (1mcg) test more sensitive for secondary AI. Plasma renin activity elevated in primary AI (mineralocorticoid deficiency). Additional workup for primary AI: 21-hydroxylase antibodies (autoimmune), very-long-chain fatty acids (adrenoleukodystrophy), adrenal CT (hemorrhage, infiltration, TB calcification). For secondary/tertiary: pituitary MRI, other pituitary hormone assessment. Consider insulin tolerance test or metyrapone test if cosyntropin test equivocal for central AI.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/33985612/",
+  "credibility_class": "clinical_guideline",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

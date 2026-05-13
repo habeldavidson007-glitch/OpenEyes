@@ -1,0 +1,20 @@
+{
+  "id": "frag_eco_GEO_cbam_def_045",
+  "domain": "science_technology",
+  "subdomain": "SPC",
+  "sector": "SPC",
+  "tags": [
+    "carbon_border_adjustment",
+    "trade_policy",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "EU Carbon Border Adjustment Mechanism (CBAM): Carbon tariff on imports from high-emission sectors (steel, cement, aluminum, fertilizers, electricity, hydrogen). Started reporting October 2023, financial obligations 2026. Goal: prevent carbon leakage, level playing field for EU industry. Revenue to EU budget. WTO compatibility debated.",
+  "source": "various_official_sources",
+  "source_url": "https://www.wto.org/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.93,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

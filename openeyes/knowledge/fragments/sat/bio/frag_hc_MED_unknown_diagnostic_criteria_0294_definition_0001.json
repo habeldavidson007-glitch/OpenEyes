@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_diagnostic_criteria_0294",
+  "domain": "science_technology",
+  "subdomain": "BIO",
+  "sector": "BIO",
+  "tags": [
+    "genotyping",
+    "phenotyping",
+    "probe_drugs",
+    "metabolic_ratio",
+    "FDA_classification"
+  ],
+  "reasoning_role": "definition",
+  "content": "CYP phenotype/genotype testing guides personalized therapy. Genotyping identifies alleles: CYP2D6 (*3, *4, *5 = non-functional; gene duplication = ultrarapid), CYP2C19 (*2, *3 = loss-of-function; *17 = gain-of-function), CYP2C9 (*2, *3 = reduced function). Phenotyping uses probe drugs: dextromethorphan (CYP2D6), omeprazole (CYP2C19), midazolam (CYP3A4). Metabolic ratio (parent drug/metabolite in urine or plasma) indicates enzyme activity. FDA Table of Substrates, Inhibitors, and Inducers categorizes drugs by CYP involvement. Inhibition criteria: \u22655-fold increase in substrate AUC = strong inhibitor; 2-5 fold = moderate; 1.25-2 fold = weak. Induction criteria: \u226580% decrease in substrate AUC = strong inducer.",
+  "source": "ema.europa.eu",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

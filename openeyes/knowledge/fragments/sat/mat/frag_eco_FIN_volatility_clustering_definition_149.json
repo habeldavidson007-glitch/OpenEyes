@@ -1,0 +1,21 @@
+{
+  "id": "FIN-149",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "tags": [
+    "volatility",
+    "garch",
+    "time_series",
+    "risk_modeling"
+  ],
+  "content": "Volatility clustering is the empirical observation that large price changes tend to be followed by large changes (of either sign), and small changes by small changes. This violates the random walk assumption of constant variance. Engle's ARCH model (1982) and Bollerslev's GARCH extension (1986) capture this by modeling variance as time-varying, dependent on past squared residuals and past variance. GARCH(1,1)\u2014the most common specification\u2014means today's variance depends on yesterday's squared return and yesterday's variance forecast. These models are essential for option pricing, risk management, and portfolio optimization. Volatility clustering implies mean reversion in volatility: high volatility periods eventually subside, but timing is unpredictable.",
+  "year": "2023",
+  "source": "Journal of Econometrics",
+  "source_url": "https://www.journals.elsevier.com/journal-of-econometrics",
+  "verified": true,
+  "reasoning_role": "definition",
+  "credibility_class": "academic_research",
+  "sector": "MAT",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

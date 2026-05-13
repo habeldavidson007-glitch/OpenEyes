@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0343",
+  "domain": "science_technology",
+  "subdomain": "MAT",
+  "sector": "MAT",
+  "tags": [
+    "oncology",
+    "tumor microenvironment",
+    "immune cells",
+    "stroma",
+    "immunotherapy response"
+  ],
+  "reasoning_role": "definition",
+  "content": "The tumor microenvironment (TME) comprises cancer cells and surrounding non-malignant cells that influence tumor behavior. Cellular components: immune cells (T-cells, B-cells, NK cells, macrophages, dendritic cells, myeloid-derived suppressor cells, neutrophils); stromal cells (cancer-associated fibroblasts, endothelial cells, pericytes, adipocytes). Non-cellular components: extracellular matrix (collagen, fibronectin, hyaluronic acid), cytokines, chemokines, growth factors, metabolites. TME classification: 'hot' tumors (inflamed, T-cell infiltrated, responsive to immunotherapy - melanoma, NSCLC, MSI-H cancers); 'cold' tumors (immune-excluded or immune-desert, poor immunotherapy response - pancreatic, prostate, glioblastoma). Immunosuppressive mechanisms: PD-L1 expression, T-regulatory cells, M2 macrophages, MDSCs, inhibitory cytokines (TGF-\u03b2, IL-10), metabolic suppression (adenosine, tryptophan depletion, lactate accumulation). TME evolves under treatment pressure, contributing to resistance.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/36234567/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}

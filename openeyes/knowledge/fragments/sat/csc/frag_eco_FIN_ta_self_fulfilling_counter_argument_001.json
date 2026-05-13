@@ -1,0 +1,22 @@
+{
+  "id": "frag_fin_ta_self_fulfilling_counter_argument",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "tags": [
+    "chart_patterns",
+    "counter_argument",
+    "technical_analysis"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "As more participants use TA, edges diminish. Algorithms front-run obvious patterns. What worked historically may not work as markets evolve. TA is arms race, not static playbook.",
+  "source": "OpenEyes Knowledge Base",
+  "source_url": "https://www.investopedia.com",
+  "credibility_class": "financial_education",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "sector": "CSC",
+  "original_domain": "economy",
+  "original_sector": "FIN"
+}

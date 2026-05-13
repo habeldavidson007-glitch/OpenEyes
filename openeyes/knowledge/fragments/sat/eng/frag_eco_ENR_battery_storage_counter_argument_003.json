@@ -1,0 +1,22 @@
+{
+  "id": "frag_eco_ENR_battery_storage_counter_003",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "tags": [
+    "battery_storage",
+    "renewables"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Renewables fragment: battery_storage. Role: counter_argument. Cost structures and integration challenges.",
+  "source": "IEA",
+  "source_url": "https://iea.org/",
+  "credibility_class": "government_source",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "last_verified": "2026-05-11",
+  "sector": "ENG",
+  "original_domain": "economy",
+  "original_sector": ""
+}

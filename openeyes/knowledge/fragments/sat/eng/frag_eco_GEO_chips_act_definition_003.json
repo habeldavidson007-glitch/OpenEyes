@@ -1,0 +1,21 @@
+{
+  "id": "frag_eco_GEO_chips_act_def_003",
+  "domain": "science_technology",
+  "subdomain": "ENG",
+  "sector": "ENG",
+  "tags": [
+    "chips_act",
+    "semiconductors",
+    "export_controls",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "CHIPS and Science Act (2022): $52.7B in semiconductor subsidies, $24B tax credits. Goals: restore US chip manufacturing capacity, counter China's semiconductor ambitions. Includes guardrails preventing recipients from expanding advanced chip production in China for 10 years.",
+  "source": "department_of_commerce",
+  "source_url": "https://www.commerce.gov/",
+  "credibility_class": "government_agency",
+  "year": 2024,
+  "weight": 0.96,
+  "original_domain": "economy",
+  "original_sector": "GEO"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "frag_med_unknown_definition_0452",
+  "domain": "science_technology",
+  "subdomain": "CSC",
+  "sector": "CSC",
+  "tags": [
+    "status-epilepticus",
+    "benzodiazepine",
+    "fosphenytoin",
+    "treatment-protocol",
+    "anesthetic"
+  ],
+  "reasoning_role": "definition",
+  "content": "SE treatment follows time-based algorithm. 0-5 minutes: stabilize ABCs, secure IV access, check glucose (give thiamine 100mg + D50 if hypoglycemic), obtain labs. 5-20 minutes (first-line): benzodiazepine\u2014lorazepam 0.1mg/kg IV (max 4mg/dose, may repeat once) OR midazolam 10mg IM (preferred if no IV access) OR diazepam 0.15mg/kg IV. 20-40 minutes (second-line): fosphenytoin 20mg PE/kg IV (max 150mg/min) OR valproic acid 40mg/kg IV (max 6mg/kg/min, avoid in liver disease/pregnancy) OR levetiracetam 60mg/kg IV (max 4500mg, favorable safety profile) OR phenobarbital 15mg/kg IV. 40-60 minutes (third-line/refractory): anesthetic infusion requiring intubation and continuous EEG\u2014midazolam infusion (0.2mg/kg bolus then 0.05-2mg/kg/hr), propofol (1-2mg/kg bolus then 30-200mcg/kg/min, watch for propofol infusion syndrome), or pentobarbital (5-15mg/kg bolus then 0.5-5mg/kg/hr). Goal: burst-suppression on EEG for 24-48 hours. Super-refractory SE: consider immunotherapy (steroids, IVIG, PLEX), ketogenic diet, hypothermia, multiple drug combinations, epilepsy surgery evaluation.",
+  "source": "PubMed",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
+  "credibility_class": "peer_reviewed_journal",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "_original_credibility_class": "A",
+  "original_domain": "healthcare",
+  "original_sector": "MED"
+}
