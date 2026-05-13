@@ -1,53 +1,25 @@
 ```
-# Build artifacts and dependencies
-__pycache__/
+# Compiled and build artifacts
 *.pyc
-*.pyo
-*.pyd
+__pycache__/
 *.o
 *.obj
-*.so
-*.dll
-*.a
-*.lib
-*.dylib
-*.exe
 *.out
-
-# Dependencies
-node_modules/
-venv/
-.venv/
-.env
-.env.local
-.env.*
-
-# Logs
+dist/
+build/
+target/
 *.log
-
-# Coverage
+*.tmp
+*.swp
+*.swo
 coverage/
 htmlcov/
 .coverage
-
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
-*.whl
-*.egg
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
 .DS_Store
 Thumbs.db
-
-# Compressed files
+.env
+.env.local
+*.env.*
 *.zip
 *.gz
 *.tar
@@ -70,30 +42,4 @@ Thumbs.db
 *.tar.bz2
 *.tar.xz
 *.tar.zst
-
-# Python specific
-*.py[cod]
-*$py.class
-*$pyc.class
-*.so
-.Python
-install_manifest.txt
-MANIFEST
-.pytest_cache/
-.mypy_cache/
-.hypothesis/
-
-# Gradle
-.gradle/
-build/
-
-# Target directory (common in Rust, Java projects)
-target/
-
-# Julia
-julia-*/
-
-# Zig
-zig*/
-
 ```
