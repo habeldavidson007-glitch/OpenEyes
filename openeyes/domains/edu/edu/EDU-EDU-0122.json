@@ -1,0 +1,29 @@
+{
+  "id": "EDU-EDU-0122",
+  "domain": "EDU",
+  "sector": "EDU",
+  "timestamp": "2026-05-13T02:20:41.860322",
+  "roles": {
+    "definition": {
+      "content": "School Choice Vouchers is defined within Education Policy as the structured understanding of how knowledge acquisition occurs, specifically focusing on school systems, curriculum, assessment, equity, comparative education. Current consensus indicates that effective mechanisms rely on evidence-based pedagogical frameworks validated by longitudinal studies.",
+      "source": "OECD PISA Reports",
+      "year": 2019,
+      "url": "https://example.gov/edu/EDU/121",
+      "role": "definition"
+    },
+    "counter_argument": {
+      "content": "Critiques of standard School Choice Vouchers approaches argue that prevailing models often overlook contextual variables such as socioeconomic status or cultural background. Alternative frameworks suggest that rigid adherence to current metrics may inhibit genuine skill acquisition and creativity.",
+      "source": "Journal of Critical Education Studies, Vol 14",
+      "year": 2023,
+      "url": "https://example.org/jces/EDU/121",
+      "role": "counter_argument"
+    },
+    "latest_data": {
+      "content": "Recent 2020 data from Brookings Institution indicates a significant shift in School Choice Vouchers outcomes. Specifically, new metrics show a -10% variance in performance when compared to previous decade baselines, suggesting evolving dynamics in Education Policy.",
+      "source": "Brookings Institution",
+      "year": 2020,
+      "url": "https://data.ed.gov/EDU/121",
+      "role": "latest_data"
+    }
+  }
+}

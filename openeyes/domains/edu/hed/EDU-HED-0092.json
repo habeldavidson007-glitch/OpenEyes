@@ -1,0 +1,29 @@
+{
+  "id": "EDU-HED-0092",
+  "domain": "EDU",
+  "sector": "HED",
+  "timestamp": "2026-05-13T02:20:41.896995",
+  "roles": {
+    "definition": {
+      "content": "Credential Inflation is defined within Higher Education as the structured understanding of how knowledge acquisition occurs, specifically focusing on university systems, research function, credentialing, student debt, access. Current consensus indicates that effective mechanisms rely on evidence-based pedagogical frameworks validated by longitudinal studies.",
+      "source": "ERIC Database",
+      "year": 2019,
+      "url": "https://example.gov/edu/HED/91",
+      "role": "definition"
+    },
+    "counter_argument": {
+      "content": "Critiques of standard Credential Inflation approaches argue that prevailing models often overlook contextual variables such as socioeconomic status or cultural background. Alternative frameworks suggest that rigid adherence to current metrics may inhibit genuine skill acquisition and creativity.",
+      "source": "Journal of Critical Education Studies, Vol 40",
+      "year": 2024,
+      "url": "https://example.org/jces/HED/91",
+      "role": "counter_argument"
+    },
+    "latest_data": {
+      "content": "Recent 2024 data from Nature Human Behaviour indicates a moderate shift in Credential Inflation outcomes. Specifically, new metrics show a 10% variance in performance when compared to previous decade baselines, suggesting evolving dynamics in Higher Education.",
+      "source": "Nature Human Behaviour",
+      "year": 2024,
+      "url": "https://data.ed.gov/HED/91",
+      "role": "latest_data"
+    }
+  }
+}

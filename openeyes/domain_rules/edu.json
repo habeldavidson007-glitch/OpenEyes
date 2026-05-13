@@ -1,0 +1,44 @@
+{
+  "domain": "EDU",
+  "name": "Education",
+  "description": "How knowledge and skills are transmitted, developed, and evaluated.",
+  "sectors": {
+    "LRN": {
+      "name": "Learning Science",
+      "description": "How learning works \u2014 cognitive load, memory, retrieval practice, motivation"
+    },
+    "EDU": {
+      "name": "Education Policy",
+      "description": "School systems, curriculum, assessment, equity, comparative education"
+    },
+    "HED": {
+      "name": "Higher Education",
+      "description": "University systems, research function, credentialing, student debt, access"
+    },
+    "SKL": {
+      "name": "Skills & Development",
+      "description": "Vocational training, adult learning, workforce development, skill assessment"
+    }
+  },
+  "primary_sources": [
+    "OECD PISA Reports",
+    "US Department of Education",
+    "ERIC Database",
+    "American Educational Research Journal",
+    "Nature Human Behaviour",
+    "Journal of Educational Psychology",
+    "Brookings Institution",
+    "UNESCO Institute for Statistics"
+  ],
+  "fragment_rules": {
+    "min_per_sector": 50,
+    "required_roles": [
+      "definition",
+      "counter_argument",
+      "latest_data"
+    ],
+    "source_requirements": "Must cite peer-reviewed education research, government data (DoE, OECD), or established academic journals.",
+    "recency_cap": 10,
+    "philosophy_guard": "Fragments must describe educational mechanisms and outcomes descriptively, not advocate for specific policy prescriptions."
+  }
+}

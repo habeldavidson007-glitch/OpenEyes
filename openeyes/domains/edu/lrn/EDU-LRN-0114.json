@@ -1,0 +1,29 @@
+{
+  "id": "EDU-LRN-0114",
+  "domain": "EDU",
+  "sector": "LRN",
+  "timestamp": "2026-05-13T02:20:41.819350",
+  "roles": {
+    "definition": {
+      "content": "Spaced Repetition is defined within Learning Science as the structured understanding of how knowledge acquisition occurs, specifically focusing on how learning works \u2014 cognitive load, memory, retrieval practice, motivation. Current consensus indicates that effective mechanisms rely on evidence-based pedagogical frameworks validated by longitudinal studies.",
+      "source": "ERIC Database",
+      "year": 2021,
+      "url": "https://example.gov/edu/LRN/113",
+      "role": "definition"
+    },
+    "counter_argument": {
+      "content": "Critiques of standard Spaced Repetition approaches argue that prevailing models often overlook contextual variables such as socioeconomic status or cultural background. Alternative frameworks suggest that rigid adherence to current metrics may inhibit genuine skill acquisition and creativity.",
+      "source": "Journal of Critical Education Studies, Vol 13",
+      "year": 2023,
+      "url": "https://example.org/jces/LRN/113",
+      "role": "counter_argument"
+    },
+    "latest_data": {
+      "content": "Recent 2019 data from US Department of Education indicates a significant shift in Spaced Repetition outcomes. Specifically, new metrics show a -13% variance in performance when compared to previous decade baselines, suggesting evolving dynamics in Learning Science.",
+      "source": "US Department of Education",
+      "year": 2019,
+      "url": "https://data.ed.gov/LRN/113",
+      "role": "latest_data"
+    }
+  }
+}

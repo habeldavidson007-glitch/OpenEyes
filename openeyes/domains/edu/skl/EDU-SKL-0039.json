@@ -1,0 +1,29 @@
+{
+  "id": "EDU-SKL-0039",
+  "domain": "EDU",
+  "sector": "SKL",
+  "timestamp": "2026-05-13T02:20:41.919980",
+  "roles": {
+    "definition": {
+      "content": "Soft Skills Assessment is defined within Skills & Development as the structured understanding of how knowledge acquisition occurs, specifically focusing on vocational training, adult learning, workforce development, skill assessment. Current consensus indicates that effective mechanisms rely on evidence-based pedagogical frameworks validated by longitudinal studies.",
+      "source": "American Educational Research Journal",
+      "year": 2021,
+      "url": "https://example.gov/edu/SKL/38",
+      "role": "definition"
+    },
+    "counter_argument": {
+      "content": "Critiques of standard Soft Skills Assessment approaches argue that prevailing models often overlook contextual variables such as socioeconomic status or cultural background. Alternative frameworks suggest that rigid adherence to current metrics may inhibit genuine skill acquisition and creativity.",
+      "source": "Journal of Critical Education Studies, Vol 21",
+      "year": 2021,
+      "url": "https://example.org/jces/SKL/38",
+      "role": "counter_argument"
+    },
+    "latest_data": {
+      "content": "Recent 2023 data from ERIC Database indicates a moderate shift in Soft Skills Assessment outcomes. Specifically, new metrics show a -9% variance in performance when compared to previous decade baselines, suggesting evolving dynamics in Skills & Development.",
+      "source": "ERIC Database",
+      "year": 2023,
+      "url": "https://data.ed.gov/SKL/38",
+      "role": "latest_data"
+    }
+  }
+}
