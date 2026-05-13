@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0062",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Authority and obedience",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Authority and obedience: A comprehensive examination of authority and obedience within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/61",
+      "year": 2021,
+      "credibility_score": 0.9714700105254007,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on authority and obedience: Examining objections, alternative frameworks, and limitations of dominant approaches to authority and obedience.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/counter/61",
+      "year": 2023,
+      "credibility_score": 0.8902768041956604,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in authority and obedience: Current research trends, emerging debates, and new applications of authority and obedience in contemporary philosophy.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/latest/61",
+      "year": 2024,
+      "credibility_score": 0.9243774041071487,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.402800",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "authority_and_obedience"
+    ]
+  }
+}

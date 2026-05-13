@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0048",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Cognitive biases",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Cognitive biases: A comprehensive examination of cognitive biases within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/47",
+      "year": 2024,
+      "credibility_score": 0.8870443272073851,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on cognitive biases: Examining objections, alternative frameworks, and limitations of dominant approaches to cognitive biases.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/counter/47",
+      "year": 2020,
+      "credibility_score": 0.8439182114441266,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in cognitive biases: Current research trends, emerging debates, and new applications of cognitive biases in contemporary philosophy.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/latest/47",
+      "year": 2024,
+      "credibility_score": 0.9147611759042777,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.360380",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "cognitive_biases"
+    ]
+  }
+}

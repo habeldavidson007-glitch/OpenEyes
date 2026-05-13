@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0024",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Heuristics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Heuristics: A comprehensive examination of heuristics within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/23",
+      "year": 2014,
+      "credibility_score": 0.9201451886298047,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on heuristics: Examining objections, alternative frameworks, and limitations of dominant approaches to heuristics.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/counter/23",
+      "year": 2014,
+      "credibility_score": 0.883537588127345,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in heuristics: Current research trends, emerging debates, and new applications of heuristics in contemporary philosophy.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/latest/23",
+      "year": 2022,
+      "credibility_score": 0.9151141706333855,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.357473",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "heuristics"
+    ]
+  }
+}

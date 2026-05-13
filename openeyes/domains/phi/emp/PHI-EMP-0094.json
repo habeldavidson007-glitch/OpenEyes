@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0094",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Deontological ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Deontological ethics: A comprehensive examination of deontological ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/93",
+      "year": 2024,
+      "credibility_score": 0.9390744254873128,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on deontological ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to deontological ethics.",
+      "source": "Ethics journal",
+      "url": "https://example.com/emp/counter/93",
+      "year": 2022,
+      "credibility_score": 0.928402390544081,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in deontological ethics: Current research trends, emerging debates, and new applications of deontological ethics in contemporary philosophy.",
+      "source": "Business Ethics Quarterly",
+      "url": "https://example.com/emp/latest/93",
+      "year": 2020,
+      "credibility_score": 0.8966935968735914,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.315063",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "deontological_ethics"
+    ]
+  }
+}

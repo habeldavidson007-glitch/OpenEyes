@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0117",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Business ethics and corporate responsibility",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Business ethics and corporate responsibility: A comprehensive examination of business ethics and corporate responsibility within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Business Ethics Quarterly",
+      "url": "https://example.com/emp/116",
+      "year": 2019,
+      "credibility_score": 0.9378590193543165,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on business ethics and corporate responsibility: Examining objections, alternative frameworks, and limitations of dominant approaches to business ethics and corporate responsibility.",
+      "source": "Ethics journal",
+      "url": "https://example.com/emp/counter/116",
+      "year": 2017,
+      "credibility_score": 0.8845665131023855,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in business ethics and corporate responsibility: Current research trends, emerging debates, and new applications of business ethics and corporate responsibility in contemporary philosophy.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/latest/116",
+      "year": 2023,
+      "credibility_score": 0.9365814675998602,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.320555",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "business_ethics_and_corporate_responsibility"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0055",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Conservatism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Conservatism: A comprehensive examination of conservatism within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/conservatism/",
+      "year": 2023,
+      "credibility_score": 0.9230701302292412,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on conservatism: Examining objections, alternative frameworks, and limitations of dominant approaches to conservatism.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/counter/54",
+      "year": 2019,
+      "credibility_score": 0.8909815510302536,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in conservatism: Current research trends, emerging debates, and new applications of conservatism in contemporary philosophy.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/latest/54",
+      "year": 2024,
+      "credibility_score": 0.9201714347500359,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.401967",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "conservatism"
+    ]
+  }
+}

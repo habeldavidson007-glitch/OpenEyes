@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0040",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Rationalism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Rationalism: A comprehensive examination of rationalism within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/39",
+      "year": 2021,
+      "credibility_score": 0.9116548550698185,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on rationalism: Examining objections, alternative frameworks, and limitations of dominant approaches to rationalism.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/counter/39",
+      "year": 2019,
+      "credibility_score": 0.8107663581437429,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in rationalism: Current research trends, emerging debates, and new applications of rationalism in contemporary philosophy.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/latest/39",
+      "year": 2020,
+      "credibility_score": 0.9249429712065481,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.359349",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "rationalism"
+    ]
+  }
+}

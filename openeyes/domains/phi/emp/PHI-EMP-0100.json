@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0100",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Altruism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Altruism: A comprehensive examination of altruism within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Ethics journal",
+      "url": "https://example.com/emp/99",
+      "year": 2014,
+      "credibility_score": 0.9456641386153707,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on altruism: Examining objections, alternative frameworks, and limitations of dominant approaches to altruism.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/counter/99",
+      "year": 2018,
+      "credibility_score": 0.8117426309948006,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in altruism: Current research trends, emerging debates, and new applications of altruism in contemporary philosophy.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/latest/99",
+      "year": 2021,
+      "credibility_score": 0.8965528820055668,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.316460",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "altruism"
+    ]
+  }
+}

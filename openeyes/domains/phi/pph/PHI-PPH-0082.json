@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0082",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Communitarianism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Communitarianism: A comprehensive examination of communitarianism within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/81",
+      "year": 2021,
+      "credibility_score": 0.9725733989866062,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on communitarianism: Examining objections, alternative frameworks, and limitations of dominant approaches to communitarianism.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/counter/81",
+      "year": 2020,
+      "credibility_score": 0.8756828345794658,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in communitarianism: Current research trends, emerging debates, and new applications of communitarianism in contemporary philosophy.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/latest/81",
+      "year": 2024,
+      "credibility_score": 0.8846644937902601,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.416533",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "communitarianism"
+    ]
+  }
+}

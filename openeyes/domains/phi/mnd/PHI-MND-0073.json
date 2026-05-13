@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0073",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Attention and awareness",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Attention and awareness: A comprehensive examination of attention and awareness within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/attention-and-awareness/",
+      "year": 2018,
+      "credibility_score": 0.8521972344742268,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on attention and awareness: Examining objections, alternative frameworks, and limitations of dominant approaches to attention and awareness.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/counter/72",
+      "year": 2014,
+      "credibility_score": 0.8018582255076789,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in attention and awareness: Current research trends, emerging debates, and new applications of attention and awareness in contemporary philosophy.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/latest/72",
+      "year": 2023,
+      "credibility_score": 0.9391463801121833,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.454938",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "attention_and_awareness"
+    ]
+  }
+}

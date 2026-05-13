@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0145",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Human rights philosophy",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Human rights philosophy: A comprehensive examination of human rights philosophy within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/human-rights-philosophy/",
+      "year": 2015,
+      "credibility_score": 0.9708935721099632,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on human rights philosophy: Examining objections, alternative frameworks, and limitations of dominant approaches to human rights philosophy.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/counter/144",
+      "year": 2017,
+      "credibility_score": 0.8458754938867822,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in human rights philosophy: Current research trends, emerging debates, and new applications of human rights philosophy in contemporary philosophy.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/latest/144",
+      "year": 2024,
+      "credibility_score": 0.8945643637482806,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.434977",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "human_rights_philosophy"
+    ]
+  }
+}

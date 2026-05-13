@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0104",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Free will and ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Free will and ethics: A comprehensive examination of free will and ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/103",
+      "year": 2014,
+      "credibility_score": 0.8608375630365619,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on free will and ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to free will and ethics.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/counter/103",
+      "year": 2015,
+      "credibility_score": 0.872503761445486,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in free will and ethics: Current research trends, emerging debates, and new applications of free will and ethics in contemporary philosophy.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/latest/103",
+      "year": 2020,
+      "credibility_score": 0.8850295874243777,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.317522",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "free_will_and_ethics"
+    ]
+  }
+}

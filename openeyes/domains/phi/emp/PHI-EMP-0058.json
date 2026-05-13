@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0058",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Metaethics and moral realism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Metaethics and moral realism: A comprehensive examination of metaethics and moral realism within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Ethics journal",
+      "url": "https://example.com/emp/57",
+      "year": 2015,
+      "credibility_score": 0.9045033386080633,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on metaethics and moral realism: Examining objections, alternative frameworks, and limitations of dominant approaches to metaethics and moral realism.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/emp/counter/57",
+      "year": 2020,
+      "credibility_score": 0.8388230786058853,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in metaethics and moral realism: Current research trends, emerging debates, and new applications of metaethics and moral realism in contemporary philosophy.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/latest/57",
+      "year": 2023,
+      "credibility_score": 0.9415041576135892,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.295159",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "metaethics_and_moral_realism"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0013",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "British empiricism - Locke",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "British empiricism - Locke: A comprehensive examination of british empiricism - locke within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/12",
+      "year": 1807,
+      "credibility_score": 0.9652419794065082,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on british empiricism - locke: Examining objections, alternative frameworks, and limitations of dominant approaches to british empiricism - locke.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/counter/12",
+      "year": 2022,
+      "credibility_score": 0.8411546932389977,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in british empiricism - locke: Current research trends, emerging debates, and new applications of british empiricism - locke in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/12",
+      "year": 2021,
+      "credibility_score": 0.8806487022567895,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.478083",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "british_empiricism_-_locke"
+    ]
+  }
+}

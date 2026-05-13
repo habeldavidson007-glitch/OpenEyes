@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0033",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Aristotle's metaphysics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Aristotle's metaphysics: A comprehensive examination of aristotle's metaphysics within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/32",
+      "year": 727,
+      "credibility_score": 0.9528677634341529,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on aristotle's metaphysics: Examining objections, alternative frameworks, and limitations of dominant approaches to aristotle's metaphysics.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/counter/32",
+      "year": 2015,
+      "credibility_score": 0.8783326703106632,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in aristotle's metaphysics: Current research trends, emerging debates, and new applications of aristotle's metaphysics in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/32",
+      "year": 2023,
+      "credibility_score": 0.9354208374743402,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.480641",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "aristotle's_metaphysics"
+    ]
+  }
+}

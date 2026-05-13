@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0082",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Free will debates",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Free will debates: A comprehensive examination of free will debates within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/81",
+      "year": 2018,
+      "credibility_score": 0.8541469560532802,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on free will debates: Examining objections, alternative frameworks, and limitations of dominant approaches to free will debates.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/counter/81",
+      "year": 2022,
+      "credibility_score": 0.8695811399798806,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in free will debates: Current research trends, emerging debates, and new applications of free will debates in contemporary philosophy.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/latest/81",
+      "year": 2020,
+      "credibility_score": 0.9365790651232171,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.456297",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "free_will_debates"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0143",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Heidegger",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Heidegger: A comprehensive examination of heidegger within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/142",
+      "year": 2024,
+      "credibility_score": 0.8769933922346818,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on heidegger: Examining objections, alternative frameworks, and limitations of dominant approaches to heidegger.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/counter/142",
+      "year": 2021,
+      "credibility_score": 0.8151617451156772,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in heidegger: Current research trends, emerging debates, and new applications of heidegger in contemporary philosophy.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/latest/142",
+      "year": 2023,
+      "credibility_score": 0.9417542843226338,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.518567",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "heidegger"
+    ]
+  }
+}

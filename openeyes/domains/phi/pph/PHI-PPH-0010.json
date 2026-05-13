@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0010",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Political legitimacy",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Political legitimacy: A comprehensive examination of political legitimacy within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/9",
+      "year": 2018,
+      "credibility_score": 0.9409824700202988,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on political legitimacy: Examining objections, alternative frameworks, and limitations of dominant approaches to political legitimacy.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/counter/9",
+      "year": 2015,
+      "credibility_score": 0.8319921464799374,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in political legitimacy: Current research trends, emerging debates, and new applications of political legitimacy in contemporary philosophy.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/latest/9",
+      "year": 2023,
+      "credibility_score": 0.9565681161194812,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.396534",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "political_legitimacy"
+    ]
+  }
+}

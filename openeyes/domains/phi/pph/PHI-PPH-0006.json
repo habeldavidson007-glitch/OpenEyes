@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0006",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Socialism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Socialism: A comprehensive examination of socialism within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/5",
+      "year": 2019,
+      "credibility_score": 0.9142302485149487,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on socialism: Examining objections, alternative frameworks, and limitations of dominant approaches to socialism.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/counter/5",
+      "year": 2019,
+      "credibility_score": 0.8391099143455878,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in socialism: Current research trends, emerging debates, and new applications of socialism in contemporary philosophy.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/latest/5",
+      "year": 2020,
+      "credibility_score": 0.9226786968571067,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.396091",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "socialism"
+    ]
+  }
+}

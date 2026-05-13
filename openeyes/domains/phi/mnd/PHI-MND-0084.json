@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0084",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Compatibilism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Compatibilism: A comprehensive examination of compatibilism within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Neuroethics",
+      "url": "https://example.com/mnd/83",
+      "year": 2019,
+      "credibility_score": 0.8974054010470949,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on compatibilism: Examining objections, alternative frameworks, and limitations of dominant approaches to compatibilism.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/counter/83",
+      "year": 2020,
+      "credibility_score": 0.948537342472043,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in compatibilism: Current research trends, emerging debates, and new applications of compatibilism in contemporary philosophy.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/latest/83",
+      "year": 2020,
+      "credibility_score": 0.9460577120301864,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.456543",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "compatibilism"
+    ]
+  }
+}

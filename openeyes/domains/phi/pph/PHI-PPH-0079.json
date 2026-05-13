@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0079",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Liberalism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Liberalism: A comprehensive examination of liberalism within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/liberalism/",
+      "year": 2014,
+      "credibility_score": 0.9149352769993065,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on liberalism: Examining objections, alternative frameworks, and limitations of dominant approaches to liberalism.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/pph/counter/78",
+      "year": 2023,
+      "credibility_score": 0.886244614963375,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in liberalism: Current research trends, emerging debates, and new applications of liberalism in contemporary philosophy.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/latest/78",
+      "year": 2023,
+      "credibility_score": 0.94812967339106,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.415949",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "liberalism"
+    ]
+  }
+}

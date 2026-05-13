@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0092",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Self-consciousness",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Self-consciousness: A comprehensive examination of self-consciousness within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/91",
+      "year": 2021,
+      "credibility_score": 0.8920014796083936,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on self-consciousness: Examining objections, alternative frameworks, and limitations of dominant approaches to self-consciousness.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/counter/91",
+      "year": 2020,
+      "credibility_score": 0.9295336734079482,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in self-consciousness: Current research trends, emerging debates, and new applications of self-consciousness in contemporary philosophy.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/latest/91",
+      "year": 2021,
+      "credibility_score": 0.968015906250944,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.457541",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "self-consciousness"
+    ]
+  }
+}

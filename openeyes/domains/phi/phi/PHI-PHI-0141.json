@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0141",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Existentialism - Sartre",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Existentialism - Sartre: A comprehensive examination of existentialism - sartre within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/existentialism---sartre/",
+      "year": 2015,
+      "credibility_score": 0.9466189683576642,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on existentialism - sartre: Examining objections, alternative frameworks, and limitations of dominant approaches to existentialism - sartre.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/phi/counter/140",
+      "year": 2024,
+      "credibility_score": 0.9289520891051244,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in existentialism - sartre: Current research trends, emerging debates, and new applications of existentialism - sartre in contemporary philosophy.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/latest/140",
+      "year": 2021,
+      "credibility_score": 0.9136060228150623,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.518327",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "existentialism_-_sartre"
+    ]
+  }
+}

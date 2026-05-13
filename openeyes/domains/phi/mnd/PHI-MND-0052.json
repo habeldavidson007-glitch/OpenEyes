@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0052",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Mind-body problem",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Mind-body problem: A comprehensive examination of mind-body problem within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/51",
+      "year": 2023,
+      "credibility_score": 0.8930163370074353,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on mind-body problem: Examining objections, alternative frameworks, and limitations of dominant approaches to mind-body problem.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/counter/51",
+      "year": 2018,
+      "credibility_score": 0.8154787148041311,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in mind-body problem: Current research trends, emerging debates, and new applications of mind-body problem in contemporary philosophy.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/latest/51",
+      "year": 2023,
+      "credibility_score": 0.9193006597719615,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.441911",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "mind-body_problem"
+    ]
+  }
+}

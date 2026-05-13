@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0084",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Natural rights",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Natural rights: A comprehensive examination of natural rights within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/83",
+      "year": 2014,
+      "credibility_score": 0.9332039869968252,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on natural rights: Examining objections, alternative frameworks, and limitations of dominant approaches to natural rights.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/counter/83",
+      "year": 2022,
+      "credibility_score": 0.8329794500920396,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in natural rights: Current research trends, emerging debates, and new applications of natural rights in contemporary philosophy.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/pph/latest/83",
+      "year": 2024,
+      "credibility_score": 0.9219241420977048,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.416846",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "natural_rights"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0035",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Qualia",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Qualia: A comprehensive examination of qualia within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/34",
+      "year": 2018,
+      "credibility_score": 0.9403375349798992,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on qualia: Examining objections, alternative frameworks, and limitations of dominant approaches to qualia.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/counter/34",
+      "year": 2024,
+      "credibility_score": 0.9038363193790676,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in qualia: Current research trends, emerging debates, and new applications of qualia in contemporary philosophy.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/latest/34",
+      "year": 2021,
+      "credibility_score": 0.9508131181721526,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.439971",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "qualia"
+    ]
+  }
+}

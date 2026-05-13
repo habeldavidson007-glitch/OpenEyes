@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0046",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Game theory basics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Game theory basics: A comprehensive examination of game theory basics within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/45",
+      "year": 2017,
+      "credibility_score": 0.9724679438562255,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on game theory basics: Examining objections, alternative frameworks, and limitations of dominant approaches to game theory basics.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/counter/45",
+      "year": 2016,
+      "credibility_score": 0.948792864429044,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in game theory basics: Current research trends, emerging debates, and new applications of game theory basics in contemporary philosophy.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/latest/45",
+      "year": 2021,
+      "credibility_score": 0.9624771881132443,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.360160",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "game_theory_basics"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0043",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Bayesian reasoning",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Bayesian reasoning: A comprehensive examination of bayesian reasoning within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/bayesian-reasoning/",
+      "year": 2024,
+      "credibility_score": 0.8612108322733117,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on bayesian reasoning: Examining objections, alternative frameworks, and limitations of dominant approaches to bayesian reasoning.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/counter/42",
+      "year": 2021,
+      "credibility_score": 0.9042736033297097,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in bayesian reasoning: Current research trends, emerging debates, and new applications of bayesian reasoning in contemporary philosophy.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/latest/42",
+      "year": 2020,
+      "credibility_score": 0.9445854976156118,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.359734",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "bayesian_reasoning"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0062",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Mental representation",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Mental representation: A comprehensive examination of mental representation within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/61",
+      "year": 2016,
+      "credibility_score": 0.9720158356721448,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on mental representation: Examining objections, alternative frameworks, and limitations of dominant approaches to mental representation.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/mnd/counter/61",
+      "year": 2016,
+      "credibility_score": 0.8160489132429236,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in mental representation: Current research trends, emerging debates, and new applications of mental representation in contemporary philosophy.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/latest/61",
+      "year": 2020,
+      "credibility_score": 0.9099956839439478,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.443162",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "mental_representation"
+    ]
+  }
+}

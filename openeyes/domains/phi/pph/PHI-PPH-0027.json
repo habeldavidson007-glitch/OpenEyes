@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0027",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Justice as fairness",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Justice as fairness: A comprehensive examination of justice as fairness within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Political Philosophy",
+      "url": "https://example.com/pph/26",
+      "year": 2014,
+      "credibility_score": 0.9372717292875281,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on justice as fairness: Examining objections, alternative frameworks, and limitations of dominant approaches to justice as fairness.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/counter/26",
+      "year": 2018,
+      "credibility_score": 0.8131514862105457,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in justice as fairness: Current research trends, emerging debates, and new applications of justice as fairness in contemporary philosophy.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/latest/26",
+      "year": 2022,
+      "credibility_score": 0.929955953422932,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.398616",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "justice_as_fairness"
+    ]
+  }
+}

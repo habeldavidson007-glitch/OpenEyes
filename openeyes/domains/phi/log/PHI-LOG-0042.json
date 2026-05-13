@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0042",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Scientific method",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Scientific method: A comprehensive examination of scientific method within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/41",
+      "year": 2024,
+      "credibility_score": 0.9382072291481348,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on scientific method: Examining objections, alternative frameworks, and limitations of dominant approaches to scientific method.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/counter/41",
+      "year": 2021,
+      "credibility_score": 0.900721665604397,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in scientific method: Current research trends, emerging debates, and new applications of scientific method in contemporary philosophy.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/log/latest/41",
+      "year": 2024,
+      "credibility_score": 0.9423527478899284,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.359588",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "scientific_method"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0028",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Predicate logic",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Predicate logic: A comprehensive examination of predicate logic within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/27",
+      "year": 2018,
+      "credibility_score": 0.9230477365311263,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on predicate logic: Examining objections, alternative frameworks, and limitations of dominant approaches to predicate logic.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/counter/27",
+      "year": 2014,
+      "credibility_score": 0.8303874154366535,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in predicate logic: Current research trends, emerging debates, and new applications of predicate logic in contemporary philosophy.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/latest/27",
+      "year": 2022,
+      "credibility_score": 0.9554609312657573,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.358008",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "predicate_logic"
+    ]
+  }
+}

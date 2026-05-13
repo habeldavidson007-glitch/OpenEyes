@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0138",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Schopenhauer",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Schopenhauer: A comprehensive examination of schopenhauer within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/137",
+      "year": 2020,
+      "credibility_score": 0.9516836891764939,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on schopenhauer: Examining objections, alternative frameworks, and limitations of dominant approaches to schopenhauer.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/counter/137",
+      "year": 2018,
+      "credibility_score": 0.8580970307155962,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in schopenhauer: Current research trends, emerging debates, and new applications of schopenhauer in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/137",
+      "year": 2023,
+      "credibility_score": 0.9697560987502085,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.517964",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "schopenhauer"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0087",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Postmodernism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Postmodernism: A comprehensive examination of postmodernism within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/86",
+      "year": 2024,
+      "credibility_score": 0.9623315170891233,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on postmodernism: Examining objections, alternative frameworks, and limitations of dominant approaches to postmodernism.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/phi/counter/86",
+      "year": 2024,
+      "credibility_score": 0.8837859597285925,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in postmodernism: Current research trends, emerging debates, and new applications of postmodernism in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/86",
+      "year": 2024,
+      "credibility_score": 0.9455149743055751,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.499196",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "postmodernism"
+    ]
+  }
+}

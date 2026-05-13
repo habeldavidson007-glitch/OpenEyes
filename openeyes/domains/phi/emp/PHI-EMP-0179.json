@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0179",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Virtue ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Virtue ethics: A comprehensive examination of virtue ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/178",
+      "year": 2017,
+      "credibility_score": 0.8744155371115253,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on virtue ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to virtue ethics.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/counter/178",
+      "year": 2023,
+      "credibility_score": 0.8678486428943452,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in virtue ethics: Current research trends, emerging debates, and new applications of virtue ethics in contemporary philosophy.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/latest/178",
+      "year": 2022,
+      "credibility_score": 0.9615582975978809,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.340991",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "virtue_ethics"
+    ]
+  }
+}

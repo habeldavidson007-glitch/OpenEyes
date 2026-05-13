@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0003",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Applied ethics in healthcare",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Applied ethics in healthcare: A comprehensive examination of applied ethics in healthcare within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/2",
+      "year": 2018,
+      "credibility_score": 0.854346345741091,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on applied ethics in healthcare: Examining objections, alternative frameworks, and limitations of dominant approaches to applied ethics in healthcare.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/counter/2",
+      "year": 2017,
+      "credibility_score": 0.8886191182170184,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in applied ethics in healthcare: Current research trends, emerging debates, and new applications of applied ethics in healthcare in contemporary philosophy.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/latest/2",
+      "year": 2023,
+      "credibility_score": 0.9024569168533476,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.275934",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "applied_ethics_in_healthcare"
+    ]
+  }
+}

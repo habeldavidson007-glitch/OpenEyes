@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0157",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Justice and fairness",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Justice and fairness: A comprehensive examination of justice and fairness within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/156",
+      "year": 2016,
+      "credibility_score": 0.9382866950711276,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on justice and fairness: Examining objections, alternative frameworks, and limitations of dominant approaches to justice and fairness.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/counter/156",
+      "year": 2017,
+      "credibility_score": 0.8607669359694373,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in justice and fairness: Current research trends, emerging debates, and new applications of justice and fairness in contemporary philosophy.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/latest/156",
+      "year": 2021,
+      "credibility_score": 0.8911221716976446,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.338221",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "justice_and_fairness"
+    ]
+  }
+}

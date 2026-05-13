@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0138",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Informed consent",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Informed consent: A comprehensive examination of informed consent within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Business Ethics Quarterly",
+      "url": "https://example.com/emp/137",
+      "year": 2016,
+      "credibility_score": 0.9374163027537589,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on informed consent: Examining objections, alternative frameworks, and limitations of dominant approaches to informed consent.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/counter/137",
+      "year": 2020,
+      "credibility_score": 0.8417392000750669,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in informed consent: Current research trends, emerging debates, and new applications of informed consent in contemporary philosophy.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/latest/137",
+      "year": 2021,
+      "credibility_score": 0.959541274331933,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.335729",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "informed_consent"
+    ]
+  }
+}

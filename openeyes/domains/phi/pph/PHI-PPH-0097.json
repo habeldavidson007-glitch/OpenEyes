@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0097",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Multiculturalism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Multiculturalism: A comprehensive examination of multiculturalism within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/multiculturalism/",
+      "year": 2021,
+      "credibility_score": 0.8620352185847704,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on multiculturalism: Examining objections, alternative frameworks, and limitations of dominant approaches to multiculturalism.",
+      "source": "Journal of Political Philosophy",
+      "url": "https://example.com/pph/counter/96",
+      "year": 2018,
+      "credibility_score": 0.8495304901210299,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in multiculturalism: Current research trends, emerging debates, and new applications of multiculturalism in contemporary philosophy.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/latest/96",
+      "year": 2021,
+      "credibility_score": 0.9309240215870581,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.418465",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "multiculturalism"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0187",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Moral responsibility",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Moral responsibility: A comprehensive examination of moral responsibility within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Business Ethics Quarterly",
+      "url": "https://example.com/emp/186",
+      "year": 2020,
+      "credibility_score": 0.8764691949031651,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on moral responsibility: Examining objections, alternative frameworks, and limitations of dominant approaches to moral responsibility.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/counter/186",
+      "year": 2016,
+      "credibility_score": 0.9471787907466915,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in moral responsibility: Current research trends, emerging debates, and new applications of moral responsibility in contemporary philosophy.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/latest/186",
+      "year": 2023,
+      "credibility_score": 0.95865167436556,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.341962",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "moral_responsibility"
+    ]
+  }
+}

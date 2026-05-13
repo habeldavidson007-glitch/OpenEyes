@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0024",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Memory and identity",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Memory and identity: A comprehensive examination of memory and identity within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Neuroethics",
+      "url": "https://example.com/mnd/23",
+      "year": 2023,
+      "credibility_score": 0.8603688689221375,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on memory and identity: Examining objections, alternative frameworks, and limitations of dominant approaches to memory and identity.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/mnd/counter/23",
+      "year": 2018,
+      "credibility_score": 0.9271044136007028,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in memory and identity: Current research trends, emerging debates, and new applications of memory and identity in contemporary philosophy.",
+      "source": "Neuroethics",
+      "url": "https://example.com/mnd/latest/23",
+      "year": 2021,
+      "credibility_score": 0.9389895198620369,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.438625",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "memory_and_identity"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0094",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Probability theory",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Probability theory: A comprehensive examination of probability theory within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/93",
+      "year": 2017,
+      "credibility_score": 0.882792876092224,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on probability theory: Examining objections, alternative frameworks, and limitations of dominant approaches to probability theory.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/counter/93",
+      "year": 2024,
+      "credibility_score": 0.9366221158076012,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in probability theory: Current research trends, emerging debates, and new applications of probability theory in contemporary philosophy.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/latest/93",
+      "year": 2023,
+      "credibility_score": 0.9217587821896805,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.377874",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "probability_theory"
+    ]
+  }
+}

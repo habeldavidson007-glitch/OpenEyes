@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0066",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Medieval philosophy",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Medieval philosophy: A comprehensive examination of medieval philosophy within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/medieval-philosophy/",
+      "year": 2014,
+      "credibility_score": 0.9015910119560363,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on medieval philosophy: Examining objections, alternative frameworks, and limitations of dominant approaches to medieval philosophy.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/counter/65",
+      "year": 2019,
+      "credibility_score": 0.8853579454119924,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in medieval philosophy: Current research trends, emerging debates, and new applications of medieval philosophy in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/65",
+      "year": 2023,
+      "credibility_score": 0.8805821177242584,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.496486",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "medieval_philosophy"
+    ]
+  }
+}

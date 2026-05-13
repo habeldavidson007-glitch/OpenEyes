@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0050",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Dreams and consciousness",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Dreams and consciousness: A comprehensive examination of dreams and consciousness within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/49",
+      "year": 2019,
+      "credibility_score": 0.9424497578326593,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on dreams and consciousness: Examining objections, alternative frameworks, and limitations of dominant approaches to dreams and consciousness.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/counter/49",
+      "year": 2017,
+      "credibility_score": 0.9161016377847377,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in dreams and consciousness: Current research trends, emerging debates, and new applications of dreams and consciousness in contemporary philosophy.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/latest/49",
+      "year": 2020,
+      "credibility_score": 0.9436171047173262,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.441691",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "dreams_and_consciousness"
+    ]
+  }
+}

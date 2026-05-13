@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0108",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Anarchism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Anarchism: A comprehensive examination of anarchism within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/107",
+      "year": 2015,
+      "credibility_score": 0.9380400036715202,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on anarchism: Examining objections, alternative frameworks, and limitations of dominant approaches to anarchism.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/counter/107",
+      "year": 2018,
+      "credibility_score": 0.8093647158573002,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in anarchism: Current research trends, emerging debates, and new applications of anarchism in contemporary philosophy.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/pph/latest/107",
+      "year": 2022,
+      "credibility_score": 0.9189750732120591,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.419831",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "anarchism"
+    ]
+  }
+}

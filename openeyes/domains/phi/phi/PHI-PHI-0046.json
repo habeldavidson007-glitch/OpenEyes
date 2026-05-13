@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0046",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Kant's critical philosophy",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Kant's critical philosophy: A comprehensive examination of kant's critical philosophy within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/kant's-critical-philosophy/",
+      "year": 1002,
+      "credibility_score": 0.9279881920483228,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on kant's critical philosophy: Examining objections, alternative frameworks, and limitations of dominant approaches to kant's critical philosophy.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/counter/45",
+      "year": 2023,
+      "credibility_score": 0.8004494067286263,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in kant's critical philosophy: Current research trends, emerging debates, and new applications of kant's critical philosophy in contemporary philosophy.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/latest/45",
+      "year": 2020,
+      "credibility_score": 0.8924450762620565,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.482209",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "kant's_critical_philosophy"
+    ]
+  }
+}

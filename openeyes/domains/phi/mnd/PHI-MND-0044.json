@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0044",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Neurophilosophy",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Neurophilosophy: A comprehensive examination of neurophilosophy within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/43",
+      "year": 2023,
+      "credibility_score": 0.9710996506176601,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on neurophilosophy: Examining objections, alternative frameworks, and limitations of dominant approaches to neurophilosophy.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/counter/43",
+      "year": 2023,
+      "credibility_score": 0.9408791616606783,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in neurophilosophy: Current research trends, emerging debates, and new applications of neurophilosophy in contemporary philosophy.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/latest/43",
+      "year": 2020,
+      "credibility_score": 0.9683251559207764,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.441011",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "neurophilosophy"
+    ]
+  }
+}

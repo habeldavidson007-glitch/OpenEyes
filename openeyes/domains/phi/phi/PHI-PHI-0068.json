@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0068",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Thomas Aquinas",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Thomas Aquinas: A comprehensive examination of thomas aquinas within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/67",
+      "year": 2021,
+      "credibility_score": 0.87031578886441,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on thomas aquinas: Examining objections, alternative frameworks, and limitations of dominant approaches to thomas aquinas.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/phi/counter/67",
+      "year": 2023,
+      "credibility_score": 0.8827686706525739,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in thomas aquinas: Current research trends, emerging debates, and new applications of thomas aquinas in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/67",
+      "year": 2021,
+      "credibility_score": 0.8840423045648651,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.496748",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "thomas_aquinas"
+    ]
+  }
+}

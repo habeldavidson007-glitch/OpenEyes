@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0071",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Language and thought",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Language and thought: A comprehensive examination of language and thought within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/70",
+      "year": 2019,
+      "credibility_score": 0.8979455195404215,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on language and thought: Examining objections, alternative frameworks, and limitations of dominant approaches to language and thought.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/counter/70",
+      "year": 2016,
+      "credibility_score": 0.8285706841767677,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in language and thought: Current research trends, emerging debates, and new applications of language and thought in contemporary philosophy.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/latest/70",
+      "year": 2023,
+      "credibility_score": 0.9191509787646555,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.454649",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "language_and_thought"
+    ]
+  }
+}

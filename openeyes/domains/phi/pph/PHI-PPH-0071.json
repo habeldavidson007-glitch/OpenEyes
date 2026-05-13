@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0071",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Feminist political theory",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Feminist political theory: A comprehensive examination of feminist political theory within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/70",
+      "year": 2015,
+      "credibility_score": 0.9157073131801561,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on feminist political theory: Examining objections, alternative frameworks, and limitations of dominant approaches to feminist political theory.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/counter/70",
+      "year": 2014,
+      "credibility_score": 0.8997507194788061,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in feminist political theory: Current research trends, emerging debates, and new applications of feminist political theory in contemporary philosophy.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/latest/70",
+      "year": 2024,
+      "credibility_score": 0.9004800541742876,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.414249",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "feminist_political_theory"
+    ]
+  }
+}

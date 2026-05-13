@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0094",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Capabilities approach",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Capabilities approach: A comprehensive examination of capabilities approach within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/93",
+      "year": 2015,
+      "credibility_score": 0.8575248271249846,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on capabilities approach: Examining objections, alternative frameworks, and limitations of dominant approaches to capabilities approach.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/counter/93",
+      "year": 2023,
+      "credibility_score": 0.8088276671703803,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in capabilities approach: Current research trends, emerging debates, and new applications of capabilities approach in contemporary philosophy.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/latest/93",
+      "year": 2021,
+      "credibility_score": 0.9689033376948882,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.418133",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "capabilities_approach"
+    ]
+  }
+}

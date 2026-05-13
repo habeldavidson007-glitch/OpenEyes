@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0097",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Emotion theory",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Emotion theory: A comprehensive examination of emotion theory within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/emotion-theory/",
+      "year": 2014,
+      "credibility_score": 0.9372178316419059,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on emotion theory: Examining objections, alternative frameworks, and limitations of dominant approaches to emotion theory.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/counter/96",
+      "year": 2020,
+      "credibility_score": 0.8322674219908736,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in emotion theory: Current research trends, emerging debates, and new applications of emotion theory in contemporary philosophy.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/latest/96",
+      "year": 2022,
+      "credibility_score": 0.9399539804886349,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.458219",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "emotion_theory"
+    ]
+  }
+}

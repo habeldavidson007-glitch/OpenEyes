@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0141",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Empiricism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Empiricism: A comprehensive examination of empiricism within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Synthese",
+      "url": "https://example.com/log/140",
+      "year": 2015,
+      "credibility_score": 0.9116705821905629,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on empiricism: Examining objections, alternative frameworks, and limitations of dominant approaches to empiricism.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/counter/140",
+      "year": 2015,
+      "credibility_score": 0.8926588491629279,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in empiricism: Current research trends, emerging debates, and new applications of empiricism in contemporary philosophy.",
+      "source": "Synthese",
+      "url": "https://example.com/log/latest/140",
+      "year": 2024,
+      "credibility_score": 0.8856491815352889,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.383534",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "empiricism"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0026",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Consciousness studies",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Consciousness studies: A comprehensive examination of consciousness studies within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/25",
+      "year": 2017,
+      "credibility_score": 0.8919259928173353,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on consciousness studies: Examining objections, alternative frameworks, and limitations of dominant approaches to consciousness studies.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/counter/25",
+      "year": 2015,
+      "credibility_score": 0.8481857928268267,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in consciousness studies: Current research trends, emerging debates, and new applications of consciousness studies in contemporary philosophy.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/latest/25",
+      "year": 2024,
+      "credibility_score": 0.9496175067646533,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.438865",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "consciousness_studies"
+    ]
+  }
+}

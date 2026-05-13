@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0125",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Immigration ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Immigration ethics: A comprehensive examination of immigration ethics within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/124",
+      "year": 2016,
+      "credibility_score": 0.9022367151743029,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on immigration ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to immigration ethics.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/counter/124",
+      "year": 2024,
+      "credibility_score": 0.8046489181344587,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in immigration ethics: Current research trends, emerging debates, and new applications of immigration ethics in contemporary philosophy.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/latest/124",
+      "year": 2024,
+      "credibility_score": 0.897133743091938,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.421956",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "immigration_ethics"
+    ]
+  }
+}

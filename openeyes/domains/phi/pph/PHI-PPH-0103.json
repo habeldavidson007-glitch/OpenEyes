@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0103",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Libertarianism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Libertarianism: A comprehensive examination of libertarianism within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/libertarianism/",
+      "year": 2015,
+      "credibility_score": 0.8859925489301739,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on libertarianism: Examining objections, alternative frameworks, and limitations of dominant approaches to libertarianism.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/counter/102",
+      "year": 2024,
+      "credibility_score": 0.8366384584448205,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in libertarianism: Current research trends, emerging debates, and new applications of libertarianism in contemporary philosophy.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/latest/102",
+      "year": 2023,
+      "credibility_score": 0.9202668500112283,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.419186",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "libertarianism"
+    ]
+  }
+}

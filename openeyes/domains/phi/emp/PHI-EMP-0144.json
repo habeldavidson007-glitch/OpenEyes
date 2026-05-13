@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0144",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "AI ethics and algorithmic bias",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "AI ethics and algorithmic bias: A comprehensive examination of ai ethics and algorithmic bias within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/143",
+      "year": 2018,
+      "credibility_score": 0.8901396956552099,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on ai ethics and algorithmic bias: Examining objections, alternative frameworks, and limitations of dominant approaches to ai ethics and algorithmic bias.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/counter/143",
+      "year": 2018,
+      "credibility_score": 0.858828025845236,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in ai ethics and algorithmic bias: Current research trends, emerging debates, and new applications of ai ethics and algorithmic bias in contemporary philosophy.",
+      "source": "Business Ethics Quarterly",
+      "url": "https://example.com/emp/latest/143",
+      "year": 2023,
+      "credibility_score": 0.9278951004341816,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.336470",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "ai_ethics_and_algorithmic_bias"
+    ]
+  }
+}

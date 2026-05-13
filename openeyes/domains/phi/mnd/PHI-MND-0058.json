@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0058",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Determinism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Determinism: A comprehensive examination of determinism within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/57",
+      "year": 2020,
+      "credibility_score": 0.8946254201580467,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on determinism: Examining objections, alternative frameworks, and limitations of dominant approaches to determinism.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/counter/57",
+      "year": 2015,
+      "credibility_score": 0.8244595909671893,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in determinism: Current research trends, emerging debates, and new applications of determinism in contemporary philosophy.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/latest/57",
+      "year": 2024,
+      "credibility_score": 0.9015990756761776,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.442687",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "determinism"
+    ]
+  }
+}

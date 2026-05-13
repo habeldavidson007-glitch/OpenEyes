@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0091",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Animal ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Animal ethics: A comprehensive examination of animal ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/90",
+      "year": 2023,
+      "credibility_score": 0.9059914606781183,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on animal ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to animal ethics.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/counter/90",
+      "year": 2021,
+      "credibility_score": 0.8528662747418674,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in animal ethics: Current research trends, emerging debates, and new applications of animal ethics in contemporary philosophy.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/latest/90",
+      "year": 2023,
+      "credibility_score": 0.8968612346751909,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.314314",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "animal_ethics"
+    ]
+  }
+}

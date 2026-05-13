@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0146",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Ordinary language philosophy",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Ordinary language philosophy: A comprehensive examination of ordinary language philosophy within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/ordinary-language-philosophy/",
+      "year": 2015,
+      "credibility_score": 0.8748970866059844,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on ordinary language philosophy: Examining objections, alternative frameworks, and limitations of dominant approaches to ordinary language philosophy.",
+      "source": "British Journal for the History of Philosophy",
+      "url": "https://example.com/phi/counter/145",
+      "year": 2018,
+      "credibility_score": 0.8288034057121911,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in ordinary language philosophy: Current research trends, emerging debates, and new applications of ordinary language philosophy in contemporary philosophy.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/latest/145",
+      "year": 2022,
+      "credibility_score": 0.9182440580766438,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.518998",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "ordinary_language_philosophy"
+    ]
+  }
+}
