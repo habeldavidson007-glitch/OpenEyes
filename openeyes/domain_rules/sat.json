@@ -9,7 +9,7 @@
     },
     "BIO": {
       "name": "Biology & Life Sciences",
-      "description": "Genetics, molecular biology, ecology, evolution, cell biology — distinct from clinical Healthcare"
+      "description": "Genetics, molecular biology, ecology, evolution, cell biology \u2014 distinct from clinical Healthcare"
     },
     "ENV": {
       "name": "Environmental Science",
@@ -25,7 +25,7 @@
     },
     "ENG": {
       "name": "Engineering",
-      "description": "Structural, mechanical, electrical, civil — design principles, safety standards, materials"
+      "description": "Structural, mechanical, electrical, civil \u2014 design principles, safety standards, materials"
     },
     "MAT": {
       "name": "Mathematics & Statistics",
@@ -41,14 +41,18 @@
       "name": "Require Source URL",
       "description": "Every fragment must have a source_url from a credible scientific source",
       "check_type": "requires_field",
-      "config": { "field": "source_url" }
+      "config": {
+        "field": "source_url"
+      }
     },
     {
       "id": "SAT-002",
       "name": "Require Year",
       "description": "Every fragment must have a year indicating when the information was verified",
       "check_type": "requires_field",
-      "config": { "field": "year" }
+      "config": {
+        "field": "year"
+      }
     },
     {
       "id": "SAT-003",
@@ -75,7 +79,10 @@
       "name": "No Stale Scientific Information",
       "description": "Fragments older than 4 years cannot exceed credibility score of 60",
       "check_type": "recency_cap",
-      "config": { "max_age_years": 4, "score_cap": 60 }
+      "config": {
+        "max_age_years": 4,
+        "score_cap": 60
+      }
     },
     {
       "id": "SAT-005",
@@ -83,7 +90,11 @@
       "description": "Every topic must have definition, counter_argument, and latest_data roles",
       "check_type": "role_completeness",
       "config": {
-        "required_roles": ["definition", "counter_argument", "latest_data"]
+        "required_roles": [
+          "definition",
+          "counter_argument",
+          "latest_data"
+        ]
       }
     },
     {
@@ -113,5 +124,17 @@
     "IPCC",
     "NOAA",
     "USGS"
-  ]
+  ],
+  "risk_tier": "medium",
+  "calibration_threshold": 0.8,
+  "fragment_rules": {
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.4,
+      "recency": 0.3,
+      "peer_reviewed": 0.2,
+      "cross_domain_corroboration": 0.1
+    },
+    "recency_cap_years": 5
+  }
 }

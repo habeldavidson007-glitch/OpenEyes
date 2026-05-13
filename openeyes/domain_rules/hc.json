@@ -29,12 +29,21 @@
     }
   ],
   "total_target_fragments": 1100,
+  "risk_tier": "critical",
+  "calibration_threshold": 0.92,
   "primary_sources": ["PubMed", "NICE", "WHO", "CDC", "FDA", "NIH", "EMA", "APA", "Mayo Clinic"],
   "fragment_rules": {
     "required_roles": ["definition", "counter_argument", "latest_data"],
     "require_source_url": true,
     "require_year": true,
     "prefer_peer_reviewed": true,
-    "recency_cap_years": 5
+    "recency_cap_years": 3,
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.5,
+      "recency": 0.3,
+      "peer_reviewed": 0.15,
+      "cross_domain_corroboration": 0.05
+    }
   }
 }

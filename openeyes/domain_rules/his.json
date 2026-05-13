@@ -6,31 +6,31 @@
     {
       "code": "ANC",
       "name": "Ancient History",
-      "description": "Civilizations before 500 CE — Mesopotamia, Greece, Rome, China, India, Egypt",
+      "description": "Civilizations before 500 CE \u2014 Mesopotamia, Greece, Rome, China, India, Egypt",
       "target_fragments": 150
     },
     {
       "code": "MEH",
       "name": "Medieval History",
-      "description": "500-1500 CE — feudalism, Islamic golden age, Byzantine empire, Mongol expansion",
+      "description": "500-1500 CE \u2014 feudalism, Islamic golden age, Byzantine empire, Mongol expansion",
       "target_fragments": 150
     },
     {
       "code": "MOD",
       "name": "Early Modern History",
-      "description": "1500-1900 — colonialism, scientific revolution, enlightenment, industrialization",
+      "description": "1500-1900 \u2014 colonialism, scientific revolution, enlightenment, industrialization",
       "target_fragments": 200
     },
     {
       "code": "CON",
       "name": "Contemporary History",
-      "description": "1900-present — world wars, cold war, decolonization, globalization",
+      "description": "1900-present \u2014 world wars, cold war, decolonization, globalization",
       "target_fragments": 200
     },
     {
       "code": "REG",
       "name": "Regional History",
-      "description": "History of specific regions — Africa, Asia, Americas, Middle East, Oceania",
+      "description": "History of specific regions \u2014 Africa, Asia, Americas, Middle East, Oceania",
       "target_fragments": 200
     },
     {
@@ -50,7 +50,11 @@
     "archive.org"
   ],
   "fragment_rules": {
-    "required_roles": ["definition", "counter_argument", "latest_data"],
+    "required_roles": [
+      "definition",
+      "counter_argument",
+      "latest_data"
+    ],
     "source_requirements": {
       "must_have_url": true,
       "must_have_year": true,
@@ -78,7 +82,15 @@
       "note_conflicting_historical_accounts": true,
       "specify_geographic_and_temporal_scope": true,
       "avoid_presentism": true
-    }
+    },
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.4,
+      "recency": 0.3,
+      "peer_reviewed": 0.2,
+      "cross_domain_corroboration": 0.1
+    },
+    "recency_cap_years": 10
   },
   "cross_domain_relationships": [
     {
@@ -99,5 +111,7 @@
       "related_sector": "SEC",
       "shared_territory": "World wars, cold war, conflict history"
     }
-  ]
+  ],
+  "risk_tier": "low",
+  "calibration_threshold": 0.75
 }

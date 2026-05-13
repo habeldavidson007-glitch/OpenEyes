@@ -12,7 +12,7 @@
     {
       "code": "PSY",
       "name": "Psychology",
-      "description": "Cognitive, developmental, social, personality psychology — distinct from MH clinical sector",
+      "description": "Cognitive, developmental, social, personality psychology \u2014 distinct from MH clinical sector",
       "target_fragments": 200
     },
     {
@@ -44,7 +44,11 @@
     "Psychological Science"
   ],
   "fragment_rules": {
-    "required_roles": ["definition", "counter_argument", "latest_data"],
+    "required_roles": [
+      "definition",
+      "counter_argument",
+      "latest_data"
+    ],
     "source_requirements": {
       "must_have_url": true,
       "must_have_year": true,
@@ -62,6 +66,16 @@
       "PSY_MH_overlap": "Clinical vs research psychology boundary with Healthcare MH sector",
       "DEM_GEO_overlap": "Migration and demographics with Economy GEO sector",
       "CMC_GEL_overlap": "Propaganda and information warfare with Governance GEL sector"
-    }
-  }
+    },
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.4,
+      "recency": 0.3,
+      "peer_reviewed": 0.2,
+      "cross_domain_corroboration": 0.1
+    },
+    "recency_cap_years": 5
+  },
+  "risk_tier": "medium",
+  "calibration_threshold": 0.78
 }

@@ -59,6 +59,8 @@
     }
   ],
   "total_target_fragments": 1450,
+  "risk_tier": "critical",
+  "calibration_threshold": 0.90,
   "primary_sources": ["Congress.gov", "Federal Register", "Supreme Court opinions", "UN treaty database", "ICJ decisions", "CRS reports", "WTO", "CFR", "Brookings", "RAND", "Freedom House", "Inter-Parliamentary Union"],
   "fragment_rules": {
     "required_roles": ["definition", "counter_argument", "latest_data"],
@@ -66,6 +68,13 @@
     "require_year": true,
     "prefer_peer_reviewed": true,
     "recency_cap_years": 5,
-    "philosophy_guard": "Every fragment must describe what is — not advocate for what should be. Descriptive claims about institutions, outcomes, and processes are fragmentable. Normative claims about what is right or wrong are not."
+    "philosophy_guard": "Every fragment must describe what is — not advocate for what should be. Descriptive claims about institutions, outcomes, and processes are fragmentable. Normative claims about what is right or wrong are not.",
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.4,
+      "recency": 0.3,
+      "peer_reviewed": 0.2,
+      "cross_domain_corroboration": 0.1
+    }
   }
 }

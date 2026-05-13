@@ -41,12 +41,21 @@
     }
   ],
   "total_target_fragments": 1850,
+  "risk_tier": "high",
+  "calibration_threshold": 0.85,
   "primary_sources": ["Federal Reserve", "SEC", "BLS", "BEA", "FRED", "EIA", "USDA", "World Bank", "IMF", "WTO", "OPEC"],
   "fragment_rules": {
     "required_roles": ["definition", "counter_argument", "latest_data"],
     "require_source_url": true,
     "require_year": true,
     "prefer_peer_reviewed": true,
-    "recency_cap_years": 5
+    "recency_cap_years": 5,
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.4,
+      "recency": 0.3,
+      "peer_reviewed": 0.2,
+      "cross_domain_corroboration": 0.1
+    }
   }
 }

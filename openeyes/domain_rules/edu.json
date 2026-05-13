@@ -39,6 +39,16 @@
     ],
     "source_requirements": "Must cite peer-reviewed education research, government data (DoE, OECD), or established academic journals.",
     "recency_cap": 10,
-    "philosophy_guard": "Fragments must describe educational mechanisms and outcomes descriptively, not advocate for specific policy prescriptions."
-  }
+    "philosophy_guard": "Fragments must describe educational mechanisms and outcomes descriptively, not advocate for specific policy prescriptions.",
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.4,
+      "recency": 0.3,
+      "peer_reviewed": 0.2,
+      "cross_domain_corroboration": 0.1
+    },
+    "recency_cap_years": 5
+  },
+  "risk_tier": "low",
+  "calibration_threshold": 0.75
 }
