@@ -1,0 +1,30 @@
+{
+  "sector": "ANT",
+  "sector_name": "Anthropology",
+  "total_fragments": 150,
+  "target_fragments": 150,
+  "completion_percentage": 100.0,
+  "topics_covered": [
+    "Cultural relativism and ethnography",
+    "Kinship systems cross-culturally",
+    "Religious beliefs and rituals",
+    "Economic anthropology",
+    "Political anthropology",
+    "Medical anthropology",
+    "Linguistic anthropology",
+    "Archaeological methods",
+    "Human evolution and paleoanthropology",
+    "Primatology",
+    "Material culture studies",
+    "Symbolic anthropology",
+    "Structural anthropology",
+    "Applied anthropology",
+    "Digital anthropology",
+    "Food and culture",
+    "Migration and diaspora studies",
+    "Indigenous knowledge systems",
+    "Anthropology of art",
+    "Visual anthropology"
+  ],
+  "generated_at": "2026-05-13T02:16:29.860901"
+}

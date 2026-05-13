@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0082",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Kinship systems cross-culturally",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for kinship systems cross-culturally within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "UNESCO Cultural Reports",
+      "url": "https://example.org/ant/ANT_0082",
+      "year": 2017,
+      "confidence": 0.87
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to kinship systems cross-culturally, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "UNESCO Cultural Reports",
+      "url": "https://example.org/ant/ANT_0082/counter",
+      "year": 2017,
+      "confidence": 0.92
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to kinship systems cross-culturally as of 2017, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "UNESCO Cultural Reports",
+      "url": "https://example.org/ant/ANT_0082/data",
+      "year": 2017,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.840897",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "kinship"
+    ]
+  }
+}

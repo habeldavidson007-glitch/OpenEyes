@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0072",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Symbolic anthropology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for symbolic anthropology within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Current Anthropology",
+      "url": "https://example.org/ant/ANT_0072",
+      "year": 2020,
+      "confidence": 0.96
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to symbolic anthropology, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "Current Anthropology",
+      "url": "https://example.org/ant/ANT_0072/counter",
+      "year": 2020,
+      "confidence": 0.87
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to symbolic anthropology as of 2020, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Current Anthropology",
+      "url": "https://example.org/ant/ANT_0072/data",
+      "year": 2020,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.839658",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "symbolic"
+    ]
+  }
+}

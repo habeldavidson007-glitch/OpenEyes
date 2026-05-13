@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0110",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Sex ratios and gender demographics",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for sex ratios and gender demographics within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "National Census Bureaus",
+      "url": "https://example.org/dem/DEM_0110",
+      "year": 2019,
+      "confidence": 0.92
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to sex ratios and gender demographics, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "National Census Bureaus",
+      "url": "https://example.org/dem/DEM_0110/counter",
+      "year": 2019,
+      "confidence": 0.75
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to sex ratios and gender demographics as of 2019, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "National Census Bureaus",
+      "url": "https://example.org/dem/DEM_0110/data",
+      "year": 2019,
+      "confidence": 0.93
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.897058",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "sex"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0043",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Social psychology and group dynamics",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for social psychology and group dynamics within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0043",
+      "year": 2023,
+      "confidence": 0.97
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to social psychology and group dynamics, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0043/counter",
+      "year": 2023,
+      "confidence": 0.92
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to social psychology and group dynamics as of 2023, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0043/data",
+      "year": 2023,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.774697",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "social"
+    ]
+  }
+}

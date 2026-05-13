@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0003",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Religious beliefs and rituals",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for religious beliefs and rituals within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0003",
+      "year": 2022,
+      "confidence": 0.86
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to religious beliefs and rituals, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0003/counter",
+      "year": 2022,
+      "confidence": 0.87
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to religious beliefs and rituals as of 2022, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0003/data",
+      "year": 2022,
+      "confidence": 0.92
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.819694",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "religious"
+    ]
+  }
+}

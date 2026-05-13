@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0071",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Public relations theory",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for public relations theory within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Journal of Communication",
+      "url": "https://example.org/cmc/CMC_0071",
+      "year": 2023,
+      "confidence": 0.9
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to public relations theory, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Journal of Communication",
+      "url": "https://example.org/cmc/CMC_0071/counter",
+      "year": 2023,
+      "confidence": 0.83
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to public relations theory as of 2023, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Journal of Communication",
+      "url": "https://example.org/cmc/CMC_0071/data",
+      "year": 2023,
+      "confidence": 0.92
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.934727",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "public"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0109",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Youth demographics",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for youth demographics within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0109",
+      "year": 2024,
+      "confidence": 0.91
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to youth demographics, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0109/counter",
+      "year": 2024,
+      "confidence": 0.86
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to youth demographics as of 2024, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0109/data",
+      "year": 2024,
+      "confidence": 0.91
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.896940",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "youth"
+    ]
+  }
+}

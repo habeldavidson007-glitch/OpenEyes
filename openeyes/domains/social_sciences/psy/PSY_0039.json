@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0039",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Human factors",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for human factors within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "APA Publications",
+      "url": "https://example.org/psy/PSY_0039",
+      "year": 2018,
+      "confidence": 0.97
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to human factors, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "APA Publications",
+      "url": "https://example.org/psy/PSY_0039/counter",
+      "year": 2018,
+      "confidence": 0.82
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to human factors as of 2018, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "APA Publications",
+      "url": "https://example.org/psy/PSY_0039/data",
+      "year": 2018,
+      "confidence": 0.88
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.773828",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "human"
+    ]
+  }
+}

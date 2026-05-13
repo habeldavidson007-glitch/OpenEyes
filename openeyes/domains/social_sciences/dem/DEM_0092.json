@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0092",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Family size trends",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for family size trends within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0092",
+      "year": 2022,
+      "confidence": 0.95
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to family size trends, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0092/counter",
+      "year": 2022,
+      "confidence": 0.83
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to family size trends as of 2022, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0092/data",
+      "year": 2022,
+      "confidence": 0.95
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.894392",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "family"
+    ]
+  }
+}

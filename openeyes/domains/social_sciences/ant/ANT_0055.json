@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0055",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Digital anthropology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for digital anthropology within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0055",
+      "year": 2022,
+      "confidence": 0.97
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to digital anthropology, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0055/counter",
+      "year": 2022,
+      "confidence": 0.87
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to digital anthropology as of 2022, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0055/data",
+      "year": 2022,
+      "confidence": 0.89
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.837424",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "digital"
+    ]
+  }
+}

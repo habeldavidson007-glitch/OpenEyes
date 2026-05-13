@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0139",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Cross-cultural communication",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for cross-cultural communication within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Media Psychology",
+      "url": "https://example.org/cmc/CMC_0139",
+      "year": 2021,
+      "confidence": 0.95
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to cross-cultural communication, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Media Psychology",
+      "url": "https://example.org/cmc/CMC_0139/counter",
+      "year": 2021,
+      "confidence": 0.88
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to cross-cultural communication as of 2021, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Media Psychology",
+      "url": "https://example.org/cmc/CMC_0139/data",
+      "year": 2021,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.957177",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "cross-cultural"
+    ]
+  }
+}

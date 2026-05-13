@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0050",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Stress and coping",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for stress and coping within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0050",
+      "year": 2020,
+      "confidence": 0.96
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to stress and coping, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0050/counter",
+      "year": 2020,
+      "confidence": 0.88
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to stress and coping as of 2020, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0050/data",
+      "year": 2020,
+      "confidence": 0.96
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.775721",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "stress"
+    ]
+  }
+}

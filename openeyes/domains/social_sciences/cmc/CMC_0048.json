@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0048",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Digital media ecology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for digital media ecology within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0048",
+      "year": 2024,
+      "confidence": 0.91
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to digital media ecology, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0048/counter",
+      "year": 2024,
+      "confidence": 0.83
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to digital media ecology as of 2024, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0048/data",
+      "year": 2024,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.919454",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "digital"
+    ]
+  }
+}

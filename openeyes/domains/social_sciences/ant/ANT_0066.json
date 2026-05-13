@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0066",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Medical anthropology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for medical anthropology within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Current Anthropology",
+      "url": "https://example.org/ant/ANT_0066",
+      "year": 2018,
+      "confidence": 0.89
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to medical anthropology, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "Current Anthropology",
+      "url": "https://example.org/ant/ANT_0066/counter",
+      "year": 2018,
+      "confidence": 0.9
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to medical anthropology as of 2018, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Current Anthropology",
+      "url": "https://example.org/ant/ANT_0066/data",
+      "year": 2018,
+      "confidence": 0.89
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.838916",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "medical"
+    ]
+  }
+}

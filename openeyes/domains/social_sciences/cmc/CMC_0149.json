@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0149",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Journalism studies",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for journalism studies within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0149",
+      "year": 2020,
+      "confidence": 0.95
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to journalism studies, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0149/counter",
+      "year": 2020,
+      "confidence": 0.89
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to journalism studies as of 2020, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0149/data",
+      "year": 2020,
+      "confidence": 0.95
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.958683",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "journalism"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0071",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Positive psychology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for positive psychology within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/psy/PSY_0071",
+      "year": 2019,
+      "confidence": 0.88
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to positive psychology, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/psy/PSY_0071/counter",
+      "year": 2019,
+      "confidence": 0.85
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to positive psychology as of 2019, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/psy/PSY_0071/data",
+      "year": 2019,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.778629",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "positive"
+    ]
+  }
+}

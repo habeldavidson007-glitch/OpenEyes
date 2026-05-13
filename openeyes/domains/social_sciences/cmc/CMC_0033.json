@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0033",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Interpersonal communication",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for interpersonal communication within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0033",
+      "year": 2020,
+      "confidence": 0.94
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to interpersonal communication, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0033/counter",
+      "year": 2020,
+      "confidence": 0.77
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to interpersonal communication as of 2020, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0033/data",
+      "year": 2020,
+      "confidence": 0.96
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.917469",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "interpersonal"
+    ]
+  }
+}

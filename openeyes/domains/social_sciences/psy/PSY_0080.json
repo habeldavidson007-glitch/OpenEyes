@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0080",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Community psychology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for community psychology within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0080",
+      "year": 2018,
+      "confidence": 0.93
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to community psychology, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0080/counter",
+      "year": 2018,
+      "confidence": 0.87
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to community psychology as of 2018, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0080/data",
+      "year": 2018,
+      "confidence": 0.89
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.779765",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "community"
+    ]
+  }
+}

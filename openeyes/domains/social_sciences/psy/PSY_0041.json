@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0041",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Cognitive processes and memory",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for cognitive processes and memory within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0041",
+      "year": 2017,
+      "confidence": 0.94
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to cognitive processes and memory, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0041/counter",
+      "year": 2017,
+      "confidence": 0.77
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to cognitive processes and memory as of 2017, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0041/data",
+      "year": 2017,
+      "confidence": 0.93
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.774204",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "cognitive"
+    ]
+  }
+}

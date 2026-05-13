@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0019",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Census methodologies",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for census methodologies within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "National Census Bureaus",
+      "url": "https://example.org/dem/DEM_0019",
+      "year": 2022,
+      "confidence": 0.88
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to census methodologies, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "National Census Bureaus",
+      "url": "https://example.org/dem/DEM_0019/counter",
+      "year": 2022,
+      "confidence": 0.84
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to census methodologies as of 2022, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "National Census Bureaus",
+      "url": "https://example.org/dem/DEM_0019/data",
+      "year": 2022,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.863364",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "census"
+    ]
+  }
+}

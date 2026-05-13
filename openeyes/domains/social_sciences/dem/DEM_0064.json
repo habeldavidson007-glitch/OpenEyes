@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0064",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Migration theories and patterns",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for migration theories and patterns within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "National Census Bureaus",
+      "url": "https://example.org/dem/DEM_0064",
+      "year": 2018,
+      "confidence": 0.9
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to migration theories and patterns, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "National Census Bureaus",
+      "url": "https://example.org/dem/DEM_0064/counter",
+      "year": 2018,
+      "confidence": 0.89
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to migration theories and patterns as of 2018, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "National Census Bureaus",
+      "url": "https://example.org/dem/DEM_0064/data",
+      "year": 2018,
+      "confidence": 0.93
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.879652",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "migration"
+    ]
+  }
+}

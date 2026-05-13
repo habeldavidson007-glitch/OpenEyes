@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0037",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Applied psychology fields",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for applied psychology fields within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/psy/PSY_0037",
+      "year": 2020,
+      "confidence": 0.92
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to applied psychology fields, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/psy/PSY_0037/counter",
+      "year": 2020,
+      "confidence": 0.88
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to applied psychology fields as of 2020, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/psy/PSY_0037/data",
+      "year": 2020,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.757444",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "applied"
+    ]
+  }
+}

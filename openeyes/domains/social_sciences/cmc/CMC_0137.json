@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0137",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Science communication",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for science communication within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Journal of Communication",
+      "url": "https://example.org/cmc/CMC_0137",
+      "year": 2018,
+      "confidence": 0.86
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to science communication, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Journal of Communication",
+      "url": "https://example.org/cmc/CMC_0137/counter",
+      "year": 2018,
+      "confidence": 0.91
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to science communication as of 2018, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Journal of Communication",
+      "url": "https://example.org/cmc/CMC_0137/data",
+      "year": 2018,
+      "confidence": 0.92
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.956944",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "science"
+    ]
+  }
+}

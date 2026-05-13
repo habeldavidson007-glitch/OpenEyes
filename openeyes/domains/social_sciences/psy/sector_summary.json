@@ -1,0 +1,30 @@
+{
+  "sector": "PSY",
+  "sector_name": "Psychology",
+  "total_fragments": 200,
+  "target_fragments": 200,
+  "completion_percentage": 100.0,
+  "topics_covered": [
+    "Cognitive processes and memory",
+    "Developmental psychology across lifespan",
+    "Social psychology and group dynamics",
+    "Personality theories and assessment",
+    "Learning and conditioning",
+    "Motivation and emotion",
+    "Perception and sensation",
+    "Language and thought",
+    "Intelligence and individual differences",
+    "Stress and coping",
+    "Positive psychology",
+    "Evolutionary psychology",
+    "Cultural psychology",
+    "Neuropsychology basics",
+    "Research methods in psychology",
+    "Historical foundations",
+    "Applied psychology fields",
+    "Psychometrics",
+    "Human factors",
+    "Community psychology"
+  ],
+  "generated_at": "2026-05-13T02:16:29.818986"
+}

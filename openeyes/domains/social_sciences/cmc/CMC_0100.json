@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0100",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Communication technology history",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for communication technology history within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Journal of Communication",
+      "url": "https://example.org/cmc/CMC_0100",
+      "year": 2024,
+      "confidence": 0.91
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to communication technology history, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Journal of Communication",
+      "url": "https://example.org/cmc/CMC_0100/counter",
+      "year": 2024,
+      "confidence": 0.86
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to communication technology history as of 2024, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Journal of Communication",
+      "url": "https://example.org/cmc/CMC_0100/data",
+      "year": 2024,
+      "confidence": 0.91
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.939012",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "communication"
+    ]
+  }
+}

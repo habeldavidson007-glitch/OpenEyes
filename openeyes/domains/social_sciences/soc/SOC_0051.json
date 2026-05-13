@@ -1,0 +1,37 @@
+{
+  "id": "SOC_0051",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "SOC",
+  "topic": "Deviance and social control",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for deviance and social control within SOC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "American Sociological Review",
+      "url": "https://example.org/soc/SOC_0051",
+      "year": 2017,
+      "confidence": 0.91
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to deviance and social control, including methodological critiques, conflicting empirical findings, and ongoing debates within the SOC literature.",
+      "source": "American Sociological Review",
+      "url": "https://example.org/soc/SOC_0051/counter",
+      "year": 2017,
+      "confidence": 0.91
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to deviance and social control as of 2017, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "American Sociological Review",
+      "url": "https://example.org/soc/SOC_0051/data",
+      "year": 2017,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.696493",
+    "version": "1.0",
+    "tags": [
+      "soc",
+      "deviance"
+    ]
+  }
+}

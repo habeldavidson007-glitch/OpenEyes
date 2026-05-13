@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0075",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Internal migration patterns",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for internal migration patterns within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0075",
+      "year": 2019,
+      "confidence": 0.89
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to internal migration patterns, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0075/counter",
+      "year": 2019,
+      "confidence": 0.84
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to internal migration patterns as of 2019, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0075/data",
+      "year": 2019,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.881025",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "internal"
+    ]
+  }
+}

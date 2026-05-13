@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0121",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Population pyramids and structure",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for population pyramids and structure within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0121",
+      "year": 2023,
+      "confidence": 0.95
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to population pyramids and structure, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0121/counter",
+      "year": 2023,
+      "confidence": 0.89
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to population pyramids and structure as of 2023, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0121/data",
+      "year": 2023,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.898427",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "population"
+    ]
+  }
+}

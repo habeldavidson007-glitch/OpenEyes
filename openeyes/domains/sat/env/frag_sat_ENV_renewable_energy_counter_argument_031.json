@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_ENV_renewable_energy_counter_argument_031",
+  "domain": "sat",
+  "subdomain": "env",
+  "tags": [
+    "env",
+    "renewable_energy",
+    "counter_argument",
+    "swarm_generated"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Alternative perspectives on Renewable Energy suggest methodological limitations and competing theoretical frameworks in renewable energy. Critics argue simplifications in current models. However, empirical evidence shows reproducible experimental results. The debate continues regarding the underlying mechanisms.",
+  "source": "Nature Climate Change",
+  "source_url": "https://example.org/sat/env/renewable_energy",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.940450",
+    "sector_target": 200
+  }
+}

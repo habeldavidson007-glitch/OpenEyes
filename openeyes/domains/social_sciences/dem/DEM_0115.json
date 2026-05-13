@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0115",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Internal migration patterns",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for internal migration patterns within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0115",
+      "year": 2020,
+      "confidence": 0.87
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to internal migration patterns, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0115/counter",
+      "year": 2020,
+      "confidence": 0.82
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to internal migration patterns as of 2020, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0115/data",
+      "year": 2020,
+      "confidence": 0.88
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.897709",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "internal"
+    ]
+  }
+}

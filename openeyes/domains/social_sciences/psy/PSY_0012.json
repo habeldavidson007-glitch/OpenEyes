@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0012",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Evolutionary psychology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for evolutionary psychology within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0012",
+      "year": 2021,
+      "confidence": 0.89
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to evolutionary psychology, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0012/counter",
+      "year": 2021,
+      "confidence": 0.82
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to evolutionary psychology as of 2021, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0012/data",
+      "year": 2021,
+      "confidence": 0.95
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.740517",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "evolutionary"
+    ]
+  }
+}

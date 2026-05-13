@@ -1,0 +1,37 @@
+{
+  "id": "SOC_0018",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "SOC",
+  "topic": "Cultural sociology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for cultural sociology within SOC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Annual Review of Sociology",
+      "url": "https://example.org/soc/SOC_0018",
+      "year": 2023,
+      "confidence": 0.94
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to cultural sociology, including methodological critiques, conflicting empirical findings, and ongoing debates within the SOC literature.",
+      "source": "Annual Review of Sociology",
+      "url": "https://example.org/soc/SOC_0018/counter",
+      "year": 2023,
+      "confidence": 0.78
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to cultural sociology as of 2023, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Annual Review of Sociology",
+      "url": "https://example.org/soc/SOC_0018/data",
+      "year": 2023,
+      "confidence": 0.93
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.678467",
+    "version": "1.0",
+    "tags": [
+      "soc",
+      "cultural"
+    ]
+  }
+}

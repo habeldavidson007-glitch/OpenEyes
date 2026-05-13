@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0109",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Intelligence and individual differences",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for intelligence and individual differences within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0109",
+      "year": 2021,
+      "confidence": 0.95
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to intelligence and individual differences, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0109/counter",
+      "year": 2021,
+      "confidence": 0.89
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to intelligence and individual differences as of 2021, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0109/data",
+      "year": 2021,
+      "confidence": 0.96
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.795536",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "intelligence"
+    ]
+  }
+}

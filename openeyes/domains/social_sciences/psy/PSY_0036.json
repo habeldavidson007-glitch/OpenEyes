@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0036",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Historical foundations",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for historical foundations within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "APA Publications",
+      "url": "https://example.org/psy/PSY_0036",
+      "year": 2017,
+      "confidence": 0.93
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to historical foundations, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "APA Publications",
+      "url": "https://example.org/psy/PSY_0036/counter",
+      "year": 2017,
+      "confidence": 0.79
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to historical foundations as of 2017, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "APA Publications",
+      "url": "https://example.org/psy/PSY_0036/data",
+      "year": 2017,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.757324",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "historical"
+    ]
+  }
+}

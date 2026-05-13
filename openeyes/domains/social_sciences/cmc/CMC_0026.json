@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0026",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Spiral of silence",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for spiral of silence within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Communication Research",
+      "url": "https://example.org/cmc/CMC_0026",
+      "year": 2023,
+      "confidence": 0.87
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to spiral of silence, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Communication Research",
+      "url": "https://example.org/cmc/CMC_0026/counter",
+      "year": 2023,
+      "confidence": 0.76
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to spiral of silence as of 2023, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Communication Research",
+      "url": "https://example.org/cmc/CMC_0026/data",
+      "year": 2023,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.916637",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "spiral"
+    ]
+  }
+}

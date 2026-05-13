@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0015",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Health communication",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for health communication within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Communication Research",
+      "url": "https://example.org/cmc/CMC_0015",
+      "year": 2021,
+      "confidence": 0.96
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to health communication, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Communication Research",
+      "url": "https://example.org/cmc/CMC_0015/counter",
+      "year": 2021,
+      "confidence": 0.81
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to health communication as of 2021, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Communication Research",
+      "url": "https://example.org/cmc/CMC_0015/data",
+      "year": 2021,
+      "confidence": 0.92
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.914959",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "health"
+    ]
+  }
+}

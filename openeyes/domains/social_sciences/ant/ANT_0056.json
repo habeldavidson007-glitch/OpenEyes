@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0056",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Food and culture",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for food and culture within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0056",
+      "year": 2017,
+      "confidence": 0.85
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to food and culture, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0056/counter",
+      "year": 2017,
+      "confidence": 0.8
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to food and culture as of 2017, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0056/data",
+      "year": 2017,
+      "confidence": 0.91
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.837550",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "food"
+    ]
+  }
+}

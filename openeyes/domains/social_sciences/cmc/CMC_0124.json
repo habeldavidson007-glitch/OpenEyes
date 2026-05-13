@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0124",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Cultivation theory",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for cultivation theory within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Pew Research Center Media Studies",
+      "url": "https://example.org/cmc/CMC_0124",
+      "year": 2020,
+      "confidence": 0.88
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to cultivation theory, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Pew Research Center Media Studies",
+      "url": "https://example.org/cmc/CMC_0124/counter",
+      "year": 2020,
+      "confidence": 0.81
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to cultivation theory as of 2020, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Pew Research Center Media Studies",
+      "url": "https://example.org/cmc/CMC_0124/data",
+      "year": 2020,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.954958",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "cultivation"
+    ]
+  }
+}

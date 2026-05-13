@@ -1,0 +1,67 @@
+{
+  "domain": "SOCIAL_SCIENCES",
+  "code": "SOC",
+  "description": "How human behavior, societies, and institutions are studied empirically.",
+  "sectors": [
+    {
+      "code": "SOC",
+      "name": "Sociology",
+      "description": "Social structures, institutions, stratification, social change, collective behavior",
+      "target_fragments": 200
+    },
+    {
+      "code": "PSY",
+      "name": "Psychology",
+      "description": "Cognitive, developmental, social, personality psychology — distinct from MH clinical sector",
+      "target_fragments": 200
+    },
+    {
+      "code": "ANT",
+      "name": "Anthropology",
+      "description": "Cultural anthropology, archaeology, human evolution, linguistic anthropology",
+      "target_fragments": 150
+    },
+    {
+      "code": "DEM",
+      "name": "Demographics",
+      "description": "Population dynamics, migration, fertility, mortality, urbanization",
+      "target_fragments": 150
+    },
+    {
+      "code": "CMC",
+      "name": "Communication",
+      "description": "Media theory, persuasion, information spread, journalism, propaganda",
+      "target_fragments": 150
+    }
+  ],
+  "total_target_fragments": 850,
+  "primary_sources": [
+    "Academic social science journals",
+    "Pew Research Center",
+    "OECD",
+    "UN Population Division",
+    "American Sociological Review",
+    "Psychological Science"
+  ],
+  "fragment_rules": {
+    "required_roles": ["definition", "counter_argument", "latest_data"],
+    "source_requirements": {
+      "must_have_url": true,
+      "must_have_year": true,
+      "prefer_peer_reviewed": true,
+      "max_age_years": 10,
+      "exceptions_for_classics": true
+    },
+    "quality_standards": {
+      "empirical_basis_required": true,
+      "methodology_transparency": true,
+      "replication_status_noted": true,
+      "sample_size_context": true
+    },
+    "cross_domain_tags": {
+      "PSY_MH_overlap": "Clinical vs research psychology boundary with Healthcare MH sector",
+      "DEM_GEO_overlap": "Migration and demographics with Economy GEO sector",
+      "CMC_GEL_overlap": "Propaganda and information warfare with Governance GEL sector"
+    }
+  }
+}
