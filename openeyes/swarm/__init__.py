@@ -156,14 +156,18 @@ class LibraryAgent:
         """
         candidates = []
         
-        # Use semantic index to find relevant fragments
-        fragment_ids = self.library.search_by_semantic_index(sub_question)
+        # Use semantic index to find relevant fragments (fallback to keyword search)
+        try:
+            fragment_ids = self.library.search_by_semantic_index(sub_question)
+        except AttributeError:
+            # Method doesn't exist in compatibility layer, use keyword search instead
+            fragment_ids = []
         
         # If no results from semantic search, fall back to keyword extraction
         if not fragment_ids:
             keywords = self._extract_keywords(sub_question)
             for keyword in keywords:
-                fragments = self.library.search_fragments(
+                fragments = self.library.search(
                     query=keyword,
                     domain=domain
                 )
@@ -175,7 +179,13 @@ class LibraryAgent:
         if len(fragment_ids) < 3:
             print(f"[LibraryAgent] Low candidate count ({len(fragment_ids)}), triggering semantic fallback...")
             # Scan all fragments for partial matches on tags and content
-            for frag_id, frag in self.library._fragments.items():
+            # Use the compatibility layer's fragment access method
+            all_fragments = getattr(self.library, 'fragments_by_id', {})
+            if not all_fragments and hasattr(self.library, 'load_all'):
+                self.library.load_all()
+                all_fragments = getattr(self.library, 'fragments_by_id', {})
+            
+            for frag_id, frag in all_fragments.items():
                 if frag_id in fragment_ids:
                     continue
                 
@@ -755,7 +765,12 @@ class Swarm:
     def _get_fragment_role(self, fragment_id: str) -> str:
         """Look up fragment's reasoning_role from library."""
         try:
-            frag = self.library._fragments.get(fragment_id)
+            # Use compatibility layer's fragments_by_id
+            all_fragments = getattr(self.library, 'fragments_by_id', {})
+            if not all_fragments and hasattr(self.library, 'load_all'):
+                self.library.load_all()
+                all_fragments = getattr(self.library, 'fragments_by_id', {})
+            frag = all_fragments.get(fragment_id)
             if frag:
                 return getattr(frag, 'reasoning_role', 'definition')
         except:
@@ -766,9 +781,14 @@ class Swarm:
         """Extract the most common tags from a set of candidates for DFS propagation."""
         from collections import Counter
         all_tags = []
+        # Use compatibility layer's fragments_by_id
+        all_fragments = getattr(self.library, 'fragments_by_id', {})
+        if not all_fragments and hasattr(self.library, 'load_all'):
+            self.library.load_all()
+            all_fragments = getattr(self.library, 'fragments_by_id', {})
         for c in candidates:
             try:
-                frag = self.library._fragments.get(c.fragment_id)
+                frag = all_fragments.get(c.fragment_id)
                 if frag:
                     all_tags.extend(getattr(frag, 'tags', []))
             except:
