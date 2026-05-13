@@ -1,0 +1,103 @@
+{
+  "domain_code": "HIS",
+  "domain_name": "History",
+  "description": "How human societies have developed, what events shaped them, and what patterns emerge across time.",
+  "sectors": [
+    {
+      "code": "ANC",
+      "name": "Ancient History",
+      "description": "Civilizations before 500 CE — Mesopotamia, Greece, Rome, China, India, Egypt",
+      "target_fragments": 150
+    },
+    {
+      "code": "MEH",
+      "name": "Medieval History",
+      "description": "500-1500 CE — feudalism, Islamic golden age, Byzantine empire, Mongol expansion",
+      "target_fragments": 150
+    },
+    {
+      "code": "MOD",
+      "name": "Early Modern History",
+      "description": "1500-1900 — colonialism, scientific revolution, enlightenment, industrialization",
+      "target_fragments": 200
+    },
+    {
+      "code": "CON",
+      "name": "Contemporary History",
+      "description": "1900-present — world wars, cold war, decolonization, globalization",
+      "target_fragments": 200
+    },
+    {
+      "code": "REG",
+      "name": "Regional History",
+      "description": "History of specific regions — Africa, Asia, Americas, Middle East, Oceania",
+      "target_fragments": 200
+    },
+    {
+      "code": "HIS",
+      "name": "Historiography",
+      "description": "How history is studied, major schools of historical thought, sources and methods",
+      "target_fragments": 100
+    }
+  ],
+  "total_target_fragments": 1000,
+  "primary_sources": [
+    "Academic history journals",
+    "University press publications",
+    "Library of Congress",
+    "National archives",
+    "Peer-reviewed historical research",
+    "archive.org"
+  ],
+  "fragment_rules": {
+    "required_roles": ["definition", "counter_argument", "latest_data"],
+    "source_requirements": {
+      "must_have_url": true,
+      "must_have_year": true,
+      "prefer_peer_reviewed": true,
+      "prefer_academic_publishers": true,
+      "max_age_years": 20,
+      "exceptions": {
+        "ANC": "Primary sources and classical texts acceptable regardless of age; modern translations/analyses should be within 30 years",
+        "MEH": "Medieval primary sources acceptable; scholarly analysis within 25 years",
+        "MOD": "Primary sources from period acceptable; scholarly analysis within 20 years",
+        "CON": "Maximum 15 years for latest_data role; primary sources from period acceptable",
+        "REG": "Regional studies within 20 years; historical primary sources acceptable",
+        "HIS": "Historiographical works within 15 years to capture current methodological debates"
+      }
+    },
+    "quality_standards": {
+      "minimum_credibility_score": 0.7,
+      "require_multiple_sources_for_controversial_claims": true,
+      "distinguish_primary_vs_secondary_sources": true,
+      "flag_historiographical_disputes": true
+    },
+    "content_guidelines": {
+      "descriptive_not_normative": true,
+      "acknowledge_uncertainty_in_ancient_records": true,
+      "note_conflicting_historical_accounts": true,
+      "specify_geographic_and_temporal_scope": true,
+      "avoid_presentism": true
+    }
+  },
+  "cross_domain_relationships": [
+    {
+      "sector": "CON",
+      "related_domain": "GOV",
+      "related_sector": "INT",
+      "shared_territory": "20th century international relations as historical record"
+    },
+    {
+      "sector": "MOD",
+      "related_domain": "ECO",
+      "related_sector": "MAC",
+      "shared_territory": "Industrialization and economic transformation"
+    },
+    {
+      "sector": "CON",
+      "related_domain": "GOV",
+      "related_sector": "SEC",
+      "shared_territory": "World wars, cold war, conflict history"
+    }
+  ]
+}
