@@ -1,293 +1,415 @@
 """
-FragmentLibrary — Compatibility Layer for Domain-Based Fragment Storage
+OpenEyes Fragment Library
 
-This module provides the FragmentLibrary class that was previously a standalone storage system.
-Now it acts as a compatibility wrapper around the new domain-based fragment organization:
-  /workspace/openeyes/domains/{domain}/{sector}/frag_*.json
+Stores, indexes, and serves knowledge fragments with metadata:
+- source, credibility, last-verified timestamp
+- domain tags, weight (from gene pool)
+- compatibility rules
 
-All existing imports of `from openeyes.fragment_library import FragmentLibrary` will work.
+Fragment Schema:
+{
+    "id": "frag_pharma_nitrofurantoin_uti_001",
+    "domain": "pharmacology",
+    "tags": ["antibiotic", "uti", "first_line", "safe_penicillin_allergy"],
+    "content": "Nitrofurantoin 100mg modified-release twice daily for 5 days...",
+    "source": "NICE Clinical Guideline NG109",
+    "source_url": "https://www.nice.org.uk/guidance/ng109 ",
+    "credibility_class": "clinical_guideline",
+    "last_verified": "2026-01-15",
+    "weight": 1.0,
+    "compatible_with": ["frag_pharma_allergy_cross_reactivity"],
+    "incompatible_with": ["frag_pharma_penicillin_class"]
+}
 """
 
-from __future__ import annotations
-
 import json
-import os
-from collections import defaultdict
-from dataclasses import dataclass
+import hashlib
 from pathlib import Path
-from typing import Any, Optional
-
-from openeyes.knowledge.fragments import Fragment
+from typing import Dict, List, Optional, Any, Set, Tuple
+from dataclasses import dataclass, field, asdict
+from datetime import datetime
+from collections import defaultdict
 
 
 @dataclass
-class FragmentMetadata:
-    """Metadata for a fragment in the library."""
-    filepath: str
+class Fragment:
+    """A knowledge fragment with metadata."""
+    id: str
     domain: str
-    sector: str
-    topic: str
-    role: str
-    confidence: float
-    last_updated: str
+    tags: List[str] = field(default_factory=list)
+    content: str = ""
+    source: str = ""
+    source_url: str = ""
+    credibility_class: str = "peer_reviewed_study"
+    last_verified: str = None
+    weight: float = 1.0
+    compatible_with: List[str] = field(default_factory=list)
+    incompatible_with: List[str] = field(default_factory=list)
+    subdomain: Optional[str] = None
+    sector: Optional[str] = None
+    reasoning_role: Optional[str] = None
+    source_type: Optional[str] = None
+    year: Optional[int] = None
+    sub_question: Optional[str] = None
+    verified: Optional[bool] = None
+    _original_credibility_class: Optional[str] = None
+    _reasoning_role_auto_classified: Optional[bool] = None
+    grundy_value: int = -1
+    robustness_status: str = 'PENDING'
+    topic: Optional[str] = None  # Legacy field, ignore if present
+    
+    def __post_init__(self):
+        if self.last_verified is None:
+            self.last_verified = datetime.now().strftime("%Y-%m-%d")
+    
+    def to_dict(self) -> Dict[str, Any]:
+        d = asdict(self)
+        # Remove None and legacy fields
+        return {k: v for k, v in d.items() if not k.startswith('_') and v is not None}
+    
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> 'Fragment':
+        # Filter out unknown/legacy fields and provide defaults for missing required fields
+        valid_fields = {f.name for f in cls.__dataclass_fields__.values()}
+        filtered_data = {k: v for k, v in data.items() if k in valid_fields}
+        
+        # Ensure required fields have values
+        if 'tags' not in filtered_data:
+            filtered_data['tags'] = []
+        if 'content' not in filtered_data or not filtered_data['content']:
+            filtered_data['content'] = data.get('text', '')  # Fallback to 'text' if exists
+        if 'source' not in filtered_data or not filtered_data['source']:
+            filtered_data['source'] = 'Unknown'
+        if 'source_url' not in filtered_data or not filtered_data['source_url']:
+            filtered_data['source_url'] = ''
+        if 'credibility_class' not in filtered_data or not filtered_data['credibility_class']:
+            filtered_data['credibility_class'] = 'peer_reviewed_study'
+            
+        return cls(**filtered_data)
+    
+    def is_compatible(self, other_fragment_id: str) -> bool:
+        return other_fragment_id not in self.incompatible_with
 
 
 class FragmentLibrary:
-    """
-    Fragment Library — Unified access layer for all domain fragments.
+    CREDIBILITY_CLASSES = [
+        "clinical_guideline",
+        "peer_reviewed_study",
+        "textbook",
+        "expert_consensus",
+        "case_report",
+        "anecdotal"
+    ]
     
-    This class provides backward-compatible access to fragments stored in the
-    new domain-based directory structure:
-        domains/{domain}/{sector}/frag_{domain}_{sector}_{topic}_{role}_{num}.json
+    def __init__(self, storage_path: Optional[Path] = None):
+        self.storage_path = Path(storage_path) if storage_path else Path(__file__).parent / "domains"
+        
+        if self.storage_path.is_symlink():
+            self.storage_path = self.storage_path.resolve()
+        
+        if not self.storage_path.exists():
+            self.storage_path.mkdir(parents=True, exist_ok=True)
+        
+        self._fragments: Dict[str, Fragment] = {}
+        self._domain_index: Dict[str, List[str]] = {}
+        self._tag_index: Dict[str, List[str]] = {}
+        self._semantic_index: Dict[str, Set[str]] = defaultdict(set)
+        
+        self._load_all_fragments()
+        self._build_semantic_index()
     
-    Usage:
-        library = FragmentLibrary()
-        frags = library.search(query="inflation", domain="economy")
-    """
-    
-    def __init__(self, storage_path: Optional[str] = None):
-        """
-        Initialize the fragment library.
+    def _load_all_fragments(self):
+        if not self.storage_path.exists():
+            return
         
-        Args:
-            storage_path: Base path for fragment storage. If None, uses the 
-                         domains directory in the openeyes package.
-        """
-        if storage_path is None:
-            # Default to the domains directory
-            import openeyes
-            package_dir = Path(openeyes.__file__).parent
-            self.storage_path = package_dir / 'domains'
-        else:
-            self.storage_path = Path(storage_path)
-        
-        # Index structures
-        self.fragments_by_id: dict[str, Fragment] = {}
-        self.fragments_by_domain: dict[str, list[Fragment]] = defaultdict(list)
-        self.fragments_by_sector: dict[str, list[Fragment]] = defaultdict(list)
-        self.fragments_by_topic: dict[str, list[Fragment]] = defaultdict(list)
-        self.keyword_index: dict[str, list[Fragment]] = defaultdict(list)
-        
-        self._loaded = False
-        self.total_count = 0
-        
-    def load_all(self) -> int:
-        """
-        Load all fragments from the domain directories.
-        
-        Returns:
-            Total number of fragments loaded.
-        """
-        if self._loaded:
-            return self.total_count
-        
-        count = 0
-        domains_dir = self.storage_path
-        
-        if not domains_dir.exists():
-            print(f"[FragmentLibrary] Warning: Domains directory not found: {domains_dir}")
-            return 0
-        
-        print(f"[FragmentLibrary] Loading fragments from: {domains_dir}")
-        
-        # Scan all domain directories
-        for domain_dir in domains_dir.iterdir():
+        for domain_dir in self.storage_path.iterdir():
             if not domain_dir.is_dir() or domain_dir.name.startswith('.'):
                 continue
-                
-            domain_name = domain_dir.name
             
-            # Scan all sector directories within domain
             for sector_dir in domain_dir.iterdir():
-                if not sector_dir.is_dir() or sector_dir.name.startswith('.'):
+                if not sector_dir.is_dir():
                     continue
-                    
-                sector_name = sector_dir.name
                 
-                # Load all JSON files in sector directory
-                for json_file in sector_dir.glob('*.json'):
-                    fragment = self._load_fragment_from_file(str(json_file))
-                    if fragment:
-                        self._index_fragment(fragment)
-                        count += 1
-        
-        self.total_count = count
-        self._loaded = True
-        print(f"[FragmentLibrary] Loaded {count} fragments from {len(self.fragments_by_domain)} domains")
-        return count
+                for fragment_file in sector_dir.glob("*.json"):
+                    try:
+                        with open(fragment_file, 'r', encoding='utf-8') as f:
+                            data = json.load(f)
+                            if 'domain' not in data:
+                                data['domain'] = domain_dir.name
+                            if 'sector' not in data:
+                                data['sector'] = sector_dir.name
+                            
+                            fragment = Fragment.from_dict(data)
+                            self._register_fragment(fragment)
+                    except (json.JSONDecodeError, KeyError, ValueError) as e:
+                        print(f"Warning: Failed to load {fragment_file}: {e}")
     
-    def _load_fragment_from_file(self, filepath: str) -> Optional[Fragment]:
-        """Load a single fragment from a JSON file."""
-        try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            
-            # Handle both direct fragment format and wrapped format
-            if 'fragment' in data:
-                frag_data = data['fragment']
-            else:
-                frag_data = data
-            
-            # Use migrate_fragment to handle both old and new formats
-            from openeyes.knowledge.fragments import migrate_fragment
-            fragment = migrate_fragment(frag_data)
-            
-            # Store filepath in metadata
-            if not hasattr(fragment, 'metadata'):
-                fragment.metadata = {}
-            fragment.metadata['filepath'] = filepath
-            
-            return fragment
-            
-        except Exception as e:
-            print(f"[FragmentLibrary] Error loading {filepath}: {e}")
-            return None
+    def _register_fragment(self, fragment: Fragment):
+        self._fragments[fragment.id] = fragment
+        
+        if fragment.domain not in self._domain_index:
+            self._domain_index[fragment.domain] = []
+        if fragment.id not in self._domain_index[fragment.domain]:
+            self._domain_index[fragment.domain].append(fragment.id)
+        
+        for tag in fragment.tags:
+            if tag not in self._tag_index:
+                self._tag_index[tag] = []
+            if fragment.id not in self._tag_index[tag]:
+                self._tag_index[tag].append(fragment.id)
     
-    def _index_fragment(self, fragment: Fragment):
-        """Index a fragment for fast retrieval."""
-        # Get domain/sector from metadata if not on fragment object
-        domain = getattr(fragment, 'domain', fragment.metadata.get('domain', 'unknown'))
-        sector = getattr(fragment, 'sector', fragment.metadata.get('sector', 'unknown'))
-        topic = getattr(fragment, 'topic', fragment.metadata.get('topic', fragment.source_id))
+    def _build_semantic_index(self):
+        self._semantic_index.clear()
         
-        frag_id = f"{domain}_{sector}_{topic}"
+        stop_words = {
+            'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+            'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+            'should', 'may', 'might', 'must', 'shall', 'can', 'need', 'dare',
+            'ought', 'used', 'to', 'of', 'in', 'for', 'on', 'with', 'at', 'by',
+            'from', 'as', 'into', 'through', 'during', 'before', 'after', 'above',
+            'below', 'between', 'under', 'again', 'further', 'then', 'once', 'here',
+            'there', 'when', 'where', 'why', 'how', 'all', 'each', 'few', 'more',
+            'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own',
+            'same', 'so', 'than', 'too', 'very', 'just', 'and', 'but', 'if', 'or',
+            'because', 'until', 'while', 'although', 'though', 'what', 'which',
+            'who', 'whom', 'this', 'that', 'these', 'those', 'it', 'its'
+        }
         
-        self.fragments_by_id[frag_id] = fragment
-        self.fragments_by_domain[domain].append(fragment)
-        self.fragments_by_sector[sector].append(fragment)
-        self.fragments_by_topic[topic].append(fragment)
-        
-        # Index by keywords/tags
-        tags = getattr(fragment, 'tags', fragment.metadata.get('tags', []))
-        for tag in tags:
-            self.keyword_index[tag.lower()].append(fragment)
-        
-        # Also index key terms from topic
-        words = topic.lower().replace('_', ' ').split()
-        for word in words:
-            if len(word) > 2:
-                self.keyword_index[word].append(fragment)
-    
-    def search(self, query: str, domain: Optional[str] = None, 
-               sector: Optional[str] = None, limit: int = 20) -> list[Fragment]:
-        """
-        Search for fragments matching a query.
-        
-        Args:
-            query: Search query (matched against topics and tags)
-            domain: Filter by domain (optional)
-            sector: Filter by sector (optional)
-            limit: Maximum number of results to return
+        for fragment in self._fragments.values():
+            words = self._extract_words(fragment.content)
             
-        Returns:
-            List of matching fragments, sorted by relevance.
-        """
-        if not self._loaded:
-            self.load_all()
+            if fragment.sub_question:
+                words.update(self._extract_words(fragment.sub_question))
+            
+            for tag in fragment.tags:
+                words.update(self._extract_words(tag))
+            
+            for word in words:
+                if word not in stop_words and len(word) > 2:
+                    self._semantic_index[word].add(fragment.id)
+    
+    def _extract_words(self, text: str) -> Set[str]:
+        import re
+        words = re.findall(r'\b[a-zA-Z]+\b', text.lower())
+        return set(words)
+    
+    def search_by_semantic_index(self, query: str) -> List[str]:
+        query_words = self._extract_words(query)
+        stop_words = {
+            'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+            'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
+            'should', 'may', 'might', 'must', 'shall', 'can', 'need', 'dare',
+            'ought', 'used', 'to', 'of', 'in', 'for', 'on', 'with', 'at', 'by',
+            'from', 'as', 'into', 'through', 'during', 'before', 'after', 'above',
+            'below', 'between', 'under', 'again', 'further', 'then', 'once', 'here',
+            'there', 'when', 'where', 'why', 'how', 'all', 'each', 'few', 'more',
+            'most', 'other', 'some', 'such', 'no', 'nor', 'not', 'only', 'own',
+            'same', 'so', 'than', 'too', 'very', 'just', 'and', 'but', 'if', 'or',
+            'because', 'until', 'while', 'although', 'though', 'what', 'which',
+            'who', 'whom', 'this', 'that', 'these', 'those', 'it', 'its'
+        }
         
+        fragment_scores: Dict[str, int] = defaultdict(int)
+        
+        for word in query_words:
+            if word not in stop_words and len(word) > 2:
+                matching_fragments = self._semantic_index.get(word, set())
+                for frag_id in matching_fragments:
+                    fragment_scores[frag_id] += 1
+        
+        sorted_fragments = sorted(
+            fragment_scores.items(),
+            key=lambda x: x[1],
+            reverse=True
+        )
+        
+        return [frag_id for frag_id, score in sorted_fragments if score > 0]
+    
+    def _save_fragment(self, fragment: Fragment):
+        if self.storage_path:
+            sector_dir = self.storage_path / fragment.domain / (fragment.sector or 'general')
+            if not sector_dir.exists():
+                sector_dir.mkdir(parents=True, exist_ok=True)
+            
+            fragment_file = sector_dir / f"{fragment.id}.json"
+            with open(fragment_file, 'w', encoding='utf-8') as f:
+                json.dump(fragment.to_dict(), f, indent=2)
+    
+    @staticmethod
+    def generate_fragment_id(content: str, source: str) -> str:
+        combined = f"{source}|{content}"
+        hash_value = hashlib.sha256(combined.encode('utf-8')).hexdigest()[:12]
+        return f"frag_{hash_value}"
+    
+    def add_fragment(
+        self,
+        domain: str,
+        tags: List[str],
+        content: str,
+        source: str,
+        source_url: str,
+        credibility_class: str,
+        last_verified: Optional[str] = None,
+        weight: float = 1.0,
+        compatible_with: Optional[List[str]] = None,
+        incompatible_with: Optional[List[str]] = None,
+        fragment_id: Optional[str] = None,
+        sector: Optional[str] = None,
+        reasoning_role: Optional[str] = None
+    ) -> Fragment:
+        if credibility_class not in self.CREDIBILITY_CLASSES:
+            raise ValueError(
+                f"Invalid credibility_class: {credibility_class}. "
+                f"Must be one of: {self.CREDIBILITY_CLASSES}"
+            )
+        
+        if fragment_id is None:
+            fragment_id = self.generate_fragment_id(content, source)
+        
+        if last_verified is None:
+            last_verified = datetime.now().strftime("%Y-%m-%d")
+        
+        fragment = Fragment(
+            id=fragment_id,
+            domain=domain,
+            tags=tags,
+            content=content,
+            source=source,
+            source_url=source_url,
+            credibility_class=credibility_class,
+            last_verified=last_verified,
+            weight=weight,
+            compatible_with=compatible_with or [],
+            incompatible_with=incompatible_with or [],
+            sector=sector,
+            reasoning_role=reasoning_role
+        )
+        
+        self._register_fragment(fragment)
+        self._save_fragment(fragment)
+        
+        return fragment
+    
+    def get_fragment(self, fragment_id: str) -> Optional[Fragment]:
+        return self._fragments.get(fragment_id)
+    
+    def get_fragments_by_domain(self, domain: str) -> List[Fragment]:
+        fragment_ids = self._domain_index.get(domain, [])
+        return [self._fragments[fid] for fid in fragment_ids if fid in self._fragments]
+    
+    def get_fragments_by_tag(self, tag: str) -> List[Fragment]:
+        fragment_ids = self._tag_index.get(tag, [])
+        return [self._fragments[fid] for fid in fragment_ids if fid in self._fragments]
+    
+    def get_fragments_by_tags(self, tags: List[str], require_all: bool = False) -> List[Fragment]:
+        if not tags:
+            return []
+        
+        if require_all:
+            candidate_ids = set(self._tag_index.get(tags[0], []))
+            for tag in tags[1:]:
+                candidate_ids &= set(self._tag_index.get(tag, []))
+        else:
+            candidate_ids = set()
+            for tag in tags:
+                candidate_ids |= set(self._tag_index.get(tag, []))
+        
+        return [self._fragments[fid] for fid in candidate_ids if fid in self._fragments]
+    
+    def search_fragments(
+        self,
+        query: str,
+        domain: Optional[str] = None,
+        min_credibility_class: Optional[str] = None
+    ) -> List[Fragment]:
+        results = []
         query_lower = query.lower()
-        candidates = []
         
-        # Helper to get topic from fragment
-        def get_topic(frag):
-            return getattr(frag, 'topic', frag.metadata.get('topic', frag.source_id))
+        min_cred_idx = 0
+        if min_credibility_class:
+            if min_credibility_class not in self.CREDIBILITY_CLASSES:
+                raise ValueError(f"Invalid credibility_class: {min_credibility_class}")
+            min_cred_idx = self.CREDIBILITY_CLASSES.index(min_credibility_class)
         
-        def get_domain(frag):
-            return getattr(frag, 'domain', frag.metadata.get('domain', 'unknown'))
+        for fragment in self._fragments.values():
+            if domain and fragment.domain != domain:
+                continue
+            
+            if min_credibility_class:
+                frag_cred_idx = self.CREDIBILITY_CLASSES.index(fragment.credibility_class)
+                if frag_cred_idx < min_cred_idx:
+                    continue
+            
+            if (query_lower in fragment.content.lower() or
+                query_lower in fragment.source.lower() or
+                any(query_lower in tag.lower() for tag in fragment.tags)):
+                results.append(fragment)
         
-        def get_sector(frag):
-            return getattr(frag, 'sector', frag.metadata.get('sector', 'unknown'))
+        results.sort(key=lambda f: f.weight, reverse=True)
+        return results
+    
+    def update_fragment_weight(self, fragment_id: str, new_weight: float):
+        if fragment_id not in self._fragments:
+            raise KeyError(f"Fragment not found: {fragment_id}")
         
-        # Search by keyword matches
-        matched_ids = set()
-        for word in query_lower.split():
-            if len(word) > 2 and word in self.keyword_index:
-                for frag in self.keyword_index[word]:
-                    topic = get_topic(frag)
-                    if topic not in matched_ids:
-                        matched_ids.add(topic)
-                        candidates.append((frag, 1.0))
+        new_weight = max(0.1, min(2.0, new_weight))
+        self._fragments[fragment_id].weight = new_weight
+        self._save_fragment(self._fragments[fragment_id])
+    
+    def get_all_fragments(self) -> List[Fragment]:
+        return list(self._fragments.values())
+    
+    def get_statistics(self) -> Dict[str, Any]:
+        domain_counts = {d: len(ids) for d, ids in self._domain_index.items()}
         
-        # Search by topic substring match
-        for frag_list in self.fragments_by_domain.values():
-            for frag in frag_list:
-                topic = get_topic(frag)
-                if query_lower in topic.lower():
-                    if topic not in matched_ids:
-                        matched_ids.add(topic)
-                        candidates.append((frag, 0.8))
+        credibility_counts = {}
+        for frag in self._fragments.values():
+            cc = frag.credibility_class
+            credibility_counts[cc] = credibility_counts.get(cc, 0) + 1
         
-        # Apply filters
-        if domain:
-            candidates = [(f, s) for f, s in candidates if get_domain(f) == domain]
-        if sector:
-            candidates = [(f, s) for f, s in candidates if get_sector(f) == sector]
+        return {
+            "total_fragments": len(self._fragments),
+            "domains": domain_counts,
+            "credibility_distribution": credibility_counts,
+            "total_tags": len(self._tag_index),
+            "average_weight": sum(f.weight for f in self._fragments.values()) / len(self._fragments) if self._fragments else 0
+        }
+    
+    def remove_fragment(self, fragment_id: str) -> bool:
+        if fragment_id not in self._fragments:
+            return False
         
-        # Sort by score and return
-        candidates.sort(key=lambda x: x[1], reverse=True)
-        return [frag for frag, score in candidates[:limit]]
-    
-    def get_by_domain(self, domain: str) -> list[Fragment]:
-        """Get all fragments for a domain."""
-        if not self._loaded:
-            self.load_all()
-        return self.fragments_by_domain.get(domain, [])
-    
-    def get_by_sector(self, sector: str) -> list[Fragment]:
-        """Get all fragments for a sector."""
-        if not self._loaded:
-            self.load_all()
-        return self.fragments_by_sector.get(sector, [])
-    
-    def get_by_topic(self, domain: str, sector: str, topic: str) -> Optional[Fragment]:
-        """Get a specific fragment by domain, sector, and topic."""
-        if not self._loaded:
-            self.load_all()
-        frag_id = f"{domain}_{sector}_{topic}"
-        return self.fragments_by_id.get(frag_id)
-    
-    def get_fragment(self, frag_id: str) -> Optional[Fragment]:
-        """Get a fragment by its ID."""
-        if not self._loaded:
-            self.load_all()
-        return self.fragments_by_id.get(frag_id)
-    
-    def count(self) -> int:
-        """Get total fragment count."""
-        if not self._loaded:
-            self.load_all()
-        return self.total_count
-    
-    def get_domains(self) -> list[str]:
-        """Get list of all domains."""
-        if not self._loaded:
-            self.load_all()
-        return list(self.fragments_by_domain.keys())
-    
-    def get_sectors(self, domain: str) -> list[str]:
-        """Get list of sectors for a domain."""
-        if not self._loaded:
-            self.load_all()
-        sectors = set()
-        for frag in self.fragments_by_domain.get(domain, []):
-            sectors.add(frag.sector)
-        return list(sectors)
-    
-    def add_fragment(self, fragment: Fragment) -> bool:
-        """Add a new fragment to the library."""
-        if not self._loaded:
-            self.load_all()
+        fragment = self._fragments[fragment_id]
+        del self._fragments[fragment_id]
         
-        self._index_fragment(fragment)
-        self.total_count += 1
+        if fragment.domain in self._domain_index:
+            if fragment_id in self._domain_index[fragment.domain]:
+                self._domain_index[fragment.domain].remove(fragment_id)
+        
+        for tag in fragment.tags:
+            if tag in self._tag_index:
+                if fragment_id in self._tag_index[tag]:
+                    self._tag_index[tag].remove(fragment_id)
+        
+        if self.storage_path:
+            sector_dir = self.storage_path / fragment.domain / (fragment.sector or 'general')
+            fragment_file = sector_dir / f"{fragment_id}.json"
+            if fragment_file.exists():
+                fragment_file.unlink()
+        
         return True
-    
-    def __len__(self) -> int:
-        return self.count()
-    
-    def __repr__(self) -> str:
-        return f"FragmentLibrary({self.total_count} fragments, {len(self.fragments_by_domain)} domains)"
 
 
-# Export for backward compatibility
-__all__ = ['FragmentLibrary', 'FragmentMetadata']
+_default_library: Optional[FragmentLibrary] = None
+
+
+def get_library(storage_path: Optional[Path] = None) -> FragmentLibrary:
+    global _default_library
+    if _default_library is None:
+        _default_library = FragmentLibrary(storage_path)
+    return _default_library
+
+
+def reset_library():
+    global _default_library
+    _default_library = None
