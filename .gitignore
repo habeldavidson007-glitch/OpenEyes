@@ -1,36 +1,60 @@
-```
-# Compiled and build artifacts
-*.pyc
-__pycache__/
-*.o
-*.obj
-
-# Dependencies
-.venv/
-venv/
-node_modules/
-
-# Logs and temp files
+# Logs and temporary files
 *.log
 *.tmp
-*.swp
 
-# Environment
+# Test results and reports
+test_results/
+archive/
+
+# Environment files
 .env
 .env.local
-.env.*
+*.env.*
 
-# Editors
+# IDE and editor files
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Coverage
-.coverage
-coverage/
-htmlcov/
-
-# Distribution / packaging
+# Dependencies and build artifacts
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
 dist/
 build/
-*.egg-info/
-```
+.coverage
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.venv/
+venv/
+.env/
+
+# System files
+.DS_Store
+Thumbs.db
+*~
+
+# Coverage and testing
+coverage/
+htmlcov/
+*.coverage
+
+# Documentation and reports
+COMPREHENSIVE_TEST_REPORT.md
+P4_SYNTHESIS_REPORT.md
+PRUNING_REPORT.md
+REALITY_CHECK_ANALYSIS.md
+TEST_REPORT.md
+THREE_DOMAIN_TEST_REPORT.md
+docs/*.md
+test_results/*.md
+archive/*.md
+shared_core/eplus_dictionary.md
+openeyes/README.md
