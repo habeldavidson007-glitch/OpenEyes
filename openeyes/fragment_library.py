@@ -246,6 +246,12 @@ class FragmentLibrary:
         frag_id = f"{domain}_{sector}_{topic}"
         return self.fragments_by_id.get(frag_id)
     
+    def get_fragment(self, frag_id: str) -> Optional[Fragment]:
+        """Get a fragment by its ID."""
+        if not self._loaded:
+            self.load_all()
+        return self.fragments_by_id.get(frag_id)
+    
     def count(self) -> int:
         """Get total fragment count."""
         if not self._loaded:

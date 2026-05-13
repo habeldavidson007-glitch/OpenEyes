@@ -18,6 +18,16 @@ class Fragment:
     evidence_level: str = "moderate"
     feedback: dict[str, int] = field(default_factory=lambda: {"thumbs_up": 0, "thumbs_down": 0})
     success_rate_ema: float = 0.7
+    # Domain metadata for proper filtering
+    domain: str = "unknown"
+    sector: str = "unknown"
+    topic: str = ""
+    reasoning_role: str = "definition"
+    tags: list[str] = field(default_factory=list)
+    content: str = ""
+    year: int = 0
+    source: str = ""
+    credibility_class: str = "peer_reviewed_study"
 
     @property
     def effective_weight(self) -> float:
@@ -71,6 +81,16 @@ def migrate_fragment(payload: dict) -> Fragment:
             published_on=str(payload.get("year", "")),
             jurisdiction=payload.get("jurisdiction", "global"),
             evidence_level=payload.get("evidence_level", "moderate"),
+            # Domain metadata
+            domain=domain,
+            sector=sector,
+            topic=payload.get("topic", ""),
+            reasoning_role=role,
+            tags=payload.get("tags", []),
+            content=claim,
+            year=int(payload.get("year", 0)) if payload.get("year") else 0,
+            source=payload.get("source", ""),
+            credibility_class=payload.get("credibility_class", "peer_reviewed_study"),
         )
     
     # Legacy format handling
