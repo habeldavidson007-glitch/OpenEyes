@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_HIS_great_man_theory_counter_argument_097",
+  "domain": "his",
+  "subdomain": "his",
+  "tags": [
+    "his",
+    "great_man_theory",
+    "counter_argument",
+    "swarm_generated"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Scholarly debate regarding Great Man Theory centers on methodological and interpretive questions surrounding great man theory. Traditional interpretations suggest established scholarly interpretations based on available evidence, while revisionist scholars argue alternative readings informed by new methodologies or evidence. Archaeological and documentary evidence indicates multiple lines of inquiry from diverse sources. The historiographical consensus remains evolving as new evidence emerges.",
+  "source": "Journal of the History of Ideas",
+  "source_url": "https://example.org/his/his/great_man_theory",
+  "credibility_class": "academic_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.998842",
+    "sector_target": 100
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "domain": "ECONOMY",
+  "code": "ECO",
+  "description": "How resources are produced, distributed, allocated, and governed financially.",
+  "sectors": [
+    {
+      "code": "FIN",
+      "name": "Finance & Markets",
+      "description": "Equities, bonds, crypto, derivatives, trading mechanics, valuation, technical analysis",
+      "target_fragments": 800
+    },
+    {
+      "code": "MAC",
+      "name": "Macroeconomics",
+      "description": "GDP, inflation, employment, monetary policy, fiscal policy, business cycles",
+      "target_fragments": 300
+    },
+    {
+      "code": "REG",
+      "name": "Financial Regulation",
+      "description": "SEC, CFTC, Basel, Dodd-Frank, MiFID, crypto regulation, compliance",
+      "target_fragments": 150
+    },
+    {
+      "code": "ENR",
+      "name": "Energy & Power",
+      "description": "Oil, gas, renewables, power markets, energy transition, critical minerals",
+      "target_fragments": 200
+    },
+    {
+      "code": "COM",
+      "name": "Commodities & Agriculture",
+      "description": "Precious metals, industrial metals, agricultural commodities, commodity markets",
+      "target_fragments": 200
+    },
+    {
+      "code": "GEO",
+      "name": "Geopolitics & Trade",
+      "description": "Trade policy, sanctions, tariffs, dollar system, currency wars, supply chains",
+      "target_fragments": 200
+    }
+  ],
+  "total_target_fragments": 1850,
+  "primary_sources": ["Federal Reserve", "SEC", "BLS", "BEA", "FRED", "EIA", "USDA", "World Bank", "IMF", "WTO", "OPEC"],
+  "fragment_rules": {
+    "required_roles": ["definition", "counter_argument", "latest_data"],
+    "require_source_url": true,
+    "require_year": true,
+    "prefer_peer_reviewed": true,
+    "recency_cap_years": 5
+  }
+}

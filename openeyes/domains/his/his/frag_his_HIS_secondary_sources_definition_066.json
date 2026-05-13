@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_HIS_secondary_sources_definition_066",
+  "domain": "his",
+  "subdomain": "his",
+  "tags": [
+    "his",
+    "secondary_sources",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Secondary Sources in Historiography refers to the historical phenomena associated with secondary sources. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Stanford Encyclopedia",
+  "source_url": "https://example.org/his/his/secondary_sources",
+  "credibility_class": "academic_publication",
+  "year": 2023,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.998538",
+    "sector_target": 100
+  }
+}

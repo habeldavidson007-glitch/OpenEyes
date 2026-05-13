@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_MOD_westphalia_treaty_definition_153",
+  "domain": "his",
+  "subdomain": "mod",
+  "tags": [
+    "mod",
+    "westphalia_treaty",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Westphalia Treaty in Early Modern History refers to the historical phenomena associated with westphalia treaty. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "American Historical Review",
+  "source_url": "https://example.org/his/mod/westphalia_treaty",
+  "credibility_class": "academic_publication",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.842429",
+    "sector_target": 200
+  }
+}

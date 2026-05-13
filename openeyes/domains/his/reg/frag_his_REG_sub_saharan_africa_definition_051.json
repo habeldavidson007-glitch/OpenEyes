@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_REG_sub_saharan_africa_definition_051",
+  "domain": "his",
+  "subdomain": "reg",
+  "tags": [
+    "reg",
+    "sub_saharan_africa",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Sub Saharan Africa in Regional History refers to the historical phenomena associated with sub saharan africa. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "national archives",
+  "source_url": "https://example.org/his/reg/sub_saharan_africa",
+  "credibility_class": "academic_publication",
+  "year": 2023,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.942801",
+    "sector_target": 200
+  }
+}

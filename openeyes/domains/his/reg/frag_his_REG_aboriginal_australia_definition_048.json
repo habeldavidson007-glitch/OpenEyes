@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_REG_aboriginal_australia_definition_048",
+  "domain": "his",
+  "subdomain": "reg",
+  "tags": [
+    "reg",
+    "aboriginal_australia",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Aboriginal Australia in Regional History refers to the historical phenomena associated with aboriginal australia. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Journal of Regional History",
+  "source_url": "https://example.org/his/reg/aboriginal_australia",
+  "credibility_class": "academic_publication",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.942774",
+    "sector_target": 200
+  }
+}

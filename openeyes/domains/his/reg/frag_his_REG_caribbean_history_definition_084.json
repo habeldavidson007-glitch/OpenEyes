@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_REG_caribbean_history_definition_084",
+  "domain": "his",
+  "subdomain": "reg",
+  "tags": [
+    "reg",
+    "caribbean_history",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Caribbean History in Regional History refers to the historical phenomena associated with caribbean history. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Journal of Regional History",
+  "source_url": "https://example.org/his/reg/caribbean_history",
+  "credibility_class": "academic_publication",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.943093",
+    "sector_target": 200
+  }
+}

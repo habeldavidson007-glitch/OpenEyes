@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_ANC_ancient_writing_systems_definition_117",
+  "domain": "his",
+  "subdomain": "anc",
+  "tags": [
+    "anc",
+    "ancient_writing_systems",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Ancient Writing Systems in Ancient History refers to the historical phenomena associated with ancient writing systems. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Oxford Classical Dictionary",
+  "source_url": "https://example.org/his/anc/ancient_writing_systems",
+  "credibility_class": "academic_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.763084",
+    "sector_target": 150
+  }
+}

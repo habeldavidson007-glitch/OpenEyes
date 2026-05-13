@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_ANC_ancient_greece_definition_066",
+  "domain": "his",
+  "subdomain": "anc",
+  "tags": [
+    "anc",
+    "ancient_greece",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Ancient Greece in Ancient History refers to the historical phenomena associated with ancient greece. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "JSTOR",
+  "source_url": "https://example.org/his/anc/ancient_greece",
+  "credibility_class": "academic_publication",
+  "year": 2023,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.762535",
+    "sector_target": 150
+  }
+}

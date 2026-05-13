@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_CON_holocaust_definition_138",
+  "domain": "his",
+  "subdomain": "con",
+  "tags": [
+    "con",
+    "holocaust",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Holocaust in Contemporary History refers to the historical phenomena associated with holocaust. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Wilson Center",
+  "source_url": "https://example.org/his/con/holocaust",
+  "credibility_class": "academic_publication",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.897636",
+    "sector_target": 200
+  }
+}

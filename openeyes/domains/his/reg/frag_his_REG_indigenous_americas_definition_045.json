@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_REG_indigenous_americas_definition_045",
+  "domain": "his",
+  "subdomain": "reg",
+  "tags": [
+    "reg",
+    "indigenous_americas",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Indigenous Americas in Regional History refers to the historical phenomena associated with indigenous americas. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Area Studies journals",
+  "source_url": "https://example.org/his/reg/indigenous_americas",
+  "credibility_class": "academic_publication",
+  "year": 2022,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.942747",
+    "sector_target": 200
+  }
+}

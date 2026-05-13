@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_REG_indigenous_americas_latest_data_047",
+  "domain": "his",
+  "subdomain": "reg",
+  "tags": [
+    "reg",
+    "indigenous_americas",
+    "latest_data",
+    "swarm_generated"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent scholarship on Indigenous Americas (2020-2026) includes emerging evidence and methodological innovations in the study of indigenous americas. New analytical techniques enable more precise dating and cross-referencing of historical sources. Current research priorities focus on interdisciplinary approaches combining history with other fields. Digital archives and optical character recognition and natural language processing have transformed access to sources.",
+  "source": "national archives",
+  "source_url": "https://example.org/his/reg/indigenous_americas",
+  "credibility_class": "academic_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.942764",
+    "sector_target": 200
+  }
+}

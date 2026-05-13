@@ -1,0 +1,19 @@
+{
+  "id": "frag_sat_PHY_definition_865a4770",
+  "domain": "sat",
+  "subdomain": "phy",
+  "tags": [
+    "phy",
+    "cond-mat",
+    "definition"
+  ],
+  "reasoning_role": "definition",
+  "content": "Phases of a rotating Bose-Einstein condensate with anharmonic confinement. We examine an effectively repulsive Bose-Einstein condensate of atoms that rotates in a quadratic-plus-quartic potential. With use of a variational method we identify the three possible phases of the system (multiple quantization, single quantization, and a mixed phase) as a function of the rotational frequency of the gas and of the coupling constant. The derived phase diagram is shown to be universal and the continuous transitions to be exact in the limit of weak coupling and small anharmonicity. The variational results are found to be consistent with numerical solutions of the Gross-Pitaevskii equation.",
+  "source": "ArXiv",
+  "source_url": "http://arxiv.org/abs/cond-mat/0401292v1",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2004,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}
