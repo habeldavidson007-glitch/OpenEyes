@@ -19,11 +19,12 @@ class TestComprehensiveDomains:
     def get_domain_fragments_count(self, domain):
         """Get fragment count for a domain"""
         try:
-            from openeyes.knowledge.fragments import FragmentLibrary
+            from openeyes.fragment_library import FragmentLibrary
             lib = FragmentLibrary()
             frags = lib.get_fragments_by_domain(domain)
             return len(frags) if frags else 0
-        except:
+        except Exception as e:
+            print(f"Error getting fragment count: {e}")
             return 0
     
     # ==================== MEDICAL DOMAIN (50 queries) ====================

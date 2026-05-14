@@ -3,6 +3,7 @@ openeyes/core/synthesis_engine.py
 
 The 'Brain' that connects facts into arguments.
 Transforms a bag of fragments into a coherent, logically structured narrative.
+CRITICAL UPDATE: Answers must be DIRECT and HUMAN-LIKE, not robotic fact dumps.
 """
 
 import re
@@ -20,7 +21,8 @@ class LogicalNode:
 class SynthesisEngine:
     """
     Converts retrieved fragments into a structural narrative.
-    Instead of listing facts, it builds an argument chain: Premise -> Evidence -> Conclusion.
+    CRITICAL: Must answer like a human expert - direct, concise, then supporting details.
+    NOT a robot listing facts without answering the question.
     """
     
     def __init__(self):
@@ -36,9 +38,10 @@ class SynthesisEngine:
     def synthesize(self, query: str, fragments: List[Dict]) -> str:
         """
         Main entry point. Takes raw fragments and returns a structured narrative.
+        CRITICAL: Start with a DIRECT ANSWER, then provide context/evidence.
         """
         if not fragments:
-            return "No sufficient evidence found to construct a narrative."
+            return "I don't have enough information to answer this question confidently."
 
         # 1. Analyze and Role-Assign Fragments
         nodes = self._assign_roles(query, fragments)
@@ -46,7 +49,7 @@ class SynthesisEngine:
         # 2. Build Logical Connections (The "Graph")
         graph = self._build_dependency_graph(nodes, query)
         
-        # 3. Traverse Graph to Generate Narrative
+        # 3. Traverse Graph to Generate Narrative - HUMAN-LIKE OUTPUT
         narrative = self._generate_narrative(graph, query)
         
         return narrative
@@ -54,8 +57,8 @@ class SynthesisEngine:
     def _assign_roles(self, query: str, fragments: List[Dict]) -> List[LogicalNode]:
         """
         Heuristic role assignment based on keywords and position.
-        In a full LLM integration, this would be an NLP task.
-        Here we use pattern matching for speed and determinism.
+        Prioritize fragments that directly answer the query.
+        CRITICAL: For definition questions, the first high-confidence fragment should be CONCLUSION.
         """
         nodes = []
         query_lower = query.lower()
@@ -84,8 +87,13 @@ class SynthesisEngine:
                 # Fragment is likely irrelevant - skip it or mark as very low confidence
                 conf = conf * 0.3  # Severely downgrade confidence
                 role = 'EVIDENCE'  # Keep as evidence but with low weight
-            elif topic_match_count >= 2:
-                # High relevance - candidate for conclusion
+            elif topic_match_count >= 1 and conf >= 0.7:
+                # High relevance + high confidence - candidate for conclusion
+                role = 'CONCLUSION'
+            
+            # CRITICAL FIX: For "What is X?" questions, first fragment mentioning the term is the answer
+            if is_what_question and i == 0 and conf >= 0.7:
+                # First high-confidence fragment in a "what" question is typically the definition/answer
                 role = 'CONCLUSION'
             
             # If fragment contains causal markers, it might be a conclusion or premise
@@ -106,7 +114,7 @@ class SynthesisEngine:
             query_words = set(query_lower.split())
             content_words = set(content_lower.split())
             overlap = query_words & content_words
-            if len(overlap) >= 3:
+            if len(overlap) >= 2:  # Reduced from 3 to 2 for better detection
                 role = 'CONCLUSION' # Likely the direct answer
             
             nodes.append(LogicalNode(
@@ -148,6 +156,7 @@ class SynthesisEngine:
         """
         Traverses the graph to write a human-readable paragraph.
         CRITICAL: Must directly ANSWER the query first, then provide supporting evidence.
+        HUMAN-LIKE OUTPUT: Direct, conversational, not robotic.
         """
         conclusions = [n for n in nodes if n.role == 'CONCLUSION']
         evidence = [n for n in nodes if n.role == 'EVIDENCE']
@@ -155,145 +164,229 @@ class SynthesisEngine:
         
         if not conclusions and not evidence:
             # Fallback to simple concatenation if logic fails
-            return " ".join([n.content for n in nodes])
+            return "I don't have enough information to answer this question confidently."
 
-        narrative_parts = []
         query_lower = query.lower()
         
         # DETECT QUERY TYPE for proper response structure
         is_what_question = query_lower.startswith('what')
+        is_how_question = query_lower.startswith('how')
+        is_why_question = query_lower.startswith('why')
         is_stock_query = 'stock' in query_lower or 'invest' in query_lower or 'roi' in query_lower or 'return' in query_lower
         is_exchange_rate = 'exchange rate' in query_lower or 'currency' in query_lower
+        is_definition = is_what_question and ('is' in query_lower or 'are' in query_lower)
         
-        # 1. FOR STOCK/INVESTMENT QUERIES: Direct answer first, no fluff
+        # ==================== SPECIAL HANDLING FOR STOCKS/EXCHANGE RATES ====================
         if is_stock_query and (conclusions or evidence):
-            # Start with a direct acknowledgment that specific stock picks require real-time data
-            narrative_parts.append(
-                "I cannot provide real-time stock recommendations or current ROI data, as my knowledge has a time delay. "
-                "However, I can share proven strategies for identifying stocks with strong ROI potential:"
-            )
+            return self._handle_stock_query(query, conclusions, evidence)
+        
+        if is_exchange_rate and (conclusions or evidence):
+            return self._handle_exchange_rate_query(query, conclusions, evidence)
+        
+        # ==================== GENERAL HUMAN-LIKE RESPONSE STRUCTURE ====================
+        # For definition/direct questions: START WITH THE ANSWER
+        if is_definition or is_what_question:
+            return self._generate_direct_answer(query, conclusions, evidence, premises)
+        
+        # For how/why questions: Provide explanation structure
+        if is_how_question or is_why_question:
+            return self._generate_explanatory_answer(query, conclusions, evidence, premises)
+        
+        # Default: balanced approach
+        return self._generate_balanced_answer(query, conclusions, evidence, premises)
+    
+    def _handle_stock_query(self, query: str, conclusions: List[LogicalNode], evidence: List[LogicalNode]) -> str:
+        """Handle stock/investment queries with appropriate disclaimers."""
+        parts = []
+        
+        # Start with honest limitation
+        parts.append("I can't provide real-time stock recommendations or current ROI data since my knowledge isn't live.")
+        
+        # Add strategic guidance from evidence
+        relevant_evidence = []
+        for ev in evidence[:4]:
+            content = ev.content.strip()
+            # Filter out completely irrelevant topics
+            if any(irrelevant in content.lower() for irrelevant in ['ai regulation', 'climate change', 'geopolitical', 'cybersecurity']):
+                continue
+            # Filter out web scraper artifacts
+            if any(artifact in content.lower() for artifact in ['duckduckgo', 'bots use', 'search endpoint', 'retrieved 0']):
+                continue
+            # Skip very short or nonsensical fragments
+            if len(content) < 30 or content.count(' ') < 5:
+                continue
+            relevant_evidence.append(content)
+        
+        if relevant_evidence:
+            parts.append("Here's what to look for when identifying stocks with strong ROI potential:")
+            for i, ev in enumerate(relevant_evidence):
+                if i == 0:
+                    parts.append(f"• {ev}")
+                else:
+                    parts.append(f"• Also: {ev}")
+        
+        # Actionable conclusion
+        parts.append("\nFor current picks, you should: (1) Use screening tools like Finviz or Yahoo Finance to filter by ROE > 15%, revenue growth > 10%, and low debt-to-equity; (2) Check recent analyst reports; (3) Consider diversified ETFs if individual stocks are too risky. Always verify data before investing.")
+        
+        return " ".join(parts)
+    
+    def _handle_exchange_rate_query(self, query: str, conclusions: List[LogicalNode], evidence: List[LogicalNode]) -> str:
+        """Handle exchange rate queries with appropriate disclaimers."""
+        parts = []
+        
+        # Honest limitation first
+        parts.append("I can't provide real-time exchange rates—they fluctuate constantly during trading hours.")
+        parts.append("For current rates, check XE.com, OANDA, or your bank's currency converter.")
+        
+        # Add relevant context only
+        for ev in evidence[:2]:
+            content = ev.content
+            if 'exchange' in content.lower() or 'currency' in content.lower() or 'forex' in content.lower():
+                parts.append(f"Context: {content}")
+        
+        # General educational info
+        parts.append("Exchange rates are driven by interest rate differentials, economic indicators, geopolitical stability, and central bank policies. Major pairs like EUR/USD typically trade with 1-3 pip spreads through retail brokers.")
+        
+        return " ".join(parts)
+    
+    def _generate_direct_answer(self, query: str, conclusions: List[LogicalNode], evidence: List[LogicalNode], premises: List[LogicalNode]) -> str:
+        """
+        Generate a DIRECT, HUMAN-LIKE answer for definition/what questions.
+        STRUCTURE: Direct answer first (1-2 sentences), then supporting details.
+        NOT: Long preamble, context dumping, or avoiding the actual answer.
+        """
+        parts = []
+        
+        # STEP 1: Find the most direct answer from conclusions
+        best_conclusion = None
+        if conclusions:
+            # Sort by confidence and relevance
+            sorted_conclusions = sorted(conclusions, key=lambda x: x.confidence, reverse=True)
+            best_conclusion = sorted_conclusions[0]
+        
+        if best_conclusion:
+            # Extract the core answer - be direct
+            answer_text = best_conclusion.content.strip()
             
-            # Add evidence as strategic guidance, not random facts
+            # Clean up overly long answers (truncate if needed)
+            if len(answer_text) > 800:
+                # Try to find a natural break point
+                break_point = answer_text[:800].rfind('.')
+                if break_point > 600:
+                    answer_text = answer_text[:break_point+1]
+                else:
+                    answer_text = answer_text[:800] + "..."
+            
+            parts.append(answer_text)
+        
+        # STEP 2: Add key supporting evidence (limit to 2-3 most relevant)
+        if evidence and len(parts) > 0:  # Only add evidence if we have an answer
             relevant_evidence = []
-            for ev in evidence[:4]:
+            for ev in sorted(evidence, key=lambda x: x.confidence, reverse=True)[:3]:
                 content = ev.content.strip()
-                # Filter out completely irrelevant topics (AI regulation, climate change, etc.)
-                if any(irrelevant in content.lower() for irrelevant in ['ai regulation', 'climate change', 'geopolitical', 'cybersecurity']):
+                # Skip irrelevant content
+                if any(irrelevant in content.lower() for irrelevant in ['ai regulation', 'climate change', 'geopolitical conflict']):
                     continue
-                # Filter out web scraper artifacts and low-quality content
-                if any(artifact in content.lower() for artifact in ['duckduckgo', 'bots use', 'search endpoint', 'retrieved 0']):
+                if ev.confidence < 0.2:
                     continue
-                # Skip very short or nonsensical fragments
-                if len(content) < 30 or content.count(' ') < 5:
+                # Avoid duplicates
+                if content not in parts and not any(content in p for p in parts):
+                    relevant_evidence.append(content)
+            
+            if relevant_evidence:
+                parts.append("\nKey details:")
+                for ev_content in relevant_evidence:
+                    parts.append(f"• {ev_content}")
+        
+        # STEP 3: Add brief context from premises only if truly relevant
+        if premises and len(parts) <= 2:  # Don't overload if already comprehensive
+            query_words = set(query.lower().split())
+            for prem in premises[:1]:
+                prem_text = prem.content.lower()
+                prem_words = set(prem_text.split())
+                if len(query_words & prem_words) >= 3:  # High relevance
+                    parts.append(f"\nBackground: {prem.content}")
+        
+        if not parts:
+            return "I don't have enough specific information to answer this question directly."
+        
+        # Join and clean
+        full_text = "\n\n".join(parts)
+        full_text = re.sub(r'\s+', ' ', full_text).strip()
+        
+        # Ensure proper punctuation
+        if full_text and not full_text.endswith('.'):
+            full_text += '.'
+        
+        return full_text
+    
+    def _generate_explanatory_answer(self, query: str, conclusions: List[LogicalNode], evidence: List[LogicalNode], premises: List[LogicalNode]) -> str:
+        """
+        Generate explanatory answers for how/why questions.
+        STRUCTURE: Brief summary, then step-by-step or causal explanation.
+        """
+        parts = []
+        
+        # Start with a brief summary/overview
+        if conclusions:
+            best_conclusion = max(conclusions, key=lambda x: x.confidence)
+            summary = best_conclusion.content.strip()
+            if len(summary) > 400:
+                summary = summary[:400] + "..."
+            parts.append(summary)
+        
+        # Add explanatory evidence
+        if evidence:
+            relevant_evidence = []
+            for ev in sorted(evidence, key=lambda x: x.confidence, reverse=True)[:4]:
+                content = ev.content.strip()
+                if any(irrelevant in content.lower() for irrelevant in ['ai regulation', 'climate change']):
+                    continue
+                if ev.confidence < 0.2:
                     continue
                 relevant_evidence.append(content)
             
             if relevant_evidence:
-                for i, ev in enumerate(relevant_evidence):
+                parts.append("\nExplanation:")
+                for i, ev_content in enumerate(relevant_evidence):
                     if i == 0:
-                        connector = "Key approach: "
+                        parts.append(f"First, {ev_content}")
                     elif i == 1:
-                        connector = "Important factor: "
+                        parts.append(f"Additionally, {ev_content}")
                     else:
-                        connector = "Also consider: "
-                    narrative_parts.append(f"{connector}{ev}")
-            
-            # Add a strong actionable conclusion
-            narrative_parts.append(
-                "For current stock picks with good ROI, you should: (1) Use screening tools like Finviz or Yahoo Finance to filter by ROE > 15%, revenue growth > 10%, and low debt-to-equity; "
-                "(2) Consult recent analyst reports from major brokerages; "
-                "(3) Consider diversified ETFs if individual stock selection is too risky. "
-                "Always verify data recency before making investment decisions."
-            )
-            
-            full_text = " ".join(narrative_parts)
-            full_text = re.sub(r'\s+', ' ', full_text).strip()
-            if full_text and not full_text.endswith('.'):
-                full_text += '.'
-            return full_text
+                        parts.append(f"• {ev_content}")
         
-        # 2. FOR EXCHANGE RATE QUERIES: Acknowledge limitation, provide context
-        if is_exchange_rate and (conclusions or evidence):
-            narrative_parts.append(
-                "I cannot provide real-time exchange rates as they fluctuate continuously throughout trading hours. "
-                "For current rates, check live sources like XE.com, OANDA, or your bank's currency converter."
-            )
-            
-            # Add only relevant contextual information
-            for ev in evidence[:2]:
-                content = ev.content
-                if 'exchange' in content.lower() or 'currency' in content.lower() or 'forex' in content.lower():
-                    narrative_parts.append(f"Context: {content}")
-            
-            narrative_parts.append(
-                "Exchange rates are influenced by interest rate differentials, economic indicators, geopolitical stability, and central bank policies. "
-                "Major currency pairs like EUR/USD typically trade with spreads of 1-3 pips through retail brokers."
-            )
-            
-            full_text = " ".join(narrative_parts)
-            full_text = re.sub(r'\s+', ' ', full_text).strip()
-            if full_text and not full_text.endswith('.'):
-                full_text += '.'
-            return full_text
+        if not parts:
+            return "I don't have enough information to explain this thoroughly."
         
-        # 3. GENERIC STRUCTURE for other query types
-        # Start with Context/Premise (The "Why") - ONLY if relevant
-        if premises:
-            # Check if premise is actually relevant to query
-            premise_text = premises[0].content.lower()
-            query_words = set(query_lower.split())
-            premise_words = set(premise_text.split())
-            if len(query_words & premise_words) >= 2:
-                narrative_parts.append(f"Background: {premises[0].content}")
-        
-        # Add Evidence with proper connectors (The "What")
-        filtered_evidence = []
-        for ev in evidence[:4]:
-            content = ev.content.lower()
-            # Filter out clearly irrelevant content
-            if any(irrelevant in content for irrelevant in ['ai regulation', 'climate change', 'geopolitical conflict']):
-                continue
-            # Also filter based on confidence (downgraded by _assign_roles if irrelevant)
-            if ev.confidence < 0.2:
-                continue
-            filtered_evidence.append(ev.content)
-        
-        for i, ev_content in enumerate(filtered_evidence):
-            if i == 0:
-                connector = "Key insight: "
-            elif i == 1:
-                connector = "Supporting detail: "
-            else:
-                connector = "Additional context: "
-            narrative_parts.append(f"{connector}{ev_content}")
-        
-        # End with Conclusion (The "Answer") - MUST synthesize, not just repeat
-        if conclusions:
-            # Get the highest confidence conclusion that's actually relevant
-            relevant_conclusions = [c for c in conclusions if c.confidence >= 0.3]
-            if relevant_conclusions:
-                main_conc = max(relevant_conclusions, key=lambda x: x.confidence)
-                # Synthesize a proper conclusion, don't just copy fragment
-                if main_conc.connections:
-                    narrative_parts.append(f"Bottom line: {main_conc.content}")
-                else:
-                    narrative_parts.append(f"In summary: {main_conc.content}")
-            elif conclusions:
-                # Fallback to any conclusion even if low confidence
-                main_conc = max(conclusions, key=lambda x: x.confidence)
-                narrative_parts.append(f"In summary: {main_conc.content}")
-        elif filtered_evidence:
-            # If no explicit conclusion, create one from evidence
-            narrative_parts.append("This information suggests you should verify current data from authoritative sources before taking action.")
-
-        # Join and clean up
-        full_text = " ".join(narrative_parts)
-        
-        # Basic cleanup for flow - fix double spaces and ensure proper punctuation
+        full_text = "\n\n".join(parts)
         full_text = re.sub(r'\s+', ' ', full_text).strip()
-        
-        # Ensure proper sentence endings
         if full_text and not full_text.endswith('.'):
             full_text += '.'
-            
+        
+        return full_text
+    
+    def _generate_balanced_answer(self, query: str, conclusions: List[LogicalNode], evidence: List[LogicalNode], premises: List[LogicalNode]) -> str:
+        """Default balanced approach for other query types."""
+        parts = []
+        
+        # Lead with conclusion if available
+        if conclusions:
+            best_conclusion = max(conclusions, key=lambda x: x.confidence)
+            parts.append(best_conclusion.content)
+        
+        # Add supporting evidence
+        if evidence:
+            for ev in sorted(evidence, key=lambda x: x.confidence, reverse=True)[:3]:
+                if ev.confidence >= 0.3:
+                    parts.append(ev.content)
+        
+        if not parts:
+            return "I don't have sufficient information to answer this question."
+        
+        full_text = "\n\n".join(parts)
+        full_text = re.sub(r'\s+', ' ', full_text).strip()
+        if full_text and not full_text.endswith('.'):
+            full_text += '.'
+        
         return full_text

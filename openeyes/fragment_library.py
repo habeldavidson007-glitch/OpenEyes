@@ -74,6 +74,16 @@ class Fragment:
         filtered_data = {k: v for k, v in data.items() if k in valid_fields}
         
         # Ensure required fields have values
+        if 'id' not in filtered_data or not filtered_data['id']:
+            # Generate ID from fragment_id or content hash
+            if 'fragment_id' in data and data['fragment_id']:
+                filtered_data['id'] = data['fragment_id']
+            elif 'content' in data and data['content']:
+                import hashlib
+                filtered_data['id'] = f"frag_{hashlib.sha256(data['content'].encode()).hexdigest()[:12]}"
+            else:
+                filtered_data['id'] = f"frag_unknown_{len(filtered_data)}"
+        
         if 'tags' not in filtered_data:
             filtered_data['tags'] = []
         if 'content' not in filtered_data or not filtered_data['content']:
