@@ -1,42 +1,15 @@
 ```
-# Compiled Python files
-*.pyc
-__pycache__/
-
-# Logs and temporary files
-*.log
-*.tmp
-
-# Environment files
+# Environment
 .env
 .env.local
-*.env.*
+.env.*
 
-# System files
-.DS_Store
-Thumbs.db
+# Logs and temp files
+*.log
 
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Build artifacts
-dist/
-build/
-target/
+# Binary/compiled files
 *.bin
 
-# Package management
-node_modules/
-.venv/
-venv/
-.mypy_cache/
-.pytest_cache/
+# Directories
+.openeyes/
 ```
