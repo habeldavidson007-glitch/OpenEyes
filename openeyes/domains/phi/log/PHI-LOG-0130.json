@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0130",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Argumentation theory",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Argumentation theory: A comprehensive examination of argumentation theory within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/129",
+      "year": 2015,
+      "credibility_score": 0.9683814352918355,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on argumentation theory: Examining objections, alternative frameworks, and limitations of dominant approaches to argumentation theory.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/counter/129",
+      "year": 2019,
+      "credibility_score": 0.9367578249278159,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in argumentation theory: Current research trends, emerging debates, and new applications of argumentation theory in contemporary philosophy.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/latest/129",
+      "year": 2022,
+      "credibility_score": 0.9594849119582906,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.382237",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "argumentation_theory"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0134",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Abductive reasoning",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Abductive reasoning: A comprehensive examination of abductive reasoning within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/133",
+      "year": 2023,
+      "credibility_score": 0.8542641758585541,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on abductive reasoning: Examining objections, alternative frameworks, and limitations of dominant approaches to abductive reasoning.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/counter/133",
+      "year": 2018,
+      "credibility_score": 0.8226795909527984,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in abductive reasoning: Current research trends, emerging debates, and new applications of abductive reasoning in contemporary philosophy.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/latest/133",
+      "year": 2020,
+      "credibility_score": 0.888720192472326,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.382750",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "abductive_reasoning"
+    ]
+  }
+}

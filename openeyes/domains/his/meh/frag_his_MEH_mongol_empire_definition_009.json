@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_MEH_mongol_empire_definition_009",
+  "domain": "his",
+  "subdomain": "meh",
+  "tags": [
+    "meh",
+    "mongol_empire",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Mongol Empire in Medieval History refers to the historical phenomena associated with mongol empire. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Speculum Journal",
+  "source_url": "https://example.org/his/meh/mongol_empire",
+  "credibility_class": "academic_publication",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.801699",
+    "sector_target": 150
+  }
+}

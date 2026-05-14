@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0036",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Bioethics and genetic engineering",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Bioethics and genetic engineering: A comprehensive examination of bioethics and genetic engineering within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/bioethics-and-genetic-engineering/",
+      "year": 2016,
+      "credibility_score": 0.9178866638007637,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on bioethics and genetic engineering: Examining objections, alternative frameworks, and limitations of dominant approaches to bioethics and genetic engineering.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/counter/35",
+      "year": 2015,
+      "credibility_score": 0.9136516532424876,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in bioethics and genetic engineering: Current research trends, emerging debates, and new applications of bioethics and genetic engineering in contemporary philosophy.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/latest/35",
+      "year": 2023,
+      "credibility_score": 0.9312873321460162,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.281475",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "bioethics_and_genetic_engineering"
+    ]
+  }
+}

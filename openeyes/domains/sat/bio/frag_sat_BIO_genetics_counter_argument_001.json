@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_BIO_genetics_counter_argument_001",
+  "domain": "sat",
+  "subdomain": "bio",
+  "tags": [
+    "bio",
+    "genetics",
+    "counter_argument",
+    "swarm_generated"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Alternative perspectives on Genetics suggest nature versus nurture debates and limitations of genetic determinism. Critics argue simplifications in current models. However, empirical evidence shows reproducible experimental results. The debate continues regarding the underlying mechanisms.",
+  "source": "Nature",
+  "source_url": "https://example.org/sat/bio/genetics",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.895340",
+    "sector_target": 200
+  }
+}

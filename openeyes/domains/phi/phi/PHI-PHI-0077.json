@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0077",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "German idealism - Hegel",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "German idealism - Hegel: A comprehensive examination of german idealism - hegel within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/76",
+      "year": 2022,
+      "credibility_score": 0.8861914198761829,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on german idealism - hegel: Examining objections, alternative frameworks, and limitations of dominant approaches to german idealism - hegel.",
+      "source": "British Journal for the History of Philosophy",
+      "url": "https://example.com/phi/counter/76",
+      "year": 2023,
+      "credibility_score": 0.8714748198048005,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in german idealism - hegel: Current research trends, emerging debates, and new applications of german idealism - hegel in contemporary philosophy.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/latest/76",
+      "year": 2024,
+      "credibility_score": 0.9613160086495235,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.497937",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "german_idealism_-_hegel"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_ENV_environmental_toxicology_counter_argument_100",
+  "domain": "sat",
+  "subdomain": "env",
+  "tags": [
+    "env",
+    "environmental_toxicology",
+    "counter_argument",
+    "swarm_generated"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Alternative perspectives on Environmental Toxicology suggest methodological limitations and competing theoretical frameworks in environmental toxicology. Critics argue simplifications in current models. However, empirical evidence shows reproducible experimental results. The debate continues regarding the underlying mechanisms.",
+  "source": "IPCC",
+  "source_url": "https://example.org/sat/env/environmental_toxicology",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.941474",
+    "sector_target": 200
+  }
+}

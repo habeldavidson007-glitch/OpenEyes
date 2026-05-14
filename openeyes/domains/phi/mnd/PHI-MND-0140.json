@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0140",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Embodied cognition",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Embodied cognition: A comprehensive examination of embodied cognition within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/139",
+      "year": 2018,
+      "credibility_score": 0.9279668005561508,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on embodied cognition: Examining objections, alternative frameworks, and limitations of dominant approaches to embodied cognition.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/counter/139",
+      "year": 2018,
+      "credibility_score": 0.905112468327638,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in embodied cognition: Current research trends, emerging debates, and new applications of embodied cognition in contemporary philosophy.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/mnd/latest/139",
+      "year": 2021,
+      "credibility_score": 0.9161074859528281,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.474641",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "embodied_cognition"
+    ]
+  }
+}

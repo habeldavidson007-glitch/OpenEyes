@@ -1,0 +1,30 @@
+{
+  "sector": "DEM",
+  "sector_name": "Demographics",
+  "total_fragments": 150,
+  "target_fragments": 150,
+  "completion_percentage": 100.0,
+  "topics_covered": [
+    "Population pyramids and structure",
+    "Fertility rates and determinants",
+    "Mortality patterns and life expectancy",
+    "Migration theories and patterns",
+    "Urbanization trends",
+    "Population projections",
+    "Demographic transition theory",
+    "Aging populations",
+    "Youth demographics",
+    "Sex ratios and gender demographics",
+    "Household composition",
+    "Family size trends",
+    "Population density effects",
+    "Refugee and displacement statistics",
+    "Internal migration patterns",
+    "International migration flows",
+    "Demographic dividends",
+    "Population policies",
+    "Census methodologies",
+    "Demographic data sources"
+  ],
+  "generated_at": "2026-05-13T02:16:29.902482"
+}

@@ -165,8 +165,8 @@ class OpenEyes:
         
         # Initialize fragment library with proper path handling
         if fragment_library_path is None:
-            # Use the fragments directory relative to this module
-            fragment_library_path = Path(__file__).parent.parent / "fragment_library" / "fragments"
+            # Use the domains directory relative to this module (NEW structure)
+            fragment_library_path = Path(__file__).parent.parent / "domains"
         self.library = FragmentLibrary(storage_path=fragment_library_path)
         
         # Initialize API connectors if config provided
@@ -214,7 +214,10 @@ class OpenEyes:
         
         print(f"[OpenEyes] Initialized for domain '{self.domain}' (Tier {self.domain_tier[-1]})")
         print(f"✓ Loaded {len(self.rules_config.get('rules', []))} domain rules")
-        print(f"✓ Fragment library: {len(self.library._fragments)} fragments")
+        # Load fragments on demand
+        if not self.library._loaded:
+            self.library.load_all()
+        print(f"✓ Fragment library: {self.library.total_count} fragments")
         if night_mode:
             print(f"✓ Night Mode: Started as background thread")
     

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0124",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Global justice",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Global justice: A comprehensive examination of global justice within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/123",
+      "year": 2021,
+      "credibility_score": 0.8851076117140102,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on global justice: Examining objections, alternative frameworks, and limitations of dominant approaches to global justice.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/counter/123",
+      "year": 2017,
+      "credibility_score": 0.8964966108184402,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in global justice: Current research trends, emerging debates, and new applications of global justice in contemporary philosophy.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/latest/123",
+      "year": 2022,
+      "credibility_score": 0.9657122571544744,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.421839",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "global_justice"
+    ]
+  }
+}

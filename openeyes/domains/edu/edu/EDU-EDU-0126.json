@@ -1,0 +1,29 @@
+{
+  "id": "EDU-EDU-0126",
+  "domain": "EDU",
+  "sector": "EDU",
+  "timestamp": "2026-05-13T02:20:41.860752",
+  "roles": {
+    "definition": {
+      "content": "Charter School Efficacy is defined within Education Policy as the structured understanding of how knowledge acquisition occurs, specifically focusing on school systems, curriculum, assessment, equity, comparative education. Current consensus indicates that effective mechanisms rely on evidence-based pedagogical frameworks validated by longitudinal studies.",
+      "source": "Nature Human Behaviour",
+      "year": 2024,
+      "url": "https://example.gov/edu/EDU/125",
+      "role": "definition"
+    },
+    "counter_argument": {
+      "content": "Critiques of standard Charter School Efficacy approaches argue that prevailing models often overlook contextual variables such as socioeconomic status or cultural background. Alternative frameworks suggest that rigid adherence to current metrics may inhibit genuine skill acquisition and creativity.",
+      "source": "Journal of Critical Education Studies, Vol 33",
+      "year": 2021,
+      "url": "https://example.org/jces/EDU/125",
+      "role": "counter_argument"
+    },
+    "latest_data": {
+      "content": "Recent 2021 data from ERIC Database indicates a statistically negligible shift in Charter School Efficacy outcomes. Specifically, new metrics show a -5% variance in performance when compared to previous decade baselines, suggesting evolving dynamics in Education Policy.",
+      "source": "ERIC Database",
+      "year": 2021,
+      "url": "https://data.ed.gov/EDU/125",
+      "role": "latest_data"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0060",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Process philosophy",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Process philosophy: A comprehensive examination of process philosophy within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/59",
+      "year": 2016,
+      "credibility_score": 0.9168597178555387,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on process philosophy: Examining objections, alternative frameworks, and limitations of dominant approaches to process philosophy.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/counter/59",
+      "year": 2016,
+      "credibility_score": 0.8936859791366228,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in process philosophy: Current research trends, emerging debates, and new applications of process philosophy in contemporary philosophy.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/latest/59",
+      "year": 2021,
+      "credibility_score": 0.9505936295389329,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.495801",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "process_philosophy"
+    ]
+  }
+}

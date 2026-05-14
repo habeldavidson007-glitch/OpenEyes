@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0031",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Personal identity",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Personal identity: A comprehensive examination of personal identity within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/personal-identity/",
+      "year": 2022,
+      "credibility_score": 0.9546725252744976,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on personal identity: Examining objections, alternative frameworks, and limitations of dominant approaches to personal identity.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/counter/30",
+      "year": 2020,
+      "credibility_score": 0.8081039082181475,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in personal identity: Current research trends, emerging debates, and new applications of personal identity in contemporary philosophy.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/latest/30",
+      "year": 2022,
+      "credibility_score": 0.8948343658527977,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.439408",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "personal_identity"
+    ]
+  }
+}

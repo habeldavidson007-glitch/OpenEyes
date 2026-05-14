@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0076",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "International migration flows",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for international migration flows within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0076",
+      "year": 2024,
+      "confidence": 0.9
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to international migration flows, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0076/counter",
+      "year": 2024,
+      "confidence": 0.9
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to international migration flows as of 2024, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "UN Population Division",
+      "url": "https://example.org/dem/DEM_0076/data",
+      "year": 2024,
+      "confidence": 0.93
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.881147",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "international"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0088",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Civil disobedience",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Civil disobedience: A comprehensive examination of civil disobedience within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/87",
+      "year": 2021,
+      "credibility_score": 0.9163972811978894,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on civil disobedience: Examining objections, alternative frameworks, and limitations of dominant approaches to civil disobedience.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/counter/87",
+      "year": 2021,
+      "credibility_score": 0.848877573793054,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in civil disobedience: Current research trends, emerging debates, and new applications of civil disobedience in contemporary philosophy.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/latest/87",
+      "year": 2022,
+      "credibility_score": 0.9539706998540054,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.417396",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "civil_disobedience"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0094",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Nonverbal communication",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for nonverbal communication within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0094",
+      "year": 2022,
+      "confidence": 0.93
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to nonverbal communication, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0094/counter",
+      "year": 2022,
+      "confidence": 0.8
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to nonverbal communication as of 2022, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Reuters Institute Reports",
+      "url": "https://example.org/cmc/CMC_0094/data",
+      "year": 2022,
+      "confidence": 0.91
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.938174",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "nonverbal"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_BIO_population_genetics_latest_data_176",
+  "domain": "sat",
+  "subdomain": "bio",
+  "tags": [
+    "bio",
+    "population_genetics",
+    "latest_data",
+    "swarm_generated"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent developments in Population Genetics (2024-2026) include novel experimental results and theoretical refinements in population genetics. New methodologies enable more accurate predictions and control. Current research focuses on addressing current limitations. Key metrics show continuous improvement in predictive accuracy.",
+  "source": "ArXiv q-bio",
+  "source_url": "https://example.org/sat/bio/population_genetics",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.898143",
+    "sector_target": 200
+  }
+}

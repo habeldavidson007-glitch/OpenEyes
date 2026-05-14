@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_HIS_postcolonial_studies_definition_051",
+  "domain": "his",
+  "subdomain": "his",
+  "tags": [
+    "his",
+    "postcolonial_studies",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Postcolonial Studies in Historiography refers to the historical phenomena associated with postcolonial studies. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "academic presses",
+  "source_url": "https://example.org/his/his/postcolonial_studies",
+  "credibility_class": "academic_publication",
+  "year": 2023,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.998399",
+    "sector_target": 100
+  }
+}

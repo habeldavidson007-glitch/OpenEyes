@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0148",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Nationalism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Nationalism: A comprehensive examination of nationalism within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/147",
+      "year": 2015,
+      "credibility_score": 0.9014339471024032,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on nationalism: Examining objections, alternative frameworks, and limitations of dominant approaches to nationalism.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/pph/counter/147",
+      "year": 2014,
+      "credibility_score": 0.9349174332529449,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in nationalism: Current research trends, emerging debates, and new applications of nationalism in contemporary philosophy.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/latest/147",
+      "year": 2020,
+      "credibility_score": 0.8974643368461346,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.435366",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "nationalism"
+    ]
+  }
+}

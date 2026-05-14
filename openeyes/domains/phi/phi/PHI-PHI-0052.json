@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0052",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Phenomenology - Husserl",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Phenomenology - Husserl: A comprehensive examination of phenomenology - husserl within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/51",
+      "year": 2024,
+      "credibility_score": 0.9098843379536264,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on phenomenology - husserl: Examining objections, alternative frameworks, and limitations of dominant approaches to phenomenology - husserl.",
+      "source": "British Journal for the History of Philosophy",
+      "url": "https://example.com/phi/counter/51",
+      "year": 2019,
+      "credibility_score": 0.9373244918505399,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in phenomenology - husserl: Current research trends, emerging debates, and new applications of phenomenology - husserl in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/51",
+      "year": 2021,
+      "credibility_score": 0.924638210918267,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.494701",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "phenomenology_-_husserl"
+    ]
+  }
+}

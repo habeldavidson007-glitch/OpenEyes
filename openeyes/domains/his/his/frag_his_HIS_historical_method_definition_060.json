@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_HIS_historical_method_definition_060",
+  "domain": "his",
+  "subdomain": "his",
+  "tags": [
+    "his",
+    "historical_method",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Historical Method in Historiography refers to the systematic approaches historians use to research, analyze, and interpret past events. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "History and Theory",
+  "source_url": "https://example.org/his/his/historical_method",
+  "credibility_class": "academic_publication",
+  "year": 2022,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.998478",
+    "sector_target": 100
+  }
+}

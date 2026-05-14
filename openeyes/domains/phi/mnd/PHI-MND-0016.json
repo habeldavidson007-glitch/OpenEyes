@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0016",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Theory of mind",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Theory of mind: A comprehensive examination of theory of mind within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/15",
+      "year": 2014,
+      "credibility_score": 0.8917755158968845,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on theory of mind: Examining objections, alternative frameworks, and limitations of dominant approaches to theory of mind.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/mnd/counter/15",
+      "year": 2023,
+      "credibility_score": 0.9079961965859952,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in theory of mind: Current research trends, emerging debates, and new applications of theory of mind in contemporary philosophy.",
+      "source": "Neuroethics",
+      "url": "https://example.com/mnd/latest/15",
+      "year": 2021,
+      "credibility_score": 0.9207572078398426,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.437704",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "theory_of_mind"
+    ]
+  }
+}

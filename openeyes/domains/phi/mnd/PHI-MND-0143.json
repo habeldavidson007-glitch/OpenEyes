@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0143",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Phenomenology",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Phenomenology: A comprehensive examination of phenomenology within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/142",
+      "year": 2014,
+      "credibility_score": 0.9467232256298281,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on phenomenology: Examining objections, alternative frameworks, and limitations of dominant approaches to phenomenology.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/counter/142",
+      "year": 2022,
+      "credibility_score": 0.9431529195132549,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in phenomenology: Current research trends, emerging debates, and new applications of phenomenology in contemporary philosophy.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/latest/142",
+      "year": 2023,
+      "credibility_score": 0.8903123135135292,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.475159",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "phenomenology"
+    ]
+  }
+}

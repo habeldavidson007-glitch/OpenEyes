@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_MOD_latin_american_independence_latest_data_104",
+  "domain": "his",
+  "subdomain": "mod",
+  "tags": [
+    "mod",
+    "latin_american_independence",
+    "latest_data",
+    "swarm_generated"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent scholarship on Latin American Independence (2020-2026) includes emerging evidence and methodological innovations in the study of latin american independence. New analytical techniques enable more precise dating and cross-referencing of historical sources. Current research priorities focus on interdisciplinary approaches combining history with other fields. Digital archives and optical character recognition and natural language processing have transformed access to sources.",
+  "source": "Cambridge Modern History",
+  "source_url": "https://example.org/his/mod/latin_american_independence",
+  "credibility_class": "academic_publication",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.841999",
+    "sector_target": 200
+  }
+}

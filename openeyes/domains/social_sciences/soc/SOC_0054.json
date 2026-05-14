@@ -1,0 +1,37 @@
+{
+  "id": "SOC_0054",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "SOC",
+  "topic": "Age and life course",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for age and life course within SOC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "UN Social Development Reports",
+      "url": "https://example.org/soc/SOC_0054",
+      "year": 2024,
+      "confidence": 0.96
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to age and life course, including methodological critiques, conflicting empirical findings, and ongoing debates within the SOC literature.",
+      "source": "UN Social Development Reports",
+      "url": "https://example.org/soc/SOC_0054/counter",
+      "year": 2024,
+      "confidence": 0.86
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to age and life course as of 2024, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "UN Social Development Reports",
+      "url": "https://example.org/soc/SOC_0054/data",
+      "year": 2024,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.696953",
+    "version": "1.0",
+    "tags": [
+      "soc",
+      "age"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "SOC_0072",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "SOC",
+  "topic": "Race and ethnicity relations",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for race and ethnicity relations within SOC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Annual Review of Sociology",
+      "url": "https://example.org/soc/SOC_0072",
+      "year": 2021,
+      "confidence": 0.89
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to race and ethnicity relations, including methodological critiques, conflicting empirical findings, and ongoing debates within the SOC literature.",
+      "source": "Annual Review of Sociology",
+      "url": "https://example.org/soc/SOC_0072/counter",
+      "year": 2021,
+      "confidence": 0.77
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to race and ethnicity relations as of 2021, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Annual Review of Sociology",
+      "url": "https://example.org/soc/SOC_0072/data",
+      "year": 2021,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.699358",
+    "version": "1.0",
+    "tags": [
+      "soc",
+      "race"
+    ]
+  }
+}

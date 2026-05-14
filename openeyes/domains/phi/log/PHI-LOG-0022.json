@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0022",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Critical thinking",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Critical thinking: A comprehensive examination of critical thinking within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/21",
+      "year": 2014,
+      "credibility_score": 0.8931996102068308,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on critical thinking: Examining objections, alternative frameworks, and limitations of dominant approaches to critical thinking.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/counter/21",
+      "year": 2018,
+      "credibility_score": 0.9070638095912331,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in critical thinking: Current research trends, emerging debates, and new applications of critical thinking in contemporary philosophy.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/latest/21",
+      "year": 2023,
+      "credibility_score": 0.904079114659274,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.357252",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "critical_thinking"
+    ]
+  }
+}

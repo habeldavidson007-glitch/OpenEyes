@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0062",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Plato's theory of forms",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Plato's theory of forms: A comprehensive examination of plato's theory of forms within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/61",
+      "year": 2019,
+      "credibility_score": 0.9060365076231964,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on plato's theory of forms: Examining objections, alternative frameworks, and limitations of dominant approaches to plato's theory of forms.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/phi/counter/61",
+      "year": 2017,
+      "credibility_score": 0.8080723530250146,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in plato's theory of forms: Current research trends, emerging debates, and new applications of plato's theory of forms in contemporary philosophy.",
+      "source": "Review of Metaphysics",
+      "url": "https://example.com/phi/latest/61",
+      "year": 2023,
+      "credibility_score": 0.9106119116116278,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.496046",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "plato's_theory_of_forms"
+    ]
+  }
+}

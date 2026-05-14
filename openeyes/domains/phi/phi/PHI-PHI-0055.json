@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0055",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Logical positivism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Logical positivism: A comprehensive examination of logical positivism within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/54",
+      "year": 2023,
+      "credibility_score": 0.9217244609884566,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on logical positivism: Examining objections, alternative frameworks, and limitations of dominant approaches to logical positivism.",
+      "source": "British Journal for the History of Philosophy",
+      "url": "https://example.com/phi/counter/54",
+      "year": 2018,
+      "credibility_score": 0.8133626454385808,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in logical positivism: Current research trends, emerging debates, and new applications of logical positivism in contemporary philosophy.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/latest/54",
+      "year": 2020,
+      "credibility_score": 0.936632341121891,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.495180",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "logical_positivism"
+    ]
+  }
+}

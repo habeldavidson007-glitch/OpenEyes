@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0195",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "End-of-life ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "End-of-life ethics: A comprehensive examination of end-of-life ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/194",
+      "year": 2016,
+      "credibility_score": 0.9351391241425077,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on end-of-life ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to end-of-life ethics.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/counter/194",
+      "year": 2020,
+      "credibility_score": 0.8794977586616815,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in end-of-life ethics: Current research trends, emerging debates, and new applications of end-of-life ethics in contemporary philosophy.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/latest/194",
+      "year": 2021,
+      "credibility_score": 0.8964654266706972,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.342926",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "end-of-life_ethics"
+    ]
+  }
+}

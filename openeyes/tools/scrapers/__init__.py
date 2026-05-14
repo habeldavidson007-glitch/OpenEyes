@@ -7,6 +7,7 @@ from .fed_scraper import FedScraper
 from .sec_scraper import SecScraper
 from .bls_scraper import BlsScraper
 from .fred_scraper import FredScraper
+from .sat_scraper import run_all_sat_scrapers, ArXivScraper, NasaScraper
 
 def run_all_scrapers():
     """Run all finance scrapers sequentially."""
@@ -60,6 +61,12 @@ def run_all_scrapers():
     print("=" * 50)
     
     return results
+
+
+def run_sat_scrapers():
+    """Run all SAT domain scrapers."""
+    return run_all_sat_scrapers()
+
 
 if __name__ == "__main__":
     run_all_scrapers()

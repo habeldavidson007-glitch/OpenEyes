@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0025",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Research ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Research ethics: A comprehensive examination of research ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/24",
+      "year": 2015,
+      "credibility_score": 0.9413324879240941,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on research ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to research ethics.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/counter/24",
+      "year": 2015,
+      "credibility_score": 0.9324512498895039,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in research ethics: Current research trends, emerging debates, and new applications of research ethics in contemporary philosophy.",
+      "source": "Ethics journal",
+      "url": "https://example.com/emp/latest/24",
+      "year": 2023,
+      "credibility_score": 0.9589360657319705,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.278868",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "research_ethics"
+    ]
+  }
+}

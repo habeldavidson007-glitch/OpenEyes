@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0045",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Hume's skepticism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Hume's skepticism: A comprehensive examination of hume's skepticism within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/44",
+      "year": 1197,
+      "credibility_score": 0.9590375163204775,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on hume's skepticism: Examining objections, alternative frameworks, and limitations of dominant approaches to hume's skepticism.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/phi/counter/44",
+      "year": 2017,
+      "credibility_score": 0.8833353440442366,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in hume's skepticism: Current research trends, emerging debates, and new applications of hume's skepticism in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/44",
+      "year": 2021,
+      "credibility_score": 0.9264623184305215,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.482098",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "hume's_skepticism"
+    ]
+  }
+}

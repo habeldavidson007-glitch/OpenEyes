@@ -16,6 +16,7 @@ import os
 from typing import Dict, List, Any, Optional, Tuple
 from datetime import datetime
 import hashlib
+from pathlib import Path
 
 
 class Synapse:

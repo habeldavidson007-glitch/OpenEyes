@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0050",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Truth theories",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Truth theories: A comprehensive examination of truth theories within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/49",
+      "year": 2022,
+      "credibility_score": 0.9287236410226832,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on truth theories: Examining objections, alternative frameworks, and limitations of dominant approaches to truth theories.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/counter/49",
+      "year": 2020,
+      "credibility_score": 0.9230815789673728,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in truth theories: Current research trends, emerging debates, and new applications of truth theories in contemporary philosophy.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/log/latest/49",
+      "year": 2022,
+      "credibility_score": 0.9487779653421707,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.360646",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "truth_theories"
+    ]
+  }
+}

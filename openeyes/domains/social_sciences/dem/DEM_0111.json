@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0111",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Household composition",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for household composition within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0111",
+      "year": 2020,
+      "confidence": 0.9
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to household composition, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0111/counter",
+      "year": 2020,
+      "confidence": 0.85
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to household composition as of 2020, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0111/data",
+      "year": 2020,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.897186",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "household"
+    ]
+  }
+}

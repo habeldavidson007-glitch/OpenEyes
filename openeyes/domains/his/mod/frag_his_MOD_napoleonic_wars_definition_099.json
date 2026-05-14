@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_MOD_napoleonic_wars_definition_099",
+  "domain": "his",
+  "subdomain": "mod",
+  "tags": [
+    "mod",
+    "napoleonic_wars",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Napoleonic Wars in Early Modern History refers to the historical phenomena associated with napoleonic wars. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Library of Congress",
+  "source_url": "https://example.org/his/mod/napoleonic_wars",
+  "credibility_class": "academic_publication",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.841955",
+    "sector_target": 200
+  }
+}

@@ -502,72 +502,220 @@ class HarvesterAgent(BaseAgent):
         """
         Classify URL into domain sector for fragment organization.
         
-        Sectors:
-        - ECO: Economy, Finance, Crypto, Commodities
-        - GOV: Government, Policy, Regulations
-        - HC: Healthcare, Medical, Pharmaceuticals
-        - TECH: Technology, Software, Hardware
-        - NEWS: General News, Media
-        - GENERAL: Everything else
+        Full OpenEyes Domain Map — 8 Domains, 46 Sectors
+        
+        TIER 1 — ACTIVE:
+        - ECO: Economy (FIN, MAC, REG, ENR, COM, GEO)
+        - HC: Healthcare (MED, PH, PHR, MH)
+        
+        TIER 2 — NEXT:
+        - GOV: Governance (GOV, LEG, JUD, SUB, IPL, INT, SEC, ELE, GEL)
+        - SAT: Science & Technology (PHY, BIO, ENV, CSC, SPC, ENG, MAT)
+        
+        TIER 3 — LONG-TERM:
+        - HIS: History (ANC, HMED, MOD, CON, REG, HIS)
+        - PHI: Philosophy & Ethics (ETH, LOG, PPH, MND, PHI)
+        - SOC: Social Sciences (SOC, PSY, ANT, DEM, COM)
+        - EDU: Education (LRN, EDU, HED, SKL)
+        
+        Returns sector code (e.g., "FIN", "MED", "GOV") or domain-level code for general classification
         """
         url_lower = url.lower()
         
         # SPECIFIC DOMAIN CHECKS FIRST (before generic keyword matching)
         # These take precedence over generic keywords like "rss", "news", "coin"
         
-        # Technology sites (check before RSS/news because they have rss feeds)
+        # === TIER 1: ECONOMY ===
+        # Finance/Market data sources
         if any(domain in url_lower for domain in [
-            'techcrunch.com', 'hackernoon.com',
+            'alphavantage.co', 'bloomberg.com', 'reuters.com/business',
+            'marketwatch.com', 'wsj.com', 'ft.com'
         ]):
-            return "TECH"
+            return "FIN"
         
-        # Crypto/Finance news sites (check before ECO because they contain "coin")
+        # Crypto-specific sources
         if any(domain in url_lower for domain in [
-            'cointelegraph.com', 'coindesk.com',
+            'coindesk.com', 'cointelegraph.com', 'binance.com',
         ]):
-            return "NEWS"
-        
-        # Major financial news (check before general news)
-        if any(domain in url_lower for domain in [
-            'reuters.com', 'bloomberg.com',
-        ]):
-            return "NEWS"
-        
-        # Healthcare sites (check before NEWS because they have news sections)
-        if any(domain in url_lower for domain in [
-            'healthline.com', 'webmd.com', 'mayoclinic.org',
-        ]):
-            return "HC"
-        
-        # Government domains (check early due to .gov TLD)
-        if '.gov' in url_lower:
-            return "GOV"
-        
-        # GENERIC KEYWORD CHECKS (after specific domains)
+            return "FIN"  # Crypto falls under Finance
         
         # Economy/Finance/Crypto APIs and data sources
         if any(keyword in url_lower for keyword in [
             'crypto', 'bitcoin', 'btc', 'eth', 'binance',
             'exchange', 'forex', 'rate', 'currency',
-            'stock', 'ticker', 'alphavantage', 'gold', 'silver', 'commodity',
-            'finance', 'trading', 'market'
+            'stock', 'ticker', 'equity', 'bond', 'derivative',
+            'finance', 'trading', 'market', 'gdp', 'inflation',
+            'employment', 'monetary', 'fiscal', 'fed', 'treasury'
         ]):
-            return "ECO"
+            return "FIN"  # Default to FIN for economy-related
+        
+        # Energy and commodities
+        if any(keyword in url_lower for keyword in [
+            'oil', 'gas', 'renewable', 'energy', 'power', 'eia',
+            'commodity', 'agricultur', 'metal', 'precious', 'usda', 'opec'
+        ]):
+            return "ENR"  # Energy sector
+        
+        # Trade and geopolitics - CHECK BEFORE .gov since usda.gov/trade should be GEO
+        if any(keyword in url_lower for keyword in [
+            'trade', 'tariff', 'sanction', 'wto', 'supply chain',
+            'geopolitic', 'currency war', 'dollar system'
+        ]):
+            return "GEO"  # Geopolitics & Trade
+        
+        # === TIER 1: HEALTHCARE ===
+        # Healthcare sites - check SPECIFIC domains BEFORE generic .gov check
+        if any(domain in url_lower for domain in [
+            'healthline.com', 'webmd.com', 'mayoclinic.org',
+            'pubmed.gov', 'pubmed.ncbi.nlm.nih.gov',
+            'cdc.gov', 'who.int', 'fda.gov', 'nih.gov'
+        ]):
+            # Further refine within healthcare
+            if 'drug' in url_lower or 'pharma' in url_lower:
+                return "PHR"
+            elif 'mental' in url_lower or 'psych' in url_lower:
+                return "MH"
+            elif 'epidemiolog' in url_lower or 'public health' in url_lower:
+                return "PH"
+            else:
+                return "MED"
         
         # Healthcare/Medical keywords
         if any(keyword in url_lower for keyword in [
             'health', 'medical', 'hospital', 'clinic', 'pharma', 'drug',
             'medicine', 'patient', 'disease', 'covid', 'vaccine', 'clinical',
-            'healthcare', 'med', 'nih', 'who', 'fda'
+            'healthcare', 'med', 'diagnosis', 'treatment', 'surgery',
+            'epidemiolog', 'public health', 'mental health', 'neuroscience',
+            'psychiatric', 'psychology'
         ]):
-            return "HC"
+            return "MED"  # Default to MED for healthcare-related
         
-        # Technology keywords
+        # === TIER 2: SCIENCE & TECHNOLOGY ===
+        # Check .gov science agencies BEFORE generic .gov handling
+        if '.gov' in url_lower:
+            # Science/research .gov sites
+            if any(keyword in url_lower for keyword in ['nasa', 'nsf', 'nist', 'noaa', 'usgs', 'ipcc']):
+                return "CSC"  # Science & Tech
+            # Energy/environment .gov
+            if any(keyword in url_lower for keyword in ['eia', 'energy', 'environmental', 'climate']):
+                return "ENV"
+        
+        # === TIER 2: GOVERNANCE ===
+        # Government domains - but NOT healthcare/research/science .gov sites (already handled above)
+        if '.gov' in url_lower:
+            # More specific classification based on content
+            if any(keyword in url_lower for keyword in ['congress', 'senate', 'house', 'legislature', 'bill']):
+                return "LEG"
+            elif any(keyword in url_lower for keyword in ['court', 'judicial', 'supreme', 'justice']):
+                return "JUD"
+            elif any(keyword in url_lower for keyword in ['security', 'defense', 'intelligence', 'military', 'dod', 'nsa']):
+                return "SEC"
+            elif any(keyword in url_lower for keyword in ['election', 'vote', 'campaign', 'ballot']):
+                return "ELE"
+            elif any(keyword in url_lower for keyword in ['education', 'school', 'student']):
+                return "EDU"  # Education policy from .gov
+            else:
+                return "GOV"  # General government (whitehouse, etc.)
+        
+        # International relations and law
         if any(keyword in url_lower for keyword in [
-            'tech', 'software', 'hardware', 'api', 'github', 'dev', 'code',
-            'programming', 'ai', 'ml', 'blockchain', 'cloud', 'server',
+            'united nations', 'un treaty', 'icj', 'international court',
+            'treaty', 'diplomatic', 'human rights', 'laws of war',
+            'world bank', 'imf', ' Nato', 'alliance'
         ]):
-            return "TECH"
+            return "INT"
+        
+        # Legal and regulatory
+        if any(keyword in url_lower for keyword in [
+            'regulation', 'sec', 'cftc', 'basel', 'dodd-frank', 'mifid',
+            'compliance', 'lobbying', 'administrative law', 'rulemaking',
+            'contract', 'tort', 'property', 'criminal law', 'constitutional',
+            'patent', 'copyright', 'trademark', 'ip', 'licensing'
+        ]):
+            return "LEG"  # Legislation & Regulation
+        
+        # Political systems and electoral
+        if any(keyword in url_lower for keyword in [
+            'political system', 'electoral', 'separation of powers', 'federalism',
+            'democracy', 'campaign finance', 'representation', 'voting'
+        ]):
+            return "GOV"
+        
+        # Strategic/geopolitical analysis
+        if any(keyword in url_lower for keyword in [
+            'strategic competition', 'balance of power', 'great power',
+            'regional dynamics', 'deterrence', 'arms control', 'cybersecurity'
+        ]):
+            return "GEL"  # Geopolitical Analysis
+        
+        # === TIER 2: SCIENCE & TECHNOLOGY ===
+        # Technology sites
+        if any(domain in url_lower for domain in [
+            'techcrunch.com', 'hackernoon.com', 'arxiv.org',
+            'nature.com', 'science.org', 'ieee.org'
+        ]):
+            return "CSC"  # Default to CS/AI for tech
+        
+        # Technology/Science keywords
+        if any(keyword in url_lower for keyword in [
+            'algorithm', 'machine learning', 'ai', 'artificial intelligence',
+            'cybersecurity', 'software', 'computer science', 'data structure',
+            'quantum', 'physics', 'chemistry', 'thermodynamic',
+            'genetic', 'molecular', 'biology', 'ecology', 'evolution', 'cell',
+            'climate', 'ecosystem', 'pollution', 'biodiversity', 'ipcc', 'noaa',
+            'space', 'astronomy', 'cosmology', 'planetary', 'nasa',
+            'engineering', 'structural', 'mechanical', 'electrical', 'civil',
+            'mathematics', 'statistics', 'probability', 'numerical'
+        ]):
+            return "CSC"  # Default to CS/AI for science & tech
+        
+        # === TIER 3: HISTORY ===
+        # History keywords
+        if any(keyword in url_lower for keyword in [
+            'ancient', 'mesopotamia', 'greece', 'rome', 'egypt', 'china', 'india',
+            'medieval', 'feudalism', 'islamic golden age', 'byzantine', 'mongol',
+            'colonialism', 'scientific revolution', 'enlightenment', 'industrialization',
+            'world war', 'cold war', 'decolonization', 'globalization',
+            'historiography', 'historical research', 'archive', 'library of congress'
+        ]):
+            return "CON"  # Default to Contemporary for history
+        
+        # === TIER 3: PHILOSOPHY & ETHICS ===
+        # Philosophy keywords - CHECK BEFORE finance since stanford.edu/ethics is philosophy
+        if any(keyword in url_lower for keyword in [
+            'ethics', 'moral philosophy', 'normative ethics', 'metaethics',
+            'bioethics', 'ai ethics', 'business ethics',
+            'logic', 'epistemology', 'argumentation', 'knowledge theory',
+            'rationality', 'scientific method',
+            'political philosophy', 'justice', 'rights', 'social contract',
+            'legitimacy', 'liberty', 'equality',
+            'philosophy of mind', 'consciousness', 'free will', 'mind-body',
+            'plato', 'aristotle', 'kant', 'nietzsche', 'hegel', 'descartes'
+        ]):
+            return "ETH"  # Default to Ethics for philosophy
+        
+        # === TIER 3: SOCIAL SCIENCES ===
+        # Social science keywords
+        if any(keyword in url_lower for keyword in [
+            'sociology', 'social structure', 'stratification', 'social change',
+            'psychology', 'cognitive', 'developmental', 'personality',
+            'anthropology', 'archaeology', 'cultural', 'linguistic', 'human evolution',
+            'demographics', 'population', 'migration', 'fertility', 'mortality', 'urbanization',
+            'communication', 'media theory', 'persuasion', 'journalism', 'propaganda',
+            'pew research', 'oecd'
+        ]):
+            return "PSY"  # Default to Psychology for social sciences
+        
+        # === TIER 3: EDUCATION ===
+        # Education keywords
+        if any(keyword in url_lower for keyword in [
+            'learning science', 'cognitive load', 'memory', 'retrieval practice',
+            'education policy', 'curriculum', 'assessment', 'equity',
+            'higher education', 'university', 'credentialing', 'student debt',
+            'vocational', 'adult learning', 'workforce development', 'skill assessment',
+            'pisa', 'department of education', 'eric database'
+        ]):
+            return "LRN"  # Default to Learning Science for education
         
         # News/Media (generic catch-all)
         if any(keyword in url_lower for keyword in [

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0141",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Property rights",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Property rights: A comprehensive examination of property rights within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Political Philosophy",
+      "url": "https://example.com/pph/140",
+      "year": 2019,
+      "credibility_score": 0.8938225871941159,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on property rights: Examining objections, alternative frameworks, and limitations of dominant approaches to property rights.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/pph/counter/140",
+      "year": 2015,
+      "credibility_score": 0.8962302106580443,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in property rights: Current research trends, emerging debates, and new applications of property rights in contemporary philosophy.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/latest/140",
+      "year": 2022,
+      "credibility_score": 0.8985010975973786,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.434236",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "property_rights"
+    ]
+  }
+}

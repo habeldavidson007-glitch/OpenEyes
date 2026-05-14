@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0079",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Modal logic",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Modal logic: A comprehensive examination of modal logic within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/modal-logic/",
+      "year": 2017,
+      "credibility_score": 0.8648993309903912,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on modal logic: Examining objections, alternative frameworks, and limitations of dominant approaches to modal logic.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/counter/78",
+      "year": 2020,
+      "credibility_score": 0.8515937736280123,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in modal logic: Current research trends, emerging debates, and new applications of modal logic in contemporary philosophy.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/latest/78",
+      "year": 2024,
+      "credibility_score": 0.962945831404691,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.375897",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "modal_logic"
+    ]
+  }
+}

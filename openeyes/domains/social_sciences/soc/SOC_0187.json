@@ -1,0 +1,37 @@
+{
+  "id": "SOC_0187",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "SOC",
+  "topic": "Family structures and kinship",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for family structures and kinship within SOC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Social Forces",
+      "url": "https://example.org/soc/SOC_0187",
+      "year": 2016,
+      "confidence": 0.92
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to family structures and kinship, including methodological critiques, conflicting empirical findings, and ongoing debates within the SOC literature.",
+      "source": "Social Forces",
+      "url": "https://example.org/soc/SOC_0187/counter",
+      "year": 2016,
+      "confidence": 0.77
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to family structures and kinship as of 2016, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Social Forces",
+      "url": "https://example.org/soc/SOC_0187/data",
+      "year": 2016,
+      "confidence": 0.91
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.735832",
+    "version": "1.0",
+    "tags": [
+      "soc",
+      "family"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0039",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Equality theories",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Equality theories: A comprehensive examination of equality theories within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Political Philosophy",
+      "url": "https://example.com/pph/38",
+      "year": 2017,
+      "credibility_score": 0.9616436319609031,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on equality theories: Examining objections, alternative frameworks, and limitations of dominant approaches to equality theories.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/counter/38",
+      "year": 2018,
+      "credibility_score": 0.9031029177559972,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in equality theories: Current research trends, emerging debates, and new applications of equality theories in contemporary philosophy.",
+      "source": "Journal of Political Philosophy",
+      "url": "https://example.com/pph/latest/38",
+      "year": 2023,
+      "credibility_score": 0.9381131754549801,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.400013",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "equality_theories"
+    ]
+  }
+}

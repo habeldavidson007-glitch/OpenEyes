@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0085",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Epistemology foundations",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Epistemology foundations: A comprehensive examination of epistemology foundations within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/epistemology-foundations/",
+      "year": 2015,
+      "credibility_score": 0.8604212050589187,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on epistemology foundations: Examining objections, alternative frameworks, and limitations of dominant approaches to epistemology foundations.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/counter/84",
+      "year": 2018,
+      "credibility_score": 0.8313986405467303,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in epistemology foundations: Current research trends, emerging debates, and new applications of epistemology foundations in contemporary philosophy.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/latest/84",
+      "year": 2022,
+      "credibility_score": 0.893242464601544,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.376585",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "epistemology_foundations"
+    ]
+  }
+}

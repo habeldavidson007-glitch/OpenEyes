@@ -1,0 +1,37 @@
+{
+  "id": "SOC_0088",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "SOC",
+  "topic": "Education as social institution",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for education as social institution within SOC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Social Forces",
+      "url": "https://example.org/soc/SOC_0088",
+      "year": 2021,
+      "confidence": 0.96
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to education as social institution, including methodological critiques, conflicting empirical findings, and ongoing debates within the SOC literature.",
+      "source": "Social Forces",
+      "url": "https://example.org/soc/SOC_0088/counter",
+      "year": 2021,
+      "confidence": 0.78
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to education as social institution as of 2021, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Social Forces",
+      "url": "https://example.org/soc/SOC_0088/data",
+      "year": 2021,
+      "confidence": 0.95
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.701540",
+    "version": "1.0",
+    "tags": [
+      "soc",
+      "education"
+    ]
+  }
+}

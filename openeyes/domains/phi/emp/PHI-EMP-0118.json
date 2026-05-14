@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0118",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Environmental ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Environmental ethics: A comprehensive examination of environmental ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/117",
+      "year": 2019,
+      "credibility_score": 0.9285657747240587,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on environmental ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to environmental ethics.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/emp/counter/117",
+      "year": 2023,
+      "credibility_score": 0.8920416814772628,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in environmental ethics: Current research trends, emerging debates, and new applications of environmental ethics in contemporary philosophy.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/latest/117",
+      "year": 2020,
+      "credibility_score": 0.9559907931221548,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.320818",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "environmental_ethics"
+    ]
+  }
+}

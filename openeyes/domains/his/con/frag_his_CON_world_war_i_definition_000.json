@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_CON_world_war_i_definition_000",
+  "domain": "his",
+  "subdomain": "con",
+  "tags": [
+    "con",
+    "world_war_i",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "World War I in Contemporary History refers to the historical phenomena associated with world war i. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Foreign Affairs",
+  "source_url": "https://example.org/his/con/world_war_i",
+  "credibility_class": "academic_publication",
+  "year": 2022,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.896329",
+    "sector_target": 200
+  }
+}

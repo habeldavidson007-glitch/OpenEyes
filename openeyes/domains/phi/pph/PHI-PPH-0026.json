@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0026",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Social contract theory",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Social contract theory: A comprehensive examination of social contract theory within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/25",
+      "year": 2020,
+      "credibility_score": 0.8968871023048413,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on social contract theory: Examining objections, alternative frameworks, and limitations of dominant approaches to social contract theory.",
+      "source": "Journal of Political Philosophy",
+      "url": "https://example.com/pph/counter/25",
+      "year": 2021,
+      "credibility_score": 0.848705756235245,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in social contract theory: Current research trends, emerging debates, and new applications of social contract theory in contemporary philosophy.",
+      "source": "Political Theory",
+      "url": "https://example.com/pph/latest/25",
+      "year": 2022,
+      "credibility_score": 0.9023246915259461,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.398468",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "social_contract_theory"
+    ]
+  }
+}

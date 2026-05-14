@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_MEH_medieval_europe_definition_012",
+  "domain": "his",
+  "subdomain": "meh",
+  "tags": [
+    "meh",
+    "medieval_europe",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Medieval Europe in Medieval History refers to the historical phenomena associated with medieval europe. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Cambridge Medieval History",
+  "source_url": "https://example.org/his/meh/medieval_europe",
+  "credibility_class": "academic_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.801727",
+    "sector_target": 150
+  }
+}

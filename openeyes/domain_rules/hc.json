@@ -1,0 +1,49 @@
+{
+  "domain": "HEALTHCARE",
+  "code": "HC",
+  "description": "How human health is understood, maintained, treated, and organized at individual and population level.",
+  "sectors": [
+    {
+      "code": "MED",
+      "name": "Clinical Medicine",
+      "description": "Diagnosis, treatment, pharmacology, surgery, disease management by system",
+      "target_fragments": 400
+    },
+    {
+      "code": "PH",
+      "name": "Public Health & Epidemiology",
+      "description": "Epidemiology methods, infectious disease, chronic disease, health systems",
+      "target_fragments": 250
+    },
+    {
+      "code": "PHR",
+      "name": "Pharmaceuticals & Drug Development",
+      "description": "Drug pipeline, pharmacology, drug classes, safety, pharmacovigilance",
+      "target_fragments": 250
+    },
+    {
+      "code": "MH",
+      "name": "Mental Health & Neuroscience",
+      "description": "Psychiatric disorders, neuroscience, treatment modalities, mental health systems",
+      "target_fragments": 200
+    }
+  ],
+  "total_target_fragments": 1100,
+  "risk_tier": "critical",
+  "calibration_threshold": 0.92,
+  "primary_sources": ["PubMed", "NICE", "WHO", "CDC", "FDA", "NIH", "EMA", "APA", "Mayo Clinic"],
+  "fragment_rules": {
+    "required_roles": ["definition", "counter_argument", "latest_data"],
+    "require_source_url": true,
+    "require_year": true,
+    "prefer_peer_reviewed": true,
+    "recency_cap_years": 3,
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.5,
+      "recency": 0.3,
+      "peer_reviewed": 0.15,
+      "cross_domain_corroboration": 0.05
+    }
+  }
+}

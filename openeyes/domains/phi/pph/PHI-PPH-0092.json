@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0092",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Distributive justice",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Distributive justice: A comprehensive examination of distributive justice within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/91",
+      "year": 2018,
+      "credibility_score": 0.9087264837198442,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on distributive justice: Examining objections, alternative frameworks, and limitations of dominant approaches to distributive justice.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/counter/91",
+      "year": 2023,
+      "credibility_score": 0.8343500909999813,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in distributive justice: Current research trends, emerging debates, and new applications of distributive justice in contemporary philosophy.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/pph/latest/91",
+      "year": 2021,
+      "credibility_score": 0.924085263368605,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.417904",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "distributive_justice"
+    ]
+  }
+}

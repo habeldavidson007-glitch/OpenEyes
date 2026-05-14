@@ -1,0 +1,29 @@
+{
+  "id": "EDU-EDU-0013",
+  "domain": "EDU",
+  "sector": "EDU",
+  "timestamp": "2026-05-13T02:20:41.837821",
+  "roles": {
+    "definition": {
+      "content": "Equity Funding Gaps is defined within Education Policy as the structured understanding of how knowledge acquisition occurs, specifically focusing on school systems, curriculum, assessment, equity, comparative education. Current consensus indicates that effective mechanisms rely on evidence-based pedagogical frameworks validated by longitudinal studies.",
+      "source": "Journal of Educational Psychology",
+      "year": 2020,
+      "url": "https://example.gov/edu/EDU/12",
+      "role": "definition"
+    },
+    "counter_argument": {
+      "content": "Critiques of standard Equity Funding Gaps approaches argue that prevailing models often overlook contextual variables such as socioeconomic status or cultural background. Alternative frameworks suggest that rigid adherence to current metrics may inhibit genuine skill acquisition and creativity.",
+      "source": "Journal of Critical Education Studies, Vol 39",
+      "year": 2020,
+      "url": "https://example.org/jces/EDU/12",
+      "role": "counter_argument"
+    },
+    "latest_data": {
+      "content": "Recent 2021 data from ERIC Database indicates a significant shift in Equity Funding Gaps outcomes. Specifically, new metrics show a 10% variance in performance when compared to previous decade baselines, suggesting evolving dynamics in Education Policy.",
+      "source": "ERIC Database",
+      "year": 2021,
+      "url": "https://data.ed.gov/EDU/12",
+      "role": "latest_data"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0020",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Cognitive science foundations",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Cognitive science foundations: A comprehensive examination of cognitive science foundations within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/19",
+      "year": 2021,
+      "credibility_score": 0.935158868291033,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on cognitive science foundations: Examining objections, alternative frameworks, and limitations of dominant approaches to cognitive science foundations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/counter/19",
+      "year": 2017,
+      "credibility_score": 0.8712179499711195,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in cognitive science foundations: Current research trends, emerging debates, and new applications of cognitive science foundations in contemporary philosophy.",
+      "source": "Mind & Language",
+      "url": "https://example.com/mnd/latest/19",
+      "year": 2023,
+      "credibility_score": 0.9591517218399959,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.438166",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "cognitive_science_foundations"
+    ]
+  }
+}

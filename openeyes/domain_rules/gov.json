@@ -1,0 +1,80 @@
+{
+  "domain": "GOVERNANCE",
+  "code": "GOV",
+  "description": "How societies organize power, make collective decisions, codify rules, and resolve disputes.",
+  "sectors": [
+    {
+      "code": "GOV",
+      "name": "Political Systems & Institutions",
+      "description": "Government structures, electoral systems, separation of powers, federalism, comparative politics",
+      "target_fragments": 200
+    },
+    {
+      "code": "LEG",
+      "name": "Legislation & Policy Process",
+      "description": "How laws are made, regulatory rulemaking, administrative law, lobbying, policy evaluation",
+      "target_fragments": 150
+    },
+    {
+      "code": "JUD",
+      "name": "Judicial Systems & Legal Process",
+      "description": "Court structures, civil and criminal procedure, evidence, judicial review, access to justice",
+      "target_fragments": 150
+    },
+    {
+      "code": "SUB",
+      "name": "Substantive Law",
+      "description": "Contract, tort, property, criminal, constitutional rights, family law — US federal and common law",
+      "target_fragments": 250
+    },
+    {
+      "code": "IPL",
+      "name": "Intellectual Property",
+      "description": "Patents, copyright, trademark, trade secrets, licensing, IP enforcement",
+      "target_fragments": 100
+    },
+    {
+      "code": "INT",
+      "name": "International Relations & Law",
+      "description": "Treaty law, diplomatic relations, international organizations, human rights law, laws of war, ICJ",
+      "target_fragments": 200
+    },
+    {
+      "code": "SEC",
+      "name": "Security & Conflict",
+      "description": "Defense policy, intelligence oversight, conflict types, deterrence, arms control, cybersecurity law",
+      "target_fragments": 150
+    },
+    {
+      "code": "ELE",
+      "name": "Electoral Systems & Democracy",
+      "description": "Voting systems, electoral integrity, campaign finance, democratic backsliding, representation",
+      "target_fragments": 100
+    },
+    {
+      "code": "GEL",
+      "name": "Geopolitical Analysis",
+      "description": "Strategic competition, alliance systems, balance of power, regional dynamics, great power rivalry",
+      "target_fragments": 150
+    }
+  ],
+  "total_target_fragments": 1450,
+  "risk_tier": "critical",
+  "calibration_threshold": 0.90,
+  "primary_sources": ["Congress.gov", "Federal Register", "Supreme Court opinions", "UN treaty database", "ICJ decisions", "CRS reports", "WTO", "CFR", "Brookings", "RAND", "Freedom House", "Inter-Parliamentary Union"],
+  "fragment_rules": {
+    "required_roles": ["definition", "counter_argument", "latest_data"],
+    "require_source_url": true,
+    "require_year": true,
+    "prefer_peer_reviewed": true,
+    "recency_cap_years": 5,
+    "philosophy_guard": "Every fragment must describe what is — not advocate for what should be. Descriptive claims about institutions, outcomes, and processes are fragmentable. Normative claims about what is right or wrong are not.",
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.4,
+      "recency": 0.3,
+      "peer_reviewed": 0.2,
+      "cross_domain_corroboration": 0.1
+    }
+  }
+}

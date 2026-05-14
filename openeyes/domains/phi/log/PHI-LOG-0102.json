@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0102",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Propositional logic",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Propositional logic: A comprehensive examination of propositional logic within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/101",
+      "year": 2018,
+      "credibility_score": 0.8759694127394011,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on propositional logic: Examining objections, alternative frameworks, and limitations of dominant approaches to propositional logic.",
+      "source": "Synthese",
+      "url": "https://example.com/log/counter/101",
+      "year": 2021,
+      "credibility_score": 0.9079264944260793,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in propositional logic: Current research trends, emerging debates, and new applications of propositional logic in contemporary philosophy.",
+      "source": "Synthese",
+      "url": "https://example.com/log/latest/101",
+      "year": 2022,
+      "credibility_score": 0.9593142011343913,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.378843",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "propositional_logic"
+    ]
+  }
+}

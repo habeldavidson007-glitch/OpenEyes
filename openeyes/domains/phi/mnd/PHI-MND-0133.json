@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0133",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Determinism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Determinism: A comprehensive examination of determinism within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/determinism/",
+      "year": 2021,
+      "credibility_score": 0.8642583645509949,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on determinism: Examining objections, alternative frameworks, and limitations of dominant approaches to determinism.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/counter/132",
+      "year": 2022,
+      "credibility_score": 0.8782277664937167,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in determinism: Current research trends, emerging debates, and new applications of determinism in contemporary philosophy.",
+      "source": "Neuroethics",
+      "url": "https://example.com/mnd/latest/132",
+      "year": 2022,
+      "credibility_score": 0.8958718738553895,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.463278",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "determinism"
+    ]
+  }
+}

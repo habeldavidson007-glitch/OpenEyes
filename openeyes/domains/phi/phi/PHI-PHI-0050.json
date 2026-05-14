@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0050",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Existentialism - Kierkegaard",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Existentialism - Kierkegaard: A comprehensive examination of existentialism - kierkegaard within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/49",
+      "year": 848,
+      "credibility_score": 0.9413365376172602,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on existentialism - kierkegaard: Examining objections, alternative frameworks, and limitations of dominant approaches to existentialism - kierkegaard.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/phi/counter/49",
+      "year": 2021,
+      "credibility_score": 0.9466095954631911,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in existentialism - kierkegaard: Current research trends, emerging debates, and new applications of existentialism - kierkegaard in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/49",
+      "year": 2023,
+      "credibility_score": 0.936088097581133,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.493910",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "existentialism_-_kierkegaard"
+    ]
+  }
+}

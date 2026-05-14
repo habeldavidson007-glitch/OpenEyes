@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_CSC_natural_language_processing_definition_012",
+  "domain": "sat",
+  "subdomain": "csc",
+  "tags": [
+    "csc",
+    "natural_language_processing",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Natural Language Processing in Computer Science & AI refers to the fundamental principles and methodologies within natural language processing. Key principles include mathematical modeling, experimental validation, and theoretical analysis. This field studies fundamental laws and emergent phenomena with applications in technology development and scientific understanding.",
+  "source": "ArXiv CS",
+  "source_url": "https://example.org/sat/csc/natural_language_processing",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.994701",
+    "sector_target": 200
+  }
+}

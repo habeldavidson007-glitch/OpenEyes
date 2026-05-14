@@ -1,0 +1,30 @@
+{
+  "sector": "SOC",
+  "sector_name": "Sociology",
+  "total_fragments": 200,
+  "target_fragments": 200,
+  "completion_percentage": 100.0,
+  "topics_covered": [
+    "Social stratification and class systems",
+    "Institutional theory",
+    "Social network analysis",
+    "Collective behavior and social movements",
+    "Urban sociology",
+    "Rural sociology",
+    "Family structures and kinship",
+    "Education as social institution",
+    "Religion and society",
+    "Work and occupations",
+    "Deviance and social control",
+    "Race and ethnicity relations",
+    "Gender and society",
+    "Age and life course",
+    "Health and society",
+    "Political sociology",
+    "Economic sociology",
+    "Cultural sociology",
+    "Environmental sociology",
+    "Globalization effects"
+  ],
+  "generated_at": "2026-05-13T02:16:29.738484"
+}

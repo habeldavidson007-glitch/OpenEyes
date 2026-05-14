@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_MEH_holy_roman_empire_definition_018",
+  "domain": "his",
+  "subdomain": "meh",
+  "tags": [
+    "meh",
+    "holy_roman_empire",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Holy Roman Empire in Medieval History refers to the historical phenomena associated with holy roman empire. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "JSTOR",
+  "source_url": "https://example.org/his/meh/holy_roman_empire",
+  "credibility_class": "academic_publication",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.801781",
+    "sector_target": 150
+  }
+}

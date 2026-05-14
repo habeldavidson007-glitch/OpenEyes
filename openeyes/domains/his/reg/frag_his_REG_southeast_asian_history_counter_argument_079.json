@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_REG_southeast_asian_history_counter_argument_079",
+  "domain": "his",
+  "subdomain": "reg",
+  "tags": [
+    "reg",
+    "southeast_asian_history",
+    "counter_argument",
+    "swarm_generated"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Scholarly debate regarding Southeast Asian History centers on methodological and interpretive questions surrounding southeast asian history. Traditional interpretations suggest established scholarly interpretations based on available evidence, while revisionist scholars argue alternative readings informed by new methodologies or evidence. Archaeological and documentary evidence indicates multiple lines of inquiry from diverse sources. The historiographical consensus remains evolving as new evidence emerges.",
+  "source": "national archives",
+  "source_url": "https://example.org/his/reg/southeast_asian_history",
+  "credibility_class": "academic_publication",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.943048",
+    "sector_target": 200
+  }
+}

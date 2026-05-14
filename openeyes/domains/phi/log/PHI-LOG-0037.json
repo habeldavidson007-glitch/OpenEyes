@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0037",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Justified true belief",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Justified true belief: A comprehensive examination of justified true belief within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/justified-true-belief/",
+      "year": 2023,
+      "credibility_score": 0.8653334371690331,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on justified true belief: Examining objections, alternative frameworks, and limitations of dominant approaches to justified true belief.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/counter/36",
+      "year": 2019,
+      "credibility_score": 0.8215438611553679,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in justified true belief: Current research trends, emerging debates, and new applications of justified true belief in contemporary philosophy.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/latest/36",
+      "year": 2023,
+      "credibility_score": 0.959777731609607,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.359031",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "justified_true_belief"
+    ]
+  }
+}

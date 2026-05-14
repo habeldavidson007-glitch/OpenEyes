@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0028",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Archaeological methods",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for archaeological methods within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "UNESCO Cultural Reports",
+      "url": "https://example.org/ant/ANT_0028",
+      "year": 2024,
+      "confidence": 0.91
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to archaeological methods, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "UNESCO Cultural Reports",
+      "url": "https://example.org/ant/ANT_0028/counter",
+      "year": 2024,
+      "confidence": 0.77
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to archaeological methods as of 2024, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "UNESCO Cultural Reports",
+      "url": "https://example.org/ant/ANT_0028/data",
+      "year": 2024,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.822957",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "archaeological"
+    ]
+  }
+}

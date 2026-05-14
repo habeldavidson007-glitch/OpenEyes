@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0122",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Developmental psychology across lifespan",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for developmental psychology across lifespan within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0122",
+      "year": 2016,
+      "confidence": 0.88
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to developmental psychology across lifespan, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0122/counter",
+      "year": 2016,
+      "confidence": 0.8
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to developmental psychology across lifespan as of 2016, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Psychological Science",
+      "url": "https://example.org/psy/PSY_0122/data",
+      "year": 2016,
+      "confidence": 0.96
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.797276",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "developmental"
+    ]
+  }
+}

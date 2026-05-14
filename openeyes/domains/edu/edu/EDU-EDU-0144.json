@@ -1,0 +1,29 @@
+{
+  "id": "EDU-EDU-0144",
+  "domain": "EDU",
+  "sector": "EDU",
+  "timestamp": "2026-05-13T02:20:41.862555",
+  "roles": {
+    "definition": {
+      "content": "Digital Divide is defined within Education Policy as the structured understanding of how knowledge acquisition occurs, specifically focusing on school systems, curriculum, assessment, equity, comparative education. Current consensus indicates that effective mechanisms rely on evidence-based pedagogical frameworks validated by longitudinal studies.",
+      "source": "Journal of Educational Psychology",
+      "year": 2024,
+      "url": "https://example.gov/edu/EDU/143",
+      "role": "definition"
+    },
+    "counter_argument": {
+      "content": "Critiques of standard Digital Divide approaches argue that prevailing models often overlook contextual variables such as socioeconomic status or cultural background. Alternative frameworks suggest that rigid adherence to current metrics may inhibit genuine skill acquisition and creativity.",
+      "source": "Journal of Critical Education Studies, Vol 24",
+      "year": 2023,
+      "url": "https://example.org/jces/EDU/143",
+      "role": "counter_argument"
+    },
+    "latest_data": {
+      "content": "Recent 2020 data from US Department of Education indicates a statistically negligible shift in Digital Divide outcomes. Specifically, new metrics show a -3% variance in performance when compared to previous decade baselines, suggesting evolving dynamics in Education Policy.",
+      "source": "US Department of Education",
+      "year": 2020,
+      "url": "https://data.ed.gov/EDU/143",
+      "role": "latest_data"
+    }
+  }
+}

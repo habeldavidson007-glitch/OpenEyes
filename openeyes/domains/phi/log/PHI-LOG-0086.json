@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0086",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Theory of knowledge",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Theory of knowledge: A comprehensive examination of theory of knowledge within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/85",
+      "year": 2024,
+      "credibility_score": 0.971508134922958,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on theory of knowledge: Examining objections, alternative frameworks, and limitations of dominant approaches to theory of knowledge.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/counter/85",
+      "year": 2024,
+      "credibility_score": 0.8057102222827222,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in theory of knowledge: Current research trends, emerging debates, and new applications of theory of knowledge in contemporary philosophy.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/latest/85",
+      "year": 2021,
+      "credibility_score": 0.9420761265885482,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.376726",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "theory_of_knowledge"
+    ]
+  }
+}

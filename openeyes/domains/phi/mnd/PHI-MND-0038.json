@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0038",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Artificial consciousness",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Artificial consciousness: A comprehensive examination of artificial consciousness within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/37",
+      "year": 2017,
+      "credibility_score": 0.9121671370875966,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on artificial consciousness: Examining objections, alternative frameworks, and limitations of dominant approaches to artificial consciousness.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/counter/37",
+      "year": 2024,
+      "credibility_score": 0.887356168408381,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in artificial consciousness: Current research trends, emerging debates, and new applications of artificial consciousness in contemporary philosophy.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/latest/37",
+      "year": 2022,
+      "credibility_score": 0.9008493403593374,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.440306",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "artificial_consciousness"
+    ]
+  }
+}

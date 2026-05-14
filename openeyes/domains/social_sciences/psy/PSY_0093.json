@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0093",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Cultural psychology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for cultural psychology within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/psy/PSY_0093",
+      "year": 2016,
+      "confidence": 0.86
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to cultural psychology, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/psy/PSY_0093/counter",
+      "year": 2016,
+      "confidence": 0.77
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to cultural psychology as of 2016, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/psy/PSY_0093/data",
+      "year": 2016,
+      "confidence": 0.92
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.781477",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "cultural"
+    ]
+  }
+}

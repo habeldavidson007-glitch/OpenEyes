@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0023",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Mortality patterns and life expectancy",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for mortality patterns and life expectancy within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0023",
+      "year": 2017,
+      "confidence": 0.91
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to mortality patterns and life expectancy, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0023/counter",
+      "year": 2017,
+      "confidence": 0.88
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to mortality patterns and life expectancy as of 2017, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "World Bank Demographic Data",
+      "url": "https://example.org/dem/DEM_0023/data",
+      "year": 2017,
+      "confidence": 0.89
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.874117",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "mortality"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0001",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Cultural relativism and ethnography",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for cultural relativism and ethnography within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0001",
+      "year": 2018,
+      "confidence": 0.93
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to cultural relativism and ethnography, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0001/counter",
+      "year": 2018,
+      "confidence": 0.81
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to cultural relativism and ethnography as of 2018, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "American Anthropologist",
+      "url": "https://example.org/ant/ANT_0001/data",
+      "year": 2018,
+      "confidence": 0.95
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.819370",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "cultural"
+    ]
+  }
+}

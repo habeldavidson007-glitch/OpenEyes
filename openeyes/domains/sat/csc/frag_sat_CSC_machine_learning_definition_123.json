@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_CSC_machine_learning_definition_123",
+  "domain": "sat",
+  "subdomain": "csc",
+  "tags": [
+    "csc",
+    "machine_learning",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Machine Learning in Computer Science & AI refers to algorithms that improve through experience and data exposure. Key principles include mathematical modeling, experimental validation, and theoretical analysis. This field studies fundamental laws and emergent phenomena with applications in technology development and scientific understanding.",
+  "source": "Nature Machine Intelligence",
+  "source_url": "https://example.org/sat/csc/machine_learning",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.995804",
+    "sector_target": 200
+  }
+}

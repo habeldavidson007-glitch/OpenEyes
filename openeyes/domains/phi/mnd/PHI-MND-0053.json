@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0053",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Dualism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Dualism: A comprehensive examination of dualism within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/52",
+      "year": 2020,
+      "credibility_score": 0.92474597463247,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on dualism: Examining objections, alternative frameworks, and limitations of dominant approaches to dualism.",
+      "source": "Neuroethics",
+      "url": "https://example.com/mnd/counter/52",
+      "year": 2018,
+      "credibility_score": 0.9065869923059906,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in dualism: Current research trends, emerging debates, and new applications of dualism in contemporary philosophy.",
+      "source": "Philosophy of Mind",
+      "url": "https://example.com/mnd/latest/52",
+      "year": 2022,
+      "credibility_score": 0.9191333221982902,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.442020",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "dualism"
+    ]
+  }
+}

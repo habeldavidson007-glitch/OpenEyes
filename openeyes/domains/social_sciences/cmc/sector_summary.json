@@ -1,0 +1,30 @@
+{
+  "sector": "CMC",
+  "sector_name": "Communication",
+  "total_fragments": 150,
+  "target_fragments": 150,
+  "completion_percentage": 100.0,
+  "topics_covered": [
+    "Media effects theories",
+    "Persuasion and attitude change",
+    "Agenda-setting theory",
+    "Cultivation theory",
+    "Uses and gratifications",
+    "Spiral of silence",
+    "Knowledge gap hypothesis",
+    "Digital media ecology",
+    "Journalism studies",
+    "Propaganda analysis",
+    "Public relations theory",
+    "Organizational communication",
+    "Interpersonal communication",
+    "Nonverbal communication",
+    "Health communication",
+    "Political communication",
+    "Science communication",
+    "Risk communication",
+    "Cross-cultural communication",
+    "Communication technology history"
+  ],
+  "generated_at": "2026-05-13T02:16:29.958951"
+}

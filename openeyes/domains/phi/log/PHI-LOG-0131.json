@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0131",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Logical fallacies",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Logical fallacies: A comprehensive examination of logical fallacies within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/130",
+      "year": 2017,
+      "credibility_score": 0.8939191983509704,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on logical fallacies: Examining objections, alternative frameworks, and limitations of dominant approaches to logical fallacies.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/counter/130",
+      "year": 2016,
+      "credibility_score": 0.8085831760405604,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in logical fallacies: Current research trends, emerging debates, and new applications of logical fallacies in contemporary philosophy.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/latest/130",
+      "year": 2024,
+      "credibility_score": 0.9145246178993878,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.382345",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "logical_fallacies"
+    ]
+  }
+}

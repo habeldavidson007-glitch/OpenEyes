@@ -1,0 +1,68 @@
+{
+  "domain": "PHILOSOPHY & ETHICS",
+  "code": "PHI",
+  "description": "The foundational questions of knowledge, value, reasoning, and existence.",
+  "sectors": {
+    "EMP": {
+      "name": "Ethics & Moral Philosophy",
+      "description": "Normative ethics, metaethics, applied ethics \u2014 bioethics, AI ethics, business ethics",
+      "target_fragments": 200
+    },
+    "LOG": {
+      "name": "Logic & Epistemology",
+      "description": "Formal logic, argumentation, knowledge theory, scientific method, rationality",
+      "target_fragments": 150
+    },
+    "PPH": {
+      "name": "Political Philosophy",
+      "description": "Justice, rights, social contract, legitimacy, liberty, equality \u2014 the theoretical foundations",
+      "target_fragments": 150
+    },
+    "MND": {
+      "name": "Philosophy of Mind",
+      "description": "Consciousness, personal identity, free will, mind-body problem, cognitive science intersection",
+      "target_fragments": 150
+    },
+    "PHI": {
+      "name": "History of Philosophy",
+      "description": "Major philosophers and schools \u2014 Plato to Kant to contemporary analytic and continental",
+      "target_fragments": 150
+    }
+  },
+  "total_target_fragments": 800,
+  "primary_sources": [
+    "Stanford Encyclopedia of Philosophy (plato.stanford.edu)",
+    "Academic philosophy journals",
+    "Peer-reviewed publications"
+  ],
+  "fragment_rules": {
+    "required_roles": [
+      "definition",
+      "counter_argument",
+      "latest_data"
+    ],
+    "source_requirements": {
+      "must_have_url": true,
+      "must_have_year": true,
+      "prefer_peer_reviewed": true,
+      "max_age_years": 10,
+      "exception_classics": "Pre-1950 classical philosophical works are exempt from recency caps"
+    },
+    "quality_standards": {
+      "no_normative_claims_without_attribution": true,
+      "distinguish_descriptive_from_prescriptive": true,
+      "cite_specific_philosophers_and_schools": true
+    },
+    "contradiction_scoring_enabled": true,
+    "evidence_indexing_weights": {
+      "source_credibility": 0.4,
+      "recency": 0.3,
+      "peer_reviewed": 0.2,
+      "cross_domain_corroboration": 0.1
+    },
+    "recency_cap_years": 20
+  },
+  "notes": "This domain is uniquely self-referential for OpenEyes \u2014 the Philosophy Guard's own rules encode philosophical positions. The EMP sector fragments provide the theoretical foundation for the guard's domain rules across all other domains. Build EMP first within this domain for that reason.",
+  "risk_tier": "medium",
+  "calibration_threshold": 0.8
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0158",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Rights theory",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Rights theory: A comprehensive examination of rights theory within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/157",
+      "year": 2021,
+      "credibility_score": 0.8852498757760914,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on rights theory: Examining objections, alternative frameworks, and limitations of dominant approaches to rights theory.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/counter/157",
+      "year": 2016,
+      "credibility_score": 0.9136016525533283,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in rights theory: Current research trends, emerging debates, and new applications of rights theory in contemporary philosophy.",
+      "source": "Business Ethics Quarterly",
+      "url": "https://example.com/emp/latest/157",
+      "year": 2023,
+      "credibility_score": 0.917212713623433,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.338330",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "rights_theory"
+    ]
+  }
+}

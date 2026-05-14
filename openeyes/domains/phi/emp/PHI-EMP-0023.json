@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0023",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Privacy ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Privacy ethics: A comprehensive examination of privacy ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Ethics journal",
+      "url": "https://example.com/emp/22",
+      "year": 2021,
+      "credibility_score": 0.8646149958834266,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on privacy ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to privacy ethics.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/counter/22",
+      "year": 2024,
+      "credibility_score": 0.8549909749370629,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in privacy ethics: Current research trends, emerging debates, and new applications of privacy ethics in contemporary philosophy.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/latest/22",
+      "year": 2020,
+      "credibility_score": 0.9297184966875622,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.278590",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "privacy_ethics"
+    ]
+  }
+}

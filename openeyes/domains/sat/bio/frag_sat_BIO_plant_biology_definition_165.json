@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_BIO_plant_biology_definition_165",
+  "domain": "sat",
+  "subdomain": "bio",
+  "tags": [
+    "bio",
+    "plant_biology",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Plant Biology in Biology & Life Sciences refers to the fundamental principles and methodologies within plant biology. Key principles include mathematical modeling, experimental validation, and theoretical analysis. This field studies fundamental laws and emergent phenomena with applications in technology development and scientific understanding.",
+  "source": "Nature",
+  "source_url": "https://example.org/sat/bio/plant_biology",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.897893",
+    "sector_target": 200
+  }
+}

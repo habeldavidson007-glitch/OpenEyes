@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0152",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Care ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Care ethics: A comprehensive examination of care ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Business Ethics Quarterly",
+      "url": "https://example.com/emp/151",
+      "year": 2019,
+      "credibility_score": 0.9015777906238212,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on care ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to care ethics.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/counter/151",
+      "year": 2020,
+      "credibility_score": 0.9258546266172809,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in care ethics: Current research trends, emerging debates, and new applications of care ethics in contemporary philosophy.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/latest/151",
+      "year": 2020,
+      "credibility_score": 0.9149059106423048,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.337628",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "care_ethics"
+    ]
+  }
+}

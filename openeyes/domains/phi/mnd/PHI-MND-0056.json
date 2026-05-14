@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0056",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Personal identity",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Personal identity: A comprehensive examination of personal identity within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/55",
+      "year": 2017,
+      "credibility_score": 0.9097822413110036,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on personal identity: Examining objections, alternative frameworks, and limitations of dominant approaches to personal identity.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/counter/55",
+      "year": 2019,
+      "credibility_score": 0.8768528222970776,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in personal identity: Current research trends, emerging debates, and new applications of personal identity in contemporary philosophy.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/latest/55",
+      "year": 2022,
+      "credibility_score": 0.9589972435976964,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.442337",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "personal_identity"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_MOD_american_revolution_definition_156",
+  "domain": "his",
+  "subdomain": "mod",
+  "tags": [
+    "mod",
+    "american_revolution",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "American Revolution in Early Modern History refers to the historical phenomena associated with american revolution. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Cambridge Modern History",
+  "source_url": "https://example.org/his/mod/american_revolution",
+  "credibility_class": "academic_publication",
+  "year": 2023,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.842456",
+    "sector_target": 200
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0034",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Stoicism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Stoicism: A comprehensive examination of stoicism within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "British Journal for the History of Philosophy",
+      "url": "https://example.com/phi/33",
+      "year": 841,
+      "credibility_score": 0.9203666285265315,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on stoicism: Examining objections, alternative frameworks, and limitations of dominant approaches to stoicism.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/phi/counter/33",
+      "year": 2015,
+      "credibility_score": 0.9001110826892831,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in stoicism: Current research trends, emerging debates, and new applications of stoicism in contemporary philosophy.",
+      "source": "British Journal for the History of Philosophy",
+      "url": "https://example.com/phi/latest/33",
+      "year": 2024,
+      "credibility_score": 0.883291240061418,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.480779",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "stoicism"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0013",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Gettier problems",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Gettier problems: A comprehensive examination of gettier problems within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/gettier-problems/",
+      "year": 2016,
+      "credibility_score": 0.9344536816385289,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on gettier problems: Examining objections, alternative frameworks, and limitations of dominant approaches to gettier problems.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/counter/12",
+      "year": 2022,
+      "credibility_score": 0.8706562895850015,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in gettier problems: Current research trends, emerging debates, and new applications of gettier problems in contemporary philosophy.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/latest/12",
+      "year": 2024,
+      "credibility_score": 0.912364694285647,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.356128",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "gettier_problems"
+    ]
+  }
+}

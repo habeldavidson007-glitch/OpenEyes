@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0127",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Ethical egoism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Ethical egoism: A comprehensive examination of ethical egoism within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/ethical-egoism/",
+      "year": 2021,
+      "credibility_score": 0.8999316865214942,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on ethical egoism: Examining objections, alternative frameworks, and limitations of dominant approaches to ethical egoism.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/counter/126",
+      "year": 2018,
+      "credibility_score": 0.9177431808077591,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in ethical egoism: Current research trends, emerging debates, and new applications of ethical egoism in contemporary philosophy.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/latest/126",
+      "year": 2024,
+      "credibility_score": 0.8913474609607523,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.323030",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "ethical_egoism"
+    ]
+  }
+}

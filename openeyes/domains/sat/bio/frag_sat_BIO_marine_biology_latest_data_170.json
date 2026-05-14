@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_BIO_marine_biology_latest_data_170",
+  "domain": "sat",
+  "subdomain": "bio",
+  "tags": [
+    "bio",
+    "marine_biology",
+    "latest_data",
+    "swarm_generated"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Recent developments in Marine Biology (2024-2026) include novel experimental results and theoretical refinements in marine biology. New methodologies enable more accurate predictions and control. Current research focuses on addressing current limitations. Key metrics show continuous improvement in predictive accuracy.",
+  "source": "Science",
+  "source_url": "https://example.org/sat/bio/marine_biology",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2026,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.897937",
+    "sector_target": 200
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0086",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Intentionality",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Intentionality: A comprehensive examination of intentionality within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/85",
+      "year": 2021,
+      "credibility_score": 0.8702079645624604,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on intentionality: Examining objections, alternative frameworks, and limitations of dominant approaches to intentionality.",
+      "source": "Neuroethics",
+      "url": "https://example.com/mnd/counter/85",
+      "year": 2019,
+      "credibility_score": 0.8129047181288046,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in intentionality: Current research trends, emerging debates, and new applications of intentionality in contemporary philosophy.",
+      "source": "Neuroethics",
+      "url": "https://example.com/mnd/latest/85",
+      "year": 2022,
+      "credibility_score": 0.935154246994138,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.456814",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "intentionality"
+    ]
+  }
+}

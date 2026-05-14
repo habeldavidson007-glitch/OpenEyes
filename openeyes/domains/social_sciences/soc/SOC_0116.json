@@ -1,0 +1,37 @@
+{
+  "id": "SOC_0116",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "SOC",
+  "topic": "Political sociology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for political sociology within SOC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Annual Review of Sociology",
+      "url": "https://example.org/soc/SOC_0116",
+      "year": 2018,
+      "confidence": 0.93
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to political sociology, including methodological critiques, conflicting empirical findings, and ongoing debates within the SOC literature.",
+      "source": "Annual Review of Sociology",
+      "url": "https://example.org/soc/SOC_0116/counter",
+      "year": 2018,
+      "confidence": 0.85
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to political sociology as of 2018, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Annual Review of Sociology",
+      "url": "https://example.org/soc/SOC_0116/data",
+      "year": 2018,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.714913",
+    "version": "1.0",
+    "tags": [
+      "soc",
+      "political"
+    ]
+  }
+}

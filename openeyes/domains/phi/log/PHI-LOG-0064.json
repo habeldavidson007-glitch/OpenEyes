@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0064",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Skepticism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Skepticism: A comprehensive examination of skepticism within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/63",
+      "year": 2021,
+      "credibility_score": 0.9517059116810613,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on skepticism: Examining objections, alternative frameworks, and limitations of dominant approaches to skepticism.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/counter/63",
+      "year": 2021,
+      "credibility_score": 0.9234967809307946,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in skepticism: Current research trends, emerging debates, and new applications of skepticism in contemporary philosophy.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/latest/63",
+      "year": 2021,
+      "credibility_score": 0.9358195071930406,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.362256",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "skepticism"
+    ]
+  }
+}

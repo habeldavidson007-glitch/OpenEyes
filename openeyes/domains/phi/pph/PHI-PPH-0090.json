@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0090",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Liberty concepts",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Liberty concepts: A comprehensive examination of liberty concepts within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/89",
+      "year": 2020,
+      "credibility_score": 0.8964302178607484,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on liberty concepts: Examining objections, alternative frameworks, and limitations of dominant approaches to liberty concepts.",
+      "source": "Ethics",
+      "url": "https://example.com/pph/counter/89",
+      "year": 2018,
+      "credibility_score": 0.9205076687439205,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in liberty concepts: Current research trends, emerging debates, and new applications of liberty concepts in contemporary philosophy.",
+      "source": "Journal of Political Philosophy",
+      "url": "https://example.com/pph/latest/89",
+      "year": 2021,
+      "credibility_score": 0.9087041375374103,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.417672",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "liberty_concepts"
+    ]
+  }
+}

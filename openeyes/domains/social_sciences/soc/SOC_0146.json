@@ -1,0 +1,37 @@
+{
+  "id": "SOC_0146",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "SOC",
+  "topic": "Rural sociology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for rural sociology within SOC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "UN Social Development Reports",
+      "url": "https://example.org/soc/SOC_0146",
+      "year": 2019,
+      "confidence": 0.89
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to rural sociology, including methodological critiques, conflicting empirical findings, and ongoing debates within the SOC literature.",
+      "source": "UN Social Development Reports",
+      "url": "https://example.org/soc/SOC_0146/counter",
+      "year": 2019,
+      "confidence": 0.75
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to rural sociology as of 2019, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "UN Social Development Reports",
+      "url": "https://example.org/soc/SOC_0146/data",
+      "year": 2019,
+      "confidence": 0.95
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.719282",
+    "version": "1.0",
+    "tags": [
+      "soc",
+      "rural"
+    ]
+  }
+}

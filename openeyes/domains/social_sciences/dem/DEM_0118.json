@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0118",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Population policies",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for population policies within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/dem/DEM_0118",
+      "year": 2017,
+      "confidence": 0.92
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to population policies, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/dem/DEM_0118/counter",
+      "year": 2017,
+      "confidence": 0.87
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to population policies as of 2017, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/dem/DEM_0118/data",
+      "year": 2017,
+      "confidence": 0.9
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.898074",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "population"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0153",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Moral relativism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Moral relativism: A comprehensive examination of moral relativism within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Environmental Ethics",
+      "url": "https://example.com/emp/152",
+      "year": 2021,
+      "credibility_score": 0.9430149805843996,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on moral relativism: Examining objections, alternative frameworks, and limitations of dominant approaches to moral relativism.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/counter/152",
+      "year": 2024,
+      "credibility_score": 0.8015475836948401,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in moral relativism: Current research trends, emerging debates, and new applications of moral relativism in contemporary philosophy.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/latest/152",
+      "year": 2022,
+      "credibility_score": 0.9548970519768013,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.337762",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "moral_relativism"
+    ]
+  }
+}

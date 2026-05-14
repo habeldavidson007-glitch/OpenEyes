@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0005",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Functionalism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Functionalism: A comprehensive examination of functionalism within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/4",
+      "year": 2018,
+      "credibility_score": 0.9319065725579474,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on functionalism: Examining objections, alternative frameworks, and limitations of dominant approaches to functionalism.",
+      "source": "Neuroethics",
+      "url": "https://example.com/mnd/counter/4",
+      "year": 2015,
+      "credibility_score": 0.8633501932822486,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in functionalism: Current research trends, emerging debates, and new applications of functionalism in contemporary philosophy.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/latest/4",
+      "year": 2023,
+      "credibility_score": 0.9428819601616365,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.436277",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "functionalism"
+    ]
+  }
+}

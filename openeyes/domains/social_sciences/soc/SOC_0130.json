@@ -1,0 +1,37 @@
+{
+  "id": "SOC_0130",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "SOC",
+  "topic": "Work and occupations",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for work and occupations within SOC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "OECD Social Statistics",
+      "url": "https://example.org/soc/SOC_0130",
+      "year": 2020,
+      "confidence": 0.97
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to work and occupations, including methodological critiques, conflicting empirical findings, and ongoing debates within the SOC literature.",
+      "source": "OECD Social Statistics",
+      "url": "https://example.org/soc/SOC_0130/counter",
+      "year": 2020,
+      "confidence": 0.85
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to work and occupations as of 2020, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "OECD Social Statistics",
+      "url": "https://example.org/soc/SOC_0130/data",
+      "year": 2020,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.717190",
+    "version": "1.0",
+    "tags": [
+      "soc",
+      "work"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "frag_sat_PHY_counter_argument_c4742533",
+  "domain": "sat",
+  "subdomain": "phy",
+  "tags": [
+    "phy",
+    "cond-mat",
+    "counter_argument"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Observation of narrow fluorescence from doubly driven four-level atoms at room temperature. Unusually narrow fluorescence peaks are seen from Rubidium-85 atoms under the action of two driving laser fields that are in a three dimensional molasses configuration. One of the lasers is held at a fixed detuning from the \"cooling\" transition, while the other is scanned across the \"repumping\" transitions. The fluorescence peaks are split into symmetric pairs, with the seperation within a pair increasing with the detuning of the cooling laser. For large detunings additional small peaks are seen. A simple model is proposed to explain these experimental observations.",
+  "source": "ArXiv",
+  "source_url": "http://arxiv.org/abs/cond-mat/0401280v1",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2004,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

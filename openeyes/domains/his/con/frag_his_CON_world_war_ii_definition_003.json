@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_CON_world_war_ii_definition_003",
+  "domain": "his",
+  "subdomain": "con",
+  "tags": [
+    "con",
+    "world_war_ii",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "World War Ii in Contemporary History refers to the global conflict from 1939-1945 involving most nations aligned in Allied and Axis powers. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "peer-reviewed journals",
+  "source_url": "https://example.org/his/con/world_war_ii",
+  "credibility_class": "academic_publication",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.896382",
+    "sector_target": 200
+  }
+}

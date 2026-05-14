@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0044",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Berkeley's idealism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Berkeley's idealism: A comprehensive examination of berkeley's idealism within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "British Journal for the History of Philosophy",
+      "url": "https://example.com/phi/43",
+      "year": 1171,
+      "credibility_score": 0.9507235815093119,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on berkeley's idealism: Examining objections, alternative frameworks, and limitations of dominant approaches to berkeley's idealism.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://example.com/phi/counter/43",
+      "year": 2020,
+      "credibility_score": 0.9130662165730032,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in berkeley's idealism: Current research trends, emerging debates, and new applications of berkeley's idealism in contemporary philosophy.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/latest/43",
+      "year": 2020,
+      "credibility_score": 0.9398387571683842,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.481989",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "berkeley's_idealism"
+    ]
+  }
+}

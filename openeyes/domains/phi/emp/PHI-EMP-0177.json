@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0177",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Utilitarianism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Utilitarianism: A comprehensive examination of utilitarianism within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Ethics journal",
+      "url": "https://example.com/emp/176",
+      "year": 2018,
+      "credibility_score": 0.9269389445972188,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on utilitarianism: Examining objections, alternative frameworks, and limitations of dominant approaches to utilitarianism.",
+      "source": "Business Ethics Quarterly",
+      "url": "https://example.com/emp/counter/176",
+      "year": 2017,
+      "credibility_score": 0.8488228904349219,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in utilitarianism: Current research trends, emerging debates, and new applications of utilitarianism in contemporary philosophy.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/latest/176",
+      "year": 2022,
+      "credibility_score": 0.8967728656525039,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.340756",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "utilitarianism"
+    ]
+  }
+}

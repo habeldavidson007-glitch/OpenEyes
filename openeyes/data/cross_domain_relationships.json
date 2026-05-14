@@ -1,0 +1,172 @@
+{
+  "version": "1.0",
+  "description": "Cross-domain sector relationships for automatic synthesis and shared territory detection",
+  "relationships": [
+    {
+      "id": "geo_gel_001",
+      "domain_a": "economy",
+      "sector_a": "geo",
+      "domain_b": "governance",
+      "sector_b": "gel",
+      "shared_territory": "Geopolitical risk, sanctions, trade wars, strategic competition",
+      "synthesis_priority": "high",
+      "conflict_potential": "medium"
+    },
+    {
+      "id": "reg_leg_001",
+      "domain_a": "economy",
+      "sector_a": "reg",
+      "domain_b": "governance",
+      "sector_b": "leg",
+      "shared_territory": "Financial regulation as legislative product, regulatory rulemaking",
+      "synthesis_priority": "high",
+      "conflict_potential": "low"
+    },
+    {
+      "id": "mac_gov_001",
+      "domain_a": "economy",
+      "sector_a": "mac",
+      "domain_b": "governance",
+      "sector_b": "gov",
+      "shared_territory": "Fiscal policy, government spending, monetary-fiscal coordination",
+      "synthesis_priority": "high",
+      "conflict_potential": "medium"
+    },
+    {
+      "id": "phr_leg_001",
+      "domain_a": "healthcare",
+      "sector_a": "phr",
+      "domain_b": "governance",
+      "sector_b": "leg",
+      "shared_territory": "Drug regulation, FDA law, pricing legislation, patent policy",
+      "synthesis_priority": "high",
+      "conflict_potential": "high"
+    },
+    {
+      "id": "ph_sec_001",
+      "domain_a": "healthcare",
+      "sector_a": "ph",
+      "domain_b": "governance",
+      "sector_b": "sec",
+      "shared_territory": "Bioterrorism, pandemic preparedness, public health law, biosecurity",
+      "synthesis_priority": "critical",
+      "conflict_potential": "medium"
+    },
+    {
+      "id": "csc_sec_001",
+      "domain_a": "sat",
+      "sector_a": "csc",
+      "domain_b": "governance",
+      "sector_b": "sec",
+      "shared_territory": "Cybersecurity law, AI regulation, cyber warfare, surveillance",
+      "synthesis_priority": "critical",
+      "conflict_potential": "high"
+    },
+    {
+      "id": "env_enr_001",
+      "domain_a": "sat",
+      "sector_a": "env",
+      "domain_b": "economy",
+      "sector_b": "enr",
+      "shared_territory": "Climate policy, energy transition, carbon markets, renewable subsidies",
+      "synthesis_priority": "high",
+      "conflict_potential": "high"
+    },
+    {
+      "id": "bio_med_001",
+      "domain_a": "sat",
+      "sector_a": "bio",
+      "domain_b": "healthcare",
+      "sector_b": "med",
+      "shared_territory": "Genetics in clinical medicine, molecular diagnostics, genomics",
+      "synthesis_priority": "medium",
+      "conflict_potential": "low"
+    },
+    {
+      "id": "gov_pph_001",
+      "domain_a": "governance",
+      "sector_a": "gov",
+      "domain_b": "phi",
+      "sector_b": "pph",
+      "shared_territory": "Political philosophy foundations of institutions, justice theory",
+      "synthesis_priority": "medium",
+      "conflict_potential": "medium"
+    },
+    {
+      "id": "jud_eth_001",
+      "domain_a": "governance",
+      "sector_a": "jud",
+      "domain_b": "phi",
+      "sector_b": "emp",
+      "shared_territory": "Legal ethics, justice theory, moral foundations of law",
+      "synthesis_priority": "medium",
+      "conflict_potential": "medium"
+    },
+    {
+      "id": "psy_mh_001",
+      "domain_a": "social_sciences",
+      "sector_a": "psy",
+      "domain_b": "healthcare",
+      "sector_b": "mh",
+      "shared_territory": "Clinical vs research psychology boundary, mental health frameworks",
+      "synthesis_priority": "medium",
+      "conflict_potential": "medium"
+    },
+    {
+      "id": "con_int_001",
+      "domain_a": "his",
+      "sector_a": "con",
+      "domain_b": "governance",
+      "sector_b": "int",
+      "shared_territory": "20th century international relations as historical record, Cold War",
+      "synthesis_priority": "low",
+      "conflict_potential": "low"
+    },
+    {
+      "id": "lrn_psy_001",
+      "domain_a": "edu",
+      "sector_a": "lrn",
+      "domain_b": "social_sciences",
+      "sector_b": "psy",
+      "shared_territory": "Cognitive psychology applied to learning, memory and retrieval",
+      "synthesis_priority": "medium",
+      "conflict_potential": "low"
+    },
+    {
+      "id": "edu_soc_001",
+      "domain_a": "edu",
+      "sector_a": "edu",
+      "domain_b": "social_sciences",
+      "sector_b": "soc",
+      "shared_territory": "Education as social institution, equity and stratification",
+      "synthesis_priority": "medium",
+      "conflict_potential": "medium"
+    },
+    {
+      "id": "mat_csc_001",
+      "domain_a": "sat",
+      "sector_a": "mat",
+      "domain_b": "sat",
+      "sector_b": "csc",
+      "shared_territory": "Algorithms, cryptography, machine learning mathematics",
+      "synthesis_priority": "low",
+      "conflict_potential": "low"
+    },
+    {
+      "id": "phy_eng_001",
+      "domain_a": "sat",
+      "sector_a": "phy",
+      "domain_b": "sat",
+      "sector_b": "eng",
+      "shared_territory": "Applied physics in engineering, materials science, thermodynamics",
+      "synthesis_priority": "low",
+      "conflict_potential": "low"
+    }
+  ],
+  "synthesis_rules": {
+    "auto_trigger_threshold": 0.7,
+    "max_domains_per_query": 4,
+    "conflict_resolution_strategy": "present_both_with_context",
+    "priority_order": ["critical", "high", "medium", "low"]
+  }
+}

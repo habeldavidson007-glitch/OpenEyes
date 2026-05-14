@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0033",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Population density effects",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for population density effects within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/dem/DEM_0033",
+      "year": 2019,
+      "confidence": 0.93
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to population density effects, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/dem/DEM_0033/counter",
+      "year": 2019,
+      "confidence": 0.83
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to population density effects as of 2019, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/dem/DEM_0033/data",
+      "year": 2019,
+      "confidence": 0.93
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.875519",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "population"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0055",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Research methods in psychology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for research methods in psychology within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0055",
+      "year": 2024,
+      "confidence": 0.89
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to research methods in psychology, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0055/counter",
+      "year": 2024,
+      "confidence": 0.87
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to research methods in psychology as of 2024, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0055/data",
+      "year": 2024,
+      "confidence": 0.91
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.776353",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "research"
+    ]
+  }
+}

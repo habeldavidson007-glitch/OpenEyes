@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0047",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Knowledge gap hypothesis",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for knowledge gap hypothesis within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Media Psychology",
+      "url": "https://example.org/cmc/CMC_0047",
+      "year": 2016,
+      "confidence": 0.94
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to knowledge gap hypothesis, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Media Psychology",
+      "url": "https://example.org/cmc/CMC_0047/counter",
+      "year": 2016,
+      "confidence": 0.85
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to knowledge gap hypothesis as of 2016, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Media Psychology",
+      "url": "https://example.org/cmc/CMC_0047/data",
+      "year": 2016,
+      "confidence": 0.88
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.919333",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "knowledge"
+    ]
+  }
+}

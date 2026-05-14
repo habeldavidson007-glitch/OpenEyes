@@ -1,0 +1,37 @@
+{
+  "id": "PSY_0176",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "PSY",
+  "topic": "Historical foundations",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for historical foundations within PSY research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0176",
+      "year": 2023,
+      "confidence": 0.88
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to historical foundations, including methodological critiques, conflicting empirical findings, and ongoing debates within the PSY literature.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0176/counter",
+      "year": 2023,
+      "confidence": 0.9
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to historical foundations as of 2023, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Journal of Personality and Social Psychology",
+      "url": "https://example.org/psy/PSY_0176/data",
+      "year": 2023,
+      "confidence": 0.96
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.815581",
+    "version": "1.0",
+    "tags": [
+      "psy",
+      "historical"
+    ]
+  }
+}

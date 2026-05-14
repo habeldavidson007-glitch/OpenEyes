@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_MOD_commercial_revolution_definition_117",
+  "domain": "his",
+  "subdomain": "mod",
+  "tags": [
+    "mod",
+    "commercial_revolution",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Commercial Revolution in Early Modern History refers to the historical phenomena associated with commercial revolution. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "American Historical Review",
+  "source_url": "https://example.org/his/mod/commercial_revolution",
+  "credibility_class": "academic_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.842113",
+    "sector_target": 200
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0192",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Data ethics",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Data ethics: A comprehensive examination of data ethics within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of Medical Ethics",
+      "url": "https://example.com/emp/191",
+      "year": 2014,
+      "credibility_score": 0.884176279287617,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on data ethics: Examining objections, alternative frameworks, and limitations of dominant approaches to data ethics.",
+      "source": "Business Ethics Quarterly",
+      "url": "https://example.com/emp/counter/191",
+      "year": 2020,
+      "credibility_score": 0.8289474370173946,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in data ethics: Current research trends, emerging debates, and new applications of data ethics in contemporary philosophy.",
+      "source": "AI & Society",
+      "url": "https://example.com/emp/latest/191",
+      "year": 2022,
+      "credibility_score": 0.8958153021125232,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.342540",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "data_ethics"
+    ]
+  }
+}

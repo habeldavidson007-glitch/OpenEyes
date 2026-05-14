@@ -1,0 +1,37 @@
+{
+  "id": "DEM_0005",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "DEM",
+  "topic": "Urbanization trends",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for urbanization trends within DEM research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/dem/DEM_0005",
+      "year": 2018,
+      "confidence": 0.98
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to urbanization trends, including methodological critiques, conflicting empirical findings, and ongoing debates within the DEM literature.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/dem/DEM_0005/counter",
+      "year": 2018,
+      "confidence": 0.83
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to urbanization trends as of 2018, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Pew Research Center",
+      "url": "https://example.org/dem/DEM_0005/data",
+      "year": 2018,
+      "confidence": 0.91
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.861756",
+    "version": "1.0",
+    "tags": [
+      "dem",
+      "urbanization"
+    ]
+  }
+}

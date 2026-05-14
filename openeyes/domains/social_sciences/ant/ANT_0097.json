@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0097",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Migration and diaspora studies",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for migration and diaspora studies within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Annual Review of Anthropology",
+      "url": "https://example.org/ant/ANT_0097",
+      "year": 2019,
+      "confidence": 0.95
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to migration and diaspora studies, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "Annual Review of Anthropology",
+      "url": "https://example.org/ant/ANT_0097/counter",
+      "year": 2019,
+      "confidence": 0.89
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to migration and diaspora studies as of 2019, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Annual Review of Anthropology",
+      "url": "https://example.org/ant/ANT_0097/data",
+      "year": 2019,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.842899",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "migration"
+    ]
+  }
+}

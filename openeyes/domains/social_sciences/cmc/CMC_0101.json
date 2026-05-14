@@ -1,0 +1,37 @@
+{
+  "id": "CMC_0101",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "CMC",
+  "topic": "Media effects theories",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for media effects theories within CMC research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "Pew Research Center Media Studies",
+      "url": "https://example.org/cmc/CMC_0101",
+      "year": 2021,
+      "confidence": 0.89
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to media effects theories, including methodological critiques, conflicting empirical findings, and ongoing debates within the CMC literature.",
+      "source": "Pew Research Center Media Studies",
+      "url": "https://example.org/cmc/CMC_0101/counter",
+      "year": 2021,
+      "confidence": 0.91
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to media effects theories as of 2021, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "Pew Research Center Media Studies",
+      "url": "https://example.org/cmc/CMC_0101/data",
+      "year": 2021,
+      "confidence": 0.94
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.939135",
+    "version": "1.0",
+    "tags": [
+      "cmc",
+      "media"
+    ]
+  }
+}

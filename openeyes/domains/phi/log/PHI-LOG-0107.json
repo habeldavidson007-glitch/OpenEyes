@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0107",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Deductive reasoning",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Deductive reasoning: A comprehensive examination of deductive reasoning within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Philosophy of Science",
+      "url": "https://example.com/log/106",
+      "year": 2015,
+      "credibility_score": 0.8936281067917065,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on deductive reasoning: Examining objections, alternative frameworks, and limitations of dominant approaches to deductive reasoning.",
+      "source": "Journal of Philosophical Logic",
+      "url": "https://example.com/log/counter/106",
+      "year": 2018,
+      "credibility_score": 0.8162020572175844,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in deductive reasoning: Current research trends, emerging debates, and new applications of deductive reasoning in contemporary philosophy.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/latest/106",
+      "year": 2021,
+      "credibility_score": 0.9488483970680227,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.379391",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "deductive_reasoning"
+    ]
+  }
+}

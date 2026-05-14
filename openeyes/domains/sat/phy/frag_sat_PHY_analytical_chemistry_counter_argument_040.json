@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_PHY_analytical_chemistry_counter_argument_040",
+  "domain": "sat",
+  "subdomain": "phy",
+  "tags": [
+    "phy",
+    "analytical_chemistry",
+    "counter_argument",
+    "swarm_generated"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Alternative perspectives on Analytical Chemistry suggest methodological limitations and competing theoretical frameworks in analytical chemistry. Critics argue simplifications in current models. However, empirical evidence shows reproducible experimental results. The debate continues regarding the underlying mechanisms.",
+  "source": "ArXiv",
+  "source_url": "https://example.org/sat/phy/analytical_chemistry",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.800911",
+    "sector_target": 200
+  }
+}

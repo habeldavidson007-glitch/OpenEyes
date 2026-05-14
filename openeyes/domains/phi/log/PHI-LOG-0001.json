@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-LOG-0001",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Logic & Epistemology",
+  "sector_code": "LOG",
+  "topic": "Formal logic systems",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Formal logic systems: A comprehensive examination of formal logic systems within Logic & Epistemology, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/formal-logic-systems/",
+      "year": 2016,
+      "credibility_score": 0.8621895959749613,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on formal logic systems: Examining objections, alternative frameworks, and limitations of dominant approaches to formal logic systems.",
+      "source": "Erkenntnis",
+      "url": "https://example.com/log/counter/0",
+      "year": 2023,
+      "credibility_score": 0.9040619624712553,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in formal logic systems: Current research trends, emerging debates, and new applications of formal logic systems in contemporary philosophy.",
+      "source": "British Journal for the Philosophy of Science",
+      "url": "https://example.com/log/latest/0",
+      "year": 2021,
+      "credibility_score": 0.966120207966423,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.353965",
+    "version": "1.0",
+    "tags": [
+      "log",
+      "formal_logic_systems"
+    ]
+  }
+}

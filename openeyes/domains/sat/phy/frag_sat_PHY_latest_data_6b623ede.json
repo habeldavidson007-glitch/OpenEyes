@@ -1,0 +1,19 @@
+{
+  "id": "frag_sat_PHY_latest_data_6b623ede",
+  "domain": "sat",
+  "subdomain": "phy",
+  "tags": [
+    "phy",
+    "cond-mat",
+    "latest_data"
+  ],
+  "reasoning_role": "latest_data",
+  "content": "Ultrafast Conductivity Dynamics in Pentacene Probed using Terahertz Spectroscopy. We present measurements of the transient photoconductivity in pentacene single crystals using optical-pump THz-probe spectroscopy. We have measured the temperature and fluence dependence of the mobility of the photoexcited charge carriers with picosecond resolution. The pentacene crystals were excited at 3.0 eV which is above the bandgap of ~2.2 eV and the induced change in the far-infrared transmission was measured. At 30 K, the carrier mobility is mu ~ 0.4 cm^2/Vs and decreases to mu ~ 0.2 cm^2/Vs at room temperature. The transient terahertz signal reveals the presence of free carriers that are trapped on the timescale of a few ps or less, possibly through the formation of excitons, small polarons, or trapping by impurities.",
+  "source": "ArXiv",
+  "source_url": "http://arxiv.org/abs/cond-mat/0401296v1",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2004,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0
+}

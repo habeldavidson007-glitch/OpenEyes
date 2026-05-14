@@ -1,0 +1,37 @@
+{
+  "id": "ANT_0040",
+  "domain": "SOCIAL_SCIENCES",
+  "sector": "ANT",
+  "topic": "Visual anthropology",
+  "roles": {
+    "definition": {
+      "content": "Comprehensive definition and theoretical framework for visual anthropology within ANT research, including key concepts, operational definitions, and foundational theories established in the field.",
+      "source": "UNESCO Cultural Reports",
+      "url": "https://example.org/ant/ANT_0040",
+      "year": 2024,
+      "confidence": 0.9
+    },
+    "counter_argument": {
+      "content": "Critical perspectives and alternative theoretical approaches to visual anthropology, including methodological critiques, conflicting empirical findings, and ongoing debates within the ANT literature.",
+      "source": "UNESCO Cultural Reports",
+      "url": "https://example.org/ant/ANT_0040/counter",
+      "year": 2024,
+      "confidence": 0.84
+    },
+    "latest_data": {
+      "content": "Recent empirical findings and current statistical trends related to visual anthropology as of 2024, including meta-analyses, large-scale studies, and updated measurements from peer-reviewed research.",
+      "source": "UNESCO Cultural Reports",
+      "url": "https://example.org/ant/ANT_0040/data",
+      "year": 2024,
+      "confidence": 0.95
+    }
+  },
+  "metadata": {
+    "created": "2026-05-13T02:16:29.835234",
+    "version": "1.0",
+    "tags": [
+      "ant",
+      "visual"
+    ]
+  }
+}

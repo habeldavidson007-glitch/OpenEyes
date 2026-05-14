@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_BIO_structural_biology_counter_argument_148",
+  "domain": "sat",
+  "subdomain": "bio",
+  "tags": [
+    "bio",
+    "structural_biology",
+    "counter_argument",
+    "swarm_generated"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Alternative perspectives on Structural Biology suggest methodological limitations and competing theoretical frameworks in structural biology. Critics argue simplifications in current models. However, empirical evidence shows reproducible experimental results. The debate continues regarding the underlying mechanisms.",
+  "source": "ArXiv q-bio",
+  "source_url": "https://example.org/sat/bio/structural_biology",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:08.897736",
+    "sector_target": 200
+  }
+}

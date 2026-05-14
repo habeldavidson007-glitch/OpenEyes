@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-EMP-0078",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Ethics & Moral Philosophy",
+  "sector_code": "EMP",
+  "topic": "Punishment and retribution",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Punishment and retribution: A comprehensive examination of punishment and retribution within Ethics & Moral Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/punishment-and-retribution/",
+      "year": 2016,
+      "credibility_score": 0.9598730620711936,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on punishment and retribution: Examining objections, alternative frameworks, and limitations of dominant approaches to punishment and retribution.",
+      "source": "Philosophy & Public Affairs",
+      "url": "https://example.com/emp/counter/77",
+      "year": 2016,
+      "credibility_score": 0.8724148851495153,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in punishment and retribution: Current research trends, emerging debates, and new applications of punishment and retribution in contemporary philosophy.",
+      "source": "Ethics journal",
+      "url": "https://example.com/emp/latest/77",
+      "year": 2021,
+      "credibility_score": 0.9687643593383702,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.300039",
+    "version": "1.0",
+    "tags": [
+      "emp",
+      "punishment_and_retribution"
+    ]
+  }
+}

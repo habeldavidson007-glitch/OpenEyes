@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_MEH_byzantine_empire_definition_123",
+  "domain": "his",
+  "subdomain": "meh",
+  "tags": [
+    "meh",
+    "byzantine_empire",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Byzantine Empire in Medieval History refers to the historical phenomena associated with byzantine empire. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "archive.org",
+  "source_url": "https://example.org/his/meh/byzantine_empire",
+  "credibility_class": "academic_publication",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.802757",
+    "sector_target": 150
+  }
+}

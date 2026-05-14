@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-MND-0029",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Philosophy of Mind",
+  "sector_code": "MND",
+  "topic": "Physicalism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Physicalism: A comprehensive examination of physicalism within Philosophy of Mind, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Consciousness and Cognition",
+      "url": "https://example.com/mnd/28",
+      "year": 2017,
+      "credibility_score": 0.904375000785845,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on physicalism: Examining objections, alternative frameworks, and limitations of dominant approaches to physicalism.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/counter/28",
+      "year": 2016,
+      "credibility_score": 0.8177429285581275,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in physicalism: Current research trends, emerging debates, and new applications of physicalism in contemporary philosophy.",
+      "source": "Journal of Consciousness Studies",
+      "url": "https://example.com/mnd/latest/28",
+      "year": 2020,
+      "credibility_score": 0.8932089486636303,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.439194",
+    "version": "1.0",
+    "tags": [
+      "mnd",
+      "physicalism"
+    ]
+  }
+}

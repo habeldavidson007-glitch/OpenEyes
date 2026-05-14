@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0095",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Epicureanism",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Epicureanism: A comprehensive examination of epicureanism within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "History of Philosophy Quarterly",
+      "url": "https://example.com/phi/94",
+      "year": 2014,
+      "credibility_score": 0.9307468271622743,
+      "peer_reviewed": false
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on epicureanism: Examining objections, alternative frameworks, and limitations of dominant approaches to epicureanism.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/counter/94",
+      "year": 2022,
+      "credibility_score": 0.8102349135382368,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in epicureanism: Current research trends, emerging debates, and new applications of epicureanism in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/94",
+      "year": 2020,
+      "credibility_score": 0.9505673787823621,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.500158",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "epicureanism"
+    ]
+  }
+}

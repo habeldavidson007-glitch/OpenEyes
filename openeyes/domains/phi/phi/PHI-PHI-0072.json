@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PHI-0072",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "History of Philosophy",
+  "sector_code": "PHI",
+  "topic": "Leibniz",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Leibniz: A comprehensive examination of leibniz within History of Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/71",
+      "year": 2022,
+      "credibility_score": 0.8775539050420212,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on leibniz: Examining objections, alternative frameworks, and limitations of dominant approaches to leibniz.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/counter/71",
+      "year": 2020,
+      "credibility_score": 0.8219432060949515,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in leibniz: Current research trends, emerging debates, and new applications of leibniz in contemporary philosophy.",
+      "source": "Journal of the History of Philosophy",
+      "url": "https://example.com/phi/latest/71",
+      "year": 2020,
+      "credibility_score": 0.9463439716617612,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.497207",
+    "version": "1.0",
+    "tags": [
+      "phi",
+      "leibniz"
+    ]
+  }
+}

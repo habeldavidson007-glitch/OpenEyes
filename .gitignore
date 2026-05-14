@@ -1,29 +1,26 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Binary and compiled files
+*.bin
 
-# Logs
+# Logs and temporary files
 *.log
+*.tmp
 
-# Environment
+# Environment and cache
 .env
 .env.local
-*.env.*
+.env.*
 
-# Databases
-*.db
+# Editors and IDE
+.vscode/
+.idea/
 
-# Temporary files
-*.tmp
-*.temp
+# Coverage and testing
+.coverage
+coverage/
+htmlcov/
 
-# OS generated files
+# System files
 .DS_Store
 Thumbs.db
-
-# Audit logs and vault
-.openeyes/vault/audit/
 ```

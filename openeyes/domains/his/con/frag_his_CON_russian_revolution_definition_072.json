@@ -1,0 +1,25 @@
+{
+  "id": "frag_his_CON_russian_revolution_definition_072",
+  "domain": "his",
+  "subdomain": "con",
+  "tags": [
+    "con",
+    "russian_revolution",
+    "definition",
+    "swarm_generated"
+  ],
+  "reasoning_role": "definition",
+  "content": "Russian Revolution in Contemporary History refers to the historical phenomena associated with russian revolution. Key characteristics include distinctive political structures, economic systems, and cultural achievements. This area examines primary source analysis and archaeological evidence with significance for understanding human civilization development. Major developments occurred during the relevant historical period based on available evidence.",
+  "source": "Foreign Affairs",
+  "source_url": "https://example.org/his/con/russian_revolution",
+  "credibility_class": "academic_publication",
+  "year": 2024,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "his_swarm",
+    "generation_date": "2026-05-13T01:45:44.897029",
+    "sector_target": 200
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "frag_sat_MAT_probability_counter_argument_076",
+  "domain": "sat",
+  "subdomain": "mat",
+  "tags": [
+    "mat",
+    "probability",
+    "counter_argument",
+    "swarm_generated"
+  ],
+  "reasoning_role": "counter_argument",
+  "content": "Alternative perspectives on Probability suggest frequentist versus Bayesian interpretations of probability theory. Critics argue simplifications in current models. However, empirical evidence shows reproducible experimental results. The debate continues regarding the underlying mechanisms.",
+  "source": "ArXiv Math",
+  "source_url": "https://example.org/sat/mat/probability",
+  "credibility_class": "peer_reviewed_study",
+  "year": 2025,
+  "compatible_with": [],
+  "incompatible_with": [],
+  "weight": 1.0,
+  "metadata": {
+    "generated_by": "sat_swarm",
+    "generation_date": "2026-05-13T01:39:09.136217",
+    "sector_target": 150
+  }
+}

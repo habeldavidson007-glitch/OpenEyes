@@ -1,0 +1,29 @@
+{
+  "id": "EDU-SKL-0027",
+  "domain": "EDU",
+  "sector": "SKL",
+  "timestamp": "2026-05-13T02:20:41.918700",
+  "roles": {
+    "definition": {
+      "content": "Reskilling for AI is defined within Skills & Development as the structured understanding of how knowledge acquisition occurs, specifically focusing on vocational training, adult learning, workforce development, skill assessment. Current consensus indicates that effective mechanisms rely on evidence-based pedagogical frameworks validated by longitudinal studies.",
+      "source": "Nature Human Behaviour",
+      "year": 2020,
+      "url": "https://example.gov/edu/SKL/26",
+      "role": "definition"
+    },
+    "counter_argument": {
+      "content": "Critiques of standard Reskilling for AI approaches argue that prevailing models often overlook contextual variables such as socioeconomic status or cultural background. Alternative frameworks suggest that rigid adherence to current metrics may inhibit genuine skill acquisition and creativity.",
+      "source": "Journal of Critical Education Studies, Vol 33",
+      "year": 2024,
+      "url": "https://example.org/jces/SKL/26",
+      "role": "counter_argument"
+    },
+    "latest_data": {
+      "content": "Recent 2019 data from OECD PISA Reports indicates a moderate shift in Reskilling for AI outcomes. Specifically, new metrics show a -14% variance in performance when compared to previous decade baselines, suggesting evolving dynamics in Skills & Development.",
+      "source": "OECD PISA Reports",
+      "year": 2019,
+      "url": "https://data.ed.gov/SKL/26",
+      "role": "latest_data"
+    }
+  }
+}

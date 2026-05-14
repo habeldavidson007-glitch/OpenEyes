@@ -1,0 +1,45 @@
+{
+  "fragment_id": "PHI-PPH-0043",
+  "domain": "PHILOSOPHY & ETHICS",
+  "domain_code": "PHI",
+  "sector": "Political Philosophy",
+  "sector_code": "PPH",
+  "topic": "Recognition theory",
+  "roles": [
+    {
+      "role": "definition",
+      "content": "Recognition theory: A comprehensive examination of recognition theory within Political Philosophy, exploring foundational concepts, key arguments, and contemporary interpretations.",
+      "source": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/recognition-theory/",
+      "year": 2016,
+      "credibility_score": 0.8629089259630829,
+      "peer_reviewed": true
+    },
+    {
+      "role": "counter_argument",
+      "content": "Critical perspectives on recognition theory: Examining objections, alternative frameworks, and limitations of dominant approaches to recognition theory.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/counter/42",
+      "year": 2022,
+      "credibility_score": 0.9315052393432587,
+      "peer_reviewed": true
+    },
+    {
+      "role": "latest_data",
+      "content": "Recent developments in recognition theory: Current research trends, emerging debates, and new applications of recognition theory in contemporary philosophy.",
+      "source": "Social Philosophy and Policy",
+      "url": "https://example.com/pph/latest/42",
+      "year": 2024,
+      "credibility_score": 0.9225250228755008,
+      "peer_reviewed": true
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-05-13T02:09:37.400556",
+    "version": "1.0",
+    "tags": [
+      "pph",
+      "recognition_theory"
+    ]
+  }
+}
