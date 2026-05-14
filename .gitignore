@@ -1,26 +1,36 @@
 ```
-# Binary and compiled files
-*.bin
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc.*
+*.pyo.*
 
-# Logs and temporary files
-*.log
-*.tmp
+# Dependencies
+.venv/
+venv/
+env/
+ENV/
 
-# Environment and cache
-.env
-.env.local
-.env.*
+# Build and distribution
+build/
+dist/
+*.egg-info/
 
-# Editors and IDE
-.vscode/
-.idea/
-
-# Coverage and testing
+# Testing
+.pytest_cache/
 .coverage
 coverage/
-htmlcov/
+
+# Logs
+*.log
 
 # System files
 .DS_Store
 Thumbs.db
+
+# Memory and binary files
+*.bin
+*.out
 ```
