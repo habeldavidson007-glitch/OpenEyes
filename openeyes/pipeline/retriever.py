@@ -53,9 +53,15 @@ class UnifiedRetriever:
     
     @property
     def live_fetcher(self):
+        """Return the live_fetch module for backward compatibility.
+        
+        Note: This is a placeholder property. The actual live fetching
+        is handled by the original retrieval.py implementation.
+        New code should use openeyes.knowledge.live_fetch directly.
+        """
         if self._live_fetcher is None and self.live_enabled:
-            from openeyes.knowledge.live_fetch import LiveFragmentFetcher
-            self._live_fetcher = LiveFragmentFetcher()
+            from openeyes.knowledge import live_fetch
+            self._live_fetcher = live_fetch
         return self._live_fetcher
     
     def retrieve(self, query: str, domain: Optional[str] = None, 

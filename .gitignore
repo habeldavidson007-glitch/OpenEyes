@@ -5,56 +5,50 @@
 # Logs and temp files
 *.log
 
-# Environment specific
+# Environment
 .env
 .env.local
-.env.*
+*.env.*
 
-# Editors/IDE
-.vscode/
-.idea/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Cache directories
+# Dependencies
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.Python
+venv/
+.venv/
+env/
+ENV/
+.venv.bak/
+venv.bak/
 
 # Build artifacts
-dist/
 build/
-target/
-*.so
-*.dylib
-*.dll
-*.exe
-*.out
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Coverage reports
+.coverage
+coverage/
+htmlcov/
+.nyc_output/
 ```
