@@ -280,7 +280,7 @@ class FiveStageReasoningEngine:
                 frag.weight = getattr(frag, 'weight', 0.5) * boost_factor
                 
                 cross_domain_links.extend([{
-                    "fragment_id": frag.id,
+                    "fragment_id": getattr(frag, "source_id", "unknown"),
                     "sector_pair": f"{q}->{f}",
                     "connection_type": t,
                     "query": query[:50]
@@ -359,7 +359,7 @@ class FiveStageReasoningEngine:
                     "positive_count": len(positive_claims),
                     "negative_count": len(negative_claims),
                     "resolution": "weighted_consensus",
-                    "fragments_involved": [f.id for f in group]
+                    "fragments_involved": [getattr(f, 'source_id', 'unknown') for f in group]
                 })
                 
                 # Apply weighted consensus - higher credibility wins more weight
@@ -459,7 +459,7 @@ class FiveStageReasoningEngine:
             
             if age > 0 and decay_factor < 1.0:
                 adjustments.append({
-                    "fragment_id": frag.id,
+                    "fragment_id": getattr(frag, 'source_id', 'unknown'),
                     "age_years": age,
                     "content_type": content_type,
                     "decay_factor": decay_factor,
@@ -549,8 +549,9 @@ class FiveStageReasoningEngine:
             
             # Recency factor from temporal adjustments
             recency_factor = 1.0
+            frag_id = getattr(frag, 'source_id', 'unknown')
             for adj in trace.temporal_adjustments:
-                if adj["fragment_id"] == frag.id:
+                if adj["fragment_id"] == frag_id:
                     recency_factor = adj["decay_factor"]
                     break
             

@@ -1,1 +1,26 @@
-Nothing should be ignored based on the provided file changes, as they only include source code files (.py) without any build artifacts, dependencies, or temporary files.
+```
+# Binary and compiled files
+*.bin
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Environment and cache
+.env
+.env.local
+.env.*
+
+# Editors and IDE
+.vscode/
+.idea/
+
+# Coverage and testing
+.coverage
+coverage/
+htmlcov/
+
+# System files
+.DS_Store
+Thumbs.db
+```
