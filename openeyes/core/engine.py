@@ -8,8 +8,7 @@ from datetime import datetime
 from openeyes.config import audit_dir
 from openeyes.core.router import route_domain
 from openeyes.knowledge.fragments import Fragment
-from openeyes.knowledge.live_fetch import fetch_live_fragments, jit_synthesize_fragments, normalize_query
-from openeyes.pipeline.retriever import UnifiedRetriever
+from openeyes.pipeline.retriever import UnifiedRetriever, normalize_query
 from openeyes.knowledge.graceful_degradation import (
     classify_intent,
     process_query_with_degradation,
@@ -147,6 +146,7 @@ class OpenEyesEngine:
         # If no fragments found, trigger JIT synthesis (Research Loop)
         if not fetched:
             _pipeline_log(f"[JIT Synthesizer] No fragments found, triggering auto-research...")
+            from openeyes.knowledge.live_fetch import jit_synthesize_fragments
             synthesized = jit_synthesize_fragments(normalized_query, domain, limit=5)
             if synthesized:
                 _pipeline_log(f"[JIT Synthesizer] Generated {len(synthesized)} synthetic fragments")

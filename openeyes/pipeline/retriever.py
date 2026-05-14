@@ -6,11 +6,20 @@ Replaces: retrieval.py, local_retrieval.py, live_fetch.py, fragment_orchestrator
 """
 
 import os
-from typing import List, Dict, Optional, Tuple
+import hashlib
+import re
+from typing import List, Dict, Optional, Tuple, Any
 from dataclasses import dataclass
 import logging
+from datetime import date, datetime
 
 logger = logging.getLogger(__name__)
+
+# Try to import requests for live fetching
+try:
+    import requests
+except Exception:
+    requests = None
 
 @dataclass
 class RetrievalResult:
@@ -18,6 +27,72 @@ class RetrievalResult:
     source: str  # 'local', 'live', 'hybrid'
     confidence: float
     metadata: Dict
+
+# Constants from live_fetch.py
+QUERY_NORMALIZATION_MAP = {
+    "rennaisance": "renaissance",
+    "rennaissance": "renaissance",
+    "teh ": "the ",
+}
+
+VERIFIED_DOMAINS = ['economy', 'healthcare', 'engineering']
+
+WIKI_SEARCH = "https://en.wikipedia.org/w/rest.php/v1/search/title"
+WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
+PUBMED_SEARCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
+PUBMED_SUMMARY = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
+ARXIV_SEARCH = "https://export.arxiv.org/api/query"
+
+HEADERS = {
+    "User-Agent": "OpenEyes/1.0 (https://github.com/OpenEyes; contact@example.org)",
+    "Accept": "application/json",
+}
+
+HOAX_PATTERNS = [
+    r"\b(conspiracy|hoax|fake news|secret truth)\b",
+    r"\b(they don't want you to know|shocking|miracle cure)\b",
+    r"\b(100% guaranteed|no side effects|instant)\b",
+    r"\b(anonymous source|unnamed expert)\b",
+]
+
+UNCERTAINTY_PATTERNS = [
+    r"\b(might|may|could|possibly|probably)\b",
+    r"\b(some studies suggest|it is believed)\b",
+    r"\b(limited evidence|preliminary)\b",
+]
+
+
+def normalize_query(query: str) -> str:
+    """Normalize common misspellings/noise before retrieval."""
+    normalized = query.lower().strip()
+    for wrong, correct in QUERY_NORMALIZATION_MAP.items():
+        normalized = normalized.replace(wrong, correct)
+    return normalized
+
+
+def _is_factual_content(text: str) -> bool:
+    """Check if content passes factual integrity checks."""
+    text_lower = text.lower()
+    
+    # Reject hoax patterns
+    for pattern in HOAX_PATTERNS:
+        if re.search(pattern, text_lower):
+            return False
+    
+    # Check for excessive uncertainty (more than 3 uncertainty markers)
+    uncertainty_count = 0
+    for pattern in UNCERTAINTY_PATTERNS:
+        uncertainty_count += len(re.findall(pattern, text_lower))
+    if uncertainty_count > 3:
+        return False
+    
+    return True
+
+
+def _compute_fragment_id(source_type: str, content: str, source_id: str) -> str:
+    """Generate unique fragment ID."""
+    raw = f"{source_type}:{source_id}:{content[:200]}"
+    return hashlib.sha256(raw.encode()).hexdigest()[:16]
 
 class UnifiedRetriever:
     """
