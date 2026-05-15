@@ -9,11 +9,10 @@ from openeyes.config import audit_dir
 from openeyes.core.router import route_domain
 from openeyes.knowledge.fragments import Fragment
 from openeyes.pipeline.retriever import UnifiedRetriever, normalize_query
-from openeyes.knowledge.graceful_degradation import (
+from openeyes.pipeline.processor import (
     classify_intent,
     process_query_with_degradation,
     check_safety_halt,
-    GradedResponse,
 )
 from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.memory import ingest_case, retrieve_similar
@@ -336,7 +335,11 @@ class OpenEyesEngine:
             
             # Override with graded response
             result["status"] = graded_result["status"]
-            result["confidence"] = graded_result["confidence"]["percent"] * 100
+            # Handle both old dict format and new float format
+            if isinstance(graded_result.get("confidence"), dict):
+                result["confidence"] = graded_result["confidence"]["percent"] * 100
+            else:
+                result["confidence"] = graded_result.get("confidence", base_confidence) * 100
             
             # Add disclaimers and resources to narrative
             if "important_notice" in graded_result:

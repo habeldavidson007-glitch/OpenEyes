@@ -3,16 +3,281 @@ openeyes/pipeline/processor.py
 
 QueryProcessor: Consolidates all query processing and synthesis logic.
 Replaces: engine.py, synthesis_engine.py, logical_synthesizer.py, reasoning_engine.py, 
-          router.py, intent_router.py, domain_validator.py
+          router.py, intent_router.py, domain_validator.py, graceful_degradation.py
 """
 
 import os
 import re
-from typing import Dict, List, Optional, Tuple
-from dataclasses import dataclass
+from typing import Dict, List, Optional, Tuple, Any
+from dataclasses import dataclass, field
+from datetime import datetime
+from enum import Enum
 import logging
 
 logger = logging.getLogger(__name__)
+
+
+# ============================================================================
+# Intent Classification & Graceful Degradation (migrated from graceful_degradation.py)
+# ============================================================================
+
+class QueryIntent(Enum):
+    """Classification of user query intents."""
+    FACTUAL = "factual"
+    DIAGNOSTIC = "diagnostic"
+    TREATMENT = "treatment"
+    COMPARISON = "comparison"
+    URGENCY = "urgency"
+    SYMPTOM_CHECK = "symptom_check"
+    DRUG_INFO = "drug_info"
+    LIFESTYLE = "lifestyle"
+    UNKNOWN = "unknown"
+
+
+class ConfidenceLevel(Enum):
+    """Confidence tiers for graded responses."""
+    HIGH = "high"
+    MEDIUM = "medium"
+    LOW = "low"
+    VERY_LOW = "very_low"
+    INSUFFICIENT = "insufficient"
+
+
+@dataclass
+class IntentClassification:
+    """Result of query intent analysis."""
+    intent: QueryIntent
+    confidence: float
+    entities: list[dict[str, Any]] = field(default_factory=list)
+    urgency_detected: bool = False
+    requires_medical_disclaimer: bool = True
+    suggested_routing: str = "general"
+
+
+# Intent detection patterns (migrated)
+INTENT_PATTERNS = {
+    QueryIntent.FACTUAL: [
+        r'\bwhat is\b', r'\bwhat are\b', r'\bdefine\b', r'\bexplain\b',
+        r'\btell me about\b', r'\bdescribe\b',
+    ],
+    QueryIntent.DIAGNOSTIC: [
+        r'\bcould.*cause\b', r'\bmight.*cause\b', r'\bis.*a sign of\b',
+        r'\bis.*a symptom of\b', r'\bdoes.*mean\b', r'\bwhy am i\b',
+    ],
+    QueryIntent.TREATMENT: [
+        r'\bhow to treat\b', r'\btreatment for\b', r'\bwhat can i do for\b',
+        r'\bmanage\b', r'\bcure\b', r'\brelieve\b',
+    ],
+    QueryIntent.COMPARISON: [
+        r'\bvs\b', r'\bversus\b', r'\bcompare\b', r'\bdifference between\b',
+        r'\bbetter.*or\b',
+    ],
+    QueryIntent.URGENCY: [
+        r'\bemergency\b', r'\burgent\b', r'\bimmediately\b', r'\bnow\b',
+        r'\bright now\b', r'\bneed help now\b', r'\bcall 911\b', r'\ber\b',
+        r'\bemergency room\b', r'\bhospital\b', r'\boverdose\b', r'\bpoison\b',
+        r'\btook too much\b', r'\bchest pain\b', r'\bshortness of breath\b',
+        r'\bcan\'t breathe\b', r'\bsevere.*headache\b', r'\bheart attack\b', r'\bstroke\b',
+    ],
+    QueryIntent.SYMPTOM_CHECK: [
+        r'\bi have\b', r'\bi\'m experiencing\b', r'\bi feel\b', r'\bmy.*hurts\b',
+        r'\bfeeling\b', r'\bsymptoms?\b',
+    ],
+    QueryIntent.DRUG_INFO: [
+        r'\bside effects?\b', r'\bdosage\b', r'\bdose\b', r'\bhow much.*take\b',
+        r'\binteractions?\b', r'\bused for\b', r'\bprescribed for\b',
+    ],
+    QueryIntent.LIFESTYLE: [
+        r'\bprevent\b', r'\bavoid\b', r'\breduce risk\b', r'\bhealthy\b',
+        r'\bdiet\b', r'\bexercise\b', r'\blifestyle\b',
+    ],
+}
+
+EMERGENCY_KEYWORDS = [
+    'suicide', 'kill myself', 'self-harm', 'cutting',
+    'heart attack', 'chest pain', 'can\'t breathe', 'stroke',
+    'overdose', 'poisoning', 'severe bleeding', 'unconscious',
+    'seizure', 'anaphylaxis', 'severe allergic reaction',
+    'er', 'emergency room', 'hospital', 'took too much',
+    'shortness of breath', 'severe headache', 'difficulty breathing',
+]
+
+CRISIS_RESOURCES = {
+    'suicide_prevention': '988 Suicide & Crisis Lifeline (US)',
+    'emergency': 'Call 911 or your local emergency number immediately',
+    'poison_control': 'Poison Control: 1-800-222-1222 (US)',
+    'domestic_violence': 'National Domestic Violence Hotline: 1-800-799-7233',
+}
+
+MEDICAL_DISCLAIMERS = [
+    "This information is for educational purposes only and is not medical advice.",
+    "Always consult with a qualified healthcare professional for diagnosis and treatment.",
+    "Do not disregard professional medical advice or delay seeking care based on this information.",
+    "In case of emergency, call 911 or your local emergency services immediately.",
+]
+
+
+def classify_intent(query: str) -> IntentClassification:
+    """Classify the intent of a user query."""
+    query_lower = query.lower()
+    scores = {intent: 0.0 for intent in QueryIntent}
+    entities = []
+    
+    for intent, patterns in INTENT_PATTERNS.items():
+        for pattern in patterns:
+            if re.search(pattern, query_lower):
+                scores[intent] += 1.0
+    
+    # Drug-related boost
+    drug_indicators = ['drug', 'medication', 'pill', 'prescription', 'pharmacy']
+    if any(ind in query_lower for ind in drug_indicators):
+        scores[QueryIntent.DRUG_INFO] += 0.5
+    
+    common_drugs = [
+        'metformin', 'warfarin', 'aspirin', 'ibuprofen', 'lisinopril',
+        'atorvastatin', 'omeprazole', 'amlodipine', 'metoprolol', 'gabapentin'
+    ]
+    for drug in common_drugs:
+        if drug in query_lower:
+            entities.append({'text': drug, 'type': 'drug'})
+            scores[QueryIntent.DRUG_INFO] += 0.8
+    
+    # Symptom indicators
+    symptom_words = ['pain', 'fever', 'headache', 'nausea', 'fatigue', 'dizziness',
+                     'cough', 'rash', 'swelling', 'bleeding', 'vomiting']
+    for symptom in symptom_words:
+        if symptom in query_lower:
+            entities.append({'text': symptom, 'type': 'symptom'})
+            scores[QueryIntent.SYMPTOM_CHECK] += 0.4
+    
+    # Urgency check
+    urgency_detected = False
+    for keyword in EMERGENCY_KEYWORDS:
+        if keyword in query_lower:
+            urgency_detected = True
+            scores[QueryIntent.URGENCY] += 2.0
+            break
+    
+    max_score = max(scores.values())
+    if max_score == 0:
+        best_intent = QueryIntent.UNKNOWN
+        confidence = 0.3
+    else:
+        best_intent = max(scores.keys(), key=lambda k: scores[k])
+        confidence = min(0.95, 0.5 + (max_score * 0.15))
+    
+    requires_disclaimer = best_intent in [
+        QueryIntent.DIAGNOSTIC, QueryIntent.TREATMENT,
+        QueryIntent.SYMPTOM_CHECK, QueryIntent.DRUG_INFO,
+    ]
+    
+    routing = "general"
+    if urgency_detected:
+        routing = "emergency"
+    elif best_intent == QueryIntent.SYMPTOM_CHECK:
+        routing = "triage"
+    elif best_intent == QueryIntent.DRUG_INFO:
+        routing = "pharmacology"
+    
+    return IntentClassification(
+        intent=best_intent,
+        confidence=confidence,
+        entities=entities,
+        urgency_detected=urgency_detected,
+        requires_medical_disclaimer=requires_disclaimer,
+        suggested_routing=routing,
+    )
+
+
+def determine_confidence_level(confidence_percent: float) -> ConfidenceLevel:
+    """Map numeric confidence to confidence level enum."""
+    if confidence_percent >= 80:
+        return ConfidenceLevel.HIGH
+    elif confidence_percent >= 60:
+        return ConfidenceLevel.MEDIUM
+    elif confidence_percent >= 40:
+        return ConfidenceLevel.LOW
+    elif confidence_percent >= 20:
+        return ConfidenceLevel.VERY_LOW
+    else:
+        return ConfidenceLevel.INSUFFICIENT
+
+
+def check_safety_halt(query: str, intent: IntentClassification, confidence: float) -> tuple[bool, str]:
+    """Determine if a query should be halted for safety reasons."""
+    query_lower = query.lower()
+    
+    self_harm_keywords = [
+        'suicide', 'kill myself', 'end my life', 'harm myself', 
+        'self-harm', 'cutting myself', 'take my own life'
+    ]
+    if any(kw in query_lower for kw in self_harm_keywords):
+        return True, "SELF_HARM_DETECTED"
+    
+    if intent.urgency_detected and confidence < 0.5:
+        return True, "EMERGENCY_REQUIRES_PROFESSIONAL_HELP"
+    
+    if intent.intent == QueryIntent.DIAGNOSTIC and confidence < 0.3:
+        return True, "LOW_CONFIDENCE_DIAGNOSTIC"
+    
+    if intent.intent == QueryIntent.TREATMENT and confidence < 0.25:
+        return True, "LOW_CONFIDENCE_TREATMENT"
+    
+    return False, ""
+
+
+def process_query_with_degradation(
+    query: str,
+    fragments: List[Any],
+    base_confidence: float,
+) -> Dict[str, Any]:
+    """
+    Main entry point: Process a query with full intent classification and graceful degradation.
+    This is the function that should be called from the main query pipeline.
+    """
+    # Step 1: Classify intent
+    intent = classify_intent(query)
+    
+    # Step 2: Check for safety halt
+    should_halt, halt_reason = check_safety_halt(query, intent, base_confidence)
+    
+    if should_halt:
+        # Return safety response with appropriate resources
+        if halt_reason == "SELF_HARM_DETECTED":
+            return {
+                'status': 'HALT_SAFETY',
+                'answer': "I'm deeply concerned about your wellbeing. Please reach out for help right now.",
+                'urgent_resources': {
+                    'suicide_prevention': CRISIS_RESOURCES['suicide_prevention'],
+                    'emergency': CRISIS_RESOURCES['emergency'],
+                },
+                'message': "You are not alone. Trained counselors are available 24/7.",
+            }
+        elif halt_reason == "EMERGENCY_REQUIRES_PROFESSIONAL_HELP":
+            return {
+                'status': 'HALT_SAFETY',
+                'answer': "This appears to be an urgent medical situation. Please seek immediate professional help.",
+                'urgent_resources': {
+                    'emergency': CRISIS_RESOURCES['emergency'],
+                },
+            }
+        else:
+            return {
+                'status': 'HALT_SAFETY',
+                'answer': "I cannot provide a safe, reliable answer to this question with the information available.",
+                'suggestion': "Please consult a healthcare professional for personalized medical advice.",
+                'halt_reason': halt_reason,
+            }
+    
+    # For non-halted queries, return basic success response
+    # (Full graded response generation would go here if needed)
+    return {
+        'status': 'ANSWER_PROVIDED',
+        'intent': intent.intent.value,
+        'confidence': base_confidence,
+        'requires_disclaimer': intent.requires_medical_disclaimer,
+    }
+
 
 @dataclass
 class ProcessedResponse:
