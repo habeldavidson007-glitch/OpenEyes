@@ -15,5 +15,7 @@
   "verified": true,
   "reasoning_role": "definition",
   "credibility_class": "academic_research",
-  "sector": "GEO"
+  "sector": "GEO",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.aeaweb.org"
 }

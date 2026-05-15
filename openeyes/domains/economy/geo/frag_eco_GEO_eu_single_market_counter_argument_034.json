@@ -15,5 +15,7 @@
   "source_url": "https://www.bruegel.org/",
   "credibility_class": "think_tank",
   "year": 2024,
-  "weight": 0.89
+  "weight": 0.89,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.bruegel.org"
 }

@@ -19,5 +19,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 0.75,
-  "sector": "REG"
+  "sector": "REG",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.coinbase.com"
 }

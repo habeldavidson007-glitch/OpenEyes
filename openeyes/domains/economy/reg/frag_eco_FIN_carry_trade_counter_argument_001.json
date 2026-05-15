@@ -21,5 +21,7 @@
   ],
   "incompatible_with": [],
   "weight": 0.8929999999999999,
-  "sector": "REG"
+  "sector": "REG",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.bis.org"
 }

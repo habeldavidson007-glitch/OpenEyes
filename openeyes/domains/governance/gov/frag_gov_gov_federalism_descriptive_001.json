@@ -13,5 +13,7 @@
   "id": "frag_gov_gov_federalism_descriptive_001",
   "subdomain": "GOV",
   "reasoning_role": "definition",
-  "year": 2024
+  "year": 2024,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.un.org"
 }

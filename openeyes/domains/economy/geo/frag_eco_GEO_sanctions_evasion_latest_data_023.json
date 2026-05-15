@@ -14,5 +14,7 @@
   "source_url": "https://rusi.org/",
   "credibility_class": "research_institute",
   "year": 2024,
-  "weight": 0.9
+  "weight": 0.9,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "rusi.org"
 }

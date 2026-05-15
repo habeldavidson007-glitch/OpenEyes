@@ -13,5 +13,7 @@
   "verified": true,
   "reasoning_role": "latest_data",
   "credibility_class": "financial_publication",
-  "sector": "FIN"
+  "sector": "FIN",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "example.com"
 }

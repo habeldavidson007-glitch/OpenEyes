@@ -14,5 +14,7 @@
   "verified": true,
   "reasoning_role": "counter_argument",
   "credibility_class": "financial_publication",
-  "sector": "FIN"
+  "sector": "FIN",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "example.com"
 }

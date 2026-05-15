@@ -12,5 +12,7 @@
   "id": "frag_gov_ele_votingsystems_comparative_001",
   "subdomain": "GOV",
   "reasoning_role": "counter_argument",
-  "year": 2024
+  "year": 2024,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.un.org"
 }

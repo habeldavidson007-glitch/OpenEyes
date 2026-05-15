@@ -20,5 +20,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 1.0,
-  "sector": "FIN"
+  "sector": "FIN",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.tradingview.com"
 }

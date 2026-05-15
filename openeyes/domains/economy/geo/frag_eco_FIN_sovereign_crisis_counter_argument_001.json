@@ -20,5 +20,7 @@
   ],
   "incompatible_with": [],
   "weight": 0.8835,
-  "sector": "GEO"
+  "sector": "GEO",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.worldbank.org"
 }

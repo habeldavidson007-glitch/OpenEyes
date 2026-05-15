@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-05-15T17:16:23.498783",
+  "summary": {
+    "error": "DashboardData.__init__() got an unexpected keyword argument 'credibility_percentages'"
+  },
+  "credibility": {},
+  "domains": {},
+  "trends": [],
+  "alerts": [
+    "Error collecting metrics: DashboardData.__init__() got an unexpected keyword argument 'credibility_percentages'"
+  ],
+  "health": "UNKNOWN"
+}

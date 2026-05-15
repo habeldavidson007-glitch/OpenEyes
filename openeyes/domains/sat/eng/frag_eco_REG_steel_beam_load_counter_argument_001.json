@@ -20,5 +20,7 @@
   "compatible_with": [
     "frag_eng_steel_beam_load_001"
   ],
-  "incompatible_with": []
+  "incompatible_with": [],
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.aisc.org"
 }

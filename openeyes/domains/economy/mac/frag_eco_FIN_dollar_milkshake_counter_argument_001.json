@@ -21,5 +21,7 @@
   ],
   "incompatible_with": [],
   "weight": 0.9025,
-  "sector": "MAC"
+  "sector": "MAC",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.federalreserve.gov"
 }

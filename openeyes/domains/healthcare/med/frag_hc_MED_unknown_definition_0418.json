@@ -18,5 +18,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 1.0,
-  "_original_credibility_class": "peer_reviewed_guideline"
+  "_original_credibility_class": "peer_reviewed_guideline",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "pubmed.ncbi.nlm.nih.gov"
 }

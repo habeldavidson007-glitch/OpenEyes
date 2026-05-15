@@ -21,5 +21,7 @@
   "compatible_with": [
     "frag_onc_pancreatic_cancer_001"
   ],
-  "incompatible_with": []
+  "incompatible_with": [],
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.nccn.org"
 }

@@ -17,5 +17,7 @@
   "source": "CME",
   "weight": 1.0,
   "grundy_value": -1,
-  "robustness_status": "PENDING"
+  "robustness_status": "PENDING",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "hbr.org"
 }

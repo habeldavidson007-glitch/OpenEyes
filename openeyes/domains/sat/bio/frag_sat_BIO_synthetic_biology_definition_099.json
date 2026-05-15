@@ -21,5 +21,7 @@
     "generated_by": "sat_swarm",
     "generation_date": "2026-05-13T01:39:08.896917",
     "sector_target": 200
-  }
+  },
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "example.org"
 }

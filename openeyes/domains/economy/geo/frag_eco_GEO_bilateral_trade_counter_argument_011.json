@@ -15,5 +15,7 @@
   "source_url": "https://www.worldbank.org/",
   "credibility_class": "international_organization",
   "year": 2024,
-  "weight": 0.88
+  "weight": 0.88,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.worldbank.org"
 }

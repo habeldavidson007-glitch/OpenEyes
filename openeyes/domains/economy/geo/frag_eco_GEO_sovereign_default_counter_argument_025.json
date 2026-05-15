@@ -15,5 +15,7 @@
   "source_url": "https://www.odci.org/",
   "credibility_class": "research_organization",
   "year": 2024,
-  "weight": 0.89
+  "weight": 0.89,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.odci.org"
 }

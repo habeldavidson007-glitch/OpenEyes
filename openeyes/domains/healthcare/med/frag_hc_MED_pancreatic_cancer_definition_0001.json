@@ -19,5 +19,7 @@
   "reasoning_role": "definition",
   "source_type": "clinical_guideline",
   "year": 2026,
-  "sub_question": "What are the early symptoms?"
+  "sub_question": "What are the early symptoms?",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.cancer.org"
 }

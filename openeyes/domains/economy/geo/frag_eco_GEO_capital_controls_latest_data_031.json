@@ -14,5 +14,7 @@
   "source_url": "https://web.pdx.edu/~ito/Chinn-Ito_website.htm",
   "credibility_class": "academic_research",
   "year": 2024,
-  "weight": 0.91
+  "weight": 0.91,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "web.pdx.edu"
 }

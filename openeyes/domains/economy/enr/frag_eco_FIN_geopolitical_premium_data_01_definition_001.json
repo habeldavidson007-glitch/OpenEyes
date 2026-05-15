@@ -19,5 +19,7 @@
   ],
   "incompatible_with": [],
   "weight": 0.9114,
-  "sector": "ENR"
+  "sector": "ENR",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.imf.org"
 }

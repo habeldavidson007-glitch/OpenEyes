@@ -17,5 +17,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 0.85,
-  "sector": "REG"
+  "sector": "REG",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.optionsclearing.com"
 }

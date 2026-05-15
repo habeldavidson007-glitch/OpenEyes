@@ -14,5 +14,7 @@
   "credibility_class": "peer_reviewed_journal",
   "year": 2026,
   "source": "CDC",
-  "_original_credibility_class": "peer_reviewed"
+  "_original_credibility_class": "peer_reviewed",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.cdc.gov"
 }

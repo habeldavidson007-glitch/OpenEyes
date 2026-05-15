@@ -30,5 +30,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 1.0,
-  "sector": "ENR"
+  "sector": "ENR",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.investopedia.com"
 }

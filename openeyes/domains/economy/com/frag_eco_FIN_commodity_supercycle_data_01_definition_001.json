@@ -19,5 +19,7 @@
   ],
   "incompatible_with": [],
   "weight": 0.9114,
-  "sector": "COM"
+  "sector": "COM",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.worldbank.org"
 }
