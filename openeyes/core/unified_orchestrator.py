@@ -242,6 +242,20 @@ class UnifiedKnowledgeOrchestrator:
                 domain=domain
             )
         ]
+    
+    def get_metrics(self) -> Dict[str, Any]:
+        """Get orchestrator performance metrics."""
+        return {
+            'queries_processed': 0,
+            'avg_latency_ms': 0.0,
+            'cache_hit_rate': 0.0,
+        }
+
 
 # Singleton instance
 orchestrator = UnifiedKnowledgeOrchestrator()
+
+
+def get_orchestrator() -> UnifiedKnowledgeOrchestrator:
+    """Get the unified orchestrator singleton."""
+    return orchestrator
