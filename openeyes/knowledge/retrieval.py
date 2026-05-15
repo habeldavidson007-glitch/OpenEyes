@@ -1,11 +1,3 @@
-"""
-openeyes/knowledge/retrieval.py
-
-Original retrieval implementation (preserved for backward compatibility).
-This is NOT a wrapper - it's the original implementation.
-New code can optionally use openeyes.pipeline.retriever instead.
-"""
-
 from __future__ import annotations
 
 from dataclasses import dataclass

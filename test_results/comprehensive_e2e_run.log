@@ -1,402 +1,11 @@
-OpenBLAS WARNING - could not determine the L2 cache size on this system, assuming 256k
-OpenBLAS WARNING - could not determine the L2 cache size on this system, assuming 256k
-================================================================================
-OpenEyes Comprehensive End-to-End Test Suite
-Testing all domains with 50 queries each
-================================================================================
-
-Initializing OpenEyes engine...
-
-Counting available fragments...
-  healthcare: 0 fragments
-  economy: 0 fragments
-  governance: 0 fragments
-  investment: 0 fragments
-  general: 0 fragments
-
-============================================================
-Testing HEALTHCARE domain (42 queries)
-============================================================
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "What is diabetes?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► factual ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[LOCAL_INDEX] Scanning directory: /workspace/openeyes/domains
-[LOCAL_INDEX] Loaded 6885 total fragments across all directories
-[LOCAL_INDEX]   - gov: 1353 fragments
-[LOCAL_INDEX]   - sat: 1305 fragments
-[LOCAL_INDEX]   - eco: 1645 fragments
-[LOCAL_INDEX]   - hc: 1401 fragments
-[LOCAL_INDEX]   - unknown: 75 fragments
-[LOCAL_INDEX]   - healthcare: 106 fragments
-[LOCAL_INDEX]   - his: 1000 fragments
-[RETRIEVAL] Found 7 local fragments for 'what is diabetes?'
-[SCRAPER] Searching healthcare sources for: what is diabetes?
-[SCRAPER] Retrieved 0 results
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 5 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 3620 characters
-  [2mExecution Time:[0m 2.134s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "How does insulin work?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► unknown ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'how does insulin work?'
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 4 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 2542 characters
-  [2mExecution Time:[0m 0.221s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "What are symptoms of type 2 diabetes?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► factual ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'what are symptoms of type 2 diabetes?'
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 3 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 813 characters
-  [2mExecution Time:[0m 0.167s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "Explain how mRNA vaccines work."
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► factual ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'explain how mrna vaccines work.'
-[SCRAPER] Searching healthcare sources for: explain how mrna vaccines work.
-[SCRAPER] Retrieved 0 results
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 4 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 3822 characters
-  [2mExecution Time:[0m 0.180s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "What is the treatment for hypertension?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► urgency ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'what is the treatment for hypertension?'
-[SCRAPER] Searching healthcare sources for: what is the treatment for hypertension?
-[SCRAPER] Retrieved 0 results
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 3 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 2727 characters
-  [2mExecution Time:[0m 0.158s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "Is metformin effective for type 2 diabetes?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► drug_info ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'is metformin effective for type 2 diabetes?'
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 4 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 3054 characters
-  [2mExecution Time:[0m 0.257s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "What are side effects of statins?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► factual ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'what are side effects of statins?'
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 3 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 1018 characters
-  [2mExecution Time:[0m 0.180s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "How do ACE inhibitors work?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► unknown ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'how do ace inhibitors work?'
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 5 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 3047 characters
-  [2mExecution Time:[0m 0.277s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "What is atrial fibrillation?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► factual ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 7 local fragments for 'what is atrial fibrillation?'
-[SCRAPER] Searching healthcare sources for: what is atrial fibrillation?
-[SCRAPER] Retrieved 0 results
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 5 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 4248 characters
-  [2mExecution Time:[0m 0.186s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "Explain the mechanism of beta blockers."
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► urgency ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'explain the mechanism of beta blockers.'
-[SCRAPER] Searching healthcare sources for: explain the mechanism of beta blockers.
-[SCRAPER] Retrieved 0 results
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 4 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 77.9% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (77.9% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 3822 characters
-  [2mExecution Time:[0m 0.197s
-  [2mConfidence Score:[0m 77.9%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-  Progress: 10/42 - Answers: 10, Halts: 0
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "What causes heart failure?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► unknown ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'what causes heart failure?'
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 3 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 2691 characters
-  [2mExecution Time:[0m 0.158s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "How is COPD diagnosed?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► unknown ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'how is copd diagnosed?'
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 5 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 1255 characters
-  [2mExecution Time:[0m 0.166s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 1 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "What is the treatment for asthma?"
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► factual ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[SWARM_RETRIEVAL] WAL buffer not found at wal_buffer.db
-[RETRIEVAL] Found 5 local fragments for 'what is the treatment for asthma?'
-[SCRAPER] Searching healthcare sources for: what is the treatment for asthma?
-[SCRAPER] Retrieved 0 results
-[K  ●[0m Fragment Retrieval   [████████████████████] 100.0% ──► 3 FRAGMENTS ✓[0m
-[K  ⠸ ●[0m Memory Lookup        [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m[K  ●[0m Memory Lookup        [████████████████████] 100.0% ──► 3 PRIORS ✓[0m
-[K  ⠼ ●[0m Swarm Evaluation     [██████████░░░░░░░░░░]  50.0% ──► RUNNING MONTE CARLO...[0m[K  ●[0m Swarm Evaluation     [████████████████████] 100.0% ──► CONFIDENCE: 78.0% ✓[0m
-[K  ⠴ ●[0m Graceful Degradation [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► APPLYING SAFETY FILTERS[0m[K  ●[0m Graceful Degradation [████████████████████] 100.0% ──► HALT_SAFETY ✓[0m
-
-  [92m ✓ ANSWER GENERATED: ANSWER_LOW_CONFIDENCE (78.0% confidence) [0m                                 
-
-  [2mAnswer Length:[0m 2727 characters
-  [2mExecution Time:[0m 0.193s
-  [2mConfidence Score:[0m 78.0%
-  [2mData Recency:[0m 2 years
-
-
-  [2m[LIVE AUDIT LOG][0m
-
-  └────────────────────────────────────────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ [1m👁️  OPENEYES :: HIGH-STAKES REASONING ENGINE[0m                           │
-└────────────────────────────────────────────────────────────────────────────────┘
-
-  [96m> Query:[0m "Explain how anticoagulants prevent stroke."
-
-[K  ⠋ ●[0m Domain Routing       [██████████░░░░░░░░░░]  50.0% ──► PROCESSING[0m[K  ●[0m Domain Routing       [████████████████████] 100.0% ──► HEALTHCARE ✓[0m
-[K  ⠙ ●[0m Intent Classification [░░░░░░░░░░░░░░░░░░░░]   0.0% ──► ANALYZING[0m[K  ●[0m Intent Classification [████████████████████] 100.0% ──► urgency ✓[0m
-[K  ⠹ ●[0m Fragment Retrieval   [██████████░░░░░░░░░░]  50.0% ──► SEARCHING...[0m
+============================= test session starts ==============================
+platform linux -- Python 3.12.10, pytest-9.0.3, pluggy-1.6.0 -- /usr/local/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace
+configfile: pyproject.toml
+plugins: anyio-4.9.0, libtmux-0.46.2, Faker-37.4.2, cov-7.1.0
+collecting ... ERROR: file or directory not found: tests/test_comprehensive_domains.py
+
+collected 0 items
+
+============================ no tests ran in 0.01s =============================
