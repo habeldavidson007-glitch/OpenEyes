@@ -7,26 +7,48 @@
     {
       "role": "definition",
       "content": "Grief is a natural response to loss, particularly death of loved one, characterized by sadness, yearning, guilt, anger, anxiety, somatic symptoms, preoccupation with deceased. Normal grief varies culturally, typically involves waves of emotion ('pangs of grief'), preserved self-esteem, ability to experience positive emotions when reminded of deceased. Complicated grief (Prolonged Grief Disorder) involves persistent, disabling grief >6-12 months with intense yearning, preoccupation, functional impairment. Major Depression can be triggered by loss but differs: pervasive low mood not tied to thoughts of deceased, worthlessness/guilt beyond actions related to loss, suicidal ideation beyond wish to join deceased, psychomotor retardation, prolonged functional impairment. Distinguishing is clinically important as treatment differs.",
-      "tags": ["grief", "bereavement", "depression", "prolonged-grief-disorder"],
+      "tags": [
+        "grief",
+        "bereavement",
+        "depression",
+        "prolonged-grief-disorder"
+      ],
       "source": "https://www.nimh.nih.gov/health/topics/caregivers",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "treatment_protocol",
-      "content": "Normal grief: supportive care, validation, time, social support, cultural/religious rituals. No indication for antidepressants or formal psychotherapy unless depression develops. Prolonged Grief Disorder: Complicated Grief Therapy (CGT)/Prolonged Grief Disorder Therapy—structured treatment addressing avoidance, restoring life goals, revisiting death story, aspirational goals; shows superiority over supportive therapy/IPDT. Depression following loss: treat as MDD—antidepressants (SSRIs), psychotherapy (CBT, IPT), combination for severe cases. Antidepressants not indicated for normal grief alone. Support groups helpful for bereaved. Monitor for suicide risk, substance use as maladaptive coping. Timing of intervention: avoid pathologizing normal grief while identifying those needing treatment.",
-      "tags": ["complicated-grief-therapy", "supportive-care", "antidepressants", "IPT", "prolonged-grief"],
+      "content": "Normal grief: supportive care, validation, time, social support, cultural/religious rituals. No indication for antidepressants or formal psychotherapy unless depression develops. Prolonged Grief Disorder: Complicated Grief Therapy (CGT)/Prolonged Grief Disorder Therapy\u2014structured treatment addressing avoidance, restoring life goals, revisiting death story, aspirational goals; shows superiority over supportive therapy/IPDT. Depression following loss: treat as MDD\u2014antidepressants (SSRIs), psychotherapy (CBT, IPT), combination for severe cases. Antidepressants not indicated for normal grief alone. Support groups helpful for bereaved. Monitor for suicide risk, substance use as maladaptive coping. Timing of intervention: avoid pathologizing normal grief while identifying those needing treatment.",
+      "tags": [
+        "complicated-grief-therapy",
+        "supportive-care",
+        "antidepressants",
+        "IPT",
+        "prolonged-grief"
+      ],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "diagnostic_criteria",
-      "content": "DSM-5-TR Prolonged Grief Disorder: death of close person ≥12 months ago (≥6 months for children), persistent grief response characterized by identity disruption, marked sense of disbelief, emotional numbness, bitterness, difficulty engaging in life, emotional detachment, feeling life meaningless, intense loneliness. Symptoms cause clinically significant distress/impairment, exceed expected social/cultural norms. Differentiate from MDD: grief-focused thoughts vs pervasive negative thoughts, yearning/longing vs anhedonia, waves of emotion vs persistent depressed mood, preserved self-esteem vs worthlessness, thoughts of joining deceased vs active suicidal ideation. Bereavement exclusion removed from MDD criteria in DSM-5—depression can be diagnosed during bereavement if criteria met.",
-      "tags": ["DSM-5-TR", "prolonged-grief-disorder", "MDD", "bereavement", "differential-diagnosis"],
+      "content": "DSM-5-TR Prolonged Grief Disorder: death of close person \u226512 months ago (\u22656 months for children), persistent grief response characterized by identity disruption, marked sense of disbelief, emotional numbness, bitterness, difficulty engaging in life, emotional detachment, feeling life meaningless, intense loneliness. Symptoms cause clinically significant distress/impairment, exceed expected social/cultural norms. Differentiate from MDD: grief-focused thoughts vs pervasive negative thoughts, yearning/longing vs anhedonia, waves of emotion vs persistent depressed mood, preserved self-esteem vs worthlessness, thoughts of joining deceased vs active suicidal ideation. Bereavement exclusion removed from MDD criteria in DSM-5\u2014depression can be diagnosed during bereavement if criteria met.",
+      "tags": [
+        "DSM-5-TR",
+        "prolonged-grief-disorder",
+        "MDD",
+        "bereavement",
+        "differential-diagnosis"
+      ],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.723962",
+    "source_url_was_extracted": false
+  }
 }

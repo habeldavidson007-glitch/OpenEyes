@@ -7,7 +7,13 @@
       "sector": "MED",
       "topic": "Cushing Syndrome",
       "role": "definition",
-      "tags": ["Cushing syndrome", "hypercortisolism", "cortisol", "ACTH", "adrenal"],
+      "tags": [
+        "Cushing syndrome",
+        "hypercortisolism",
+        "cortisol",
+        "ACTH",
+        "adrenal"
+      ],
       "content": "Cushing syndrome results from chronic exposure to excess glucocorticoids. Etiologies: (1) Exogenous (most common) - iatrogenic from therapeutic glucocorticoid administration; (2) Endogenous ACTH-dependent (80-85%): Cushing disease (pituitary ACTH-secreting adenoma, ~70%), ectopic ACTH secretion (small cell lung cancer, bronchial carcinoids, other neuroendocrine tumors); (3) Endogenous ACTH-independent: adrenal adenoma/carcinoma, primary bilateral macronodular adrenal hyperplasia, primary pigmented nodular adrenocortical disease. Clinical features: central obesity, moon facies, dorsocervical fat pad (buffalo hump), proximal muscle weakness, wide purple striae (>1cm), easy bruising, osteoporosis, hypertension, glucose intolerance/diabetes, hirsutism, menstrual irregularities, mood changes. Complications: cardiovascular disease, infections, thromboembolism, fractures.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985611/",
       "credibility_class": "peer_reviewed_guideline",
@@ -20,7 +26,13 @@
       "sector": "MED",
       "topic": "Cushing Syndrome",
       "role": "treatment_protocol",
-      "tags": ["Cushing syndrome", "surgery", "ketoconazole", "metyrapone", "radiation"],
+      "tags": [
+        "Cushing syndrome",
+        "surgery",
+        "ketoconazole",
+        "metyrapone",
+        "radiation"
+      ],
       "content": "Treatment depends on etiology. For exogenous: gradual taper of glucocorticoid if clinically feasible. Cushing disease (pituitary): transsphenoidal surgical resection first-line (remission 60-90% for microadenomas); repeat surgery or radiation therapy for persistent/recurrent disease; medical therapy as bridge or long-term if surgery contraindicated/unsuccessful. Ectopic ACTH: resect tumor if localized; if metastatic, medical cortisol suppression plus oncologic treatment. Adrenal causes: unilateral adrenalectomy for adenoma/carcinoma; bilateral adrenalectomy for bilateral hyperplasia (requires lifelong glucocorticoid and mineralocorticoid replacement). Medical therapies inhibit cortisol synthesis: ketoconazole (hepatotoxicity monitoring), metyrapone, osilodrostat, mitotane (adrenal carcinoma); mifepristone (glucocorticoid receptor antagonist) for hyperglycemia control. Pasireotide (somatostatin analog) for Cushing disease. Bilateral adrenalectomy definitive but causes permanent adrenal insufficiency and risk of Nelson syndrome (pituitary tumor growth).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985611/",
       "credibility_class": "peer_reviewed_guideline",
@@ -33,11 +45,22 @@
       "sector": "MED",
       "topic": "Cushing Syndrome",
       "role": "diagnostic_criteria",
-      "tags": ["Cushing syndrome", "dexamethasone suppression", "urine cortisol", "ACTH", "diagnosis"],
-      "content": "Diagnostic approach: First confirm hypercortisolism with one of four tests (all have false positives/negatives): (1) Late-night salivary cortisol (×2) - elevated; (2) 24-hour urinary free cortisol (×2-3) - elevated; (3) 1mg overnight dexamethasone suppression test - morning cortisol >1.8 mcg/dL indicates abnormal suppression; (4) Midnight serum cortisol - elevated. If confirmed, measure plasma ACTH to determine ACTH-dependence: suppressed (<5 pg/mL) indicates ACTH-independent (adrenal source); normal/elevated indicates ACTH-dependent. For ACTH-dependent: high-dose dexamethasone suppression test (Cushing disease usually suppresses, ectopic doesn't) and/or CRH stimulation test; pituitary MRI; if discordant, inferior petrosal sinus sampling (gold standard to distinguish pituitary vs ectopic). For ACTH-independent: adrenal CT/MRI. Screen for complications: bone density, glucose, lipids, blood pressure.",
+      "tags": [
+        "Cushing syndrome",
+        "dexamethasone suppression",
+        "urine cortisol",
+        "ACTH",
+        "diagnosis"
+      ],
+      "content": "Diagnostic approach: First confirm hypercortisolism with one of four tests (all have false positives/negatives): (1) Late-night salivary cortisol (\u00d72) - elevated; (2) 24-hour urinary free cortisol (\u00d72-3) - elevated; (3) 1mg overnight dexamethasone suppression test - morning cortisol >1.8 mcg/dL indicates abnormal suppression; (4) Midnight serum cortisol - elevated. If confirmed, measure plasma ACTH to determine ACTH-dependence: suppressed (<5 pg/mL) indicates ACTH-independent (adrenal source); normal/elevated indicates ACTH-dependent. For ACTH-dependent: high-dose dexamethasone suppression test (Cushing disease usually suppresses, ectopic doesn't) and/or CRH stimulation test; pituitary MRI; if discordant, inferior petrosal sinus sampling (gold standard to distinguish pituitary vs ectopic). For ACTH-independent: adrenal CT/MRI. Screen for complications: bone density, glucose, lipids, blood pressure.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985611/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.802602",
+    "source_url_was_extracted": false
+  }
 }

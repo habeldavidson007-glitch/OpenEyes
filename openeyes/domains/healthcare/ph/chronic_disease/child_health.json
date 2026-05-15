@@ -6,24 +6,44 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "Child health encompasses physical, mental, and social well-being from birth through adolescence. Global under-5 mortality declined 59% from 1990-2021 (93 to 38 per 1,000 live births) but 5 million children still die annually, mostly from preventable causes. Leading causes: preterm birth complications, pneumonia, diarrhea, malaria, malnutrition, congenital anomalies. Social determinants profoundly affect outcomes—poverty, food insecurity, housing instability, environmental exposures, adverse childhood experiences (ACEs). Developmental milestones provide framework for monitoring growth across domains: gross/fine motor, language, cognitive, social-emotional. Critical periods include prenatal development, first 1,000 days (conception to age 2), and adolescence. Life course perspective recognizes childhood health trajectories influence adult outcomes. Equity focus essential given persistent disparities by race, ethnicity, socioeconomic status, geography, and disability.",
-      "tags": ["child_health", "pediatrics", "development", "health_equity"],
+      "content": "Child health encompasses physical, mental, and social well-being from birth through adolescence. Global under-5 mortality declined 59% from 1990-2021 (93 to 38 per 1,000 live births) but 5 million children still die annually, mostly from preventable causes. Leading causes: preterm birth complications, pneumonia, diarrhea, malaria, malnutrition, congenital anomalies. Social determinants profoundly affect outcomes\u2014poverty, food insecurity, housing instability, environmental exposures, adverse childhood experiences (ACEs). Developmental milestones provide framework for monitoring growth across domains: gross/fine motor, language, cognitive, social-emotional. Critical periods include prenatal development, first 1,000 days (conception to age 2), and adolescence. Life course perspective recognizes childhood health trajectories influence adult outcomes. Equity focus essential given persistent disparities by race, ethnicity, socioeconomic status, geography, and disability.",
+      "tags": [
+        "child_health",
+        "pediatrics",
+        "development",
+        "health_equity"
+      ],
       "reasoning_role": "foundational_knowledge"
     },
     {
       "role": "treatment_protocol",
-      "content": "Child health interventions span multiple levels: (1) Preventive care—immunization schedule (CDC/ACIP recommendations), well-child visits with developmental surveillance, nutrition counseling, injury prevention guidance; (2) Nutrition programs—breastfeeding support (Baby-Friendly Hospital Initiative), WIC program, school meal programs, SNAP benefits; (3) Early intervention—Part C IDEA services for developmental delays, early childhood education (Head Start), home visiting programs (Nurse-Family Partnership); (4) Mental health—screening for ACEs, behavioral health integration in pediatrics, school-based mental health services; (5) Policy approaches—child tax credits, paid parental leave, safe housing codes, lead abatement, gun safety laws, car seat legislation; (6) Special populations—children with medical complexity care coordination, foster care health oversight, refugee health screening. Medical home model provides comprehensive, coordinated, family-centered care. Two-generation approaches address parent and child needs simultaneously.",
-      "tags": ["prevention", "intervention", "policy", "early_childhood"],
+      "content": "Child health interventions span multiple levels: (1) Preventive care\u2014immunization schedule (CDC/ACIP recommendations), well-child visits with developmental surveillance, nutrition counseling, injury prevention guidance; (2) Nutrition programs\u2014breastfeeding support (Baby-Friendly Hospital Initiative), WIC program, school meal programs, SNAP benefits; (3) Early intervention\u2014Part C IDEA services for developmental delays, early childhood education (Head Start), home visiting programs (Nurse-Family Partnership); (4) Mental health\u2014screening for ACEs, behavioral health integration in pediatrics, school-based mental health services; (5) Policy approaches\u2014child tax credits, paid parental leave, safe housing codes, lead abatement, gun safety laws, car seat legislation; (6) Special populations\u2014children with medical complexity care coordination, foster care health oversight, refugee health screening. Medical home model provides comprehensive, coordinated, family-centered care. Two-generation approaches address parent and child needs simultaneously.",
+      "tags": [
+        "prevention",
+        "intervention",
+        "policy",
+        "early_childhood"
+      ],
       "reasoning_role": "actionable_guidance"
     },
     {
       "role": "diagnostic_criteria",
-      "content": "Child health assessment includes: (1) Growth monitoring—WHO growth standards (0-5 years), CDC growth charts (2-20 years), BMI percentiles, head circumference (infants), growth velocity; (2) Developmental screening—Ages and Stages Questionnaire (ASQ), Modified Checklist for Autism in Toddlers (MCHAT), Denver Developmental Screening Test, surveillance at every visit; (3) Behavioral/emotional screening—Pediatric Symptom Checklist, PHQ-A for adolescents, SCARED for anxiety; (4) Vision/hearing screening—newborn hearing screening, photoscreening, audiometry at recommended ages; (5) Risk assessment—lead screening based on risk/housing age, tuberculosis testing, anemia screening, lipid screening (universal 9-11 years); (6) Population indicators—infant mortality rate, low birthweight prevalence, vaccination coverage (NIS-Child), developmental disability prevalence. Limitations include growth chart applicability across diverse populations, screening tool cultural validity, and fragmented data systems.",
-      "tags": ["screening", "assessment", "development", "surveillance"],
+      "content": "Child health assessment includes: (1) Growth monitoring\u2014WHO growth standards (0-5 years), CDC growth charts (2-20 years), BMI percentiles, head circumference (infants), growth velocity; (2) Developmental screening\u2014Ages and Stages Questionnaire (ASQ), Modified Checklist for Autism in Toddlers (MCHAT), Denver Developmental Screening Test, surveillance at every visit; (3) Behavioral/emotional screening\u2014Pediatric Symptom Checklist, PHQ-A for adolescents, SCARED for anxiety; (4) Vision/hearing screening\u2014newborn hearing screening, photoscreening, audiometry at recommended ages; (5) Risk assessment\u2014lead screening based on risk/housing age, tuberculosis testing, anemia screening, lipid screening (universal 9-11 years); (6) Population indicators\u2014infant mortality rate, low birthweight prevalence, vaccination coverage (NIS-Child), developmental disability prevalence. Limitations include growth chart applicability across diverse populations, screening tool cultural validity, and fragmented data systems.",
+      "tags": [
+        "screening",
+        "assessment",
+        "development",
+        "surveillance"
+      ],
       "reasoning_role": "analytical_framework"
     }
   ],
   "source": "WHO Child Health Statistics, CDC National Center for Health Statistics, AAP Bright Futures Guidelines, UNICEF State of the World's Children",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://source/who_child_health_statistics,_cdc_national_center_for_health_statistics,_aap_bright_futures_guidelines,_unicef_state_of_the_world's_children",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.877780",
+    "source_url_was_extracted": false
+  }
 }

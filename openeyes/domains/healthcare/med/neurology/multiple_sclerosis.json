@@ -5,9 +5,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["multiple-sclerosis", "MS", "demyelination", "relapsing-remitting", "autoimmune"],
+      "tags": [
+        "multiple-sclerosis",
+        "MS",
+        "demyelination",
+        "relapsing-remitting",
+        "autoimmune"
+      ],
       "reasoning_role": "definition",
-      "content": "Multiple sclerosis (MS) is a chronic autoimmune demyelinating disease of the CNS characterized by inflammation, demyelination, and neurodegeneration. Clinical courses: relapsing-remitting MS (RRMS, 85% at onset) with discrete attacks followed by remission; secondary progressive MS (SPMS) with gradual worsening after initial RRMS; primary progressive MS (PPMS, 15%) with steady progression from onset. Pathophysiology involves T-cell mediated attack on myelin oligodendrocytes, blood-brain barrier disruption, and formation of periventricular, juxtacortical, infratentorial, and spinal cord plaques. McDonald criteria (2017 revision) require dissemination in space (≥1 T2 lesion in ≥2 characteristic CNS regions) and time (simultaneous gadolinium-enhancing and non-enhancing lesions, or new T2/enhancing lesion on follow-up). CSF oligoclonal bands support diagnosis. Progressive disease involves microglial activation and compartmentalized inflammation behind closed blood-brain barrier.",
+      "content": "Multiple sclerosis (MS) is a chronic autoimmune demyelinating disease of the CNS characterized by inflammation, demyelination, and neurodegeneration. Clinical courses: relapsing-remitting MS (RRMS, 85% at onset) with discrete attacks followed by remission; secondary progressive MS (SPMS) with gradual worsening after initial RRMS; primary progressive MS (PPMS, 15%) with steady progression from onset. Pathophysiology involves T-cell mediated attack on myelin oligodendrocytes, blood-brain barrier disruption, and formation of periventricular, juxtacortical, infratentorial, and spinal cord plaques. McDonald criteria (2017 revision) require dissemination in space (\u22651 T2 lesion in \u22652 characteristic CNS regions) and time (simultaneous gadolinium-enhancing and non-enhancing lesions, or new T2/enhancing lesion on follow-up). CSF oligoclonal bands support diagnosis. Progressive disease involves microglial activation and compartmentalized inflammation behind closed blood-brain barrier.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
       "credibility_class": "A",
       "year": 2024
@@ -17,9 +23,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["multiple-sclerosis", "DMT", "disease-modifying-therapy", "treatment-protocol", "relapse"],
+      "tags": [
+        "multiple-sclerosis",
+        "DMT",
+        "disease-modifying-therapy",
+        "treatment-protocol",
+        "relapse"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "MS treatment includes acute relapse management and disease-modifying therapies (DMTs). Acute relapse: high-dose IV methylprednisolone (1g/day × 3-5 days) or oral equivalent; plasma exchange for steroid-refractory cases. DMT selection based on disease activity, progression risk, and safety: (1) Injectable platforms (interferon-beta, glatiramer acetate)—modest efficacy, excellent safety, first-line for mild disease. (2) Oral agents: dimethyl fumarate (monitor lymphocytes, PML risk), teriflunomide (hepatotoxicity, teratogenic), fingolimod/siponimod/ozanimod (S1P modulators, bradycardia risk, macular edema, PML). (3) Infusions: natalizumab (high efficacy, PML risk—requires JC virus monitoring), ocrelizumab (anti-CD20, PPMS approved, infection risk), alemtuzumab (anti-CD52, highest efficacy but secondary autoimmunity risk), cladribine (immune reconstitution approach). Treatment strategy: escalation (start moderate, escalate if breakthrough) vs induction (start high-efficacy early for aggressive disease). Symptomatic management: baclofen/tizanidine for spasticity, gabapentin/pregabalin for neuropathic pain, amantadine/modafinil for fatigue, anticholinergics for bladder dysfunction.",
+      "content": "MS treatment includes acute relapse management and disease-modifying therapies (DMTs). Acute relapse: high-dose IV methylprednisolone (1g/day \u00d7 3-5 days) or oral equivalent; plasma exchange for steroid-refractory cases. DMT selection based on disease activity, progression risk, and safety: (1) Injectable platforms (interferon-beta, glatiramer acetate)\u2014modest efficacy, excellent safety, first-line for mild disease. (2) Oral agents: dimethyl fumarate (monitor lymphocytes, PML risk), teriflunomide (hepatotoxicity, teratogenic), fingolimod/siponimod/ozanimod (S1P modulators, bradycardia risk, macular edema, PML). (3) Infusions: natalizumab (high efficacy, PML risk\u2014requires JC virus monitoring), ocrelizumab (anti-CD20, PPMS approved, infection risk), alemtuzumab (anti-CD52, highest efficacy but secondary autoimmunity risk), cladribine (immune reconstitution approach). Treatment strategy: escalation (start moderate, escalate if breakthrough) vs induction (start high-efficacy early for aggressive disease). Symptomatic management: baclofen/tizanidine for spasticity, gabapentin/pregabalin for neuropathic pain, amantadine/modafinil for fatigue, anticholinergics for bladder dysfunction.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/34559833/",
       "credibility_class": "A",
       "year": 2024
@@ -29,12 +41,23 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["multiple-sclerosis", "McDonald-criteria", "MRI", "diagnosis", "oligoclonal-bands"],
+      "tags": [
+        "multiple-sclerosis",
+        "McDonald-criteria",
+        "MRI",
+        "diagnosis",
+        "oligoclonal-bands"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "MS diagnosis uses 2017 McDonald Criteria requiring dissemination in space (DIS) and time (DIT). DIS: ≥1 T2-hyperintense lesion in ≥2 of 4 CNS regions: periventricular, cortical/juxtacortical, infratentorial, spinal cord. DIT demonstrated by: (1) simultaneous presence of gadolinium-enhancing and non-enhancing lesions, OR (2) new T2 or enhancing lesion on follow-up MRI, OR (3) positive CSF oligoclonal bands (allows DIT diagnosis at first scan). MRI protocol: brain and entire spine with and without gadolinium. Typical findings: ovoid periventricular lesions perpendicular to ventricles (Dawson's fingers), juxtacortical U-fiber involvement, infratentorial lesions, short-segment spinal cord lesions (<3 vertebral segments). CSF: oligoclonal IgG bands present in >90% (not specific but supports diagnosis). Evoked potentials (visual, somatosensory, motor) detect subclinical pathway involvement. Differential diagnosis includes NMOSD (AQP4-IgG positive, longitudinally extensive transverse myelitis), MOGAD, vasculitis, sarcoidosis, B12 deficiency, Lyme disease.",
+      "content": "MS diagnosis uses 2017 McDonald Criteria requiring dissemination in space (DIS) and time (DIT). DIS: \u22651 T2-hyperintense lesion in \u22652 of 4 CNS regions: periventricular, cortical/juxtacortical, infratentorial, spinal cord. DIT demonstrated by: (1) simultaneous presence of gadolinium-enhancing and non-enhancing lesions, OR (2) new T2 or enhancing lesion on follow-up MRI, OR (3) positive CSF oligoclonal bands (allows DIT diagnosis at first scan). MRI protocol: brain and entire spine with and without gadolinium. Typical findings: ovoid periventricular lesions perpendicular to ventricles (Dawson's fingers), juxtacortical U-fiber involvement, infratentorial lesions, short-segment spinal cord lesions (<3 vertebral segments). CSF: oligoclonal IgG bands present in >90% (not specific but supports diagnosis). Evoked potentials (visual, somatosensory, motor) detect subclinical pathway involvement. Differential diagnosis includes NMOSD (AQP4-IgG positive, longitudinally extensive transverse myelitis), MOGAD, vasculitis, sarcoidosis, B12 deficiency, Lyme disease.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/29274884/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.825426",
+    "source_url_was_extracted": false
+  }
 }

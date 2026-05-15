@@ -7,7 +7,13 @@
       "sector": "PHR",
       "topic": "ACE Inhibitors vs ARBs",
       "role": "definition",
-      "tags": ["ACE inhibitors", "ARBs", "RAAS", "hypertension", "heart failure"],
+      "tags": [
+        "ACE inhibitors",
+        "ARBs",
+        "RAAS",
+        "hypertension",
+        "heart failure"
+      ],
       "content": "ACE inhibitors (angiotensin-converting enzyme inhibitors) and ARBs (angiotensin receptor blockers) both target the renin-angiotensin-aldosterone system (RAAS) but at different points. ACE inhibitors (lisinopril, enalapril, ramipril, captopril) block conversion of angiotensin I to angiotensin II and reduce bradykinin breakdown. ARBs (losartan, valsartan, candesartan, irbesartan, telmisartan) selectively block AT1 receptors, preventing angiotensin II binding. Both reduce blood pressure, decrease aldosterone secretion, and provide organ protection. ACE inhibitors increase bradykinin levels, causing cough (5-20% of patients) and angioedema (rare but serious). ARBs do not affect bradykinin, so cough and angioedema rates similar to placebo. Both classes indicated for hypertension, heart failure with reduced ejection fraction, post-MI, diabetic nephropathy, and CKD with proteinuria. Evidence shows comparable cardiovascular outcomes between classes. ARBs preferred when ACE inhibitor intolerance (cough) develops.",
       "source": "fda.gov",
       "credibility_class": "A",
@@ -20,7 +26,13 @@
       "sector": "PHR",
       "topic": "ACE Inhibitors vs ARBs",
       "role": "treatment_protocol",
-      "tags": ["ACE inhibitors", "ARBs", "dosing", "titration", "monitoring"],
+      "tags": [
+        "ACE inhibitors",
+        "ARBs",
+        "dosing",
+        "titration",
+        "monitoring"
+      ],
       "content": "ACE inhibitor dosing: lisinopril 2.5-5mg daily start, target 20-40mg daily; enalapril 2.5mg BID start, target 10-20mg BID; ramipril 1.25-2.5mg daily start, target 10mg daily. ARB dosing: losartan 25-50mg daily start, target 50-100mg daily; valsartan 40-80mg BID start, target 160-320mg daily; candesartan 4-8mg daily start, target 16-32mg daily. Start low in heart failure, elderly, or volume-depleted patients. Titrate every 2-4 weeks to target doses proven in trials. Monitor serum creatinine and potassium at baseline, 1-2 weeks after initiation/dose increase, then periodically. Accept up to 30% increase in creatinine from baseline; larger increases require evaluation for renal artery stenosis or volume depletion. Hold if potassium >5.5 mEq/L. Avoid combination ACEi+ARB due to increased adverse events without benefit. Use caution with NSAIDs (reduced efficacy, renal risk), potassium supplements, potassium-sparing diuretics.",
       "source": "fda.gov",
       "credibility_class": "A",
@@ -33,11 +45,22 @@
       "sector": "PHR",
       "topic": "ACE Inhibitors vs ARBs",
       "role": "diagnostic_criteria",
-      "tags": ["ACE inhibitors", "ARBs", "contraindications", "adverse effects", "monitoring"],
+      "tags": [
+        "ACE inhibitors",
+        "ARBs",
+        "contraindications",
+        "adverse effects",
+        "monitoring"
+      ],
       "content": "Contraindications for ACE inhibitors and ARBs: pregnancy (teratogenic - fetal renal damage, oligohydramnios, death), history of angioedema with RAAS blockade, bilateral renal artery stenosis, hyperkalemia (>5.5 mEq/L). ACE inhibitor-specific: prior ACE inhibitor-induced angioedema (absolute contraindication to all ACE inhibitors; ARB may be tried cautiously if essential). Monitoring parameters: baseline serum creatinine, eGFR, potassium; repeat 1-2 weeks after initiation or dose increase; monitor every 3-6 months when stable. Expected findings: small creatinine increase (up to 30% from baseline) is acceptable and expected due to efferent arteriole dilation. Adverse effects: hypotension (especially first dose), hyperkalemia, acute kidney injury (in setting of volume depletion or NSAID use), cough (ACE inhibitors only, 5-20%), angioedema (rare, more common in African Americans), rash, taste disturbance (captopril). Drug interactions: NSAIDs (attenuate antihypertensive effect, increase renal risk), potassium supplements/spironolactone (hyperkalemia risk), lithium (increased levels).",
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.683481",
+    "source_url_was_extracted": false
+  }
 }

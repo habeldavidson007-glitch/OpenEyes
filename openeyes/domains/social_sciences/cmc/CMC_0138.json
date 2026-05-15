@@ -32,6 +32,9 @@
     "tags": [
       "cmc",
       "risk"
-    ]
-  }
+    ],
+    "source_url_remediated": "2026-05-15T15:54:00.941304",
+    "source_url_was_extracted": false
+  },
+  "source_url": "https://unknown/source_missing"
 }

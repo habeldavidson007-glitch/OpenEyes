@@ -5,9 +5,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["status-epilepticus", "SE", "convulsive", "refractory", "emergency"],
+      "tags": [
+        "status-epilepticus",
+        "SE",
+        "convulsive",
+        "refractory",
+        "emergency"
+      ],
       "reasoning_role": "definition",
-      "content": "Status epilepticus (SE) is a life-threatening neurological emergency defined as continuous seizure activity ≥5 minutes OR recurrent seizures without recovery of consciousness between events. Operational definition based on evidence that seizures lasting >5 minutes are unlikely to self-terminate. Classification: convulsive SE (generalized tonic-clonic movements, most dangerous), nonconvulsive SE (altered mental status with electrographic seizures, requires EEG diagnosis), focal SE (aura continua, epilepsia partialis continua). Stages: early SE (<30 min), established SE (30-60 min), refractory SE (fails benzodiazepine + one antiseizure medication), super-refractory SE (continues >24 hours after anesthesia initiation or recurs on weaning). Mortality: 3-40% depending on etiology, age, duration. Causes: medication nonadherence (most common in known epilepsy), acute symptomatic (stroke, trauma, infection, metabolic, toxic), new-onset epilepsy. Pathophysiology: failure of GABAergic inhibition, upregulation of excitatory NMDA receptors, neuronal injury begins within minutes.",
+      "content": "Status epilepticus (SE) is a life-threatening neurological emergency defined as continuous seizure activity \u22655 minutes OR recurrent seizures without recovery of consciousness between events. Operational definition based on evidence that seizures lasting >5 minutes are unlikely to self-terminate. Classification: convulsive SE (generalized tonic-clonic movements, most dangerous), nonconvulsive SE (altered mental status with electrographic seizures, requires EEG diagnosis), focal SE (aura continua, epilepsia partialis continua). Stages: early SE (<30 min), established SE (30-60 min), refractory SE (fails benzodiazepine + one antiseizure medication), super-refractory SE (continues >24 hours after anesthesia initiation or recurs on weaning). Mortality: 3-40% depending on etiology, age, duration. Causes: medication nonadherence (most common in known epilepsy), acute symptomatic (stroke, trauma, infection, metabolic, toxic), new-onset epilepsy. Pathophysiology: failure of GABAergic inhibition, upregulation of excitatory NMDA receptors, neuronal injury begins within minutes.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
       "credibility_class": "A",
       "year": 2024
@@ -17,9 +23,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["status-epilepticus", "benzodiazepine", "fosphenytoin", "treatment-protocol", "anesthetic"],
+      "tags": [
+        "status-epilepticus",
+        "benzodiazepine",
+        "fosphenytoin",
+        "treatment-protocol",
+        "anesthetic"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "SE treatment follows time-based algorithm. 0-5 minutes: stabilize ABCs, secure IV access, check glucose (give thiamine 100mg + D50 if hypoglycemic), obtain labs. 5-20 minutes (first-line): benzodiazepine—lorazepam 0.1mg/kg IV (max 4mg/dose, may repeat once) OR midazolam 10mg IM (preferred if no IV access) OR diazepam 0.15mg/kg IV. 20-40 minutes (second-line): fosphenytoin 20mg PE/kg IV (max 150mg/min) OR valproic acid 40mg/kg IV (max 6mg/kg/min, avoid in liver disease/pregnancy) OR levetiracetam 60mg/kg IV (max 4500mg, favorable safety profile) OR phenobarbital 15mg/kg IV. 40-60 minutes (third-line/refractory): anesthetic infusion requiring intubation and continuous EEG—midazolam infusion (0.2mg/kg bolus then 0.05-2mg/kg/hr), propofol (1-2mg/kg bolus then 30-200mcg/kg/min, watch for propofol infusion syndrome), or pentobarbital (5-15mg/kg bolus then 0.5-5mg/kg/hr). Goal: burst-suppression on EEG for 24-48 hours. Super-refractory SE: consider immunotherapy (steroids, IVIG, PLEX), ketogenic diet, hypothermia, multiple drug combinations, epilepsy surgery evaluation.",
+      "content": "SE treatment follows time-based algorithm. 0-5 minutes: stabilize ABCs, secure IV access, check glucose (give thiamine 100mg + D50 if hypoglycemic), obtain labs. 5-20 minutes (first-line): benzodiazepine\u2014lorazepam 0.1mg/kg IV (max 4mg/dose, may repeat once) OR midazolam 10mg IM (preferred if no IV access) OR diazepam 0.15mg/kg IV. 20-40 minutes (second-line): fosphenytoin 20mg PE/kg IV (max 150mg/min) OR valproic acid 40mg/kg IV (max 6mg/kg/min, avoid in liver disease/pregnancy) OR levetiracetam 60mg/kg IV (max 4500mg, favorable safety profile) OR phenobarbital 15mg/kg IV. 40-60 minutes (third-line/refractory): anesthetic infusion requiring intubation and continuous EEG\u2014midazolam infusion (0.2mg/kg bolus then 0.05-2mg/kg/hr), propofol (1-2mg/kg bolus then 30-200mcg/kg/min, watch for propofol infusion syndrome), or pentobarbital (5-15mg/kg bolus then 0.5-5mg/kg/hr). Goal: burst-suppression on EEG for 24-48 hours. Super-refractory SE: consider immunotherapy (steroids, IVIG, PLEX), ketogenic diet, hypothermia, multiple drug combinations, epilepsy surgery evaluation.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
       "credibility_class": "A",
       "year": 2024
@@ -29,12 +41,23 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["status-epilepticus", "diagnosis", "EEG", "etiology-workup", "classification"],
+      "tags": [
+        "status-epilepticus",
+        "diagnosis",
+        "EEG",
+        "etiology-workup",
+        "classification"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "SE diagnosis is clinical for convulsive SE; EEG required for nonconvulsive SE and monitoring refractory cases. Clinical features: generalized tonic-clonic movements (convulsive), altered consciousness with subtle motor signs (eyelid myoclonia, nystagmus, facial twitching) or no motor signs (nonconvulsive), focal motor/sensory phenomena (focal SE). EEG criteria: generalized spike-wave/polyspike-wave ≥30 minutes, or recurrent seizures without return to baseline. Continuous EEG monitoring essential in comatose patients, refractory SE, and after anesthetic initiation (detect ongoing electrographic seizures when motor signs suppressed by paralysis). Etiology workup: emergent labs (glucose, electrolytes, CBC, renal/hepatic function, tox screen, AED levels if applicable), CT/MRI brain (stroke, hemorrhage, tumor, abscess), LP if infection suspected, autoimmune encephalitis panel if subacute onset with psychiatric features. Differential diagnosis: psychogenic nonepileptic status (eyes closed, asynchronous movements, normal EEG), syncope with myoclonus, movement disorders, delirium tremens, shivering/rigors. Prognostic factors: longer duration, older age, anoxic etiology, refractoriness predict worse outcomes. STESS (Status Epilepticus Severity Score) helps predict mortality.",
+      "content": "SE diagnosis is clinical for convulsive SE; EEG required for nonconvulsive SE and monitoring refractory cases. Clinical features: generalized tonic-clonic movements (convulsive), altered consciousness with subtle motor signs (eyelid myoclonia, nystagmus, facial twitching) or no motor signs (nonconvulsive), focal motor/sensory phenomena (focal SE). EEG criteria: generalized spike-wave/polyspike-wave \u226530 minutes, or recurrent seizures without return to baseline. Continuous EEG monitoring essential in comatose patients, refractory SE, and after anesthetic initiation (detect ongoing electrographic seizures when motor signs suppressed by paralysis). Etiology workup: emergent labs (glucose, electrolytes, CBC, renal/hepatic function, tox screen, AED levels if applicable), CT/MRI brain (stroke, hemorrhage, tumor, abscess), LP if infection suspected, autoimmune encephalitis panel if subacute onset with psychiatric features. Differential diagnosis: psychogenic nonepileptic status (eyes closed, asynchronous movements, normal EEG), syncope with myoclonus, movement disorders, delirium tremens, shivering/rigors. Prognostic factors: longer duration, older age, anoxic etiology, refractoriness predict worse outcomes. STESS (Status Epilepticus Severity Score) helps predict mortality.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.826984",
+    "source_url_was_extracted": false
+  }
 }

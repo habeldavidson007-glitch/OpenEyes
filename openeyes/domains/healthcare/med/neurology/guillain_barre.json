@@ -5,9 +5,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["guillain-barre", "GBS", "AIDP", "demyelinating", "autoimmune"],
+      "tags": [
+        "guillain-barre",
+        "GBS",
+        "AIDP",
+        "demyelinating",
+        "autoimmune"
+      ],
       "reasoning_role": "definition",
-      "content": "Guillain-Barré syndrome (GBS) is an acute immune-mediated polyradiculoneuropathy, incidence 1-2/100,000/year. Classic form is acute inflammatory demyelinating polyneuropathy (AIDP); variants include acute motor axonal neuropathy (AMAN), Miller Fisher syndrome (ophthalmoplegia, ataxia, areflexia). Pathophysiology: molecular mimicry—antecedent infection (Campylobacter jejuni most common, also CMV, EBV, Zika, Mycoplasma) triggers antibodies against gangliosides on peripheral nerves, causing complement-mediated damage. Clinical features: acute/subacute progressive symmetric weakness ascending from legs to arms to face (over days to 4 weeks), areflexia, mild sensory symptoms, autonomic dysfunction (arrhythmias, BP instability). Peak weakness at 2-4 weeks. Respiratory muscle involvement in 25% requiring mechanical ventilation. CSF shows albuminocytologic dissociation (elevated protein, normal WBC). Mortality 3-7%, mostly from complications.",
+      "content": "Guillain-Barr\u00e9 syndrome (GBS) is an acute immune-mediated polyradiculoneuropathy, incidence 1-2/100,000/year. Classic form is acute inflammatory demyelinating polyneuropathy (AIDP); variants include acute motor axonal neuropathy (AMAN), Miller Fisher syndrome (ophthalmoplegia, ataxia, areflexia). Pathophysiology: molecular mimicry\u2014antecedent infection (Campylobacter jejuni most common, also CMV, EBV, Zika, Mycoplasma) triggers antibodies against gangliosides on peripheral nerves, causing complement-mediated damage. Clinical features: acute/subacute progressive symmetric weakness ascending from legs to arms to face (over days to 4 weeks), areflexia, mild sensory symptoms, autonomic dysfunction (arrhythmias, BP instability). Peak weakness at 2-4 weeks. Respiratory muscle involvement in 25% requiring mechanical ventilation. CSF shows albuminocytologic dissociation (elevated protein, normal WBC). Mortality 3-7%, mostly from complications.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
       "credibility_class": "A",
       "year": 2024
@@ -17,9 +23,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["guillain-barre", "IVIG", "plasma-exchange", "treatment-protocol", "supportive-care"],
+      "tags": [
+        "guillain-barre",
+        "IVIG",
+        "plasma-exchange",
+        "treatment-protocol",
+        "supportive-care"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "GBS treatment includes immunotherapy and intensive supportive care. Immunotherapy (initiate within 2 weeks of onset): IVIG (0.4 g/kg/day × 5 days) or plasma exchange (5 exchanges over 1-2 weeks)—equally effective; combining provides no additional benefit. Steroids alone are NOT effective in GBS. Supportive care is critical: ICU monitoring for respiratory failure (FVC <20 mL/kg or NIF <-30 cmH2O indicates need for intubation), autonomic instability (continuous cardiac monitoring, avoid sudden position changes), DVT prophylaxis, pain management (gabapentin, carbamazepine, opioids), nutrition (early NG tube if bulbar involvement), physical/occupational therapy. Complications: aspiration pneumonia, PE, pressure ulcers, ileus, urinary retention. Prognosis: 80% walk independently at 6 months, 60% full recovery at 1 year; 20% have persistent disability. Poor prognostic factors: older age, rapid progression, need for ventilation, hyponatremia, axonal variants. Chronic inflammatory demyelinating polyneuropathy (CIDP) is the chronic counterpart (>8 weeks progression) requiring long-term immunotherapy.",
+      "content": "GBS treatment includes immunotherapy and intensive supportive care. Immunotherapy (initiate within 2 weeks of onset): IVIG (0.4 g/kg/day \u00d7 5 days) or plasma exchange (5 exchanges over 1-2 weeks)\u2014equally effective; combining provides no additional benefit. Steroids alone are NOT effective in GBS. Supportive care is critical: ICU monitoring for respiratory failure (FVC <20 mL/kg or NIF <-30 cmH2O indicates need for intubation), autonomic instability (continuous cardiac monitoring, avoid sudden position changes), DVT prophylaxis, pain management (gabapentin, carbamazepine, opioids), nutrition (early NG tube if bulbar involvement), physical/occupational therapy. Complications: aspiration pneumonia, PE, pressure ulcers, ileus, urinary retention. Prognosis: 80% walk independently at 6 months, 60% full recovery at 1 year; 20% have persistent disability. Poor prognostic factors: older age, rapid progression, need for ventilation, hyponatremia, axonal variants. Chronic inflammatory demyelinating polyneuropathy (CIDP) is the chronic counterpart (>8 weeks progression) requiring long-term immunotherapy.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/31832428/",
       "credibility_class": "A",
       "year": 2024
@@ -29,12 +41,23 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["guillain-barre", "diagnosis", "Brighton-criteria", "NCS", "albuminocytologic-dissociation"],
+      "tags": [
+        "guillain-barre",
+        "diagnosis",
+        "Brighton-criteria",
+        "NCS",
+        "albuminocytologic-dissociation"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "GBS diagnosis uses Brighton Criteria (levels 1-4 diagnostic certainty). Key features: bilateral flaccid limb weakness, decreased/absent reflexes, monophasic course, progression over ≤4 weeks. Supportive: mild sensory symptoms, cranial nerve involvement (facial diplegia common), autonomic dysfunction, CSF albuminocytologic dissociation (protein >0.55 g/L, WBC <50/μL—WBC >50 suggests alternative diagnosis like HIV, Lyme, sarcoid), NCS showing demyelination (prolonged distal latencies, slow conduction velocities, conduction block, prolonged F-waves) or axonal patterns. Anti-ganglioside antibodies (GM1, GD1a) support axonal variants. MRI spine may show cauda equina enhancement. Differential diagnosis: transverse myelitis (sensory level, bladder/bowel early, MRI cord lesion), botulism (descending paralysis, pupillary involvement), tick paralysis (ascending weakness, remove tick resolves), poliomyelitis (asymmetric, fever, CSF pleocytosis), porphyria (abdominal pain, psychiatric symptoms), myasthenia gravis (fluctuating, ocular/bulbar prominent, normal reflexes), critical illness neuropathy/myopathy. Miller Fisher variant: triad of ophthalmoplegia, ataxia, areflexia; anti-GQ1b antibody positive in >90%.",
+      "content": "GBS diagnosis uses Brighton Criteria (levels 1-4 diagnostic certainty). Key features: bilateral flaccid limb weakness, decreased/absent reflexes, monophasic course, progression over \u22644 weeks. Supportive: mild sensory symptoms, cranial nerve involvement (facial diplegia common), autonomic dysfunction, CSF albuminocytologic dissociation (protein >0.55 g/L, WBC <50/\u03bcL\u2014WBC >50 suggests alternative diagnosis like HIV, Lyme, sarcoid), NCS showing demyelination (prolonged distal latencies, slow conduction velocities, conduction block, prolonged F-waves) or axonal patterns. Anti-ganglioside antibodies (GM1, GD1a) support axonal variants. MRI spine may show cauda equina enhancement. Differential diagnosis: transverse myelitis (sensory level, bladder/bowel early, MRI cord lesion), botulism (descending paralysis, pupillary involvement), tick paralysis (ascending weakness, remove tick resolves), poliomyelitis (asymmetric, fever, CSF pleocytosis), porphyria (abdominal pain, psychiatric symptoms), myasthenia gravis (fluctuating, ocular/bulbar prominent, normal reflexes), critical illness neuropathy/myopathy. Miller Fisher variant: triad of ophthalmoplegia, ataxia, areflexia; anti-GQ1b antibody positive in >90%.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.825693",
+    "source_url_was_extracted": false
+  }
 }

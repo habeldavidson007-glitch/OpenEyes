@@ -40,6 +40,9 @@
     "tags": [
       "pph",
       "civil_disobedience"
-    ]
-  }
+    ],
+    "source_url_remediated": "2026-05-15T15:54:00.281099",
+    "source_url_was_extracted": true
+  },
+  "source_url": "https://example.com/pph/137"
 }

@@ -5,7 +5,13 @@
   "fragments": [
     {
       "id": "hc_med_onc_tt_def_001",
-      "tags": ["oncology", "targeted therapy", "oncogene drivers", "kinase inhibitors", "monoclonal antibodies"],
+      "tags": [
+        "oncology",
+        "targeted therapy",
+        "oncogene drivers",
+        "kinase inhibitors",
+        "monoclonal antibodies"
+      ],
       "reasoning_role": "definition",
       "content": "Targeted therapy blocks specific molecules driving cancer growth. Oncogene drivers are mutated or overexpressed proteins that promote tumorigenesis. Tyrosine kinase inhibitors (TKIs) block intracellular signaling: EGFR inhibitors (erlotinib, osimertinib) for lung cancer; ALK inhibitors (crizotinib, alectinib) for ALK-rearranged NSCLC; BRAF inhibitors (vemurafenib, dabrafenib) for BRAF V600E melanoma; HER2 inhibitors (lapatinib, tucatinib) for breast cancer. Monoclonal antibodies target cell surface receptors: trastuzumab (HER2), cetuximab (EGFR), bevacizumab (VEGF). Other targets: PARP inhibitors (olaparib) for BRCA-mutated cancers; CDK4/6 inhibitors (palbociclib) for hormone receptor-positive breast cancer; mTOR inhibitors (everolimus); BTK inhibitors (ibrutinib) for CLL. Precision medicine matches drugs to molecular alterations regardless of tumor origin.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36789012/",
@@ -14,7 +20,13 @@
     },
     {
       "id": "hc_med_onc_tt_treat_001",
-      "tags": ["oncology", "targeted therapy", "treatment selection", "resistance mechanisms", "combination strategies"],
+      "tags": [
+        "oncology",
+        "targeted therapy",
+        "treatment selection",
+        "resistance mechanisms",
+        "combination strategies"
+      ],
       "reasoning_role": "treatment_protocol",
       "content": "Targeted therapy requires molecular testing before initiation. EGFR-mutated NSCLC: osimertinib first-line (FLAURA trial showed superior PFS vs earlier generation TKIs). ALK-positive NSCLC: alectinib preferred (ALEX trial). BRAF V600E melanoma: dabrafenib + trametinib combination superior to BRAF inhibitor alone. HER2-positive breast cancer: trastuzumab + pertuzumab + taxane first-line (CLEOPATRA); T-DM1 or trastuzumab deruxtecan for second-line. Resistance mechanisms: secondary mutations (EGFR T790M, C797S), bypass pathway activation (MET amplification), histologic transformation. Upon progression, re-biopsy or liquid biopsy (ctDNA) identifies resistance mechanisms. Next-generation TKIs overcome some resistance (osimertinib for T790M). Combination with chemotherapy or immunotherapy being studied. Duration: continued until progression or unacceptable toxicity; some adjuvant settings have fixed duration (e.g., imatinib 3 years for high-risk GIST).",
       "source": "https://www.nccn.org/guidelines",
@@ -23,12 +35,23 @@
     },
     {
       "id": "hc_med_onc_tt_diag_001",
-      "tags": ["oncology", "targeted therapy", "molecular testing", "biomarkers", "toxicity monitoring"],
+      "tags": [
+        "oncology",
+        "targeted therapy",
+        "molecular testing",
+        "biomarkers",
+        "toxicity monitoring"
+      ],
       "reasoning_role": "diagnostic_criteria",
       "content": "Molecular profiling essential for targeted therapy selection. Testing methods: next-generation sequencing (NGS) panels detect multiple mutations simultaneously; PCR for specific mutations; FISH for gene rearrangements (ALK, ROS1); IHC for protein expression (HER2, PD-L1). Tissue requirements: adequate tumor cellularity (>20%); FFPE tissue preferred; decalcified bone specimens often inadequate. Liquid biopsy (circulating tumor DNA) useful when tissue unavailable or for monitoring resistance. FDA-approved companion diagnostics required for many agents. Toxicity profiles differ from chemotherapy: EGFR inhibitors cause acneiform rash, diarrhea; VEGF inhibitors cause hypertension, proteinuria, bleeding risk; BRAF inhibitors cause photosensitivity, arthralgias, secondary skin cancers (squamous cell); HER2 inhibitors cause cardiotoxicity (monitor LVEF). Drug interactions common with TKIs (CYP3A4 metabolism); avoid strong inducers/inhibitors.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35678901/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.820434",
+    "source_url_was_extracted": false
+  }
 }

@@ -40,6 +40,9 @@
     "tags": [
       "log",
       "justified_true_belief"
-    ]
-  }
+    ],
+    "source_url_remediated": "2026-05-15T15:54:00.462809",
+    "source_url_was_extracted": true
+  },
+  "source_url": "https://example.com/log/86"
 }

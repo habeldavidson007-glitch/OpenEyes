@@ -4,7 +4,11 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["drug pricing", "R&D costs", "pharmaceutical economics"],
+      "tags": [
+        "drug pricing",
+        "R&D costs",
+        "pharmaceutical economics"
+      ],
       "reasoning_role": "definition",
       "content": "The cost of drug development is a contentious topic with significant implications for pricing policy and access. A widely cited 2016 study by DiMasi et al. estimated the average cost to bring a new drug to market at $2.6 billion (in 2013 dollars), including capital costs and failures. This figure has been heavily debated. Critics argue it's inflated due to industry-funded methodology, inclusion of opportunity costs, and lack of transparency. Alternative analyses suggest median R&D costs may be substantially lower ($50-500 million for many drugs), particularly for repurposed drugs, biosimilars, or those developed with public funding. The debate centers on what costs should be included and how they justify drug prices.",
       "source": "pubmed.ncbi.nlm.nih.gov",
@@ -15,9 +19,13 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["drug pricing", "R&D costs", "pharmaceutical economics"],
+      "tags": [
+        "drug pricing",
+        "R&D costs",
+        "pharmaceutical economics"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "Drug pricing methodologies vary: cost-plus pricing (R&D costs plus margin—rarely used transparently), value-based pricing (price reflects clinical benefit and cost savings), reference pricing (based on prices in other countries or therapeutic alternatives), and what-the-market-can-bear (maximizing revenue based on demand elasticity). US prices are typically 2-4x higher than other OECD countries due to lack of direct government negotiation (though this is changing with Inflation Reduction Act), PBM rebate systems, and fragmented payers. High list prices are often offset by confidential rebates (40-60% for many drugs). Net prices (after rebates) are rarely disclosed. Orphan drugs and gene therapies command premium prices ($100,000-$3+ million per treatment) due to small populations and curative potential claims.",
+      "content": "Drug pricing methodologies vary: cost-plus pricing (R&D costs plus margin\u2014rarely used transparently), value-based pricing (price reflects clinical benefit and cost savings), reference pricing (based on prices in other countries or therapeutic alternatives), and what-the-market-can-bear (maximizing revenue based on demand elasticity). US prices are typically 2-4x higher than other OECD countries due to lack of direct government negotiation (though this is changing with Inflation Reduction Act), PBM rebate systems, and fragmented payers. High list prices are often offset by confidential rebates (40-60% for many drugs). Net prices (after rebates) are rarely disclosed. Orphan drugs and gene therapies command premium prices ($100,000-$3+ million per treatment) due to small populations and curative potential claims.",
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2024
@@ -26,12 +34,21 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["drug pricing", "R&D costs", "pharmaceutical economics"],
+      "tags": [
+        "drug pricing",
+        "R&D costs",
+        "pharmaceutical economics"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Controversies around R&D cost estimates include: DiMasi study excluded drugs developed without industry funding (e.g., NIH-discovered), used non-public data from pharmaceutical companies, included substantial opportunity cost assumptions (cost of capital during development), and counted marketing expenditures as R&D in some analyses. Public funding contributes significantly to drug discovery—NIH funds ~$40 billion annually in biomedical research, underlying many approved drugs. Studies show ~50% of new molecular entities have origins in public-sector research. Price-R&D relationship is questioned: pharmaceutical companies spend more on marketing than R&D (approximately 25% vs 15-20% of revenue), profit margins exceed most industries (15-20% net), and price increases often exceed inflation without corresponding R&D investment. Policy proposals include: Medicare price negotiation, international reference pricing, R&D transparency requirements, and delinking R&D costs from product prices.",
+      "content": "Controversies around R&D cost estimates include: DiMasi study excluded drugs developed without industry funding (e.g., NIH-discovered), used non-public data from pharmaceutical companies, included substantial opportunity cost assumptions (cost of capital during development), and counted marketing expenditures as R&D in some analyses. Public funding contributes significantly to drug discovery\u2014NIH funds ~$40 billion annually in biomedical research, underlying many approved drugs. Studies show ~50% of new molecular entities have origins in public-sector research. Price-R&D relationship is questioned: pharmaceutical companies spend more on marketing than R&D (approximately 25% vs 15-20% of revenue), profit margins exceed most industries (15-20% net), and price increases often exceed inflation without corresponding R&D investment. Policy proposals include: Medicare price negotiation, international reference pricing, R&D transparency requirements, and delinking R&D costs from product prices.",
       "source": "pubmed.ncbi.nlm.nih.gov",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.678646",
+    "source_url_was_extracted": false
+  }
 }

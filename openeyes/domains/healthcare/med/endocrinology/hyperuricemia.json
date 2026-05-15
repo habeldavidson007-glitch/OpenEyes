@@ -7,7 +7,13 @@
       "sector": "MED",
       "topic": "Hyperuricemia",
       "role": "definition",
-      "tags": ["hyperuricemia", "urate", "gout", "kidney stones", "metabolic"],
+      "tags": [
+        "hyperuricemia",
+        "urate",
+        "gout",
+        "kidney stones",
+        "metabolic"
+      ],
       "content": "Hyperuricemia is defined as serum urate level >6.8 mg/dL (approximately 7.0 mg/dL in men, >6.0 mg/dL in women), the saturation point above which monosodium urate crystals can form. Uric acid is the end product of purine metabolism in humans (lacking uricase enzyme). Hyperuricemia mechanisms: decreased renal excretion (90% - due to genetic variants in URAT1/SLC22A12, GLUT9/SLC2A9, ABCG2; CKD; medications like thiazides, loop diuretics, low-dose aspirin, cyclosporine, tacrolimus, niacin, pyrazinamide, ethambutol) or increased production (10% - high purine diet, alcohol, myeloproliferative disorders, tumor lysis syndrome, Lesch-Nyhan syndrome, psoriasis). Most individuals with hyperuricemia remain asymptomatic; only 20% develop gout. Associated conditions: metabolic syndrome, hypertension, CKD, cardiovascular disease, kidney stones (uric acid nephrolithiasis). Debate exists whether asymptomatic hyperuricemia should be treated.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985618/",
       "credibility_class": "peer_reviewed_guideline",
@@ -20,7 +26,13 @@
       "sector": "MED",
       "topic": "Hyperuricemia",
       "role": "treatment_protocol",
-      "tags": ["hyperuricemia", "allopurinol", "lifestyle", "asymptomatic", "treatment threshold"],
+      "tags": [
+        "hyperuricemia",
+        "allopurinol",
+        "lifestyle",
+        "asymptomatic",
+        "treatment threshold"
+      ],
       "content": "Asymptomatic hyperuricemia: generally NOT recommended to treat pharmacologically per ACR and EULAR guidelines, as most never develop gout and risks of lifelong ULT may outweigh benefits. Exceptions where treatment considered: serum urate >13 mg/dL (men) or >10 mg/dL (women) with high risk of tumor lysis syndrome; before starting chemotherapy for hematologic malignancies; recurrent uric acid kidney stones; patients receiving rasburicase for tumor lysis prevention. Lifestyle modifications for all: weight loss if overweight/obese, limit alcohol (especially beer and spirits), reduce high-purine foods (organ meats, certain seafood), avoid fructose-sweetened beverages, increase low-fat dairy intake (uricosuric effect), stay well-hydrated, consider coffee consumption. Review and adjust medications contributing to hyperuricemia if alternatives available (e.g., switch thiazide to losartan which has mild uricosuric effect). Treat comorbidities aggressively.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985618/",
       "credibility_class": "peer_reviewed_guideline",
@@ -33,11 +45,22 @@
       "sector": "MED",
       "topic": "Hyperuricemia",
       "role": "diagnostic_criteria",
-      "tags": ["hyperuricemia", "serum urate", "fractional excretion", "kidney stones", "evaluation"],
+      "tags": [
+        "hyperuricemia",
+        "serum urate",
+        "fractional excretion",
+        "kidney stones",
+        "evaluation"
+      ],
       "content": "Diagnosis: fasting serum urate measurement (non-fasting acceptable but postprandial levels may be slightly lower). Confirm with repeat testing if asymptomatic, as levels fluctuate. Normal ranges vary by laboratory and sex: men 3.4-7.0 mg/dL, women 2.4-6.0 mg/dL (premenopausal). Evaluate for secondary causes: medication review, assess alcohol intake, dietary history, renal function (BUN, creatinine, eGFR), complete blood count (myeloproliferative disorders), metabolic panel. Consider 24-hour urine uric acid excretion or fractional excretion of uric acid to distinguish overproduction vs underexcretion if etiology unclear or considering uricosuric therapy. Imaging for kidney stones if symptomatic (renal ultrasound, CT). Genetic testing not routinely indicated but research identifies polymorphisms in urate transporters. Assess for gout symptoms even if not reported (joint pain, tophi). Screen for associated conditions: blood pressure, lipids, glucose/HbA1c given metabolic syndrome association.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985618/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.803705",
+    "source_url_was_extracted": false
+  }
 }

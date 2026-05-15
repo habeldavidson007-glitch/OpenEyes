@@ -7,8 +7,13 @@
       "sector": "MED",
       "topic": "Type 2 Diabetes",
       "role": "definition",
-      "tags": ["diabetes", "metabolism", "insulin resistance", "hyperglycemia"],
-      "content": "Type 2 diabetes mellitus (T2DM) is a chronic metabolic disorder characterized by insulin resistance and relative insulin deficiency, leading to hyperglycemia. Pathophysiology involves progressive beta-cell dysfunction alongside peripheral insulin resistance in muscle, liver, and adipose tissue. Genetic predisposition combined with environmental factors (obesity, sedentary lifestyle, aging) drives disease development. Diagnostic criteria: HbA1c ≥6.5%, fasting plasma glucose ≥126 mg/dL, 2-hour OGTT ≥200 mg/dL, or random glucose ≥200 mg/dL with symptoms. T2DM accounts for 90-95% of all diabetes cases. Chronic hyperglycemia leads to microvascular (retinopathy, nephropathy, neuropathy) and macrovascular (coronary artery disease, stroke, peripheral arterial disease) complications.",
+      "tags": [
+        "diabetes",
+        "metabolism",
+        "insulin resistance",
+        "hyperglycemia"
+      ],
+      "content": "Type 2 diabetes mellitus (T2DM) is a chronic metabolic disorder characterized by insulin resistance and relative insulin deficiency, leading to hyperglycemia. Pathophysiology involves progressive beta-cell dysfunction alongside peripheral insulin resistance in muscle, liver, and adipose tissue. Genetic predisposition combined with environmental factors (obesity, sedentary lifestyle, aging) drives disease development. Diagnostic criteria: HbA1c \u22656.5%, fasting plasma glucose \u2265126 mg/dL, 2-hour OGTT \u2265200 mg/dL, or random glucose \u2265200 mg/dL with symptoms. T2DM accounts for 90-95% of all diabetes cases. Chronic hyperglycemia leads to microvascular (retinopathy, nephropathy, neuropathy) and macrovascular (coronary artery disease, stroke, peripheral arterial disease) complications.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/32804972/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
@@ -20,7 +25,13 @@
       "sector": "MED",
       "topic": "Type 2 Diabetes",
       "role": "treatment_protocol",
-      "tags": ["diabetes", "metformin", "GLP-1", "SGLT2", "insulin"],
+      "tags": [
+        "diabetes",
+        "metformin",
+        "GLP-1",
+        "SGLT2",
+        "insulin"
+      ],
       "content": "Treatment algorithm for T2DM: First-line therapy is metformin (500-2000 mg/day) unless contraindicated. For patients with established ASCVD, heart failure, or CKD, initiate GLP-1 receptor agonist (semaglutide, liraglutide, dulaglutide) or SGLT2 inhibitor (empagliflozin, dapagliflozin, canagliflozin) regardless of HbA1c or metformin use. If additional glycemic control needed, consider combination therapy based on comorbidities: GLP-1 RA preferred for weight loss and ASCVD risk reduction; SGLT2i for heart failure and CKD; DPP-4 inhibitors as weight-neutral option; sulfonylureas as cost-effective but hypoglycemia risk; TZDs effective but fluid retention concerns. Insulin therapy indicated when HbA1c >10%, symptomatic hyperglycemia, or failure of multiple oral agents. Target HbA1c <7% for most adults, individualized based on age, comorbidities, hypoglycemia risk.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506506/",
       "credibility_class": "peer_reviewed_guideline",
@@ -33,11 +44,22 @@
       "sector": "MED",
       "topic": "Type 2 Diabetes",
       "role": "diagnostic_criteria",
-      "tags": ["diabetes", "HbA1c", "glucose", "screening", "prediabetes"],
-      "content": "Diagnostic criteria for T2DM: Any one of the following confirms diagnosis: (1) HbA1c ≥6.5% using NGSP-certified method; (2) Fasting plasma glucose ≥126 mg/dL (≥7.0 mmol/L) after ≥8-hour fast; (3) 2-hour plasma glucose ≥200 mg/dL during 75g OGTT; (4) Random plasma glucose ≥200 mg/dL with classic hyperglycemia symptoms. Abnormal results should be confirmed with repeat testing unless unequivocal hyperglycemia present. Prediabetes defined as HbA1c 5.7-6.4%, fasting glucose 100-125 mg/dL, or 2-hour OGTT 140-199 mg/dL. Screening recommended for adults ≥35 years, or younger with BMI ≥25 kg/m² plus risk factors (family history, hypertension, dyslipidemia, physical inactivity, high-risk ethnicity, history of gestational diabetes). Annual screening for prediabetes; every 3 years if normal.",
+      "tags": [
+        "diabetes",
+        "HbA1c",
+        "glucose",
+        "screening",
+        "prediabetes"
+      ],
+      "content": "Diagnostic criteria for T2DM: Any one of the following confirms diagnosis: (1) HbA1c \u22656.5% using NGSP-certified method; (2) Fasting plasma glucose \u2265126 mg/dL (\u22657.0 mmol/L) after \u22658-hour fast; (3) 2-hour plasma glucose \u2265200 mg/dL during 75g OGTT; (4) Random plasma glucose \u2265200 mg/dL with classic hyperglycemia symptoms. Abnormal results should be confirmed with repeat testing unless unequivocal hyperglycemia present. Prediabetes defined as HbA1c 5.7-6.4%, fasting glucose 100-125 mg/dL, or 2-hour OGTT 140-199 mg/dL. Screening recommended for adults \u226535 years, or younger with BMI \u226525 kg/m\u00b2 plus risk factors (family history, hypertension, dyslipidemia, physical inactivity, high-risk ethnicity, history of gestational diabetes). Annual screening for prediabetes; every 3 years if normal.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506506/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.805687",
+    "source_url_was_extracted": false
+  }
 }

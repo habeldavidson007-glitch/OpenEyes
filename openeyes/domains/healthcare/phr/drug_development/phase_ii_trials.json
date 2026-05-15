@@ -4,7 +4,12 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["Phase II trials", "proof of concept", "dose selection", "efficacy"],
+      "tags": [
+        "Phase II trials",
+        "proof of concept",
+        "dose selection",
+        "efficacy"
+      ],
       "reasoning_role": "definition",
       "content": "Phase II trials are the first studies to evaluate drug efficacy in patients with the target disease, while continuing safety assessment. These trials typically enroll 100-300 patients and last several months to 2 years. Phase II is divided into IIa (proof-of-concept, demonstrating biological activity) and IIb (dose-finding, establishing optimal dosing). The primary goal is to determine whether the drug shows sufficient efficacy signal to justify large-scale Phase III testing. Approximately 30-40% of drugs successfully advance from Phase II to Phase III.",
       "source": "fda.gov",
@@ -15,7 +20,12 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["Phase II trials", "proof of concept", "dose selection", "efficacy"],
+      "tags": [
+        "Phase II trials",
+        "proof of concept",
+        "dose selection",
+        "efficacy"
+      ],
       "reasoning_role": "treatment_protocol",
       "content": "Phase II trial design typically uses randomized controlled methodology, often with placebo or active comparator. Multiple dose arms (e.g., low, medium, high) are evaluated to establish dose-response relationships and select the optimal Phase III dose. Primary endpoints are disease-specific efficacy measures (e.g., HbA1c reduction in diabetes, tumor response in oncology, symptom scores in psychiatry). Statistical power is moderate (often 80% power to detect clinically meaningful effect). Adaptive designs allowing dose modifications or early stopping for futility are increasingly used. Biomarker substudies help identify responsive patient subgroups.",
       "source": "fda.gov",
@@ -26,12 +36,22 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["Phase II trials", "proof of concept", "dose selection", "efficacy"],
+      "tags": [
+        "Phase II trials",
+        "proof of concept",
+        "dose selection",
+        "efficacy"
+      ],
       "reasoning_role": "diagnostic_criteria",
       "content": "Phase II success criteria include: statistically significant improvement on primary efficacy endpoint versus control, acceptable safety profile with manageable adverse events, clear dose-response relationship enabling dose selection, and evidence of clinical benefit (not just surrogate markers). Go/no-go decisions consider effect size, therapeutic index, competitive landscape, and commercial potential. Common failure reasons include insufficient efficacy, unexpected safety signals, poor tolerability, or inability to differentiate from existing treatments. Oncology Phase II trials often use objective response rate (ORR) or progression-free survival (PFS) as primary endpoints.",
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.663415",
+    "source_url_was_extracted": false
+  }
 }

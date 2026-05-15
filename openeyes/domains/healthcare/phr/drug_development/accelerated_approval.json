@@ -4,7 +4,11 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["accelerated approval", "surrogate endpoints", "confirmatory trials"],
+      "tags": [
+        "accelerated approval",
+        "surrogate endpoints",
+        "confirmatory trials"
+      ],
       "reasoning_role": "definition",
       "content": "Accelerated approval is an FDA pathway allowing earlier approval of drugs for serious or life-threatening conditions based on surrogate endpoints reasonably likely to predict clinical benefit, rather than direct evidence of clinical benefit. This pathway was established in 1992 primarily for HIV/AIDS treatments and is now used extensively in oncology, rare diseases, and other areas. Drugs approved via accelerated approval require post-marketing confirmatory trials to verify the anticipated clinical benefit. If confirmatory trials fail to verify benefit, FDA can withdraw approval.",
       "source": "fda.gov",
@@ -15,7 +19,11 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["accelerated approval", "surrogate endpoints", "confirmatory trials"],
+      "tags": [
+        "accelerated approval",
+        "surrogate endpoints",
+        "confirmatory trials"
+      ],
       "reasoning_role": "treatment_protocol",
       "content": "Accelerated approval process: sponsors submit NDA with evidence showing effect on validated or reasonably likely surrogate endpoint (e.g., tumor response rate, progression-free survival, viral load reduction, biomarker changes). FDA reviews with priority timeline (6 months). Approval includes specific requirements for post-marketing confirmatory trials, which must be underway at time of approval or completed shortly after. Labeling clearly states the basis for approval and that continued approval depends on verification of clinical benefit. FDA may impose additional restrictions such as limited distribution or specialized prescriber requirements. The Accelerated Approval pathway has been increasingly scrutinized when confirmatory trials are delayed or fail.",
       "source": "fda.gov",
@@ -26,12 +34,21 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["accelerated approval", "surrogate endpoints", "confirmatory trials"],
+      "tags": [
+        "accelerated approval",
+        "surrogate endpoints",
+        "confirmatory trials"
+      ],
       "reasoning_role": "diagnostic_criteria",
       "content": "Accelerated approval eligibility criteria include: treatment for serious or life-threatening disease, drug demonstrates effect on surrogate endpoint reasonably likely to predict clinical benefit, and unmet medical need exists (no adequate therapy or advantage over existing treatments). Validated surrogate endpoints have established correlation with clinical outcomes (e.g., LDL cholesterol and cardiovascular events). 'Reasonably likely' surrogates have weaker but plausible correlation requiring stronger confirmatory evidence. Confirmatory trial requirements: adequate and well-controlled studies demonstrating clinical benefit, initiation before or at approval, completion typically within 3-5 years. FDA enforcement mechanisms for failed confirmatory trials include public communications, labeling changes, restricted distribution, or withdrawal proceedings. Approximately 20% of novel drug approvals use accelerated pathway; about 10-15% ultimately face withdrawal or indication restriction.",
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.662898",
+    "source_url_was_extracted": false
+  }
 }

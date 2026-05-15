@@ -40,6 +40,9 @@
     "tags": [
       "mnd",
       "cognitive_science_foundations"
-    ]
-  }
+    ],
+    "source_url_remediated": "2026-05-15T15:54:00.518260",
+    "source_url_was_extracted": true
+  },
+  "source_url": "https://example.com/mnd/44"
 }

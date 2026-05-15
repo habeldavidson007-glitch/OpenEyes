@@ -6,8 +6,13 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "Insomnia Disorder is characterized by dissatisfaction with sleep quantity or quality, with difficulty initiating sleep, maintaining sleep (frequent awakenings or trouble returning to sleep), or early morning awakening with inability to return to sleep. Sleep disturbance causes clinically significant distress/impairment in daytime functioning (fatigue, mood disturbance, cognitive impairment, reduced motivation, increased errors/accidents). Occurs ≥3 nights/week for ≥3 months despite adequate opportunity for sleep. Not better explained by another sleep disorder, substance effects, or co-occurring mental/medical conditions. Prevalence ~10-15% chronic insomnia. Pathophysiology involves hyperarousal (cognitive, physiological, cortical), conditioned arousal to bed environment, circadian rhythm disruptions.",
-      "tags": ["insomnia", "sleep-disorder", "hyperarousal", "CBT-I"],
+      "content": "Insomnia Disorder is characterized by dissatisfaction with sleep quantity or quality, with difficulty initiating sleep, maintaining sleep (frequent awakenings or trouble returning to sleep), or early morning awakening with inability to return to sleep. Sleep disturbance causes clinically significant distress/impairment in daytime functioning (fatigue, mood disturbance, cognitive impairment, reduced motivation, increased errors/accidents). Occurs \u22653 nights/week for \u22653 months despite adequate opportunity for sleep. Not better explained by another sleep disorder, substance effects, or co-occurring mental/medical conditions. Prevalence ~10-15% chronic insomnia. Pathophysiology involves hyperarousal (cognitive, physiological, cortical), conditioned arousal to bed environment, circadian rhythm disruptions.",
+      "tags": [
+        "insomnia",
+        "sleep-disorder",
+        "hyperarousal",
+        "CBT-I"
+      ],
       "source": "https://www.nimh.nih.gov/health/topics/sleep-and-mental-health",
       "credibility_class": "A",
       "year": 2024
@@ -15,18 +20,34 @@
     {
       "role": "treatment_protocol",
       "content": "First-line treatment: Cognitive Behavioral Therapy for Insomnia (CBT-I), which includes stimulus control (bed only for sleep/sex, leave bed if not asleep in 20 min), sleep restriction (limit time in bed to actual sleep time), cognitive therapy (address maladaptive beliefs about sleep), relaxation training, sleep hygiene education. CBT-I shows durable benefits post-treatment. Pharmacotherapy: short-term use of sedative-hypnotics (zolpidem, eszopiclone, zaleplon), benzodiazepines (temazepam), orexin receptor antagonists (suvorexant, lemborexant), ramelteon (melatonin agonist), low-dose doxepin. Medications generally limited to short-term due to tolerance, dependence, side effects (falls, cognitive impairment). Address comorbid conditions.",
-      "tags": ["CBT-I", "stimulus-control", "sleep-restriction", "zolpidem", "orexin-antagonist"],
+      "tags": [
+        "CBT-I",
+        "stimulus-control",
+        "sleep-restriction",
+        "zolpidem",
+        "orexin-antagonist"
+      ],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "diagnostic_criteria",
-      "content": "DSM-5-TR Insomnia Disorder criteria: Predominant complaint of dissatisfaction with sleep quantity/quality with ≥1 symptoms: difficulty initiating sleep, difficulty maintaining sleep (frequent awakenings/trouble returning to sleep), early morning awakening with inability to return to sleep. Causes clinically significant distress/impairment in daytime functioning (fatigue, mood disturbance, cognitive impairment, reduced motivation/energy, increased errors/accidents, tension headaches, GI symptoms, concern about sleep). Sleep difficulty occurs ≥3 nights/week, present for ≥3 months, occurs despite adequate opportunity for sleep. Not better explained by/exclusive to another sleep-wake disorder, substance effects, or co-occurring mental/medical disorders. Specifiers: episodic, persistent, recurrent.",
-      "tags": ["DSM-5-TR", "diagnostic-criteria", "insomnia", "sleep-disorder"],
+      "content": "DSM-5-TR Insomnia Disorder criteria: Predominant complaint of dissatisfaction with sleep quantity/quality with \u22651 symptoms: difficulty initiating sleep, difficulty maintaining sleep (frequent awakenings/trouble returning to sleep), early morning awakening with inability to return to sleep. Causes clinically significant distress/impairment in daytime functioning (fatigue, mood disturbance, cognitive impairment, reduced motivation/energy, increased errors/accidents, tension headaches, GI symptoms, concern about sleep). Sleep difficulty occurs \u22653 nights/week, present for \u22653 months, occurs despite adequate opportunity for sleep. Not better explained by/exclusive to another sleep-wake disorder, substance effects, or co-occurring mental/medical disorders. Specifiers: episodic, persistent, recurrent.",
+      "tags": [
+        "DSM-5-TR",
+        "diagnostic-criteria",
+        "insomnia",
+        "sleep-disorder"
+      ],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.721826",
+    "source_url_was_extracted": false
+  }
 }

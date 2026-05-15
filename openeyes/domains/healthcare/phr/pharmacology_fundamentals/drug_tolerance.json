@@ -7,7 +7,13 @@
       "topic": "Drug Tolerance",
       "role": "definition",
       "content": "Drug tolerance is a diminished response to a drug following repeated administration, requiring higher doses to achieve the same effect. Mechanisms include: pharmacokinetic tolerance (increased metabolism via enzyme induction - alcohol, barbiturates); pharmacodynamic tolerance (receptor downregulation/desensitization - opioids, benzodiazepines); tachyphylaxis (rapid tolerance after few doses - nitrates, amphetamines). Cross-tolerance occurs between drugs with similar mechanisms (benzodiazepines and alcohol both act on GABA receptors). Tolerance develops at different rates for different effects: opioid tolerance to analgesia and euphoria develops quickly; tolerance to constipation and miosis develops minimally. Reverse tolerance (sensitization) occurs with some drugs (alcohol neurotoxicity, stimulant psychosis).",
-      "tags": ["drug_tolerance", "enzyme_induction", "receptor_downregulation", "tachyphylaxis", "cross_tolerance"],
+      "tags": [
+        "drug_tolerance",
+        "enzyme_induction",
+        "receptor_downregulation",
+        "tachyphylaxis",
+        "cross_tolerance"
+      ],
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2025
@@ -19,7 +25,12 @@
       "topic": "Drug Tolerance",
       "role": "treatment_protocol",
       "content": "Clinical management of tolerance: opioid rotation when tolerance limits analgesia (incomplete cross-tolerance allows dose reduction); drug holidays to restore sensitivity (nitrates require 10-12 hour nitrate-free interval); combination therapy to reduce individual drug tolerance development (cancer pain: opioids + NSAIDs + adjuvants); scheduled dosing rather than PRN to maintain steady levels and minimize tolerance. Benzodiazepine tolerance: limit duration to 2-4 weeks for anxiety/insomnia; if long-term needed, consider intermittent dosing or switch to non-benzodiazepine alternatives. Stimulant tolerance in ADHD: drug holidays may help but risk symptom recurrence; consider dose adjustment or alternative agents. Preventing tolerance: use lowest effective dose; avoid unnecessary dose escalation; address underlying causes rather than escalating symptomatic treatment.",
-      "tags": ["opioid_rotation", "drug_holidays", "combination_therapy", "dose_optimization"],
+      "tags": [
+        "opioid_rotation",
+        "drug_holidays",
+        "combination_therapy",
+        "dose_optimization"
+      ],
       "source": "nih.gov",
       "credibility_class": "A",
       "year": 2025
@@ -31,10 +42,20 @@
       "topic": "Drug Tolerance",
       "role": "diagnostic_criteria",
       "content": "Tolerance diagnosis based on: documented dose escalation without disease progression; diminished clinical effect despite adherence; withdrawal symptoms suggesting physical dependence (often accompanies tolerance). Differentiate from: disease progression (worsening condition requires higher doses); pseudoaddiction (undertreated pain seeking relief); hyperalgesia (opioid-induced increased pain sensitivity - paradoxical response requiring dose reduction not increase). Quantitative assessment: track dose-response relationship over time; calculate morphine milligram equivalents (MME) for opioids; monitor therapeutic indices. Experimental measures: receptor binding studies show decreased density/sensitivity; metabolic studies demonstrate increased clearance. Tolerance vs addiction: tolerance is expected physiologic adaptation; addiction involves compulsive use despite harm, craving, loss of control.",
-      "tags": ["tolerance_diagnosis", "dose_escalation", "hyperalgesia_differentiation", "tolerance_vs_addiction"],
+      "tags": [
+        "tolerance_diagnosis",
+        "dose_escalation",
+        "hyperalgesia_differentiation",
+        "tolerance_vs_addiction"
+      ],
       "source": "ema.europa.eu",
       "credibility_class": "A",
       "year": 2025
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.647037",
+    "source_url_was_extracted": false
+  }
 }

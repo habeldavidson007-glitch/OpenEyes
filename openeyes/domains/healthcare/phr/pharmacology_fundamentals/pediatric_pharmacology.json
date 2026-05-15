@@ -7,7 +7,13 @@
       "topic": "Pediatric Pharmacology",
       "role": "definition",
       "content": "Pediatric pharmacology differs from adults due to developmental changes in ADME processes. Neonates/infants: immature hepatic enzymes (reduced glucuronidation - chloramphenicol gray baby syndrome), reduced GFR (aminoglycoside toxicity risk), higher total body water (increased Vd for hydrophilic drugs), lower protein binding (increased free drug). Children (1-12 years): often faster metabolism than adults (higher mg/kg doses needed for some drugs), mature renal function by 6-12 months. Adolescents: approaching adult physiology but hormonal changes affect drug response. Body composition changes: premature neonates 85% water, adults 60%. Gastric pH higher at birth (affects absorption of weak acids/bases); gastric emptying slower in neonates. Blood-brain barrier more permeable in infants.",
-      "tags": ["pediatric_pharmacology", "developmental_changes", "ADME_differences", "neonates", "children"],
+      "tags": [
+        "pediatric_pharmacology",
+        "developmental_changes",
+        "ADME_differences",
+        "neonates",
+        "children"
+      ],
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2025
@@ -19,7 +25,13 @@
       "topic": "Pediatric Pharmacology",
       "role": "treatment_protocol",
       "content": "Dosing principles: weight-based dosing (mg/kg) most common; body surface area (BSA) for chemotherapy and narrow TI drugs. Maximum doses should not exceed adult doses. Age-specific considerations: neonates require extended dosing intervals (immature clearance); children may need higher mg/kg doses than adults (phenytoin 5mg/kg/day vs adult 300mg); adolescents can use adult dosing. Formulation challenges: liquid formulations needed for young children; crushing tablets may alter release characteristics; palatability affects adherence. Off-label use common (70% of pediatric prescriptions) due to limited pediatric trials. Best Pharmaceuticals for Children Act (BPCA) and Pediatric Research Equity Act (PREA) incentivize/require pediatric studies. Avoid certain drugs: tetracyclines <8 years (teeth discoloration), fluoroquinolones <18 years (cartilage toxicity concern), aspirin <19 years with viral illness (Reye syndrome).",
-      "tags": ["weight_based_dosing", "BSA_dosing", "formulation_issues", "off_label_use", "age_restrictions"],
+      "tags": [
+        "weight_based_dosing",
+        "BSA_dosing",
+        "formulation_issues",
+        "off_label_use",
+        "age_restrictions"
+      ],
       "source": "nih.gov",
       "credibility_class": "A",
       "year": 2025
@@ -30,11 +42,22 @@
       "sector": "PHR",
       "topic": "Pediatric Pharmacology",
       "role": "diagnostic_criteria",
-      "content": "Pediatric dosing calculations: Clark's rule (child dose = adult dose × weight(lb)/150) largely replaced by direct mg/kg dosing. Young's rule (child dose = adult dose × age/(age+12)) outdated. Current approach: use evidence-based pediatric dosing references (Harriet Lane, Red Book, Lexicomp Pediatric). Therapeutic drug monitoring crucial for narrow TI drugs: vancomycin, aminoglycosides, anticonvulsants. Growth and development monitoring: assess impact of chronic medications on growth velocity, pubertal development, bone health (steroids), neurodevelopment (stimulants, antiepileptics). Adverse drug reaction recognition: children may present differently than adults (valproate hepatotoxicity more common in young children); nonverbal children require observation for behavioral changes. Medication error prevention: double-check calculations, use metric units only, avoid trailing zeros, specify concentration on prescriptions.",
-      "tags": ["dosing_calculations", "TDM_in_children", "growth_monitoring", "ADR_recognition", "error_prevention"],
+      "content": "Pediatric dosing calculations: Clark's rule (child dose = adult dose \u00d7 weight(lb)/150) largely replaced by direct mg/kg dosing. Young's rule (child dose = adult dose \u00d7 age/(age+12)) outdated. Current approach: use evidence-based pediatric dosing references (Harriet Lane, Red Book, Lexicomp Pediatric). Therapeutic drug monitoring crucial for narrow TI drugs: vancomycin, aminoglycosides, anticonvulsants. Growth and development monitoring: assess impact of chronic medications on growth velocity, pubertal development, bone health (steroids), neurodevelopment (stimulants, antiepileptics). Adverse drug reaction recognition: children may present differently than adults (valproate hepatotoxicity more common in young children); nonverbal children require observation for behavioral changes. Medication error prevention: double-check calculations, use metric units only, avoid trailing zeros, specify concentration on prescriptions.",
+      "tags": [
+        "dosing_calculations",
+        "TDM_in_children",
+        "growth_monitoring",
+        "ADR_recognition",
+        "error_prevention"
+      ],
       "source": "ema.europa.eu",
       "credibility_class": "A",
       "year": 2025
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.646180",
+    "source_url_was_extracted": false
+  }
 }

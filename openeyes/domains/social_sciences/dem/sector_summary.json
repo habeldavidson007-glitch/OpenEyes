@@ -26,5 +26,10 @@
     "Census methodologies",
     "Demographic data sources"
   ],
-  "generated_at": "2026-05-13T02:16:29.902482"
+  "generated_at": "2026-05-13T02:16:29.902482",
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.021844",
+    "source_url_was_extracted": false
+  }
 }

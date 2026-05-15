@@ -5,9 +5,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["epilepsy", "seizure", "classification", "focal", "generalized"],
+      "tags": [
+        "epilepsy",
+        "seizure",
+        "classification",
+        "focal",
+        "generalized"
+      ],
       "reasoning_role": "definition",
-      "content": "Epilepsy is defined as ≥2 unprovoked seizures >24 hours apart, or one unprovoked seizure with ≥60% recurrence risk over 10 years. Seizures are classified by onset: focal (aware or impaired awareness, originating in one hemisphere), generalized (bilateral networks, including absence, tonic-clonic, myoclonic, atonic), or unknown onset. Focal seizures may secondarily generalize. Epilepsy syndromes include temporal lobe epilepsy (most common focal), juvenile myoclonic epilepsy (JME), childhood absence epilepsy, and Lennox-Gastaut syndrome. Status epilepticus is continuous seizure >5 minutes or recurrent seizures without recovery. Epileptogenesis involves imbalance between excitatory (glutamate) and inhibitory (GABA) neurotransmission, ion channel dysfunction, and network reorganization.",
+      "content": "Epilepsy is defined as \u22652 unprovoked seizures >24 hours apart, or one unprovoked seizure with \u226560% recurrence risk over 10 years. Seizures are classified by onset: focal (aware or impaired awareness, originating in one hemisphere), generalized (bilateral networks, including absence, tonic-clonic, myoclonic, atonic), or unknown onset. Focal seizures may secondarily generalize. Epilepsy syndromes include temporal lobe epilepsy (most common focal), juvenile myoclonic epilepsy (JME), childhood absence epilepsy, and Lennox-Gastaut syndrome. Status epilepticus is continuous seizure >5 minutes or recurrent seizures without recovery. Epileptogenesis involves imbalance between excitatory (glutamate) and inhibitory (GABA) neurotransmission, ion channel dysfunction, and network reorganization.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/28633517/",
       "credibility_class": "A",
       "year": 2024
@@ -17,9 +23,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["epilepsy", "AED", "antiepileptic", "treatment-protocol", "drug-interactions"],
+      "tags": [
+        "epilepsy",
+        "AED",
+        "antiepileptic",
+        "treatment-protocol",
+        "drug-interactions"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "Antiepileptic drug (AED) selection depends on seizure type, patient factors, and side effect profile. Focal seizures: first-line includes lamotrigine, levetiracetam, carbamazepine, oxcarbazepine. Generalized tonic-clonic: valproate (most effective but teratogenic), lamotrigine, levetiracetam. Absence seizures: ethosuximide (first-line for pure absence), valproate, lamotrigine. Myoclonic seizures: valproate, levetiracetam, topiramate. Key considerations: (1) Drug interactions—carbamazepine, phenytoin, phenobarbital are CYP450 inducers reducing efficacy of oral contraceptives, warfarin, many medications. (2) Teratogenicity—valproate highest risk (neural tube defects, cognitive impairment); avoid in women of childbearing potential. Lamotrigine and levetiracetam have lower teratogenic risk. (3) Titration—lamotrigine requires slow titration to prevent Stevens-Johnson syndrome. (4) Monitoring—phenytoin has nonlinear kinetics; carbamazepine causes hyponatremia; valproate requires LFT/platelet monitoring. Refractory epilepsy (failure of 2 appropriate AEDs) warrants epilepsy center referral for surgical evaluation, vagal nerve stimulation, or responsive neurostimulation.",
+      "content": "Antiepileptic drug (AED) selection depends on seizure type, patient factors, and side effect profile. Focal seizures: first-line includes lamotrigine, levetiracetam, carbamazepine, oxcarbazepine. Generalized tonic-clonic: valproate (most effective but teratogenic), lamotrigine, levetiracetam. Absence seizures: ethosuximide (first-line for pure absence), valproate, lamotrigine. Myoclonic seizures: valproate, levetiracetam, topiramate. Key considerations: (1) Drug interactions\u2014carbamazepine, phenytoin, phenobarbital are CYP450 inducers reducing efficacy of oral contraceptives, warfarin, many medications. (2) Teratogenicity\u2014valproate highest risk (neural tube defects, cognitive impairment); avoid in women of childbearing potential. Lamotrigine and levetiracetam have lower teratogenic risk. (3) Titration\u2014lamotrigine requires slow titration to prevent Stevens-Johnson syndrome. (4) Monitoring\u2014phenytoin has nonlinear kinetics; carbamazepine causes hyponatremia; valproate requires LFT/platelet monitoring. Refractory epilepsy (failure of 2 appropriate AEDs) warrants epilepsy center referral for surgical evaluation, vagal nerve stimulation, or responsive neurostimulation.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30879033/",
       "credibility_class": "A",
       "year": 2024
@@ -29,12 +41,23 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["epilepsy", "EEG", "diagnosis", "MRI", "seizure-classification"],
+      "tags": [
+        "epilepsy",
+        "EEG",
+        "diagnosis",
+        "MRI",
+        "seizure-classification"
+      ],
       "reasoning_role": "diagnostic_criteria",
       "content": "Epilepsy diagnosis requires: (1) Detailed history from patient and witnesses describing event semiology (onset, progression, duration, postictal state). Differentiate from syncope, psychogenic nonepileptic seizures (PNES), movement disorders. (2) EEG: interictal epileptiform discharges (spikes, sharp waves) support diagnosis but normal EEG doesn't exclude epilepsy. Sleep-deprived or prolonged EEG increases yield. Ictal recording confirms diagnosis and localizes onset. Video-EEG monitoring is gold standard for refractory cases. (3) Brain MRI with epilepsy protocol (thin-cut coronal images through hippocampi) to identify structural causes: mesial temporal sclerosis, cortical dysplasia, tumors, vascular malformations, hippocampal sclerosis. (4) Laboratory: electrolytes, glucose, toxicology, AED levels if applicable. (5) Consider genetic testing for specific syndromes (e.g., SCN1A in Dravet syndrome). ILAE classification guides treatment: focal vs generalized onset determines AED choice. PNES diagnosis requires video-EEG demonstrating typical events without electrographic correlate.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/29105296/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.839163",
+    "source_url_was_extracted": false
+  }
 }

@@ -26,5 +26,10 @@
     "Cross-cultural communication",
     "Communication technology history"
   ],
-  "generated_at": "2026-05-13T02:16:29.958951"
+  "generated_at": "2026-05-13T02:16:29.958951",
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:00.943338",
+    "source_url_was_extracted": false
+  }
 }

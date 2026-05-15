@@ -7,7 +7,12 @@
     {
       "role": "definition",
       "content": "Obsessive-Compulsive Disorder (OCD) is characterized by obsessions (recurrent, intrusive, unwanted thoughts, urges, or images causing anxiety/distress) and/or compulsions (repetitive behaviors or mental acts performed to reduce anxiety or prevent feared outcomes). Common obsession themes: contamination, harm, symmetry, taboo thoughts. Common compulsions: washing, checking, ordering, counting, mental rituals. Compulsions are ego-dystonic (recognized as excessive/unreasonable but difficult to resist). Symptoms are time-consuming (>1 hour/day) or cause significant impairment. Lifetime prevalence ~2-3%. Pathophysiology involves cortico-striato-thalamo-cortical circuit dysfunction, serotonin dysregulation, and glutamate abnormalities.",
-      "tags": ["OCD", "obsessions", "compulsions", "ego-dystonic"],
+      "tags": [
+        "OCD",
+        "obsessions",
+        "compulsions",
+        "ego-dystonic"
+      ],
       "source": "https://www.nimh.nih.gov/health/topics/obsessive-compulsive-disorder",
       "credibility_class": "A",
       "year": 2024
@@ -15,7 +20,13 @@
     {
       "role": "treatment_protocol",
       "content": "First-line psychotherapy: Exposure and Response Prevention (ERP), a form of CBT involving gradual exposure to anxiety-provoking stimuli while preventing compulsive responses. ERP shows durable benefits post-treatment. First-line pharmacotherapy: SSRIs at higher doses than for depression (e.g., fluoxetine 60-80mg, sertraline 150-200mg, fluvoxamine 200-300mg) with adequate trial duration (10-12 weeks). Clomipramine (TCA) is effective but limited by side effects. Augmentation strategies for partial response include low-dose antipsychotics (risperidone, aripiprazole). Treatment typically continues 1-2 years before considering tapering. Deep brain stimulation reserved for severe treatment-refractory cases.",
-      "tags": ["ERP", "CBT", "SSRI", "clomipramine", "augmentation"],
+      "tags": [
+        "ERP",
+        "CBT",
+        "SSRI",
+        "clomipramine",
+        "augmentation"
+      ],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
@@ -23,10 +34,21 @@
     {
       "role": "diagnostic_criteria",
       "content": "DSM-5-TR OCD criteria: Presence of obsessions (recurrent/persistent intrusive thoughts/urges/images causing anxiety/distress, person attempts to ignore/suppress/neutralize them) and/or compulsions (repetitive behaviors/mental acts performed in response to obsessions or rigid rules, aimed at preventing/reducing anxiety or preventing dreaded events but not realistically connected or clearly excessive). Obsessions/compulsions are time-consuming (>1 hour/day) or cause clinically significant distress/impairment. Not attributable to substance effects or medical condition. Not better explained by another mental disorder (GAD worry, body dysmorphic disorder, hoarding disorder, trichotillomania, excoriation). Specifier: with good/fair vs poor/absent insight; tic-related.",
-      "tags": ["DSM-5-TR", "diagnostic-criteria", "OCD", "obsessions", "compulsions"],
+      "tags": [
+        "DSM-5-TR",
+        "diagnostic-criteria",
+        "OCD",
+        "obsessions",
+        "compulsions"
+      ],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.722133",
+    "source_url_was_extracted": false
+  }
 }
