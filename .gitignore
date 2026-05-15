@@ -1,100 +1,15 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-.venv/
-.venv.bak/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-htmlcov/
-.coverage/
-.nox/
-__pypackages__/
+# Audit logs
+.openeyes/vault/audit/*.md
+.openeyes/vault/audit/audit_log.md
 
-# Test and coverage
-.pytest_cache/
-.hypothesis/
-.eggs/
-*.egg-info/
-.installed.cfg
-*.manifest
-*.spec
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Icon?
-.directory
-.Trashes
-*.nib
-*~
-.DS_Store?
-._*
-.Spotlight-V100
-.Trash-*
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-.AppleDouble
-.LSOverride
-
-# Logs
-*.log
-*.out
-*.pid
-*.seed
-*.idx
+# Binary files
 *.bin
 
-# Environment
-.env
-.env.local
-.env.dev
-.env.test
-.env.production
-.env.staging
-*.env
-*.env.*
-!.env.example
+# Test reports and results
+TEST_REPORT.md
+test_results/
 
-# Coverage
-coverage/
-htmlcov/
-.coverage
-.coverage.*
-
-# Build and distribution
-dist/
-build/
-*.egg
-*.egg-info/
-.sconsign.dblite
-._build/
-sdist/
-develop-eggs/
-.installed.cfg
-lib/
-lib64/
-parts/
-bdist/
-dhtml/
+# Package info
+openeyes.egg-info/
 ```
