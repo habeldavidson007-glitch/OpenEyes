@@ -8,7 +8,8 @@ from datetime import datetime
 from openeyes.config import audit_dir
 from openeyes.core.router import route_domain
 from openeyes.knowledge.fragments import Fragment
-from openeyes.pipeline.retriever import UnifiedRetriever, normalize_query
+from openeyes.pipeline.retriever import UnifiedRetriever
+from openeyes.knowledge.live_fetch import normalize_query
 from openeyes.pipeline.processor import (
     classify_intent,
     process_query_with_degradation,
