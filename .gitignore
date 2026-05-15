@@ -1,9 +1,14 @@
 ```
-# Logs
-*.log
-logs/
+# Binary/data files
+*.bin
+*.json
 
-# Dependencies
+# Environment and cache
+.env
+.env.local
+.env.*
 .openeyes/
 
+# Test results
+test_results/
 ```

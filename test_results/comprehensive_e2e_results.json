@@ -4,7 +4,7 @@
     "total_answers": 241,
     "total_halts": 1,
     "overall_answer_rate": 99.58677685950413,
-    "execution_time_seconds": 76.81789588928223,
+    "execution_time_seconds": 75.99409770965576,
     "fragment_counts": {
       "healthcare": 0,
       "economy": 0,
@@ -54,8 +54,8 @@
         {
           "query": "Is metformin effective for type 2 diabetes?",
           "status": "ANSWER_LOW_CONFIDENCE",
-          "confidence": 77.99,
-          "answer_length": 2660
+          "confidence": 67.19,
+          "answer_length": 3294
         },
         {
           "query": "What are side effects of statins?",
@@ -508,7 +508,7 @@
           "query": "How does minimum wage affect employment?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 3007
+          "answer_length": 1915
         },
         {
           "query": "What is income inequality?",
@@ -532,7 +532,7 @@
           "query": "How does education affect economic growth?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 947
+          "answer_length": 2393
         },
         {
           "query": "What is productivity?",
@@ -556,7 +556,7 @@
           "query": "How does automation affect jobs?",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 434
+          "answer_length": 1948
         },
         {
           "query": "What is the gig economy?",
@@ -1054,7 +1054,7 @@
           "query": "How does internal rate of return work?",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 1214
+          "answer_length": 2190
         },
         {
           "query": "What is beta in investing?",
@@ -1078,7 +1078,7 @@
           "query": "How does Modern Portfolio Theory work?",
           "status": "ANSWER",
           "confidence": 78.03,
-          "answer_length": 698
+          "answer_length": 2440
         },
         {
           "query": "What is efficient frontier?",
@@ -1102,7 +1102,7 @@
           "query": "How do ETFs work?",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 1173
+          "answer_length": 1264
         },
         {
           "query": "What is expense ratio?",
@@ -1150,7 +1150,7 @@
           "query": "How does secondary offering work?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 1261
+          "answer_length": 2074
         },
         {
           "query": "What is stock split?",
