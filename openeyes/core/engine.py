@@ -8,12 +8,13 @@ from datetime import datetime
 from openeyes.config import audit_dir
 from openeyes.core.router import route_domain
 from openeyes.knowledge.fragments import Fragment
-from openeyes.pipeline.retriever import UnifiedRetriever
-from openeyes.knowledge.live_fetch import normalize_query
-from openeyes.pipeline.processor import (
+from openeyes.knowledge.live_fetch import fetch_live_fragments, jit_synthesize_fragments, normalize_query
+from openeyes.knowledge.retrieval import retrieve_records
+from openeyes.knowledge.graceful_degradation import (
     classify_intent,
     process_query_with_degradation,
     check_safety_halt,
+    GradedResponse,
 )
 from openeyes.monte_carlo.engine import MonteCarloEngine
 from openeyes.storage.memory import ingest_case, retrieve_similar
@@ -114,7 +115,6 @@ class OpenEyesEngine:
         self.mc = MonteCarloEngine()
         self.vault_path = vault_path or audit_dir()
         self.memory_path = self.vault_path / "memory.bin"
-        self.retriever = UnifiedRetriever()
 
     def _fragments_for(self, query: str, domain: str) -> list[Fragment]:
         # Use Akinator binary search to refine query before fetching
@@ -126,27 +126,13 @@ class OpenEyesEngine:
         
         normalized_query = normalize_query(query)
         intent = route_intent(normalized_query, domain)
-        # Fetch live fragments through unified retriever
-        result = self.retriever.retrieve(normalized_query, domain, max_results=search_mask.max_results)
-        fetched = []
-        for frag_dict in result.fragments:
-            # Convert dict back to Fragment object for compatibility
-            frag = Fragment(
-                claim=frag_dict.get('claim', ''),
-                evidence=frag_dict.get('evidence', ''),
-                limitations=[],
-                sub_questions=[],
-                source_url=frag_dict.get('source_url', ''),
-                domain=frag_dict.get('domain', domain),
-                content=frag_dict.get('claim', ''),
-                success_rate_ema=frag_dict.get('confidence_score', 0.7)
-            )
-            fetched.append(frag)
+        # Fetch live fragments through retriever contract
+        records = retrieve_records(normalized_query, domain, limit=search_mask.max_results)
+        fetched = [r.fragment for r in records]
         
         # If no fragments found, trigger JIT synthesis (Research Loop)
         if not fetched:
             _pipeline_log(f"[JIT Synthesizer] No fragments found, triggering auto-research...")
-            from openeyes.knowledge.live_fetch import jit_synthesize_fragments
             synthesized = jit_synthesize_fragments(normalized_query, domain, limit=5)
             if synthesized:
                 _pipeline_log(f"[JIT Synthesizer] Generated {len(synthesized)} synthetic fragments")
@@ -336,11 +322,7 @@ class OpenEyesEngine:
             
             # Override with graded response
             result["status"] = graded_result["status"]
-            # Handle both old dict format and new float format
-            if isinstance(graded_result.get("confidence"), dict):
-                result["confidence"] = graded_result["confidence"]["percent"] * 100
-            else:
-                result["confidence"] = graded_result.get("confidence", base_confidence) * 100
+            result["confidence"] = graded_result["confidence"]["percent"] * 100
             
             # Add disclaimers and resources to narrative
             if "important_notice" in graded_result:
