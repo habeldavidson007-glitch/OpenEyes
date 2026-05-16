@@ -1,9 +1,22 @@
 ```
-# Binary/compiled files
+# Binary and compiled files
 *.bin
 
-# Environment and cache
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment files
 .env
 .env.local
-.openeyes/vault/
+*.env.*
+
+# Coverage and test results
+coverage/
+htmlcov/
+.coverage
+test_results/
+
+# Original rules preserved
+*.log
 ```

@@ -4,7 +4,7 @@
     "total_answers": 241,
     "total_halts": 1,
     "overall_answer_rate": 99.58677685950413,
-    "execution_time_seconds": 73.85711765289307,
+    "execution_time_seconds": 74.68174004554749,
     "fragment_counts": {
       "healthcare": 0,
       "economy": 0,
@@ -54,8 +54,8 @@
         {
           "query": "Is metformin effective for type 2 diabetes?",
           "status": "ANSWER_LOW_CONFIDENCE",
-          "confidence": 77.99,
-          "answer_length": 2780
+          "confidence": 72.59,
+          "answer_length": 3272
         },
         {
           "query": "What are side effects of statins?",
@@ -139,7 +139,7 @@
           "query": "How do proton pump inhibitors work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.99,
-          "answer_length": 1936
+          "answer_length": 1302
         },
         {
           "query": "What causes gastroesophageal reflux disease?",
@@ -235,7 +235,7 @@
           "query": "How does radiation therapy target cancer cells?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.01,
-          "answer_length": 3828
+          "answer_length": 2034
         },
         {
           "query": "What are side effects of chemotherapy?",
@@ -436,7 +436,7 @@
           "query": "How does taxation affect economic growth?",
           "status": "ANSWER",
           "confidence": 77.95,
-          "answer_length": 1495
+          "answer_length": 1952
         },
         {
           "query": "What is the Laffer curve?",
@@ -508,7 +508,7 @@
           "query": "How does minimum wage affect employment?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 580
+          "answer_length": 1912
         },
         {
           "query": "What is income inequality?",
@@ -531,8 +531,8 @@
         {
           "query": "How does education affect economic growth?",
           "status": "ANSWER",
-          "confidence": 78.02,
-          "answer_length": 947
+          "confidence": 71.27,
+          "answer_length": 807
         },
         {
           "query": "What is productivity?",
@@ -556,7 +556,7 @@
           "query": "How does automation affect jobs?",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 771
+          "answer_length": 1948
         },
         {
           "query": "What is the gig economy?",
@@ -934,7 +934,7 @@
           "query": "How does compound interest work?",
           "status": "ANSWER",
           "confidence": 78.03,
-          "answer_length": 1549
+          "answer_length": 427
         },
         {
           "query": "What is risk tolerance?",
@@ -981,7 +981,7 @@
         {
           "query": "How are dividends taxed?",
           "status": "ANSWER",
-          "confidence": 72.54,
+          "confidence": 77.94,
           "answer_length": 920
         },
         {
@@ -1102,7 +1102,7 @@
           "query": "How do ETFs work?",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 1264
+          "answer_length": 1687
         },
         {
           "query": "What is expense ratio?",
@@ -1150,7 +1150,7 @@
           "query": "How does secondary offering work?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 1827
+          "answer_length": 2074
         },
         {
           "query": "What is stock split?",
