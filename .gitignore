@@ -1,26 +1,65 @@
 ```
-# Binary and compiled files
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py~
+*.pyc.swp
+*.pyo.swp
+*.pyd.swp
+*.py.swp
+*.py.bak
+*.py.tmp
+*.py~
+*.pyc~
+*.pyo~
+*.pyd~
+*.pyc.swp
+*.pyo.swp
+*.pyd.swp
+*.py.swp
+*.py.bak
+*.py.tmp
+*.py~
+*.pyc~
+*.pyo~
+*.pyd~
+*.pyc.swp
+*.pyo.swp
+*.pyd.swp
+*.py.swp
+*.py.bak
+*.py.tmp
+*.py~
+*.pyc~
+*.pyo~
+*.pyd~
+
+# Compiled and build artifacts
+*.o
+*.obj
+*.out
 *.bin
 
-# Logs and temporary files
+# Dependencies
+openeyes.egg-info/
+
+# Logs and temp files
 *.log
 *.tmp
+*.swp
+*.swo
 
-# Environment and cache
+# Environment
 .env
 .env.local
-.env.*
+*.env.*
 
-# Editors and IDE
+# Editors
 .vscode/
 .idea/
 
-# Coverage and testing
-.coverage
-coverage/
-htmlcov/
-
-# System files
-.DS_Store
-Thumbs.db
+# Test results
+test_results/
 ```
