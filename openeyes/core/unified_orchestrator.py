@@ -2,6 +2,7 @@
 Unified Knowledge Orchestrator for OpenEyes
 Consolidates local_retrieval, live_fetch, fragment_orchestrator, and graceful_degradation.
 Implements cascading retrieval (Local -> Cache -> Live) with Adaptive Confidence Calibration.
+Uses real database and API clients instead of mocks.
 """
 
 import time
@@ -10,10 +11,10 @@ from typing import List, Dict, Any, Optional, Tuple
 from dataclasses import dataclass, field
 from enum import Enum
 
-# Mocking imports for existing modules that would be consolidated
-# from .local_retrieval import LocalRetriever
-# from .live_fetch import LiveFetcher
-# from .fragment_orchestrator import FragmentOrchestrator
+# Real implementations
+from .database_client import get_database, KnowledgeDatabase
+from .api_client import get_api_client, LiveAPIClient, APIProvider
+from .quality_assessor import get_assessor, KnowledgeQualityAssessor, CredibilityLevel
 
 logger = logging.getLogger(__name__)
 
@@ -137,12 +138,12 @@ class CrossDomainFusionEngine:
         return f"Cross-Domain Analysis for '{query}':\n" + "\n".join(synthesis_parts)
 
 class UnifiedKnowledgeOrchestrator:
-    def __init__(self):
+    def __init__(self, db_path: str = None, api_keys: Dict[str, str] = None):
+        self.db = get_database(db_path)
+        self.api_client = get_api_client(api_keys)
+        self.assessor = get_assessor()
         self.calibrator = AdaptiveConfidenceCalibrator()
         self.fusion_engine = CrossDomainFusionEngine()
-        # In real implementation, these would be initialized clients
-        # self.local_retriever = LocalRetriever()
-        # self.live_fetcher = LiveFetcher()
         
     def retrieve_knowledge(self, query: str, domain_hint: Optional[str] = None) -> OrchestratorResult:
         start_time = time.time()
@@ -155,34 +156,87 @@ class UnifiedKnowledgeOrchestrator:
         strategy_used = "LOCAL_ONLY"
         
         # 2. Cascading Retrieval Strategy
-        # Tier 1: Local High Confidence
-        for domain in target_domains:
-            # Simulating local retrieval
-            local_frags = self._mock_local_retrieve(query, domain)
-            if local_frags:
-                all_fragments.extend(local_frags)
+        # Tier 1: Check Cache First
+        cached_result = self.db.get_cached_result(query)
+        if cached_result and cached_result.get('fragments'):
+            logger.info(f"Cache hit for '{query}'")
+            for frag_data in cached_result['fragments']:
+                all_fragments.append(KnowledgeFragment(
+                    content=frag_data['content'],
+                    source_url=frag_data['source_url'],
+                    confidence_score=frag_data['confidence_score'],
+                    tier=SourceTier[frag_data['tier']],
+                    domain=frag_data['domain'],
+                    timestamp=frag_data.get('timestamp', time.time()),
+                    metadata=frag_data.get('metadata', {})
+                ))
+            strategy_used = "CACHE_HIT"
         
-        if all_fragments:
-            strategy_used = "LOCAL_CACHED"
-        else:
-            # Tier 2: Live Fetch Fallback
+        # Tier 2: Local Database Retrieval
+        if not all_fragments:
+            for domain in target_domains:
+                db_frags = self.db.retrieve_fragments(query, domain, min_confidence=0.7, limit=5)
+                if db_frags:
+                    for frag_data in db_frags:
+                        all_fragments.append(KnowledgeFragment(
+                            content=frag_data['content'],
+                            source_url=frag_data['source_url'],
+                            confidence_score=frag_data['confidence_score'],
+                            tier=SourceTier.LOCAL_HIGH_CONFIDENCE if frag_data.get('credibility_level') == 'HIGH' else SourceTier.LOCAL_VERIFIED,
+                            domain=frag_data['domain'],
+                            timestamp=frag_data.get('timestamp', time.time()),
+                            metadata=frag_data.get('metadata', {})
+                        ))
+            
+            if all_fragments:
+                strategy_used = "LOCAL_DB"
+        
+        # Tier 3: Live Fetch Fallback
+        if not all_fragments:
             logger.info(f"Local cache miss for '{query}', initiating Live Fetch...")
             strategy_used = "LIVE_FETCH"
             for domain in target_domains:
-                live_frags = self._mock_live_fetch(query, domain)
-                if live_frags:
-                    all_fragments.extend(live_frags)
-        
-        if not all_fragments:
-            # Tier 3: Graceful Degradation / Fallback
-            strategy_used = "FALLBACK_ESTIMATE"
-            all_fragments.append(KnowledgeFragment(
-                content="Based on general knowledge patterns, no specific verified data was found for this query.",
-                source_url="internal://fallback",
-                confidence_score=0.5,
-                tier=SourceTier.FALLBACK_ESTIMATE,
-                domain=target_domains[0]
-            ))
+                api_response = self.api_client.fetch_knowledge(query, domain)
+                if api_response.success and api_response.data:
+                    # Assess credibility of the source
+                    cred_report = self.assessor.assess_source_credibility(api_response.source_url)
+                    
+                    # Determine tier based on credibility
+                    if cred_report.credibility_level == CredibilityLevel.HIGH:
+                        tier = SourceTier.LOCAL_HIGH_CONFIDENCE
+                    elif cred_report.credibility_level == CredibilityLevel.MEDIUM:
+                        tier = SourceTier.LOCAL_VERIFIED
+                    else:
+                        tier = SourceTier.LIVE_FETCH
+                    
+                    fragment = KnowledgeFragment(
+                        content=str(api_response.data),
+                        source_url=api_response.source_url,
+                        confidence_score=0.85 if api_response.success else 0.5,
+                        tier=tier,
+                        domain=domain,
+                        metadata={'provider': api_response.provider.value}
+                    )
+                    all_fragments.append(fragment)
+                    
+                    # Store in database for future use
+                    self.db.store_fragment(
+                        content=fragment.content,
+                        source_url=fragment.source_url,
+                        confidence_score=fragment.confidence_score,
+                        tier=tier.name,
+                        domain=domain,
+                        metadata=fragment.metadata,
+                        credibility_level=cred_report.credibility_level.value
+                    )
+                    
+                    # Update source credibility in DB
+                    self.db.update_source_credibility(
+                        source_url=api_response.source_url,
+                        credibility_level=cred_report.credibility_level.value,
+                        score=cred_report.score,
+                        factors=cred_report.factors
+                    )
 
         # 3. Calculate Adaptive Confidence
         final_confidence = 0.0
@@ -207,7 +261,28 @@ class UnifiedKnowledgeOrchestrator:
             final_answer = " ".join([f.content for f in all_fragments]) if all_fragments else "No data available."
 
         execution_time = (time.time() - start_time) * 1000
+
+        # Cache the result for future queries
+        if all_fragments:
+            self.db.cache_result(query, {
+                'fragments': [{
+                    'content': f.content,
+                    'source_url': f.source_url,
+                    'confidence_score': f.confidence_score,
+                    'tier': f.tier.name,
+                    'domain': f.domain,
+                    'timestamp': f.timestamp,
+                    'metadata': f.metadata
+                } for f in all_fragments],
+                'answer': final_answer,
+                'confidence': final_confidence
+            }, target_domains[0] if target_domains else "General")
         
+        # Record metrics
+        self.db.record_metric('query_latency', target_domains[0] if target_domains else "General", execution_time)
+        for domain in target_domains:
+            self.assessor.record_domain_usage(domain)
+
         return OrchestratorResult(
             answer=final_answer,
             confidence=final_confidence,
@@ -217,45 +292,23 @@ class UnifiedKnowledgeOrchestrator:
             cross_domain_fusion=is_cross_domain
         )
 
-    def _mock_local_retrieve(self, query: str, domain: str) -> List[KnowledgeFragment]:
-        # Simulate finding high confidence local data for demo
-        if "error" in query.lower():
-            return []
-        return [
-            KnowledgeFragment(
-                content=f"Verified local data for {domain}: {query}",
-                source_url=f"file://local/{domain}/data_001.json",
-                confidence_score=0.95,
-                tier=SourceTier.LOCAL_HIGH_CONFIDENCE,
-                domain=domain
-            )
-        ]
+    def submit_feedback(self, query_id: str, domain: str, was_accurate: bool, 
+                        user_rating: int = None, comments: str = None):
+        """Submit user feedback for adaptive learning."""
+        self.db.store_feedback(query_id, domain, was_accurate, user_rating, comments)
+        self.calibrator.record_feedback(domain, was_accurate)
 
-    def _mock_live_fetch(self, query: str, domain: str) -> List[KnowledgeFragment]:
-        # Simulate live fetch
-        return [
-            KnowledgeFragment(
-                content=f"Live fetched data for {domain}: {query}",
-                source_url=f"https://api.example.com/{domain}/latest",
-                confidence_score=0.85,
-                tier=SourceTier.LIVE_FETCH,
-                domain=domain
-            )
-        ]
-    
     def get_metrics(self) -> Dict[str, Any]:
-        """Get orchestrator performance metrics."""
-        return {
-            'queries_processed': 0,
-            'avg_latency_ms': 0.0,
-            'cache_hit_rate': 0.0,
-        }
+        """Get orchestrator performance metrics from database."""
+        return self.db.get_metrics_summary(hours=24)
 
 
 # Singleton instance
-orchestrator = UnifiedKnowledgeOrchestrator()
+_orchestrator_instance: Optional[UnifiedKnowledgeOrchestrator] = None
 
-
-def get_orchestrator() -> UnifiedKnowledgeOrchestrator:
-    """Get the unified orchestrator singleton."""
-    return orchestrator
+def get_orchestrator(db_path: str = None, api_keys: Dict[str, str] = None) -> UnifiedKnowledgeOrchestrator:
+    """Get or create the unified orchestrator singleton."""
+    global _orchestrator_instance
+    if _orchestrator_instance is None:
+        _orchestrator_instance = UnifiedKnowledgeOrchestrator(db_path, api_keys)
+    return _orchestrator_instance

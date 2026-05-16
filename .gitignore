@@ -1,5 +1,6 @@
-# Migration and archive related
-archive/
+```
+# Database files
+*.db
 
 # Python specific
 __pycache__/
@@ -7,55 +8,65 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-*.so
-*.egg-info/
-.eggs/
-
-# Testing
-.openeyes/tests/.pytest_cache/
-.coverage
-htmlcov/
-coverage/
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
+env/
+venv/
+.venv/
+.ENV
+.ENV.*
+.venv.bak/
+venv.bak/
 
 # Logs
 *.log
 
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+*.cover
+
 # Distribution / packaging
-.dist/
-*.tar.gz
-*.whl
+dist/
+build/
+*.egg-info/
+.installed.cfg
 *.egg
+
+# Testing
+.pytest_cache/
+.mypy_cache/
 
 # Environment variables
 .env
 .env.local
 *.env.*
 
-# OS generated files
-.DS_Store
-Thumbs.db
-desktop.ini
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*$pyc.class
 
-# Build artifacts
-build/
-dist/
-*.out
-*.exe
-*.dll
-*.so
-*.a
-*.obj
+# Git
+.git/
 
-# Dependencies
-.venv/
-venv/
-.mypy_cache/
-.gradle/
-target/
+# Temporary files
+*.tmp
+*.temp
+*~
+```

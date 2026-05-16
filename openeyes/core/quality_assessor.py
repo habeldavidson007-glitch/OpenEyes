@@ -203,3 +203,7 @@ class KnowledgeQualityAssessor:
 
 # Singleton instance
 assessor = KnowledgeQualityAssessor()
+
+def get_assessor() -> KnowledgeQualityAssessor:
+    """Get the quality assessor singleton."""
+    return assessor
