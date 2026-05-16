@@ -15,5 +15,7 @@
   "source_url": "https://ofac.treasury.gov/",
   "credibility_class": "government_agency",
   "year": 2024,
-  "weight": 0.96
+  "weight": 0.96,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "ofac.treasury.gov"
 }

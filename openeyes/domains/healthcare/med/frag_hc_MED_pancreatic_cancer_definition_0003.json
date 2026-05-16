@@ -20,5 +20,7 @@
   "reasoning_role": "latest_data",
   "source_type": "peer_reviewed_research",
   "year": 2025,
-  "sub_question": "What are the latest advances in early detection?"
+  "sub_question": "What are the latest advances in early detection?",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.nature.com"
 }

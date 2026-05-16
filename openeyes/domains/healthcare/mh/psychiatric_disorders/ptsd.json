@@ -7,7 +7,12 @@
     {
       "role": "definition",
       "content": "Post-Traumatic Stress Disorder (PTSD) develops following exposure to actual/threatened death, serious injury, or sexual violence through direct experience, witnessing, learning about a close other's trauma, or repeated extreme exposure to aversive details (e.g., first responders). Core symptom clusters: intrusion (recollections, nightmares, flashbacks, distress to cues), avoidance (trauma-related thoughts/feelings/external reminders), negative alterations in cognition/mood (amnesia, negative beliefs, blame, negative affect, detachment, anhedonia), and arousal/reactivity (irritability, recklessness, hypervigilance, startle, concentration problems, sleep disturbance). Symptoms persist >1 month causing impairment. Lifetime prevalence ~6-9%, higher in women.",
-      "tags": ["PTSD", "trauma", "intrusion", "avoidance"],
+      "tags": [
+        "PTSD",
+        "trauma",
+        "intrusion",
+        "avoidance"
+      ],
       "source": "https://www.nimh.nih.gov/health/topics/post-traumatic-stress-disorder",
       "credibility_class": "A",
       "year": 2024
@@ -15,18 +20,34 @@
     {
       "role": "treatment_protocol",
       "content": "Trauma-focused psychotherapies are first-line: Prolonged Exposure (PE), Cognitive Processing Therapy (CPT), and EMDR (Eye Movement Desensitization and Reprocessing) show strongest evidence. These address traumatic memories directly through exposure/cognitive restructuring. Pharmacotherapy: SSRIs (sertraline, paroxetine FDA-approved; fluoxetine also used) and SNRI (venlafaxine) are first-line medications. Prazosin may help trauma-related nightmares. Benzodiazepines are not recommended (may interfere with extinction learning). Treatment typically continues 6-12 months after response. Early intervention within days of trauma is not recommended; watchful waiting for acute stress symptoms is preferred.",
-      "tags": ["trauma-focused-therapy", "EMDR", "prolonged-exposure", "SSRI", "prazosin"],
+      "tags": [
+        "trauma-focused-therapy",
+        "EMDR",
+        "prolonged-exposure",
+        "SSRI",
+        "prazosin"
+      ],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "diagnostic_criteria",
-      "content": "DSM-5-TR PTSD criteria: Exposure to trauma (Criterion A). Intrusion symptoms (≥1): involuntary memories, nightmares, flashbacks, psychological/physiological distress to cues. Avoidance (≥1): trauma-related thoughts/feelings or external reminders. Negative cognitions/mood (≥2): amnesia, negative beliefs, distorted blame, persistent negative emotions, diminished interest, detachment, inability to experience positive emotions. Arousal/reactivity (≥2): irritability/aggression, reckless behavior, hypervigilance, exaggerated startle, concentration problems, sleep disturbance. Duration >1 month, clinically significant distress/impairment, not attributable to substances/medical conditions. Specifiers: with dissociative symptoms (depersonalization/derealization), with delayed expression.",
-      "tags": ["DSM-5-TR", "diagnostic-criteria", "PTSD", "trauma"],
+      "content": "DSM-5-TR PTSD criteria: Exposure to trauma (Criterion A). Intrusion symptoms (\u22651): involuntary memories, nightmares, flashbacks, psychological/physiological distress to cues. Avoidance (\u22651): trauma-related thoughts/feelings or external reminders. Negative cognitions/mood (\u22652): amnesia, negative beliefs, distorted blame, persistent negative emotions, diminished interest, detachment, inability to experience positive emotions. Arousal/reactivity (\u22652): irritability/aggression, reckless behavior, hypervigilance, exaggerated startle, concentration problems, sleep disturbance. Duration >1 month, clinically significant distress/impairment, not attributable to substances/medical conditions. Specifiers: with dissociative symptoms (depersonalization/derealization), with delayed expression.",
+      "tags": [
+        "DSM-5-TR",
+        "diagnostic-criteria",
+        "PTSD",
+        "trauma"
+      ],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.722591",
+    "source_url_was_extracted": false
+  }
 }

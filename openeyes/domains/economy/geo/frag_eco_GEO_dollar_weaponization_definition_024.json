@@ -15,5 +15,7 @@
   "source_url": "https://www.credit-suisse.com/",
   "credibility_class": "investment_bank",
   "year": 2024,
-  "weight": 0.92
+  "weight": 0.92,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.credit-suisse.com"
 }

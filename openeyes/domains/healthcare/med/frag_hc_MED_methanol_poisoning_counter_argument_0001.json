@@ -20,5 +20,7 @@
     "frag_tox_methanol_poisoning_001"
   ],
   "incompatible_with": [],
-  "year": 2024
+  "year": 2024,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.who.int"
 }

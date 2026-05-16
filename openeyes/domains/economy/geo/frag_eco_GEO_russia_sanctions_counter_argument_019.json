@@ -15,5 +15,7 @@
   "source_url": "https://som.yale.edu/",
   "credibility_class": "academic_research",
   "year": 2024,
-  "weight": 0.91
+  "weight": 0.91,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "som.yale.edu"
 }

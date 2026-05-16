@@ -20,5 +20,7 @@
   ],
   "incompatible_with": [],
   "weight": 0.874,
-  "sector": "ENR"
+  "sector": "ENR",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.ecb.europa.eu"
 }

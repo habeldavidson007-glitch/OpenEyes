@@ -14,5 +14,7 @@
   "verified": true,
   "reasoning_role": "definition",
   "credibility_class": "government_agency",
-  "sector": "MAC"
+  "sector": "MAC",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.federalreserve.gov"
 }

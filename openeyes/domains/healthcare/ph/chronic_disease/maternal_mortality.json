@@ -7,23 +7,43 @@
     {
       "role": "definition",
       "content": "Maternal mortality is defined as death of a woman while pregnant or within 42 days of pregnancy termination, from any cause related to or aggravated by the pregnancy or its management. Maternal mortality ratio (MMR) measures deaths per 100,000 live births. Global MMR declined 34% from 2000-2020 but remains unacceptably high at 223/100,000, with wide disparities (Sub-Saharan Africa 545 vs high-income countries 12). US MMR increased to 23.8/100,000 in 2020, with stark racial disparities (Black women 55.3, White women 19.1). Leading causes globally: hemorrhage (27%), hypertensive disorders (14%), sepsis (11%), unsafe abortion (8%), embolism (3%). In high-income countries: cardiovascular conditions, cardiomyopathy, hemorrhage, mental health conditions including suicide and overdose. Preventable fraction estimated at 60-80%. Social determinants, structural racism, and healthcare access significantly influence outcomes.",
-      "tags": ["maternal_health", "mortality", "health_equity", "pregnancy"],
+      "tags": [
+        "maternal_health",
+        "mortality",
+        "health_equity",
+        "pregnancy"
+      ],
       "reasoning_role": "foundational_knowledge"
     },
     {
       "role": "treatment_protocol",
-      "content": "Maternal mortality reduction strategies: (1) Clinical interventions—active management of third stage of labor (oxytocin) preventing postpartum hemorrhage, magnesium sulfate for preeclampsia/eclampsia, antenatal corticosteroids for preterm birth, antibiotics for prelabor rupture of membranes; (2) Health system strengthening—skilled birth attendance, emergency obstetric care availability, blood transfusion services, referral systems, maternal death surveillance and response; (3) Policy approaches—Medicaid expansion improving insurance coverage, paid parental leave, doula/midwifery coverage, implicit bias training accountability; (4) Community interventions—community health workers, group prenatal care, home visiting programs, transportation assistance; (5) Postpartum care extension—continuous Medicaid coverage through 12 months postpartum, early postpartum visits, mental health screening; (6) Addressing disparities—community-based participatory approaches, diversifying workforce, addressing social needs. Maternal Mortality Review Committees identify prevention opportunities. Bundle approaches (AIM Initiative) standardize evidence-based practices.",
-      "tags": ["intervention", "policy", "health_equity", "quality_improvement"],
+      "content": "Maternal mortality reduction strategies: (1) Clinical interventions\u2014active management of third stage of labor (oxytocin) preventing postpartum hemorrhage, magnesium sulfate for preeclampsia/eclampsia, antenatal corticosteroids for preterm birth, antibiotics for prelabor rupture of membranes; (2) Health system strengthening\u2014skilled birth attendance, emergency obstetric care availability, blood transfusion services, referral systems, maternal death surveillance and response; (3) Policy approaches\u2014Medicaid expansion improving insurance coverage, paid parental leave, doula/midwifery coverage, implicit bias training accountability; (4) Community interventions\u2014community health workers, group prenatal care, home visiting programs, transportation assistance; (5) Postpartum care extension\u2014continuous Medicaid coverage through 12 months postpartum, early postpartum visits, mental health screening; (6) Addressing disparities\u2014community-based participatory approaches, diversifying workforce, addressing social needs. Maternal Mortality Review Committees identify prevention opportunities. Bundle approaches (AIM Initiative) standardize evidence-based practices.",
+      "tags": [
+        "intervention",
+        "policy",
+        "health_equity",
+        "quality_improvement"
+      ],
       "reasoning_role": "actionable_guidance"
     },
     {
       "role": "diagnostic_criteria",
-      "content": "Maternal mortality assessment includes: (1) Case identification—death certificate ICD-10 codes (O00-O99 pregnancy-related), linkage with birth certificates, pregnancy checkbox improvement; (2) Classification—pregnancy-associated (during or within year of pregnancy), pregnancy-related (caused by pregnancy complications), preventable (could be avoided with different care); (3) Surveillance systems—CDC Pregnancy Mortality Surveillance System, state Maternal Mortality Review Committees, WHO Maternal Death Surveillance and Response; (4) Near-miss monitoring—severe maternal morbidity indicators (blood transfusion, hysterectomy, ICU admission, cardiac arrest) as quality metrics; (5) Risk stratification—preconception risk assessment, social determinants screening, comorbidity indices. Limitations include underreporting, misclassification, varying definitions across jurisdictions, and small numbers limiting statistical analysis. Real-time surveillance emerging through electronic health records.",
-      "tags": ["surveillance", "measurement", "quality_assurance", "risk_stratification"],
+      "content": "Maternal mortality assessment includes: (1) Case identification\u2014death certificate ICD-10 codes (O00-O99 pregnancy-related), linkage with birth certificates, pregnancy checkbox improvement; (2) Classification\u2014pregnancy-associated (during or within year of pregnancy), pregnancy-related (caused by pregnancy complications), preventable (could be avoided with different care); (3) Surveillance systems\u2014CDC Pregnancy Mortality Surveillance System, state Maternal Mortality Review Committees, WHO Maternal Death Surveillance and Response; (4) Near-miss monitoring\u2014severe maternal morbidity indicators (blood transfusion, hysterectomy, ICU admission, cardiac arrest) as quality metrics; (5) Risk stratification\u2014preconception risk assessment, social determinants screening, comorbidity indices. Limitations include underreporting, misclassification, varying definitions across jurisdictions, and small numbers limiting statistical analysis. Real-time surveillance emerging through electronic health records.",
+      "tags": [
+        "surveillance",
+        "measurement",
+        "quality_assurance",
+        "risk_stratification"
+      ],
       "reasoning_role": "analytical_framework"
     }
   ],
   "source": "WHO Trends in Maternal Mortality, CDC Pregnancy Mortality Surveillance System, ACOG Committee Opinions, National Partnership for Women and Families",
   "credibility_class": "A",
-  "year": 2024
+  "year": 2024,
+  "source_url": "https://source/who_trends_in_maternal_mortality,_cdc_pregnancy_mortality_surveillance_system,_acog_committee_opinions,_national_partnership_for_women_and_families",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.878865",
+    "source_url_was_extracted": false
+  }
 }

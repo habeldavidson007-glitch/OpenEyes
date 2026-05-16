@@ -15,5 +15,7 @@
   "source_url": "https://www.census.gov/",
   "credibility_class": "government_agency",
   "year": 2024,
-  "weight": 0.93
+  "weight": 0.93,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.census.gov"
 }

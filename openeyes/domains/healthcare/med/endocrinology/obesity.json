@@ -7,8 +7,14 @@
       "sector": "MED",
       "topic": "Obesity",
       "role": "definition",
-      "tags": ["obesity", "BMI", "adiposity", "metabolic disease", "weight"],
-      "content": "Obesity is a chronic, relapsing, multifactorial disease characterized by abnormal or excessive fat accumulation that impairs health. BMI classification: normal 18.5-24.9 kg/m², overweight 25-29.9, obesity class I 30-34.9, class II 35-39.9, class III ≥40. BMI limitations: doesn't distinguish fat from muscle mass, doesn't assess fat distribution (visceral vs subcutaneous). Alternative measures: waist circumference (>102cm men, >88cm women indicates abdominal obesity), waist-to-hip ratio, body fat percentage (DEXA, bioimpedance). Pathophysiology involves complex interaction of genetic, epigenetic, behavioral, environmental, and socioeconomic factors. Adipose tissue functions as endocrine organ secreting adipokines (leptin, adiponectin). Obesity associated with increased risk of T2DM, CVD, certain cancers, osteoarthritis, sleep apnea, depression.",
+      "tags": [
+        "obesity",
+        "BMI",
+        "adiposity",
+        "metabolic disease",
+        "weight"
+      ],
+      "content": "Obesity is a chronic, relapsing, multifactorial disease characterized by abnormal or excessive fat accumulation that impairs health. BMI classification: normal 18.5-24.9 kg/m\u00b2, overweight 25-29.9, obesity class I 30-34.9, class II 35-39.9, class III \u226540. BMI limitations: doesn't distinguish fat from muscle mass, doesn't assess fat distribution (visceral vs subcutaneous). Alternative measures: waist circumference (>102cm men, >88cm women indicates abdominal obesity), waist-to-hip ratio, body fat percentage (DEXA, bioimpedance). Pathophysiology involves complex interaction of genetic, epigenetic, behavioral, environmental, and socioeconomic factors. Adipose tissue functions as endocrine organ secreting adipokines (leptin, adiponectin). Obesity associated with increased risk of T2DM, CVD, certain cancers, osteoarthritis, sleep apnea, depression.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985609/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
@@ -20,8 +26,14 @@
       "sector": "MED",
       "topic": "Obesity",
       "role": "treatment_protocol",
-      "tags": ["obesity", "weight loss", "GLP-1", "bariatric surgery", "lifestyle"],
-      "content": "Treatment approach based on BMI and comorbidities. Lifestyle intervention foundation: caloric deficit (500-750 kcal/day deficit produces 0.5-0.75 kg/week loss), reduced-calorie diet (Mediterranean, DASH, low-carbohydrate all effective), physical activity ≥150 min/week, behavioral strategies. Pharmacotherapy indicated for BMI ≥30 or ≥27 with comorbidities: GLP-1 receptor agonists (semaglutide 2.4mg weekly - STEP trials showed ~15% weight loss; liraglutide 3mg daily); dual GIP/GLP-1 agonist tirzepatide (~20% weight loss); phentermine/topiramate ER; naltrexone/bupropion; orlistat. Metabolic/bariatric surgery for BMI ≥40 or ≥35 with comorbidities: Roux-en-Y gastric bypass (~25-30% total weight loss), sleeve gastrectomy (~20-25%), biliopancreatic diversion (most effective but highest risk). Surgery improves/remits T2DM, reduces mortality. Long-term follow-up essential for nutritional deficiencies.",
+      "tags": [
+        "obesity",
+        "weight loss",
+        "GLP-1",
+        "bariatric surgery",
+        "lifestyle"
+      ],
+      "content": "Treatment approach based on BMI and comorbidities. Lifestyle intervention foundation: caloric deficit (500-750 kcal/day deficit produces 0.5-0.75 kg/week loss), reduced-calorie diet (Mediterranean, DASH, low-carbohydrate all effective), physical activity \u2265150 min/week, behavioral strategies. Pharmacotherapy indicated for BMI \u226530 or \u226527 with comorbidities: GLP-1 receptor agonists (semaglutide 2.4mg weekly - STEP trials showed ~15% weight loss; liraglutide 3mg daily); dual GIP/GLP-1 agonist tirzepatide (~20% weight loss); phentermine/topiramate ER; naltrexone/bupropion; orlistat. Metabolic/bariatric surgery for BMI \u226540 or \u226535 with comorbidities: Roux-en-Y gastric bypass (~25-30% total weight loss), sleeve gastrectomy (~20-25%), biliopancreatic diversion (most effective but highest risk). Surgery improves/remits T2DM, reduces mortality. Long-term follow-up essential for nutritional deficiencies.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506507/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
@@ -33,11 +45,22 @@
       "sector": "MED",
       "topic": "Obesity",
       "role": "diagnostic_criteria",
-      "tags": ["obesity", "BMI", "waist circumference", "body fat", "comorbidities"],
-      "content": "Diagnosis primarily clinical using BMI calculated as weight(kg)/height(m)². WHO classification: underweight <18.5, normal 18.5-24.9, overweight 25-29.9, obesity class I 30-34.9, class II 35-39.9, class III ≥40 kg/m². Asian populations have lower cutoffs (overweight ≥23, obesity ≥25) due to higher metabolic risk at lower BMI. Waist circumference adds risk stratification: elevated ≥102cm men/≥88cm women (lower for Asian: ≥90cm men/≥80cm women). Body composition assessment when BMI misleading (athletes, elderly): DEXA gold standard for body fat percentage (obesity defined as >25% men, >35% women). Evaluation should assess obesity-related comorbidities: fasting glucose/HbA1c, lipid panel, liver enzymes (NAFLD), blood pressure, sleep apnea screening, joint symptoms, depression screening. Identify secondary causes if atypical presentation: hypothyroidism, Cushing syndrome, medications (antipsychotics, antidepressants, steroids).",
+      "tags": [
+        "obesity",
+        "BMI",
+        "waist circumference",
+        "body fat",
+        "comorbidities"
+      ],
+      "content": "Diagnosis primarily clinical using BMI calculated as weight(kg)/height(m)\u00b2. WHO classification: underweight <18.5, normal 18.5-24.9, overweight 25-29.9, obesity class I 30-34.9, class II 35-39.9, class III \u226540 kg/m\u00b2. Asian populations have lower cutoffs (overweight \u226523, obesity \u226525) due to higher metabolic risk at lower BMI. Waist circumference adds risk stratification: elevated \u2265102cm men/\u226588cm women (lower for Asian: \u226590cm men/\u226580cm women). Body composition assessment when BMI misleading (athletes, elderly): DEXA gold standard for body fat percentage (obesity defined as >25% men, >35% women). Evaluation should assess obesity-related comorbidities: fasting glucose/HbA1c, lipid panel, liver enzymes (NAFLD), blood pressure, sleep apnea screening, joint symptoms, depression screening. Identify secondary causes if atypical presentation: hypothyroidism, Cushing syndrome, medications (antipsychotics, antidepressants, steroids).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985609/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.801796",
+    "source_url_was_extracted": false
+  }
 }

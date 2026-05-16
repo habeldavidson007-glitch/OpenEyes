@@ -12,5 +12,7 @@
   "tags": [
     "phr"
   ],
-  "_original_credibility_class": "A"
+  "_original_credibility_class": "A",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "pubmed.ncbi.nlm.nih.gov"
 }

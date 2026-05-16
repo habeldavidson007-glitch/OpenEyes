@@ -2,7 +2,13 @@
   "domain": "healthcare",
   "subdomain": "PHR",
   "sector": "PHR",
-  "tags": ["drug safety", "pharmacovigilance", "FDA", "black box warning", "labeling"],
+  "tags": [
+    "drug safety",
+    "pharmacovigilance",
+    "FDA",
+    "black box warning",
+    "labeling"
+  ],
   "fragments": [
     {
       "role": "definition",
@@ -25,5 +31,10 @@
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.661022",
+    "source_url_was_extracted": false
+  }
 }

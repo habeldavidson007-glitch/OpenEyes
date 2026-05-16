@@ -18,5 +18,7 @@
     "election"
   ],
   "content": "Fragment frag_gov_sec_electionsecurity_analytical_144",
-  "source": "Unknown"
+  "source": "Unknown",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.un.org"
 }

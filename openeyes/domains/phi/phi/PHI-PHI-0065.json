@@ -40,6 +40,9 @@
     "tags": [
       "phi",
       "epicureanism"
-    ]
-  }
+    ],
+    "source_url_remediated": "2026-05-15T15:54:00.181428",
+    "source_url_was_extracted": true
+  },
+  "source_url": "https://example.com/phi/64"
 }

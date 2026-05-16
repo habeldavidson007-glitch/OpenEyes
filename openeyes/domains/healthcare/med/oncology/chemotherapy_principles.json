@@ -5,16 +5,28 @@
   "fragments": [
     {
       "id": "hc_med_onc_cp_def_001",
-      "tags": ["oncology", "chemotherapy", "cell cycle", "mechanism of action", "cytotoxic agents"],
+      "tags": [
+        "oncology",
+        "chemotherapy",
+        "cell cycle",
+        "mechanism of action",
+        "cytotoxic agents"
+      ],
       "reasoning_role": "definition",
-      "content": "Chemotherapy refers to cytotoxic drugs that kill rapidly dividing cells by interfering with cell division. Cell cycle phases: G0 (resting), G1 (growth), S (DNA synthesis), G2 (preparation), M (mitosis). Chemotherapy classes by mechanism: alkylating agents (cyclophosphamide, cisplatin) cross-link DNA, cell cycle non-specific; antimetabolites (5-FU, methotrexate, gemcitabine) mimic nucleotides, S-phase specific; antitumor antibiotics (doxorubicin, bleomycin) intercalate DNA or generate free radicals; plant alkaloids (vincristine, paclitaxel) disrupt microtubules, M-phase specific; topoisomerase inhibitors (etoposide, irinotecan) prevent DNA unwinding. Combination chemotherapy uses drugs with different mechanisms and non-overlapping toxicities to maximize tumor kill while minimizing resistance. Dose intensity (mg/m²/week) correlates with outcomes in many cancers.",
+      "content": "Chemotherapy refers to cytotoxic drugs that kill rapidly dividing cells by interfering with cell division. Cell cycle phases: G0 (resting), G1 (growth), S (DNA synthesis), G2 (preparation), M (mitosis). Chemotherapy classes by mechanism: alkylating agents (cyclophosphamide, cisplatin) cross-link DNA, cell cycle non-specific; antimetabolites (5-FU, methotrexate, gemcitabine) mimic nucleotides, S-phase specific; antitumor antibiotics (doxorubicin, bleomycin) intercalate DNA or generate free radicals; plant alkaloids (vincristine, paclitaxel) disrupt microtubules, M-phase specific; topoisomerase inhibitors (etoposide, irinotecan) prevent DNA unwinding. Combination chemotherapy uses drugs with different mechanisms and non-overlapping toxicities to maximize tumor kill while minimizing resistance. Dose intensity (mg/m\u00b2/week) correlates with outcomes in many cancers.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/34567890/",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_cp_treat_001",
-      "tags": ["oncology", "chemotherapy", "dosing", "toxicity management", "supportive care"],
+      "tags": [
+        "oncology",
+        "chemotherapy",
+        "dosing",
+        "toxicity management",
+        "supportive care"
+      ],
       "reasoning_role": "treatment_protocol",
       "content": "Chemotherapy administration follows evidence-based protocols. Dosing calculated by body surface area (BSA) or weight; renal/hepatic adjustment required for many agents. Cycles typically every 1-3 weeks allowing bone marrow recovery. Common regimens: FOLFOX (colon cancer), AC-T (breast cancer), CHOP (lymphoma), BEP (testicular cancer). Pre-medications prevent reactions: dexamethasone, ondansetron, aprepitant for nausea; diphenhydramine for hypersensitivity. Growth factor support (G-CSF) reduces neutropenia risk when febrile neutropenia risk >20%. Dose modifications: reduce 20-25% for grade 3-4 toxicity; delay until counts recover (ANC >1500, platelets >100,000). Toxicity management: antiemetics per emetogenic risk; mucosal care for stomatitis; loperamide for diarrhea; erythropoietin for anemia (controversial). Tumor lysis syndrome prophylaxis with allopurinol/rasburicase for high-burden hematologic malignancies.",
       "source": "https://www.nccn.org/guidelines",
@@ -23,12 +35,23 @@
     },
     {
       "id": "hc_med_onc_cp_diag_001",
-      "tags": ["oncology", "chemotherapy", "toxicity grading", "monitoring", "response assessment"],
+      "tags": [
+        "oncology",
+        "chemotherapy",
+        "toxicity grading",
+        "monitoring",
+        "response assessment"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Chemotherapy toxicity monitored using CTCAE (Common Terminology Criteria for Adverse Events) grading 1-5. Hematologic: neutropenia (ANC <1500), febrile neutropenia (fever + ANC <500), thrombocytopenia (platelets <100,000), anemia (Hgb <10). Non-hematologic: neuropathy (sensory/motor), cardiotoxicity (anthracyclines - monitor LVEF), nephrotoxicity (cisplatin - monitor creatinine), hepatotoxicity (elevated transaminases), pulmonary toxicity (bleomycin), ototoxicity (cisplatin). Baseline assessment before each cycle: CBC with differential, comprehensive metabolic panel, performance status. Response assessment: RECIST criteria for solid tumors (complete response, partial response ≥30% decrease, stable disease, progressive disease ≥20% increase); PET response criteria for lymphoma. Long-term monitoring: secondary malignancies (AML/MDS after alkylators), infertility, cardiac dysfunction, cognitive changes ('chemo brain').",
+      "content": "Chemotherapy toxicity monitored using CTCAE (Common Terminology Criteria for Adverse Events) grading 1-5. Hematologic: neutropenia (ANC <1500), febrile neutropenia (fever + ANC <500), thrombocytopenia (platelets <100,000), anemia (Hgb <10). Non-hematologic: neuropathy (sensory/motor), cardiotoxicity (anthracyclines - monitor LVEF), nephrotoxicity (cisplatin - monitor creatinine), hepatotoxicity (elevated transaminases), pulmonary toxicity (bleomycin), ototoxicity (cisplatin). Baseline assessment before each cycle: CBC with differential, comprehensive metabolic panel, performance status. Response assessment: RECIST criteria for solid tumors (complete response, partial response \u226530% decrease, stable disease, progressive disease \u226520% increase); PET response criteria for lymphoma. Long-term monitoring: secondary malignancies (AML/MDS after alkylators), infertility, cardiac dysfunction, cognitive changes ('chemo brain').",
       "source": "https://ctep.cancer.gov/protocoldevelopment/electronic_applications/ctc.htm",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.824110",
+    "source_url_was_extracted": false
+  }
 }

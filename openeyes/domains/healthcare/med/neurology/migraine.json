@@ -5,9 +5,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["migraine", "headache", "trigeminal", "aura", "CGRP"],
+      "tags": [
+        "migraine",
+        "headache",
+        "trigeminal",
+        "aura",
+        "CGRP"
+      ],
       "reasoning_role": "definition",
-      "content": "Migraine is a primary headache disorder affecting ~12% of population, more common in women (3:1). Characterized by recurrent moderate-severe headaches (4-72 hours), typically unilateral, pulsating, aggravated by activity, with nausea/vomiting and/or photophobia/phonophobia. Migraine with aura (25-30%): reversible focal neurological symptoms preceding headache, most commonly visual (scintillating scotoma, zigzag lines, fortification spectra), also sensory, speech, motor, brainstem, or retinal. Pathophysiology involves trigeminovascular system activation, cortical spreading depression (CSD) underlying aura, CGRP release causing vasodilation and neurogenic inflammation, and central sensitization. Triggers include stress, hormonal changes, sleep disruption, certain foods, weather changes. Chronic migraine: ≥15 headache days/month for >3 months, ≥8 with migraine features. Medication overuse headache develops from frequent acute medication use (>10-15 days/month depending on agent).",
+      "content": "Migraine is a primary headache disorder affecting ~12% of population, more common in women (3:1). Characterized by recurrent moderate-severe headaches (4-72 hours), typically unilateral, pulsating, aggravated by activity, with nausea/vomiting and/or photophobia/phonophobia. Migraine with aura (25-30%): reversible focal neurological symptoms preceding headache, most commonly visual (scintillating scotoma, zigzag lines, fortification spectra), also sensory, speech, motor, brainstem, or retinal. Pathophysiology involves trigeminovascular system activation, cortical spreading depression (CSD) underlying aura, CGRP release causing vasodilation and neurogenic inflammation, and central sensitization. Triggers include stress, hormonal changes, sleep disruption, certain foods, weather changes. Chronic migraine: \u226515 headache days/month for >3 months, \u22658 with migraine features. Medication overuse headache develops from frequent acute medication use (>10-15 days/month depending on agent).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
       "credibility_class": "A",
       "year": 2024
@@ -17,9 +23,16 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["migraine", "triptan", "CGRP", "acute-treatment", "prevention", "treatment-protocol"],
+      "tags": [
+        "migraine",
+        "triptan",
+        "CGRP",
+        "acute-treatment",
+        "prevention",
+        "treatment-protocol"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "Migraine treatment分为 acute and preventive strategies. Acute treatment (take early in attack): (1) Mild-moderate: NSAIDs (ibuprofen, naproxen, diclofenac), acetaminophen, combination analgesics (acetaminophen/aspirin/caffeine). (2) Moderate-severe or NSAID-refractory: triptans (sumatriptan, rizatriptan, eletriptan, etc.)—5-HT1B/1D agonists causing vasoconstriction and inhibiting CGRP release; contraindicated in cardiovascular disease. Newer options: gepants (ubrogepant, rimegepant—oral CGRP antagonists, no vasoconstriction), ditans (lasmiditan—5-HT1F agonist, no vasoconstriction but causes sedation, 8-hour driving restriction). Antiemetics (metoclopramide, prochlorperazine) for nausea and as adjunct analgesics. Preventive treatment indicated for ≥4 migraine days/month, significant disability, or medication overuse: (1) Oral preventives: beta-blockers (propranolol, metoprolol), topiramate (weight loss, cognitive side effects), valproate (teratogenic), amitriptyline, venlafaxine. (2) CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab, eptinezumab)—monthly/quarterly injections, well-tolerated, specific for migraine. (3) OnabotulinumtoxinA for chronic migraine only (PREEMPT protocol). (4) Gepants for prevention: atogepant (daily), rimegepant (every other day). Non-pharmacologic: lifestyle modification, trigger management, biofeedback, CBT, neuromodulation devices.",
+      "content": "Migraine treatment\u5206\u4e3a acute and preventive strategies. Acute treatment (take early in attack): (1) Mild-moderate: NSAIDs (ibuprofen, naproxen, diclofenac), acetaminophen, combination analgesics (acetaminophen/aspirin/caffeine). (2) Moderate-severe or NSAID-refractory: triptans (sumatriptan, rizatriptan, eletriptan, etc.)\u20145-HT1B/1D agonists causing vasoconstriction and inhibiting CGRP release; contraindicated in cardiovascular disease. Newer options: gepants (ubrogepant, rimegepant\u2014oral CGRP antagonists, no vasoconstriction), ditans (lasmiditan\u20145-HT1F agonist, no vasoconstriction but causes sedation, 8-hour driving restriction). Antiemetics (metoclopramide, prochlorperazine) for nausea and as adjunct analgesics. Preventive treatment indicated for \u22654 migraine days/month, significant disability, or medication overuse: (1) Oral preventives: beta-blockers (propranolol, metoprolol), topiramate (weight loss, cognitive side effects), valproate (teratogenic), amitriptyline, venlafaxine. (2) CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab, eptinezumab)\u2014monthly/quarterly injections, well-tolerated, specific for migraine. (3) OnabotulinumtoxinA for chronic migraine only (PREEMPT protocol). (4) Gepants for prevention: atogepant (daily), rimegepant (every other day). Non-pharmacologic: lifestyle modification, trigger management, biofeedback, CBT, neuromodulation devices.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
       "credibility_class": "A",
       "year": 2024
@@ -29,12 +42,23 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["migraine", "diagnosis", "ICHD-3", "headache-classification", "red-flags"],
+      "tags": [
+        "migraine",
+        "diagnosis",
+        "ICHD-3",
+        "headache-classification",
+        "red-flags"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Migraine diagnosis uses ICHD-3 criteria (International Classification of Headache Disorders). Migraine without aura: ≥5 attacks lasting 4-72 hours with ≥2 of: unilateral location, pulsating quality, moderate-severe intensity, aggravation by routine activity; plus ≥1 of: nausea/vomiting, photophobia AND phonophobia. Migraine with aura: ≥2 attacks with fully reversible aura symptoms (visual, sensory, speech/language, motor, brainstem, retinal); at least 3 of: gradual spread ≥5 minutes, individual symptom duration 5-60 minutes, ≥1 unilateral symptom, positive symptoms, headache follows within 60 minutes. Diagnosis is clinical; neuroimaging not routinely needed if typical presentation and normal neurological exam. Red flags requiring imaging (SNOOP4): Systemic symptoms (fever, weight loss), Neurologic deficit (focal signs, altered consciousness), Onset sudden (thunderclap), Onset after age 50, Pattern change, Positional headache, Precipitated by Valsalva, Papilledema, Pregnancy/postpartum, Painful eye with autonomic features, Post-traumatic onset. Differential diagnosis: tension-type headache (bilateral, pressing, no nausea), cluster headache (severe unilateral orbital, autonomic features, shorter duration), secondary headaches (tumor, SAH, GCA, IIH, CSF leak, medication overuse).",
+      "content": "Migraine diagnosis uses ICHD-3 criteria (International Classification of Headache Disorders). Migraine without aura: \u22655 attacks lasting 4-72 hours with \u22652 of: unilateral location, pulsating quality, moderate-severe intensity, aggravation by routine activity; plus \u22651 of: nausea/vomiting, photophobia AND phonophobia. Migraine with aura: \u22652 attacks with fully reversible aura symptoms (visual, sensory, speech/language, motor, brainstem, retinal); at least 3 of: gradual spread \u22655 minutes, individual symptom duration 5-60 minutes, \u22651 unilateral symptom, positive symptoms, headache follows within 60 minutes. Diagnosis is clinical; neuroimaging not routinely needed if typical presentation and normal neurological exam. Red flags requiring imaging (SNOOP4): Systemic symptoms (fever, weight loss), Neurologic deficit (focal signs, altered consciousness), Onset sudden (thunderclap), Onset after age 50, Pattern change, Positional headache, Precipitated by Valsalva, Papilledema, Pregnancy/postpartum, Painful eye with autonomic features, Post-traumatic onset. Differential diagnosis: tension-type headache (bilateral, pressing, no nausea), cluster headache (severe unilateral orbital, autonomic features, shorter duration), secondary headaches (tumor, SAH, GCA, IIH, CSF leak, medication overuse).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30335648/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.839944",
+    "source_url_was_extracted": false
+  }
 }

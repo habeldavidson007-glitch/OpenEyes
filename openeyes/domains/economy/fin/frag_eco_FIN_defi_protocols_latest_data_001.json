@@ -18,5 +18,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 0.75,
-  "sector": "FIN"
+  "sector": "FIN",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "defillama.com"
 }

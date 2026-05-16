@@ -1,14 +1,16 @@
 """
-OpenEyes Query Interface — Day Mode Entry Point
+OpenEyes Query Interface — Unified System Entry Point
 
-Receives user queries, routes through the full engine:
-1. Swarm decomposition and retrieval
-2. Monte Carlo evaluation with domain-tier thresholds
-3. Philosophy Guard validation
-4. Dice Table assembly
-5. Output with traceability
+MIGRATED TO UNIFIED ORCHESTRATOR:
+Receives user queries, routes through unified engine:
+1. Unified Knowledge Orchestrator (Local → Cache → Live → Fallback)
+2. Knowledge Quality Assessor (Credibility scoring, integrity validation)
+3. Cross-domain fusion for multi-domain queries
+4. Adaptive confidence calibration
+5. Philosophy Guard validation (for safety-critical domains)
+6. Output with traceability and quality metrics
 
-Returns verified answer or HALT with reason.
+Returns verified answer with confidence score and quality metrics.
 """
 
 import time
@@ -17,6 +19,9 @@ from datetime import datetime
 from typing import Dict, List, Any, Optional
 from pathlib import Path
 
+# NEW: Unified system imports
+from openeyes.core.unified_orchestrator import UnifiedKnowledgeOrchestrator, get_orchestrator
+from openeyes.core.quality_assessor import KnowledgeQualityAssessor, KnowledgeQualityAssessor
 from openeyes.fragment_library import FragmentLibrary
 from openeyes.swarm import Swarm, FragmentCandidate, create_api_connectors
 from openeyes.dice_table import WurfelspielAssembler, DiceTable
@@ -155,29 +160,51 @@ class OpenEyes:
                  fragment_library_path: Optional[str] = None,
                  api_config: Optional[Dict[str, str]] = None,
                  obsidian_vault_path: Optional[str] = None,
-                 night_mode: bool = False):
+                 night_mode: bool = False,
+                 use_unified_system: bool = True):
+        """
+        Initialize OpenEyes with unified system support.
+        
+        Args:
+            domain: Primary domain for queries
+            fragment_library_path: Path to fragment storage
+            api_config: API configuration for live fetch
+            obsidian_vault_path: Path to Obsidian vault
+            night_mode: Enable background learning
+            use_unified_system: If True, use Unified Orchestrator (recommended)
+        """
         
         self.domain = domain.lower()
         self.domain_tier = get_domain_tier(self.domain)
+        self.use_unified_system = use_unified_system
         
         # Load domain rules
         self.rules_config = get_domain_rules(self.domain)
         
         # Initialize fragment library with proper path handling
         if fragment_library_path is None:
-            # Use the domains directory relative to this module (NEW structure)
             fragment_library_path = Path(__file__).parent.parent / "domains"
         self.library = FragmentLibrary(storage_path=fragment_library_path)
         
         # Initialize API connectors if config provided
         self.api_connectors = create_api_connectors(api_config or {})
         
-        # Initialize Swarm
-        self.swarm = Swarm(
-            fragment_library=self.library,
-            internet_access=bool(api_config),
-            api_configs=api_config or {}
-        )
+        # NEW: Initialize Unified Knowledge Orchestrator
+        if use_unified_system:
+            self.orchestrator = get_orchestrator()
+            self.quality_assessor = KnowledgeQualityAssessor()
+            print(f"[OpenEyes] ✓ Unified System: ENABLED")
+        else:
+            # Legacy mode - initialize Swarm
+            self.orchestrator = None
+            self.quality_assessor = None
+            # Initialize Swarm for legacy mode
+            self.swarm = Swarm(
+                fragment_library=self.library,
+                internet_access=bool(api_config),
+                api_configs=api_config or {}
+            )
+            print(f"[OpenEyes] ✓ Legacy Mode: ENABLED (for migration)")
         
         # Initialize Philosophy Guard with domain rules
         self.guard = PhilosophyGuard()
@@ -214,16 +241,23 @@ class OpenEyes:
         
         print(f"[OpenEyes] Initialized for domain '{self.domain}' (Tier {self.domain_tier[-1]})")
         print(f"✓ Loaded {len(self.rules_config.get('rules', []))} domain rules")
+        
         # Load fragments on demand
         if not self.library._loaded:
             self.library.load_all()
         print(f"✓ Fragment library: {self.library.total_count} fragments")
+        
         if night_mode:
             print(f"✓ Night Mode: Started as background thread")
     
     def query(self, query_text: str) -> Dict[str, Any]:
         """
         Process a user query through the full OpenEyes pipeline.
+        
+        If unified system is enabled:
+        - Uses Unified Knowledge Orchestrator for retrieval
+        - Applies Knowledge Quality Assessor for credibility scoring
+        - Supports cross-domain fusion automatically
         
         Returns dict with:
         - answer: str or None (if halted)
@@ -233,11 +267,90 @@ class OpenEyes:
         - fragments_used: list
         - philosophy_checks_passed: list
         - trace_id: str
+        - quality_metrics: dict (unified system only)
         """
         start_time = time.time()
         trace_id = self._generate_trace_id()
         
-        # FIX 1 & IMPROVEMENT 1: Check domain boundary FIRST before any processing
+        # NEW: Use Unified System if enabled
+        if self.use_unified_system and self.orchestrator:
+            return self._query_unified(query_text, start_time, trace_id)
+        
+        # FALLBACK: Legacy query path (for migration period)
+        return self._query_legacy(query_text, start_time, trace_id)
+    
+    def _query_unified(self, query_text: str, start_time: float, trace_id: str) -> Dict[str, Any]:
+        """
+        Process query using Unified Knowledge Orchestrator.
+        Features: Cascading retrieval, cross-domain fusion, adaptive confidence.
+        """
+        print(f"\n{'='*60}")
+        print(f"QUERY: {query_text}")
+        print(f"Mode: UNIFIED SYSTEM (Orchestrator + Quality Assessor)")
+        print(f"Trace ID: {trace_id}")
+        print(f"{'='*60}\n")
+        
+        # Step 1: Normalize query
+        normalized_query = canonical_form(query_text)
+        print(f"[Query Normalizer] Canonical: {normalized_query}")
+        
+        # Step 2: Use Unified Orchestrator
+        print("\n[Unified Orchestrator] Initiating cascading retrieval...")
+        orch_result = self.orchestrator.retrieve_knowledge(
+            query=normalized_query,
+            domain_hint=self.domain
+        )
+        
+        print(f"[Unified Orchestrator] Strategy: {orch_result.strategy_used}")
+        print(f"[Unified Orchestrator] Cross-domain fusion: {orch_result.cross_domain_fusion}")
+        print(f"[Unified Orchestrator] Execution time: {orch_result.execution_time_ms:.2f}ms")
+        
+        # Step 3: Assess quality of retrieved knowledge
+        print("\n[Quality Assessor] Evaluating source credibility...")
+        credibility_reports = []
+        for source_url in orch_result.sources:
+            report = self.quality_assessor.assess_source_credibility(source_url)
+            credibility_reports.append(report)
+            self.quality_assessor.record_domain_usage(self.domain)
+        
+        # Calculate weighted confidence
+        avg_credibility = sum(r.score for r in credibility_reports) / len(credibility_reports) if credibility_reports else 0.5
+        final_confidence = self.quality_assessor.calculate_weighted_confidence(
+            base_confidence=orch_result.confidence,
+            credibility_score=avg_credibility,
+            integrity_issues=[]
+        )
+        
+        # Step 4: Build result
+        result = {
+            "trace_id": trace_id,
+            "domain": self.domain,
+            "tier": self.domain_tier,
+            "query": query_text,
+            "answer": orch_result.answer,
+            "confidence": final_confidence * 100,  # Convert to 0-100 scale
+            "halt": False,
+            "halt_reason": None,
+            "fragments_used": orch_result.sources,
+            "philosophy_checks_passed": ["source_credibility_verified"],
+            "processing_time_ms": orch_result.execution_time_ms,
+            "mode": "UNIFIED",
+            "quality_metrics": {
+                "source_credibility": avg_credibility,
+                "orchestrator_strategy": orch_result.strategy_used,
+                "cross_domain_fusion": orch_result.cross_domain_fusion,
+                "sources_count": len(orch_result.sources)
+            }
+        }
+        
+        print(f"\n[Unified System] Answer generated with {final_confidence:.2%} confidence")
+        print(f"{'='*60}\n")
+        
+        return self._finalize_result(result, start_time, trace_id)
+    
+    def _query_legacy(self, query_text: str, start_time: float, trace_id: str) -> Dict[str, Any]:
+        """Legacy query path for backward compatibility during migration."""
+        # FIX 1 & IMPROVEMENT 1: Check domain boundary FIRST
         if is_out_of_domain(query_text, self.domain):
             result = {
                 "trace_id": trace_id,

@@ -26,5 +26,10 @@
     "Environmental sociology",
     "Globalization effects"
   ],
-  "generated_at": "2026-05-13T02:16:29.738484"
+  "generated_at": "2026-05-13T02:16:29.738484",
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:00.682916",
+    "source_url_was_extracted": false
+  }
 }

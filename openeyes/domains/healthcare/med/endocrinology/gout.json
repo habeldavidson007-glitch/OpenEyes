@@ -7,7 +7,13 @@
       "sector": "MED",
       "topic": "Gout",
       "role": "definition",
-      "tags": ["gout", "urate", "hyperuricemia", "crystal arthropathy", "inflammation"],
+      "tags": [
+        "gout",
+        "urate",
+        "hyperuricemia",
+        "crystal arthropathy",
+        "inflammation"
+      ],
       "content": "Gout is an inflammatory crystal arthropathy caused by deposition of monosodium urate crystals in joints and tissues due to chronic hyperuricemia (serum urate >6.8 mg/dL - saturation point). Hyperuricemia results from decreased renal excretion (90% of cases) or increased production. Risk factors: male sex, obesity, alcohol (especially beer), high-purine diet (red meat, seafood), fructose-sweetened beverages, medications (thiazides, loop diuretics, niacin, cyclosporine, tacrolimus), CKD, metabolic syndrome, genetic variants (URAT1, GLUT9). Clinical phases: asymptomatic hyperuricemia; acute gouty arthritis (sudden severe pain, swelling, erythema - classically first MTP joint 'podagra'); intercritical gout (asymptomatic between flares); chronic tophaceous gout (urate deposits in joints, bones, soft tissues, ears). Tophi pathognomonic but late finding. Gout associated with increased cardiovascular and renal disease risk.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985617/",
       "credibility_class": "peer_reviewed_guideline",
@@ -20,8 +26,15 @@
       "sector": "MED",
       "topic": "Gout",
       "role": "treatment_protocol",
-      "tags": ["gout", "colchicine", "NSAIDs", "allopurinol", "febuxostat", "urate-lowering"],
-      "content": "Acute flare treatment (start within 24 hours): NSAIDs (indomethacin, naproxen, celecoxib); colchicine 1.2mg then 0.6mg 1 hour later, then 0.6mg daily-bid (lower doses than historical); glucocorticoids (prednisone 30-40mg daily × 5-10 days, or intra-articular). IL-1 inhibitors (anakinra) for refractory cases. Urate-lowering therapy (ULT) indications: ≥2 flares/year, tophi, CKD stage ≥3, urolithiasis, serum urate >9mg/dL. First-line: allopurinol (xanthine oxidase inhibitor) start 100mg/day (50mg if CKD), titrate every 2-5 weeks to target urate <6mg/dL (<5mg/dL if tophaceous); max 800mg/day. Febuxostat alternative (cardiovascular safety concerns). Probenecid (uricosuric) if eGFR >50. Pegloticase (recombinant uricase) for refractory severe gout. Flare prophylaxis when starting ULT: colchicine 0.6mg daily-bid, low-dose NSAID, or prednisone ≤10mg/day for ≥6 months. Lifestyle: weight loss, limit alcohol/purines, avoid fructose beverages.",
+      "tags": [
+        "gout",
+        "colchicine",
+        "NSAIDs",
+        "allopurinol",
+        "febuxostat",
+        "urate-lowering"
+      ],
+      "content": "Acute flare treatment (start within 24 hours): NSAIDs (indomethacin, naproxen, celecoxib); colchicine 1.2mg then 0.6mg 1 hour later, then 0.6mg daily-bid (lower doses than historical); glucocorticoids (prednisone 30-40mg daily \u00d7 5-10 days, or intra-articular). IL-1 inhibitors (anakinra) for refractory cases. Urate-lowering therapy (ULT) indications: \u22652 flares/year, tophi, CKD stage \u22653, urolithiasis, serum urate >9mg/dL. First-line: allopurinol (xanthine oxidase inhibitor) start 100mg/day (50mg if CKD), titrate every 2-5 weeks to target urate <6mg/dL (<5mg/dL if tophaceous); max 800mg/day. Febuxostat alternative (cardiovascular safety concerns). Probenecid (uricosuric) if eGFR >50. Pegloticase (recombinant uricase) for refractory severe gout. Flare prophylaxis when starting ULT: colchicine 0.6mg daily-bid, low-dose NSAID, or prednisone \u226410mg/day for \u22656 months. Lifestyle: weight loss, limit alcohol/purines, avoid fructose beverages.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985617/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
@@ -33,11 +46,22 @@
       "sector": "MED",
       "topic": "Gout",
       "role": "diagnostic_criteria",
-      "tags": ["gout", "synovial fluid", "urate crystals", "ACR criteria", "imaging"],
+      "tags": [
+        "gout",
+        "synovial fluid",
+        "urate crystals",
+        "ACR criteria",
+        "imaging"
+      ],
       "content": "Gold standard: synovial fluid analysis showing needle-shaped, negatively birefringent monosodium urate crystals under polarized light microscopy. ACR/EULAR classification criteria (2015) use scoring system: clinical pattern (joint involvement, flare characteristics), time course, clinical signs (erythema, tophi), serum urate level, imaging findings. Serum urate often normal during acute flare (urate shifts into joints) - recheck after flare resolves. Imaging: X-ray shows punched-out erosions with overhanging edges in chronic gout; ultrasound shows 'double contour sign' (urate on cartilage surface), tophi; dual-energy CT specifically identifies urate deposits. Differential diagnosis: septic arthritis (always consider, especially monoarticular), pseudogout (calcium pyrophosphate crystals - positively birefringent, rhomboid), cellulitis, trauma. Evaluate for comorbidities: renal function, cardiovascular risk factors, metabolic syndrome components.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985617/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.802348",
+    "source_url_was_extracted": false
+  }
 }

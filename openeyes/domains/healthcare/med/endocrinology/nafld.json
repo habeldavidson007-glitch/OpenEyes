@@ -7,7 +7,13 @@
       "sector": "MED",
       "topic": "Non-Alcoholic Fatty Liver Disease",
       "role": "definition",
-      "tags": ["NAFLD", "NASH", "fatty liver", "steatohepatitis", "metabolic"],
+      "tags": [
+        "NAFLD",
+        "NASH",
+        "fatty liver",
+        "steatohepatitis",
+        "metabolic"
+      ],
       "content": "Non-alcoholic fatty liver disease (NAFLD), now increasingly termed metabolic dysfunction-associated steatotic liver disease (MASLD), encompasses a spectrum from simple hepatic steatosis to non-alcoholic steatohepatitis (NASH/MASH) to cirrhosis and hepatocellular carcinoma. Definition: hepatic fat accumulation >5% of hepatocytes in absence of significant alcohol consumption (<21 drinks/week men, <14 women) and secondary causes. Pathophysiology: 'multiple-hit' hypothesis involving insulin resistance, lipotoxicity, oxidative stress, inflammation, gut microbiome alterations. Strongly associated with metabolic syndrome components (obesity, T2DM, dyslipidemia, hypertension). Prevalence ~25% globally, higher in Hispanics, lower in African Americans. NASH (steatosis + inflammation + hepatocyte injury) affects 20-30% of NAFLD patients; 10-20% of NASH progresses to cirrhosis over decades. Leading indication for liver transplantation in US.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506508/",
       "credibility_class": "peer_reviewed_guideline",
@@ -20,8 +26,15 @@
       "sector": "MED",
       "topic": "Non-Alcoholic Fatty Liver Disease",
       "role": "treatment_protocol",
-      "tags": ["NAFLD", "NASH", "weight loss", "vitamin E", "pioglitazone", "GLP-1"],
-      "content": "First-line: lifestyle modification - weight loss target 7-10% improves steatosis, ≥10% may reverse fibrosis; Mediterranean diet preferred; aerobic and resistance exercise beneficial independent of weight loss. Vitamin E (alpha-tocopherol 800 IU/day) recommended for non-diabetic adults with biopsy-proven NASH (PIVENS trial); potential prostate cancer/hemorrhagic stroke risk requires discussion. Pioglitazone improves NASH histology in diabetics and non-diabetics (weight gain side effect). GLP-1 receptor agonists (liraglutide, semaglutide) show promise for NASH resolution in trials. Obeticholic acid (FXR agonist) approved 2023 for NASH with fibrosis. Bariatric surgery effective for eligible patients - resolves NASH in ~85%, improves fibrosis. Manage cardiovascular risk factors aggressively (statins safe in NAFLD). Avoid hepatotoxic substances. Coffee consumption associated with reduced fibrosis. No FDA-approved pharmacotherapy specifically for NAFLD until recently; several agents in phase 3 trials.",
+      "tags": [
+        "NAFLD",
+        "NASH",
+        "weight loss",
+        "vitamin E",
+        "pioglitazone",
+        "GLP-1"
+      ],
+      "content": "First-line: lifestyle modification - weight loss target 7-10% improves steatosis, \u226510% may reverse fibrosis; Mediterranean diet preferred; aerobic and resistance exercise beneficial independent of weight loss. Vitamin E (alpha-tocopherol 800 IU/day) recommended for non-diabetic adults with biopsy-proven NASH (PIVENS trial); potential prostate cancer/hemorrhagic stroke risk requires discussion. Pioglitazone improves NASH histology in diabetics and non-diabetics (weight gain side effect). GLP-1 receptor agonists (liraglutide, semaglutide) show promise for NASH resolution in trials. Obeticholic acid (FXR agonist) approved 2023 for NASH with fibrosis. Bariatric surgery effective for eligible patients - resolves NASH in ~85%, improves fibrosis. Manage cardiovascular risk factors aggressively (statins safe in NAFLD). Avoid hepatotoxic substances. Coffee consumption associated with reduced fibrosis. No FDA-approved pharmacotherapy specifically for NAFLD until recently; several agents in phase 3 trials.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506508/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
@@ -33,11 +46,23 @@
       "sector": "MED",
       "topic": "Non-Alcoholic Fatty Liver Disease",
       "role": "diagnostic_criteria",
-      "tags": ["NAFLD", "NASH", "liver biopsy", "FIB-4", "elastography", "imaging"],
+      "tags": [
+        "NAFLD",
+        "NASH",
+        "liver biopsy",
+        "FIB-4",
+        "elastography",
+        "imaging"
+      ],
       "content": "Diagnosis requires: (1) Evidence of hepatic steatosis - imaging (ultrasound first-line, shows increased echogenicity; CAP on FibroScan; MRI-PDFF most accurate) or histology; (2) Exclusion of significant alcohol use; (3) Exclusion of other liver diseases (viral hepatitis, autoimmune, genetic hemochromatosis, Wilson disease, drug-induced). Liver biopsy gold standard for diagnosing NASH and staging fibrosis but not routinely performed. Non-invasive fibrosis assessment: FIB-4 score (age, AST, ALT, platelets) - low risk <1.3, high risk >2.67; NAFLD fibrosis score; ELF test; vibration-controlled transient elastography (FibroScan) measures liver stiffness. Screening approach: identify at-risk (T2DM, metabolic syndrome), check ALT/AST (often elevated, AST:ALT ratio >1 suggests advanced fibrosis), calculate FIB-4, refer high-risk for specialist evaluation/biopsy consideration. HCC surveillance in cirrhotic NAFLD per guidelines.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506508/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.803174",
+    "source_url_was_extracted": false
+  }
 }

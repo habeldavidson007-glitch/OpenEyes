@@ -5,7 +5,13 @@
   "fragments": [
     {
       "id": "hc_med_onc_oc_def_001",
-      "tags": ["oncology", "ovarian cancer", "CA-125", "BRCA", "histologic subtypes"],
+      "tags": [
+        "oncology",
+        "ovarian cancer",
+        "CA-125",
+        "BRCA",
+        "histologic subtypes"
+      ],
       "reasoning_role": "definition",
       "content": "Ovarian cancer is the most lethal gynecologic malignancy, often presenting at advanced stage due to vague symptoms. Risk factors: BRCA1/2 mutations (lifetime risk 40-60% for BRCA1, 15-30% for BRCA2), Lynch syndrome, family history, nulliparity, endometriosis (for clear cell and endometrioid subtypes). Protective factors: oral contraceptives, tubal ligation, salpingectomy, breastfeeding. Histologic subtypes: high-grade serous (70%, TP53 mutations nearly universal, BRCA1/2 mutations 15-25%); low-grade serous (KRAS/BRAF mutations); endometrioid (often associated with endometriosis); clear cell (endometriosis association, chemotherapy resistant); mucinous (often metastatic from GI tract); borderline tumors (low malignant potential). Many 'ovarian' cancers originate in fallopian tube fimbriae. CA-125 elevated in 80% of epithelial ovarian cancers but not specific (elevated in endometriosis, fibroids, menstruation, other cancers).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36012345/",
@@ -14,21 +20,38 @@
     },
     {
       "id": "hc_med_onc_oc_treat_001",
-      "tags": ["oncology", "ovarian cancer", "treatment", "debulking surgery", "PARP inhibitors"],
+      "tags": [
+        "oncology",
+        "ovarian cancer",
+        "treatment",
+        "debulking surgery",
+        "PARP inhibitors"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "Treatment involves surgery and chemotherapy. Early stage (I-II): surgical staging (TAH-BSO, omentectomy, lymph node dissection, peritoneal biopsies); adjuvant chemotherapy for stage IC-II (carboplatin + paclitaxel x6 cycles). Advanced stage (III-IV): primary debulking surgery aiming for R0 resection (no visible residual) followed by carboplatin + paclitaxel x6 cycles; or neoadjuvant chemotherapy x3-4 cycles, interval debulking, then additional chemotherapy (EORTC 55971, CHORUS trials showed equivalent OS). Intraperitoneal chemotherapy considered for optimally debulked stage III. Maintenance therapy: PARP inhibitors for BRCA-mutated (olaparib, niraparib, rucaparib) based on SOLO-1, PRIMA trials; bevacizumab for high-risk patients. Recurrent disease: platinum-sensitive (>6 months since last platinum) - platinum-based doublet + bevacizumab, then PARP inhibitor maintenance; platinum-resistant (<6 months) - single-agent non-platinum (liposomal doxorubicin, weekly paclitaxel, gemcitabine, topotecan) ± bevacizumab. FRα-positive patients: mirvetuximab soravtansine (SORAYA trial).",
+      "content": "Treatment involves surgery and chemotherapy. Early stage (I-II): surgical staging (TAH-BSO, omentectomy, lymph node dissection, peritoneal biopsies); adjuvant chemotherapy for stage IC-II (carboplatin + paclitaxel x6 cycles). Advanced stage (III-IV): primary debulking surgery aiming for R0 resection (no visible residual) followed by carboplatin + paclitaxel x6 cycles; or neoadjuvant chemotherapy x3-4 cycles, interval debulking, then additional chemotherapy (EORTC 55971, CHORUS trials showed equivalent OS). Intraperitoneal chemotherapy considered for optimally debulked stage III. Maintenance therapy: PARP inhibitors for BRCA-mutated (olaparib, niraparib, rucaparib) based on SOLO-1, PRIMA trials; bevacizumab for high-risk patients. Recurrent disease: platinum-sensitive (>6 months since last platinum) - platinum-based doublet + bevacizumab, then PARP inhibitor maintenance; platinum-resistant (<6 months) - single-agent non-platinum (liposomal doxorubicin, weekly paclitaxel, gemcitabine, topotecan) \u00b1 bevacizumab. FR\u03b1-positive patients: mirvetuximab soravtansine (SORAYA trial).",
       "source": "https://www.nccn.org/guidelines",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_oc_diag_001",
-      "tags": ["oncology", "ovarian cancer", "diagnosis", "staging", "genetic testing"],
+      "tags": [
+        "oncology",
+        "ovarian cancer",
+        "diagnosis",
+        "staging",
+        "genetic testing"
+      ],
       "reasoning_role": "diagnostic_criteria",
       "content": "Diagnosis requires tissue confirmation. Evaluation: transvaginal ultrasound (assesses ovarian morphology, solid components, ascites); CT abdomen/pelvis (disease extent, resectability); chest imaging for metastases. CA-125 baseline and for monitoring; HE4 (human epididymis protein 4) sometimes used; ROMA score combines CA-125 and HE4. Preoperative risk assessment (RMI, IOTA) guides referral to gynecologic oncologist. Definitive diagnosis usually from surgical specimen; biopsy reserved for unresectable disease before neoadjuvant chemotherapy. Staging: FIGO surgical staging system - Stage I (confined to ovaries), II (pelvic extension), III (peritoneal metastases outside pelvis and/or retroperitoneal nodes), IV (distant metastases including pleural effusion with positive cytology, parenchymal metastases). Genetic testing: germline BRCA1/2 testing recommended for all epithelial ovarian cancer patients; tumor testing for BRCA and HRD status guides PARP inhibitor use. Genetic counseling for positive results.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35123456/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.821954",
+    "source_url_was_extracted": false
+  }
 }

@@ -2,7 +2,13 @@
   "domain": "healthcare",
   "subdomain": "PHR",
   "sector": "PHR",
-  "tags": ["QT prolongation", "torsades de pointes", "drug safety", "cardiac arrhythmia", "pharmacovigilance"],
+  "tags": [
+    "QT prolongation",
+    "torsades de pointes",
+    "drug safety",
+    "cardiac arrhythmia",
+    "pharmacovigilance"
+  ],
   "fragments": [
     {
       "role": "definition",
@@ -25,5 +31,10 @@
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.658928",
+    "source_url_was_extracted": false
+  }
 }

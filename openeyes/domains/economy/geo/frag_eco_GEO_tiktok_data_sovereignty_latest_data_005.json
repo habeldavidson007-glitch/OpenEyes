@@ -16,5 +16,7 @@
   "source_url": "https://www.congress.gov/",
   "credibility_class": "government_legislation",
   "year": 2024,
-  "weight": 0.95
+  "weight": 0.95,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.congress.gov"
 }

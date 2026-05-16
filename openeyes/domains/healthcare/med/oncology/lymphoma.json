@@ -5,30 +5,57 @@
   "fragments": [
     {
       "id": "hc_med_onc_ly_def_001",
-      "tags": ["oncology", "lymphoma", "Hodgkin", "non-Hodgkin", "classification", "B-cell", "T-cell"],
+      "tags": [
+        "oncology",
+        "lymphoma",
+        "Hodgkin",
+        "non-Hodgkin",
+        "classification",
+        "B-cell",
+        "T-cell"
+      ],
       "reasoning_role": "definition",
-      "content": "Lymphomas are malignancies of lymphocytes classified as Hodgkin lymphoma (HL) or non-Hodgkin lymphoma (NHL). Hodgkin lymphoma: characterized by Reed-Sternberg cells (CD30+, CD15+, PAX5 weak+); subtypes include classical HL (nodular sclerosis, mixed cellularity, lymphocyte-rich, lymphocyte-depleted) and nodular lymphocyte-predominant HL (NLPHL, CD20+, 'popcorn cells'). Non-Hodgkin lymphoma: diverse group (>60 subtypes). B-cell NHL (85%): diffuse large B-cell lymphoma (DLBCL, most common, aggressive), follicular lymphoma (indolent, t(14;18) BCL2), mantle cell lymphoma (t(11;14) cyclin D1, aggressive), marginal zone lymphoma (indolent), Burkitt lymphoma (t(8;14) MYC, very aggressive), CLL/SLL. T-cell NHL (15%): peripheral T-cell lymphoma NOS, anaplastic large cell lymphoma (ALCL, CD30+, ALK+ or ALK-), angioimmunoblastic T-cell lymphoma, cutaneous T-cell lymphoma (mycosis fungoides, Sézary syndrome).",
+      "content": "Lymphomas are malignancies of lymphocytes classified as Hodgkin lymphoma (HL) or non-Hodgkin lymphoma (NHL). Hodgkin lymphoma: characterized by Reed-Sternberg cells (CD30+, CD15+, PAX5 weak+); subtypes include classical HL (nodular sclerosis, mixed cellularity, lymphocyte-rich, lymphocyte-depleted) and nodular lymphocyte-predominant HL (NLPHL, CD20+, 'popcorn cells'). Non-Hodgkin lymphoma: diverse group (>60 subtypes). B-cell NHL (85%): diffuse large B-cell lymphoma (DLBCL, most common, aggressive), follicular lymphoma (indolent, t(14;18) BCL2), mantle cell lymphoma (t(11;14) cyclin D1, aggressive), marginal zone lymphoma (indolent), Burkitt lymphoma (t(8;14) MYC, very aggressive), CLL/SLL. T-cell NHL (15%): peripheral T-cell lymphoma NOS, anaplastic large cell lymphoma (ALCL, CD30+, ALK+ or ALK-), angioimmunoblastic T-cell lymphoma, cutaneous T-cell lymphoma (mycosis fungoides, S\u00e9zary syndrome).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36890123/",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_ly_treat_001",
-      "tags": ["oncology", "lymphoma", "treatment", "chemotherapy", "immunotherapy", "CAR-T"],
+      "tags": [
+        "oncology",
+        "lymphoma",
+        "treatment",
+        "chemotherapy",
+        "immunotherapy",
+        "CAR-T"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "Treatment depends on type, stage, and risk. Classical HL: early stage - ABVD (doxorubicin, bleomycin, vinblastine, dacarbazine) x2-4 cycles + involved-site radiation; advanced stage - ABVD x6 cycles or A-AVD (brentuximab vedotin replaces bleomycin, ECHELON-1 trial); relapsed - salvage chemotherapy + autologous transplant; brentuximab vedotin or checkpoint inhibitors (nivolumab, pembrolizumab) for refractory. DLBCL: R-CHOP (rituximab, cyclophosphamide, doxorubicin, vincristine, prednisone) x6 cycles standard; Pola-R-CHP (polatuzumab) for high-risk (POLARIS); CNS prophylaxis for high-risk sites; CAR-T (axicabtagene, tisagenlecleucel, lisocabtagene) for relapsed/refractory. Follicular lymphoma: asymptomatic low-burden - observation; symptomatic/bulky - rituximab + chemotherapy (bendamustine, CHOP, CVP); rituximab maintenance; lenalidomide + rituximab alternative. Mantle cell: intensive regimens for fit young patients (cytarabine-containing) + autologous transplant; BTK inhibitors (ibrutinib, acalabrutinib, zanubrutinib) for relapsed. Marginal zone: rituximab ± chemotherapy; H. pylori eradication for gastric MALT lymphoma.",
+      "content": "Treatment depends on type, stage, and risk. Classical HL: early stage - ABVD (doxorubicin, bleomycin, vinblastine, dacarbazine) x2-4 cycles + involved-site radiation; advanced stage - ABVD x6 cycles or A-AVD (brentuximab vedotin replaces bleomycin, ECHELON-1 trial); relapsed - salvage chemotherapy + autologous transplant; brentuximab vedotin or checkpoint inhibitors (nivolumab, pembrolizumab) for refractory. DLBCL: R-CHOP (rituximab, cyclophosphamide, doxorubicin, vincristine, prednisone) x6 cycles standard; Pola-R-CHP (polatuzumab) for high-risk (POLARIS); CNS prophylaxis for high-risk sites; CAR-T (axicabtagene, tisagenlecleucel, lisocabtagene) for relapsed/refractory. Follicular lymphoma: asymptomatic low-burden - observation; symptomatic/bulky - rituximab + chemotherapy (bendamustine, CHOP, CVP); rituximab maintenance; lenalidomide + rituximab alternative. Mantle cell: intensive regimens for fit young patients (cytarabine-containing) + autologous transplant; BTK inhibitors (ibrutinib, acalabrutinib, zanubrutinib) for relapsed. Marginal zone: rituximab \u00b1 chemotherapy; H. pylori eradication for gastric MALT lymphoma.",
       "source": "https://www.nccn.org/guidelines",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_ly_diag_001",
-      "tags": ["oncology", "lymphoma", "diagnosis", "staging", "PET-CT", "biopsy"],
+      "tags": [
+        "oncology",
+        "lymphoma",
+        "diagnosis",
+        "staging",
+        "PET-CT",
+        "biopsy"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Diagnosis requires excisional lymph node biopsy (preferred over core needle/FNA to preserve architecture). Pathology: immunohistochemistry determines lineage and subtype (B-cell: CD20, CD79a; T-cell: CD3, CD5; HL: CD30, CD15, PAX5); FISH for translocations (MYC, BCL2, BCL6 for 'double-hit' lymphoma); gene expression profiling for some subtypes. Staging: Ann Arbor system with Cotswolds modifications - Stage I (single node region), II (≥2 regions same side of diaphragm), III (both sides of diaphragm), IV (extranodal involvement); A/B symptoms (fever, night sweats, weight loss >10%). PET-CT standard for staging and response assessment (Deauville score 1-5); bone marrow biopsy often unnecessary if PET negative for HL and DLBCL. Prognostic scores: IPI (International Prognostic Index) for DLBCL (age, stage, LDH, performance status, extranodal sites); FLIPI for follicular lymphoma; IPS for advanced HL. LDH elevation indicates high tumor burden.",
+      "content": "Diagnosis requires excisional lymph node biopsy (preferred over core needle/FNA to preserve architecture). Pathology: immunohistochemistry determines lineage and subtype (B-cell: CD20, CD79a; T-cell: CD3, CD5; HL: CD30, CD15, PAX5); FISH for translocations (MYC, BCL2, BCL6 for 'double-hit' lymphoma); gene expression profiling for some subtypes. Staging: Ann Arbor system with Cotswolds modifications - Stage I (single node region), II (\u22652 regions same side of diaphragm), III (both sides of diaphragm), IV (extranodal involvement); A/B symptoms (fever, night sweats, weight loss >10%). PET-CT standard for staging and response assessment (Deauville score 1-5); bone marrow biopsy often unnecessary if PET negative for HL and DLBCL. Prognostic scores: IPI (International Prognostic Index) for DLBCL (age, stage, LDH, performance status, extranodal sites); FLIPI for follicular lymphoma; IPS for advanced HL. LDH elevation indicates high tumor burden.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35901234/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.824355",
+    "source_url_was_extracted": false
+  }
 }

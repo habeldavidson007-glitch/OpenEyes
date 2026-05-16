@@ -7,7 +7,12 @@
     {
       "role": "definition",
       "content": "Major Depressive Disorder (MDD) is a mood disorder characterized by persistent low mood and/or loss of interest or pleasure (anhedonia) for at least two weeks, accompanied by symptoms such as sleep disturbances, appetite changes, fatigue, feelings of worthlessness, diminished concentration, and recurrent thoughts of death or suicide. According to DSM-5-TR, diagnosis requires at least five symptoms including depressed mood or anhedonia, causing clinically significant distress or impairment. Pathophysiologically, MDD involves dysregulation of monoaminergic neurotransmission (serotonin, norepinephrine, dopamine), HPA axis hyperactivity, neuroinflammation, and reduced neuroplasticity in regions like the hippocampus and prefrontal cortex.",
-      "tags": ["depression", "mood-disorder", "DSM-5", "diagnosis"],
+      "tags": [
+        "depression",
+        "mood-disorder",
+        "DSM-5",
+        "diagnosis"
+      ],
       "source": "https://www.nimh.nih.gov/health/topics/depression",
       "credibility_class": "A",
       "year": 2024
@@ -15,18 +20,33 @@
     {
       "role": "treatment_protocol",
       "content": "First-line treatment for MDD includes SSRIs (e.g., sertraline, escitalopram) or SNRIs (e.g., venlafaxine, duloxetine), often combined with psychotherapy (CBT or IPT). Treatment selection considers symptom profile, comorbidities, side effect tolerance, and patient preference. For inadequate response after 4-8 weeks, options include dose optimization, switching antidepressants, or augmentation (e.g., bupropion, mirtazapine, lithium, or atypical antipsychotics like aripiprazole). Severe or treatment-resistant cases may benefit from ECT, rTMS, or ketamine/esketamine. Maintenance therapy for 6-12 months after remission reduces relapse risk; longer duration is recommended for recurrent depression.",
-      "tags": ["depression", "antidepressants", "psychotherapy", "treatment-algorithm"],
+      "tags": [
+        "depression",
+        "antidepressants",
+        "psychotherapy",
+        "treatment-algorithm"
+      ],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "diagnostic_criteria",
-      "content": "DSM-5-TR criteria for MDD require ≥5 symptoms during the same 2-week period representing change from previous functioning, with at least one being (1) depressed mood or (2) loss of interest/pleasure. Additional symptoms: significant weight/appetite change, insomnia/hypersomnia, psychomotor agitation/retardation, fatigue, worthlessness/excessive guilt, diminished concentration, recurrent suicidal ideation. Symptoms must cause clinically significant distress/impairment and not be attributable to substances, medical conditions, or better explained by other psychiatric disorders (e.g., bipolar, schizophrenia, bereavement). Specifiers include severity (mild/moderate/severe), psychotic features, remission status, and anxious distress.",
-      "tags": ["DSM-5-TR", "diagnostic-criteria", "depression", "assessment"],
+      "content": "DSM-5-TR criteria for MDD require \u22655 symptoms during the same 2-week period representing change from previous functioning, with at least one being (1) depressed mood or (2) loss of interest/pleasure. Additional symptoms: significant weight/appetite change, insomnia/hypersomnia, psychomotor agitation/retardation, fatigue, worthlessness/excessive guilt, diminished concentration, recurrent suicidal ideation. Symptoms must cause clinically significant distress/impairment and not be attributable to substances, medical conditions, or better explained by other psychiatric disorders (e.g., bipolar, schizophrenia, bereavement). Specifiers include severity (mild/moderate/severe), psychotic features, remission status, and anxious distress.",
+      "tags": [
+        "DSM-5-TR",
+        "diagnostic-criteria",
+        "depression",
+        "assessment"
+      ],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.721520",
+    "source_url_was_extracted": false
+  }
 }

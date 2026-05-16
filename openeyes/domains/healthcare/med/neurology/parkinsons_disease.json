@@ -5,9 +5,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["parkinsons-disease", "PD", "dopamine", "alpha-synuclein", "movement-disorder"],
+      "tags": [
+        "parkinsons-disease",
+        "PD",
+        "dopamine",
+        "alpha-synuclein",
+        "movement-disorder"
+      ],
       "reasoning_role": "definition",
-      "content": "Parkinson's disease (PD) is a progressive neurodegenerative disorder characterized by loss of dopaminergic neurons in the substantia nigra pars compacta and presence of Lewy bodies (alpha-synuclein aggregates). Motor features (cardinal signs): resting tremor (4-6 Hz, pill-rolling), rigidity (cogwheel), bradykinesia (slowness, decrement on repetitive movements), and postural instability (late feature). Diagnosis requires bradykinesia plus at least one of tremor, rigidity, or postural instability. Non-motor features often precede motor symptoms: hyposmia, REM sleep behavior disorder, constipation, depression, anxiety. Disease progression follows Braak staging (olfactory bulb → brainstem → midbrain → cortex). Genetic forms (10%): SNCA, LRRK2, PARKIN, PINK1 mutations. Pathophysiology involves mitochondrial dysfunction, oxidative stress, impaired protein clearance, and neuroinflammation. Differential diagnosis includes essential tremor, drug-induced parkinsonism, atypical parkinsonism (MSA, PSP, CBD).",
+      "content": "Parkinson's disease (PD) is a progressive neurodegenerative disorder characterized by loss of dopaminergic neurons in the substantia nigra pars compacta and presence of Lewy bodies (alpha-synuclein aggregates). Motor features (cardinal signs): resting tremor (4-6 Hz, pill-rolling), rigidity (cogwheel), bradykinesia (slowness, decrement on repetitive movements), and postural instability (late feature). Diagnosis requires bradykinesia plus at least one of tremor, rigidity, or postural instability. Non-motor features often precede motor symptoms: hyposmia, REM sleep behavior disorder, constipation, depression, anxiety. Disease progression follows Braak staging (olfactory bulb \u2192 brainstem \u2192 midbrain \u2192 cortex). Genetic forms (10%): SNCA, LRRK2, PARKIN, PINK1 mutations. Pathophysiology involves mitochondrial dysfunction, oxidative stress, impaired protein clearance, and neuroinflammation. Differential diagnosis includes essential tremor, drug-induced parkinsonism, atypical parkinsonism (MSA, PSP, CBD).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33255567/",
       "credibility_class": "A",
       "year": 2024
@@ -17,7 +23,13 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["parkinsons-disease", "levodopa", "dopamine-agonist", "treatment-protocol", "DBS"],
+      "tags": [
+        "parkinsons-disease",
+        "levodopa",
+        "dopamine-agonist",
+        "treatment-protocol",
+        "DBS"
+      ],
       "reasoning_role": "treatment_protocol",
       "content": "PD treatment is symptomatic, tailored to age, symptom severity, and cognitive status. Levodopa/carbidopa is most effective for motor symptoms; start low (25/100 mg TID) and titrate. Long-term use causes motor complications: wearing-off, dyskinesias, on-off fluctuations. Dopamine agonists (pramipexole, ropinirole, rotigotine) useful in younger patients (<65) to delay levodopa but less effective; side effects include impulse control disorders, somnolence, edema. MAO-B inhibitors (rasagiline, selegiline, safinamide) provide mild symptomatic benefit, may reduce off-time. COMT inhibitors (entacapone, opicapone) extend levodopa effect for wearing-off. Amantadine treats dyskinesia and mild symptoms. Apomorphine (subcutaneous/inhaled) for rescue from off episodes. Advanced therapies: deep brain stimulation (DBS) of subthalamic nucleus or GPi for motor fluctuations/dyskinesia refractory to medical therapy (requires good levodopa response, no significant cognitive impairment); levodopa-carbidopa intestinal gel infusion; focused ultrasound thalamotomy for tremor. Non-motor symptom management: antidepressants for depression, melatonin/clonazepam for REM sleep behavior disorder, cholinesterase inhibitors for dementia, botulinum toxin for sialorrhea.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/34984884/",
@@ -29,12 +41,23 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["parkinsons-disease", "diagnosis", "MDS-criteria", "DAT-scan", "non-motor"],
+      "tags": [
+        "parkinsons-disease",
+        "diagnosis",
+        "MDS-criteria",
+        "DAT-scan",
+        "non-motor"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "PD diagnosis uses MDS Clinical Diagnostic Criteria (2015). Core: bradykinesia plus rest tremor and/or rigidity. Supportive criteria: clear benefit from dopaminergic therapy, levodopa-induced dyskinesia, rest tremor of limb, hyposmia, abnormal cardiac MIBG scintigraphy. Exclusion criteria: cerebellar signs, downward vertical gaze palsy, normal functional neuroimaging of presynaptic dopamine transporters (DAT-SPECT/PET), documented alternative cause. Probable PD requires no exclusion criteria and ≥2 supportive features. Definite PD requires pathological confirmation. DAT-SPECT shows reduced striatal dopamine transporter uptake but cannot distinguish PD from atypical parkinsonism. Red flags suggesting atypical parkinsonism: early falls, rapid progression, poor levodopa response, early autonomic failure (suggests MSA), vertical gaze palsy (PSP), cortical sensory loss (CBD), cerebellar signs. Unified Parkinson's Disease Rating Scale (UPDRS/MDS-UPDRS) quantifies motor and non-motor symptoms for monitoring. Hoehn and Yahr staging describes disease progression (stage 1: unilateral; stage 3: bilateral with balance impairment; stage 5: wheelchair/bedbound).",
+      "content": "PD diagnosis uses MDS Clinical Diagnostic Criteria (2015). Core: bradykinesia plus rest tremor and/or rigidity. Supportive criteria: clear benefit from dopaminergic therapy, levodopa-induced dyskinesia, rest tremor of limb, hyposmia, abnormal cardiac MIBG scintigraphy. Exclusion criteria: cerebellar signs, downward vertical gaze palsy, normal functional neuroimaging of presynaptic dopamine transporters (DAT-SPECT/PET), documented alternative cause. Probable PD requires no exclusion criteria and \u22652 supportive features. Definite PD requires pathological confirmation. DAT-SPECT shows reduced striatal dopamine transporter uptake but cannot distinguish PD from atypical parkinsonism. Red flags suggesting atypical parkinsonism: early falls, rapid progression, poor levodopa response, early autonomic failure (suggests MSA), vertical gaze palsy (PSP), cortical sensory loss (CBD), cerebellar signs. Unified Parkinson's Disease Rating Scale (UPDRS/MDS-UPDRS) quantifies motor and non-motor symptoms for monitoring. Hoehn and Yahr staging describes disease progression (stage 1: unilateral; stage 3: bilateral with balance impairment; stage 5: wheelchair/bedbound).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/26217918/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.838611",
+    "source_url_was_extracted": false
+  }
 }

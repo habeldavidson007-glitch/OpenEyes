@@ -15,5 +15,7 @@
   "source_url": "https://www.swift.com/market-insights/rmb-tracker",
   "credibility_class": "financial_infrastructure",
   "year": 2024,
-  "weight": 0.93
+  "weight": 0.93,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.swift.com"
 }

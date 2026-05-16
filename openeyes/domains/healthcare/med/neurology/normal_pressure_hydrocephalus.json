@@ -5,9 +5,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["normal-pressure-hydrocephalus", "NPH", "hydrocephalus", "gait-disturbance", "shunt"],
+      "tags": [
+        "normal-pressure-hydrocephalus",
+        "NPH",
+        "hydrocephalus",
+        "gait-disturbance",
+        "shunt"
+      ],
       "reasoning_role": "definition",
-      "content": "Normal pressure hydrocephalus (NPH) is a communicating hydrocephalus characterized by ventriculomegaly with normal opening pressure, causing the classic triad: gait disturbance (magnetic gait—feet stuck to floor, wide-based), cognitive impairment (subcortical dementia—slowed processing, executive dysfunction), and urinary incontinence (urgency progressing to incontinence). 'Wet, wobbly, and wacky.' Incidence increases with age; often misdiagnosed as Alzheimer's or Parkinson's. Pathophysiology: impaired CSF absorption at arachnoid granulations leading to ventricular enlargement, stretching of periventricular white matter tracts (especially corona radiata affecting leg fibers). Secondary NPH follows subarachnoid hemorrhage, meningitis, head trauma. Idiopathic NPH (iNPH) has no identifiable cause. Differential diagnosis: Alzheimer's disease (memory predominant early), vascular dementia (stepwise decline, focal signs), Parkinson's disease (rest tremor, better levodopa response).",
+      "content": "Normal pressure hydrocephalus (NPH) is a communicating hydrocephalus characterized by ventriculomegaly with normal opening pressure, causing the classic triad: gait disturbance (magnetic gait\u2014feet stuck to floor, wide-based), cognitive impairment (subcortical dementia\u2014slowed processing, executive dysfunction), and urinary incontinence (urgency progressing to incontinence). 'Wet, wobbly, and wacky.' Incidence increases with age; often misdiagnosed as Alzheimer's or Parkinson's. Pathophysiology: impaired CSF absorption at arachnoid granulations leading to ventricular enlargement, stretching of periventricular white matter tracts (especially corona radiata affecting leg fibers). Secondary NPH follows subarachnoid hemorrhage, meningitis, head trauma. Idiopathic NPH (iNPH) has no identifiable cause. Differential diagnosis: Alzheimer's disease (memory predominant early), vascular dementia (stepwise decline, focal signs), Parkinson's disease (rest tremor, better levodopa response).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
       "credibility_class": "A",
       "year": 2024
@@ -17,9 +23,15 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["normal-pressure-hydrocephalus", "VP-shunt", "treatment-protocol", "CSF-drainage", "predictors"],
+      "tags": [
+        "normal-pressure-hydrocephalus",
+        "VP-shunt",
+        "treatment-protocol",
+        "CSF-drainage",
+        "predictors"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "NPH treatment is surgical CSF diversion. Ventriculoperitoneal (VP) shunt is standard treatment; lumboperitoneal shunt alternative. Shunt types: programmable valves allow non-invasive pressure adjustment. Outcomes: gait improves most (60-80%), urinary symptoms (50-70%), cognition least responsive (30-50%). Best outcomes when treated early; gait disturbance duration <2 years predicts better response. Preoperative predictors of shunt response: large-volume lumbar drain (removes 30-50 mL CSF over 2-3 days) with objective gait/cognitive testing before and after; improvement predicts shunt success. Tap test (single large-volume LP 30-50 mL) less sensitive but more convenient. Complications: subdural hematoma/hygroma (10-15%, from brain sagging—adjust valve pressure higher), shunt infection (3-5%), shunt malfunction/obstruction requiring revision (30% within 1 year), overdrainage (orthostatic headache). Post-operative care: gradual mobilization, monitor for complications, valve pressure adjustments based on clinical response and imaging.",
+      "content": "NPH treatment is surgical CSF diversion. Ventriculoperitoneal (VP) shunt is standard treatment; lumboperitoneal shunt alternative. Shunt types: programmable valves allow non-invasive pressure adjustment. Outcomes: gait improves most (60-80%), urinary symptoms (50-70%), cognition least responsive (30-50%). Best outcomes when treated early; gait disturbance duration <2 years predicts better response. Preoperative predictors of shunt response: large-volume lumbar drain (removes 30-50 mL CSF over 2-3 days) with objective gait/cognitive testing before and after; improvement predicts shunt success. Tap test (single large-volume LP 30-50 mL) less sensitive but more convenient. Complications: subdural hematoma/hygroma (10-15%, from brain sagging\u2014adjust valve pressure higher), shunt infection (3-5%), shunt malfunction/obstruction requiring revision (30% within 1 year), overdrainage (orthostatic headache). Post-operative care: gradual mobilization, monitor for complications, valve pressure adjustments based on clinical response and imaging.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
       "credibility_class": "A",
       "year": 2024
@@ -29,12 +41,23 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": ["normal-pressure-hydrocephalus", "diagnosis", "Evans-index", "MRI", "lumbar-drain"],
+      "tags": [
+        "normal-pressure-hydrocephalus",
+        "diagnosis",
+        "Evans-index",
+        "MRI",
+        "lumbar-drain"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "NPH diagnosis requires: (1) Clinical triad (gait disturbance required, plus cognitive impairment and/or urinary incontinence). (2) Imaging: MRI brain showing ventriculomegaly out of proportion to sulcal atrophy. Evans index >0.3 (ratio of maximal frontal horn width to inner skull diameter). Supportive features: disproportionately enlarged subarachnoid space hydrocephalus (DESH)—tight high convexity sulci with enlarged Sylvian fissures, callosal angle <90° on coronal MRI, aqueductal flow void. (3) Exclusion of contraindications: significant cortical atrophy (suggests neurodegenerative disease), severe small vessel disease, prior radiation. (4) CSF studies: opening pressure normal (<20 cm H2O), routine studies normal (excludes infection, inflammation). (5) Response to CSF removal: large-volume lumbar drain or tap test with objective improvement in gait (timed walk, gait analysis) and/or cognition. Differential diagnosis workup: neuropsychological testing (subcortical vs cortical pattern), DaT scan if parkinsonism prominent (normal in NPH), amyloid PET if Alzheimer's suspected.",
+      "content": "NPH diagnosis requires: (1) Clinical triad (gait disturbance required, plus cognitive impairment and/or urinary incontinence). (2) Imaging: MRI brain showing ventriculomegaly out of proportion to sulcal atrophy. Evans index >0.3 (ratio of maximal frontal horn width to inner skull diameter). Supportive features: disproportionately enlarged subarachnoid space hydrocephalus (DESH)\u2014tight high convexity sulci with enlarged Sylvian fissures, callosal angle <90\u00b0 on coronal MRI, aqueductal flow void. (3) Exclusion of contraindications: significant cortical atrophy (suggests neurodegenerative disease), severe small vessel disease, prior radiation. (4) CSF studies: opening pressure normal (<20 cm H2O), routine studies normal (excludes infection, inflammation). (5) Response to CSF removal: large-volume lumbar drain or tap test with objective improvement in gait (timed walk, gait analysis) and/or cognition. Differential diagnosis workup: neuropsychological testing (subcortical vs cortical pattern), DaT scan if parkinsonism prominent (normal in NPH), amyloid PET if Alzheimer's suspected.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.825163",
+    "source_url_was_extracted": false
+  }
 }

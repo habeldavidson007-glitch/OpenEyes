@@ -20,5 +20,7 @@
   ],
   "incompatible_with": [],
   "weight": 0.874,
-  "sector": "MAC"
+  "sector": "MAC",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.ecb.europa.eu"
 }

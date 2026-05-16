@@ -7,7 +7,13 @@
       "sector": "MED",
       "topic": "Metabolic Bariatric Surgery",
       "role": "definition",
-      "tags": ["bariatric surgery", "metabolic surgery", "weight loss", "obesity treatment", "gastric bypass"],
+      "tags": [
+        "bariatric surgery",
+        "metabolic surgery",
+        "weight loss",
+        "obesity treatment",
+        "gastric bypass"
+      ],
       "content": "Metabolic bariatric surgery encompasses surgical procedures that induce weight loss and improve metabolic comorbidities through restrictive, malabsorptive, and hormonal mechanisms. Major procedures: (1) Roux-en-Y gastric bypass (RYGB) - creates small gastric pouch (~30mL) connected to jejunum, bypassing duodenum; combines restriction and mild malabsorption; most studied with longest track record; (2) Sleeve gastrectomy - removes ~80% of stomach along greater curvature, creating tubular 'sleeve'; primarily restrictive with hormonal effects (reduced ghrelin); now most commonly performed; (3) Biliopancreatic diversion with duodenal switch (BPD/DS) - sleeve gastrectomy plus extensive intestinal bypass; most effective for weight loss but highest nutritional risk; (4) Adjustable gastric banding - largely abandoned due to poor long-term outcomes. Mechanisms beyond restriction/malabsorption: altered gut hormones (increased GLP-1, PYY; decreased ghrelin), bile acid changes, microbiome alterations. Diabetes remission in 60-80% of T2DM patients.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506510/",
       "credibility_class": "peer_reviewed_guideline",
@@ -20,8 +26,14 @@
       "sector": "MED",
       "topic": "Metabolic Bariatric Surgery",
       "role": "treatment_protocol",
-      "tags": ["bariatric surgery", "outcomes", "nutritional supplementation", "complications", "follow-up"],
-      "content": "Indications (ASMBS/IFSO 2022): BMI ≥35 regardless of comorbidities; BMI 30-34.9 with metabolic disease (T2DM, hypertension, dyslipidemia, OSA); consider BMI 27.5-29.9 with uncontrolled T2DM. Preoperative: multidisciplinary evaluation (medical, psychological, nutritional), optimize comorbidities. Postoperative phases: clear liquids (days 1-7), full liquids (weeks 2-3), pureed (weeks 4-5), soft solids (weeks 6-8), regular diet thereafter. Lifelong supplementation mandatory: multivitamin with minerals, calcium citrate 1200-1500mg/day + vitamin D, vitamin B12 (oral/sublingual/injection), iron (especially menstruating women), additional vitamins as needed. Follow-up: frequent first year (2 weeks, 6 weeks, 3, 6, 9, 12 months), then annually with labs monitoring nutritional status. Complications: early (leak, bleeding, DVT/PE); late (strictures, ulcers, internal hernia, gallstones, nutritional deficiencies, hypoglycemia). Weight loss: sleeve ~20-25% total body weight, RYGB ~25-30%, BPD/DS ~30-35% at 1-2 years.",
+      "tags": [
+        "bariatric surgery",
+        "outcomes",
+        "nutritional supplementation",
+        "complications",
+        "follow-up"
+      ],
+      "content": "Indications (ASMBS/IFSO 2022): BMI \u226535 regardless of comorbidities; BMI 30-34.9 with metabolic disease (T2DM, hypertension, dyslipidemia, OSA); consider BMI 27.5-29.9 with uncontrolled T2DM. Preoperative: multidisciplinary evaluation (medical, psychological, nutritional), optimize comorbidities. Postoperative phases: clear liquids (days 1-7), full liquids (weeks 2-3), pureed (weeks 4-5), soft solids (weeks 6-8), regular diet thereafter. Lifelong supplementation mandatory: multivitamin with minerals, calcium citrate 1200-1500mg/day + vitamin D, vitamin B12 (oral/sublingual/injection), iron (especially menstruating women), additional vitamins as needed. Follow-up: frequent first year (2 weeks, 6 weeks, 3, 6, 9, 12 months), then annually with labs monitoring nutritional status. Complications: early (leak, bleeding, DVT/PE); late (strictures, ulcers, internal hernia, gallstones, nutritional deficiencies, hypoglycemia). Weight loss: sleeve ~20-25% total body weight, RYGB ~25-30%, BPD/DS ~30-35% at 1-2 years.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506510/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
@@ -33,11 +45,22 @@
       "sector": "MED",
       "topic": "Metabolic Bariatric Surgery",
       "role": "diagnostic_criteria",
-      "tags": ["bariatric surgery", "patient selection", "preoperative evaluation", "contraindications", "risk assessment"],
+      "tags": [
+        "bariatric surgery",
+        "patient selection",
+        "preoperative evaluation",
+        "contraindications",
+        "risk assessment"
+      ],
       "content": "Patient selection criteria: BMI thresholds per guidelines above; age typically 18-65 (adolescents and elderly considered case-by-case); documented failed non-surgical weight loss attempts; psychological readiness and stability; ability to comply with lifelong follow-up and supplementation. Contraindications: uncontrolled psychiatric illness, active substance abuse, inability to participate in follow-up, prohibitive surgical risk, correctedable endocrine causes of obesity not yet treated. Preoperative evaluation: comprehensive history/physical, ECG, chest X-ray, sleep study if OSA suspected, upper endoscopy (evaluate for H. pylori, hiatal hernia, esophagitis), abdominal ultrasound (gallstones), labs (CBC, CMP, lipid panel, HbA1c, TSH, vitamin levels including B12, folate, iron studies, vitamin D, PTH), pregnancy test if applicable. Risk stratification using MBSAQIP calculator. Patient education on realistic expectations, lifestyle changes required, potential complications, need for lifelong monitoring. Insurance authorization often requires 3-6 months supervised weight management program documentation.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506510/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.802070",
+    "source_url_was_extracted": false
+  }
 }

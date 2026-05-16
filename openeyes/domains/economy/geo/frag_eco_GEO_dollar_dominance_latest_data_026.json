@@ -15,5 +15,7 @@
   "source_url": "https://home.treasury.gov/policy-issues/financing-the-government/statistics/treasury-international-capital-tic-system",
   "credibility_class": "government_agency",
   "year": 2024,
-  "weight": 0.94
+  "weight": 0.94,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "home.treasury.gov"
 }

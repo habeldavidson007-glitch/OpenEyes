@@ -15,5 +15,7 @@
   "source_url": "https://www.worldbank.org/en/data/interactive/2024/01/18/international-debt-report-2024",
   "credibility_class": "international_organization",
   "year": 2024,
-  "weight": 0.93
+  "weight": 0.93,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.worldbank.org"
 }

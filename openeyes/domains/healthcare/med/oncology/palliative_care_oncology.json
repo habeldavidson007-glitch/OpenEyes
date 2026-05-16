@@ -5,30 +5,53 @@
   "fragments": [
     {
       "id": "hc_med_onc_pc_def_001",
-      "tags": ["oncology", "palliative care", "symptom management", "end of life", "quality of life"],
+      "tags": [
+        "oncology",
+        "palliative care",
+        "symptom management",
+        "end of life",
+        "quality of life"
+      ],
       "reasoning_role": "definition",
-      "content": "Palliative care is specialized medical care focused on relieving suffering and improving quality of life for patients with serious illness, regardless of prognosis. It is appropriate at any stage of cancer, from diagnosis through treatment and survivorship or end-of-life care. Core domains: physical symptom management (pain, dyspnea, nausea, fatigue, anorexia); psychological support (anxiety, depression, coping); social support (caregiver burden, financial toxicity, practical needs); spiritual care (meaning, purpose, existential distress); communication and decision-making support (goals of care, advance care planning, prognosis disclosure). Palliative care differs from hospice: palliative care can be provided alongside curative treatment; hospice is for patients with life expectancy ≤6 months who forego curative treatment. Early palliative care integration (within 8 weeks of metastatic diagnosis) improves quality of life, mood, and surprisingly, overall survival (Temel trial, NEJM 2010).",
+      "content": "Palliative care is specialized medical care focused on relieving suffering and improving quality of life for patients with serious illness, regardless of prognosis. It is appropriate at any stage of cancer, from diagnosis through treatment and survivorship or end-of-life care. Core domains: physical symptom management (pain, dyspnea, nausea, fatigue, anorexia); psychological support (anxiety, depression, coping); social support (caregiver burden, financial toxicity, practical needs); spiritual care (meaning, purpose, existential distress); communication and decision-making support (goals of care, advance care planning, prognosis disclosure). Palliative care differs from hospice: palliative care can be provided alongside curative treatment; hospice is for patients with life expectancy \u22646 months who forego curative treatment. Early palliative care integration (within 8 weeks of metastatic diagnosis) improves quality of life, mood, and surprisingly, overall survival (Temel trial, NEJM 2010).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36456789/",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_pc_treat_001",
-      "tags": ["oncology", "palliative care", "symptom management", "pain control", "communication"],
+      "tags": [
+        "oncology",
+        "palliative care",
+        "symptom management",
+        "pain control",
+        "communication"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "Symptom management principles. Pain: WHO analgesic ladder (non-opioids → weak opioids → strong opioids); adjuvant analgesics (gabapentin/pregabalin for neuropathic pain, antidepressants, corticosteroids for bone pain/capsular pain); breakthrough dosing 10-15% of total daily opioid; bowel regimen mandatory with opioids; rotate opioids for inadequate response or side effects. Dyspnea: opioids reduce air hunger; supplemental oxygen if hypoxic; fans/cool air; benzodiazepines for anxiety component; thoracentesis for malignant effusions. Nausea/vomiting: antiemetics by mechanism (5-HT3 antagonists, dopamine antagonists, NK1 antagonists, antihistamines); treat underlying cause (constipation, obstruction, metabolic abnormalities, medications). Fatigue: energy conservation, graded exercise, treat reversible causes (anemia, hypothyroidism, depression); psychostimulants sometimes used. Anorexia/cachexia: small frequent meals, appetite stimulants (megestrol, steroids), address reversible factors. Communication: SPIKES protocol for breaking bad news; REMAP for goals of care discussions; discuss prognosis honestly but with hope; involve family as patient desires.",
+      "content": "Symptom management principles. Pain: WHO analgesic ladder (non-opioids \u2192 weak opioids \u2192 strong opioids); adjuvant analgesics (gabapentin/pregabalin for neuropathic pain, antidepressants, corticosteroids for bone pain/capsular pain); breakthrough dosing 10-15% of total daily opioid; bowel regimen mandatory with opioids; rotate opioids for inadequate response or side effects. Dyspnea: opioids reduce air hunger; supplemental oxygen if hypoxic; fans/cool air; benzodiazepines for anxiety component; thoracentesis for malignant effusions. Nausea/vomiting: antiemetics by mechanism (5-HT3 antagonists, dopamine antagonists, NK1 antagonists, antihistamines); treat underlying cause (constipation, obstruction, metabolic abnormalities, medications). Fatigue: energy conservation, graded exercise, treat reversible causes (anemia, hypothyroidism, depression); psychostimulants sometimes used. Anorexia/cachexia: small frequent meals, appetite stimulants (megestrol, steroids), address reversible factors. Communication: SPIKES protocol for breaking bad news; REMAP for goals of care discussions; discuss prognosis honestly but with hope; involve family as patient desires.",
       "source": "https://www.nccn.org/guidelines",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_pc_diag_001",
-      "tags": ["oncology", "palliative care", "referral criteria", "assessment tools", "timing"],
+      "tags": [
+        "oncology",
+        "palliative care",
+        "referral criteria",
+        "assessment tools",
+        "timing"
+      ],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Referral criteria and timing for palliative care. ASCO guidelines recommend early palliative care for all metastatic cancer patients. Triggers for referral: metastatic disease at diagnosis; high symptom burden (ESAS score ≥4 for any symptom); frequent emergency visits/hospitalizations; functional decline (ECOG ≥3, Karnofsky ≤50%); patient/family request; complex psychosocial needs; prognostic uncertainty; transition to hospice consideration. Assessment tools: ESAS (Edmonton Symptom Assessment System) - 9 symptoms rated 0-10; PHQ-9 for depression; GAD-7 for anxiety; PPS (Palliative Performance Scale) for functional status; SPICT (Supportive and Palliative Care Indicators Tool) identifies patients who may benefit. Hospice referral: life expectancy ≤6 months if disease follows usual course; declining performance status; stopping anticancer therapy (or switching to comfort-focused); recurrent hospitalizations; patient goals align with comfort care. Medicare hospice benefit covers two 90-day periods followed by unlimited 60-day periods if recertified.",
+      "content": "Referral criteria and timing for palliative care. ASCO guidelines recommend early palliative care for all metastatic cancer patients. Triggers for referral: metastatic disease at diagnosis; high symptom burden (ESAS score \u22654 for any symptom); frequent emergency visits/hospitalizations; functional decline (ECOG \u22653, Karnofsky \u226450%); patient/family request; complex psychosocial needs; prognostic uncertainty; transition to hospice consideration. Assessment tools: ESAS (Edmonton Symptom Assessment System) - 9 symptoms rated 0-10; PHQ-9 for depression; GAD-7 for anxiety; PPS (Palliative Performance Scale) for functional status; SPICT (Supportive and Palliative Care Indicators Tool) identifies patients who may benefit. Hospice referral: life expectancy \u22646 months if disease follows usual course; declining performance status; stopping anticancer therapy (or switching to comfort-focused); recurrent hospitalizations; patient goals align with comfort care. Medicare hospice benefit covers two 90-day periods followed by unlimited 60-day periods if recertified.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35567890/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.822974",
+    "source_url_was_extracted": false
+  }
 }

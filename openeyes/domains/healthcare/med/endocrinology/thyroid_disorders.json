@@ -7,7 +7,13 @@
       "sector": "MED",
       "topic": "Thyroid Disorders",
       "role": "definition",
-      "tags": ["thyroid", "hypothyroidism", "hyperthyroidism", "TSH", "autoimmune"],
+      "tags": [
+        "thyroid",
+        "hypothyroidism",
+        "hyperthyroidism",
+        "TSH",
+        "autoimmune"
+      ],
       "content": "Thyroid disorders encompass hypothyroidism (underactive thyroid) and hyperthyroidism (overactive thyroid). Hypothyroidism: most commonly Hashimoto's thyroiditis (autoimmune), also post-radioactive iodine, surgery, medications (amiodarone, lithium), iodine deficiency. Symptoms: fatigue, weight gain, cold intolerance, constipation, depression, menorrhagia. Hyperthyroidism: Graves' disease (autoimmune with TSH receptor antibodies) most common, toxic multinodular goiter, toxic adenoma, thyroiditis. Symptoms: weight loss, heat intolerance, palpitations, tremor, anxiety, diarrhea. Thyroid hormones (T4, T3) regulate metabolism, growth, development via nuclear receptors. TSH from pituitary provides sensitive feedback regulation. Subclinical disease: abnormal TSH with normal free T4.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985607/",
       "credibility_class": "peer_reviewed_guideline",
@@ -20,7 +26,13 @@
       "sector": "MED",
       "topic": "Thyroid Disorders",
       "role": "treatment_protocol",
-      "tags": ["thyroid", "levothyroxine", "methimazole", "radioactive iodine", "beta-blockers"],
+      "tags": [
+        "thyroid",
+        "levothyroxine",
+        "methimazole",
+        "radioactive iodine",
+        "beta-blockers"
+      ],
       "content": "Hypothyroidism treatment: levothyroxine (synthetic T4) replacement, dosed by weight (~1.6 mcg/kg/day), adjusted based on TSH every 6-8 weeks until stable. Take on empty stomach, separate from calcium/iron supplements. Target TSH 0.5-4.5 mIU/L (individualized; lower targets in pregnancy, thyroid cancer). Hyperthyroidism treatment options: (1) Antithyroid drugs: methimazole first-line (except first trimester pregnancy - use PTU), typical duration 12-18 months for Graves'; (2) Radioactive iodine (I-131): definitive therapy, contraindicated in pregnancy/breastfeeding, often leads to hypothyroidism; (3) Thyroidectomy: for large goiters, suspicion of malignancy, patient preference. Beta-blockers (propranolol, atenolol) for symptom control. Thyroid storm: medical emergency requiring ICU, antithyroid drugs, iodine, steroids, beta-blockers.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985607/",
       "credibility_class": "peer_reviewed_guideline",
@@ -33,11 +45,22 @@
       "sector": "MED",
       "topic": "Thyroid Disorders",
       "role": "diagnostic_criteria",
-      "tags": ["thyroid", "TSH", "free T4", "antibodies", "ultrasound"],
+      "tags": [
+        "thyroid",
+        "TSH",
+        "free T4",
+        "antibodies",
+        "ultrasound"
+      ],
       "content": "Initial test: serum TSH (most sensitive screening test). If abnormal, measure free T4. Hypothyroidism pattern: elevated TSH, low free T4 (overt); elevated TSH, normal free T4 (subclinical). Hyperthyroidism pattern: suppressed TSH (<0.4 mIU/L), elevated free T4 and/or T3 (overt); suppressed TSH, normal free T4/T3 (subclinical). Etiology workup: thyroid peroxidase antibodies (TPOAb) for Hashimoto's; TSH receptor antibodies (TRAb/TSI) for Graves'. Thyroid ultrasound for nodules, goiter characterization. Radioactive iodine uptake scan differentiates causes of hyperthyroidism (high in Graves'/toxic nodules, low in thyroiditis). Fine-needle aspiration biopsy for suspicious nodules per ATA guidelines. Consider ESR/CRP if painful thyroid suggests subacute thyroiditis.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985607/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.805919",
+    "source_url_was_extracted": false
+  }
 }

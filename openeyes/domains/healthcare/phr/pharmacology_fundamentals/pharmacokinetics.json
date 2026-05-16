@@ -7,7 +7,15 @@
       "topic": "Pharmacokinetics",
       "role": "definition",
       "content": "Pharmacokinetics (PK) describes what the body does to a drug, encompassing four key processes: Absorption (how the drug enters systemic circulation), Distribution (how it spreads throughout tissues), Metabolism (chemical modification, primarily in the liver), and Excretion (removal from the body, mainly via kidneys). ADME determines onset, intensity, and duration of drug action. Absorption rate affects time to peak concentration; distribution volume influences loading dose; metabolism rate determines half-life; excretion clearance guides dosing intervals. PK parameters are critical for optimizing dosing regimens and predicting drug behavior in special populations.",
-      "tags": ["pharmacokinetics", "ADME", "drug_behavior", "absorption", "distribution", "metabolism", "excretion"],
+      "tags": [
+        "pharmacokinetics",
+        "ADME",
+        "drug_behavior",
+        "absorption",
+        "distribution",
+        "metabolism",
+        "excretion"
+      ],
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2025
@@ -19,7 +27,13 @@
       "topic": "Pharmacokinetics",
       "role": "treatment_protocol",
       "content": "Clinical application of pharmacokinetics involves using ADME principles to design optimal dosing regimens. For absorption: consider food effects, formulation (immediate vs extended release), and route selection (oral, IV, transdermal). For distribution: calculate loading doses using volume of distribution (Vd); account for protein binding in hypoalbuminemia. For metabolism: adjust for CYP450 polymorphisms, drug interactions, hepatic impairment. For excretion: modify doses based on creatinine clearance, especially for narrow therapeutic index drugs. Therapeutic drug monitoring applies PK principles to maintain concentrations within therapeutic window, particularly for aminoglycosides, vancomycin, anticonvulsants, and immunosuppressants.",
-      "tags": ["dosing_regimen", "therapeutic_monitoring", "loading_dose", "maintenance_dose", "clinical_application"],
+      "tags": [
+        "dosing_regimen",
+        "therapeutic_monitoring",
+        "loading_dose",
+        "maintenance_dose",
+        "clinical_application"
+      ],
       "source": "nih.gov",
       "credibility_class": "A",
       "year": 2025
@@ -31,10 +45,22 @@
       "topic": "Pharmacokinetics",
       "role": "diagnostic_criteria",
       "content": "Key pharmacokinetic parameters used to characterize drug behavior include: Cmax (peak plasma concentration), Tmax (time to peak), AUC (area under curve - total exposure), half-life (t1/2 - time for 50% elimination), clearance (CL - volume cleared per unit time), volume of distribution (Vd - theoretical distribution space), and bioavailability (F - fraction reaching systemic circulation). These are measured through serial blood sampling after drug administration. Population PK modeling uses sparse sampling to estimate parameters in clinical settings. Non-compartmental analysis calculates AUC using trapezoidal rule. Compartmental modeling fits data to mathematical models (one-, two-, or three-compartment) to predict concentrations over time.",
-      "tags": ["PK_parameters", "Cmax", "AUC", "half_life", "clearance", "bioavailability"],
+      "tags": [
+        "PK_parameters",
+        "Cmax",
+        "AUC",
+        "half_life",
+        "clearance",
+        "bioavailability"
+      ],
       "source": "ema.europa.eu",
       "credibility_class": "A",
       "year": 2025
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.646407",
+    "source_url_was_extracted": false
+  }
 }

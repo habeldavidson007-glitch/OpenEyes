@@ -15,5 +15,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 1.0,
-  "last_verified": "2026-05-11"
+  "last_verified": "2026-05-11",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "eia.gov"
 }

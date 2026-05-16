@@ -7,7 +7,13 @@
       "topic": "Hepatic Dosing",
       "role": "definition",
       "content": "Hepatic dosing adjusts drug regimens for liver impairment, which affects metabolism of hepatically-cleared drugs. Liver disease reduces CYP450 enzyme activity, decreases protein synthesis (lower albumin), and may cause portosystemic shunting bypassing first-pass metabolism. Child-Pugh score assesses severity: bilirubin, albumin, INR, ascites, encephalopathy (Class A: 5-6 points mild; B: 7-9 moderate; C: 10-15 severe). Drugs requiring hepatic adjustment: statins, benzodiazepines, opioids, warfarin, many antidepressants. Avoid hepatotoxic drugs in liver disease: acetaminophen >2g/day, isoniazid, methotrexate, amiodarone. Some drugs are safe due to renal elimination.",
-      "tags": ["hepatic_dosing", "Child_Pugh", "liver_impairment", "CYP450", "first_pass_metabolism"],
+      "tags": [
+        "hepatic_dosing",
+        "Child_Pugh",
+        "liver_impairment",
+        "CYP450",
+        "first_pass_metabolism"
+      ],
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2025
@@ -19,7 +25,12 @@
       "topic": "Hepatic Dosing",
       "role": "treatment_protocol",
       "content": "Dosing adjustments by Child-Pugh class: Class A (mild): consider 25% dose reduction for high-extraction drugs; Class B (moderate): 50% dose reduction or avoid; Class C (severe): avoid most hepatically-metabolized drugs. Benzodiazepines: use lorazepam, oxazepam, temazepam (glucuronidation preserved in liver disease) instead of diazepam, midazolam (CYP metabolism). Opioids: reduce morphine, hydromorphone doses; avoid meperidine (toxic metabolite accumulation). Statins: avoid simvastatin in cirrhosis; use pravastatin cautiously. Anticoagulation: warfarin sensitivity increased (reduced clotting factor synthesis); DOACs generally avoided in severe hepatic impairment. Monitor for hepatic encephalopathy precipitated by sedatives/opioids.",
-      "tags": ["dose_adjustment_by_severity", "benzodiazepine_selection", "opioid_dosing", "statin_selection"],
+      "tags": [
+        "dose_adjustment_by_severity",
+        "benzodiazepine_selection",
+        "opioid_dosing",
+        "statin_selection"
+      ],
       "source": "nih.gov",
       "credibility_class": "A",
       "year": 2025
@@ -31,10 +42,20 @@
       "topic": "Hepatic Dosing",
       "role": "diagnostic_criteria",
       "content": "Child-Pugh scoring: Bilirubin (<2=1, 2-3=2, >3=3 mg/dL); Albumin (>3.5=1, 2.8-3.5=2, <2.8=3 g/dL); INR (<1.7=1, 1.7-2.3=2, >2.3=3); Ascites (none=1, mild=2, moderate-severe=3); Encephalopathy (none=1, grade 1-2=2, grade 3-4=3). MELD score (bilirubin, INR, creatinine) predicts mortality but less used for dosing. Drug extraction ratio determines impact: high-extraction drugs (morphine, propranolol) have reduced clearance and increased bioavailability in cirrhosis; low-extraction drugs (warfarin, phenytoin) affected mainly by protein binding changes. Liver function tests (AST, ALT, ALP) indicate injury but don't correlate with metabolic capacity. No simple test quantifies hepatic drug metabolism; clinical assessment guides dosing.",
-      "tags": ["Child_Pugh_calculation", "MELD_score", "extraction_ratio", "liver_function_tests"],
+      "tags": [
+        "Child_Pugh_calculation",
+        "MELD_score",
+        "extraction_ratio",
+        "liver_function_tests"
+      ],
       "source": "ema.europa.eu",
       "credibility_class": "A",
       "year": 2025
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.643555",
+    "source_url_was_extracted": false
+  }
 }

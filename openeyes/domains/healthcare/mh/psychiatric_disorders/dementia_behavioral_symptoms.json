@@ -7,15 +7,27 @@
     {
       "role": "definition",
       "content": "Behavioral and Psychological Symptoms of Dementia (BPSD) encompass a heterogeneous range of psychiatric symptoms and behaviors occurring in patients with dementia. Symptoms include psychosis (delusions, hallucinations), mood disturbances (depression, anxiety, euphoria), agitation/aggression, apathy, disinhibition, irritability/lability, aberrant motor behavior (pacing, wandering), sleep disturbances, and appetite changes. Affects up to 90% of dementia patients over disease course. BPSD causes significant distress, caregiver burden, institutionalization risk, and reduced quality of life. Pathophysiology involves neurodegeneration in specific brain regions, neurotransmitter imbalances (acetylcholine, serotonin, dopamine), unmet needs, environmental triggers.",
-      "tags": ["BPSD", "dementia", "agitation", "psychosis", "Alzheimer"],
+      "tags": [
+        "BPSD",
+        "dementia",
+        "agitation",
+        "psychosis",
+        "Alzheimer"
+      ],
       "source": "https://www.nimh.nih.gov/health/topics/dementia",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "treatment_protocol",
-      "content": "First-line: non-pharmacological interventions—identify/treat underlying medical causes (pain, infection, constipation), optimize environment (reduce noise, maintain routines), address unmet needs, person-centered care, meaningful activities, music therapy, bright light therapy for sleep. Caregiver education/support essential. Pharmacotherapy reserved for severe symptoms causing danger/distress: antidepressants (SSRIs like citalopram, sertraline) for depression/anxiety; cholinesterase inhibitors/memantine may help some behavioral symptoms. Antipsychotics (risperidone, olanzapine, quetiapine) only for severe agitation/psychosis unresponsive to other measures due to increased mortality/stroke risk in elderly dementia patients (black box warning); use lowest dose, shortest duration, regular reassessment for discontinuation.",
-      "tags": ["non-pharmacological", "antipsychotics", "SSRI", "cholinesterase-inhibitor", "caregiver-support"],
+      "content": "First-line: non-pharmacological interventions\u2014identify/treat underlying medical causes (pain, infection, constipation), optimize environment (reduce noise, maintain routines), address unmet needs, person-centered care, meaningful activities, music therapy, bright light therapy for sleep. Caregiver education/support essential. Pharmacotherapy reserved for severe symptoms causing danger/distress: antidepressants (SSRIs like citalopram, sertraline) for depression/anxiety; cholinesterase inhibitors/memantine may help some behavioral symptoms. Antipsychotics (risperidone, olanzapine, quetiapine) only for severe agitation/psychosis unresponsive to other measures due to increased mortality/stroke risk in elderly dementia patients (black box warning); use lowest dose, shortest duration, regular reassessment for discontinuation.",
+      "tags": [
+        "non-pharmacological",
+        "antipsychotics",
+        "SSRI",
+        "cholinesterase-inhibitor",
+        "caregiver-support"
+      ],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
@@ -23,10 +35,21 @@
     {
       "role": "diagnostic_criteria",
       "content": "BPSD is not a standalone DSM-5 diagnosis but rather a clinical syndrome occurring in context of major/neurocognitive disorder (dementia). Assessment involves: comprehensive history (symptom onset, frequency, severity, triggers), mental status examination, physical examination to rule out delirium/medical causes, medication review, laboratory tests (CBC, metabolic panel, thyroid, B12), brain imaging if indicated. Use standardized instruments: Neuropsychiatric Inventory (NPI), Cohen-Mansfield Agitation Inventory (CMAI), Cornell Scale for Depression in Dementia. Differentiate from delirium (acute onset, fluctuating course, inattention), primary psychiatric disorders, medication side effects. Document target symptoms for treatment monitoring.",
-      "tags": ["assessment", "NPI", "delirium-differential", "dementia", "BPSD"],
+      "tags": [
+        "assessment",
+        "NPI",
+        "delirium-differential",
+        "dementia",
+        "BPSD"
+      ],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.723275",
+    "source_url_was_extracted": false
+  }
 }

@@ -18,5 +18,7 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 0.9,
-  "sector": "REG"
+  "sector": "REG",
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "www.bls.gov"
 }

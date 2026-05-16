@@ -15,5 +15,7 @@
   "source_url": "https://rhg.com/",
   "credibility_class": "research_firm",
   "year": 2024,
-  "weight": 0.91
+  "weight": 0.91,
+  "credibility_score": "UNVERIFIED",
+  "source_domain": "rhg.com"
 }

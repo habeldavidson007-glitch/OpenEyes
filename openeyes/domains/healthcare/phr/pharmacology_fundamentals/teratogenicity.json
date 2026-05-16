@@ -7,7 +7,13 @@
       "topic": "Teratogenicity",
       "role": "definition",
       "content": "Teratogenicity refers to a drug's ability to cause fetal malformations when administered during pregnancy. Critical periods: pre-embryonic (days 0-14, 'all-or-none' effect), embryonic (days 15-60, organogenesis - highest risk for structural defects), fetal (week 9-birth, functional deficits, growth restriction). FDA replaced letter categories (A, B, C, D, X) in 2015 with narrative Pregnancy and Lactation Labeling Rule (PLLR) providing risk summaries, clinical considerations, and data. Known human teratogens: isotretinoin (craniofacial, cardiac, CNS defects), thalidomide (limb reduction), warfarin (nasal hypoplasia, stippled epiphyses), valproate (neural tube defects), ACE inhibitors (renal dysgenesis, oligohydramnios), methotrexate (multiple anomalies), alcohol (fetal alcohol syndrome).",
-      "tags": ["teratogenicity", "pregnancy_categories", "PLLR", "organogenesis", "fetal_defects"],
+      "tags": [
+        "teratogenicity",
+        "pregnancy_categories",
+        "PLLR",
+        "organogenesis",
+        "fetal_defects"
+      ],
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2025
@@ -19,7 +25,12 @@
       "topic": "Teratogenicity",
       "role": "treatment_protocol",
       "content": "Clinical management: preconception counseling for women of childbearing potential on teratogenic medications; contraception requirements (isotretinoin iPLEDGE program requires two forms); medication switching before conception (ACE inhibitors to labetalol/nifedipine; warfarin to LMWH; valproate to lamotrigine/levetiracetam if possible); folic acid supplementation (4mg/day for women on antiepileptics). If exposure occurs: determine gestational age, assess specific drug risk, discuss options (continuation with monitoring, termination). Risk communication: absolute vs relative risk important (baseline malformation rate 3-4%; valproate increases to 10%); most exposures don't cause defects. Resources: TERIS, MotherToBaby, Organization of Teratology Information Services provide evidence-based risk assessments.",
-      "tags": ["preconception_counseling", "contraception_requirements", "medication_switching", "risk_communication"],
+      "tags": [
+        "preconception_counseling",
+        "contraception_requirements",
+        "medication_switching",
+        "risk_communication"
+      ],
       "source": "nih.gov",
       "credibility_class": "A",
       "year": 2025
@@ -31,10 +42,20 @@
       "topic": "Teratogenicity",
       "role": "diagnostic_criteria",
       "content": "Establishing teratogenicity requires: consistent pattern of defects (specific syndrome), temporal relationship (exposure during critical period), biological plausibility, dose-response relationship, reproducibility across studies. Single case reports insufficient; registry data and cohort studies needed. Confounding factors: underlying maternal disease may cause defects (diabetes, epilepsy); recall bias in retrospective studies; healthy user bias. Evaluation of exposed pregnancy: detailed ultrasound (18-20 weeks anatomy scan), fetal echocardiography for cardiac teratogens, amniocentesis if indicated. Postnatal assessment: physical examination, developmental monitoring. Causality assessment tools: WHO-UMC criteria, Naranjo scale adapted for pregnancy. Registry follow-up essential for new drugs; pregnancy exposure registries mandated for some medications.",
-      "tags": ["causality_assessment", "exposure_evaluation", "prenatal_diagnosis", "pregnancy_registries"],
+      "tags": [
+        "causality_assessment",
+        "exposure_evaluation",
+        "prenatal_diagnosis",
+        "pregnancy_registries"
+      ],
       "source": "ema.europa.eu",
       "credibility_class": "A",
       "year": 2025
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.644447",
+    "source_url_was_extracted": false
+  }
 }

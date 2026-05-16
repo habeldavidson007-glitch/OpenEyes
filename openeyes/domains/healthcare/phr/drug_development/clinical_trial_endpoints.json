@@ -4,7 +4,12 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["clinical trial endpoints", "surrogate endpoints", "overall survival", "progression-free survival"],
+      "tags": [
+        "clinical trial endpoints",
+        "surrogate endpoints",
+        "overall survival",
+        "progression-free survival"
+      ],
       "reasoning_role": "definition",
       "content": "Clinical trial endpoints are outcomes used to measure treatment effect. Surrogate endpoints are biomarkers or intermediate outcomes (e.g., tumor shrinkage, blood pressure, HbA1c) that substitute for direct measures of how patients feel, function, or survive. Clinical endpoints directly measure patient benefit (overall survival, quality of life, symptom improvement). In oncology, overall survival (OS) is the gold standard but requires long follow-up; progression-free survival (PFS) and objective response rate (ORR) are commonly used surrogates. Validated surrogates have established correlation with clinical benefit; 'reasonably likely' surrogates support accelerated approval pending confirmation.",
       "source": "fda.gov",
@@ -15,9 +20,14 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["clinical trial endpoints", "surrogate endpoints", "overall survival", "progression-free survival"],
+      "tags": [
+        "clinical trial endpoints",
+        "surrogate endpoints",
+        "overall survival",
+        "progression-free survival"
+      ],
       "reasoning_role": "treatment_protocol",
-      "content": "Endpoint selection depends on disease area, treatment mechanism, and regulatory pathway. Oncology endpoints: Overall Survival (OS)—time from randomization to death from any cause, gold standard but confounded by subsequent therapies; Progression-Free Survival (PFS)—time to tumor progression or death, widely accepted surrogate; Objective Response Rate (ORR)—proportion with tumor shrinkage ≥30%, used in accelerated approval; Disease Control Rate (DCR)—CR+PR+stable disease. Cardiovascular endpoints: MACE (major adverse cardiovascular events), hospitalization for heart failure. Diabetes: HbA1c reduction (validated surrogate), microvascular complications. Endpoint hierarchies often include primary, key secondary, and exploratory endpoints with multiplicity adjustments.",
+      "content": "Endpoint selection depends on disease area, treatment mechanism, and regulatory pathway. Oncology endpoints: Overall Survival (OS)\u2014time from randomization to death from any cause, gold standard but confounded by subsequent therapies; Progression-Free Survival (PFS)\u2014time to tumor progression or death, widely accepted surrogate; Objective Response Rate (ORR)\u2014proportion with tumor shrinkage \u226530%, used in accelerated approval; Disease Control Rate (DCR)\u2014CR+PR+stable disease. Cardiovascular endpoints: MACE (major adverse cardiovascular events), hospitalization for heart failure. Diabetes: HbA1c reduction (validated surrogate), microvascular complications. Endpoint hierarchies often include primary, key secondary, and exploratory endpoints with multiplicity adjustments.",
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2024
@@ -26,12 +36,22 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": ["clinical trial endpoints", "surrogate endpoints", "overall survival", "progression-free survival"],
+      "tags": [
+        "clinical trial endpoints",
+        "surrogate endpoints",
+        "overall survival",
+        "progression-free survival"
+      ],
       "reasoning_role": "diagnostic_criteria",
       "content": "Surrogate endpoint validation requires: strong biological plausibility linking surrogate to clinical outcome, epidemiological evidence showing surrogate predicts clinical benefit, and meta-analytic evidence demonstrating treatment effects on surrogate correlate with effects on clinical outcome (Prentice criteria). FDA acceptance varies by context: HbA1c is validated for diabetes drug approval; LDL cholesterol for cardiovascular risk reduction; tumor response/PFS accepted in many cancers but OS preferred when feasible. Limitations of surrogates include: may not capture all treatment effects (beneficial or harmful), validation is context-specific (may not generalize across drug classes), and historical examples where surrogate improvement didn't translate to clinical benefit (e.g., arrhythmia suppression with antiarrhythmics increased mortality). Patient-reported outcomes (PROs) increasingly valued as co-primary endpoints.",
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.678905",
+    "source_url_was_extracted": false
+  }
 }

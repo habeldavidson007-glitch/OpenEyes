@@ -5,7 +5,13 @@
   "fragments": [
     {
       "id": "hc_med_onc_rt_def_001",
-      "tags": ["oncology", "radiation therapy", "external beam", "brachytherapy", "radiobiology"],
+      "tags": [
+        "oncology",
+        "radiation therapy",
+        "external beam",
+        "brachytherapy",
+        "radiobiology"
+      ],
       "reasoning_role": "definition",
       "content": "Radiation therapy uses high-energy particles or waves to damage tumor DNA, causing cell death. External beam radiation therapy (EBRT) delivers radiation from outside the body: 3D conformal radiation therapy (3D-CRT) shapes beams to tumor; intensity-modulated radiation therapy (IMRT) varies beam intensity for complex shapes; volumetric modulated arc therapy (VMAT) delivers continuous arc rotation; stereotactic body radiation therapy (SBRT/SRS) delivers high-dose precise radiation in 1-5 fractions. Proton therapy uses protons with Bragg peak effect, sparing distal tissues. Brachytherapy places radioactive sources inside/near tumor: low-dose rate (LDR) permanent seeds (prostate cancer); high-dose rate (HDR) temporary catheters (cervical, breast cancer). Radiobiology principles: 4 R's - repair (normal tissue repairs sublethal damage), reassortment (cells redistribute through cell cycle), repopulation (tumor cells proliferate between fractions), reoxygenation (hypoxic cells become oxygenated, more radiosensitive).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36123456/",
@@ -14,7 +20,13 @@
     },
     {
       "id": "hc_med_onc_rt_treat_001",
-      "tags": ["oncology", "radiation therapy", "fractionation", "dosing", "treatment planning"],
+      "tags": [
+        "oncology",
+        "radiation therapy",
+        "fractionation",
+        "dosing",
+        "treatment planning"
+      ],
       "reasoning_role": "treatment_protocol",
       "content": "Fractionation schedules balance tumor control and normal tissue toxicity. Conventional fractionation: 1.8-2 Gy per fraction, once daily, 5 days/week; total dose 60-70 Gy over 6-7 weeks for definitive treatment. Hypofractionation: larger doses per fraction (2.5-3 Gy), shorter overall time; standard for breast cancer (40-42.5 Gy in 15-16 fractions), prostate cancer (60 Gy in 20 fractions). SBRT: very high dose per fraction (6-20 Gy), 1-5 fractions; used for early-stage lung cancer, liver metastases, brain metastases, spine metastases. Hyperfractionation: smaller doses twice daily, higher total dose; investigated in head/neck cancer. Treatment planning: CT simulation defines target volumes (GTV, CTV, PTV); organs at risk contoured; dose constraints based on QUANTEC guidelines. Concurrent chemoradiation enhances efficacy in many cancers (head/neck, lung, cervical, anal) but increases toxicity. Adjuvant radiation post-surgery reduces local recurrence (breast, rectal, endometrial cancers).",
       "source": "https://www.nccn.org/guidelines",
@@ -23,12 +35,23 @@
     },
     {
       "id": "hc_med_onc_rt_diag_001",
-      "tags": ["oncology", "radiation therapy", "side effects", "acute toxicity", "late toxicity"],
+      "tags": [
+        "oncology",
+        "radiation therapy",
+        "side effects",
+        "acute toxicity",
+        "late toxicity"
+      ],
       "reasoning_role": "diagnostic_criteria",
       "content": "Radiation side effects classified as acute (during/within 3 months) or late (>3 months post-treatment). Acute effects: fatigue (universal), skin reactions (erythema, desquamation), mucositis (head/neck, pelvic radiation), esophagitis (thoracic radiation), diarrhea (abdominal/pelvic), cytopenias (large bone marrow volumes irradiated). Managed with supportive care: topical steroids for skin, pain control for mucositis, antidiarrheals, nutritional support. Late effects: fibrosis (tissue scarring, organ dysfunction), lymphedema, xerostomia (permanent after head/neck radiation), cognitive decline (brain radiation), cardiac toxicity (left breast/chest radiation), secondary malignancies (sarcomas, carcinomas in field, latency 5-30 years). Organ-specific constraints: lung V20 <35% (pneumonitis risk), heart mean dose <26 Gy (cardiac events), spinal cord max <50 Gy (myelopathy), bowel V45 <195cc (obstruction risk). RTOG/EORTC toxicity criteria grade adverse events 1-5.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35234567/",
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.819934",
+    "source_url_was_extracted": false
+  }
 }

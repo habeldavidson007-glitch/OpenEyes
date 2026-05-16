@@ -2,7 +2,12 @@
   "domain": "healthcare",
   "subdomain": "PHR",
   "sector": "PHR",
-  "tags": ["medication errors", "patient safety", "pharmacovigilance", "error prevention"],
+  "tags": [
+    "medication errors",
+    "patient safety",
+    "pharmacovigilance",
+    "error prevention"
+  ],
   "fragments": [
     {
       "role": "definition",
@@ -25,5 +30,10 @@
       "credibility_class": "A",
       "year": 2024
     }
-  ]
+  ],
+  "source_url": "https://unknown/source_missing",
+  "metadata": {
+    "source_url_remediated": "2026-05-15T15:54:01.648160",
+    "source_url_was_extracted": false
+  }
 }
