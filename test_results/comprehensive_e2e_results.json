@@ -4,7 +4,7 @@
     "total_answers": 241,
     "total_halts": 1,
     "overall_answer_rate": 99.58677685950413,
-    "execution_time_seconds": 77.25568389892578,
+    "execution_time_seconds": 73.85711765289307,
     "fragment_counts": {
       "healthcare": 0,
       "economy": 0,
@@ -54,8 +54,8 @@
         {
           "query": "Is metformin effective for type 2 diabetes?",
           "status": "ANSWER_LOW_CONFIDENCE",
-          "confidence": 72.59,
-          "answer_length": 3272
+          "confidence": 77.99,
+          "answer_length": 2780
         },
         {
           "query": "What are side effects of statins?",
@@ -436,7 +436,7 @@
           "query": "How does taxation affect economic growth?",
           "status": "ANSWER",
           "confidence": 77.95,
-          "answer_length": 1952
+          "answer_length": 1495
         },
         {
           "query": "What is the Laffer curve?",
@@ -508,7 +508,7 @@
           "query": "How does minimum wage affect employment?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 1912
+          "answer_length": 580
         },
         {
           "query": "What is income inequality?",
@@ -981,7 +981,7 @@
         {
           "query": "How are dividends taxed?",
           "status": "ANSWER",
-          "confidence": 77.94,
+          "confidence": 72.54,
           "answer_length": 920
         },
         {
@@ -1054,7 +1054,7 @@
           "query": "How does internal rate of return work?",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 1916
+          "answer_length": 2269
         },
         {
           "query": "What is beta in investing?",
@@ -1102,7 +1102,7 @@
           "query": "How do ETFs work?",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 1687
+          "answer_length": 1264
         },
         {
           "query": "What is expense ratio?",
@@ -1150,7 +1150,7 @@
           "query": "How does secondary offering work?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 2074
+          "answer_length": 1827
         },
         {
           "query": "What is stock split?",
