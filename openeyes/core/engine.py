@@ -350,7 +350,15 @@ class OpenEyesEngine:
             fragments_count=len(frags),
             fragments=frags
         )
-        answer_class = "ANSWER_CONFIDENT" if result["status"] == "ANSWER_HIGH_CONFIDENCE" else "ANSWER_LOW_CONFIDENCE"
+        
+        # Correct status labeling based on new thresholds (HIGH ≥75%, MEDIUM 55-74%, LOW <55%)
+        confidence_val = result.get("confidence", 0.0)
+        if confidence_val >= 75:
+            answer_class = "ANSWER_HIGH_CONFIDENCE"
+        elif confidence_val >= 55:
+            answer_class = "ANSWER_MEDIUM_CONFIDENCE"
+        else:
+            answer_class = "ANSWER_LOW_CONFIDENCE"
 
         out = {
             "status": result["status"],

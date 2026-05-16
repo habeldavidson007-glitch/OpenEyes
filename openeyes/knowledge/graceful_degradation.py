@@ -274,10 +274,16 @@ def classify_intent(query: str) -> IntentClassification:
 
 
 def determine_confidence_level(confidence_percent: float) -> ConfidenceLevel:
-    """Map numeric confidence to confidence level enum."""
-    if confidence_percent >= 80:
+    """Map numeric confidence to confidence level enum.
+    
+    Updated thresholds per production calibration:
+    - HIGH: ≥75%
+    - MEDIUM: 55-74%
+    - LOW: <55%
+    """
+    if confidence_percent >= 75:
         return ConfidenceLevel.HIGH
-    elif confidence_percent >= 60:
+    elif confidence_percent >= 55:
         return ConfidenceLevel.MEDIUM
     elif confidence_percent >= 40:
         return ConfidenceLevel.LOW
@@ -327,12 +333,13 @@ def generate_graded_response(
     status = "ANSWER_HIGH_CONFIDENCE"
     
     if confidence_level == ConfidenceLevel.HIGH:
-        # Full answer
+        # Full answer with high confidence
         claims = [f.claim for f in fragments if f.claim]
         answer_parts.extend(claims[:3])
         
     elif confidence_level == ConfidenceLevel.MEDIUM:
-        # Answer with mild caveats
+        # Answer with mild caveats - still considered acceptable confidence
+        status = "ANSWER_MEDIUM_CONFIDENCE"
         answer_parts.append("Based on available information:")
         claims = [f.claim for f in fragments if f.claim]
         answer_parts.extend(claims[:2])
