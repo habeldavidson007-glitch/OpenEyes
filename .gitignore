@@ -1,10 +1,9 @@
 ```
-# Binary and compiled files
+# Binary/compiled files
 *.bin
 
-# Test results and reports
-test_results/
-
-# Local environment and cache
-.openeyes/
+# Environment and cache
+.env
+.env.local
+.openeyes/vault/
 ```
