@@ -7,6 +7,7 @@ openeyes/akinator_engine.py
 openeyes/binary_lib.py
 openeyes/cli.py
 openeyes/config.py
+openeyes/fragment_library.py
 openeyes/identity.py
 openeyes/sleep_manager.py
 openeyes.egg-info/PKG-INFO
@@ -55,6 +56,10 @@ openeyes/knowledge/live_fetch.py
 openeyes/knowledge/local_retrieval.py
 openeyes/knowledge/retrieval.py
 openeyes/language_synthesizer/__init__.py
+openeyes/monte_carlo/__init__.py
+openeyes/monte_carlo/engine.py
+openeyes/monte_carlo/evaluator.py
+openeyes/monte_carlo/rng.py
 openeyes/night_mode/__init__.py
 openeyes/ontological_safety/__init__.py
 openeyes/query_interface/__init__.py

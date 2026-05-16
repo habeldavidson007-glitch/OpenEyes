@@ -2,25 +2,21 @@
 # Binary and compiled files
 *.bin
 
-# Logs and temporary files
+# Logs and temp files
 *.log
 *.tmp
 
-# Environment and cache
+# Environment files
 .env
 .env.local
-.env.*
+*.env.*
 
-# Editors and IDE
-.vscode/
-.idea/
-
-# Coverage and testing
-.coverage
+# Coverage and test results
 coverage/
 htmlcov/
+.coverage
+test_results/
 
-# System files
-.DS_Store
-Thumbs.db
+# Original rules preserved
+*.log
 ```

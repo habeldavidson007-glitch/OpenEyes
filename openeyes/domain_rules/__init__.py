@@ -69,7 +69,16 @@ DOMAIN_TIERS = {
     "literature": "tier4",
     "hypothetical": "tier4",
     "brainstorming": "tier4",
-    "speculative": "tier4"
+    "speculative": "tier4",
+    
+    # Additional domains from fragment library
+    "social_sciences": "tier2",
+    "his": "tier2",  # History sector
+    "sat": "tier2",  # Satellite/Space sector
+    "dem": "tier2",  # Demography sector
+    "edu": "tier2",  # Education sector
+    "engineering": "tier2",
+    "general": "tier3"  # General knowledge domain
 }
 
 
