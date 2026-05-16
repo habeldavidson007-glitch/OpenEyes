@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Human conversational patterns for OpenEyes Cognitive Manifestor",
+    "source": "Curated from public dialogue structures, not trained on private data"
+  },
+  "patterns": {
+    "greetings": [
+      {"pattern": "Hey there! {content}", "context": "casual"},
+      {"pattern": "Hello! {content}", "context": "neutral"},
+      {"pattern": "Hi! {content}", "context": "casual"},
+      {"pattern": "Great question! {content}", "context": "enthusiastic"},
+      {"pattern": "Thanks for asking! {content}", "context": "polite"},
+      {"pattern": "Good point! {content}", "context": "affirming"},
+      {"pattern": "I see what you're asking! {content}", "context": "empathetic"}
+    ],
+    "explanation_starters": [
+      {"pattern": "Here's what's happening: {content}", "context": "direct"},
+      {"pattern": "Let me break this down: {content}", "context": "educational"},
+      {"pattern": "The key thing to understand is: {content}", "context": "focused"},
+      {"pattern": "Simply put: {content}", "context": "simplified"},
+      {"pattern": "In essence: {content}", "context": "concise"},
+      {"pattern": "At its core: {content}", "context": "fundamental"},
+      {"pattern": "What you need to know: {content}", "context": "practical"}
+    ],
+    "analogy_introductions": [
+      {"pattern": "Think of it like this: {analogy}", "context": "relatable"},
+      {"pattern": "Here's a helpful way to picture it: {analogy}", "context": "visual"},
+      {"pattern": "Imagine it this way: {analogy}", "context": "imaginative"},
+      {"pattern": "A good analogy is: {analogy}", "context": "comparative"},
+      {"pattern": "To make it concrete: {analogy}", "context": "tangible"},
+      {"pattern": "Picture this: {analogy}", "context": "narrative"},
+      {"pattern": "It's similar to: {analogy}", "context": "comparative"}
+    ],
+    "connection_phrases": [
+      {"pattern": "This connects to {topic} because", "context": "logical"},
+      {"pattern": "Building on that, {topic}", "context": "progressive"},
+      {"pattern": "Related to this is {topic}, where", "context": "associative"},
+      {"pattern": "This also affects {topic}, since", "context": "causal"},
+      {"pattern": "Following this logic, {topic}", "context": "deductive"},
+      {"pattern": "Extending this idea to {topic},", "context": "expansive"},
+      {"pattern": "In the same vein, {topic}", "context": "parallel"}
+    ],
+    "uncertainty_markers": [
+      {"pattern": "Based on available data,", "context": "evidence-based"},
+      {"pattern": "Current evidence suggests,", "context": "tentative"},
+      {"pattern": "From what we know,", "context": "knowledge-limited"},
+      {"pattern": "The consensus indicates,", "context": "expert-aligned"},
+      {"pattern": "Research shows,", "context": "scientific"},
+      {"pattern": "Studies suggest,", "context": "academic"},
+      {"pattern": "Available information points to,", "context": "cautious"}
+    ],
+    "safety_transitions": [
+      {"pattern": "However, I need to be careful here:", "context": "cautious"},
+      {"pattern": "Important note:", "context": "warning"},
+      {"pattern": "Safety first:", "context": "protective"},
+      {"pattern": "Critical consideration:", "context": "serious"},
+      {"pattern": "Please remember:", "context": "reminder"},
+      {"pattern": "A crucial point:", "context": "emphasis"},
+      {"pattern": "Before we continue:", "context": "pause"}
+    ],
+    "clarification_requests": [
+      {"pattern": "Could you tell me more about {topic}?", "context": "curious"},
+      {"pattern": "When you say {topic}, do you mean...?", "context": "clarifying"},
+      {"pattern": "I want to make sure I understand: are you asking about {topic}?", "context": "confirming"},
+      {"pattern": "That's interesting! Could you elaborate on {topic}?", "context": "engaging"},
+      {"pattern": "To give you the best answer, could you clarify {topic}?", "context": "helpful"}
+    ],
+    "acknowledgments": [
+      {"pattern": "That makes sense.", "context": "understanding"},
+      {"pattern": "I see where you're coming from.", "context": "empathetic"},
+      {"pattern": "Good observation!", "context": "affirming"},
+      {"pattern": "You're right to ask about that.", "context": "validating"},
+      {"pattern": "That's an important point.", "context": "recognizing"}
+    ],
+    "transitions": [
+      {"pattern": "Now, regarding {topic}...", "context": "shifting"},
+      {"pattern": "Moving on to {topic}...", "context": "progressive"},
+      {"pattern": "On a related note, {topic}...", "context": "connecting"},
+      {"pattern": "This brings us to {topic}...", "context": "logical"},
+      {"pattern": "Speaking of which, {topic}...", "context": "associative"}
+    ]
+  },
+  "tone_profiles": {
+    "casual": {
+      "formality": 0.3,
+      "sentence_length": "short",
+      "contractions": true,
+      "technical_terms": "minimal"
+    },
+    "professional": {
+      "formality": 0.7,
+      "sentence_length": "medium",
+      "contractions": false,
+      "technical_terms": "moderate"
+    },
+    "technical": {
+      "formality": 0.8,
+      "sentence_length": "long",
+      "contractions": false,
+      "technical_terms": "extensive"
+    },
+    "empathetic": {
+      "formality": 0.5,
+      "sentence_length": "medium",
+      "contractions": true,
+      "technical_terms": "minimal",
+      "emotional_awareness": true
+    },
+    "urgent": {
+      "formality": 0.6,
+      "sentence_length": "short",
+      "contractions": false,
+      "technical_terms": "precise",
+      "directness": "high"
+    }
+  },
+  "response_templates": {
+    "single_fact": [
+      "{opening} {fact}",
+      "{fact} {elaboration}",
+      "{opening} {fact} {analogy}"
+    ],
+    "multiple_facts": [
+      "{opening} {fact1} {connector} {fact2}",
+      "{fact1} {connector} {fact2} {summary}",
+      "{opening} {fact1} {analogy} {connector} {fact2}"
+    ],
+    "with_uncertainty": [
+      "{uncertainty} {fact}",
+      "{opening} {uncertainty} {fact}",
+      "{fact} {uncertainty} {next_steps}"
+    ],
+    "safety_halt": [
+      "{safety_opening} {reason} {resources}",
+      "{pause} {concern} {alternative}"
+    ]
+  }
+}
