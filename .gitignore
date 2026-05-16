@@ -1,69 +1,60 @@
-```gitignore
-# Python
-__pycache__/
+# Compiled Python files
 *.pyc
-*.pyo
-*.pyd
-.Python
-env/
+__pycache__/
+
+# Virtual environments
 venv/
 .venv/
-.ENV
-.ENV.local
 .env
 .env.local
-.env.*
-.env.local.*
-.venv.bak/
-.python-version
-.pytest_cache/
-.mypy_cache/
-.coverage
-htmlcov/
-.coverage.*
+*.env.*
 
-# Build and distribution artifacts
-build/
-dist/
-*.egg
-*.egg-info/
-.eggs/
-pip-log.txt
-pip-delete-this-directory.txt
-
-# IDE and editor files
+# IDE specific
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
+
+# Logs
 *.log
-*.out
-*.pid
-*.seed
-*.prof
 
-# OS generated files
+# Build artifacts
+build/
+dist/
+target/
+
+# Dependencies
+node_modules/
+.mypy_cache/
+.pytest_cache/
+coverage/
+htmlcov/
+.coverage
+
+# System files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
-Icon?
-```
 
-Wait, let me reconsider the file changes. The added files are all source code files (.py, .md) and there are no build artifacts, dependency directories, or temporary files in the changes. According to rule #6, if the change list contains only source or config files and no build artifacts, dependencies, or temp files, I should output an empty .gitignore.
-
-The added files are:
-- REASONING_ENGINE_REPORT.md (markdown/config)
-- openeyes/reasoning/README.md (markdown/config) 
-- openeyes/reasoning/__init__.py (source)
-- openeyes/reasoning/multi_hop_reasoner.py (source)
-- openeyes/reasoning/preflight_critic.py (source)
-- openeyes/reasoning/symbolic_coordinates.py (source)
-
-These are all source code and documentation files, no build artifacts or dependencies.
-
-(empty — output nothing)
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
