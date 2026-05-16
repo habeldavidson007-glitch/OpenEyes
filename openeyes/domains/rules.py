@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 # FIX: Updated DOMAIN_THRESHOLDS with lower min_score for healthcare and governance to improve recall
-# Added explicit entries for 'economy', 'healthcare', 'governance'
+# Added explicit entries for 'economy', 'healthcare', 'governance', and 'general'
 DOMAIN_THRESHOLDS = {
     "economy": {"tier": 2, "min_score": 55.0, "require_counter": False},
     "healthcare": {"tier": 1, "min_score": 50.0, "require_counter": False},  # Lowered from 70
@@ -12,6 +12,7 @@ DOMAIN_THRESHOLDS = {
     "cooking": {"tier": 3, "min_score": 45.0, "require_counter": False},
     "trading": {"tier": 2, "min_score": 55.0, "require_counter": False},
     "investment": {"tier": 2, "min_score": 55.0, "require_counter": False},
+    "general": {"tier": 3, "min_score": 45.0, "require_counter": False},     # NEW: General domain baseline
 }
 
 # FIX: Relaxed survival thresholds to allow more fragments to pass Monte Carlo

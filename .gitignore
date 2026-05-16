@@ -1,69 +1,37 @@
 ```
-# Binary/compiled files
+# Binary and compiled files
 *.bin
 
 # Logs and temp files
 *.log
 
-# Environment
+# Environment and cache
 .env
 .env.local
-.env.*
+.env.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Editors
+# IDE and editor files
 .vscode/
 .idea/
+*.swp
+*.swo
+*.tmp
 
-# System files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Build artifacts
+# Build and distribution
 dist/
 build/
 target/
-*.out
-*.exe
-*.dll
-*.so
-*.a
 
-# Dependencies
-node_modules/
-__pycache__/
-.mypy_cache/
-.pytest_cache/
-.venv/
-venv/
-.julia/
-zig*/
+# Coverage and testing
+.coverage
+coverage/
+htmlcov/
 
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
+# OS generated files
+.DS_Store
+Thumbs.db
 ```

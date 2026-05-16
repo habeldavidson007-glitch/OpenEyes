@@ -351,13 +351,17 @@ class OpenEyesEngine:
             fragments=frags
         )
         
+        # P3: Override status with correct confidence-based label (FIX: was using Monte Carlo status instead of confidence-based)
         # Correct status labeling based on new thresholds (HIGH ≥75%, MEDIUM 55-74%, LOW <55%)
         confidence_val = result.get("confidence", 0.0)
         if confidence_val >= 75:
+            result["status"] = "ANSWER_HIGH_CONFIDENCE"
             answer_class = "ANSWER_HIGH_CONFIDENCE"
         elif confidence_val >= 55:
+            result["status"] = "ANSWER_MEDIUM_CONFIDENCE"
             answer_class = "ANSWER_MEDIUM_CONFIDENCE"
         else:
+            result["status"] = "ANSWER_LOW_CONFIDENCE"
             answer_class = "ANSWER_LOW_CONFIDENCE"
 
         out = {
