@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "Compressed Linguistic DNA for Procedural Human Speech Generation",
+    "source_patterns": "Derived from common dialogue structures (Reddit, Twitter, OpenSubtitles stats)",
+    "usage": "Weights determine probability of selection during procedural generation"
+  },
+  "openers": {
+    "casual": [
+      {"text": "Hey! ", "weight": 0.8},
+      {"text": "Hi there! ", "weight": 0.7},
+      {"text": "So, ", "weight": 0.9},
+      {"text": "Well, ", "weight": 0.85},
+      {"text": "Honestly? ", "weight": 0.6},
+      {"text": "Look, ", "weight": 0.75},
+      {"text": "You know, ", "weight": 0.65},
+      {"text": "Basically, ", "weight": 0.7},
+      {"text": "Here's the thing: ", "weight": 0.8},
+      {"text": "Good question. ", "weight": 0.75}
+    ],
+    "formal": [
+      {"text": "In summary, ", "weight": 0.7},
+      {"text": "To clarify, ", "weight": 0.8},
+      {"text": "Specifically, ", "weight": 0.75},
+      {"text": "Regarding your query, ", "weight": 0.6},
+      {"text": "The data indicates ", "weight": 0.65}
+    ],
+    "empathetic": [
+      {"text": "I understand why you'd ask. ", "weight": 0.7},
+      {"text": "That's a tough one. ", "weight": 0.6},
+      {"text": "It's important to note ", "weight": 0.8},
+      {"text": "Let's break this down. ", "weight": 0.85}
+    ]
+  },
+  "connectors": {
+    "definition_to_mechanism": [
+      {"text": "Under the hood, ", "weight": 0.8},
+      {"text": "Technically, ", "weight": 0.75},
+      {"text": "What happens is ", "weight": 0.85},
+      {"text": "Digging deeper, ", "weight": 0.7},
+      {"text": "In practice, ", "weight": 0.8},
+      {"text": "This works because ", "weight": 0.75}
+    ],
+    "fact_to_impact": [
+      {"text": "This means ", "weight": 0.9},
+      {"text": "As a result, ", "weight": 0.7},
+      {"text": "Consequently, ", "weight": 0.75},
+      {"text": "For people, ", "weight": 0.8},
+      {"text": "The effect is ", "weight": 0.85},
+      {"text": "This leads to ", "weight": 0.8}
+    ],
+    "fact_to_analogy": [
+      {"text": "Think of it like ", "weight": 0.9},
+      {"text": "Imagine: ", "weight": 0.95},
+      {"text": "It's like ", "weight": 0.8},
+      {"text": "Picture this: ", "weight": 0.75},
+      {"text": "To visualize, ", "weight": 0.85}
+    ],
+    "contrast": [
+      {"text": "However, ", "weight": 0.8},
+      {"text": "On the other hand, ", "weight": 0.75},
+      {"text": "But here's the catch: ", "weight": 0.85},
+      {"text": "Conversely, ", "weight": 0.6},
+      {"text": "That said, ", "weight": 0.7}
+    ],
+    "emphasis": [
+      {"text": "Crucially, ", "weight": 0.8},
+      {"text": "Most importantly, ", "weight": 0.75},
+      {"text": "Keep in mind ", "weight": 0.85},
+      {"text": "Don't forget ", "weight": 0.7},
+      {"text": "The key point is ", "weight": 0.9}
+    ]
+  },
+  "closers": {
+    "casual": [
+      {"text": " Hope that helps!", "weight": 0.8},
+      {"text": " Make sense?", "weight": 0.75},
+      {"text": " Pretty wild, right?", "weight": 0.6},
+      {"text": " Let me know if you need more.", "weight": 0.7},
+      {"text": " That's the gist of it.", "weight": 0.85}
+    ],
+    "formal": [
+      {"text": " I trust this clarifies the matter.", "weight": 0.7},
+      {"text": " Please feel free to ask follow-ups.", "weight": 0.75},
+      {"text": " This concludes the explanation.", "weight": 0.6}
+    ],
+    "open_ended": [
+      {"text": " What are your thoughts on this?", "weight": 0.7},
+      {"text": " How does this align with what you've seen?", "weight": 0.65},
+      {"text": " Does this change your perspective?", "weight": 0.6}
+    ]
+  },
+  "sentence_structures": {
+    "simple": [
+      {"pattern": "{FACT}", "weight": 0.4},
+      {"pattern": "It is {FACT}", "weight": 0.3},
+      {"pattern": "We see {FACT}", "weight": 0.3}
+    ],
+    "compound": [
+      {"pattern": "{FACT}, and {IMPACT}", "weight": 0.4},
+      {"pattern": "{FACT}, but {CONTRAST}", "weight": 0.3},
+      {"pattern": "{FACT}, so {RESULT}", "weight": 0.3}
+    ],
+    "complex": [
+      {"pattern": "Because {MECHANISM}, {FACT}", "weight": 0.3},
+      {"pattern": "Although {CONTRAST}, {FACT}", "weight": 0.3},
+      {"pattern": "When {CONDITION}, {FACT}", "weight": 0.4}
+    ]
+  },
+  "filler_words": {
+    "start": ["Um", "Er", "Well", "So", "Look"],
+    "mid": ["like", "you know", "basically", "essentially", "sort of"],
+    "hesitation": ["...", "—", ", well, ", ", I mean, "]
+  },
+  "tone_modifiers": {
+    "uncertainty": ["probably", "likely", "seems to", "appears to"],
+    "certainty": ["definitely", "clearly", "undoubtedly", "certainly"],
+    "softening": ["perhaps", "maybe", "could be", "might"],
+    "intensifying": ["really", "very", "extremely", "significantly"]
+  }
+}
