@@ -6,13 +6,8 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "Bipolar Disorder is a mood disorder characterized by recurrent episodes of mania/hypomania and depression. Bipolar I requires at least one manic episode (elevated/expansive/irritable mood with increased energy/activity lasting \u22651 week, causing marked impairment or requiring hospitalization). Bipolar II involves hypomanic episodes (similar symptoms but lasting \u22654 days without marked impairment) and major depressive episodes. Mania includes symptoms like grandiosity, decreased need for sleep, pressured speech, racing thoughts, distractibility, increased goal-directed activity, and risky behavior. Pathophysiology involves genetic factors (heritability ~70-80%), neurotransmitter dysregulation, circadian rhythm disruption, and altered neural circuitry in emotion regulation networks.",
-      "tags": [
-        "bipolar",
-        "mania",
-        "mood-disorder",
-        "DSM-5"
-      ],
+      "content": "Bipolar Disorder is a mood disorder characterized by recurrent episodes of mania/hypomania and depression. Bipolar I requires at least one manic episode (elevated/expansive/irritable mood with increased energy/activity lasting ≥1 week, causing marked impairment or requiring hospitalization). Bipolar II involves hypomanic episodes (similar symptoms but lasting ≥4 days without marked impairment) and major depressive episodes. Mania includes symptoms like grandiosity, decreased need for sleep, pressured speech, racing thoughts, distractibility, increased goal-directed activity, and risky behavior. Pathophysiology involves genetic factors (heritability ~70-80%), neurotransmitter dysregulation, circadian rhythm disruption, and altered neural circuitry in emotion regulation networks.",
+      "tags": ["bipolar", "mania", "mood-disorder", "DSM-5"],
       "source": "https://www.nimh.nih.gov/health/topics/bipolar-disorder",
       "credibility_class": "A",
       "year": 2024
@@ -20,33 +15,18 @@
     {
       "role": "treatment_protocol",
       "content": "Acute mania treatment: lithium, valproate, or atypical antipsychotics (e.g., olanzapine, risperidone, quetiapine, aripiprazole); severe cases may require combination therapy. Acute bipolar depression: quetiapine, lurasidone, lamotrigine, or lithium; antidepressants used cautiously due to mania risk. Maintenance: lithium remains first-line with strongest evidence for suicide prevention; alternatives include valproate, lamotrigine (especially for depression prevention), and atypical antipsychotics. Psychoeducation, CBT, interpersonal and social rhythm therapy (IPSRT), and family-focused therapy improve outcomes. Regular monitoring of medication levels, renal/thyroid function (lithium), liver function (valproate), and metabolic parameters is essential.",
-      "tags": [
-        "bipolar",
-        "mood-stabilizers",
-        "lithium",
-        "treatment"
-      ],
+      "tags": ["bipolar", "mood-stabilizers", "lithium", "treatment"],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "diagnostic_criteria",
-      "content": "DSM-5-TR criteria: Manic episode requires abnormally elevated/expansive/irritable mood and increased energy/activity for \u22651 week (or any duration if hospitalized), plus \u22653 symptoms (grandiosity, decreased sleep need, pressured speech, flight of ideas, distractibility, increased activity, excessive risky activities) causing marked impairment. Hypomanic episode: similar symptoms for \u22654 consecutive days with unequivocal change in functioning but not markedly impairing. Bipolar I: \u22651 manic episode (depressive episode common but not required). Bipolar II: \u22651 hypomanic AND \u22651 major depressive episode, no history of mania. Cyclothymic disorder: \u22652 years of hypomanic and depressive symptoms not meeting full episode criteria. Specifiers include current episode type, severity, psychotic features, and rapid cycling (\u22654 episodes/year).",
-      "tags": [
-        "DSM-5-TR",
-        "bipolar-I",
-        "bipolar-II",
-        "diagnostic-criteria"
-      ],
+      "content": "DSM-5-TR criteria: Manic episode requires abnormally elevated/expansive/irritable mood and increased energy/activity for ≥1 week (or any duration if hospitalized), plus ≥3 symptoms (grandiosity, decreased sleep need, pressured speech, flight of ideas, distractibility, increased activity, excessive risky activities) causing marked impairment. Hypomanic episode: similar symptoms for ≥4 consecutive days with unequivocal change in functioning but not markedly impairing. Bipolar I: ≥1 manic episode (depressive episode common but not required). Bipolar II: ≥1 hypomanic AND ≥1 major depressive episode, no history of mania. Cyclothymic disorder: ≥2 years of hypomanic and depressive symptoms not meeting full episode criteria. Specifiers include current episode type, severity, psychotic features, and rapid cycling (≥4 episodes/year).",
+      "tags": ["DSM-5-TR", "bipolar-I", "bipolar-II", "diagnostic-criteria"],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.723502",
-    "source_url_was_extracted": false
-  }
+  ]
 }

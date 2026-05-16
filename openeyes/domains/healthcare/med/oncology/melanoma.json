@@ -5,13 +5,7 @@
   "fragments": [
     {
       "id": "hc_med_onc_me_def_001",
-      "tags": [
-        "oncology",
-        "melanoma",
-        "BRAF mutation",
-        "risk factors",
-        "subtypes"
-      ],
+      "tags": ["oncology", "melanoma", "BRAF mutation", "risk factors", "subtypes"],
       "reasoning_role": "definition",
       "content": "Melanoma is the most serious skin cancer, arising from melanocytes. Risk factors: UV radiation exposure (intermittent intense exposure, blistering sunburns), fair skin, numerous nevi (>50), atypical nevi, family history, personal history of melanoma, immunosuppression. Genetic predisposition: CDKN2A mutations (familial atypical multiple mole melanoma syndrome), CDK4, BAP1. Molecular features: BRAF V600 mutations (~50%, V600E most common); NRAS (~20%); NF1 (~15%); triple wild-type (~15%); KIT mutations in acral/mucosal melanoma. Subtypes: superficial spreading (most common, radial growth phase); nodular (vertical growth, aggressive); lentigo maligna (chronic sun-damaged skin, elderly); acral lentiginous (palms, soles, nail beds, not UV-related, more common in darker skin); mucosal (rare, poor prognosis); uveal/ocular (distinct biology, GNAQ/GNA11 mutations). Breslow thickness (mm) is the most important prognostic factor for localized disease.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36901234/",
@@ -20,38 +14,21 @@
     },
     {
       "id": "hc_med_onc_me_treat_001",
-      "tags": [
-        "oncology",
-        "melanoma",
-        "treatment",
-        "immunotherapy",
-        "targeted therapy"
-      ],
+      "tags": ["oncology", "melanoma", "treatment", "immunotherapy", "targeted therapy"],
       "reasoning_role": "treatment_protocol",
-      "content": "Treatment depends on stage. Localized (stage I-II): wide local excision with margins based on thickness (in situ 0.5-1cm, \u22641mm 1cm, 1-2mm 1-2cm, >2mm 2cm); sentinel lymph node biopsy for tumors >0.8mm or <0.8mm with ulceration/high mitotic rate. Stage III (node-positive): completion lymph node dissection no longer routine after positive SLN (MSLT-II); adjuvant therapy - anti-PD-1 (pembrolizumab/nivolumab) for resected stage III-IV (KEYNOTE-054, CheckMate 238); BRAF/MEK inhibitors (dabrafenib + trametinib, encorafenib + binimetinib) for BRAF-mutated stage III (COMBI-AD). Metastatic (stage IV): immunotherapy first-line - anti-PD-1 monotherapy or combination ipilimumab + nivolumab (CheckMate 067, superior PFS/OS but more toxicity); BRAF/MEK combination for BRAF-mutated (dabrafenib + trametinib, encorafenib + binimetinib, vemurafenib + cobimetinib); T-VEC (oncolytic virus) for injectable lesions. Second-line: ipilimumab if not previously given; clinical trials. Brain metastases: stereotactic radiosurgery; immunotherapy has CNS activity.",
+      "content": "Treatment depends on stage. Localized (stage I-II): wide local excision with margins based on thickness (in situ 0.5-1cm, ≤1mm 1cm, 1-2mm 1-2cm, >2mm 2cm); sentinel lymph node biopsy for tumors >0.8mm or <0.8mm with ulceration/high mitotic rate. Stage III (node-positive): completion lymph node dissection no longer routine after positive SLN (MSLT-II); adjuvant therapy - anti-PD-1 (pembrolizumab/nivolumab) for resected stage III-IV (KEYNOTE-054, CheckMate 238); BRAF/MEK inhibitors (dabrafenib + trametinib, encorafenib + binimetinib) for BRAF-mutated stage III (COMBI-AD). Metastatic (stage IV): immunotherapy first-line - anti-PD-1 monotherapy or combination ipilimumab + nivolumab (CheckMate 067, superior PFS/OS but more toxicity); BRAF/MEK combination for BRAF-mutated (dabrafenib + trametinib, encorafenib + binimetinib, vemurafenib + cobimetinib); T-VEC (oncolytic virus) for injectable lesions. Second-line: ipilimumab if not previously given; clinical trials. Brain metastases: stereotactic radiosurgery; immunotherapy has CNS activity.",
       "source": "https://www.nccn.org/guidelines",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_me_diag_001",
-      "tags": [
-        "oncology",
-        "melanoma",
-        "diagnosis",
-        "staging",
-        "sentinel lymph node"
-      ],
+      "tags": ["oncology", "melanoma", "diagnosis", "staging", "sentinel lymph node"],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Diagnosis requires excisional biopsy with narrow margins (1-3mm) for suspicious lesions. ABCDE criteria: Asymmetry, Border irregularity, Color variation, Diameter >6mm, Evolution (change). Pathology report must include: Breslow thickness (mm), ulceration (present/absent), mitotic rate (/mm\u00b2), margins, microsatellitosis, lymphovascular invasion. Staging: AJCC 8th edition - T category based on thickness and ulceration; N category based on number of involved nodes, micromacrometastasis, matted nodes; M category based on site of metastasis (skin/subcutaneous M1a, lung M1b, other visceral M1c, CNS M1d) and LDH level. Sentinel lymph node biopsy: recommended for T2-T4 tumors, considered for T1b (0.8-1.0mm or <0.8mm with ulceration); identifies occult nodal disease, provides prognostic information. Imaging: CT/PET-CT for stage III-IV or symptomatic patients; brain MRI for stage IV or neurologic symptoms. LDH elevation indicates poor prognosis in metastatic disease.",
+      "content": "Diagnosis requires excisional biopsy with narrow margins (1-3mm) for suspicious lesions. ABCDE criteria: Asymmetry, Border irregularity, Color variation, Diameter >6mm, Evolution (change). Pathology report must include: Breslow thickness (mm), ulceration (present/absent), mitotic rate (/mm²), margins, microsatellitosis, lymphovascular invasion. Staging: AJCC 8th edition - T category based on thickness and ulceration; N category based on number of involved nodes, micromacrometastasis, matted nodes; M category based on site of metastasis (skin/subcutaneous M1a, lung M1b, other visceral M1c, CNS M1d) and LDH level. Sentinel lymph node biopsy: recommended for T2-T4 tumors, considered for T1b (0.8-1.0mm or <0.8mm with ulceration); identifies occult nodal disease, provides prognostic information. Imaging: CT/PET-CT for stage III-IV or symptomatic patients; brain MRI for stage IV or neurologic symptoms. LDH elevation indicates poor prognosis in metastatic disease.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35012345/",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.822728",
-    "source_url_was_extracted": false
-  }
+  ]
 }

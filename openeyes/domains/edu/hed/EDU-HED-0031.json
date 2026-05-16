@@ -25,10 +25,5 @@
       "url": "https://data.ed.gov/HED/30",
       "role": "latest_data"
     }
-  },
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.063314",
-    "source_url_was_extracted": false
   }
 }

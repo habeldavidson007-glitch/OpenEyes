@@ -15,7 +15,5 @@
   "verified": true,
   "reasoning_role": "counter_argument",
   "credibility_class": "academic_research",
-  "sector": "MAC",
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.aeaweb.org"
+  "sector": "MAC"
 }

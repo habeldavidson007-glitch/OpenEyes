@@ -7,13 +7,7 @@
       "sector": "MED",
       "topic": "Adrenal Insufficiency",
       "role": "definition",
-      "tags": [
-        "adrenal insufficiency",
-        "Addison disease",
-        "cortisol",
-        "aldosterone",
-        "adrenal crisis"
-      ],
+      "tags": ["adrenal insufficiency", "Addison disease", "cortisol", "aldosterone", "adrenal crisis"],
       "content": "Adrenal insufficiency (AI) results from inadequate cortisol production. Classification: (1) Primary AI (Addison disease) - adrenal gland destruction: autoimmune (most common in developed countries), tuberculosis, metastatic disease, hemorrhage, genetic disorders (congenital adrenal hyperplasia, adrenoleukodystrophy). Characterized by low cortisol, high ACTH, mineralocorticoid deficiency (low aldosterone), and hyperpigmentation (from elevated ACTH/MSH). (2) Secondary AI - pituitary ACTH deficiency: tumors, surgery, radiation, Sheehan syndrome, infiltrative diseases. (3) Tertiary AI - hypothalamic-pituitary-adrenal axis suppression from chronic exogenous glucocorticoids (most common overall). Mineralocorticoid function preserved in secondary/tertiary. Symptoms: fatigue, weakness, weight loss, anorexia, nausea, abdominal pain, hypotension, salt craving (primary). Adrenal crisis: life-threatening with hypotension/shock, hyponatremia, hyperkalemia (primary), hypoglycemia, fever.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985612/",
       "credibility_class": "peer_reviewed_guideline",
@@ -26,14 +20,8 @@
       "sector": "MED",
       "topic": "Adrenal Insufficiency",
       "role": "treatment_protocol",
-      "tags": [
-        "adrenal insufficiency",
-        "hydrocortisone",
-        "fludrocortisone",
-        "adrenal crisis",
-        "replacement"
-      ],
-      "content": "Chronic replacement: hydrocortisone 15-25mg/day in 2-3 divided doses (mimics diurnal rhythm; higher morning dose); alternatives prednisone 5mg or dexamethasone 0.5mg daily. Primary AI requires mineralocorticoid: fludrocortisone 0.05-0.2mg daily, titrated to renin, blood pressure, electrolytes. Stress dosing essential: minor illness/injury - double/triple oral dose; moderate stress (fever >38\u00b0C, dental procedures) - hydrocortisone 50mg IV then 25mg q6-8h; major stress (surgery, trauma, sepsis) - hydrocortisone 100mg IV bolus then 50mg q6h or 200mg/day continuous infusion. Adrenal crisis management: immediate hydrocortisone 100mg IV bolus, then 50mg q6h; aggressive IV fluids (normal saline with dextrose if hypoglycemic); treat precipitating cause; transition to oral maintenance over 2-3 days. Patient education critical: medical alert bracelet, emergency injection kit, never stop abruptly, sick-day rules.",
+      "tags": ["adrenal insufficiency", "hydrocortisone", "fludrocortisone", "adrenal crisis", "replacement"],
+      "content": "Chronic replacement: hydrocortisone 15-25mg/day in 2-3 divided doses (mimics diurnal rhythm; higher morning dose); alternatives prednisone 5mg or dexamethasone 0.5mg daily. Primary AI requires mineralocorticoid: fludrocortisone 0.05-0.2mg daily, titrated to renin, blood pressure, electrolytes. Stress dosing essential: minor illness/injury - double/triple oral dose; moderate stress (fever >38°C, dental procedures) - hydrocortisone 50mg IV then 25mg q6-8h; major stress (surgery, trauma, sepsis) - hydrocortisone 100mg IV bolus then 50mg q6h or 200mg/day continuous infusion. Adrenal crisis management: immediate hydrocortisone 100mg IV bolus, then 50mg q6h; aggressive IV fluids (normal saline with dextrose if hypoglycemic); treat precipitating cause; transition to oral maintenance over 2-3 days. Patient education critical: medical alert bracelet, emergency injection kit, never stop abruptly, sick-day rules.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985612/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
@@ -45,22 +33,11 @@
       "sector": "MED",
       "topic": "Adrenal Insufficiency",
       "role": "diagnostic_criteria",
-      "tags": [
-        "adrenal insufficiency",
-        "cosyntropin test",
-        "ACTH",
-        "renin",
-        "diagnosis"
-      ],
-      "content": "Diagnostic evaluation: Morning (8AM) serum cortisol - <3 mcg/dL diagnostic of AI, >18 mcg/dL excludes AI, intermediate requires stimulation testing. ACTH level distinguishes primary (elevated) from secondary/tertiary (low/normal). Cosyntropin (ACTH) stimulation test: gold standard - administer 250mcg cosyntropin IM/IV, measure cortisol at 0, 30, 60 minutes; normal response peak cortisol \u226518-20 mcg/dL. Low-dose (1mcg) test more sensitive for secondary AI. Plasma renin activity elevated in primary AI (mineralocorticoid deficiency). Additional workup for primary AI: 21-hydroxylase antibodies (autoimmune), very-long-chain fatty acids (adrenoleukodystrophy), adrenal CT (hemorrhage, infiltration, TB calcification). For secondary/tertiary: pituitary MRI, other pituitary hormone assessment. Consider insulin tolerance test or metyrapone test if cosyntropin test equivocal for central AI.",
+      "tags": ["adrenal insufficiency", "cosyntropin test", "ACTH", "renin", "diagnosis"],
+      "content": "Diagnostic evaluation: Morning (8AM) serum cortisol - <3 mcg/dL diagnostic of AI, >18 mcg/dL excludes AI, intermediate requires stimulation testing. ACTH level distinguishes primary (elevated) from secondary/tertiary (low/normal). Cosyntropin (ACTH) stimulation test: gold standard - administer 250mcg cosyntropin IM/IV, measure cortisol at 0, 30, 60 minutes; normal response peak cortisol ≥18-20 mcg/dL. Low-dose (1mcg) test more sensitive for secondary AI. Plasma renin activity elevated in primary AI (mineralocorticoid deficiency). Additional workup for primary AI: 21-hydroxylase antibodies (autoimmune), very-long-chain fatty acids (adrenoleukodystrophy), adrenal CT (hemorrhage, infiltration, TB calcification). For secondary/tertiary: pituitary MRI, other pituitary hormone assessment. Consider insulin tolerance test or metyrapone test if cosyntropin test equivocal for central AI.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985612/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.804080",
-    "source_url_was_extracted": false
-  }
+  ]
 }

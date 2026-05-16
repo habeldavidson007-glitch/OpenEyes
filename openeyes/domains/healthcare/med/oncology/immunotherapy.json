@@ -5,14 +5,7 @@
   "fragments": [
     {
       "id": "hc_med_onc_it_def_001",
-      "tags": [
-        "oncology",
-        "immunotherapy",
-        "checkpoint inhibitors",
-        "PD-1",
-        "PD-L1",
-        "CTLA-4"
-      ],
+      "tags": ["oncology", "immunotherapy", "checkpoint inhibitors", "PD-1", "PD-L1", "CTLA-4"],
       "reasoning_role": "definition",
       "content": "Immunotherapy harnesses the immune system to fight cancer. Checkpoint inhibitors block proteins that prevent T-cells from attacking tumors. PD-1 (programmed death-1) receptors on T-cells bind PD-L1 on tumor cells, suppressing immune response; anti-PD-1 antibodies (pembrolizumab, nivolumab) or anti-PD-L1 (atezolizumab, durvalumab) restore T-cell activity. CTLA-4 (cytotoxic T-lymphocyte antigen-4) regulates early T-cell activation; ipilimumab blocks CTLA-4. Other targets: LAG-3 (relatlimab), TIGIT (investigational). CAR-T cell therapy engineers patient T-cells to express chimeric antigen receptors targeting CD19 (lymphoma, leukemia) or BCMA (myeloma). Bispecific antibodies (blinatumomab) engage T-cells directly with tumor cells. Cancer vaccines (sipuleucel-T for prostate) and oncolytic viruses (T-VEC for melanoma) are emerging approaches.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36215678/",
@@ -21,38 +14,21 @@
     },
     {
       "id": "hc_med_onc_it_treat_001",
-      "tags": [
-        "oncology",
-        "immunotherapy",
-        "treatment selection",
-        "dosing",
-        "response patterns"
-      ],
+      "tags": ["oncology", "immunotherapy", "treatment selection", "dosing", "response patterns"],
       "reasoning_role": "treatment_protocol",
-      "content": "Checkpoint inhibitor selection depends on cancer type, biomarkers, and prior therapy. Pembrolizumab approved for MSI-H/dMMR tumors regardless of origin (tumor-agnostic); also first-line for NSCLC with PD-L1 \u226550%, head/neck cancer, melanoma. Nivolumab + ipilimumab combination shows superior outcomes in melanoma, renal cell carcinoma, mesothelioma but increased toxicity. Dosing: pembrolizumab 200mg IV q3w or 400mg q6w; nivolumab 240mg q2w or 480mg q4w; continued until progression or 2 years maximum in adjuvant setting. Unique response patterns: pseudoprogression (initial enlargement before response) occurs in ~10%; immune-related RECIST (iRECIST) accounts for this. Hyperprogression (accelerated growth) rare but recognized. Duration: metastatic disease typically continued until progression; adjuvant therapy fixed duration (1 year). Combination with chemotherapy enhances efficacy in many cancers (lung, triple-negative breast).",
+      "content": "Checkpoint inhibitor selection depends on cancer type, biomarkers, and prior therapy. Pembrolizumab approved for MSI-H/dMMR tumors regardless of origin (tumor-agnostic); also first-line for NSCLC with PD-L1 ≥50%, head/neck cancer, melanoma. Nivolumab + ipilimumab combination shows superior outcomes in melanoma, renal cell carcinoma, mesothelioma but increased toxicity. Dosing: pembrolizumab 200mg IV q3w or 400mg q6w; nivolumab 240mg q2w or 480mg q4w; continued until progression or 2 years maximum in adjuvant setting. Unique response patterns: pseudoprogression (initial enlargement before response) occurs in ~10%; immune-related RECIST (iRECIST) accounts for this. Hyperprogression (accelerated growth) rare but recognized. Duration: metastatic disease typically continued until progression; adjuvant therapy fixed duration (1 year). Combination with chemotherapy enhances efficacy in many cancers (lung, triple-negative breast).",
       "source": "https://www.nccn.org/guidelines",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_it_diag_001",
-      "tags": [
-        "oncology",
-        "immunotherapy",
-        "biomarkers",
-        "immune-related adverse events",
-        "patient selection"
-      ],
+      "tags": ["oncology", "immunotherapy", "biomarkers", "immune-related adverse events", "patient selection"],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Biomarker testing guides immunotherapy use. PD-L1 expression measured by IHC (22C3, 28-8, SP142 assays); thresholds vary by cancer (\u22651%, \u226550%). MSI-H/dMMR detected by PCR or IHC for mismatch repair proteins; predicts response across tumor types. Tumor mutational burden (TMB) \u226510 mutations/Mb correlates with response (FDA-approved for pembrolizumab). Gene expression profiling (inflamed vs cold tumors) investigational. Immune-related adverse events (irAEs) require monitoring: dermatitis (most common), colitis (diarrhea), hepatitis (elevated LFTs), pneumonitis (cough, dyspnea), endocrinopathies (thyroiditis, hypophysitis, adrenal insufficiency). Grading per CTCAE; grade 2 holds treatment + steroids; grade 3-4 permanently discontinues most agents + high-dose steroids (prednisone 1-2 mg/kg). Baseline labs: CBC, CMP, TSH, cortisol; monitor every 3-6 weeks. Contraindications: active autoimmune disease requiring immunosuppression, organ transplant recipients.",
+      "content": "Biomarker testing guides immunotherapy use. PD-L1 expression measured by IHC (22C3, 28-8, SP142 assays); thresholds vary by cancer (≥1%, ≥50%). MSI-H/dMMR detected by PCR or IHC for mismatch repair proteins; predicts response across tumor types. Tumor mutational burden (TMB) ≥10 mutations/Mb correlates with response (FDA-approved for pembrolizumab). Gene expression profiling (inflamed vs cold tumors) investigational. Immune-related adverse events (irAEs) require monitoring: dermatitis (most common), colitis (diarrhea), hepatitis (elevated LFTs), pneumonitis (cough, dyspnea), endocrinopathies (thyroiditis, hypophysitis, adrenal insufficiency). Grading per CTCAE; grade 2 holds treatment + steroids; grade 3-4 permanently discontinues most agents + high-dose steroids (prednisone 1-2 mg/kg). Baseline labs: CBC, CMP, TSH, cortisol; monitor every 3-6 weeks. Contraindications: active autoimmune disease requiring immunosuppression, organ transplant recipients.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35891234/",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.819685",
-    "source_url_was_extracted": false
-  }
+  ]
 }

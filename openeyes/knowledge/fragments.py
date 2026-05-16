@@ -58,34 +58,12 @@ def migrate_fragment(payload: dict) -> Fragment:
         domain = payload.get("domain", "")
         sector = payload.get("sector", "")
         
-        # Extract source_url from multiple possible locations
-        source_url = payload.get("source_url", "")
-        if not source_url:
-            # Check for URL in roles array (legacy format)
-            roles = payload.get("roles", [])
-            if roles and isinstance(roles, list):
-                for r in roles:
-                    if isinstance(r, dict):
-                        url = r.get("url", "")
-                        if url:
-                            source_url = url
-                            break
-        
-        # P0 FIX: Validate source_url exists
-        if not source_url:
-            # Generate a placeholder based on source or domain
-            source = payload.get("source", "")
-            if source:
-                source_url = f"https://source/{source.lower().replace(' ', '_')}"
-            else:
-                source_url = "https://unknown/source_missing"
-        
         # Build evidence from content and metadata
         evidence_parts = []
         if claim:
             evidence_parts.append(claim)
-        if source_url:
-            evidence_parts.append(f"Source: {source_url}")
+        if payload.get('source_url'):
+            evidence_parts.append(f"Source: {payload['source_url']}")
         if payload.get('year'):
             evidence_parts.append(f"Year: {payload['year']}")
         evidence = "\n".join(evidence_parts)
@@ -99,7 +77,7 @@ def migrate_fragment(payload: dict) -> Fragment:
             success_rate_ema=float(payload.get("credibility_score", 0.7)),
             source_type=payload.get("credibility_class", "peer_reviewed_study"),
             source_id=payload.get("id", "unknown"),
-            source_url=source_url,
+            source_url=payload.get("source_url", ""),
             published_on=str(payload.get("year", "")),
             jurisdiction=payload.get("jurisdiction", "global"),
             evidence_level=payload.get("evidence_level", "moderate"),
@@ -117,16 +95,6 @@ def migrate_fragment(payload: dict) -> Fragment:
     
     # Legacy format handling
     claim = payload.get("claim") or payload.get("content") or ""
-    
-    # P0 FIX: Validate source_url in legacy format too
-    source_url = payload.get("source_url", "")
-    if not source_url:
-        source = payload.get("source", "")
-        if source:
-            source_url = f"https://source/{source.lower().replace(' ', '_')}"
-        else:
-            source_url = "https://unknown/source_missing"
-    
     return Fragment(
         claim=claim,
         evidence=payload.get("evidence", ""),
@@ -136,7 +104,7 @@ def migrate_fragment(payload: dict) -> Fragment:
         success_rate_ema=float(payload.get("success_rate_ema", 0.7)),
         source_type=payload.get("source_type", "peer_reviewed_study"),
         source_id=payload.get("source_id", "unknown"),
-        source_url=source_url,
+        source_url=payload.get("source_url", ""),
         published_on=payload.get("published_on", ""),
         jurisdiction=payload.get("jurisdiction", "global"),
         evidence_level=payload.get("evidence_level", "moderate"),

@@ -18,7 +18,5 @@
   "year": 2022,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0,
-  "credibility_score": "HIGH",
-  "source_domain": "www.psychiatry.org"
+  "weight": 1.0
 }

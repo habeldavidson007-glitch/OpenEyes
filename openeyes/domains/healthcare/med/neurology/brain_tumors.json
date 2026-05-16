@@ -5,15 +5,9 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": [
-        "brain-tumor",
-        "glioblastoma",
-        "glioma",
-        "meningioma",
-        "oncology"
-      ],
+      "tags": ["brain-tumor", "glioblastoma", "glioma", "meningioma", "oncology"],
       "reasoning_role": "definition",
-      "content": "Primary brain tumors arise from CNS cells; ~30,000 new cases/year in US. Classification by cell of origin: gliomas (astrocytoma, oligodendroglioma, ependymoma), meningiomas (from arachnoid cap cells), pituitary adenomas, schwannomas, medulloblastomas. WHO 2021 classification integrates histology with molecular markers. Glioblastoma (GBM, WHO grade 4) is most common malignant primary brain tumor in adults\u2014median survival 15 months despite treatment. IDH mutation status is key prognostic factor: IDH-mutant gliomas have better prognosis than IDH-wildtype. 1p/19q codeletion defines oligodendroglioma (better prognosis, chemo-sensitive). MGMT promoter methylation predicts temozolomide response in GBM. Metastatic brain tumors (from lung, breast, melanoma, renal, colon) are more common than primary. Symptoms depend on location: headache (worse in morning, Valsalva), seizures, focal deficits, cognitive changes, increased ICP (nausea, vomiting, papilledema).",
+      "content": "Primary brain tumors arise from CNS cells; ~30,000 new cases/year in US. Classification by cell of origin: gliomas (astrocytoma, oligodendroglioma, ependymoma), meningiomas (from arachnoid cap cells), pituitary adenomas, schwannomas, medulloblastomas. WHO 2021 classification integrates histology with molecular markers. Glioblastoma (GBM, WHO grade 4) is most common malignant primary brain tumor in adults—median survival 15 months despite treatment. IDH mutation status is key prognostic factor: IDH-mutant gliomas have better prognosis than IDH-wildtype. 1p/19q codeletion defines oligodendroglioma (better prognosis, chemo-sensitive). MGMT promoter methylation predicts temozolomide response in GBM. Metastatic brain tumors (from lung, breast, melanoma, renal, colon) are more common than primary. Symptoms depend on location: headache (worse in morning, Valsalva), seizures, focal deficits, cognitive changes, increased ICP (nausea, vomiting, papilledema).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33984648/",
       "credibility_class": "A",
       "year": 2024
@@ -23,15 +17,9 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": [
-        "brain-tumor",
-        "temozolomide",
-        "radiation",
-        "treatment-protocol",
-        "Stupp-protocol"
-      ],
+      "tags": ["brain-tumor", "temozolomide", "radiation", "treatment-protocol", "Stupp-protocol"],
       "reasoning_role": "treatment_protocol",
-      "content": "Brain tumor treatment is multimodal: surgery, radiation, chemotherapy, tumor-treating fields. Maximal safe surgical resection is first-line for accessible tumors\u2014improves survival and reduces mass effect. Glioblastoma: Stupp protocol\u2014radiation (60 Gy in 30 fractions) with concurrent temozolomide (75 mg/m\u00b2 daily), followed by adjuvant temozolomide (150-200 mg/m\u00b2 days 1-5 every 28 days \u00d7 6-12 cycles). MGMT methylated tumors benefit most from temozolomide. Tumor-treating fields (Optune)\u2014wearable device delivering low-intensity alternating electric fields\u2014improves survival when added to temozolomide (median OS 20.9 vs 16.0 months). Bevacizumab (anti-VEGF) used for recurrent GBM\u2014reduces edema and steroid requirement but no OS benefit. Low-grade gliomas: observation for asymptomatic small lesions; surgery for symptomatic/progressive; radiation and PCV chemotherapy (procarbazine, CCNU, vincristine) or temozolomide for high-risk features. Meningiomas: observation for small asymptomatic; surgery for symptomatic/large; radiation for atypical/malignant or unresectable. Brain metastases: stereotactic radiosurgery (SRS) for limited metastases, whole-brain radiation for multiple, surgery for large symptomatic lesions. Supportive care: dexamethasone for edema (taper ASAP), levetiracetam for seizures (no prophylaxis unless seizure occurred), DVT prophylaxis.",
+      "content": "Brain tumor treatment is multimodal: surgery, radiation, chemotherapy, tumor-treating fields. Maximal safe surgical resection is first-line for accessible tumors—improves survival and reduces mass effect. Glioblastoma: Stupp protocol—radiation (60 Gy in 30 fractions) with concurrent temozolomide (75 mg/m² daily), followed by adjuvant temozolomide (150-200 mg/m² days 1-5 every 28 days × 6-12 cycles). MGMT methylated tumors benefit most from temozolomide. Tumor-treating fields (Optune)—wearable device delivering low-intensity alternating electric fields—improves survival when added to temozolomide (median OS 20.9 vs 16.0 months). Bevacizumab (anti-VEGF) used for recurrent GBM—reduces edema and steroid requirement but no OS benefit. Low-grade gliomas: observation for asymptomatic small lesions; surgery for symptomatic/progressive; radiation and PCV chemotherapy (procarbazine, CCNU, vincristine) or temozolomide for high-risk features. Meningiomas: observation for small asymptomatic; surgery for symptomatic/large; radiation for atypical/malignant or unresectable. Brain metastases: stereotactic radiosurgery (SRS) for limited metastases, whole-brain radiation for multiple, surgery for large symptomatic lesions. Supportive care: dexamethasone for edema (taper ASAP), levetiracetam for seizures (no prophylaxis unless seizure occurred), DVT prophylaxis.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35354648/",
       "credibility_class": "A",
       "year": 2024
@@ -41,23 +29,12 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": [
-        "brain-tumor",
-        "diagnosis",
-        "MRI",
-        "WHO-classification",
-        "molecular-markers"
-      ],
+      "tags": ["brain-tumor", "diagnosis", "MRI", "WHO-classification", "molecular-markers"],
       "reasoning_role": "diagnostic_criteria",
       "content": "Brain tumor diagnosis requires neuroimaging and tissue diagnosis. MRI brain with and without gadolinium is imaging modality of choice: GBM shows ring-enhancing lesion with central necrosis, surrounding edema, crosses midline via corpus callosum ('butterfly glioma'); meningioma shows dural-based enhancement with dural tail; metastases often multiple at gray-white junction. Advanced imaging: perfusion MRI (elevated rCBV in high-grade tumors), MR spectroscopy (elevated choline, reduced NAA), amino acid PET (FET, FDOPA) for tumor delineation and recurrence vs radiation necrosis. Tissue diagnosis via stereotactic biopsy or resection for histopathology and molecular testing. WHO 2021 molecular markers required: IDH1/2 mutation, 1p/19q codeletion (FISH), ATRX, p53, MGMT promoter methylation, TERT promoter, EGFR amplification, chromosome +7/-10. Lumbar puncture generally contraindicated with mass effect (herniation risk). Differential diagnosis: abscess (restricted diffusion, clinical infection), demyelination (open-ring enhancement), subacute infarct (vascular territory, DWI restriction), radiation necrosis (history, perfusion/PET helps). RANO criteria standardize response assessment incorporating imaging, steroids, clinical status.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.839420",
-    "source_url_was_extracted": false
-  }
+  ]
 }

@@ -18,7 +18,5 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 0.93,
-  "sector": "ENR",
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.worldbank.org"
+  "sector": "ENR"
 }

@@ -7,13 +7,7 @@
       "sector": "MED",
       "topic": "Hyperkalemia",
       "role": "definition",
-      "tags": [
-        "hyperkalemia",
-        "potassium",
-        "ECG changes",
-        "renal failure",
-        "arrhythmia"
-      ],
+      "tags": ["hyperkalemia", "potassium", "ECG changes", "renal failure", "arrhythmia"],
       "content": "Hyperkalemia is serum potassium >5.0-5.5 mEq/L, a potentially life-threatening electrolyte abnormality. Causes: (1) Decreased renal excretion (most common) - acute/chronic kidney disease, hypoaldosteronism (type 4 RTA, Addison disease), medications (ACE inhibitors, ARBs, spironolactone, eplerenone, amiloride, triamterene, trimethoprim, NSAIDs, heparin, calcineurin inhibitors); (2) Transcellular shift - acidosis, insulin deficiency, beta-blockers, digoxin toxicity, tumor lysis syndrome, rhabdomyolysis, succinylcholine, hyperkalemic periodic paralysis; (3) Increased intake (rare alone) - supplements, salt substitutes, IV potassium, blood transfusions. Pseudohyperkalemia from hemolysis during phlebotomy, thrombocytosis, leukocytosis. Clinical manifestations primarily cardiac: peaked T waves, PR prolongation, QRS widening, sine wave pattern, ventricular fibrillation/asystole. Neuromuscular: weakness, flaccid paralysis, paresthesias.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985614/",
       "credibility_class": "peer_reviewed_guideline",
@@ -26,14 +20,7 @@
       "sector": "MED",
       "topic": "Hyperkalemia",
       "role": "treatment_protocol",
-      "tags": [
-        "hyperkalemia",
-        "calcium gluconate",
-        "insulin",
-        "albuterol",
-        "dialysis",
-        "potassium binders"
-      ],
+      "tags": ["hyperkalemia", "calcium gluconate", "insulin", "albuterol", "dialysis", "potassium binders"],
       "content": "Emergency treatment for K+ >6.0-6.5 mEq/L or ECG changes: (1) Cardiac membrane stabilization: calcium gluconate 1g IV (or calcium chloride 500mg via central line), repeat if ECG unchanged after 5-10 minutes; (2) Shift potassium intracellularly: regular insulin 10 units IV with 25g dextrose (onset 15-30 min, lasts 4-6 hours); albuterol 10-20mg nebulized (adjunctive); sodium bicarbonate 50-100 mEq IV if acidemic; (3) Remove potassium: loop diuretics (if renal function adequate), potassium binders (sodium polystyrene sulfonate 15-60g PO, patiromer, sodium zirconium cyclosilicate), hemodialysis (definitive for severe cases or renal failure). Chronic management: dietary potassium restriction, review/adjust medications causing hyperkalemia, chronic potassium binders for CKD patients on RAAS inhibitors, treat underlying cause. Monitor for rebound hypokalemia after treatment.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985614/",
       "credibility_class": "peer_reviewed_guideline",
@@ -46,22 +33,11 @@
       "sector": "MED",
       "topic": "Hyperkalemia",
       "role": "diagnostic_criteria",
-      "tags": [
-        "hyperkalemia",
-        "ECG",
-        "trans-tubular potassium gradient",
-        "renin",
-        "aldosterone"
-      ],
-      "content": "Diagnostic approach: Confirm true hyperkalemia (repeat level, assess for hemolysis). Obtain immediate ECG for any K+ >6.0 or symptomatic patient. Assess renal function (BUN, creatinine), acid-base status (bicarbonate, ABG if severe), glucose. Evaluate medication list thoroughly. For persistent unexplained hyperkalemia: measure plasma renin activity and aldosterone to diagnose hypoaldosteronism (low aldosterone with high renin suggests primary adrenal insufficiency; low aldosterone with low renin suggests hyporeninemic hypoaldosteronism/type 4 RTA). Calculate transtubular potassium gradient (TTKG) if uncertain about renal potassium handling: TTKG = (urine K \u00d7 serum osmolality)/(serum K \u00d7 urine osmolality); <7 suggests impaired renal excretion. Consider cortisol level if adrenal insufficiency suspected. Evaluate for rhabdomyolysis (CK), tumor lysis (LDH, uric acid, phosphate) if clinically indicated.",
+      "tags": ["hyperkalemia", "ECG", "trans-tubular potassium gradient", "renin", "aldosterone"],
+      "content": "Diagnostic approach: Confirm true hyperkalemia (repeat level, assess for hemolysis). Obtain immediate ECG for any K+ >6.0 or symptomatic patient. Assess renal function (BUN, creatinine), acid-base status (bicarbonate, ABG if severe), glucose. Evaluate medication list thoroughly. For persistent unexplained hyperkalemia: measure plasma renin activity and aldosterone to diagnose hypoaldosteronism (low aldosterone with high renin suggests primary adrenal insufficiency; low aldosterone with low renin suggests hyporeninemic hypoaldosteronism/type 4 RTA). Calculate transtubular potassium gradient (TTKG) if uncertain about renal potassium handling: TTKG = (urine K × serum osmolality)/(serum K × urine osmolality); <7 suggests impaired renal excretion. Consider cortisol level if adrenal insufficiency suspected. Evaluate for rhabdomyolysis (CK), tumor lysis (LDH, uric acid, phosphate) if clinically indicated.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985614/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.805414",
-    "source_url_was_extracted": false
-  }
+  ]
 }

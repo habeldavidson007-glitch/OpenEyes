@@ -23,7 +23,5 @@
     "frag_onc_pancreatic_cancer_001",
     "frag_onc_pancreatic_cancer_002"
   ],
-  "incompatible_with": [],
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.nature.com"
+  "incompatible_with": []
 }

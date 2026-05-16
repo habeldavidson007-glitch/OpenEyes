@@ -6,48 +6,27 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "ADHD is a neurodevelopmental disorder characterized by persistent patterns of inattention and/or hyperactivity-impulsivity interfering with functioning or development. Inattention symptoms include difficulty sustaining attention, careless mistakes, not listening, failing to follow through, disorganization, avoiding sustained mental effort, losing things, distractibility, forgetfulness. Hyperactivity-impulsivity includes fidgeting, leaving seat, running/climbing excessively, inability to play quietly, being 'on the go,' excessive talking, blurting answers, difficulty waiting turn, interrupting. Symptoms present before age 12, occur in \u22652 settings, and cause impairment. Lifetime prevalence ~5-7% in children, ~2-5% in adults. Pathophysiology involves dopamine/norepinephrine dysregulation in prefrontal-striatal circuits, high heritability (~70-80%).",
-      "tags": [
-        "ADHD",
-        "neurodevelopmental",
-        "inattention",
-        "hyperactivity"
-      ],
+      "content": "ADHD is a neurodevelopmental disorder characterized by persistent patterns of inattention and/or hyperactivity-impulsivity interfering with functioning or development. Inattention symptoms include difficulty sustaining attention, careless mistakes, not listening, failing to follow through, disorganization, avoiding sustained mental effort, losing things, distractibility, forgetfulness. Hyperactivity-impulsivity includes fidgeting, leaving seat, running/climbing excessively, inability to play quietly, being 'on the go,' excessive talking, blurting answers, difficulty waiting turn, interrupting. Symptoms present before age 12, occur in ≥2 settings, and cause impairment. Lifetime prevalence ~5-7% in children, ~2-5% in adults. Pathophysiology involves dopamine/norepinephrine dysregulation in prefrontal-striatal circuits, high heritability (~70-80%).",
+      "tags": ["ADHD", "neurodevelopmental", "inattention", "hyperactivity"],
       "source": "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "treatment_protocol",
-      "content": "First-line pharmacotherapy: stimulants (methylphenidate or amphetamine formulations) with robust evidence for efficacy (~70-80% response rate). Long-acting formulations preferred for adherence and reduced abuse potential. Non-stimulants: atomoxetine (SNRI), guanfacine/clonidine (alpha-2 agonists), viloxazine\u2014used when stimulants ineffective/not tolerated or as adjuncts. Behavioral interventions: parent training (children), classroom management, organizational skills training, CBT (adults). Combination therapy often optimal. Monitoring includes growth (children), cardiovascular parameters, sleep, appetite, mood changes. Treatment often continues long-term given chronic nature.",
-      "tags": [
-        "stimulants",
-        "methylphenidate",
-        "amphetamine",
-        "atomoxetine",
-        "behavioral-intervention"
-      ],
+      "content": "First-line pharmacotherapy: stimulants (methylphenidate or amphetamine formulations) with robust evidence for efficacy (~70-80% response rate). Long-acting formulations preferred for adherence and reduced abuse potential. Non-stimulants: atomoxetine (SNRI), guanfacine/clonidine (alpha-2 agonists), viloxazine—used when stimulants ineffective/not tolerated or as adjuncts. Behavioral interventions: parent training (children), classroom management, organizational skills training, CBT (adults). Combination therapy often optimal. Monitoring includes growth (children), cardiovascular parameters, sleep, appetite, mood changes. Treatment often continues long-term given chronic nature.",
+      "tags": ["stimulants", "methylphenidate", "amphetamine", "atomoxetine", "behavioral-intervention"],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "diagnostic_criteria",
-      "content": "DSM-5-TR ADHD criteria: \u22656 symptoms (\u22655 for age \u226517) of inattention and/or hyperactivity-impulsivity persisting \u22656 months to degree inconsistent with developmental level. Several symptoms present before age 12. Present in \u22652 settings (home, school/work, social). Clear evidence of interference with functioning/quality of life. Not better explained by another mental disorder. Presentation specifiers: combined, predominantly inattentive, predominantly hyperactive-impulsive. Severity specifiers: mild, moderate, severe. Partial remission specifier for those previously meeting full criteria. Common comorbidities: learning disorders, oppositional defiant disorder, anxiety, depression, substance use disorders.",
-      "tags": [
-        "DSM-5-TR",
-        "diagnostic-criteria",
-        "ADHD",
-        "neurodevelopmental"
-      ],
+      "content": "DSM-5-TR ADHD criteria: ≥6 symptoms (≥5 for age ≥17) of inattention and/or hyperactivity-impulsivity persisting ≥6 months to degree inconsistent with developmental level. Several symptoms present before age 12. Present in ≥2 settings (home, school/work, social). Clear evidence of interference with functioning/quality of life. Not better explained by another mental disorder. Presentation specifiers: combined, predominantly inattentive, predominantly hyperactive-impulsive. Severity specifiers: mild, moderate, severe. Partial remission specifier for those previously meeting full criteria. Common comorbidities: learning disorders, oppositional defiant disorder, anxiety, depression, substance use disorders.",
+      "tags": ["DSM-5-TR", "diagnostic-criteria", "ADHD", "neurodevelopmental"],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.722853",
-    "source_url_was_extracted": false
-  }
+  ]
 }

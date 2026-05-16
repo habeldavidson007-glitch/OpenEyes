@@ -20,7 +20,5 @@
   ],
   "incompatible_with": [],
   "weight": 0.882,
-  "sector": "MAC",
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.boj.or.jp"
+  "sector": "MAC"
 }

@@ -7,43 +7,23 @@
     {
       "role": "definition",
       "content": "Type 2 diabetes affects over 537 million adults globally, projected to reach 783 million by 2045. Prediabetes (impaired fasting glucose or impaired glucose tolerance) affects 1 in 3 US adults, with 15-30% progressing to diabetes within 5 years without intervention. Diabetes prevention targets modifiable risk factors: obesity (especially central adiposity), physical inactivity, unhealthy diet, and social determinants. The Diabetes Prevention Program (DPP) landmark trial demonstrated 58% risk reduction through lifestyle intervention (7% weight loss, 150 min/week activity) versus 31% with metformin. Prevention strategies include primary prevention (preventing onset in at-risk individuals), secondary prevention (early detection through screening), and tertiary prevention (complication prevention in diagnosed patients). Social-ecological models recognize individual behavior occurs within environmental contexts requiring multi-level interventions.",
-      "tags": [
-        "diabetes",
-        "prevention",
-        "prediabetes",
-        "lifestyle_intervention"
-      ],
+      "tags": ["diabetes", "prevention", "prediabetes", "lifestyle_intervention"],
       "reasoning_role": "foundational_knowledge"
     },
     {
       "role": "treatment_protocol",
-      "content": "Evidence-based diabetes prevention approaches: (1) Lifestyle programs\u2014CDC-recognized National DPP delivering year-long curriculum on nutrition, physical activity, stress management, problem-solving; delivered in-person, online, or distance learning; (2) Pharmacotherapy\u2014metformin for high-risk individuals (BMI\u226535, age<60, history of gestational diabetes), GLP-1 agonists showing promise for weight loss/diabetes prevention; (3) Policy interventions\u2014sugar-sweetened beverage taxes, healthy school food standards, built environment for active living, food labeling requirements; (4) Healthcare system integration\u2014routine prediabetes screening, electronic health record prompts, referral systems to DPP, insurance coverage for prevention programs; (5) Community approaches\u2014faith-based programs, community health worker delivery, culturally adapted interventions; (6) Digital health\u2014mobile apps, remote coaching, wearable devices. Cost-effectiveness analyses show lifestyle intervention cost-effective long-term. Scalability remains challenge requiring innovative delivery models.",
-      "tags": [
-        "intervention",
-        "lifestyle",
-        "policy",
-        "digital_health"
-      ],
+      "content": "Evidence-based diabetes prevention approaches: (1) Lifestyle programs—CDC-recognized National DPP delivering year-long curriculum on nutrition, physical activity, stress management, problem-solving; delivered in-person, online, or distance learning; (2) Pharmacotherapy—metformin for high-risk individuals (BMI≥35, age<60, history of gestational diabetes), GLP-1 agonists showing promise for weight loss/diabetes prevention; (3) Policy interventions—sugar-sweetened beverage taxes, healthy school food standards, built environment for active living, food labeling requirements; (4) Healthcare system integration—routine prediabetes screening, electronic health record prompts, referral systems to DPP, insurance coverage for prevention programs; (5) Community approaches—faith-based programs, community health worker delivery, culturally adapted interventions; (6) Digital health—mobile apps, remote coaching, wearable devices. Cost-effectiveness analyses show lifestyle intervention cost-effective long-term. Scalability remains challenge requiring innovative delivery models.",
+      "tags": ["intervention", "lifestyle", "policy", "digital_health"],
       "reasoning_role": "actionable_guidance"
     },
     {
       "role": "diagnostic_criteria",
-      "content": "Diabetes prevention assessment includes: (1) Screening criteria\u2014USPSTF recommends screening adults 35-70 years with overweight/obesity; ADA recommends screening all adults \u226535 years, earlier with risk factors (family history, race/ethnicity, gestational diabetes history, PCOS, hypertension, dyslipidemia); (2) Diagnostic tests\u2014fasting plasma glucose (100-125 mg/dL prediabetes, \u2265126 diabetes), HbA1c (5.7-6.4% prediabetes, \u22656.5% diabetes), 2-hour OGTT (140-199 mg/dL prediabetes, \u2265200 diabetes); (3) Risk stratification\u2014ADA Diabetes Risk Test, FINDRISC, QDiabetes risk scores identifying candidates for intensive intervention; (4) Monitoring\u2014annual screening for prediabetes progression, weight tracking, lifestyle behavior assessment; (5) Population surveillance\u2014NHANES prevalence data, BRFSS behavioral indicators, national diabetes registries. Continuous glucose monitoring emerging for prediabetes research. Limitations include HbA1c variability by race/ethnicity, anemia affecting accuracy, and discordance between diagnostic tests.",
-      "tags": [
-        "screening",
-        "diagnosis",
-        "risk_stratification",
-        "surveillance"
-      ],
+      "content": "Diabetes prevention assessment includes: (1) Screening criteria—USPSTF recommends screening adults 35-70 years with overweight/obesity; ADA recommends screening all adults ≥35 years, earlier with risk factors (family history, race/ethnicity, gestational diabetes history, PCOS, hypertension, dyslipidemia); (2) Diagnostic tests—fasting plasma glucose (100-125 mg/dL prediabetes, ≥126 diabetes), HbA1c (5.7-6.4% prediabetes, ≥6.5% diabetes), 2-hour OGTT (140-199 mg/dL prediabetes, ≥200 diabetes); (3) Risk stratification—ADA Diabetes Risk Test, FINDRISC, QDiabetes risk scores identifying candidates for intensive intervention; (4) Monitoring—annual screening for prediabetes progression, weight tracking, lifestyle behavior assessment; (5) Population surveillance—NHANES prevalence data, BRFSS behavioral indicators, national diabetes registries. Continuous glucose monitoring emerging for prediabetes research. Limitations include HbA1c variability by race/ethnicity, anemia affecting accuracy, and discordance between diagnostic tests.",
+      "tags": ["screening", "diagnosis", "risk_stratification", "surveillance"],
       "reasoning_role": "analytical_framework"
     }
   ],
   "source": "CDC National Diabetes Prevention Program, ADA Standards of Care, Diabetes Prevention Program Outcomes Study, WHO Global Diabetes Compact",
   "credibility_class": "A",
-  "year": 2024,
-  "source_url": "https://source/cdc_national_diabetes_prevention_program,_ada_standards_of_care,_diabetes_prevention_program_outcomes_study,_who_global_diabetes_compact",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.868086",
-    "source_url_was_extracted": false
-  }
+  "year": 2024
 }

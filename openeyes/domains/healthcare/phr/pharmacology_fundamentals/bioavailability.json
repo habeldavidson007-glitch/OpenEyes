@@ -7,13 +7,7 @@
       "topic": "Bioavailability",
       "role": "definition",
       "content": "Bioavailability (F) is the fraction of an administered drug dose that reaches systemic circulation unchanged. Intravenous administration has 100% bioavailability by definition. Oral bioavailability is reduced by incomplete absorption and first-pass metabolism in the gut wall and liver. First-pass effect occurs when drugs absorbed from the GI tract pass through the portal vein to the liver before reaching systemic circulation, where extensive metabolism can occur. Bioavailability varies by route: sublingual and rectal partially bypass first-pass; transdermal avoids it entirely; inhalation provides rapid absorption with high bioavailability for some drugs.",
-      "tags": [
-        "bioavailability",
-        "first_pass_effect",
-        "absorption",
-        "routes_of_administration",
-        "F_fraction"
-      ],
+      "tags": ["bioavailability", "first_pass_effect", "absorption", "routes_of_administration", "F_fraction"],
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2025
@@ -25,12 +19,7 @@
       "topic": "Bioavailability",
       "role": "treatment_protocol",
       "content": "Clinical implications of bioavailability guide route selection and dose adjustment. When switching from IV to oral: calculate oral dose = IV dose / F. For drugs with low/variable bioavailability (e.g., warfarin F~100%, digoxin F~70%, cyclosporine F~30%), therapeutic monitoring is essential. Food effects: high-fat meals increase bioavailability of lipophilic drugs (griseofulvin, atovaquone); decrease it for others (ampicillin, alendronate). Acid suppression reduces absorption of weak bases requiring acidic environment (ketoconazole, atazanavir). Extended-release formulations maintain steady concentrations but have lower peak levels. Sublingual nitroglycerin bypasses first-pass for rapid onset in angina.",
-      "tags": [
-        "dose_conversion",
-        "food_effects",
-        "formulation_selection",
-        "therapeutic_monitoring"
-      ],
+      "tags": ["dose_conversion", "food_effects", "formulation_selection", "therapeutic_monitoring"],
       "source": "nih.gov",
       "credibility_class": "A",
       "year": 2025
@@ -41,21 +30,11 @@
       "sector": "PHR",
       "topic": "Bioavailability",
       "role": "diagnostic_criteria",
-      "content": "Bioavailability is measured by comparing AUC after non-IV administration to AUC after IV administration of the same dose: F = (AUC_oral \u00d7 Dose_IV) / (AUC_IV \u00d7 Dose_oral). Bioequivalence studies compare test vs reference formulations; two products are bioequivalent if 90% CI of geometric mean ratio for AUC and Cmax falls within 80-125%. Absolute bioavailability requires IV comparator; relative bioavailability compares two non-IV formulations. Factors affecting measurement: sampling duration must cover elimination phase; assay sensitivity must detect low concentrations; subjects should be fasting unless food-effect study. Generic approval requires demonstrating bioequivalence to brand-name product.",
-      "tags": [
-        "bioequivalence",
-        "AUC_comparison",
-        "generic_approval",
-        "bioavailability_study"
-      ],
+      "content": "Bioavailability is measured by comparing AUC after non-IV administration to AUC after IV administration of the same dose: F = (AUC_oral × Dose_IV) / (AUC_IV × Dose_oral). Bioequivalence studies compare test vs reference formulations; two products are bioequivalent if 90% CI of geometric mean ratio for AUC and Cmax falls within 80-125%. Absolute bioavailability requires IV comparator; relative bioavailability compares two non-IV formulations. Factors affecting measurement: sampling duration must cover elimination phase; assay sensitivity must detect low concentrations; subjects should be fasting unless food-effect study. Generic approval requires demonstrating bioequivalence to brand-name product.",
+      "tags": ["bioequivalence", "AUC_comparison", "generic_approval", "bioavailability_study"],
       "source": "ema.europa.eu",
       "credibility_class": "A",
       "year": 2025
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.643983",
-    "source_url_was_extracted": false
-  }
+  ]
 }

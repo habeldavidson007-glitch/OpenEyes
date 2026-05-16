@@ -25,10 +25,5 @@
       "url": "https://data.ed.gov/LRN/60",
       "role": "latest_data"
     }
-  },
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.262911",
-    "source_url_was_extracted": false
   }
 }

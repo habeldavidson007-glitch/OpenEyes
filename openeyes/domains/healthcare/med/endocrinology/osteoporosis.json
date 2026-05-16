@@ -7,13 +7,7 @@
       "sector": "MED",
       "topic": "Osteoporosis",
       "role": "definition",
-      "tags": [
-        "osteoporosis",
-        "bone density",
-        "fracture",
-        "DEXA",
-        "postmenopausal"
-      ],
+      "tags": ["osteoporosis", "bone density", "fracture", "DEXA", "postmenopausal"],
       "content": "Osteoporosis is a systemic skeletal disease characterized by low bone mass and microarchitectural deterioration of bone tissue, leading to increased bone fragility and fracture risk. Pathophysiology: imbalance between osteoclast-mediated bone resorption and osteoblast-mediated bone formation, favoring resorption. Postmenopausal osteoporosis (type I) from estrogen deficiency increases osteoclast activity; senile osteoporosis (type II) from aging affects both formation and resorption. Risk factors: female sex, advanced age, white/Asian ethnicity, family history, low body weight, smoking, alcohol excess, glucocorticoid use, hypogonadism, hyperthyroidism, malabsorption, vitamin D deficiency. Fragility fractures occur with minimal trauma (fall from standing height); common sites: vertebrae (compression fractures), hip (femoral neck/intertrochanteric), distal radius (Colles fracture). Hip and vertebral fractures associated with increased mortality.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985615/",
       "credibility_class": "peer_reviewed_guideline",
@@ -26,14 +20,8 @@
       "sector": "MED",
       "topic": "Osteoporosis",
       "role": "treatment_protocol",
-      "tags": [
-        "osteoporosis",
-        "bisphosphonates",
-        "denosumab",
-        "teriparatide",
-        "romosozumab"
-      ],
-      "content": "Foundation: adequate calcium (1000-1200mg/day total from diet + supplements) and vitamin D (800-2000 IU/day to maintain 25-OH vitamin D >30 ng/mL), weight-bearing exercise, fall prevention, smoking cessation. Pharmacologic therapy for T-score \u2264-2.5, prior fragility fracture, or osteopenia with high FRAX risk. First-line: bisphosphonates (alendronate, risedronate PO weekly; zoledronic acid IV yearly) - inhibit osteoclasts, reduce vertebral/hip fractures. Alternatives: denosumab (RANKL inhibitor, SC q6months) - potent antiresorptive, reversible effect requires transition plan. Anabolic agents for severe osteoporosis (T-score <-3.0 or multiple fractures): teriparatide/abaloparatide (PTH analogs, daily SC, max 2 years); romosozumab (sclerostin inhibitor, monthly SC, 12 months) - increases formation, reduces resorption, cardiovascular risk warning. Drug holiday after 3-5 years bisphosphonates if fracture risk decreases. Monitor with repeat DEXA every 1-2 years.",
+      "tags": ["osteoporosis", "bisphosphonates", "denosumab", "teriparatide", "romosozumab"],
+      "content": "Foundation: adequate calcium (1000-1200mg/day total from diet + supplements) and vitamin D (800-2000 IU/day to maintain 25-OH vitamin D >30 ng/mL), weight-bearing exercise, fall prevention, smoking cessation. Pharmacologic therapy for T-score ≤-2.5, prior fragility fracture, or osteopenia with high FRAX risk. First-line: bisphosphonates (alendronate, risedronate PO weekly; zoledronic acid IV yearly) - inhibit osteoclasts, reduce vertebral/hip fractures. Alternatives: denosumab (RANKL inhibitor, SC q6months) - potent antiresorptive, reversible effect requires transition plan. Anabolic agents for severe osteoporosis (T-score <-3.0 or multiple fractures): teriparatide/abaloparatide (PTH analogs, daily SC, max 2 years); romosozumab (sclerostin inhibitor, monthly SC, 12 months) - increases formation, reduces resorption, cardiovascular risk warning. Drug holiday after 3-5 years bisphosphonates if fracture risk decreases. Monitor with repeat DEXA every 1-2 years.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985615/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
@@ -45,22 +33,11 @@
       "sector": "MED",
       "topic": "Osteoporosis",
       "role": "diagnostic_criteria",
-      "tags": [
-        "osteoporosis",
-        "DEXA",
-        "T-score",
-        "FRAX",
-        "bone density"
-      ],
-      "content": "Diagnosis by dual-energy X-ray absorptiometry (DEXA) of lumbar spine and hip. WHO criteria based on T-score (comparison to young adult mean): normal \u2265-1.0, osteopenia (low bone mass) -1.0 to -2.5, osteoporosis \u2264-2.5. Z-score (age-matched) used in premenopausal women, men <50; Z-score \u2264-2.0 suggests secondary cause. FRAX tool estimates 10-year fracture risk using clinical risk factors \u00b1 femoral neck BMD; treatment considered if 10-year hip fracture risk \u22653% or major osteoporotic fracture risk \u226520% (US thresholds). Indications for DEXA: women \u226565, men \u226570, younger postmenopausal women/adults 50-69 with risk factors, adults with fragility fracture, conditions/medications causing bone loss. Vertebral imaging (VFA or X-ray) if height loss, kyphosis, or suspected vertebral fracture. Laboratory evaluation to exclude secondary causes: CBC, CMP, calcium, phosphorus, 25-OH vitamin D, TSH, PTH, testosterone (men), celiac screen, SPEP/UPEP if indicated.",
+      "tags": ["osteoporosis", "DEXA", "T-score", "FRAX", "bone density"],
+      "content": "Diagnosis by dual-energy X-ray absorptiometry (DEXA) of lumbar spine and hip. WHO criteria based on T-score (comparison to young adult mean): normal ≥-1.0, osteopenia (low bone mass) -1.0 to -2.5, osteoporosis ≤-2.5. Z-score (age-matched) used in premenopausal women, men <50; Z-score ≤-2.0 suggests secondary cause. FRAX tool estimates 10-year fracture risk using clinical risk factors ± femoral neck BMD; treatment considered if 10-year hip fracture risk ≥3% or major osteoporotic fracture risk ≥20% (US thresholds). Indications for DEXA: women ≥65, men ≥70, younger postmenopausal women/adults 50-69 with risk factors, adults with fragility fracture, conditions/medications causing bone loss. Vertebral imaging (VFA or X-ray) if height loss, kyphosis, or suspected vertebral fracture. Laboratory evaluation to exclude secondary causes: CBC, CMP, calcium, phosphorus, 25-OH vitamin D, TSH, PTH, testosterone (men), celiac screen, SPEP/UPEP if indicated.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/33985615/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.805145",
-    "source_url_was_extracted": false
-  }
+  ]
 }

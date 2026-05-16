@@ -6,44 +6,24 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "Food deserts are geographic areas where residents have limited access to affordable, nutritious food, particularly fresh fruits, vegetables, and other whole foods. The USDA defines food deserts using two metrics: (1) Low-income census tracts where at least 20% of residents live below poverty line or median family income is \u226480% of area/state median; AND (2) Limited access where at least 500 people or 33% of population live >1 mile from supermarket in urban areas or >10 miles in rural areas. However, the concept has evolved to recognize that proximity alone doesn't capture food access barriers. 'Food apartheid' is increasingly used to emphasize structural racism and policy decisions creating these conditions. Research shows food deserts correlate with higher rates of obesity, diabetes, and cardiovascular disease, though causality is complex and debated.",
-      "tags": [
-        "food_security",
-        "nutrition",
-        "geographic_disparities",
-        "social_determinants"
-      ],
+      "content": "Food deserts are geographic areas where residents have limited access to affordable, nutritious food, particularly fresh fruits, vegetables, and other whole foods. The USDA defines food deserts using two metrics: (1) Low-income census tracts where at least 20% of residents live below poverty line or median family income is ≤80% of area/state median; AND (2) Limited access where at least 500 people or 33% of population live >1 mile from supermarket in urban areas or >10 miles in rural areas. However, the concept has evolved to recognize that proximity alone doesn't capture food access barriers. 'Food apartheid' is increasingly used to emphasize structural racism and policy decisions creating these conditions. Research shows food deserts correlate with higher rates of obesity, diabetes, and cardiovascular disease, though causality is complex and debated.",
+      "tags": ["food_security", "nutrition", "geographic_disparities", "social_determinants"],
       "reasoning_role": "foundational_knowledge"
     },
     {
       "role": "treatment_protocol",
-      "content": "Interventions to address food deserts include: (1) Retail interventions: incentives for supermarkets to locate in underserved areas (tax credits, zoning changes), healthy corner store programs converting existing stores, mobile markets and produce trucks; (2) Alternative distribution: farmers markets with SNAP/EBT acceptance, community-supported agriculture subsidies, food cooperatives, online grocery delivery partnerships; (3) Community-based solutions: community gardens, urban agriculture, food hubs, gleaning programs; (4) Policy approaches: zoning for mixed-use development, transit improvements connecting residents to grocery stores, healthy food financing initiatives (e.g., Pennsylvania Fresh Food Financing Initiative); (5) Individual support: SNAP benefits expansion, WIC program, nutrition education (SNAP-Ed). Evidence for health impact is mixed\u2014supermarket introduction alone shows modest effects on consumption without complementary interventions like pricing strategies and nutrition education.",
-      "tags": [
-        "intervention",
-        "food_security",
-        "community_development",
-        "nutrition_policy"
-      ],
+      "content": "Interventions to address food deserts include: (1) Retail interventions: incentives for supermarkets to locate in underserved areas (tax credits, zoning changes), healthy corner store programs converting existing stores, mobile markets and produce trucks; (2) Alternative distribution: farmers markets with SNAP/EBT acceptance, community-supported agriculture subsidies, food cooperatives, online grocery delivery partnerships; (3) Community-based solutions: community gardens, urban agriculture, food hubs, gleaning programs; (4) Policy approaches: zoning for mixed-use development, transit improvements connecting residents to grocery stores, healthy food financing initiatives (e.g., Pennsylvania Fresh Food Financing Initiative); (5) Individual support: SNAP benefits expansion, WIC program, nutrition education (SNAP-Ed). Evidence for health impact is mixed—supermarket introduction alone shows modest effects on consumption without complementary interventions like pricing strategies and nutrition education.",
+      "tags": ["intervention", "food_security", "community_development", "nutrition_policy"],
       "reasoning_role": "actionable_guidance"
     },
     {
       "role": "diagnostic_criteria",
       "content": "Assessment of food desert status uses multiple tools: (1) USDA Food Access Research Atlas provides census tract-level data on low-income/low-access designation with various distance thresholds (1/2, 1, 10, 20 miles); (2) CDC's Modified Retail Food Environment Index (mRFEI) calculates percentage of healthy food retailers within census tracts; (3) Ground-truthing through community audits (NEMS-S, Nutrition Environment Measures Survey for Stores) assessing actual food availability, quality, and pricing; (4) Transportation access measures including vehicle ownership rates, public transit routes and frequency; (5) Economic access indicators including food price indices, SNAP redemption patterns. Emerging approaches incorporate online food ordering access, perceived safety affecting shopping patterns, and time burden of food acquisition. Limitations include outdated retail data, failure to capture informal food sources, and not accounting for individual mobility patterns.",
-      "tags": [
-        "measurement",
-        "geographic_information_systems",
-        "food_environment",
-        "assessment"
-      ],
+      "tags": ["measurement", "geographic_information_systems", "food_environment", "assessment"],
       "reasoning_role": "analytical_framework"
     }
   ],
   "source": "USDA Economic Research Service, CDC Division of Nutrition Physical Activity and Obesity, American Journal of Public Health",
   "credibility_class": "A",
-  "year": 2024,
-  "source_url": "https://source/usda_economic_research_service,_cdc_division_of_nutrition_physical_activity_and_obesity,_american_journal_of_public_health",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.879321",
-    "source_url_was_extracted": false
-  }
+  "year": 2024
 }

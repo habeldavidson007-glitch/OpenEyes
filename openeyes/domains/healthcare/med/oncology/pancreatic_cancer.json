@@ -5,13 +5,7 @@
   "fragments": [
     {
       "id": "hc_med_onc_pc_def_001",
-      "tags": [
-        "oncology",
-        "pancreatic cancer",
-        "adenocarcinoma",
-        "risk factors",
-        "poor prognosis"
-      ],
+      "tags": ["oncology", "pancreatic cancer", "adenocarcinoma", "risk factors", "poor prognosis"],
       "reasoning_role": "definition",
       "content": "Pancreatic ductal adenocarcinoma (PDAC) is the fourth leading cause of cancer death with 5-year survival ~12%. Poor prognosis due to: late presentation (vague symptoms, no screening test), aggressive biology (early metastasis, dense desmoplastic stroma limiting drug delivery), limited treatment options. Risk factors: smoking (doubles risk), chronic pancreatitis, diabetes (new-onset diabetes can be presenting symptom), obesity, family history (10% have germline mutations), genetic syndromes (BRCA1/2, PALB2, ATM, CDKN2A, STK11/Peutz-Jeghers, Lynch syndrome). Precursor lesions: pancreatic intraepithelial neoplasia (PanIN), intraductal papillary mucinous neoplasm (IPMN), mucinous cystic neoplasm (MCN). Molecular features: KRAS mutations (>90%), TP53 (75%), CDKN2A (50%), SMAD4 (55%); homologous recombination deficiency (HRD) in 10-15% (BRCA1/2, PALB2, ATM); MSI-H rare (<1%). Tumor location: head (60-70%, earlier jaundice), body/tail (present later, often metastatic).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36567890/",
@@ -20,38 +14,21 @@
     },
     {
       "id": "hc_med_onc_pc_treat_001",
-      "tags": [
-        "oncology",
-        "pancreatic cancer",
-        "treatment",
-        "surgery criteria",
-        "chemotherapy"
-      ],
+      "tags": ["oncology", "pancreatic cancer", "treatment", "surgery criteria", "chemotherapy"],
       "reasoning_role": "treatment_protocol",
-      "content": "Treatment determined by resectability. Resectable (no arterial contact, patent SMV/PV): upfront surgery (Whipple procedure for head, distal pancreatectomy for body/tail) followed by adjuvant chemotherapy. Modified FOLFIRINOX preferred for fit patients (PRODIGE 24 trial, median OS 54.4 months); gemcitabine + capecitabine alternative. Borderline resectable (limited arterial contact, reconstructible vein involvement): neoadjuvant chemotherapy (FOLFIRINOX or gemcitabine + nab-paclitaxel) \u00b1 radiation, then restaging for surgery. Locally advanced (unresectable, no metastases): systemic chemotherapy primary; consider consolidation chemoradiation for local control; some convert to resectable. Metastatic: first-line FOLFIRINOX (fit patients) or gemcitabine + nab-paclitaxel; second-line nanoliposomal irinotecan + 5-FU (NAPOLI-1). Targeted therapy: olaparib for germline BRCA-mutated metastatic disease after platinum (POLO trial); pembrolizumab for MSI-H (<1%). NALIRIFOX (liposomal irinotecan + 5-FU/LV) approved first-line based on NAPOLI-3 trial. Supportive care critical: biliary stenting for jaundice, celiac plexus block for pain, pancreatic enzyme replacement, nutritional support, diabetes management.",
+      "content": "Treatment determined by resectability. Resectable (no arterial contact, patent SMV/PV): upfront surgery (Whipple procedure for head, distal pancreatectomy for body/tail) followed by adjuvant chemotherapy. Modified FOLFIRINOX preferred for fit patients (PRODIGE 24 trial, median OS 54.4 months); gemcitabine + capecitabine alternative. Borderline resectable (limited arterial contact, reconstructible vein involvement): neoadjuvant chemotherapy (FOLFIRINOX or gemcitabine + nab-paclitaxel) ± radiation, then restaging for surgery. Locally advanced (unresectable, no metastases): systemic chemotherapy primary; consider consolidation chemoradiation for local control; some convert to resectable. Metastatic: first-line FOLFIRINOX (fit patients) or gemcitabine + nab-paclitaxel; second-line nanoliposomal irinotecan + 5-FU (NAPOLI-1). Targeted therapy: olaparib for germline BRCA-mutated metastatic disease after platinum (POLO trial); pembrolizumab for MSI-H (<1%). NALIRIFOX (liposomal irinotecan + 5-FU/LV) approved first-line based on NAPOLI-3 trial. Supportive care critical: biliary stenting for jaundice, celiac plexus block for pain, pancreatic enzyme replacement, nutritional support, diabetes management.",
       "source": "https://www.nccn.org/guidelines",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_pc_diag_001",
-      "tags": [
-        "oncology",
-        "pancreatic cancer",
-        "diagnosis",
-        "imaging",
-        "biomarkers"
-      ],
+      "tags": ["oncology", "pancreatic cancer", "diagnosis", "imaging", "biomarkers"],
       "reasoning_role": "diagnostic_criteria",
       "content": "Diagnosis requires imaging and tissue confirmation. Preferred imaging: pancreatic protocol CT (multiphase with arterial and portal venous phases) or MRI/MRCP; assesses resectability (arterial involvement - celiac, SMA, hepatic artery; venous involvement - SMV, portal vein). Endoscopic ultrasound (EUS) with FNA/FNB provides tissue diagnosis, especially for small lesions or when CT-guided biopsy not feasible. ERCP for biliary stenting if obstructive jaundice. CA 19-9 tumor marker: elevated in 80% but not diagnostic (can be elevated in benign biliary obstruction); useful for monitoring treatment response; Lewis antigen-negative individuals (5-10%) cannot produce CA 19-9. Staging: TNM system; potentially resectable, borderline resectable, locally advanced, metastatic classification guides treatment. Germline testing recommended for all patients (NCCN guidelines) given high rate of actionable mutations. PET-CT may detect occult metastases. Diagnostic laparoscopy considered before major resection to rule out peritoneal metastases not visible on imaging.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35678902/",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.822192",
-    "source_url_was_extracted": false
-  }
+  ]
 }

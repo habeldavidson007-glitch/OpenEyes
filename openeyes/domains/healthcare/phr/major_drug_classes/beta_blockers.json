@@ -7,12 +7,7 @@
       "sector": "PHR",
       "topic": "Beta Blockers",
       "role": "definition",
-      "tags": [
-        "beta blockers",
-        "cardiovascular",
-        "mechanism",
-        "pharmacology"
-      ],
+      "tags": ["beta blockers", "cardiovascular", "mechanism", "pharmacology"],
       "content": "Beta blockers (beta-adrenergic antagonists) are medications that block the effects of epinephrine and norepinephrine on beta-1 and beta-2 adrenergic receptors. Beta-1 selective agents (metoprolol, atenolol, bisoprolol) primarily affect cardiac tissue, reducing heart rate and contractility. Non-selective agents (propranolol, carvedilol) block both beta-1 and beta-2 receptors, affecting heart and bronchial/vascular smooth muscle. Beta blockers reduce myocardial oxygen demand, suppress arrhythmias, and decrease renin release. They are indicated for hypertension, angina, heart failure with reduced ejection fraction, post-MI secondary prevention, atrial fibrillation rate control, and migraine prophylaxis. Contraindications include severe bradycardia, heart block (second or third degree without pacemaker), decompensated heart failure, and reactive airway disease (for non-selective agents). Abrupt discontinuation can cause rebound hypertension and tachycardia.",
       "source": "fda.gov",
       "credibility_class": "A",
@@ -25,12 +20,7 @@
       "sector": "PHR",
       "topic": "Beta Blockers",
       "role": "treatment_protocol",
-      "tags": [
-        "beta blockers",
-        "dosing",
-        "clinical use",
-        "titration"
-      ],
+      "tags": ["beta blockers", "dosing", "clinical use", "titration"],
       "content": "Beta blocker selection and dosing depends on indication and patient characteristics. For heart failure: carvedilol starting 3.125mg BID, target 25mg BID; metoprolol succinate starting 12.5-25mg daily, target 200mg daily; bisoprolol starting 1.25mg daily, target 10mg daily. Titrate slowly every 2-4 weeks as tolerated. For hypertension: metoprolol tartrate 25-100mg BID or metoprolol succinate 25-200mg daily; atenolol 25-100mg daily. For post-MI: metoprolol tartrate 25-50mg BID, titrate to 100mg BID. For atrial fibrillation rate control: metoprolol tartrate 25-50mg q6h PRN or scheduled. Monitor heart rate (target 55-70 bpm for most indications), blood pressure, and signs of heart failure exacerbation during titration. Reduce dose or hold if HR <50 bpm, SBP <90 mmHg, or worsening heart failure symptoms. Avoid in acute decompensated heart failure until stabilized.",
       "source": "fda.gov",
       "credibility_class": "A",
@@ -43,21 +33,11 @@
       "sector": "PHR",
       "topic": "Beta Blockers",
       "role": "diagnostic_criteria",
-      "tags": [
-        "beta blockers",
-        "monitoring",
-        "adverse effects",
-        "contraindications"
-      ],
+      "tags": ["beta blockers", "monitoring", "adverse effects", "contraindications"],
       "content": "Beta blocker appropriateness assessment requires evaluation of contraindications and monitoring parameters. Absolute contraindications: severe bradycardia (HR <50 bpm), second or third-degree AV block without pacemaker, cardiogenic shock, decompensated heart failure requiring IV inotropes, severe hypotension (SBP <90 mmHg), severe reactive airway disease (for non-selective agents). Relative contraindications: asthma (use cardioselective agents cautiously), peripheral arterial disease (may worsen claudication), diabetes (may mask hypoglycemia symptoms), depression history. Monitoring requirements: baseline and periodic heart rate, blood pressure, ECG if conduction disease risk, signs/symptoms of heart failure, glucose in diabetics, lipid panel (some agents may worsen lipids). Adverse effects include bradycardia, hypotension, fatigue, cold extremities, erectile dysfunction, sleep disturbances, and depression. Drug interactions: verapamil/diltiazem (additive bradycardia/heart block), clonidine (rebound hypertension if beta blocker stopped first), insulin/oral hypoglycemics (masked hypoglycemia).",
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.684167",
-    "source_url_was_extracted": false
-  }
+  ]
 }

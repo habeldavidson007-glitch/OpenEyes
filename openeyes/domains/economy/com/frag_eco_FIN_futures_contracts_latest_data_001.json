@@ -18,7 +18,5 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 0.82,
-  "sector": "COM",
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.cmegroup.com"
+  "sector": "COM"
 }

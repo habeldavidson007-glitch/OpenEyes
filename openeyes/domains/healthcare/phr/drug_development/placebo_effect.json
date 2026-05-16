@@ -4,13 +4,9 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": [
-        "placebo effect",
-        "nocebo",
-        "clinical trial design"
-      ],
+      "tags": ["placebo effect", "nocebo", "clinical trial design"],
       "reasoning_role": "definition",
-      "content": "The placebo effect is a measurable improvement in patient outcomes following administration of an inert treatment, attributable to psychological and neurobiological mechanisms rather than pharmacological activity. Placebo responses vary by condition: 20-40% in pain trials, 30-50% in depression, 10-20% in oncology. Mechanisms include expectation effects, classical conditioning, patient-provider interaction, and natural disease fluctuation. The nocebo effect is the opposite\u2014worsening of symptoms or adverse events from inert treatment due to negative expectations. Both phenomena have real neurobiological correlates (e.g., endogenous opioid release in placebo analgesia). Understanding placebo/nocebo is critical for trial design and clinical practice.",
+      "content": "The placebo effect is a measurable improvement in patient outcomes following administration of an inert treatment, attributable to psychological and neurobiological mechanisms rather than pharmacological activity. Placebo responses vary by condition: 20-40% in pain trials, 30-50% in depression, 10-20% in oncology. Mechanisms include expectation effects, classical conditioning, patient-provider interaction, and natural disease fluctuation. The nocebo effect is the opposite—worsening of symptoms or adverse events from inert treatment due to negative expectations. Both phenomena have real neurobiological correlates (e.g., endogenous opioid release in placebo analgesia). Understanding placebo/nocebo is critical for trial design and clinical practice.",
       "source": "pubmed.ncbi.nlm.nih.gov",
       "credibility_class": "A",
       "year": 2024
@@ -19,13 +15,9 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": [
-        "placebo effect",
-        "nocebo",
-        "clinical trial design"
-      ],
+      "tags": ["placebo effect", "nocebo", "clinical trial design"],
       "reasoning_role": "treatment_protocol",
-      "content": "Clinical trial strategies to address placebo effects include: randomized placebo-controlled design (gold standard for isolating drug effect), active comparator trials when placebo is unethical, run-in periods to exclude high placebo responders (controversial), enrichment designs selecting patients unlikely to respond to placebo, and centralized rater training to reduce assessment variability. Blinding integrity is crucial\u2014patients and investigators should not be able to guess treatment assignment better than chance. Nocebo mitigation involves careful informed consent language (emphasizing tolerability without minimizing risks), positive framing, and building therapeutic alliance. In open-label extension studies, placebo effects diminish but don't disappear. Some trials use 'placebo lead-in' followed by randomization of placebo responders to active drug vs. continued placebo.",
+      "content": "Clinical trial strategies to address placebo effects include: randomized placebo-controlled design (gold standard for isolating drug effect), active comparator trials when placebo is unethical, run-in periods to exclude high placebo responders (controversial), enrichment designs selecting patients unlikely to respond to placebo, and centralized rater training to reduce assessment variability. Blinding integrity is crucial—patients and investigators should not be able to guess treatment assignment better than chance. Nocebo mitigation involves careful informed consent language (emphasizing tolerability without minimizing risks), positive framing, and building therapeutic alliance. In open-label extension studies, placebo effects diminish but don't disappear. Some trials use 'placebo lead-in' followed by randomization of placebo responders to active drug vs. continued placebo.",
       "source": "pubmed.ncbi.nlm.nih.gov",
       "credibility_class": "A",
       "year": 2024
@@ -34,21 +26,12 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": [
-        "placebo effect",
-        "nocebo",
-        "clinical trial design"
-      ],
+      "tags": ["placebo effect", "nocebo", "clinical trial design"],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Placebo response measurement in trials: difference between baseline and endpoint in placebo arm (placebo response rate), proportion of placebo patients meeting response criteria (e.g., \u226550% pain reduction, \u226530% HAM-D decrease in depression). High placebo rates can obscure drug-placebo differences, leading to trial failure despite true drug efficacy. Factors increasing placebo response include: subjective endpoints, frequent site visits, elaborate rituals, patient expectations, milder disease severity, and shorter trial duration. Nocebo adverse event rates in placebo arms often reach 20-30%, complicating safety signal detection. Ethical considerations limit placebo use when effective treatments exist; non-inferiority designs may be required. Meta-analyses show increasing placebo responses over time in some indications (e.g., neuropathic pain, depression), potentially due to trial design changes and patient expectations.",
+      "content": "Placebo response measurement in trials: difference between baseline and endpoint in placebo arm (placebo response rate), proportion of placebo patients meeting response criteria (e.g., ≥50% pain reduction, ≥30% HAM-D decrease in depression). High placebo rates can obscure drug-placebo differences, leading to trial failure despite true drug efficacy. Factors increasing placebo response include: subjective endpoints, frequent site visits, elaborate rituals, patient expectations, milder disease severity, and shorter trial duration. Nocebo adverse event rates in placebo arms often reach 20-30%, complicating safety signal detection. Ethical considerations limit placebo use when effective treatments exist; non-inferiority designs may be required. Meta-analyses show increasing placebo responses over time in some indications (e.g., neuropathic pain, depression), potentially due to trial design changes and patient expectations.",
       "source": "pubmed.ncbi.nlm.nih.gov",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.679585",
-    "source_url_was_extracted": false
-  }
+  ]
 }

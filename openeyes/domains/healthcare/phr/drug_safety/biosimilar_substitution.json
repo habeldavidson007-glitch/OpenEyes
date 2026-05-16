@@ -2,11 +2,7 @@
   "domain": "healthcare",
   "subdomain": "PHR",
   "sector": "PHR",
-  "tags": [
-    "drug safety",
-    "pharmacovigilance",
-    "pharmaceuticals"
-  ],
+  "tags": ["drug safety", "pharmacovigilance", "pharmaceuticals"],
   "fragments": [
     {
       "role": "definition",
@@ -29,10 +25,5 @@
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.659319",
-    "source_url_was_extracted": false
-  }
+  ]
 }

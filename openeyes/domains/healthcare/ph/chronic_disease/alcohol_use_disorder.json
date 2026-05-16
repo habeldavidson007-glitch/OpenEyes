@@ -7,43 +7,23 @@
     {
       "role": "definition",
       "content": "Alcohol use disorder (AUD) is a chronic relapsing brain disease characterized by compulsive alcohol use, loss of control over intake, and negative emotional state when not using. DSM-5 criteria include 11 symptoms ranging from mild (2-3 symptoms) to severe (6+ symptoms): drinking more/longer than intended, unsuccessful cut-down attempts, time spent obtaining/using/recovering, cravings, failure to fulfill obligations, social/interpersonal problems, giving up activities, hazardous use, continued use despite physical/psychological problems, tolerance, and withdrawal. Alcohol causes over 200 health conditions including liver disease, pancreatitis, cardiovascular disease, multiple cancers, and neurological damage. Global burden: 3 million deaths annually (5.3% of all deaths). Binge drinking (4+ drinks women, 5+ men in 2 hours) poses acute risks even without AUD diagnosis.",
-      "tags": [
-        "alcohol",
-        "addiction",
-        "substance_use",
-        "mental_health"
-      ],
+      "tags": ["alcohol", "addiction", "substance_use", "mental_health"],
       "reasoning_role": "foundational_knowledge"
     },
     {
       "role": "treatment_protocol",
-      "content": "AUD treatment follows stepped-care approach: (1) Screening and brief intervention (SBIRT)\u2014AUDIT-C screening, motivational interviewing for risky drinkers; (2) Outpatient treatment\u2014mutual help groups (AA, SMART Recovery), counseling (CBT, MET, 12-step facilitation); (3) Pharmacotherapy\u2014naltrexone (reduces craving/reward), acamprosate (maintains abstinence), disulfiram (aversion therapy), off-label options (topiramate, gabapentin); (4) Medically managed withdrawal\u2014for severe dependence with CIWA-Ar monitoring, benzodiazepines for seizure prevention, thiamine supplementation; (5) Residential/inpatient treatment\u2014for severe AUD or failed outpatient attempts; (6) Recovery support\u2014peer recovery coaches, sober living environments, continuing care. Population-level interventions: taxation, minimum unit pricing, availability restrictions, marketing regulations, drunk driving laws. Harm reduction strategies include moderate drinking goals for some patients.",
-      "tags": [
-        "treatment",
-        "pharmacotherapy",
-        "harm_reduction",
-        "policy"
-      ],
+      "content": "AUD treatment follows stepped-care approach: (1) Screening and brief intervention (SBIRT)—AUDIT-C screening, motivational interviewing for risky drinkers; (2) Outpatient treatment—mutual help groups (AA, SMART Recovery), counseling (CBT, MET, 12-step facilitation); (3) Pharmacotherapy—naltrexone (reduces craving/reward), acamprosate (maintains abstinence), disulfiram (aversion therapy), off-label options (topiramate, gabapentin); (4) Medically managed withdrawal—for severe dependence with CIWA-Ar monitoring, benzodiazepines for seizure prevention, thiamine supplementation; (5) Residential/inpatient treatment—for severe AUD or failed outpatient attempts; (6) Recovery support—peer recovery coaches, sober living environments, continuing care. Population-level interventions: taxation, minimum unit pricing, availability restrictions, marketing regulations, drunk driving laws. Harm reduction strategies include moderate drinking goals for some patients.",
+      "tags": ["treatment", "pharmacotherapy", "harm_reduction", "policy"],
       "reasoning_role": "actionable_guidance"
     },
     {
       "role": "diagnostic_criteria",
-      "content": "AUD assessment tools: (1) Screening\u2014AUDIT (Alcohol Use Disorders Identification Test, 10 items), AUDIT-C (3-item consumption screen), CAGE questionnaire (Cut down, Annoyed, Guilty, Eye-opener), single-question screens ('How many times...'); (2) Diagnostic interviews\u2014DSM-5 criteria assessment, SCID (Structured Clinical Interview for DSM); (3) Severity measures\u2014AUDIT total score (8-15 hazardous, 16-19 harmful, 20+ dependent), DSM-5 severity specifiers; (4) Biomarkers\u2014PEth (phosphatidylethanol) for heavy drinking past 2-4 weeks, GGT, MCV, CDT (carbohydrate-deficient transferrin), ethyl glucuronide in urine/hair; (5) Withdrawal risk\u2014CIWA-Ar (Clinical Institute Withdrawal Assessment) for monitoring detoxification. Co-occurring mental health disorders common (depression, anxiety, PTSD) requiring integrated treatment. Liver function tests assess alcohol-related organ damage.",
-      "tags": [
-        "screening",
-        "diagnosis",
-        "biomarkers",
-        "assessment"
-      ],
+      "content": "AUD assessment tools: (1) Screening—AUDIT (Alcohol Use Disorders Identification Test, 10 items), AUDIT-C (3-item consumption screen), CAGE questionnaire (Cut down, Annoyed, Guilty, Eye-opener), single-question screens ('How many times...'); (2) Diagnostic interviews—DSM-5 criteria assessment, SCID (Structured Clinical Interview for DSM); (3) Severity measures—AUDIT total score (8-15 hazardous, 16-19 harmful, 20+ dependent), DSM-5 severity specifiers; (4) Biomarkers—PEth (phosphatidylethanol) for heavy drinking past 2-4 weeks, GGT, MCV, CDT (carbohydrate-deficient transferrin), ethyl glucuronide in urine/hair; (5) Withdrawal risk—CIWA-Ar (Clinical Institute Withdrawal Assessment) for monitoring detoxification. Co-occurring mental health disorders common (depression, anxiety, PTSD) requiring integrated treatment. Liver function tests assess alcohol-related organ damage.",
+      "tags": ["screening", "diagnosis", "biomarkers", "assessment"],
       "reasoning_role": "analytical_framework"
     }
   ],
   "source": "NIAAA, DSM-5, WHO Global Status Report on Alcohol and Health, USPSTF Recommendations",
   "credibility_class": "A",
-  "year": 2024,
-  "source_url": "https://source/niaaa,_dsm-5,_who_global_status_report_on_alcohol_and_health,_uspstf_recommendations",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.880629",
-    "source_url_was_extracted": false
-  }
+  "year": 2024
 }

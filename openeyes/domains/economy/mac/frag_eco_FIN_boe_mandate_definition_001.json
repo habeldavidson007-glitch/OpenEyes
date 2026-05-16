@@ -19,7 +19,5 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 0.92,
-  "sector": "MAC",
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.bankofengland.co.uk"
+  "sector": "MAC"
 }
