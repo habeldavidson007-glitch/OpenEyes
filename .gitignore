@@ -1,13 +1,10 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
 # Logs and temp files
 *.log
 *.tmp
+
+# Binary files
+*.bin
 
 # Environment
 .env
@@ -18,18 +15,7 @@ __pycache__/
 .vscode/
 .idea/
 
-# Compiled and build artifacts
-*.o
-*.obj
-*.out
-dist/
-build/
-target/
-
-# Dependencies
-.venv/
-venv/
-node_modules/
-.mypy_cache/
-.pytest_cache/
+# Test outputs
+test_output_full.txt
+test_results/
 ```

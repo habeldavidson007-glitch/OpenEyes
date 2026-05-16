@@ -1,0 +1,7 @@
+# Audit Log
+
+Signature: `dd566a32ccfa8d24c0273dd74c3fb593fc2a5b5d65b56b461b4f1582291330e9`
+
+```json
+{"query": "How does chemical reaction work?", "result": {"answer": "Key insight: Technical patterns work partly through self-fulfilling prophecy\u2014widely recognized patterns trigger collective action. Fear drives capitulation patterns (selling climaxes, springs); greed drives euphoria patterns (buying climaxes, upthrusts). Pattern recognition exploits predictable human emotional responses. However, as algorithms dominate, pattern dynamics shift\u2014machines front-run predictable human reactions. Supporting detail: Alternative perspectives on Chemical Engineering suggest methodological limitations and competing theoretical frameworks in chemical engineering. Critics argue simplifications in current models. However, empirical evidence shows reproducible experimental results. The debate continues regarding the underlying mechanisms. This information suggests you should verify current data from authoritative sources before taking action.", "answer_class": "ANSWER_LOW_CONFIDENCE", "confidence": 65.99, "data_recency_years": 1, "domain": "general", "narrative": {"context": "", "recommendation": "", "scenarios": {}}, "replay": {"agents": 1024, "score_mean": 50.9853, "score_var": 3.952357, "seed": 1155950429, "sub_questions": ["chemical reaction work"]}, "status": "ANSWER_LOW_CONFIDENCE"}, "timestamp": "20260516_153333_908753", "version": 1}
+```
