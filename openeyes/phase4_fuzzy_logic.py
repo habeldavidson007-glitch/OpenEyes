@@ -51,9 +51,10 @@ class FuzzyConfidenceEvaluator:
     WEIGHT_PEER_REVIEW = 0.3
     WEIGHT_SOURCE_RANKING = 0.2
     
-    # Confidence thresholds
-    HIGH_CONFIDENCE_THRESHOLD = 0.8
-    MEDIUM_CONFIDENCE_THRESHOLD = 0.4
+    # Confidence thresholds (Updated per production calibration)
+    # HIGH: ≥75%, MEDIUM: 55-74%, LOW: <55%
+    HIGH_CONFIDENCE_THRESHOLD = 0.75
+    MEDIUM_CONFIDENCE_THRESHOLD = 0.55
     
     def __init__(self):
         pass

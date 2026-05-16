@@ -1,22 +1,35 @@
 ```
-# Binary and compiled files
-*.bin
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
 # Logs and temp files
 *.log
 *.tmp
 
-# Environment files
+# Environment
 .env
 .env.local
 *.env.*
 
-# Coverage and test results
-coverage/
-htmlcov/
-.coverage
-test_results/
+# Editors
+.vscode/
+.idea/
 
-# Original rules preserved
-*.log
+# Compiled and build artifacts
+*.o
+*.obj
+*.out
+dist/
+build/
+target/
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+.mypy_cache/
+.pytest_cache/
 ```
