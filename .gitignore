@@ -1,1 +1,7 @@
-Nothing should be ignored in this case, as only a Python source file (`openeyes/query_interface/__init__.py`) was modified and no build artifacts, dependencies, or temporary files were present in the changes.
+```
+# Audit logs
+.openeyes/vault/audit/*.md
+
+# Binary files
+*.bin
+```

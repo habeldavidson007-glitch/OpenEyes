@@ -238,6 +238,7 @@ class OpenEyes:
         trace_id = self._generate_trace_id()
         
         # FIX 3: ENHANCED IMPOSSIBLE PREMISE DETECTION (Tier 5 adversarial tests)
+        # Expanded patterns for better detection of unrealistic requests
         impossible_patterns = [
             ('guaranteed.*return.*zero risk', 'Impossible: No investment can guarantee returns with zero risk'),
             ('guaranteed.*wealth.*no risk', 'Impossible: No wealth-building strategy is risk-free'),
@@ -258,6 +259,17 @@ class OpenEyes:
             ('vaccine.*100%', 'Impossible: No vaccine is 100% effective for all variants'),
             ('immune to all viruses', 'Impossible: Complete immunity to all viruses is not achievable'),
             ('perfect health guarantee', 'Impossible: Perfect health cannot be guaranteed'),
+            # Additional Tier 5 patterns
+            ('50%.*return.*zero risk', 'Impossible: High returns always correlate with high risk'),
+            ('guaranteed.*profit', 'Impossible: No profit can be guaranteed in markets'),
+            ('riskless.*investment', 'Impossible: All investments carry inherent risk'),
+            ('can\'t lose|cannot lose|cant lose', 'Impossible: All strategies have potential for loss'),
+            ('free lunch|something for nothing', 'Impossible: There is no such thing as a free lunch in economics'),
+            ('beat the market.*always', 'Impossible: Consistently beating the market without risk is impossible'),
+            ('perfect prediction', 'Impossible: Perfect prediction of future events is not possible'),
+            ('eliminate all risk', 'Impossible: Risk can be managed but never eliminated'),
+            ('foolproof.*system', 'Impossible: No system is completely foolproof'),
+            ('fail-safe.*guarantee', 'Impossible: No guarantee can cover all failure modes'),
         ]
         
         import re

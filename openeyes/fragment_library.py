@@ -73,6 +73,29 @@ class Fragment:
         valid_fields = {f.name for f in cls.__dataclass_fields__.values()}
         filtered_data = {k: v for k, v in data.items() if k in valid_fields}
         
+        # Handle new role-based fragment structure (DEM_*.json format)
+        if 'roles' in data and isinstance(data['roles'], dict):
+            # Extract from roles structure
+            roles = data['roles']
+            definition = roles.get('definition', {})
+            latest_data = roles.get('latest_data', {})
+            
+            # Use definition as primary content
+            if 'content' not in filtered_data or not filtered_data.get('content'):
+                filtered_data['content'] = definition.get('content', '')
+            if 'source' not in filtered_data or not filtered_data.get('source'):
+                filtered_data['source'] = definition.get('source', 'Unknown')
+            if 'source_url' not in filtered_data or not filtered_data.get('source_url'):
+                filtered_data['source_url'] = definition.get('url', '')
+            if 'year' not in filtered_data or not filtered_data.get('year'):
+                filtered_data['year'] = definition.get('year')
+            
+            # Store additional role content in tags for retrieval
+            if 'tags' not in filtered_data:
+                filtered_data['tags'] = []
+            role_tags = list(roles.keys())  # ['definition', 'counter_argument', 'latest_data']
+            filtered_data['tags'].extend(role_tags)
+        
         # Ensure required fields have values
         if 'tags' not in filtered_data:
             filtered_data['tags'] = []
@@ -84,6 +107,14 @@ class Fragment:
             filtered_data['source_url'] = ''
         if 'credibility_class' not in filtered_data or not filtered_data['credibility_class']:
             filtered_data['credibility_class'] = 'peer_reviewed_study'
+        
+        # Ensure id is present - this is critical
+        if 'id' not in filtered_data or not filtered_data['id']:
+            # Generate ID from domain/sector if available
+            domain = filtered_data.get('domain', 'UNKNOWN')
+            sector = filtered_data.get('sector', 'UNK')
+            topic = filtered_data.get('topic', 'unknown')
+            filtered_data['id'] = f"{sector}_{topic[:8]}_{len(str(hash(str(data))))}"
             
         return cls(**filtered_data)
     
