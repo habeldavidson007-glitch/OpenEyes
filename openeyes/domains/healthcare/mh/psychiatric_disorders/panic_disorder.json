@@ -6,13 +6,8 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "Panic Disorder is characterized by recurrent, unexpected panic attacks\u2014sudden surges of intense fear/discomfort peaking within minutes, accompanied by \u22654 physical/cognitive symptoms: palpitations, sweating, trembling, shortness of breath, chest pain, nausea, dizziness, chills/heat sensations, paresthesias, derealization/depersonalization, fear of losing control, or fear of dying. At least one attack is followed by \u22651 month of persistent concern about additional attacks, worry about consequences, or significant maladaptive behavioral change (e.g., avoidance). Panic disorder often co-occurs with agoraphobia. Lifetime prevalence ~2-3%, female predominance (2:1). Pathophysiology involves amygdala hyperactivity, locus coeruleus norepinephrine dysregulation, and respiratory sensitivity.",
-      "tags": [
-        "panic-attack",
-        "panic-disorder",
-        "agoraphobia",
-        "anxiety"
-      ],
+      "content": "Panic Disorder is characterized by recurrent, unexpected panic attacks—sudden surges of intense fear/discomfort peaking within minutes, accompanied by ≥4 physical/cognitive symptoms: palpitations, sweating, trembling, shortness of breath, chest pain, nausea, dizziness, chills/heat sensations, paresthesias, derealization/depersonalization, fear of losing control, or fear of dying. At least one attack is followed by ≥1 month of persistent concern about additional attacks, worry about consequences, or significant maladaptive behavioral change (e.g., avoidance). Panic disorder often co-occurs with agoraphobia. Lifetime prevalence ~2-3%, female predominance (2:1). Pathophysiology involves amygdala hyperactivity, locus coeruleus norepinephrine dysregulation, and respiratory sensitivity.",
+      "tags": ["panic-attack", "panic-disorder", "agoraphobia", "anxiety"],
       "source": "https://www.nimh.nih.gov/health/topics/panic-disorder",
       "credibility_class": "A",
       "year": 2024
@@ -20,34 +15,18 @@
     {
       "role": "treatment_protocol",
       "content": "First-line pharmacotherapy: SSRIs (sertraline, paroxetine, escitalopram) or SNRIs (venlafaxine); start low and titrate slowly to avoid initial activation. Benzodiazepines (clonazepam, alprazolam) provide rapid relief but limited to short-term/adjunctive use due to dependence risk. Cognitive Behavioral Therapy (CBT) is highly effective, including psychoeducation, cognitive restructuring (addressing catastrophic misinterpretations), interoceptive exposure (inducing physical sensations to reduce fear), and in vivo exposure for agoraphobic avoidance. CBT effects are durable post-treatment. Combination therapy may benefit severe cases. Treatment duration typically 12+ months before gradual tapering.",
-      "tags": [
-        "SSRI",
-        "CBT",
-        "exposure-therapy",
-        "benzodiazepines",
-        "treatment"
-      ],
+      "tags": ["SSRI", "CBT", "exposure-therapy", "benzodiazepines", "treatment"],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "diagnostic_criteria",
-      "content": "DSM-5-TR criteria: Recurrent unexpected panic attacks (abrupt surge of intense fear/discomfort peaking within minutes with \u22654 symptoms: palpitations, sweating, trembling, dyspnea, choking, chest pain, nausea, dizziness, chills/heat, paresthesias, derealization, fear of losing control/going crazy, fear of dying). \u22651 attack followed by \u22651 month of: persistent concern about additional attacks/consequences, or significant maladaptive behavioral change related to attacks. Disturbance not attributable to substance effects, medical condition, or better explained by another mental disorder (social anxiety, specific phobia, OCD, PTSD). Agoraphobia diagnosed separately if present.",
-      "tags": [
-        "DSM-5-TR",
-        "diagnostic-criteria",
-        "panic-attack",
-        "panic-disorder"
-      ],
+      "content": "DSM-5-TR criteria: Recurrent unexpected panic attacks (abrupt surge of intense fear/discomfort peaking within minutes with ≥4 symptoms: palpitations, sweating, trembling, dyspnea, choking, chest pain, nausea, dizziness, chills/heat, paresthesias, derealization, fear of losing control/going crazy, fear of dying). ≥1 attack followed by ≥1 month of: persistent concern about additional attacks/consequences, or significant maladaptive behavioral change related to attacks. Disturbance not attributable to substance effects, medical condition, or better explained by another mental disorder (social anxiety, specific phobia, OCD, PTSD). Agoraphobia diagnosed separately if present.",
+      "tags": ["DSM-5-TR", "diagnostic-criteria", "panic-attack", "panic-disorder"],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.720635",
-    "source_url_was_extracted": false
-  }
+  ]
 }

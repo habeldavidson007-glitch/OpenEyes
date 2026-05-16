@@ -18,7 +18,5 @@
     "frag_eco_COM_lithium_ev_demand_definition_001"
   ],
   "incompatible_with": [],
-  "weight": 1.0,
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.fastmarkets.com"
+  "weight": 1.0
 }

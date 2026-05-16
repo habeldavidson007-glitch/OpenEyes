@@ -19,7 +19,5 @@
   "reasoning_role": "counter_argument",
   "source_type": "clinical_guideline",
   "year": 2026,
-  "sub_question": "What are the risk factors and differential diagnoses?",
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.nccn.org"
+  "sub_question": "What are the risk factors and differential diagnoses?"
 }

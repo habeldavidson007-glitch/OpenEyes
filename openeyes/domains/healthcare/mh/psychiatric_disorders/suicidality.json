@@ -7,12 +7,7 @@
     {
       "role": "definition",
       "content": "Suicidality encompasses suicidal ideation (thoughts of killing oneself), suicide plan (specific method/formulation), suicide attempt (self-injurious behavior with intent to die), and completed suicide. Risk factors include psychiatric disorders (depression, bipolar, schizophrenia, SUD, personality disorders), previous attempts (strongest predictor), family history, chronic medical conditions, acute stressors, access to lethal means, social isolation, hopelessness. Protective factors include social support, coping skills, reasons for living, restricted access to lethal means. Suicide is leading cause of death in young people globally. Assessment requires direct questioning about ideation, plan, intent, means, past attempts, and protective factors.",
-      "tags": [
-        "suicide",
-        "suicidal-ideation",
-        "risk-assessment",
-        "prevention"
-      ],
+      "tags": ["suicide", "suicidal-ideation", "risk-assessment", "prevention"],
       "source": "https://www.nimh.nih.gov/health/topics/suicide-prevention",
       "credibility_class": "A",
       "year": 2024
@@ -20,13 +15,7 @@
     {
       "role": "treatment_protocol",
       "content": "Immediate safety: hospitalize if imminent risk (specific plan, intent, means available, unable to contract for safety). Safety planning intervention includes: recognizing warning signs, internal coping strategies, social contacts for distraction, family/friends for help, professional resources, making environment safe (means restriction). Evidence-based therapies: Dialectical Behavior Therapy (DBT) reduces attempts in BPD; Cognitive Therapy for Suicide Prevention (CT-SP); Collaborative Assessment and Management of Suicidality (CAMS). Pharmacotherapy: treat underlying disorders (lithium reduces suicide in bipolar/depression; clozapine reduces suicide in schizophrenia; ketamine shows rapid anti-suicidal effects). Means restriction counseling critical. Follow-up contact post-discharge reduces reattempts.",
-      "tags": [
-        "safety-planning",
-        "DBT",
-        "lithium",
-        "clozapine",
-        "means-restriction"
-      ],
+      "tags": ["safety-planning", "DBT", "lithium", "clozapine", "means-restriction"],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
@@ -34,21 +23,10 @@
     {
       "role": "diagnostic_criteria",
       "content": "DSM-5-TR includes suicidal behavior disorder (research condition): self-initiated behavior with expectation/understanding of potential death; not including nonsuicidal self-injury (no intent to die). Clinical assessment documents: suicidal ideation (frequency, intensity, duration, controllability), plan (specificity, lethality, availability of means), intent (subjective expectation of death), preparatory behaviors (acquiring means, writing note, giving away possessions), past attempts (number, methods, medical severity, intent), aborted/interrupted attempts, nonsuicidal self-injury, risk/protective factors, reasons for living. Use standardized tools: Columbia-Suicide Severity Rating Scale (C-SSRS), Beck Scale for Suicide Ideation. Document thoroughly for continuity of care.",
-      "tags": [
-        "DSM-5-TR",
-        "assessment",
-        "C-SSRS",
-        "suicide-risk",
-        "documentation"
-      ],
+      "tags": ["DSM-5-TR", "assessment", "C-SSRS", "suicide-risk", "documentation"],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.720176",
-    "source_url_was_extracted": false
-  }
+  ]
 }

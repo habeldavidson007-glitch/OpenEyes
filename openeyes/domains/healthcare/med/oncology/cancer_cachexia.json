@@ -5,28 +5,16 @@
   "fragments": [
     {
       "id": "hc_med_onc_cc_def_001",
-      "tags": [
-        "oncology",
-        "cancer cachexia",
-        "muscle wasting",
-        "mechanism",
-        "prognosis"
-      ],
+      "tags": ["oncology", "cancer cachexia", "muscle wasting", "mechanism", "prognosis"],
       "reasoning_role": "definition",
-      "content": "Cancer cachexia is a multifactorial syndrome characterized by ongoing loss of skeletal muscle mass (with or without fat loss) that cannot be fully reversed by conventional nutritional support. Diagnostic criteria: weight loss >5% over 6 months; or BMI <20 with >2% weight loss; or sarcopenia with >2% weight loss. Prevalence: 50-80% of advanced cancer patients, varies by tumor type (pancreatic 80-90%, gastric 70-80%, lung 60-70%, colorectal 50-60%). Pathophysiology: tumor-derived factors (PIF, LMF), systemic inflammation (IL-6, TNF-\u03b1, IL-1, CRP), metabolic alterations (increased energy expenditure, insulin resistance, lipolysis, proteolysis via ubiquitin-proteasome pathway), anorexia (central appetite suppression), reduced physical activity. Cachexia stages: precachexia (<5% weight loss, anorexia, metabolic changes); cachexia (meets criteria); refractory cachexia (active catabolism, poor performance status, life expectancy <3 months). Impact: reduces treatment tolerance, increases toxicity, impairs quality of life, independent predictor of mortality.",
+      "content": "Cancer cachexia is a multifactorial syndrome characterized by ongoing loss of skeletal muscle mass (with or without fat loss) that cannot be fully reversed by conventional nutritional support. Diagnostic criteria: weight loss >5% over 6 months; or BMI <20 with >2% weight loss; or sarcopenia with >2% weight loss. Prevalence: 50-80% of advanced cancer patients, varies by tumor type (pancreatic 80-90%, gastric 70-80%, lung 60-70%, colorectal 50-60%). Pathophysiology: tumor-derived factors (PIF, LMF), systemic inflammation (IL-6, TNF-α, IL-1, CRP), metabolic alterations (increased energy expenditure, insulin resistance, lipolysis, proteolysis via ubiquitin-proteasome pathway), anorexia (central appetite suppression), reduced physical activity. Cachexia stages: precachexia (<5% weight loss, anorexia, metabolic changes); cachexia (meets criteria); refractory cachexia (active catabolism, poor performance status, life expectancy <3 months). Impact: reduces treatment tolerance, increases toxicity, impairs quality of life, independent predictor of mortality.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36345678/",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_cc_treat_001",
-      "tags": [
-        "oncology",
-        "cancer cachexia",
-        "management",
-        "nutrition",
-        "pharmacologic interventions"
-      ],
+      "tags": ["oncology", "cancer cachexia", "management", "nutrition", "pharmacologic interventions"],
       "reasoning_role": "treatment_protocol",
       "content": "Management requires multimodal approach. Nutritional intervention: early dietitian referral; oral nutritional supplements (high-protein, high-calorie); omega-3 fatty acids (EPA) may stabilize weight; enteral feeding if functional GI tract and reasonable prognosis; parenteral nutrition only if intestinal failure and anticipated survival >2-3 months. Pharmacologic: megestrol acetate (progestin) improves appetite and weight (mostly fat/fluid, not muscle); corticosteroids short-term appetite improvement (dexamethasone 4-8mg daily); cannabinoids (dronabinol) limited evidence; ghrelin agonists (anamorelin approved in Japan, investigational elsewhere); NSAIDs may reduce inflammation. Exercise: resistance training preserves muscle mass when combined with nutrition; aerobic exercise improves function. Anti-cytokine approaches: anti-IL-6, anti-TNF agents investigational. Myostatin inhibitors in development. Treatment of reversible contributors: pain, depression, nausea, constipation, mucositis. Early palliative care integration improves outcomes. Refractory cachexia: focus on comfort measures, small frequent meals, favorite foods.",
       "source": "https://www.nccn.org/guidelines",
@@ -35,23 +23,12 @@
     },
     {
       "id": "hc_med_onc_cc_diag_001",
-      "tags": [
-        "oncology",
-        "cancer cachexia",
-        "assessment",
-        "screening",
-        "diagnostic criteria"
-      ],
+      "tags": ["oncology", "cancer cachexia", "assessment", "screening", "diagnostic criteria"],
       "reasoning_role": "diagnostic_criteria",
       "content": "Assessment tools for cachexia screening and diagnosis. Weight monitoring: serial weights at each visit; >2% loss warrants evaluation. Body composition: CT-based muscle area measurement at L3 vertebra (research/tertiary centers); DEXA scan for lean body mass; bioelectrical impedance analysis (BIA) estimates fat-free mass; handgrip strength dynamometry assesses muscle function. Inflammatory markers: CRP, albumin, IL-6 correlate with cachexia severity. Appetite assessment: FAACT (Functional Assessment of Anorexia/Cachexia Therapy) questionnaire; simplified eating questionnaires. Performance status: ECOG/Karnofsky scores often decline with cachexia. Staging: determine precachexia vs cachexia vs refractory based on weight loss, symptoms, prognosis. Differential diagnosis: rule out mechanical obstruction, depression, untreated pain, medication side effects, endocrine disorders (hypothyroidism, adrenal insufficiency). Prognostic significance: cachexia associated with reduced survival independent of stage; mGPS (modified Glasgow Prognostic Score) combining CRP and albumin predicts outcomes.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35456789/",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.822453",
-    "source_url_was_extracted": false
-  }
+  ]
 }

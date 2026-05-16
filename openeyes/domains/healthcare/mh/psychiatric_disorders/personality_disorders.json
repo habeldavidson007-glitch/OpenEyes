@@ -6,13 +6,8 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "Personality Disorders (PDs) are enduring patterns of inner experience and behavior deviating markedly from cultural expectations, pervasive across situations, inflexible, stable over time, leading to distress/impairment. Onset in adolescence/early adulthood. DSM-5 clusters: Cluster A (odd/eccentric)\u2014Paranoid (distrust/suspiciousness), Schizoid (detachment, restricted affect), Schizotypal (acute discomfort with closeness, cognitive/perceptual distortions, eccentric behavior). Cluster B (dramatic/emotional/erratic)\u2014Antisocial (disregard for others), Borderline (instability), Histrionic (attention-seeking), Narcissistic (grandiosity, need for admiration). Cluster C (anxious/fearful)\u2014Avoidant (inhibition, inadequacy), Dependent (excessive need to be cared for), Obsessive-Compulsive PD (preoccupation with orderliness, perfectionism, control). Prevalence ~10-15% overall.",
-      "tags": [
-        "personality-disorder",
-        "Cluster-A",
-        "Cluster-B",
-        "Cluster-C"
-      ],
+      "content": "Personality Disorders (PDs) are enduring patterns of inner experience and behavior deviating markedly from cultural expectations, pervasive across situations, inflexible, stable over time, leading to distress/impairment. Onset in adolescence/early adulthood. DSM-5 clusters: Cluster A (odd/eccentric)—Paranoid (distrust/suspiciousness), Schizoid (detachment, restricted affect), Schizotypal (acute discomfort with closeness, cognitive/perceptual distortions, eccentric behavior). Cluster B (dramatic/emotional/erratic)—Antisocial (disregard for others), Borderline (instability), Histrionic (attention-seeking), Narcissistic (grandiosity, need for admiration). Cluster C (anxious/fearful)—Avoidant (inhibition, inadequacy), Dependent (excessive need to be cared for), Obsessive-Compulsive PD (preoccupation with orderliness, perfectionism, control). Prevalence ~10-15% overall.",
+      "tags": ["personality-disorder", "Cluster-A", "Cluster-B", "Cluster-C"],
       "source": "https://www.nimh.nih.gov/health/topics/personality-disorders",
       "credibility_class": "A",
       "year": 2024
@@ -20,34 +15,18 @@
     {
       "role": "treatment_protocol",
       "content": "Psychotherapy is primary treatment. Borderline PD: DBT (strongest evidence), MBT, TFP, schema therapy. Antisocial PD: limited evidence, focus on substance use comorbidity, contingency management. Avoidant/Dependent/OCPD: CBT, schema therapy, psychodynamic approaches. Cluster A: supportive therapy, social skills training; antipsychotics may help cognitive-perceptual symptoms. No medications approved specifically for PDs; pharmacotherapy targets specific symptoms (mood stabilizers for impulsivity/affective instability, SSRIs for anxiety/depression, atypical antipsychotics for cognitive-perceptual symptoms). Avoid polypharmacy. Treatment engagement challenging; therapeutic alliance critical. Long-term perspective needed; personality change gradual. Comorbid conditions (depression, anxiety, SUD) require concurrent treatment.",
-      "tags": [
-        "DBT",
-        "psychotherapy",
-        "schema-therapy",
-        "MBT",
-        "therapeutic-alliance"
-      ],
+      "tags": ["DBT", "psychotherapy", "schema-therapy", "MBT", "therapeutic-alliance"],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "diagnostic_criteria",
-      "content": "DSM-5-TR general PD criteria: enduring pattern of inner experience/behavior deviating from cultural expectations in \u22652 areas (cognition, affectivity, interpersonal functioning, impulse control); inflexible/pervasive across situations; leads to clinically significant distress/impairment; stable over time (onset adolescence/early adulthood); not better explained by another mental disorder, substance effects, or medical condition. Specific criteria vary by PD type (e.g., Borderline requires \u22655 of 9 criteria including abandonment fears, unstable relationships, identity disturbance, impulsivity, suicidality, affective instability, emptiness, anger, paranoia/dissociation). DSM-5 includes Alternative Model for Personality Disorders (Section III) using dimensional approach (impairment in personality functioning + pathological traits).",
-      "tags": [
-        "DSM-5-TR",
-        "diagnostic-criteria",
-        "personality-disorder",
-        "dimensional-model"
-      ],
+      "content": "DSM-5-TR general PD criteria: enduring pattern of inner experience/behavior deviating from cultural expectations in ≥2 areas (cognition, affectivity, interpersonal functioning, impulse control); inflexible/pervasive across situations; leads to clinically significant distress/impairment; stable over time (onset adolescence/early adulthood); not better explained by another mental disorder, substance effects, or medical condition. Specific criteria vary by PD type (e.g., Borderline requires ≥5 of 9 criteria including abandonment fears, unstable relationships, identity disturbance, impulsivity, suicidality, affective instability, emptiness, anger, paranoia/dissociation). DSM-5 includes Alternative Model for Personality Disorders (Section III) using dimensional approach (impairment in personality functioning + pathological traits).",
+      "tags": ["DSM-5-TR", "diagnostic-criteria", "personality-disorder", "dimensional-model"],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.721084",
-    "source_url_was_extracted": false
-  }
+  ]
 }

@@ -6,44 +6,24 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "Environmental health encompasses all aspects of human health determined by physical, chemical, biological, social, and psychosocial factors in the environment. Key environmental hazards include: (1) Air pollution\u2014particulate matter (PM2.5, PM10), ozone, nitrogen dioxide, sulfur dioxide causing respiratory and cardiovascular disease; (2) Water contaminants\u2014lead, arsenic, PFAS ('forever chemicals'), disinfection byproducts; (3) Toxic substances\u2014asbestos, pesticides, heavy metals, endocrine disruptors; (4) Radiation\u2014radon, UV radiation, medical imaging; (5) Built environment\u2014housing quality, urban design, green space access. WHO estimates 24% of global deaths are attributable to environmental factors. Environmental justice examines disproportionate exposure among marginalized communities.",
-      "tags": [
-        "environmental_health",
-        "pollution",
-        "toxicology",
-        "health_equity"
-      ],
+      "content": "Environmental health encompasses all aspects of human health determined by physical, chemical, biological, social, and psychosocial factors in the environment. Key environmental hazards include: (1) Air pollution—particulate matter (PM2.5, PM10), ozone, nitrogen dioxide, sulfur dioxide causing respiratory and cardiovascular disease; (2) Water contaminants—lead, arsenic, PFAS ('forever chemicals'), disinfection byproducts; (3) Toxic substances—asbestos, pesticides, heavy metals, endocrine disruptors; (4) Radiation—radon, UV radiation, medical imaging; (5) Built environment—housing quality, urban design, green space access. WHO estimates 24% of global deaths are attributable to environmental factors. Environmental justice examines disproportionate exposure among marginalized communities.",
+      "tags": ["environmental_health", "pollution", "toxicology", "health_equity"],
       "reasoning_role": "foundational_knowledge"
     },
     {
       "role": "treatment_protocol",
-      "content": "Environmental health interventions operate at multiple levels: (1) Primary prevention\u2014regulatory standards (EPA NAAQS for air quality, Safe Drinking Water Act), emission controls, chemical bans/restrictions (e.g., lead paint, asbestos), industrial permitting; (2) Exposure reduction\u2014air filtration systems, water filters certified for specific contaminants, soil remediation, housing code enforcement, integrated pest management; (3) Clinical interventions\u2014biomonitoring for lead/mercury levels, chelation therapy for heavy metal poisoning (controversial except for severe cases), asthma management plans addressing triggers; (4) Community advocacy\u2014citizen science monitoring, environmental justice litigation, policy advocacy for stricter standards. Climate change mitigation co-benefits include reduced air pollution. Precautionary principle guides action when evidence is suggestive but not conclusive.",
-      "tags": [
-        "intervention",
-        "prevention",
-        "policy",
-        "exposure_reduction"
-      ],
+      "content": "Environmental health interventions operate at multiple levels: (1) Primary prevention—regulatory standards (EPA NAAQS for air quality, Safe Drinking Water Act), emission controls, chemical bans/restrictions (e.g., lead paint, asbestos), industrial permitting; (2) Exposure reduction—air filtration systems, water filters certified for specific contaminants, soil remediation, housing code enforcement, integrated pest management; (3) Clinical interventions—biomonitoring for lead/mercury levels, chelation therapy for heavy metal poisoning (controversial except for severe cases), asthma management plans addressing triggers; (4) Community advocacy—citizen science monitoring, environmental justice litigation, policy advocacy for stricter standards. Climate change mitigation co-benefits include reduced air pollution. Precautionary principle guides action when evidence is suggestive but not conclusive.",
+      "tags": ["intervention", "prevention", "policy", "exposure_reduction"],
       "reasoning_role": "actionable_guidance"
     },
     {
       "role": "diagnostic_criteria",
-      "content": "Environmental health assessment involves: (1) Exposure assessment\u2014environmental monitoring (air quality indices, water testing), biomonitoring (blood lead levels, urinary metabolites, hair analysis), personal exposure monitors, geographic information systems mapping proximity to hazards; (2) Health outcome surveillance\u2014disease registries (cancer, birth defects), hospital discharge data with environmental ICD codes, syndromic surveillance for acute exposures; (3) Causal inference\u2014toxicological evidence, dose-response relationships, temporal patterns, consistency across studies; (4) Vulnerability assessment\u2014age (children, elderly), pre-existing conditions, genetic polymorphisms affecting metabolism, cumulative exposure burdens. CDC's Environmental Public Health Tracking Network integrates exposure and health data. Challenges include latency between exposure and disease, multiple simultaneous exposures (mixture effects), and confounding by socioeconomic factors.",
-      "tags": [
-        "measurement",
-        "exposure_assessment",
-        "surveillance",
-        "biomonitoring"
-      ],
+      "content": "Environmental health assessment involves: (1) Exposure assessment—environmental monitoring (air quality indices, water testing), biomonitoring (blood lead levels, urinary metabolites, hair analysis), personal exposure monitors, geographic information systems mapping proximity to hazards; (2) Health outcome surveillance—disease registries (cancer, birth defects), hospital discharge data with environmental ICD codes, syndromic surveillance for acute exposures; (3) Causal inference—toxicological evidence, dose-response relationships, temporal patterns, consistency across studies; (4) Vulnerability assessment—age (children, elderly), pre-existing conditions, genetic polymorphisms affecting metabolism, cumulative exposure burdens. CDC's Environmental Public Health Tracking Network integrates exposure and health data. Challenges include latency between exposure and disease, multiple simultaneous exposures (mixture effects), and confounding by socioeconomic factors.",
+      "tags": ["measurement", "exposure_assessment", "surveillance", "biomonitoring"],
       "reasoning_role": "analytical_framework"
     }
   ],
   "source": "WHO Environmental Health Criteria, EPA Integrated Risk Information System, CDC National Report on Human Exposure to Environmental Chemicals",
   "credibility_class": "A",
-  "year": 2024,
-  "source_url": "https://source/who_environmental_health_criteria,_epa_integrated_risk_information_system,_cdc_national_report_on_human_exposure_to_environmental_chemicals",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.879532",
-    "source_url_was_extracted": false
-  }
+  "year": 2024
 }

@@ -20,7 +20,5 @@
   "compatible_with": [
     "frag_eng_concrete_cold_weather_001"
   ],
-  "incompatible_with": [],
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.nrmca.org"
+  "incompatible_with": []
 }

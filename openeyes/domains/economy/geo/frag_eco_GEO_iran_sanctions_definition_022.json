@@ -16,7 +16,5 @@
   "source_url": "https://www.state.gov/",
   "credibility_class": "government_agency",
   "year": 2024,
-  "weight": 0.95,
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.state.gov"
+  "weight": 0.95
 }

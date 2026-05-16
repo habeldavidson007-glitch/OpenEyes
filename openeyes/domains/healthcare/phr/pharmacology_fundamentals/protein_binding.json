@@ -7,13 +7,7 @@
       "topic": "Protein Binding",
       "role": "definition",
       "content": "Protein binding refers to the reversible attachment of drugs to plasma proteins, primarily albumin (binds acidic drugs) and alpha-1-acid glycoprotein (binds basic drugs). Only unbound (free) drug is pharmacologically active, can distribute to tissues, and undergoes metabolism/excretion. Highly bound drugs (>90%): warfarin 99%, phenytoin 90%, valproate 90%. Binding is saturable and concentration-dependent. Drug displacement interactions occur when two highly-bound drugs compete, transiently increasing free fraction of one. However, clinical significance is usually limited because increased free drug is rapidly cleared, establishing new equilibrium. Hypoalbuminemia increases free fraction of acidic drugs.",
-      "tags": [
-        "protein_binding",
-        "albumin",
-        "alpha_1_acid_glycoprotein",
-        "free_drug",
-        "drug_interactions"
-      ],
+      "tags": ["protein_binding", "albumin", "alpha_1_acid_glycoprotein", "free_drug", "drug_interactions"],
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2025
@@ -25,12 +19,7 @@
       "topic": "Protein Binding",
       "role": "treatment_protocol",
       "content": "Clinical implications of protein binding guide dosing in special populations and drug interaction management. In hypoalbuminemia (liver disease, nephrotic syndrome, malnutrition): total drug concentrations may appear low but free (active) concentration is normal; monitor free drug levels for phenytoin, valproate. In uremia: altered albumin structure reduces binding; use free drug monitoring. Drug displacement: starting rifampin displaces warfarin but clinical effect is minor compared to CYP induction; sulfonamides displace bilirubin in neonates causing kernicterus (contraindicated). For highly protein-bound drugs with narrow therapeutic index, consider measuring free rather than total concentrations. Dialysis removes only free drug; high protein binding limits dialyzability.",
-      "tags": [
-        "hypoalbuminemia",
-        "free_drug_monitoring",
-        "displacement_interactions",
-        "dialysis"
-      ],
+      "tags": ["hypoalbuminemia", "free_drug_monitoring", "displacement_interactions", "dialysis"],
       "source": "nih.gov",
       "credibility_class": "A",
       "year": 2025
@@ -41,21 +30,11 @@
       "sector": "PHR",
       "topic": "Protein Binding",
       "role": "diagnostic_criteria",
-      "content": "Protein binding is measured by equilibrium dialysis or ultrafiltration, separating free from bound drug. Fraction bound = (Total - Free) / Total \u00d7 100%. Normal albumin: 3.5-5.0 g/dL; each 1 g/dL decrease reduces binding capacity by ~20%. Alpha-1-acid glycoprotein is an acute-phase reactant, increasing in inflammation, trauma, MI - increasing binding of basic drugs (lidocaine, propranolol). Binding affinity expressed as dissociation constant (Kd); lower Kd indicates tighter binding. Non-linear binding occurs when therapeutic concentrations approach protein binding capacity (saturation kinetics). Temperature and pH affect binding; acidosis decreases albumin binding. In vitro artifact: sample handling can alter measured binding if temperature changes.",
-      "tags": [
-        "binding_measurement",
-        "fraction_bound",
-        "Kd_affinity",
-        "acute_phase_reactant"
-      ],
+      "content": "Protein binding is measured by equilibrium dialysis or ultrafiltration, separating free from bound drug. Fraction bound = (Total - Free) / Total × 100%. Normal albumin: 3.5-5.0 g/dL; each 1 g/dL decrease reduces binding capacity by ~20%. Alpha-1-acid glycoprotein is an acute-phase reactant, increasing in inflammation, trauma, MI - increasing binding of basic drugs (lidocaine, propranolol). Binding affinity expressed as dissociation constant (Kd); lower Kd indicates tighter binding. Non-linear binding occurs when therapeutic concentrations approach protein binding capacity (saturation kinetics). Temperature and pH affect binding; acidosis decreases albumin binding. In vitro artifact: sample handling can alter measured binding if temperature changes.",
+      "tags": ["binding_measurement", "fraction_bound", "Kd_affinity", "acute_phase_reactant"],
       "source": "ema.europa.eu",
       "credibility_class": "A",
       "year": 2025
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.645408",
-    "source_url_was_extracted": false
-  }
+  ]
 }

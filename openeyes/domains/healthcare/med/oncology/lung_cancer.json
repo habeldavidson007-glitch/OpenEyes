@@ -5,14 +5,7 @@
   "fragments": [
     {
       "id": "hc_med_onc_lc_def_001",
-      "tags": [
-        "oncology",
-        "lung cancer",
-        "NSCLC",
-        "SCLC",
-        "EGFR mutation",
-        "ALK rearrangement"
-      ],
+      "tags": ["oncology", "lung cancer", "NSCLC", "SCLC", "EGFR mutation", "ALK rearrangement"],
       "reasoning_role": "definition",
       "content": "Lung cancer is the leading cause of cancer death worldwide. Two main types: non-small cell lung cancer (NSCLC, 85% of cases) and small cell lung cancer (SCLC, 15%). NSCLC subtypes: adenocarcinoma (most common, often peripheral, associated with EGFR/ALK mutations), squamous cell carcinoma (central, smoking-related, P40/P63 positive), large cell carcinoma (diagnosis of exclusion). SCLC characterized by rapid growth, early metastasis, neuroendocrine features (chromogranin, synaptophysin positive), initially chemo-sensitive but develops resistance. Molecular drivers in NSCLC: EGFR mutations (10-15% Western, 50% Asian, more in never-smokers, women, adenocarcinoma); ALK rearrangements (3-5%); ROS1 (1-2%); BRAF V600E (2-4%); KRAS (25-30%, historically undruggable, now sotorasib/adagrasib available); MET exon 14 skipping (3-4%); RET fusions (1-2%); NTRK fusions (<1%). PD-L1 expression guides immunotherapy use.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36456789/",
@@ -21,38 +14,21 @@
     },
     {
       "id": "hc_med_onc_lc_treat_001",
-      "tags": [
-        "oncology",
-        "lung cancer",
-        "treatment algorithm",
-        "targeted therapy",
-        "immunotherapy"
-      ],
+      "tags": ["oncology", "lung cancer", "treatment algorithm", "targeted therapy", "immunotherapy"],
       "reasoning_role": "treatment_protocol",
-      "content": "NSCLC treatment depends on stage and molecular profile. Early stage (I-II): surgical resection (lobectomy preferred); adjuvant chemotherapy for stage II-III; adjuvant osimertinib for EGFR-mutated (ADAURA trial); adjuvant immunotherapy (atezolizumab/pembrolizumab) for PD-L1+ after chemo. Locally advanced (stage III): concurrent chemoradiation followed by durvalumab consolidation (PACIFIC trial showed significant OS benefit). Metastatic (stage IV): molecular testing mandatory before treatment. EGFR-mutated: osimertinib first-line (FLAURA, median OS 38.6 months). ALK-positive: alectinib or lorlatinib first-line. ROS1-positive: entrectinib or crizotinib. No driver mutation: immunotherapy \u00b1 chemotherapy based on PD-L1. PD-L1 \u226550%: pembrolizumab monotherapy (KEYNOTE-024). PD-L1 1-49%: pembrolizumab + chemotherapy (KEYNOTE-189 for non-squamous, KEYNOTE-407 for squamous). PD-L1 <1%: immunotherapy + chemotherapy or nivolumab + ipilimumab + chemotherapy (CheckMate 9LA). SCLC: limited stage - concurrent chemoradiation (etoposide + cisplatin/carboplatin); extensive stage - chemo + immunotherapy (atezolizumab/durvalumab + platinum/etoposide).",
+      "content": "NSCLC treatment depends on stage and molecular profile. Early stage (I-II): surgical resection (lobectomy preferred); adjuvant chemotherapy for stage II-III; adjuvant osimertinib for EGFR-mutated (ADAURA trial); adjuvant immunotherapy (atezolizumab/pembrolizumab) for PD-L1+ after chemo. Locally advanced (stage III): concurrent chemoradiation followed by durvalumab consolidation (PACIFIC trial showed significant OS benefit). Metastatic (stage IV): molecular testing mandatory before treatment. EGFR-mutated: osimertinib first-line (FLAURA, median OS 38.6 months). ALK-positive: alectinib or lorlatinib first-line. ROS1-positive: entrectinib or crizotinib. No driver mutation: immunotherapy ± chemotherapy based on PD-L1. PD-L1 ≥50%: pembrolizumab monotherapy (KEYNOTE-024). PD-L1 1-49%: pembrolizumab + chemotherapy (KEYNOTE-189 for non-squamous, KEYNOTE-407 for squamous). PD-L1 <1%: immunotherapy + chemotherapy or nivolumab + ipilimumab + chemotherapy (CheckMate 9LA). SCLC: limited stage - concurrent chemoradiation (etoposide + cisplatin/carboplatin); extensive stage - chemo + immunotherapy (atezolizumab/durvalumab + platinum/etoposide).",
       "source": "https://www.nccn.org/guidelines",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_lc_diag_001",
-      "tags": [
-        "oncology",
-        "lung cancer",
-        "diagnostic workup",
-        "staging",
-        "molecular testing"
-      ],
+      "tags": ["oncology", "lung cancer", "diagnostic workup", "staging", "molecular testing"],
       "reasoning_role": "diagnostic_criteria",
       "content": "Lung cancer diagnosis requires tissue confirmation and comprehensive staging. Initial evaluation: chest CT with contrast, PET-CT for staging (detects distant metastases), brain MRI (especially for adenocarcinoma, SCLC, stage III+). Tissue acquisition: bronchoscopy with biopsy for central lesions; CT-guided needle biopsy for peripheral lesions; EBUS-TBNA for mediastinal lymph node sampling; thoracentesis if pleural effusion present. Pathology: histologic subtype classification; immunohistochemistry (TTF-1 for adenocarcinoma, P40/P63 for squamous); neuroendocrine markers for SCLC. Molecular testing: NGS panel preferred to detect multiple alterations simultaneously; liquid biopsy (ctDNA) if tissue inadequate or for monitoring. Staging: TNM system 8th edition; SCLC traditionally staged as limited (confined to one radiation field) vs extensive. Pulmonary function tests assess surgical candidacy. Performance status (ECOG) guides treatment tolerance. Surveillance post-treatment: CT chest every 6 months for 2 years, then annually.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35567890/",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.821706",
-    "source_url_was_extracted": false
-  }
+  ]
 }

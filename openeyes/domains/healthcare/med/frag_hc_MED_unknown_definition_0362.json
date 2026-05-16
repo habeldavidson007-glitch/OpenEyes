@@ -19,7 +19,5 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 1.0,
-  "_original_credibility_class": "A",
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.nccn.org"
+  "_original_credibility_class": "A"
 }

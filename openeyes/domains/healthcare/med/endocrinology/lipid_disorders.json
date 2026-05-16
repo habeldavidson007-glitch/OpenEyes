@@ -7,13 +7,7 @@
       "sector": "MED",
       "topic": "Lipid Disorders",
       "role": "definition",
-      "tags": [
-        "lipid disorders",
-        "hypercholesterolemia",
-        "familial hypercholesterolemia",
-        "triglycerides",
-        "dyslipidemia"
-      ],
+      "tags": ["lipid disorders", "hypercholesterolemia", "familial hypercholesterolemia", "triglycerides", "dyslipidemia"],
       "content": "Lipid disorders encompass abnormalities in cholesterol and triglyceride metabolism that increase atherosclerotic cardiovascular disease (ASCVD) risk. Major types: (1) Elevated LDL cholesterol - primary driver of atherosclerosis; (2) Low HDL cholesterol - associated with increased CVD risk though raising HDL hasn't shown benefit; (3) Hypertriglyceridemia - independent risk factor, severe levels (>500 mg/dL) cause pancreatitis; (4) Elevated lipoprotein(a) - genetically determined, independent CVD risk factor. Familial hypercholesterolemia (FH): autosomal dominant disorder (LDLR, APOB, PCSK9 mutations) causing very high LDL from birth (heterozygous LDL 190-450 mg/dL, homozygous >450 mg/dL), premature ASCVD, tendon xanthomas, corneal arcus. Prevalence 1:200-250 for heterozygous FH. Secondary causes: hypothyroidism, nephrotic syndrome, cholestatic liver disease, medications (thiazides, beta-blockers, retinoids, immunosuppressants, antiretrovirals).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506509/",
       "credibility_class": "peer_reviewed_guideline",
@@ -26,15 +20,8 @@
       "sector": "MED",
       "topic": "Lipid Disorders",
       "role": "treatment_protocol",
-      "tags": [
-        "lipid disorders",
-        "statins",
-        "ezetimibe",
-        "PCSK9 inhibitors",
-        "fibrates",
-        "omega-3"
-      ],
-      "content": "Treatment based on ASCVD risk stratification. Statins first-line for LDL lowering: high-intensity (atorvastatin 40-80mg, rosuvastatin 20-40mg) for clinical ASCVD or high-risk primary prevention; moderate-intensity for intermediate risk. Add ezetimibe if LDL remains above threshold on maximally tolerated statin. PCSK9 inhibitors (alirocumab, evolocumab) or inclisiran (siRNA) for FH or statin-intolerant patients not at goal. Bempedoic acid alternative for statin-intolerant. For severe hypertriglyceridemia (\u2265500 mg/dL): fibrates (fenofibrate preferred over gemfibrozil with statins), prescription omega-3 fatty acids (icosapent ethyl - REDUCE-IT trial showed CVD benefit; omega-3 acid ethyl esters), niacin rarely used now. Lifestyle foundation: Mediterranean diet, reduce saturated/trans fats, increase soluble fiber, weight loss, regular exercise, limit alcohol (raises triglycerides). FH requires aggressive early treatment, often combination therapy, cascade screening of relatives.",
+      "tags": ["lipid disorders", "statins", "ezetimibe", "PCSK9 inhibitors", "fibrates", "omega-3"],
+      "content": "Treatment based on ASCVD risk stratification. Statins first-line for LDL lowering: high-intensity (atorvastatin 40-80mg, rosuvastatin 20-40mg) for clinical ASCVD or high-risk primary prevention; moderate-intensity for intermediate risk. Add ezetimibe if LDL remains above threshold on maximally tolerated statin. PCSK9 inhibitors (alirocumab, evolocumab) or inclisiran (siRNA) for FH or statin-intolerant patients not at goal. Bempedoic acid alternative for statin-intolerant. For severe hypertriglyceridemia (≥500 mg/dL): fibrates (fenofibrate preferred over gemfibrozil with statins), prescription omega-3 fatty acids (icosapent ethyl - REDUCE-IT trial showed CVD benefit; omega-3 acid ethyl esters), niacin rarely used now. Lifestyle foundation: Mediterranean diet, reduce saturated/trans fats, increase soluble fiber, weight loss, regular exercise, limit alcohol (raises triglycerides). FH requires aggressive early treatment, often combination therapy, cascade screening of relatives.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506509/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
@@ -46,23 +33,11 @@
       "sector": "MED",
       "topic": "Lipid Disorders",
       "role": "diagnostic_criteria",
-      "tags": [
-        "lipid disorders",
-        "lipid panel",
-        "LDL",
-        "non-HDL",
-        "apoB",
-        "screening"
-      ],
+      "tags": ["lipid disorders", "lipid panel", "LDL", "non-HDL", "apoB", "screening"],
       "content": "Diagnosis via fasting or non-fasting lipid panel: total cholesterol, HDL-C, triglycerides, calculated or direct LDL-C. Non-HDL cholesterol (total - HDL) increasingly used as it captures all atherogenic particles. Apolipoprotein B (apoB) reflects particle number, may be superior predictor. Lipoprotein(a) measured once in lifetime to identify genetic elevation (>50 mg/dL or >125 nmol/L). Screening: adults 20+ every 4-6 years if low risk; more frequently with risk factors. Children: universal screening once at 9-11 years and again at 17-21; targeted screening earlier if family history. FH diagnosis: Dutch Lipid Clinic Network criteria use LDL level, physical findings (xanthomas, corneal arcus), family history of premature ASCVD/high cholesterol, genetic testing if available. Evaluate secondary causes: TSH, liver enzymes, creatinine, urine protein, glucose/HbA1c, medication review. Risk calculators (ASCVD Risk Estimator, SCORE) guide treatment decisions.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36506509/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.803447",
-    "source_url_was_extracted": false
-  }
+  ]
 }

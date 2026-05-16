@@ -7,43 +7,23 @@
     {
       "role": "definition",
       "content": "Cardiovascular disease (CVD) remains the leading cause of death globally, responsible for approximately 17.9 million deaths annually. CVD includes coronary heart disease, stroke, heart failure, peripheral arterial disease, and rheumatic heart disease. Population prevention strategies address modifiable risk factors: hypertension (leading attributable risk), dyslipidemia, diabetes, smoking, obesity, physical inactivity, unhealthy diet, and harmful alcohol use. The population strategy (Rose's prevention paradox) aims to shift entire population risk distribution through policy/environmental changes, complementing high-risk individual approaches. Social determinants significantly influence CVD disparities. Life course perspective recognizes that cardiovascular health trajectories begin in utero and accumulate across lifespan. Ideal cardiovascular health (AHA's Life's Essential 8) includes optimal levels of blood pressure, lipids, glucose, BMI, plus healthy behaviors.",
-      "tags": [
-        "cardiovascular_disease",
-        "prevention",
-        "population_health",
-        "risk_factors"
-      ],
+      "tags": ["cardiovascular_disease", "prevention", "population_health", "risk_factors"],
       "reasoning_role": "foundational_knowledge"
     },
     {
       "role": "treatment_protocol",
-      "content": "Population-level CVD prevention interventions: (1) Policy measures\u2014sodium reduction targets (UK showing 15% population BP decrease), trans fat bans (Denmark, NYC associated with CVD mortality decline), sugar-sweetened beverage taxes, smoke-free legislation; (2) Food environment\u2014healthy food procurement policies for institutions, front-of-package labeling, marketing restrictions, urban agriculture support; (3) Built environment\u2014active transport infrastructure, park access, walkable communities; (4) Healthcare system\u2014hypertension control programs ( Million Hearts initiative), statin therapy guidelines, diabetes prevention/management, aspirin use for secondary prevention; (5) Screening\u2014blood pressure measurement in community settings, lipid screening, diabetes screening; (6) Medication access\u2014generic antihypertensives, statins, fixed-dose polypills for high-risk populations. Community health worker programs improve control rates in underserved populations. Risk communication emphasizes absolute risk over relative risk.",
-      "tags": [
-        "policy",
-        "intervention",
-        "screening",
-        "health_equity"
-      ],
+      "content": "Population-level CVD prevention interventions: (1) Policy measures—sodium reduction targets (UK showing 15% population BP decrease), trans fat bans (Denmark, NYC associated with CVD mortality decline), sugar-sweetened beverage taxes, smoke-free legislation; (2) Food environment—healthy food procurement policies for institutions, front-of-package labeling, marketing restrictions, urban agriculture support; (3) Built environment—active transport infrastructure, park access, walkable communities; (4) Healthcare system—hypertension control programs ( Million Hearts initiative), statin therapy guidelines, diabetes prevention/management, aspirin use for secondary prevention; (5) Screening—blood pressure measurement in community settings, lipid screening, diabetes screening; (6) Medication access—generic antihypertensives, statins, fixed-dose polypills for high-risk populations. Community health worker programs improve control rates in underserved populations. Risk communication emphasizes absolute risk over relative risk.",
+      "tags": ["policy", "intervention", "screening", "health_equity"],
       "reasoning_role": "actionable_guidance"
     },
     {
       "role": "diagnostic_criteria",
-      "content": "CVD prevention assessment includes: (1) Risk prediction\u2014Pooled Cohort Equations (10-year ASCVD risk), SCORE2 (European), QRISK3 (UK), Framingham Risk Score; lifetime risk estimation for younger adults; (2) Biomarkers\u2014blood pressure (multiple readings, home monitoring), lipid panel (LDL-C, non-HDL-C, ApoB), HbA1c/glucose, high-sensitivity CRP (selected cases), lipoprotein(a) for risk refinement; (3) Subclinical disease\u2014coronary artery calcium scoring for intermediate-risk individuals, carotid intima-media thickness, ankle-brachial index; (4) Population surveillance\u2014BRFSS behavioral risk factors, NHANES biomarker data, WHO STEPS methodology, national CVD registries; (5) Quality metrics\u2014hypertension control rates, statin adherence, cardiac rehabilitation participation. Emerging markers include genetic risk scores, novel imaging techniques. Risk calculator limitations include outdated coefficients, lack of social determinants integration, and reduced accuracy in diverse populations.",
-      "tags": [
-        "risk_assessment",
-        "biomarkers",
-        "surveillance",
-        "screening"
-      ],
+      "content": "CVD prevention assessment includes: (1) Risk prediction—Pooled Cohort Equations (10-year ASCVD risk), SCORE2 (European), QRISK3 (UK), Framingham Risk Score; lifetime risk estimation for younger adults; (2) Biomarkers—blood pressure (multiple readings, home monitoring), lipid panel (LDL-C, non-HDL-C, ApoB), HbA1c/glucose, high-sensitivity CRP (selected cases), lipoprotein(a) for risk refinement; (3) Subclinical disease—coronary artery calcium scoring for intermediate-risk individuals, carotid intima-media thickness, ankle-brachial index; (4) Population surveillance—BRFSS behavioral risk factors, NHANES biomarker data, WHO STEPS methodology, national CVD registries; (5) Quality metrics—hypertension control rates, statin adherence, cardiac rehabilitation participation. Emerging markers include genetic risk scores, novel imaging techniques. Risk calculator limitations include outdated coefficients, lack of social determinants integration, and reduced accuracy in diverse populations.",
+      "tags": ["risk_assessment", "biomarkers", "surveillance", "screening"],
       "reasoning_role": "analytical_framework"
     }
   ],
   "source": "WHO Global Cardiovascular Disease Action Plan, AHA/ACC Prevention Guidelines, European Society of Cardiology Prevention Guidelines, CDC Million Hearts Initiative",
   "credibility_class": "A",
-  "year": 2024,
-  "source_url": "https://source/who_global_cardiovascular_disease_action_plan,_aha/acc_prevention_guidelines,_european_society_of_cardiology_prevention_guidelines,_cdc_million_hearts_initiative",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.879097",
-    "source_url_was_extracted": false
-  }
+  "year": 2024
 }

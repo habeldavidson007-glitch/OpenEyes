@@ -4,13 +4,13 @@
     "total_answers": 241,
     "total_halts": 1,
     "overall_answer_rate": 99.58677685950413,
-    "execution_time_seconds": 75.99409770965576,
+    "execution_time_seconds": 64.83828997612,
     "fragment_counts": {
-      "healthcare": 0,
-      "economy": 0,
-      "governance": 0,
-      "investment": 0,
-      "general": 0
+      "healthcare": 1401,
+      "economy": 1645,
+      "governance": 1353,
+      "investment": 1004,
+      "general": 1
     }
   },
   "domains": [
@@ -25,79 +25,79 @@
           "query": "What is diabetes?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.95,
-          "answer_length": 3620
+          "answer_length": 3595
         },
         {
           "query": "How does insulin work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.97,
-          "answer_length": 3551
+          "answer_length": 2425
         },
         {
           "query": "What are symptoms of type 2 diabetes?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.05,
-          "answer_length": 814
+          "answer_length": 3557
         },
         {
           "query": "Explain how mRNA vaccines work.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.98,
-          "answer_length": 3204
+          "answer_length": 788
         },
         {
           "query": "What is the treatment for hypertension?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.0,
-          "answer_length": 1746
+          "answer_length": 3933
         },
         {
           "query": "Is metformin effective for type 2 diabetes?",
           "status": "ANSWER_LOW_CONFIDENCE",
-          "confidence": 67.19,
-          "answer_length": 3294
+          "confidence": 77.99,
+          "answer_length": 4005
         },
         {
           "query": "What are side effects of statins?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.01,
-          "answer_length": 645
+          "answer_length": 2248
         },
         {
           "query": "How do ACE inhibitors work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.96,
-          "answer_length": 2518
+          "answer_length": 4096
         },
         {
           "query": "What is atrial fibrillation?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.99,
-          "answer_length": 4248
+          "answer_length": 794
         },
         {
           "query": "Explain the mechanism of beta blockers.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.93,
-          "answer_length": 3204
+          "answer_length": 788
         },
         {
           "query": "What causes heart failure?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.03,
-          "answer_length": 1039
+          "answer_length": 4433
         },
         {
           "query": "How is COPD diagnosed?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.0,
-          "answer_length": 1255
+          "answer_length": 1861
         },
         {
           "query": "What is the treatment for asthma?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.98,
-          "answer_length": 1746
+          "answer_length": 3933
         },
         {
           "query": "Explain how anticoagulants prevent stroke.",
@@ -109,91 +109,91 @@
           "query": "What are risk factors for coronary artery disease?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.99,
-          "answer_length": 1580
+          "answer_length": 3897
         },
         {
           "query": "How does dialysis work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.05,
-          "answer_length": 2631
+          "answer_length": 638
         },
         {
           "query": "What is chronic kidney disease?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.98,
-          "answer_length": 3240
+          "answer_length": 3935
         },
         {
           "query": "Explain the pathophysiology of rheumatoid arthritis.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.03,
-          "answer_length": 2345
+          "answer_length": 788
         },
         {
           "query": "What is the first-line treatment for osteoporosis?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.0,
-          "answer_length": 1746
+          "answer_length": 3933
         },
         {
           "query": "How do proton pump inhibitors work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.99,
-          "answer_length": 522
+          "answer_length": 2924
         },
         {
           "query": "What causes gastroesophageal reflux disease?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.03,
-          "answer_length": 1039
+          "answer_length": 3963
         },
         {
           "query": "Explain how antidepressants work.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.99,
-          "answer_length": 3204
+          "answer_length": 788
         },
         {
           "query": "What is bipolar disorder?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.04,
-          "answer_length": 4248
+          "answer_length": 3932
         },
         {
           "query": "How is schizophrenia treated?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.04,
-          "answer_length": 2354
+          "answer_length": 2539
         },
         {
           "query": "What are symptoms of major depressive disorder?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.02,
-          "answer_length": 1579
+          "answer_length": 3834
         },
         {
           "query": "Explain the mechanism of SSRIs.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.03,
-          "answer_length": 3204
+          "answer_length": 788
         },
         {
           "query": "What is cognitive behavioral therapy?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.99,
-          "answer_length": 1125
+          "answer_length": 3873
         },
         {
           "query": "How does exposure therapy work for anxiety?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.01,
-          "answer_length": 785
+          "answer_length": 3426
         },
         {
           "query": "What is post-traumatic stress disorder?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.02,
-          "answer_length": 4248
+          "answer_length": 3879
         },
         {
           "query": "Explain how opioids work for pain management.",
@@ -205,73 +205,73 @@
           "query": "What are alternatives to opioid pain management?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.0,
-          "answer_length": 1039
+          "answer_length": 251
         },
         {
           "query": "How is cancer immunotherapy effective?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.01,
-          "answer_length": 3959
+          "answer_length": 1309
         },
         {
           "query": "What is checkpoint inhibitor therapy?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.98,
-          "answer_length": 4248
+          "answer_length": 3346
         },
         {
           "query": "Explain how CAR-T cell therapy works.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.97,
-          "answer_length": 3204
+          "answer_length": 788
         },
         {
           "query": "What is precision medicine in oncology?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.98,
-          "answer_length": 813
+          "answer_length": 1929
         },
         {
           "query": "How does radiation therapy target cancer cells?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.01,
-          "answer_length": 967
+          "answer_length": 2837
         },
         {
           "query": "What are side effects of chemotherapy?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.0,
-          "answer_length": 645
+          "answer_length": 2248
         },
         {
           "query": "Explain targeted therapy in breast cancer.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.99,
-          "answer_length": 3204
+          "answer_length": 788
         },
         {
           "query": "What is HER2-positive breast cancer?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.01,
-          "answer_length": 3240
+          "answer_length": 1309
         },
         {
           "query": "How does tamoxifen work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.98,
-          "answer_length": 3517
+          "answer_length": 2698
         },
         {
           "query": "What is the role of aromatase inhibitors?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 78.01,
-          "answer_length": 932
+          "answer_length": 3266
         },
         {
           "query": "Explain palliative care principles.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 77.99,
-          "answer_length": 2345
+          "answer_length": 788
         }
       ]
     },
@@ -285,302 +285,302 @@
         {
           "query": "What is GDP?",
           "status": "ANSWER",
-          "confidence": 72.62,
-          "answer_length": 1543
+          "confidence": 78.02,
+          "answer_length": 712
         },
         {
           "query": "How is inflation measured?",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 1300
+          "answer_length": 4022
         },
         {
           "query": "What causes unemployment?",
           "status": "ANSWER",
-          "confidence": 77.97,
-          "answer_length": 574
+          "confidence": 71.22,
+          "answer_length": 2415
         },
         {
           "query": "Explain quantitative easing.",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 2735
+          "answer_length": 1936
         },
         {
           "query": "What is the federal funds rate?",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 574
+          "answer_length": 3244
         },
         {
           "query": "How does the Fed control interest rates?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 1498
+          "answer_length": 3402
         },
         {
           "query": "What is a recession?",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 711
+          "answer_length": 3329
         },
         {
           "query": "Explain the business cycle.",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 3494
+          "answer_length": 1665
         },
         {
           "query": "What is fiscal policy?",
           "status": "ANSWER",
           "confidence": 78.03,
-          "answer_length": 346
+          "answer_length": 1903
         },
         {
           "query": "How does government spending affect the economy?",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 2501
+          "answer_length": 3334
         },
         {
           "query": "What is monetary policy?",
           "status": "ANSWER",
           "confidence": 77.96,
-          "answer_length": 574
+          "answer_length": 3609
         },
         {
           "query": "Explain how central banks work.",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 2735
+          "answer_length": 1421
         },
         {
           "query": "What is the Consumer Price Index?",
           "status": "ANSWER",
           "confidence": 78.06,
-          "answer_length": 574
+          "answer_length": 3778
         },
         {
           "query": "How is CPI calculated?",
           "status": "ANSWER",
           "confidence": 78.07,
-          "answer_length": 3367
+          "answer_length": 3716
         },
         {
           "query": "What is core inflation?",
           "status": "ANSWER",
           "confidence": 77.99,
-          "answer_length": 574
+          "answer_length": 2986
         },
         {
           "query": "Explain supply and demand economics.",
           "status": "ANSWER",
           "confidence": 77.97,
-          "answer_length": 1284
+          "answer_length": 3076
         },
         {
           "query": "What is elasticity in economics?",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 574
+          "answer_length": 1863
         },
         {
           "query": "How does trade deficit affect the economy?",
           "status": "ANSWER",
           "confidence": 78.05,
-          "answer_length": 809
+          "answer_length": 1997
         },
         {
           "query": "What is gross national product?",
           "status": "ANSWER",
           "confidence": 78.05,
-          "answer_length": 574
+          "answer_length": 2913
         },
         {
           "query": "Explain comparative advantage in trade.",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 3494
+          "answer_length": 2345
         },
         {
           "query": "What is a tariff?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 711
+          "answer_length": 1709
         },
         {
           "query": "How do tariffs affect consumers?",
           "status": "ANSWER",
           "confidence": 78.04,
-          "answer_length": 1316
+          "answer_length": 2579
         },
         {
           "query": "What is a free trade agreement?",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 574
+          "answer_length": 2013
         },
         {
           "query": "Explain the concept of opportunity cost.",
           "status": "ANSWER",
           "confidence": 77.94,
-          "answer_length": 2857
+          "answer_length": 2090
         },
         {
           "query": "What is marginal utility?",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 574
+          "answer_length": 1919
         },
         {
           "query": "How does taxation affect economic growth?",
           "status": "ANSWER",
           "confidence": 77.95,
-          "answer_length": 1767
+          "answer_length": 3350
         },
         {
           "query": "What is the Laffer curve?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 574
+          "answer_length": 2134
         },
         {
           "query": "Explain Keynesian economics.",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 3389
+          "answer_length": 2936
         },
         {
           "query": "What is monetarism?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 711
+          "answer_length": 895
         },
         {
           "query": "How does money supply affect inflation?",
           "status": "ANSWER",
           "confidence": 77.99,
-          "answer_length": 944
+          "answer_length": 2768
         },
         {
           "query": "What is velocity of money?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 574
+          "answer_length": 2941
         },
         {
           "query": "Explain the quantity theory of money.",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 2282
+          "answer_length": 2998
         },
         {
           "query": "What is aggregate demand?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 574
+          "answer_length": 1923
         },
         {
           "query": "How does aggregate supply shift?",
           "status": "ANSWER",
           "confidence": 77.96,
-          "answer_length": 2657
+          "answer_length": 2372
         },
         {
           "query": "What is stagflation?",
           "status": "ANSWER",
           "confidence": 78.05,
-          "answer_length": 711
+          "answer_length": 2848
         },
         {
           "query": "Explain the Phillips curve.",
           "status": "ANSWER",
           "confidence": 77.94,
-          "answer_length": 3494
+          "answer_length": 3271
         },
         {
           "query": "What is the natural rate of unemployment?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 574
+          "answer_length": 3816
         },
         {
           "query": "How does minimum wage affect employment?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 1915
+          "answer_length": 2980
         },
         {
           "query": "What is income inequality?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 574
+          "answer_length": 1323
         },
         {
           "query": "Explain the Gini coefficient.",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 3494
+          "answer_length": 3018
         },
         {
           "query": "What is human capital?",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 574
+          "answer_length": 2948
         },
         {
           "query": "How does education affect economic growth?",
           "status": "ANSWER",
           "confidence": 78.02,
-          "answer_length": 2393
+          "answer_length": 3256
         },
         {
           "query": "What is productivity?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 711
+          "answer_length": 1140
         },
         {
           "query": "Explain total factor productivity.",
           "status": "ANSWER",
           "confidence": 78.03,
-          "answer_length": 1092
+          "answer_length": 2794
         },
         {
           "query": "What is technological unemployment?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 574
+          "answer_length": 1832
         },
         {
           "query": "How does automation affect jobs?",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 1948
+          "answer_length": 3832
         },
         {
           "query": "What is the gig economy?",
           "status": "ANSWER",
           "confidence": 78.01,
-          "answer_length": 574
+          "answer_length": 1095
         },
         {
           "query": "Explain network effects in platforms.",
           "status": "ANSWER",
           "confidence": 78.04,
-          "answer_length": 3494
+          "answer_length": 763
         },
         {
           "query": "What is a natural monopoly?",
           "status": "ANSWER",
           "confidence": 77.98,
-          "answer_length": 574
+          "answer_length": 1163
         },
         {
           "query": "How does regulation affect markets?",
           "status": "ANSWER",
           "confidence": 78.0,
-          "answer_length": 967
+          "answer_length": 3180
         }
       ]
     },
@@ -594,302 +594,302 @@
         {
           "query": "What is separation of powers?",
           "status": "ANSWER",
-          "confidence": 74.98,
-          "answer_length": 5600
+          "confidence": 50.98,
+          "answer_length": 1493
         },
         {
           "query": "How does checks and balances work?",
           "status": "ANSWER",
-          "confidence": 74.98,
-          "answer_length": 1657
+          "confidence": 55.98,
+          "answer_length": 3910
         },
         {
           "query": "What is judicial review?",
           "status": "ANSWER",
-          "confidence": 75.02,
-          "answer_length": 3718
+          "confidence": 56.02,
+          "answer_length": 3168
         },
         {
           "query": "Explain the electoral college.",
           "status": "ANSWER",
-          "confidence": 75.02,
-          "answer_length": 3598
+          "confidence": 51.02,
+          "answer_length": 3688
         },
         {
           "query": "What is gerrymandering?",
           "status": "ANSWER",
-          "confidence": 75.01,
-          "answer_length": 1837
+          "confidence": 61.01,
+          "answer_length": 1499
         },
         {
           "query": "How are Supreme Court justices appointed?",
           "status": "ANSWER",
-          "confidence": 75.03,
-          "answer_length": 796
+          "confidence": 61.03,
+          "answer_length": 2364
         },
         {
           "query": "What is the filibuster?",
           "status": "ANSWER",
-          "confidence": 74.96,
-          "answer_length": 818
+          "confidence": 65.96,
+          "answer_length": 799
         },
         {
           "query": "Explain how a bill becomes law.",
           "status": "ANSWER",
-          "confidence": 75.05,
-          "answer_length": 2839
+          "confidence": 66.05,
+          "answer_length": 3164
         },
         {
           "query": "What is executive order?",
           "status": "ANSWER",
-          "confidence": 74.98,
-          "answer_length": 2347
+          "confidence": 65.98,
+          "answer_length": 4074
         },
         {
           "query": "How does Congress override a veto?",
           "status": "ANSWER",
-          "confidence": 74.99,
-          "answer_length": 4851
+          "confidence": 65.99,
+          "answer_length": 3208
         },
         {
           "query": "What is impeachment?",
           "status": "ANSWER",
-          "confidence": 75.03,
-          "answer_length": 3919
+          "confidence": 66.03,
+          "answer_length": 3590
         },
         {
           "query": "Explain the amendment process.",
           "status": "ANSWER",
-          "confidence": 74.97,
-          "answer_length": 3856
+          "confidence": 65.97,
+          "answer_length": 2963
         },
         {
           "query": "What is federalism?",
           "status": "ANSWER",
-          "confidence": 75.02,
-          "answer_length": 4338
+          "confidence": 66.02,
+          "answer_length": 3387
         },
         {
           "query": "How does state preemption work?",
           "status": "ANSWER",
-          "confidence": 75.0,
-          "answer_length": 2200
+          "confidence": 66.0,
+          "answer_length": 2928
         },
         {
           "query": "What is home rule?",
           "status": "ANSWER",
-          "confidence": 74.99,
-          "answer_length": 2102
+          "confidence": 65.99,
+          "answer_length": 1986
         },
         {
           "query": "Explain qualified immunity.",
           "status": "ANSWER",
-          "confidence": 74.97,
-          "answer_length": 2839
+          "confidence": 65.97,
+          "answer_length": 3248
         },
         {
           "query": "What is substantive due process?",
           "status": "ANSWER",
-          "confidence": 75.01,
-          "answer_length": 2627
+          "confidence": 66.01,
+          "answer_length": 3692
         },
         {
           "query": "How does equal protection apply?",
           "status": "ANSWER",
-          "confidence": 74.94,
-          "answer_length": 887
+          "confidence": 65.94,
+          "answer_length": 3037
         },
         {
           "query": "What is strict scrutiny?",
           "status": "ANSWER",
-          "confidence": 74.97,
-          "answer_length": 1783
+          "confidence": 65.97,
+          "answer_length": 1577
         },
         {
           "query": "Explain rational basis review.",
           "status": "ANSWER",
-          "confidence": 74.97,
-          "answer_length": 2915
+          "confidence": 65.97,
+          "answer_length": 2410
         },
         {
           "query": "What is administrative law?",
           "status": "ANSWER",
-          "confidence": 74.94,
-          "answer_length": 3104
+          "confidence": 65.94,
+          "answer_length": 2319
         },
         {
           "query": "How do regulatory agencies work?",
           "status": "ANSWER",
-          "confidence": 75.02,
-          "answer_length": 758
+          "confidence": 66.02,
+          "answer_length": 2639
         },
         {
           "query": "What is notice and comment rulemaking?",
           "status": "ANSWER",
-          "confidence": 75.0,
-          "answer_length": 3505
+          "confidence": 66.0,
+          "answer_length": 3122
         },
         {
           "query": "Explain Chevron deference.",
           "status": "ANSWER",
-          "confidence": 75.04,
-          "answer_length": 3271
+          "confidence": 66.04,
+          "answer_length": 3686
         },
         {
           "query": "What is the Administrative Procedure Act?",
           "status": "ANSWER",
-          "confidence": 74.97,
-          "answer_length": 1173
+          "confidence": 65.97,
+          "answer_length": 3509
         },
         {
           "query": "How does lobbying work?",
           "status": "ANSWER",
-          "confidence": 74.99,
-          "answer_length": 3789
+          "confidence": 65.99,
+          "answer_length": 3234
         },
         {
           "query": "What is campaign finance regulation?",
           "status": "ANSWER",
-          "confidence": 75.05,
+          "confidence": 66.05,
           "answer_length": 2406
         },
         {
           "query": "Explain Citizens United decision.",
           "status": "ANSWER",
-          "confidence": 75.0,
-          "answer_length": 2729
+          "confidence": 66.0,
+          "answer_length": 3394
         },
         {
           "query": "What is redistricting?",
           "status": "ANSWER",
-          "confidence": 75.02,
-          "answer_length": 2809
+          "confidence": 66.02,
+          "answer_length": 1476
         },
         {
           "query": "How are congressional districts drawn?",
           "status": "ANSWER",
-          "confidence": 75.03,
-          "answer_length": 3313
+          "confidence": 66.03,
+          "answer_length": 2492
         },
         {
           "query": "What is voter ID law?",
           "status": "ANSWER",
-          "confidence": 75.02,
-          "answer_length": 2593
+          "confidence": 66.02,
+          "answer_length": 1430
         },
         {
           "query": "Explain the Voting Rights Act.",
           "status": "ANSWER",
-          "confidence": 75.0,
-          "answer_length": 2070
+          "confidence": 66.0,
+          "answer_length": 2839
         },
         {
           "query": "What is mail-in voting?",
           "status": "ANSWER",
-          "confidence": 74.96,
-          "answer_length": 3551
+          "confidence": 65.96,
+          "answer_length": 2024
         },
         {
           "query": "How does early voting work?",
           "status": "ANSWER",
-          "confidence": 75.01,
-          "answer_length": 1250
+          "confidence": 66.01,
+          "answer_length": 3597
         },
         {
           "query": "What is election security?",
           "status": "ANSWER",
-          "confidence": 75.01,
-          "answer_length": 2585
+          "confidence": 66.01,
+          "answer_length": 2133
         },
         {
           "query": "Explain the Electoral Count Act.",
           "status": "ANSWER",
-          "confidence": 75.01,
-          "answer_length": 1865
+          "confidence": 66.01,
+          "answer_length": 2521
         },
         {
           "query": "What is presidential succession?",
           "status": "ANSWER",
-          "confidence": 74.95,
-          "answer_length": 3277
+          "confidence": 65.95,
+          "answer_length": 2962
         },
         {
           "query": "How does the 25th Amendment work?",
           "status": "ANSWER",
-          "confidence": 75.04,
-          "answer_length": 3789
+          "confidence": 66.04,
+          "answer_length": 3234
         },
         {
           "query": "What is executive privilege?",
           "status": "ANSWER",
-          "confidence": 74.97,
-          "answer_length": 2814
+          "confidence": 65.97,
+          "answer_length": 3217
         },
         {
           "query": "Explain pardon power.",
           "status": "ANSWER",
-          "confidence": 75.03,
-          "answer_length": 1629
+          "confidence": 66.03,
+          "answer_length": 3364
         },
         {
           "query": "What is treaty ratification?",
           "status": "ANSWER",
-          "confidence": 75.0,
-          "answer_length": 4374
+          "confidence": 66.0,
+          "answer_length": 2931
         },
         {
           "query": "How does Senate confirmation work?",
           "status": "ANSWER",
-          "confidence": 74.99,
-          "answer_length": 1953
+          "confidence": 65.99,
+          "answer_length": 2603
         },
         {
           "query": "What is recess appointment?",
           "status": "ANSWER",
-          "confidence": 75.01,
-          "answer_length": 1719
+          "confidence": 66.01,
+          "answer_length": 3470
         },
         {
           "query": "Explain war powers resolution.",
           "status": "ANSWER",
-          "confidence": 74.96,
-          "answer_length": 2219
+          "confidence": 65.96,
+          "answer_length": 3031
         },
         {
           "query": "What is congressional oversight?",
           "status": "ANSWER",
-          "confidence": 74.96,
-          "answer_length": 3507
+          "confidence": 65.96,
+          "answer_length": 2566
         },
         {
           "query": "How do subpoenas work in Congress?",
           "status": "ANSWER",
-          "confidence": 75.01,
-          "answer_length": 2330
+          "confidence": 66.01,
+          "answer_length": 3234
         },
         {
           "query": "What is contempt of Congress?",
           "status": "ANSWER",
-          "confidence": 75.01,
-          "answer_length": 3897
+          "confidence": 66.01,
+          "answer_length": 3208
         },
         {
           "query": "Explain legislative immunity.",
           "status": "ANSWER",
-          "confidence": 74.94,
-          "answer_length": 2839
+          "confidence": 65.94,
+          "answer_length": 3183
         },
         {
           "query": "What is the pocket veto?",
           "status": "ANSWER",
-          "confidence": 75.0,
-          "answer_length": 4192
+          "confidence": 66.0,
+          "answer_length": 3221
         },
         {
           "query": "How does continuing resolution work?",
           "status": "ANSWER",
-          "confidence": 75.05,
-          "answer_length": 998
+          "confidence": 66.05,
+          "answer_length": 3361
         }
       ]
     },
@@ -902,303 +902,303 @@
       "results": [
         {
           "query": "What is a stock?",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 1167
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.0,
+          "answer_length": 2457
         },
         {
           "query": "How does bond investing work?",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 2246
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.01,
+          "answer_length": 3358
         },
         {
           "query": "What is diversification?",
-          "status": "ANSWER",
-          "confidence": 78.04,
-          "answer_length": 711
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.0,
+          "answer_length": 2441
         },
         {
           "query": "Explain index fund investing.",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 2654
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.99,
+          "answer_length": 2135
         },
         {
           "query": "What is dollar-cost averaging?",
-          "status": "ANSWER",
-          "confidence": 77.97,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.04,
+          "answer_length": 2859
         },
         {
           "query": "How does compound interest work?",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 756
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.03,
+          "answer_length": 2886
         },
         {
           "query": "What is risk tolerance?",
-          "status": "ANSWER",
-          "confidence": 77.97,
-          "answer_length": 358
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.99,
+          "answer_length": 2718
         },
         {
           "query": "Explain asset allocation.",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 2735
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.99,
+          "answer_length": 2113
         },
         {
           "query": "What is rebalancing?",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 711
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.02,
+          "answer_length": 2128
         },
         {
           "query": "How does 401k work?",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 811
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.99,
+          "answer_length": 3234
         },
         {
           "query": "What is a Roth IRA?",
-          "status": "ANSWER",
-          "confidence": 77.95,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.0,
+          "answer_length": 2915
         },
         {
           "query": "Explain traditional vs Roth retirement accounts.",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 3494
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.02,
+          "answer_length": 3607
         },
         {
           "query": "What is capital gains tax?",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.96,
+          "answer_length": 1960
         },
         {
           "query": "How are dividends taxed?",
-          "status": "ANSWER",
-          "confidence": 77.94,
-          "answer_length": 1362
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.02,
+          "answer_length": 2121
         },
         {
           "query": "What is tax-loss harvesting?",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.03,
+          "answer_length": 1792
         },
         {
           "query": "Explain value investing.",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 561
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.98,
+          "answer_length": 3149
         },
         {
           "query": "What is growth investing?",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 1167
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.94,
+          "answer_length": 3260
         },
         {
           "query": "How does momentum investing work?",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 2675
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.01,
+          "answer_length": 2797
         },
         {
           "query": "What is technical analysis?",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.01,
+          "answer_length": 2460
         },
         {
           "query": "Explain fundamental analysis.",
-          "status": "ANSWER",
-          "confidence": 78.08,
-          "answer_length": 2622
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.98,
+          "answer_length": 1738
         },
         {
           "query": "What is price-to-earnings ratio?",
-          "status": "ANSWER",
-          "confidence": 78.07,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.04,
+          "answer_length": 1683
         },
         {
           "query": "How is market cap calculated?",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 547
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.02,
+          "answer_length": 2008
         },
         {
           "query": "What is enterprise value?",
-          "status": "ANSWER",
-          "confidence": 78.04,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.01,
+          "answer_length": 2414
         },
         {
           "query": "Explain discounted cash flow analysis.",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 2622
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.99,
+          "answer_length": 2079
         },
         {
           "query": "What is net present value?",
-          "status": "ANSWER",
-          "confidence": 78.0,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.02,
+          "answer_length": 3190
         },
         {
           "query": "How does internal rate of return work?",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 2190
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.04,
+          "answer_length": 3814
         },
         {
           "query": "What is beta in investing?",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 1167
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.01,
+          "answer_length": 3358
         },
         {
           "query": "Explain standard deviation as risk measure.",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 758
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.97,
+          "answer_length": 3802
         },
         {
           "query": "What is Sharpe ratio?",
-          "status": "ANSWER",
-          "confidence": 77.98,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.98,
+          "answer_length": 3094
         },
         {
           "query": "How does Modern Portfolio Theory work?",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 2440
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.98,
+          "answer_length": 2828
         },
         {
           "query": "What is efficient frontier?",
-          "status": "ANSWER",
-          "confidence": 78.0,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.96,
+          "answer_length": 2214
         },
         {
           "query": "Explain capital asset pricing model.",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 1911
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.05,
+          "answer_length": 3290
         },
         {
           "query": "What is alpha in investing?",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 1167
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.99,
+          "answer_length": 2321
         },
         {
           "query": "How do ETFs work?",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 1264
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.97,
+          "answer_length": 3081
         },
         {
           "query": "What is expense ratio?",
-          "status": "ANSWER",
-          "confidence": 77.95,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.04,
+          "answer_length": 2380
         },
         {
           "query": "Explain active vs passive management.",
-          "status": "ANSWER",
-          "confidence": 78.0,
-          "answer_length": 1228
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.99,
+          "answer_length": 3187
         },
         {
           "query": "What is hedge fund?",
-          "status": "ANSWER",
-          "confidence": 78.08,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.04,
+          "answer_length": 2599
         },
         {
           "query": "How do private equity firms work?",
-          "status": "ANSWER",
-          "confidence": 77.98,
-          "answer_length": 1632
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.02,
+          "answer_length": 4130
         },
         {
           "query": "What is venture capital?",
-          "status": "ANSWER",
-          "confidence": 77.97,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.98,
+          "answer_length": 2053
         },
         {
           "query": "Explain angel investing.",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 3181
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.02,
+          "answer_length": 3530
         },
         {
           "query": "What is IPO?",
-          "status": "ANSWER",
-          "confidence": 72.57,
-          "answer_length": 2057
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.01,
+          "answer_length": 4294
         },
         {
           "query": "How does secondary offering work?",
-          "status": "ANSWER",
-          "confidence": 78.0,
-          "answer_length": 2074
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.0,
+          "answer_length": 4031
         },
         {
           "query": "What is stock split?",
-          "status": "ANSWER",
-          "confidence": 78.01,
-          "answer_length": 1167
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.01,
+          "answer_length": 2457
         },
         {
           "query": "Explain reverse stock split.",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 1130
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.98,
+          "answer_length": 2844
         },
         {
           "query": "What is short selling?",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.0,
+          "answer_length": 2154
         },
         {
           "query": "How do options work?",
-          "status": "ANSWER",
-          "confidence": 78.04,
-          "answer_length": 2426
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.04,
+          "answer_length": 2762
         },
         {
           "query": "What is futures contract?",
-          "status": "ANSWER",
-          "confidence": 77.98,
-          "answer_length": 574
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.97,
+          "answer_length": 2702
         },
         {
           "query": "Explain commodities investing.",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 3181
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.08,
+          "answer_length": 3530
         },
         {
           "query": "What is real estate investment trust?",
-          "status": "ANSWER",
-          "confidence": 77.99,
-          "answer_length": 1167
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 66.02,
+          "answer_length": 3009
         },
         {
           "query": "How does REIT dividend work?",
-          "status": "ANSWER",
-          "confidence": 78.03,
-          "answer_length": 1362
+          "status": "ANSWER_LOW_CONFIDENCE",
+          "confidence": 65.96,
+          "answer_length": 3234
         }
       ]
     },
@@ -1213,43 +1213,43 @@
           "query": "What is photosynthesis?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.95,
-          "answer_length": 1304
+          "answer_length": 1191
         },
         {
           "query": "How does gravity work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.0,
-          "answer_length": 3789
+          "answer_length": 3234
         },
         {
           "query": "What is the speed of light?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.98,
-          "answer_length": 2294
+          "answer_length": 1633
         },
         {
           "query": "Explain quantum mechanics basics.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 359
+          "answer_length": 3188
         },
         {
           "query": "What is evolution by natural selection?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.97,
-          "answer_length": 3753
+          "answer_length": 3026
         },
         {
           "query": "How does DNA replication work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 1659
+          "answer_length": 3923
         },
         {
           "query": "What is climate change?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.98,
-          "answer_length": 3284
+          "answer_length": 3523
         },
         {
           "query": "Explain greenhouse effect.",
@@ -1261,229 +1261,229 @@
           "query": "What is renewable energy?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.97,
-          "answer_length": 1470
+          "answer_length": 1055
         },
         {
           "query": "How do solar panels work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.03,
-          "answer_length": 424
+          "answer_length": 3311
         },
         {
           "query": "What is nuclear fission?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.98,
-          "answer_length": 1097
+          "answer_length": 766
         },
         {
           "query": "Explain nuclear fusion.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.0,
-          "answer_length": 3209
+          "answer_length": 3874
         },
         {
           "query": "What is artificial intelligence?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.98,
-          "answer_length": 748
+          "answer_length": 1074
         },
         {
           "query": "How does machine learning work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.03,
-          "answer_length": 357
+          "answer_length": 1924
         },
         {
           "query": "What is neural network?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.03,
-          "answer_length": 1141
+          "answer_length": 3067
         },
         {
           "query": "Explain deep learning.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.96,
-          "answer_length": 773
+          "answer_length": 2672
         },
         {
           "query": "What is blockchain?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.0,
-          "answer_length": 1314
+          "answer_length": 1004
         },
         {
           "query": "How does cryptocurrency work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.0,
-          "answer_length": 1648
+          "answer_length": 2807
         },
         {
           "query": "What is internet of things?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 551
+          "answer_length": 1442
         },
         {
           "query": "Explain cloud computing.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 625
+          "answer_length": 3127
         },
         {
           "query": "What is cybersecurity?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.01,
-          "answer_length": 1793
+          "answer_length": 1720
         },
         {
           "query": "How does encryption work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.98,
-          "answer_length": 3789
+          "answer_length": 3234
         },
         {
           "query": "What is public key cryptography?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.03,
-          "answer_length": 1469
+          "answer_length": 3705
         },
         {
           "query": "Explain zero-knowledge proof.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.04,
-          "answer_length": 2154
+          "answer_length": 3175
         },
         {
           "query": "What is virtual reality?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.0,
-          "answer_length": 2170
+          "answer_length": 3231
         },
         {
           "query": "How does augmented reality work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.0,
-          "answer_length": 924
+          "answer_length": 2903
         },
         {
           "query": "What is 5G technology?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 1744
+          "answer_length": 2052
         },
         {
           "query": "Explain edge computing.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 2564
+          "answer_length": 3229
         },
         {
           "query": "What is gene editing?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.97,
-          "answer_length": 3487
+          "answer_length": 4687
         },
         {
           "query": "How does CRISPR work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 3789
+          "answer_length": 3234
         },
         {
           "query": "What is synthetic biology?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.97,
-          "answer_length": 1155
+          "answer_length": 4337
         },
         {
           "query": "Explain stem cell therapy.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.98,
-          "answer_length": 3045
+          "answer_length": 3833
         },
         {
           "query": "What is nanotechnology?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.01,
-          "answer_length": 1207
+          "answer_length": 1372
         },
         {
           "query": "How do 3D printers work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.03,
-          "answer_length": 3789
+          "answer_length": 3234
         },
         {
           "query": "What is autonomous vehicle?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.03,
-          "answer_length": 1097
+          "answer_length": 438
         },
         {
           "query": "Explain lidar technology.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.96,
-          "answer_length": 823
+          "answer_length": 3658
         },
         {
           "query": "What is space exploration?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.03,
-          "answer_length": 2781
+          "answer_length": 3780
         },
         {
           "query": "How do rockets work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.01,
-          "answer_length": 3789
+          "answer_length": 3234
         },
         {
           "query": "What is international space station?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 3564
+          "answer_length": 3942
         },
         {
           "query": "Explain Mars colonization plans.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 2936
+          "answer_length": 3601
         },
         {
           "query": "What is dark matter?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.95,
-          "answer_length": 1430
+          "answer_length": 1814
         },
         {
           "query": "How does telescope work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.04,
-          "answer_length": 3789
+          "answer_length": 3234
         },
         {
           "query": "What is black hole?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.03,
-          "answer_length": 2084
+          "answer_length": 2707
         },
         {
           "query": "Explain general relativity.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 2195
+          "answer_length": 2963
         },
         {
           "query": "What is string theory?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.0,
-          "answer_length": 2455
+          "answer_length": 2246
         },
         {
           "query": "How does particle accelerator work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.98,
-          "answer_length": 1083
+          "answer_length": 3253
         },
         {
           "query": "What is Higgs boson?",
@@ -1495,19 +1495,19 @@
           "query": "Explain standard model of physics.",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.0,
-          "answer_length": 677
+          "answer_length": 3126
         },
         {
           "query": "What is periodic table?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 66.0,
-          "answer_length": 2273
+          "answer_length": 2533
         },
         {
           "query": "How does chemical reaction work?",
           "status": "ANSWER_LOW_CONFIDENCE",
           "confidence": 65.99,
-          "answer_length": 873
+          "answer_length": 3609
         }
       ]
     }

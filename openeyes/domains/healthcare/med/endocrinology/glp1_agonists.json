@@ -7,13 +7,7 @@
       "sector": "MED",
       "topic": "GLP-1 Receptor Agonists",
       "role": "definition",
-      "tags": [
-        "GLP-1",
-        "incretin",
-        "diabetes",
-        "weight loss",
-        "cardiovascular"
-      ],
+      "tags": ["GLP-1", "incretin", "diabetes", "weight loss", "cardiovascular"],
       "content": "GLP-1 (glucagon-like peptide-1) receptor agonists are incretin mimetics that enhance glucose-dependent insulin secretion, suppress glucagon, slow gastric emptying, and promote satiety. Endogenous GLP-1 secreted by L-cells in response to food intake; rapidly degraded by DPP-4 enzyme (half-life <2 minutes). GLP-1 RAs resistant to DPP-4 degradation. Available agents: short-acting (exenatide BID, lixisenatide) primarily affect postprandial glucose via gastric emptying; long-acting (liraglutide, semaglutide, dulaglutide, exenatide ER) affect fasting and postprandial glucose. Semaglutide available as weekly injection and oral formulation. Mechanism: activate GLP-1 receptors on pancreatic beta cells (insulin secretion), alpha cells (glucagon suppression), brain (satiety centers), GI tract (delayed emptying). Cardiovascular benefits demonstrated in multiple outcome trials.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/34941889/",
       "credibility_class": "peer_reviewed_guideline",
@@ -26,13 +20,7 @@
       "sector": "MED",
       "topic": "GLP-1 Receptor Agonists",
       "role": "treatment_protocol",
-      "tags": [
-        "GLP-1",
-        "semaglutide",
-        "liraglutide",
-        "dosing",
-        "side effects"
-      ],
+      "tags": ["GLP-1", "semaglutide", "liraglutide", "dosing", "side effects"],
       "content": "Indications: T2DM (all agents); obesity (liraglutide 3mg, semaglutide 2.4mg); ASCVD risk reduction (liraglutide, semaglutide, dulaglutide proven). Dosing requires gradual titration to minimize GI side effects: liraglutide start 0.6mg daily, increase weekly to 1.2-1.8mg (diabetes) or 3mg (obesity); semaglutide SC start 0.25mg weekly, increase monthly to 1-2mg (diabetes) or 2.4mg (obesity); dulaglutide start 0.75mg weekly, titrate to 1.5-4.5mg. Common adverse effects: nausea (most common), vomiting, diarrhea, constipation - usually transient. Contraindications: personal/family history of medullary thyroid carcinoma or MEN2 (rodent C-cell tumor risk); caution with pancreatitis history. Monitor for gallbladder disease. Renal function monitoring advised. Avoid combining with DPP-4 inhibitors (redundant mechanism). Can combine with basal insulin; may allow insulin dose reduction.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/34941889/",
       "credibility_class": "peer_reviewed_guideline",
@@ -45,22 +33,11 @@
       "sector": "MED",
       "topic": "GLP-1 Receptor Agonists",
       "role": "diagnostic_criteria",
-      "tags": [
-        "GLP-1",
-        "patient selection",
-        "contraindications",
-        "monitoring",
-        "efficacy"
-      ],
-      "content": "Patient selection criteria: For T2DM - preferred in patients with established ASCVD, heart failure, CKD, or those needing weight loss; HbA1c reduction 1-1.5% expected. For obesity - BMI \u226530 or \u226527 with comorbidities; weight loss expectations: liraglutide ~5-8%, semaglutide 2.4mg ~15% (STEP trials). Baseline assessment before initiation: renal function, liver enzymes, history of pancreatitis, personal/family history of MTC/MEN2, pregnancy status. Contraindications absolute: history of MTC, MEN2, pregnancy. Relative contraindications: severe gastroparesis, prior pancreatitis, severe renal impairment. Monitoring: glycemic control (HbA1c every 3 months), weight trajectory, renal function periodically, symptoms of pancreatitis (severe abdominal pain), gallbladder symptoms. Discontinue if <5% weight loss after 12 weeks on maintenance obesity dose (liraglutide) or <5% after 16 weeks (semaglutide 2.4mg).",
+      "tags": ["GLP-1", "patient selection", "contraindications", "monitoring", "efficacy"],
+      "content": "Patient selection criteria: For T2DM - preferred in patients with established ASCVD, heart failure, CKD, or those needing weight loss; HbA1c reduction 1-1.5% expected. For obesity - BMI ≥30 or ≥27 with comorbidities; weight loss expectations: liraglutide ~5-8%, semaglutide 2.4mg ~15% (STEP trials). Baseline assessment before initiation: renal function, liver enzymes, history of pancreatitis, personal/family history of MTC/MEN2, pregnancy status. Contraindications absolute: history of MTC, MEN2, pregnancy. Relative contraindications: severe gastroparesis, prior pancreatitis, severe renal impairment. Monitoring: glycemic control (HbA1c every 3 months), weight trajectory, renal function periodically, symptoms of pancreatitis (severe abdominal pain), gallbladder symptoms. Discontinue if <5% weight loss after 12 weeks on maintenance obesity dose (liraglutide) or <5% after 16 weeks (semaglutide 2.4mg).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/34941889/",
       "credibility_class": "peer_reviewed_guideline",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.806141",
-    "source_url_was_extracted": false
-  }
+  ]
 }

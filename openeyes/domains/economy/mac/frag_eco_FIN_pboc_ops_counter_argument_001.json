@@ -21,7 +21,5 @@
   ],
   "incompatible_with": [],
   "weight": 0.836,
-  "sector": "MAC",
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.pbc.gov.cn"
+  "sector": "MAC"
 }

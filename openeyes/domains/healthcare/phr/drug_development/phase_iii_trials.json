@@ -4,12 +4,7 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": [
-        "Phase III trials",
-        "pivotal trials",
-        "superiority",
-        "non-inferiority"
-      ],
+      "tags": ["Phase III trials", "pivotal trials", "superiority", "non-inferiority"],
       "reasoning_role": "definition",
       "content": "Phase III trials are large-scale, definitive studies designed to demonstrate drug efficacy and safety for regulatory approval. These pivotal trials typically enroll 300-3,000+ patients across multiple centers and countries, lasting 1-4 years. Phase III confirms the benefit-risk profile established in Phase II and provides the primary evidence for FDA/EMA approval. Trials can be superiority (demonstrating better efficacy than control) or non-inferiority (showing not unacceptably worse than active comparator). Approximately 50-60% of drugs entering Phase III successfully gain approval.",
       "source": "fda.gov",
@@ -20,12 +15,7 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": [
-        "Phase III trials",
-        "pivotal trials",
-        "superiority",
-        "non-inferiority"
-      ],
+      "tags": ["Phase III trials", "pivotal trials", "superiority", "non-inferiority"],
       "reasoning_role": "treatment_protocol",
       "content": "Phase III trial design uses rigorous randomized controlled methodology with adequate statistical power (typically 90% power, alpha 0.05). Superiority trials test whether the investigational drug is statistically better than placebo or active comparator on primary endpoint(s). Non-inferiority trials establish that the new drug is not unacceptably worse (within a pre-specified margin) than standard treatment, often used when placebo is unethical. Designs include parallel-group, factorial, or crossover. Endpoints must be clinically meaningful and validated. Intention-to-treat analysis is primary. Interim analyses with data monitoring committees ensure patient safety and allow early stopping for overwhelming efficacy or futility.",
       "source": "fda.gov",
@@ -36,22 +26,12 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": [
-        "Phase III trials",
-        "pivotal trials",
-        "superiority",
-        "non-inferiority"
-      ],
+      "tags": ["Phase III trials", "pivotal trials", "superiority", "non-inferiority"],
       "reasoning_role": "diagnostic_criteria",
       "content": "Phase III success criteria require: statistically significant improvement on pre-specified primary endpoint(s) with appropriate multiplicity adjustment, consistent results across key subgroups, safety profile acceptable relative to benefit, and demonstration of clinical relevance (not just statistical significance). Regulatory agencies require at least two adequate and well-controlled Phase III trials showing effectiveness, or one exceptionally robust trial with confirmatory evidence. Non-inferiority trials must show the lower bound of the confidence interval exceeds the pre-specified margin. Common failure reasons include insufficient effect size, safety concerns emerging in larger populations, or failure to replicate Phase II results.",
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.679847",
-    "source_url_was_extracted": false
-  }
+  ]
 }

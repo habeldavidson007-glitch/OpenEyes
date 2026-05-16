@@ -40,9 +40,6 @@
     "tags": [
       "log",
       "probability_theory"
-    ],
-    "source_url_remediated": "2026-05-15T15:54:00.446083",
-    "source_url_was_extracted": true
-  },
-  "source_url": "https://example.com/log/68"
+    ]
+  }
 }

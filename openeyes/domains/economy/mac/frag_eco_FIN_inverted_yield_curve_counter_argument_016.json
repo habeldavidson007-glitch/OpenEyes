@@ -19,7 +19,5 @@
   "compatible_with": [],
   "incompatible_with": [],
   "weight": 1.0,
-  "sector": "MAC",
-  "credibility_score": "UNVERIFIED",
-  "source_domain": "www.nber.org"
+  "sector": "MAC"
 }

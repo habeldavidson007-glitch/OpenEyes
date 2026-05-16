@@ -16,7 +16,5 @@
   "year": 2024,
   "compatible_with": [],
   "incompatible_with": [],
-  "weight": 1.0,
-  "credibility_score": "HIGH",
-  "source_domain": "www.fda.gov"
+  "weight": 1.0
 }

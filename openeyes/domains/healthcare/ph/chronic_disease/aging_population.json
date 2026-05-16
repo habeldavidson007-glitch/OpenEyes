@@ -6,44 +6,24 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "Global population aging represents unprecedented demographic shift\u2014people 65+ years will outnumber children under 5 by 2030. By 2050, 1 in 6 people globally will be over 65 (up from 1 in 11 in 2019). Healthy aging defined by WHO as developing and maintaining functional ability enabling well-being in older age. Functional ability comprises intrinsic capacity (physical/mental capacities), environment (home, community, society), and their interaction. Compression of morbidity hypothesis suggests delaying disease onset can reduce lifetime disability burden, though evidence is mixed. Key health concerns: multimorbidity (average 3+ chronic conditions), geriatric syndromes (falls, frailty, delirium, incontinence, pressure ulcers), cognitive impairment/dementia, social isolation, polypharmacy. Ageism remains significant barrier to healthy aging. Life course perspective recognizes aging trajectories shaped by cumulative advantages/disadvantages across lifespan.",
-      "tags": [
-        "aging",
-        "geriatrics",
-        "population_health",
-        "functional_ability"
-      ],
+      "content": "Global population aging represents unprecedented demographic shift—people 65+ years will outnumber children under 5 by 2030. By 2050, 1 in 6 people globally will be over 65 (up from 1 in 11 in 2019). Healthy aging defined by WHO as developing and maintaining functional ability enabling well-being in older age. Functional ability comprises intrinsic capacity (physical/mental capacities), environment (home, community, society), and their interaction. Compression of morbidity hypothesis suggests delaying disease onset can reduce lifetime disability burden, though evidence is mixed. Key health concerns: multimorbidity (average 3+ chronic conditions), geriatric syndromes (falls, frailty, delirium, incontinence, pressure ulcers), cognitive impairment/dementia, social isolation, polypharmacy. Ageism remains significant barrier to healthy aging. Life course perspective recognizes aging trajectories shaped by cumulative advantages/disadvantages across lifespan.",
+      "tags": ["aging", "geriatrics", "population_health", "functional_ability"],
       "reasoning_role": "foundational_knowledge"
     },
     {
       "role": "treatment_protocol",
-      "content": "Healthy aging interventions target multiple levels: (1) Individual level\u2014physical activity (strength/balance training preventing falls), nutrition (adequate protein, vitamin D), cognitive stimulation, social engagement, preventive services (vaccinations, cancer screening with individualized decisions), medication optimization (deprescribing); (2) Clinical models\u2014Geriatric Assessment (comprehensive multidimensional evaluation), Age-Friendly Health Systems (4Ms: What Matters, Medication, Mentation, Mobility), PACE programs for frail elders; (3) Community approaches\u2014senior centers, congregate meals, transportation services, friendly visitor programs, fall prevention classes (Tai Chi, Otago); (4) Environmental modifications\u2014home safety assessments, grab bars, improved lighting, universal design principles; (5) Policy interventions\u2014Social Security, Medicare/Medicaid, Older Americans Act services, caregiver support (respite, training), long-term care financing reform, elder abuse prevention; (6) Technology\u2014remote monitoring, medication dispensers, emergency response systems, telehealth. Person-centered care prioritizes individual goals over disease-focused metrics.",
-      "tags": [
-        "intervention",
-        "geriatric_care",
-        "policy",
-        "community_support"
-      ],
+      "content": "Healthy aging interventions target multiple levels: (1) Individual level—physical activity (strength/balance training preventing falls), nutrition (adequate protein, vitamin D), cognitive stimulation, social engagement, preventive services (vaccinations, cancer screening with individualized decisions), medication optimization (deprescribing); (2) Clinical models—Geriatric Assessment (comprehensive multidimensional evaluation), Age-Friendly Health Systems (4Ms: What Matters, Medication, Mentation, Mobility), PACE programs for frail elders; (3) Community approaches—senior centers, congregate meals, transportation services, friendly visitor programs, fall prevention classes (Tai Chi, Otago); (4) Environmental modifications—home safety assessments, grab bars, improved lighting, universal design principles; (5) Policy interventions—Social Security, Medicare/Medicaid, Older Americans Act services, caregiver support (respite, training), long-term care financing reform, elder abuse prevention; (6) Technology—remote monitoring, medication dispensers, emergency response systems, telehealth. Person-centered care prioritizes individual goals over disease-focused metrics.",
+      "tags": ["intervention", "geriatric_care", "policy", "community_support"],
       "reasoning_role": "actionable_guidance"
     },
     {
       "role": "diagnostic_criteria",
-      "content": "Older adult health assessment includes: (1) Functional status\u2014Activities of Daily Living (ADLs: bathing, dressing, eating, toileting, transferring), Instrumental ADLs (managing medications, finances, transportation), gait speed (<0.8 m/s indicates frailty); (2) Geriatric syndromes\u2014frailty (Fried phenotype, Clinical Frailty Scale), fall risk (Timed Up and Go, STEADI algorithm), cognitive impairment (Mini-Cog, MoCA, MMSE), depression (Geriatric Depression Scale), delirium (CAM); (3) Multimorbidity assessment\u2014disease count, weighted indices (Charlson Comorbidity Index), patient-reported burden; (4) Polypharmacy review\u2014medication count (>5 indicates polypharmacy), Beers Criteria for potentially inappropriate medications, drug-drug interactions; (5) Social determinants\u2014social isolation (UCLA Loneliness Scale), caregiver strain, food insecurity, financial toxicity; (6) Population indicators\u2014life expectancy, healthy life expectancy, disability-free life expectancy, long-term care utilization. Limitations include underrepresentation of oldest-old in research, performance bias in those with disabilities, and need for proxy respondents with cognitive impairment.",
-      "tags": [
-        "assessment",
-        "geriatric_syndromes",
-        "functional_status",
-        "surveillance"
-      ],
+      "content": "Older adult health assessment includes: (1) Functional status—Activities of Daily Living (ADLs: bathing, dressing, eating, toileting, transferring), Instrumental ADLs (managing medications, finances, transportation), gait speed (<0.8 m/s indicates frailty); (2) Geriatric syndromes—frailty (Fried phenotype, Clinical Frailty Scale), fall risk (Timed Up and Go, STEADI algorithm), cognitive impairment (Mini-Cog, MoCA, MMSE), depression (Geriatric Depression Scale), delirium (CAM); (3) Multimorbidity assessment—disease count, weighted indices (Charlson Comorbidity Index), patient-reported burden; (4) Polypharmacy review—medication count (>5 indicates polypharmacy), Beers Criteria for potentially inappropriate medications, drug-drug interactions; (5) Social determinants—social isolation (UCLA Loneliness Scale), caregiver strain, food insecurity, financial toxicity; (6) Population indicators—life expectancy, healthy life expectancy, disability-free life expectancy, long-term care utilization. Limitations include underrepresentation of oldest-old in research, performance bias in those with disabilities, and need for proxy respondents with cognitive impairment.",
+      "tags": ["assessment", "geriatric_syndromes", "functional_status", "surveillance"],
       "reasoning_role": "analytical_framework"
     }
   ],
   "source": "WHO Decade of Healthy Ageing, National Institute on Aging, CDC Healthy Aging Programs, American Geriatrics Society",
   "credibility_class": "A",
-  "year": 2024,
-  "source_url": "https://source/who_decade_of_healthy_ageing,_national_institute_on_aging,_cdc_healthy_aging_programs,_american_geriatrics_society",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.878567",
-    "source_url_was_extracted": false
-  }
+  "year": 2024
 }

@@ -5,13 +5,7 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": [
-        "neuropathy",
-        "peripheral-nerve",
-        "diabetic",
-        "axonal",
-        "demyelinating"
-      ],
+      "tags": ["neuropathy", "peripheral-nerve", "diabetic", "axonal", "demyelinating"],
       "reasoning_role": "definition",
       "content": "Peripheral neuropathy refers to damage of peripheral nerves, affecting ~2.4% of general population, up to 8% of elderly. Classification: by distribution (mononeuropathy, mononeuritis multiplex, polyneuropathy), by fiber type (sensory, motor, autonomic; large-fiber vs small-fiber), by pathology (axonal degeneration vs demyelination). Common causes: diabetes (most common, distal symmetric sensorimotor), alcohol, B12 deficiency, hypothyroidism, renal failure, medications (chemotherapy, amiodarone, metronidazole), autoimmune (CIDP, vasculitis), hereditary (Charcot-Marie-Tooth), infections (HIV, Lyme, leprosy), toxins. Small-fiber neuropathy affects pain/temperature fibers (burning pain, autonomic symptoms) with normal NCS; diagnosed by skin biopsy showing reduced intraepidermal nerve fiber density. Large-fiber neuropathy affects proprioception/vibration, causes sensory ataxia, areflexia, abnormal NCS.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30936517/",
@@ -23,15 +17,9 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": [
-        "neuropathy",
-        "pain-management",
-        "gabapentin",
-        "treatment-protocol",
-        "underlying-cause"
-      ],
+      "tags": ["neuropathy", "pain-management", "gabapentin", "treatment-protocol", "underlying-cause"],
       "reasoning_role": "treatment_protocol",
-      "content": "Neuropathy treatment addresses underlying cause and symptomatic pain management. Cause-specific: glycemic control for diabetic neuropathy (prevents progression, limited reversal), B12 replacement, thyroid hormone, alcohol cessation, immunotherapy for autoimmune (IVIG, steroids, plasma exchange for CIDP; steroids/immunosuppression for vasculitis), discontinuation of offending drugs. Neuropathic pain management: first-line includes gabapentinoids (gabapentin 300-3600mg/day, pregabalin 150-600mg/day\u2014dose adjust for renal function), SNRIs (duloxetine 60-120mg/day, venlafaxine), TCAs (amitriptyline/nortriptyline 25-150mg at bedtime\u2014anticholinergic/cardiac side effects limit use in elderly). Second-line: topical agents (lidocaine 5% patch for focal pain, capsaicin 8% patch), tramadol (short-term, addiction risk). Third-line: strong opioids (avoid chronic use), botulinum toxin for focal neuropathic pain. Combination therapy often needed. Non-pharmacologic: TENS, acupuncture, physical therapy, foot care for diabetic neuropathy. Refractory cases: spinal cord stimulation, dorsal root ganglion stimulation.",
+      "content": "Neuropathy treatment addresses underlying cause and symptomatic pain management. Cause-specific: glycemic control for diabetic neuropathy (prevents progression, limited reversal), B12 replacement, thyroid hormone, alcohol cessation, immunotherapy for autoimmune (IVIG, steroids, plasma exchange for CIDP; steroids/immunosuppression for vasculitis), discontinuation of offending drugs. Neuropathic pain management: first-line includes gabapentinoids (gabapentin 300-3600mg/day, pregabalin 150-600mg/day—dose adjust for renal function), SNRIs (duloxetine 60-120mg/day, venlafaxine), TCAs (amitriptyline/nortriptyline 25-150mg at bedtime—anticholinergic/cardiac side effects limit use in elderly). Second-line: topical agents (lidocaine 5% patch for focal pain, capsaicin 8% patch), tramadol (short-term, addiction risk). Third-line: strong opioids (avoid chronic use), botulinum toxin for focal neuropathic pain. Combination therapy often needed. Non-pharmacologic: TENS, acupuncture, physical therapy, foot care for diabetic neuropathy. Refractory cases: spinal cord stimulation, dorsal root ganglion stimulation.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/31832428/",
       "credibility_class": "A",
       "year": 2024
@@ -41,23 +29,12 @@
       "domain": "healthcare",
       "subdomain": "MED",
       "sector": "MED",
-      "tags": [
-        "neuropathy",
-        "NCS",
-        "EMG",
-        "diagnosis",
-        "skin-biopsy"
-      ],
+      "tags": ["neuropathy", "NCS", "EMG", "diagnosis", "skin-biopsy"],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Neuropathy diagnosis requires: (1) History and examination: symptom distribution (length-dependent 'stocking-glove' vs non-length-dependent), fiber types involved (sensory: numbness, tingling, pain; motor: weakness, atrophy; autonomic: orthostasis, GI/GU dysfunction, sweating abnormalities). Neurological exam: sensory modalities (pinprick, temperature for small-fiber; vibration, proprioception for large-fiber), strength, reflexes (ankle jerks lost early), gait (sensory ataxia\u2014worse with eyes closed, positive Romberg). (2) Laboratory screening: CBC, CMP, HbA1c/fasting glucose, B12 with methylmalonic acid, TSH, SPEP/UPEP, ESR/CRP, ANA/ENA if autoimmune suspected. (3) Electrodiagnostics: Nerve conduction studies (NCS) distinguish axonal (reduced amplitude) vs demyelinating (slow velocity, prolonged latency, conduction block) patterns; EMG assesses motor unit changes. (4) Specialized tests: skin biopsy for small-fiber neuropathy (intraepidermal nerve fiber density), quantitative sensory testing, autonomic testing (QSART, tilt-table), lumbar puncture (elevated protein in CIDP), genetic testing (hereditary neuropathies), nerve biopsy (vasculitis, amyloid).",
+      "content": "Neuropathy diagnosis requires: (1) History and examination: symptom distribution (length-dependent 'stocking-glove' vs non-length-dependent), fiber types involved (sensory: numbness, tingling, pain; motor: weakness, atrophy; autonomic: orthostasis, GI/GU dysfunction, sweating abnormalities). Neurological exam: sensory modalities (pinprick, temperature for small-fiber; vibration, proprioception for large-fiber), strength, reflexes (ankle jerks lost early), gait (sensory ataxia—worse with eyes closed, positive Romberg). (2) Laboratory screening: CBC, CMP, HbA1c/fasting glucose, B12 with methylmalonic acid, TSH, SPEP/UPEP, ESR/CRP, ANA/ENA if autoimmune suspected. (3) Electrodiagnostics: Nerve conduction studies (NCS) distinguish axonal (reduced amplitude) vs demyelinating (slow velocity, prolonged latency, conduction block) patterns; EMG assesses motor unit changes. (4) Specialized tests: skin biopsy for small-fiber neuropathy (intraepidermal nerve fiber density), quantitative sensory testing, autonomic testing (QSART, tilt-table), lumbar puncture (elevated protein in CIDP), genetic testing (hereditary neuropathies), nerve biopsy (vasculitis, amyloid).",
       "source": "https://pubmed.ncbi.nlm.nih.gov/30068928/",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.826451",
-    "source_url_was_extracted": false
-  }
+  ]
 }

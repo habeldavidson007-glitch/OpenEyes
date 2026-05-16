@@ -4,12 +4,7 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": [
-        "Phase IV",
-        "post-marketing",
-        "real-world evidence",
-        "pharmacovigilance"
-      ],
+      "tags": ["Phase IV", "post-marketing", "real-world evidence", "pharmacovigilance"],
       "reasoning_role": "definition",
       "content": "Phase IV trials and post-marketing surveillance occur after regulatory approval, monitoring drug safety and effectiveness in real-world clinical practice. These studies can be required by regulators (post-marketing requirements, PMRs) or initiated by manufacturers (post-marketing commitments, PMCs). Phase IV evaluates long-term safety, rare adverse events not detected in pre-approval trials, effectiveness in broader populations, optimal use patterns, and comparative effectiveness versus other treatments. Pharmacovigilance systems continuously collect and analyze adverse event reports from healthcare providers, patients, and literature.",
       "source": "fda.gov",
@@ -20,12 +15,7 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": [
-        "Phase IV",
-        "post-marketing",
-        "real-world evidence",
-        "pharmacovigilance"
-      ],
+      "tags": ["Phase IV", "post-marketing", "real-world evidence", "pharmacovigilance"],
       "reasoning_role": "treatment_protocol",
       "content": "Post-marketing surveillance employs multiple methodologies: spontaneous adverse event reporting systems (FDA FAERS, EMA EudraVigilance), mandated Phase IV clinical trials, observational studies using electronic health records and claims databases, patient registries for specific diseases or exposures, and active surveillance programs (FDA Sentinel Initiative). Risk Evaluation and Mitigation Strategies (REMS) may be required for drugs with serious safety concerns, including medication guides, communication plans, and elements to assure safe use (ETASU). Signal detection uses statistical methods to identify disproportionate reporting of specific adverse events.",
       "source": "fda.gov",
@@ -36,22 +26,12 @@
       "domain": "healthcare",
       "subdomain": "PHR",
       "sector": "PHR",
-      "tags": [
-        "Phase IV",
-        "post-marketing",
-        "real-world evidence",
-        "pharmacovigilance"
-      ],
+      "tags": ["Phase IV", "post-marketing", "real-world evidence", "pharmacovigilance"],
       "reasoning_role": "diagnostic_criteria",
       "content": "Post-marketing safety signals trigger regulatory action when there is evidence of increased risk beyond the approved labeling. Causality assessment considers temporal relationship, biological plausibility, dechallenge/rechallenge patterns, and alternative explanations. Regulatory responses range from labeling updates (boxed warnings, contraindications) to restricted distribution, additional warnings, or market withdrawal in severe cases. Real-world evidence studies must address confounding through propensity score matching, instrumental variables, or other methods. FDA can require Phase IV trials as a condition of approval; failure to complete them can result in enforcement actions. Approximately 3-5% of approved drugs are eventually withdrawn for safety reasons.",
       "source": "fda.gov",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.663653",
-    "source_url_was_extracted": false
-  }
+  ]
 }

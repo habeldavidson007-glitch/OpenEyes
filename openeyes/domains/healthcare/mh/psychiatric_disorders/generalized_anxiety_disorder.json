@@ -6,13 +6,8 @@
   "fragments": [
     {
       "role": "definition",
-      "content": "Generalized Anxiety Disorder (GAD) is characterized by excessive, uncontrollable worry about multiple events or activities occurring more days than not for at least 6 months. The anxiety and worry are associated with \u22653 physical/cognitive symptoms: restlessness, fatigue, difficulty concentrating, irritability, muscle tension, or sleep disturbance. Symptoms cause clinically significant distress/impairment and are not attributable to substances, medical conditions, or other mental disorders. GAD has a lifetime prevalence of ~5-6%, with female predominance (2:1). Pathophysiology involves amygdala hyperactivity, prefrontal cortex dysregulation, GABAergic dysfunction, and genetic factors (heritability ~30%).",
-      "tags": [
-        "anxiety",
-        "GAD",
-        "worry",
-        "DSM-5"
-      ],
+      "content": "Generalized Anxiety Disorder (GAD) is characterized by excessive, uncontrollable worry about multiple events or activities occurring more days than not for at least 6 months. The anxiety and worry are associated with ≥3 physical/cognitive symptoms: restlessness, fatigue, difficulty concentrating, irritability, muscle tension, or sleep disturbance. Symptoms cause clinically significant distress/impairment and are not attributable to substances, medical conditions, or other mental disorders. GAD has a lifetime prevalence of ~5-6%, with female predominance (2:1). Pathophysiology involves amygdala hyperactivity, prefrontal cortex dysregulation, GABAergic dysfunction, and genetic factors (heritability ~30%).",
+      "tags": ["anxiety", "GAD", "worry", "DSM-5"],
       "source": "https://www.nimh.nih.gov/health/topics/generalized-anxiety-disorder",
       "credibility_class": "A",
       "year": 2024
@@ -20,34 +15,18 @@
     {
       "role": "treatment_protocol",
       "content": "First-line treatments include SSRIs (escitalopram, sertraline, paroxetine) and SNRIs (venlafaxine, duloxetine). Buspirone is an alternative anxiolytic. Benzodiazepines provide rapid relief but are limited to short-term use due to dependence risk. Cognitive Behavioral Therapy (CBT) is equally effective as medication and may have more durable benefits after discontinuation; key components include cognitive restructuring, worry exposure, and relaxation training. Combination therapy (medication + CBT) may benefit severe cases. Treatment duration typically 6-12 months after symptom remission before gradual tapering. Pregabalin shows efficacy in some studies.",
-      "tags": [
-        "SSRI",
-        "SNRI",
-        "CBT",
-        "buspirone",
-        "treatment"
-      ],
+      "tags": ["SSRI", "SNRI", "CBT", "buspirone", "treatment"],
       "source": "https://psychiatryonline.org/doi/book/10.1176/appi.books.9780890425787",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "role": "diagnostic_criteria",
-      "content": "DSM-5-TR criteria for GAD: excessive anxiety and worry about multiple events/activities occurring more days than not for \u22656 months. Individual finds it difficult to control the worry. Anxiety/worry associated with \u22653 of: restlessness/keyed up, easily fatigued, mind going blank/difficulty concentrating, irritability, muscle tension, sleep disturbance. Symptoms cause clinically significant distress/impairment in functioning. Disturbance not attributable to substance effects, medical condition, or better explained by another mental disorder (e.g., panic disorder, social anxiety, OCD, PTSD). Specifiers include in partial/full remission.",
-      "tags": [
-        "DSM-5-TR",
-        "diagnostic-criteria",
-        "anxiety",
-        "GAD"
-      ],
+      "content": "DSM-5-TR criteria for GAD: excessive anxiety and worry about multiple events/activities occurring more days than not for ≥6 months. Individual finds it difficult to control the worry. Anxiety/worry associated with ≥3 of: restlessness/keyed up, easily fatigued, mind going blank/difficulty concentrating, irritability, muscle tension, sleep disturbance. Symptoms cause clinically significant distress/impairment in functioning. Disturbance not attributable to substance effects, medical condition, or better explained by another mental disorder (e.g., panic disorder, social anxiety, OCD, PTSD). Specifiers include in partial/full remission.",
+      "tags": ["DSM-5-TR", "diagnostic-criteria", "anxiety", "GAD"],
       "source": "https://www.psychiatry.org/psychiatrists/practice/dsm",
       "credibility_class": "A",
       "year": 2022
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.720407",
-    "source_url_was_extracted": false
-  }
+  ]
 }

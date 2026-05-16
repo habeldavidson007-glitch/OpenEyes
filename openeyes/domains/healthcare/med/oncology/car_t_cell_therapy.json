@@ -5,53 +5,30 @@
   "fragments": [
     {
       "id": "hc_med_onc_car_def_001",
-      "tags": [
-        "oncology",
-        "CAR-T cell therapy",
-        "chimeric antigen receptor",
-        "mechanism",
-        "indications"
-      ],
+      "tags": ["oncology", "CAR-T cell therapy", "chimeric antigen receptor", "mechanism", "indications"],
       "reasoning_role": "definition",
-      "content": "CAR-T (chimeric antigen receptor T-cell) therapy is a form of adoptive cell immunotherapy. Patient T-cells are collected by leukapheresis, genetically engineered ex vivo to express CAR targeting tumor antigens, expanded, and reinfused after lymphodepleting chemotherapy. CAR structure: extracellular antigen-binding domain (scFv from monoclonal antibody), hinge region, transmembrane domain, intracellular signaling domains (CD3\u03b6 plus costimulatory molecules CD28 or 4-1BB). FDA-approved products: tisagenlecleucel (Kymriah, CD19-targeted, B-cell ALL and DLBCL), axicabtagene ciloleucel (Yescarta, CD19, DLBCL and follicular lymphoma), lisocabtagene maraleucel (Breyanzi, CD19, DLBCL and CLL), brexucabtagene autoleucel (Tecartus, CD19, mantle cell lymphoma and ALL), idecabtagene vicleucel (Abecma, BCMA, myeloma), ciltacabtagene autoleucel (Carvykti, BCMA, myeloma). Targets: CD19 for B-cell malignancies; BCMA for multiple myeloma; investigational targets include CD22, CD30, GPC3, mesothelin.",
+      "content": "CAR-T (chimeric antigen receptor T-cell) therapy is a form of adoptive cell immunotherapy. Patient T-cells are collected by leukapheresis, genetically engineered ex vivo to express CAR targeting tumor antigens, expanded, and reinfused after lymphodepleting chemotherapy. CAR structure: extracellular antigen-binding domain (scFv from monoclonal antibody), hinge region, transmembrane domain, intracellular signaling domains (CD3ζ plus costimulatory molecules CD28 or 4-1BB). FDA-approved products: tisagenlecleucel (Kymriah, CD19-targeted, B-cell ALL and DLBCL), axicabtagene ciloleucel (Yescarta, CD19, DLBCL and follicular lymphoma), lisocabtagene maraleucel (Breyanzi, CD19, DLBCL and CLL), brexucabtagene autoleucel (Tecartus, CD19, mantle cell lymphoma and ALL), idecabtagene vicleucel (Abecma, BCMA, myeloma), ciltacabtagene autoleucel (Carvykti, BCMA, myeloma). Targets: CD19 for B-cell malignancies; BCMA for multiple myeloma; investigational targets include CD22, CD30, GPC3, mesothelin.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/36123456/",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_car_treat_001",
-      "tags": [
-        "oncology",
-        "CAR-T cell therapy",
-        "treatment process",
-        "toxicity management",
-        "efficacy"
-      ],
+      "tags": ["oncology", "CAR-T cell therapy", "treatment process", "toxicity management", "efficacy"],
       "reasoning_role": "treatment_protocol",
-      "content": "Treatment process: leukapheresis collects T-cells; manufacturing takes 2-4 weeks; bridging therapy may be needed; lymphodepleting chemotherapy (fludarabine + cyclophosphamide) x3 days before infusion; CAR-T infusion (single dose); monitoring in certified center for \u22657 days post-infusion. Efficacy: DLBCL - overall response rate (ORR) 50-80%, complete response (CR) 40-60% (ZUMA-1, JULIET, TRANSCEND trials); ALL - CR 60-90% in children/young adults (ELIANA trial); myeloma - ORR 70-95% with BCMA-targeted CAR-T (CARTITUDE, KarMMa). Toxicities: cytokine release syndrome (CRS) - fever, hypotension, hypoxia, graded 1-4, treated with tocilizumab (IL-6 receptor antagonist) and steroids; immune effector cell-associated neurotoxicity syndrome (ICANS) - confusion, aphasia, seizures, cerebral edema, treated with steroids; prolonged cytopenias; hypogammaglobulinemia requiring IVIG; infection risk. REMS program required for prescribing centers.",
+      "content": "Treatment process: leukapheresis collects T-cells; manufacturing takes 2-4 weeks; bridging therapy may be needed; lymphodepleting chemotherapy (fludarabine + cyclophosphamide) x3 days before infusion; CAR-T infusion (single dose); monitoring in certified center for ≥7 days post-infusion. Efficacy: DLBCL - overall response rate (ORR) 50-80%, complete response (CR) 40-60% (ZUMA-1, JULIET, TRANSCEND trials); ALL - CR 60-90% in children/young adults (ELIANA trial); myeloma - ORR 70-95% with BCMA-targeted CAR-T (CARTITUDE, KarMMa). Toxicities: cytokine release syndrome (CRS) - fever, hypotension, hypoxia, graded 1-4, treated with tocilizumab (IL-6 receptor antagonist) and steroids; immune effector cell-associated neurotoxicity syndrome (ICANS) - confusion, aphasia, seizures, cerebral edema, treated with steroids; prolonged cytopenias; hypogammaglobulinemia requiring IVIG; infection risk. REMS program required for prescribing centers.",
       "source": "https://www.nccn.org/guidelines",
       "credibility_class": "A",
       "year": 2024
     },
     {
       "id": "hc_med_onc_car_diag_001",
-      "tags": [
-        "oncology",
-        "CAR-T cell therapy",
-        "patient selection",
-        "eligibility",
-        "monitoring"
-      ],
+      "tags": ["oncology", "CAR-T cell therapy", "patient selection", "eligibility", "monitoring"],
       "reasoning_role": "diagnostic_criteria",
-      "content": "Patient selection criteria: relapsed/refractory disease after standard therapies (typically \u22652 prior lines for lymphoma, \u22652 prior lines for myeloma); adequate organ function (LVEF \u226550%, bilirubin \u22642x ULN, creatinine clearance \u226530-45 mL/min depending on product); performance status ECOG 0-2; no active CNS involvement (varies by product); no uncontrolled infections; no severe autoimmune disease. Contraindications: pregnancy, active hepatitis B/C without antiviral prophylaxis, HIV with low CD4 count. Pre-infusion evaluation: PET-CT for response assessment; bone marrow for ALL/myeloma; cardiac echo; pulmonary function tests; infectious disease screening. Post-infusion monitoring: daily assessment for CRS/ICANS using ASTCT grading criteria; CBC, CMP, coagulation studies, ferritin, fibrinogen, CRP; imaging at 1-3 months for response assessment. Long-term monitoring: B-cell aplasia and hypogammaglobulinemia for CD19-targeted products; secondary malignancies (boxed warning 2024); durable responses assessed by PET-CT at regular intervals.",
+      "content": "Patient selection criteria: relapsed/refractory disease after standard therapies (typically ≥2 prior lines for lymphoma, ≥2 prior lines for myeloma); adequate organ function (LVEF ≥50%, bilirubin ≤2x ULN, creatinine clearance ≥30-45 mL/min depending on product); performance status ECOG 0-2; no active CNS involvement (varies by product); no uncontrolled infections; no severe autoimmune disease. Contraindications: pregnancy, active hepatitis B/C without antiviral prophylaxis, HIV with low CD4 count. Pre-infusion evaluation: PET-CT for response assessment; bone marrow for ALL/myeloma; cardiac echo; pulmonary function tests; infectious disease screening. Post-infusion monitoring: daily assessment for CRS/ICANS using ASTCT grading criteria; CBC, CMP, coagulation studies, ferritin, fibrinogen, CRP; imaging at 1-3 months for response assessment. Long-term monitoring: B-cell aplasia and hypogammaglobulinemia for CD19-targeted products; secondary malignancies (boxed warning 2024); durable responses assessed by PET-CT at regular intervals.",
       "source": "https://pubmed.ncbi.nlm.nih.gov/35234567/",
       "credibility_class": "A",
       "year": 2024
     }
-  ],
-  "source_url": "https://unknown/source_missing",
-  "metadata": {
-    "source_url_remediated": "2026-05-15T15:54:01.819402",
-    "source_url_was_extracted": false
-  }
+  ]
 }
