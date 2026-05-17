@@ -145,6 +145,32 @@ This structure ensures:
 
 ---
 
+
+## Fast Install (Recommended)
+
+For end users who want the easiest path:
+
+```bash
+pipx install openeyes
+openeyes version
+openeyes ask "How does inflation affect bond prices?" --domain economy
+```
+
+If `pipx` is unavailable, use:
+
+```bash
+python -m pip install -e .
+openeyes version
+```
+
+## Current Product Status
+
+OpenEyes is usable, but still under active quality hardening.
+
+- CLI contract is stabilizing (`ask`, `doctor`, `config`, `version`, `--json`)
+- Relevancy can still drift on some cross-domain prompts
+- Use `scripts/evaluate_relevancy.py` to catch severe off-topic regressions before release
+
 ## Installation
 
 ### Recommended (Ubuntu/Debian with PEP 668)
