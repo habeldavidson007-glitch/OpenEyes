@@ -17,23 +17,34 @@ from dataclasses import dataclass, field
 @dataclass
 class AtomicFact:
     """Deconstructed fact into atomic components"""
-    subject: str
-    verb: str
-    object_phrase: str = ""
-    metric: Optional[str] = None
-    timeframe: Optional[str] = None
-    confidence: float = 0.9
-    domain: str = "general"
+    def __init__(self, subject: str = "", verb: str = "", object_phrase: str = "", 
+                 metric: Optional[str] = None, timeframe: Optional[str] = None,
+                 confidence: float = 0.9, domain: str = "general", 
+                 original_text: str = "", metric_value: Optional[float] = None,
+                 adjective: Optional[str] = None, analogy: Optional[str] = None):
+        self.subject = subject
+        self.verb = verb
+        self.object_phrase = object_phrase
+        self.object = object_phrase  # Alias for compatibility
+        self.metric = metric
+        self.timeframe = timeframe
+        self.confidence = confidence
+        self.domain = domain
+        self.original_text = original_text
+        self.metric_value = metric_value
+        self.adjective = adjective
+        self.analogy = analogy
 
 
 @dataclass 
 class SyntacticToken:
     """Individual token with grammatical properties"""
-    text: str
-    pos_tag: str  # Part of speech
-    grammatical_role: str  # subject, verb, object, modifier, etc.
-    weight: float = 1.0
-    variants: List[str] = field(default_factory=list)
+    def __init__(self, text: str, role: str = "content", pos_tag: str = "NN", weight: float = 1.0, variants: List[str] = None):
+        self.text = text
+        self.pos_tag = pos_tag
+        self.grammatical_role = role
+        self.weight = weight
+        self.variants = variants if variants else []
 
 
 class LinguisticGenome:
@@ -796,9 +807,9 @@ class LinguisticGenome:
         
         return result
     
-    def _assemble_with_spacing(self, tokens: List[str]) -> str:
+    def _assemble_with_spacing(self, tokens: List[SyntacticToken]) -> str:
         """
-        Assembles tokens with intelligent spacing to prevent robotic artifacts.
+        Assembles SyntacticTokens with intelligent spacing to prevent robotic artifacts.
         Handles punctuation, double words, and spacing errors.
         """
         import re
@@ -810,7 +821,9 @@ class LinguisticGenome:
         assembled = []
         prev_token = ""
         
-        for token in tokens:
+        for token_obj in tokens:
+            # Extract text from SyntacticToken object
+            token = token_obj.text if hasattr(token_obj, 'text') else str(token_obj)
             token = token.strip()
             if not token:
                 continue
@@ -1111,14 +1124,30 @@ class LinguisticGenome:
                  intent: str = "casual",
                  domain: str = "general") -> str:
         """
-        Main generation interface.
-        Takes verified fact, returns procedurally constructed sentence.
+        TWO-PHASE GENERATION PROTOCOL (Option B):
+        Phase 1: Deterministic Core Construction (Guaranteed Grammatical Completeness)
+        Phase 2: Probabilistic Embellishment (Stylistic Variation)
         """
         # Deconstruct fact
         atomic = self.deconstruct_fact(fact_text, domain)
         
-        # Assemble token-by-token
-        result = self.assemble_token_by_token(
+        # ==========================================
+        # PHASE 1: DETERMINISTIC CORE CONSTRUCTION
+        # Rule: Must produce a valid SVO or SVC sentence. No randomness on structure.
+        # ==========================================
+        core_tokens = self._build_immutable_core(atomic)
+        
+        # Validation Gate: Reject if core is not grammatically complete
+        if not self._validate_core_completeness(core_tokens):
+            # Fallback: Force simplest possible SVO if logic fails
+            core_tokens = self._force_minimal_core(atomic)
+        
+        # ==========================================
+        # PHASE 2: PROBABILISTIC EMBELLISHMENT
+        # Rule: Add style ONLY around the validated core.
+        # ==========================================
+        final_tokens = self._apply_stylistic_layer(
+            core_tokens=core_tokens,
             atomic=atomic,
             analogy=analogy,
             impact=impact,
@@ -1126,7 +1155,181 @@ class LinguisticGenome:
             intent=intent
         )
         
+        # Assemble and smooth
+        result = self._assemble_with_spacing(final_tokens)
+        result = self._smooth_output(result)
+        
         return result
+
+    def _build_immutable_core(self, atomic: AtomicFact) -> List[SyntacticToken]:
+        """
+        Builds a grammatically complete sentence core.
+        Guarantees: Subject + Verb + (Object/Complement).
+        """
+        tokens = []
+        
+        # 1. Subject (Required)
+        subj_text = atomic.subject if atomic.subject else "This metric"
+        tokens.append(SyntacticToken(subj_text, role="subject"))
+        
+        # 2. Verb (Required - The Critical Fix)
+        verb_text = self._resolve_verb(atomic)
+        tokens.append(SyntacticToken(verb_text, role="verb"))
+        
+        # 3. Object / Complement (Required)
+        # Handle copula verbs (is/are) specially to ensure adjective/noun follows
+        if self._is_copula(verb_text):
+            comp_text = self._build_predicate_complement(atomic)
+            if comp_text:
+                tokens.append(SyntacticToken(comp_text, role="complement"))
+        else:
+            # Transitive verb needs object
+            obj_text = atomic.object if atomic.object else self._infer_object(atomic)
+            if obj_text:
+                tokens.append(SyntacticToken(obj_text, role="object"))
+                
+        return tokens
+
+    def _resolve_verb(self, atomic: AtomicFact) -> str:
+        """Deterministically selects the correct verb form."""
+        if atomic.verb:
+            # If user provided a base verb, conjugate it to match subject (simplified)
+            return self._conjugate_verb(atomic.verb, atomic.subject)
+        
+        # Infer verb from metric/trend if missing
+        if atomic.metric_value:
+            try:
+                val = float(str(atomic.metric_value).replace('%', '').replace('$', '').replace(',', ''))
+                if val > 0:
+                    return "is rising"
+                elif val < 0:
+                    return "is falling"
+                else:
+                    return "is stable"
+            except ValueError:
+                pass
+        
+        # Default fallback
+        return "is changing"
+
+    def _build_predicate_complement(self, atomic: AtomicFact) -> str:
+        """Ensures 'is/are' verbs have a following adjective or noun."""
+        parts = []
+        if atomic.adjective:
+            parts.append(atomic.adjective)
+        if atomic.object:
+            parts.append(atomic.object)
+        if atomic.metric_value:
+            parts.append(f"at {atomic.metric_value}")
+        if atomic.timeframe:
+            parts.append(f"over {atomic.timeframe}")
+            
+        if not parts:
+            # Hardcoded fallbacks to prevent "The market is."
+            defaults = ["critical", "volatile", "significant", "in flux"]
+            return random.choice(defaults)
+            
+        return " ".join(parts)
+
+    def _validate_core_completeness(self, tokens: List[SyntacticToken]) -> bool:
+        """Strict validation: Must have Subject, Verb, and Complement/Object."""
+        has_subj = any(t.grammatical_role == "subject" for t in tokens)
+        has_verb = any(t.grammatical_role == "verb" for t in tokens)
+        has_comp = any(t.grammatical_role in ["object", "complement"] for t in tokens)
+        
+        return has_subj and has_verb and has_comp
+
+    def _force_minimal_core(self, atomic: AtomicFact) -> List[SyntacticToken]:
+        """Emergency fallback: 'Subject is [state]'."""
+        subj = atomic.subject if atomic.subject else "The situation"
+        state = atomic.adjective if atomic.adjective else "dynamic"
+        return [
+            SyntacticToken(subj, role="subject"),
+            SyntacticToken("is", role="verb"),
+            SyntacticToken(state, role="complement")
+        ]
+
+    def _is_copula(self, verb: str) -> bool:
+        """Check if verb is a copula (linking verb)."""
+        if not verb:
+            return False
+        copulas = ['is', 'are', 'was', 'were', 'be', 'been', 'being', 'am']
+        return verb.lower().split()[0] in copulas
+
+    def _conjugate_verb(self, verb: str, subject: Optional[str] = None) -> str:
+        """Simple verb conjugation - returns verb as-is or with minimal modification."""
+        if not verb:
+            return "is changing"
+        
+        # If already conjugated, return as-is
+        lower_verb = verb.lower()
+        if any(lower_verb.endswith(s) for s in ['s', 'es', 'ed', 'ing', 'en']):
+            return verb
+        
+        # Simple third-person singular for present tense
+        if subject and any(word in subject.lower() for word in ['it', 'he', 'she', 'the', 'a', 'an']):
+            if lower_verb in ['have', 'do', 'go']:
+                return {'have': 'has', 'do': 'does', 'go': 'goes'}.get(lower_verb, verb + 's')
+            return verb + 's'
+        
+        return verb
+
+    def _infer_object(self, atomic: AtomicFact) -> Optional[str]:
+        """Try to infer an object from the fact text if not explicitly parsed."""
+        if atomic.original_text:
+            # Simple heuristic: everything after the verb might be the object
+            parts = atomic.original_text.split(' ', 2)
+            if len(parts) > 2:
+                return parts[2]
+        return None
+
+    def _apply_stylistic_layer(self, 
+                               core_tokens: List[SyntacticToken],
+                               atomic: AtomicFact,
+                               analogy: Optional[str] = None,
+                               impact: Optional[str] = None,
+                               mechanism: Optional[str] = None,
+                               intent: str = "casual") -> List[SyntacticToken]:
+        """
+        Wraps the validated core with probabilistic stylistic elements.
+        This is where the 'human-like' variance happens.
+        """
+        final_tokens = []
+        
+        # 1. Probabilistic Opener (Discourse Marker)
+        if random.random() < 0.7:  # 70% chance of opener
+            opener = self.inject_discourse_marker(position="start")
+            if opener:
+                final_tokens.append(SyntacticToken(opener, role="opener"))
+        
+        # 2. Insert Core (Immutable)
+        final_tokens.extend(core_tokens)
+        
+        # 3. Probabilistic Impact/Mechanism Injection
+        if impact and random.random() < 0.5:
+            final_tokens.append(SyntacticToken(".", role="punctuation"))
+            connector = random.choice(["This means", "As a result", "Consequently"])
+            final_tokens.append(SyntacticToken(f"{connector}, {impact}", role="elaboration"))
+        
+        # 4. Probabilistic Analogy Injection (Mid or End)
+        if analogy and random.random() < 0.4:  # 40% chance of analogy
+            # Decide position: 50% append to core, 50% new sentence
+            if random.random() < 0.5:
+                final_tokens.append(SyntacticToken(",", role="punctuation"))
+                final_tokens.append(SyntacticToken("like", role="connector"))
+                final_tokens.append(SyntacticToken(analogy, role="analogy"))
+            else:
+                final_tokens.append(SyntacticToken(".", role="punctuation"))
+                final_tokens.append(SyntacticToken(f"Think of it as {analogy}", role="elaboration"))
+        
+        # 5. Probabilistic Closer
+        if random.random() < 0.6:  # 60% chance of closer
+            closer = self.inject_discourse_marker(position="end")
+            if closer:
+                # Ensure we don't end with a comma
+                final_tokens.append(SyntacticToken(closer.rstrip(','), role="closer"))
+                
+        return final_tokens
 
 
 # Demo
