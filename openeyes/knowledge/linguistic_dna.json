@@ -1,0 +1,188 @@
+{
+  "version": "2.0",
+  "description": "Compressed Linguistic DNA - Infinite Variance Engine",
+  "clusters": {
+    "openings": {
+      "casual": [
+        {"text": "Hey, so ", "weight": 1.0},
+        {"text": "Look, ", "weight": 0.9},
+        {"text": "Honestly? ", "weight": 0.8},
+        {"text": "You know what? ", "weight": 0.7},
+        {"text": "Here's the thing: ", "weight": 0.9},
+        {"text": "Basically, ", "weight": 0.8},
+        {"text": "Well, ", "weight": 0.6},
+        {"text": "So basically, ", "weight": 0.7},
+        {"text": "The way I see it, ", "weight": 0.5},
+        {"text": "If you ask me, ", "weight": 0.4},
+        {"text": "Let me put it this way: ", "weight": 0.6},
+        {"text": "Think about it: ", "weight": 0.5},
+        {"text": "Simply put, ", "weight": 0.8},
+        {"text": "In plain English? ", "weight": 0.7},
+        {"text": "Bottom line: ", "weight": 0.6},
+        {"text": "Here's the deal: ", "weight": 0.8},
+        {"text": "Quick answer: ", "weight": 0.5},
+        {"text": "Long story short: ", "weight": 0.4}
+      ],
+      "technical": [
+        {"text": "Technically speaking, ", "weight": 1.0},
+        {"text": "From a technical standpoint, ", "weight": 0.9},
+        {"text": "The formal definition is: ", "weight": 0.8},
+        {"text": "In economic terms, ", "weight": 0.9},
+        {"text": "Scientifically, ", "weight": 0.7},
+        {"text": "According to standard models, ", "weight": 0.6},
+        {"text": "The data shows: ", "weight": 0.8},
+        {"text": "Empirically, ", "weight": 0.5},
+        {"text": "Mathematically, ", "weight": 0.4},
+        {"text": "The consensus view is: ", "weight": 0.7}
+      ],
+      "empathetic": [
+        {"text": "I understand why you'd ask. ", "weight": 1.0},
+        {"text": "That's a great question. ", "weight": 0.9},
+        {"text": "Many people wonder about this. ", "weight": 0.8},
+        {"text": "It's confusing, right? ", "weight": 0.7},
+        {"text": "Let me help clarify: ", "weight": 0.9},
+        {"text": "This affects everyone. ", "weight": 0.6},
+        {"text": "You're not alone in asking. ", "weight": 0.5},
+        {"text": "Fair question. ", "weight": 0.8}
+      ],
+      "urgent": [
+        {"text": "Important: ", "weight": 1.0},
+        {"text": "Critical point: ", "weight": 0.9},
+        {"text": "Listen carefully: ", "weight": 0.8},
+        {"text": "This matters: ", "weight": 0.9},
+        {"text": "Key fact: ", "weight": 0.7},
+        {"text": "Don't miss this: ", "weight": 0.6},
+        {"text": "Urgent context: ", "weight": 0.5}
+      ]
+    },
+    "connectors": {
+      "definition_to_mechanism": [
+        {"text": " Here's how it works: ", "weight": 1.0},
+        {"text": " The mechanism is straightforward: ", "weight": 0.9},
+        {"text": " Under the hood, ", "weight": 0.8},
+        {"text": " Digging deeper, ", "weight": 0.7},
+        {"text": " What actually happens is: ", "weight": 0.9},
+        {"text": " The process goes like this: ", "weight": 0.6},
+        {"text": " Behind the scenes, ", "weight": 0.5},
+        {"text": " In practice, ", "weight": 0.8},
+        {"text": " Operationally, ", "weight": 0.4},
+        {"text": " Functionally, ", "weight": 0.5}
+      ],
+      "fact_to_impact": [
+        {"text": " This means that ", "weight": 1.0},
+        {"text": " Consequently, ", "weight": 0.9},
+        {"text": " As a result, ", "weight": 0.8},
+        {"text": " The ripple effect is: ", "weight": 0.7},
+        {"text": " What this translates to is: ", "weight": 0.6},
+        {"text": " In real-world terms, ", "weight": 0.8},
+        {"text": " For everyday people, ", "weight": 0.9},
+        {"text": " The bottom-line impact: ", "weight": 0.7},
+        {"text": " Practically speaking, ", "weight": 0.6},
+        {"text": " This cascades into: ", "weight": 0.5}
+      ],
+      "contrast": [
+        {"text": " However, ", "weight": 1.0},
+        {"text": " On the flip side, ", "weight": 0.9},
+        {"text": " Conversely, ", "weight": 0.8},
+        {"text": " But here's the catch: ", "weight": 0.7},
+        {"text": " The twist is: ", "weight": 0.6},
+        {"text": " That said, ", "weight": 0.8},
+        {"text": " Not so fast though: ", "weight": 0.5},
+        {"text": " There's a caveat: ", "weight": 0.6}
+      ],
+      "emphasis": [
+        {"text": " Crucially, ", "weight": 1.0},
+        {"text": " Most importantly, ", "weight": 0.9},
+        {"text": " Keep in mind: ", "weight": 0.8},
+        {"text": " Don't forget: ", "weight": 0.7},
+        {"text": " The key takeaway: ", "weight": 0.9},
+        {"text": " Above all, ", "weight": 0.6},
+        {"text": " Remember this: ", "weight": 0.8},
+        {"text": " Essential point: ", "weight": 0.7}
+      ],
+      "analogy_intro": [
+        {"text": " Think of it like this: ", "weight": 1.0},
+        {"text": " Imagine it this way: ", "weight": 0.9},
+        {"text": " Here's a mental shortcut: ", "weight": 0.8},
+        {"text": " Picture this: ", "weight": 0.7},
+        {"text": " To visualize: ", "weight": 0.6},
+        {"text": " A simple analogy: ", "weight": 0.8},
+        {"text": " In everyday terms: ", "weight": 0.7},
+        {"text": " Put another way: ", "weight": 0.6},
+        {"text": " Like when ", "weight": 0.5},
+        {"text": " It's similar to ", "weight": 0.6}
+      ]
+    },
+    "closings": {
+      "summary": [
+        {"text": " That's the core of it.", "weight": 1.0},
+        {"text": " Hope that clarifies things.", "weight": 0.9},
+        {"text": " Any questions on that?", "weight": 0.7},
+        {"text": " Make sense?", "weight": 0.8},
+        {"text": " That's the gist.", "weight": 0.6},
+        {"text": " Clear as mud? Just kidding.", "weight": 0.3},
+        {"text": " Let me know if you need more detail.", "weight": 0.5}
+      ],
+      "action_oriented": [
+        {"text": " Keep this in mind next time you see prices rise.", "weight": 0.8},
+        {"text": " Watch for this pattern.", "weight": 0.7},
+        {"text": " Now you know what to look for.", "weight": 0.6},
+        {"text": " Use this lens when evaluating news.", "weight": 0.5},
+        {"text": " This helps you make better decisions.", "weight": 0.7}
+      ],
+      "open_ended": [
+        {"text": " What else are you curious about?", "weight": 0.9},
+        {"text": " Want to dive deeper into any part?", "weight": 0.8},
+        {"text": " There's more where that came from.", "weight": 0.6},
+        {"text": " Happy to explore related topics.", "weight": 0.7},
+        {"text": " The rabbit hole goes deeper if you want.", "weight": 0.5}
+      ]
+    },
+    "filler_phrases": {
+      "thoughtful_pauses": [
+        {"text": "...well, ", "weight": 0.6},
+        {"text": "...you see, ", "weight": 0.5},
+        {"text": "...essentially, ", "weight": 0.7},
+        {"text": "...in a nutshell, ", "weight": 0.6},
+        {"text": "...to break it down, ", "weight": 0.5}
+      ],
+      "confidence_markers": [
+        {"text": "definitely ", "weight": 0.8},
+        {"text": "clearly ", "weight": 0.7},
+        {"text": "undoubtedly ", "weight": 0.6},
+        {"text": "without question ", "weight": 0.5},
+        {"text": "absolutely ", "weight": 0.7}
+      ],
+      "hedging_phrases": [
+        {"text": "generally speaking, ", "weight": 0.6},
+        {"text": "typically, ", "weight": 0.7},
+        {"text": "more often than not, ", "weight": 0.5},
+        {"text": "in most cases, ", "weight": 0.6},
+        {"text": "as a rule, ", "weight": 0.4}
+      ]
+    },
+    "sentence_structures": [
+      {"pattern": "{opening}{fact}{connector}{mechanism}{closing}", "weight": 1.0},
+      {"pattern": "{opening}{fact}{analogy_intro}{analogy}{closing}", "weight": 0.9},
+      {"pattern": "{opening}{fact}{connector}{impact}{closing}", "weight": 0.8},
+      {"pattern": "{opening}{fact}{contrast}{counterpoint}{closing}", "weight": 0.7},
+      {"pattern": "{opening}{fact}{emphasis}{key_point}{closing}", "weight": 0.8},
+      {"pattern": "{fact}{connector}{mechanism}{analogy_intro}{analogy}", "weight": 0.6},
+      {"pattern": "{opening}{analogy_intro}{analogy}{fact}{closing}", "weight": 0.5},
+      {"pattern": "{opening}{fact}{filler}{mechanism}{closing}", "weight": 0.7}
+    ],
+    "intent_clusters": {
+      "casual_query": ["casual", "empathetic"],
+      "technical_deep_dive": ["technical", "emphasis"],
+      "urgent_concern": ["urgent", "empathetic"],
+      "exploratory": ["casual", "open_ended"],
+      "educational": ["technical", "summary"]
+    }
+  },
+  "variation_rules": {
+    "max_repeats_per_session": 1,
+    "min_pattern_diversity": 3,
+    "random_seed_variance": true,
+    "context_awareness": true
+  }
+}

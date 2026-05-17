@@ -28,6 +28,12 @@ class Fragment:
     year: int = 0
     source: str = ""
     credibility_class: str = "peer_reviewed_study"
+    # Verification metadata (added for production auditability)
+    verification_status: str = "unverified"  # 'verified', 'peer_reviewed', 'unverified'
+    verification_date: str = ""
+    verified_by: str = ""
+    quality_score: float = 0.0  # 0.0-1.0 quality assessment
+    contradiction_flags: list[str] = field(default_factory=list)
 
     @property
     def effective_weight(self) -> float:
@@ -91,6 +97,12 @@ def migrate_fragment(payload: dict) -> Fragment:
             year=int(payload.get("year", 0)) if payload.get("year") else 0,
             source=payload.get("source", ""),
             credibility_class=payload.get("credibility_class", "peer_reviewed_study"),
+            # Verification metadata
+            verification_status=payload.get("verification_status", "unverified"),
+            verification_date=payload.get("verification_date", ""),
+            verified_by=payload.get("verified_by", ""),
+            quality_score=float(payload.get("quality_score", 0.0)),
+            contradiction_flags=payload.get("contradiction_flags", []),
         )
     
     # Legacy format handling
@@ -108,4 +120,10 @@ def migrate_fragment(payload: dict) -> Fragment:
         published_on=payload.get("published_on", ""),
         jurisdiction=payload.get("jurisdiction", "global"),
         evidence_level=payload.get("evidence_level", "moderate"),
+        # Verification metadata (defaults for legacy fragments)
+        verification_status=payload.get("verification_status", "unverified"),
+        verification_date=payload.get("verification_date", ""),
+        verified_by=payload.get("verified_by", ""),
+        quality_score=float(payload.get("quality_score", 0.0)),
+        contradiction_flags=payload.get("contradiction_flags", []),
     )

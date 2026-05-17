@@ -30,12 +30,14 @@ from openeyes.core.emergency_detection import detect_emergency, get_emergency_me
 from openeyes.core.logical_synthesizer import LogicalSynthesizer
 from openeyes.core.synthesis_engine import SynthesisEngine
 from openeyes.ui.control_deck import ControlDeck
+from openeyes.cognitive.procedural_manifestor import ProceduralManifestor
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
 VERBOSE_PIPELINE = os.getenv("OPENEYES_VERBOSE_PIPELINE", "0") == "1"
 logical_engine = LogicalSynthesizer()  # P3: Logical Synthesis Engine
 synthesis_engine = SynthesisEngine()  # P4: Narrative Synthesis Engine
+manifestor = ProceduralManifestor()  # P5: Procedural Linguistic Engine
 
 
 def _pipeline_log(message: str) -> None:
@@ -62,18 +64,88 @@ def _compose_user_answer(
     fragments: list[Fragment] | None = None
 ) -> str:
     """
-    P4 CRITICAL UPGRADE: Compose answers using Logical Narrative Synthesis.
+    P5 CRITICAL UPGRADE: Compose answers using Procedural Linguistic Manifestor.
     
-    Instead of just listing facts, this engine builds a coherent argument:
-    Premise -> Evidence -> Conclusion
+    Instead of static templates or simple synthesis, this engine generates
+    infinite human-like variations of verified facts using Linguistic DNA.
     
-    This ensures the answer actually ADDRESSES the query structure, not just
-    dumps related facts.
+    Flow:
+    1. Extract core facts from fragments
+    2. Detect user intent (greeting, casual, technical, etc.)
+    3. Build response structure dynamically
+    4. Apply probabilistic stylistic overlay (zero hallucination)
+    5. Return unique, natural language response every time
     """
     if not fragments or len(fragments) == 0:
         return "No verified information available for this query in our knowledge base."
     
-    # Convert Fragment objects to dictionaries for synthesis engine
+    # Extract core components from top fragments
+    fact = None
+    analogy = None
+    mechanism = None
+    impact = None
+    
+    for frag in fragments[:5]:
+        content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
+        if content and not fact:
+            fact = content
+        
+        # Look for analogy/mechanism/impact in fragment metadata or content
+        if hasattr(frag, 'analogy') and frag.analogy:
+            analogy = frag.analogy
+        if hasattr(frag, 'mechanism') and frag.mechanism:
+            mechanism = frag.mechanism
+        if hasattr(frag, 'impact') and frag.impact:
+            impact = frag.impact
+        
+        # Early exit if we have all components
+        if fact and analogy and mechanism and impact:
+            break
+    
+    # Fallback: Use synthesis engine to extract components if not in metadata
+    if fact and not (analogy or mechanism or impact):
+        try:
+            frag_dicts = [{
+                "claim": getattr(frag, "content", "") or getattr(frag, "claim", ""),
+                "confidence_score": getattr(frag, "confidence_score", 0.5),
+                "source_url": getattr(frag, "source_url", ""),
+                "domain": getattr(frag, "domain", domain)
+            } for frag in fragments[:5] if getattr(frag, "content", "") or getattr(frag, "claim", "")]
+            
+            if frag_dicts:
+                synthesized = synthesis_engine.synthesize(query, frag_dicts)
+                # Try to extract analogy/mechanism from synthesized text
+                if synthesized:
+                    sentences = synthesized.split('. ')
+                    if len(sentences) > 1:
+                        if not analogy and any(word in synthesized.lower() for word in ['imagine', 'like', 'similar', 'picture']):
+                            analogy = [s for s in sentences if any(word in s.lower() for word in ['imagine', 'like', 'similar', 'picture'])][0] if any(word in synthesized.lower() for word in ['imagine', 'like', 'similar', 'picture']) else None
+        except Exception as e:
+            _pipeline_log(f"[MANIFESTOR] Synthesis extraction error: {e}")
+    
+    # If we have a fact, use the Procedural Manifestor
+    if fact:
+        try:
+            # Get confidence from Monte Carlo result (passed via narrative or default)
+            confidence = narrative.get("confidence", 0.8)
+            
+            # Generate human-like response with infinite variance
+            response = manifestor.manifest(
+                query=query,
+                fact=fact,
+                analogy=analogy,
+                mechanism=mechanism,
+                impact=impact,
+                confidence=confidence,
+                domain=domain
+            )
+            
+            if response and len(response.strip()) > 10:
+                return response
+        except Exception as e:
+            _pipeline_log(f"[MANIFESTOR] Error: {e}, falling back to synthesis")
+    
+    # Fallback: Use Synthesis Engine (P4)
     frag_dicts = []
     for frag in fragments:
         content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
@@ -85,7 +157,6 @@ def _compose_user_answer(
                 "domain": getattr(frag, "domain", domain)
             })
     
-    # Use Synthesis Engine to build structured narrative
     if frag_dicts:
         try:
             synthesized_narrative = synthesis_engine.synthesize(query, frag_dicts)
@@ -94,19 +165,16 @@ def _compose_user_answer(
         except Exception as e:
             _pipeline_log(f"[SYNTHESIS] Error: {e}, falling back to fragment listing")
     
-    # Fallback: Build answer from fragment content only - NO synthesis or generation
+    # Ultimate fallback: Build answer from fragment content only
     answer_parts = []
-    for frag in fragments[:5]:  # Limit to top 5 most relevant fragments
-        # Extract content from fragment (handle different attribute names)
+    for frag in fragments[:5]:
         content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
-        
         if content:
             answer_parts.append(content)
     
     if not answer_parts:
         return "No verified information available for this query in our knowledge base."
     
-    # Join with clear separation
     return "\n\n".join(answer_parts)
 
 
@@ -350,7 +418,19 @@ class OpenEyesEngine:
             fragments_count=len(frags),
             fragments=frags
         )
-        answer_class = "ANSWER_CONFIDENT" if result["status"] == "ANSWER_HIGH_CONFIDENCE" else "ANSWER_LOW_CONFIDENCE"
+        
+        # P3: Override status with correct confidence-based label (FIX: was using Monte Carlo status instead of confidence-based)
+        # Correct status labeling based on new thresholds (HIGH ≥75%, MEDIUM 55-74%, LOW <55%)
+        confidence_val = result.get("confidence", 0.0)
+        if confidence_val >= 75:
+            result["status"] = "ANSWER_HIGH_CONFIDENCE"
+            answer_class = "ANSWER_HIGH_CONFIDENCE"
+        elif confidence_val >= 55:
+            result["status"] = "ANSWER_MEDIUM_CONFIDENCE"
+            answer_class = "ANSWER_MEDIUM_CONFIDENCE"
+        else:
+            result["status"] = "ANSWER_LOW_CONFIDENCE"
+            answer_class = "ANSWER_LOW_CONFIDENCE"
 
         out = {
             "status": result["status"],
