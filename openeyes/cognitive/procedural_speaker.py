@@ -7,8 +7,12 @@ Guarantees core facts never change, only the linguistic wrapping varies.
 import random
 from typing import Dict, List, Optional, Any
 from pathlib import Path
+import sys
 
-from openeyes.cognitive.linguistic_genome import LinguisticGenome, AtomicFact
+# Add cognitive directory to path
+sys.path.insert(0, str(Path(__file__).parent))
+
+from linguistic_genome import LinguisticGenome, AtomicFact
 
 
 class ProceduralSpeaker:
@@ -116,29 +120,20 @@ class ProceduralSpeaker:
         return 'exploratory'
     
     def speak(self, query: str, fragments: List[Any], **kwargs) -> str:
-        """
-        Generate human-like response from verified fragments.
-        
-        Args:
-            query: User's question (used for intent detection)
-            fragments: List of verified fact fragments
-            **kwargs: Optional overrides for components
-            
-        Returns:
-            Natural language response with infinite variance
-        """
+        """Generate human-like response from verified fragments."""
         if not fragments:
             return "I don't have verified information on that topic."
         
-        # Extract components from fragments
-        components = self._extract_components_from_fragments(fragments)
+        # Extract fact from fragment dict
+        fact = None
+        analogy = None
+        for frag in fragments:
+            if isinstance(frag, dict):
+                if not fact and "content" in frag:
+                    fact = frag["content"]
+                if not analogy and "analogy" in frag and frag["analogy"]:
+                    analogy = frag["analogy"]
         
-        # Override with kwargs if provided
-        for key in ['fact', 'mechanism', 'impact', 'analogy', 'counterpoint']:
-            if kwargs.get(key):
-                components[key] = kwargs[key]
-        
-        fact = components.get("fact")
         if not fact:
             return "I don't have verified information on that topic."
         
@@ -150,11 +145,11 @@ class ProceduralSpeaker:
         
         response = self.genome.generate(
             fact_text=fact,
-            mechanism=components.get("mechanism"),
-            impact=components.get("impact"),
-            analogy=components.get("analogy"),
+            mechanism=None,
+            impact=None,
+            analogy=analogy,
             intent=intent,
-            domain=components.get("domain", "general")
+            domain="general"
         )
         
         return response
