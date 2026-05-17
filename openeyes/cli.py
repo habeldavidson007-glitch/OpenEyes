@@ -10,16 +10,13 @@ if __package__ in {None, ""}:
 
 import click
 from rich import print
+from rich.live import Live
 from rich.panel import Panel
 from rich.table import Table
-from rich.live import Live
-from rich.spinner import Spinner
-
 
 from openeyes.config import audit_dir, vault_root
 from openeyes.core.engine import OpenEyesEngine
 from openeyes.storage.binary_lib import cleanup_obsidian_vault
-
 
 LOADING_STAGES = [
     ("Decomposing query...", 0.3),
@@ -30,10 +27,15 @@ LOADING_STAGES = [
 ]
 
 
+class CLIContext:
+    def __init__(self, json_mode: bool = False):
+        self.json_mode = json_mode
+
+
 def stream_loading(stages=LOADING_STAGES):
     """Display loading stages with spinner animation."""
     for message, duration in stages:
-        with Live(f"[cyan]⟳ {message}[/cyan]", refresh_per_second=10, transient=True) as live:
+        with Live(f"[cyan]⟳ {message}[/cyan]", refresh_per_second=10, transient=True):
             time.sleep(duration)
 
 
@@ -53,49 +55,101 @@ def typewriter_output(text: str, speed: float = 0.015):
     print()
 
 
+def emit(ctx: CLIContext, payload: dict, pretty_text: str | None = None) -> None:
+    if ctx.json_mode:
+        print(json.dumps(payload, indent=2))
+        return
+    if pretty_text is not None:
+        print(pretty_text)
+        return
+    print(payload)
+
+
 @click.group()
-def cli() -> None:
+@click.option("--json", "json_mode", is_flag=True, help="Emit machine-readable JSON for all commands")
+@click.pass_context
+def cli(ctx: click.Context, json_mode: bool) -> None:
     """OpenEyes deterministic chaos reasoning engine."""
+    ctx.obj = CLIContext(json_mode=json_mode)
 
 
-@cli.command()
-@click.argument("query")
-@click.option("--domain", default=None, help="Optional explicit domain override")
-@click.option("--json-output", is_flag=True, help="Print raw JSON output")
-@click.option("--explain", is_flag=True, help="Show inference metadata and narrative trace")
-@click.option("--debug", is_flag=True, help="Alias for --explain")
-def query(query: str, domain: str | None, json_output: bool, explain: bool, debug: bool) -> None:
-    # Show loading animation
-    stream_loading()
-    
+def _run_query(ctx: CLIContext, query: str, domain: str | None, explain: bool, debug: bool) -> None:
+    if not ctx.json_mode:
+        stream_loading()
+
     engine = OpenEyesEngine()
     result = engine.answer(query=query, domain=domain)
-    if json_output:
-        print(json.dumps(result, indent=2))
-        return
-    
+
     answer_text = result.get("answer", "")
-    
-    # Use typewriter effect for answer
+    if ctx.json_mode:
+        emit(ctx, result)
+        return
+
     if not explain and not debug:
-        # Print answer with typewriter effect
         typewriter_output(answer_text)
-        
-        # Print confidence
         print(f"\n[cyan]Confidence: {result.get('confidence', 0)}%[/cyan]")
         return
 
-    if debug or explain:
-        table = Table(title="OpenEyes Inference (Debug)")
-        table.add_column("Field", style="cyan")
-        table.add_column("Value", style="white")
-        for k in ["domain", "status", "answer_class", "confidence", "data_recency_years"]:
-            table.add_row(k, str(result.get(k)))
-        table.add_row("ingested", "YES")
-        print(table)
-        n = result.get("narrative", {})
-        if n:
-            print(Panel(json.dumps(n, indent=2), title="Narrative", border_style="blue"))
+    table = Table(title="OpenEyes Inference (Debug)")
+    table.add_column("Field", style="cyan")
+    table.add_column("Value", style="white")
+    for k in ["domain", "status", "answer_class", "confidence", "data_recency_years"]:
+        table.add_row(k, str(result.get(k)))
+    table.add_row("ingested", "YES")
+    print(table)
+    n = result.get("narrative", {})
+    if n:
+        print(Panel(json.dumps(n, indent=2), title="Narrative", border_style="blue"))
+
+
+@cli.command(name="ask")
+@click.argument("query")
+@click.option("--domain", default=None, help="Optional explicit domain override")
+@click.option("--explain", is_flag=True, help="Show inference metadata and narrative trace")
+@click.option("--debug", is_flag=True, help="Alias for --explain")
+@click.pass_obj
+def ask(ctx: CLIContext, query: str, domain: str | None, explain: bool, debug: bool) -> None:
+    _run_query(ctx, query, domain, explain, debug)
+
+
+@cli.command(name="query", hidden=True)
+@click.argument("query")
+@click.option("--domain", default=None, help="Optional explicit domain override")
+@click.option("--json-output", is_flag=True, help="Deprecated alias. Use global --json")
+@click.option("--explain", is_flag=True, help="Show inference metadata and narrative trace")
+@click.option("--debug", is_flag=True, help="Alias for --explain")
+@click.pass_obj
+def query_legacy(ctx: CLIContext, query: str, domain: str | None, json_output: bool, explain: bool, debug: bool) -> None:
+    if json_output:
+        ctx.json_mode = True
+    _run_query(ctx, query, domain, explain, debug)
+
+
+@cli.command()
+@click.pass_obj
+def doctor(ctx: CLIContext) -> None:
+    vault = vault_root()
+    audit = audit_dir()
+    checks = {
+        "python": sys.version.split()[0],
+        "vault_root_exists": vault.exists(),
+        "audit_dir_exists": audit.exists(),
+        "audit_file_count": len(list(audit.glob("audit_log*.md"))) if audit.exists() else 0,
+    }
+    emit(ctx, checks)
+
+
+@cli.command()
+@click.pass_obj
+def config(ctx: CLIContext) -> None:
+    payload = {"vault_root": str(vault_root()), "audit_dir": str(audit_dir())}
+    emit(ctx, payload)
+
+
+@cli.command()
+@click.pass_obj
+def version(ctx: CLIContext) -> None:
+    emit(ctx, {"version": "0.1.0"}, pretty_text="OpenEyes 0.1.0")
 
 
 @cli.command()

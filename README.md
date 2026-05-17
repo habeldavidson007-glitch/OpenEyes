@@ -170,19 +170,19 @@ python -m openeyes.cli --help
 ### 1) Ask a query
 ```bash
 # Economy domain
-openeyes query "What are the effects of quantitative easing on inflation?" --domain economy
+openeyes ask "What are the effects of quantitative easing on inflation?" --domain economy
 
 # Healthcare domain
-openeyes query "What are the first-line treatments for type 2 diabetes?" --domain healthcare
+openeyes ask "What are the first-line treatments for type 2 diabetes?" --domain healthcare
 
 # Governance domain
-openeyes query "How does the legislative process work in the US Congress?" --domain governance
+openeyes ask "How does the legislative process work in the US Congress?" --domain governance
 
 # Science & Technology domain
-openeyes query "Explain the fundamentals of quantum entanglement" --domain sat
+openeyes ask "Explain the fundamentals of quantum entanglement" --domain sat
 
 # Cross-domain query
-openeyes query "What is the relationship between climate policy and energy markets?" --domain economy
+openeyes ask "What is the relationship between climate policy and energy markets?" --domain economy
 ```
 
 ### 2) Trigger consolidation/cleanup
@@ -193,9 +193,17 @@ openeyes sleep
 ### 3) Check runtime status
 ```bash
 openeyes status
+openeyes doctor
+openeyes config
+openeyes version
 ```
 
-### 4) API placeholder
+### 4) JSON mode for desktop or scripting
+```bash
+openeyes --json ask "Summarize inflation risks" --domain economy
+```
+
+### 5) API placeholder
 ```bash
 openeyes serve --port 8080
 ```
