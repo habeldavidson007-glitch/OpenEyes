@@ -537,8 +537,18 @@ class LinguisticGenome:
             else:
                 consecutive_marker_count = 0
             
-            # Probabilistic inclusion
-            if random.random() > probability:
+            # CRITICAL: Ensure we always get a complete clause (subject + verb + object/predicate)
+            # If we're at the end of the blueprint and haven't completed a clause, force inclusion
+            is_last_step = (step == blueprint[-1])
+            has_subject = last_role_added == "subject"
+            has_verb = last_role_added == "verb"
+            needs_object = has_subject and has_verb  # Need object/predicate to complete clause
+            
+            # Probabilistic inclusion - but ALWAYS include core clause components
+            if role in ["subject", "verb"] and not last_role_added:
+                # Force include subject and verb if nothing added yet
+                pass  # Don't skip
+            elif random.random() > probability and not (needs_object and role in ["object", "impact"]):
                 continue
             
             if role == "opener":
@@ -751,8 +761,16 @@ class LinguisticGenome:
             
             elif role == "closer":
                 closer_options = self.dna["clusters"]["closings"].get("summary", [])
-                if closer_options and random.random() > 0.5:
+                # Only add closer if we have a complete sentence already (has verb + object or predicate)
+                has_complete_clause = (last_role_added in ["object", "impact", "analogy_end"] or 
+                                      (last_role_added == "verb" and atomic.verb.lower() in ['is', 'are', 'was', 'were']))
+                if closer_options and random.random() > 0.5 and has_complete_clause:
                     closer = self._weighted_choice([(c["text"], c["weight"]) for c in closer_options])
+                    # Ensure proper punctuation before closer
+                    if tokens and not tokens[-1].endswith(('.', ',', ' ', '?', '!')):
+                        tokens.append('. ')
+                    elif tokens and not tokens[-1].endswith(' '):
+                        tokens.append(' ')
                     tokens.append(closer)
                     last_role_added = "closer"
             
@@ -877,6 +895,32 @@ class LinguisticGenome:
         
         # Ensure sentence ends with proper punctuation
         text = text.strip()
+        
+        # Remove trailing fragments that are incomplete (e.g., "The bottom-line impact:", "This cascades into:")
+        trailing_fragment_patterns = [
+            r'\s+The\s+(bottom-line\s+)?impact:\s*$',
+            r'\s+This\s+cascades\s+into:\s*$',
+            r'\s+which\s+is\s+worth\s+noting\s*,?\s*$',
+            r'\s+as\s+the\s+evidence\s+suggests\s*$',
+            r'\s+if\s+we\s+examine\s+this\s+closely\s*$',
+            r'\s+from\s+a\s+structural\s+perspective\s*$',
+            r'\s+when\s+you\s+look\s+at\s+the\s+data\s*$',
+            r'\s+essentially\s*$',
+            r'\s+fundamentally\s*$',
+            r'\s+in\s+practice\s*$',
+            r'\s+This\s+means\s+that\s*$',
+            r'\s+The\s+ripple\s+effect\s+is:\s*$',
+            r'\s+For\s+everyday\s+people,\s*$',
+            r'\s+Make\s+sense\?$',
+            r'\s+Let\s+me\s+know\s+if\s+you\s+need\s+more\s+detail\.?$'
+        ]
+        for pattern in trailing_fragment_patterns:
+            text = re.sub(pattern, '.', text, flags=re.IGNORECASE)
+        
+        # Fix verb stutter from consecutive connectors (e.g., "Consequently. This is exactly" -> "Consequently, this is exactly")
+        text = re.sub(r'\b(Consequently|Therefore|Thus|Hence)\.\s+This\s+is\s+exactly', r'\1, this is exactly', text, flags=re.IGNORECASE)
+        text = re.sub(r'\b(Consequently|Therefore|Thus|Hence)\.\s+The\s+same\s+principle', r'\1, the same principle', text, flags=re.IGNORECASE)
+        
         if text and not text.endswith(('.', '?', '!')):
             # Check if it ends with a discourse marker that shouldn't have a period
             if not text.lower().endswith(('essentially', 'basically', 'practically speaking')):
