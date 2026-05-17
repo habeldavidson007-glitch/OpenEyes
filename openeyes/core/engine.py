@@ -264,6 +264,8 @@ class OpenEyesEngine:
         }
         
         # Write audit log
-        write_audit_log(result)
+        from pathlib import Path
+        from openeyes.config import audit_dir
+        write_audit_log(audit_dir(), query, result)
         
         return result

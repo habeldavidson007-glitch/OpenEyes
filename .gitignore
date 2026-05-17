@@ -1,1 +1,14 @@
-Nothing should be ignored based on the provided file changes, as they only include Python source files (.py) which are legitimate code files to track in version control.
+```
+# Test results and logs
+test_output_full.txt
+test_results/
+
+# Archive directories
+archive/
+
+# Evolution data
+evolution_data/
+
+# IDE and editor files
+.openeyes/
+```

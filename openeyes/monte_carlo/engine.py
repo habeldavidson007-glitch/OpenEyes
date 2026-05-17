@@ -19,14 +19,25 @@ class MonteCarloEngine:
         digest = hashlib.sha256(f"{domain}::{query}".encode("utf-8")).digest()
         return int.from_bytes(digest[:8], "big") % (2**32)
 
-    def run(self, query: str, domain: str, fragments: list[Fragment]) -> dict:
+    def run(self, query: str, domain: str, fragments) -> dict:
         sub_questions = decompose_query(query)
         agents = 1024  # power-of-two for Sobol balance
         seed = self.stable_seed(query, domain)
         pcg = PCG64(seed=seed)
         sobol = sobol_vectors(agents, dim=2)
         noise = box_muller(pcg.random(agents), sobol[:, 1])
-        scores = dual_roll_score(domain, fragments, noise)
+        
+        # Extract Fragment objects from RetrievalRecord if needed
+        fragment_objects = []
+        for f in fragments:
+            if hasattr(f, 'fragment'):
+                # It's a RetrievalRecord, extract the Fragment
+                fragment_objects.append(f.fragment)
+            else:
+                # It's already a Fragment
+                fragment_objects.append(f)
+        
+        scores = dual_roll_score(domain, fragment_objects, noise)
 
         converged = False
         for _ in range(16):
@@ -34,12 +45,12 @@ class MonteCarloEngine:
                 converged = True
                 break
             z = box_muller(pcg.random(agents), pcg.random(agents))
-            scores = 0.9 * scores + 0.1 * dual_roll_score(domain, fragments, z)
+            scores = 0.9 * scores + 0.1 * dual_roll_score(domain, fragment_objects, z)
 
         th = DOMAIN_THRESHOLDS.get(domain, {"min_score": 60.0, "require_counter": False})
         confidence = float(np.mean(scores))
-        has_counter = any(f.limitations for f in fragments)
-        provenance_ok = all(f.provenance_ok() for f in fragments)
+        has_counter = any(getattr(f, 'limitations', []) for f in fragment_objects)
+        provenance_ok = all(getattr(f, 'provenance_ok', lambda: True)() if callable(getattr(f, 'provenance_ok', None)) else getattr(f, 'provenance_ok', True) for f in fragment_objects)
 
         if not fragments:
             abstention = "HALT_LOW_EVIDENCE"
