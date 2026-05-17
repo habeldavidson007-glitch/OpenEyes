@@ -157,6 +157,18 @@ OpenEyes follows a strict product sequence:
 
 This keeps the engine reliable and avoids desktop-specific logic leaking into core reasoning.
 
+## ZIP Download: No venv Required
+
+If users download OpenEyes as a ZIP, extract and run:
+
+```bash
+python run_openeyes.py --help
+python run_openeyes.py doctor
+python run_openeyes.py ask "How does inflation affect bond prices?" --domain economy
+```
+
+`run_openeyes.py` auto-installs missing dependencies locally into `.openeyes/vendor` (inside the extracted folder), so users do not need to manually create a virtual environment.
+
 ## Fast Install (Recommended)
 
 For end users who want the easiest path:
