@@ -467,6 +467,8 @@ class LinguisticGenome:
         
         # Build sentence token by token
         tokens = []
+        last_role_added = None
+        consecutive_marker_count = 0
         
         # Voice variation (30% passive for variety)
         use_passive = random.random() < 0.3
@@ -479,6 +481,19 @@ class LinguisticGenome:
             role = step["role"]
             probability = step["probability"]
             
+            # ANTI-STUTTER: Skip if we just added the same type of marker
+            if role in ["discourse_marker", "filler", "opener", "closer"]:
+                if last_role_added == role:
+                    # 70% chance to skip consecutive similar roles
+                    if random.random() < 0.7:
+                        continue
+                consecutive_marker_count += 1
+                if consecutive_marker_count > 2:
+                    # Force skip after 3 consecutive markers
+                    continue
+            else:
+                consecutive_marker_count = 0
+            
             # Probabilistic inclusion
             if random.random() > probability:
                 continue
@@ -488,22 +503,56 @@ class LinguisticGenome:
                 if opener_options:
                     opener = self._weighted_choice([(o["text"], o["weight"]) for o in opener_options])
                     tokens.append(opener)
+                    last_role_added = "opener"
             
             elif role == "subject":
-                subj = atomic.subject.strip().capitalize()
-                if subj and subj.lower() not in ['this', 'it', 'that']:
+                subj = atomic.subject.strip()
+                if not subj:
+                    continue
+                    
+                # Capitalize properly - only first letter, rest as-is unless all caps
+                if subj[0].islower():
+                    subj = subj[0].upper() + subj[1:]
+                
+                if subj.lower() not in ['this', 'it', 'that']:
                     tokens.append(subj)
+                    last_role_added = "subject"
                 elif atomic.object_phrase:
                     # Use first part of object as subject if subject is weak
                     parts = atomic.object_phrase.split(' ', 2)
-                    if len(parts) > 0:
-                        tokens.append(parts[0].capitalize())
+                    if len(parts) > 0 and parts[0].lower() not in ['increased', 'decreased', 'risen', 'fallen']:
+                        subj_candidate = parts[0].capitalize()
+                        tokens.append(subj_candidate)
+                        last_role_added = "subject"
+                    else:
+                        # Fall back to atomic subject even if weak
+                        tokens.append(atomic.subject.strip().capitalize())
+                        last_role_added = "subject"
                 else:
                     tokens.append("This")
+                    last_role_added = "subject"
             
             elif role == "verb":
                 # Get base verb and apply variation
                 base_verb = atomic.verb.strip()
+                
+                # Handle special case: if verb is just "is/are/was/were" and object is an adjective like "normal"
+                # we should keep the verb as-is or use a synonym for "is"
+                if base_verb.lower() in ['is', 'are', 'was', 'were']:
+                    # Check if object_phrase is a predicate adjective
+                    predicate_adjectives = ['normal', 'stable', 'volatile', 'high', 'low', 'critical', 'dangerous', 'safe']
+                    if atomic.object_phrase and atomic.object_phrase.strip().lower() in predicate_adjectives:
+                        # Use "is" or a variant - don't skip
+                        if base_verb.lower() == 'is':
+                            tokens.append('is')
+                        else:
+                            tokens.append(base_verb)
+                        last_role_added = "verb"
+                        continue  # Done with verb role
+                
+                # Skip if verb is empty
+                if not base_verb:
+                    continue
                 
                 # Handle compound verbs like "have risen", "has increased"
                 aux_verbs = ["have", "has", "had", "is", "are", "was", "were"]
@@ -516,32 +565,72 @@ class LinguisticGenome:
                         main_verb = base_verb[len(aux)+1:].strip()
                         break
                 
-                # Get synonym for main verb - handle plural/singular forms
-                verb_variant = self._get_verb_variant(main_verb)
+                # If main_verb is empty after extracting auxiliary, use object_phrase to infer
+                if not main_verb or main_verb.lower() in ['is', 'are', 'was', 'were', 'be', 'been', 'being']:
+                    # Check if object_phrase contains the actual verb
+                    if atomic.object_phrase:
+                        obj_lower = atomic.object_phrase.lower()
+                        if 'increased' in obj_lower or 'rise' in obj_lower or 'risen' in obj_lower:
+                            main_verb = 'increase'
+                        elif 'decreased' in obj_lower or 'fall' in obj_lower or 'fallen' in obj_lower:
+                            main_verb = 'decrease'
+                        elif 'grown' in obj_lower or 'grow' in obj_lower:
+                            main_verb = 'grow'
                 
-                if use_passive and auxiliary:
-                    tokens.append(f"is {verb_variant}")
-                elif auxiliary:
-                    # Keep the auxiliary with proper form
-                    tokens.append(f"{auxiliary} {verb_variant}")
-                elif use_passive:
-                    tokens.append(f"is {verb_variant}")
-                else:
-                    tokens.append(verb_variant)
+                # Get synonym for main verb - handle plural/singular forms
+                if main_verb and main_verb.lower() not in ['is', 'are', 'was', 'were', 'be', 'been', 'being']:
+                    verb_variant = self._get_verb_variant(main_verb)
+                    
+                    if use_passive and auxiliary:
+                        tokens.append(f"is {verb_variant}")
+                    elif auxiliary:
+                        # Keep the auxiliary with proper form
+                        tokens.append(f"{auxiliary} {verb_variant}")
+                    elif use_passive:
+                        tokens.append(f"is {verb_variant}")
+                    else:
+                        tokens.append(verb_variant)
+                    last_role_added = "verb"
+                elif base_verb.lower() not in ['is', 'are', 'was', 'were']:
+                    # Fallback: use the original verb if we couldn't process it
+                    tokens.append(base_verb)
+                    last_role_added = "verb"
             
             elif role == "object":
                 obj_text = atomic.object_phrase.strip()
+                
+                # Skip if object is empty
+                if not obj_text:
+                    continue
+                
                 # Remove any leading verb remnants
                 for aux in ["have", "has", "had", "is", "are", "was", "were"]:
                     if obj_text.lower().startswith(aux + " "):
                         obj_text = obj_text[len(aux)+1:].strip()
                         break
                 
+                # Skip if after cleaning, object is empty or just a verb form
+                if not obj_text or obj_text.lower() in ['increased', 'decreased', 'risen', 'fallen', 'normal', 'grown', 'shrunk']:
+                    # If the object is just a predicate adjective like "normal", we need to keep it
+                    # but only if we have a proper verb before it
+                    if obj_text.lower() == 'normal' and last_role_added == 'verb':
+                        pass  # Keep it, it's a valid predicate
+                    elif obj_text.lower() in ['increased', 'decreased', 'risen', 'fallen', 'grown', 'shrunk']:
+                        # This is a verb, skip as it should have been handled in verb role
+                        continue
+                    else:
+                        continue
+                
+                # If we already added a verb and object looks like a duplicate, be careful
+                if last_role_added == "verb" and obj_text.lower() in ['increased', 'decreased', 'risen', 'fallen']:
+                    continue
+                
                 if atomic.metric and atomic.metric in obj_text:
                     obj_text = obj_text.replace(atomic.metric, f"a notable {atomic.metric}")
                 
                 if obj_text:
                     tokens.append(obj_text)
+                    last_role_added = "object"
             
             elif role == "connector":
                 connector_type = "definition_to_mechanism" if mechanism else "fact_to_impact"
@@ -549,49 +638,56 @@ class LinguisticGenome:
                 if connectors:
                     conn = self._weighted_choice([(c["text"], c["weight"]) for c in connectors])
                     tokens.append(conn)
+                    last_role_added = "connector"
             
             elif role == "mechanism" and mechanism:
                 tokens.append(mechanism.strip())
+                last_role_added = "mechanism"
             
             elif role == "impact" and impact:
                 tokens.append(impact.strip())
+                last_role_added = "impact"
             
             elif role == "analogy_intro" and analogy:
                 analogy_intros = self.dna["clusters"]["connectors"].get("analogy_intro", [])
                 if analogy_intros:
                     intro = self._weighted_choice([(a["text"], a["weight"]) for a in analogy_intros])
                     tokens.append(intro)
+                    last_role_added = "analogy_intro"
             
             elif role == "analogy" and analogy:
                 tokens.append(analogy.strip())
+                last_role_added = "analogy"
             
             elif role == "discourse_marker":
                 marker = self.inject_discourse_marker()
                 if marker:
                     tokens.append(f"{marker}, ")
+                    last_role_added = "discourse_marker"
             
             elif role == "fact_bridge":
                 bridges = ["This is exactly what happens when", "The same principle applies:", "Here's the connection:"]
                 tokens.append(f"{random.choice(bridges)} ")
+                last_role_added = "fact_bridge"
             
             elif role == "closer":
                 closer_options = self.dna["clusters"]["closings"].get("summary", [])
                 if closer_options and random.random() > 0.5:
                     closer = self._weighted_choice([(c["text"], c["weight"]) for c in closer_options])
                     tokens.append(closer)
+                    last_role_added = "closer"
             
             elif role == "filler":
                 if random.random() > 0.6:
                     filler = self._weighted_choice(self.filler_phrases)
                     tokens.append(f"{filler} ")
+                    last_role_added = "filler"
         
         # Vary sentence length
         tokens = self.vary_sentence_length(tokens, target_length)
         
-        # Assemble and clean
-        result = "".join(tokens)
-        result = re.sub(r'\s+', ' ', result)  # Clean multiple spaces
-        result = result.strip()
+        # Assemble with smart spacing
+        result = self._assemble_with_spacing(tokens)
         
         # Ensure proper punctuation
         if result and not result.endswith(('.', '?', '!')):
@@ -602,6 +698,112 @@ class LinguisticGenome:
             result = result[0].upper() + result[1:]
         
         return result
+    
+    def _assemble_with_spacing(self, tokens: List[str]) -> str:
+        """
+        Assembles tokens with intelligent spacing to prevent robotic artifacts.
+        Handles punctuation, double words, and spacing errors.
+        """
+        import re
+        
+        if not tokens:
+            return ""
+        
+        # First pass: join with single spaces, being smart about punctuation
+        assembled = []
+        prev_token = ""
+        
+        for token in tokens:
+            token = token.strip()
+            if not token:
+                continue
+            
+            # Skip if this is a duplicate of the previous word
+            if prev_token and token.lower() == prev_token.lower():
+                continue
+            
+            # Check if previous token ends with punctuation that doesn't need space
+            needs_space = True
+            if prev_token:
+                # No space needed after opening parens or before certain punctuation
+                if prev_token.endswith(('(', '[', '{')):
+                    needs_space = False
+                # Already has trailing space handled
+                elif prev_token.endswith((' ',)):
+                    needs_space = False
+            
+            if assembled and needs_space and not token.startswith((' ', ',', '.', ';', ':', '!', '?')):
+                assembled.append(' ')
+            
+            assembled.append(token)
+            prev_token = token
+        
+        raw_text = ''.join(assembled)
+        
+        # Second pass: Regex cleanup for common artifacts
+        return self._smooth_output(raw_text)
+    
+    def _smooth_output(self, text: str) -> str:
+        """
+        Post-processing cleanup to fix common procedural generation artifacts.
+        """
+        import re
+        
+        if not text:
+            return text
+        
+        # Fix "volatilityis" type errors - missing space between words
+        text = re.sub(r'([a-zA-Z])([A-Z][a-z])', r'\1 \2', text)
+        
+        # Fix double/triple spaces
+        text = re.sub(r'\s+', ' ', text)
+        
+        # Fix missing space after punctuation (e.g., "normal,but" -> "normal, but")
+        text = re.sub(r'([,.:;!?])([A-Za-z])', r'\1 \2', text)
+        
+        # Fix repeated words (e.g., "is is" -> "is", "the the" -> "the")
+        text = re.sub(r'\b(\w+)\s+\1\b', r'\1', text, flags=re.IGNORECASE)
+        
+        # Fix stuttering discourse markers (e.g., "essentially essentially")
+        text = re.sub(r'\b(essentially|basically|fundamentally|in\s+practice|that\s+is)\s*,?\s*\1\b', r'\1', text, flags=re.IGNORECASE)
+        
+        # Remove space before commas/periods
+        text = re.sub(r'\s+([,.:;!?])', r'\1', text)
+        
+        # Ensure space after commas/colons if missing
+        text = re.sub(r'([,:])([A-Za-z])', r'\1 \2', text)
+        
+        # Fix consecutive connectors (e.g., "Consequently, This is exactly" -> keep only one)
+        connector_patterns = [
+            (r'\b(Consequently|Therefore|Thus|Hence|Moreover|Furthermore|Additionally),\s*(This is exactly|The same principle|Here\'s the)', r'\1. \2'),
+            (r'\b(What this translates to is|That means|In other words):\s*(The same principle|Here\'s the|This is exactly)', r'\1. \2')
+        ]
+        for pattern, replacement in connector_patterns:
+            text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+        
+        # Remove trailing punctuation duplicates (e.g., ".." -> ".")
+        text = re.sub(r'([,.!?])\1+', r'\1', text)
+        
+        # Ensure single space before parentheticals if missing
+        text = re.sub(r'(\w)(\()', r'\1 \2', text)
+        
+        # Fix "is iss" type typos
+        text = re.sub(r'\b(is|has|have|was|were)\s+(iss|iss?|iis)\b', r'\1', text, flags=re.IGNORECASE)
+        
+        # Fix mid-sentence capitalization after connectors (optional nouns should be lowercase)
+        # But preserve proper nouns and start of quotes
+        text = re.sub(r'\b(Portfolio volatility|Market volatility|Economic indicator)\b', 
+                     lambda m: m.group(1).lower() if not text.startswith(m.group(1)) else m.group(1), 
+                     text)
+        
+        # Ensure sentence ends with proper punctuation
+        text = text.strip()
+        if text and not text.endswith(('.', '?', '!')):
+            # Check if it ends with a discourse marker that shouldn't have a period
+            if not text.lower().endswith(('essentially', 'basically', 'practically speaking')):
+                text += '.'
+        
+        return text
     
     def _get_verb_variant(self, verb: str) -> str:
         """Get synonym variant for verb with proper conjugation"""

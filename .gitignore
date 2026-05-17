@@ -1,8 +1,47 @@
-```
-# Test reports and results
-openeyes/data/E2E_TEST_REPORT.md
-openeyes/data/e2e_adversarial_results.json
+# Compiled and build artifacts
+*.pyc
+__pycache__/
+*.o
+*.obj
+*.out
+*.class
+*.dll
+*.so
+*.a
+*.exe
 
-# Test files
-openeyes/tests/e2e_adversarial_test.py
-```
+# Dependencies
+.venv/
+venv/
+.env
+.env.local
+*.env.*
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build/dist directories
+dist/
+build/
+target/
+.gradle/
+
+# Python specific
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+
+# System files
+.DS_Store
+Thumbs.db
