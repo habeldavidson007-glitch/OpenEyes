@@ -301,44 +301,78 @@ class LinguisticGenome:
         text = text.strip()
         
         # Detect common patterns - look for subject-verb-object structure
+        # IMPORTANT: Sort by length (longest first) AND use word boundary regex
         verbs_common = [
             "increases", "decreases", "rises", "falls", "shows",
             "causes", "leads", "results", "means", "represents",
             "slows", "accelerates", "grows", "shrinks", "expands",
+            "rising", "falling", "growing", "declining", "increasing", "decreasing",
+            "eroding", "improving", "worsening", "strengthening", "weakening",
             "is", "are", "was", "were", "has", "have", "had"
         ]
         
         verb_found = None
         verb_pos = -1
+        verb_end_pos = -1
         
-        # Sort by length to find longest match first (e.g., "increases" before "is")
+        # Sort by length to find longest match first
         verbs_sorted = sorted(verbs_common, key=len, reverse=True)
         
         for verb in verbs_sorted:
-            # Try to find verb with word boundaries
-            patterns = [
-                f" {verb} ",  # verb with spaces
-                f" {verb}",   # verb at end
-                f"{verb} ",   # verb at start of remaining
-            ]
-            for pattern in patterns:
-                pos = text.lower().find(pattern)
-                if pos > 0 and (verb_pos == -1 or pos < verb_pos):
-                    verb_found = verb
-                    verb_pos = pos
-                    break
-            if verb_found:
-                break
+            # Use regex with word boundaries to avoid matching "is" inside "rising"
+            pattern = r'\b' + re.escape(verb) + r'\b'
+            match = re.search(pattern, text, re.IGNORECASE)
+            
+            if match and match.start() > 0:  # Must not be at position 0 (need a subject before)
+                if verb_pos == -1 or match.start() < verb_pos:
+                    verb_found = match.group(0)
+                    verb_pos = match.start()
+                    verb_end_pos = match.end()
         
         if verb_found and verb_pos > 0:
             subject = text[:verb_pos].strip()
-            rest = text[verb_pos + len(verb_found):].strip()
+            rest = text[verb_end_pos:].strip()
             
             # Clean up leading articles/prepositions from rest
             while rest and rest[0] in ' ':
                 rest = rest[1:]
             
-            # Try to extract object and metrics
+            # Special handling for "is/are/was/were" + adjective/noun (predicate construction)
+            if verb_found.lower() in ['is', 'are', 'was', 'were']:
+                # The rest IS the object/complement - don't try to extract another verb from it
+                object_phrase = rest
+                metric = None
+                timeframe = None
+                
+                # Look for percentages in the complement
+                pct_match = re.search(r'(\d+\.?\d*)\s*%', rest)
+                if pct_match:
+                    metric = f"{pct_match.group(1)}%"
+                
+                # Look for timeframes
+                time_patterns = [
+                    r'(annually|yearly|monthly|weekly|daily)',
+                    r'(over \d+ years?|in \d+ months?|during \d+ weeks?)',
+                    r'(since \d{4}|from \d{4} to \d{4})',
+                    r'(recently|lately|currently|traditionally|typically)',
+                    r'(past \d+ years?|last \d+ months?)'
+                ]
+                for pattern in time_patterns:
+                    time_match = re.search(pattern, rest, re.IGNORECASE)
+                    if time_match:
+                        timeframe = time_match.group(0)
+                        break
+                
+                return AtomicFact(
+                    subject=subject,
+                    verb=verb_found,
+                    object_phrase=object_phrase,
+                    metric=metric,
+                    timeframe=timeframe,
+                    domain=domain
+                )
+            
+            # Try to extract object and metrics for non-copula verbs
             object_phrase = rest
             metric = None
             timeframe = None
