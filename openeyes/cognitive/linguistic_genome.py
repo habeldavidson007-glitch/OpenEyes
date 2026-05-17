@@ -371,7 +371,11 @@ class LinguisticGenome:
             "continues", "continue", "remains", "remain", "stays", "stay",
             "indicates", "indicate", "suggests", "suggest", "signals", "signal",
             "drives", "drive", "pushes", "push", "pulls", "pull",
-            "triggers", "trigger", "sparks", "spark", "fuels", "fuel"
+            "triggers", "trigger", "sparks", "spark", "fuels", "fuel",
+            # Additional common verbs for better coverage
+            "reduces", "reduce", "reducing", "affects", "affect", "affecting",
+            "determines", "determine", "impacts", "impact", "influences", "influence",
+            "correlates", "correlate", "relates", "relate", "links", "link"
         ]
         
         verb_found = None

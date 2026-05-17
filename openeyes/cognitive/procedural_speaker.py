@@ -63,6 +63,22 @@ EMPATHETIC_RESPONSES = [
 ]
 
 
+def detect_crisis(query: str) -> Tuple[Optional[str], bool]:
+    """
+    Standalone function to detect crisis intent.
+    Returns (crisis_type, is_crisis) tuple.
+    Used by test suite and external modules.
+    """
+    query_lower = query.lower()
+    
+    for crisis_type, keywords in CRISIS_KEYWORDS.items():
+        for keyword in keywords:
+            if keyword in query_lower:
+                return crisis_type, True
+    
+    return None, False
+
+
 class ProceduralSpeaker:
     """
     The Engine that takes verified text from fragments,
@@ -215,14 +231,14 @@ class ProceduralSpeaker:
         for frag in fragments:
             # Handle dict type
             if isinstance(frag, dict):
-                if not fact and "content" in frag:
-                    fact = frag["content"]
+                if not fact and ("content" in frag or "fragment_text" in frag):
+                    fact = frag.get("content") or frag.get("fragment_text", "")
                 if not analogy and "analogy" in frag and frag["analogy"]:
                     analogy = frag["analogy"]
             # Handle object type (with attributes)
             else:
                 if not fact:
-                    fact = getattr(frag, "content", getattr(frag, "claim", getattr(frag, "summary", getattr(frag, "text", None))))
+                    fact = getattr(frag, "content", getattr(frag, "claim", getattr(frag, "summary", getattr(frag, "text", getattr(frag, "fragment_text", None)))))
                 if not analogy:
                     analogy = getattr(frag, "analogy", None)
         
@@ -245,6 +261,10 @@ class ProceduralSpeaker:
         )
         
         return response
+    
+    def generate(self, fragments: List[Any], user_query: str = "", **kwargs) -> str:
+        """Alias for speak() - accepts fragments and user_query parameters for test suite compatibility."""
+        return self.speak(user_query, fragments, **kwargs)
     
     def speak_multiple(self, query: str, fragments: List[Any], 
                        count: int = 3) -> List[str]:
