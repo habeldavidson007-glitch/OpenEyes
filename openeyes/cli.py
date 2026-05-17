@@ -26,7 +26,6 @@ LOADING_STAGES = [
     ("Assembling answer...", 0.3),
 ]
 
-
 CLI_SCHEMA_VERSION = "1"
 
 
@@ -36,14 +35,12 @@ class CLIContext:
 
 
 def stream_loading(stages=LOADING_STAGES):
-    """Display loading stages with spinner animation."""
     for message, duration in stages:
         with Live(f"[cyan]⟳ {message}[/cyan]", refresh_per_second=10, transient=True):
             time.sleep(duration)
 
 
 def typewriter_output(text: str, speed: float = 0.015):
-    """Print text character by character at human reading pace."""
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -58,10 +55,14 @@ def typewriter_output(text: str, speed: float = 0.015):
     print()
 
 
-def emit(ctx: CLIContext, payload: dict, pretty_text: str | None = None) -> None:
+def emit(ctx: CLIContext, payload: dict, pretty_text: str | None = None, ok: bool = True, error: dict | None = None) -> None:
     if ctx.json_mode:
-        data = dict(payload)
-        data.setdefault("cli_schema_version", CLI_SCHEMA_VERSION)
+        data = {
+            "ok": ok,
+            "cli_schema_version": CLI_SCHEMA_VERSION,
+            "data": payload,
+            "error": error,
+        }
         print(json.dumps(data, indent=2))
         return
     if pretty_text is not None:
@@ -74,7 +75,6 @@ def emit(ctx: CLIContext, payload: dict, pretty_text: str | None = None) -> None
 @click.option("--json", "json_mode", is_flag=True, help="Emit machine-readable JSON for all commands")
 @click.pass_context
 def cli(ctx: click.Context, json_mode: bool) -> None:
-    """OpenEyes deterministic chaos reasoning engine."""
     ctx.obj = CLIContext(json_mode=json_mode)
 
 
@@ -87,7 +87,7 @@ def _run_query(ctx: CLIContext, query: str, domain: str | None, explain: bool, d
         result = service.ask(query=query, domain=domain).payload
     except Exception as exc:
         if ctx.json_mode:
-            emit(ctx, {"error": {"code": "QUERY_EXECUTION_ERROR", "message": str(exc)}})
+            emit(ctx, {}, ok=False, error={"code": "QUERY_EXECUTION_ERROR", "message": str(exc)})
             return
         raise click.ClickException(f"Query failed: {exc}")
 
@@ -116,8 +116,8 @@ def _run_query(ctx: CLIContext, query: str, domain: str | None, explain: bool, d
 @cli.command(name="ask")
 @click.argument("query")
 @click.option("--domain", default=None, help="Optional explicit domain override")
-@click.option("--explain", is_flag=True, help="Show inference metadata and narrative trace")
-@click.option("--debug", is_flag=True, help="Alias for --explain")
+@click.option("--explain", is_flag=True)
+@click.option("--debug", is_flag=True)
 @click.pass_obj
 def ask(ctx: CLIContext, query: str, domain: str | None, explain: bool, debug: bool) -> None:
     _run_query(ctx, query, domain, explain, debug)
@@ -125,10 +125,10 @@ def ask(ctx: CLIContext, query: str, domain: str | None, explain: bool, debug: b
 
 @cli.command(name="query", hidden=True)
 @click.argument("query")
-@click.option("--domain", default=None, help="Optional explicit domain override")
-@click.option("--json-output", is_flag=True, help="Deprecated alias. Use global --json")
-@click.option("--explain", is_flag=True, help="Show inference metadata and narrative trace")
-@click.option("--debug", is_flag=True, help="Alias for --explain")
+@click.option("--domain", default=None)
+@click.option("--json-output", is_flag=True)
+@click.option("--explain", is_flag=True)
+@click.option("--debug", is_flag=True)
 @click.pass_obj
 def query_legacy(ctx: CLIContext, query: str, domain: str | None, json_output: bool, explain: bool, debug: bool) -> None:
     if json_output:
@@ -153,8 +153,7 @@ def doctor(ctx: CLIContext) -> None:
 @cli.command()
 @click.pass_obj
 def config(ctx: CLIContext) -> None:
-    payload = {"vault_root": str(vault_root()), "audit_dir": str(audit_dir())}
-    emit(ctx, payload)
+    emit(ctx, {"vault_root": str(vault_root()), "audit_dir": str(audit_dir())})
 
 
 @cli.command()

@@ -22,8 +22,12 @@ def test_doctor_json_schema() -> None:
     result = runner.invoke(cli, ["--json", "doctor"])
     assert result.exit_code == 0
     payload = json.loads(result.output)
-    for key in ["python", "vault_root_exists", "audit_dir_exists", "audit_file_count", "cli_schema_version"]:
-        assert key in payload
+    assert payload["ok"] is True
+    assert payload["error"] is None
+    data = payload["data"]
+    for key in ["python", "vault_root_exists", "audit_dir_exists", "audit_file_count"]:
+        assert key in data
+    assert payload["cli_schema_version"] == "1"
 
 
 def test_config_json_schema() -> None:
@@ -31,8 +35,9 @@ def test_config_json_schema() -> None:
     result = runner.invoke(cli, ["--json", "config"])
     assert result.exit_code == 0
     payload = json.loads(result.output)
-    assert "vault_root" in payload
-    assert "audit_dir" in payload
+    assert payload["ok"] is True
+    assert "vault_root" in payload["data"]
+    assert "audit_dir" in payload["data"]
 
 
 def test_version_modes() -> None:
@@ -44,7 +49,7 @@ def test_version_modes() -> None:
     machine = runner.invoke(cli, ["--json", "version"])
     assert machine.exit_code == 0
     payload = json.loads(machine.output)
-    assert payload["version"] == "0.1.0"
+    assert payload["data"]["version"] == "0.1.0"
 
 
 def test_legacy_query_is_hidden_from_help() -> None:
@@ -60,3 +65,4 @@ def test_json_schema_version_in_version_command() -> None:
     assert result.exit_code == 0
     payload = json.loads(result.output)
     assert payload["cli_schema_version"] == "1"
+    assert payload["ok"] is True

@@ -163,7 +163,7 @@ If users download OpenEyes as a ZIP, extract and run:
 
 ```bash
 python run_openeyes.py --help
-python run_openeyes.py doctor
+python run_openeyes.py --no-install doctor
 python run_openeyes.py ask "How does inflation affect bond prices?" --domain economy
 ```
 
