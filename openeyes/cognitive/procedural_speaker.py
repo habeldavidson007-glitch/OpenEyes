@@ -124,15 +124,23 @@ class ProceduralSpeaker:
         if not fragments:
             return "I don't have verified information on that topic."
         
-        # Extract fact from fragment dict
+        # Extract fact from fragment (handles both dict and object types)
         fact = None
         analogy = None
+        
         for frag in fragments:
+            # Handle dict type
             if isinstance(frag, dict):
                 if not fact and "content" in frag:
                     fact = frag["content"]
                 if not analogy and "analogy" in frag and frag["analogy"]:
                     analogy = frag["analogy"]
+            # Handle object type (with attributes)
+            else:
+                if not fact:
+                    fact = getattr(frag, "content", getattr(frag, "claim", getattr(frag, "summary", getattr(frag, "text", None))))
+                if not analogy:
+                    analogy = getattr(frag, "analogy", None)
         
         if not fact:
             return "I don't have verified information on that topic."
