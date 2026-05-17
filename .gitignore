@@ -1,10 +1,38 @@
-```gitignore
-# Compiled and binary files
-*.bin
+```
+# Test results and data files
+openeyes/data/*.json
 
-# Dependencies and build artifacts
-.openeyes/
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Logs and temp files
+# Environment files
+.env
+.env.local
+.env.*
+
+# Logs
 *.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage reports
+.coverage
+coverage/
+htmlcov/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
 ```
