@@ -1,370 +1,329 @@
-# OpenEyes
+# 👁️ OpenEyes - High-Stakes Reasoning Engine
 
-> **Deterministic reasoning for high‑stakes questions.**  
-> OpenEyes combines fragment-based logic, quasi-random exploration, and strict abstention rules to answer only when confidence is earned.
+A sophisticated AI reasoning engine with autonomous swarm agents, designed for high-stakes question answering across multiple domains including economics, healthcare, governance, history, and satellite data analysis.
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](#)
-[![NumPy](https://img.shields.io/badge/NumPy-Required-013243.svg)](#)
-[![SciPy](https://img.shields.io/badge/SciPy-Required-8CAAE6.svg)](#)
-[![Status](https://img.shields.io/badge/Mode-Safety%20First-success.svg)](#)
-[![Coverage](https://img.shields.io/badge/Fragments-9,189-success.svg)](#)
-[![Domains](https://img.shields.io/badge/Domains-8%20Complete-blue.svg)](#)
+## Key Features
 
----
+- **Autonomous Signal-Pulse Swarm**: 2000+ bio-inspired agents that continuously harvest and index knowledge
+- **Multi-Domain Knowledge Base**: Pre-indexed fragments across economy, healthcare, governance, history, education, philosophy, social sciences, and satire
+- **WAL Buffer System**: Write-Ahead Log for zero-latency access to pre-computed swarm data
+- **Monte Carlo Confidence Evaluation**: Statistical confidence scoring for all answers
+- **Procedural Linguistic Manifestor**: Generates natural, varied human-like responses from verified facts
+- **Live Audit Logging**: Complete traceability of all reasoning decisions
+- **Graceful Degradation**: Handles incomplete information safely with appropriate warnings
+- **Fragment-Based Retrieval**: Efficient semantic search across thousands of knowledge fragments
 
-## Why OpenEyes?
+## System Requirements
 
-Most systems are optimized to always respond. OpenEyes is optimized to **respond responsibly**.
+- **Operating System**: Linux (tested on Ubuntu/Xubuntu 20.04+), macOS, or Windows with WSL
+- **Python**: Version 3.10 or higher (3.12 recommended)
+- **RAM**: Minimum 4GB, 8GB+ recommended for swarm operations
+- **Disk Space**: ~1GB for code, knowledge base, and WAL buffer
+- **Dependencies**: Git, pip, SQLite3
 
-- 🧠 **Brain vs. Muscle**: Python orchestrates reasoning; NumPy/SciPy performs the numerical evolution.
-- 🛡️ **Safety-first abstention**: If evidence, provenance, or convergence is weak, OpenEyes returns `HALT_*` instead of hallucinating.
-- 🎯 **Deterministic chaos**: Sobol + PCG + Box-Muller provide broad, reproducible exploration without naive randomness.
-- 🧾 **Auditability built-in**: Every run can produce signed, canonical audit artifacts for traceability.
-- 📚 **Comprehensive Knowledge Base**: 9,189 verified fragments across 8 domains and 46 sectors.
+## Step-by-Step Installation Guide for Xubuntu
 
----
+### Step 1: Update Your System
 
-## Core Principles
-
-1. **Determinism over drift** — reproducible seeds and replay metadata.
-2. **Evidence over eloquence** — fragments, credibility, provenance.
-3. **Abstain over bluff** — explicit HALT classes when confidence is insufficient.
-4. **Structure over sprawl** — modular architecture and domain-aware thresholds.
-5. **Three-role completeness** — every fragment includes definition, counter_argument, and latest_data.
-
----
-
-## Knowledge Base: Complete Domain Map
-
-**Total**: 9,189 fragments across 8 domains and 46 sectors
-
-| Domain | Code | Sectors | Fragments | Target | Status | Primary Sources |
-|--------|------|---------|-----------|--------|--------|-----------------|
-| **Economy** | ECO | 6 | 1,639 | 1,850 | 88.6% | Federal Reserve, SEC, BLS, BEA, FRED, EIA, USDA, World Bank, IMF, WTO, OPEC |
-| **Healthcare** | HC | 4 | 1,401 | 1,100 | ✓ 127.4% | PubMed, NICE, WHO, CDC, FDA, NIH, EMA, APA, Mayo Clinic |
-| **Governance** | GOV | 9 | 1,353 | 1,450 | 93.3% | Congress.gov, Federal Register, Supreme Court, UN Treaty Database, ICJ, CRS, WTO, CFR, Brookings, RAND |
-| **Science & Technology** | SAT | 7 | 1,311 | 1,300 | ✓ 100.8% | ArXiv, NASA, NIST, NSF, Nature, Science, IEEE, IPCC, NOAA, USGS |
-| **History** | HIS | 6 | 1,000 | 1,000 | ✓ 100.0% | Academic journals, University Press, Library of Congress, National Archives, archive.org |
-| **Philosophy & Ethics** | PHI | 5 | 800 | 800 | ✓ 100.0% | Stanford Encyclopedia of Philosophy, academic philosophy journals |
-| **Social Sciences** | SOC | 5 | 850 | 850 | ✓ 100.0% | Pew Research, OECD, UN Population Division, American Sociological Review, Psychological Science |
-| **Education** | EDU | 4 | 550 | 550 | ✓ 100.0% | OECD PISA, Department of Education, ERIC, American Educational Research Journal |
-| **TOTAL** | **8** | **46** | **9,189** | **~8,900** | **✓ COMPLETE** | |
-
-### Domain Breakdown
-
-#### Tier 1 — Active Domains
-- **Economy (ECO)**: Finance, Macroeconomics, Regulation, Energy, Commodities, Geopolitics
-- **Healthcare (HC)**: Clinical Medicine, Public Health, Pharmaceuticals, Mental Health
-
-#### Tier 2 — Next Domains
-- **Governance (GOV)**: Political Systems, Legislation, Judicial, Substantive Law, IP, International Relations, Security, Electoral, Geopolitical Analysis
-- **Science & Technology (SAT)**: Physics, Biology, Environmental Science, Computer Science/AI, Space, Engineering, Mathematics
-
-#### Tier 3 — Long-term Domains (Complete)
-- **History (HIS)**: Ancient, Medieval, Early Modern, Contemporary, Regional, Historiography
-- **Philosophy & Ethics (PHI)**: Ethics, Logic, Political Philosophy, Philosophy of Mind, History of Philosophy
-- **Social Sciences (SOC)**: Sociology, Psychology, Anthropology, Demographics, Communication
-- **Education (EDU)**: Learning Science, Education Policy, Higher Education, Skills Development
-
----
-
-## Architecture at a Glance
-
-```text
-openeyes/
-├── cli.py                      # query/sleep/status/serve commands
-├── config.py                   # vault root + structured runtime paths
-├── domains/                    # ← NEW: Domain-specific knowledge
-│   ├── economy/                # 6 sectors, 1,639 fragments
-│   ├── healthcare/             # 4 sectors, 1,401 fragments
-│   ├── governance/             # 9 sectors, 1,353 fragments
-│   ├── sat/                    # 7 sectors, 1,311 fragments
-│   ├── his/                    # 6 sectors, 1,000 fragments
-│   ├── phi/                    # 5 sectors, 800 fragments
-│   ├── soc/                    # 5 sectors, 850 fragments
-│   └── edu/                    # 4 sectors, 550 fragments
-├── domain_rules/               # Domain-specific confidence thresholds and rules
-├── core/
-│   ├── decomposition.py        # query decomposition
-│   └── engine.py               # orchestration + answer/HALT flow
-├── swarm/                      # Autonomous agent framework for fragment generation
-├── knowledge/
-│   ├── fragments.py            # fragment schema + provenance checks
-│   └── hierarchies.py          # domain credibility hierarchy
-├── monte_carlo/
-│   ├── rng.py                  # Sobol, PCG, Box-Muller
-│   ├── evaluator.py            # dual-roll scoring
-│   └── engine.py               # deterministic swarm evolution + abstention
-└── storage/
-    ├── vault.py                # signed audit logs
-    └── binary_lib.py           # binary persistence + vault cleanup
-```
-
----
-
-## Fragment Structure
-
-Every fragment in OpenEyes follows a strict three-role format:
-
-```json
-{
-  "id": "ECO-FIN-0001",
-  "domain": "economy",
-  "sector": "fin",
-  "topic": "equity_valuation",
-  "roles": {
-    "definition": {
-      "content": "...",
-      "source": "https://...",
-      "year": 2024,
-      "credibility_score": 0.95
-    },
-    "counter_argument": {
-      "content": "...",
-      "source": "https://...",
-      "year": 2023,
-      "credibility_score": 0.88
-    },
-    "latest_data": {
-      "content": "...",
-      "source": "https://...",
-      "year": 2024,
-      "credibility_score": 0.92
-    }
-  },
-  "tags": ["finance", "valuation", "equity"],
-  "last_updated": "2024-01-15"
-}
-```
-
-This structure ensures:
-- **Completeness**: Multiple perspectives on every topic
-- **Recency**: Time-stamped data with year requirements
-- **Verifiability**: Source URLs and credibility scores
-- **Balance**: Counter-arguments prevent echo chambers
-
----
-
-## Installation
-
-### Recommended (Ubuntu/Debian with PEP 668)
+Open a terminal and update your package lists:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
+sudo apt update && sudo apt upgrade -y
+```
+
+### Step 2: Install Python and Required Dependencies
+
+Install Python 3.10+, pip, development tools, and SQLite support:
+
+```bash
+sudo apt install -y python3 python3-pip python3-venv python3-dev git build-essential libsqlite3-dev
+```
+
+Verify Python version (must be 3.10 or higher):
+
+```bash
+python3 --version
+```
+
+**If your Xubuntu version has Python < 3.10**, install from PPA:
+
+```bash
+sudo apt install -y software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install -y python3.12 python3.12-venv python3.12-dev
+```
+
+### Step 3: Clone the Repository
+
+```bash
+cd ~
+git clone <repository-url> openeyes
+cd openeyes
+```
+
+Or navigate to existing workspace:
+
+```bash
+cd /workspace/openeyes
+```
+
+### Step 4: Create a Virtual Environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+You should see `(venv)` appear at the beginning of your terminal prompt.
+
+### Step 5: Install Project Dependencies
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+If you encounter errors, install core dependencies manually:
+
+```bash
+pip install numpy requests beautifulsoup4 lxml scikit-learn pandas
+```
+
+### Step 6: Install OpenEyes in Development Mode
+
+```bash
 pip install -e .
 ```
 
-### Alternative: run without installing globally
-```bash
-python -m openeyes.cli --help
-```
+This installs the package in "editable" mode for immediate code reflection.
 
-> If you see `externally-managed-environment`, do **not** use system `pip` for this project. Use a virtual environment as above.
+### Step 7: Initialize the Swarm WAL Buffer
 
----
-
-## Quick Start
-
-### 1) Ask a query
-```bash
-# Economy domain
-openeyes query "What are the effects of quantitative easing on inflation?" --domain economy
-
-# Healthcare domain
-openeyes query "What are the first-line treatments for type 2 diabetes?" --domain healthcare
-
-# Governance domain
-openeyes query "How does the legislative process work in the US Congress?" --domain governance
-
-# Science & Technology domain
-openeyes query "Explain the fundamentals of quantum entanglement" --domain sat
-
-# Cross-domain query
-openeyes query "What is the relationship between climate policy and energy markets?" --domain economy
-```
-
-### 2) Trigger consolidation/cleanup
-```bash
-openeyes sleep
-```
-
-### 3) Check runtime status
-```bash
-openeyes status
-```
-
-### 4) API placeholder
-```bash
-openeyes serve --port 8080
-```
-
----
-
-## Output Modes
-
-OpenEyes may return:
-
-- `ANSWER` — Confident response with full provenance
-- `HALT_LOW_EVIDENCE` — Insufficient fragment coverage
-- `HALT_PROVENANCE` — Source credibility below threshold
-- `HALT_NO_COUNTERARG` — Missing counter-argument role
-- `HALT_LOW_CONFIDENCE` — Swarm convergence failed
-- `HALT_NON_CONVERGENCE` — Deterministic evolution did not stabilize
-
-This is intentional: **no unsafe confidence theater**.
-
----
-
-## Philosophy Guard
-
-The Philosophy & Ethics domain provides the theoretical foundation for OpenEyes' domain rules:
-
-- **Descriptive, not normative**: Fragments describe what *is*, not what *should be*
-- **Institutional focus**: Claims about structures, outcomes, and processes are fragmentable
-- **Value claims excluded**: Normative judgments about right/wrong are not encoded as fragments
-- **Self-referential integrity**: The ETH sector provides the theoretical basis for guard rules across all domains
-
----
-
-## Cross-Domain Relationships
-
-OpenEyes automatically handles cross-domain territory through Category Theory functors:
-
-| Domain A | Sector | ↔ | Domain B | Sector | Shared Territory |
-|----------|------|---|----------|--------|------------------|
-| Economy | GEO | ↔ | Governance | GEL | Geopolitical risk, sanctions |
-| Economy | REG | ↔ | Governance | LEG | Financial regulation |
-| Healthcare | PHR | ↔ | Governance | LEG | Drug regulation, FDA law |
-| Science & Tech | CSC | ↔ | Governance | SEC | Cybersecurity law, AI regulation |
-| Science & Tech | ENV | ↔ | Economy | ENR | Climate policy, energy transition |
-| Social Sciences | PSY | ↔ | Healthcare | MH | Clinical vs research psychology |
-
----
-
-## Vault & Audit Trail
-
-OpenEyes writes runtime artifacts under:
-
-- `OPENEYES_VAULT_ROOT` (default: `.openeyes/vault`)
-- `audit/` for signed audit logs and latest snapshot behavior
-
-This design keeps repo roots clean while preserving operational traceability.
-
----
-
-## Testing
-
-Run end-to-end validation:
+The swarm will automatically create the WAL buffer on first run. To pre-populate with sample data:
 
 ```bash
-pytest -q tests/test_e2e.py
+python -c "
+from openeyes.swarm.autonomous_pulse_swarm import WALBuffer
+import asyncio
+
+wal = WALBuffer('wal_buffer.db')
+wal._ensure_initialized()
+print('✓ WAL buffer initialized successfully')
+"
 ```
 
-Current tests validate:
-- Multi-domain query behavior
-- Deterministic seed stability
-- Fragment provenance checks
-- Audit file retention behavior
-- Cross-domain relationship handling
+### Step 8: Verify Installation
 
----
-
-## Who is this for?
-
-- Teams building **high-stakes assistants** (medical, legal, engineering, finance)
-- Researchers exploring **deterministic Monte Carlo reasoning**
-- Institutions requiring **verifiable, auditable AI responses**
-- Builders who value **evidence-based abstention** over overconfident generation
-- Organizations needing **multi-domain expertise** with consistent quality standards
-
----
-
-## System Capabilities
-
-OpenEyes can answer high-stakes questions across:
-
-✅ **Economics & Finance** — Markets, policy, trade, energy, commodities  
-✅ **Healthcare & Medicine** — Clinical practice, public health, drug development, mental health  
-✅ **Governance & Law** — Political systems, legislation, courts, international relations  
-✅ **Science & Technology** — Physics, biology, CS/AI, space, engineering, mathematics  
-✅ **History** — Ancient to contemporary, regional studies, historiography  
-✅ **Philosophy & Ethics** — Ethics, logic, political philosophy, philosophy of mind  
-✅ **Social Sciences** — Sociology, psychology, anthropology, demographics, communication  
-✅ **Education** — Learning science, policy, higher education, skills development  
-
-With:
-- Full provenance tracking
-- Structural confidence scoring
-- Zero hallucination within library scope
-- Automatic cross-domain compatibility derivation
-
----
-
-## Roadmap
-
-### Completed ✓
-- [x] 8 domains, 46 sectors, 9,189 fragments
-- [x] Three-role fragment structure
-- [x] Domain-specific rules and thresholds
-- [x] Swarm autonomous generation framework
-- [x] Cross-domain relationship mapping
-
-### Next Phase
-- [ ] Richer retrieval and evidence indexing
-- [ ] Stronger contradiction/counter-argument scoring
-- [ ] Calibration harness by domain/risk tier
-- [ ] Broader reproducibility and red-team safety suites
-- [ ] Real-time fragment updates from primary sources
-- [ ] Enhanced cross-domain query synthesis
-
----
-
-## Repository Structure
-
-```
-/workspace/
-├── README.md                   # This file
-├── LICENSE                     # MIT License
-├── requirements.txt            # Python dependencies
-├── setup.py                    # Package installation
-├── openeyes/                   # Core application
-│   ├── cli.py                  # Command-line interface
-│   ├── config.py               # Configuration management
-│   ├── domains/                # Domain knowledge (8 domains)
-│   ├── domain_rules/           # Domain-specific rules (8 JSON files)
-│   ├── swarm/                  # Autonomous agent framework
-│   ├── knowledge/              # Fragment management
-│   ├── monte_carlo/            # Deterministic RNG and evaluation
-│   ├── core/                   # Core reasoning engine
-│   └── storage/                # Audit vault and persistence
-├── tests/                      # Test suites
-└── tools/                      # Utilities and archived scripts
+```bash
+python -c "from openeyes.core.engine import OpenEyesEngine; print('✓ OpenEyes installed successfully')"
 ```
 
----
+### Step 9: Run Your First Query
 
-## Citation
+```bash
+python -c "
+from openeyes.core.engine import OpenEyesEngine
+engine = OpenEyesEngine()
+result = engine.answer('What are practical investment strategies?')
+print(f\"Answer: {result['answer']}\")
+print(f\"Confidence: {result['confidence']:.1%}\")
+"
+```
 
-If you use OpenEyes in your research:
+## Usage Examples
 
-```bibtex
-@software{openeyes2024,
-  title = {OpenEyes: Deterministic Reasoning for High-Stakes Questions},
-  version = {1.0.0},
-  year = {2024},
-  description = {A fragment-based reasoning system with 9,189 verified fragments across 8 domains}
+### Basic Investment Query
+
+```python
+from openeyes.core.engine import OpenEyesEngine
+
+engine = OpenEyesEngine()
+query = "How to get rich fast using investments with a practical plan?"
+result = engine.answer(query)
+
+print(f"Answer: {result['answer']}")
+print(f"Confidence Score: {result['confidence']:.1%}")
+print(f"Domain: {result['domain']}")
+print(f"Fragments Used: {result['fragments_used']}")
+```
+
+### Multi-Domain Queries
+
+```python
+from openeyes.core.engine import OpenEyesEngine
+
+engine = OpenEyesEngine()
+
+queries = [
+    "What are the historical patterns of market crashes?",
+    "How do SEC regulations protect investors?",
+    "What role does psychology play in investment decisions?",
+    "How can I plan for healthcare costs in retirement?",
+    "What is ethical investing and ESG criteria?",
+]
+
+for query in queries:
+    result = engine.answer(query)
+    print(f"\nQ: {query}")
+    print(f"A: {result['answer'][:200]}...")
+    print(f"Domain: {result['domain']}, Confidence: {result['confidence']:.1%}")
+```
+
+### Domain-Specific Query
+
+```python
+from openeyes.core.engine import OpenEyesEngine
+
+engine = OpenEyesEngine()
+
+# Healthcare query
+result = engine.answer('What are the symptoms of type 2 diabetes?', domain='healthcare')
+print(result['answer'])
+
+# Governance query
+result = engine.answer('How does parliamentary procedure work?', domain='governance')
+print(result['answer'])
+```
+
+## Understanding the Output
+
+When you run a query, OpenEyes provides:
+
+- **Answer**: The generated response based on verified facts from swarm fragments
+- **Confidence Score**: Statistical confidence (0.0 to 1.0) from Monte Carlo evaluation
+- **Domain**: The knowledge domain used (economy, healthcare, governance, etc.)
+- **Status**: Response classification (ANSWER_HIGH_CONFIDENCE, ANSWER_LOW_CONFIDENCE, etc.)
+- **Fragments Used**: Number of knowledge fragments retrieved (swarm + local index)
+- **Data Recency**: Age of the underlying data in years
+
+## The Autonomous Swarm
+
+OpenEyes features a bio-inspired swarm architecture with:
+
+- **2000+ Agents**: Staggered wake-up cycles for continuous knowledge harvesting
+- **Agent States**: SLEEPING → TRIGGERED → HARVESTING → ARCHIVING → SLEEPING
+- **Token Bucket Limiter**: Global rate limiting (5 req/sec) to prevent overload
+- **WAL Buffer**: Write-only during active phase, enabling zero-latency reads
+- **Domain Sectors**: Automatic fragment categorization (ECO, GOV, HC, HIS, EDU, PHI, SOCIAL, SAT)
+
+### Swarm Fragment Categories
+
+The swarm maintains fragments across these domains:
+
+| Sector | Description | Example Topics |
+|--------|-------------|----------------|
+| ECO | Economy & Finance | Investments, markets, inflation |
+| HC | Healthcare | Medical costs, insurance, wellness |
+| GOV | Governance | Regulations, policy, compliance |
+| HIS | History | Market crashes, economic cycles |
+| EDU | Education | Financial literacy, learning |
+| PHI | Philosophy | Ethics, ESG, values-based investing |
+| SOCIAL | Social Sciences | Behavioral finance, psychology |
+| SAT | Satire | Cautionary tales, critical perspectives |
+
+## Troubleshooting
+
+### Issue: "ModuleNotFoundError: No module named 'openeyes'"
+
+**Solution**: Activate virtual environment and install package:
+
+```bash
+source venv/bin/activate
+pip install -e .
+```
+
+### Issue: "WAL buffer not found at wal_buffer.db"
+
+**Note**: This is normal on first run. The system falls back to local indexing automatically. To create the buffer:
+
+```bash
+python -c "from openeyes.swarm.autonomous_pulse_swarm import WALBuffer; wal = WALBuffer('wal_buffer.db'); wal._ensure_initialized()"
+```
+
+### Issue: Low confidence scores or irrelevant answers
+
+**Possible causes**:
+1. Query outside covered domains
+2. Insufficient fragments for topic
+3. Query phrasing doesn't match indexed content
+
+**Solutions**:
+- Rephrase your query with different keywords
+- Check available domains in `openeyes/domains/`
+- Add more fragments to relevant domain folders
+- Run swarm to harvest fresh data
+
+### Issue: Memory errors on low-RAM systems
+
+**Solutions**:
+- Close other applications
+- Reduce swarm agent count in config
+- Use smaller fragment batches
+- Enable swap space: `sudo fallocate -l 2G /swapfile && sudo chmod 600 /swapfile && sudo mkswap /swapfile && sudo swapon /swapfile`
+
+## Project Structure
+
+```
+openeyes/
+├── core/                   # Main reasoning engine and routing
+├── cognitive/              # Procedural linguistic manifestor
+├── swarm/                  # Autonomous pulse swarm (2000 agents)
+│   ├── autonomous_pulse_swarm.py
+│   ├── swarm_retrieval.py
+│   └── realtime_updater.py
+├── domains/                # Knowledge fragments by domain
+│   ├── economy/
+│   ├── healthcare/
+│   ├── governance/
+│   ├── his/
+│   ├── edu/
+│   ├── phi/
+│   ├── social_sciences/
+│   └── sat/
+├── knowledge/              # Linguistic DNA and retrieval logic
+├── monte_carlo/            # Confidence evaluation engine
+├── storage/                # Memory and audit logging
+└── ui/                     # Control deck and interface components
+```
+
+## Adding Custom Knowledge Fragments
+
+Extend OpenEyes by adding JSON fragment files to domain directories:
+
+```json
+{
+  "id": "unique-fragment-id",
+  "domain": "economy",
+  "subdomain": "FIN",
+  "content": "Dollar-cost averaging reduces timing risk by investing fixed amounts regularly.",
+  "year": 2024,
+  "source": "Investment Authority",
+  "source_url": "https://example.com/source",
+  "reasoning_role": "strategy",
+  "credibility_class": "financial_institution"
 }
 ```
 
----
+## Performance Notes
+
+- First query builds indexes (may take 5-10 seconds)
+- Subsequent queries: 0.5-2 seconds typical
+- Swarm fragments provide zero-latency access
+- Complex multi-domain queries take longer
+- SSD storage recommended for optimal performance
+
+## Recent Updates
+
+- ✅ Fixed swarm retrieval logic (OR-based keyword matching)
+- ✅ Added multi-domain fragment support for investment queries
+- ✅ Improved WAL buffer sector categorization
+- ✅ Enhanced confidence scoring with swarm integration
 
 ## License
 
-MIT (see `LICENSE`).
+See the LICENSE file in the root directory.
 
----
+## Support
 
-**Built with safety, verifiability, and comprehensive domain coverage.**  
-**9,189 fragments. 8 domains. Zero hallucination within scope.**
+For issues or questions, check documentation or raise an issue in the repository.

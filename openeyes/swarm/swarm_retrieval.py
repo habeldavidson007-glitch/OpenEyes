@@ -79,7 +79,7 @@ class SwarmRetrievalEngine:
                 where_clauses.append("LOWER(content) LIKE ?")
                 params.append(f"%{term}%")
             
-            where_sql = " AND ".join([f"({where_clauses[i]})" for i in range(len(where_clauses))]) if where_clauses else "1=1"
+            where_sql = " OR ".join(where_clauses) if where_clauses else "1=1"
             
             # CRITICAL FIX: Search WAL buffer using query keywords
             # Only get tokenized_content (high confidence) first, then new_content

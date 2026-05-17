@@ -1,45 +1,13 @@
 ```
-# Binary/compiled files
-*.bin
-
-# Logs and temp files
+# Logs and temporary files
 *.log
+*.tmp
 
-# Environment specific
+# Audit logs
+.openeyes/vault/audit/
+
+# Environment
 .env
 .env.local
 .env.*
-
-# Dependencies and build artifacts
-node_modules/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.so
-*.egg-info/
-dist/
-build/
-.coverage
-coverage/
-htmlcov/
-.mypy_cache/
-.pytest_cache/
-.venv/
-venv/
-.env/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-# Original rules preserved
-*.log
 ```
