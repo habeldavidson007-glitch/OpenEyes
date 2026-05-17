@@ -1,38 +1,45 @@
 ```
-# Test results and data files
-openeyes/data/*.json
+# Binary/compiled files
+*.bin
 
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+# Logs and temp files
+*.log
 
-# Environment files
+# Environment specific
 .env
 .env.local
 .env.*
 
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.temp
-
-# Coverage reports
+# Dependencies and build artifacts
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
 .coverage
 coverage/
 htmlcov/
+.mypy_cache/
+.pytest_cache/
+.venv/
+venv/
+.env/
 
-# IDE files
+# System files
+.DS_Store
+Thumbs.db
+
+# Editors
 .vscode/
 .idea/
 *.swp
 *.swo
+*.tmp
 
-# Build artifacts
-dist/
-build/
-*.egg-info/
+# Original rules preserved
+*.log
 ```

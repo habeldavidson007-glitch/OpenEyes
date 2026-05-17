@@ -20,12 +20,17 @@ from linguistic_genome import LinguisticGenome, AtomicFact
 CRISIS_KEYWORDS = {
     'suicide': ['suicide', 'end it all', 'kill myself', 'killing myself', 'take my own life', 'want to die', 
                 'no reason to live', 'better off dead', 'wish i was dead', 'should just die',
-                'just die', 'ought to die', 'not worth living', 'life is not worth', 'end my life'],
-    'self_harm': ['hurt myself', 'cut myself', 'cutting myself', 'self harm', 'self-harm', 'harming myself'],
+                'just die', 'ought to die', 'not worth living', 'life is not worth', 'end my life',
+                'ending it all', 'commit suicide', 'taking my life'],
+    'self_harm': ['hurt myself', 'cut myself', 'cutting myself', 'self harm', 'self-harm', 'harming myself',
+                  'hurting myself', 'self-injury', 'self injure', 'burn myself', 'burning myself',
+                  'harm myself', 'harms myself', 'injuring myself', 'injure myself'],
     'depression': ['depressed', 'hopeless', 'desperate', "can't go on", 'cant go on', 'give up',
-                   'nobody would miss me', 'no one cares', 'worthless', 'burden', 'life is not worth'],
+                   'nobody would miss me', 'no one cares', 'worthless', 'burden', 'life is not worth',
+                   'everyone would be better off', 'i am a burden', 'nothing matters'],
     'violence': ['hurt someone', 'kill someone', 'violence', 'attack', 'harm others', 
-                 'harm my family', 'hurt my family', 'kill my family', 'harming my family']
+                 'harm my family', 'hurt my family', 'kill my family', 'harming my family',
+                 'hurting my family', 'attack my family', 'hurt others', 'harm people']
 }
 
 # Crisis resources with real hotlines (P0 Fix)
