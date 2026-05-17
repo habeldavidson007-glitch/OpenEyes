@@ -146,6 +146,17 @@ This structure ensures:
 ---
 
 
+
+## Product Roadmap (CLI First → Desktop)
+
+OpenEyes follows a strict product sequence:
+
+1. **CLI-first stability**: `openeyes ask`, `openeyes doctor`, `openeyes config`, `openeyes version`
+2. **Install simplicity**: `pipx install openeyes` as the default end-user path
+3. **Desktop next**: GUI will consume stable CLI/JSON outputs (thin client architecture)
+
+This keeps the engine reliable and avoids desktop-specific logic leaking into core reasoning.
+
 ## Fast Install (Recommended)
 
 For end users who want the easiest path:
