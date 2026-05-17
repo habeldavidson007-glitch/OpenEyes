@@ -12,6 +12,45 @@
 
 ---
 
+## Quickest Way (ZIP Users)
+
+1. Download OpenEyes ZIP
+2. Extract it
+3. Run:
+
+```bash
+python run_openeyes.py --help
+python run_openeyes.py ask "What is inflation?" --domain economy
+```
+
+That is it. No manual virtual environment step is required for basic use.
+
+### Immediate Query Pattern
+
+Use quotes around your query:
+
+```bash
+python run_openeyes.py ask "your question here"
+```
+
+The quotes (`" ... "`) open and close your query text immediately in one command.
+
+### Sleep / Safe Shutdown Command
+
+To consolidate and safely close current runtime state:
+
+```bash
+python run_openeyes.py sleep
+```
+
+If installed as a command, the equivalent is:
+
+```bash
+openeyes sleep
+```
+
+---
+
 ## Why OpenEyes?
 
 Most systems are optimized to always respond. OpenEyes is optimized to **respond responsibly**.
@@ -157,13 +196,13 @@ OpenEyes follows a strict product sequence:
 
 This keeps the engine reliable and avoids desktop-specific logic leaking into core reasoning.
 
-## ZIP Download: No venv Required
+## ZIP Download (Alternative)
 
 If users download OpenEyes as a ZIP, extract and run:
 
 ```bash
 python run_openeyes.py --help
-python run_openeyes.py --no-install doctor
+python run_openeyes.py doctor
 python run_openeyes.py ask "How does inflation affect bond prices?" --domain economy
 ```
 
