@@ -15,7 +15,7 @@ from rich.panel import Panel
 from rich.table import Table
 
 from openeyes.config import audit_dir, vault_root
-from openeyes.core.engine import OpenEyesEngine
+from openeyes.services.query_service import QueryService
 from openeyes.storage.binary_lib import cleanup_obsidian_vault
 
 LOADING_STAGES = [
@@ -25,6 +25,9 @@ LOADING_STAGES = [
     ("Applying domain rules...", 0.3),
     ("Assembling answer...", 0.3),
 ]
+
+
+CLI_SCHEMA_VERSION = "1"
 
 
 class CLIContext:
@@ -57,7 +60,9 @@ def typewriter_output(text: str, speed: float = 0.015):
 
 def emit(ctx: CLIContext, payload: dict, pretty_text: str | None = None) -> None:
     if ctx.json_mode:
-        print(json.dumps(payload, indent=2))
+        data = dict(payload)
+        data.setdefault("cli_schema_version", CLI_SCHEMA_VERSION)
+        print(json.dumps(data, indent=2))
         return
     if pretty_text is not None:
         print(pretty_text)
@@ -77,8 +82,14 @@ def _run_query(ctx: CLIContext, query: str, domain: str | None, explain: bool, d
     if not ctx.json_mode:
         stream_loading()
 
-    engine = OpenEyesEngine()
-    result = engine.answer(query=query, domain=domain)
+    service = QueryService()
+    try:
+        result = service.ask(query=query, domain=domain).payload
+    except Exception as exc:
+        if ctx.json_mode:
+            emit(ctx, {"error": {"code": "QUERY_EXECUTION_ERROR", "message": str(exc)}})
+            return
+        raise click.ClickException(f"Query failed: {exc}")
 
     answer_text = result.get("answer", "")
     if ctx.json_mode:

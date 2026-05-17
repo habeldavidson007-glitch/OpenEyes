@@ -22,7 +22,7 @@ def test_doctor_json_schema() -> None:
     result = runner.invoke(cli, ["--json", "doctor"])
     assert result.exit_code == 0
     payload = json.loads(result.output)
-    for key in ["python", "vault_root_exists", "audit_dir_exists", "audit_file_count"]:
+    for key in ["python", "vault_root_exists", "audit_dir_exists", "audit_file_count", "cli_schema_version"]:
         assert key in payload
 
 
@@ -52,3 +52,11 @@ def test_legacy_query_is_hidden_from_help() -> None:
     result = runner.invoke(cli, ["--help"])
     assert result.exit_code == 0
     assert "query" not in result.output
+
+
+def test_json_schema_version_in_version_command() -> None:
+    runner = CliRunner()
+    result = runner.invoke(cli, ["--json", "version"])
+    assert result.exit_code == 0
+    payload = json.loads(result.output)
+    assert payload["cli_schema_version"] == "1"

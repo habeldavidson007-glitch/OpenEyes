@@ -164,6 +164,7 @@ For end users who want the easiest path:
 ```bash
 pipx install openeyes
 openeyes version
+openeyes doctor
 openeyes ask "How does inflation affect bond prices?" --domain economy
 ```
 
