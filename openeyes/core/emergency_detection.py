@@ -39,7 +39,14 @@ EMERGENCY_PATTERNS = {
         r'thinking\s+of\s+hurting\s+myself', r'how\s+do\s+i\s+end\s+the\s+pain',
         r'drive\s+.*\s+off\s+a\s+bridge', r'stop\s+breathing', r'peaceful\s+way\s+to\s+exit',
         r'escape\s+this\s+financial\s+ruin', r'can\'t\s+fix\s+this\s+debt',
-        r'lost\s+everything.*end\s+it', r'bankruptcy.*too\s+much'
+        r'lost\s+everything.*end\s+it', r'bankruptcy.*too\s+much',
+        # NEW: Expanded crisis coverage for self-harm and suicidal ideation
+        r'ending\s+it\s+all', r'end\s+it\s+all', r'taking\s+my\s+life',
+        r'harm\s+myself', r'hurting\s+myself', r'self[- ]injury', r'injure\s+myself',
+        r'better\s+off\s+without\s+me', r'everyone.*better\s+off', r'burden\s+to\s+everyone',
+        r'i\s+am\s+a\s+burden', r'nothing\s+matters', r'hurt\s+my\s+family',
+        r'harming\s+my\s+family', r'attack\s+my\s+family', r'hurt\s+others',
+        r'cutting\s+myself', r'cut\s+myself'
     ],
     'anaphylaxis': [
         r'anaphylaxis', r'severe\s+allergic\s+reaction', r'throat\s+swelling',
