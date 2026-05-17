@@ -308,7 +308,16 @@ class LinguisticGenome:
             "slows", "accelerates", "grows", "shrinks", "expands",
             "rising", "falling", "growing", "declining", "increasing", "decreasing",
             "eroding", "improving", "worsening", "strengthening", "weakening",
-            "is", "are", "was", "were", "has", "have", "had"
+            "is", "are", "was", "were", "has", "have", "had",
+            # Add more action verbs that were being missed
+            "spikes", "spike", "surges", "surge", "jumps", "jump",
+            "climbs", "climb", "peaks", "peak", "plunges", "plunge",
+            "drops", "drop", "slides", "slide", "tumbles", "tumble",
+            "creates", "create", "generates", "generate", "produces", "produce",
+            "continues", "continue", "remains", "remain", "stays", "stay",
+            "indicates", "indicate", "suggests", "suggest", "signals", "signal",
+            "drives", "drive", "pushes", "push", "pulls", "pull",
+            "triggers", "trigger", "sparks", "spark", "fuels", "fuel"
         ]
         
         verb_found = None
@@ -585,6 +594,10 @@ class LinguisticGenome:
                 if not base_verb:
                     continue
                 
+                # CRITICAL FIX 2: Prevent adding "is" before action verbs
+                # When we have "Market volatility creates opportunities", we should NOT add "is creates"
+                # This happens when the blueprint tries to add a connector like "is" before the verb
+                
                 # Handle compound verbs like "have risen", "has increased"
                 aux_verbs = ["have", "has", "had", "is", "are", "was", "were"]
                 main_verb = base_verb
@@ -609,21 +622,25 @@ class LinguisticGenome:
                             main_verb = 'grow'
                 
                 # Get synonym for main verb - handle plural/singular forms
+                # CRITICAL: Only add verb variant if it's NOT a copula construction
                 if main_verb and main_verb.lower() not in ['is', 'are', 'was', 'were', 'be', 'been', 'being']:
                     verb_variant = self._get_verb_variant(main_verb)
                     
+                    # NEVER add "is" before an action verb - only for passive voice
                     if use_passive and auxiliary:
                         tokens.append(f"is {verb_variant}")
-                    elif auxiliary:
-                        # Keep the auxiliary with proper form
+                    elif auxiliary and auxiliary.lower() not in ['is', 'are', 'was', 'were']:
+                        # Keep the auxiliary with proper form (but not copula auxiliaries)
                         tokens.append(f"{auxiliary} {verb_variant}")
                     elif use_passive:
                         tokens.append(f"is {verb_variant}")
                     else:
+                        # Just add the verb variant directly - NO extra "is"
                         tokens.append(verb_variant)
                     last_role_added = "verb"
                 elif base_verb.lower() not in ['is', 'are', 'was', 'were']:
                     # Fallback: use the original verb if we couldn't process it
+                    # But make sure we're not adding a duplicate copula
                     tokens.append(base_verb)
                     last_role_added = "verb"
             
@@ -645,6 +662,13 @@ class LinguisticGenome:
                 predicate_adjectives = ['normal', 'stable', 'volatile', 'high', 'low', 'critical', 
                                        'dangerous', 'safe', 'healthy', 'weak', 'strong', 'steady']
                 
+                # ACTION VERBS that should NOT follow a copula "is"
+                action_verbs = ['spikes', 'spike', 'surges', 'surge', 'jumps', 'jump', 'creates', 'create',
+                               'continue', 'continues', 'generates', 'generate', 'produces', 'produce',
+                               'climbs', 'climb', 'peaks', 'peak', 'falls', 'fall', 'rises', 'rise',
+                               'drops', 'drop', 'grows', 'grow', 'shrinks', 'shrink', 'declines', 'decline',
+                               'persists', 'persist', 'remains', 'remain', 'yields', 'yield']
+                
                 if last_role_added == 'verb' and atomic.verb.lower() in ['is', 'are', 'was', 'were']:
                     # Check if obj_text IS a predicate adjective or starts with one
                     first_word = obj_text.split()[0].lower() if obj_text.split() else ""
@@ -654,6 +678,13 @@ class LinguisticGenome:
                     elif obj_text.lower() in predicate_adjectives:
                         # The entire object is a predicate adjective - keep it
                         pass
+                    elif first_word in action_verbs or obj_text.lower().split()[0] in action_verbs:
+                        # ERROR: We added "is" but the object starts with an action verb
+                        # This means we incorrectly treated an action verb sentence as a copula sentence
+                        # Solution: Skip the object entirely and let the sentence end with just subject+is
+                        # OR better: don't add the copula in the first place for these cases
+                        # For now, skip this object to avoid "is spikes" error
+                        continue
                     elif obj_text.lower() in ['increased', 'decreased', 'risen', 'fallen', 'grown', 'shrunk']:
                         # This is actually a verb form that was incorrectly extracted - skip
                         continue
@@ -946,6 +977,15 @@ class LinguisticGenome:
             "slumped": ("slump", [("slumped", 1.0), ("dropped", 0.9), ("declined", 0.8)], 'ed'),
             "slumping": ("slump", [("slumping", 1.0), ("dropping", 0.9), ("declining", 0.8)], 'ing'),
             "slump": ("slump", [("slump", 1.0)], 'base'),
+            # Add more common verbs
+            "creates": ("create", [("create", 1.0), ("generate", 0.9), ("produce", 0.85), ("yield", 0.8)], 's'),
+            "created": ("create", [("created", 1.0), ("generated", 0.9), ("produced", 0.85)], 'ed'),
+            "creating": ("create", [("creating", 1.0), ("generating", 0.9), ("producing", 0.85)], 'ing'),
+            "create": ("create", [("create", 1.0)], 'base'),
+            "continues": ("continue", [("continue", 1.0), ("persist", 0.9), ("remain", 0.85)], 's'),
+            "continued": ("continue", [("continued", 1.0), ("persisted", 0.9), ("remained", 0.85)], 'ed'),
+            "continuing": ("continue", [("continuing", 1.0), ("persisting", 0.9)], 'ing'),
+            "continue": ("continue", [("continue", 1.0)], 'base'),
         }
         
         # Check if we have a mapping for this verb form
