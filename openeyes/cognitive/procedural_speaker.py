@@ -2,10 +2,12 @@
 Procedural Speaker - Runtime Integration Layer
 Connects verified facts from fragments to the Linguistic Genome for dynamic generation.
 Guarantees core facts never change, only the linguistic wrapping varies.
+Includes crisis detection, empathetic responses, and domain-specific handling.
 """
 
 import random
-from typing import Dict, List, Optional, Any
+import re
+from typing import Dict, List, Optional, Any, Tuple
 from pathlib import Path
 import sys
 
@@ -13,6 +15,52 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 
 from linguistic_genome import LinguisticGenome, AtomicFact
+
+# Crisis keywords and patterns (P0 - Safety Critical)
+CRISIS_KEYWORDS = {
+    'suicide': ['suicide', 'end it all', 'kill myself', 'take my own life', 'want to die', 
+                'no reason to live', 'better off dead', 'wish i was dead', 'should just die',
+                'just die', 'ought to die', 'not worth living'],
+    'self_harm': ['hurt myself', 'cut myself', 'self harm', 'self-harm', 'harming myself'],
+    'depression': ['depressed', 'hopeless', 'desperate', "can't go on", 'cant go on', 'give up',
+                   'nobody would miss me', 'no one cares', 'worthless', 'burden', 'life is not worth'],
+    'violence': ['hurt someone', 'kill someone', 'violence', 'attack', 'harm others', 
+                 'harm my family', 'hurt my family', 'kill my family']
+}
+
+# Crisis resources with real hotlines (P0 Fix)
+CRISIS_RESOURCES = {
+    'suicide': {
+        'primary': '988 Suicide & Crisis Lifeline',
+        'phone': '988',
+        'text': 'Text HOME to 741741',
+        'message': 'You matter. Please reach out to trained counselors who care.'
+    },
+    'self_harm': {
+        'primary': 'Crisis Text Line',
+        'phone': 'Text HOME to 741741',
+        'message': "You're not alone. Support is available right now."
+    },
+    'depression': {
+        'primary': 'National Mental Health Helpline',
+        'phone': '1-800-662-HELP (4357)',
+        'message': 'Recovery is possible. Help is just a call away.'
+    },
+    'violence': {
+        'primary': 'Emergency Services',
+        'phone': '911',
+        'message': "Your safety and others' safety is the priority. Please seek immediate help."
+    }
+}
+
+# Empathetic response templates for crisis scenarios (P0 Fix)
+EMPATHETIC_RESPONSES = [
+    "I hear you, and I'm concerned about what you're going through. {resource_message} {resource_primary}: {resource_phone}",
+    "Thank you for sharing this with me. You deserve support. {resource_message} Please contact {resource_primary} at {resource_phone}.",
+    "I can tell you're in pain right now. You don't have to face this alone. {resource_primary} is available 24/7: {resource_phone}. {resource_message}",
+    "Your feelings are valid, and there are people who want to help. {resource_message} Reach out to {resource_primary}: {resource_phone}.",
+    "It takes courage to speak up. Please know that help is available. {resource_primary}: {resource_phone}. {resource_message}"
+]
 
 
 class ProceduralSpeaker:
@@ -92,6 +140,36 @@ class ProceduralSpeaker:
         
         return components
     
+    def _detect_crisis_intent(self, query: str) -> Tuple[bool, Optional[str]]:
+        """
+        Detect if query indicates crisis situation.
+        Returns (is_crisis, crisis_type) tuple.
+        """
+        query_lower = query.lower()
+        
+        for crisis_type, keywords in CRISIS_KEYWORDS.items():
+            for keyword in keywords:
+                if keyword in query_lower:
+                    return True, crisis_type
+        
+        return False, None
+    
+    def _generate_crisis_response(self, crisis_type: str) -> str:
+        """
+        Generate empathetic crisis response with real resources.
+        Uses deterministic template for safety (P0 requirement).
+        """
+        resource = CRISIS_RESOURCES.get(crisis_type, CRISIS_RESOURCES['depression'])
+        template = random.choice(EMPATHETIC_RESPONSES)
+        
+        response = template.format(
+            resource_message=resource['message'],
+            resource_primary=resource['primary'],
+            resource_phone=resource['phone']
+        )
+        
+        return response
+    
     def _detect_intent_from_query(self, query: str) -> str:
         """Detect user intent to guide generation style"""
         query_lower = query.lower()
@@ -121,6 +199,12 @@ class ProceduralSpeaker:
     
     def speak(self, query: str, fragments: List[Any], **kwargs) -> str:
         """Generate human-like response from verified fragments."""
+        
+        # P0: Check for crisis intent FIRST (before any procedural generation)
+        is_crisis, crisis_type = self._detect_crisis_intent(query)
+        if is_crisis:
+            return self._generate_crisis_response(crisis_type)
+        
         if not fragments:
             return "I don't have verified information on that topic."
         

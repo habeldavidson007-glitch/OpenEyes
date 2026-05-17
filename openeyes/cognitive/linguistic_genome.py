@@ -173,6 +173,49 @@ class LinguisticGenome:
             (" — ", 0.5), ("... well, ", 0.4), ("... you see, ", 0.35)
         ]
         
+        # P1: Domain-specific vocabulary clusters
+        self.domain_vocab = {
+            'economy': {
+                'volatility': ['volatility', 'fluctuation', 'swing', 'oscillation', 'instability'],
+                'growth': ['expansion', 'uptick', 'momentum', 'acceleration', 'surge'],
+                'decline': ['contraction', 'downturn', 'slump', 'recession', 'correction'],
+                'market': ['marketplace', 'trading floor', 'exchange', 'bourse', 'index']
+            },
+            'healthcare': {
+                'symptom': ['indicator', 'sign', 'manifestation', 'marker', 'signal'],
+                'treatment': ['intervention', 'therapy', 'protocol', 'regimen', 'approach'],
+                'patient': ['individual', 'person', 'case', 'patient', 'client'],
+                'outcome': ['result', 'prognosis', 'trajectory', 'progress', 'recovery']
+            },
+            'finance': {
+                'portfolio': ['holdings', 'investments', 'assets', 'positions', 'book'],
+                'risk': ['exposure', 'vulnerability', 'liability', 'peril', 'hazard'],
+                'return': ['yield', 'gain', 'profit', 'performance', 'appreciation'],
+                'asset': ['holding', 'investment', 'security', 'instrument', 'position']
+            },
+            'technology': {
+                'system': ['platform', 'infrastructure', 'framework', 'architecture', 'stack'],
+                'data': ['information', 'metrics', 'analytics', 'insights', 'intelligence'],
+                'algorithm': ['model', 'engine', 'processor', 'routine', 'logic'],
+                'performance': ['throughput', 'efficiency', 'latency', 'speed', 'capacity']
+            },
+            'climate': {
+                'temperature': ['heat', 'warmth', 'thermal reading', 'degree', 'level'],
+                'emissions': ['output', 'discharge', 'release', 'footprint', 'carbon load'],
+                'impact': ['effect', 'consequence', 'ramification', 'repercussion', 'influence'],
+                'trend': ['pattern', 'trajectory', 'direction', 'movement', 'shift']
+            }
+        }
+        
+        # P1: Response length targets by intent
+        self.length_targets = {
+            'urgent_concern': (30, 60),      # Short, direct for crisis
+            'technical_deep_dive': (100, 200), # Detailed for technical
+            'casual_query': (50, 100),       # Conversational
+            'educational': (80, 150),        # Informative
+            'exploratory': (60, 120)         # Balanced
+        }
+        
     def _build_syntactic_blueprints(self):
         """Define logic trees for sentence arrangement"""
         
@@ -1317,17 +1360,20 @@ class LinguisticGenome:
             if random.random() < 0.5:
                 final_tokens.append(SyntacticToken(",", role="punctuation"))
                 final_tokens.append(SyntacticToken("like", role="connector"))
-                final_tokens.append(SyntacticToken(analogy, role="analogy"))
+                # Ensure analogy is a string, not boolean
+                analogy_text = str(analogy) if analogy else "this concept"
+                final_tokens.append(SyntacticToken(analogy_text, role="analogy"))
             else:
                 final_tokens.append(SyntacticToken(".", role="punctuation"))
-                final_tokens.append(SyntacticToken(f"Think of it as {analogy}", role="elaboration"))
+                analogy_text = str(analogy) if analogy else "this concept"
+                final_tokens.append(SyntacticToken(f"Think of it as {analogy_text}", role="elaboration"))
         
         # 5. Probabilistic Closer
         if random.random() < 0.6:  # 60% chance of closer
             closer = self.inject_discourse_marker(position="end")
             if closer:
                 # Ensure we don't end with a comma
-                final_tokens.append(SyntacticToken(closer.rstrip(','), role="closer"))
+                final_tokens.append(SyntacticToken(str(closer).rstrip(','), role="closer"))
                 
         return final_tokens
 
