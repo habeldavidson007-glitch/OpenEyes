@@ -62,3 +62,15 @@ class MonteCarloEngine:
             "score_var": round(float(np.var(scores)), 6),
         }
         return {"confidence": round(confidence, 2), "status": abstention, "replay": json.dumps(replay)}
+    
+    def evaluate(self, query: str, domain: str, fragments: list[Fragment]) -> dict:
+        """Alias for run() method for API compatibility."""
+        result = self.run(query, domain, fragments)
+        # Add additional fields expected by the engine
+        result['narrative'] = {
+            'scenarios': [],
+            'confidence': result.get('confidence', 0.0)
+        }
+        result['data_recency_years'] = 2
+        result['answer_class'] = 'ANSWER_HIGH_CONFIDENCE' if result.get('confidence', 0) >= 0.7 else 'ANSWER_LOW_CONFIDENCE'
+        return result

@@ -196,3 +196,74 @@ def _compose_user_answer(
         return "\n\n".join(formatted_parts)
 
     return "\n\n".join(answer_parts)
+
+
+class OpenEyesEngine:
+    """Main reasoning engine for OpenEyes high-stakes question answering."""
+    
+    def __init__(self, vault_path=None):
+        """
+        Initialize the OpenEyes reasoning engine.
+        
+        Args:
+            vault_path: Optional path to vault directory (unused in current implementation)
+        """
+        self.mc_engine = MonteCarloEngine()
+        self.control_deck = ControlDeck()
+        self.vault_path = vault_path  # Store for API compatibility
+    
+    def answer(self, query: str, domain: str = None) -> dict:
+        """
+        Process a query and return a structured response.
+        
+        Args:
+            query: The user's question
+            domain: Optional domain override
+            
+        Returns:
+            dict with keys: answer, confidence, domain, status, narrative, etc.
+        """
+        # Normalize query
+        normalized_query = normalize_query(query)
+        
+        # Route domain if not specified
+        if domain is None:
+            domain = route_domain(normalized_query)
+        
+        # Retrieve relevant fragments
+        fragments = retrieve_records(normalized_query, domain=domain, limit=10)
+        
+        # Run Monte Carlo evaluation
+        mc_result = self.mc_engine.evaluate(
+            query=normalized_query,
+            fragments=fragments,
+            domain=domain
+        )
+        
+        # Compose answer using P5 Procedural Manifestor
+        answer_text = _compose_user_answer(
+            query=query,
+            domain=domain,
+            narrative=mc_result.get('narrative', {}),
+            status=mc_result.get('status', 'ANSWER'),
+            fragments_count=len(fragments),
+            fragments=fragments
+        )
+        
+        # Build result structure
+        result = {
+            "query": query,
+            "answer": answer_text,
+            "confidence": mc_result.get('confidence', 0.0),
+            "domain": domain,
+            "status": mc_result.get('status', 'ANSWER'),
+            "narrative": mc_result.get('narrative', {}),
+            "fragments_used": len(fragments),
+            "data_recency_years": mc_result.get('data_recency_years', 2),
+            "answer_class": mc_result.get('answer_class', 'ANSWER_HIGH_CONFIDENCE') if mc_result.get('confidence', 0) >= 0.7 else 'ANSWER_LOW_CONFIDENCE'
+        }
+        
+        # Write audit log
+        write_audit_log(result)
+        
+        return result
