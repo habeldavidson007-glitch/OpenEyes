@@ -570,19 +570,16 @@ class LinguisticGenome:
                 # Get base verb and apply variation
                 base_verb = atomic.verb.strip()
                 
-                # Handle special case: if verb is just "is/are/was/were" and object is an adjective like "normal"
-                # we should keep the verb as-is or use a synonym for "is"
+                # CRITICAL FIX: Handle copula verbs (is/are/was/were) with predicate adjectives
+                # The issue is that for "Portfolio volatility is normal", the deconstruction might
+                # extract subject="Portfolio volatility", verb="is", object_phrase="normal, but..."
+                # We MUST include "is" in the output!
                 if base_verb.lower() in ['is', 'are', 'was', 'were']:
-                    # Check if object_phrase is a predicate adjective
-                    predicate_adjectives = ['normal', 'stable', 'volatile', 'high', 'low', 'critical', 'dangerous', 'safe']
-                    if atomic.object_phrase and atomic.object_phrase.strip().lower() in predicate_adjectives:
-                        # Use "is" or a variant - don't skip
-                        if base_verb.lower() == 'is':
-                            tokens.append('is')
-                        else:
-                            tokens.append(base_verb)
-                        last_role_added = "verb"
-                        continue  # Done with verb role
+                    # ALWAYS add the copula verb - don't skip it!
+                    tokens.append(base_verb)
+                    last_role_added = "verb"
+                    # Continue to let the object role add the predicate adjective
+                    continue
                 
                 # Skip if verb is empty
                 if not base_verb:
@@ -643,21 +640,38 @@ class LinguisticGenome:
                         obj_text = obj_text[len(aux)+1:].strip()
                         break
                 
-                # Skip if after cleaning, object is empty or just a verb form
-                if not obj_text or obj_text.lower() in ['increased', 'decreased', 'risen', 'fallen', 'normal', 'grown', 'shrunk']:
-                    # If the object is just a predicate adjective like "normal", we need to keep it
-                    # but only if we have a proper verb before it
-                    if obj_text.lower() == 'normal' and last_role_added == 'verb':
-                        pass  # Keep it, it's a valid predicate
+                # CRITICAL FIX: Handle predicate adjectives after copula verbs (is/are/was/were)
+                # If the last role was a copula verb and object is a predicate adjective, KEEP IT
+                predicate_adjectives = ['normal', 'stable', 'volatile', 'high', 'low', 'critical', 
+                                       'dangerous', 'safe', 'healthy', 'weak', 'strong', 'steady']
+                
+                if last_role_added == 'verb' and atomic.verb.lower() in ['is', 'are', 'was', 'were']:
+                    # Check if obj_text IS a predicate adjective or starts with one
+                    first_word = obj_text.split()[0].lower() if obj_text.split() else ""
+                    if first_word in predicate_adjectives:
+                        # This is valid - keep the predicate adjective!
+                        pass  # Don't skip, don't modify
+                    elif obj_text.lower() in predicate_adjectives:
+                        # The entire object is a predicate adjective - keep it
+                        pass
                     elif obj_text.lower() in ['increased', 'decreased', 'risen', 'fallen', 'grown', 'shrunk']:
-                        # This is a verb, skip as it should have been handled in verb role
+                        # This is actually a verb form that was incorrectly extracted - skip
                         continue
-                    else:
+                    elif not obj_text.split():
+                        # Empty after split
+                        continue
+                    # Otherwise continue normally
+                
+                # Skip if after cleaning, object looks like a verb form (not a predicate adjective scenario)
+                if obj_text.lower() in ['increased', 'decreased', 'risen', 'fallen', 'grown', 'shrunk']:
+                    # Only skip if we didn't just add a copula verb
+                    if atomic.verb.lower() not in ['is', 'are', 'was', 'were']:
                         continue
                 
-                # If we already added a verb and object looks like a duplicate, be careful
+                # If we already added a verb and object looks like a duplicate verb, skip
                 if last_role_added == "verb" and obj_text.lower() in ['increased', 'decreased', 'risen', 'fallen']:
-                    continue
+                    if atomic.verb.lower() not in ['is', 'are', 'was', 'were']:
+                        continue
                 
                 if atomic.metric and atomic.metric in obj_text:
                     obj_text = obj_text.replace(atomic.metric, f"a notable {atomic.metric}")
@@ -891,6 +905,47 @@ class LinguisticGenome:
             "were": ("be", [("were", 1.0)], 'were'),
             "been": ("be", [("been", 1.0)], 'been'),
             "being": ("be", [("being", 1.0)], 'being'),
+            # Add common verbs that might not be in clusters
+            "peaks": ("peak", [("peak", 1.0), ("spike", 0.9), ("surge", 0.8)], 's'),
+            "peaked": ("peak", [("peaked", 1.0), ("spiked", 0.9), ("surged", 0.8)], 'ed'),
+            "peaking": ("peak", [("peaking", 1.0), ("spiking", 0.9), ("surging", 0.8)], 'ing'),
+            "peak": ("peak", [("peak", 1.0)], 'base'),
+            "surges": ("surge", [("surge", 1.0), ("spike", 0.9), ("jump", 0.8)], 's'),
+            "surged": ("surge", [("surged", 1.0), ("spiked", 0.9), ("jumped", 0.8)], 'ed'),
+            "surging": ("surge", [("surging", 1.0), ("spiking", 0.9), ("jumping", 0.8)], 'ing'),
+            "surge": ("surge", [("surge", 1.0)], 'base'),
+            "spikes": ("spike", [("spike", 1.0), ("surge", 0.9), ("jump", 0.8)], 's'),
+            "spiked": ("spike", [("spiked", 1.0), ("surged", 0.9), ("jumped", 0.8)], 'ed'),
+            "spiking": ("spike", [("spiking", 1.0), ("surging", 0.9), ("jumping", 0.8)], 'ing'),
+            "spike": ("spike", [("spike", 1.0)], 'base'),
+            "jumps": ("jump", [("jump", 1.0), ("spike", 0.9), ("surge", 0.8)], 's'),
+            "jumped": ("jump", [("jumped", 1.0), ("spiked", 0.9), ("surged", 0.8)], 'ed'),
+            "jumping": ("jump", [("jumping", 1.0), ("spiking", 0.9), ("surging", 0.8)], 'ing'),
+            "jump": ("jump", [("jump", 1.0)], 'base'),
+            "climbs": ("climb", [("climb", 1.0), ("rise", 0.9), ("gain", 0.8)], 's'),
+            "climbed": ("climb", [("climbed", 1.0), ("risen", 0.9), ("gained", 0.8)], 'ed'),
+            "climbing": ("climb", [("climbing", 1.0), ("rising", 0.9), ("gaining", 0.8)], 'ing'),
+            "climb": ("climb", [("climb", 1.0)], 'base'),
+            "gains": ("gain", [("gain", 1.0), ("increase", 0.9), ("rise", 0.8)], 's'),
+            "gained": ("gain", [("gained", 1.0), ("increased", 0.9), ("risen", 0.8)], 'ed'),
+            "gaining": ("gain", [("gaining", 1.0), ("increasing", 0.9), ("rising", 0.8)], 'ing'),
+            "gain": ("gain", [("gain", 1.0)], 'base'),
+            "escalates": ("escalate", [("escalate", 1.0), ("accelerate", 0.9), ("intensify", 0.8)], 's'),
+            "escalated": ("escalate", [("escalated", 1.0), ("accelerated", 0.9), ("intensified", 0.8)], 'ed'),
+            "escalating": ("escalate", [("escalating", 1.0), ("accelerating", 0.9), ("intensifying", 0.8)], 'ing'),
+            "escalate": ("escalate", [("escalate", 1.0)], 'base'),
+            "hikes": ("hike", [("hike", 1.0), ("increase", 0.9), ("raise", 0.8)], 's'),
+            "hiked": ("hike", [("hiked", 1.0), ("increased", 0.9), ("raised", 0.8)], 'ed'),
+            "hiking": ("hike", [("hiking", 1.0), ("increasing", 0.9), ("raising", 0.8)], 'ing'),
+            "hike": ("hike", [("hike", 1.0)], 'base'),
+            "plunges": ("plunge", [("plunge", 1.0), ("drop", 0.9), ("fall", 0.8)], 's'),
+            "plunged": ("plunge", [("plunged", 1.0), ("dropped", 0.9), ("fallen", 0.8)], 'ed'),
+            "plunging": ("plunge", [("plunging", 1.0), ("dropping", 0.9), ("falling", 0.8)], 'ing'),
+            "plunge": ("plunge", [("plunge", 1.0)], 'base'),
+            "slumps": ("slump", [("slump", 1.0), ("drop", 0.9), ("decline", 0.8)], 's'),
+            "slumped": ("slump", [("slumped", 1.0), ("dropped", 0.9), ("declined", 0.8)], 'ed'),
+            "slumping": ("slump", [("slumping", 1.0), ("dropping", 0.9), ("declining", 0.8)], 'ing'),
+            "slump": ("slump", [("slump", 1.0)], 'base'),
         }
         
         # Check if we have a mapping for this verb form
@@ -898,17 +953,21 @@ class LinguisticGenome:
             base_key, variants, suffix_type = base_forms[verb_lower]
             selected = self._weighted_choice(variants)
             
-            # For auxiliary verbs and irregular forms, return as-is
+            # For auxiliary verbs, irregular forms, and base forms, return as-is
             if suffix_type in ['has', 'have', 'had', 'is', 'are', 'was', 'were', 'been', 'being', 
-                               'rose', 'fell', 'grew']:
+                               'rose', 'fell', 'grew', 'base']:
                 return selected
             
             # Strip any existing suffix from selected word before adding new one
+            # CRITICAL: Don't strip if it would create nonsense words
+            # Words ending in 'on', 'en', 'an' should NOT be stripped
             for suffix in ['s', 'es', 'ed', 'ing', 'en', 'n']:
-                if selected.endswith(suffix) and len(selected) > len(suffix) + 1:
-                    # Don't strip if it would leave a very short root
-                    if len(selected) > 4:
-                        selected = selected[:-len(suffix)]
+                if selected.endswith(suffix) and len(selected) > len(suffix) + 2:
+                    # Don't strip if it would leave a very short root or break the word
+                    root_candidate = selected[:-len(suffix)]
+                    # Avoid stripping that creates nonsense (e.g., "balloon" -> "ballo" + "s" = "balloos")
+                    if len(root_candidate) > 4 and not root_candidate.endswith(('oo', 'ee', 'aa')):
+                        selected = root_candidate
                         break
             
             # Maintain the original tense/form by applying appropriate suffix
