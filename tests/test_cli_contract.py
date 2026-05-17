@@ -66,3 +66,10 @@ def test_json_schema_version_in_version_command() -> None:
     payload = json.loads(result.output)
     assert payload["cli_schema_version"] == "1"
     assert payload["ok"] is True
+
+
+def test_ask_help_mentions_auto_routing() -> None:
+    runner = CliRunner()
+    result = runner.invoke(cli, ["ask", "--help"])
+    assert result.exit_code == 0
+    assert "auto-routes domain by default" in result.output

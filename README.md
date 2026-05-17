@@ -20,12 +20,14 @@
 
 ```bash
 python run_openeyes.py --help
-python run_openeyes.py ask "What is inflation?" --domain economy
+python run_openeyes.py ask "What is inflation?"
 ```
 
 That is it. No manual virtual environment step is required for basic use.
 
 ### Immediate Query Pattern
+
+OpenEyes auto-routes the domain; you usually do not need `--domain`.
 
 Use quotes around your query:
 
@@ -216,7 +218,7 @@ For end users who want the easiest path:
 pipx install openeyes
 openeyes version
 openeyes doctor
-openeyes ask "How does inflation affect bond prices?" --domain economy
+openeyes ask "How does inflation affect bond prices?"
 ```
 
 If `pipx` is unavailable, use:
@@ -259,19 +261,19 @@ python -m openeyes.cli --help
 ### 1) Ask a query
 ```bash
 # Economy domain
-openeyes ask "What are the effects of quantitative easing on inflation?" --domain economy
+openeyes ask "What are the effects of quantitative easing on inflation?"
 
 # Healthcare domain
-openeyes ask "What are the first-line treatments for type 2 diabetes?" --domain healthcare
+openeyes ask "What are the first-line treatments for type 2 diabetes?"
 
 # Governance domain
-openeyes ask "How does the legislative process work in the US Congress?" --domain governance
+openeyes ask "How does the legislative process work in the US Congress?"
 
 # Science & Technology domain
-openeyes ask "Explain the fundamentals of quantum entanglement" --domain sat
+openeyes ask "Explain the fundamentals of quantum entanglement"
 
 # Cross-domain query
-openeyes ask "What is the relationship between climate policy and energy markets?" --domain economy
+openeyes ask "What is the relationship between climate policy and energy markets?"
 ```
 
 ### 2) Trigger consolidation/cleanup
@@ -289,7 +291,7 @@ openeyes version
 
 ### 4) JSON mode for desktop or scripting
 ```bash
-openeyes --json ask "Summarize inflation risks" --domain economy
+openeyes --json ask "Summarize inflation risks"
 ```
 
 ### 5) API placeholder

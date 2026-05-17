@@ -115,7 +115,7 @@ def _run_query(ctx: CLIContext, query: str, domain: str | None, explain: bool, d
 
 @cli.command(name="ask")
 @click.argument("query")
-@click.option("--domain", default=None, help="Optional explicit domain override")
+@click.option("--domain", default=None, help="Optional override; OpenEyes auto-routes domain by default")
 @click.option("--explain", is_flag=True)
 @click.option("--debug", is_flag=True)
 @click.pass_obj
@@ -125,7 +125,7 @@ def ask(ctx: CLIContext, query: str, domain: str | None, explain: bool, debug: b
 
 @cli.command(name="query", hidden=True)
 @click.argument("query")
-@click.option("--domain", default=None)
+@click.option("--domain", default=None, help="Optional override; OpenEyes auto-routes domain by default")
 @click.option("--json-output", is_flag=True)
 @click.option("--explain", is_flag=True)
 @click.option("--debug", is_flag=True)
