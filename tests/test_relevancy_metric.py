@@ -15,3 +15,10 @@ def test_quality_eval_payload_shape() -> None:
     assert "avg_domain_accuracy" in out
     assert "avg_concept_score" in out
     assert isinstance(out["results"], list)
+
+
+def test_inflation_query_mentions_inflation_or_prices() -> None:
+    from openeyes.services.query_service import QueryService
+    out = QueryService().ask("What is inflation?").payload
+    ans = (out.get("answer") or "").lower()
+    assert ("inflation" in ans) or ("price" in ans)

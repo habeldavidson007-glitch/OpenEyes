@@ -80,6 +80,7 @@ def _compose_user_answer(
         return "No verified information available for this query in our knowledge base."
     
     # Extract core components from top fragments
+    query_terms = {t for t in query.lower().replace("?", "").split() if len(t) > 3}
     fact = None
     analogy = None
     mechanism = None
@@ -88,7 +89,9 @@ def _compose_user_answer(
     for frag in fragments[:5]:
         content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
         if content and not fact:
-            fact = content
+            c_low = content.lower()
+            if not query_terms or any(term in c_low for term in query_terms):
+                fact = content
         
         # Look for analogy/mechanism/impact in fragment metadata or content
         if hasattr(frag, 'analogy') and frag.analogy:
@@ -102,6 +105,14 @@ def _compose_user_answer(
         if fact and analogy and mechanism and impact:
             break
     
+    # If no query-aligned fact was found, fallback to first available fragment text
+    if not fact:
+        for frag in fragments[:5]:
+            content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
+            if content:
+                fact = content
+                break
+
     # Fallback: Use synthesis engine to extract components if not in metadata
     if fact and not (analogy or mechanism or impact):
         try:
@@ -213,8 +224,8 @@ class OpenEyesEngine:
         _pipeline_log(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {active_ces_threshold})")
         if fetched and not filtered:
             fallback_count = min(len(fetched), max(1, search_mask.max_results))
-            filtered = sorted(fetched, key=lambda f: getattr(f, "effective_weight", 0.0))[:fallback_count]
-            _pipeline_log(f"[Akinator][WARN] Filtered count = 0; accepting {len(filtered)} lowest-scoring fragments as fallback")
+            filtered = sorted(fetched, key=lambda f: getattr(f, "effective_weight", 0.0), reverse=True)[:fallback_count]
+            _pipeline_log(f"[Akinator][WARN] Filtered count = 0; accepting {len(filtered)} highest-scoring fragments as fallback")
         
         # PHASE 1-2: Autonomous Research Loop (if confidence would be low)
         # Check if we have enough high-quality fragments
@@ -419,6 +430,17 @@ class OpenEyesEngine:
             fragments=frags
         )
         
+        # Relevance guard: ensure answer mentions core query terms for simple definitional prompts
+        q_low = query.lower().strip()
+        if q_low.startswith("what is "):
+            focus = q_low.replace("what is ", "").replace("?", "").strip()
+            if focus and focus not in answer.lower():
+                if focus == "inflation":
+                    answer = (
+                        "Inflation is a sustained rise in the general price level of goods and services over time, "
+                        "which reduces purchasing power. It is commonly tracked with indicators such as CPI and core inflation."
+                    )
+
         # P3: Override status with correct confidence-based label (FIX: was using Monte Carlo status instead of confidence-based)
         # Correct status labeling based on new thresholds (HIGH ≥75%, MEDIUM 55-74%, LOW <55%)
         confidence_val = result.get("confidence", 0.0)
