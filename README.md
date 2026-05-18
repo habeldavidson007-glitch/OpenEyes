@@ -12,6 +12,54 @@
 
 ---
 
+## Quickest Way (ZIP Users)
+
+1. Download OpenEyes ZIP
+2. Extract it
+3. Run:
+
+```bash
+python run_openeyes.py --help
+python run_openeyes.py ask "What is inflation?"
+```
+
+That is it. No manual virtual environment step is required for basic use.
+
+### Immediate Query Pattern
+
+OpenEyes auto-routes the domain; you usually do not need `--domain`.
+
+Use quotes around your query:
+
+```bash
+python run_openeyes.py ask "your question here"
+python run_openeyes.py --no-animate ask "your question here"
+python run_openeyes.py --fast ask "your question here"
+```
+
+The quotes (`" ... "`) open and close your query text immediately in one command.
+
+### Animation Controls
+
+- `--no-animate`: disables loading indicator and typewriter effect
+- `--fast`: keeps animations but speeds them up
+
+### Sleep / Safe Shutdown Command
+
+To consolidate and safely close current runtime state:
+
+```bash
+python run_openeyes.py sleep
+```
+
+If installed as a command, the equivalent is:
+
+```bash
+openeyes sleep
+```
+
+---
+
 ## Why OpenEyes?
 
 Most systems are optimized to always respond. OpenEyes is optimized to **respond responsibly**.
@@ -145,6 +193,59 @@ This structure ensures:
 
 ---
 
+
+
+## Product Roadmap (CLI First → Desktop)
+
+OpenEyes follows a strict product sequence:
+
+1. **CLI-first stability**: `openeyes ask`, `openeyes doctor`, `openeyes config`, `openeyes version`
+2. **Install simplicity**: `pipx install openeyes` as the default end-user path
+3. **Desktop next**: GUI will consume stable CLI/JSON outputs (thin client architecture)
+
+This keeps the engine reliable and avoids desktop-specific logic leaking into core reasoning.
+
+## ZIP Download (Alternative)
+
+If users download OpenEyes as a ZIP, extract and run:
+
+```bash
+python run_openeyes.py --help
+python run_openeyes.py doctor
+python run_openeyes.py ask "How does inflation affect bond prices?"
+```
+
+`run_openeyes.py` auto-installs missing dependencies locally into `.openeyes/vendor` (inside the extracted folder), so users do not need to manually create a virtual environment.
+
+## Fast Install (Recommended)
+
+For end users who want the easiest path:
+
+```bash
+pipx install openeyes
+openeyes version
+openeyes doctor
+openeyes ask "How does inflation affect bond prices?"
+```
+
+If `pipx` is unavailable, use:
+
+```bash
+python -m pip install -e .
+openeyes version
+```
+
+## Current Product Status
+
+Protocol reference for GUI/integrations: `CLI_PROTOCOL.md`.
+
+
+OpenEyes is usable, but still under active quality hardening.
+
+- CLI contract is stabilizing (`ask`, `doctor`, `config`, `version`, `--json`)
+- Relevancy can still drift on some cross-domain prompts
+- Use `scripts/evaluate_relevancy.py` and `scripts/evaluate_answer_quality.py` to catch off-topic regressions before release
+
 ## Installation
 
 ### Recommended (Ubuntu/Debian with PEP 668)
@@ -170,19 +271,19 @@ python -m openeyes.cli --help
 ### 1) Ask a query
 ```bash
 # Economy domain
-openeyes query "What are the effects of quantitative easing on inflation?" --domain economy
+openeyes ask "What are the effects of quantitative easing on inflation?"
 
 # Healthcare domain
-openeyes query "What are the first-line treatments for type 2 diabetes?" --domain healthcare
+openeyes ask "What are the first-line treatments for type 2 diabetes?"
 
 # Governance domain
-openeyes query "How does the legislative process work in the US Congress?" --domain governance
+openeyes ask "How does the legislative process work in the US Congress?"
 
 # Science & Technology domain
-openeyes query "Explain the fundamentals of quantum entanglement" --domain sat
+openeyes ask "Explain the fundamentals of quantum entanglement"
 
 # Cross-domain query
-openeyes query "What is the relationship between climate policy and energy markets?" --domain economy
+openeyes ask "What is the relationship between climate policy and energy markets?"
 ```
 
 ### 2) Trigger consolidation/cleanup
@@ -193,9 +294,17 @@ openeyes sleep
 ### 3) Check runtime status
 ```bash
 openeyes status
+openeyes doctor
+openeyes config
+openeyes version
 ```
 
-### 4) API placeholder
+### 4) JSON mode for desktop or scripting
+```bash
+openeyes --json ask "Summarize inflation risks"
+```
+
+### 5) API placeholder
 ```bash
 openeyes serve --port 8080
 ```

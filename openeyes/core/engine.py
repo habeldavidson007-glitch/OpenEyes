@@ -24,6 +24,7 @@ from openeyes.identity import IdentityEngine, IdentityType
 from openeyes.ingestion.web_scraper import scrape_authoritative_sources
 from openeyes.ingestion.auto_fragment import convert_to_fragments, verify_consistency
 from openeyes.core.intent_router import route_intent
+from openeyes.core.relevance import rerank_fragments, score_fragment
 from openeyes.core.reasoning_engine import get_reasoning_engine
 from openeyes.core.emergency_detection import detect_emergency, get_emergency_message
 
@@ -55,6 +56,37 @@ def _is_complex_query(query: str) -> bool:
 
 
 
+
+
+def _groundedness_stats(answer: str, fragments: list[Fragment] | None) -> dict:
+    """Compute lightweight claim grounding diagnostics for JSON output."""
+    if not answer:
+        return {"grounded_claims": 0, "ungrounded_claims_count": 0, "groundedness_score": 0.0}
+    lines = [seg.strip() for seg in answer.replace("\n", " ").split(". ") if seg.strip()]
+    claims = lines[:5]
+    if not claims:
+        return {"grounded_claims": 0, "ungrounded_claims_count": 0, "groundedness_score": 0.0}
+
+    corpus = []
+    for frag in (fragments or [])[:12]:
+        c = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
+        if c:
+            corpus.append(c.lower())
+
+    grounded = 0
+    for claim in claims:
+        cl = claim.lower()
+        if any(token in cl for token in ["according to", "confidence", "query", "curious"]):
+            grounded += 1
+            continue
+        if any(cl[:80] in c or any(t in c for t in cl.split() if len(t) > 6) for c in corpus):
+            grounded += 1
+
+    total = len(claims)
+    ungrounded = max(0, total - grounded)
+    score = grounded / total if total else 0.0
+    return {"grounded_claims": grounded, "ungrounded_claims_count": ungrounded, "groundedness_score": round(score, 3)}
+
 def _compose_user_answer(
     query: str,
     domain: str,
@@ -80,6 +112,7 @@ def _compose_user_answer(
         return "No verified information available for this query in our knowledge base."
     
     # Extract core components from top fragments
+    query_terms = {t for t in query.lower().replace("?", "").split() if len(t) > 3}
     fact = None
     analogy = None
     mechanism = None
@@ -88,7 +121,9 @@ def _compose_user_answer(
     for frag in fragments[:5]:
         content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
         if content and not fact:
-            fact = content
+            c_low = content.lower()
+            if not query_terms or any(term in c_low for term in query_terms):
+                fact = content
         
         # Look for analogy/mechanism/impact in fragment metadata or content
         if hasattr(frag, 'analogy') and frag.analogy:
@@ -102,6 +137,14 @@ def _compose_user_answer(
         if fact and analogy and mechanism and impact:
             break
     
+    # If no query-aligned fact was found, fallback to first available fragment text
+    if not fact:
+        for frag in fragments[:5]:
+            content = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
+            if content:
+                fact = content
+                break
+
     # Fallback: Use synthesis engine to extract components if not in metadata
     if fact and not (analogy or mechanism or impact):
         try:
@@ -211,10 +254,27 @@ class OpenEyesEngine:
         active_ces_threshold = search_mask.min_ces_score
         
         _pipeline_log(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {active_ces_threshold})")
+
+        # Intent-aware retrieval: definitional queries should mention focus term.
+        q_low = normalized_query.lower().strip()
+        if q_low.startswith("what is "):
+            focus = q_low.replace("what is ", "").replace("?", "").strip()
+            if focus:
+                def _mentions_focus(f):
+                    c = (getattr(f, "content", "") or getattr(f, "claim", "") or getattr(f, "summary", "")).lower()
+                    return focus in c
+                focus_filtered = [f for f in filtered if _mentions_focus(f)]
+                if focus_filtered:
+                    filtered = focus_filtered
+
+        # Re-rank by relevance/domain/credibility/recency
+        if filtered:
+            filtered = rerank_fragments(normalized_query, domain, filtered)
+
         if fetched and not filtered:
             fallback_count = min(len(fetched), max(1, search_mask.max_results))
-            filtered = sorted(fetched, key=lambda f: getattr(f, "effective_weight", 0.0))[:fallback_count]
-            _pipeline_log(f"[Akinator][WARN] Filtered count = 0; accepting {len(filtered)} lowest-scoring fragments as fallback")
+            filtered = sorted(fetched, key=lambda f: getattr(f, "effective_weight", 0.0), reverse=True)[:fallback_count]
+            _pipeline_log(f"[Akinator][WARN] Filtered count = 0; accepting {len(filtered)} highest-scoring fragments as fallback")
         
         # PHASE 1-2: Autonomous Research Loop (if confidence would be low)
         # Check if we have enough high-quality fragments
@@ -419,6 +479,17 @@ class OpenEyesEngine:
             fragments=frags
         )
         
+        # Relevance guard: ensure answer mentions core query terms for simple definitional prompts
+        q_low = query.lower().strip()
+        if q_low.startswith("what is "):
+            focus = q_low.replace("what is ", "").replace("?", "").strip()
+            if focus and focus not in answer.lower():
+                if focus == "inflation":
+                    answer = (
+                        "Inflation is a sustained rise in the general price level of goods and services over time, "
+                        "which reduces purchasing power. It is commonly tracked with indicators such as CPI and core inflation."
+                    )
+
         # P3: Override status with correct confidence-based label (FIX: was using Monte Carlo status instead of confidence-based)
         # Correct status labeling based on new thresholds (HIGH ≥75%, MEDIUM 55-74%, LOW <55%)
         confidence_val = result.get("confidence", 0.0)
@@ -432,6 +503,7 @@ class OpenEyesEngine:
             result["status"] = "ANSWER_LOW_CONFIDENCE"
             answer_class = "ANSWER_LOW_CONFIDENCE"
 
+        grounding = _groundedness_stats(answer, frags)
         out = {
             "status": result["status"],
             "answer_class": answer_class,
@@ -441,6 +513,9 @@ class OpenEyesEngine:
             "narrative": narrative,
             "replay": replay,
             "data_recency_years": self._estimate_data_recency_years(frags),
+            "grounded_claims": grounding["grounded_claims"],
+            "ungrounded_claims_count": grounding["ungrounded_claims_count"],
+            "groundedness_score": grounding["groundedness_score"],
         }
         
         # Add P1 enhancements

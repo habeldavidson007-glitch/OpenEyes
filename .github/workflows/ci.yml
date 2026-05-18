@@ -32,6 +32,11 @@ jobs:
     - name: Run tests
       run: |
         pytest tests/ -v --cov=openeyes --cov-report=term-missing
+
+    - name: Run quality gates
+      run: |
+        PYTHONPATH=. python scripts/evaluate_relevancy.py --min-overlap 0.10
+        PYTHONPATH=. python scripts/evaluate_answer_quality.py --min-domain-accuracy 0.50 --min-concept-score 0.20
     
     - name: Upload coverage to Codecov (optional)
       uses: codecov/codecov-action@v3
