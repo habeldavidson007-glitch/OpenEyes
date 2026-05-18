@@ -33,9 +33,16 @@ Use quotes around your query:
 
 ```bash
 python run_openeyes.py ask "your question here"
+python run_openeyes.py --no-animate ask "your question here"
+python run_openeyes.py --fast ask "your question here"
 ```
 
 The quotes (`" ... "`) open and close your query text immediately in one command.
+
+### Animation Controls
+
+- `--no-animate`: disables loading indicator and typewriter effect
+- `--fast`: keeps animations but speeds them up
 
 ### Sleep / Safe Shutdown Command
 

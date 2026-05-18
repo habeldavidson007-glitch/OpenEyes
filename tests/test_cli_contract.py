@@ -89,3 +89,9 @@ def test_ask_json_contains_routing_metadata() -> None:
     assert result.exit_code == 0
     assert '"routed_domain"' in result.output
     assert '"routing_confidence"' in result.output
+
+
+def test_ask_no_animate_flag() -> None:
+    runner = CliRunner()
+    result = runner.invoke(cli, ["--no-animate", "ask", "What is inflation?"])
+    assert result.exit_code == 0

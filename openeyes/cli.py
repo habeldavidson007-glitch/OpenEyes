@@ -30,26 +30,34 @@ CLI_SCHEMA_VERSION = "1"
 
 
 class CLIContext:
-    def __init__(self, json_mode: bool = False):
+    def __init__(self, json_mode: bool = False, no_animate: bool = False, fast: bool = False):
         self.json_mode = json_mode
+        self.no_animate = no_animate
+        self.fast = fast
 
 
-def stream_loading(stages=LOADING_STAGES):
+def stream_loading(stages=LOADING_STAGES, fast: bool = False):
+    if not sys.stdout.isatty():
+        return
+    speed_factor = 0.35 if fast else 1.0
     for message, duration in stages:
-        with Live(f"[cyan]⟳ {message}[/cyan]", refresh_per_second=10, transient=True):
-            time.sleep(duration)
+        with Live(f"[cyan]⟳ {message}[/cyan]", refresh_per_second=20, transient=True):
+            time.sleep(duration * speed_factor)
 
 
-def typewriter_output(text: str, speed: float = 0.015):
+def typewriter_output(text: str, speed: float = 0.012):
+    if not sys.stdout.isatty():
+        print(text)
+        return
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
-        if char in '.!?':
-            time.sleep(speed * 8)
-        elif char in ',;:':
-            time.sleep(speed * 4)
-        elif char == '\n':
-            time.sleep(speed * 2)
+        if char in ".!?":
+            time.sleep(speed * 5)
+        elif char in ",;:":
+            time.sleep(speed * 3)
+        elif char == "\n":
+            time.sleep(speed * 1.5)
         else:
             time.sleep(speed)
     print()
@@ -73,14 +81,16 @@ def emit(ctx: CLIContext, payload: dict, pretty_text: str | None = None, ok: boo
 
 @click.group()
 @click.option("--json", "json_mode", is_flag=True, help="Emit machine-readable JSON for all commands")
+@click.option("--no-animate", is_flag=True, help="Disable loading and typewriter animations")
+@click.option("--fast", is_flag=True, help="Speed up animations for quick terminal feedback")
 @click.pass_context
-def cli(ctx: click.Context, json_mode: bool) -> None:
-    ctx.obj = CLIContext(json_mode=json_mode)
+def cli(ctx: click.Context, json_mode: bool, no_animate: bool, fast: bool) -> None:
+    ctx.obj = CLIContext(json_mode=json_mode, no_animate=no_animate, fast=fast)
 
 
 def _run_query(ctx: CLIContext, query: str, domain: str | None, explain: bool, debug: bool) -> None:
-    if not ctx.json_mode:
-        stream_loading()
+    if not ctx.json_mode and not ctx.no_animate:
+        stream_loading(fast=ctx.fast)
 
     service = QueryService()
     try:
@@ -97,7 +107,10 @@ def _run_query(ctx: CLIContext, query: str, domain: str | None, explain: bool, d
         return
 
     if not explain and not debug:
-        typewriter_output(answer_text)
+        if ctx.no_animate:
+            print(answer_text)
+        else:
+            typewriter_output(answer_text, speed=0.006 if ctx.fast else 0.012)
         print(f"\n[cyan]Confidence: {result.get('confidence', 0)}%[/cyan]")
         return
 
@@ -116,8 +129,8 @@ def _run_query(ctx: CLIContext, query: str, domain: str | None, explain: bool, d
 @cli.command(name="ask")
 @click.argument("query")
 @click.option("--domain", default=None, help="Optional override; OpenEyes auto-routes domain by default")
-@click.option("--explain", is_flag=True)
-@click.option("--debug", is_flag=True)
+@click.option("--explain", is_flag=True, help="Show inference metadata and narrative trace")
+@click.option("--debug", is_flag=True, help="Alias for --explain")
 @click.pass_obj
 def ask(ctx: CLIContext, query: str, domain: str | None, explain: bool, debug: bool) -> None:
     _run_query(ctx, query, domain, explain, debug)
