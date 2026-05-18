@@ -599,6 +599,16 @@ class OpenEyesEngine:
         if context_boost > 0.0:
             result["confidence"] = round(min(99.0, result["confidence"] + (context_boost * 100)), 2)
             ui.log_audit(f"Context boost applied: +{context_boost*100:.1f}% (from {len(list(context_manager.history))} prior turns)")
+            # Update answer_class based on new confidence
+            if result["confidence"] >= 75:
+                result["status"] = "ANSWER_HIGH_CONFIDENCE"
+                answer_class = "ANSWER_HIGH_CONFIDENCE"
+            elif result["confidence"] >= 55:
+                result["status"] = "ANSWER_MEDIUM_CONFIDENCE"
+                answer_class = "ANSWER_MEDIUM_CONFIDENCE"
+            else:
+                result["status"] = "ANSWER_LOW_CONFIDENCE"
+                answer_class = "ANSWER_LOW_CONFIDENCE"
         
         ingest_case(
             self.memory_path,

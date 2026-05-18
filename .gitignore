@@ -1,7 +1,21 @@
 ```
-# Binary and compiled files
+# Binary/compiled files
 *.bin
 
-# Environment and cache
+# Dependencies and build artifacts
 .openeyes/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
 ```

@@ -11,8 +11,8 @@ from typing import Tuple, Optional, List
 # Patterns indicating impossible or guaranteed outcomes
 IMPOSSIBLE_PATTERNS = [
     # Guaranteed returns/profits
-    (r'guaranteed\s+(?:\d+%|\d+\s*percent)\s+(?:return|profit|gain)', 'GUARANTEED_RETURN'),
-    (r'guaranteed\s+(?:to\s+)?(?:make\s+money|get\s+rich|profit)', 'GUARANTEED_PROFIT'),
+    (r'guarante\w*\s+(?:\d+%|\d+\s*percent)\s+(?:return|profit|gain)', 'GUARANTEED_RETURN'),
+    (r'guarante\w*\s+(?:to\s+)?(?:make\s+money|get\s+rich|profit)', 'GUARANTEED_PROFIT'),
     (r'100%\s+(?:guaranteed|sure\s+thing|certainty)', 'GUARANTEED_100'),
     (r'never\s+loses', 'NEVER_LOSES'),
     (r'risk[- ]?free\s+(?:investment|profit|return)', 'RISK_FREE'),
