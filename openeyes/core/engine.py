@@ -24,6 +24,7 @@ from openeyes.identity import IdentityEngine, IdentityType
 from openeyes.ingestion.web_scraper import scrape_authoritative_sources
 from openeyes.ingestion.auto_fragment import convert_to_fragments, verify_consistency
 from openeyes.core.intent_router import route_intent
+from openeyes.core.relevance import rerank_fragments, score_fragment
 from openeyes.core.reasoning_engine import get_reasoning_engine
 from openeyes.core.emergency_detection import detect_emergency, get_emergency_message
 
@@ -222,6 +223,23 @@ class OpenEyesEngine:
         active_ces_threshold = search_mask.min_ces_score
         
         _pipeline_log(f"[Akinator] Filtered {len(fetched)} -> {len(filtered)} fragments (CES >= {active_ces_threshold})")
+
+        # Intent-aware retrieval: definitional queries should mention focus term.
+        q_low = normalized_query.lower().strip()
+        if q_low.startswith("what is "):
+            focus = q_low.replace("what is ", "").replace("?", "").strip()
+            if focus:
+                def _mentions_focus(f):
+                    c = (getattr(f, "content", "") or getattr(f, "claim", "") or getattr(f, "summary", "")).lower()
+                    return focus in c
+                focus_filtered = [f for f in filtered if _mentions_focus(f)]
+                if focus_filtered:
+                    filtered = focus_filtered
+
+        # Re-rank by relevance/domain/credibility/recency
+        if filtered:
+            filtered = rerank_fragments(normalized_query, domain, filtered)
+
         if fetched and not filtered:
             fallback_count = min(len(fetched), max(1, search_mask.max_results))
             filtered = sorted(fetched, key=lambda f: getattr(f, "effective_weight", 0.0), reverse=True)[:fallback_count]

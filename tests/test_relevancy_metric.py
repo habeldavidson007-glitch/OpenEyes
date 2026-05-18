@@ -22,3 +22,10 @@ def test_inflation_query_mentions_inflation_or_prices() -> None:
     out = QueryService().ask("What is inflation?").payload
     ans = (out.get("answer") or "").lower()
     assert ("inflation" in ans) or ("price" in ans)
+
+
+def test_routing_confidence_non_null() -> None:
+    from openeyes.services.query_service import QueryService
+    out = QueryService().ask("What is inflation?").payload
+    assert out.get("routing_confidence") is not None
+    assert 0.0 <= float(out["routing_confidence"]) <= 1.0

@@ -17,5 +17,8 @@ class QueryService:
     def ask(self, query: str, domain: str | None = None) -> QueryResult:
         result = self.engine.answer(query=query, domain=domain)
         result.setdefault("routed_domain", result.get("domain", domain))
-        result.setdefault("routing_confidence", None)
+        if result.get("routing_confidence") is None:
+            # proxy confidence until router exposes calibrated score
+            conf = float(result.get("confidence", 0.0) or 0.0)
+            result["routing_confidence"] = round(max(0.0, min(1.0, conf / 100.0)), 3)
         return QueryResult(payload=result)
