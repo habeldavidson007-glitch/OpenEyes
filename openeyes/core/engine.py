@@ -32,9 +32,11 @@ from openeyes.core.logical_synthesizer import LogicalSynthesizer
 from openeyes.core.synthesis_engine import SynthesisEngine
 from openeyes.ui.control_deck import ControlDeck
 from openeyes.cognitive.procedural_manifestor import ProceduralManifestor
+from openeyes.core.context_manager import ContextManager
 
 akinator = AkinatorEngine()
 identity = IdentityEngine(IdentityType.ANALYTICAL)  # Default identity
+context_manager = ContextManager()  # Enable multi-turn conversation memory
 VERBOSE_PIPELINE = os.getenv("OPENEYES_VERBOSE_PIPELINE", "0") == "1"
 logical_engine = LogicalSynthesizer()  # P3: Logical Synthesis Engine
 synthesis_engine = SynthesisEngine()  # P4: Narrative Synthesis Engine
@@ -343,6 +345,9 @@ class OpenEyesEngine:
         ui = ControlDeck()
         ui.start_session(query, domain or "auto")
         
+        # CRITICAL FIX: Add user turn to context for multi-turn memory
+        context_manager.add_turn("user", query, domain_hint=None)
+        
         # P0 CRITICAL FIX: Emergency detection BEFORE any processing
         is_emergency, emergency_type, emergency_resources = detect_emergency(query)
         if is_emergency:
@@ -524,9 +529,23 @@ class OpenEyesEngine:
         if "emergency_resources" in result:
             out["emergency_resources"] = result["emergency_resources"]
         
+        # CRITICAL FIX: Surface provenance warnings as first-class transparency signal
+        if "provenance_warnings" in result:
+            out["provenance_warnings"] = result["provenance_warnings"]
+            ui.log_audit(f"Provenance warnings: {len(result['provenance_warnings'])} fragments with missing/invalid metadata")
+        
         # Log final audit entries
         ui.log_audit(f"Composing final answer from {len(frags)} fragments")
         ui.log_audit(f"Final confidence: {result['confidence']:.1f}%")
+        
+        # CRITICAL FIX: Add assistant turn to context with domain hint for multi-turn memory
+        context_manager.add_turn("assistant", answer, domain_hint=routed_domain)
+        
+        # CRITICAL FIX: Apply context boost to confidence based on conversation history
+        context_boost = context_manager.get_context_boost(query, routed_domain)
+        if context_boost > 0.0:
+            result["confidence"] = round(min(99.0, result["confidence"] + (context_boost * 100)), 2)
+            ui.log_audit(f"Context boost applied: +{context_boost*100:.1f}% (from {len(list(context_manager.history))} prior turns)")
         
         ingest_case(
             self.memory_path,
@@ -546,7 +565,7 @@ class OpenEyesEngine:
         if result["status"].startswith("HALT"):
             ui.render_halt(result["status"], answer, out.get("emergency_resources", {}))
         else:
-            ui.render_success(answer_class, answer, out["confidence"], out.get("data_recency_years", 0))
+            ui.render_success(answer_class, answer, result["confidence"], out.get("data_recency_years", 0))
         
         return out
     

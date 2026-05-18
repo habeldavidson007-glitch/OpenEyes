@@ -1,45 +1,46 @@
 ```
-# Binary/compiled files
-*.bin
-
-# Logs and temp files
-*.log
-
-# Environment specific
-.env
-.env.local
-.env.*
-
-# Dependencies and build artifacts
-node_modules/
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.Python
 *.so
-*.egg-info/
-dist/
-build/
 .coverage
-coverage/
 htmlcov/
-.mypy_cache/
 .pytest_cache/
+.mypy_cache/
+
+# Compiled and build artifacts
+*.o
+*.obj
+*.out
+*.dll
+*.so
+*.a
+*.class
+
+# Dependencies
 .venv/
 venv/
-.env/
+.env
+.env.local
+.env.*
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Editors
+.vscode/
+.idea/
 
 # System files
 .DS_Store
 Thumbs.db
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-# Original rules preserved
-*.log
+# Coverage
+coverage/
 ```
