@@ -1,46 +1,8 @@
 ```
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.so
-.coverage
-htmlcov/
-.pytest_cache/
-.mypy_cache/
+# Audit logs and test results
+.openeyes/vault/audit/*.md
+test_results/
 
-# Compiled and build artifacts
-*.o
-*.obj
-*.out
-*.dll
-*.so
-*.a
-*.class
-
-# Dependencies
-.venv/
-venv/
-.env
-.env.local
-.env.*
-
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-*.swo
-
-# Editors
-.vscode/
-.idea/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Coverage
-coverage/
+# Binary files
+*.bin
 ```
