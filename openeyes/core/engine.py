@@ -27,6 +27,12 @@ from openeyes.core.intent_router import route_intent
 from openeyes.core.relevance import rerank_fragments, score_fragment
 from openeyes.core.reasoning_engine import get_reasoning_engine
 from openeyes.core.emergency_detection import detect_emergency, get_emergency_message
+from openeyes.core.impossible_premise import (
+    detect_impossible_premise, 
+    get_impossible_premise_message,
+    should_request_clarification,
+    get_clarification_message
+)
 
 from openeyes.core.logical_synthesizer import LogicalSynthesizer
 from openeyes.core.synthesis_engine import SynthesisEngine
@@ -345,7 +351,20 @@ class OpenEyesEngine:
         ui = ControlDeck()
         ui.start_session(query, domain or "auto")
         
-        # CRITICAL FIX: Add user turn to context for multi-turn memory
+        # P0 CRITICAL FIX: Input validation - reject empty/invalid queries
+        if not query or not query.strip():
+            return {
+                "status": "INVALID_INPUT",
+                "answer_class": "CLARIFICATION_NEEDED",
+                "answer": "Please provide a valid question. Your input appears to be empty.",
+                "confidence": 0.0,
+                "domain": "general",
+                "narrative": {"context": "", "scenarios": {}, "recommendation": "Provide a complete question"},
+                "replay": {},
+                "data_recency_years": 0,
+            }
+        
+        # Add user turn to context for multi-turn memory
         context_manager.add_turn("user", query, domain_hint=None)
         
         # P0 CRITICAL FIX: Emergency detection BEFORE any processing
@@ -364,6 +383,40 @@ class OpenEyesEngine:
                 "emergency_type": emergency_type,
                 "emergency_resources": emergency_resources,
                 "narrative": {"context": "Medical emergency detected", "scenarios": {}, "recommendation": "Seek immediate medical attention"},
+                "replay": {},
+                "data_recency_years": 0,
+            }
+        
+        # P2 NEW: Check for impossible premises
+        is_impossible, premise_type, matched_patterns = detect_impossible_premise(query)
+        if is_impossible:
+            ui.update_step("IMPOSSIBLE PREMISE DETECTED", "WARNING", color="orange")
+            message = get_impossible_premise_message(premise_type)
+            return {
+                "status": "IMPOSSIBLE_PREMISE",
+                "answer_class": "PREMISE_WARNING",
+                "answer": f"{message}\n\nI can provide evidence-based information on realistic alternatives if you'd like.",
+                "confidence": 0.0,
+                "domain": routed_domain if 'routed_domain' in locals() else "general",
+                "premise_type": premise_type,
+                "narrative": {"context": "Query based on impossible premise", "scenarios": {}, "recommendation": "Consider realistic alternatives"},
+                "replay": {},
+                "data_recency_years": 0,
+            }
+        
+        # P2 NEW: Check if clarification is needed
+        needs_clarification, clarification_reason = should_request_clarification(query)
+        if needs_clarification:
+            ui.update_step("CLARIFICATION NEEDED", "INFO", color="blue")
+            clar_msg = get_clarification_message(clarification_reason, query)
+            return {
+                "status": "CLARIFICATION_REQUEST",
+                "answer_class": "CLARIFICATION_NEEDED",
+                "answer": clar_msg,
+                "confidence": 0.0,
+                "domain": "general",
+                "clarification_reason": clarification_reason,
+                "narrative": {"context": "Query too vague", "scenarios": {}, "recommendation": "Provide more specific details"},
                 "replay": {},
                 "data_recency_years": 0,
             }

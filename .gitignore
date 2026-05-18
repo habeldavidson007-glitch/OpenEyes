@@ -1,8 +1,31 @@
 ```
-# Audit logs and test results
-.openeyes/vault/audit/*.md
-test_results/
-
-# Binary files
+# Binary/compiled files
 *.bin
+*.pyc
+__pycache__/
+
+# Dependencies and build artifacts
+.openeyes/
+.openeyes/vault/
+.openeyes/vault/audit/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Environment files
+.env
+.env.local
+*.env.*
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Coverage and testing
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
 ```

@@ -9,13 +9,14 @@ import re
 from typing import Tuple, List, Dict
 
 # Emergency keyword patterns by category
+# Note: Patterns now include context markers to distinguish informational vs personal distress
 EMERGENCY_PATTERNS = {
     'chest_pain': [
-        r'chest\s+pain', r'chest\s+hurt', r'chest\s+pressure', r'chest\s+tight',
-        r'angina', r'heart\s+attack', r'myocardial\s+infarction'
+        r'(?:i have|i am having|my chest)\s+(?:chest\s+)?pain', r'chest\s+hurt', r'chest\s+pressure', r'chest\s+tight',
+        r'angina', r'(?:i think i am having|i might be having)\s+heart\s+attack', r'myocardial\s+infarction'
     ],
     'breathing_issues': [
-        r'trouble\s+breath', r'difficulty\s+breath', r'can\'t\s+breathe',
+        r'(?:i can\'t|i cannot|i am)\s+(?:trouble\s+)?breath', r'difficulty\s+breath', r'can\'t\s+breathe',
         r'shortness\s+of\s+breath', r'gasping', r'choking', r'not\s+getting\s+air',
         r'respiratory\s+distress'
     ],
@@ -29,24 +30,27 @@ EMERGENCY_PATTERNS = {
         r'arterial\s+bleed', r'severely\s+cut', r'deep\s+wound\s+bleeding'
     ],
     'overdose': [
-        r'overdose', r'too\s+many\s+pills', r'overdosed', r'drug\s+overdose',
+        r'(?:i|he|she)\s+overdose', r'too\s+many\s+pills', r'overdosed', r'drug\s+overdose',
         r'pill\s+overdose', r'poisoning', r'ingested\s+toxic', r'take\s+all\s+my\s+pills'
     ],
     'suicidal': [
-        r'suicide', r'kill\s+myself', r'end\s+my\s+life', r'self[- ]harm',
-        r'hurt\s+myself', r'suicidal', r'want\s+to\s+die', r'no\s+reason\s+to\s+live',
-        r'should\s+i\s+just\s+end\s+it', r'want\s+to\s+die', r'made\s+me\s+want\s+to\s+die',
-        r'thinking\s+of\s+hurting\s+myself', r'how\s+do\s+i\s+end\s+the\s+pain',
-        r'drive\s+.*\s+off\s+a\s+bridge', r'stop\s+breathing', r'peaceful\s+way\s+to\s+exit',
-        r'escape\s+this\s+financial\s+ruin', r'can\'t\s+fix\s+this\s+debt',
-        r'lost\s+everything.*end\s+it', r'bankruptcy.*too\s+much',
-        # NEW: Expanded crisis coverage for self-harm and suicidal ideation
+        # Personal distress markers (first-person, present tense)
+        r'i\s+want\s+to\s+(?:kill\s+)?myself', r'i\s+want\s+to\s+end\s+my\s+life', r'i\s+want\s+to\s+die',
+        r'i\s+am\s+suicidal', r'i\s+feel\s+suicidal', r'i\s+think\s+about\s+killing\s+myself',
+        r'i\s+have\s+a\s+plan\s+to\s+(?:kill\s+)?myself', r'i\s+am\s+going\s+to\s+(?:kill\s+)?myself',
         r'ending\s+it\s+all', r'end\s+it\s+all', r'taking\s+my\s+life',
-        r'harm\s+myself', r'hurting\s+myself', r'self[- ]injury', r'injure\s+myself',
-        r'better\s+off\s+without\s+me', r'everyone.*better\s+off', r'burden\s+to\s+everyone',
-        r'i\s+am\s+a\s+burden', r'nothing\s+matters', r'hurt\s+my\s+family',
-        r'harming\s+my\s+family', r'attack\s+my\s+family', r'hurt\s+others',
-        r'cutting\s+myself', r'cut\s+myself'
+        r'i\s+want\s+to\s+harm\s+myself', r'i\s+want\s+to\s+hurt\s+myself',
+        r'i\s+am\s+cutting\s+myself', r'i\s+have\s+been\s+cutting\s+myself',
+        r'better\s+off\s+without\s+me', r'i\s+am\s+a\s+burden', r'i\s+feel\s+like\s+a\s+burden',
+        r'nothing\s+matters\s+anymore', r'i\s+give\s+up', r'i\s+can\'t\s+take\s+it\s+anymore',
+        r'i\s+want\s+the\s+pain\s+to\s+end', r'how\s+do\s+i\s+end\s+the\s+pain',
+        r'i\s+should\s+just\s+end\s+it', r'i\s+might\s+as\s+well\s+end\s+it',
+        # Financial distress with self-harm
+        r'escape\s+this\s+financial\s+ruin', r'can\'t\s+fix\s+this\s+debt.*end\s+it',
+        r'lost\s+everything.*end\s+it', r'bankruptcy.*too\s+much.*end\s+it',
+        # Harm to others (personal intent)
+        r'i\s+want\s+to\s+hurt\s+others', r'i\s+want\s+to\s+harm\s+my\s+family',
+        r'i\s+am\s+thinking\s+of\s+attacking\s+my\s+family', r'i\s+might\s+hurt\s+my\s+family'
     ],
     'anaphylaxis': [
         r'anaphylaxis', r'severe\s+allergic\s+reaction', r'throat\s+swelling',
@@ -59,13 +63,26 @@ EMERGENCY_PATTERNS = {
     'unconscious': [
         r'unconscious', r'passed\s+out', r'won\'t\s+wake\s+up', r'lost\s+consciousness',
         r'fainted\s+and\s+won\'t\s+wake'
-    ],
-    'mental_health_crisis': [
-        r'should\s+i\s+just\s+end\s+it', r'want\s+to\s+die', r'ending\s+pain',
-        r'can\'t\s+take\s+it\s+anymore', r'no\s+hope', r'give\s+up\s+life',
-        r'peaceful\s+way\s+to\s+exit', r'how\s+do\s+i\s+end\s+the\s+pain'
     ]
 }
+
+# Informational query patterns that should NOT trigger emergency halt
+INFORMATIONAL_PATTERNS = [
+    r'what\s+is\s+(?:a|an)?\s*(?:heart\s+attack|chest\s+pain|stroke|depression|anxiety|diabetes|ptsd)',
+    r'symptoms\s+of\s+\w+',
+    r'treatment\s+(?:options\s+)?for\s+\w+',
+    r'how\s+does\s+\w+\s+work',
+    r'causes?\s+of\s+\w+',
+    r'signs\s+of\s+\w+',
+    r'side\s+effects\s+of\s+\w+',
+    r'what\s+are\s+(?:the\s+)?symptoms',
+    r'how\s+to\s+treat\s+\w+',
+    r'(?:definition|meaning|explain)\s+(?:of|:)\s*\w+',
+    r'\w+\s+(?:resources|statistics|information|facts|overview)',
+    r'learn\s+about\s+\w+',
+    r'tell\s+me\s+about\s+\w+',
+    r'(?:describe|list|outline)\s+\w+'
+]
 
 EMERGENCY_RESOURCES = {
     'general': {
@@ -95,6 +112,12 @@ def detect_emergency(query: str) -> Tuple[bool, str | None, Dict]:
     """
     query_lower = query.lower()
     
+    # First check if this is an informational query (should NOT halt)
+    for pattern in INFORMATIONAL_PATTERNS:
+        if re.search(pattern, query_lower):
+            return False, None, {}
+    
+    # Then check for emergency patterns
     for emergency_type, patterns in EMERGENCY_PATTERNS.items():
         for pattern in patterns:
             if re.search(pattern, query_lower):

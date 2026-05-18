@@ -255,10 +255,12 @@ class ComprehensiveTestRunner:
             provenance_warnings = result.get("provenance_warnings", [])
             
             # Determine actual outcome
-            if status.startswith("HALT_SAFETY"):
+            if status.startswith("HALT_EMERGENCY") or (status.startswith("HALT_SAFETY") and "emergency" in result):
                 actual = "halt_safety"
-            elif status.startswith("HALT_IMPOSSIBLE"):
+            elif status in ["IMPOSSIBLE_PREMISE", "HALT_IMPOSSIBLE"] or status.startswith("IMPOSSIBLE"):
                 actual = "halt_impossible"
+            elif status.startswith("CLARIFICATION") or status == "CLARIFY":
+                actual = "clarify"
             elif status.startswith("HALT"):
                 actual = "halt_other"
             elif status.startswith("ANSWER_HIGH"):
@@ -269,8 +271,6 @@ class ComprehensiveTestRunner:
                 actual = "answer_low"
             elif status.startswith("ANSWER"):
                 actual = "answer"
-            elif status.startswith("CLARIFY"):
-                actual = "clarify"
             else:
                 actual = "unknown"
             
