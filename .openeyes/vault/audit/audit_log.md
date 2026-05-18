@@ -1,7 +1,0 @@
-# Audit Log
-
-Signature: `150fa7909f42365faf640c9fe0e9bfdf7e1bdd59e18251251bca204daf0823ec`
-
-```json
-{"query": "How does the IMF work?", "result": {"answer": "Honestly? The unemployment rate measures the percentage of the labor force that is jobless and actively seeking employment. It is derived from the Current Population Survey (CPS), a monthly survey of about 60,000 households conducted by the Census Bureau for the BLS. To be counted as unemployed, individuals must be without a job, available to work, and have actively looked for work in the prior four weeks. The labor force consists of employed plus unemployed persons. Those not working and not seeking work are 'not in the labor force.' The official unemployment rate is U-3. Alternative measures include U-6 (broadest, including marginally attached workers and those working part-time for economic reasons) and U-4, U-5 (intermediate measures). Duration of unemployment and reasons for unemployment are also reported. To visualize: Want to dive deeper into any part?", "answer_class": "ANSWER_MEDIUM_CONFIDENCE", "confidence": 65.99, "data_recency_years": 1, "domain": "general", "narrative": {"context": "", "recommendation": "", "scenarios": {}}, "replay": {"agents": 1024, "score_mean": 50.9862, "score_var": 4.076499, "seed": 3188702215, "sub_questions": ["imf work"]}, "status": "ANSWER_MEDIUM_CONFIDENCE"}, "timestamp": "20260517_163438_524631", "version": 1}
-```

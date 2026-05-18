@@ -40,6 +40,21 @@ class MonteCarloEngine:
         confidence = float(np.mean(scores))
         has_counter = any(f.limitations for f in fragments)
         provenance_ok = all(f.provenance_ok() for f in fragments)
+        
+        # CRITICAL FIX: Track which fragments have provenance issues for transparency
+        provenance_failures = []
+        if not provenance_ok:
+            for i, f in enumerate(fragments):
+                if not f.provenance_ok():
+                    source_id = getattr(f, 'source_id', 'unknown')
+                    published_on = getattr(f, 'published_on', None)
+                    reason = "missing_source_id" if source_id == "unknown" else "invalid_date_format"
+                    provenance_failures.append({
+                        "fragment_id": getattr(f, 'id', f'frag_{i}'),
+                        "source_id": source_id,
+                        "published_on": str(published_on),
+                        "reason": reason
+                    })
 
         if not fragments:
             abstention = "HALT_LOW_EVIDENCE"
@@ -61,4 +76,9 @@ class MonteCarloEngine:
             "score_mean": round(confidence, 4),
             "score_var": round(float(np.var(scores)), 6),
         }
-        return {"confidence": round(confidence, 2), "status": abstention, "replay": json.dumps(replay)}
+        
+        # CRITICAL FIX: Include provenance failures in output for transparency
+        result = {"confidence": round(confidence, 2), "status": abstention, "replay": json.dumps(replay)}
+        if provenance_failures:
+            result["provenance_warnings"] = provenance_failures
+        return result

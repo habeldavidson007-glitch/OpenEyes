@@ -106,7 +106,9 @@ class FiveStageReasoningEngine:
             final_fragments=len(fragments)  # Initialize with same value, updated later
         )
         
-        current_fragments = fragments.copy()
+        # CRITICAL FIX: Do NOT copy fragments - we need weight mutations to propagate back to caller
+        # The original fragments list must be modified in-place so Monte Carlo sees the updated weights
+        current_fragments = fragments
         
         # Stage 1: Source Provenance & Weighting
         stage1_result, current_fragments = self._stage1_provenance_weighting(

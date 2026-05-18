@@ -17,7 +17,7 @@ def score_fragment(query: str, routed_domain: str, fragment) -> float:
     domain = (getattr(fragment, "domain", "") or "").lower()
     domain_bonus = 0.25 if domain == (routed_domain or "").lower() else 0.0
 
-    cred = float(getattr(fragment, "credibility_score", 0.5) or 0.5)
+    cred = float(getattr(fragment, "success_rate_ema", 0.5) or 0.5)
     cred_score = max(0.0, min(1.0, cred)) * 0.2
 
     year = getattr(fragment, "year", None)

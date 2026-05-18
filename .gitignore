@@ -2,44 +2,20 @@
 # Binary/compiled files
 *.bin
 
+# Dependencies and build artifacts
+.openeyes/
+
 # Logs and temp files
 *.log
+*.tmp
+*.swp
 
-# Environment specific
+# Environment
 .env
 .env.local
-.env.*
-
-# Dependencies and build artifacts
-node_modules/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.so
-*.egg-info/
-dist/
-build/
-.coverage
-coverage/
-htmlcov/
-.mypy_cache/
-.pytest_cache/
-.venv/
-venv/
-.env/
-
-# System files
-.DS_Store
-Thumbs.db
+*.env.*
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-*.tmp
-
-# Original rules preserved
-*.log
 ```

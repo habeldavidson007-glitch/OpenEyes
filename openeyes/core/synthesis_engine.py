@@ -33,9 +33,14 @@ class SynthesisEngine:
             "however", "but", "although", "despite", "conversely", "on the other hand"
         ]
 
-    def synthesize(self, query: str, fragments: List[Dict]) -> str:
+    def synthesize(self, query: str, fragments: List[Dict], include_insights: bool = False) -> str:
         """
         Main entry point. Takes raw fragments and returns a structured narrative.
+        
+        Args:
+            query: The user's question
+            fragments: List of fragment dictionaries with 'claim', 'confidence_score', etc.
+            include_insights: If True, adds synthesis insights and consensus summary
         """
         if not fragments:
             return "No sufficient evidence found to construct a narrative."
@@ -47,7 +52,7 @@ class SynthesisEngine:
         graph = self._build_dependency_graph(nodes, query)
         
         # 3. Traverse Graph to Generate Narrative
-        narrative = self._generate_narrative(graph, query)
+        narrative = self._generate_narrative(graph, query, include_insights=include_insights)
         
         return narrative
 
@@ -144,10 +149,15 @@ class SynthesisEngine:
                     
         return nodes
 
-    def _generate_narrative(self, nodes: List[LogicalNode], query: str) -> str:
+    def _generate_narrative(self, nodes: List[LogicalNode], query: str, include_insights: bool = False) -> str:
         """
         Traverses the graph to write a human-readable paragraph.
         CRITICAL: Must directly ANSWER the query first, then provide supporting evidence.
+        
+        Args:
+            nodes: Logical nodes from fragment analysis
+            query: The original user query
+            include_insights: If True, adds consensus summary and key insights section
         """
         conclusions = [n for n in nodes if n.role == 'CONCLUSION']
         evidence = [n for n in nodes if n.role == 'EVIDENCE']
@@ -285,6 +295,33 @@ class SynthesisEngine:
         elif filtered_evidence:
             # If no explicit conclusion, create one from evidence
             narrative_parts.append("This information suggests you should verify current data from authoritative sources before taking action.")
+
+        # CRITICAL FIX: Add insights synthesis section if requested
+        if include_insights and len(nodes) > 1:
+            # Calculate consensus level
+            high_conf_count = sum(1 for n in nodes if n.confidence >= 0.7)
+            total_nodes = len(nodes)
+            consensus_level = high_conf_count / total_nodes if total_nodes > 0 else 0
+            
+            # Extract key themes
+            all_content = " ".join([n.content.lower() for n in nodes])
+            key_themes = []
+            if any(word in all_content for word in ['inflation', 'price', 'rate']):
+                key_themes.append('price dynamics')
+            if any(word in all_content for word in ['growth', 'gdp', 'economic']):
+                key_themes.append('economic trends')
+            if any(word in all_content for word in ['risk', 'uncertainty', 'volatile']):
+                key_themes.append('risk factors')
+            
+            if key_themes or consensus_level > 0.5:
+                narrative_parts.append("")
+                narrative_parts.append("---")
+                if consensus_level > 0.7:
+                    narrative_parts.append(f"**Key Insight:** Strong consensus ({consensus_level*100:.0f}%) across {total_nodes} verified sources on {' and '.join(key_themes) if key_themes else 'core findings'}.")
+                elif consensus_level > 0.4:
+                    narrative_parts.append(f"**Key Insight:** Moderate agreement ({consensus_level*100:.0f}%) among sources on {' and '.join(key_themes) if key_themes else 'main points'}, with some variation in details.")
+                else:
+                    narrative_parts.append(f"**Key Insight:** Analysis of {total_nodes} sources reveals multiple perspectives on {' and '.join(key_themes) if key_themes else 'this topic'}. Verify with current data before acting.")
 
         # Join and clean up
         full_text = " ".join(narrative_parts)
