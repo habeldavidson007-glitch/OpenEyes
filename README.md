@@ -230,6 +230,9 @@ openeyes version
 
 ## Current Product Status
 
+Protocol reference for GUI/integrations: `CLI_PROTOCOL.md`.
+
+
 OpenEyes is usable, but still under active quality hardening.
 
 - CLI contract is stabilizing (`ask`, `doctor`, `config`, `version`, `--json`)

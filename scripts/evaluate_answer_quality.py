@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import json
 import re
+import sys
 from dataclasses import dataclass
 
 from openeyes.services.query_service import QueryService
@@ -42,12 +44,49 @@ def evaluate() -> dict:
         routed = (r.get("domain") or "").lower()
         domain_ok = 1.0 if routed == c.expected_domain else 0.0
         cscore = concept_score(ans, c.must_include)
-        results.append({"query": c.query, "routed_domain": routed, "expected_domain": c.expected_domain, "domain_ok": domain_ok, "concept_score": round(cscore, 3)})
+        results.append(
+            {
+                "query": c.query,
+                "routed_domain": routed,
+                "expected_domain": c.expected_domain,
+                "domain_ok": domain_ok,
+                "concept_score": round(cscore, 3),
+            }
+        )
 
     avg_domain = sum(x["domain_ok"] for x in results) / len(results)
     avg_concept = sum(x["concept_score"] for x in results) / len(results)
-    return {"avg_domain_accuracy": round(avg_domain, 3), "avg_concept_score": round(avg_concept, 3), "results": results}
+    return {
+        "avg_domain_accuracy": round(avg_domain, 3),
+        "avg_concept_score": round(avg_concept, 3),
+        "results": results,
+    }
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--min-domain-accuracy", type=float, default=None)
+    parser.add_argument("--min-concept-score", type=float, default=None)
+    args = parser.parse_args()
+
+    payload = evaluate()
+    print(json.dumps(payload, indent=2))
+
+    failed = False
+    if args.min_domain_accuracy is not None and payload["avg_domain_accuracy"] < args.min_domain_accuracy:
+        print(
+            f"[FAIL] avg_domain_accuracy={payload['avg_domain_accuracy']} is below threshold {args.min_domain_accuracy}",
+            file=sys.stderr,
+        )
+        failed = True
+    if args.min_concept_score is not None and payload["avg_concept_score"] < args.min_concept_score:
+        print(
+            f"[FAIL] avg_concept_score={payload['avg_concept_score']} is below threshold {args.min_concept_score}",
+            file=sys.stderr,
+        )
+        failed = True
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":
-    print(json.dumps(evaluate(), indent=2))
+    raise SystemExit(main())
