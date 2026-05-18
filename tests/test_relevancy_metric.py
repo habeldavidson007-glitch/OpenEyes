@@ -29,3 +29,11 @@ def test_routing_confidence_non_null() -> None:
     out = QueryService().ask("What is inflation?").payload
     assert out.get("routing_confidence") is not None
     assert 0.0 <= float(out["routing_confidence"]) <= 1.0
+
+
+def test_groundedness_fields_present() -> None:
+    from openeyes.services.query_service import QueryService
+    out = QueryService().ask("What is inflation?").payload
+    assert "grounded_claims" in out
+    assert "ungrounded_claims_count" in out
+    assert "groundedness_score" in out

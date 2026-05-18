@@ -95,3 +95,12 @@ def test_ask_no_animate_flag() -> None:
     runner = CliRunner()
     result = runner.invoke(cli, ["--no-animate", "ask", "What is inflation?"])
     assert result.exit_code == 0
+
+
+def test_ask_json_contains_grounding_metadata() -> None:
+    runner = CliRunner()
+    result = runner.invoke(cli, ["--json", "ask", "What is inflation?"])
+    assert result.exit_code == 0
+    assert "\"grounded_claims\"" in result.output
+    assert "\"ungrounded_claims_count\"" in result.output
+    assert "\"groundedness_score\"" in result.output

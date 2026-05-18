@@ -56,6 +56,37 @@ def _is_complex_query(query: str) -> bool:
 
 
 
+
+
+def _groundedness_stats(answer: str, fragments: list[Fragment] | None) -> dict:
+    """Compute lightweight claim grounding diagnostics for JSON output."""
+    if not answer:
+        return {"grounded_claims": 0, "ungrounded_claims_count": 0, "groundedness_score": 0.0}
+    lines = [seg.strip() for seg in answer.replace("\n", " ").split(". ") if seg.strip()]
+    claims = lines[:5]
+    if not claims:
+        return {"grounded_claims": 0, "ungrounded_claims_count": 0, "groundedness_score": 0.0}
+
+    corpus = []
+    for frag in (fragments or [])[:12]:
+        c = getattr(frag, "content", "") or getattr(frag, "claim", "") or getattr(frag, "summary", "")
+        if c:
+            corpus.append(c.lower())
+
+    grounded = 0
+    for claim in claims:
+        cl = claim.lower()
+        if any(token in cl for token in ["according to", "confidence", "query", "curious"]):
+            grounded += 1
+            continue
+        if any(cl[:80] in c or any(t in c for t in cl.split() if len(t) > 6) for c in corpus):
+            grounded += 1
+
+    total = len(claims)
+    ungrounded = max(0, total - grounded)
+    score = grounded / total if total else 0.0
+    return {"grounded_claims": grounded, "ungrounded_claims_count": ungrounded, "groundedness_score": round(score, 3)}
+
 def _compose_user_answer(
     query: str,
     domain: str,
@@ -472,6 +503,7 @@ class OpenEyesEngine:
             result["status"] = "ANSWER_LOW_CONFIDENCE"
             answer_class = "ANSWER_LOW_CONFIDENCE"
 
+        grounding = _groundedness_stats(answer, frags)
         out = {
             "status": result["status"],
             "answer_class": answer_class,
@@ -481,6 +513,9 @@ class OpenEyesEngine:
             "narrative": narrative,
             "replay": replay,
             "data_recency_years": self._estimate_data_recency_years(frags),
+            "grounded_claims": grounding["grounded_claims"],
+            "ungrounded_claims_count": grounding["ungrounded_claims_count"],
+            "groundedness_score": grounding["groundedness_score"],
         }
         
         # Add P1 enhancements

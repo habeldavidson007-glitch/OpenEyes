@@ -25,6 +25,9 @@ Typical fields include:
 - `domain`
 - `routed_domain`
 - `routing_confidence`
+- `grounded_claims`
+- `ungrounded_claims_count`
+- `groundedness_score`
 
 ## Backward compatibility
 - Schema version is pinned to `1` currently.
