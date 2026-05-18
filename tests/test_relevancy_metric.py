@@ -7,3 +7,11 @@ def test_overlap_score_higher_for_relevant_answer() -> None:
     irrelevant = "Portfolio diversification and ESG funds can reduce risk in investing."
 
     assert overlap_score(q, relevant) > overlap_score(q, irrelevant)
+
+
+def test_quality_eval_payload_shape() -> None:
+    from scripts.evaluate_answer_quality import evaluate
+    out = evaluate()
+    assert "avg_domain_accuracy" in out
+    assert "avg_concept_score" in out
+    assert isinstance(out["results"], list)
